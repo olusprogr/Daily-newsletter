@@ -1,0 +1,31 @@
+[N] = 1N = kg * m/s^2 = m * a
+[E] = 1J = kg*m^2/s^2
+1J = 1N * 1m 
+
+
+Lageenergie (potenzielle Energie) [Epot] J = m * g * h
+Bewegungsenergie (kinetische Energie) [Ekin] J = ½ * m * v^2
+Spannenergie = [Espann] J = ½ * D * s^2		D = Federkonstante = ?F /  ?x = N/m = J
+
+Energieerhaltungssatz (EES)
+Ekin1 + Epot1 + Espan1 = Ekin2 + Epot2 + Espan2
+Energie vorher = Energie nachher
+
+Impulserhaltungssatz (IES)
+m1 * v1 + m2 * v2 = m1' * v1' + m2' * v2'
+Impuls vorher =Impuls nachher
+
+
+Zentraler elastischer Stoß: Energie & Impuls bleiben erhalten.
+Zentraler unelastischer Stoß: Impuls bleibt erhalten, aber kinetische Energie wird in Wärme/Verformung umgewandelt.
+Nicht-zentraler Stoß: Kräfte wirken nicht entlang der Verbindungslinie der Massenmittelpunkte ? Drehbewegung möglich.
+
+
+(Dreh-)Zentrum Z: Mittelpunkt der Kreisbahn
+Bahnradius r
+Umlaufdauer T: wie lange ein Körper für einen vollständigen Umlauf der Kreisbahn benötigt.
+Frequenz f: der Kehrwert der Umlaufdauer: f=1T. Sie gibt an, wie viele Umläufe ein Körper pro Zeiteinheit absolviert.
+Bahnstrecke s: Länge die der Körper seit dem Start der Kreisbewegung auf der Kreisbahn zurückgelegt hat.
+Drehwinkel ?: bezeichnet den Winkel, den der Bahnradius seit Beginn der Kreisbewegung überstrichen hat.
+360° = 2pi
+
