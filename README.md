@@ -32,13 +32,21 @@ Anpassen: `newsletter/fetch.py` (Feeds), `newsletter/categorize.py`
 
 CallMeBot ist ein kostenloser Dienst für private WhatsApp-Nachrichten per API.
 
-1. Speichere `+34 644 84 71 66` als Kontakt in WhatsApp (z. B. als "CallMeBot").
-2. Schick diesem Kontakt die Nachricht: `I allow callmebot to send me messages`
-3. Du bekommst per WhatsApp-Antwort deinen persönlichen `apikey` zugeschickt.
-4. Trage in diesem Repo unter **Settings → Secrets and variables → Actions →
+> ⚠️ **Wichtig:** Die WhatsApp-Kontaktnummer von CallMeBot wird von Zeit zu Zeit
+> geändert. Hol dir die aktuell gültige Nummer **immer live von der offiziellen
+> Seite**: https://www.callmebot.com/blog/free-api-whatsapp-messages/ — schreib
+> sie nicht aus einer Anleitung/einem Blogpost ab, der älter als ein paar
+> Wochen sein könnte, sonst landest du ggf. bei einer inzwischen privat
+> vergebenen Nummer.
+
+1. Öffne obigen Link und notiere dir die dort aktuell angegebene Kontaktnummer.
+2. Speichere diese Nummer als Kontakt in WhatsApp (z. B. als "CallMeBot").
+3. Schick diesem Kontakt die Nachricht: `I allow callmebot to send me messages`
+4. Du bekommst per WhatsApp-Antwort deinen persönlichen `apikey` zugeschickt.
+5. Trage in diesem Repo unter **Settings → Secrets and variables → Actions →
    New repository secret** zwei Secrets ein:
    - `CALLMEBOT_PHONE` → deine Nummer im internationalen Format, z. B. `+491701234567`
-   - `CALLMEBOT_APIKEY` → der API-Key aus Schritt 3
+   - `CALLMEBOT_APIKEY` → der API-Key aus Schritt 4
 
 > Hinweis: CallMeBot ist ein kostenloser Community-Dienst mit Rate-Limits.
 > Für einen Newsletter 1×/Tag ist das unproblematisch. Bei Bedarf kann
