@@ -5,7 +5,6 @@ are swapped for a loopback HTTP server, so no test ever depends on TechCrunch
 being up (or on the sandbox being allowed to reach it).
 """
 import email.utils
-import json
 import threading
 from datetime import datetime, timedelta, timezone
 from http.server import BaseHTTPRequestHandler, HTTPServer
@@ -17,7 +16,7 @@ from newsletter import fetch, send_whatsapp
 
 
 class Stub:
-    """Serves the feeds, Hacker News and CallMeBot for one test."""
+    """Serves the RSS feeds and CallMeBot for one test."""
 
     def __init__(self):
         self.articles = []
@@ -62,9 +61,6 @@ def stub(monkeypatch, tmp_path):
             if parsed.path == "/rss":
                 body, ctype = state.feed_xml().encode(), "application/rss+xml"
                 code = 200
-            elif parsed.path == "/hn":
-                body, ctype = json.dumps({"hits": []}).encode(), "application/json"
-                code = 200
             elif parsed.path == "/whatsapp":
                 state.sent.append(parse_qs(parsed.query))
                 code = state.whatsapp_status
@@ -85,7 +81,6 @@ def stub(monkeypatch, tmp_path):
     monkeypatch.setattr(
         fetch, "FEEDS", [("Feed-A", f"http://127.0.0.1:{port}/rss"), ("Feed-B", f"http://127.0.0.1:{port}/rss")]
     )
-    monkeypatch.setattr(fetch, "HN_API", f"http://127.0.0.1:{port}/hn")
     monkeypatch.setattr(send_whatsapp, "CALLMEBOT_URL", f"http://127.0.0.1:{port}/whatsapp")
     monkeypatch.setattr(send_whatsapp.time, "sleep", lambda *_: None)  # no 8s waits in tests
     monkeypatch.setenv("CALLMEBOT_PHONE", "+491700000000")

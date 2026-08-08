@@ -40,9 +40,17 @@ kommt beim nächsten Lauf.
 
 ## Quellen
 
-RSS: TechCrunch, The Verge, Ars Technica, Wired, Engadget, VentureBeat,
-Electrek, Tom's Hardware, IEEE Spectrum, MIT Technology Review — plus stark
-upvotete Hacker-News-Storys als globales Relevanzsignal.
+Ausschließlich **redaktionell betreute Publikationen** — jede mit Redaktion,
+Impressum und namentlichen Autoren:
+
+TechCrunch, The Verge, Ars Technica, Wired, Engadget, VentureBeat, Electrek,
+Tom's Hardware, IEEE Spectrum, MIT Technology Review.
+
+> **Bewusst nicht dabei:** nutzergenerierte Aggregatoren wie Hacker News,
+> Reddit oder Lobsters. Dort trägt jeder ein, was er möchte — ein Upvote ist
+> keine redaktionelle Prüfung, und die verlinkten Ziele sind beliebig
+> (Gists, private Repos, Foren-Posts). Wer solche Quellen wieder aufnimmt,
+> holt sich genau diese Beliebigkeit zurück.
 
 Anpassen: `newsletter/fetch.py` (Feeds), `newsletter/categorize.py`
 (Keywords je Kategorie).

@@ -1,9 +1,14 @@
-"""Fetch tech-news items from RSS feeds and Hacker News within a time window."""
+"""Fetch tech-news items from editorial RSS feeds within a time window.
+
+Every feed here belongs to a publication with an editorial staff and named
+authors. Deliberately no user-submitted aggregators (Hacker News, Reddit,
+Lobsters): those carry whatever anyone chose to post, which is the opposite
+of what this newsletter is for.
+"""
 import re
 from datetime import datetime, timezone
 
 import feedparser
-import requests
 
 # (Source name, RSS feed URL). Add/remove feeds here to change coverage.
 FEEDS = [
@@ -18,9 +23,6 @@ FEEDS = [
     ("IEEE Spectrum", "https://spectrum.ieee.org/rss/fulltext"),
     ("MIT Technology Review", "https://www.technologyreview.com/feed/"),
 ]
-
-HN_API = "https://hn.algolia.com/api/v1/search_by_date"
-REQUEST_TIMEOUT = 20
 
 
 def _clean_html(raw):
@@ -61,42 +63,8 @@ def fetch_rss_items(window_start, window_end):
     return items
 
 
-def fetch_hn_items(window_start, window_end, min_points=40):
-    """Pull well-upvoted Hacker News stories as a global-relevance signal."""
-    items = []
-    params = {
-        "tags": "story",
-        "numericFilters": (
-            f"created_at_i>{int(window_start.timestamp())},"
-            f"created_at_i<{int(window_end.timestamp())},"
-            f"points>{min_points}"
-        ),
-        "hitsPerPage": 50,
-    }
-    try:
-        resp = requests.get(HN_API, params=params, timeout=REQUEST_TIMEOUT)
-        resp.raise_for_status()
-        for hit in resp.json().get("hits", []):
-            url = hit.get("url") or f"https://news.ycombinator.com/item?id={hit.get('objectID')}"
-            title = hit.get("title") or ""
-            if not title:
-                continue
-            items.append(
-                {
-                    "source": "Hacker News",
-                    "title": title,
-                    "summary": "",
-                    "link": url,
-                    "published": datetime.fromtimestamp(hit["created_at_i"], tz=timezone.utc),
-                }
-            )
-    except Exception as exc:  # pragma: no cover
-        print(f"[warn] failed to fetch Hacker News: {exc}")
-    return items
-
-
 def fetch_all_items(window_start, window_end):
-    items = fetch_rss_items(window_start, window_end) + fetch_hn_items(window_start, window_end)
+    items = fetch_rss_items(window_start, window_end)
 
     seen = set()
     deduped = []
