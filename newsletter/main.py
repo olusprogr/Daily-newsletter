@@ -1,65 +1,86 @@
-"""Entry point: fetch -> categorize -> archive -> send to WhatsApp.
+"""Entry point: fetch -> categorize -> send what's new -> archive.
 
-Run window: the script computes a rolling 24h window ending "now" (Europe/Berlin),
-so it always covers "yesterday 10:00 -> today 10:00" regardless of exactly when
-the cron fires.
+The workflow runs every 30 minutes and delivers articles as they show up,
+instead of collecting them for one daily digest. What keeps that from
+resending the same article every half hour is state/sent.json: every link
+that went out is recorded there and committed back to the repo, so the next
+run can tell "new" from "already seen" (see newsletter/state.py).
 
-Instead of guessing from the clock whether "now" is close enough to 10:00
-(fragile around DST changes), the script checks live against the repo itself:
-if today's digest file already exists, a newsletter was already sent today,
-so this run is a no-op. That means the two daily cron entries (one per DST
-state) never need to fight over which one is "right" - whichever runs first
-each day sends the newsletter, and the second one harmlessly finds the digest
-already there and skips.
+The state is only written *after* WhatsApp accepted the messages. A failed
+send therefore leaves no trace, and the next run 30 minutes later retries
+those same articles rather than dropping them.
 
-For that marker to be honest it must mean "delivered", not merely "built", so
-the digest is written only *after* WhatsApp actually accepted the messages.
-A failed send (or a --dry-run) therefore leaves no digest behind, and the
-second cron run of the day retries for real.
+The daily file under digests/ is no longer the trigger for anything - it is
+rebuilt from the state after each send, purely as the archive that feeds the
+GitHub Pages site.
 
-Use --force to send anyway even if today's digest already exists (e.g. for
-manual re-runs/testing).
+First run: with no state file yet, everything in the 24h window would look
+"new" and flood you with messages. So a first run seeds the state silently
+and sends nothing. Use --force to send anyway.
 """
 import argparse
 import os
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 
-from . import build_index
-from .categorize import categorize_items
+from . import build_index, state
+from .categorize import categorize
 from .fetch import fetch_all_items
-from .format_digest import build_markdown_digest, build_whatsapp_messages
+from .format_digest import build_daily_digest_from_records, build_instant_messages
 from .send_whatsapp import send_messages
 
 BERLIN = ZoneInfo("Europe/Berlin")
 UTC = ZoneInfo("UTC")
 
+# Cap per run so a feed hiccup (or a very busy news hour) can't fire off a
+# dozen WhatsApp messages at once and trip CallMeBot's rate limit.
+MAX_ITEMS_PER_RUN = 8
 
-def run(force=False, dry_run=False):
+
+def run(force=False, dry_run=False, state_path=state.STATE_PATH):
     now = datetime.now(BERLIN)
-    window_end = now
     window_start = now - timedelta(hours=24)
 
-    digest_path = f"digests/{window_end:%Y-%m-%d}.md"
+    known = state.load(state_path)
+    first_run = not os.path.exists(state_path)
 
-    if not force and os.path.exists(digest_path):
+    items = fetch_all_items(window_start.astimezone(UTC), now.astimezone(UTC))
+    print(f"[info] {len(items)} Artikel im 24h-Fenster abgerufen.")
+
+    categorized = []
+    for item in items:
+        cat = categorize(item)
+        if cat:
+            categorized.append({**item, "category": cat})
+    print(f"[info] {len(categorized)} davon fallen in eine der Kategorien.")
+
+    already = state.sent_links(known)
+    new_items = [i for i in categorized if i["link"] not in already]
+    new_items.sort(key=lambda i: i["published"], reverse=True)
+    print(f"[info] {len(new_items)} davon wurden noch nie verschickt.")
+
+    if first_run and not force:
+        seeded = state.record(known, new_items)
+        state.save(seeded, state_path)
         print(
-            f"[skip] {digest_path} existiert bereits – heute wurde schon ein Newsletter "
-            "verschickt (das ist der zweite der beiden täglichen Cron-Läufe, kein Fehler). "
-            "Mit --force trotzdem erneut senden."
+            f"[seed] Erster Lauf: {len(new_items)} Artikel als 'bekannt' markiert, "
+            "ohne sie zu verschicken (sonst käme das ganze 24h-Fenster auf einmal). "
+            "Ab dem nächsten Lauf geht nur noch wirklich Neues raus."
         )
         return
 
-    print(f"[info] Fenster: {window_start:%Y-%m-%d %H:%M} - {window_end:%Y-%m-%d %H:%M} (Europe/Berlin)")
+    if not new_items:
+        print("[info] Nichts Neues seit dem letzten Lauf - kein Versand.")
+        return
 
-    items = fetch_all_items(window_start.astimezone(UTC), window_end.astimezone(UTC))
-    print(f"[info] {len(items)} Rohartikel live abgerufen und im Zeitfenster gefunden.")
+    if len(new_items) > MAX_ITEMS_PER_RUN:
+        print(
+            f"[info] Auf {MAX_ITEMS_PER_RUN} Artikel begrenzt; der Rest kommt beim "
+            "nächsten Lauf in 30 Minuten."
+        )
+        new_items = new_items[:MAX_ITEMS_PER_RUN]
 
-    buckets = categorize_items(items)
-    for cat, cat_items in buckets.items():
-        print(f"[info]   {cat}: {len(cat_items)} Artikel")
-
-    messages = build_whatsapp_messages(buckets, window_start, window_end)
+    messages = build_instant_messages(new_items, now)
 
     if dry_run:
         print("\n\n----- WHATSAPP DRY RUN -----\n")
@@ -67,35 +88,38 @@ def run(force=False, dry_run=False):
             print(m)
             print("\n---\n")
         print(
-            f"[dry-run] {digest_path} wurde bewusst NICHT geschrieben - sonst würde der "
-            "echte Lauf später am Tag denken, der Newsletter sei schon raus, und sich "
-            "überspringen."
+            "[dry-run] state/sent.json wurde bewusst NICHT aktualisiert - sonst würde "
+            "der nächste echte Lauf diese Artikel für schon verschickt halten."
         )
         return
 
     sent = send_messages(messages)
     if sent == 0:
         raise RuntimeError(
-            "Keine einzige WhatsApp-Nachricht konnte zugestellt werden - der Digest wird "
-            "deshalb nicht archiviert, damit der zweite Cron-Lauf heute automatisch erneut "
-            "versucht."
+            "Keine einzige WhatsApp-Nachricht konnte zugestellt werden - der Zustand "
+            "wird deshalb nicht fortgeschrieben, damit der nächste Lauf dieselben "
+            "Artikel erneut versucht."
         )
     print(f"[info] {sent}/{len(messages)} WhatsApp-Nachrichten zugestellt.")
 
-    markdown_digest = build_markdown_digest(buckets, window_start, window_end)
+    known = state.record(known, new_items)
+    state.save(known, state_path)
+
+    os.makedirs("digests", exist_ok=True)
+    digest_path = f"digests/{now:%Y-%m-%d}.md"
     with open(digest_path, "w", encoding="utf-8") as f:
-        f.write(markdown_digest)
-    print(f"[info] Digest geschrieben nach {digest_path}")
+        f.write(build_daily_digest_from_records(state.items_sent_on(known, now), now))
+    print(f"[info] Archiv aktualisiert: {digest_path}")
 
     build_index.build()
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Daily tech newsletter: fetch, archive, send to WhatsApp.")
+    parser = argparse.ArgumentParser(description="Tech newsletter: send new articles as they appear.")
     parser.add_argument(
         "--force",
         action="store_true",
-        help="Trotzdem senden, auch wenn für heute schon ein Digest existiert.",
+        help="Auch beim allerersten Lauf senden, statt den Zustand nur zu initialisieren.",
     )
     parser.add_argument("--dry-run", action="store_true", help="Print WhatsApp messages instead of sending them.")
     args = parser.parse_args()

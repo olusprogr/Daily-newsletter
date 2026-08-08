@@ -1,4 +1,4 @@
-"""Build the WhatsApp message(s) and the Markdown archive entry for a digest run."""
+"""Build the WhatsApp message(s) for new articles and the daily archive page."""
 from .summarize import two_sentences
 
 CATEGORY_EMOJI = {
@@ -9,47 +9,26 @@ CATEGORY_EMOJI = {
 }
 
 
-def build_markdown_digest(buckets, window_start, window_end):
-    lines = [
-        f"# 📰 Tech Newsletter – {window_end:%d.%m.%Y}",
-        f"_Zeitraum: {window_start:%d.%m. %H:%M} – {window_end:%d.%m. %H:%M} (Europe/Berlin)_",
-        "",
-    ]
-    total = 0
-    for cat, items in buckets.items():
-        if not items:
-            continue
-        lines.append(f"## {CATEGORY_EMOJI.get(cat, '')} {cat}")
-        lines.append("")
-        for item in items:
-            summary = two_sentences(item["summary"], item["title"])
-            lines.append(f"**{item['title']}** _({item['source']})_")
-            if summary:
-                lines.append(summary)
-            lines.append(f"[Weiterlesen]({item['link']})")
-            lines.append("")
-            total += 1
-
-    if total == 0:
-        lines.append("_Keine relevanten Tech-News in diesem Zeitraum gefunden._")
-
-    return "\n".join(lines)
+def _bucket_by_category(items):
+    """Group items (dicts carrying a 'category' key) in CATEGORY_EMOJI order."""
+    buckets = {cat: [] for cat in CATEGORY_EMOJI}
+    for item in items:
+        buckets.setdefault(item["category"], []).append(item)
+    return buckets
 
 
-def build_whatsapp_messages(buckets, window_start, window_end, max_chars=1400):
+def build_instant_messages(new_items, now, max_chars=1400):
+    """WhatsApp message(s) for articles that just showed up in the feeds."""
+    count = len(new_items)
     header = (
-        f"📰 *Tech Newsletter – {window_end:%d.%m.%Y}*\n"
-        f"Zeitraum: {window_start:%d.%m %H:%M} – {window_end:%d.%m %H:%M}\n"
+        f"📰 *Tech News – {count} neue{'r' if count == 1 else ''} Artikel*\n"
+        f"Stand: {now:%d.%m. %H:%M}\n"
     )
-
-    total_items = sum(len(v) for v in buckets.values())
-    if total_items == 0:
-        return [header + "\nKeine relevanten Tech-News in den letzten 24h gefunden."]
 
     messages = []
     current = header
 
-    for cat, items in buckets.items():
+    for cat, items in _bucket_by_category(new_items).items():
         if not items:
             continue
 
@@ -73,3 +52,29 @@ def build_whatsapp_messages(buckets, window_start, window_end, max_chars=1400):
         messages.append(current.strip())
 
     return messages
+
+
+def build_daily_digest_from_records(records, day):
+    """Rebuild a day's archive page from what was actually sent that day."""
+    lines = [
+        f"# 📰 Tech Newsletter – {day:%d.%m.%Y}",
+        f"_{len(records)} Artikel im Laufe des Tages verschickt (Europe/Berlin)_",
+        "",
+    ]
+    for cat, items in _bucket_by_category(records).items():
+        if not items:
+            continue
+        lines.append(f"## {CATEGORY_EMOJI.get(cat, '')} {cat}")
+        lines.append("")
+        for item in sorted(items, key=lambda i: i["sent_at"], reverse=True):
+            summary = two_sentences(item["summary"], item["title"])
+            lines.append(f"**{item['title']}** _({item['source']})_")
+            if summary:
+                lines.append(summary)
+            lines.append(f"[Weiterlesen]({item['link']})")
+            lines.append("")
+
+    if not records:
+        lines.append("_Keine relevanten Tech-News an diesem Tag._")
+
+    return "\n".join(lines)
