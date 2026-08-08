@@ -1,9 +1,9 @@
 # 📰 Daily Tech Newsletter
 
-Vollautomatischer täglicher Tech-Newsletter per WhatsApp. Läuft jeden Tag um
-**10:00 Uhr (Europe/Berlin)** via GitHub Actions, sammelt alle relevanten
-Tech-News der letzten 24 Stunden (gestern 10 Uhr → heute 10 Uhr), filtert sie
-nach Themen und schickt dir eine kompakte Zusammenfassung per WhatsApp.
+Vollautomatischer Tech-Newsletter per WhatsApp. Läuft **alle 30 Minuten** via
+GitHub Actions, prüft die Feeds auf neue Artikel und schickt dir jede relevante
+Meldung **sofort** — kein Warten auf eine feste Uhrzeit. Was schon draußen ist,
+kommt nie ein zweites Mal.
 
 Kein KI-API-Key nötig: Auswahl & Kürzung laufen komplett über RSS-Feeds und
 Keyword-Filter (kostenlos, keine Rate-Limits, kein Vendor-Lock-in).
@@ -16,6 +16,27 @@ Keyword-Filter (kostenlos, keine Rate-Limits, kein Vendor-Lock-in).
 - 💡 **Innovationen** (Robotik, Space, Energie, Biotech, ...)
 
 Pro Beitrag: Titel, max. 2 kurze Sätze Zusammenfassung, Link zum Weiterlesen.
+
+## Wie „nur Neues" funktioniert
+
+Jeder verschickte Link landet in `state/sent.json`, das der Workflow zurück ins
+Repo committet. Der nächste Lauf 30 Minuten später vergleicht die Feeds dagegen
+und verschickt nur, was dort noch nicht steht — das Repo ist also selbst der
+Speicher, ohne externe Datenbank.
+
+Zwei Eigenschaften, die daran hängen:
+
+- **Der Zustand wird erst nach erfolgreichem Versand geschrieben.** Geht CallMeBot
+  nicht ran, bleibt der Artikel „ungesendet" und der nächste Lauf versucht ihn
+  erneut, statt ihn stillschweigend zu verlieren.
+- **Der allererste Lauf verschickt nichts**, sondern markiert das aktuelle
+  24h-Fenster als bekannt — sonst bekämst du beim Start 20 Nachrichten auf
+  einmal. Ab dem zweiten Lauf geht nur noch wirklich Neues raus. Mit
+  `force: true` sendet auch der erste Lauf.
+
+Maximal 8 Artikel pro Lauf (`MAX_ITEMS_PER_RUN` in `newsletter/main.py`), damit
+eine hektische Nachrichtenstunde nicht in CallMeBots Rate-Limit läuft. Der Rest
+kommt beim nächsten Lauf.
 
 ## Quellen
 
@@ -55,7 +76,7 @@ CallMeBot ist ein kostenloser Dienst für private WhatsApp-Nachrichten per API.
 > gesetzte Secrets immer als `***`.
 
 > Hinweis: CallMeBot ist ein kostenloser Community-Dienst mit Rate-Limits.
-> Für einen Newsletter 1×/Tag ist das unproblematisch. Bei Bedarf kann
+> Deshalb die Deckelung auf 8 Artikel pro Lauf. Bei Bedarf kann
 > `newsletter/send_whatsapp.py` später gegen Twilio oder die offizielle
 > WhatsApp Cloud API von Meta ausgetauscht werden.
 
@@ -63,25 +84,25 @@ CallMeBot ist ein kostenloser Dienst für private WhatsApp-Nachrichten per API.
 
 Der Workflow `.github/workflows/newsletter.yml` läuft automatisch, sobald er
 im **default branch** (`main`) liegt — GitHub führt geplante (`schedule`)
-Workflows nur dort aus. Es gibt zwei Cron-Einträge (~08:00 und ~09:00 UTC),
-weil Deutschland zwischen CET/CEST wechselt. Statt anhand der Uhrzeit zu
-raten, ob "jetzt wirklich 10 Uhr ist" (fehleranfällig bei Zeitumstellungen),
-prüft das Skript live gegen das Repo: Existiert für heute schon ein Digest
-(`digests/YYYY-MM-DD.md`), war der Newsletter schon verschickt, und der Lauf
-überspringt sich. Wer zuerst am Tag läuft, verschickt also — der andere ist
-ein No-Op. Das hat einen praktischen Nebeneffekt: Schlägt der erste Lauf mal
-fehl (z. B. Netzwerkfehler), sendet der zweite eine Stunde später automatisch
-als Retry.
+Workflows nur dort aus. Der Cron `*/30 * * * *` prüft alle 30 Minuten auf neue
+Artikel. GitHub verzögert geplante Läufe bei Last oft um 5–20 Minuten; das
+macht hier nichts, weil nichts mehr an einer festen Uhrzeit hängt.
 
-Manuell testen: **Actions → Daily Tech Newsletter → Run workflow** (mit
-`dry_run: true` sendet er nur zur Kontrolle ins Workflow-Log, ohne WhatsApp).
-`force: true` (Standard beim manuellen Trigger) sendet auch dann, wenn für
-heute schon ein Digest existiert.
+Der Workflow braucht Schreibrechte (`permissions: contents: write`), weil er
+`state/sent.json` nach jedem Versand zurück ins Repo committet.
+
+Manuell testen: **Actions → Tech Newsletter → Run workflow** mit
+`dry_run: true` — dann landen die Nachrichten nur im Workflow-Log, ohne
+WhatsApp und ohne den Zustand zu verändern.
+
+> 💡 Kosten: ~48 Läufe/Tag à ~1 Minute ≈ 1.400 Actions-Minuten/Monat. Der
+> Free-Tier für private Repos liegt bei 2.000 Minuten — passt, ist aber kein
+> großer Puffer. Wenn es knapp wird: Cron auf `0 * * * *` (stündlich) stellen.
 
 ### 3. Archiv-Webseite (optional, aber empfohlen)
 
-Jeder Lauf schreibt zusätzlich einen Markdown-Digest nach `digests/` und baut
-`docs/index.html` neu (Archiv aller bisherigen Ausgaben). Um das als Webseite
+Jeder Versand schreibt den Tagesstand nach `digests/YYYY-MM-DD.md` und baut
+`docs/index.html` neu (Archiv aller bisherigen Tage). Um das als Webseite
 verfügbar zu machen:
 
 **Settings → Pages → Source: "Deploy from a branch" → Branch: `main`,
@@ -92,22 +113,33 @@ unter `https://<dein-user>.github.io/<repo-name>/` erreichbar.
 
 ```bash
 pip install -r requirements.txt
-python -m newsletter.main --force --dry-run
+python -m newsletter.main --dry-run
 ```
 
-`--force` sendet auch dann, wenn für heute schon ein Digest existiert;
-`--dry-run` sendet nichts an WhatsApp, sondern gibt die Nachrichten nur im
-Terminal aus.
+`--dry-run` sendet nichts an WhatsApp und fasst `state/sent.json` nicht an,
+sondern gibt die Nachrichten nur im Terminal aus. `--force` verschickt auch
+beim allerersten Lauf, statt den Zustand nur zu initialisieren.
 
-Ein Digest unter `digests/` wird erst geschrieben, **nachdem** WhatsApp die
-Nachrichten angenommen hat. Ein Dry-Run oder ein fehlgeschlagener Versand
-hinterlässt also keinen Digest — sonst würde der zweite Cron-Lauf des Tages
-fälschlich denken, der Newsletter sei schon raus, und sich überspringen.
+### Tests
+
+```bash
+pip install -r requirements-dev.txt
+python -m pytest tests/ -v
+```
+
+Die Tests fahren die komplette Pipeline gegen einen lokalen HTTP-Stub für
+Feeds und CallMeBot — kein Test hängt am echten Netz. Abgedeckt sind unter
+anderem: erster Lauf verschickt nichts, ein neuer Artikel geht sofort raus,
+ein bereits verschickter nie wieder, und ein fehlgeschlagener Versand wird
+beim nächsten Lauf wiederholt statt verloren.
 
 ## Wie die Zusammenfassung funktioniert
 
-- Artikel werden nach Erscheinungsdatum auf das 24h-Fenster gefiltert.
+- Artikel werden nach Erscheinungsdatum auf ein 24h-Fenster gefiltert (großzügig
+  gewählt, damit ein verpasster Lauf nichts verschluckt — die Dopplungssperre
+  erledigt den Rest).
 - Keyword-Matching ordnet jeden Artikel genau einer Kategorie zu
-  (Priorität: AI → Autonomes Fahren → Hardware → Innovationen).
-- Pro Kategorie werden max. 5 Artikel behalten (neueste zuerst).
+  (Priorität: AI → Autonomes Fahren → Hardware → Innovationen). Artikel, die in
+  keine Kategorie fallen, werden verworfen.
 - Der Beschreibungstext wird auf die ersten zwei Sätze gekürzt.
+- Bereits verschickte Links werden anhand von `state/sent.json` aussortiert.

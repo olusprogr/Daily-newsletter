@@ -1,20 +1,17 @@
-name: Daily Tech Newsletter
+name: Tech Newsletter
 
 on:
   schedule:
-    # ~10:00 Europe/Berlin during CEST (summer, UTC+2). Whichever of these two
-    # runs first each day sends the newsletter; the other one finds today's
-    # digest already committed and skips - so this also acts as an automatic
-    # retry if the first run fails (see newsletter/main.py).
-    - cron: '0 8 * * *'
-    # ~10:00 Europe/Berlin during CET (winter, UTC+1)
-    - cron: '0 9 * * *'
+    # Every 30 minutes: new articles go out as they appear. GitHub often
+    # delays scheduled runs by 5-20 minutes under load, which is fine here -
+    # nothing depends on hitting an exact wall-clock time any more.
+    - cron: '*/30 * * * *'
   workflow_dispatch:
     inputs:
       force:
-        description: 'Trotzdem senden, auch wenn heute schon ein Digest existiert'
+        description: 'Auch beim allerersten Lauf senden (statt den Zustand nur zu initialisieren)'
         type: boolean
-        default: true
+        default: false
       dry_run:
         description: 'Nur Nachrichten ausgeben, nichts per WhatsApp senden'
         type: boolean
@@ -24,7 +21,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: daily-tech-newsletter
+  group: tech-newsletter
   cancel-in-progress: false
 
 jobs:
@@ -42,7 +39,7 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Build & send newsletter
+      - name: Send new articles
         env:
           CALLMEBOT_PHONE: ${{ secrets.CALLMEBOT_PHONE }}
           CALLMEBOT_APIKEY: ${{ secrets.CALLMEBOT_APIKEY }}
@@ -56,14 +53,25 @@ jobs:
           fi
           python -m newsletter.main $ARGS
 
-      - name: Commit & push digest archive
+      - name: Commit & push state + archive
         run: |
           git config user.name "tech-newsletter-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add digests docs
-          if ! git diff --cached --quiet; then
-            git commit -m "chore: newsletter digest $(date -u +'%Y-%m-%d')"
-            git push
-          else
-            echo "Keine Digest-Änderungen zum Committen."
+          git add state digests docs
+          if git diff --cached --quiet; then
+            echo "Nichts Neues verschickt - nichts zu committen."
+            exit 0
           fi
+          git commit -m "chore: newsletter state $(date -u +'%Y-%m-%dT%H:%MZ')"
+          # Another run (or a manual push) may have landed meanwhile; rebase
+          # rather than fail, so a busy day can't wedge the schedule.
+          for attempt in 1 2 3; do
+            if git push; then
+              exit 0
+            fi
+            echo "Push fehlgeschlagen (Versuch $attempt) - rebase und erneut versuchen."
+            git pull --rebase origin main || true
+            sleep $((attempt * 4))
+          done
+          echo "::error::Push nach 3 Versuchen fehlgeschlagen."
+          exit 1

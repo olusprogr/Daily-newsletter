@@ -45,16 +45,3 @@ def categorize(item):
         if any(kw in text for kw in keywords):
             return name
     return None
-
-
-def categorize_items(items, max_per_category=5):
-    """Bucket items by category, newest first, capped per category."""
-    buckets = {name: [] for name, _ in CATEGORIES}
-    for item in sorted(items, key=lambda i: i["published"], reverse=True):
-        cat = categorize(item)
-        if cat is None:
-            continue
-        if len(buckets[cat]) >= max_per_category:
-            continue
-        buckets[cat].append(item)
-    return buckets
