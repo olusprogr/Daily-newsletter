@@ -1,6 +1,24 @@
 {
   "items": [
     {
+      "link": "https://mezha.net/eng/bukvy/ca117584_denmark_requires_oral/",
+      "title": "Denmark Requires Oral Defenses for Students' Written Work to Counter AI Cheating",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-08T18:09:31+00:00",
+      "sent_at": "2026-08-08T19:26:04.583493+00:00"
+    },
+    {
+      "link": "https://hackaday.com/2026/08/08/want-energy-efficiency-dude-youre-getting-a-dell/",
+      "title": "Can Intel finally beat ARM on performance per Watt?",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Hardware",
+      "published": "2026-08-08T16:04:36+00:00",
+      "sent_at": "2026-08-08T19:26:04.583493+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/pc-components/gpus/nvidia-rtx-5090-ships-in-bizarre-8-motherboard-bundle-retailers-hold-gpus-hostage-similar-to-the-crypto-boom",
       "title": "Nvidia RTX 5090 ships in bizarre 8-motherboard bundle — retailers hold GPUs hostage similar to the crypto boom",
       "summary": "Taiwanese ecommerce platform PChome24h is packaging RTX 5090 GPUs with a crazy number of motherboards, entry-to-mid-range GPUs, and several other components. While interesting, these combos are alarming as they show the direction that the PC building industry is headed.",
