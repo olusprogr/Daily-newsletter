@@ -2,14 +2,17 @@ name: Daily Tech Newsletter
 
 on:
   schedule:
-    # 10:00 Europe/Berlin during CEST (summer, UTC+2)
+    # ~10:00 Europe/Berlin during CEST (summer, UTC+2). Whichever of these two
+    # runs first each day sends the newsletter; the other one finds today's
+    # digest already committed and skips - so this also acts as an automatic
+    # retry if the first run fails (see newsletter/main.py).
     - cron: '0 8 * * *'
-    # 10:00 Europe/Berlin during CET (winter, UTC+1)
+    # ~10:00 Europe/Berlin during CET (winter, UTC+1)
     - cron: '0 9 * * *'
   workflow_dispatch:
     inputs:
       force:
-        description: 'Trotzdem senden, auch außerhalb des 10-Uhr-Fensters'
+        description: 'Trotzdem senden, auch wenn heute schon ein Digest existiert'
         type: boolean
         default: true
       dry_run:

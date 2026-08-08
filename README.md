@@ -57,13 +57,20 @@ CallMeBot ist ein kostenloser Dienst für private WhatsApp-Nachrichten per API.
 
 Der Workflow `.github/workflows/newsletter.yml` läuft automatisch, sobald er
 im **default branch** (`main`) liegt — GitHub führt geplante (`schedule`)
-Workflows nur dort aus. Es gibt zwei Cron-Einträge (08:00 und 09:00 UTC), weil
-Deutschland zwischen CET/CEST wechselt; das Skript selbst prüft die aktuelle
-Berliner Uhrzeit und sendet nur, wenn es wirklich ~10 Uhr ist — der jeweils
-"falsche" Cron-Lauf überspringt sich also automatisch selbst.
+Workflows nur dort aus. Es gibt zwei Cron-Einträge (~08:00 und ~09:00 UTC),
+weil Deutschland zwischen CET/CEST wechselt. Statt anhand der Uhrzeit zu
+raten, ob "jetzt wirklich 10 Uhr ist" (fehleranfällig bei Zeitumstellungen),
+prüft das Skript live gegen das Repo: Existiert für heute schon ein Digest
+(`digests/YYYY-MM-DD.md`), war der Newsletter schon verschickt, und der Lauf
+überspringt sich. Wer zuerst am Tag läuft, verschickt also — der andere ist
+ein No-Op. Das hat einen praktischen Nebeneffekt: Schlägt der erste Lauf mal
+fehl (z. B. Netzwerkfehler), sendet der zweite eine Stunde später automatisch
+als Retry.
 
 Manuell testen: **Actions → Daily Tech Newsletter → Run workflow** (mit
 `dry_run: true` sendet er nur zur Kontrolle ins Workflow-Log, ohne WhatsApp).
+`force: true` (Standard beim manuellen Trigger) sendet auch dann, wenn für
+heute schon ein Digest existiert.
 
 ### 3. Archiv-Webseite (optional, aber empfohlen)
 
@@ -82,8 +89,9 @@ pip install -r requirements.txt
 python -m newsletter.main --force --dry-run
 ```
 
-`--force` überspringt das 10-Uhr-Zeitfenster, `--dry-run` sendet nichts an
-WhatsApp, sondern gibt die Nachrichten nur im Terminal aus.
+`--force` sendet auch dann, wenn für heute schon ein Digest existiert;
+`--dry-run` sendet nichts an WhatsApp, sondern gibt die Nachrichten nur im
+Terminal aus.
 
 ## Wie die Zusammenfassung funktioniert
 
