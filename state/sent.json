@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/tech-industry/space/intels-proposed-orbital-data-centers-would-manage-thousands-of-simple-leo-satellites-two-tier-network-puts-the-brains-of-satellite-constellations-in-higher-orbit",
+      "title": "Intel's proposed orbital data centers would manage thousands of simple LEO satellites —two-tier network puts the brains of satellite constellations in higher orbit",
+      "summary": "Intel’s orbital data center architecture uses powerful higher-orbit satellites to manage LEO constellations, reducing reliance on terrestrial control centers.",
+      "source": "Tom's Hardware",
+      "category": "Innovationen",
+      "published": "2026-08-08T11:45:00+00:00",
+      "sent_at": "2026-08-08T11:53:20.224898+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/space/2026/08/the-first-self-driving-vehicle-on-mars-has-proven-to-be-a-smashing-success/",
+      "title": "The first self-driving vehicle on Mars has proven to be a smashing success",
+      "summary": "About 90 percent of the distance driven by Perseverance has been autonomous.",
+      "source": "Ars Technica",
+      "category": "Autonomes Fahren",
+      "published": "2026-08-08T11:30:48+00:00",
+      "sent_at": "2026-08-08T11:53:20.224898+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/science/2026/08/deepminds-hurricane-model-bought-forecasters-an-extra-day/",
+      "title": "DeepMind’s hurricane breakthrough has surprised weather scientists",
+      "summary": "Open source WeatherNext model can make accurate predictions with lower-resolution weather data.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-08-08T11:05:50+00:00",
+      "sent_at": "2026-08-08T11:53:20.224898+00:00"
+    },
+    {
+      "link": "https://theclaudyssey.com/",
+      "title": "The Claudyssey: A line-for-line translation of Homer's Odyssey by Claude Fable 5",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-07T17:55:14+00:00",
+      "sent_at": "2026-08-08T11:53:20.224898+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/streaming/976881/disney-plus-ai-recommendation-espn-search",
+      "title": "Disney Plus tries a new AI-powered search",
+      "summary": "Disney is testing a new AI-powered tool for Disney Plus that uses a natural language search, a voice query, or a suggested prompt to create a customized row of show and movie recommendations. Disney Plus, like other streaming services, can recommend shows to watch based on your viewing history. But the company says this new [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-08-07T17:53:44+00:00",
+      "sent_at": "2026-08-08T11:53:20.224898+00:00"
+    },
+    {
+      "link": "https://app.dealroom.co/news/feed/oracle-bans-ai-generated-code-from-openjdk-despite-ellison-s-claim-oracle-isn-t-writing-its-own-code",
+      "title": "Oracle bans AI-generated code from OpenJDK",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-07T17:36:30+00:00",
+      "sent_at": "2026-08-08T11:53:20.224898+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/gadgets/2026/08/openais-expensive-smart-speaker-will-use-moving-parts-to-seem-more-alive/",
+      "title": "OpenAI’s expensive smart speaker will use moving parts to seem “more alive”",
+      "summary": "Gurman report claims OpenAI confirmed the speaker is not an Apple ripoff.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-08-07T17:36:22+00:00",
+      "sent_at": "2026-08-08T11:53:20.224898+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2232601/korean-lunar-orbiter-snaps-first-pics-of-the-spacex-falcon-9-crash-site-on-the-moon/",
+      "title": "Korean lunar orbiter snaps first pics of the SpaceX Falcon 9 crash site on the moon",
+      "summary": "NASA believes the crater left by the rocket is around 60 feet wide.",
+      "source": "Engadget",
+      "category": "Innovationen",
+      "published": "2026-08-07T17:29:08+00:00",
+      "sent_at": "2026-08-08T11:53:20.224898+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/pc-components/cpus/hardware-researcher-spins-up-cpu-deoptimization-project-to-find-the-slowest-machine-code-worst-offender-takes-198-billion-cycles-to-execute",
       "title": "Hardware researcher spins up 'CPU deoptimization' project to find the slowest single x86 instruction, creates hall of shame — worst offender takes 198 billion cycles spanning 62 seconds to execute",
       "summary": "One hardware researcher, Christopher Domas (@xoreaxeaxeax on GitHub), is taking a different approach with the CPU Deoptimization leaderboard, which looks not to make Assembly instructions run as fast as possible, but as slow as possible to find the single instruction with the highest latency.",
