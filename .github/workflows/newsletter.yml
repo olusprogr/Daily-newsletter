@@ -1,0 +1,66 @@
+name: Daily Tech Newsletter
+
+on:
+  schedule:
+    # 10:00 Europe/Berlin during CEST (summer, UTC+2)
+    - cron: '0 8 * * *'
+    # 10:00 Europe/Berlin during CET (winter, UTC+1)
+    - cron: '0 9 * * *'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Trotzdem senden, auch außerhalb des 10-Uhr-Fensters'
+        type: boolean
+        default: true
+      dry_run:
+        description: 'Nur Nachrichten ausgeben, nichts per WhatsApp senden'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-tech-newsletter
+  cancel-in-progress: false
+
+jobs:
+  build-and-send:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build & send newsletter
+        env:
+          CALLMEBOT_PHONE: ${{ secrets.CALLMEBOT_PHONE }}
+          CALLMEBOT_APIKEY: ${{ secrets.CALLMEBOT_APIKEY }}
+        run: |
+          ARGS=""
+          if [ "${{ github.event.inputs.force }}" = "true" ]; then
+            ARGS="$ARGS --force"
+          fi
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            ARGS="$ARGS --dry-run"
+          fi
+          python -m newsletter.main $ARGS
+
+      - name: Commit & push digest archive
+        run: |
+          git config user.name "tech-newsletter-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add digests docs
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: newsletter digest $(date -u +'%Y-%m-%d')"
+            git push
+          else
+            echo "Keine Digest-Änderungen zum Committen."
+          fi
