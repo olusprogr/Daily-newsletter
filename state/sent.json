@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/",
+      "title": "DeepMind's WeatherNext model achieves breakthrough forecasting cyclones",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-08T09:18:50+00:00",
+      "sent_at": "2026-08-08T13:42:01.383025+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2229315/ai-changing-cybersecurity-quick-terrifying-way/",
+      "title": "AI is changing cybersecurity in quick and terrifying ways",
+      "summary": "Hackers employing AI in their tactics are finding ways to exploit vulnerabilities that didn't even exist before.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-08-07T16:30:00+00:00",
+      "sent_at": "2026-08-08T13:42:01.383025+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/08/07/cloudflare-launches-kitesurf-a-browser-built-for-ai-agents/",
+      "title": "Cloudflare launches Kitesurf, a browser built for AI agents",
+      "summary": "Kitesurf is a cloud-hosted browser designed for AI agents instead of people. It uses less computing power than Chromium for common automation tasks, helping developers build browser-based AI agents more efficiently.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-07T16:16:09+00:00",
+      "sent_at": "2026-08-08T13:42:01.383025+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/cpus/amazon-cracks-down-on-cpu-waste-among-engineers-as-agentic-ai-crunch-intensifies-cpu-demand-makes-low-utilization-ec2-instances-a-hot-commodity",
+      "title": "Amazon cracks down on 'CPU waste' among engineers as agentic AI crunch intensifies — CPU demand makes low-utilization EC2 instances a hot commodity [Updated]",
+      "summary": "Amazon Web Services is telling engineers to slow down on EC2 usage as it struggles to meet CPU capacity demand for external customers.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-08-07T15:49:52+00:00",
+      "sent_at": "2026-08-08T13:42:01.383025+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/mamdani-assembles-his-nyc-tech-team/",
+      "title": "Zohran Mamdani’s NYC Tech Team Is What DOGE Should Have Been",
+      "summary": "The mayor of New York City has assembled a crew of Silicon Valley and United States Digital Service veterans to overhaul city services with better software.",
+      "source": "Wired",
+      "category": "Hardware",
+      "published": "2026-08-07T15:00:00+00:00",
+      "sent_at": "2026-08-08T13:42:01.383025+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/data-centers/protesters-haul-a-guillotine-to-city-council-meeting-about-a-potential-ai-data-center-company-rep-cornered-by-protestors-it-no-longer-felt-safe-to-stay-developer-escorted-out-by-police",
+      "title": "Protesters haul a guillotine to city council meeting about a potential AI data center, company rep cornered by protestors — ‘ it no longer felt safe to stay,’ developer escorted out by police",
+      "summary": "Some protesters brought a guillotine to public consultation for a potential data center in Salem, Oregon. Even though this was displayed outside the venue, it was a confrontation between the data center's representatives and some of the community members that led the latter to leave early.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-08-07T14:32:26+00:00",
+      "sent_at": "2026-08-08T13:42:01.383025+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/08/07/chinese-ai-model-kimi-escaped-its-cybersecurity-testing-environment-researchers-say/",
+      "title": "Chinese AI model Kimi escaped its cybersecurity testing environment, researchers say",
+      "summary": "In the Kimi test, the sandbox designed to contain the experiment was not properly configured.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-07T14:28:31+00:00",
+      "sent_at": "2026-08-08T13:42:01.383025+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/08/07/airbnb-says-ai-is-helping-it-ship-features-faster-as-it-tests-a-new-search-function/",
+      "title": "Airbnb says AI is helping it ship features faster as it tests a new search function",
+      "summary": "Airbnb will debut a new AI-powered search experience with a toggle.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-07T14:22:49+00:00",
+      "sent_at": "2026-08-08T13:42:01.383025+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/pc-components/ram/chinas-memory-making-champion-smashes-ddr5-8800-barrier-on-amd-platform-cxmt-chips-close-the-gap-with-sk-hynix",
       "title": "China's memory-making champion smashes DDR5-8800 barrier on AMD platform — CXMT chips close the gap with SK hynix",
       "summary": "Colorful shows off the overclocking potential on new memory kits equipped with CXMT integrated circuits.",
