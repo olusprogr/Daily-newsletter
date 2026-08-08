@@ -24,7 +24,8 @@ def build_markdown_digest(buckets, window_start, window_end):
         for item in items:
             summary = two_sentences(item["summary"], item["title"])
             lines.append(f"**{item['title']}** _({item['source']})_")
-            lines.append(summary)
+            if summary:
+                lines.append(summary)
             lines.append(f"[Weiterlesen]({item['link']})")
             lines.append("")
             total += 1
@@ -55,7 +56,11 @@ def build_whatsapp_messages(buckets, window_start, window_end, max_chars=1400):
         block_parts = [f"{CATEGORY_EMOJI.get(cat, '')} *{cat}*"]
         for item in items:
             summary = two_sentences(item["summary"], item["title"])
-            block_parts.append(f"• *{item['title']}*\n{summary}\n{item['link']}")
+            body = f"• *{item['title']}*"
+            if summary:
+                body += f"\n{summary}"
+            body += f"\n{item['link']}"
+            block_parts.append(body)
         block = "\n\n".join(block_parts)
 
         if len(current) + len(block) > max_chars and current.strip() != header.strip():
