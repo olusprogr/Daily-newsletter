@@ -45,38 +45,38 @@ def run(force=False, dry_run=False, state_path=state.STATE_PATH):
     first_run = not os.path.exists(state_path)
 
     items = fetch_all_items(window_start.astimezone(UTC), now.astimezone(UTC))
-    print(f"[info] {len(items)} Artikel im 24h-Fenster abgerufen.")
+    print(f"[info] fetched {len(items)} articles in the 24h window.")
 
     categorized = []
     for item in items:
         cat = categorize(item)
         if cat:
             categorized.append({**item, "category": cat})
-    print(f"[info] {len(categorized)} davon fallen in eine der Kategorien.")
+    print(f"[info] {len(categorized)} of them fall into one of the categories.")
 
     already = state.sent_links(known)
     new_items = [i for i in categorized if i["link"] not in already]
     new_items.sort(key=lambda i: i["published"], reverse=True)
-    print(f"[info] {len(new_items)} davon wurden noch nie verschickt.")
+    print(f"[info] {len(new_items)} of those have never been sent.")
 
     if first_run and not force:
         seeded = state.record(known, new_items)
         state.save(seeded, state_path)
         print(
-            f"[seed] Erster Lauf: {len(new_items)} Artikel als 'bekannt' markiert, "
-            "ohne sie zu verschicken (sonst käme das ganze 24h-Fenster auf einmal). "
-            "Ab dem nächsten Lauf geht nur noch wirklich Neues raus."
+            f"[seed] first run: marked {len(new_items)} articles as known without "
+            "sending them (the whole 24h window would arrive at once otherwise). "
+            "From the next run on, only genuinely new articles go out."
         )
         return
 
     if not new_items:
-        print("[info] Nichts Neues seit dem letzten Lauf - kein Versand.")
+        print("[info] nothing new since the last run - not sending.")
         return
 
     if len(new_items) > MAX_ITEMS_PER_RUN:
         print(
-            f"[info] Auf {MAX_ITEMS_PER_RUN} Artikel begrenzt; der Rest kommt beim "
-            "nächsten Lauf in 30 Minuten."
+            f"[info] capped at {MAX_ITEMS_PER_RUN} articles; the rest follows on the "
+            "next run in 30 minutes."
         )
         new_items = new_items[:MAX_ITEMS_PER_RUN]
 
@@ -88,19 +88,18 @@ def run(force=False, dry_run=False, state_path=state.STATE_PATH):
             print(m)
             print("\n---\n")
         print(
-            "[dry-run] state/sent.json wurde bewusst NICHT aktualisiert - sonst würde "
-            "der nächste echte Lauf diese Artikel für schon verschickt halten."
+            "[dry-run] state/sent.json was deliberately NOT updated - otherwise the "
+            "next real run would consider these articles already sent."
         )
         return
 
     sent = send_messages(messages)
     if sent == 0:
         raise RuntimeError(
-            "Keine einzige WhatsApp-Nachricht konnte zugestellt werden - der Zustand "
-            "wird deshalb nicht fortgeschrieben, damit der nächste Lauf dieselben "
-            "Artikel erneut versucht."
+            "Not a single WhatsApp message could be delivered - the state is therefore "
+            "left untouched so the next run retries these same articles."
         )
-    print(f"[info] {sent}/{len(messages)} WhatsApp-Nachrichten zugestellt.")
+    print(f"[info] delivered {sent}/{len(messages)} WhatsApp messages.")
 
     known = state.record(known, new_items)
     state.save(known, state_path)
@@ -109,7 +108,7 @@ def run(force=False, dry_run=False, state_path=state.STATE_PATH):
     digest_path = f"digests/{now:%Y-%m-%d}.md"
     with open(digest_path, "w", encoding="utf-8") as f:
         f.write(build_daily_digest_from_records(state.items_sent_on(known, now), now))
-    print(f"[info] Archiv aktualisiert: {digest_path}")
+    print(f"[info] archive updated: {digest_path}")
 
     build_index.build()
 
@@ -119,7 +118,7 @@ def main():
     parser.add_argument(
         "--force",
         action="store_true",
-        help="Auch beim allerersten Lauf senden, statt den Zustand nur zu initialisieren.",
+        help="Send even on the very first run instead of just initialising the state.",
     )
     parser.add_argument("--dry-run", action="store_true", help="Print WhatsApp messages instead of sending them.")
     args = parser.parse_args()

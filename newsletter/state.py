@@ -28,7 +28,7 @@ def load(path=STATE_PATH):
         try:
             data = json.load(f)
         except json.JSONDecodeError:
-            print(f"[warn] {path} ist beschädigt - starte mit leerem Zustand.")
+            print(f"[warn] {path} is corrupt - starting from an empty state.")
             return []
     return data.get("items", [])
 

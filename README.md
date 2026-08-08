@@ -10,12 +10,24 @@ Keyword-Filter (kostenlos, keine Rate-Limits, kein Vendor-Lock-in).
 
 ## Themen
 
-- 🤖 **AI**
-- 🚗 **Autonomes Fahren**
-- 💻 **Hardware**
-- 💡 **Innovationen** (Robotik, Space, Energie, Biotech, ...)
+- 🔒 **Cybersecurity** — Schwachstellen, Angriffe, Datenlecks, Verschlüsselung
+- 🚗 **Autonomous Driving & EVs** — Robotaxis, Fahrassistenz, Elektromobilität
+- 🚀 **Space & Robotics** — Raumfahrt, Satelliten, Humanoide, Drohnen
+- ⚡ **Energy & Climate Tech** — Fusion, Solar, Netze, Rechenzentrums-Strom
+- 🧬 **Science & Biotech** — Forschung, Studien, Genetik, Materialien
+- 💻 **Chips & Hardware** — Prozessoren, GPUs, Halbleiterfertigung, Geräte
+- 🤖 **AI & Machine Learning** — Modelle, LLMs, Agenten, KI-Regulierung
+- ⌨️ **Software & Programming** — Sprachen, Frameworks, Open Source
 
 Pro Beitrag: Titel, max. 2 kurze Sätze Zusammenfassung, Link zum Weiterlesen.
+**Die Nachrichten selbst sind auf Englisch**, ebenso das Archiv — nur diese
+README ist auf Deutsch.
+
+Die Reihenfolge oben ist die Priorität: der erste Treffer gewinnt. Sie geht
+absichtlich von spezifisch nach allgemein, weil „AI" und „Software" auf sehr
+viele Schlagzeilen passen. Eine Meldung über einen KI-Beschleuniger landet
+deshalb unter *Chips & Hardware* und nicht unter *AI* — sonst wäre der
+Chip-Bereich immer leer. Anpassen in `newsletter/categorize.py`.
 
 ## Wie „nur Neues" funktioniert
 
@@ -44,7 +56,18 @@ Ausschließlich **redaktionell betreute Publikationen** — jede mit Redaktion,
 Impressum und namentlichen Autoren:
 
 TechCrunch, The Verge, Ars Technica, Wired, Engadget, VentureBeat, Electrek,
-Tom's Hardware, IEEE Spectrum, MIT Technology Review.
+Tom's Hardware, IEEE Spectrum, MIT Technology Review, The Register,
+BBC Technology, Guardian Technology.
+
+> **Zu Reuters und AP:** beide haben ihre öffentlichen RSS-Feeds abgeschaltet
+> (`feeds.reuters.com` ist seit Jahren tot). Ohne bezahlten Agentur-Zugang
+> gibt es keinen sauberen Weg dorthin. BBC Technology und Guardian Technology
+> stehen deshalb als Ersatz drin: breit, redaktionell kontrolliert, wenig
+> Meinung. Wer die Agenturen wirklich braucht, kommt an einer kostenpflichtigen
+> Lizenz nicht vorbei — Scraping wäre fragil und rechtlich heikel.
+
+Tote Feeds fallen auf: liefert eine Quelle keine Einträge, schreibt der Lauf
+`[warn] <Quelle> returned no entries` ins Log, statt sie still zu übergehen.
 
 > **Bewusst nicht dabei:** nutzergenerierte Aggregatoren wie Hacker News,
 > Reddit oder Lobsters. Dort trägt jeder ein, was er möchte — ein Upvote ist

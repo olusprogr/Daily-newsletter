@@ -1,11 +1,16 @@
 """Build the WhatsApp message(s) for new articles and the daily archive page."""
 from .summarize import two_sentences
 
+# Also defines the order categories appear in a message.
 CATEGORY_EMOJI = {
-    "AI": "🤖",
-    "Autonomes Fahren": "🚗",
-    "Hardware": "💻",
-    "Innovationen": "💡",
+    "Cybersecurity": "🔒",
+    "Autonomous Driving & EVs": "🚗",
+    "Space & Robotics": "🚀",
+    "Energy & Climate Tech": "⚡",
+    "Science & Biotech": "🧬",
+    "Chips & Hardware": "💻",
+    "AI & Machine Learning": "🤖",
+    "Software & Programming": "⌨️",
 }
 
 
@@ -21,8 +26,8 @@ def build_instant_messages(new_items, now, max_chars=1400):
     """WhatsApp message(s) for articles that just showed up in the feeds."""
     count = len(new_items)
     header = (
-        f"📰 *Tech News – {count} neue{'r' if count == 1 else ''} Artikel*\n"
-        f"Stand: {now:%d.%m. %H:%M}\n"
+        f"📰 *Tech News – {count} new article{'' if count == 1 else 's'}*\n"
+        f"{now:%a %d %b, %H:%M}\n"
     )
 
     messages = []
@@ -44,7 +49,7 @@ def build_instant_messages(new_items, now, max_chars=1400):
 
         if len(current) + len(block) > max_chars and current.strip() != header.strip():
             messages.append(current.strip())
-            current = header + "(Fortsetzung)\n"
+            current = header + "(continued)\n"
 
         current += "\n" + block + "\n"
 
@@ -58,7 +63,7 @@ def build_daily_digest_from_records(records, day):
     """Rebuild a day's archive page from what was actually sent that day."""
     lines = [
         f"# 📰 Tech Newsletter – {day:%d.%m.%Y}",
-        f"_{len(records)} Artikel im Laufe des Tages verschickt (Europe/Berlin)_",
+        f"_{len(records)} article{'' if len(records) == 1 else 's'} sent during the day (Europe/Berlin)_",
         "",
     ]
     for cat, items in _bucket_by_category(records).items():
@@ -71,10 +76,10 @@ def build_daily_digest_from_records(records, day):
             lines.append(f"**{item['title']}** _({item['source']})_")
             if summary:
                 lines.append(summary)
-            lines.append(f"[Weiterlesen]({item['link']})")
+            lines.append(f"[Read more]({item['link']})")
             lines.append("")
 
     if not records:
-        lines.append("_Keine relevanten Tech-News an diesem Tag._")
+        lines.append("_No relevant tech news on this day._")
 
     return "\n".join(lines)

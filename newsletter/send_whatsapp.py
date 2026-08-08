@@ -24,9 +24,9 @@ def send_messages(messages, delay_seconds=8):
     apikey = os.environ.get("CALLMEBOT_APIKEY")
     if not phone or not apikey:
         raise RuntimeError(
-            "CALLMEBOT_PHONE und CALLMEBOT_APIKEY müssen als GitHub Secrets gesetzt sein "
-            "(Settings → Secrets and variables → Actions → New repository secret). "
-            "Im Actions-Log stehen sie sonst leer statt als '***'."
+            "CALLMEBOT_PHONE and CALLMEBOT_APIKEY must be set as GitHub secrets "
+            "(Settings -> Secrets and variables -> Actions -> New repository secret). "
+            "If they are missing, the Actions log shows them empty instead of '***'."
         )
 
     sent = 0
@@ -38,7 +38,7 @@ def send_messages(messages, delay_seconds=8):
             if resp.status_code < 400:
                 sent += 1
             else:
-                print(f"[warn] CallMeBot lehnte Nachricht {i + 1}/{len(messages)} ab (HTTP {resp.status_code}).")
+                print(f"[warn] CallMeBot rejected message {i + 1}/{len(messages)} (HTTP {resp.status_code}).")
         except Exception as exc:
             print(f"[warn] failed to send WhatsApp message {i + 1}/{len(messages)}: {exc}")
 

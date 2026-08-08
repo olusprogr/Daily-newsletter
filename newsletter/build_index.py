@@ -8,10 +8,10 @@ DIGESTS_DIR = "digests"
 DOCS_DIR = "docs"
 
 PAGE_TEMPLATE = """<!doctype html>
-<html lang="de">
+<html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Daily Tech Newsletter – Archiv</title>
+<title>Tech Newsletter – Archive</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
   :root {{ color-scheme: light dark; }}
@@ -32,7 +32,7 @@ PAGE_TEMPLATE = """<!doctype html>
 </style>
 </head>
 <body>
-<h1>📰 Daily Tech Newsletter – Archiv</h1>
+<h1>📰 Tech Newsletter – Archive</h1>
 {content}
 </body>
 </html>
@@ -49,7 +49,7 @@ def build():
 
     os.makedirs(DOCS_DIR, exist_ok=True)
     with open(os.path.join(DOCS_DIR, "index.html"), "w", encoding="utf-8") as f:
-        f.write(PAGE_TEMPLATE.format(content="\n".join(articles) or "<p>Noch keine Ausgaben.</p>"))
+        f.write(PAGE_TEMPLATE.format(content="\n".join(articles) or "<p>No issues yet.</p>"))
 
 
 if __name__ == "__main__":

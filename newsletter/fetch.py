@@ -22,6 +22,11 @@ FEEDS = [
     ("Tom's Hardware", "https://www.tomshardware.com/feeds/all"),
     ("IEEE Spectrum", "https://spectrum.ieee.org/rss/fulltext"),
     ("MIT Technology Review", "https://www.technologyreview.com/feed/"),
+    ("The Register", "https://www.theregister.com/headlines.atom"),
+    # Reuters and AP retired their public RSS feeds, so these two stand in for
+    # the wire-service angle: broad, editorially controlled, low on opinion.
+    ("BBC Technology", "https://feeds.bbci.co.uk/news/technology/rss.xml"),
+    ("Guardian Technology", "https://www.theguardian.com/uk/technology/rss"),
 ]
 
 
@@ -47,6 +52,12 @@ def fetch_rss_items(window_start, window_end):
         except Exception as exc:  # pragma: no cover - network failures shouldn't kill the whole run
             print(f"[warn] failed to fetch {source}: {exc}")
             continue
+        if not parsed.entries:
+            status = getattr(parsed, "status", "?")
+            reason = getattr(parsed, "bozo_exception", "") or f"HTTP {status}"
+            print(f"[warn] {source} returned no entries ({reason}) - check the feed URL.")
+            continue
+
         for entry in parsed.entries:
             published = _entry_time(entry)
             if not published or not (window_start <= published <= window_end):
