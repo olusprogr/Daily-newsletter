@@ -10,8 +10,12 @@ if today's digest file already exists, a newsletter was already sent today,
 so this run is a no-op. That means the two daily cron entries (one per DST
 state) never need to fight over which one is "right" - whichever runs first
 each day sends the newsletter, and the second one harmlessly finds the digest
-already there and skips. As a side effect, the second run also acts as an
-automatic retry if the first one failed (e.g. a transient network error).
+already there and skips.
+
+For that marker to be honest it must mean "delivered", not merely "built", so
+the digest is written only *after* WhatsApp actually accepted the messages.
+A failed send (or a --dry-run) therefore leaves no digest behind, and the
+second cron run of the day retries for real.
 
 Use --force to send anyway even if today's digest already exists (e.g. for
 manual re-runs/testing).
@@ -55,13 +59,6 @@ def run(force=False, dry_run=False):
     for cat, cat_items in buckets.items():
         print(f"[info]   {cat}: {len(cat_items)} Artikel")
 
-    markdown_digest = build_markdown_digest(buckets, window_start, window_end)
-    with open(digest_path, "w", encoding="utf-8") as f:
-        f.write(markdown_digest)
-    print(f"[info] Digest geschrieben nach {digest_path}")
-
-    build_index.build()
-
     messages = build_whatsapp_messages(buckets, window_start, window_end)
 
     if dry_run:
@@ -69,9 +66,28 @@ def run(force=False, dry_run=False):
         for m in messages:
             print(m)
             print("\n---\n")
+        print(
+            f"[dry-run] {digest_path} wurde bewusst NICHT geschrieben - sonst würde der "
+            "echte Lauf später am Tag denken, der Newsletter sei schon raus, und sich "
+            "überspringen."
+        )
         return
 
-    send_messages(messages)
+    sent = send_messages(messages)
+    if sent == 0:
+        raise RuntimeError(
+            "Keine einzige WhatsApp-Nachricht konnte zugestellt werden - der Digest wird "
+            "deshalb nicht archiviert, damit der zweite Cron-Lauf heute automatisch erneut "
+            "versucht."
+        )
+    print(f"[info] {sent}/{len(messages)} WhatsApp-Nachrichten zugestellt.")
+
+    markdown_digest = build_markdown_digest(buckets, window_start, window_end)
+    with open(digest_path, "w", encoding="utf-8") as f:
+        f.write(markdown_digest)
+    print(f"[info] Digest geschrieben nach {digest_path}")
+
+    build_index.build()
 
 
 def main():

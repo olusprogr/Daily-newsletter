@@ -48,6 +48,12 @@ CallMeBot ist ein kostenloser Dienst für private WhatsApp-Nachrichten per API.
    - `CALLMEBOT_PHONE` → deine Nummer im internationalen Format, z. B. `+491701234567`
    - `CALLMEBOT_APIKEY` → der API-Key aus Schritt 4
 
+> ⚠️ Ohne diese beiden Secrets läuft der Workflow zwar **grün durch**, verschickt
+> aber nichts. Kontrolle: **Actions → letzter Lauf → Build & send newsletter →
+> Abschnitt `env:`**. Dort muss `CALLMEBOT_APIKEY: ***` stehen. Steht die Zeile
+> leer (`CALLMEBOT_APIKEY:`), ist das Secret nicht gesetzt — GitHub maskiert
+> gesetzte Secrets immer als `***`.
+
 > Hinweis: CallMeBot ist ein kostenloser Community-Dienst mit Rate-Limits.
 > Für einen Newsletter 1×/Tag ist das unproblematisch. Bei Bedarf kann
 > `newsletter/send_whatsapp.py` später gegen Twilio oder die offizielle
@@ -92,6 +98,11 @@ python -m newsletter.main --force --dry-run
 `--force` sendet auch dann, wenn für heute schon ein Digest existiert;
 `--dry-run` sendet nichts an WhatsApp, sondern gibt die Nachrichten nur im
 Terminal aus.
+
+Ein Digest unter `digests/` wird erst geschrieben, **nachdem** WhatsApp die
+Nachrichten angenommen hat. Ein Dry-Run oder ein fehlgeschlagener Versand
+hinterlässt also keinen Digest — sonst würde der zweite Cron-Lauf des Tages
+fälschlich denken, der Newsletter sei schon raus, und sich überspringen.
 
 ## Wie die Zusammenfassung funktioniert
 
