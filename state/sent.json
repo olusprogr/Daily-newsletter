@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/pc-components/cpus/hardware-researcher-spins-up-cpu-deoptimization-project-to-find-the-slowest-machine-code-worst-offender-takes-198-billion-cycles-to-execute",
+      "title": "Hardware researcher spins up 'CPU deoptimization' project to find the slowest single x86 instruction, creates hall of shame — worst offender takes 198 billion cycles spanning 62 seconds to execute",
+      "summary": "One hardware researcher, Christopher Domas (@xoreaxeaxeax on GitHub), is taking a different approach with the CPU Deoptimization leaderboard, which looks not to make Assembly instructions run as fast as possible, but as slow as possible to find the single instruction with the highest latency.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-08-08T11:20:00+00:00",
+      "sent_at": "2026-08-08T11:24:33.692047+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-creates-16-new-viruses-that-never-existed-in-nature-after-learning-dnas-pattern-from-9-trillion-nucleotides-experts-warn-such-applications-are-way-ahead-of-necessary-guardrails",
+      "title": "AI creates 16 new viruses that never existed in nature after learning DNA’s pattern from 9 trillion nucleotides — experts warn such applications are way ahead of necessary guardrails",
+      "summary": "Researchers used Evo AI models trained on trillions of DNA building blocks to design entirely new viral genomes, 16 of which became viable bacteriophages capable of infecting and reproducing inside E. coli.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-08-08T11:00:00+00:00",
+      "sent_at": "2026-08-08T11:24:33.692047+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/entertainment/976939/roku-fairground-ai-fast-channel",
+      "title": "Watching Roku’s AI channel is like eating from a trough",
+      "summary": "The appeal of free ad-supported streaming television (FAST) channels has always been the way they make it easier to (re)discover classic films and series. But Roku's latest experiment in the FAST space has less to do with traditionally produced entertainment and is entirely focused on giving viewers access to a constant source of AI-generated content. [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-08-07T18:59:46+00:00",
+      "sent_at": "2026-08-08T11:24:33.692047+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/976948/openai-astra-model-pause-critical-cyber-capabilities",
+      "title": "OpenAI puts the brakes on a new model because it&#8217;s supposedly too powerful",
+      "summary": "OpenAI says it is pausing \"internal activities\" around an in-development AI model, Astra, because it doesn't yet meet new security standards the company is putting in place. The announcement follows its recent disclosure that OpenAI models accidentally hacked Hugging Face. Anthropic and Meta have also since admitted that they had AI models that went rogue [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-08-07T18:40:34+00:00",
+      "sent_at": "2026-08-08T11:24:33.692047+00:00"
+    },
+    {
+      "link": "https://www.databricks.com/blog/managing-ai-coding-costs-scale",
+      "title": "Managing AI Coding Costs at Scale",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-07T18:25:17+00:00",
+      "sent_at": "2026-08-08T11:24:33.692047+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/23133103/best-instant-cameras-fujifilm-polaroid-kodak",
+      "title": "The only instant cameras worth your money",
+      "summary": "There’s something magical about using instant cameras that smartphones can’t match. You can capture a moment, print it out, and then give the photo as a gift or hold onto it. Image quality won’t be all that good, but imperfections are part of the allure. We tested instant camera models from popular brands and landed [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-08-07T18:04:08+00:00",
+      "sent_at": "2026-08-08T11:24:33.692047+00:00"
+    },
+    {
+      "link": "https://spectrum.ieee.org/navigating-pivot-tech-expert-leader",
+      "title": "Navigating the Pivot From Tech Expert to Organizational Leader",
+      "summary": "The transition from a purely technical expert or individual contributor position to a broader leadership role is one of the most challenging phases in a STEM career. It requires moving away from relying solely on technical excellence toward mastering systems thinking, adaptive leadership, and team alignment. To help mid-career professionals navigate the shift, the inaugural IEEE International Leadership Conference is designed to provide attendees with practical tools to step into broader responsibility and champion an entrepreneurial mindset. The ILC event is scheduled for 3 and 4 October in Budapest. Registration is open . Thinking beyond technical contributions To successfully step into a leadership role, technical professionals need to look beyond their individual output and focus on “understanding the larger system, and championing innovation by building trust and aligning new ideas with organizational goals,” says IEEE Life Senior Member Daniel Sniezek , cochair of the ILC program committee. Because engineering decisions don’t exist in a vacuum, navigating the larger system requires recognizing how technical choices intersect with the organization’s broader business, operational, and ethical realities, Sniezek says. By letting go of the need to be the sole technical expert and focusing instead on collaborative empowerment, he says, engineers can pivot into transformational leaders who align new initiatives with the organization’s strategic vision. Ultimately, over the span of a career, an individual’s leadership journey evolves far beyond personal advancement to “creating a lasting legacy through the people you develop, the knowledge you share, and the innovations you inspire,” he says. Solving the intrapreneur’s dilemma Championing disruptive ideas within established corporate structures—sometimes called the intrapreneur’s dilemma —does not mean working against the organization. Rather, it requires emerging leaders to act like business owners instead of passive task-takers. To begin thinking like an entrepreneur from within, professionals should shift their focus from merely executing assigned work to proactively identifying hidden areas that would create value for the company, building trust with colleagues, and presenting bold innovations as solutions to the organization’s long-term strategic goals. That kind of self-starting entrepreneurial mindset is how leaders create opportunities out of institutional constraints. IEEE Senior Member Deyasini Majumdar, cochair of the ILC program committee, advises professionals to exercise leadership and strategic thinking skills without being asked. “Within the constraints of established organizational structures you can unearth a treasure trove of opportunities to innovate,” Majumdar says. “Remember: A key trait of an effective leader is to engineer solutions and lead, even in the face of difficulties.” A multidirectional exchange Leadership is a multidirectional exchange of ideas across generations—which is one focus of the ILC . Although emerging leaders can gain invaluable strategic guidance from seasoned executives, the relationship is a dynamic, two-way street. Modern leadership requires established executives to remain active learners. Addressing what senior leaders can glean from their mid-career counterparts, Majumdar emphasizes, the leaders must maintain “the openness to seek opportunities, to quickly adapt, and to learn and grow with everyone around them.” A continuous-learning mindset is what keeps leaders agile and effective in a rapidly changing technological landscape, he says. The mutual openness can serve as a bridge between generations. Whether an emerging professional is making a mid-career pivot from technical expert to manager, or a senior executive is transitioning into a mentoring and advisory role, the fundamental rule of transformational leadership is similar. Success means shifting your focus from individual achievement to enabling the capability, growth, and legacy of others. Building influence and impact To help with the shift toward transformational leadership, the ILC is featuring sessions focused on questions professionals must ask at key career inflection points. Rather than a single workshop, the distributed sessions aim to address diverse professional transitions, such as evaluating promotions, learning how to influence laterally, pitching innovative projects, and sustaining leadership energy. Inflection points include evaluating new internal roles; building lateral or upward trust; pitching an idea about a disruptive project; and facing rapidly expanding responsibilities. The questions include: How do I evaluate career transitions without discarding hard-won experience? How can I exercise leadership through credibility and collaboration, regardless of formal authority? How do I use an entrepreneurial mindset to create value and gain sponsorship for new ideas? How can I avoid the early warning signs of burnout while taking on more responsibility? The conference is designed to equip attendees with systems thinking and communication mastery needed to cultivate influence. Leadership is not just about reaching the top; it is also about engaging in a collaborative effort to multiply your impact across the ecosystem.",
+      "source": "IEEE Spectrum",
+      "category": "Innovationen",
+      "published": "2026-08-07T18:00:01+00:00",
+      "sent_at": "2026-08-08T11:24:33.692047+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/08/07/navee-ut5-ultra-x-superscooter-ego-nexus-power-station-aventon-e-bikes-more/",
+      "title": "Navee UT5 Ultra X superscooter $1,955 low, EGO Nexus power station bundle $799 low, Aventon $1,299 flash sale e-bike lows, more",
+      "summary": "We’re closing out this week with plenty of low prices, starting with the premium golden Navee UT5 Ultra X Electric SuperScooter down at its $1,955 low for the first time since launching, alongside two other new low prices on high-performance e-scooters. The EGO Power+ Nexus 1,400W Portable Power Station with 2x 6.0Ah batteries is at a $799 low , while Aventon is offering a second weekend flash sale for the Level 3 Commuter and Pace 4 Cruiser e-bikes back at $1,299 lows . There’s also the Beatbot Summer Smart Sale with up to 38% discounts on robot pool cleaners, the expanded 572Wh EcoFlow RIVER 3 Plus Portable Power Station at its Amazon low, a 3-in-1 Greenworks mower/blower/trimmer bundle low, and more down below. We’ve also got the hangover deals from the past four days at the bottom of the page, like yesterday’s new $449 low on Jackery’s HomePower 1000 v2 Power Station , and more. Head below for other New Green Deals we’ve found today and, of course, Electrek ’s best EV buying and leasing deals . Also, check out the new Electrek Tesla Shop for the best deals on Tesla accessories .",
+      "source": "Electrek",
+      "category": "Innovationen",
+      "published": "2026-08-07T18:00:00+00:00",
+      "sent_at": "2026-08-08T11:24:33.692047+00:00"
+    },
+    {
       "link": "https://www.wired.com/story/how-to-disable-the-gemini-ai-features-in-gmail-and-google-docs/",
       "title": "How to Disable Gemini in Gmail and Google Docs",
       "summary": "New AI toolbars and prompts are showing up in Google Docs and Gmail. If you don’t want Gemini’s help in writing documents and emails, here’s how to turn that stuff off.",
