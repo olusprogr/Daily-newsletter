@@ -1,6 +1,33 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/08/09/historian-jill-lepore-says-the-tech-industry-is-led-by-bad-readers-who-are-undermining-democracy/",
+      "title": "Historian Jill Lepore says Silicon Valley misreads science fiction and undermines democracy",
+      "summary": "On the latest episode of Equity, we spoke to Jill Lepore about \"government by machines\" and why Elon Musk is a bad science fiction reader.",
+      "source": "TechCrunch",
+      "category": "Hardware",
+      "published": "2026-08-09T15:00:00+00:00",
+      "sent_at": "2026-08-09T15:26:59.047289+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/pc-cases/noctua-finds-more-than-half-of-tested-pc-cases-misstate-cpu-cooler-clearances-hands-on-checks-reveal-errors-ranging-from-3-5mm-to-10mm-internal-compatibility-team-conducted-measurements-of-more-than-a-hundred-cases",
+      "title": "Noctua finds more than half of tested PC cases misstate CPU cooler clearances — hands-on checks reveal errors ranging from -3.5mm to +10mm, internal compatibility team conducted measurements of more than a hundred cases",
+      "summary": "Users are asking why some measurements on Noctua's compatibility page are different from manufacturer spec sheets.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-08-09T14:35:00+00:00",
+      "sent_at": "2026-08-09T15:26:59.047289+00:00"
+    },
+    {
+      "link": "https://halfhill.com/byte/1998-12_alpha.html",
+      "title": "The Alpha 21264 CPU: NT's Greatest RISC (1998)",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Hardware",
+      "published": "2026-08-09T10:06:37+00:00",
+      "sent_at": "2026-08-09T15:26:59.047289+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/08/09/the-ai-safety-test-is-becoming-a-safety-risk/",
       "title": "The AI safety test is becoming a safety risk",
       "summary": "AI agents are escaping cybersecurity testing environments and reaching real-world systems, raising questions about whether safety infrastructure, industry standards and regulation can keep pace with increasingly powerful models.",
