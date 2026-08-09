@@ -1,6 +1,42 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/software/microsoft-office/x64-port-of-microsoft-word-for-windows-1-1a-arrives-you-can-now-run-this-seminal-1990-word-processor-natively-in-windows-11",
+      "title": "x64 port of Microsoft Word for Windows 1.1a arrives — you can now run this seminal 1990 word processor natively in Windows 11",
+      "summary": "A developer has ported 1990's Microsoft Word for Windows 1.1a to x64 so it can run natively on Windows 11 PC systems.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-08-09T13:40:00+00:00",
+      "sent_at": "2026-08-09T13:45:53.893451+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/cpus/two-variants-of-nvidias-rtx-spark-show-up-on-geekbench-revealing-a-cut-down-18-core-model-full-20-core-beats-most-x86-mobile-chips-across-multi-core-and-single-core-tests",
+      "title": "Two variants of Nvidia's RTX Spark show up on Geekbench, revealing a cut-down 18-core model — Full 20-core beats most x86 mobile chips across multi-core and single-core tests",
+      "summary": "The 20-core SKU of the RTX Spark that we've known to exist for a long time scored 2,570 points in the single-core test and 23,126 points in the multi-core test. The second, 18-core cut-down SKU scored 2,541 points in the single-core test while its multi-core was 21,776 points.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-08-09T13:20:00+00:00",
+      "sent_at": "2026-08-09T13:45:53.893451+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/08/09/this-former-notorious-red-light-district-is-now-one-of-the-worlds-top-ai-hubs/",
+      "title": "This former notorious red-light district is now one of the world’s top AI hubs",
+      "summary": "More than 20 years ago, King's Cross was one of the seediest area's in London. Now it's sprouting something new.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-09T13:00:00+00:00",
+      "sent_at": "2026-08-09T13:45:53.893451+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/data-centers/amazons-new-7-65gw-texas-ai-data-center-power-plant-could-become-the-largest-source-of-co2-pollution-in-the-us-custom-35-turbine-gas-plant-authorized-to-emit-33-million-tons-of-annual-greenhouse-gases",
+      "title": "Amazon’s new 7.65GW Texas AI data center power plant could become the largest source of CO₂ pollution in the US — custom 35-turbine gas plant authorized to emit 33 million tons of annual greenhouse gases",
+      "summary": "Amazon is reportedly building a 7.65GW natural gas power plant in Texas to feed a new AI data center, with permits allowing up to 33 million tons of CO₂ emissions per year.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-08-09T12:40:00+00:00",
+      "sent_at": "2026-08-09T13:45:53.893451+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/tech-industry/data-centers/kansas-town-silences-public-comment-on-gigawatt-ai-data-center-after-receiving-death-threats-moves-to-virtual-meetings-shift-follows-physics-teachers-arrest-for-clapping-at-data-center-hearing",
       "title": "Kansas town silences public comment on gigawatt AI data center after receiving death threats, moves to virtual meetings — shift follows physics teacher's arrest for clapping at data center hearing",
       "summary": "Emporia, Kansas, switched to virtual city council meetings after death threats intensified against city leaders. The move also canceled public comments, prompting some members of the public to ask why it was affected, too.",
