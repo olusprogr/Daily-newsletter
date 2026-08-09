@@ -1,6 +1,24 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/08/09/embattled-hedge-fund-situational-awareness-invests-400m-in-chip-startup-source-foundry/",
+      "title": "Embattled hedge fund Situational Awareness invests $400M in chip startup Source Foundry",
+      "summary": "The AI-focused hedge fund is still making some big bets.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-09T20:35:17+00:00",
+      "sent_at": "2026-08-09T20:43:39.021841+00:00"
+    },
+    {
+      "link": "https://ai-updates.net/an-openai-strategist-says-ai-labs-should-rival-government-power/",
+      "title": "An OpenAI Strategist Says AI Labs Should Rival Government Power",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-09T16:18:39+00:00",
+      "sent_at": "2026-08-09T20:43:39.021841+00:00"
+    },
+    {
       "link": "https://laurentiugabriel.github.io/blog/articles/how-i-use-llms-to-learn/",
       "title": "How I use LLMs to learn complex topics",
       "summary": "",
