@@ -1,6 +1,15 @@
 {
   "items": [
     {
+      "link": "https://claude.com/blog/auto-mode-default-in-claude-code",
+      "title": "Auto mode is now the default in Claude Code",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-10T03:50:00+00:00",
+      "sent_at": "2026-08-10T05:54:27.132266+00:00"
+    },
+    {
       "link": "https://github.com/eighttrigrams/us-vs-them",
       "title": "Human vs. AI – Diff-based line-level provenance for text under agentic editing",
       "summary": "",
