@@ -1,6 +1,42 @@
 {
   "items": [
     {
+      "link": "https://www.theverge.com/tech/977448/made-by-google-2026-pixel-hardware-launch-event",
+      "title": "What to expect from Google’s 2026 Pixel hardware launch event",
+      "summary": "It's that time of year: On Wednesday, Google is set to host its annual Made by Google hardware launch event for Pixel gadgets. Google itself has already teased new slab-style and foldable Pixel smartphones, but leaks also indicate that the company could announce updated watches, a new color for familiar earbuds, and perhaps a brand [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-08-10T17:30:00+00:00",
+      "sent_at": "2026-08-10T17:49:00.013737+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/gpus/geforce-rtx-50-series-gpu-prices-spike-as-much-as-39-percent-as-blackwell-price-hikes-hit-the-us-rtx-5070-gets-a-36-percent-hike-rtx-5060-up-27-percent-at-the-median-of-newegg-listings",
+      "title": "GeForce RTX 50-series GPU prices spike as much as 39% as Blackwell price hikes hit the US — RTX 5070 gets a 36% hike, RTX 5060 up 27% at the median of Newegg listings",
+      "summary": "After recent news of price hikes on RTX 50-series GPUs in other regions, those same increases now appear to have come Stateside, as Newegg prices for some Blackwell cards have spiked as much as 39% compared to June 2026.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-08-10T16:55:46+00:00",
+      "sent_at": "2026-08-10T17:49:00.013737+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/08/10/49ers-shanahan-tesla-autopilot-crash-phone/",
+      "title": "49ers’ Shanahan crashed his Tesla on Autopilot reaching for his phone",
+      "summary": "San Francisco 49ers head coach Kyle Shanahan crashed his Tesla Model S on July 14 while the car was running on Autopilot. He was reaching for a phone that had dropped out of reach, and he took his eyes off the road. The crash left him with a concussion, a broken nose, three broken ribs, a broken left hand, and 40 stitches over his right eye. And to his credit, he isn’t blaming the car.",
+      "source": "Electrek",
+      "category": "Autonomes Fahren",
+      "published": "2026-08-10T16:55:29+00:00",
+      "sent_at": "2026-08-10T17:49:00.013737+00:00"
+    },
+    {
+      "link": "https://www.wcax.com/2026/08/07/kinney-drugs-pulls-back-ai-phone-assistant-after-hundreds-customer-complaints/",
+      "title": "Kinney Drugs pulls back AI phone assistant after hundreds of customer complaints",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-10T14:56:32+00:00",
+      "sent_at": "2026-08-10T17:49:00.013737+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/pc-components/gpus/nvidia-reportedly-testing-lower-memory-configs-of-rubin-ultra-as-memory-shortage-bites-back-designs-tested-include-as-little-as-192-gb-and-step-back-to-hbm4",
       "title": "Nvidia reportedly testing lower memory configs of Rubin Ultra as memory shortage bites back — designs tested include as little as 192 GB and step back to HBM4",
       "summary": "Nvidia is reportedly testing at least three Rubin Ultra configurations that pack as little as 192 GB of memory, as opposed to the 1 TB of HBM4E originally announced.",
