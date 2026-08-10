@@ -1,6 +1,33 @@
 {
   "items": [
     {
+      "link": "https://www.stoaexchange.com",
+      "title": "Launch HN: Stoa Markets (YC S26) – A Marketplace for GPUs and AI Servers",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-10T16:35:27+00:00",
+      "sent_at": "2026-08-10T19:53:10.627894+00:00"
+    },
+    {
+      "link": "https://pim.murata.com/asset/pim4/siliconCapacitor/SICAP_X2SC422522_PDF_SILICONCAPACITOR",
+      "title": "Extreme 220GHz+Broadband Silicon Capacitor X2SC 0201M 22nF BV11",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Hardware",
+      "published": "2026-08-10T15:53:01+00:00",
+      "sent_at": "2026-08-10T19:53:10.627894+00:00"
+    },
+    {
+      "link": "https://blog.sshh.io/p/exploring-claudegpt-knowledge-cutoffs",
+      "title": "Exploring Claude/GPT Knowledge Cutoffs and Pre-Training Timelines",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-10T14:20:41+00:00",
+      "sent_at": "2026-08-10T19:53:10.627894+00:00"
+    },
+    {
       "link": "https://electrek.co/2026/08/10/tesla-first-cybercab-starlink-integration/",
       "title": "Tesla unveils first Cybercab with Starlink antenna integrated",
       "summary": "Tesla’s robotaxi account posted photos today of what it’s calling the first Cybercab with a Starlink antenna built into the vehicle. The pictures show a gold Cybercab parked at Gigafactory Texas, with a low-profile satellite antenna integrated into the roof. It’s the physical version of an integration Tesla teased with a diagram last month.",
