@@ -3,6 +3,7 @@ package com.olusprogr.schacht
 import kotlin.math.exp
 import kotlin.math.max
 import kotlin.math.min
+import kotlin.math.pow
 import org.json.JSONArray
 import org.json.JSONObject
 
@@ -42,7 +43,19 @@ data class OfflineReport(
     val events: List<OfflineEvent>
 )
 
-data class TechNode(val id: String, val label: String, val cost: Double, val prereq: String?)
+/**
+ * Ein Tech-Knoten. Einmal-Freischaltungen haben maxLevel=1 und growth=1.
+ * Stufen-Upgrades haben maxLevel>1; die Kosten wachsen je Stufe um `growth`.
+ */
+data class TechNode(
+    val id: String,
+    val label: String,
+    val baseCost: Double,
+    val growth: Double,
+    val maxLevel: Int,
+    val effect: String,
+    val prereq: String?
+)
 
 /**
  * Tick-basierte Fabriksimulation auf einem 8x8-Gitter.
@@ -63,7 +76,7 @@ class Simulation {
     val grid = Array(n) { arrayOfNulls<Machine>(n) }
     var globalBarren = 0.0
     var globalPlatten = 0.0
-    val tech = HashSet<String>()
+    val tech = HashMap<String, Int>()   // Tech-Id -> Stufe (0 = nicht gekauft)
 
     // Anzeigewerte (vom letzten step gesetzt)
     var powerSupply = 0.0
@@ -92,14 +105,17 @@ class Simulation {
         const val OFFLINE_CAP = 8 * 3600
 
         val TECHS = listOf(
-            TechNode("t_lager", "Lager freischalten", 15.0, null),
-            TechNode("t_presse", "Presse freischalten", 20.0, null),
-            TechNode("t_gen", "Generator freischalten", 30.0, null),
-            TechNode("t_bspeed", "Bohrer-Tempo +50%", 40.0, null),
-            TechNode("t_oeff", "Ofen-Effizienz -30% Strom", 50.0, null),
-            TechNode("t_pspeed", "Presse-Tempo +50%", 60.0, "t_presse"),
-            TechNode("t_drohne", "Wartungsdrohne freischalten", 80.0, "t_gen"),
-            TechNode("t_wert", "Platten-Wert x2", 100.0, "t_presse")
+            // Einmal-Freischaltungen
+            TechNode("t_lager", "Lager freischalten", 15.0, 1.0, 1, "", null),
+            TechNode("t_presse", "Presse freischalten", 20.0, 1.0, 1, "", null),
+            TechNode("t_gen", "Generator freischalten", 30.0, 1.0, 1, "", null),
+            TechNode("t_drohne", "Wartungsdrohne freischalten", 80.0, 1.0, 1, "", "t_gen"),
+            TechNode("t_diag", "Diagonale Nachbarn", 120.0, 1.0, 1, "8 statt 4 Nachbarn", null),
+            // Stufen-Upgrades (mehrfach kaufbar)
+            TechNode("t_bspeed", "Bohrer-Tempo", 25.0, 1.3, 20, "+8%/Stufe", null),
+            TechNode("t_ospeed", "Ofen-Tempo", 35.0, 1.3, 20, "+8%/Stufe", null),
+            TechNode("t_pspeed", "Presse-Tempo", 45.0, 1.3, 20, "+8%/Stufe", "t_presse"),
+            TechNode("t_wert", "Platten-Wert", 60.0, 1.4, 10, "+25%/Stufe", "t_presse")
         )
 
         val UNLOCK = mapOf(
@@ -108,29 +124,70 @@ class Simulation {
             MType.LAGER to "t_lager",
             MType.DROHNE to "t_drohne"
         )
+
+        val BUILD_COST = mapOf(
+            MType.BOHRER to 5.0,
+            MType.OFEN to 8.0,
+            MType.PRESSE to 12.0,
+            MType.GENERATOR to 10.0,
+            MType.LAGER to 8.0,
+            MType.DROHNE to 20.0
+        )
+        const val START_BARREN = 30.0
     }
 
     fun newGame() {
         for (r in 0 until n) for (c in 0 until n) grid[r][c] = null
-        globalBarren = 0.0
+        globalBarren = START_BARREN
         globalPlatten = 0.0
         tech.clear()
         grid[0][0] = Machine(MType.REAKTOR)   // fester Basis-Strom, unzerstoerbar
     }
 
+    fun lvl(id: String): Int = tech[id] ?: 0
+    fun has(id: String): Boolean = lvl(id) > 0
+
     fun canBuild(t: MType): Boolean = when (t) {
         MType.BOHRER, MType.OFEN -> true
         MType.REAKTOR -> false
-        else -> tech.contains(UNLOCK[t])
+        else -> has(UNLOCK[t] ?: return false)
     }
 
+    fun buildCost(t: MType): Double = BUILD_COST[t] ?: 0.0
+
+    /** Platziert eine Maschine, falls Feld frei, freigeschaltet und bezahlbar. */
+    fun build(t: MType, r: Int, c: Int): Boolean {
+        if (grid[r][c] != null) return false
+        if (!canBuild(t)) return false
+        val cost = buildCost(t)
+        if (globalBarren < cost) return false
+        globalBarren -= cost
+        grid[r][c] = Machine(t)
+        return true
+    }
+
+    /** Verkauft eine Maschine: 50% der Baukosten, skaliert mit dem Restzustand. */
+    fun sell(r: Int, c: Int): Double {
+        val m = grid[r][c] ?: return 0.0
+        if (m.type == MType.REAKTOR) return 0.0
+        val refund = buildCost(m.type) * 0.5 * (m.condition / 100.0)
+        globalBarren += refund
+        grid[r][c] = null
+        return refund
+    }
+
+    fun nextCost(node: TechNode): Double =
+        kotlin.math.round(node.baseCost * node.growth.pow(lvl(node.id)))
+
     fun buyTech(id: String): Boolean {
-        if (tech.contains(id)) return false
         val node = TECHS.firstOrNull { it.id == id } ?: return false
-        if (node.prereq != null && !tech.contains(node.prereq)) return false
-        if (globalBarren < node.cost) return false
-        globalBarren -= node.cost
-        tech.add(id)
+        val l = lvl(id)
+        if (l >= node.maxLevel) return false
+        if (node.prereq != null && !has(node.prereq)) return false
+        val cost = nextCost(node)
+        if (globalBarren < cost) return false
+        globalBarren -= cost
+        tech[id] = l + 1
         return true
     }
 
@@ -142,11 +199,11 @@ class Simulation {
         return true
     }
 
-    // --- Tech-abhaengige Parameter ---
-    private fun bohrerRate() = BOHRER_RATE * (if (tech.contains("t_bspeed")) 1.5 else 1.0)
-    private fun presseRate() = PRESSE_RATE * (if (tech.contains("t_pspeed")) 1.5 else 1.0)
-    private fun ofenPower() = MType.OFEN.power * (if (tech.contains("t_oeff")) 0.7 else 1.0)
-    fun platteValue() = VAL_PLATTE * (if (tech.contains("t_wert")) 2.0 else 1.0)
+    // --- Tech-abhaengige Parameter (Stufen-Upgrades) ---
+    private fun bohrerRate() = BOHRER_RATE * (1.0 + 0.08 * lvl("t_bspeed"))
+    private fun ofenRate() = OFEN_RATE * (1.0 + 0.08 * lvl("t_ospeed"))
+    private fun presseRate() = PRESSE_RATE * (1.0 + 0.08 * lvl("t_pspeed"))
+    fun platteValue() = VAL_PLATTE * (1.0 + 0.25 * lvl("t_wert"))
 
     private fun wearPerSec(t: MType) = when (t) {
         MType.BOHRER -> 1.0 / 60.0
@@ -167,11 +224,15 @@ class Simulation {
     }
 
     private fun neighbors(r: Int, c: Int): List<IntArray> {
-        val res = ArrayList<IntArray>(4)
-        if (r > 0) res.add(intArrayOf(r - 1, c))
-        if (r < n - 1) res.add(intArrayOf(r + 1, c))
-        if (c > 0) res.add(intArrayOf(r, c - 1))
-        if (c < n - 1) res.add(intArrayOf(r, c + 1))
+        val res = ArrayList<IntArray>(8)
+        val diag = has("t_diag")
+        for (dr in -1..1) for (dc in -1..1) {
+            if (dr == 0 && dc == 0) continue
+            if (!diag && dr != 0 && dc != 0) continue
+            val nr = r + dr
+            val nc = c + dc
+            if (nr in 0 until n && nc in 0 until n) res.add(intArrayOf(nr, nc))
+        }
         return res
     }
 
@@ -191,8 +252,7 @@ class Simulation {
         else -> false
     }
 
-    private fun powerDrawOf(m: Machine): Double =
-        if (m.type == MType.OFEN) ofenPower() else m.type.power
+    private fun powerDrawOf(m: Machine): Double = m.type.power
 
     private fun wantsToRun(m: Machine, r: Int, c: Int): Boolean = when (m.type) {
         MType.BOHRER -> m.output[Res.ROHERZ.ordinal] < OUT_CAP - 1e-9
@@ -262,14 +322,14 @@ class Simulation {
                     m.util = if (nominal > 1e-9) made / nominal else 0.0
                 }
                 MType.OFEN -> {
-                    val nominal = OFEN_RATE * ddt
+                    val nominal = ofenRate() * ddt
                     val want = nominal * scale * wearMult(m.condition)
                     val byInput = m.input[Res.ROHERZ.ordinal] / 2.0
                     val bySpace = OUT_CAP - m.output[Res.BARREN.ordinal]
                     val made = max(0.0, min(want, min(byInput, bySpace)))
                     m.input[Res.ROHERZ.ordinal] -= made * 2.0
                     m.output[Res.BARREN.ordinal] += made
-                    m.condition = max(0.0, m.condition - wearPerSec(MType.OFEN) * (made / OFEN_RATE))
+                    m.condition = max(0.0, m.condition - wearPerSec(MType.OFEN) * (made / ofenRate()))
                     m.util = if (nominal > 1e-9) made / nominal else 0.0
                     barMade += made
                     if (byInput <= 1e-9 && m.output[Res.BARREN.ordinal] < OUT_CAP - 1e-9) m.starved = true
@@ -372,7 +432,9 @@ class Simulation {
         root.put("t", nowMillis)
         root.put("gb", globalBarren)
         root.put("gp", globalPlatten)
-        root.put("tech", JSONArray(tech.toList()))
+        val techObj = JSONObject()
+        for ((k, v) in tech) techObj.put(k, v)
+        root.put("tech", techObj)
         val cells = JSONArray()
         forEachMachine { m, r, c ->
             val o = JSONObject()
@@ -393,8 +455,17 @@ class Simulation {
         globalBarren = root.optDouble("gb", 0.0)
         globalPlatten = root.optDouble("gp", 0.0)
         tech.clear()
-        val ta = root.optJSONArray("tech")
-        if (ta != null) for (i in 0 until ta.length()) tech.add(ta.getString(i))
+        val tv = root.opt("tech")
+        if (tv is JSONArray) {
+            // Altes Format (Set aus Ids) -> jede Freischaltung als Stufe 1
+            for (i in 0 until tv.length()) tech[tv.getString(i)] = 1
+        } else if (tv is JSONObject) {
+            val keys = tv.keys()
+            while (keys.hasNext()) {
+                val k = keys.next()
+                tech[k] = tv.getInt(k)
+            }
+        }
         val cells = root.optJSONArray("cells")
         if (cells != null) for (i in 0 until cells.length()) {
             val o = cells.getJSONObject(i)

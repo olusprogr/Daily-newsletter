@@ -20,8 +20,8 @@ class GameView(context: Context) : View(context) {
 
     private val sim = Simulation()
 
-    private enum class Tool { INSPECT, BOHRER, OFEN, PRESSE, GENERATOR, LAGER, DROHNE, REPARIEREN, ABRISS }
-    private var tool = Tool.INSPECT
+    // Aktives Bau-Werkzeug (null = kein Bauen; Antippen zeigt dann Info).
+    private var buildTool: MType? = null
 
     private enum class Screen { GAME, TECH, STAT, REPORT }
     private var screen = Screen.GAME
@@ -29,6 +29,7 @@ class GameView(context: Context) : View(context) {
     private var selR = -1
     private var selC = -1
     private var report: OfflineReport? = null
+    private var resetArmed = false
 
     private val prefs = context.getSharedPreferences("schacht_save", Context.MODE_PRIVATE)
 
@@ -69,9 +70,24 @@ class GameView(context: Context) : View(context) {
     private var cell = 0f
     private var gridSide = 0f
     private var headerH = 0f
+    private var paletteTop = 0f
 
-    private class Btn(val rect: RectF, val id: String, val label: String, var enabled: Boolean = true, var active: Boolean = false, val color: Int = 0)
+    private class Btn(
+        val rect: RectF,
+        val id: String,
+        val label: String,
+        var enabled: Boolean = true,
+        var active: Boolean = false,
+        val color: Int = 0,
+        val sub: String = "",
+        val subColor: Int = 0
+    )
+
     private val buttons = ArrayList<Btn>()
+
+    private val buildOrder = listOf(
+        MType.BOHRER, MType.OFEN, MType.PRESSE, MType.GENERATOR, MType.LAGER, MType.DROHNE
+    )
 
     private val handler = Handler(Looper.getMainLooper())
     private var running = true
@@ -127,6 +143,7 @@ class GameView(context: Context) : View(context) {
         gridSide = cell * sim.n
         gridLeft = (w - gridSide) / 2f
         gridTop = headerH + dp(6f)
+        paletteTop = gridTop + gridSide + dp(10f)
     }
 
     // ---------------- Rendering ----------------
@@ -136,12 +153,14 @@ class GameView(context: Context) : View(context) {
         canvas.drawColor(cBg)
         drawHeader(canvas)
         drawGrid(canvas)
-        if (screen == Screen.GAME) drawPalette(canvas)
+        if (screen == Screen.GAME) {
+            if (selR >= 0 && sim.grid[selR][selC] != null) drawDetail(canvas) else drawPalette(canvas)
+        }
         when (screen) {
             Screen.TECH -> drawTech(canvas)
             Screen.STAT -> drawStat(canvas)
             Screen.REPORT -> drawReport(canvas)
-            Screen.GAME -> if (selR >= 0) drawDetail(canvas)
+            Screen.GAME -> { }
         }
     }
 
@@ -161,8 +180,6 @@ class GameView(context: Context) : View(context) {
         pText.color = cDim
         canvas.drawText("Platten/min ${oneDec(sim.plattenPerMin)}", dp(140f), dp(70f), pText)
 
-        // Tech / Statistik Buttons rechts oben
-        buttons.removeAll { it.id == "tech" || it.id == "stat" }
         val bw = dp(84f); val bh = dp(30f)
         val tR = RectF(W - dp(12f) - bw, dp(8f), W - dp(12f), dp(8f) + bh)
         val sR = RectF(W - dp(12f) - bw, dp(42f), W - dp(12f), dp(42f) + bh)
@@ -181,7 +198,6 @@ class GameView(context: Context) : View(context) {
             val m = sim.grid[r][c]
             if (m != null) drawMachine(canvas, m, x, y)
         }
-        // Auswahlrahmen
         if (selR >= 0 && screen == Screen.GAME) {
             p.color = cAccent; p.style = Paint.Style.STROKE; p.strokeWidth = dp(3f)
             canvas.drawRect(gridLeft + selC * cell + 1, gridTop + selR * cell + 1,
@@ -193,13 +209,11 @@ class GameView(context: Context) : View(context) {
     private fun drawMachine(canvas: Canvas, m: Machine, x: Float, y: Float) {
         val pad = cell * 0.08f
         val base = mColor(m.type)
-        // Zustand als leichte Abdunklung (Rost)
         val wear = (m.condition / 100.0).toFloat().coerceIn(0f, 1f)
         val col = blend(base, cCell, 1f - (0.35f + 0.65f * wear))
         p.color = col
         canvas.drawRoundRect(x + pad, y + pad, x + cell - pad, y + cell - pad, cell * 0.12f, cell * 0.12f, p)
 
-        // Auslastungs-Puls (Rahmen)
         if (m.util > 0.02) {
             p.color = Color.argb((120 + 135 * m.util).toInt().coerceIn(0, 255), 255, 255, 255)
             p.style = Paint.Style.STROKE; p.strokeWidth = dp(2f)
@@ -207,12 +221,10 @@ class GameView(context: Context) : View(context) {
             p.style = Paint.Style.FILL
         }
 
-        // Symbol
         pTextC.color = Color.rgb(20, 18, 15)
         pTextC.textSize = cell * 0.42f
         canvas.drawText(m.type.sym, x + cell / 2f, y + cell * 0.6f, pTextC)
 
-        // Zustandsbalken unten
         if (m.type != MType.REAKTOR && m.type != MType.LAGER) {
             val bw = cell - 2 * pad
             val by = y + cell - pad - dp(4f)
@@ -222,7 +234,6 @@ class GameView(context: Context) : View(context) {
             canvas.drawRect(x + pad, by, x + pad + bw * wear, by + dp(4f), p)
         }
 
-        // Warnmarker
         if (m.condition <= 0.0) {
             pTextC.color = cBad; pTextC.textSize = cell * 0.5f
             canvas.drawText("X", x + cell * 0.5f, y + cell * 0.62f, pTextC)
@@ -233,118 +244,138 @@ class GameView(context: Context) : View(context) {
     }
 
     private fun drawPalette(canvas: Canvas) {
-        buttons.removeAll { it.id.startsWith("tool_") }
-        val tools = listOf(
-            Tool.INSPECT to "Info", Tool.BOHRER to "Bohrer", Tool.OFEN to "Ofen",
-            Tool.PRESSE to "Presse", Tool.GENERATOR to "Generat.", Tool.LAGER to "Lager",
-            Tool.DROHNE to "Drohne", Tool.REPARIEREN to "Reparat.", Tool.ABRISS to "Abriss"
-        )
         val cols = 3
         val margin = dp(10f)
         val gap = dp(6f)
         val bw = (W - 2 * margin - (cols - 1) * gap) / cols
-        val bh = dp(38f)
-        val top = gridTop + gridSide + dp(10f)
-        for ((i, tl) in tools.withIndex()) {
+        val bh = dp(52f)
+        for ((i, t) in buildOrder.withIndex()) {
             val col = i % cols
             val row = i / cols
             val x = margin + col * (bw + gap)
-            val yy = top + row * (bh + gap)
+            val yy = paletteTop + row * (bh + gap)
             val rect = RectF(x, yy, x + bw, yy + bh)
-            val enabled = when (tl.first) {
-                Tool.INSPECT, Tool.REPARIEREN, Tool.ABRISS -> true
-                Tool.BOHRER -> sim.canBuild(MType.BOHRER)
-                Tool.OFEN -> sim.canBuild(MType.OFEN)
-                Tool.PRESSE -> sim.canBuild(MType.PRESSE)
-                Tool.GENERATOR -> sim.canBuild(MType.GENERATOR)
-                Tool.LAGER -> sim.canBuild(MType.LAGER)
-                Tool.DROHNE -> sim.canBuild(MType.DROHNE)
-            }
-            val active = tool == tl.first
-            drawButton(canvas, Btn(rect, "tool_${tl.first.name}", tl.second, enabled, active))
-            buttons.add(Btn(rect, "tool_${tl.first.name}", tl.second, enabled))
+            val unlocked = sim.canBuild(t)
+            val cost = sim.buildCost(t)
+            val afford = sim.globalBarren >= cost
+            val sub: String
+            val subCol: Int
+            if (!unlocked) { sub = "Tech noetig"; subCol = cDim }
+            else { sub = "${cost.toInt()} B"; subCol = if (afford) cDim else cBad }
+            val active = buildTool == t
+            drawButton(canvas, Btn(rect, "build_${t.name}", shortLabel(t), unlocked, active, 0, sub, subCol))
+            buttons.add(Btn(rect, "build_${t.name}", shortLabel(t), unlocked))
         }
+    }
+
+    private fun shortLabel(t: MType) = when (t) {
+        MType.GENERATOR -> "Generat."
+        MType.DROHNE -> "Drohne"
+        else -> t.label
     }
 
     private fun drawDetail(canvas: Canvas) {
         val m = sim.grid[selR][selC] ?: return
-        val top = H - dp(150f)
+        val top = paletteTop
         p.color = cPanel
         canvas.drawRect(0f, top, W.toFloat(), H.toFloat(), p)
+
         pText.color = cAccent; pText.textSize = dp(18f)
         canvas.drawText("${m.type.label}  (${selR + 1},${selC + 1})", dp(12f), top + dp(24f), pText)
+
         pText.color = cText; pText.textSize = dp(14f)
         var yy = top + dp(48f)
-        canvas.drawText("Zustand: ${m.condition.roundToInt()}%   Auslastung: ${(m.util * 100).roundToInt()}%", dp(12f), yy, pText)
-        yy += dp(20f)
+        canvas.drawText("Zustand ${m.condition.roundToInt()}%     Auslastung ${(m.util * 100).roundToInt()}%", dp(12f), yy, pText)
+        yy += dp(22f)
         val io = when (m.type) {
             MType.BOHRER -> "Aus: ${oneDec(m.output[0])} Roherz"
-            MType.OFEN -> "Ein: ${oneDec(m.input[0])} Roherz  |  Aus: ${oneDec(m.output[1])} Barren"
-            MType.PRESSE -> "Ein: ${oneDec(m.input[1])} Barren  |  Aus: ${oneDec(m.output[2])} Platten"
-            MType.GENERATOR -> "Brennstoff: ${oneDec(m.input[0])} Roherz  →  +${Simulation.GEN_POWER.toInt()} Strom"
-            MType.LAGER -> "Puffer: ${oneDec(m.output[0])}E ${oneDec(m.output[1])}B ${oneDec(m.output[2])}P"
+            MType.OFEN -> "Ein ${oneDec(m.input[0])} Roherz   Aus ${oneDec(m.output[1])} Barren"
+            MType.PRESSE -> "Ein ${oneDec(m.input[1])} Barren   Aus ${oneDec(m.output[2])} Platten"
+            MType.GENERATOR -> "Brennstoff ${oneDec(m.input[0])} Roherz  →  +${Simulation.GEN_POWER.toInt()} Strom"
+            MType.LAGER -> "Puffer ${oneDec(m.output[0])}E ${oneDec(m.output[1])}B ${oneDec(m.output[2])}P"
             MType.REAKTOR -> "Liefert ${Simulation.REAKTOR_POWER.toInt()} Strom (fest)"
             MType.DROHNE -> "Repariert Nachbarn (${Simulation.DROHNE_RATE.toInt()}%/s)"
         }
         canvas.drawText(io, dp(12f), yy, pText)
-        yy += dp(20f)
+        yy += dp(22f)
+        pText.color = cDim
         if (m.type != MType.REAKTOR) {
-            pText.color = cDim
-            canvas.drawText("Stromverbrauch: ${m.type.power.toInt()}", dp(12f), yy, pText)
+            val refund = (sim.buildCost(m.type) * 0.5 * (m.condition / 100.0))
+            canvas.drawText("Stromverbrauch ${m.type.power.toInt()}     Verkaufswert +${oneDec(refund)} B", dp(12f), yy, pText)
         }
-        // Reparieren-Button
-        buttons.removeAll { it.id == "repair_sel" }
-        if (m.type != MType.REAKTOR && m.type != MType.LAGER) {
-            val rw = dp(150f); val rh = dp(34f)
-            val rr = RectF(W - dp(12f) - rw, top + dp(20f), W - dp(12f), top + dp(20f) + rh)
-            drawButton(canvas, Btn(rr, "repair_sel", "Reparieren (${Simulation.REPAIR_COST.toInt()} B)",
-                sim.globalBarren >= Simulation.REPAIR_COST, false, cAccent))
-            buttons.add(Btn(rr, "repair_sel", "Reparieren"))
+
+        // Aktions-Buttons unten (ueberdecken keinen Text mehr)
+        val margin = dp(10f)
+        val by = H - dp(54f)
+        val bh = dp(40f)
+        val canRepair = m.type != MType.REAKTOR && m.type != MType.LAGER
+        val canSell = m.type != MType.REAKTOR
+        if (canRepair && canSell) {
+            val half = (W - 3 * margin) / 2f
+            val rSell = RectF(margin, by, margin + half, by + bh)
+            val rRep = RectF(margin * 2 + half, by, margin * 2 + half * 2, by + bh)
+            val refund = (sim.buildCost(m.type) * 0.5 * (m.condition / 100.0)).roundToInt()
+            drawButton(canvas, Btn(rSell, "sell_sel", "Verkaufen +$refund B", true, false, cBad))
+            drawButton(canvas, Btn(rRep, "repair_sel", "Reparieren ${Simulation.REPAIR_COST.toInt()} B",
+                m.condition < 99.999 && sim.globalBarren >= Simulation.REPAIR_COST, false, cAccent))
+            buttons.add(Btn(rSell, "sell_sel", "Verkaufen"))
+            buttons.add(Btn(rRep, "repair_sel", "Reparieren",
+                m.condition < 99.999 && sim.globalBarren >= Simulation.REPAIR_COST))
+        } else if (canSell) {
+            val rSell = RectF(margin, by, W - margin, by + bh)
+            val refund = (sim.buildCost(m.type) * 0.5 * (m.condition / 100.0)).roundToInt()
+            drawButton(canvas, Btn(rSell, "sell_sel", "Verkaufen +$refund B", true, false, cBad))
+            buttons.add(Btn(rSell, "sell_sel", "Verkaufen"))
         }
     }
 
     private fun drawTech(canvas: Canvas) {
-        p.color = Color.argb(238, 20, 17, 14)
+        p.color = Color.argb(242, 20, 17, 14)
         canvas.drawRect(0f, 0f, W.toFloat(), H.toFloat(), p)
         pText.color = cAccent; pText.textSize = dp(22f)
-        canvas.drawText("Tech-Baum", dp(16f), dp(40f), pText)
+        canvas.drawText("Tech-Baum", dp(16f), dp(38f), pText)
         pText.color = cDim; pText.textSize = dp(13f)
-        canvas.drawText("Forschung wird mit Barren bezahlt.  Verfuegbar: ${fmt(sim.globalBarren)} B", dp(16f), dp(62f), pText)
+        canvas.drawText("Upgrades kosten Barren.  Verfuegbar: ${fmt(sim.globalBarren)} B", dp(16f), dp(58f), pText)
 
-        buttons.removeAll { it.id.startsWith("buy_") || it.id == "close" }
-        var yy = dp(84f)
-        val bh = dp(52f)
+        var yy = dp(74f)
+        val bh = dp(48f)
         for (node in Simulation.TECHS) {
-            val rect = RectF(dp(16f), yy, W - dp(16f), yy + bh)
-            val owned = sim.tech.contains(node.id)
-            val preOk = node.prereq == null || sim.tech.contains(node.prereq)
-            val afford = sim.globalBarren >= node.cost
-            p.color = if (owned) Color.rgb(40, 60, 44) else cPanel
+            val rect = RectF(dp(12f), yy, W - dp(12f), yy + bh)
+            val l = sim.lvl(node.id)
+            val maxed = l >= node.maxLevel
+            val preOk = node.prereq == null || sim.has(node.prereq)
+            val cost = sim.nextCost(node)
+            val afford = sim.globalBarren >= cost
+            p.color = if (l > 0) Color.rgb(40, 55, 44) else cPanel
             canvas.drawRoundRect(rect, dp(8f), dp(8f), p)
-            pText.color = cText; pText.textSize = dp(16f)
-            canvas.drawText(node.label, dp(28f), yy + dp(24f), pText)
+
+            pText.color = cText; pText.textSize = dp(15f)
+            val title = if (node.maxLevel > 1) "${node.label}  (Stufe $l/${node.maxLevel})" else node.label
+            canvas.drawText(title, dp(24f), yy + dp(20f), pText)
             pText.textSize = dp(12f); pText.color = cDim
             val sub = when {
-                owned -> "freigeschaltet"
+                maxed -> "voll ausgebaut"
                 !preOk -> "benoetigt: ${Simulation.TECHS.first { it.id == node.prereq }.label}"
-                else -> "Kosten: ${node.cost.toInt()} Barren"
+                node.maxLevel > 1 -> "${node.effect}  ·  naechste Stufe: ${cost.toInt()} B"
+                else -> "Kosten: ${cost.toInt()} B" + (if (node.effect.isNotEmpty()) "  ·  ${node.effect}" else "")
             }
-            canvas.drawText(sub, dp(28f), yy + dp(42f), pText)
-            if (!owned) {
-                val kw = dp(96f); val kh = dp(34f)
-                val kr = RectF(W - dp(28f) - kw, yy + (bh - kh) / 2, W - dp(28f), yy + (bh + kh) / 2)
-                drawButton(canvas, Btn(kr, "buy_${node.id}", "Kaufen", preOk && afford, false, cAccent))
-                buttons.add(Btn(kr, "buy_${node.id}", "Kaufen", preOk && afford))
-            }
-            yy += bh + dp(8f)
+            canvas.drawText(sub, dp(24f), yy + dp(38f), pText)
+
+            val kw = dp(92f); val kh = dp(34f)
+            val kr = RectF(W - dp(24f) - kw, yy + (bh - kh) / 2, W - dp(24f), yy + (bh + kh) / 2)
+            val kLabel = if (maxed) "MAX" else if (node.maxLevel > 1) "Stufe +" else "Kaufen"
+            val kEnabled = !maxed && preOk && afford
+            drawButton(canvas, Btn(kr, "buy_${node.id}", kLabel, kEnabled, false, cAccent))
+            if (!maxed) buttons.add(Btn(kr, "buy_${node.id}", kLabel, kEnabled))
+            yy += bh + dp(6f)
         }
-        val cr = RectF(W / 2f - dp(70f), H - dp(60f), W / 2f + dp(70f), H - dp(20f))
+        val cr = RectF(W / 2f - dp(70f), H - dp(58f), W / 2f + dp(70f), H - dp(18f))
         drawButton(canvas, Btn(cr, "close", "Schliessen", true, false, cAccent))
         buttons.add(Btn(cr, "close", "Schliessen"))
     }
 
     private fun drawStat(canvas: Canvas) {
-        p.color = Color.argb(238, 20, 17, 14)
+        p.color = Color.argb(242, 20, 17, 14)
         canvas.drawRect(0f, 0f, W.toFloat(), H.toFloat(), p)
         pText.color = cAccent; pText.textSize = dp(22f)
         canvas.drawText("Statistik", dp(16f), dp(40f), pText)
@@ -354,26 +385,34 @@ class GameView(context: Context) : View(context) {
             "Produktionswert:  ${fmt(sim.produktionswertPerMin)} /min",
             "Barren gesamt:    ${fmt(sim.globalBarren)}   (${oneDec(sim.barrenPerMin)}/min)",
             "Platten gesamt:   ${fmt(sim.globalPlatten)}   (${oneDec(sim.plattenPerMin)}/min)",
-            "Strom:            ${fmt(sim.powerSupply)} / ${fmt(sim.powerDemand)} (Angebot/Nachfrage)",
+            "Strom:            ${fmt(sim.powerSupply)} / ${fmt(sim.powerDemand)}",
             "Maschinen gebaut: ${machineCount()}",
-            "Tech erforscht:   ${sim.tech.size} / ${Simulation.TECHS.size}"
+            "Upgrade-Stufen:   ${sim.tech.values.sum()}"
         )
         for (l in lines) { canvas.drawText(l, dp(16f), yy, pText); yy += dp(30f) }
         pText.color = cDim; pText.textSize = dp(13f)
-        yy += dp(10f)
-        canvas.drawText("Tipp: gelber Punkt = Nachschub fehlt, roter Balken = Verschleiss.", dp(16f), yy, pText)
+        yy += dp(6f)
+        canvas.drawText("Gelber Punkt = Nachschub fehlt, roter Balken = Verschleiss.", dp(16f), yy, pText)
         yy += dp(20f)
-        canvas.drawText("Ofen braucht ~1,3 Bohrer Nachschub, Presse ~1,4 Oefen.", dp(16f), yy, pText)
+        canvas.drawText("Balance-Block: 4 Bohrer : 3 Oefen : 2 Pressen.", dp(16f), yy, pText)
 
-        buttons.removeAll { it.id == "close" }
-        val cr = RectF(W / 2f - dp(70f), H - dp(60f), W / 2f + dp(70f), H - dp(20f))
-        drawButton(canvas, Btn(cr, "close", "Schliessen", true, false, cAccent))
-        buttons.add(Btn(cr, "close", "Schliessen"))
+        // Reset-Button (mit Bestaetigung)
+        val margin = dp(12f)
+        val by = H - dp(58f); val bh = dp(40f)
+        val half = (W - 3 * margin) / 2f
+        val rReset = RectF(margin, by, margin + half, by + bh)
+        val rClose = RectF(margin * 2 + half, by, margin * 2 + half * 2, by + bh)
+        drawButton(canvas, Btn(rReset, "reset",
+            if (resetArmed) "Wirklich? Erneut tippen" else "Spielstand zuruecksetzen",
+            true, resetArmed, cBad))
+        drawButton(canvas, Btn(rClose, "close", "Schliessen", true, false, cAccent))
+        buttons.add(Btn(rReset, "reset", "reset"))
+        buttons.add(Btn(rClose, "close", "Schliessen"))
     }
 
     private fun drawReport(canvas: Canvas) {
         val rep = report ?: return
-        p.color = Color.argb(245, 20, 17, 14)
+        p.color = Color.argb(248, 20, 17, 14)
         canvas.drawRect(0f, 0f, W.toFloat(), H.toFloat(), p)
         pText.color = cAccent; pText.textSize = dp(22f)
         canvas.drawText("Offline-Report", dp(16f), dp(40f), pText)
@@ -401,7 +440,6 @@ class GameView(context: Context) : View(context) {
                 yy += dp(22f)
             }
         }
-        buttons.removeAll { it.id == "close" }
         val cr = RectF(W / 2f - dp(90f), H - dp(64f), W / 2f + dp(90f), H - dp(22f))
         drawButton(canvas, Btn(cr, "close", "Weiterspielen", true, false, cAccent))
         buttons.add(Btn(cr, "close", "Weiterspielen"))
@@ -419,13 +457,20 @@ class GameView(context: Context) : View(context) {
             canvas.drawRoundRect(b.rect, dp(7f), dp(7f), p)
             p.style = Paint.Style.FILL
         }
-        pTextC.color = when {
+        val txtCol = when {
             !b.enabled -> cDim
             b.active -> Color.rgb(24, 20, 16)
             else -> cText
         }
-        pTextC.textSize = dp(13f)
-        canvas.drawText(b.label, b.rect.centerX(), b.rect.centerY() + dp(5f), pTextC)
+        if (b.sub.isEmpty()) {
+            pTextC.color = txtCol; pTextC.textSize = dp(13f)
+            canvas.drawText(b.label, b.rect.centerX(), b.rect.centerY() + dp(5f), pTextC)
+        } else {
+            pTextC.color = txtCol; pTextC.textSize = dp(14f)
+            canvas.drawText(b.label, b.rect.centerX(), b.rect.centerY() - dp(2f), pTextC)
+            pTextC.color = if (b.subColor != 0) b.subColor else cDim; pTextC.textSize = dp(11f)
+            canvas.drawText(b.sub, b.rect.centerX(), b.rect.centerY() + dp(15f), pTextC)
+        }
     }
 
     // ---------------- Eingabe ----------------
@@ -434,7 +479,6 @@ class GameView(context: Context) : View(context) {
         if (event.action != MotionEvent.ACTION_DOWN) return true
         val x = event.x; val y = event.y
 
-        // Buttons zuerst (Overlays haben Vorrang)
         for (b in buttons.reversed()) {
             if (b.rect.contains(x, y)) {
                 if (b.enabled) handleButton(b.id)
@@ -444,7 +488,6 @@ class GameView(context: Context) : View(context) {
 
         if (screen != Screen.GAME) return true
 
-        // Gittertreffer
         if (x >= gridLeft && x < gridLeft + gridSide && y >= gridTop && y < gridTop + gridSide) {
             val c = ((x - gridLeft) / cell).toInt().coerceIn(0, sim.n - 1)
             val r = ((y - gridTop) / cell).toInt().coerceIn(0, sim.n - 1)
@@ -457,13 +500,24 @@ class GameView(context: Context) : View(context) {
 
     private fun handleButton(id: String) {
         when {
-            id == "tech" -> { screen = if (screen == Screen.TECH) Screen.GAME else Screen.TECH; selR = -1 }
-            id == "stat" -> { screen = if (screen == Screen.STAT) Screen.GAME else Screen.STAT; selR = -1 }
-            id == "close" -> { screen = Screen.GAME; report = null }
-            id == "repair_sel" -> { sim.grid[selR][selC]?.let { sim.repair(it) } }
+            id == "tech" -> { screen = if (screen == Screen.TECH) Screen.GAME else Screen.TECH; selR = -1; resetArmed = false }
+            id == "stat" -> { screen = if (screen == Screen.STAT) Screen.GAME else Screen.STAT; selR = -1; resetArmed = false }
+            id == "close" -> { screen = Screen.GAME; report = null; resetArmed = false }
+            id == "reset" -> {
+                if (!resetArmed) {
+                    resetArmed = true
+                } else {
+                    sim.newGame(); persist(); resetArmed = false
+                    buildTool = null; selR = -1; selC = -1; report = null
+                    screen = Screen.GAME
+                }
+            }
+            id == "repair_sel" -> { if (selR >= 0) sim.grid[selR][selC]?.let { sim.repair(it) } }
+            id == "sell_sel" -> { if (selR >= 0) { sim.sell(selR, selC); selR = -1; selC = -1 } }
             id.startsWith("buy_") -> { sim.buyTech(id.removePrefix("buy_")) }
-            id.startsWith("tool_") -> {
-                tool = Tool.valueOf(id.removePrefix("tool_"))
+            id.startsWith("build_") -> {
+                val t = MType.valueOf(id.removePrefix("build_"))
+                buildTool = if (buildTool == t) null else t
                 selR = -1; selC = -1
             }
         }
@@ -472,35 +526,27 @@ class GameView(context: Context) : View(context) {
 
     private fun handleCell(r: Int, c: Int) {
         val m = sim.grid[r][c]
-        when (tool) {
-            Tool.INSPECT -> { selR = r; selC = c }
-            Tool.REPARIEREN -> { if (m != null) sim.repair(m); selR = r; selC = c }
-            Tool.ABRISS -> { if (m != null && m.type != MType.REAKTOR) { sim.grid[r][c] = null; selR = -1 } }
-            else -> {
-                val t = toolMachine(tool)
-                if (t != null && m == null && sim.canBuild(t)) {
-                    sim.grid[r][c] = Machine(t)
-                    selR = r; selC = c
-                }
+        if (m != null) {
+            // Belegtes Feld: Info anzeigen (unabhaengig vom Bau-Werkzeug).
+            selR = r; selC = c
+        } else {
+            val t = buildTool
+            if (t != null) {
+                if (sim.build(t, r, c)) { selR = -1; selC = -1 }
+            } else {
+                selR = -1; selC = -1
             }
         }
         invalidate()
     }
 
-    private fun toolMachine(t: Tool): MType? = when (t) {
-        Tool.BOHRER -> MType.BOHRER
-        Tool.OFEN -> MType.OFEN
-        Tool.PRESSE -> MType.PRESSE
-        Tool.GENERATOR -> MType.GENERATOR
-        Tool.LAGER -> MType.LAGER
-        Tool.DROHNE -> MType.DROHNE
-        else -> null
-    }
-
     private fun machineCount(): Int {
-        var n = 0
-        for (r in 0 until sim.n) for (c in 0 until sim.n) if (sim.grid[r][c] != null && sim.grid[r][c]!!.type != MType.REAKTOR) n++
-        return n
+        var k = 0
+        for (r in 0 until sim.n) for (c in 0 until sim.n) {
+            val m = sim.grid[r][c]
+            if (m != null && m.type != MType.REAKTOR) k++
+        }
+        return k
     }
 
     override fun onDetachedFromWindow() {
