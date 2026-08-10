@@ -1,6 +1,51 @@
 {
   "items": [
     {
+      "link": "https://www.theverge.com/tech/977395/meta-mark-zuckerberg-superintelligent-ai-ramble",
+      "title": "Four takeaways from Mark Zuckerberg&#8217;s massive AI manifesto",
+      "summary": "Meta CEO Mark Zuckerberg has a lot to say about the idealized future he now envisions for humanity co-existing with artificial intelligence - his latest essay spans more than 6,500 words on the matter. The lengthy manifesto Zuckerberg published on Monday, titled \"The Future is for Everyone,\" broadly lays out his beliefs about how the [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-08-10T15:19:05+00:00",
+      "sent_at": "2026-08-10T15:57:26.797063+00:00"
+    },
+    {
+      "link": "https://openai.com/index/responsible-ai-infrastructure-texas/",
+      "title": "OpenAI's letter to Governor Abbott on responsible AI infrastructure in Texas",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-10T14:38:20+00:00",
+      "sent_at": "2026-08-10T15:57:26.797063+00:00"
+    },
+    {
+      "link": "https://venturebeat.com/data/token-maxxing-is-dead-agentic-memory-is-what-comes-next",
+      "title": "Token-maxxing is dead. Agentic memory is what comes next.",
+      "summary": "Presented by MongoDB We have been building databases as an industry for roughly 60 years . We have been building AI agents, in the form most people mean when they say the word today, for about 18 months. Sit with that ratio for a second, because it explains almost everything about the state of agentic development right now. Six decades versus a year and a half. We are not in the middle of this learning curve. We are standing at the very bottom of it, squinting up. There is no LAMP stack for agents yet. There is no settled, boring, default set of choices that lets a team stop re-litigating architecture and just ship. One of the earliest lessons came from the industry’s brief obsession with token-maxxing. For a stretch in early 2026, token consumption became a vanity metric. The backlash was fast. Token volume measures activity, not outcomes. But the interesting part of the token-maxxing story was never the workplace theater. It was the architectural lesson hiding underneath it. The context window is the scarce resource What follows is an aggregation of what I’ve learned from more than 100 customer conversations across 15 cities in six countries during the first half of 2026. I’m seeing organizations begin to converge on the same conclusion: the context window is the scarce resource. The challenge isn’t stuffing more information into every prompt. It’s deciding what belongs there in the first place. That question has an answer. The answer is memory. Not the loose way people use that word to mean “the context window,” but a real, persistent, queryable memory system that sits outside the model and feeds it deliberately. The answer is memory, and it is more than short-term and long-term A good agentic memory does three things that the context window alone cannot: It saves what the generative model produced on previous loops and previous sessions, so the expensive reasoning you already paid for does not evaporate the moment the session ends. It applies role-based access control to that saved content, so a memory created by one team can be shared across an enterprise without leaking things it should not. It lets new queries retrieve the right prior content, which in practice means it is backed by semantic search rather than exact-match lookup, because agents ask for things by meaning, not by key. That last point is where this connects back to the 60-years-of-databases observation. We spent six decades getting extremely good at storing and retrieving structured data by exact criteria. Agentic memory needs something different and newer: the ability to store the unstructured output of a generative process and find it again by similarity. The teams building this well are the ones whose data platform can do semantic search natively, apply access control to it, and hold the generated content in the same place, rather than stitching three systems together with hope. The pattern that is emerging in enterprises Once you have memory like that, a genuinely interesting architecture falls out of it, and I am seeing more enterprises converge on it. You pair the powerful memory system with a leaner model, often an open-weight one, whose job is not to be brilliant but to be a good judge. A new query comes in. The agent does a semantic search on the memory, reranks to get the best candidate answer, and asks the leaner model a single question: is this good enough to return as is, or not? If it is good enough, you return it. You never paid for the expensive generative model at all. You answered from memory. If it is not good enough, you escalate to the more expensive generative model, get an original solution, return that, and then save it back into the same memory system so the next session does not have to pay for it either. Think about what that does to agentic economics over time. Every original answer the expensive model produces becomes a cheap answer the next time someone needs something similar. The system gets cheaper and faster the more it is used, which is the opposite of how naive token-maxxing scales, where cost grows linearly with usage forever. This is the difference between an agent that learns what it already knows and one that re-derives the universe on every loop. Memory has types, and humans curate the best ones The last piece, and the one I think separates where we are headed from where we are now, is that mature agentic memory will not be a flat bucket of short-term and long-term. It will have types, the way human memory does. Taxonomic memory holds terminology, the controlled vocabulary and definitions an organization runs on, so the agent uses &quot;chargeback&quot; to mean what your finance team means by it and not what the internet at large means. Procedural memory holds task lists and sequences, the how-we-do-this-here knowledge that turns a capable model into a useful colleague. There will be more types than these, and figuring out the right taxonomy of memory types is itself part of the learning curve we are climbing. And here is the part that should sound familiar to anyone who has run a real production system: the best memories often get there because a human put them there. Not every memory an agent generates is worth keeping, and not every kept memory is worth surfacing first. Increasingly I expect to see humans curating these systems, injecting the high-value memories back in for frequent reuse, pruning the noise, promoting the procedural sequence that works over the three that mostly work. We did this for knowledge bases. We did it for documentation. We will do it for agentic memory, because curation is how a corpus stops being a landfill and starts being an asset. What comes next? We are 18 months, give or take, into agents and 60 years into databases. The gap between those two numbers is not a problem to be embarrassed about. It is just the truth about how early it is, and it should make us humble about every &quot;best practice&quot; that is barely a season old. Token-maxxing was the first big idea to rise and fall inside this new field, and its fall taught us the lesson the field most needed: the context window is scarce, so the discipline is in choosing what goes in it. That discipline is agentic memory. Semantic-search-backed, access-controlled, typed, human-curated memory that saves what was expensive to produce and serves it cheaply forever after. There is still no LAMP stack for agents. But if I had to bet on which layer becomes the boring, default, settled choice first, the one we stop arguing about so we can get back to building, I would bet on memory. That is the next advancement in agentic development. Everything else is still hand-wiring CGI-BIN. Pete Johnson is Field CTO, AI at MongoDB. Sponsored articles are content produced by a company that is either paying for the post or has a business relationship with VentureBeat, and they’re always clearly marked. For more information, contact sales@venturebeat.com .",
+      "source": "VentureBeat",
+      "category": "AI",
+      "published": "2026-08-10T14:30:00+00:00",
+      "sent_at": "2026-08-10T15:57:26.797063+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/08/10/signed-up-for-klaviyo-dozens-of-advertisers-may-have-seen-your-password/",
+      "title": "Signed up for Klaviyo? Dozens of advertisers may have seen your password",
+      "summary": "A bug in the tech giant's website the logo of US marketing automation company Klaviyo Inc. is seen displayed on a smartphone in front of an abstract background on a computer screen..",
+      "source": "TechCrunch",
+      "category": "Hardware",
+      "published": "2026-08-10T14:14:43+00:00",
+      "sent_at": "2026-08-10T15:57:26.797063+00:00"
+    },
+    {
+      "link": "https://www.ft.com/content/4e3957f8-ea7c-4c46-a3de-cdce8e526878",
+      "title": "Mark Zuckerberg attacks 'closed' AI rivals as Meta returns to open models",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-10T14:06:22+00:00",
+      "sent_at": "2026-08-10T15:57:26.797063+00:00"
+    },
+    {
       "link": "https://electrek.co/2026/08/10/musk-terafab-gas-power-not-tesla-solar/",
       "title": "Musk’s Terafab chip plant will run on gas, not Tesla solar",
       "summary": "SpaceX confirmed it will power Terafab, its $16.8 billion chip megafactory in Texas, with its own natural gas power plants and “very large battery arrays.” Tesla solar isn’t in the plan. That’s despite Tesla being a partner on the project, and despite Tesla selling solar panels, Powerwalls, and grid-scale batteries built for exactly this kind of load.",
