@@ -150,7 +150,10 @@ class Simulation {
     fun canBuild(t: MType): Boolean = when (t) {
         MType.BOHRER, MType.OFEN -> true
         MType.REAKTOR -> false
-        else -> has(UNLOCK[t] ?: return false)
+        else -> {
+            val u = UNLOCK[t]
+            u != null && has(u)
+        }
     }
 
     fun buildCost(t: MType): Double = BUILD_COST[t] ?: 0.0
