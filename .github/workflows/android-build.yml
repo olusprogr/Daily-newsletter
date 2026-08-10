@@ -9,6 +9,9 @@ on:
       - ".github/workflows/android-build.yml"
   workflow_dispatch: {}
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -37,3 +40,22 @@ jobs:
           name: physik-huepfer-debug-apk
           path: android-game/app/build/outputs/apk/debug/*.apk
           if-no-files-found: error
+
+      # Der Sandbox-Build-Umgebung ist der direkte Download von GitHubs
+      # Artifact-Speicher (Azure Blob Storage) durch die Netzwerk-Policy
+      # untersagt. Deshalb wird die fertige APK zusätzlich direkt ins
+      # Repo committet (Pfad außerhalb von android-game/**, damit dies
+      # keinen erneuten Build-Trigger auslöst).
+      - name: Commit APK back into repository
+        run: |
+          mkdir -p dist
+          cp android-game/app/build/outputs/apk/debug/app-debug.apk dist/physik-huepfer-debug.apk
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add dist/physik-huepfer-debug.apk
+          if git diff --cached --quiet; then
+            echo "Keine Änderungen an der APK, kein Commit nötig."
+          else
+            git commit -m "ci: gebaute Debug-APK ablegen"
+            git push origin HEAD:${{ github.ref_name }}
+          fi
