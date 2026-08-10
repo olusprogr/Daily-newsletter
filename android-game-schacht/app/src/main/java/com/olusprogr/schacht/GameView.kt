@@ -45,17 +45,8 @@ class GameView(context: Context) : View(context) {
     private val cBad = Color.rgb(224, 90, 80)
     private val cWarn = Color.rgb(228, 198, 75)
 
-    private fun mColor(t: MType) = when (t) {
-        MType.BOHRER -> Color.rgb(192, 135, 63)
-        MType.OFEN -> Color.rgb(226, 100, 59)
-        MType.PRESSE -> Color.rgb(79, 127, 176)
-        MType.GENERATOR -> Color.rgb(228, 198, 75)
-        MType.LAGER -> Color.rgb(122, 108, 93)
-        MType.DROHNE -> Color.rgb(87, 184, 148)
-        MType.REAKTOR -> Color.rgb(156, 106, 222)
-    }
-
     private val p = Paint(Paint.ANTI_ALIAS_FLAG)
+    private val pSprite = Paint().apply { isAntiAlias = false; style = Paint.Style.FILL }
     private val pText = Paint(Paint.ANTI_ALIAS_FLAG).apply { color = cText; textAlign = Paint.Align.LEFT }
     private val pTextC = Paint(Paint.ANTI_ALIAS_FLAG).apply { color = cText; textAlign = Paint.Align.CENTER }
 
@@ -206,26 +197,38 @@ class GameView(context: Context) : View(context) {
         }
     }
 
-    private fun drawMachine(canvas: Canvas, m: Machine, x: Float, y: Float) {
-        val pad = cell * 0.08f
-        val base = mColor(m.type)
-        val wear = (m.condition / 100.0).toFloat().coerceIn(0f, 1f)
-        val col = blend(base, cCell, 1f - (0.35f + 0.65f * wear))
-        p.color = col
-        canvas.drawRoundRect(x + pad, y + pad, x + cell - pad, y + cell - pad, cell * 0.12f, cell * 0.12f, p)
+    private fun drawSprite(canvas: Canvas, list: List<Px>, x: Float, y: Float, s: Float) {
+        for (px in list) {
+            pSprite.color = px.c
+            canvas.drawRect(x + px.x * s, y + px.y * s, x + (px.x + px.w) * s, y + (px.y + px.h) * s, pSprite)
+        }
+    }
 
+    private fun drawMachine(canvas: Canvas, m: Machine, x: Float, y: Float) {
+        val s = cell / 32f
+        val hasWear = m.type != MType.REAKTOR && m.type != MType.LAGER
+        val pad = cell * 0.08f
+
+        // Basis-Sprite
+        drawSprite(canvas, Sprites.forType(m.type), x, y, s)
+
+        // Verschleiss-Overlays (Rost < 50%, Funken/Rauch < 20%)
+        if (hasWear) {
+            if (m.condition < 50) drawSprite(canvas, Sprites.RUST, x, y, s)
+            if (m.condition < 20) drawSprite(canvas, Sprites.SPARK, x, y, s)
+        }
+
+        // dezenter Auslastungs-Rahmen
         if (m.util > 0.02) {
-            p.color = Color.argb((120 + 135 * m.util).toInt().coerceIn(0, 255), 255, 255, 255)
-            p.style = Paint.Style.STROKE; p.strokeWidth = dp(2f)
-            canvas.drawRoundRect(x + pad, y + pad, x + cell - pad, y + cell - pad, cell * 0.12f, cell * 0.12f, p)
+            p.color = Color.argb((60 + 120 * m.util).toInt().coerceIn(0, 255), 255, 255, 255)
+            p.style = Paint.Style.STROKE; p.strokeWidth = dp(1.5f)
+            canvas.drawRect(x + pad, y + pad, x + cell - pad, y + cell - pad, p)
             p.style = Paint.Style.FILL
         }
 
-        pTextC.color = Color.rgb(20, 18, 15)
-        pTextC.textSize = cell * 0.42f
-        canvas.drawText(m.type.sym, x + cell / 2f, y + cell * 0.6f, pTextC)
-
-        if (m.type != MType.REAKTOR && m.type != MType.LAGER) {
+        // Zustandsbalken unten
+        if (hasWear) {
+            val wear = (m.condition / 100.0).toFloat().coerceIn(0f, 1f)
             val bw = cell - 2 * pad
             val by = y + cell - pad - dp(4f)
             p.color = cGridLine
@@ -234,12 +237,13 @@ class GameView(context: Context) : View(context) {
             canvas.drawRect(x + pad, by, x + pad + bw * wear, by + dp(4f), p)
         }
 
+        // Marker: Totalausfall / Nachschub fehlt
         if (m.condition <= 0.0) {
             pTextC.color = cBad; pTextC.textSize = cell * 0.5f
             canvas.drawText("X", x + cell * 0.5f, y + cell * 0.62f, pTextC)
         } else if (m.starved) {
             p.color = cWarn
-            canvas.drawCircle(x + cell - pad - dp(5f), y + pad + dp(5f), dp(4f), p)
+            canvas.drawRect(x + cell - pad - dp(8f), y + pad + dp(1f), x + cell - pad, y + pad + dp(9f), p)
         }
     }
 
@@ -576,14 +580,4 @@ class GameView(context: Context) : View(context) {
         return if (h > 0) "${h}h ${m}m" else if (m > 0) "${m}m ${s}s" else "${s}s"
     }
 
-    private fun blend(a: Int, b: Int, t: Float): Int {
-        val tt = t.coerceIn(0f, 1f)
-        val ar = Color.red(a); val ag = Color.green(a); val ab = Color.blue(a)
-        val br = Color.red(b); val bg = Color.green(b); val bb = Color.blue(b)
-        return Color.rgb(
-            (ar + (br - ar) * tt).toInt(),
-            (ag + (bg - ag) * tt).toInt(),
-            (ab + (bb - ab) * tt).toInt()
-        )
-    }
 }
