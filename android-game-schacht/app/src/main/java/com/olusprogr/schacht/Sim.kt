@@ -310,6 +310,12 @@ class Simulation {
             }
         }
 
+        // Angrenzende Verbraucher (Lager/Presse) ziehen die eben produzierten
+        // Barren/Platten ZUERST — erst danach holt der Lift den Ueberschuss.
+        // Sonst wuerde der Lift der Kette das Material wegschnappen und ein
+        // Ofen->Lager->Presse-Aufbau bliebe leer.
+        transfers()
+
         // Schacht-Lift: Ueberschuss an Barren/Platten in den globalen Bestand holen
         forEachMachine { m, _, _ ->
             if (m.type == MType.OFEN) {
