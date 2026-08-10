@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/laptops/acer-swift-go-16-ai-amd-gorgon-point-review",
+      "title": "Acer Swift Go 16 AI (AMD Gorgon Point) Review: A balanced, affordable, big-screen portable",
+      "summary": "Acer’s Swift Go 16 AI is a capable mid-range laptop with a large touchscreen and a slim metal shell. It stands out among modern competition, if you can find it on sale for under $1,000.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-08-10T13:05:00+00:00",
+      "sent_at": "2026-08-10T13:54:14.511634+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2233312/metas-open-source-muse-glimmer-model-can-run-on-a-single-computer/",
+      "title": "Meta's 'open source' Muse Glimmer model can run on a single computer",
+      "summary": "Meta has released a new slimmed down 'open source' AI model that's light enough to run on a single computer.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-08-10T12:29:38+00:00",
+      "sent_at": "2026-08-10T13:54:14.511634+00:00"
+    },
+    {
+      "link": "https://bobdahacker.com/blog/tldv-hack",
+      "title": "Over 181,000 AI meeting recordings left wide open in note taking app",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-10T12:26:05+00:00",
+      "sent_at": "2026-08-10T13:54:14.511634+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/data-centers/ai-data-center-bans-surge-past-500-nationwide-as-local-us-politicians-begin-blocking-new-developments-growing-public-outrage-and-bipartisan-pushback-threaten-big-tech-expansion-plans",
+      "title": "AI data center bans surge past 500 nationwide as local US politicians begin blocking new developments — growing public outrage and bipartisan pushback threaten big tech expansion plans",
+      "summary": "New AI data center development bans jumped to over 500 in July, according to recent analysis, with political and public pressure growing.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-08-10T12:25:51+00:00",
+      "sent_at": "2026-08-10T13:54:14.511634+00:00"
+    },
+    {
+      "link": "https://www.technologyreview.com/2026/08/10/1141526/the-download-ai-agents-science-censorship-industrial-complex/",
+      "title": "The Download: AI agents for science, and the “censorship-industrial complex”",
+      "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. AI for science needs reasoning, not just data —Eric Schmidt, the former CEO of Google and the cofounder of Schmidt Sciences, and Suhas Mahesh, who leads the AI for science work&#8230;",
+      "source": "MIT Technology Review",
+      "category": "AI",
+      "published": "2026-08-10T12:10:00+00:00",
+      "sent_at": "2026-08-10T13:54:14.511634+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/08/10/discovered-materials-is-playing-ai-whack-a-mole-to-hunt-cooler-chips/",
+      "title": "Discovered Materials is playing AI whack-a-mole to hunt cooler chips",
+      "summary": "Discovered Materials raised $9 million to fund the hunt for more novel materials to build more efficient chips.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-10T12:00:00+00:00",
+      "sent_at": "2026-08-10T13:54:14.511634+00:00"
+    },
+    {
+      "link": "https://venturebeat.com/technology/your-agent-didnt-hallucinate-it-exceeded-its-authority",
+      "title": "Your agent didn’t hallucinate; it exceeded its authority",
+      "summary": "Content filters can block unsafe output. They cannot tell you whether an agent was authorized to issue that refund, touch that production system, or commit the company to an external action. Those are different problems, and most enterprises are only solving the first one. An AI agent can follow its instructions perfectly and still take an action the business never sanctioned. In commerce environments, I have seen this pattern emerge in practical ways. A service workflow calculates the correct refund amount but lacks a boundary preventing credits above what the business approved for autonomous action. An order agent correctly applies a requested change but overlooks a financing or fulfillment condition. A procurement agent identifies the lowest-cost supplier, but nobody has defined whether it can accept contractual terms or only recommend the option. The agent keeps working. The problem may not surface until something downstream breaks. These are not necessarily AI reasoning failures. They are failures to separate technical capability from business authority. As enterprises move from copilots that recommend to agents that call tools and trigger workflows, every production agent needs explicit decision rights: What it may execute, what requires approval, what it may only recommend, and what it must never touch. Guardrails remain necessary. But a guardrail is not an authority model. Safety controls and decision rights solve different problems Early gen AI controls screen harmful content, protect sensitive information, validate responses, and constrain tool behavior. That work matters. Decision rights answer a different question: Even when an action is safe and technically valid, is this agent authorized to take it on behalf of the enterprise? That governance gap is becoming harder to ignore. In April 2026, a Cloud Security Alliance survey found that 65% of respondents had experienced an AI-agent-related incident in the prior year, while 82% had discovered previously unknown agents operating in their environments. The survey involved 418 IT and security professionals and was sponsored by Token Security. The findings illustrate how quickly agent activity can outpace the visibility and ownership structures built for conventional software. The World Economic Forum’s May 2026 playbook reflects this shift. It introduces an Agent Capability and Authorization Profile designed to make delegated actions auditable, enforceable and accountable. Guardrails constrain behavior. Decision rights define legitimate authority. Give every production agent an authority contract Before an agent receives access to enterprise tools, it needs a machine-enforceable record of exactly what authority the business has chosen to delegate. Call it an Agent Authority Contract . At minimum, that contract should answer seven questions: Who owns the outcome? Name a human or business role, not another system. What may the agent do? Read, recommend, write, or commit? Which systems and data may it reach? What materiality limits apply? Define dollar thresholds, record counts, customer scope, and operational impact. What triggers escalation? Uncertainty, anomaly, sensitive data, or potential impact? Can the action be reversed, and who can reverse it? When does the authority expire, and how is it withdrawn? Access control determines whether an agent can reach a system. The authority contract determines whether it may take a specific action in the current context. Those are not the same check. Singapore’s updated Model AI Governance Framework for Agentic AI draws a similar distinction. It treats access controls, behavioral guardrails, and human approvals as separate controls and ties oversight requirements to action scope, reversibility and potential impact. Resolve every consequential action into four outcomes A working decision-rights model should map every consequential agent action to one of four results. Allow Low-risk, bounded, and reversible actions run autonomously. Examples include retrieving approved information, classifying an inbound request, or updating a non-material field. The agent acts without prior review because the potential impact is limited and the action can be reversed. Approve The agent prepares or initiates the action, but execution waits for authorization from a human or deterministic policy service. This category covers payments, production changes, and actions that materially affect a customer, employee, or third party. Recommend The agent analyzes, ranks, drafts, or proposes. A named human makes the final decision. Use this outcome when contextual judgment matters or when the legal, financial, or individual impact makes automated execution unacceptable. Deny The action remains outside the agent’s authority regardless of its confidence. Deleting critical production data, making a final employment decision or overriding a mandatory compliance control should remain in the Deny category even when the agent’s underlying reasoning appears correct. One point gets missed consistently: Deny must be enforced outside the system prompt. A natural-language instruction telling an agent not to do something is not a technical boundary. It is a suggestion. Make authority decisions at runtime Static configuration cannot cover every situation. A small service credit might be allowed under normal conditions but require approval when the amount crosses a threshold, the account is under investigation, or the request involves a regulated customer. A practical runtime sequence looks like this: The agent proposes an action. A policy layer evaluates the agent’s identity, delegated principal, requested tool, data involved, transaction context, and potential impact. The policy returns Allow, Approve, Recommend, or Deny. The system records the authority decision, resulting action and outcome. Operational telemetry expands, narrows, or revokes the agent’s authority over time. In enterprise commerce, the most dangerous AI mistake is not always a false answer. It can be a technically correct action the agent had no business taking. A refund may be accurate but exceed an approval limit. An order change may match the customer’s request but invalidate a financing condition. A delivery promise may reflect available inventory while overlooking a carrier constraint applied an hour earlier. The agent may not have failed to reason. The enterprise failed to define where its authority stopped. Human oversight should target exceptions, not everything Requiring human approval for every agent action looks conservative. At scale, it can quickly degrade into rubber-stamping. When reviewers approve thousands of routine actions, attention declines and genuine exceptions become harder to identify. Singapore’s framework acknowledges that continuous human oversight of every agent workflow becomes impractical at scale and recommends meaningful checkpoints for higher-risk or irreversible actions. Proportional authorization is the more workable model. Low-risk actions run within narrow boundaries. High-risk or irreversible actions require approval. Unexpected behavior triggers escalation. Any consequential action without a defined authorization policy is denied by default. The objective is not maximum autonomy. It is the highest level of autonomy the enterprise can observe, govern and reverse responsibly. Measure whether authority is calibrated Once agents are in production, response accuracy becomes too narrow a success metric. Enterprises should also track: Override rate: How often do humans reject or materially change what the agent decided? Escalation precision: Does the agent surface genuinely risky cases, or does it return routine work to people? Unauthorized-action attempts: How often does the agent try to exceed its system, data, or action scope? Business-impacting error rate: How often do authorized actions produce financial, compliance, operational, or customer harm? Decision latency: Are approval requirements managing risk, or slowing down automation that was already safe? These measures turn authority into a governed operating variable. Consistently reliable performance may justify expanding bounded authority. Frequent overrides, escalation failures, or policy violations should narrow it. The governance gap is not in the model Model safety, output controls, and secure tool use all matter. Enterprises should continue investing in them. But none of those controls can answer who delegated authority, how much was transferred, under what conditions it applies, or who owns the result when something goes wrong. An Agent Authority Contract can. Before asking how autonomous an AI agent can become, the more useful question is: What is the enterprise actually prepared to delegate, and how will that delegation be enforced, observed, and withdrawn? The agent demo works. That is not the hard part anymore. Nixal Patel is a product leader. The views expressed are his own",
+      "source": "VentureBeat",
+      "category": "AI",
+      "published": "2026-08-10T12:00:00+00:00",
+      "sent_at": "2026-08-10T13:54:14.511634+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/semiconductors/hyperscalers-commit-nearly-usd2-trillion-to-secure-ai-hardware-and-memory-google-leads-usd811-billion-spending-surge-while-apple-trails-at-usd57-billion",
+      "title": "Hyperscalers commit nearly $2 trillion to secure AI hardware and memory — Google leads $811 billion spending surge while Apple trails at $57 billion",
+      "summary": "As hyperscalers increase their long-term purchase commitments, the high-tech industry faces a tectonic shift as CSPs overwhelm consumer electronics companies.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-08-10T12:00:00+00:00",
+      "sent_at": "2026-08-10T13:54:14.511634+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/tech-industry/drones/hoverair-unveils-the-versa-modular-pocket-gimbal-camera-that-transforms-into-a-self-flying-drone-modular-camera-transforms-into-an-auto-tracking-drone-by-magnetically-snapping-together-for-instant-palm-launch-and-ai-tracking",
       "title": "HoverAir unveils the Versa modular pocket gimbal camera that transforms into a self-flying drone — Modular camera transforms into an auto-tracking drone by magnetically snapping together for instant palm launch and AI tracking",
       "summary": "Have you ever wanted a pocket gimbal camera and a selfie drone that follows your around autonomously in one device? That's what the HoverAir Versa offers with a transforming, two-in-one body that can make filming yourself from all sorts of angles as convenient as possible.",
