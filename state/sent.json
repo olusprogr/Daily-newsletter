@@ -1,6 +1,51 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/chinese-farmer-kills-25-acres-of-crops-after-following-ai-generated-weed-and-pest-control-advice-farmer-trusted-pesticide-recipe-after-months-of-successful-advice",
+      "title": "Chinese farmer kills 25 acres of crops after following AI-generated weed and pest control advice — farmer trusted pesticide recipe after months of successful advice",
+      "summary": "A farmer in China followed an AI app's advice for his 25-acre farmland, resulting in the death of his entire crop of sesame seedlings. 67-year-old man was initially skeptical of the tool but eventually trusted it after months of using it.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-08-10T10:00:00+00:00",
+      "sent_at": "2026-08-10T10:17:44.583391+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/space/europe-expands-its-starlink-rival-to-348-satellites-as-iris2-moves-into-implementation-eur15-6-billion-network-will-boost-eu-government-capacity-by-60-percent-with-launches-starting-in-2029",
+      "title": "Europe expands its Starlink rival to 348 satellites as IRIS² moves into implementation — €15.6 billion network will boost EU government capacity by 60%, with launches starting in 2029",
+      "summary": "Europe has finalized plans for its €15.6 billion IRIS² satellite network, expanding it to 348 satellites with first launches scheduled for 2029.",
+      "source": "Tom's Hardware",
+      "category": "Innovationen",
+      "published": "2026-08-10T09:30:00+00:00",
+      "sent_at": "2026-08-10T10:17:44.583391+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2233237/openai-slows-down-astra-development-due-to-cybersecurity-concerns/",
+      "title": "OpenAI slows down Astra development due to cybersecurity concerns",
+      "summary": "Meta slowed down development of its Astra model as it couldn't 'rule out critical cyber capabilities.'",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-08-10T09:19:11+00:00",
+      "sent_at": "2026-08-10T10:17:44.583391+00:00"
+    },
+    {
+      "link": "https://www.technologyreview.com/2026/08/10/1141384/ai-agents-for-science/",
+      "title": "AI for science needs reasoning, not just data",
+      "summary": "Every few decades, someone announces that science has reached its end. In 1903, the revered physicist Albert Michelson wrote that the “facts of physical science have all been discovered.” In the 1980s, Stephen Hawking predicted that theoretical physics might be finished by the end of the century. With the explosive arrival of artificial intelligence, the&#8230;",
+      "source": "MIT Technology Review",
+      "category": "AI",
+      "published": "2026-08-10T09:00:00+00:00",
+      "sent_at": "2026-08-10T10:17:44.583391+00:00"
+    },
+    {
+      "link": "https://www.technologyreview.com/2026/08/10/1141511/these-startups-are-chasing-the-next-big-thing-in-llms/",
+      "title": "These startups are chasing the next big thing in LLMs",
+      "summary": "MIT Technology Review’s What’s Next series looks across industries, trends, and technologies to give you a first look at the future. You can read the rest of them&#160;here. Way back in the summer of 2017, AI researchers at Google put out a paper called “Attention Is All You Need,” in which they described a new&#8230;",
+      "source": "MIT Technology Review",
+      "category": "AI",
+      "published": "2026-08-10T09:00:00+00:00",
+      "sent_at": "2026-08-10T10:17:44.583391+00:00"
+    },
+    {
       "link": "https://www.economist.com/asia/2026/08/06/the-philippines-big-offshoring-industry-is-growing-despite-ai",
       "title": "The Philippines' big offshoring industry is growing despite AI",
       "summary": "",
