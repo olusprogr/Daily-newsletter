@@ -1,6 +1,51 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/tech-industry/drones/hoverair-unveils-the-versa-modular-pocket-gimbal-camera-that-transforms-into-a-self-flying-drone-modular-camera-transforms-into-an-auto-tracking-drone-by-magnetically-snapping-together-for-instant-palm-launch-and-ai-tracking",
+      "title": "HoverAir unveils the Versa modular pocket gimbal camera that transforms into a self-flying drone — Modular camera transforms into an auto-tracking drone by magnetically snapping together for instant palm launch and AI tracking",
+      "summary": "Have you ever wanted a pocket gimbal camera and a selfie drone that follows your around autonomously in one device? That's what the HoverAir Versa offers with a transforming, two-in-one body that can make filming yourself from all sorts of angles as convenient as possible.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-08-10T11:20:00+00:00",
+      "sent_at": "2026-08-10T11:30:06.516314+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/transportation/976748/ford-ai-assistant-mobile-app",
+      "title": "Ford’s new AI assistant can check your fuel levels and tire pressure",
+      "summary": "Ford is rolling out a new AI-powered assistant that can answer questions about your Ford or Lincoln vehicle, such as how much fuel you'll need for your next road trip or whether your truck can tow that new motor boat. The app is rolling out first to the Ford and Lincoln mobile apps, where it [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-08-10T11:00:00+00:00",
+      "sent_at": "2026-08-10T11:30:06.516314+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/science/976977/space-mirror-reflect-orbital-fcc-solar-eye-damage",
+      "title": "Space mirrors could ruin astronomy — and your eyes",
+      "summary": "Solar energy, at any time of day or night - that's the dream of space mirror projects. Futurists have been imagining satellite mirrors that could reflect the sun's light onto the Earth's surface for over a century. Russian scientists experimented with the concept in the '90s with the Znamya project. The idea is to put [&#8230;]",
+      "source": "The Verge",
+      "category": "Innovationen",
+      "published": "2026-08-10T11:00:00+00:00",
+      "sent_at": "2026-08-10T11:30:06.516314+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/gpus/the-only-current-generation-graphics-card-on-sale-below-msrp-amds-radeon-rx-9070-gre-gpu-with-12gb-of-vram-returns-to-its-lowest-ever-price-of-usd499",
+      "title": "The only current-generation graphics card on sale below MSRP — AMD's Radeon RX 9070 GRE GPU with 12GB of VRAM returns to its lowest-ever price of $499",
+      "summary": "Grab a new GPU for less than the MSRP launch price. Gigabyte's Gaming RX 9070 GRE falls to its lowest-ever price.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-08-10T10:58:38+00:00",
+      "sent_at": "2026-08-10T11:30:06.516314+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/the-rise-of-the-1-am-job-interview/",
+      "title": "The Rise of the 1 am Job Interview",
+      "summary": "An AI interview is increasingly the first step of a hiring process. Since there’s no human on the other end, candidates are scheduling them whenever—even deep into the night.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-08-10T10:30:00+00:00",
+      "sent_at": "2026-08-10T11:30:06.516314+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/chinese-farmer-kills-25-acres-of-crops-after-following-ai-generated-weed-and-pest-control-advice-farmer-trusted-pesticide-recipe-after-months-of-successful-advice",
       "title": "Chinese farmer kills 25 acres of crops after following AI-generated weed and pest control advice — farmer trusted pesticide recipe after months of successful advice",
       "summary": "A farmer in China followed an AI app's advice for his 25-acre farmland, resulting in the death of his entire crop of sesame seedlings. 67-year-old man was initially skeptical of the tool but eventually trusted it after months of using it.",
