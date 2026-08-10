@@ -1,6 +1,24 @@
 {
   "items": [
     {
+      "link": "https://www.docker.com/products/docker-sandboxes/",
+      "title": "Docker Sandboxes – Disposable, isolated sandboxes for AI agents",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-10T06:02:38+00:00",
+      "sent_at": "2026-08-10T07:24:29.907364+00:00"
+    },
+    {
+      "link": "https://www.whodunnitai.com/",
+      "title": "Show HN: Voice driven murder mystery, Interview AI suspects with your voice",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-10T03:18:40+00:00",
+      "sent_at": "2026-08-10T07:24:29.907364+00:00"
+    },
+    {
       "link": "https://claude.com/blog/auto-mode-default-in-claude-code",
       "title": "Auto mode is now the default in Claude Code",
       "summary": "",
