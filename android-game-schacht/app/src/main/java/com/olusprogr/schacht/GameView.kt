@@ -68,6 +68,24 @@ class GameView(context: Context) : View(context) {
         }
     )
 
+    // Ein-Finger-Scrollen ueber die Standard-GestureDetector-API (robust).
+    private val gestureDetector = android.view.GestureDetector(
+        context,
+        object : android.view.GestureDetector.SimpleOnGestureListener() {
+            override fun onDown(e: MotionEvent): Boolean = true
+            override fun onScroll(e1: MotionEvent?, e2: MotionEvent, dx: Float, dy: Float): Boolean {
+                if (screen == Screen.GAME && downInGrid && !scaleDetector.isInProgress) {
+                    panX -= dx
+                    panY -= dy
+                    moved = true
+                    invalidate()
+                    return true
+                }
+                return false
+            }
+        }
+    )
+
     private val prefs = context.getSharedPreferences("schacht_save", Context.MODE_PRIVATE)
 
     // Farben (heller, waermer, farbiger)
@@ -226,6 +244,9 @@ class GameView(context: Context) : View(context) {
     }
 
     init {
+        // Quick-Scale (Doppeltipp-Ziehen zum Zoomen) aus: es blockiert sonst
+        // das Ein-Finger-Scrollen, weil der Scale-Detektor "in progress" meldet.
+        try { scaleDetector.isQuickScaleEnabled = false } catch (_: Exception) { }
         I18n.lang = try { Lang.values()[prefs.getInt("lang", Lang.EN.ordinal)] } catch (_: Exception) { Lang.EN }
         audio.setMusicVol(prefs.getInt("musicVol", 50) / 100f)
         audio.setSfxVol(prefs.getInt("sfxVol", 33) / 100f)
@@ -1084,6 +1105,7 @@ class GameView(context: Context) : View(context) {
 
     override fun onTouchEvent(event: MotionEvent): Boolean {
         scaleDetector.onTouchEvent(event)
+        gestureDetector.onTouchEvent(event)
         val slop = dp(8f)
         when (event.actionMasked) {
             MotionEvent.ACTION_DOWN -> {
@@ -1095,15 +1117,9 @@ class GameView(context: Context) : View(context) {
             }
             MotionEvent.ACTION_MOVE -> {
                 if (kotlin.math.abs(event.x - downX) > slop || kotlin.math.abs(event.y - downY) > slop) moved = true
+                // Karte-Scrollen laeuft ueber gestureDetector.onScroll.
                 if (screen == Screen.TECH) {
                     techScroll = (downScroll - (event.y - downY)).coerceIn(0f, techMaxScroll)
-                    invalidate()
-                } else if (screen == Screen.GAME && downInGrid &&
-                    event.pointerCount == 1 && !scaleDetector.isInProgress
-                ) {
-                    // Karte mit einem Finger scrollen (bei jedem Zoom)
-                    panX = lastPanX + (event.x - downX)
-                    panY = lastPanY + (event.y - downY)
                     invalidate()
                 }
                 return true
