@@ -1,6 +1,33 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/08/11/uber-surprised-robotics-company-serve-by-selling-its-entire-stake/",
+      "title": "Uber surprised robotics company Serve by selling its entire stake",
+      "summary": "The divesture comes comes as the two once-tight companies have started to diverge on the business side.",
+      "source": "TechCrunch",
+      "category": "Innovationen",
+      "published": "2026-08-11T20:02:02+00:00",
+      "sent_at": "2026-08-11T20:39:20.379071+00:00"
+    },
+    {
+      "link": "https://spectrum.ieee.org/ieee-summit-bhutan-digital-transformation",
+      "title": "IEEE Engineering Summit Supports Bhutan’s Digital Transformation",
+      "summary": "In collaboration with the Kingdom of Bhutan government, IEEE recently introduced its Engineering Education, Research, and Innovation Summit. Held on 9 and 10 June in Paro, in the eastern Himalayas, the event was designed to help Bhutan navigate its digital transformation by focusing on the critical intersection of digital transformation, engineering education, and sustainable development. The summit brought together global academic leaders, technology experts, and Bhutanese government officials to discuss how modern engineering curricula can evolve from theory-centric models into application- and skills-based frameworks. Discussions focused on how to build high-value research capabilities in the country, integrate artificial intelligence into higher education , and address foundational infrastructure challenges to ensure equitable, nationwide digital readiness. “IEEE is proud to collaborate as a catalyst for progress in higher education as AI shifts the technology landscape and Bhutan prepares for its next era of innovation and resilience,” Mary Ellen Randall , 2026 IEEE president and CEO, said at the event. “Our goal is to support local universities and students as they develop trusted, future-ready technology that honors the nation’s commitment to sustainability and human well-being.” The event featured an address by Bhutanese Princess Chimi Yangzom Wangchuck , who emphasized the importance of aligning technological innovation with the nation’s philosophy of gross national happiness (GNH), which prioritizes well-being, sustainability, and ethics. “The question before us is not whether technology will shape the future; it certainly will,” the princess said. “The more pressing question is whether we can shape technology according to our values.” A blueprint for Bhutan’s future The summit helped establish a collaborative blueprint for a high-value knowledge economy in Bhutan through several key focus areas: Workforce readiness: designing industry-driven curriculum modernization and cocreating skills programs to equip graduates with practical, technical competencies. AI and research infrastructure: strengthening open science, trusted regional datasets, and global citation impact to prepare universities for AI-enabled learning environments. Values-driven innovation: merging GNH principles with technological advancement and helping ensure new engineering practices support climate-resilient infrastructure and green innovation. Institutional connectivity: using digital transformation to bridge technical capability gaps between urban and rural institutions; linking classrooms to a global research network. Promoting sustainability: convening stakeholders to exchange ideas on green innovation , climate-resilient infrastructure, and engineering education. Expanding digital access To help promote the effort, IEEE offered Bhutanese universities, government institutions, and industries a six-month complimentary trial of two key technical resources: IEEE Electronic Library. Delivered via the IEEE Xplore Digital Library , the IEL gives users access to more than 7 million documents—including trusted IEEE journals, conference proceedings, standards , and technical papers—to enhance research, teaching, and technology development. IEEE eLearning Library. This platform offers online courses developed by experts in engineering, computing, and technology, supporting flexible learning across core and emerging technical fields for professionals, faculty and students.",
+      "source": "IEEE Spectrum",
+      "category": "AI",
+      "published": "2026-08-11T19:50:54+00:00",
+      "sent_at": "2026-08-11T20:39:20.379071+00:00"
+    },
+    {
+      "link": "https://blogs.nvidia.com/blog/nemotron-lightning-switchyard-rtx-dgx/",
+      "title": "Nvidia Nemotron 3.5 Lightning and NeMo Switchyard",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Hardware",
+      "published": "2026-08-11T19:35:52+00:00",
+      "sent_at": "2026-08-11T20:39:20.379071+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/08/11/openai-launches-chatgpt-desktop-app-for-linux/",
       "title": "OpenAI launches ChatGPT desktop app for Linux",
       "summary": "OpenAI is finally bringing a dedicated ChatGPT desktop app to Linux operating systems.",
