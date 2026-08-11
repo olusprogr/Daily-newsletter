@@ -59,9 +59,11 @@ class Audio {
                 )
                 .setTransferMode(AudioTrack.MODE_STREAM)
                 .setBufferSizeInBytes(
+                    // ~1s Puffer; der Stream-Loop schreibt den ganzen (langen) Track
+                    // in Haeppchen nach, also muss der Puffer nicht die Songlaenge fassen.
                     maxOf(
                         AudioTrack.getMinBufferSize(sr, AudioFormat.CHANNEL_OUT_MONO, AudioFormat.ENCODING_PCM_16BIT),
-                        musicBuf.size * 2
+                        sr * 2
                     )
                 )
                 .build()
@@ -156,83 +158,109 @@ class Audio {
         return out
     }
 
+    private class Chord(val bass: Double, val tones: DoubleArray)
+
+    // Akkord-Bibliothek (Bass + drei Akkordtoene).
+    private fun chord(name: String): Chord = when (name) {
+        "Am" -> Chord(55.0, doubleArrayOf(220.0, 261.63, 329.63))
+        "F"  -> Chord(43.65, doubleArrayOf(174.61, 220.0, 261.63))
+        "C"  -> Chord(65.41, doubleArrayOf(261.63, 329.63, 392.0))
+        "G"  -> Chord(49.0, doubleArrayOf(196.0, 246.94, 293.66))
+        "E"  -> Chord(41.20, doubleArrayOf(207.65, 246.94, 329.63))
+        "Dm" -> Chord(73.42, doubleArrayOf(220.0, 293.66, 349.23))
+        else -> Chord(55.0, doubleArrayOf(220.0, 261.63, 329.63))
+    }
+
+    /** Parameter einer Musik-Sektion – so bekommt jede Sektion einen eigenen Charakter. */
+    private class Section(
+        val prog: List<String>,
+        val withPad: Boolean,
+        val leadSteps: Int,
+        val leadPattern: IntArray,
+        val withPulse: Boolean,
+        val bassAmp: Double = 0.15
+    )
+
     /**
-     * 8-Sekunden-Loop mit vierteiliger Akkordfolge (Am – F – C – G): weicher
-     * Bass mit Oberton, sanfter Akkord-Pad und eine glockige Lead-Melodie,
-     * dazu ein dezenter Puls. Zum Schluss weiche Begrenzung (tanh) statt hartem
-     * Clipping – klingt runder als der alte 4s-Loop.
+     * Mehrteilige Musik statt eines einzigen Loops: vier je 8s lange Sektionen
+     * mit unterschiedlichen Akkordfolgen UND Instrumentierung (mal mit Pad, mal
+     * treibendes Arpeggio, mal ruhig). Ergibt ~32s Abwechslung, die sich nahtlos
+     * wiederholt. Weiche tanh-Begrenzung gegen hartes Clipping.
      */
     private fun buildMusic(): ShortArray {
-        val loopSec = 8.0
-        val nS = (sr * loopSec).toInt()
-        val mix = DoubleArray(nS)
-
-        // bass, [drei Akkordtoene]
-        val bass = doubleArrayOf(55.0, 43.65, 65.41, 49.0)          // A1, F1, C2, G1
-        val tones = arrayOf(
-            doubleArrayOf(220.0, 261.63, 329.63),  // Am
-            doubleArrayOf(174.61, 220.0, 261.63),  // F
-            doubleArrayOf(196.0, 261.63, 329.63),  // C
-            doubleArrayOf(196.0, 246.94, 293.66)   // G
+        val secLen = (sr * 8.0).toInt()
+        val sections = listOf(
+            // A: ruhig-warm, volles Bild
+            Section(listOf("Am", "F", "C", "G"), true, 32, intArrayOf(0, 2, 1, 2, 0, 1, 2, 1), true),
+            // B: treibend, ohne Pad, schnelleres Arpeggio, kein Puls
+            Section(listOf("Am", "G", "F", "E"), false, 64, intArrayOf(0, 1, 2, 1), false, 0.17),
+            // C: hell und sparsam
+            Section(listOf("C", "G", "Am", "F"), true, 16, intArrayOf(2, 0, 1, 0), true, 0.13),
+            // D: bewegter Abschluss
+            Section(listOf("Dm", "F", "C", "G"), true, 32, intArrayOf(0, 2, 1, 3, 2, 1, 0, 1), true)
         )
-        val chords = bass.size
-        val chordLen = nS / chords
-
-        for (ci in 0 until chords) {
-            val start = ci * chordLen
-            val bf = bass[ci]
-            val ch = tones[ci]
-            for (i in 0 until chordLen) {
-                val idx = start + i
-                if (idx >= nS) break
-                val p = i.toDouble() / chordLen
-                val t = idx.toDouble() / sr
-                val bEnv = (if (p < 0.03) p / 0.03 else if (p > 0.9) (1.0 - p) / 0.1 else 1.0).coerceIn(0.0, 1.0)
-                mix[idx] += sin(2.0 * PI * bf * t) * 0.15 * bEnv
-                mix[idx] += sin(2.0 * PI * bf * 2.0 * t) * 0.035 * bEnv
-                var pad = 0.0
-                for (f in ch) pad += sin(2.0 * PI * f * t)
-                val padEnv = (if (p < 0.15) p / 0.15 else if (p > 0.85) (1.0 - p) / 0.15 else 1.0).coerceIn(0.0, 1.0)
-                mix[idx] += pad * 0.026 * padEnv
-            }
-        }
-
-        // Glocken-Lead: 32 Plucks eine Oktave ueber den Akkordtoenen
-        val steps = 32
-        val stepLen = nS / steps
-        val pattern = intArrayOf(0, 2, 1, 2, 0, 1, 2, 1)
-        for (s in 0 until steps) {
-            val ci = s * chords / steps
-            val ch = tones[ci]
-            val f = ch[pattern[s % pattern.size] % ch.size] * 2.0
-            for (i in 0 until stepLen) {
-                val idx = s * stepLen + i
-                if (idx >= nS) break
-                val p = i.toDouble() / stepLen
-                val env = exp(-5.0 * p) * (1.0 - p)
-                mix[idx] += sin(2.0 * PI * f * idx / sr) * 0.055 * env
-            }
-        }
-
-        // dezenter Puls alle 0.5s
-        val beat = (sr * 0.5).toInt()
-        val tickLen = (sr * 0.03).toInt()
-        var b = 0
-        while (b < nS) {
-            for (i in 0 until tickLen) {
-                val idx = b + i
-                if (idx >= nS) break
-                val env = exp(-28.0 * (i.toDouble() / tickLen))
-                mix[idx] += sin(2.0 * PI * 1600.0 * idx / sr) * 0.012 * env
-            }
-            b += beat
-        }
+        val nS = secLen * sections.size
+        val mix = DoubleArray(nS)
+        for ((si, sec) in sections.withIndex()) renderSection(mix, si * secLen, secLen, sec)
 
         val out = ShortArray(nS)
         for (i in 0 until nS) {
-            val v = kotlin.math.tanh(mix[i] * 1.15)   // weiche Begrenzung
+            val v = kotlin.math.tanh(mix[i] * 1.15)
             out[i] = (v * 32767.0 * 0.82).toInt().coerceIn(-32767, 32767).toShort()
         }
         return out
+    }
+
+    private fun renderSection(mix: DoubleArray, offset: Int, len: Int, sec: Section) {
+        val chords = sec.prog.size
+        val chordLen = len / chords
+        for (ci in 0 until chords) {
+            val ch = chord(sec.prog[ci])
+            val start = offset + ci * chordLen
+            for (i in 0 until chordLen) {
+                val idx = start + i
+                if (idx >= mix.size) break
+                val p = i.toDouble() / chordLen
+                val t = idx.toDouble() / sr
+                val bEnv = (if (p < 0.03) p / 0.03 else if (p > 0.9) (1.0 - p) / 0.1 else 1.0).coerceIn(0.0, 1.0)
+                mix[idx] += sin(2.0 * PI * ch.bass * t) * sec.bassAmp * bEnv
+                mix[idx] += sin(2.0 * PI * ch.bass * 2.0 * t) * (sec.bassAmp * 0.23) * bEnv
+                if (sec.withPad) {
+                    var pad = 0.0
+                    for (f in ch.tones) pad += sin(2.0 * PI * f * t)
+                    val padEnv = (if (p < 0.15) p / 0.15 else if (p > 0.85) (1.0 - p) / 0.15 else 1.0).coerceIn(0.0, 1.0)
+                    mix[idx] += pad * 0.026 * padEnv
+                }
+            }
+        }
+        // Glocken-Lead
+        val stepLen = len / sec.leadSteps
+        for (s in 0 until sec.leadSteps) {
+            val ci = s * chords / sec.leadSteps
+            val ch = chord(sec.prog[ci])
+            val f = ch.tones[sec.leadPattern[s % sec.leadPattern.size] % ch.tones.size] * 2.0
+            for (i in 0 until stepLen) {
+                val idx = offset + s * stepLen + i
+                if (idx >= mix.size) break
+                val p = i.toDouble() / stepLen
+                val env = exp(-5.0 * p) * (1.0 - p)
+                mix[idx] += sin(2.0 * PI * f * (offset + s * stepLen + i) / sr) * 0.05 * env
+            }
+        }
+        // dezenter Puls
+        if (sec.withPulse) {
+            val beat = (sr * 0.5).toInt()
+            val tickLen = (sr * 0.03).toInt()
+            var b = 0
+            while (b < len) {
+                for (i in 0 until tickLen) {
+                    val idx = offset + b + i
+                    if (idx >= mix.size) break
+                    val env = exp(-28.0 * (i.toDouble() / tickLen))
+                    mix[idx] += sin(2.0 * PI * 1600.0 * idx / sr) * 0.012 * env
+                }
+                b += beat
+            }
+        }
     }
 }

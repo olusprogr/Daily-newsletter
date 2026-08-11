@@ -11,13 +11,29 @@ android {
         applicationId = "com.olusprogr.schacht"
         minSdk = 24
         targetSdk = 34
-        versionCode = 13
-        versionName = "0.11-zoom"
+        versionCode = 14
+        versionName = "0.12-stablekey"
+    }
+
+    signingConfigs {
+        // Fester Schluessel im Repo, damit JEDER Build dieselbe Signatur hat.
+        // Nur so lassen sich neue Versionen ohne Deinstallation (und damit ohne
+        // Verlust des Spielstands) ueber die alte druebersinstallieren.
+        create("stable") {
+            storeFile = file("schacht.jks")
+            storePassword = "schacht123"
+            keyAlias = "schacht"
+            keyPassword = "schacht123"
+        }
     }
 
     buildTypes {
+        debug {
+            signingConfig = signingConfigs.getByName("stable")
+        }
         release {
             isMinifyEnabled = false
+            signingConfig = signingConfigs.getByName("stable")
         }
     }
 
