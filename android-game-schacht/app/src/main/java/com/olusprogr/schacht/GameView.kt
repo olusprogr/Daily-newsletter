@@ -509,16 +509,26 @@ class GameView(context: Context) : View(context) {
         val u = cell / 8f
 
         if (!sim.isLand(r, c)) {
-            // --- Wasser ---
+            // --- Wasser: Basis + horizontale Wellenstriche + wandernder Glanz ---
             pSprite.color = cWater
             canvas.drawRect(x, y, x + cell, y + cell, pSprite)
+            val h = u * 0.55f
+            // dunklerer Wellenstrich (tieferes Wasser)
             pSprite.color = cWaterD
-            canvas.drawRect(x + q(0) * u, y + q(1) * u, x + (q(0) + 2) * u, y + (q(1) + 1) * u, pSprite)
-            canvas.drawRect(x + q(2) * u, y + q(3) * u, x + (q(2) + 1) * u, y + (q(3) + 1) * u, pSprite)
-            val tw = kotlin.math.sin(animT * 1.8 + (r * 0.7 + c * 1.3)) * 0.5 + 0.5
-            if (tw > 0.72) {
-                pSprite.color = cWaterL
-                canvas.drawRect(x + q(4) * u, y + q(5) * u, x + (q(4) + 1) * u, y + (q(5) + 1) * u, pSprite)
+            val d1x = (q(0) % 5) * u; val d1y = (q(1) % 7 + 1) * u
+            canvas.drawRect(x + d1x, y + d1y, x + d1x + 3 * u, y + d1y + h, pSprite)
+            // hellerer Wellenkamm, driftet langsam seitlich
+            pSprite.color = cWaterL
+            val drift = ((animT * 3f + r * 2).toInt() % 4) * (u * 0.5f)
+            val d2x = (q(4) % 4) * u + drift; val d2y = (q(5) % 7) * u
+            canvas.drawRect(x + d2x, y + d2y, x + d2x + 2 * u, y + d2y + h, pSprite)
+            // blinkender Glitzerpunkt
+            val tw = kotlin.math.sin(animT * 1.6 + (r * 0.7 + c * 1.3)) * 0.5 + 0.5
+            if (tw > 0.82) {
+                val g = cell / 16f
+                pSprite.color = Color.argb(210, 224, 255, 255)
+                canvas.drawRect(x + (q(2) % 6 + 1) * 2 * g, y + (q(3) % 6 + 1) * 2 * g,
+                    x + (q(2) % 6 + 1) * 2 * g + g, y + (q(3) % 6 + 1) * 2 * g + g, pSprite)
             }
             return
         }
@@ -538,11 +548,24 @@ class GameView(context: Context) : View(context) {
         }
         pSprite.color = base
         canvas.drawRect(x, y, x + cell, y + cell, pSprite)
+        // dunklere Grasbueschel-Flecken
         pSprite.color = dark
-        canvas.drawRect(x + q(0) * u, y + q(1) * u, x + (q(0) + 2) * u, y + (q(1) + 2) * u, pSprite)
-        canvas.drawRect(x + q(2) * u, y + q(3) * u, x + (q(2) + 1) * u, y + (q(3) + 1) * u, pSprite)
+        val b0x = (q(0) % 6) * u; val b0y = (q(1) % 6) * u
+        canvas.drawRect(x + b0x, y + b0y, x + b0x + 2 * u, y + b0y + u, pSprite)
+        val b1x = (q(2) % 7) * u; val b1y = (q(3) % 7) * u
+        canvas.drawRect(x + b1x, y + b1y, x + b1x + u, y + b1y + u, pSprite)
+        // hellere Spitzlichter
         pSprite.color = lite
-        canvas.drawRect(x + q(4) * u, y + q(5) * u, x + (q(4) + 1) * u, y + (q(5) + 1) * u, pSprite)
+        val l0x = (q(4) % 7) * u; val l0y = (q(5) % 7) * u
+        canvas.drawRect(x + l0x, y + l0y, x + l0x + u, y + l0y + u, pSprite)
+        // feine Grashalme (schmale, dunkle Striche) fuer Gras-Anmutung
+        pSprite.color = dark
+        val bw = u * 0.42f; val bh = u * 1.25f
+        for (k in 0 until 3) {
+            val bx = x + (q(k + 1) % 7) * u
+            val by = y + (q(k + 4) % 6) * u
+            canvas.drawRect(bx, by, bx + bw, by + bh, pSprite)
+        }
 
         if (!surveyed) {
             // dezente Frage-Punkte signalisieren "unbekannt"
@@ -616,13 +639,6 @@ class GameView(context: Context) : View(context) {
             if (m.condition < 20) drawSprite(canvas, Sprites.SPARK, x, y, s)
         }
 
-        // dezenter Auslastungs-Rahmen
-        if (m.util > 0.02) {
-            p.color = Color.argb((60 + 120 * m.util).toInt().coerceIn(0, 255), 255, 255, 255)
-            p.style = Paint.Style.STROKE; p.strokeWidth = dp(1.5f)
-            canvas.drawRect(x + pad, y + pad, x + cell - pad, y + cell - pad, p)
-            p.style = Paint.Style.FILL
-        }
 
         // Zustandsbalken unten
         if (hasWear) {
