@@ -117,7 +117,6 @@ class Simulation {
             TechNode("t_haendler", "Haendler freischalten", 20.0, 1.0, 1, "Komponenten -> Geld", "t_assembler", Res.PLATTE),
             TechNode("t_boost", "Verstaerker freischalten", 20.0, 1.0, 1, "beschleunigt Nachbarn", "t_gen", Res.PLATTE),
             // Upgrades (mit Geld bezahlt)
-            TechNode("t_diag", "Diagonale Nachbarn", 120.0, 1.0, 1, "8 statt 4 Nachbarn", null, null),
             TechNode("t_bspeed", "Bohrer-Tempo", 25.0, 1.3, 20, "+8%/Stufe", null, null),
             TechNode("t_ospeed", "Ofen-Tempo", 35.0, 1.3, 20, "+8%/Stufe", null, null),
             TechNode("t_pspeed", "Presse-Tempo", 45.0, 1.3, 20, "+8%/Stufe", "t_presse", null),
@@ -368,13 +367,10 @@ class Simulation {
     }
 
     private fun neighbors(r: Int, c: Int): List<IntArray> {
-        val res = ArrayList<IntArray>(8)
-        val diag = has("t_diag")
-        for (dr in -1..1) for (dc in -1..1) {
-            if (dr == 0 && dc == 0) continue
-            if (!diag && dr != 0 && dc != 0) continue
-            val nr = r + dr
-            val nc = c + dc
+        val res = ArrayList<IntArray>(4)
+        val d = arrayOf(intArrayOf(-1, 0), intArrayOf(1, 0), intArrayOf(0, -1), intArrayOf(0, 1))
+        for (o in d) {
+            val nr = r + o[0]; val nc = c + o[1]
             if (nr in 0 until n && nc in 0 until n) res.add(intArrayOf(nr, nc))
         }
         return res

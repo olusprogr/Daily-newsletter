@@ -23,7 +23,7 @@ class Audio {
     // Lautstaerken 0..1, getrennt fuer Musik und Effekte.
     @Volatile var musicVol = 0.5f
         private set
-    @Volatile var sfxVol = 0.5f
+    @Volatile var sfxVol = 0.33f
         private set
     @Volatile private var playing = false
     private var musicTrack: AudioTrack? = null
@@ -99,12 +99,12 @@ class Audio {
     fun resume() = startMusic()
     fun release() = stopMusic()
 
-    // --- SFX --- (Basis-Amplitude; die tatsaechliche Lautstaerke skaliert mit sfxVol)
-    fun place() = playTone(200.0, 150.0, 90, 0.35, square = true)
-    fun buy() = playTone(500.0, 1000.0, 130, 0.30, square = true)
-    fun sell() = playTone(720.0, 340.0, 130, 0.30, square = true)
-    fun error() = playTone(150.0, 130.0, 170, 0.35, square = true, tremolo = true)
-    fun click() = playTone(1300.0, 1300.0, 28, 0.20, square = false)
+    // --- SFX --- (Basis-Amplitude bewusst niedrig; skaliert zusaetzlich mit sfxVol)
+    fun place() = playTone(200.0, 150.0, 90, 0.20, square = true)
+    fun buy() = playTone(500.0, 1000.0, 130, 0.17, square = true)
+    fun sell() = playTone(720.0, 340.0, 130, 0.17, square = true)
+    fun error() = playTone(150.0, 130.0, 170, 0.20, square = true, tremolo = true)
+    fun click() = playTone(1300.0, 1300.0, 28, 0.11, square = false)
 
     private fun playTone(f0: Double, f1: Double, durMs: Int, amp: Double, square: Boolean, tremolo: Boolean = false) {
         if (sfxVol <= 0.001f) return
@@ -156,45 +156,82 @@ class Audio {
         return out
     }
 
-    /** 4-Sekunden-Loop: tiefer Bass-Puls + sparsame Arpeggio-Plucks. */
+    /**
+     * 8-Sekunden-Loop mit vierteiliger Akkordfolge (Am – F – C – G): weicher
+     * Bass mit Oberton, sanfter Akkord-Pad und eine glockige Lead-Melodie,
+     * dazu ein dezenter Puls. Zum Schluss weiche Begrenzung (tanh) statt hartem
+     * Clipping – klingt runder als der alte 4s-Loop.
+     */
     private fun buildMusic(): ShortArray {
-        val loopSec = 4.0
+        val loopSec = 8.0
         val nS = (sr * loopSec).toInt()
         val mix = DoubleArray(nS)
 
-        // Bass: 2 lange Noten (A1, E2)
-        val bassNotes = doubleArrayOf(55.0, 55.0, 82.41, 82.41)
-        val stepBass = nS / bassNotes.size
-        for (s in bassNotes.indices) {
-            val f = bassNotes[s]
-            for (i in 0 until stepBass) {
-                val idx = s * stepBass + i
+        // bass, [drei Akkordtoene]
+        val bass = doubleArrayOf(55.0, 43.65, 65.41, 49.0)          // A1, F1, C2, G1
+        val tones = arrayOf(
+            doubleArrayOf(220.0, 261.63, 329.63),  // Am
+            doubleArrayOf(174.61, 220.0, 261.63),  // F
+            doubleArrayOf(196.0, 261.63, 329.63),  // C
+            doubleArrayOf(196.0, 246.94, 293.66)   // G
+        )
+        val chords = bass.size
+        val chordLen = nS / chords
+
+        for (ci in 0 until chords) {
+            val start = ci * chordLen
+            val bf = bass[ci]
+            val ch = tones[ci]
+            for (i in 0 until chordLen) {
+                val idx = start + i
                 if (idx >= nS) break
-                val p = i.toDouble() / stepBass
-                val env = (if (p < 0.05) p / 0.05 else if (p > 0.85) (1.0 - p) / 0.15 else 1.0).coerceIn(0.0, 1.0)
-                mix[idx] += sin(2.0 * PI * f * idx / sr) * 0.18 * env
+                val p = i.toDouble() / chordLen
+                val t = idx.toDouble() / sr
+                val bEnv = (if (p < 0.03) p / 0.03 else if (p > 0.9) (1.0 - p) / 0.1 else 1.0).coerceIn(0.0, 1.0)
+                mix[idx] += sin(2.0 * PI * bf * t) * 0.15 * bEnv
+                mix[idx] += sin(2.0 * PI * bf * 2.0 * t) * 0.035 * bEnv
+                var pad = 0.0
+                for (f in ch) pad += sin(2.0 * PI * f * t)
+                val padEnv = (if (p < 0.15) p / 0.15 else if (p > 0.85) (1.0 - p) / 0.15 else 1.0).coerceIn(0.0, 1.0)
+                mix[idx] += pad * 0.026 * padEnv
             }
         }
 
-        // Arpeggio: 16 Plucks aus A-Moll-Pentatonik
-        val arp = doubleArrayOf(220.0, 261.63, 329.63, 392.0)
-        val steps = 16
+        // Glocken-Lead: 32 Plucks eine Oktave ueber den Akkordtoenen
+        val steps = 32
         val stepLen = nS / steps
+        val pattern = intArrayOf(0, 2, 1, 2, 0, 1, 2, 1)
         for (s in 0 until steps) {
-            val f = arp[s % arp.size]
+            val ci = s * chords / steps
+            val ch = tones[ci]
+            val f = ch[pattern[s % pattern.size] % ch.size] * 2.0
             for (i in 0 until stepLen) {
                 val idx = s * stepLen + i
                 if (idx >= nS) break
                 val p = i.toDouble() / stepLen
-                val env = exp(-4.0 * p) * (1.0 - p)   // schneller Pluck-Abfall
-                mix[idx] += sin(2.0 * PI * f * idx / sr) * 0.10 * env
+                val env = exp(-5.0 * p) * (1.0 - p)
+                mix[idx] += sin(2.0 * PI * f * idx / sr) * 0.055 * env
             }
+        }
+
+        // dezenter Puls alle 0.5s
+        val beat = (sr * 0.5).toInt()
+        val tickLen = (sr * 0.03).toInt()
+        var b = 0
+        while (b < nS) {
+            for (i in 0 until tickLen) {
+                val idx = b + i
+                if (idx >= nS) break
+                val env = exp(-28.0 * (i.toDouble() / tickLen))
+                mix[idx] += sin(2.0 * PI * 1600.0 * idx / sr) * 0.012 * env
+            }
+            b += beat
         }
 
         val out = ShortArray(nS)
         for (i in 0 until nS) {
-            val v = mix[i].coerceIn(-1.0, 1.0)
-            out[i] = (v * 32767.0 * 0.9).toInt().coerceIn(-32767, 32767).toShort()
+            val v = kotlin.math.tanh(mix[i] * 1.15)   // weiche Begrenzung
+            out[i] = (v * 32767.0 * 0.82).toInt().coerceIn(-32767, 32767).toShort()
         }
         return out
     }

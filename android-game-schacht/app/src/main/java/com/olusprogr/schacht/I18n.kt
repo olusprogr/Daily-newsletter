@@ -4,7 +4,7 @@ enum class Lang { DE, EN, PL }
 
 /** Minimale Lokalisierung: Schluessel -> Text je Sprache, Fallback auf EN/Key. */
 object I18n {
-    var lang = Lang.DE
+    var lang = Lang.EN
 
     fun t(k: String): String = M[lang]?.get(k) ?: EN[k] ?: k
 

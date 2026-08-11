@@ -46,6 +46,27 @@ class GameView(context: Context) : View(context) {
 
     private val audio = Audio()
 
+    // Pinch-Zoom auf der Karte (nur im Spiel).
+    private val scaleDetector = android.view.ScaleGestureDetector(
+        context,
+        object : android.view.ScaleGestureDetector.SimpleOnScaleGestureListener() {
+            override fun onScale(d: android.view.ScaleGestureDetector): Boolean {
+                if (screen != Screen.GAME) return false
+                val baseCell = gridSide / sim.areaN()
+                val oldCell = baseCell * zoom
+                val gx = (d.focusX - (gridLeft + panX)) / oldCell
+                val gy = (d.focusY - (gridTop + panY)) / oldCell
+                zoom = (zoom * d.scaleFactor).coerceIn(1f, 3f)
+                val newCell = baseCell * zoom
+                panX = d.focusX - gridLeft - gx * newCell
+                panY = d.focusY - gridTop - gy * newCell
+                moved = true
+                invalidate()
+                return true
+            }
+        }
+    )
+
     private val prefs = context.getSharedPreferences("schacht_save", Context.MODE_PRIVATE)
 
     // Farben (heller, waermer, farbiger)
@@ -91,13 +112,33 @@ class GameView(context: Context) : View(context) {
     private var dens = context.resources.displayMetrics.density
     private fun dp(v: Float) = v * dens
 
-    // Layout
+    // Layout: gridLeft/gridTop/gridSide = fester Anzeigebereich (Viewport).
     private var gridLeft = 0f
     private var gridTop = 0f
-    private var cell = 0f
+    private var cell = 0f          // effektive (gezoomte) Zellgroesse
     private var gridSide = 0f
     private var headerH = 0f
     private var paletteTop = 0f
+
+    // Zoom & Verschiebung der Karte
+    private var zoom = 1f
+    private var panX = 0f
+    private var panY = 0f
+    private var vLeft = 0f         // effektiver Ursprung (mit Pan)
+    private var vTop = 0f
+    private var lastPanX = 0f
+    private var lastPanY = 0f
+
+    private fun updateView() {
+        val baseCell = gridSide / sim.areaN()
+        zoom = zoom.coerceIn(1f, 3f)
+        cell = baseCell * zoom
+        val content = gridSide * zoom
+        panX = panX.coerceIn(gridSide - content, 0f)   // gridSide-content <= 0
+        panY = panY.coerceIn(gridSide - content, 0f)
+        vLeft = gridLeft + panX
+        vTop = gridTop + panY
+    }
 
     private class Btn(
         val rect: RectF,
@@ -161,9 +202,9 @@ class GameView(context: Context) : View(context) {
     }
 
     init {
-        I18n.lang = try { Lang.values()[prefs.getInt("lang", 0)] } catch (_: Exception) { Lang.DE }
+        I18n.lang = try { Lang.values()[prefs.getInt("lang", Lang.EN.ordinal)] } catch (_: Exception) { Lang.EN }
         audio.setMusicVol(prefs.getInt("musicVol", 50) / 100f)
-        audio.setSfxVol(prefs.getInt("sfxVol", 50) / 100f)
+        audio.setSfxVol(prefs.getInt("sfxVol", 33) / 100f)
         // Start immer im Hauptmenue mit der Slot-Auswahl.
         sim.newGame()
         screen = Screen.MENU
@@ -237,7 +278,7 @@ class GameView(context: Context) : View(context) {
 
     override fun onDraw(canvas: Canvas) {
         buttons.clear()
-        cell = gridSide / sim.areaN()   // Feldgroesse haengt von der freigeschalteten Flaeche ab
+        updateView()   // setzt cell/vLeft/vTop aus Zoom & Pan
         canvas.drawColor(cBg)
         if (screen == Screen.MENU) { drawMenu(canvas); return }
         drawHeader(canvas)
@@ -310,9 +351,12 @@ class GameView(context: Context) : View(context) {
 
     private fun drawGrid(canvas: Canvas) {
         val an = sim.areaN()
+        canvas.save()
+        canvas.clipRect(gridLeft, gridTop, gridLeft + gridSide, gridTop + gridSide)
         for (r in 0 until an) for (c in 0 until an) {
-            val x = gridLeft + c * cell
-            val y = gridTop + r * cell
+            val x = vLeft + c * cell
+            val y = vTop + r * cell
+            if (x + cell < gridLeft || x > gridLeft + gridSide || y + cell < gridTop || y > gridTop + gridSide) continue
             drawGround(canvas, r, c, x, y)
             val m = sim.grid[r][c]
             if (m != null) drawMachine(canvas, m, x, y)
@@ -320,10 +364,11 @@ class GameView(context: Context) : View(context) {
         if (screen == Screen.GAME) drawFlows(canvas)
         if (selR >= 0 && selR < an && selC < an && screen == Screen.GAME) {
             p.color = cAccent; p.style = Paint.Style.STROKE; p.strokeWidth = dp(3f)
-            canvas.drawRect(gridLeft + selC * cell + 1, gridTop + selR * cell + 1,
-                gridLeft + selC * cell + cell - 1, gridTop + selR * cell + cell - 1, p)
+            canvas.drawRect(vLeft + selC * cell + 1, vTop + selR * cell + 1,
+                vLeft + selC * cell + cell - 1, vTop + selR * cell + cell - 1, p)
             p.style = Paint.Style.FILL
         }
+        canvas.restore()
     }
 
     // Welchen Rohstoff gibt ein Produzent aus / will ein Verbraucher.
@@ -348,18 +393,16 @@ class GameView(context: Context) : View(context) {
      */
     private fun drawFlows(canvas: Canvas) {
         val an = sim.areaN()
-        val diag = sim.has("t_diag")
         val half = cell / 2f
         val isz = (cell * 0.26f).coerceAtLeast(dp(9f))   // kleiner als vorher
+        val dirs = arrayOf(intArrayOf(-1, 0), intArrayOf(1, 0), intArrayOf(0, -1), intArrayOf(0, 1))
         for (r in 0 until an) for (c in 0 until an) {
             val cm = sim.grid[r][c] ?: continue
             val isLager = cm.type == MType.LAGER
             val want = wantsRes(cm.type)
             if (want < 0 && !isLager) continue
-            for (dr in -1..1) for (dc in -1..1) {
-                if (dr == 0 && dc == 0) continue
-                if (!diag && dr != 0 && dc != 0) continue
-                val pr = r + dr; val pc = c + dc
+            for (dir in dirs) {
+                val pr = r + dir[0]; val pc = c + dir[1]
                 if (pr !in 0 until an || pc !in 0 until an) continue
                 val pm = sim.grid[pr][pc] ?: continue
                 val off = offersRes(pm.type)
@@ -371,10 +414,10 @@ class GameView(context: Context) : View(context) {
                 val producing = pm.util > 0.03 || pm.output[res] > 0.2
                 if (!consuming || !producing) continue
 
-                val sx = gridLeft + pc * cell + half
-                val sy = gridTop + pr * cell + half
-                val ex = gridLeft + c * cell + half
-                val ey = gridTop + r * cell + half
+                val sx = vLeft + pc * cell + half
+                val sy = vTop + pr * cell + half
+                val ex = vLeft + c * cell + half
+                val ey = vTop + r * cell + half
                 val icon = Sprites.iconForRes(res)
                 val base = animT * 0.6f + (pr * 3 + pc + res) * 0.31f   // langsamer
                 val t = base % 1f
@@ -937,10 +980,12 @@ class GameView(context: Context) : View(context) {
     // ---------------- Eingabe ----------------
 
     override fun onTouchEvent(event: MotionEvent): Boolean {
+        scaleDetector.onTouchEvent(event)
         val slop = dp(8f)
-        when (event.action) {
+        when (event.actionMasked) {
             MotionEvent.ACTION_DOWN -> {
-                downX = event.x; downY = event.y; downScroll = techScroll; moved = false
+                downX = event.x; downY = event.y; downScroll = techScroll
+                lastPanX = panX; lastPanY = panY; moved = false
                 return true
             }
             MotionEvent.ACTION_MOVE -> {
@@ -948,11 +993,18 @@ class GameView(context: Context) : View(context) {
                 if (screen == Screen.TECH) {
                     techScroll = (downScroll - (event.y - downY)).coerceIn(0f, techMaxScroll)
                     invalidate()
+                } else if (screen == Screen.GAME && zoom > 1f &&
+                    event.pointerCount == 1 && !scaleDetector.isInProgress
+                ) {
+                    // gezoomte Karte per Finger verschieben
+                    panX = lastPanX + (event.x - downX)
+                    panY = lastPanY + (event.y - downY)
+                    invalidate()
                 }
                 return true
             }
             MotionEvent.ACTION_UP -> {
-                if (!moved) handleClick(event.x, event.y)
+                if (!moved && !scaleDetector.isInProgress) handleClick(event.x, event.y)
                 return true
             }
             else -> return true
@@ -970,8 +1022,8 @@ class GameView(context: Context) : View(context) {
         if (screen != Screen.GAME) return
         val an = sim.areaN()
         if (x >= gridLeft && x < gridLeft + gridSide && y >= gridTop && y < gridTop + gridSide) {
-            val c = ((x - gridLeft) / cell).toInt().coerceIn(0, an - 1)
-            val r = ((y - gridTop) / cell).toInt().coerceIn(0, an - 1)
+            val c = ((x - vLeft) / cell).toInt().coerceIn(0, an - 1)
+            val r = ((y - vTop) / cell).toInt().coerceIn(0, an - 1)
             handleCell(r, c)
         } else {
             selR = -1; selC = -1
