@@ -54,7 +54,10 @@ object I18n {
         "mach_short" to "Masch.", "delete" to "Loeschen", "del_confirm" to "Sicher?",
         "to_menu" to "Hauptmenue", "ago_new" to "neu", "ago_now" to "gerade eben", "ago_pre" to "vor ",
         "snd_music" to "Musik", "snd_sfx" to "Effekte",
-        "snd_off" to "Aus", "snd_low" to "Leise", "snd_mid" to "Mittel", "snd_high" to "Laut"
+        "snd_off" to "Aus", "snd_low" to "Leise", "snd_mid" to "Mittel", "snd_high" to "Laut",
+        "backup_save" to "Backup speichern", "backup_load" to "Backup laden",
+        "backup_saved" to "Backup gespeichert", "backup_loaded" to "Backup geladen",
+        "backup_failed" to "Backup fehlgeschlagen"
     )
 
     private val EN = mapOf(
@@ -103,7 +106,10 @@ object I18n {
         "mach_short" to "mach.", "delete" to "Delete", "del_confirm" to "Sure?",
         "to_menu" to "Main menu", "ago_new" to "new", "ago_now" to "just now", "ago_pre" to "",
         "snd_music" to "Music", "snd_sfx" to "Effects",
-        "snd_off" to "Off", "snd_low" to "Low", "snd_mid" to "Mid", "snd_high" to "High"
+        "snd_off" to "Off", "snd_low" to "Low", "snd_mid" to "Mid", "snd_high" to "High",
+        "backup_save" to "Save backup", "backup_load" to "Load backup",
+        "backup_saved" to "Backup saved", "backup_loaded" to "Backup loaded",
+        "backup_failed" to "Backup failed"
     )
 
     private val PL = mapOf(
@@ -152,7 +158,10 @@ object I18n {
         "mach_short" to "masz.", "delete" to "Usun", "del_confirm" to "Na pewno?",
         "to_menu" to "Menu glowne", "ago_new" to "nowy", "ago_now" to "przed chwila", "ago_pre" to "",
         "snd_music" to "Muzyka", "snd_sfx" to "Efekty",
-        "snd_off" to "Wyl", "snd_low" to "Cicho", "snd_mid" to "Srednio", "snd_high" to "Glosno"
+        "snd_off" to "Wyl", "snd_low" to "Cicho", "snd_mid" to "Srednio", "snd_high" to "Glosno",
+        "backup_save" to "Zapisz kopie", "backup_load" to "Wczytaj kopie",
+        "backup_saved" to "Kopia zapisana", "backup_loaded" to "Kopia wczytana",
+        "backup_failed" to "Blad kopii"
     )
 
     private val M = mapOf(Lang.DE to DE, Lang.EN to EN, Lang.PL to PL)

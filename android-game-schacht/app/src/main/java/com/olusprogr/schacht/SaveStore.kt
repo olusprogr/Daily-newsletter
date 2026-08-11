@@ -1,14 +1,7 @@
 package com.olusprogr.schacht
 
-import android.content.ContentUris
-import android.content.ContentValues
 import android.content.Context
-import android.net.Uri
-import android.os.Build
-import android.os.Environment
-import android.provider.MediaStore
 import org.json.JSONObject
-import java.io.File
 
 /** Kurzinfo zu einem Spielstand fuer die Menue-Liste. */
 class SlotInfo(
@@ -20,71 +13,10 @@ class SlotInfo(
 )
 
 /**
- * Spielstand ausserhalb des App-Sandkastens ablegen, damit der Fortschritt eine
- * Deinstallation ueberlebt. Ab Android 10 ueber Scoped Storage (MediaStore) ohne
- * Berechtigung; davor per Datei im oeffentlichen Documents-Ordner. Alles in
- * try/catch – schlaegt es fehl, bleibt der interne Spielstand die Quelle.
- */
-object ExternalStore {
-    private const val DISPLAY = "schacht_saves.json"
-    private val RELPATH = Environment.DIRECTORY_DOCUMENTS + "/SCHACHT"
-
-    fun save(context: Context, content: String) {
-        try {
-            if (Build.VERSION.SDK_INT >= 29) saveScoped(context, content) else saveLegacy(content)
-        } catch (_: Exception) { }
-    }
-
-    fun load(context: Context): String? = try {
-        if (Build.VERSION.SDK_INT >= 29) loadScoped(context) else loadLegacy()
-    } catch (_: Exception) { null }
-
-    private fun collection(): Uri = MediaStore.Files.getContentUri(MediaStore.VOLUME_EXTERNAL_PRIMARY)
-
-    private fun findUri(context: Context): Uri? {
-        val proj = arrayOf(MediaStore.MediaColumns._ID)
-        val sel = "${MediaStore.MediaColumns.DISPLAY_NAME}=? AND ${MediaStore.MediaColumns.RELATIVE_PATH} LIKE ?"
-        val args = arrayOf(DISPLAY, "%SCHACHT%")
-        context.contentResolver.query(collection(), proj, sel, args, null)?.use { c ->
-            if (c.moveToFirst()) return ContentUris.withAppendedId(collection(), c.getLong(0))
-        }
-        return null
-    }
-
-    private fun saveScoped(context: Context, content: String) {
-        val resolver = context.contentResolver
-        var uri = findUri(context)
-        if (uri == null) {
-            val values = ContentValues().apply {
-                put(MediaStore.MediaColumns.DISPLAY_NAME, DISPLAY)
-                put(MediaStore.MediaColumns.MIME_TYPE, "application/json")
-                put(MediaStore.MediaColumns.RELATIVE_PATH, RELPATH)
-            }
-            uri = resolver.insert(collection(), values)
-        }
-        uri ?: return
-        resolver.openOutputStream(uri, "wt")?.use { it.write(content.toByteArray(Charsets.UTF_8)); it.flush() }
-    }
-
-    private fun loadScoped(context: Context): String? {
-        val uri = findUri(context) ?: return null
-        context.contentResolver.openInputStream(uri)?.use { return it.readBytes().toString(Charsets.UTF_8) }
-        return null
-    }
-
-    private fun legacyFile(): File {
-        val dir = File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS), "SCHACHT")
-        if (!dir.exists()) dir.mkdirs()
-        return File(dir, DISPLAY)
-    }
-    private fun saveLegacy(content: String) { legacyFile().writeText(content) }
-    private fun loadLegacy(): String? { val f = legacyFile(); return if (f.exists()) f.readText() else null }
-}
-
-/**
- * Mehrere benannte Spielstaende. Quelle der Wahrheit sind SharedPreferences
- * (schnell), zusaetzlich in den externen Speicher gespiegelt. Beim ersten Start
- * nach einer Neuinstallation wird von dort wiederhergestellt.
+ * Mehrere benannte Spielstaende, gespeichert in SharedPreferences (bleiben bei
+ * normalem Beenden und bei App-Updates erhalten). Fuer das Ueberstehen einer
+ * Deinstallation gibt es Export/Import in eine vom Nutzer gewaehlte Datei
+ * (siehe exportAll/importAll + MainActivity).
  */
 class SaveStore(private val context: Context) {
 
@@ -94,14 +26,6 @@ class SaveStore(private val context: Context) {
 
     private fun readDb(): JSONObject {
         prefs.getString("db", null)?.let { try { return JSONObject(it) } catch (_: Exception) { } }
-        // Nach Neuinstallation: aus externem Spiegel wiederherstellen
-        ExternalStore.load(context)?.let {
-            try {
-                val o = JSONObject(it)
-                prefs.edit().putString("db", it).apply()
-                return o
-            } catch (_: Exception) { }
-        }
         // Migration: alter Einzel-Spielstand -> Slot 1
         val old = context.getSharedPreferences("schacht_save", Context.MODE_PRIVATE)
         val oldState = old.getString("state", null)
@@ -120,9 +44,7 @@ class SaveStore(private val context: Context) {
     }
 
     private fun persist(db: JSONObject) {
-        val s = db.toString()
-        prefs.edit().putString("db", s).apply()
-        ExternalStore.save(context, s)
+        prefs.edit().putString("db", db.toString()).apply()
     }
 
     private fun applyMeta(slot: JSONObject, state: String) {
@@ -140,8 +62,7 @@ class SaveStore(private val context: Context) {
     }
 
     fun slots(): List<SlotInfo> {
-        val db = readDb()
-        val slots = db.getJSONObject("slots")
+        val slots = readDb().getJSONObject("slots")
         val list = ArrayList<SlotInfo>()
         val keys = slots.keys()
         while (keys.hasNext()) {
@@ -167,7 +88,6 @@ class SaveStore(private val context: Context) {
         return slots.getJSONObject(id).optString("state", null)
     }
 
-    /** Zustand eines bestehenden Slots aktualisieren. */
     fun saveState(id: String, state: String) {
         val db = readDb()
         val slots = db.getJSONObject("slots")
@@ -201,16 +121,23 @@ class SaveStore(private val context: Context) {
         persist(db)
     }
 
-    fun renameSlot(id: String, name: String) {
-        val db = readDb()
-        val slots = db.getJSONObject("slots")
-        if (slots.has(id)) { slots.getJSONObject(id).put("name", name); persist(db) }
-    }
-
     private fun nextName(): String {
         val slots = readDb().getJSONObject("slots")
         var n = 1
         while (slots.has(n.toString())) n++
         return "Fabrik $n"
+    }
+
+    // --- Backup: gesamte Slot-Datenbank als JSON-Text ---
+    fun exportAll(): String = readDb().toString()
+
+    /** Ersetzt alle Spielstaende durch die Datenbank aus einem Backup. */
+    fun importAll(json: String): Boolean {
+        return try {
+            val o = JSONObject(json)
+            if (!o.has("slots")) return false
+            persist(o)
+            true
+        } catch (_: Exception) { false }
     }
 }

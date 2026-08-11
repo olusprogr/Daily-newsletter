@@ -11,8 +11,8 @@ android {
         applicationId = "com.olusprogr.schacht"
         minSdk = 24
         targetSdk = 34
-        versionCode = 14
-        versionName = "0.12-stablekey"
+        versionCode = 15
+        versionName = "0.13-backup"
     }
 
     signingConfigs {
@@ -50,4 +50,5 @@ android {
 dependencies {
     implementation("androidx.core:core-ktx:1.13.1")
     implementation("androidx.appcompat:appcompat:1.7.0")
+    implementation("androidx.activity:activity-ktx:1.8.2")
 }

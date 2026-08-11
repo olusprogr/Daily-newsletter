@@ -217,6 +217,19 @@ class GameView(context: Context) : View(context) {
     fun pauseAudio() = audio.pause()
     fun resumeAudio() = audio.resume()
 
+    /** Gesamte Slot-Datenbank als JSON (fuer Backup-Export). */
+    fun exportSave(): String { persist(); return saveStore.exportAll() }
+
+    /** Spielstaende aus einem Backup ersetzen; danach zurueck ins Menue. */
+    fun importSave(json: String): Boolean {
+        val ok = saveStore.importAll(json)
+        if (ok) {
+            currentSlot = null; menuArmedDelete = null
+            refreshMenu(); screen = Screen.MENU; invalidate()
+        }
+        return ok
+    }
+
     fun persist() {
         val slot = currentSlot ?: return
         try {
@@ -896,7 +909,7 @@ class GameView(context: Context) : View(context) {
         val slots = menuSlots
         var yy = dp(124f)
         val cardH = dp(74f)
-        val maxY = H - dp(84f)
+        val maxY = H - dp(150f)   // Platz fuer Backup-Zeile + Neues Spiel
         for (s in slots) {
             if (yy + cardH > maxY) break
             val rect = RectF(margin, yy, W - margin, yy + cardH)
@@ -930,8 +943,18 @@ class GameView(context: Context) : View(context) {
             yy += dp(28f)
         }
 
-        // Neues Spiel + Ton-Kurzschalter
-        val nr = RectF(margin, maxY - dp(4f), W - margin, maxY - dp(4f) + dp(54f))
+        // Backup speichern / laden (ueberlebt Deinstallation)
+        val bkY = H - dp(126f); val bkH = dp(40f)
+        val bhalf = (W - 3 * margin) / 2f
+        val bSave = RectF(margin, bkY, margin + bhalf, bkY + bkH)
+        val bLoad = RectF(margin * 2 + bhalf, bkY, margin * 2 + bhalf * 2, bkY + bkH)
+        drawButton(canvas, Btn(bSave, "backup_save", tr("backup_save"), true, false, cAccent))
+        drawButton(canvas, Btn(bLoad, "backup_load", tr("backup_load"), true, false, cAccent))
+        buttons.add(Btn(bSave, "backup_save", "bs"))
+        buttons.add(Btn(bLoad, "backup_load", "bl"))
+
+        // Neues Spiel
+        val nr = RectF(margin, H - dp(74f), W - margin, H - dp(74f) + dp(54f))
         drawButton(canvas, Btn(nr, "new_slot", "+ ${tr("new_game")}", true, false, cGood))
         buttons.add(Btn(nr, "new_slot", "new"))
     }
@@ -1040,6 +1063,8 @@ class GameView(context: Context) : View(context) {
             id.startsWith("svol_") -> setSfxVol(id.removePrefix("svol_").toInt())
             id == "to_menu" -> { persist(); resetArmed = false; menuArmedDelete = null; selR = -1; refreshMenu(); screen = Screen.MENU; audio.click() }
             id == "new_slot" -> { startNewSlot(); menuArmedDelete = null; audio.place() }
+            id == "backup_save" -> { (context as? MainActivity)?.startBackupExport(); audio.click() }
+            id == "backup_load" -> { (context as? MainActivity)?.startBackupImport(); audio.click() }
             id.startsWith("open_") -> { openSlot(id.removePrefix("open_")); menuArmedDelete = null; audio.click() }
             id.startsWith("del_") -> {
                 val sid = id.removePrefix("del_")
