@@ -95,12 +95,12 @@ class Audio {
     fun resume() = startMusic()
     fun release() = stopMusic()
 
-    // --- SFX ---
-    fun place() = playTone(200.0, 150.0, 90, 0.35, square = true)
-    fun buy() = playTone(500.0, 1000.0, 130, 0.30, square = true)
-    fun sell() = playTone(720.0, 340.0, 130, 0.30, square = true)
-    fun error() = playTone(150.0, 130.0, 170, 0.35, square = true, tremolo = true)
-    fun click() = playTone(1300.0, 1300.0, 28, 0.20, square = false)
+    // --- SFX --- (Lautstaerke um 50% reduziert)
+    fun place() = playTone(200.0, 150.0, 90, 0.175, square = true)
+    fun buy() = playTone(500.0, 1000.0, 130, 0.15, square = true)
+    fun sell() = playTone(720.0, 340.0, 130, 0.15, square = true)
+    fun error() = playTone(150.0, 130.0, 170, 0.175, square = true, tremolo = true)
+    fun click() = playTone(1300.0, 1300.0, 28, 0.10, square = false)
 
     private fun playTone(f0: Double, f1: Double, durMs: Int, amp: Double, square: Boolean, tremolo: Boolean = false) {
         if (muted) return

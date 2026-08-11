@@ -11,8 +11,8 @@ android {
         applicationId = "com.olusprogr.schacht"
         minSdk = 24
         targetSdk = 34
-        versionCode = 10
-        versionName = "0.9-slice"
+        versionCode = 11
+        versionName = "0.9.1-slice"
     }
 
     buildTypes {

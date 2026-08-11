@@ -147,7 +147,7 @@ class GameView(context: Context) : View(context) {
             var dt = (now - lastNanos) / 1_000_000_000.0
             lastNanos = now
             if (dt > 0.25) dt = 0.25
-            if (screen == Screen.GAME || screen == Screen.STAT) sim.step(dt)
+            if (screen != Screen.REPORT) sim.step(dt)
             animT += dt.toFloat()
             invalidate()
             handler.postDelayed(this, 33)
@@ -155,7 +155,6 @@ class GameView(context: Context) : View(context) {
     }
 
     init {
-        sim.recordFlows = true
         I18n.lang = try { Lang.values()[prefs.getInt("lang", 0)] } catch (_: Exception) { Lang.DE }
         val saved = prefs.getString("state", null)
         if (saved != null) {
@@ -299,31 +298,84 @@ class GameView(context: Context) : View(context) {
         else -> cResKomp
     }
 
-    /** Bewegte Punkte zwischen Produzent und Verbraucher: macht Fluesse sichtbar. */
+    // Welchen Rohstoff gibt ein Produzent aus / will ein Verbraucher.
+    private fun offersRes(t: MType): Int = when (t) {
+        MType.BOHRER -> Res.ROHERZ.ordinal
+        MType.OFEN -> Res.BARREN.ordinal
+        MType.PRESSE -> Res.PLATTE.ordinal
+        MType.ASSEMBLER -> Res.KOMPONENTE.ordinal
+        else -> -1
+    }
+    private fun wantsRes(t: MType): Int = when (t) {
+        MType.OFEN, MType.GENERATOR -> Res.ROHERZ.ordinal
+        MType.PRESSE -> Res.BARREN.ordinal
+        MType.ASSEMBLER -> Res.PLATTE.ordinal
+        else -> -1
+    }
+
+    /**
+     * Fluesse werden direkt aus dem Gitter abgeleitet (Nachbarschaft + Aktivitaet),
+     * nicht aus den winzigen Pro-Tick-Transfers. So werden alle Ketten sichtbar:
+     * Bohrer->Ofen, Ofen->Presse, Presse->Assembler, sowie Zufuhr in die Lager.
+     */
     private fun drawFlows(canvas: Canvas) {
-        val flows = sim.flows
-        if (flows.isEmpty()) return
         val an = sim.areaN()
-        val sz = (cell * 0.14f).coerceAtLeast(dp(3f))
+        val diag = sim.has("t_diag")
         val half = cell / 2f
-        // zwei Punkte je Fluss, phasenversetzt, wandern von Quelle zu Ziel
-        for (f in flows) {
-            if (f.fr >= an || f.fc >= an || f.tr >= an || f.tc >= an) continue
-            val sx = gridLeft + f.fc * cell + half
-            val sy = gridTop + f.fr * cell + half
-            val ex = gridLeft + f.tc * cell + half
-            val ey = gridTop + f.tr * cell + half
-            val base = (animT * 1.4f + (f.fr * 3 + f.fc + f.res))
-            pSprite.color = flowColor(f.res)
-            for (k in 0 until 2) {
-                var t = (base + k * 0.5f) % 1f
-                val cx = sx + (ex - sx) * t
-                val cy = sy + (ey - sy) * t
-                // kleiner dunkler Rand fuer Kontrast auf hellem Boden
-                pSprite.color = cGridLine
-                canvas.drawRect(cx - sz / 2 - 1f, cy - sz / 2 - 1f, cx + sz / 2 + 1f, cy + sz / 2 + 1f, pSprite)
-                pSprite.color = flowColor(f.res)
-                canvas.drawRect(cx - sz / 2, cy - sz / 2, cx + sz / 2, cy + sz / 2, pSprite)
+        val u = (cell * 0.09f).coerceAtLeast(dp(2f))
+        for (r in 0 until an) for (c in 0 until an) {
+            val cm = sim.grid[r][c] ?: continue
+            val isLager = cm.type == MType.LAGER
+            val want = wantsRes(cm.type)
+            if (want < 0 && !isLager) continue
+            for (dr in -1..1) for (dc in -1..1) {
+                if (dr == 0 && dc == 0) continue
+                if (!diag && dr != 0 && dc != 0) continue
+                val pr = r + dr; val pc = c + dc
+                if (pr !in 0 until an || pc !in 0 until an) continue
+                val pm = sim.grid[pr][pc] ?: continue
+                val off = offersRes(pm.type)
+                if (off < 0) continue
+                val res = if (isLager) off else want
+                if (!isLager && off != want) continue
+                // nur zeichnen, wenn tatsaechlich Material fliesst
+                val consuming = if (isLager) pm.output[res] > 0.3 else cm.util > 0.03
+                val producing = pm.util > 0.03 || pm.output[res] > 0.2
+                if (!consuming || !producing) continue
+
+                val sx = gridLeft + pc * cell + half
+                val sy = gridTop + pr * cell + half
+                val ex = gridLeft + c * cell + half
+                val ey = gridTop + r * cell + half
+                val base = animT * 1.3f + (pr * 3 + pc + res)
+                for (k in 0 until 2) {
+                    val t = (base + k * 0.5f) % 1f
+                    drawFlowMark(canvas, res, sx + (ex - sx) * t, sy + (ey - sy) * t, u)
+                }
+            }
+        }
+    }
+
+    /** Ein kleiner dunkel umrandeter Rohstoff-Marker in resource-eigener Form. */
+    private fun markRect(canvas: Canvas, x0: Float, y0: Float, x1: Float, y1: Float, col: Int) {
+        pSprite.color = cGridLine
+        canvas.drawRect(x0 - 1f, y0 - 1f, x1 + 1f, y1 + 1f, pSprite)
+        pSprite.color = col
+        canvas.drawRect(x0, y0, x1, y1, pSprite)
+    }
+
+    private fun drawFlowMark(canvas: Canvas, res: Int, cx: Float, cy: Float, u: Float) {
+        val col = flowColor(res)
+        when (res) {
+            Res.ROHERZ.ordinal ->            // Erz: kleiner grober Brocken
+                markRect(canvas, cx - u, cy - u, cx + u, cy + u, col)
+            Res.BARREN.ordinal ->            // Barren: liegender Riegel
+                markRect(canvas, cx - 1.5f * u, cy - 0.7f * u, cx + 1.5f * u, cy + 0.7f * u, col)
+            Res.PLATTE.ordinal ->            // Platte: breit und flach
+                markRect(canvas, cx - 1.7f * u, cy - 0.45f * u, cx + 1.7f * u, cy + 0.45f * u, col)
+            else -> {                        // Komponente: kleines Kreuz
+                markRect(canvas, cx - 0.5f * u, cy - 1.3f * u, cx + 0.5f * u, cy + 1.3f * u, col)
+                markRect(canvas, cx - 1.3f * u, cy - 0.5f * u, cx + 1.3f * u, cy + 0.5f * u, col)
             }
         }
     }
@@ -348,11 +400,19 @@ class GameView(context: Context) : View(context) {
         canvas.drawRect(x + q(2) * u, y + q(3) * u, x + (q(2) + 2) * u, y + (q(3) + 1) * u, pSprite)
         pSprite.color = lite
         canvas.drawRect(x + q(4) * u, y + q(5) * u, x + (q(4) + 1) * u, y + (q(5) + 1) * u, pSprite)
-        // Bodenschaetze-Flecken (nicht bei leerem Stein)
-        if (tier >= 1) {
+        // Bodenschaetze-Flecken. Bei normal (braun) volle Groesse; bei
+        // moderat (gruen) und reich (gold) feiner/kleiner, aber mehr Punkte.
+        if (tier == 1) {
             pSprite.color = accent
             canvas.drawRect(x + q(6) * u, y + q(7) * u, x + (q(6) + 1) * u, y + (q(7) + 1) * u, pSprite)
-            if (tier >= 2) canvas.drawRect(x + q(1) * u, y + q(6) * u, x + (q(1) + 1) * u, y + (q(6) + 1) * u, pSprite)
+        } else if (tier >= 2) {
+            pSprite.color = accent
+            val su = cell / 16f
+            fun dot(a: Int, b: Int) = canvas.drawRect(
+                x + q(a) * u, y + q(b) * u, x + q(a) * u + su, y + q(b) * u + su, pSprite
+            )
+            dot(6, 7); dot(1, 6)
+            if (tier == 3) { dot(3, 2); dot(4, 7) }
         }
         // Reicher Boden funkelt dezent: kleiner Glitzerpunkt, der blinkt
         if (tier == 3) {

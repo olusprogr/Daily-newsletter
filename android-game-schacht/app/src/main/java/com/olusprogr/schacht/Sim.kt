@@ -34,9 +34,6 @@ class Machine(var type: MType) {
 
 data class OfflineEvent(val timeSec: Int, val dead: Boolean, val mType: MType, val r: Int, val c: Int)
 
-/** Ein Rohstofffluss von Produzent (fr,fc) zu Verbraucher (tr,tc) fuer die Sichtbarkeit. */
-class Flow(val fr: Int, val fc: Int, val tr: Int, val tc: Int, val res: Int)
-
 data class OfflineReport(
     val elapsedSeconds: Int,
     val simSeconds: Int,
@@ -74,9 +71,7 @@ class Simulation {
     var powerSupply = 0.0
     var powerDemand = 0.0
 
-    // --- Sichtbarkeit / Statistik ---
-    val flows = ArrayList<Flow>()
-    var recordFlows = false
+    // --- Statistik: geglaettete Auslastung je Maschinentyp ---
     val typeUtil = DoubleArray(MType.values().size)
     val typeCount = IntArray(MType.values().size)
 
@@ -440,8 +435,6 @@ class Simulation {
                     nm.output[res] -= mv
                     target[res] += mv
                     space -= mv
-                    if (recordFlows && mv > 0.02 && c.type != MType.LAGER && flows.size < 300)
-                        flows.add(Flow(nb[0], nb[1], r, cc, res))
                     if (space <= 1e-9) break
                 }
             }
@@ -452,7 +445,6 @@ class Simulation {
         val ddt = dt.coerceIn(0.0, 2.0)
         if (ddt <= 0.0) return
 
-        if (recordFlows) flows.clear()
         transfers()
 
         var supply = 0.0
@@ -604,8 +596,6 @@ class Simulation {
 
     fun runOffline(elapsedSeconds: Int): OfflineReport {
         val cap = min(elapsedSeconds, OFFLINE_CAP)
-        val wasRecording = recordFlows
-        recordFlows = false
         val b0 = globalBarren; val p0 = globalPlatten; val m0 = money
         val events = ArrayList<OfflineEvent>()
         val seenStarve = HashSet<Machine>()
@@ -627,7 +617,6 @@ class Simulation {
             }
             t++
         }
-        recordFlows = wasRecording
         return OfflineReport(elapsedSeconds, cap, globalBarren - b0, globalPlatten - p0, money - m0, events)
     }
 
