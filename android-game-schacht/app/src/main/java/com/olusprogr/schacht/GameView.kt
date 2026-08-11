@@ -94,9 +94,14 @@ class GameView(context: Context) : View(context) {
     private val cGroundRust = Color.rgb(61, 37, 30)
 
     private val buildOrder = listOf(
-        MType.BOHRER, MType.OFEN, MType.PRESSE, MType.ASSEMBLER,
+        MType.BOHRER, MType.OFEN, MType.PRESSE, MType.ASSEMBLER, MType.HAENDLER,
         MType.GENERATOR, MType.LAGER, MType.DROHNE, MType.VERSTAERKER
     )
+
+    private fun resAbbr(res: Res) = when (res) {
+        Res.ROHERZ -> "E"; Res.BARREN -> "B"; Res.PLATTE -> "P"; Res.KOMPONENTE -> "K"
+    }
+    private fun tierName(t: Int) = when (t) { 0 -> "leer"; 1 -> "normal"; 2 -> "moderat"; else -> "reich" }
 
     private val handler = Handler(Looper.getMainLooper())
     private var running = true
@@ -183,7 +188,7 @@ class GameView(context: Context) : View(context) {
         canvas.drawRect(0f, 0f, W.toFloat(), headerH, p)
         pText.textSize = dp(20f)
         pText.color = cAccent
-        canvas.drawText("PRODUKTIONSWERT  ${fmt(sim.produktionswertPerMin)} /min", dp(12f), dp(26f), pText)
+        canvas.drawText("GELD  ${fmt(sim.money)}   +${fmt(sim.moneyPerMin)}/min", dp(12f), dp(26f), pText)
         pText.textSize = dp(14f)
         pText.color = cText
         val powOk = sim.powerDemand <= sim.powerSupply + 1e-6
@@ -223,24 +228,40 @@ class GameView(context: Context) : View(context) {
         }
     }
 
-    /** Zeichnet einen Stein-/Boden-Chunk (deterministisch pro Feld variiert). */
+    /** Zeichnet einen Stein-/Boden-Chunk, eingefaerbt nach Bodenreichtum. */
     private fun drawGround(canvas: Canvas, r: Int, c: Int, x: Float, y: Float) {
-        pSprite.color = cGroundBase
+        val tier = sim.richness(r, c)
+        val base: Int; val dark: Int; val lite: Int; val accent: Int; val edge: Int
+        when (tier) {
+            0 -> { base = Color.rgb(58, 55, 52); dark = Color.rgb(44, 42, 40); lite = Color.rgb(72, 68, 64); accent = Color.rgb(90, 86, 82); edge = Color.rgb(84, 80, 76) }
+            1 -> { base = Color.rgb(43, 39, 35); dark = Color.rgb(33, 30, 26); lite = Color.rgb(55, 50, 44); accent = Color.rgb(90, 55, 40); edge = Color.rgb(72, 52, 42) }
+            2 -> { base = Color.rgb(41, 49, 39); dark = Color.rgb(29, 36, 27); lite = Color.rgb(56, 66, 50); accent = Color.rgb(60, 130, 100); edge = Color.rgb(58, 104, 76) }
+            else -> { base = Color.rgb(54, 48, 27); dark = Color.rgb(38, 34, 16); lite = Color.rgb(78, 68, 32); accent = Color.rgb(224, 182, 70); edge = Color.rgb(210, 168, 60) }
+        }
+        pSprite.color = base
         canvas.drawRect(x, y, x + cell, y + cell, pSprite)
         val u = cell / 8f
         val seed = (r * 73856093) xor (c * 19349663)
         fun q(i: Int) = (seed ushr (i * 3)) and 7
-        pSprite.color = cGroundDark
+        pSprite.color = dark
         canvas.drawRect(x + q(0) * u, y + q(1) * u, x + (q(0) + 1) * u, y + (q(1) + 2) * u, pSprite)
         canvas.drawRect(x + q(2) * u, y + q(3) * u, x + (q(2) + 2) * u, y + (q(3) + 1) * u, pSprite)
-        pSprite.color = cGroundLite
+        pSprite.color = lite
         canvas.drawRect(x + q(4) * u, y + q(5) * u, x + (q(4) + 1) * u, y + (q(5) + 1) * u, pSprite)
-        if ((seed and 3) == 0) {
-            pSprite.color = cGroundRust
+        // Bodenschaetze-Flecken (nicht bei leerem Stein)
+        if (tier >= 1) {
+            pSprite.color = accent
             canvas.drawRect(x + q(6) * u, y + q(7) * u, x + (q(6) + 1) * u, y + (q(7) + 1) * u, pSprite)
+            if (tier >= 2) canvas.drawRect(x + q(1) * u, y + q(6) * u, x + (q(1) + 1) * u, y + (q(6) + 1) * u, pSprite)
         }
-        // Chunk-Kante
-        p.color = cGridLine
+        // Reicher Boden glaenzt: wandernder Glanzstreifen
+        if (tier == 3) {
+            val ph = ((animT * 3f).toInt() % 8 + 8) % 8
+            pSprite.color = Color.rgb(255, 240, 190)
+            canvas.drawRect(x + ph * u, y + (7 - ph) * u, x + (ph + 1) * u, y + (8 - ph) * u, pSprite)
+        }
+        // Chunk-Kante in der Reichtums-Farbe -> jeder Chunk ist markiert
+        p.color = edge
         canvas.drawRect(x, y, x + cell, y + 1f, p)
         canvas.drawRect(x, y, x + 1f, y + cell, p)
     }
@@ -254,7 +275,7 @@ class GameView(context: Context) : View(context) {
 
     private fun drawMachine(canvas: Canvas, m: Machine, x: Float, y: Float) {
         val s = cell / 32f
-        val hasWear = m.type != MType.REAKTOR && m.type != MType.LAGER
+        val hasWear = m.type != MType.REAKTOR && m.type != MType.LAGER && m.type != MType.HAENDLER
         val pad = cell * 0.08f
 
         // Basis-Sprite
@@ -317,12 +338,12 @@ class GameView(context: Context) : View(context) {
             val yy = paletteTop + row * (bh + gap)
             val rect = RectF(x, yy, x + bw, yy + bh)
             val unlocked = sim.canBuild(t)
-            val cost = sim.buildCost(t)
-            val afford = sim.availableBarren() >= cost
+            val (cres, camt) = sim.buildCost(t)
+            val afford = sim.available(cres) >= camt
             val sub: String
             val subCol: Int
             if (!unlocked) { sub = "Tech noetig"; subCol = cDim }
-            else { sub = "${cost.toInt()} B"; subCol = if (afford) cDim else cBad }
+            else { sub = "${camt.toInt()} ${resAbbr(cres)}"; subCol = if (afford) cDim else cBad }
             val active = buildTool == t
             drawButton(canvas, Btn(rect, "build_${t.name}", shortLabel(t), unlocked, active, 0, sub, subCol))
             buttons.add(Btn(rect, "build_${t.name}", shortLabel(t), unlocked))
@@ -334,6 +355,7 @@ class GameView(context: Context) : View(context) {
         MType.DROHNE -> "Drohne"
         MType.ASSEMBLER -> "Assembl."
         MType.VERSTAERKER -> "Verstaerk."
+        MType.HAENDLER -> "Haendler"
         else -> t.label
     }
 
@@ -351,10 +373,14 @@ class GameView(context: Context) : View(context) {
         canvas.drawText("Zustand ${m.condition.roundToInt()}%     Auslastung ${(m.util * 100).roundToInt()}%", dp(12f), yy, pText)
         yy += dp(22f)
         val io = when (m.type) {
-            MType.BOHRER -> "Aus: ${oneDec(m.output[0])} Roherz"
+            MType.BOHRER -> {
+                val tier = sim.richness(selR, selC)
+                "Aus ${oneDec(m.output[0])} Roherz   Boden: ${tierName(tier)} (x${Simulation.ORE_MULT[tier]})"
+            }
             MType.OFEN -> "Ein ${oneDec(m.input[0])} Roherz   Aus ${oneDec(m.output[1])} Barren"
             MType.PRESSE -> "Ein ${oneDec(m.input[1])} Barren   Aus ${oneDec(m.output[2])} Platten"
             MType.ASSEMBLER -> "Ein ${oneDec(m.input[2])} Platten   Aus ${oneDec(m.output[3])} Komp."
+            MType.HAENDLER -> "Verkauft Komponenten -> Geld (${oneDec(sim.componentPrice())}/Stk)"
             MType.GENERATOR -> "Brennstoff ${oneDec(m.input[0])} Roherz  →  +${Simulation.GEN_POWER.toInt()} Strom"
             MType.LAGER -> "Puffer ${oneDec(m.output[0])}E ${oneDec(m.output[1])}B ${oneDec(m.output[2])}P ${oneDec(m.output[3])}K"
             MType.VERSTAERKER -> "Beschleunigt Nachbarn (+${(Simulation.BOOST_PER * 100).toInt()}% je)"
@@ -364,32 +390,31 @@ class GameView(context: Context) : View(context) {
         canvas.drawText(io, dp(12f), yy, pText)
         yy += dp(22f)
         pText.color = cDim
+        val (sres, samt) = sim.buildCost(m.type)
         if (m.type != MType.REAKTOR) {
-            val refund = (sim.buildCost(m.type) * 0.5 * (m.condition / 100.0))
-            canvas.drawText("Stromverbrauch ${m.type.power.toInt()}     Verkaufswert +${oneDec(refund)} B", dp(12f), yy, pText)
+            val refund = samt * 0.5 * (m.condition / 100.0)
+            canvas.drawText("Stromverbrauch ${m.type.power.toInt()}     Verkaufswert +${oneDec(refund)} ${resAbbr(sres)}", dp(12f), yy, pText)
         }
 
-        // Aktions-Buttons unten (ueberdecken keinen Text mehr)
+        // Aktions-Buttons unten
         val margin = dp(10f)
         val by = H - dp(54f)
         val bh = dp(40f)
-        val canRepair = m.type != MType.REAKTOR && m.type != MType.LAGER
+        val canRepair = m.type != MType.REAKTOR && m.type != MType.LAGER && m.type != MType.HAENDLER
         val canSell = m.type != MType.REAKTOR
+        val refund = (samt * 0.5 * (m.condition / 100.0)).roundToInt()
+        val repEnabled = m.condition < 99.999 && sim.availableBarren() >= Simulation.REPAIR_COST
         if (canRepair && canSell) {
             val half = (W - 3 * margin) / 2f
             val rSell = RectF(margin, by, margin + half, by + bh)
             val rRep = RectF(margin * 2 + half, by, margin * 2 + half * 2, by + bh)
-            val refund = (sim.buildCost(m.type) * 0.5 * (m.condition / 100.0)).roundToInt()
-            drawButton(canvas, Btn(rSell, "sell_sel", "Verkaufen +$refund B", true, false, cBad))
-            drawButton(canvas, Btn(rRep, "repair_sel", "Reparieren ${Simulation.REPAIR_COST.toInt()} B",
-                m.condition < 99.999 && sim.availableBarren() >= Simulation.REPAIR_COST, false, cAccent))
+            drawButton(canvas, Btn(rSell, "sell_sel", "Verkaufen +$refund ${resAbbr(sres)}", true, false, cBad))
+            drawButton(canvas, Btn(rRep, "repair_sel", "Reparieren ${Simulation.REPAIR_COST.toInt()} B", repEnabled, false, cAccent))
             buttons.add(Btn(rSell, "sell_sel", "Verkaufen"))
-            buttons.add(Btn(rRep, "repair_sel", "Reparieren",
-                m.condition < 99.999 && sim.availableBarren() >= Simulation.REPAIR_COST))
+            buttons.add(Btn(rRep, "repair_sel", "Reparieren", repEnabled))
         } else if (canSell) {
             val rSell = RectF(margin, by, W - margin, by + bh)
-            val refund = (sim.buildCost(m.type) * 0.5 * (m.condition / 100.0)).roundToInt()
-            drawButton(canvas, Btn(rSell, "sell_sel", "Verkaufen +$refund B", true, false, cBad))
+            drawButton(canvas, Btn(rSell, "sell_sel", "Verkaufen +$refund ${resAbbr(sres)}", true, false, cBad))
             buttons.add(Btn(rSell, "sell_sel", "Verkaufen"))
         }
     }
@@ -414,7 +439,8 @@ class GameView(context: Context) : View(context) {
             val maxed = l >= node.maxLevel
             val preOk = node.prereq == null || sim.has(node.prereq)
             val cost = sim.nextCost(node)
-            val afford = sim.availableBarren() >= cost
+            val afford = sim.techAffordable(node)
+            val cur = if (node.costRes != null) resAbbr(node.costRes) else "Geld"
             p.color = if (l > 0) Color.rgb(40, 55, 44) else cPanel
             canvas.drawRoundRect(rect, dp(8f), dp(8f), p)
 
@@ -425,8 +451,8 @@ class GameView(context: Context) : View(context) {
             val sub = when {
                 maxed -> "voll ausgebaut"
                 !preOk -> "benoetigt: ${Simulation.TECHS.first { it.id == node.prereq }.label}"
-                node.maxLevel > 1 -> "${node.effect}  ·  naechste: ${cost.toInt()} B"
-                else -> "Kosten: ${cost.toInt()} B" + (if (node.effect.isNotEmpty()) "  ·  ${node.effect}" else "")
+                node.maxLevel > 1 -> "${node.effect}  ·  naechste: ${cost.toInt()} $cur"
+                else -> "Kosten: ${cost.toInt()} $cur" + (if (node.effect.isNotEmpty()) "  ·  ${node.effect}" else "")
             }
             canvas.drawText(sub, dp(24f), yy + dp(38f), pText)
 
@@ -445,7 +471,7 @@ class GameView(context: Context) : View(context) {
         pText.color = cAccent; pText.textSize = dp(22f)
         canvas.drawText("Tech-Baum", dp(16f), dp(38f), pText)
         pText.color = cDim; pText.textSize = dp(13f)
-        canvas.drawText("Verfuegbar: ${fmt(sim.availableBarren())} B  ·  wischen zum Scrollen", dp(16f), dp(58f), pText)
+        canvas.drawText("Geld ${fmt(sim.money)}  ·  B ${fmt(sim.availableBarren())}  ·  P ${fmt(sim.availablePlatten())}  ·  wischen", dp(16f), dp(58f), pText)
 
         val cr = RectF(W / 2f - dp(70f), H - dp(56f), W / 2f + dp(70f), H - dp(16f))
         drawButton(canvas, Btn(cr, "close", "Schliessen", true, false, cAccent))
@@ -460,7 +486,7 @@ class GameView(context: Context) : View(context) {
         pText.color = cText; pText.textSize = dp(16f)
         var yy = dp(80f)
         val lines = listOf(
-            "Produktionswert:  ${fmt(sim.produktionswertPerMin)} /min",
+            "Geld:             ${fmt(sim.money)}   (+${fmt(sim.moneyPerMin)}/min)",
             "Barren (inkl.Lager): ${fmt(sim.availableBarren())}  (${oneDec(sim.barrenPerMin)}/min)",
             "Platten (inkl.Lager): ${fmt(sim.availablePlatten())}  (${oneDec(sim.plattenPerMin)}/min)",
             "Komponenten:      ${fmt(sim.availableKomponente())}  (${oneDec(sim.komponentenPerMin)}/min)",
@@ -469,12 +495,12 @@ class GameView(context: Context) : View(context) {
             "Maschinen gebaut: ${machineCount()}",
             "Upgrade-Stufen:   ${sim.tech.values.sum()}"
         )
-        for (l in lines) { canvas.drawText(l, dp(16f), yy, pText); yy += dp(28f) }
+        for (l in lines) { canvas.drawText(l, dp(16f), yy, pText); yy += dp(27f) }
         pText.color = cDim; pText.textSize = dp(13f)
-        yy += dp(6f)
-        canvas.drawText("Gelber Punkt = Nachschub fehlt, roter Balken = Verschleiss.", dp(16f), yy, pText)
+        yy += dp(4f)
+        canvas.drawText("Boden: grau=leer, braun=normal, gruen=moderat, gold=reich.", dp(16f), yy, pText)
         yy += dp(18f)
-        canvas.drawText("Verstaerker neben Maschinen = mehr Tempo. Assembler: Platte->Komp.", dp(16f), yy, pText)
+        canvas.drawText("Komponenten am Haendler -> Geld. Upgrades kosten Geld.", dp(16f), yy, pText)
 
         // Ton-Schalter
         val margin = dp(12f)
@@ -507,7 +533,7 @@ class GameView(context: Context) : View(context) {
         val simd = fmtDur(rep.simSeconds)
         canvas.drawText("Du warst $away weg (simuliert: $simd, Cap 8h).", dp(16f), dp(66f), pText)
         pText.color = cGood
-        canvas.drawText("+ ${fmt(rep.barrenGained)} Barren     + ${fmt(rep.plattenGained)} Platten", dp(16f), dp(90f), pText)
+        canvas.drawText("+ ${fmt(rep.moneyGained)} Geld     + ${fmt(rep.barrenGained)} Barren     + ${fmt(rep.plattenGained)} Platten", dp(16f), dp(90f), pText)
 
         pText.color = cText; pText.textSize = dp(14f)
         canvas.drawText("Zeitleiste:", dp(16f), dp(120f), pText)

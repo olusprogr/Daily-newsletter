@@ -184,6 +184,25 @@ object Sprites {
         Px(10, 15, 1, 1, CYA), Px(21, 15, 1, 1, CYA)
     )
 
+    // Haendler: Marktstand mit Markise, Theke und Muenz-Symbol.
+    val HAENDLER = listOf(
+        Px(6, 6, 20, 1, OUT),
+        Px(6, 7, 20, 3, YEL),
+        Px(8, 7, 2, 3, ORG), Px(12, 7, 2, 3, ORG), Px(16, 7, 2, 3, ORG), Px(20, 7, 2, 3, ORG),
+        Px(6, 10, 20, 1, OUT),
+        Px(6, 10, 1, 15, OUT), Px(25, 10, 1, 15, OUT),
+        Px(7, 10, 1, 15, MMD), Px(24, 10, 1, 15, MMD),
+        Px(14, 12, 4, 5, OUT),
+        Px(15, 12, 3, 4, YEL),
+        Px(16, 13, 1, 2, ORG),
+        Px(15, 12, 1, 1, MHI),
+        Px(7, 20, 18, 6, OUT),
+        Px(8, 21, 16, 4, RUSTB),
+        Px(8, 21, 16, 1, RUSTL),
+        Px(10, 19, 3, 1, YEL), Px(11, 18, 1, 1, YEL),
+        Px(18, 19, 3, 1, YEL), Px(19, 18, 1, 1, YEL)
+    )
+
     // Rost-Overlay fuer Zustand < 50%.
     val RUST = listOf(
         Px(3, 4, 3, 1, RA), Px(2, 5, 2, 2, RA), Px(5, 6, 1, 1, RA),
@@ -262,6 +281,12 @@ object Sprites {
             2 -> listOf(Px(14, 14, 4, 4, CYA))
             else -> listOf(Px(15, 15, 2, 2, CYL))
         }
+        MType.HAENDLER -> when (frame) {
+            0 -> listOf(Px(15, 12, 1, 1, MHI), Px(10, 18, 1, 1, MHI))
+            1 -> listOf(Px(17, 13, 1, 1, MHI), Px(19, 18, 1, 1, MHI))
+            2 -> listOf(Px(15, 14, 1, 1, CYL))
+            else -> listOf(Px(16, 12, 1, 1, MHI))
+        }
     }
 
     fun forType(t: MType): List<Px> = when (t) {
@@ -274,5 +299,6 @@ object Sprites {
         MType.DROHNE -> DROHNE
         MType.VERSTAERKER -> VERSTAERKER
         MType.REAKTOR -> REAKTOR
+        MType.HAENDLER -> HAENDLER
     }
 }
