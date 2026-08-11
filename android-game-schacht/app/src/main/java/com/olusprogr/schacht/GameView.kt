@@ -23,8 +23,14 @@ class GameView(context: Context) : View(context) {
     // Aktives Bau-Werkzeug (null = kein Bauen; Antippen zeigt dann Info).
     private var buildTool: MType? = null
 
-    private enum class Screen { GAME, TECH, STAT, REPORT }
-    private var screen = Screen.GAME
+    private enum class Screen { MENU, GAME, TECH, STAT, REPORT }
+    private var screen = Screen.MENU
+
+    private val saveStore = SaveStore(context)
+    private var currentSlot: String? = null
+    private var menuArmedDelete: String? = null   // Slot, dessen Loeschen bestaetigt werden muss
+    private var menuSlots: List<SlotInfo> = emptyList()   // gecachte Liste fuers Menue
+    private fun refreshMenu() { menuSlots = saveStore.slots() }
 
     private var selR = -1
     private var selC = -1
@@ -147,7 +153,7 @@ class GameView(context: Context) : View(context) {
             var dt = (now - lastNanos) / 1_000_000_000.0
             lastNanos = now
             if (dt > 0.25) dt = 0.25
-            if (screen != Screen.REPORT) sim.step(dt)
+            if (screen == Screen.GAME || screen == Screen.TECH || screen == Screen.STAT) sim.step(dt)
             animT += dt.toFloat()
             invalidate()
             handler.postDelayed(this, 33)
@@ -156,21 +162,12 @@ class GameView(context: Context) : View(context) {
 
     init {
         I18n.lang = try { Lang.values()[prefs.getInt("lang", 0)] } catch (_: Exception) { Lang.DE }
-        val saved = prefs.getString("state", null)
-        if (saved != null) {
-            try {
-                val savedT = sim.fromJson(saved)
-                val elapsed = ((System.currentTimeMillis() - savedT) / 1000L).toInt()
-                if (savedT > 0 && elapsed > 60) {
-                    report = sim.runOffline(elapsed)
-                    screen = Screen.REPORT
-                }
-            } catch (e: Exception) {
-                sim.newGame()
-            }
-        } else {
-            sim.newGame()
-        }
+        audio.setMusicVol(prefs.getInt("musicVol", 50) / 100f)
+        audio.setSfxVol(prefs.getInt("sfxVol", 50) / 100f)
+        // Start immer im Hauptmenue mit der Slot-Auswahl.
+        sim.newGame()
+        screen = Screen.MENU
+        refreshMenu()
         lastNanos = System.nanoTime()
         handler.post(loop)
         audio.startMusic()
@@ -180,9 +177,46 @@ class GameView(context: Context) : View(context) {
     fun resumeAudio() = audio.resume()
 
     fun persist() {
+        val slot = currentSlot ?: return
         try {
-            prefs.edit().putString("state", sim.toJson(System.currentTimeMillis())).apply()
+            saveStore.saveState(slot, sim.toJson(System.currentTimeMillis()))
         } catch (_: Exception) { }
+    }
+
+    /** Einen gespeicherten Slot laden und (bei Bedarf) Offline-Fortschritt zeigen. */
+    private fun openSlot(id: String) {
+        val blob = saveStore.loadState(id)
+        currentSlot = id
+        report = null
+        if (blob == null) { sim.newGame(); screen = Screen.GAME; return }
+        try {
+            val savedT = sim.fromJson(blob)
+            val elapsed = ((System.currentTimeMillis() - savedT) / 1000L).toInt()
+            if (savedT > 0 && elapsed > 60) {
+                report = sim.runOffline(elapsed)
+                screen = Screen.REPORT
+            } else screen = Screen.GAME
+        } catch (_: Exception) {
+            sim.newGame(); screen = Screen.GAME
+        }
+    }
+
+    private fun startNewSlot() {
+        sim.newGame()
+        currentSlot = saveStore.createSlot(sim.toJson(System.currentTimeMillis()))
+        report = null
+        screen = Screen.GAME
+    }
+
+    private fun setMusicVol(v: Int) {
+        audio.setMusicVol(v / 100f)
+        prefs.edit().putInt("musicVol", v).apply()
+        audio.click(); invalidate()
+    }
+    private fun setSfxVol(v: Int) {
+        audio.setSfxVol(v / 100f)
+        prefs.edit().putInt("sfxVol", v).apply()
+        audio.click(); invalidate()
     }
 
     override fun onSizeChanged(w: Int, h: Int, ow: Int, oh: Int) {
@@ -205,6 +239,7 @@ class GameView(context: Context) : View(context) {
         buttons.clear()
         cell = gridSide / sim.areaN()   // Feldgroesse haengt von der freigeschalteten Flaeche ab
         canvas.drawColor(cBg)
+        if (screen == Screen.MENU) { drawMenu(canvas); return }
         drawHeader(canvas)
         drawGrid(canvas)
         if (screen == Screen.GAME) {
@@ -214,7 +249,7 @@ class GameView(context: Context) : View(context) {
             Screen.TECH -> drawTech(canvas)
             Screen.STAT -> drawStat(canvas)
             Screen.REPORT -> drawReport(canvas)
-            Screen.GAME -> { }
+            else -> { }
         }
     }
 
@@ -291,13 +326,6 @@ class GameView(context: Context) : View(context) {
         }
     }
 
-    private fun flowColor(res: Int) = when (res) {
-        Res.ROHERZ.ordinal -> Color.rgb(198, 150, 92)
-        Res.BARREN.ordinal -> cResBarren
-        Res.PLATTE.ordinal -> cResPlatte
-        else -> cResKomp
-    }
-
     // Welchen Rohstoff gibt ein Produzent aus / will ein Verbraucher.
     private fun offersRes(t: MType): Int = when (t) {
         MType.BOHRER -> Res.ROHERZ.ordinal
@@ -322,7 +350,7 @@ class GameView(context: Context) : View(context) {
         val an = sim.areaN()
         val diag = sim.has("t_diag")
         val half = cell / 2f
-        val u = (cell * 0.09f).coerceAtLeast(dp(2f))
+        val isz = (cell * 0.26f).coerceAtLeast(dp(9f))   // kleiner als vorher
         for (r in 0 until an) for (c in 0 until an) {
             val cm = sim.grid[r][c] ?: continue
             val isLager = cm.type == MType.LAGER
@@ -347,35 +375,12 @@ class GameView(context: Context) : View(context) {
                 val sy = gridTop + pr * cell + half
                 val ex = gridLeft + c * cell + half
                 val ey = gridTop + r * cell + half
-                val base = animT * 1.3f + (pr * 3 + pc + res)
-                for (k in 0 until 2) {
-                    val t = (base + k * 0.5f) % 1f
-                    drawFlowMark(canvas, res, sx + (ex - sx) * t, sy + (ey - sy) * t, u)
-                }
-            }
-        }
-    }
-
-    /** Ein kleiner dunkel umrandeter Rohstoff-Marker in resource-eigener Form. */
-    private fun markRect(canvas: Canvas, x0: Float, y0: Float, x1: Float, y1: Float, col: Int) {
-        pSprite.color = cGridLine
-        canvas.drawRect(x0 - 1f, y0 - 1f, x1 + 1f, y1 + 1f, pSprite)
-        pSprite.color = col
-        canvas.drawRect(x0, y0, x1, y1, pSprite)
-    }
-
-    private fun drawFlowMark(canvas: Canvas, res: Int, cx: Float, cy: Float, u: Float) {
-        val col = flowColor(res)
-        when (res) {
-            Res.ROHERZ.ordinal ->            // Erz: kleiner grober Brocken
-                markRect(canvas, cx - u, cy - u, cx + u, cy + u, col)
-            Res.BARREN.ordinal ->            // Barren: liegender Riegel
-                markRect(canvas, cx - 1.5f * u, cy - 0.7f * u, cx + 1.5f * u, cy + 0.7f * u, col)
-            Res.PLATTE.ordinal ->            // Platte: breit und flach
-                markRect(canvas, cx - 1.7f * u, cy - 0.45f * u, cx + 1.7f * u, cy + 0.45f * u, col)
-            else -> {                        // Komponente: kleines Kreuz
-                markRect(canvas, cx - 0.5f * u, cy - 1.3f * u, cx + 0.5f * u, cy + 1.3f * u, col)
-                markRect(canvas, cx - 1.3f * u, cy - 0.5f * u, cx + 1.3f * u, cy + 0.5f * u, col)
+                val icon = Sprites.iconForRes(res)
+                val base = animT * 0.6f + (pr * 3 + pc + res) * 0.31f   // langsamer
+                val t = base % 1f
+                val cx = sx + (ex - sx) * t
+                val cy = sy + (ey - sy) * t
+                drawIcon(canvas, icon, cx - isz / 2f, cy - isz / 2f, isz)
             }
         }
     }
@@ -749,11 +754,15 @@ class GameView(context: Context) : View(context) {
             buttons.add(Btn(lr, "lang_${lv.first.name}", "lang"))
         }
 
-        // Ton-Schalter
-        val sndY = ly + lh + dp(10f)
-        val sndR = RectF(margin, sndY, W - margin, sndY + dp(36f))
-        drawButton(canvas, Btn(sndR, "sound", if (audio.isMuted()) tr("sound_off") else tr("sound_on"), true, !audio.isMuted(), cAccent))
-        buttons.add(Btn(sndR, "sound", "sound"))
+        // Ton-Einstellungen: Musik + Effekte, je vier Stufen
+        var sy = ly + lh + dp(12f)
+        sy = drawSoundRow(canvas, "snd_music", (audio.musicVol * 100).roundToInt(), "mvol", sy, margin)
+        sy = drawSoundRow(canvas, "snd_sfx", (audio.sfxVol * 100).roundToInt(), "svol", sy, margin)
+
+        // Hauptmenue
+        val menuR = RectF(margin, H - dp(104f), W - margin, H - dp(104f) + dp(38f))
+        drawButton(canvas, Btn(menuR, "to_menu", tr("to_menu"), true, false, cAccent))
+        buttons.add(Btn(menuR, "to_menu", "menu"))
 
         // Reset + Schliessen
         val by = H - dp(58f); val bh = dp(40f)
@@ -764,6 +773,32 @@ class GameView(context: Context) : View(context) {
         drawButton(canvas, Btn(rClose, "close", tr("close"), true, false, cAccent))
         buttons.add(Btn(rReset, "reset", "reset"))
         buttons.add(Btn(rClose, "close", "Schliessen"))
+    }
+
+    private val sndLevels = intArrayOf(0, 33, 66, 100)
+
+    private fun nearestLevel(cur: Int): Int {
+        var bi = 0; var bd = Int.MAX_VALUE
+        for (i in sndLevels.indices) { val d = kotlin.math.abs(sndLevels[i] - cur); if (d < bd) { bd = d; bi = i } }
+        return bi
+    }
+
+    /** Eine Ton-Zeile (Label + 4 Stufen-Buttons); gibt das neue Y zurueck. */
+    private fun drawSoundRow(canvas: Canvas, labelKey: String, cur: Int, idPrefix: String, y: Float, margin: Float): Float {
+        pText.color = cText; pText.textSize = dp(14f); pText.textAlign = Paint.Align.LEFT
+        canvas.drawText(tr(labelKey), dp(16f), y + dp(2f), pText)
+        val by = y + dp(8f); val bh = dp(34f)
+        val gap = dp(6f)
+        val bw = (W - 2 * margin - 3 * gap) / 4f
+        val lbls = listOf(tr("snd_off"), tr("snd_low"), tr("snd_mid"), tr("snd_high"))
+        val active = nearestLevel(cur)
+        for (i in 0 until 4) {
+            val bx = margin + i * (bw + gap)
+            val r = RectF(bx, by, bx + bw, by + bh)
+            drawButton(canvas, Btn(r, "${idPrefix}_${sndLevels[i]}", lbls[i], true, active == i, cAccent))
+            buttons.add(Btn(r, "${idPrefix}_${sndLevels[i]}", "snd"))
+        }
+        return by + bh + dp(12f)
     }
 
     private fun drawReport(canvas: Canvas) {
@@ -800,6 +835,62 @@ class GameView(context: Context) : View(context) {
         val cr = RectF(W / 2f - dp(90f), H - dp(64f), W / 2f + dp(90f), H - dp(22f))
         drawButton(canvas, Btn(cr, "close", tr("continue"), true, false, cAccent))
         buttons.add(Btn(cr, "close", "Weiterspielen"))
+    }
+
+    private fun drawMenu(canvas: Canvas) {
+        // Kopfbanner
+        p.color = cPanel
+        canvas.drawRect(0f, 0f, W.toFloat(), dp(104f), p)
+        p.color = cAccent
+        canvas.drawRect(0f, dp(102f), W.toFloat(), dp(104f), p)
+        pText.textAlign = Paint.Align.LEFT
+        pText.color = cAccent; pText.textSize = dp(34f)
+        canvas.drawText("SCHACHT", dp(16f), dp(52f), pText)
+        pText.color = cDim; pText.textSize = dp(15f)
+        canvas.drawText(tr("choose_save"), dp(16f), dp(82f), pText)
+
+        val margin = dp(12f)
+        val slots = menuSlots
+        var yy = dp(124f)
+        val cardH = dp(74f)
+        val maxY = H - dp(84f)
+        for (s in slots) {
+            if (yy + cardH > maxY) break
+            val rect = RectF(margin, yy, W - margin, yy + cardH)
+            p.color = cPanel
+            canvas.drawRoundRect(rect, dp(10f), dp(10f), p)
+            p.color = Color.argb(60, 255, 255, 255)
+            canvas.drawRect(rect.left + dp(8f), rect.top + dp(2f), rect.right - dp(8f), rect.top + dp(3.5f), p)
+            // farbiger Streifen links
+            p.color = cAccent
+            canvas.drawRect(rect.left + dp(4f), rect.top + dp(10f), rect.left + dp(8f), rect.bottom - dp(10f), p)
+
+            pText.color = cText; pText.textSize = dp(19f)
+            canvas.drawText(s.name, margin + dp(18f), yy + dp(28f), pText)
+            pText.color = cDim; pText.textSize = dp(13f)
+            val info = "${tr("geld")} ${fmt(s.money)}  ·  ${s.machines} ${tr("mach_short")}  ·  ${fmtAgo(s.savedAt)}"
+            canvas.drawText(info, margin + dp(18f), yy + dp(52f), pText)
+
+            // ganze Karte = weiterspielen
+            buttons.add(Btn(rect, "open_${s.id}", s.name))
+            // Loeschen rechts (zweistufig)
+            val dw = dp(70f); val dh = dp(36f)
+            val dr = RectF(W - margin - dw - dp(6f), yy + (cardH - dh) / 2, W - margin - dp(6f), yy + (cardH + dh) / 2)
+            val armed = menuArmedDelete == s.id
+            drawButton(canvas, Btn(dr, "del_${s.id}", if (armed) tr("del_confirm") else tr("delete"), true, armed, cBad))
+            buttons.add(Btn(dr, "del_${s.id}", "del"))
+            yy += cardH + dp(8f)
+        }
+        if (slots.isEmpty()) {
+            pText.color = cDim; pText.textSize = dp(15f)
+            canvas.drawText(tr("no_saves"), dp(18f), yy + dp(10f), pText)
+            yy += dp(28f)
+        }
+
+        // Neues Spiel + Ton-Kurzschalter
+        val nr = RectF(margin, maxY - dp(4f), W - margin, maxY - dp(4f) + dp(54f))
+        drawButton(canvas, Btn(nr, "new_slot", "+ ${tr("new_game")}", true, false, cGood))
+        buttons.add(Btn(nr, "new_slot", "new"))
     }
 
     private fun drawButton(canvas: Canvas, b: Btn) {
@@ -875,6 +966,7 @@ class GameView(context: Context) : View(context) {
                 return
             }
         }
+        if (screen == Screen.MENU) { if (menuArmedDelete != null) { menuArmedDelete = null; invalidate() }; return }
         if (screen != Screen.GAME) return
         val an = sim.areaN()
         if (x >= gridLeft && x < gridLeft + gridSide && y >= gridTop && y < gridTop + gridSide) {
@@ -892,7 +984,20 @@ class GameView(context: Context) : View(context) {
             id == "tech" -> { screen = if (screen == Screen.TECH) Screen.GAME else Screen.TECH; selR = -1; resetArmed = false; techScroll = 0f; audio.click() }
             id == "stat" -> { screen = if (screen == Screen.STAT) Screen.GAME else Screen.STAT; selR = -1; resetArmed = false; audio.click() }
             id == "close" -> { screen = Screen.GAME; report = null; resetArmed = false; audio.click() }
-            id == "sound" -> { audio.toggleMuted(); audio.click() }
+            id.startsWith("mvol_") -> setMusicVol(id.removePrefix("mvol_").toInt())
+            id.startsWith("svol_") -> setSfxVol(id.removePrefix("svol_").toInt())
+            id == "to_menu" -> { persist(); resetArmed = false; menuArmedDelete = null; selR = -1; refreshMenu(); screen = Screen.MENU; audio.click() }
+            id == "new_slot" -> { startNewSlot(); menuArmedDelete = null; audio.place() }
+            id.startsWith("open_") -> { openSlot(id.removePrefix("open_")); menuArmedDelete = null; audio.click() }
+            id.startsWith("del_") -> {
+                val sid = id.removePrefix("del_")
+                if (menuArmedDelete != sid) { menuArmedDelete = sid; audio.click() }
+                else {
+                    saveStore.deleteSlot(sid); menuArmedDelete = null
+                    if (currentSlot == sid) currentSlot = null
+                    refreshMenu(); audio.sell()
+                }
+            }
             id.startsWith("lang_") -> { setLang(Lang.valueOf(id.removePrefix("lang_"))) }
             id == "reset" -> {
                 if (!resetArmed) {
@@ -976,6 +1081,17 @@ class GameView(context: Context) : View(context) {
     }
 
     private fun oneDec(v: Double): String = ((v * 10).roundToInt() / 10.0).toString()
+
+    private fun fmtAgo(millis: Long): String {
+        if (millis <= 0L) return tr("ago_new")
+        val sec = ((System.currentTimeMillis() - millis) / 1000L).toInt().coerceAtLeast(0)
+        return when {
+            sec < 60 -> tr("ago_now")
+            sec < 3600 -> "${tr("ago_pre")}${sec / 60}m"
+            sec < 86400 -> "${tr("ago_pre")}${sec / 3600}h"
+            else -> "${tr("ago_pre")}${sec / 86400}d"
+        }
+    }
 
     private fun fmtDur(sec: Int): String {
         val h = sec / 3600

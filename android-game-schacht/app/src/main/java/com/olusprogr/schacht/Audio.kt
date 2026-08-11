@@ -20,24 +20,28 @@ import kotlin.math.sin
 class Audio {
 
     private val sr = 22050
-    @Volatile private var muted = false
+    // Lautstaerken 0..1, getrennt fuer Musik und Effekte.
+    @Volatile var musicVol = 0.5f
+        private set
+    @Volatile var sfxVol = 0.5f
+        private set
     @Volatile private var playing = false
     private var musicTrack: AudioTrack? = null
     private var musicThread: Thread? = null
     private val musicBuf: ShortArray by lazy { buildMusic() }
     private val handler = Handler(Looper.getMainLooper())
 
-    fun isMuted() = muted
-
-    fun setMuted(m: Boolean) {
-        muted = m
-        if (m) stopMusic() else startMusic()
+    fun setMusicVol(v: Float) {
+        musicVol = v.coerceIn(0f, 1f)
+        if (musicVol <= 0.001f) stopMusic()
+        else if (!playing) startMusic()
+        else try { musicTrack?.setVolume(musicVol) } catch (_: Exception) { }
     }
 
-    fun toggleMuted(): Boolean { setMuted(!muted); return muted }
+    fun setSfxVol(v: Float) { sfxVol = v.coerceIn(0f, 1f) }
 
     fun startMusic() {
-        if (muted || playing) return
+        if (musicVol <= 0.001f || playing) return
         try {
             val track = AudioTrack.Builder()
                 .setAudioAttributes(
@@ -61,7 +65,7 @@ class Audio {
                     )
                 )
                 .build()
-            track.setVolume(0.5f)
+            track.setVolume(musicVol)
             track.play()
             musicTrack = track
             playing = true
@@ -95,17 +99,17 @@ class Audio {
     fun resume() = startMusic()
     fun release() = stopMusic()
 
-    // --- SFX --- (Lautstaerke um 50% reduziert)
-    fun place() = playTone(200.0, 150.0, 90, 0.175, square = true)
-    fun buy() = playTone(500.0, 1000.0, 130, 0.15, square = true)
-    fun sell() = playTone(720.0, 340.0, 130, 0.15, square = true)
-    fun error() = playTone(150.0, 130.0, 170, 0.175, square = true, tremolo = true)
-    fun click() = playTone(1300.0, 1300.0, 28, 0.10, square = false)
+    // --- SFX --- (Basis-Amplitude; die tatsaechliche Lautstaerke skaliert mit sfxVol)
+    fun place() = playTone(200.0, 150.0, 90, 0.35, square = true)
+    fun buy() = playTone(500.0, 1000.0, 130, 0.30, square = true)
+    fun sell() = playTone(720.0, 340.0, 130, 0.30, square = true)
+    fun error() = playTone(150.0, 130.0, 170, 0.35, square = true, tremolo = true)
+    fun click() = playTone(1300.0, 1300.0, 28, 0.20, square = false)
 
     private fun playTone(f0: Double, f1: Double, durMs: Int, amp: Double, square: Boolean, tremolo: Boolean = false) {
-        if (muted) return
+        if (sfxVol <= 0.001f) return
         try {
-            val buf = buildTone(f0, f1, durMs, amp, square, tremolo)
+            val buf = buildTone(f0, f1, durMs, amp * sfxVol, square, tremolo)
             val track = AudioTrack.Builder()
                 .setAudioAttributes(
                     AudioAttributes.Builder()

@@ -323,6 +323,22 @@ object Sprites {
         Px(3, 4, 5, 1, YEL), Px(5, 5, 2, 1, YEL), Px(4, 6, 2, 1, YEL), Px(3, 7, 2, 1, YEL),
         Px(7, 2, 1, 1, ORG), Px(4, 7, 1, 1, ORG)
     )
+    // Roherz: grober Steinbrocken mit ein paar Erz-Adern.
+    val ICON_ROHERZ = listOf(
+        Px(4, 2, 4, 1, OUT), Px(3, 3, 6, 1, OUT),
+        Px(2, 4, 1, 4, OUT), Px(9, 4, 1, 4, OUT),
+        Px(3, 8, 6, 1, OUT),
+        Px(3, 4, 6, 4, RUSTL),
+        Px(3, 6, 6, 2, RUSTB),
+        Px(4, 4, 2, 1, ORG), Px(6, 5, 1, 1, YEL), Px(5, 6, 1, 1, YEL)
+    )
+
+    fun iconForRes(res: Int): List<Px> = when (res) {
+        Res.ROHERZ.ordinal -> ICON_ROHERZ
+        Res.BARREN.ordinal -> ICON_BARREN
+        Res.PLATTE.ordinal -> ICON_PLATTE
+        else -> ICON_KOMP
+    }
 
     fun forType(t: MType): List<Px> = when (t) {
         MType.BOHRER -> BOHRER

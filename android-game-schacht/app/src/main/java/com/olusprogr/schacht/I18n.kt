@@ -49,7 +49,12 @@ object I18n {
         "tf_lift" to "+10%/Stufe", "tf_power" to "+5 Strom/Stufe",
         "bn_ok" to "laeuft", "bn_input" to "Nachschub fehlt", "bn_output" to "Ausgang voll",
         "bn_power" to "zu wenig Strom", "bn_dead" to "defekt", "bn_soil" to "leerer Boden",
-        "bn_none" to "keine", "s_prod_title" to "Produktion", "s_bottleneck" to "Groesster Engpass"
+        "bn_none" to "keine", "s_prod_title" to "Produktion", "s_bottleneck" to "Groesster Engpass",
+        "choose_save" to "Spielstand waehlen", "new_game" to "Neues Spiel", "no_saves" to "Noch keine Spielstaende.",
+        "mach_short" to "Masch.", "delete" to "Loeschen", "del_confirm" to "Sicher?",
+        "to_menu" to "Hauptmenue", "ago_new" to "neu", "ago_now" to "gerade eben", "ago_pre" to "vor ",
+        "snd_music" to "Musik", "snd_sfx" to "Effekte",
+        "snd_off" to "Aus", "snd_low" to "Leise", "snd_mid" to "Mittel", "snd_high" to "Laut"
     )
 
     private val EN = mapOf(
@@ -93,7 +98,12 @@ object I18n {
         "tf_lift" to "+10%/lvl", "tf_power" to "+5 power/lvl",
         "bn_ok" to "running", "bn_input" to "no supply", "bn_output" to "output full",
         "bn_power" to "not enough power", "bn_dead" to "broken", "bn_soil" to "empty floor",
-        "bn_none" to "none", "s_prod_title" to "Production", "s_bottleneck" to "Top bottleneck"
+        "bn_none" to "none", "s_prod_title" to "Production", "s_bottleneck" to "Top bottleneck",
+        "choose_save" to "Choose a save", "new_game" to "New game", "no_saves" to "No saves yet.",
+        "mach_short" to "mach.", "delete" to "Delete", "del_confirm" to "Sure?",
+        "to_menu" to "Main menu", "ago_new" to "new", "ago_now" to "just now", "ago_pre" to "",
+        "snd_music" to "Music", "snd_sfx" to "Effects",
+        "snd_off" to "Off", "snd_low" to "Low", "snd_mid" to "Mid", "snd_high" to "High"
     )
 
     private val PL = mapOf(
@@ -137,7 +147,12 @@ object I18n {
         "tf_lift" to "+10%/poz", "tf_power" to "+5 prad/poz",
         "bn_ok" to "dziala", "bn_input" to "brak dostaw", "bn_output" to "wyjscie pelne",
         "bn_power" to "za malo pradu", "bn_dead" to "uszkodzony", "bn_soil" to "puste podloze",
-        "bn_none" to "brak", "s_prod_title" to "Produkcja", "s_bottleneck" to "Glowny waskie gardlo"
+        "bn_none" to "brak", "s_prod_title" to "Produkcja", "s_bottleneck" to "Glowny waskie gardlo",
+        "choose_save" to "Wybierz zapis", "new_game" to "Nowa gra", "no_saves" to "Brak zapisow.",
+        "mach_short" to "masz.", "delete" to "Usun", "del_confirm" to "Na pewno?",
+        "to_menu" to "Menu glowne", "ago_new" to "nowy", "ago_now" to "przed chwila", "ago_pre" to "",
+        "snd_music" to "Muzyka", "snd_sfx" to "Efekty",
+        "snd_off" to "Wyl", "snd_low" to "Cicho", "snd_mid" to "Srednio", "snd_high" to "Glosno"
     )
 
     private val M = mapOf(Lang.DE to DE, Lang.EN to EN, Lang.PL to PL)
