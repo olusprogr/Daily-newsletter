@@ -22,5 +22,11 @@ class MainActivity : AppCompatActivity() {
     override fun onPause() {
         super.onPause()
         view.persist()
+        view.pauseAudio()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        view.resumeAudio()
     }
 }

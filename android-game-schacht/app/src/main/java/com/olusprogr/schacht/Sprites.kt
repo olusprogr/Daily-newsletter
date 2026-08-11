@@ -151,6 +151,39 @@ object Sprites {
         Px(7, 7, 1, 1, MM2), Px(24, 7, 1, 1, MM2), Px(7, 25, 1, 1, MM2), Px(24, 25, 1, 1, MM2)
     )
 
+    // Assembler: Gehaeuse mit Roboterarm und cyan Komponente im Zentrum.
+    val ASSEMBLER = listOf(
+        Px(13, 4, 6, 1, OUT), Px(15, 4, 2, 5, MM2),
+        Px(12, 8, 2, 1, MM2), Px(18, 8, 2, 1, MM2),
+        Px(6, 9, 20, 19, OUT),
+        Px(7, 10, 18, 17, MDK),
+        Px(7, 10, 18, 1, MMD),
+        Px(7, 26, 18, 1, DK2),
+        Px(11, 13, 10, 8, OUT),
+        Px(12, 14, 8, 6, RUSTB),
+        Px(13, 15, 6, 1, CYA), Px(13, 15, 1, 4, CYA), Px(18, 16, 1, 3, CYA),
+        Px(15, 16, 2, 2, YEL),
+        Px(11, 16, 1, 1, YEL), Px(20, 16, 1, 1, YEL), Px(11, 18, 1, 1, YEL), Px(20, 18, 1, 1, YEL),
+        Px(9, 11, 1, 1, CYA), Px(22, 11, 1, 1, CYA)
+    )
+
+    // Verstaerker: Spule/Antenne mit cyan Kern und gelbem Aufwaerts-Pfeil.
+    val VERSTAERKER = listOf(
+        Px(7, 22, 18, 5, OUT),
+        Px(8, 23, 16, 3, MDK),
+        Px(8, 23, 16, 1, MMD),
+        Px(13, 10, 6, 12, OUT),
+        Px(14, 11, 4, 11, MM2),
+        Px(14, 11, 1, 11, MLT),
+        Px(14, 13, 4, 4, CYA),
+        Px(15, 14, 2, 2, CYL),
+        Px(15, 4, 2, 1, YEL),
+        Px(14, 5, 1, 1, YEL), Px(17, 5, 1, 1, YEL),
+        Px(13, 6, 1, 1, YEL), Px(18, 6, 1, 1, YEL),
+        Px(15, 7, 2, 1, YEL), Px(15, 8, 2, 1, YEL), Px(15, 9, 2, 1, YEL),
+        Px(10, 15, 1, 1, CYA), Px(21, 15, 1, 1, CYA)
+    )
+
     // Rost-Overlay fuer Zustand < 50%.
     val RUST = listOf(
         Px(3, 4, 3, 1, RA), Px(2, 5, 2, 2, RA), Px(5, 6, 1, 1, RA),
@@ -178,9 +211,11 @@ object Sprites {
         MType.BOHRER -> BOHRER
         MType.OFEN -> OFEN
         MType.PRESSE -> PRESSE
+        MType.ASSEMBLER -> ASSEMBLER
         MType.GENERATOR -> GENERATOR
         MType.LAGER -> LAGER
         MType.DROHNE -> DROHNE
+        MType.VERSTAERKER -> VERSTAERKER
         MType.REAKTOR -> REAKTOR
     }
 }

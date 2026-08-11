@@ -31,6 +31,15 @@ class GameView(context: Context) : View(context) {
     private var report: OfflineReport? = null
     private var resetArmed = false
 
+    private var techScroll = 0f
+    private var techMaxScroll = 0f
+    private var downX = 0f
+    private var downY = 0f
+    private var downScroll = 0f
+    private var moved = false
+
+    private val audio = Audio()
+
     private val prefs = context.getSharedPreferences("schacht_save", Context.MODE_PRIVATE)
 
     // Farben
@@ -77,7 +86,8 @@ class GameView(context: Context) : View(context) {
     private val buttons = ArrayList<Btn>()
 
     private val buildOrder = listOf(
-        MType.BOHRER, MType.OFEN, MType.PRESSE, MType.GENERATOR, MType.LAGER, MType.DROHNE
+        MType.BOHRER, MType.OFEN, MType.PRESSE, MType.ASSEMBLER,
+        MType.GENERATOR, MType.LAGER, MType.DROHNE, MType.VERSTAERKER
     )
 
     private val handler = Handler(Looper.getMainLooper())
@@ -114,7 +124,11 @@ class GameView(context: Context) : View(context) {
         }
         lastNanos = System.nanoTime()
         handler.post(loop)
+        audio.startMusic()
     }
+
+    fun pauseAudio() = audio.pause()
+    fun resumeAudio() = audio.resume()
 
     fun persist() {
         try {
@@ -128,7 +142,7 @@ class GameView(context: Context) : View(context) {
         headerH = dp(78f)
         val margin = dp(10f)
         gridSide = (w - 2 * margin)
-        val maxGrid = h - headerH - dp(210f)
+        val maxGrid = h - headerH - dp(252f)
         if (gridSide > maxGrid) gridSide = maxGrid
         cell = gridSide / sim.n
         gridSide = cell * sim.n
@@ -161,15 +175,16 @@ class GameView(context: Context) : View(context) {
         pText.textSize = dp(20f)
         pText.color = cAccent
         canvas.drawText("PRODUKTIONSWERT  ${fmt(sim.produktionswertPerMin)} /min", dp(12f), dp(26f), pText)
-        pText.textSize = dp(15f)
+        pText.textSize = dp(14f)
         pText.color = cText
         val powOk = sim.powerDemand <= sim.powerSupply + 1e-6
-        canvas.drawText("Barren ${fmt(sim.globalBarren)}", dp(12f), dp(50f), pText)
-        canvas.drawText("Platten ${fmt(sim.globalPlatten)}", dp(140f), dp(50f), pText)
+        canvas.drawText("Barren ${fmt(sim.globalBarren)}", dp(12f), dp(48f), pText)
+        canvas.drawText("Platten ${fmt(sim.globalPlatten)}", dp(118f), dp(48f), pText)
+        canvas.drawText("Komp ${fmt(sim.globalKomponente)}", dp(224f), dp(48f), pText)
         pText.color = if (powOk) cGood else cBad
         canvas.drawText("Strom ${fmt(sim.powerSupply)}/${fmt(sim.powerDemand)}", dp(12f), dp(70f), pText)
         pText.color = cDim
-        canvas.drawText("Platten/min ${oneDec(sim.plattenPerMin)}", dp(140f), dp(70f), pText)
+        canvas.drawText("Wert/min ${fmt(sim.produktionswertPerMin)}", dp(118f), dp(70f), pText)
 
         val bw = dp(84f); val bh = dp(30f)
         val tR = RectF(W - dp(12f) - bw, dp(8f), W - dp(12f), dp(8f) + bh)
@@ -275,6 +290,8 @@ class GameView(context: Context) : View(context) {
     private fun shortLabel(t: MType) = when (t) {
         MType.GENERATOR -> "Generat."
         MType.DROHNE -> "Drohne"
+        MType.ASSEMBLER -> "Assembl."
+        MType.VERSTAERKER -> "Verstaerk."
         else -> t.label
     }
 
@@ -295,8 +312,10 @@ class GameView(context: Context) : View(context) {
             MType.BOHRER -> "Aus: ${oneDec(m.output[0])} Roherz"
             MType.OFEN -> "Ein ${oneDec(m.input[0])} Roherz   Aus ${oneDec(m.output[1])} Barren"
             MType.PRESSE -> "Ein ${oneDec(m.input[1])} Barren   Aus ${oneDec(m.output[2])} Platten"
+            MType.ASSEMBLER -> "Ein ${oneDec(m.input[2])} Platten   Aus ${oneDec(m.output[3])} Komp."
             MType.GENERATOR -> "Brennstoff ${oneDec(m.input[0])} Roherz  →  +${Simulation.GEN_POWER.toInt()} Strom"
-            MType.LAGER -> "Puffer ${oneDec(m.output[0])}E ${oneDec(m.output[1])}B ${oneDec(m.output[2])}P"
+            MType.LAGER -> "Puffer ${oneDec(m.output[0])}E ${oneDec(m.output[1])}B ${oneDec(m.output[2])}P ${oneDec(m.output[3])}K"
+            MType.VERSTAERKER -> "Beschleunigt Nachbarn (+${(Simulation.BOOST_PER * 100).toInt()}% je)"
             MType.REAKTOR -> "Liefert ${Simulation.REAKTOR_POWER.toInt()} Strom (fest)"
             MType.DROHNE -> "Repariert Nachbarn (${Simulation.DROHNE_RATE.toInt()}%/s)"
         }
@@ -336,14 +355,18 @@ class GameView(context: Context) : View(context) {
     private fun drawTech(canvas: Canvas) {
         p.color = Color.argb(242, 20, 17, 14)
         canvas.drawRect(0f, 0f, W.toFloat(), H.toFloat(), p)
-        pText.color = cAccent; pText.textSize = dp(22f)
-        canvas.drawText("Tech-Baum", dp(16f), dp(38f), pText)
-        pText.color = cDim; pText.textSize = dp(13f)
-        canvas.drawText("Upgrades kosten Barren.  Verfuegbar: ${fmt(sim.globalBarren)} B", dp(16f), dp(58f), pText)
 
-        var yy = dp(74f)
         val bh = dp(48f)
-        for (node in Simulation.TECHS) {
+        val gap = dp(6f)
+        val startY = dp(66f)
+        val bandBottom = H - dp(66f)
+        val content = Simulation.TECHS.size * (bh + gap)
+        techMaxScroll = max(0f, content - (bandBottom - startY))
+        techScroll = techScroll.coerceIn(0f, techMaxScroll)
+
+        for ((i, node) in Simulation.TECHS.withIndex()) {
+            val yy = startY + i * (bh + gap) - techScroll
+            if (yy + bh < startY || yy > bandBottom) continue
             val rect = RectF(dp(12f), yy, W - dp(12f), yy + bh)
             val l = sim.lvl(node.id)
             val maxed = l >= node.maxLevel
@@ -360,7 +383,7 @@ class GameView(context: Context) : View(context) {
             val sub = when {
                 maxed -> "voll ausgebaut"
                 !preOk -> "benoetigt: ${Simulation.TECHS.first { it.id == node.prereq }.label}"
-                node.maxLevel > 1 -> "${node.effect}  ·  naechste Stufe: ${cost.toInt()} B"
+                node.maxLevel > 1 -> "${node.effect}  ·  naechste: ${cost.toInt()} B"
                 else -> "Kosten: ${cost.toInt()} B" + (if (node.effect.isNotEmpty()) "  ·  ${node.effect}" else "")
             }
             canvas.drawText(sub, dp(24f), yy + dp(38f), pText)
@@ -371,9 +394,18 @@ class GameView(context: Context) : View(context) {
             val kEnabled = !maxed && preOk && afford
             drawButton(canvas, Btn(kr, "buy_${node.id}", kLabel, kEnabled, false, cAccent))
             if (!maxed) buttons.add(Btn(kr, "buy_${node.id}", kLabel, kEnabled))
-            yy += bh + dp(6f)
         }
-        val cr = RectF(W / 2f - dp(70f), H - dp(58f), W / 2f + dp(70f), H - dp(18f))
+
+        // Kopf- und Fussleiste maskieren gescrollte Inhalte
+        p.color = Color.rgb(20, 17, 14)
+        canvas.drawRect(0f, 0f, W.toFloat(), startY, p)
+        canvas.drawRect(0f, bandBottom, W.toFloat(), H.toFloat(), p)
+        pText.color = cAccent; pText.textSize = dp(22f)
+        canvas.drawText("Tech-Baum", dp(16f), dp(38f), pText)
+        pText.color = cDim; pText.textSize = dp(13f)
+        canvas.drawText("Verfuegbar: ${fmt(sim.globalBarren)} B  ·  wischen zum Scrollen", dp(16f), dp(58f), pText)
+
+        val cr = RectF(W / 2f - dp(70f), H - dp(56f), W / 2f + dp(70f), H - dp(16f))
         drawButton(canvas, Btn(cr, "close", "Schliessen", true, false, cAccent))
         buttons.add(Btn(cr, "close", "Schliessen"))
     }
@@ -389,19 +421,26 @@ class GameView(context: Context) : View(context) {
             "Produktionswert:  ${fmt(sim.produktionswertPerMin)} /min",
             "Barren gesamt:    ${fmt(sim.globalBarren)}   (${oneDec(sim.barrenPerMin)}/min)",
             "Platten gesamt:   ${fmt(sim.globalPlatten)}   (${oneDec(sim.plattenPerMin)}/min)",
+            "Komponenten:      ${fmt(sim.globalKomponente)}   (${oneDec(sim.komponentenPerMin)}/min)",
             "Strom:            ${fmt(sim.powerSupply)} / ${fmt(sim.powerDemand)}",
             "Maschinen gebaut: ${machineCount()}",
             "Upgrade-Stufen:   ${sim.tech.values.sum()}"
         )
-        for (l in lines) { canvas.drawText(l, dp(16f), yy, pText); yy += dp(30f) }
+        for (l in lines) { canvas.drawText(l, dp(16f), yy, pText); yy += dp(28f) }
         pText.color = cDim; pText.textSize = dp(13f)
         yy += dp(6f)
         canvas.drawText("Gelber Punkt = Nachschub fehlt, roter Balken = Verschleiss.", dp(16f), yy, pText)
-        yy += dp(20f)
-        canvas.drawText("Balance-Block: 4 Bohrer : 3 Oefen : 2 Pressen.", dp(16f), yy, pText)
+        yy += dp(18f)
+        canvas.drawText("Verstaerker neben Maschinen = mehr Tempo. Assembler: Platte->Komp.", dp(16f), yy, pText)
 
-        // Reset-Button (mit Bestaetigung)
+        // Ton-Schalter
         val margin = dp(12f)
+        val tw = W - 2 * margin
+        val tr = RectF(margin, yy + dp(14f), margin + tw, yy + dp(14f) + dp(38f))
+        drawButton(canvas, Btn(tr, "sound", if (audio.isMuted()) "Ton: AUS" else "Ton: AN", true, !audio.isMuted(), cAccent))
+        buttons.add(Btn(tr, "sound", "sound"))
+
+        // Reset + Schliessen
         val by = H - dp(58f); val bh = dp(40f)
         val half = (W - 3 * margin) / 2f
         val rReset = RectF(margin, by, margin + half, by + bh)
@@ -480,49 +519,68 @@ class GameView(context: Context) : View(context) {
     // ---------------- Eingabe ----------------
 
     override fun onTouchEvent(event: MotionEvent): Boolean {
-        if (event.action != MotionEvent.ACTION_DOWN) return true
-        val x = event.x; val y = event.y
-
-        for (b in buttons.reversed()) {
-            if (b.rect.contains(x, y)) {
-                if (b.enabled) handleButton(b.id)
+        val slop = dp(8f)
+        when (event.action) {
+            MotionEvent.ACTION_DOWN -> {
+                downX = event.x; downY = event.y; downScroll = techScroll; moved = false
                 return true
             }
+            MotionEvent.ACTION_MOVE -> {
+                if (kotlin.math.abs(event.x - downX) > slop || kotlin.math.abs(event.y - downY) > slop) moved = true
+                if (screen == Screen.TECH) {
+                    techScroll = (downScroll - (event.y - downY)).coerceIn(0f, techMaxScroll)
+                    invalidate()
+                }
+                return true
+            }
+            MotionEvent.ACTION_UP -> {
+                if (!moved) handleClick(event.x, event.y)
+                return true
+            }
+            else -> return true
         }
+    }
 
-        if (screen != Screen.GAME) return true
-
+    private fun handleClick(x: Float, y: Float) {
+        for (b in buttons.reversed()) {
+            if (b.rect.contains(x, y)) {
+                if (b.enabled) handleButton(b.id) else audio.error()
+                return
+            }
+        }
+        if (screen != Screen.GAME) return
         if (x >= gridLeft && x < gridLeft + gridSide && y >= gridTop && y < gridTop + gridSide) {
             val c = ((x - gridLeft) / cell).toInt().coerceIn(0, sim.n - 1)
             val r = ((y - gridTop) / cell).toInt().coerceIn(0, sim.n - 1)
             handleCell(r, c)
         } else {
             selR = -1; selC = -1
+            invalidate()
         }
-        return true
     }
 
     private fun handleButton(id: String) {
         when {
-            id == "tech" -> { screen = if (screen == Screen.TECH) Screen.GAME else Screen.TECH; selR = -1; resetArmed = false }
-            id == "stat" -> { screen = if (screen == Screen.STAT) Screen.GAME else Screen.STAT; selR = -1; resetArmed = false }
-            id == "close" -> { screen = Screen.GAME; report = null; resetArmed = false }
+            id == "tech" -> { screen = if (screen == Screen.TECH) Screen.GAME else Screen.TECH; selR = -1; resetArmed = false; techScroll = 0f; audio.click() }
+            id == "stat" -> { screen = if (screen == Screen.STAT) Screen.GAME else Screen.STAT; selR = -1; resetArmed = false; audio.click() }
+            id == "close" -> { screen = Screen.GAME; report = null; resetArmed = false; audio.click() }
+            id == "sound" -> { audio.toggleMuted(); audio.click() }
             id == "reset" -> {
                 if (!resetArmed) {
-                    resetArmed = true
+                    resetArmed = true; audio.click()
                 } else {
                     sim.newGame(); persist(); resetArmed = false
                     buildTool = null; selR = -1; selC = -1; report = null
-                    screen = Screen.GAME
+                    screen = Screen.GAME; audio.sell()
                 }
             }
-            id == "repair_sel" -> { if (selR >= 0) sim.grid[selR][selC]?.let { sim.repair(it) } }
-            id == "sell_sel" -> { if (selR >= 0) { sim.sell(selR, selC); selR = -1; selC = -1 } }
-            id.startsWith("buy_") -> { sim.buyTech(id.removePrefix("buy_")) }
+            id == "repair_sel" -> { if (selR >= 0) sim.grid[selR][selC]?.let { if (sim.repair(it)) audio.buy() else audio.error() } }
+            id == "sell_sel" -> { if (selR >= 0) { sim.sell(selR, selC); selR = -1; selC = -1; audio.sell() } }
+            id.startsWith("buy_") -> { if (sim.buyTech(id.removePrefix("buy_"))) audio.buy() else audio.error() }
             id.startsWith("build_") -> {
                 val t = MType.valueOf(id.removePrefix("build_"))
                 buildTool = if (buildTool == t) null else t
-                selR = -1; selC = -1
+                selR = -1; selC = -1; audio.click()
             }
         }
         invalidate()
@@ -531,12 +589,11 @@ class GameView(context: Context) : View(context) {
     private fun handleCell(r: Int, c: Int) {
         val m = sim.grid[r][c]
         if (m != null) {
-            // Belegtes Feld: Info anzeigen (unabhaengig vom Bau-Werkzeug).
-            selR = r; selC = c
+            selR = r; selC = c; audio.click()
         } else {
             val t = buildTool
             if (t != null) {
-                if (sim.build(t, r, c)) { selR = -1; selC = -1 }
+                if (sim.build(t, r, c)) { selR = -1; selC = -1; audio.place() } else audio.error()
             } else {
                 selR = -1; selC = -1
             }
@@ -558,6 +615,7 @@ class GameView(context: Context) : View(context) {
         running = false
         handler.removeCallbacks(loop)
         persist()
+        audio.release()
     }
 
     // ---------------- Format-Helfer ----------------
