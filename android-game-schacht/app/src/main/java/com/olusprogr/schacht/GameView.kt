@@ -42,17 +42,38 @@ class GameView(context: Context) : View(context) {
 
     private val prefs = context.getSharedPreferences("schacht_save", Context.MODE_PRIVATE)
 
-    // Farben
-    private val cBg = Color.rgb(26, 23, 20)
-    private val cPanel = Color.rgb(36, 31, 26)
-    private val cCell = Color.rgb(42, 38, 34)
-    private val cGridLine = Color.rgb(21, 18, 15)
-    private val cText = Color.rgb(232, 224, 213)
-    private val cDim = Color.rgb(150, 140, 128)
-    private val cAccent = Color.rgb(228, 161, 75)
-    private val cGood = Color.rgb(120, 200, 130)
-    private val cBad = Color.rgb(224, 90, 80)
-    private val cWarn = Color.rgb(228, 198, 75)
+    // Farben (heller, waermer, farbiger)
+    private val cBg = Color.rgb(38, 33, 28)
+    private val cPanel = Color.rgb(60, 52, 44)
+    private val cPanelHi = Color.rgb(86, 74, 62)
+    private val cCell = Color.rgb(48, 43, 38)
+    private val cGridLine = Color.rgb(26, 22, 18)
+    private val cText = Color.rgb(244, 238, 228)
+    private val cDim = Color.rgb(186, 174, 158)
+    private val cAccent = Color.rgb(244, 186, 96)
+    private val cGood = Color.rgb(122, 212, 142)
+    private val cBad = Color.rgb(234, 104, 94)
+    private val cWarn = Color.rgb(240, 204, 98)
+    private val cBtn = Color.rgb(80, 70, 60)
+    private val cBtnSh = Color.rgb(52, 45, 38)
+    // Ressourcen-Farben
+    private val cResBarren = Color.rgb(188, 194, 204)
+    private val cResPlatte = Color.rgb(104, 168, 216)
+    private val cResKomp = Color.rgb(96, 214, 204)
+    private val cResGeld = Color.rgb(246, 200, 98)
+
+    private fun mColor(t: MType) = when (t) {
+        MType.BOHRER -> Color.rgb(200, 152, 92)
+        MType.OFEN -> Color.rgb(234, 122, 72)
+        MType.PRESSE -> Color.rgb(98, 152, 202)
+        MType.ASSEMBLER -> Color.rgb(120, 202, 162)
+        MType.GENERATOR -> Color.rgb(238, 202, 92)
+        MType.LAGER -> Color.rgb(158, 138, 114)
+        MType.DROHNE -> Color.rgb(110, 202, 172)
+        MType.VERSTAERKER -> Color.rgb(154, 134, 232)
+        MType.HAENDLER -> Color.rgb(242, 182, 102)
+        MType.REAKTOR -> Color.rgb(172, 122, 232)
+    }
 
     private val p = Paint(Paint.ANTI_ALIAS_FLAG)
     private val pSprite = Paint().apply { isAntiAlias = false; style = Paint.Style.FILL }
@@ -80,7 +101,8 @@ class GameView(context: Context) : View(context) {
         var active: Boolean = false,
         val color: Int = 0,
         val sub: String = "",
-        val subColor: Int = 0
+        val subColor: Int = 0,
+        val tint: Int = 0
     )
 
     private val buttons = ArrayList<Btn>()
@@ -183,19 +205,44 @@ class GameView(context: Context) : View(context) {
         }
     }
 
+    private fun resPip(canvas: Canvas, x: Float, cy: Float, color: Int) {
+        val s = dp(9f)
+        p.color = cGridLine
+        canvas.drawRect(x - dp(1f), cy - s / 2 - dp(1f), x + s + dp(1f), cy + s / 2 + dp(1f), p)
+        p.color = color
+        canvas.drawRect(x, cy - s / 2, x + s, cy + s / 2, p)
+        p.color = Color.argb(110, 255, 255, 255)
+        canvas.drawRect(x, cy - s / 2, x + s, cy - s / 2 + dp(2f), p)
+    }
+
     private fun drawHeader(canvas: Canvas) {
         p.color = cPanel
         canvas.drawRect(0f, 0f, W.toFloat(), headerH, p)
-        pText.textSize = dp(20f)
-        pText.color = cAccent
-        canvas.drawText("GELD  ${fmt(sim.money)}   +${fmt(sim.moneyPerMin)}/min", dp(12f), dp(26f), pText)
-        pText.textSize = dp(14f)
-        pText.color = cText
+        p.color = cPanelHi
+        canvas.drawRect(0f, 0f, W.toFloat(), dp(2f), p)
+        p.color = cAccent
+        canvas.drawRect(0f, headerH - dp(2f), W.toFloat(), headerH, p)
+
+        // Titel: Geld hervorgehoben
+        resPip(canvas, dp(12f), dp(20f), cResGeld)
+        pText.textAlign = Paint.Align.LEFT
+        pText.textSize = dp(20f); pText.color = cResGeld
+        val moneyStr = fmt(sim.money)
+        canvas.drawText(moneyStr, dp(28f), dp(27f), pText)
+        val moneyW = pText.measureText(moneyStr)
+        pText.textSize = dp(13f); pText.color = cGood
+        canvas.drawText("+${fmt(sim.moneyPerMin)}/min", dp(28f) + moneyW + dp(10f), dp(27f), pText)
+
+        // Bestand inkl. Lager-Inhalten (mit farbigen Pips)
+        pText.textSize = dp(14f); pText.color = cText
+        resPip(canvas, dp(12f), dp(43f), cResBarren)
+        canvas.drawText(fmt(sim.availableBarren()), dp(28f), dp(48f), pText)
+        resPip(canvas, dp(112f), dp(43f), cResPlatte)
+        canvas.drawText(fmt(sim.availablePlatten()), dp(128f), dp(48f), pText)
+        resPip(canvas, dp(210f), dp(43f), cResKomp)
+        canvas.drawText(fmt(sim.availableKomponente()), dp(226f), dp(48f), pText)
+
         val powOk = sim.powerDemand <= sim.powerSupply + 1e-6
-        // Bestand inkl. Lager-Inhalten
-        canvas.drawText("Barren ${fmt(sim.availableBarren())}", dp(12f), dp(48f), pText)
-        canvas.drawText("Platten ${fmt(sim.availablePlatten())}", dp(118f), dp(48f), pText)
-        canvas.drawText("Komp ${fmt(sim.availableKomponente())}", dp(224f), dp(48f), pText)
         val rest = sim.powerSupply - sim.powerDemand
         pText.color = if (powOk) cGood else cBad
         canvas.drawText("Reststrom ${if (rest < 0) "-" + fmt(-rest) else fmt(rest)}", dp(12f), dp(70f), pText)
@@ -254,12 +301,20 @@ class GameView(context: Context) : View(context) {
             canvas.drawRect(x + q(6) * u, y + q(7) * u, x + (q(6) + 1) * u, y + (q(7) + 1) * u, pSprite)
             if (tier >= 2) canvas.drawRect(x + q(1) * u, y + q(6) * u, x + (q(1) + 1) * u, y + (q(6) + 1) * u, pSprite)
         }
-        // Reicher Boden glaenzt: wandernder Glanzstreifen
+        // Reicher Boden funkelt dezent: kleiner Glitzerpunkt, der blinkt
         if (tier == 3) {
-            val ph = ((animT * 3f).toInt() % 8 + 8) % 8
-            pSprite.color = Color.rgb(255, 240, 190)
-            canvas.drawRect(x + ph * u, y + (7 - ph) * u, x + (ph + 1) * u, y + (8 - ph) * u, pSprite)
+            val tw = kotlin.math.sin(animT * 2.6 + (r * 1.7 + c)) * 0.5 + 0.5
+            if (tw > 0.7) {
+                val g = cell / 16f
+                val gx = (q(2) % 5 + 2) * 2f * g
+                val gy = (q(5) % 5 + 2) * 2f * g
+                pSprite.color = Color.argb(210, 255, 246, 214)
+                canvas.drawRect(x + gx, y + gy, x + gx + g, y + gy + g, pSprite)
+            }
         }
+        // Sanftes Oberlicht (oben heller)
+        pSprite.color = Color.argb(26, 255, 255, 255)
+        canvas.drawRect(x, y, x + cell, y + cell * 0.16f, pSprite)
         // Chunk-Kante in der Reichtums-Farbe -> jeder Chunk ist markiert
         p.color = edge
         canvas.drawRect(x, y, x + cell, y + 1f, p)
@@ -345,7 +400,8 @@ class GameView(context: Context) : View(context) {
             if (!unlocked) { sub = "Tech noetig"; subCol = cDim }
             else { sub = "${camt.toInt()} ${resAbbr(cres)}"; subCol = if (afford) cDim else cBad }
             val active = buildTool == t
-            drawButton(canvas, Btn(rect, "build_${t.name}", shortLabel(t), unlocked, active, 0, sub, subCol))
+            val mc = mColor(t)
+            drawButton(canvas, Btn(rect, "build_${t.name}", shortLabel(t), unlocked, active, mc, sub, subCol, mc))
             buttons.add(Btn(rect, "build_${t.name}", shortLabel(t), unlocked))
         }
     }
@@ -420,7 +476,7 @@ class GameView(context: Context) : View(context) {
     }
 
     private fun drawTech(canvas: Canvas) {
-        p.color = Color.argb(242, 20, 17, 14)
+        p.color = Color.argb(245, 48, 42, 35)
         canvas.drawRect(0f, 0f, W.toFloat(), H.toFloat(), p)
 
         val bh = dp(48f)
@@ -465,7 +521,7 @@ class GameView(context: Context) : View(context) {
         }
 
         // Kopf- und Fussleiste maskieren gescrollte Inhalte
-        p.color = Color.rgb(20, 17, 14)
+        p.color = Color.rgb(48, 42, 35)
         canvas.drawRect(0f, 0f, W.toFloat(), startY, p)
         canvas.drawRect(0f, bandBottom, W.toFloat(), H.toFloat(), p)
         pText.color = cAccent; pText.textSize = dp(22f)
@@ -479,7 +535,7 @@ class GameView(context: Context) : View(context) {
     }
 
     private fun drawStat(canvas: Canvas) {
-        p.color = Color.argb(242, 20, 17, 14)
+        p.color = Color.argb(245, 48, 42, 35)
         canvas.drawRect(0f, 0f, W.toFloat(), H.toFloat(), p)
         pText.color = cAccent; pText.textSize = dp(22f)
         canvas.drawText("Statistik", dp(16f), dp(40f), pText)
@@ -524,7 +580,7 @@ class GameView(context: Context) : View(context) {
 
     private fun drawReport(canvas: Canvas) {
         val rep = report ?: return
-        p.color = Color.argb(248, 20, 17, 14)
+        p.color = Color.argb(248, 48, 42, 35)
         canvas.drawRect(0f, 0f, W.toFloat(), H.toFloat(), p)
         pText.color = cAccent; pText.textSize = dp(22f)
         canvas.drawText("Offline-Report", dp(16f), dp(40f), pText)
@@ -558,27 +614,40 @@ class GameView(context: Context) : View(context) {
     }
 
     private fun drawButton(canvas: Canvas, b: Btn) {
-        p.color = when {
-            !b.enabled -> Color.rgb(48, 44, 40)
-            b.active -> (if (b.color != 0) b.color else cAccent)
-            else -> Color.rgb(58, 52, 46)
+        val bg = when {
+            !b.enabled -> cBtnSh
+            b.active -> if (b.color != 0) b.color else cAccent
+            else -> cBtn
         }
-        canvas.drawRoundRect(b.rect, dp(7f), dp(7f), p)
+        p.color = bg
+        canvas.drawRoundRect(b.rect, dp(9f), dp(9f), p)
+        // Bevel (heller oben, dunkler unten)
+        if (b.enabled) {
+            p.color = Color.argb(75, 255, 255, 255)
+            canvas.drawRect(b.rect.left + dp(7f), b.rect.top + dp(2f), b.rect.right - dp(7f), b.rect.top + dp(3.5f), p)
+            p.color = Color.argb(55, 0, 0, 0)
+            canvas.drawRect(b.rect.left + dp(7f), b.rect.bottom - dp(3f), b.rect.right - dp(7f), b.rect.bottom - dp(1.5f), p)
+        }
+        // Kategorie-Farbstreifen links
+        if (b.tint != 0 && !b.active && b.enabled) {
+            p.color = b.tint
+            canvas.drawRect(b.rect.left + dp(3f), b.rect.top + dp(7f), b.rect.left + dp(6f), b.rect.bottom - dp(7f), p)
+        }
         if (b.active) {
             p.color = cAccent; p.style = Paint.Style.STROKE; p.strokeWidth = dp(2f)
-            canvas.drawRoundRect(b.rect, dp(7f), dp(7f), p)
+            canvas.drawRoundRect(b.rect, dp(9f), dp(9f), p)
             p.style = Paint.Style.FILL
         }
         val txtCol = when {
             !b.enabled -> cDim
-            b.active -> Color.rgb(24, 20, 16)
+            b.active -> Color.rgb(28, 22, 16)
             else -> cText
         }
         if (b.sub.isEmpty()) {
             pTextC.color = txtCol; pTextC.textSize = dp(13f)
             canvas.drawText(b.label, b.rect.centerX(), b.rect.centerY() + dp(5f), pTextC)
         } else {
-            pTextC.color = txtCol; pTextC.textSize = dp(14f)
+            pTextC.color = txtCol; pTextC.textSize = dp(13.5f)
             canvas.drawText(b.label, b.rect.centerX(), b.rect.centerY() - dp(2f), pTextC)
             pTextC.color = if (b.subColor != 0) b.subColor else cDim; pTextC.textSize = dp(11f)
             canvas.drawText(b.sub, b.rect.centerX(), b.rect.centerY() + dp(15f), pTextC)
