@@ -361,7 +361,7 @@ class GameView(context: Context) : View(context) {
         val startY = dp(66f)
         val bandBottom = H - dp(66f)
         val content = Simulation.TECHS.size * (bh + gap)
-        techMaxScroll = max(0f, content - (bandBottom - startY))
+        techMaxScroll = (content - (bandBottom - startY)).coerceAtLeast(0f)
         techScroll = techScroll.coerceIn(0f, techMaxScroll)
 
         for ((i, node) in Simulation.TECHS.withIndex()) {
