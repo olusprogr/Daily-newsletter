@@ -43,6 +43,7 @@ class GameView(context: Context) : View(context) {
     private var downY = 0f
     private var downScroll = 0f
     private var moved = false
+    private var downInGrid = false
 
     private val audio = Audio()
 
@@ -1088,6 +1089,8 @@ class GameView(context: Context) : View(context) {
             MotionEvent.ACTION_DOWN -> {
                 downX = event.x; downY = event.y; downScroll = techScroll
                 lastPanX = panX; lastPanY = panY; moved = false
+                downInGrid = downX >= gridLeft && downX <= gridLeft + gridSide &&
+                    downY >= gridTop && downY <= gridTop + gridSide
                 return true
             }
             MotionEvent.ACTION_MOVE -> {
@@ -1095,10 +1098,10 @@ class GameView(context: Context) : View(context) {
                 if (screen == Screen.TECH) {
                     techScroll = (downScroll - (event.y - downY)).coerceIn(0f, techMaxScroll)
                     invalidate()
-                } else if (screen == Screen.GAME && zoom > 1f &&
+                } else if (screen == Screen.GAME && downInGrid &&
                     event.pointerCount == 1 && !scaleDetector.isInProgress
                 ) {
-                    // gezoomte Karte per Finger verschieben
+                    // Karte mit einem Finger scrollen (bei jedem Zoom)
                     panX = lastPanX + (event.x - downX)
                     panY = lastPanY + (event.y - downY)
                     invalidate()
