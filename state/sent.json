@@ -1,6 +1,51 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/08/11/an-unreleased-anthropic-model-made-progress-on-one-of-maths-biggest-unsolved-problems/",
+      "title": "An unreleased Anthropic model made progress on one of math’s biggest unsolved problems",
+      "summary": "For more than 150 years, the Riemann hypothesis has stood as one of the major unsolved problems in mathematics. Anthropic hasn't solved it — but the company's models made more progress than you might expect.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-11T16:25:20+00:00",
+      "sent_at": "2026-08-11T16:25:32.707376+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/08/11/rivian-ceo-rj-scaringe-is-betting-on-evs-robots-and-autonomy-all-at-once-hell-explain-why-at-disrupt-2026/",
+      "title": "Rivian CEO RJ Scaringe is betting on EVs, robots, and autonomy all at once — he’ll explain why at Disrupt 2026",
+      "summary": "Rivian's CEO RJ Scaringe is speaking at TechCrunch Disrupt 2026 to detail his journey, and the lessons it’s bestowed.",
+      "source": "TechCrunch",
+      "category": "Innovationen",
+      "published": "2026-08-11T15:30:00+00:00",
+      "sent_at": "2026-08-11T16:25:32.707376+00:00"
+    },
+    {
+      "link": "https://github.com/trycua/cua/blob/main/blog/gpu-passthrough-macos-vms.md",
+      "title": "Apple Silicon and macOS VMs: 11–16× Faster LLM Inference with Llama.cpp",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-11T14:50:33+00:00",
+      "sent_at": "2026-08-11T16:25:32.707376+00:00"
+    },
+    {
+      "link": "https://aimagazine.com/news/why-did-openai-head-of-ethics-chloe-bakalar-leave",
+      "title": "Why Did OpenAI's Head of Ethics Chloé Bakalar Leave?",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-11T14:03:18+00:00",
+      "sent_at": "2026-08-11T16:25:32.707376+00:00"
+    },
+    {
+      "link": "https://stratechery.com/2026/nvidias-risky-business/",
+      "title": "Nvidia's Risky Business",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Hardware",
+      "published": "2026-08-11T10:02:00+00:00",
+      "sent_at": "2026-08-11T16:25:32.707376+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/pc-components/cpus/amd-highlights-ryzen-5-5500-briefly-topping-amazon-cpu-best-sellers-beating-9800x3d-usd80-ddr4-cpu-remains-a-top-seller-during-memory-crunch",
       "title": "AMD highlights Ryzen 5 5500 briefly topping Amazon CPU best sellers, beating 9800X3D — $80 DDR4 CPU remains a top seller during memory crunch",
       "summary": "AMD's marketing director shared a screenshot of the Amazon CPU best sellers list, but the four-year-old, $80 Ryzen 5 5500 was at the top of the charts.",
