@@ -1,6 +1,15 @@
 {
   "items": [
     {
+      "link": "https://github.com/antirez/h3.c",
+      "title": "H3-metal – Native MiniMax-H3 inference for Apple Silicon",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Hardware",
+      "published": "2026-08-11T01:22:09+00:00",
+      "sent_at": "2026-08-11T04:48:22.931661+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/08/10/openai-reportedly-completed-a-7-billion-employee-tender-offer/",
       "title": "OpenAI reportedly completed a $7 billion employee tender offer",
       "summary": "San Francisco's housing market is in trouble again.",
