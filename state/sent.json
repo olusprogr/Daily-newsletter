@@ -1,6 +1,33 @@
 {
   "items": [
     {
+      "link": "https://www.wired.com/story/book-excerpt-rise-and-fall-of-the-artificial-state-jill-lepore-silicon-valley-sci-fi/",
+      "title": "Elon Musk, Sam Altman, and the Misreading of Science Fiction",
+      "summary": "Beyond Elon Musk’s interpretation of The Odyssey, Silicon Valley leaders have often misunderstood classic books like Foundation and The Hitchhiker’s Guide to the Galaxy. It’s evident in their tech.",
+      "source": "Wired",
+      "category": "Hardware",
+      "published": "2026-08-11T10:30:00+00:00",
+      "sent_at": "2026-08-11T10:46:37.158085+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/organoids-lab-grown-brains-neural-networks/",
+      "title": "AI Is Dead. Organoids Are Alive",
+      "summary": "Mini human brains are being grown in labs all over the world. Soon, they could outthink neural networks.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-08-11T10:00:00+00:00",
+      "sent_at": "2026-08-11T10:46:37.158085+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2234335/openai-daybreak-model-less-likely-to-refuse-higher-risk-tasks/",
+      "title": "OpenAI gives Daybreak partners access to a more powerful cybersecurity model",
+      "summary": "OpenAI's Daybreak program now has two tiers, with the higher one giving partners access to a more advanced cybersecurity model.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-08-11T09:40:15+00:00",
+      "sent_at": "2026-08-11T10:46:37.158085+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/pc-components/case-mods/diy-modder-creates-heat-engine-computing-device-powered-by-a-stirling-engine-80-mhz-esp32-can-run-tetris-snake-and-pong-on-just-150-milliwatts-of-power",
       "title": "DIY modder creates 'heat engine computing device' powered by a Stirling engine, can run Tetris, Snake, and Pong — 80 MHz processor operates on just 150 milliwatts of power",
       "summary": "The custom machine uses an ESP32-C3, OLED display, and 16-key keypad while squeezing retro gaming into a tiny 150mW power budget.",
