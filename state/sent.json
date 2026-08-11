@@ -1,6 +1,15 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/pc-components/case-mods/diy-modder-creates-heat-engine-computing-device-powered-by-a-stirling-engine-80-mhz-esp32-can-run-tetris-snake-and-pong-on-just-150-milliwatts-of-power",
+      "title": "DIY modder creates 'heat engine computing device' powered by a Stirling engine, can run Tetris, Snake, and Pong — 80 MHz processor operates on just 150 milliwatts of power",
+      "summary": "The custom machine uses an ESP32-C3, OLED display, and 16-key keypad while squeezing retro gaming into a tiny 150mW power budget.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-08-11T09:30:00+00:00",
+      "sent_at": "2026-08-11T09:33:17.935948+00:00"
+    },
+    {
       "link": "https://thewalrus.ca/google-search-is-dying/",
       "title": "As AI eats the web, the internet’s collective memory is disappearing",
       "summary": "",
