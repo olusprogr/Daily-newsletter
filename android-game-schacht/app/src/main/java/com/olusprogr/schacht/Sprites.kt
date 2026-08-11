@@ -208,6 +208,19 @@ object Sprites {
         Px(18, 19, 3, 1, YEL), Px(19, 18, 1, 1, YEL)
     )
 
+    // Prospektor: Scanner-Stativ mit Radarschuessel und cyan Sende-Punkt.
+    val PROSPEKTOR = listOf(
+        Px(9, 24, 14, 4, OUT),
+        Px(10, 25, 12, 2, MDK),
+        Px(10, 25, 12, 1, MMD),
+        Px(15, 12, 2, 12, OUT), Px(15, 12, 1, 12, MMD),
+        Px(10, 6, 12, 3, OUT),
+        Px(11, 7, 10, 2, MM2), Px(11, 7, 10, 1, MLT),
+        Px(15, 4, 2, 2, CYA),
+        Px(9, 9, 1, 1, CYL), Px(22, 9, 1, 1, CYL),
+        Px(9, 27, 3, 2, OUT), Px(20, 27, 3, 2, OUT)
+    )
+
     // Rost-Overlay fuer Zustand < 50%.
     val RUST = listOf(
         Px(3, 4, 3, 1, RA), Px(2, 5, 2, 2, RA), Px(5, 6, 1, 1, RA),
@@ -292,6 +305,12 @@ object Sprites {
             2 -> listOf(Px(15, 14, 1, 1, CYL))
             else -> listOf(Px(16, 12, 1, 1, MHI))
         }
+        MType.PROSPEKTOR -> when (frame) {
+            0 -> listOf(Px(15, 4, 2, 2, CYL))
+            1 -> listOf(Px(13, 3, 1, 1, CYA), Px(18, 3, 1, 1, CYA))
+            2 -> listOf(Px(11, 7, 10, 1, CYL))
+            else -> listOf(Px(15, 4, 2, 2, CYA))
+        }
     }
 
     // --- Ressourcen-Icons im 12x12-Raster ---
@@ -351,5 +370,6 @@ object Sprites {
         MType.VERSTAERKER -> VERSTAERKER
         MType.REAKTOR -> REAKTOR
         MType.HAENDLER -> HAENDLER
+        MType.PROSPEKTOR -> PROSPEKTOR
     }
 }

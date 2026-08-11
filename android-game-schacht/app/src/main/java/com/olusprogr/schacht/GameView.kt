@@ -52,12 +52,12 @@ class GameView(context: Context) : View(context) {
         object : android.view.ScaleGestureDetector.SimpleOnScaleGestureListener() {
             override fun onScale(d: android.view.ScaleGestureDetector): Boolean {
                 if (screen != Screen.GAME) return false
-                val baseCell = gridSide / sim.areaN()
-                val oldCell = baseCell * zoom
+                val bc = baseCell()
+                val oldCell = bc * zoom
                 val gx = (d.focusX - (gridLeft + panX)) / oldCell
                 val gy = (d.focusY - (gridTop + panY)) / oldCell
-                zoom = (zoom * d.scaleFactor).coerceIn(1f, 3f)
-                val newCell = baseCell * zoom
+                zoom = (zoom * d.scaleFactor).coerceIn(zoomMin, zoomMax)
+                val newCell = bc * zoom
                 panX = d.focusX - gridLeft - gx * newCell
                 panY = d.focusY - gridTop - gy * newCell
                 moved = true
@@ -100,6 +100,7 @@ class GameView(context: Context) : View(context) {
         MType.VERSTAERKER -> Color.rgb(154, 134, 232)
         MType.HAENDLER -> Color.rgb(242, 182, 102)
         MType.REAKTOR -> Color.rgb(172, 122, 232)
+        MType.PROSPEKTOR -> Color.rgb(96, 200, 210)
     }
 
     private val p = Paint(Paint.ANTI_ALIAS_FLAG)
@@ -120,7 +121,10 @@ class GameView(context: Context) : View(context) {
     private var headerH = 0f
     private var paletteTop = 0f
 
-    // Zoom & Verschiebung der Karte
+    // Zoom & Verschiebung der (grossen) Karte
+    private val visibleAt1 = 11f  // ~11 Chunks quer bei Zoom 1
+    private val zoomMin = 0.7f
+    private val zoomMax = 2.4f
     private var zoom = 1f
     private var panX = 0f
     private var panY = 0f
@@ -128,14 +132,33 @@ class GameView(context: Context) : View(context) {
     private var vTop = 0f
     private var lastPanX = 0f
     private var lastPanY = 0f
+    private var needCenter = true
+
+    private fun baseCell() = gridSide / visibleAt1
+
+    private fun reactorRC(): Pair<Int, Int> {
+        for (r in 0 until sim.n) for (c in 0 until sim.n)
+            if (sim.grid[r][c]?.type == MType.REAKTOR) return r to c
+        return sim.startR to sim.startC
+    }
 
     private fun updateView() {
-        val baseCell = gridSide / sim.areaN()
-        zoom = zoom.coerceIn(1f, 3f)
-        cell = baseCell * zoom
-        val content = gridSide * zoom
-        panX = panX.coerceIn(gridSide - content, 0f)   // gridSide-content <= 0
-        panY = panY.coerceIn(gridSide - content, 0f)
+        zoom = zoom.coerceIn(zoomMin, zoomMax)
+        cell = baseCell() * zoom
+        val content = sim.n * cell
+        if (needCenter && gridSide > 0f) {
+            val (rr, cc) = reactorRC()
+            panX = gridSide / 2f - (cc + 0.5f) * cell
+            panY = gridSide / 2f - (rr + 0.5f) * cell
+            needCenter = false
+        }
+        if (content <= gridSide) {
+            panX = (gridSide - content) / 2f
+            panY = (gridSide - content) / 2f
+        } else {
+            panX = panX.coerceIn(gridSide - content, 0f)
+            panY = panY.coerceIn(gridSide - content, 0f)
+        }
         vLeft = gridLeft + panX
         vTop = gridTop + panY
     }
@@ -163,8 +186,8 @@ class GameView(context: Context) : View(context) {
     private val cGroundRust = Color.rgb(61, 37, 30)
 
     private val buildOrder = listOf(
-        MType.BOHRER, MType.OFEN, MType.PRESSE, MType.ASSEMBLER, MType.HAENDLER,
-        MType.GENERATOR, MType.LAGER, MType.DROHNE, MType.VERSTAERKER
+        MType.BOHRER, MType.OFEN, MType.PROSPEKTOR, MType.PRESSE, MType.ASSEMBLER,
+        MType.HAENDLER, MType.GENERATOR, MType.LAGER, MType.DROHNE, MType.VERSTAERKER
     )
 
     private fun resAbbr(res: Res) = when (res) {
@@ -242,6 +265,7 @@ class GameView(context: Context) : View(context) {
         val blob = saveStore.loadState(id)
         currentSlot = id
         report = null
+        needCenter = true
         if (blob == null) { sim.newGame(); screen = Screen.GAME; return }
         try {
             val savedT = sim.fromJson(blob)
@@ -259,6 +283,7 @@ class GameView(context: Context) : View(context) {
         sim.newGame()
         currentSlot = saveStore.createSlot(sim.toJson(System.currentTimeMillis()))
         report = null
+        needCenter = true
         screen = Screen.GAME
     }
 
@@ -366,10 +391,14 @@ class GameView(context: Context) : View(context) {
         val an = sim.areaN()
         canvas.save()
         canvas.clipRect(gridLeft, gridTop, gridLeft + gridSide, gridTop + gridSide)
-        for (r in 0 until an) for (c in 0 until an) {
+        // nur den sichtbaren Ausschnitt zeichnen (grosse Welt)
+        val c0 = (((gridLeft - vLeft) / cell).toInt() - 1).coerceIn(0, an - 1)
+        val c1 = (((gridLeft + gridSide - vLeft) / cell).toInt() + 1).coerceIn(0, an - 1)
+        val r0 = (((gridTop - vTop) / cell).toInt() - 1).coerceIn(0, an - 1)
+        val r1 = (((gridTop + gridSide - vTop) / cell).toInt() + 1).coerceIn(0, an - 1)
+        for (r in r0..r1) for (c in c0..c1) {
             val x = vLeft + c * cell
             val y = vTop + r * cell
-            if (x + cell < gridLeft || x > gridLeft + gridSide || y + cell < gridTop || y > gridTop + gridSide) continue
             drawGround(canvas, r, c, x, y)
             val m = sim.grid[r][c]
             if (m != null) drawMachine(canvas, m, x, y)
@@ -441,58 +470,97 @@ class GameView(context: Context) : View(context) {
         }
     }
 
-    /** Zeichnet einen Stein-/Boden-Chunk, eingefaerbt nach Bodenreichtum. */
+    // Terrain-Farben (Pixel-Karte: gruenes Land, tuerkises Wasser, braune Kueste)
+    private val cWater = Color.rgb(74, 198, 206)
+    private val cWaterD = Color.rgb(58, 168, 190)
+    private val cWaterL = Color.rgb(150, 230, 230)
+    private val cCoast = Color.rgb(150, 96, 52)
+    private val cSurf = Color.rgb(206, 244, 244)
+
+    private fun landSafe(r: Int, c: Int): Boolean =
+        r in 0 until sim.n && c in 0 until sim.n && sim.isLand(r, c)
+
+    /** Zeichnet einen Karten-Chunk: Wasser, Land, Kueste und (falls gescannt) Reichtum. */
     private fun drawGround(canvas: Canvas, r: Int, c: Int, x: Float, y: Float) {
+        val seed = (r * 73856093) xor (c * 19349663)
+        fun q(i: Int) = (seed ushr (i * 3)) and 7
+        val u = cell / 8f
+
+        if (!sim.isLand(r, c)) {
+            // --- Wasser ---
+            pSprite.color = cWater
+            canvas.drawRect(x, y, x + cell, y + cell, pSprite)
+            pSprite.color = cWaterD
+            canvas.drawRect(x + q(0) * u, y + q(1) * u, x + (q(0) + 2) * u, y + (q(1) + 1) * u, pSprite)
+            canvas.drawRect(x + q(2) * u, y + q(3) * u, x + (q(2) + 1) * u, y + (q(3) + 1) * u, pSprite)
+            val tw = kotlin.math.sin(animT * 1.8 + (r * 0.7 + c * 1.3)) * 0.5 + 0.5
+            if (tw > 0.72) {
+                pSprite.color = cWaterL
+                canvas.drawRect(x + q(4) * u, y + q(5) * u, x + (q(4) + 1) * u, y + (q(5) + 1) * u, pSprite)
+            }
+            return
+        }
+
+        // --- Land ---
+        val surveyed = sim.isSurveyed(r, c)
         val tier = sim.richness(r, c)
-        val base: Int; val dark: Int; val lite: Int; val accent: Int; val edge: Int
-        when (tier) {
-            0 -> { base = Color.rgb(58, 55, 52); dark = Color.rgb(44, 42, 40); lite = Color.rgb(72, 68, 64); accent = Color.rgb(90, 86, 82); edge = Color.rgb(84, 80, 76) }
-            1 -> { base = Color.rgb(43, 39, 35); dark = Color.rgb(33, 30, 26); lite = Color.rgb(55, 50, 44); accent = Color.rgb(90, 55, 40); edge = Color.rgb(72, 52, 42) }
-            2 -> { base = Color.rgb(41, 49, 39); dark = Color.rgb(29, 36, 27); lite = Color.rgb(56, 66, 50); accent = Color.rgb(60, 130, 100); edge = Color.rgb(58, 104, 76) }
-            else -> { base = Color.rgb(54, 48, 27); dark = Color.rgb(38, 34, 16); lite = Color.rgb(78, 68, 32); accent = Color.rgb(224, 182, 70); edge = Color.rgb(210, 168, 60) }
+        val base: Int; val dark: Int; val lite: Int
+        if (!surveyed) {
+            // ungescannt: entsaettigtes Grau-Gruen, Reichtum unbekannt
+            base = Color.rgb(96, 112, 82); dark = Color.rgb(80, 94, 68); lite = Color.rgb(110, 126, 96)
+        } else when (tier) {
+            0 -> { base = Color.rgb(120, 138, 92); dark = Color.rgb(100, 116, 76); lite = Color.rgb(140, 158, 110) }
+            1 -> { base = Color.rgb(118, 170, 74); dark = Color.rgb(96, 144, 58); lite = Color.rgb(150, 196, 100) }
+            2 -> { base = Color.rgb(96, 176, 76); dark = Color.rgb(74, 148, 58); lite = Color.rgb(140, 208, 110) }
+            else -> { base = Color.rgb(156, 168, 66); dark = Color.rgb(126, 138, 48); lite = Color.rgb(206, 200, 96) }
         }
         pSprite.color = base
         canvas.drawRect(x, y, x + cell, y + cell, pSprite)
-        val u = cell / 8f
-        val seed = (r * 73856093) xor (c * 19349663)
-        fun q(i: Int) = (seed ushr (i * 3)) and 7
         pSprite.color = dark
-        canvas.drawRect(x + q(0) * u, y + q(1) * u, x + (q(0) + 1) * u, y + (q(1) + 2) * u, pSprite)
-        canvas.drawRect(x + q(2) * u, y + q(3) * u, x + (q(2) + 2) * u, y + (q(3) + 1) * u, pSprite)
+        canvas.drawRect(x + q(0) * u, y + q(1) * u, x + (q(0) + 2) * u, y + (q(1) + 2) * u, pSprite)
+        canvas.drawRect(x + q(2) * u, y + q(3) * u, x + (q(2) + 1) * u, y + (q(3) + 1) * u, pSprite)
         pSprite.color = lite
         canvas.drawRect(x + q(4) * u, y + q(5) * u, x + (q(4) + 1) * u, y + (q(5) + 1) * u, pSprite)
-        // Bodenschaetze-Flecken. Bei normal (braun) volle Groesse; bei
-        // moderat (gruen) und reich (gold) feiner/kleiner, aber mehr Punkte.
-        if (tier == 1) {
-            pSprite.color = accent
-            canvas.drawRect(x + q(6) * u, y + q(7) * u, x + (q(6) + 1) * u, y + (q(7) + 1) * u, pSprite)
-        } else if (tier >= 2) {
-            pSprite.color = accent
-            val su = cell / 16f
-            fun dot(a: Int, b: Int) = canvas.drawRect(
-                x + q(a) * u, y + q(b) * u, x + q(a) * u + su, y + q(b) * u + su, pSprite
-            )
-            dot(6, 7); dot(1, 6)
-            if (tier == 3) { dot(3, 2); dot(4, 7) }
-        }
-        // Reicher Boden funkelt dezent: kleiner Glitzerpunkt, der blinkt
-        if (tier == 3) {
-            val tw = kotlin.math.sin(animT * 2.6 + (r * 1.7 + c)) * 0.5 + 0.5
-            if (tw > 0.7) {
-                val g = cell / 16f
-                val gx = (q(2) % 5 + 2) * 2f * g
-                val gy = (q(5) % 5 + 2) * 2f * g
-                pSprite.color = Color.argb(210, 255, 246, 214)
-                canvas.drawRect(x + gx, y + gy, x + gx + g, y + gy + g, pSprite)
+
+        if (!surveyed) {
+            // dezente Frage-Punkte signalisieren "unbekannt"
+            pSprite.color = Color.argb(90, 40, 46, 36)
+            canvas.drawRect(x + 3.5f * u, y + 3.5f * u, x + 4.5f * u, y + 4.5f * u, pSprite)
+        } else if (tier >= 1) {
+            // Erz-Flecken je nach Reichtum
+            pSprite.color = if (tier >= 3) Color.rgb(236, 208, 96) else if (tier == 2) Color.rgb(120, 210, 120) else Color.rgb(150, 120, 70)
+            val su = if (tier == 1) cell / 8f else cell / 16f
+            fun dot(a: Int, b: Int) = canvas.drawRect(x + q(a) * u, y + q(b) * u, x + q(a) * u + su, y + q(b) * u + su, pSprite)
+            dot(6, 7); if (tier >= 2) dot(1, 6); if (tier >= 3) { dot(3, 2); dot(4, 7) }
+            if (tier == 3) {
+                val tw = kotlin.math.sin(animT * 2.6 + (r * 1.7 + c)) * 0.5 + 0.5
+                if (tw > 0.7) {
+                    val g = cell / 16f
+                    pSprite.color = Color.argb(220, 255, 250, 220)
+                    canvas.drawRect(x + 5 * g, y + 6 * g, x + 6 * g, y + 7 * g, pSprite)
+                }
             }
         }
-        // Sanftes Oberlicht (oben heller)
-        pSprite.color = Color.argb(26, 255, 255, 255)
-        canvas.drawRect(x, y, x + cell, y + cell * 0.16f, pSprite)
-        // Chunk-Kante in der Reichtums-Farbe -> jeder Chunk ist markiert
-        p.color = edge
-        canvas.drawRect(x, y, x + cell, y + 1f, p)
-        canvas.drawRect(x, y, x + 1f, y + cell, p)
+
+        // --- Kueste: Kanten, die ans Wasser grenzen, bekommen Surf + braunen Rand ---
+        val t = cell * 0.14f
+        // oben
+        if (!landSafe(r - 1, c)) {
+            pSprite.color = cSurf; canvas.drawRect(x, y, x + cell, y + t * 0.4f, pSprite)
+            pSprite.color = cCoast; canvas.drawRect(x, y + t * 0.4f, x + cell, y + t, pSprite)
+        }
+        if (!landSafe(r + 1, c)) {
+            pSprite.color = cSurf; canvas.drawRect(x, y + cell - t * 0.4f, x + cell, y + cell, pSprite)
+            pSprite.color = cCoast; canvas.drawRect(x, y + cell - t, x + cell, y + cell - t * 0.4f, pSprite)
+        }
+        if (!landSafe(r, c - 1)) {
+            pSprite.color = cSurf; canvas.drawRect(x, y, x + t * 0.4f, y + cell, pSprite)
+            pSprite.color = cCoast; canvas.drawRect(x + t * 0.4f, y, x + t, y + cell, pSprite)
+        }
+        if (!landSafe(r, c + 1)) {
+            pSprite.color = cSurf; canvas.drawRect(x + cell - t * 0.4f, y, x + cell, y + cell, pSprite)
+            pSprite.color = cCoast; canvas.drawRect(x + cell - t, y, x + cell - t * 0.4f, y + cell, pSprite)
+        }
     }
 
     private fun drawSprite(canvas: Canvas, list: List<Px>, x: Float, y: Float, s: Float) {
@@ -504,7 +572,8 @@ class GameView(context: Context) : View(context) {
 
     private fun drawMachine(canvas: Canvas, m: Machine, x: Float, y: Float) {
         val s = cell / 32f
-        val hasWear = m.type != MType.REAKTOR && m.type != MType.LAGER && m.type != MType.HAENDLER
+        val hasWear = m.type != MType.REAKTOR && m.type != MType.LAGER &&
+            m.type != MType.HAENDLER && m.type != MType.PROSPEKTOR
         val pad = cell * 0.08f
 
         // Basis-Sprite
@@ -566,13 +635,19 @@ class GameView(context: Context) : View(context) {
             val x = margin + col * (bw + gap)
             val yy = paletteTop + row * (bh + gap)
             val rect = RectF(x, yy, x + bw, yy + bh)
-            val unlocked = sim.canBuild(t)
+            val used = sim.typeCount[t.ordinal]
+            val max = sim.maxCount(t)
+            val full = used >= max
+            val unlocked = sim.canBuild(t) && !full
             val (cres, camt) = sim.buildCost(t)
             val afford = sim.available(cres) >= camt
             val sub: String
             val subCol: Int
-            if (!unlocked) { sub = tr("tech_needed"); subCol = cDim }
-            else { sub = "${camt.toInt()} ${resAbbr(cres)}"; subCol = if (afford) cDim else cBad }
+            when {
+                !sim.canBuild(t) -> { sub = tr("tech_needed"); subCol = cDim }
+                full -> { sub = "$used/$max ${tr("full")}"; subCol = cBad }
+                else -> { sub = "${camt.toInt()} ${resAbbr(cres)}  ·  $used/$max"; subCol = if (afford) cDim else cBad }
+            }
             val active = buildTool == t
             val mc = mColor(t)
             drawButton(canvas, Btn(rect, "build_${t.name}", mShort(t), unlocked, active, mc, sub, subCol, mc))
@@ -604,9 +679,13 @@ class GameView(context: Context) : View(context) {
         yy += dp(22f)
         val io = when (m.type) {
             MType.BOHRER -> {
-                val tier = sim.richness(selR, selC)
-                "${tr("out")} ${oneDec(m.output[0])} ${tr("roherz")}   ${tr("floor")}: ${tierName(tier)} (x${Simulation.ORE_MULT[tier]})"
+                val floorTxt = if (sim.isSurveyed(selR, selC)) {
+                    val tier = sim.richness(selR, selC)
+                    "${tierName(tier)} (x${Simulation.ORE_MULT[tier]})"
+                } else tr("unscanned")
+                "${tr("out")} ${oneDec(m.output[0])} ${tr("roherz")}   ${tr("floor")}: $floorTxt"
             }
+            MType.PROSPEKTOR -> "${tr("scans")} (${tr("radius")} ${sim.scanRadius()})"
             MType.OFEN -> "${tr("in")} ${oneDec(m.input[0])} ${tr("roherz")}   ${tr("out")} ${oneDec(m.output[1])} ${tr("barren")}"
             MType.PRESSE -> "${tr("in")} ${oneDec(m.input[1])} ${tr("barren")}   ${tr("out")} ${oneDec(m.output[2])} ${tr("platten")}"
             MType.ASSEMBLER -> "${tr("in")} ${oneDec(m.input[2])} ${tr("platten")}   ${tr("out")} ${oneDec(m.output[3])} ${tr("komp")}"
@@ -737,7 +816,7 @@ class GameView(context: Context) : View(context) {
         "t_assembler" -> tr("tf_assembler"); "t_haendler" -> tr("tf_haendler"); "t_boost" -> tr("tf_boost")
         "t_diag" -> tr("tf_diag")
         "t_bspeed", "t_ospeed", "t_pspeed", "t_aspeed" -> tr("tf_speed")
-        "t_wert" -> tr("tf_wert"); "t_area" -> tr("tf_area"); "t_takt" -> tr("tf_takt")
+        "t_wert" -> tr("tf_wert"); "t_scan" -> tr("tf_scan"); "t_takt" -> tr("tf_takt")
         "t_robust" -> tr("tf_robust"); "t_lift" -> tr("tf_lift"); "t_power" -> tr("tf_power")
         else -> ""
     }

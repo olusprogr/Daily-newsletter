@@ -21,7 +21,8 @@ enum class MType(val label: String, val sym: String, val power: Double) {
     REAKTOR("Reaktor", "R", 0.0),
     ASSEMBLER("Assembler", "A", 10.0),
     VERSTAERKER("Verstaerker", "V", 6.0),
-    HAENDLER("Haendler", "H", 0.0)
+    HAENDLER("Haendler", "H", 0.0),
+    PROSPEKTOR("Prospektor", "S", 2.0)
 }
 
 class Machine(var type: MType) {
@@ -59,8 +60,12 @@ data class TechNode(
 )
 
 class Simulation {
-    val n = 12
+    val n = 40                       // grosse Welt: 40 x 40 Chunks
+    val startR = n / 2
+    val startC = n / 2
     val grid = Array(n) { arrayOfNulls<Machine>(n) }
+    /** Aufgedeckte Chunks (Prospektor). true = Reichtum bekannt. */
+    val surveyed = BooleanArray(n * n)
     var globalBarren = 0.0
     var globalPlatten = 0.0
     var globalKomponente = 0.0
@@ -104,6 +109,10 @@ class Simulation {
         const val OFFLINE_CAP = 8 * 3600
         const val START_BARREN = 35.0
 
+        const val LAND_THRESH = 0.46     // Schwelle Land/Wasser aus dem Rauschen
+        const val SCAN_R = 4             // Prospektor deckt Radius (Chebyshev) auf
+        const val PROSPEKTOR_COST = 6.0
+
         // Bodenreichtum je Feld -> Ausbeute-Faktor des Bohrers
         val ORE_MULT = doubleArrayOf(0.0, 0.6, 1.0, 1.7)
 
@@ -122,7 +131,7 @@ class Simulation {
             TechNode("t_pspeed", "Presse-Tempo", 45.0, 1.3, 20, "+8%/Stufe", "t_presse", null),
             TechNode("t_aspeed", "Assembler-Tempo", 55.0, 1.3, 20, "+8%/Stufe", "t_assembler", null),
             TechNode("t_wert", "Komponenten-Preis", 60.0, 1.4, 10, "+25%/Stufe", "t_assembler", null),
-            TechNode("t_area", "Flaeche erweitern", 90.0, 1.7, 4, "+1 Reihe & Spalte", null, null),
+            TechNode("t_scan", "Prospektor-Reichweite", 40.0, 1.5, 4, "+1 Chunk Radius", null, null),
             TechNode("t_takt", "Fabrik-Takt (alle Maschinen)", 50.0, 1.35, 20, "+5%/Stufe", null, null),
             TechNode("t_robust", "Robustheit (weniger Verschleiss)", 40.0, 1.3, 10, "-5%/Stufe", null, null),
             TechNode("t_lift", "Lift-Tempo", 35.0, 1.3, 10, "+10%/Stufe", null, null),
@@ -139,6 +148,20 @@ class Simulation {
             MType.HAENDLER to "t_haendler"
         )
 
+        // Hoechstzahl je platzierbarem Typ, damit die Karte nicht zuwuchert.
+        val MAX_COUNT = mapOf(
+            MType.BOHRER to 30,
+            MType.OFEN to 24,
+            MType.PRESSE to 16,
+            MType.ASSEMBLER to 12,
+            MType.GENERATOR to 16,
+            MType.LAGER to 16,
+            MType.DROHNE to 8,
+            MType.VERSTAERKER to 12,
+            MType.HAENDLER to 8,
+            MType.PROSPEKTOR to 16
+        )
+
         // Baukosten: (Rohstoff, Menge). Presse=Barren, Assembler=Platten usw.
         val BUILD_COST = mapOf(
             MType.BOHRER to Pair(Res.BARREN, 5.0),
@@ -146,6 +169,7 @@ class Simulation {
             MType.PRESSE to Pair(Res.BARREN, 12.0),
             MType.GENERATOR to Pair(Res.BARREN, 10.0),
             MType.LAGER to Pair(Res.BARREN, 8.0),
+            MType.PROSPEKTOR to Pair(Res.BARREN, PROSPEKTOR_COST),
             MType.ASSEMBLER to Pair(Res.PLATTE, 10.0),
             MType.HAENDLER to Pair(Res.PLATTE, 12.0),
             MType.DROHNE to Pair(Res.PLATTE, 8.0),
@@ -155,19 +179,62 @@ class Simulation {
 
     fun newGame() {
         for (r in 0 until n) for (c in 0 until n) grid[r][c] = null
+        surveyed.fill(false)
         globalBarren = START_BARREN
         globalPlatten = 0.0
         globalKomponente = 0.0
         money = 0.0
         mapSeed = System.nanoTime() xor 0x5DEECE66DL
         tech.clear()
-        grid[0][0] = Machine(MType.REAKTOR)
+        grid[startR][startC] = Machine(MType.REAKTOR)
+        // Startinsel schon aufgedeckt
+        for (dr in -3..3) for (dc in -3..3) {
+            val r = startR + dr; val c = startC + dc
+            if (r in 0 until n && c in 0 until n) surveyed[r * n + c] = true
+        }
     }
 
     fun lvl(id: String): Int = tech[id] ?: 0
     fun has(id: String): Boolean = lvl(id) > 0
 
-    fun areaN(): Int = min(n, 8 + lvl("t_area"))
+    fun areaN(): Int = n
+
+    fun scanRadius(): Int = SCAN_R + lvl("t_scan")
+
+    fun isSurveyed(r: Int, c: Int): Boolean = surveyed[r * n + c]
+    private fun markSurveyed(r: Int, c: Int) { surveyed[r * n + c] = true }
+
+    // --- Terrain (Land/Wasser) aus deterministischem Rauschen ---
+    private fun hash01(x: Int, y: Int): Double {
+        var h = mapSeed xor (x.toLong() * 374761393L) xor (y.toLong() * 668265263L)
+        h = (h xor (h ushr 13)) * -0x61c8864680b583ebL
+        h = h xor (h ushr 16)
+        return ((h ushr 40).toInt() and 0xFFFF) / 65535.0
+    }
+    private fun smooth(t: Double) = t * t * (3.0 - 2.0 * t)
+    private fun valueNoise(x: Double, y: Double): Double {
+        val x0 = kotlin.math.floor(x).toInt(); val y0 = kotlin.math.floor(y).toInt()
+        val fx = smooth(x - x0); val fy = smooth(y - y0)
+        val v00 = hash01(x0, y0); val v10 = hash01(x0 + 1, y0)
+        val v01 = hash01(x0, y0 + 1); val v11 = hash01(x0 + 1, y0 + 1)
+        val a = v00 + (v10 - v00) * fx
+        val b = v01 + (v11 - v01) * fx
+        return a + (b - a) * fy
+    }
+    private fun landValue(r: Int, c: Int): Double {
+        var v = 0.0; var amp = 1.0; var freq = 1.0 / 7.0; var norm = 0.0
+        for (o in 0 until 3) {
+            v += valueNoise(c * freq + 13.7, r * freq + 7.3) * amp
+            norm += amp; amp *= 0.5; freq *= 2.0
+        }
+        return v / norm
+    }
+    /** Land, wenn das Rauschen es sagt – oder eine Maschine/Startzone dort ist. */
+    fun isLand(r: Int, c: Int): Boolean {
+        if (grid[r][c] != null) return true
+        if (kotlin.math.abs(r - startR) <= 2 && kotlin.math.abs(c - startC) <= 2) return true
+        return landValue(r, c) > LAND_THRESH
+    }
 
     /** Bodenreichtum 0..3 (leer/normal/moderat/reich), deterministisch je Feld. */
     fun richness(r: Int, c: Int): Int {
@@ -176,7 +243,7 @@ class Simulation {
         val v = ((h ushr 33).toInt() and 0x7fffffff) % 100
         return when { v < 15 -> 0; v < 58 -> 1; v < 86 -> 2; else -> 3 }
     }
-    private fun oreMult(r: Int, c: Int) = ORE_MULT[richness(r, c)]
+    private fun oreMult(r: Int, c: Int) = if (isLand(r, c)) ORE_MULT[richness(r, c)] else 0.0
 
     // --- Bestand (inkl. Lager) + Waehrungen ---
     private fun lagerSum(res: Int): Double {
@@ -238,7 +305,7 @@ class Simulation {
     }
 
     fun canBuild(t: MType): Boolean = when (t) {
-        MType.BOHRER, MType.OFEN -> true
+        MType.BOHRER, MType.OFEN, MType.PROSPEKTOR -> true
         MType.REAKTOR -> false
         else -> {
             val u = UNLOCK[t]
@@ -248,13 +315,26 @@ class Simulation {
 
     fun buildCost(t: MType): Pair<Res, Double> = BUILD_COST[t] ?: Pair(Res.BARREN, 0.0)
 
+    fun maxCount(t: MType): Int = MAX_COUNT[t] ?: Int.MAX_VALUE
+
+    fun count(t: MType): Int {
+        var k = 0
+        for (r in 0 until n) for (c in 0 until n) if (grid[r][c]?.type == t) k++
+        return k
+    }
+
+    fun atLimit(t: MType): Boolean = count(t) >= maxCount(t)
+
     fun build(t: MType, r: Int, c: Int): Boolean {
         if (r < 0 || c < 0 || r >= areaN() || c >= areaN()) return false
         if (grid[r][c] != null) return false
+        if (!isLand(r, c)) return false            // Bauen nur auf Land
         if (!canBuild(t)) return false
+        if (atLimit(t)) return false               // Hoechstzahl erreicht
         val (res, amt) = buildCost(t)
         if (!spend(res, amt)) return false
         grid[r][c] = Machine(t)
+        surveyed[r * n + c] = true   // wo man baut, kennt man den Boden
         return true
     }
 
@@ -410,7 +490,17 @@ class Simulation {
             val g = grid[it[0]][it[1]]?.type
             g == MType.BOHRER || g == MType.OFEN || g == MType.PRESSE || g == MType.ASSEMBLER
         }
+        MType.PROSPEKTOR -> hasUnsurveyedInRange(r, c)
         else -> false
+    }
+
+    private fun hasUnsurveyedInRange(r: Int, c: Int): Boolean {
+        val rad = scanRadius()
+        for (dr in -rad..rad) for (dc in -rad..rad) {
+            val rr = r + dr; val cc = c + dc
+            if (rr in 0 until n && cc in 0 until n && isLand(rr, cc) && !surveyed[rr * n + cc]) return true
+        }
+        return false
     }
 
     private fun transfers() {
@@ -530,6 +620,17 @@ class Simulation {
                     if (active) m.condition = max(0.0, m.condition - wearPerSec(MType.VERSTAERKER) * wf * ddt * scale)
                     m.util = if (active) 1.0 else 0.0
                 }
+                MType.PROSPEKTOR -> {
+                    val rad = scanRadius()
+                    var revealed = 0
+                    for (dr in -rad..rad) for (dc in -rad..rad) {
+                        val rr = r + dr; val cc = c + dc
+                        if (rr in 0 until n && cc in 0 until n && isLand(rr, cc) && !surveyed[rr * n + cc]) {
+                            markSurveyed(rr, cc); revealed++
+                        }
+                    }
+                    m.util = if (revealed > 0) 1.0 else 0.0
+                }
                 MType.LAGER, MType.REAKTOR, MType.HAENDLER -> { m.util = 0.0 }
             }
         }
@@ -638,6 +739,11 @@ class Simulation {
             cells.put(o)
         }
         root.put("cells", cells)
+        // Aufgedeckte Chunks als Liste von Indizes (nur die gesetzten).
+        val surv = JSONArray()
+        for (i in surveyed.indices) if (surveyed[i]) surv.put(i)
+        root.put("surv", surv)
+        root.put("world", 2)   // Weltformat: grosse Karte mit Terrain
         return root.toString()
     }
 
@@ -661,14 +767,38 @@ class Simulation {
         val cells = root.optJSONArray("cells")
         if (cells != null) for (i in 0 until cells.length()) {
             val o = cells.getJSONObject(i)
-            val m = Machine(MType.values()[o.getInt("ty")])
+            val ty = o.getInt("ty")
+            if (ty < 0 || ty >= MType.values().size) continue
+            val r = o.getInt("r"); val c = o.getInt("c")
+            if (r < 0 || r >= n || c < 0 || c >= n) continue
+            val m = Machine(MType.values()[ty])
             m.condition = o.optDouble("cond", 100.0)
             val ia = o.optJSONArray("in"); val oa = o.optJSONArray("out")
             if (ia != null) for (k in 0 until min(rc, ia.length())) m.input[k] = ia.optDouble(k, 0.0)
             if (oa != null) for (k in 0 until min(rc, oa.length())) m.output[k] = oa.optDouble(k, 0.0)
-            grid[o.getInt("r")][o.getInt("c")] = m
+            grid[r][c] = m
         }
-        if (grid[0][0] == null) grid[0][0] = Machine(MType.REAKTOR)
+
+        // Aufgedeckte Chunks laden.
+        surveyed.fill(false)
+        val surv = root.optJSONArray("surv")
+        if (surv != null) {
+            for (i in 0 until surv.length()) {
+                val idx = surv.optInt(i, -1)
+                if (idx in surveyed.indices) surveyed[idx] = true
+            }
+        } else {
+            // Alter Spielstand ohne Terrain/Fog: alles als aufgedeckt behandeln.
+            surveyed.fill(true)
+        }
+
+        // Sicherstellen, dass genau ein Reaktor existiert.
+        if (!hasReactor()) grid[startR][startC] = Machine(MType.REAKTOR)
         return root.optLong("t", 0L)
+    }
+
+    private fun hasReactor(): Boolean {
+        for (r in 0 until n) for (c in 0 until n) if (grid[r][c]?.type == MType.REAKTOR) return true
+        return false
     }
 }

@@ -57,7 +57,10 @@ object I18n {
         "snd_off" to "Aus", "snd_low" to "Leise", "snd_mid" to "Mittel", "snd_high" to "Laut",
         "backup_save" to "Backup speichern", "backup_load" to "Backup laden",
         "backup_saved" to "Backup gespeichert", "backup_loaded" to "Backup geladen",
-        "backup_failed" to "Backup fehlgeschlagen"
+        "backup_failed" to "Backup fehlgeschlagen",
+        "m_prospektor" to "Prospektor", "ms_prospektor" to "Prospekt.",
+        "t_scan" to "Prospektor-Reichweite", "tf_scan" to "+1 Chunk Radius",
+        "unscanned" to "ungescannt", "scans" to "Deckt Chunks auf", "radius" to "Radius", "full" to "voll"
     )
 
     private val EN = mapOf(
@@ -109,7 +112,10 @@ object I18n {
         "snd_off" to "Off", "snd_low" to "Low", "snd_mid" to "Mid", "snd_high" to "High",
         "backup_save" to "Save backup", "backup_load" to "Load backup",
         "backup_saved" to "Backup saved", "backup_loaded" to "Backup loaded",
-        "backup_failed" to "Backup failed"
+        "backup_failed" to "Backup failed",
+        "m_prospektor" to "Prospector", "ms_prospektor" to "Prospect.",
+        "t_scan" to "Prospector range", "tf_scan" to "+1 chunk radius",
+        "unscanned" to "unscanned", "scans" to "Reveals chunks", "radius" to "Radius", "full" to "full"
     )
 
     private val PL = mapOf(
@@ -161,7 +167,10 @@ object I18n {
         "snd_off" to "Wyl", "snd_low" to "Cicho", "snd_mid" to "Srednio", "snd_high" to "Glosno",
         "backup_save" to "Zapisz kopie", "backup_load" to "Wczytaj kopie",
         "backup_saved" to "Kopia zapisana", "backup_loaded" to "Kopia wczytana",
-        "backup_failed" to "Blad kopii"
+        "backup_failed" to "Blad kopii",
+        "m_prospektor" to "Prospektor", "ms_prospektor" to "Prospekt.",
+        "t_scan" to "Zasieg prospektora", "tf_scan" to "+1 chunk promien",
+        "unscanned" to "niezbadany", "scans" to "Odkrywa chunki", "radius" to "Promien", "full" to "pelne"
     )
 
     private val M = mapOf(Lang.DE to DE, Lang.EN to EN, Lang.PL to PL)
