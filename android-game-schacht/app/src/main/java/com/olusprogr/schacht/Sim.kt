@@ -34,6 +34,9 @@ class Machine(var type: MType) {
 
 data class OfflineEvent(val timeSec: Int, val dead: Boolean, val mType: MType, val r: Int, val c: Int)
 
+/** Ein Rohstofffluss von Produzent (fr,fc) zu Verbraucher (tr,tc) fuer die Sichtbarkeit. */
+class Flow(val fr: Int, val fc: Int, val tr: Int, val tc: Int, val res: Int)
+
 data class OfflineReport(
     val elapsedSeconds: Int,
     val simSeconds: Int,
@@ -70,6 +73,13 @@ class Simulation {
 
     var powerSupply = 0.0
     var powerDemand = 0.0
+
+    // --- Sichtbarkeit / Statistik ---
+    val flows = ArrayList<Flow>()
+    var recordFlows = false
+    val typeUtil = DoubleArray(MType.values().size)
+    val typeCount = IntArray(MType.values().size)
+
     private var emaBarrenPerSec = 0.0
     private var emaPlattePerSec = 0.0
     private var emaKompPerSec = 0.0
@@ -285,6 +295,45 @@ class Simulation {
         return true
     }
 
+    /**
+     * Engpass-Kennung fuer eine Maschine (Ampel + Ursache):
+     * 0=ok, 1=Nachschub fehlt, 2=Ausgang voll, 3=zu wenig Strom, 4=defekt, 5=leerer Boden.
+     */
+    fun bottleneck(m: Machine, r: Int, c: Int): Int {
+        if (m.condition <= 0.0) return 4
+        val scale = if (powerDemand <= 0.0) 1.0 else min(1.0, powerSupply / powerDemand)
+        when (m.type) {
+            MType.BOHRER -> {
+                if (oreMult(r, c) <= 0.0) return 5
+                if (m.output[Res.ROHERZ.ordinal] >= OUT_CAP - 0.5) return 2
+                if (scale < 0.999 && m.util < 0.98) return 3
+            }
+            MType.OFEN -> {
+                if (m.output[Res.BARREN.ordinal] >= OUT_CAP - 0.5) return 2
+                if (m.starved) return 1
+                if (scale < 0.999 && m.util < 0.98) return 3
+            }
+            MType.PRESSE -> {
+                if (m.output[Res.PLATTE.ordinal] >= OUT_CAP - 0.5) return 2
+                if (m.starved) return 1
+                if (scale < 0.999 && m.util < 0.98) return 3
+            }
+            MType.ASSEMBLER -> {
+                if (m.output[Res.KOMPONENTE.ordinal] >= OUT_CAP - 0.5) return 2
+                if (m.starved) return 1
+                if (scale < 0.999 && m.util < 0.98) return 3
+            }
+            MType.GENERATOR -> {
+                if (m.starved) return 1
+            }
+            MType.HAENDLER -> {
+                if (availableKomponente() <= 1e-6 && m.util < 0.5) return 1
+            }
+            else -> {}
+        }
+        return 0
+    }
+
     fun repair(m: Machine): Boolean {
         if (m.condition >= 99.999) return false
         if (!spend(Res.BARREN, REPAIR_COST)) return false
@@ -391,6 +440,8 @@ class Simulation {
                     nm.output[res] -= mv
                     target[res] += mv
                     space -= mv
+                    if (recordFlows && mv > 0.02 && c.type != MType.LAGER && flows.size < 300)
+                        flows.add(Flow(nb[0], nb[1], r, cc, res))
                     if (space <= 1e-9) break
                 }
             }
@@ -401,6 +452,7 @@ class Simulation {
         val ddt = dt.coerceIn(0.0, 2.0)
         if (ddt <= 0.0) return
 
+        if (recordFlows) flows.clear()
         transfers()
 
         var supply = 0.0
@@ -534,10 +586,26 @@ class Simulation {
         emaPlattePerSec += (platMade / ddt - emaPlattePerSec) * a
         emaKompPerSec += (kompMade / ddt - emaKompPerSec) * a
         emaMoneyPerSec += (soldValue / ddt - emaMoneyPerSec) * a
+
+        // Auslastung je Maschinentyp (geglaettet) fuer die Statistik
+        val sumU = DoubleArray(typeUtil.size)
+        val cnt = IntArray(typeUtil.size)
+        forEachMachine { m, _, _ ->
+            val i = m.type.ordinal
+            sumU[i] += m.util
+            cnt[i]++
+        }
+        for (i in typeUtil.indices) {
+            typeCount[i] = cnt[i]
+            val avg = if (cnt[i] > 0) sumU[i] / cnt[i] else 0.0
+            typeUtil[i] += (avg - typeUtil[i]) * a
+        }
     }
 
     fun runOffline(elapsedSeconds: Int): OfflineReport {
         val cap = min(elapsedSeconds, OFFLINE_CAP)
+        val wasRecording = recordFlows
+        recordFlows = false
         val b0 = globalBarren; val p0 = globalPlatten; val m0 = money
         val events = ArrayList<OfflineEvent>()
         val seenStarve = HashSet<Machine>()
@@ -559,6 +627,7 @@ class Simulation {
             }
             t++
         }
+        recordFlows = wasRecording
         return OfflineReport(elapsedSeconds, cap, globalBarren - b0, globalPlatten - p0, money - m0, events)
     }
 

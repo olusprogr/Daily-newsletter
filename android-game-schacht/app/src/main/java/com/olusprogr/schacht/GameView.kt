@@ -155,6 +155,7 @@ class GameView(context: Context) : View(context) {
     }
 
     init {
+        sim.recordFlows = true
         I18n.lang = try { Lang.values()[prefs.getInt("lang", 0)] } catch (_: Exception) { Lang.DE }
         val saved = prefs.getString("state", null)
         if (saved != null) {
@@ -282,11 +283,48 @@ class GameView(context: Context) : View(context) {
             val m = sim.grid[r][c]
             if (m != null) drawMachine(canvas, m, x, y)
         }
+        if (screen == Screen.GAME) drawFlows(canvas)
         if (selR >= 0 && selR < an && selC < an && screen == Screen.GAME) {
             p.color = cAccent; p.style = Paint.Style.STROKE; p.strokeWidth = dp(3f)
             canvas.drawRect(gridLeft + selC * cell + 1, gridTop + selR * cell + 1,
                 gridLeft + selC * cell + cell - 1, gridTop + selR * cell + cell - 1, p)
             p.style = Paint.Style.FILL
+        }
+    }
+
+    private fun flowColor(res: Int) = when (res) {
+        Res.ROHERZ.ordinal -> Color.rgb(198, 150, 92)
+        Res.BARREN.ordinal -> cResBarren
+        Res.PLATTE.ordinal -> cResPlatte
+        else -> cResKomp
+    }
+
+    /** Bewegte Punkte zwischen Produzent und Verbraucher: macht Fluesse sichtbar. */
+    private fun drawFlows(canvas: Canvas) {
+        val flows = sim.flows
+        if (flows.isEmpty()) return
+        val an = sim.areaN()
+        val sz = (cell * 0.14f).coerceAtLeast(dp(3f))
+        val half = cell / 2f
+        // zwei Punkte je Fluss, phasenversetzt, wandern von Quelle zu Ziel
+        for (f in flows) {
+            if (f.fr >= an || f.fc >= an || f.tr >= an || f.tc >= an) continue
+            val sx = gridLeft + f.fc * cell + half
+            val sy = gridTop + f.fr * cell + half
+            val ex = gridLeft + f.tc * cell + half
+            val ey = gridTop + f.tr * cell + half
+            val base = (animT * 1.4f + (f.fr * 3 + f.fc + f.res))
+            pSprite.color = flowColor(f.res)
+            for (k in 0 until 2) {
+                var t = (base + k * 0.5f) % 1f
+                val cx = sx + (ex - sx) * t
+                val cy = sy + (ey - sy) * t
+                // kleiner dunkler Rand fuer Kontrast auf hellem Boden
+                pSprite.color = cGridLine
+                canvas.drawRect(cx - sz / 2 - 1f, cy - sz / 2 - 1f, cx + sz / 2 + 1f, cy + sz / 2 + 1f, pSprite)
+                pSprite.color = flowColor(f.res)
+                canvas.drawRect(cx - sz / 2, cy - sz / 2, cx + sz / 2, cy + sz / 2, pSprite)
+            }
         }
     }
 
@@ -460,7 +498,19 @@ class GameView(context: Context) : View(context) {
         }
         canvas.drawText(io, dp(12f), yy, pText)
         yy += dp(22f)
-        pText.color = cDim
+
+        // Engpass-Ampel: zeigt in Klartext, warum die Maschine (nicht) laeuft
+        val code = sim.bottleneck(m, selR, selC)
+        val dotR = dp(5f); val dotCx = dp(17f); val dotCy = yy - dp(4f)
+        p.color = bnColor(code)
+        canvas.drawCircle(dotCx, dotCy, dotR, p)
+        p.color = cGridLine; p.style = Paint.Style.STROKE; p.strokeWidth = dp(1f)
+        canvas.drawCircle(dotCx, dotCy, dotR, p); p.style = Paint.Style.FILL
+        pText.color = bnColor(code); pText.textSize = dp(14f)
+        canvas.drawText(bnLabel(code), dp(30f), yy, pText)
+        yy += dp(22f)
+
+        pText.color = cDim; pText.textSize = dp(14f)
         val (sres, samt) = sim.buildCost(m.type)
         if (m.type != MType.REAKTOR) {
             val refund = samt * 0.5 * (m.condition / 100.0)
@@ -488,6 +538,17 @@ class GameView(context: Context) : View(context) {
             drawButton(canvas, Btn(rSell, "sell_sel", "${tr("sell")} +$refund ${resAbbr(sres)}", true, false, cBad))
             buttons.add(Btn(rSell, "sell_sel", "Verkaufen"))
         }
+    }
+
+    private fun bnLabel(code: Int) = when (code) {
+        1 -> tr("bn_input"); 2 -> tr("bn_output"); 3 -> tr("bn_power")
+        4 -> tr("bn_dead"); 5 -> tr("bn_soil"); else -> tr("bn_ok")
+    }
+
+    private fun bnColor(code: Int) = when (code) {
+        0 -> cGood
+        3, 4 -> cBad
+        else -> cWarn
     }
 
     private fun drawTech(canvas: Canvas) {
@@ -578,8 +639,38 @@ class GameView(context: Context) : View(context) {
             "${tr("s_upgrades")}: ${sim.tech.values.sum()}"
         )
         for (l in lines) { canvas.drawText(l, dp(16f), yy, pText); yy += dp(25f) }
+
+        // Produktions-Auslastung je Typ (geglaettet) + groesster Engpass
+        yy += dp(6f)
+        pText.color = cAccent; pText.textSize = dp(16f)
+        canvas.drawText(tr("s_prod_title"), dp(16f), yy, pText)
+        yy += dp(22f)
+        val producers = listOf(MType.BOHRER, MType.OFEN, MType.PRESSE, MType.ASSEMBLER, MType.HAENDLER)
+        pText.textSize = dp(13f)
+        for (t in producers) {
+            val i = t.ordinal
+            val cnt = sim.typeCount[i]
+            if (cnt == 0) continue
+            val u = sim.typeUtil[i].coerceIn(0.0, 1.0)
+            pText.color = cText
+            canvas.drawText("${mName(t)} x$cnt", dp(20f), yy + dp(11f), pText)
+            val barL = dp(150f); val barR = W - dp(70f); val barY = yy + dp(3f); val barH = dp(11f)
+            p.color = cGridLine
+            canvas.drawRect(barL, barY, barR, barY + barH, p)
+            p.color = when { u >= 0.66 -> cGood; u >= 0.33 -> cWarn; else -> cBad }
+            canvas.drawRect(barL, barY, barL + (barR - barL) * u.toFloat(), barY + barH, p)
+            pText.color = cDim; pText.textAlign = Paint.Align.RIGHT
+            canvas.drawText("${(u * 100).roundToInt()}%", W - dp(16f), yy + dp(11f), pText)
+            pText.textAlign = Paint.Align.LEFT
+            yy += dp(20f)
+        }
+        val bn = bottleneckSummary()
+        pText.color = cDim; pText.textSize = dp(13f)
+        yy += dp(2f)
+        canvas.drawText("${tr("s_bottleneck")}: $bn", dp(16f), yy, pText)
+
+        yy += dp(20f)
         pText.color = cDim; pText.textSize = dp(12f)
-        yy += dp(4f)
         canvas.drawText(tr("hint_floor"), dp(16f), yy, pText)
         yy += dp(16f)
         canvas.drawText(tr("hint_trade"), dp(16f), yy, pText)
@@ -777,6 +868,23 @@ class GameView(context: Context) : View(context) {
             }
         }
         invalidate()
+    }
+
+    /** Zaehlt die Engpass-Ursachen ueber alle Maschinen und benennt die haeufigste. */
+    private fun bottleneckSummary(): String {
+        val counts = IntArray(6)
+        var total = 0
+        for (r in 0 until sim.n) for (c in 0 until sim.n) {
+            val m = sim.grid[r][c] ?: continue
+            if (m.type == MType.REAKTOR || m.type == MType.LAGER || m.type == MType.VERSTAERKER || m.type == MType.DROHNE) continue
+            val code = sim.bottleneck(m, r, c)
+            counts[code]++
+            if (code != 0) total++
+        }
+        if (total == 0) return tr("bn_none")
+        var worst = 1
+        for (i in 1 until 6) if (counts[i] > counts[worst]) worst = i
+        return "${bnLabel(worst)} (${counts[worst]})"
     }
 
     private fun machineCount(): Int {

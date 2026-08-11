@@ -46,7 +46,10 @@ object I18n {
         "tf_assembler" to "Platte -> Komponente", "tf_haendler" to "Komponenten -> Geld", "tf_boost" to "beschleunigt Nachbarn",
         "tf_diag" to "8 statt 4 Nachbarn", "tf_speed" to "+8%/Stufe", "tf_wert" to "+25%/Stufe",
         "tf_area" to "+1 Reihe & Spalte", "tf_takt" to "+5%/Stufe", "tf_robust" to "-5%/Stufe",
-        "tf_lift" to "+10%/Stufe", "tf_power" to "+5 Strom/Stufe"
+        "tf_lift" to "+10%/Stufe", "tf_power" to "+5 Strom/Stufe",
+        "bn_ok" to "laeuft", "bn_input" to "Nachschub fehlt", "bn_output" to "Ausgang voll",
+        "bn_power" to "zu wenig Strom", "bn_dead" to "defekt", "bn_soil" to "leerer Boden",
+        "bn_none" to "keine", "s_prod_title" to "Produktion", "s_bottleneck" to "Groesster Engpass"
     )
 
     private val EN = mapOf(
@@ -87,7 +90,10 @@ object I18n {
         "tf_assembler" to "Plate -> Component", "tf_haendler" to "Components -> Money", "tf_boost" to "boosts neighbors",
         "tf_diag" to "8 instead of 4 neighbors", "tf_speed" to "+8%/lvl", "tf_wert" to "+25%/lvl",
         "tf_area" to "+1 row & column", "tf_takt" to "+5%/lvl", "tf_robust" to "-5%/lvl",
-        "tf_lift" to "+10%/lvl", "tf_power" to "+5 power/lvl"
+        "tf_lift" to "+10%/lvl", "tf_power" to "+5 power/lvl",
+        "bn_ok" to "running", "bn_input" to "no supply", "bn_output" to "output full",
+        "bn_power" to "not enough power", "bn_dead" to "broken", "bn_soil" to "empty floor",
+        "bn_none" to "none", "s_prod_title" to "Production", "s_bottleneck" to "Top bottleneck"
     )
 
     private val PL = mapOf(
@@ -128,7 +134,10 @@ object I18n {
         "tf_assembler" to "Plyta -> Komponent", "tf_haendler" to "Komponenty -> Pieniadze", "tf_boost" to "przyspiesza sasiadow",
         "tf_diag" to "8 zamiast 4 sasiadow", "tf_speed" to "+8%/poz", "tf_wert" to "+25%/poz",
         "tf_area" to "+1 rzad i kolumna", "tf_takt" to "+5%/poz", "tf_robust" to "-5%/poz",
-        "tf_lift" to "+10%/poz", "tf_power" to "+5 prad/poz"
+        "tf_lift" to "+10%/poz", "tf_power" to "+5 prad/poz",
+        "bn_ok" to "dziala", "bn_input" to "brak dostaw", "bn_output" to "wyjscie pelne",
+        "bn_power" to "za malo pradu", "bn_dead" to "uszkodzony", "bn_soil" to "puste podloze",
+        "bn_none" to "brak", "s_prod_title" to "Produkcja", "s_bottleneck" to "Glowny waskie gardlo"
     )
 
     private val M = mapOf(Lang.DE to DE, Lang.EN to EN, Lang.PL to PL)
