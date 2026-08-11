@@ -85,6 +85,14 @@ class GameView(context: Context) : View(context) {
 
     private val buttons = ArrayList<Btn>()
 
+    private var animT = 0f
+
+    // Stein-/Boden-Farben fuer den Hintergrund
+    private val cGroundBase = Color.rgb(43, 39, 35)
+    private val cGroundDark = Color.rgb(33, 30, 26)
+    private val cGroundLite = Color.rgb(55, 50, 44)
+    private val cGroundRust = Color.rgb(61, 37, 30)
+
     private val buildOrder = listOf(
         MType.BOHRER, MType.OFEN, MType.PRESSE, MType.ASSEMBLER,
         MType.GENERATOR, MType.LAGER, MType.DROHNE, MType.VERSTAERKER
@@ -101,6 +109,7 @@ class GameView(context: Context) : View(context) {
             lastNanos = now
             if (dt > 0.25) dt = 0.25
             if (screen == Screen.GAME || screen == Screen.STAT) sim.step(dt)
+            animT += dt.toFloat()
             invalidate()
             handler.postDelayed(this, 33)
         }
@@ -144,8 +153,7 @@ class GameView(context: Context) : View(context) {
         gridSide = (w - 2 * margin)
         val maxGrid = h - headerH - dp(252f)
         if (gridSide > maxGrid) gridSide = maxGrid
-        cell = gridSide / sim.n
-        gridSide = cell * sim.n
+        cell = gridSide / sim.areaN()
         gridLeft = (w - gridSide) / 2f
         gridTop = headerH + dp(6f)
         paletteTop = gridTop + gridSide + dp(10f)
@@ -155,6 +163,7 @@ class GameView(context: Context) : View(context) {
 
     override fun onDraw(canvas: Canvas) {
         buttons.clear()
+        cell = gridSide / sim.areaN()   // Feldgroesse haengt von der freigeschalteten Flaeche ab
         canvas.drawColor(cBg)
         drawHeader(canvas)
         drawGrid(canvas)
@@ -178,13 +187,15 @@ class GameView(context: Context) : View(context) {
         pText.textSize = dp(14f)
         pText.color = cText
         val powOk = sim.powerDemand <= sim.powerSupply + 1e-6
-        canvas.drawText("Barren ${fmt(sim.globalBarren)}", dp(12f), dp(48f), pText)
-        canvas.drawText("Platten ${fmt(sim.globalPlatten)}", dp(118f), dp(48f), pText)
-        canvas.drawText("Komp ${fmt(sim.globalKomponente)}", dp(224f), dp(48f), pText)
+        // Bestand inkl. Lager-Inhalten
+        canvas.drawText("Barren ${fmt(sim.availableBarren())}", dp(12f), dp(48f), pText)
+        canvas.drawText("Platten ${fmt(sim.availablePlatten())}", dp(118f), dp(48f), pText)
+        canvas.drawText("Komp ${fmt(sim.availableKomponente())}", dp(224f), dp(48f), pText)
+        val rest = sim.powerSupply - sim.powerDemand
         pText.color = if (powOk) cGood else cBad
-        canvas.drawText("Strom ${fmt(sim.powerSupply)}/${fmt(sim.powerDemand)}", dp(12f), dp(70f), pText)
+        canvas.drawText("Reststrom ${if (rest < 0) "-" + fmt(-rest) else fmt(rest)}", dp(12f), dp(70f), pText)
         pText.color = cDim
-        canvas.drawText("Wert/min ${fmt(sim.produktionswertPerMin)}", dp(118f), dp(70f), pText)
+        canvas.drawText("Strom ${fmt(sim.powerSupply)}/${fmt(sim.powerDemand)}", dp(150f), dp(70f), pText)
 
         val bw = dp(84f); val bh = dp(30f)
         val tR = RectF(W - dp(12f) - bw, dp(8f), W - dp(12f), dp(8f) + bh)
@@ -196,20 +207,42 @@ class GameView(context: Context) : View(context) {
     }
 
     private fun drawGrid(canvas: Canvas) {
-        for (r in 0 until sim.n) for (c in 0 until sim.n) {
+        val an = sim.areaN()
+        for (r in 0 until an) for (c in 0 until an) {
             val x = gridLeft + c * cell
             val y = gridTop + r * cell
-            p.color = cCell
-            canvas.drawRect(x + 1, y + 1, x + cell - 1, y + cell - 1, p)
+            drawGround(canvas, r, c, x, y)
             val m = sim.grid[r][c]
             if (m != null) drawMachine(canvas, m, x, y)
         }
-        if (selR >= 0 && screen == Screen.GAME) {
+        if (selR >= 0 && selR < an && selC < an && screen == Screen.GAME) {
             p.color = cAccent; p.style = Paint.Style.STROKE; p.strokeWidth = dp(3f)
             canvas.drawRect(gridLeft + selC * cell + 1, gridTop + selR * cell + 1,
                 gridLeft + selC * cell + cell - 1, gridTop + selR * cell + cell - 1, p)
             p.style = Paint.Style.FILL
         }
+    }
+
+    /** Zeichnet einen Stein-/Boden-Chunk (deterministisch pro Feld variiert). */
+    private fun drawGround(canvas: Canvas, r: Int, c: Int, x: Float, y: Float) {
+        pSprite.color = cGroundBase
+        canvas.drawRect(x, y, x + cell, y + cell, pSprite)
+        val u = cell / 8f
+        val seed = (r * 73856093) xor (c * 19349663)
+        fun q(i: Int) = (seed ushr (i * 3)) and 7
+        pSprite.color = cGroundDark
+        canvas.drawRect(x + q(0) * u, y + q(1) * u, x + (q(0) + 1) * u, y + (q(1) + 2) * u, pSprite)
+        canvas.drawRect(x + q(2) * u, y + q(3) * u, x + (q(2) + 2) * u, y + (q(3) + 1) * u, pSprite)
+        pSprite.color = cGroundLite
+        canvas.drawRect(x + q(4) * u, y + q(5) * u, x + (q(4) + 1) * u, y + (q(5) + 1) * u, pSprite)
+        if ((seed and 3) == 0) {
+            pSprite.color = cGroundRust
+            canvas.drawRect(x + q(6) * u, y + q(7) * u, x + (q(6) + 1) * u, y + (q(7) + 1) * u, pSprite)
+        }
+        // Chunk-Kante
+        p.color = cGridLine
+        canvas.drawRect(x, y, x + cell, y + 1f, p)
+        canvas.drawRect(x, y, x + 1f, y + cell, p)
     }
 
     private fun drawSprite(canvas: Canvas, list: List<Px>, x: Float, y: Float, s: Float) {
@@ -226,6 +259,15 @@ class GameView(context: Context) : View(context) {
 
         // Basis-Sprite
         drawSprite(canvas, Sprites.forType(m.type), x, y, s)
+
+        // Arbeits-Animation: laeuft nur wenn die Maschine wirklich arbeitet
+        val working = m.util > 0.02 ||
+            m.type == MType.REAKTOR ||
+            (m.type == MType.LAGER && (m.output[0] + m.output[1] + m.output[2] + m.output[3]) > 0.5)
+        if (working) {
+            val frame = ((animT * 6f).toInt()) % 4
+            drawSprite(canvas, Sprites.anim(m.type, frame), x, y, s)
+        }
 
         // Verschleiss-Overlays (Rost < 50%, Funken/Rauch < 20%)
         if (hasWear) {
@@ -276,7 +318,7 @@ class GameView(context: Context) : View(context) {
             val rect = RectF(x, yy, x + bw, yy + bh)
             val unlocked = sim.canBuild(t)
             val cost = sim.buildCost(t)
-            val afford = sim.globalBarren >= cost
+            val afford = sim.availableBarren() >= cost
             val sub: String
             val subCol: Int
             if (!unlocked) { sub = "Tech noetig"; subCol = cDim }
@@ -340,10 +382,10 @@ class GameView(context: Context) : View(context) {
             val refund = (sim.buildCost(m.type) * 0.5 * (m.condition / 100.0)).roundToInt()
             drawButton(canvas, Btn(rSell, "sell_sel", "Verkaufen +$refund B", true, false, cBad))
             drawButton(canvas, Btn(rRep, "repair_sel", "Reparieren ${Simulation.REPAIR_COST.toInt()} B",
-                m.condition < 99.999 && sim.globalBarren >= Simulation.REPAIR_COST, false, cAccent))
+                m.condition < 99.999 && sim.availableBarren() >= Simulation.REPAIR_COST, false, cAccent))
             buttons.add(Btn(rSell, "sell_sel", "Verkaufen"))
             buttons.add(Btn(rRep, "repair_sel", "Reparieren",
-                m.condition < 99.999 && sim.globalBarren >= Simulation.REPAIR_COST))
+                m.condition < 99.999 && sim.availableBarren() >= Simulation.REPAIR_COST))
         } else if (canSell) {
             val rSell = RectF(margin, by, W - margin, by + bh)
             val refund = (sim.buildCost(m.type) * 0.5 * (m.condition / 100.0)).roundToInt()
@@ -372,7 +414,7 @@ class GameView(context: Context) : View(context) {
             val maxed = l >= node.maxLevel
             val preOk = node.prereq == null || sim.has(node.prereq)
             val cost = sim.nextCost(node)
-            val afford = sim.globalBarren >= cost
+            val afford = sim.availableBarren() >= cost
             p.color = if (l > 0) Color.rgb(40, 55, 44) else cPanel
             canvas.drawRoundRect(rect, dp(8f), dp(8f), p)
 
@@ -403,7 +445,7 @@ class GameView(context: Context) : View(context) {
         pText.color = cAccent; pText.textSize = dp(22f)
         canvas.drawText("Tech-Baum", dp(16f), dp(38f), pText)
         pText.color = cDim; pText.textSize = dp(13f)
-        canvas.drawText("Verfuegbar: ${fmt(sim.globalBarren)} B  ·  wischen zum Scrollen", dp(16f), dp(58f), pText)
+        canvas.drawText("Verfuegbar: ${fmt(sim.availableBarren())} B  ·  wischen zum Scrollen", dp(16f), dp(58f), pText)
 
         val cr = RectF(W / 2f - dp(70f), H - dp(56f), W / 2f + dp(70f), H - dp(16f))
         drawButton(canvas, Btn(cr, "close", "Schliessen", true, false, cAccent))
@@ -419,10 +461,11 @@ class GameView(context: Context) : View(context) {
         var yy = dp(80f)
         val lines = listOf(
             "Produktionswert:  ${fmt(sim.produktionswertPerMin)} /min",
-            "Barren gesamt:    ${fmt(sim.globalBarren)}   (${oneDec(sim.barrenPerMin)}/min)",
-            "Platten gesamt:   ${fmt(sim.globalPlatten)}   (${oneDec(sim.plattenPerMin)}/min)",
-            "Komponenten:      ${fmt(sim.globalKomponente)}   (${oneDec(sim.komponentenPerMin)}/min)",
+            "Barren (inkl.Lager): ${fmt(sim.availableBarren())}  (${oneDec(sim.barrenPerMin)}/min)",
+            "Platten (inkl.Lager): ${fmt(sim.availablePlatten())}  (${oneDec(sim.plattenPerMin)}/min)",
+            "Komponenten:      ${fmt(sim.availableKomponente())}  (${oneDec(sim.komponentenPerMin)}/min)",
             "Strom:            ${fmt(sim.powerSupply)} / ${fmt(sim.powerDemand)}",
+            "Sektor-Flaeche:   ${sim.areaN()} x ${sim.areaN()}",
             "Maschinen gebaut: ${machineCount()}",
             "Upgrade-Stufen:   ${sim.tech.values.sum()}"
         )
@@ -549,9 +592,10 @@ class GameView(context: Context) : View(context) {
             }
         }
         if (screen != Screen.GAME) return
+        val an = sim.areaN()
         if (x >= gridLeft && x < gridLeft + gridSide && y >= gridTop && y < gridTop + gridSide) {
-            val c = ((x - gridLeft) / cell).toInt().coerceIn(0, sim.n - 1)
-            val r = ((y - gridTop) / cell).toInt().coerceIn(0, sim.n - 1)
+            val c = ((x - gridLeft) / cell).toInt().coerceIn(0, an - 1)
+            val r = ((y - gridTop) / cell).toInt().coerceIn(0, an - 1)
             handleCell(r, c)
         } else {
             selR = -1; selC = -1

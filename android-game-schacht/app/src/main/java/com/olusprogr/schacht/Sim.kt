@@ -59,7 +59,7 @@ data class TechNode(
  * (Maschinen-Upgrades + Flaechen-/Fabrik-weite Upgrades).
  */
 class Simulation {
-    val n = 8
+    val n = 12                     // maximale Gittergroesse (via Tech freischaltbar)
     val grid = Array(n) { arrayOfNulls<Machine>(n) }
     var globalBarren = 0.0
     var globalPlatten = 0.0
@@ -113,6 +113,7 @@ class Simulation {
             TechNode("t_aspeed", "Assembler-Tempo", 55.0, 1.3, 20, "+8%/Stufe", "t_assembler"),
             TechNode("t_wert", "Platten-Wert", 60.0, 1.4, 10, "+25%/Stufe", "t_presse"),
             // Flaechen-Upgrades (fabrik-weit)
+            TechNode("t_area", "Flaeche erweitern", 70.0, 1.7, 4, "+1 Reihe & Spalte", null),
             TechNode("t_takt", "Fabrik-Takt (alle Maschinen)", 50.0, 1.35, 20, "+5%/Stufe", null),
             TechNode("t_robust", "Robustheit (weniger Verschleiss)", 40.0, 1.3, 10, "-5%/Stufe", null),
             TechNode("t_lift", "Lift-Tempo", 35.0, 1.3, 10, "+10%/Stufe", null),
@@ -153,6 +154,39 @@ class Simulation {
     fun lvl(id: String): Int = tech[id] ?: 0
     fun has(id: String): Boolean = lvl(id) > 0
 
+    /** Freigeschaltete (bebaubare) Kantenlaenge des Sektors. */
+    fun areaN(): Int = min(n, 8 + lvl("t_area"))
+
+    // Bestand inkl. Lager-Inhalten (Lager sind mit dem globalen Bestand verknuepft)
+    private fun lagerSum(res: Int): Double {
+        var s = 0.0
+        for (r in 0 until n) for (c in 0 until n) {
+            val m = grid[r][c]
+            if (m != null && m.type == MType.LAGER) s += m.output[res]
+        }
+        return s
+    }
+    fun availableBarren() = globalBarren + lagerSum(Res.BARREN.ordinal)
+    fun availablePlatten() = globalPlatten + lagerSum(Res.PLATTE.ordinal)
+    fun availableKomponente() = globalKomponente + lagerSum(Res.KOMPONENTE.ordinal)
+
+    /** Zahlt Barren: erst aus dem globalen Bestand, dann aus den Lagern. */
+    private fun spendBarren(amt: Double): Boolean {
+        if (availableBarren() < amt - 1e-9) return false
+        var rem = amt
+        val g = min(globalBarren, rem); globalBarren -= g; rem -= g
+        if (rem > 1e-9) {
+            for (r in 0 until n) for (c in 0 until n) {
+                if (rem <= 1e-9) break
+                val m = grid[r][c] ?: continue
+                if (m.type != MType.LAGER) continue
+                val take = min(m.output[Res.BARREN.ordinal], rem)
+                m.output[Res.BARREN.ordinal] -= take; rem -= take
+            }
+        }
+        return true
+    }
+
     fun canBuild(t: MType): Boolean = when (t) {
         MType.BOHRER, MType.OFEN -> true
         MType.REAKTOR -> false
@@ -165,11 +199,10 @@ class Simulation {
     fun buildCost(t: MType): Double = BUILD_COST[t] ?: 0.0
 
     fun build(t: MType, r: Int, c: Int): Boolean {
+        if (r < 0 || c < 0 || r >= areaN() || c >= areaN()) return false
         if (grid[r][c] != null) return false
         if (!canBuild(t)) return false
-        val cost = buildCost(t)
-        if (globalBarren < cost) return false
-        globalBarren -= cost
+        if (!spendBarren(buildCost(t))) return false
         grid[r][c] = Machine(t)
         return true
     }
@@ -192,16 +225,14 @@ class Simulation {
         if (l >= node.maxLevel) return false
         if (node.prereq != null && !has(node.prereq)) return false
         val cost = nextCost(node)
-        if (globalBarren < cost) return false
-        globalBarren -= cost
+        if (!spendBarren(cost)) return false
         tech[id] = l + 1
         return true
     }
 
     fun repair(m: Machine): Boolean {
         if (m.condition >= 99.999) return false
-        if (globalBarren < REPAIR_COST) return false
-        globalBarren -= REPAIR_COST
+        if (!spendBarren(REPAIR_COST)) return false
         m.condition = 100.0
         return true
     }

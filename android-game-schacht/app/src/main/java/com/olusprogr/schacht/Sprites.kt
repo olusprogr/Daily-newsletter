@@ -207,6 +207,63 @@ object Sprites {
         Px(14, 18, 1, 1, ORG), Px(21, 14, 1, 1, ORG)
     )
 
+    /** Kleines Arbeits-Overlay (4 Frames), das nur laeuft wenn die Maschine arbeitet. */
+    fun anim(t: MType, frame: Int): List<Px> = when (t) {
+        MType.BOHRER -> when (frame) {
+            0 -> listOf(Px(13, 20, 1, 1, MHI), Px(16, 27, 1, 1, RUSTL))
+            1 -> listOf(Px(17, 21, 1, 1, MHI), Px(15, 28, 1, 1, RUSTB))
+            2 -> listOf(Px(13, 22, 1, 1, MHI), Px(16, 27, 1, 1, RUSTL))
+            else -> listOf(Px(17, 23, 1, 1, MHI), Px(15, 28, 1, 1, RUSTB))
+        }
+        MType.OFEN -> when (frame) {
+            0 -> listOf(Px(13, 11, 1, 1, ORG), Px(16, 10, 1, 2, YEL), Px(19, 11, 1, 1, ORG))
+            1 -> listOf(Px(12, 11, 1, 1, YEL), Px(16, 11, 1, 1, ORG), Px(20, 10, 1, 2, ORG))
+            2 -> listOf(Px(14, 10, 1, 2, ORG), Px(17, 11, 1, 1, YEL), Px(19, 10, 1, 1, ORG))
+            else -> listOf(Px(13, 10, 1, 1, YEL), Px(15, 11, 1, 1, ORG), Px(18, 10, 1, 2, YEL))
+        }
+        MType.PRESSE -> when (frame) {
+            0 -> listOf(Px(15, 19, 2, 1, MHI))
+            2 -> listOf(Px(12, 21, 8, 1, CYL))
+            else -> emptyList()
+        }
+        MType.ASSEMBLER -> when (frame) {
+            0 -> listOf(Px(15, 16, 2, 2, CYA))
+            1 -> listOf(Px(15, 16, 2, 2, YEL), Px(15, 4, 2, 1, MHI))
+            2 -> listOf(Px(15, 16, 2, 2, CYL))
+            else -> listOf(Px(15, 16, 2, 2, ORG))
+        }
+        MType.GENERATOR -> when (frame) {
+            0 -> listOf(Px(13, 14, 5, 1, MHI))
+            1 -> listOf(Px(16, 11, 2, 1, MHI), Px(9, 20, 1, 1, YEL))
+            2 -> listOf(Px(14, 17, 2, 1, MHI))
+            else -> listOf(Px(23, 13, 1, 1, YEL))
+        }
+        MType.DROHNE -> when (frame) {
+            0 -> listOf(Px(12, 17, 2, 1, CYL))
+            1 -> listOf(Px(18, 17, 2, 1, CYL), Px(14, 14, 4, 1, CYL))
+            2 -> listOf(Px(12, 17, 2, 1, YEL))
+            else -> listOf(Px(18, 17, 2, 1, YEL))
+        }
+        MType.VERSTAERKER -> when (frame) {
+            0 -> listOf(Px(15, 4, 2, 1, MHI), Px(15, 14, 2, 2, CYL))
+            1 -> listOf(Px(13, 6, 1, 1, MHI), Px(18, 6, 1, 1, MHI))
+            2 -> listOf(Px(15, 7, 2, 3, MHI))
+            else -> listOf(Px(14, 13, 4, 4, CYL))
+        }
+        MType.LAGER -> when (frame) {
+            0 -> listOf(Px(11, 9, 1, 1, YEL))
+            1 -> listOf(Px(20, 9, 1, 1, YEL))
+            2 -> listOf(Px(15, 9, 2, 1, CYA))
+            else -> emptyList()
+        }
+        MType.REAKTOR -> when (frame) {
+            0 -> listOf(Px(15, 15, 2, 2, CYL))
+            1 -> listOf(Px(15, 15, 2, 2, YEL))
+            2 -> listOf(Px(14, 14, 4, 4, CYA))
+            else -> listOf(Px(15, 15, 2, 2, CYL))
+        }
+    }
+
     fun forType(t: MType): List<Px> = when (t) {
         MType.BOHRER -> BOHRER
         MType.OFEN -> OFEN
