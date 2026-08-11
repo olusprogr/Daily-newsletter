@@ -1,9 +1,12 @@
 package com.olusprogr.schacht
 
 import android.content.Context
+import android.graphics.Bitmap
+import android.graphics.BitmapFactory
 import android.graphics.Canvas
 import android.graphics.Color
 import android.graphics.Paint
+import android.graphics.Rect
 import android.graphics.RectF
 import android.os.Handler
 import android.os.Looper
@@ -124,6 +127,15 @@ class GameView(context: Context) : View(context) {
 
     private val p = Paint(Paint.ANTI_ALIAS_FLAG)
     private val pSprite = Paint().apply { isAntiAlias = false; style = Paint.Style.FILL }
+
+    // Echte Boden-Kacheln (Pixel-Texturen, CC0/selbst erstellt)
+    private val pTile = Paint().apply { isFilterBitmap = false; isDither = false; isAntiAlias = false }
+    private val srcTile = Rect(0, 0, 32, 32)
+    private val dstTile = RectF()
+    private lateinit var bmpWater0: Bitmap
+    private lateinit var bmpWater1: Bitmap
+    private lateinit var grassUnknown: Bitmap
+    private lateinit var grassTiles: Array<Bitmap>
     private val pText = Paint(Paint.ANTI_ALIAS_FLAG).apply { color = cText; textAlign = Paint.Align.LEFT }
     private val pTextC = Paint(Paint.ANTI_ALIAS_FLAG).apply { color = cText; textAlign = Paint.Align.CENTER }
 
@@ -247,6 +259,16 @@ class GameView(context: Context) : View(context) {
         // Quick-Scale (Doppeltipp-Ziehen zum Zoomen) aus: es blockiert sonst
         // das Ein-Finger-Scrollen, weil der Scale-Detektor "in progress" meldet.
         try { scaleDetector.isQuickScaleEnabled = false } catch (_: Exception) { }
+        // Boden-Kacheln laden (nearest-neighbor, damit die Pixel scharf bleiben)
+        val bo = BitmapFactory.Options().apply { inScaled = false }
+        fun ld(id: Int) = BitmapFactory.decodeResource(resources, id, bo)
+        bmpWater0 = ld(R.drawable.tile_water_0)
+        bmpWater1 = ld(R.drawable.tile_water_1)
+        grassUnknown = ld(R.drawable.tile_grass_u)
+        grassTiles = arrayOf(
+            ld(R.drawable.tile_grass0), ld(R.drawable.tile_grass1),
+            ld(R.drawable.tile_grass2), ld(R.drawable.tile_grass3)
+        )
         I18n.lang = try { Lang.values()[prefs.getInt("lang", Lang.EN.ordinal)] } catch (_: Exception) { Lang.EN }
         audio.setMusicVol(prefs.getInt("musicVol", 50) / 100f)
         audio.setSfxVol(prefs.getInt("sfxVol", 33) / 100f)
@@ -493,97 +515,41 @@ class GameView(context: Context) : View(context) {
     }
 
     // Terrain-Farben (Pixel-Karte: gruenes Land, tuerkises Wasser, braune Kueste)
-    private val cWater = Color.rgb(74, 198, 206)
-    private val cWaterD = Color.rgb(58, 168, 190)
-    private val cWaterL = Color.rgb(150, 230, 230)
     private val cCoast = Color.rgb(150, 96, 52)
     private val cSurf = Color.rgb(206, 244, 244)
 
     private fun landSafe(r: Int, c: Int): Boolean =
         r in 0 until sim.n && c in 0 until sim.n && sim.isLand(r, c)
 
-    /** Zeichnet einen Karten-Chunk: Wasser, Land, Kueste und (falls gescannt) Reichtum. */
+    /** Zeichnet einen Karten-Chunk aus echten Bild-Kacheln + prozeduraler Kueste/Fog. */
     private fun drawGround(canvas: Canvas, r: Int, c: Int, x: Float, y: Float) {
-        val seed = (r * 73856093) xor (c * 19349663)
-        fun q(i: Int) = (seed ushr (i * 3)) and 7
         val u = cell / 8f
+        dstTile.set(x, y, x + cell, y + cell)
 
         if (!sim.isLand(r, c)) {
-            // --- Wasser: Basis + horizontale Wellenstriche + wandernder Glanz ---
-            pSprite.color = cWater
-            canvas.drawRect(x, y, x + cell, y + cell, pSprite)
-            val h = u * 0.55f
-            // dunklerer Wellenstrich (tieferes Wasser)
-            pSprite.color = cWaterD
-            val d1x = (q(0) % 5) * u; val d1y = (q(1) % 7 + 1) * u
-            canvas.drawRect(x + d1x, y + d1y, x + d1x + 3 * u, y + d1y + h, pSprite)
-            // hellerer Wellenkamm, driftet langsam seitlich
-            pSprite.color = cWaterL
-            val drift = ((animT * 3f + r * 2).toInt() % 4) * (u * 0.5f)
-            val d2x = (q(4) % 4) * u + drift; val d2y = (q(5) % 7) * u
-            canvas.drawRect(x + d2x, y + d2y, x + d2x + 2 * u, y + d2y + h, pSprite)
-            // blinkender Glitzerpunkt
-            val tw = kotlin.math.sin(animT * 1.6 + (r * 0.7 + c * 1.3)) * 0.5 + 0.5
-            if (tw > 0.82) {
-                val g = cell / 16f
-                pSprite.color = Color.argb(210, 224, 255, 255)
-                canvas.drawRect(x + (q(2) % 6 + 1) * 2 * g, y + (q(3) % 6 + 1) * 2 * g,
-                    x + (q(2) % 6 + 1) * 2 * g + g, y + (q(3) % 6 + 1) * 2 * g + g, pSprite)
-            }
+            // --- Wasser: zwei Kachel-Frames sanft abwechselnd ---
+            val wb = if ((animT * 2f).toInt() and 1 == 0) bmpWater0 else bmpWater1
+            canvas.drawBitmap(wb, srcTile, dstTile, pTile)
             return
         }
 
-        // --- Land ---
+        // --- Land: Gras-Kachel je nach Scan/Reichtum ---
         val surveyed = sim.isSurveyed(r, c)
         val tier = sim.richness(r, c)
-        val base: Int; val dark: Int; val lite: Int
-        if (!surveyed) {
-            // ungescannt: entsaettigtes Grau-Gruen, Reichtum unbekannt
-            base = Color.rgb(96, 112, 82); dark = Color.rgb(80, 94, 68); lite = Color.rgb(110, 126, 96)
-        } else when (tier) {
-            0 -> { base = Color.rgb(120, 138, 92); dark = Color.rgb(100, 116, 76); lite = Color.rgb(140, 158, 110) }
-            1 -> { base = Color.rgb(118, 170, 74); dark = Color.rgb(96, 144, 58); lite = Color.rgb(150, 196, 100) }
-            2 -> { base = Color.rgb(96, 176, 76); dark = Color.rgb(74, 148, 58); lite = Color.rgb(140, 208, 110) }
-            else -> { base = Color.rgb(156, 168, 66); dark = Color.rgb(126, 138, 48); lite = Color.rgb(206, 200, 96) }
-        }
-        pSprite.color = base
-        canvas.drawRect(x, y, x + cell, y + cell, pSprite)
-        // dunklere Grasbueschel-Flecken
-        pSprite.color = dark
-        val b0x = (q(0) % 6) * u; val b0y = (q(1) % 6) * u
-        canvas.drawRect(x + b0x, y + b0y, x + b0x + 2 * u, y + b0y + u, pSprite)
-        val b1x = (q(2) % 7) * u; val b1y = (q(3) % 7) * u
-        canvas.drawRect(x + b1x, y + b1y, x + b1x + u, y + b1y + u, pSprite)
-        // hellere Spitzlichter
-        pSprite.color = lite
-        val l0x = (q(4) % 7) * u; val l0y = (q(5) % 7) * u
-        canvas.drawRect(x + l0x, y + l0y, x + l0x + u, y + l0y + u, pSprite)
-        // feine Grashalme (schmale, dunkle Striche) fuer Gras-Anmutung
-        pSprite.color = dark
-        val bw = u * 0.42f; val bh = u * 1.25f
-        for (k in 0 until 3) {
-            val bx = x + (q(k + 1) % 7) * u
-            val by = y + (q(k + 4) % 6) * u
-            canvas.drawRect(bx, by, bx + bw, by + bh, pSprite)
-        }
+        val gb = if (!surveyed) grassUnknown else grassTiles[tier]
+        canvas.drawBitmap(gb, srcTile, dstTile, pTile)
 
         if (!surveyed) {
-            // dezente Frage-Punkte signalisieren "unbekannt"
+            // dezenter Punkt signalisiert "unbekannt"
             pSprite.color = Color.argb(90, 40, 46, 36)
             canvas.drawRect(x + 3.5f * u, y + 3.5f * u, x + 4.5f * u, y + 4.5f * u, pSprite)
-        } else if (tier >= 1) {
-            // Erz-Flecken je nach Reichtum
-            pSprite.color = if (tier >= 3) Color.rgb(236, 208, 96) else if (tier == 2) Color.rgb(120, 210, 120) else Color.rgb(150, 120, 70)
-            val su = if (tier == 1) cell / 8f else cell / 16f
-            fun dot(a: Int, b: Int) = canvas.drawRect(x + q(a) * u, y + q(b) * u, x + q(a) * u + su, y + q(b) * u + su, pSprite)
-            dot(6, 7); if (tier >= 2) dot(1, 6); if (tier >= 3) { dot(3, 2); dot(4, 7) }
-            if (tier == 3) {
-                val tw = kotlin.math.sin(animT * 2.6 + (r * 1.7 + c)) * 0.5 + 0.5
-                if (tw > 0.7) {
-                    val g = cell / 16f
-                    pSprite.color = Color.argb(220, 255, 250, 220)
-                    canvas.drawRect(x + 5 * g, y + 6 * g, x + 6 * g, y + 7 * g, pSprite)
-                }
+        } else if (tier == 3) {
+            // reicher Boden funkelt dezent
+            val tw = kotlin.math.sin(animT * 2.6 + (r * 1.7 + c)) * 0.5 + 0.5
+            if (tw > 0.7) {
+                val g = cell / 16f
+                pSprite.color = Color.argb(220, 255, 250, 220)
+                canvas.drawRect(x + 5 * g, y + 6 * g, x + 6 * g, y + 7 * g, pSprite)
             }
         }
 
