@@ -32,7 +32,7 @@ class Machine(var type: MType) {
     var starved = false
 }
 
-data class OfflineEvent(val timeSec: Int, val text: String)
+data class OfflineEvent(val timeSec: Int, val dead: Boolean, val mType: MType, val r: Int, val c: Int)
 
 data class OfflineReport(
     val elapsedSeconds: Int,
@@ -548,15 +548,13 @@ class Simulation {
             forEachMachine { m, r, c ->
                 if (m.condition <= 0.0 && !seenDead.contains(m)) {
                     seenDead.add(m)
-                    if (events.size < 24)
-                        events.add(OfflineEvent(t, "${m.type.label} (${r + 1},${c + 1}): Totalausfall (0% Zustand)"))
+                    if (events.size < 24) events.add(OfflineEvent(t, true, m.type, r, c))
                 }
                 if ((m.type == MType.OFEN || m.type == MType.PRESSE || m.type == MType.ASSEMBLER || m.type == MType.GENERATOR) &&
                     m.starved && !seenStarve.contains(m)
                 ) {
                     seenStarve.add(m)
-                    if (events.size < 24)
-                        events.add(OfflineEvent(t, "${m.type.label} (${r + 1},${c + 1}): Nachschub gestoppt"))
+                    if (events.size < 24) events.add(OfflineEvent(t, false, m.type, r, c))
                 }
             }
             t++

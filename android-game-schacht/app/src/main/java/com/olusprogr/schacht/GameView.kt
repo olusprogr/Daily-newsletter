@@ -43,9 +43,9 @@ class GameView(context: Context) : View(context) {
     private val prefs = context.getSharedPreferences("schacht_save", Context.MODE_PRIVATE)
 
     // Farben (heller, waermer, farbiger)
-    private val cBg = Color.rgb(38, 33, 28)
-    private val cPanel = Color.rgb(60, 52, 44)
-    private val cPanelHi = Color.rgb(86, 74, 62)
+    private val cBg = Color.rgb(52, 46, 39)
+    private val cPanel = Color.rgb(72, 62, 53)
+    private val cPanelHi = Color.rgb(96, 83, 70)
     private val cCell = Color.rgb(48, 43, 38)
     private val cGridLine = Color.rgb(26, 22, 18)
     private val cText = Color.rgb(244, 238, 228)
@@ -123,7 +123,19 @@ class GameView(context: Context) : View(context) {
     private fun resAbbr(res: Res) = when (res) {
         Res.ROHERZ -> "E"; Res.BARREN -> "B"; Res.PLATTE -> "P"; Res.KOMPONENTE -> "K"
     }
-    private fun tierName(t: Int) = when (t) { 0 -> "leer"; 1 -> "normal"; 2 -> "moderat"; else -> "reich" }
+    private fun tierName(t: Int) = I18n.t("tier$t")
+    private fun mName(t: MType) = I18n.t("m_" + t.name.lowercase())
+    private fun mShort(t: MType) = I18n.t("ms_" + t.name.lowercase())
+    private fun tr(k: String) = I18n.t(k)
+
+    private fun drawIcon(canvas: Canvas, list: List<Px>, x: Float, y: Float, size: Float) =
+        drawSprite(canvas, list, x, y, size / 12f)
+
+    private fun setLang(l: Lang) {
+        I18n.lang = l
+        prefs.edit().putInt("lang", l.ordinal).apply()
+        audio.click(); invalidate()
+    }
 
     private val handler = Handler(Looper.getMainLooper())
     private var running = true
@@ -143,6 +155,7 @@ class GameView(context: Context) : View(context) {
     }
 
     init {
+        I18n.lang = try { Lang.values()[prefs.getInt("lang", 0)] } catch (_: Exception) { Lang.DE }
         val saved = prefs.getString("state", null)
         if (saved != null) {
             try {
@@ -223,37 +236,39 @@ class GameView(context: Context) : View(context) {
         p.color = cAccent
         canvas.drawRect(0f, headerH - dp(2f), W.toFloat(), headerH, p)
 
-        // Titel: Geld hervorgehoben
-        resPip(canvas, dp(12f), dp(20f), cResGeld)
         pText.textAlign = Paint.Align.LEFT
+
+        // Titel: Geld hervorgehoben mit Muenz-Icon
+        drawIcon(canvas, Sprites.ICON_GELD, dp(9f), dp(11f), dp(18f))
         pText.textSize = dp(20f); pText.color = cResGeld
         val moneyStr = fmt(sim.money)
-        canvas.drawText(moneyStr, dp(28f), dp(27f), pText)
+        canvas.drawText(moneyStr, dp(32f), dp(27f), pText)
         val moneyW = pText.measureText(moneyStr)
         pText.textSize = dp(13f); pText.color = cGood
-        canvas.drawText("+${fmt(sim.moneyPerMin)}/min", dp(28f) + moneyW + dp(10f), dp(27f), pText)
+        canvas.drawText("+${fmt(sim.moneyPerMin)}/min", dp(32f) + moneyW + dp(10f), dp(27f), pText)
 
-        // Bestand inkl. Lager-Inhalten (mit farbigen Pips)
+        // Bestand inkl. Lager-Inhalten (mit Pixel-Icons)
         pText.textSize = dp(14f); pText.color = cText
-        resPip(canvas, dp(12f), dp(43f), cResBarren)
+        drawIcon(canvas, Sprites.ICON_BARREN, dp(9f), dp(39f), dp(15f))
         canvas.drawText(fmt(sim.availableBarren()), dp(28f), dp(48f), pText)
-        resPip(canvas, dp(112f), dp(43f), cResPlatte)
+        drawIcon(canvas, Sprites.ICON_PLATTE, dp(110f), dp(39f), dp(15f))
         canvas.drawText(fmt(sim.availablePlatten()), dp(128f), dp(48f), pText)
-        resPip(canvas, dp(210f), dp(43f), cResKomp)
+        drawIcon(canvas, Sprites.ICON_KOMP, dp(206f), dp(39f), dp(15f))
         canvas.drawText(fmt(sim.availableKomponente()), dp(226f), dp(48f), pText)
 
         val powOk = sim.powerDemand <= sim.powerSupply + 1e-6
         val rest = sim.powerSupply - sim.powerDemand
+        drawIcon(canvas, Sprites.ICON_STROM, dp(9f), dp(61f), dp(15f))
         pText.color = if (powOk) cGood else cBad
-        canvas.drawText("Reststrom ${if (rest < 0) "-" + fmt(-rest) else fmt(rest)}", dp(12f), dp(70f), pText)
+        canvas.drawText("${tr("reststrom")} ${if (rest < 0) "-" + fmt(-rest) else fmt(rest)}", dp(28f), dp(70f), pText)
         pText.color = cDim
-        canvas.drawText("Strom ${fmt(sim.powerSupply)}/${fmt(sim.powerDemand)}", dp(150f), dp(70f), pText)
+        canvas.drawText("${fmt(sim.powerSupply)}/${fmt(sim.powerDemand)}", dp(170f), dp(70f), pText)
 
         val bw = dp(84f); val bh = dp(30f)
         val tR = RectF(W - dp(12f) - bw, dp(8f), W - dp(12f), dp(8f) + bh)
         val sR = RectF(W - dp(12f) - bw, dp(42f), W - dp(12f), dp(42f) + bh)
-        drawButton(canvas, Btn(tR, "tech", "Tech", true, screen == Screen.TECH, cAccent))
-        drawButton(canvas, Btn(sR, "stat", "Statistik", true, screen == Screen.STAT, cAccent))
+        drawButton(canvas, Btn(tR, "tech", tr("tech"), true, screen == Screen.TECH, cAccent))
+        drawButton(canvas, Btn(sR, "stat", tr("stat"), true, screen == Screen.STAT, cAccent))
         buttons.add(Btn(tR, "tech", "Tech"))
         buttons.add(Btn(sR, "stat", "Statistik"))
     }
@@ -397,12 +412,12 @@ class GameView(context: Context) : View(context) {
             val afford = sim.available(cres) >= camt
             val sub: String
             val subCol: Int
-            if (!unlocked) { sub = "Tech noetig"; subCol = cDim }
+            if (!unlocked) { sub = tr("tech_needed"); subCol = cDim }
             else { sub = "${camt.toInt()} ${resAbbr(cres)}"; subCol = if (afford) cDim else cBad }
             val active = buildTool == t
             val mc = mColor(t)
-            drawButton(canvas, Btn(rect, "build_${t.name}", shortLabel(t), unlocked, active, mc, sub, subCol, mc))
-            buttons.add(Btn(rect, "build_${t.name}", shortLabel(t), unlocked))
+            drawButton(canvas, Btn(rect, "build_${t.name}", mShort(t), unlocked, active, mc, sub, subCol, mc))
+            buttons.add(Btn(rect, "build_${t.name}", mShort(t), unlocked))
         }
     }
 
@@ -422,26 +437,26 @@ class GameView(context: Context) : View(context) {
         canvas.drawRect(0f, top, W.toFloat(), H.toFloat(), p)
 
         pText.color = cAccent; pText.textSize = dp(18f)
-        canvas.drawText("${m.type.label}  (${selR + 1},${selC + 1})", dp(12f), top + dp(24f), pText)
+        canvas.drawText("${mName(m.type)}  (${selR + 1},${selC + 1})", dp(12f), top + dp(24f), pText)
 
         pText.color = cText; pText.textSize = dp(14f)
         var yy = top + dp(48f)
-        canvas.drawText("Zustand ${m.condition.roundToInt()}%     Auslastung ${(m.util * 100).roundToInt()}%", dp(12f), yy, pText)
+        canvas.drawText("${tr("condition")} ${m.condition.roundToInt()}%     ${tr("util")} ${(m.util * 100).roundToInt()}%", dp(12f), yy, pText)
         yy += dp(22f)
         val io = when (m.type) {
             MType.BOHRER -> {
                 val tier = sim.richness(selR, selC)
-                "Aus ${oneDec(m.output[0])} Roherz   Boden: ${tierName(tier)} (x${Simulation.ORE_MULT[tier]})"
+                "${tr("out")} ${oneDec(m.output[0])} ${tr("roherz")}   ${tr("floor")}: ${tierName(tier)} (x${Simulation.ORE_MULT[tier]})"
             }
-            MType.OFEN -> "Ein ${oneDec(m.input[0])} Roherz   Aus ${oneDec(m.output[1])} Barren"
-            MType.PRESSE -> "Ein ${oneDec(m.input[1])} Barren   Aus ${oneDec(m.output[2])} Platten"
-            MType.ASSEMBLER -> "Ein ${oneDec(m.input[2])} Platten   Aus ${oneDec(m.output[3])} Komp."
-            MType.HAENDLER -> "Verkauft Komponenten -> Geld (${oneDec(sim.componentPrice())}/Stk)"
-            MType.GENERATOR -> "Brennstoff ${oneDec(m.input[0])} Roherz  →  +${Simulation.GEN_POWER.toInt()} Strom"
-            MType.LAGER -> "Puffer ${oneDec(m.output[0])}E ${oneDec(m.output[1])}B ${oneDec(m.output[2])}P ${oneDec(m.output[3])}K"
-            MType.VERSTAERKER -> "Beschleunigt Nachbarn (+${(Simulation.BOOST_PER * 100).toInt()}% je)"
-            MType.REAKTOR -> "Liefert ${Simulation.REAKTOR_POWER.toInt()} Strom (fest)"
-            MType.DROHNE -> "Repariert Nachbarn (${Simulation.DROHNE_RATE.toInt()}%/s)"
+            MType.OFEN -> "${tr("in")} ${oneDec(m.input[0])} ${tr("roherz")}   ${tr("out")} ${oneDec(m.output[1])} ${tr("barren")}"
+            MType.PRESSE -> "${tr("in")} ${oneDec(m.input[1])} ${tr("barren")}   ${tr("out")} ${oneDec(m.output[2])} ${tr("platten")}"
+            MType.ASSEMBLER -> "${tr("in")} ${oneDec(m.input[2])} ${tr("platten")}   ${tr("out")} ${oneDec(m.output[3])} ${tr("komp")}"
+            MType.HAENDLER -> "${tr("sells_comp")} (${oneDec(sim.componentPrice())}${tr("per_piece")})"
+            MType.GENERATOR -> "${tr("fuel")} ${oneDec(m.input[0])} ${tr("roherz")}  ->  +${Simulation.GEN_POWER.toInt()} ${tr("strom")}"
+            MType.LAGER -> "${tr("buffer")} ${oneDec(m.output[0])}E ${oneDec(m.output[1])}B ${oneDec(m.output[2])}P ${oneDec(m.output[3])}K"
+            MType.VERSTAERKER -> "${tr("boosts")} (+${(Simulation.BOOST_PER * 100).toInt()}%)"
+            MType.REAKTOR -> "${tr("provides")} ${Simulation.REAKTOR_POWER.toInt()} ${tr("strom")} (${tr("fixed")})"
+            MType.DROHNE -> "${tr("repairs")} (${Simulation.DROHNE_RATE.toInt()}%/s)"
         }
         canvas.drawText(io, dp(12f), yy, pText)
         yy += dp(22f)
@@ -449,7 +464,7 @@ class GameView(context: Context) : View(context) {
         val (sres, samt) = sim.buildCost(m.type)
         if (m.type != MType.REAKTOR) {
             val refund = samt * 0.5 * (m.condition / 100.0)
-            canvas.drawText("Stromverbrauch ${m.type.power.toInt()}     Verkaufswert +${oneDec(refund)} ${resAbbr(sres)}", dp(12f), yy, pText)
+            canvas.drawText("${tr("poweruse")} ${m.type.power.toInt()}     ${tr("sellvalue")} +${oneDec(refund)} ${resAbbr(sres)}", dp(12f), yy, pText)
         }
 
         // Aktions-Buttons unten
@@ -464,19 +479,19 @@ class GameView(context: Context) : View(context) {
             val half = (W - 3 * margin) / 2f
             val rSell = RectF(margin, by, margin + half, by + bh)
             val rRep = RectF(margin * 2 + half, by, margin * 2 + half * 2, by + bh)
-            drawButton(canvas, Btn(rSell, "sell_sel", "Verkaufen +$refund ${resAbbr(sres)}", true, false, cBad))
-            drawButton(canvas, Btn(rRep, "repair_sel", "Reparieren ${Simulation.REPAIR_COST.toInt()} B", repEnabled, false, cAccent))
+            drawButton(canvas, Btn(rSell, "sell_sel", "${tr("sell")} +$refund ${resAbbr(sres)}", true, false, cBad))
+            drawButton(canvas, Btn(rRep, "repair_sel", "${tr("repair")} ${Simulation.REPAIR_COST.toInt()} B", repEnabled, false, cAccent))
             buttons.add(Btn(rSell, "sell_sel", "Verkaufen"))
             buttons.add(Btn(rRep, "repair_sel", "Reparieren", repEnabled))
         } else if (canSell) {
             val rSell = RectF(margin, by, W - margin, by + bh)
-            drawButton(canvas, Btn(rSell, "sell_sel", "Verkaufen +$refund ${resAbbr(sres)}", true, false, cBad))
+            drawButton(canvas, Btn(rSell, "sell_sel", "${tr("sell")} +$refund ${resAbbr(sres)}", true, false, cBad))
             buttons.add(Btn(rSell, "sell_sel", "Verkaufen"))
         }
     }
 
     private fun drawTech(canvas: Canvas) {
-        p.color = Color.argb(245, 48, 42, 35)
+        p.color = Color.argb(246, 58, 50, 42)
         canvas.drawRect(0f, 0f, W.toFloat(), H.toFloat(), p)
 
         val bh = dp(48f)
@@ -496,107 +511,129 @@ class GameView(context: Context) : View(context) {
             val preOk = node.prereq == null || sim.has(node.prereq)
             val cost = sim.nextCost(node)
             val afford = sim.techAffordable(node)
-            val cur = if (node.costRes != null) resAbbr(node.costRes) else "Geld"
-            p.color = if (l > 0) Color.rgb(40, 55, 44) else cPanel
+            val cur = if (node.costRes != null) resAbbr(node.costRes) else tr("geld")
+            p.color = if (l > 0) Color.rgb(46, 62, 50) else cPanel
             canvas.drawRoundRect(rect, dp(8f), dp(8f), p)
 
             pText.color = cText; pText.textSize = dp(15f)
-            val title = if (node.maxLevel > 1) "${node.label}  (Stufe $l/${node.maxLevel})" else node.label
+            val label = tr(node.id)
+            val title = if (node.maxLevel > 1) "$label  (${tr("level")} $l/${node.maxLevel})" else label
             canvas.drawText(title, dp(24f), yy + dp(20f), pText)
             pText.textSize = dp(12f); pText.color = cDim
+            val fx = techEffect(node.id)
             val sub = when {
-                maxed -> "voll ausgebaut"
-                !preOk -> "benoetigt: ${Simulation.TECHS.first { it.id == node.prereq }.label}"
-                node.maxLevel > 1 -> "${node.effect}  ·  naechste: ${cost.toInt()} $cur"
-                else -> "Kosten: ${cost.toInt()} $cur" + (if (node.effect.isNotEmpty()) "  ·  ${node.effect}" else "")
+                maxed -> tr("maxed")
+                !preOk -> "${tr("requires")}: ${tr(node.prereq!!)}"
+                node.maxLevel > 1 -> "$fx  ·  ${tr("next")}: ${cost.toInt()} $cur"
+                else -> "${tr("cost")}: ${cost.toInt()} $cur" + (if (fx.isNotEmpty()) "  ·  $fx" else "")
             }
             canvas.drawText(sub, dp(24f), yy + dp(38f), pText)
 
             val kw = dp(92f); val kh = dp(34f)
             val kr = RectF(W - dp(24f) - kw, yy + (bh - kh) / 2, W - dp(24f), yy + (bh + kh) / 2)
-            val kLabel = if (maxed) "MAX" else if (node.maxLevel > 1) "Stufe +" else "Kaufen"
+            val kLabel = if (maxed) tr("max") else if (node.maxLevel > 1) tr("buy_level") else tr("buy")
             val kEnabled = !maxed && preOk && afford
             drawButton(canvas, Btn(kr, "buy_${node.id}", kLabel, kEnabled, false, cAccent))
             if (!maxed) buttons.add(Btn(kr, "buy_${node.id}", kLabel, kEnabled))
         }
 
         // Kopf- und Fussleiste maskieren gescrollte Inhalte
-        p.color = Color.rgb(48, 42, 35)
+        p.color = Color.rgb(58, 50, 42)
         canvas.drawRect(0f, 0f, W.toFloat(), startY, p)
         canvas.drawRect(0f, bandBottom, W.toFloat(), H.toFloat(), p)
         pText.color = cAccent; pText.textSize = dp(22f)
-        canvas.drawText("Tech-Baum", dp(16f), dp(38f), pText)
+        canvas.drawText(tr("techtree"), dp(16f), dp(38f), pText)
         pText.color = cDim; pText.textSize = dp(13f)
-        canvas.drawText("Geld ${fmt(sim.money)}  ·  B ${fmt(sim.availableBarren())}  ·  P ${fmt(sim.availablePlatten())}  ·  wischen", dp(16f), dp(58f), pText)
+        canvas.drawText("${tr("geld")} ${fmt(sim.money)}  ·  B ${fmt(sim.availableBarren())}  ·  P ${fmt(sim.availablePlatten())}", dp(16f), dp(58f), pText)
 
         val cr = RectF(W / 2f - dp(70f), H - dp(56f), W / 2f + dp(70f), H - dp(16f))
-        drawButton(canvas, Btn(cr, "close", "Schliessen", true, false, cAccent))
+        drawButton(canvas, Btn(cr, "close", tr("close"), true, false, cAccent))
         buttons.add(Btn(cr, "close", "Schliessen"))
     }
 
+    private fun techEffect(id: String): String = when (id) {
+        "t_assembler" -> tr("tf_assembler"); "t_haendler" -> tr("tf_haendler"); "t_boost" -> tr("tf_boost")
+        "t_diag" -> tr("tf_diag")
+        "t_bspeed", "t_ospeed", "t_pspeed", "t_aspeed" -> tr("tf_speed")
+        "t_wert" -> tr("tf_wert"); "t_area" -> tr("tf_area"); "t_takt" -> tr("tf_takt")
+        "t_robust" -> tr("tf_robust"); "t_lift" -> tr("tf_lift"); "t_power" -> tr("tf_power")
+        else -> ""
+    }
+
     private fun drawStat(canvas: Canvas) {
-        p.color = Color.argb(245, 48, 42, 35)
+        p.color = Color.argb(246, 58, 50, 42)
         canvas.drawRect(0f, 0f, W.toFloat(), H.toFloat(), p)
         pText.color = cAccent; pText.textSize = dp(22f)
-        canvas.drawText("Statistik", dp(16f), dp(40f), pText)
-        pText.color = cText; pText.textSize = dp(16f)
-        var yy = dp(80f)
+        canvas.drawText(tr("stat_title"), dp(16f), dp(40f), pText)
+        pText.color = cText; pText.textSize = dp(15f)
+        var yy = dp(74f)
         val lines = listOf(
-            "Geld:             ${fmt(sim.money)}   (+${fmt(sim.moneyPerMin)}/min)",
-            "Barren (inkl.Lager): ${fmt(sim.availableBarren())}  (${oneDec(sim.barrenPerMin)}/min)",
-            "Platten (inkl.Lager): ${fmt(sim.availablePlatten())}  (${oneDec(sim.plattenPerMin)}/min)",
-            "Komponenten:      ${fmt(sim.availableKomponente())}  (${oneDec(sim.komponentenPerMin)}/min)",
-            "Strom:            ${fmt(sim.powerSupply)} / ${fmt(sim.powerDemand)}",
-            "Sektor-Flaeche:   ${sim.areaN()} x ${sim.areaN()}",
-            "Maschinen gebaut: ${machineCount()}",
-            "Upgrade-Stufen:   ${sim.tech.values.sum()}"
+            "${tr("s_money")}: ${fmt(sim.money)}   (+${fmt(sim.moneyPerMin)}/min)",
+            "${tr("s_barren")}: ${fmt(sim.availableBarren())}  (${oneDec(sim.barrenPerMin)}/min)",
+            "${tr("s_platten")}: ${fmt(sim.availablePlatten())}  (${oneDec(sim.plattenPerMin)}/min)",
+            "${tr("s_komp")}: ${fmt(sim.availableKomponente())}  (${oneDec(sim.komponentenPerMin)}/min)",
+            "${tr("s_strom")}: ${fmt(sim.powerSupply)} / ${fmt(sim.powerDemand)}",
+            "${tr("s_area")}: ${sim.areaN()} x ${sim.areaN()}",
+            "${tr("s_machines")}: ${machineCount()}",
+            "${tr("s_upgrades")}: ${sim.tech.values.sum()}"
         )
-        for (l in lines) { canvas.drawText(l, dp(16f), yy, pText); yy += dp(27f) }
-        pText.color = cDim; pText.textSize = dp(13f)
+        for (l in lines) { canvas.drawText(l, dp(16f), yy, pText); yy += dp(25f) }
+        pText.color = cDim; pText.textSize = dp(12f)
         yy += dp(4f)
-        canvas.drawText("Boden: grau=leer, braun=normal, gruen=moderat, gold=reich.", dp(16f), yy, pText)
-        yy += dp(18f)
-        canvas.drawText("Komponenten am Haendler -> Geld. Upgrades kosten Geld.", dp(16f), yy, pText)
+        canvas.drawText(tr("hint_floor"), dp(16f), yy, pText)
+        yy += dp(16f)
+        canvas.drawText(tr("hint_trade"), dp(16f), yy, pText)
+
+        val margin = dp(12f)
+        // Sprachauswahl DE / EN / PL
+        pText.color = cText; pText.textSize = dp(14f)
+        canvas.drawText("${tr("lang")}:", dp(16f), yy + dp(30f), pText)
+        val lw = (W - 2 * margin - dp(80f) - 2 * dp(6f)) / 3f
+        val ly = yy + dp(16f); val lh = dp(34f)
+        val langs = listOf(Lang.DE to "DE", Lang.EN to "EN", Lang.PL to "PL")
+        for ((i, lv) in langs.withIndex()) {
+            val lx = dp(80f) + margin + i * (lw + dp(6f))
+            val lr = RectF(lx, ly, lx + lw, ly + lh)
+            drawButton(canvas, Btn(lr, "lang_${lv.first.name}", lv.second, true, I18n.lang == lv.first, cAccent))
+            buttons.add(Btn(lr, "lang_${lv.first.name}", "lang"))
+        }
 
         // Ton-Schalter
-        val margin = dp(12f)
-        val tw = W - 2 * margin
-        val tr = RectF(margin, yy + dp(14f), margin + tw, yy + dp(14f) + dp(38f))
-        drawButton(canvas, Btn(tr, "sound", if (audio.isMuted()) "Ton: AUS" else "Ton: AN", true, !audio.isMuted(), cAccent))
-        buttons.add(Btn(tr, "sound", "sound"))
+        val sndY = ly + lh + dp(10f)
+        val sndR = RectF(margin, sndY, W - margin, sndY + dp(36f))
+        drawButton(canvas, Btn(sndR, "sound", if (audio.isMuted()) tr("sound_off") else tr("sound_on"), true, !audio.isMuted(), cAccent))
+        buttons.add(Btn(sndR, "sound", "sound"))
 
         // Reset + Schliessen
         val by = H - dp(58f); val bh = dp(40f)
         val half = (W - 3 * margin) / 2f
         val rReset = RectF(margin, by, margin + half, by + bh)
         val rClose = RectF(margin * 2 + half, by, margin * 2 + half * 2, by + bh)
-        drawButton(canvas, Btn(rReset, "reset",
-            if (resetArmed) "Wirklich? Erneut tippen" else "Spielstand zuruecksetzen",
-            true, resetArmed, cBad))
-        drawButton(canvas, Btn(rClose, "close", "Schliessen", true, false, cAccent))
+        drawButton(canvas, Btn(rReset, "reset", if (resetArmed) tr("reset_confirm") else tr("reset"), true, resetArmed, cBad))
+        drawButton(canvas, Btn(rClose, "close", tr("close"), true, false, cAccent))
         buttons.add(Btn(rReset, "reset", "reset"))
         buttons.add(Btn(rClose, "close", "Schliessen"))
     }
 
     private fun drawReport(canvas: Canvas) {
         val rep = report ?: return
-        p.color = Color.argb(248, 48, 42, 35)
+        p.color = Color.argb(248, 58, 50, 42)
         canvas.drawRect(0f, 0f, W.toFloat(), H.toFloat(), p)
         pText.color = cAccent; pText.textSize = dp(22f)
-        canvas.drawText("Offline-Report", dp(16f), dp(40f), pText)
+        canvas.drawText(tr("report_title"), dp(16f), dp(40f), pText)
         pText.color = cText; pText.textSize = dp(15f)
         val away = fmtDur(rep.elapsedSeconds)
         val simd = fmtDur(rep.simSeconds)
-        canvas.drawText("Du warst $away weg (simuliert: $simd, Cap 8h).", dp(16f), dp(66f), pText)
+        canvas.drawText("${tr("away")}: $away  ·  ${tr("sim")}: $simd  ·  Cap 8h", dp(16f), dp(66f), pText)
         pText.color = cGood
-        canvas.drawText("+ ${fmt(rep.moneyGained)} Geld     + ${fmt(rep.barrenGained)} Barren     + ${fmt(rep.plattenGained)} Platten", dp(16f), dp(90f), pText)
+        canvas.drawText("+ ${fmt(rep.moneyGained)} ${tr("geld")}   + ${fmt(rep.barrenGained)} ${tr("barren")}   + ${fmt(rep.plattenGained)} ${tr("platten")}", dp(16f), dp(90f), pText)
 
         pText.color = cText; pText.textSize = dp(14f)
-        canvas.drawText("Zeitleiste:", dp(16f), dp(120f), pText)
+        canvas.drawText("${tr("timeline")}:", dp(16f), dp(120f), pText)
         var yy = dp(142f)
         if (rep.events.isEmpty()) {
             pText.color = cDim
-            canvas.drawText("Alles lief durch – keine Ausfaelle.", dp(24f), yy, pText)
+            canvas.drawText(tr("all_ran"), dp(24f), yy, pText)
         } else {
             pText.textSize = dp(13f)
             for (e in rep.events) {
@@ -604,12 +641,13 @@ class GameView(context: Context) : View(context) {
                 pText.color = cDim
                 canvas.drawText(fmtDur(e.timeSec), dp(24f), yy, pText)
                 pText.color = cText
-                canvas.drawText(e.text, dp(96f), yy, pText)
+                val evText = "${mName(e.mType)} (${e.r + 1},${e.c + 1}): ${if (e.dead) tr("ev_dead") else tr("ev_starved")}"
+                canvas.drawText(evText, dp(96f), yy, pText)
                 yy += dp(22f)
             }
         }
         val cr = RectF(W / 2f - dp(90f), H - dp(64f), W / 2f + dp(90f), H - dp(22f))
-        drawButton(canvas, Btn(cr, "close", "Weiterspielen", true, false, cAccent))
+        drawButton(canvas, Btn(cr, "close", tr("continue"), true, false, cAccent))
         buttons.add(Btn(cr, "close", "Weiterspielen"))
     }
 
@@ -704,6 +742,7 @@ class GameView(context: Context) : View(context) {
             id == "stat" -> { screen = if (screen == Screen.STAT) Screen.GAME else Screen.STAT; selR = -1; resetArmed = false; audio.click() }
             id == "close" -> { screen = Screen.GAME; report = null; resetArmed = false; audio.click() }
             id == "sound" -> { audio.toggleMuted(); audio.click() }
+            id.startsWith("lang_") -> { setLang(Lang.valueOf(id.removePrefix("lang_"))) }
             id == "reset" -> {
                 if (!resetArmed) {
                     resetArmed = true; audio.click()

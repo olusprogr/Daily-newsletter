@@ -28,6 +28,11 @@ private val RC = 0xE63D251E.toInt()   // Rostkern ~0.9
 private val SM1 = 0x8C6A6A6A.toInt()  // Rauch ~0.55
 private val SM2 = 0x669A9A9A.toInt()  // Rauch hell ~0.4
 
+// Icon-Farben
+private val STEEL = 0xFFBCC2CC.toInt()
+private val BLUE = 0xFF68A8D8.toInt()
+private val BLUEL = 0xFFA9D6F2.toInt()
+
 object Sprites {
 
     val BOHRER = listOf(
@@ -288,6 +293,36 @@ object Sprites {
             else -> listOf(Px(16, 12, 1, 1, MHI))
         }
     }
+
+    // --- Ressourcen-Icons im 12x12-Raster ---
+    val ICON_GELD = listOf(
+        Px(3, 1, 6, 1, OUT), Px(2, 2, 8, 1, OUT),
+        Px(1, 3, 1, 6, OUT), Px(10, 3, 1, 6, OUT),
+        Px(2, 9, 8, 1, OUT), Px(3, 10, 6, 1, OUT),
+        Px(2, 3, 8, 6, YEL), Px(3, 2, 6, 1, YEL), Px(3, 9, 6, 1, YEL),
+        Px(3, 3, 2, 2, MHI),
+        Px(5, 3, 2, 5, ORG), Px(4, 4, 4, 1, ORG), Px(4, 6, 4, 1, ORG)
+    )
+    val ICON_BARREN = listOf(
+        Px(2, 4, 8, 1, OUT), Px(1, 5, 10, 4, OUT),
+        Px(3, 4, 5, 1, STEEL),
+        Px(2, 5, 8, 3, MM2), Px(2, 5, 8, 1, MLT), Px(2, 7, 8, 1, MDK)
+    )
+    val ICON_PLATTE = listOf(
+        Px(1, 4, 10, 1, OUT), Px(1, 5, 10, 4, OUT),
+        Px(2, 4, 8, 1, STEEL), Px(2, 5, 8, 3, BLUE), Px(2, 5, 8, 1, BLUEL)
+    )
+    val ICON_KOMP = listOf(
+        Px(4, 1, 1, 1, YEL), Px(7, 1, 1, 1, YEL), Px(4, 10, 1, 1, YEL), Px(7, 10, 1, 1, YEL),
+        Px(1, 4, 1, 1, YEL), Px(1, 7, 1, 1, YEL), Px(10, 4, 1, 1, YEL), Px(10, 7, 1, 1, YEL),
+        Px(2, 2, 8, 8, OUT), Px(3, 3, 6, 6, RUSTB),
+        Px(4, 4, 4, 1, CYA), Px(4, 4, 1, 4, CYA), Px(5, 6, 2, 2, YEL)
+    )
+    val ICON_STROM = listOf(
+        Px(6, 1, 2, 1, YEL), Px(5, 2, 2, 1, YEL), Px(4, 3, 3, 1, YEL),
+        Px(3, 4, 5, 1, YEL), Px(5, 5, 2, 1, YEL), Px(4, 6, 2, 1, YEL), Px(3, 7, 2, 1, YEL),
+        Px(7, 2, 1, 1, ORG), Px(4, 7, 1, 1, ORG)
+    )
 
     fun forType(t: MType): List<Px> = when (t) {
         MType.BOHRER -> BOHRER
