@@ -213,6 +213,10 @@ class GameView(context: Context) : View(context) {
 
     private var animT = 0f
 
+    // Aufsteigende "+Geld"-Zahlen beim Abbauen von Hindernissen.
+    private class Rise(val r: Int, val c: Int, val text: String, val start: Float)
+    private val rises = ArrayList<Rise>()
+
     // Stein-/Boden-Farben fuer den Hintergrund
     private val cGroundBase = Color.rgb(43, 39, 35)
     private val cGroundDark = Color.rgb(33, 30, 26)
@@ -391,6 +395,7 @@ class GameView(context: Context) : View(context) {
         if (screen == Screen.MENU) { drawMenu(canvas); return }
         drawHeader(canvas)
         drawGrid(canvas)
+        if (screen == Screen.GAME) drawRises(canvas)
         if (screen == Screen.GAME) {
             if (selR >= 0 && sim.grid[selR][selC] != null) drawDetail(canvas) else drawPalette(canvas)
         }
@@ -633,6 +638,28 @@ class GameView(context: Context) : View(context) {
         val dy = y + cell - dh - cell * 0.05f
         decoDst.set(dx, dy, dx + dw, dy + dh)
         canvas.drawBitmap(bmp, null, decoDst, pTile)
+    }
+
+    /** Aufsteigende, ausblendende "+Geld"-Zahlen ueber abgebauten Feldern. */
+    private fun drawRises(canvas: Canvas) {
+        if (rises.isEmpty()) return
+        canvas.save()
+        canvas.clipRect(gridLeft, gridTop, gridLeft + gridW, gridTop + gridH)
+        val it = rises.iterator()
+        while (it.hasNext()) {
+            val rr = it.next()
+            val age = animT - rr.start
+            if (age > 0.9f) { it.remove(); continue }
+            val cx = vLeft + (rr.c + 0.5f) * cell
+            val cy = vTop + (rr.r + 0.4f) * cell - age * dp(46f)
+            val al = (255 * (1f - age / 0.9f)).toInt().coerceIn(0, 255)
+            pTextC.textSize = dp(17f)
+            pTextC.color = Color.argb((al * 0.75f).toInt().coerceIn(0, 255), 18, 18, 18)
+            canvas.drawText(rr.text, cx + dp(1f), cy + dp(1f), pTextC)
+            pTextC.color = Color.argb(al, 246, 214, 96)
+            canvas.drawText(rr.text, cx, cy, pTextC)
+        }
+        canvas.restore()
     }
 
     private fun drawSprite(canvas: Canvas, list: List<Px>, x: Float, y: Float, s: Float) {
@@ -1262,7 +1289,8 @@ class GameView(context: Context) : View(context) {
             } else {
                 // freies Feld ohne Werkzeug: Deko (Baum/Busch/Fels) fuer Geld abbauen
                 val earned = sim.harvest(r, c)
-                if (earned > 0) audio.sell() else { selR = -1; selC = -1 }
+                if (earned > 0) { rises.add(Rise(r, c, "+$earned", animT)); audio.sell() }
+                else { selR = -1; selC = -1 }
             }
         }
         invalidate()
