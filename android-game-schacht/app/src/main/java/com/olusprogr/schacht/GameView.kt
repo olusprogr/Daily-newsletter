@@ -779,17 +779,17 @@ class GameView(context: Context) : View(context) {
             canvas.drawRect(x + cell * 0.60f, y + cell * 0.88f, x + cell * 0.70f, y + cell * 0.93f, pSprite)
         }
 
-        // Reaktor: Dampf aus dem Kuehlturm
+        // Reaktor: Dampf aus dem breiten Kuehlturm
         if (m.type == MType.REAKTOR) {
             val tx = x + 2.22f * cell
-            val tyTop = topY + 0.60f * cell
-            for (k in 0 until 3) {
-                val ph = (animT * 0.5f + k * 0.34f) % 1f
-                val py = tyTop - ph * cell * 1.2f
-                val rad = cell * (0.10f + 0.16f * ph)
-                val al = (110 * (1f - ph)).toInt().coerceIn(0, 255)
+            val tyTop = topY + 0.47f * cell
+            for (k in 0 until 4) {
+                val ph = (animT * 0.5f + k * 0.25f) % 1f
+                val py = tyTop - ph * cell * 1.3f
+                val rad = cell * (0.13f + 0.18f * ph)
+                val al = (120 * (1f - ph)).toInt().coerceIn(0, 255)
                 p.color = Color.argb(al, 236, 240, 246)
-                canvas.drawCircle(tx + (k - 1) * cell * 0.12f, py, rad, p)
+                canvas.drawCircle(tx + (k - 1.5f) * cell * 0.15f, py, rad, p)
             }
         }
 
