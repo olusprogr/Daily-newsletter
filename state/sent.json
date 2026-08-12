@@ -1,6 +1,33 @@
 {
   "items": [
     {
+      "link": "https://arstechnica.com/security/2026/08/terabytes-of-credentials-leaked-in-massive-supply-chain-attack/",
+      "title": "Terabytes of credentials leaked in massive supply-chain attack",
+      "summary": "The data was scraped and exfiltrated from 2,500 users of a compromised AI package.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-08-12T21:43:21+00:00",
+      "sent_at": "2026-08-12T22:09:44.404320+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/cpus/qualcomm-details-snapdragon-c-specs-for-usd300-laptops-for-the-first-time-claims-67-percent-faster-performance-on-battery-than-intel-n250-ac-performance-remains-a-mystery",
+      "title": "Qualcomm details Snapdragon C specs for $300 laptops for the first time — claims 67% faster performance on battery than Intel N250, AC performance remains a mystery",
+      "summary": "Qualcomm has detailed the specs for its Snapdragon C processor, with 8 cores and claimed \"all-day\" battery life.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-08-12T21:14:33+00:00",
+      "sent_at": "2026-08-12T22:09:44.404320+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/ai/2026/08/twitch-content-has-trained-amazon-ai-for-years-but-users-can-opt-out-now/",
+      "title": "Twitch content has trained Amazon AI for years, but users can opt out now",
+      "summary": "Streaming platform says user-generated content \"may be used for future Gen AI model improvements.\"",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-08-12T21:00:30+00:00",
+      "sent_at": "2026-08-12T22:09:44.404320+00:00"
+    },
+    {
       "link": "https://www.wired.com/story/the-white-house-is-going-to-expand-its-ai-policy/",
       "title": "The White House Is Going to Expand Its AI Policy",
       "summary": "Open models may soon be added to an updated AI framework, sources tell WIRED, as the White House continues to grapple with how to regulate a technology it has tried not to regulate.",
