@@ -136,8 +136,8 @@ class GameView(context: Context) : View(context) {
     private lateinit var bmpWater1: Bitmap
     private lateinit var grassUnknown: Bitmap
     private lateinit var grassTiles: Array<Bitmap>
-    private lateinit var decoTree: Bitmap
-    private lateinit var decoTree2: Bitmap
+    private lateinit var decoPines: Array<Bitmap>
+    private lateinit var decoLeafs: Array<Bitmap>
     private lateinit var decoRock: Bitmap
     private lateinit var decoBush: Bitmap
     private val decoDst = RectF()
@@ -271,8 +271,8 @@ class GameView(context: Context) : View(context) {
             ld(R.drawable.tile_grass0), ld(R.drawable.tile_grass1),
             ld(R.drawable.tile_grass2), ld(R.drawable.tile_grass3)
         )
-        decoTree = ld(R.drawable.deco_tree)
-        decoTree2 = ld(R.drawable.deco_tree2)
+        decoPines = arrayOf(ld(R.drawable.deco_pine1), ld(R.drawable.deco_pine2), ld(R.drawable.deco_pine3))
+        decoLeafs = arrayOf(ld(R.drawable.deco_leaf1), ld(R.drawable.deco_leaf2))
         decoRock = ld(R.drawable.deco_rock)
         decoBush = ld(R.drawable.deco_bush)
         I18n.lang = try { Lang.values()[prefs.getInt("lang", Lang.EN.ordinal)] } catch (_: Exception) { Lang.EN }
@@ -353,9 +353,9 @@ class GameView(context: Context) : View(context) {
         W = w; H = h
         headerH = dp(78f)
         val margin = dp(8f)
-        // kompakte Palette unten (5 Spalten, 2 Reihen) -> weit unten, eng gepackt
+        // Palette unten (5 Spalten, 2 Reihen), Buttons wieder ~50% hoeher
         val palRows = 2
-        val palBh = dp(44f); val palGap = dp(4f)
+        val palBh = dp(66f); val palGap = dp(5f)
         paletteH = palRows * palBh + (palRows - 1) * palGap + dp(8f)
         paletteTop = H - paletteH
         gridLeft = margin
@@ -597,20 +597,20 @@ class GameView(context: Context) : View(context) {
         return h and 0x7fffffff
     }
 
-    /** Deko (Baeume/Felsen/Buesche) je Biom – nur auf freiem Inland, nicht am Strand. */
+    /** Deko (Baeume/Felsen/Buesche) je Biom – Kategorie kommt aus der Sim, Variante/Groesse random. */
     private fun drawDeco(canvas: Canvas, r: Int, c: Int, x: Float, y: Float) {
-        if (sim.grid[r][c] != null) return
-        if (!landSafe(r - 1, c) || !landSafe(r + 1, c) || !landSafe(r, c - 1) || !landSafe(r, c + 1)) return
+        val t = sim.decoType(r, c)
+        if (t == 0) return
         val h = decoHash(r, c)
-        val pct = h % 100
-        val bmp: Bitmap = when (sim.biome(r, c)) {
-            1 -> if (pct < 46) (if (h and 1 == 0) decoTree else decoTree2) else return
-            2 -> if (pct < 30) decoRock else if (pct < 42) decoBush else return
-            3 -> if (pct < 26) decoBush else return
-            else -> if (pct < 8) decoBush else return
+        val bmp: Bitmap = when (t) {
+            1 -> decoPines[(h ushr 5) % decoPines.size]
+            2 -> decoLeafs[(h ushr 5) % decoLeafs.size]
+            3 -> decoRock
+            else -> decoBush
         }
         val maxDim = kotlin.math.max(bmp.width, bmp.height).toFloat()
-        val scale = cell * 0.78f / maxDim
+        val sizeF = 0.70f + ((h ushr 11) % 26) / 100f       // 0.70..0.95 zufaellige Groesse
+        val scale = cell * sizeF / maxDim
         val dw = bmp.width * scale; val dh = bmp.height * scale
         val jitter = ((h ushr 8) % 5 - 2) * (cell * 0.04f)
         val dx = x + (cell - dw) / 2f + jitter
@@ -675,9 +675,9 @@ class GameView(context: Context) : View(context) {
     private fun drawPalette(canvas: Canvas) {
         val cols = 5
         val margin = dp(8f)
-        val gap = dp(4f)
+        val gap = dp(5f)
         val bw = (W - 2 * margin - (cols - 1) * gap) / cols
-        val bh = dp(44f)
+        val bh = dp(66f)
         for ((i, t) in buildOrder.withIndex()) {
             val col = i % cols
             val row = i / cols
@@ -1234,7 +1234,9 @@ class GameView(context: Context) : View(context) {
             if (t != null) {
                 if (sim.build(t, r, c)) { selR = -1; selC = -1; audio.place() } else audio.error()
             } else {
-                selR = -1; selC = -1
+                // freies Feld ohne Werkzeug: Deko (Baum/Busch/Fels) fuer Geld abbauen
+                val earned = sim.harvest(r, c)
+                if (earned > 0) audio.sell() else { selR = -1; selC = -1 }
             }
         }
         invalidate()

@@ -66,6 +66,8 @@ class Simulation {
     val grid = Array(n) { arrayOfNulls<Machine>(n) }
     /** Aufgedeckte Chunks (Prospektor). true = Reichtum bekannt. */
     val surveyed = BooleanArray(n * n)
+    /** Abgebaute Deko-Felder (Baum/Busch/Fels entfernt). */
+    val harvested = BooleanArray(n * n)
     var globalBarren = 0.0
     var globalPlatten = 0.0
     var globalKomponente = 0.0
@@ -112,6 +114,9 @@ class Simulation {
         const val LAND_THRESH = 0.46     // Schwelle Land/Wasser aus dem Rauschen
         const val SCAN_R = 4             // Prospektor deckt Radius (Chebyshev) auf
         const val PROSPEKTOR_COST = 6.0
+
+        // Erloes beim Abbauen: keine, Nadelbaum, Laubbaum, Fels, Busch
+        val DECO_VALUE = intArrayOf(0, 4, 4, 6, 2)
 
         // Bodenreichtum je Feld -> Ausbeute-Faktor des Bohrers
         val ORE_MULT = doubleArrayOf(0.0, 0.6, 1.0, 1.7)
@@ -180,6 +185,7 @@ class Simulation {
     fun newGame() {
         for (r in 0 until n) for (c in 0 until n) grid[r][c] = null
         surveyed.fill(false)
+        harvested.fill(false)
         globalBarren = START_BARREN
         globalPlatten = 0.0
         globalKomponente = 0.0
@@ -240,6 +246,36 @@ class Simulation {
     fun biome(r: Int, c: Int): Int {
         val v = valueNoise(c / 11.0 + 91.3, r / 11.0 + 47.1)
         return when { v < 0.42 -> 0; v < 0.66 -> 1; v < 0.84 -> 2; else -> 3 }
+    }
+
+    private fun decoHash(r: Int, c: Int): Int {
+        var h = (r * 92837111) xor (c * 689287499) xor 0x9E3779B
+        h = h xor (h ushr 15); h *= -0x7ee3623b; h = h xor (h ushr 13)
+        return h and 0x7fffffff
+    }
+    private fun landAt(r: Int, c: Int) = r in 0 until n && c in 0 until n && isLand(r, c)
+
+    /** Deko-Kategorie: 0 keine, 1 Nadelbaum, 2 Laubbaum, 3 Fels, 4 Busch. */
+    fun decoType(r: Int, c: Int): Int {
+        if (!landAt(r, c) || grid[r][c] != null || harvested[r * n + c]) return 0
+        if (!landAt(r - 1, c) || !landAt(r + 1, c) || !landAt(r, c - 1) || !landAt(r, c + 1)) return 0
+        val h = decoHash(r, c); val pct = h % 100
+        return when (biome(r, c)) {
+            1 -> if (pct < 46) (if ((h ushr 3) and 1 == 0) 1 else 2) else 0   // Wald
+            2 -> if (pct < 15) 3 else if (pct < 27) 4 else 0                  // Fels (halbiert) + Busch
+            3 -> if (pct < 26) 4 else 0                                       // Bluemwiese
+            else -> if (pct < 8) 4 else 0                                     // Ebene
+        }
+    }
+
+    /** Objekt (Baum/Busch/Fels) abbauen -> Geld. Erloes zurueck, 0 wenn nichts da. */
+    fun harvest(r: Int, c: Int): Int {
+        val t = decoType(r, c)
+        if (t == 0) return 0
+        harvested[r * n + c] = true
+        val v = DECO_VALUE[t]
+        money += v.toDouble()
+        return v
     }
 
     /** Bodenreichtum 0..3 (leer/normal/moderat/reich), deterministisch je Feld. */
@@ -749,6 +785,9 @@ class Simulation {
         val surv = JSONArray()
         for (i in surveyed.indices) if (surveyed[i]) surv.put(i)
         root.put("surv", surv)
+        val harv = JSONArray()
+        for (i in harvested.indices) if (harvested[i]) harv.put(i)
+        root.put("harv", harv)
         root.put("world", 2)   // Weltformat: grosse Karte mit Terrain
         return root.toString()
     }
@@ -796,6 +835,12 @@ class Simulation {
         } else {
             // Alter Spielstand ohne Terrain/Fog: alles als aufgedeckt behandeln.
             surveyed.fill(true)
+        }
+        harvested.fill(false)
+        val harv = root.optJSONArray("harv")
+        if (harv != null) for (i in 0 until harv.length()) {
+            val idx = harv.optInt(i, -1)
+            if (idx in harvested.indices) harvested[idx] = true
         }
 
         // Sicherstellen, dass genau ein Reaktor existiert.
