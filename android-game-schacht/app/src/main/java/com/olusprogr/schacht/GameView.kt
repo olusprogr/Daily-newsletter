@@ -140,6 +140,7 @@ class GameView(context: Context) : View(context) {
     private lateinit var decoLeafs: Array<Bitmap>
     private lateinit var decoRock: Bitmap
     private lateinit var decoBush: Bitmap
+    private lateinit var machBmp: Array<Bitmap>   // 64x64 Maschinen-Sprites
     private val decoDst = RectF()
     private val pText = Paint(Paint.ANTI_ALIAS_FLAG).apply { color = cText; textAlign = Paint.Align.LEFT }
     private val pTextC = Paint(Paint.ANTI_ALIAS_FLAG).apply { color = cText; textAlign = Paint.Align.CENTER }
@@ -275,6 +276,21 @@ class GameView(context: Context) : View(context) {
         decoLeafs = arrayOf(ld(R.drawable.deco_leaf1), ld(R.drawable.deco_leaf2))
         decoRock = ld(R.drawable.deco_rock)
         decoBush = ld(R.drawable.deco_bush)
+        machBmp = Array(MType.values().size) { i ->
+            ld(when (MType.values()[i]) {
+                MType.BOHRER -> R.drawable.mach_bohrer
+                MType.OFEN -> R.drawable.mach_ofen
+                MType.PRESSE -> R.drawable.mach_presse
+                MType.ASSEMBLER -> R.drawable.mach_assembler
+                MType.GENERATOR -> R.drawable.mach_generator
+                MType.LAGER -> R.drawable.mach_lager
+                MType.DROHNE -> R.drawable.mach_drohne
+                MType.VERSTAERKER -> R.drawable.mach_verstaerker
+                MType.REAKTOR -> R.drawable.mach_reaktor
+                MType.HAENDLER -> R.drawable.mach_haendler
+                MType.PROSPEKTOR -> R.drawable.mach_prospektor
+            })
+        }
         I18n.lang = try { Lang.values()[prefs.getInt("lang", Lang.EN.ordinal)] } catch (_: Exception) { Lang.EN }
         audio.setMusicVol(prefs.getInt("musicVol", 50) / 100f)
         audio.setSfxVol(prefs.getInt("sfxVol", 33) / 100f)
@@ -627,27 +643,37 @@ class GameView(context: Context) : View(context) {
     }
 
     private fun drawMachine(canvas: Canvas, m: Machine, x: Float, y: Float) {
-        val s = cell / 32f
         val hasWear = m.type != MType.REAKTOR && m.type != MType.LAGER &&
             m.type != MType.HAENDLER && m.type != MType.PROSPEKTOR
         val pad = cell * 0.08f
 
-        // Basis-Sprite
-        drawSprite(canvas, Sprites.forType(m.type), x, y, s)
+        // Basis-Sprite (64x64 Bild-Kachel)
+        dstTile.set(x, y, x + cell, y + cell)
+        canvas.drawBitmap(machBmp[m.type.ordinal], null, dstTile, pTile)
 
-        // Arbeits-Animation: laeuft nur wenn die Maschine wirklich arbeitet
+        // Arbeits-Status: blinkende LED oben rechts, wenn die Maschine laeuft
         val working = m.util > 0.02 ||
             m.type == MType.REAKTOR ||
             (m.type == MType.LAGER && (m.output[0] + m.output[1] + m.output[2] + m.output[3]) > 0.5)
         if (working) {
-            val frame = ((animT * 6f).toInt()) % 4
-            drawSprite(canvas, Sprites.anim(m.type, frame), x, y, s)
+            val blink = (0.45f + 0.55f * (0.5f + 0.5f * kotlin.math.sin(animT * 6f)))
+            val ledA = (200 * blink).toInt().coerceIn(0, 255)
+            val ld = cell * 0.06f
+            pSprite.color = Color.argb(ledA, 190, 255, 150)
+            canvas.drawRect(x + cell * 0.74f, y + cell * 0.12f, x + cell * 0.74f + ld, y + cell * 0.12f + ld, pSprite)
         }
 
-        // Verschleiss-Overlays (Rost < 50%, Funken/Rauch < 20%)
+        // Verschleiss: braun-roter Schleier bei niedrigem Zustand
         if (hasWear) {
-            if (m.condition < 50) drawSprite(canvas, Sprites.RUST, x, y, s)
-            if (m.condition < 20) drawSprite(canvas, Sprites.SPARK, x, y, s)
+            if (m.condition < 50) {
+                pSprite.color = Color.argb(70, 96, 54, 30)
+                canvas.drawRect(x + pad, y + pad, x + cell - pad, y + cell - pad, pSprite)
+            }
+            if (m.condition < 20) {
+                val fl = (0.5f + 0.5f * kotlin.math.sin(animT * 9f))
+                pSprite.color = Color.argb((90 * fl).toInt().coerceIn(0, 255), 220, 40, 20)
+                canvas.drawRect(x + pad, y + pad, x + cell - pad, y + cell - pad, pSprite)
+            }
         }
 
 

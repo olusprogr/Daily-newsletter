@@ -11,8 +11,8 @@ android {
         applicationId = "com.olusprogr.schacht"
         minSdk = 24
         targetSdk = 34
-        versionCode = 22
-        versionName = "0.17-harvest"
+        versionCode = 23
+        versionName = "0.18-machines"
     }
 
     signingConfigs {
