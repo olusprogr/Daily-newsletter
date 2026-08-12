@@ -728,6 +728,22 @@ class GameView(context: Context) : View(context) {
             canvas.drawRect(x + cell * 0.74f, y + cell * 0.12f, x + cell * 0.74f + ld, y + cell * 0.12f + ld, pSprite)
         }
 
+        // Bohrer bohrt: nach unten wandernde Glanzbaender (Schnecke dreht sich) + Staub
+        if (working && m.type == MType.BOHRER) {
+            val cx = x + cell * 0.5f
+            for (k in 0 until 2) {
+                val phase = (animT * 2.5f + k * 0.5f) % 1f
+                val yy = y + cell * (0.48f + 0.44f * phase)
+                val hw = cell * (0.12f - 0.09f * phase)
+                pSprite.color = Color.argb(210, 240, 246, 255)
+                canvas.drawRect(cx - hw, yy, cx + hw, yy + cell * 0.03f, pSprite)
+            }
+            val dustA = (0.5f + 0.5f * kotlin.math.sin(animT * 7f))
+            pSprite.color = Color.argb((120 * dustA).toInt().coerceIn(0, 255), 150, 120, 90)
+            canvas.drawRect(x + cell * 0.30f, y + cell * 0.90f, x + cell * 0.40f, y + cell * 0.95f, pSprite)
+            canvas.drawRect(x + cell * 0.60f, y + cell * 0.88f, x + cell * 0.70f, y + cell * 0.93f, pSprite)
+        }
+
         // Verschleiss: braun-roter Schleier bei niedrigem Zustand
         if (hasWear) {
             if (m.condition < 50) {
