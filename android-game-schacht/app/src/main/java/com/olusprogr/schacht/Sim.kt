@@ -236,6 +236,12 @@ class Simulation {
         return landValue(r, c) > LAND_THRESH
     }
 
+    /** Biom 0..3 (Ebene, Wald, Fels, Bluemwiese) – grossflaechig aus Rauschen. */
+    fun biome(r: Int, c: Int): Int {
+        val v = valueNoise(c / 11.0 + 91.3, r / 11.0 + 47.1)
+        return when { v < 0.42 -> 0; v < 0.66 -> 1; v < 0.84 -> 2; else -> 3 }
+    }
+
     /** Bodenreichtum 0..3 (leer/normal/moderat/reich), deterministisch je Feld. */
     fun richness(r: Int, c: Int): Int {
         var h = mapSeed xor (r.toLong() * 341873128712L) xor (c.toLong() * 132897987541L)

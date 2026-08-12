@@ -136,6 +136,11 @@ class GameView(context: Context) : View(context) {
     private lateinit var bmpWater1: Bitmap
     private lateinit var grassUnknown: Bitmap
     private lateinit var grassTiles: Array<Bitmap>
+    private lateinit var decoTree: Bitmap
+    private lateinit var decoTree2: Bitmap
+    private lateinit var decoRock: Bitmap
+    private lateinit var decoBush: Bitmap
+    private val decoDst = RectF()
     private val pText = Paint(Paint.ANTI_ALIAS_FLAG).apply { color = cText; textAlign = Paint.Align.LEFT }
     private val pTextC = Paint(Paint.ANTI_ALIAS_FLAG).apply { color = cText; textAlign = Paint.Align.CENTER }
 
@@ -144,16 +149,18 @@ class GameView(context: Context) : View(context) {
     private var dens = context.resources.displayMetrics.density
     private fun dp(v: Float) = v * dens
 
-    // Layout: gridLeft/gridTop/gridSide = fester Anzeigebereich (Viewport).
+    // Layout: gridLeft/gridTop + gridW/gridH = rechteckiges Karten-Fenster.
     private var gridLeft = 0f
     private var gridTop = 0f
     private var cell = 0f          // effektive (gezoomte) Zellgroesse
-    private var gridSide = 0f
+    private var gridW = 0f
+    private var gridH = 0f
     private var headerH = 0f
     private var paletteTop = 0f
+    private var paletteH = 0f
 
     // Zoom & Verschiebung der (grossen) Karte
-    private val visibleAt1 = 11f  // ~11 Chunks quer bei Zoom 1
+    private val visibleAt1 = 9f   // ~9 Chunks quer bei Zoom 1
     private val zoomMin = 0.7f
     private val zoomMax = 2.4f
     private var zoom = 1f
@@ -165,7 +172,7 @@ class GameView(context: Context) : View(context) {
     private var lastPanY = 0f
     private var needCenter = true
 
-    private fun baseCell() = gridSide / visibleAt1
+    private fun baseCell() = gridW / visibleAt1
 
     private fun reactorRC(): Pair<Int, Int> {
         for (r in 0 until sim.n) for (c in 0 until sim.n)
@@ -177,19 +184,14 @@ class GameView(context: Context) : View(context) {
         zoom = zoom.coerceIn(zoomMin, zoomMax)
         cell = baseCell() * zoom
         val content = sim.n * cell
-        if (needCenter && gridSide > 0f) {
+        if (needCenter && gridW > 0f) {
             val (rr, cc) = reactorRC()
-            panX = gridSide / 2f - (cc + 0.5f) * cell
-            panY = gridSide / 2f - (rr + 0.5f) * cell
+            panX = gridW / 2f - (cc + 0.5f) * cell
+            panY = gridH / 2f - (rr + 0.5f) * cell
             needCenter = false
         }
-        if (content <= gridSide) {
-            panX = (gridSide - content) / 2f
-            panY = (gridSide - content) / 2f
-        } else {
-            panX = panX.coerceIn(gridSide - content, 0f)
-            panY = panY.coerceIn(gridSide - content, 0f)
-        }
+        panX = if (content <= gridW) (gridW - content) / 2f else panX.coerceIn(gridW - content, 0f)
+        panY = if (content <= gridH) (gridH - content) / 2f else panY.coerceIn(gridH - content, 0f)
         vLeft = gridLeft + panX
         vTop = gridTop + panY
     }
@@ -269,6 +271,10 @@ class GameView(context: Context) : View(context) {
             ld(R.drawable.tile_grass0), ld(R.drawable.tile_grass1),
             ld(R.drawable.tile_grass2), ld(R.drawable.tile_grass3)
         )
+        decoTree = ld(R.drawable.deco_tree)
+        decoTree2 = ld(R.drawable.deco_tree2)
+        decoRock = ld(R.drawable.deco_rock)
+        decoBush = ld(R.drawable.deco_bush)
         I18n.lang = try { Lang.values()[prefs.getInt("lang", Lang.EN.ordinal)] } catch (_: Exception) { Lang.EN }
         audio.setMusicVol(prefs.getInt("musicVol", 50) / 100f)
         audio.setSfxVol(prefs.getInt("sfxVol", 33) / 100f)
@@ -346,14 +352,18 @@ class GameView(context: Context) : View(context) {
         super.onSizeChanged(w, h, ow, oh)
         W = w; H = h
         headerH = dp(78f)
-        val margin = dp(10f)
-        gridSide = (w - 2 * margin)
-        val maxGrid = h - headerH - dp(252f)
-        if (gridSide > maxGrid) gridSide = maxGrid
-        cell = gridSide / sim.areaN()
-        gridLeft = (w - gridSide) / 2f
-        gridTop = headerH + dp(6f)
-        paletteTop = gridTop + gridSide + dp(10f)
+        val margin = dp(8f)
+        // kompakte Palette unten (5 Spalten, 2 Reihen) -> weit unten, eng gepackt
+        val palRows = 2
+        val palBh = dp(44f); val palGap = dp(4f)
+        paletteH = palRows * palBh + (palRows - 1) * palGap + dp(8f)
+        paletteTop = H - paletteH
+        gridLeft = margin
+        gridTop = headerH + dp(4f)
+        gridW = w - 2 * margin
+        gridH = paletteTop - gridTop - dp(4f)        // Karten-Fenster fuellt fast alles
+        cell = gridW / visibleAt1
+        needCenter = true
     }
 
     // ---------------- Rendering ----------------
@@ -434,12 +444,12 @@ class GameView(context: Context) : View(context) {
     private fun drawGrid(canvas: Canvas) {
         val an = sim.areaN()
         canvas.save()
-        canvas.clipRect(gridLeft, gridTop, gridLeft + gridSide, gridTop + gridSide)
+        canvas.clipRect(gridLeft, gridTop, gridLeft + gridW, gridTop + gridH)
         // nur den sichtbaren Ausschnitt zeichnen (grosse Welt)
         val c0 = (((gridLeft - vLeft) / cell).toInt() - 1).coerceIn(0, an - 1)
-        val c1 = (((gridLeft + gridSide - vLeft) / cell).toInt() + 1).coerceIn(0, an - 1)
+        val c1 = (((gridLeft + gridW - vLeft) / cell).toInt() + 1).coerceIn(0, an - 1)
         val r0 = (((gridTop - vTop) / cell).toInt() - 1).coerceIn(0, an - 1)
-        val r1 = (((gridTop + gridSide - vTop) / cell).toInt() + 1).coerceIn(0, an - 1)
+        val r1 = (((gridTop + gridH - vTop) / cell).toInt() + 1).coerceIn(0, an - 1)
         for (r in r0..r1) for (c in c0..c1) {
             val x = vLeft + c * cell
             val y = vTop + r * cell
@@ -514,9 +524,10 @@ class GameView(context: Context) : View(context) {
         }
     }
 
-    // Terrain-Farben (Pixel-Karte: gruenes Land, tuerkises Wasser, braune Kueste)
-    private val cCoast = Color.rgb(150, 96, 52)
+    // Terrain-Farben: heller Surf, Sandstrand, feuchter Sand
     private val cSurf = Color.rgb(206, 244, 244)
+    private val cSand = Color.rgb(232, 214, 156)
+    private val cSandWet = Color.rgb(206, 184, 128)
 
     private fun landSafe(r: Int, c: Int): Boolean =
         r in 0 until sim.n && c in 0 until sim.n && sim.isLand(r, c)
@@ -553,25 +564,59 @@ class GameView(context: Context) : View(context) {
             }
         }
 
-        // --- Kueste: Kanten, die ans Wasser grenzen, bekommen Surf + braunen Rand ---
-        val t = cell * 0.14f
-        // oben
+        // --- Kueste: Sandstrand (Surf -> feuchter Sand -> trockener Sand) ---
+        val t = cell * 0.22f
+        val a = t * 0.22f; val b = t * 0.55f
         if (!landSafe(r - 1, c)) {
-            pSprite.color = cSurf; canvas.drawRect(x, y, x + cell, y + t * 0.4f, pSprite)
-            pSprite.color = cCoast; canvas.drawRect(x, y + t * 0.4f, x + cell, y + t, pSprite)
+            pSprite.color = cSurf; canvas.drawRect(x, y, x + cell, y + a, pSprite)
+            pSprite.color = cSandWet; canvas.drawRect(x, y + a, x + cell, y + b, pSprite)
+            pSprite.color = cSand; canvas.drawRect(x, y + b, x + cell, y + t, pSprite)
         }
         if (!landSafe(r + 1, c)) {
-            pSprite.color = cSurf; canvas.drawRect(x, y + cell - t * 0.4f, x + cell, y + cell, pSprite)
-            pSprite.color = cCoast; canvas.drawRect(x, y + cell - t, x + cell, y + cell - t * 0.4f, pSprite)
+            pSprite.color = cSurf; canvas.drawRect(x, y + cell - a, x + cell, y + cell, pSprite)
+            pSprite.color = cSandWet; canvas.drawRect(x, y + cell - b, x + cell, y + cell - a, pSprite)
+            pSprite.color = cSand; canvas.drawRect(x, y + cell - t, x + cell, y + cell - b, pSprite)
         }
         if (!landSafe(r, c - 1)) {
-            pSprite.color = cSurf; canvas.drawRect(x, y, x + t * 0.4f, y + cell, pSprite)
-            pSprite.color = cCoast; canvas.drawRect(x + t * 0.4f, y, x + t, y + cell, pSprite)
+            pSprite.color = cSurf; canvas.drawRect(x, y, x + a, y + cell, pSprite)
+            pSprite.color = cSandWet; canvas.drawRect(x + a, y, x + b, y + cell, pSprite)
+            pSprite.color = cSand; canvas.drawRect(x + b, y, x + t, y + cell, pSprite)
         }
         if (!landSafe(r, c + 1)) {
-            pSprite.color = cSurf; canvas.drawRect(x + cell - t * 0.4f, y, x + cell, y + cell, pSprite)
-            pSprite.color = cCoast; canvas.drawRect(x + cell - t, y, x + cell - t * 0.4f, y + cell, pSprite)
+            pSprite.color = cSurf; canvas.drawRect(x + cell - a, y, x + cell, y + cell, pSprite)
+            pSprite.color = cSandWet; canvas.drawRect(x + cell - b, y, x + cell - a, y + cell, pSprite)
+            pSprite.color = cSand; canvas.drawRect(x + cell - t, y, x + cell - b, y + cell, pSprite)
         }
+
+        drawDeco(canvas, r, c, x, y)
+    }
+
+    private fun decoHash(r: Int, c: Int): Int {
+        var h = (r * 92837111) xor (c * 689287499) xor 0x9E3779B
+        h = h xor (h ushr 15); h *= -0x7ee3623b; h = h xor (h ushr 13)
+        return h and 0x7fffffff
+    }
+
+    /** Deko (Baeume/Felsen/Buesche) je Biom – nur auf freiem Inland, nicht am Strand. */
+    private fun drawDeco(canvas: Canvas, r: Int, c: Int, x: Float, y: Float) {
+        if (sim.grid[r][c] != null) return
+        if (!landSafe(r - 1, c) || !landSafe(r + 1, c) || !landSafe(r, c - 1) || !landSafe(r, c + 1)) return
+        val h = decoHash(r, c)
+        val pct = h % 100
+        val bmp: Bitmap = when (sim.biome(r, c)) {
+            1 -> if (pct < 46) (if (h and 1 == 0) decoTree else decoTree2) else return
+            2 -> if (pct < 30) decoRock else if (pct < 42) decoBush else return
+            3 -> if (pct < 26) decoBush else return
+            else -> if (pct < 8) decoBush else return
+        }
+        val maxDim = kotlin.math.max(bmp.width, bmp.height).toFloat()
+        val scale = cell * 0.78f / maxDim
+        val dw = bmp.width * scale; val dh = bmp.height * scale
+        val jitter = ((h ushr 8) % 5 - 2) * (cell * 0.04f)
+        val dx = x + (cell - dw) / 2f + jitter
+        val dy = y + cell - dh - cell * 0.05f
+        decoDst.set(dx, dy, dx + dw, dy + dh)
+        canvas.drawBitmap(bmp, null, decoDst, pTile)
     }
 
     private fun drawSprite(canvas: Canvas, list: List<Px>, x: Float, y: Float, s: Float) {
@@ -628,16 +673,16 @@ class GameView(context: Context) : View(context) {
     }
 
     private fun drawPalette(canvas: Canvas) {
-        val cols = 3
-        val margin = dp(10f)
-        val gap = dp(6f)
+        val cols = 5
+        val margin = dp(8f)
+        val gap = dp(4f)
         val bw = (W - 2 * margin - (cols - 1) * gap) / cols
-        val bh = dp(52f)
+        val bh = dp(44f)
         for ((i, t) in buildOrder.withIndex()) {
             val col = i % cols
             val row = i / cols
             val x = margin + col * (bw + gap)
-            val yy = paletteTop + row * (bh + gap)
+            val yy = paletteTop + dp(6f) + row * (bh + gap)
             val rect = RectF(x, yy, x + bw, yy + bh)
             val used = sim.typeCount[t.ordinal]
             val max = sim.maxCount(t)
@@ -650,7 +695,7 @@ class GameView(context: Context) : View(context) {
             when {
                 !sim.canBuild(t) -> { sub = tr("tech_needed"); subCol = cDim }
                 full -> { sub = "$used/$max ${tr("full")}"; subCol = cBad }
-                else -> { sub = "${camt.toInt()} ${resAbbr(cres)}  ·  $used/$max"; subCol = if (afford) cDim else cBad }
+                else -> { sub = "${camt.toInt()}${resAbbr(cres)} $used/$max"; subCol = if (afford) cDim else cBad }
             }
             val active = buildTool == t
             val mc = mColor(t)
@@ -670,9 +715,12 @@ class GameView(context: Context) : View(context) {
 
     private fun drawDetail(canvas: Canvas) {
         val m = sim.grid[selR][selC] ?: return
-        val top = paletteTop
+        // eigenes, hoeheres Overlay unten (unabhaengig von der kompakten Palette)
+        val top = H - dp(214f)
         p.color = cPanel
         canvas.drawRect(0f, top, W.toFloat(), H.toFloat(), p)
+        p.color = cPanelHi
+        canvas.drawRect(0f, top, W.toFloat(), top + dp(2f), p)
 
         pText.color = cAccent; pText.textSize = dp(18f)
         canvas.drawText("${mName(m.type)}  (${selR + 1},${selC + 1})", dp(12f), top + dp(24f), pText)
@@ -1093,8 +1141,8 @@ class GameView(context: Context) : View(context) {
             MotionEvent.ACTION_DOWN -> {
                 downX = event.x; downY = event.y; downScroll = techScroll
                 lastPanX = panX; lastPanY = panY; moved = false
-                downInGrid = downX >= gridLeft && downX <= gridLeft + gridSide &&
-                    downY >= gridTop && downY <= gridTop + gridSide
+                downInGrid = downX >= gridLeft && downX <= gridLeft + gridW &&
+                    downY >= gridTop && downY <= gridTop + gridH
                 return true
             }
             MotionEvent.ACTION_MOVE -> {
@@ -1124,7 +1172,7 @@ class GameView(context: Context) : View(context) {
         if (screen == Screen.MENU) { if (menuArmedDelete != null) { menuArmedDelete = null; invalidate() }; return }
         if (screen != Screen.GAME) return
         val an = sim.areaN()
-        if (x >= gridLeft && x < gridLeft + gridSide && y >= gridTop && y < gridTop + gridSide) {
+        if (x >= gridLeft && x < gridLeft + gridW && y >= gridTop && y < gridTop + gridH) {
             val c = ((x - vLeft) / cell).toInt().coerceIn(0, an - 1)
             val r = ((y - vTop) / cell).toInt().coerceIn(0, an - 1)
             handleCell(r, c)
