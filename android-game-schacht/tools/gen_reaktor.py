@@ -90,14 +90,22 @@ for y in range(int(dbase-domeR),dbase):
 # Spitze + rotes Warnlicht
 rect(dcx-1,int(dbase-domeR)-6,2,6,C(120,126,140))
 disc(dcx,int(dbase-domeR)-7,2,RED); im.putpixel((int(dcx),int(dbase-domeR)-8),REDL)
-# Kern-Fenster (kleiner) mit Glut
-wx,wy,ww,wh=bx+10,body_top+18,bw-20,26
-rect(wx-2,wy-2,ww+4,wh+4,OC); rect(wx,wy,ww,wh,C(24,46,56))
-gcx,gcy=wx+ww//2,wy+wh//2
-disc(gcx,gcy,11,C(46,150,170)); disc(gcx,gcy,8,G_CY); disc(gcx,gcy,5,G_YE); disc(gcx,gcy,2,G_CYL)
-ring(gcx,gcy,11,G_CYL)
-for a in range(0,360,60):
-    x=gcx+int(8*math.cos(math.radians(a))); y=gcy+int(8*math.sin(math.radians(a))); im.putpixel((x,y),G_CYL)
+# Strahlen-Warnsymbol (Trefoil) statt Glut
+tx=bx+bw//2; ty=body_top+20; tr=13
+for y in range(ty-tr,ty+tr+1):
+    for x in range(tx-tr,tx+tr+1):
+        dx=x-tx; dy=y-ty; rr=(dx*dx+dy*dy)**0.5
+        if rr<=tr:
+            ang=(math.degrees(math.atan2(dy,dx))+90)%120
+            blade = (rr>4 and rr<tr*0.9 and ang<52)
+            im.putpixel((x,y), OC if (blade or rr<=3.2) else YEL)
+for a in range(0,360,4):
+    x=int(tx+tr*math.cos(math.radians(a))); y=int(ty+tr*math.sin(math.radians(a)))
+    if 0<=x<S and 0<=y<S: im.putpixel((x,y),OC)
+# Betonband + Lueftungsschlitze
+rect(bx+3,body_top+38,bw-6,2,CND)
+for vx in range(bx+6,bx+bw-8,8):
+    rect(vx,body_top+42,5,7,C(58,64,78)); rect(vx,body_top+42,5,2,C(96,102,116))
 # Tuer + Hazard
 rect(bx+bw//2-6,body_bot-16,12,16,OC); rect(bx+bw//2-5,body_bot-15,10,15,C(60,64,74))
 for i in range(0,bw-4,8): rect(bx+2+i,body_bot-4,4,3,YEL); rect(bx+2+i+4,body_bot-4,4,3,OC)
