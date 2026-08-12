@@ -684,10 +684,10 @@ class GameView(context: Context) : View(context) {
             val a = pipe[i]; val b = pipe[i + 1]
             val ax = vLeft + (a[1] + 0.5f) * cell; val ay = vTop + (a[0] + 0.5f) * cell
             val bx = vLeft + (b[1] + 0.5f) * cell; val by = vTop + (b[0] + 0.5f) * cell
-            p.color = cGridLine; p.strokeWidth = cell * 0.32f; canvas.drawLine(ax, ay, bx, by, p)
-            p.color = Color.rgb(120, 126, 140); p.strokeWidth = cell * 0.20f; canvas.drawLine(ax, ay, bx, by, p)
-            p.color = Color.rgb(176, 182, 194); p.strokeWidth = cell * 0.06f
-            canvas.drawLine(ax, ay - cell * 0.05f, bx, by - cell * 0.05f, p)
+            p.color = cGridLine; p.strokeWidth = cell * 0.18f; canvas.drawLine(ax, ay, bx, by, p)
+            p.color = Color.rgb(120, 126, 140); p.strokeWidth = cell * 0.10f; canvas.drawLine(ax, ay, bx, by, p)
+            p.color = Color.rgb(176, 182, 194); p.strokeWidth = cell * 0.035f
+            canvas.drawLine(ax, ay - cell * 0.03f, bx, by - cell * 0.03f, p)
         }
         // animierter Wasserfluss vom Wasser zum Reaktor
         p.style = Paint.Style.FILL
@@ -701,7 +701,7 @@ class GameView(context: Context) : View(context) {
             val cx = vLeft + ((a[1] + (b[1] - a[1]) * f) + 0.5f) * cell
             val cy = vTop + ((a[0] + (b[0] - a[0]) * f) + 0.5f) * cell
             p.color = Color.rgb(96, 206, 228)
-            canvas.drawCircle(cx, cy, cell * 0.05f, p)
+            canvas.drawCircle(cx, cy, cell * 0.035f, p)
         }
         p.strokeCap = Paint.Cap.BUTT
     }

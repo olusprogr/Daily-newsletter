@@ -44,8 +44,8 @@ for gx in range(4,192,18): rect(gx,158,1,34,C(44,46,54))
 for gx in range(10,184,24):
     rect(gx,182,6,3,YEL); rect(gx+6,182,6,3,OC)         # Hazard-Borduere
 # Gelaender
-for gx in range(6,60,10): rect(gx,150,2,9,C(150,156,168))
-rect(6,150,52,2,C(170,176,190))
+for gx in range(4,30,10): rect(gx,150,2,9,C(150,156,168))
+rect(4,150,24,2,C(170,176,190))
 
 # ============ Kuehlturm (breiter, Hyperboloid) ============
 tcx=142; top=30; bot=168; rMax=42.0; rWaist=25.0
@@ -73,7 +73,7 @@ for i in range(-int(rb),int(rb),14):
 rect(tcx-rb,bot-2,2*rb,4,C(48,50,58))     # Fussring
 
 # ============ Reaktor-Containment (kleiner) ============
-bx=54; body_top=92; body_bot=158; bw=48
+bx=32; body_top=92; body_bot=158; bw=48
 # Zylinder-Koerper
 rect(bx-1,body_top-1,bw+2,body_bot-body_top+2,OC)
 for y in range(body_top,body_bot):
@@ -92,10 +92,10 @@ rect(dcx-1,int(dbase-domeR)-6,2,6,C(120,126,140))
 disc(dcx,int(dbase-domeR)-7,2,RED); im.putpixel((int(dcx),int(dbase-domeR)-8),REDL)
 # Kern-Fenster (kleiner) mit Glut
 wx,wy,ww,wh=bx+10,body_top+18,bw-20,26
-rect(wx-2,wy-2,ww+4,wh+4,OC); rect(wx,wy,ww,wh,C(26,28,36))
+rect(wx-2,wy-2,ww+4,wh+4,OC); rect(wx,wy,ww,wh,C(24,46,56))
 gcx,gcy=wx+ww//2,wy+wh//2
-disc(gcx,gcy,10,G_PU); disc(gcx,gcy,7,G_CY); disc(gcx,gcy,4,G_YE); disc(gcx,gcy,2,G_CYL)
-ring(gcx,gcy,9,G_PUD)
+disc(gcx,gcy,11,C(46,150,170)); disc(gcx,gcy,8,G_CY); disc(gcx,gcy,5,G_YE); disc(gcx,gcy,2,G_CYL)
+ring(gcx,gcy,11,G_CYL)
 for a in range(0,360,60):
     x=gcx+int(8*math.cos(math.radians(a))); y=gcy+int(8*math.sin(math.radians(a))); im.putpixel((x,y),G_CYL)
 # Tuer + Hazard
