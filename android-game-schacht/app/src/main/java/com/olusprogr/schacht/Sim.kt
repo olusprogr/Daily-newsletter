@@ -117,10 +117,11 @@ class Simulation {
         const val HAENDLER_SELL = 2.0
         const val OFFLINE_CAP = 8 * 3600
         const val START_BARREN = 35.0
+        const val START_MONEY = 30.0     // Startgeld, um erste Chunks/Hindernisse zu bezahlen
 
         const val LAND_THRESH = 0.46     // Schwelle Land/Wasser aus dem Rauschen
-        const val SCAN_R = 4             // Prospektor deckt Radius (Chebyshev) auf
-        const val PROSPEKTOR_COST = 6.0
+        const val SCAN_R = 4             // (Alt) Prospektor-Radius – Prospektor entfernt
+        const val CHUNK_COST = 5.0       // Geld, um einen Chunk freizuschalten (1 Klick)
         const val WIND_POWER = 16.0      // Strom je Windrad (ohne Brennstoff)
 
         const val HOSE_MAX = 5           // max. Schlauchlaenge Reaktor -> Wasser
@@ -132,8 +133,8 @@ class Simulation {
             else -> Pair(1, 1)
         }
 
-        // Erloes beim Abbauen: keine, Nadelbaum, Laubbaum, Fels, Busch
-        val DECO_VALUE = intArrayOf(0, 4, 4, 6, 2)
+        // Kosten fuers ENTFERNEN eines Hindernisses (Geld): keine, Nadelbaum, Laubbaum, Fels, Busch
+        val OBSTACLE_COST = intArrayOf(0, 8, 8, 14, 4)
 
         // Bodenreichtum je Feld -> Ausbeute-Faktor des Bohrers
         val ORE_MULT = doubleArrayOf(0.0, 0.6, 1.0, 1.7)
@@ -146,7 +147,6 @@ class Simulation {
             TechNode("t_drohne", "Wartungsdrohne freischalten", 40.0, 1.0, 1, "", "t_gen", Res.BARREN),
             TechNode("t_assembler", "Assembler freischalten", 25.0, 1.0, 1, "Platte -> Komponente", "t_presse", Res.PLATTE),
             TechNode("t_haendler", "Haendler freischalten", 20.0, 1.0, 1, "Komponenten -> Geld", "t_assembler", Res.PLATTE),
-            TechNode("t_boost", "Verstaerker freischalten", 20.0, 1.0, 1, "beschleunigt Nachbarn", "t_gen", Res.PLATTE),
             TechNode("t_wind", "Windrad freischalten", 28.0, 1.0, 1, "Strom aus Wind", "t_gen", Res.BARREN),
             // Upgrades (mit Geld bezahlt)
             TechNode("t_bspeed", "Bohrer-Tempo", 25.0, 1.3, 20, "+8%/Stufe", null, null),
@@ -154,7 +154,6 @@ class Simulation {
             TechNode("t_pspeed", "Presse-Tempo", 45.0, 1.3, 20, "+8%/Stufe", "t_presse", null),
             TechNode("t_aspeed", "Assembler-Tempo", 55.0, 1.3, 20, "+8%/Stufe", "t_assembler", null),
             TechNode("t_wert", "Komponenten-Preis", 60.0, 1.4, 10, "+25%/Stufe", "t_assembler", null),
-            TechNode("t_scan", "Prospektor-Reichweite", 40.0, 1.5, 4, "+1 Chunk Radius", null, null),
             TechNode("t_takt", "Fabrik-Takt (alle Maschinen)", 50.0, 1.35, 20, "+5%/Stufe", null, null),
             TechNode("t_robust", "Robustheit (weniger Verschleiss)", 40.0, 1.3, 10, "-5%/Stufe", null, null),
             TechNode("t_lift", "Lift-Tempo", 35.0, 1.3, 10, "+10%/Stufe", null, null),
@@ -167,7 +166,6 @@ class Simulation {
             MType.LAGER to "t_lager",
             MType.DROHNE to "t_drohne",
             MType.ASSEMBLER to "t_assembler",
-            MType.VERSTAERKER to "t_boost",
             MType.HAENDLER to "t_haendler",
             MType.WINDRAD to "t_wind"
         )
@@ -181,9 +179,7 @@ class Simulation {
             MType.GENERATOR to 16,
             MType.LAGER to 16,
             MType.DROHNE to 8,
-            MType.VERSTAERKER to 12,
             MType.HAENDLER to 8,
-            MType.PROSPEKTOR to 16,
             MType.WINDRAD to 8
         )
 
@@ -194,12 +190,10 @@ class Simulation {
             MType.PRESSE to Pair(Res.BARREN, 12.0),
             MType.GENERATOR to Pair(Res.BARREN, 10.0),
             MType.LAGER to Pair(Res.BARREN, 8.0),
-            MType.PROSPEKTOR to Pair(Res.BARREN, PROSPEKTOR_COST),
             MType.WINDRAD to Pair(Res.BARREN, 14.0),
             MType.ASSEMBLER to Pair(Res.PLATTE, 10.0),
             MType.HAENDLER to Pair(Res.PLATTE, 12.0),
-            MType.DROHNE to Pair(Res.PLATTE, 8.0),
-            MType.VERSTAERKER to Pair(Res.PLATTE, 6.0)
+            MType.DROHNE to Pair(Res.PLATTE, 8.0)
         )
     }
 
@@ -210,7 +204,7 @@ class Simulation {
         globalBarren = START_BARREN
         globalPlatten = 0.0
         globalKomponente = 0.0
-        money = 0.0
+        money = START_MONEY
         mapSeed = System.nanoTime() xor 0x5DEECE66DL
         tech.clear()
         placeReactor()
@@ -363,14 +357,34 @@ class Simulation {
         }
     }
 
-    /** Objekt (Baum/Busch/Fels) abbauen -> Geld. Erloes zurueck, 0 wenn nichts da. */
-    fun harvest(r: Int, c: Int): Int {
+    /** Steht auf dem Feld ein Hindernis (Baum/Busch/Fels), das erst weg muss? */
+    fun hasObstacle(r: Int, c: Int): Boolean = decoType(r, c) != 0
+
+    /** Kosten (Geld), um das Hindernis auf dem Feld zu entfernen (0 = keins). */
+    fun obstacleCost(r: Int, c: Int): Int = OBSTACLE_COST[decoType(r, c)]
+
+    /** Hindernis entfernen -> kostet Geld. true bei Erfolg. */
+    fun clearObstacle(r: Int, c: Int): Boolean {
         val t = decoType(r, c)
-        if (t == 0) return 0
+        if (t == 0) return false
+        if (!spendMoney(OBSTACLE_COST[t].toDouble())) return false
         harvested[r * n + c] = true
-        val v = DECO_VALUE[t]
-        money += v.toDouble()
-        return v
+        return true
+    }
+
+    /** Kosten, um einen Chunk freizuschalten. */
+    fun chunkCost(): Double = CHUNK_COST
+
+    /** Ist dieses Land-Feld noch gesperrt (nicht freigeschaltet)? */
+    fun isLocked(r: Int, c: Int): Boolean =
+        r in 0 until n && c in 0 until n && isLand(r, c) && !isSurveyed(r, c)
+
+    /** Einen gesperrten Chunk per Klick + Geld freischalten. true bei Erfolg. */
+    fun freeChunk(r: Int, c: Int): Boolean {
+        if (!isLocked(r, c)) return false
+        if (!spendMoney(CHUNK_COST)) return false
+        markSurveyed(r, c)
+        return true
     }
 
     /** Bodenreichtum 0..3 (leer/normal/moderat/reich), deterministisch je Feld. */
@@ -443,8 +457,8 @@ class Simulation {
     }
 
     fun canBuild(t: MType): Boolean = when (t) {
-        MType.BOHRER, MType.OFEN, MType.PROSPEKTOR -> true
-        MType.REAKTOR -> false
+        MType.BOHRER, MType.OFEN -> true
+        MType.REAKTOR, MType.VERSTAERKER, MType.PROSPEKTOR -> false
         else -> {
             val u = UNLOCK[t]
             u != null && has(u)
@@ -482,6 +496,8 @@ class Simulation {
             if (rr !in 0 until areaN() || cc !in 0 until areaN()) return false
             if (!cellFree(rr, cc)) return false
             if (!isLand(rr, cc)) return false           // Bauen nur auf Land
+            if (!isSurveyed(rr, cc)) return false        // Chunk muss freigeschaltet sein
+            if (decoType(rr, cc) != 0) return false      // Hindernis muss erst weg
         }
         val (res, amt) = buildCost(t)
         if (!spend(res, amt)) return false
@@ -946,6 +962,11 @@ class Simulation {
             if (oa != null) for (k in 0 until min(rc, oa.length())) m.output[k] = oa.optDouble(k, 0.0)
             val (fw, fh) = footprint(m.type); m.w = fw; m.h = fh
             grid[r][c] = m
+        }
+        // Entfernte Maschinentypen (Verstaerker/Prospektor) aus Alt-Spielstaenden tilgen.
+        for (r in 0 until n) for (c in 0 until n) {
+            val ty = grid[r][c]?.type
+            if (ty == MType.VERSTAERKER || ty == MType.PROSPEKTOR) grid[r][c] = null
         }
         val reactorNew = root.optInt("world", 2) >= 3 && root.has("pipe")
         if (!reactorNew) {

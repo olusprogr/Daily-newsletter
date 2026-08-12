@@ -227,8 +227,8 @@ class GameView(context: Context) : View(context) {
     private val cGroundRust = Color.rgb(61, 37, 30)
 
     private val buildOrder = listOf(
-        MType.BOHRER, MType.OFEN, MType.PROSPEKTOR, MType.PRESSE, MType.ASSEMBLER,
-        MType.HAENDLER, MType.GENERATOR, MType.WINDRAD, MType.LAGER, MType.DROHNE, MType.VERSTAERKER
+        MType.BOHRER, MType.OFEN, MType.PRESSE, MType.ASSEMBLER,
+        MType.HAENDLER, MType.GENERATOR, MType.WINDRAD, MType.LAGER, MType.DROHNE
     )
 
     private fun resAbbr(res: Res) = when (res) {
@@ -1084,6 +1084,8 @@ class GameView(context: Context) : View(context) {
         canvas.drawText(tr("hint_floor"), dp(16f), yy, pText)
         yy += dp(16f)
         canvas.drawText(tr("hint_trade"), dp(16f), yy, pText)
+        yy += dp(16f)
+        canvas.drawText(tr("hint_unlock"), dp(16f), yy, pText)
 
         val margin = dp(12f)
         // Sprachauswahl DE / EN / PL
@@ -1387,17 +1389,27 @@ class GameView(context: Context) : View(context) {
         val a = sim.anchorOf(r, c)
         if (a != null) {
             selR = a[0]; selC = a[1]; audio.click()   // auch belegte Zelle eines Gebaeudes waehlt den Anker
-        } else {
-            val t = buildTool
-            if (t != null) {
-                if (sim.build(t, r, c)) { selR = -1; selC = -1; audio.place() } else audio.error()
-            } else {
-                // freies Feld ohne Werkzeug: Deko (Baum/Busch/Fels) fuer Geld abbauen
-                val earned = sim.harvest(r, c)
-                if (earned > 0) { rises.add(Rise(r, c, "+$earned", animT)); audio.sell() }
-                else { selR = -1; selC = -1 }
-            }
+            invalidate(); return
         }
+        // 1) Gesperrter Chunk? -> mit Geld freischalten
+        if (sim.isLocked(r, c)) {
+            val cost = sim.chunkCost().toInt()
+            if (sim.freeChunk(r, c)) { rises.add(Rise(r, c, "-$cost", animT)); audio.buy() }
+            else audio.error()
+            invalidate(); return
+        }
+        // 2) Hindernis (Baum/Busch/Fels)? -> mit Geld entfernen, dann baubar
+        if (sim.hasObstacle(r, c)) {
+            val cost = sim.obstacleCost(r, c)
+            if (sim.clearObstacle(r, c)) { rises.add(Rise(r, c, "-$cost", animT)); audio.sell() }
+            else audio.error()
+            invalidate(); return
+        }
+        // 3) Freies, geraeumtes Feld: bauen (falls Werkzeug) sonst Auswahl loeschen
+        val t = buildTool
+        if (t != null) {
+            if (sim.build(t, r, c)) { selR = -1; selC = -1; audio.place() } else audio.error()
+        } else { selR = -1; selC = -1 }
         invalidate()
     }
 
