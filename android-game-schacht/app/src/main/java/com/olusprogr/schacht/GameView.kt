@@ -558,9 +558,9 @@ class GameView(context: Context) : View(context) {
     }
 
     // Terrain-Farben: heller Surf, Sandstrand, feuchter Sand
-    private val cSurf = Color.rgb(206, 244, 244)
-    private val cSand = Color.rgb(232, 214, 156)
-    private val cSandWet = Color.rgb(206, 184, 128)
+    private val cSurf = Color.rgb(202, 240, 246)
+    private val cSand = Color.rgb(236, 220, 164)
+    private val cSandWet = Color.rgb(198, 186, 130)
 
     private fun landSafe(r: Int, c: Int): Boolean =
         r in 0 until sim.n && c in 0 until sim.n && sim.isLand(r, c)
