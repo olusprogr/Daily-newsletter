@@ -69,6 +69,8 @@ class Simulation {
     val grid = Array(n) { arrayOfNulls<Machine>(n) }
     /** Belegung durch mehrzellige Gebaeude: haelt die Anker-Koordinaten [r,c]. */
     val occ = Array(n) { arrayOfNulls<IntArray>(n) }
+    /** Kuehlwasser-Schlauch des Reaktors: geordnete Zellen Reaktor-Kante -> Wasser. */
+    val reactorPipe = ArrayList<IntArray>()
     /** Aufgedeckte Chunks (Prospektor). true = Reichtum bekannt. */
     val surveyed = BooleanArray(n * n)
     /** Abgebaute Deko-Felder (Baum/Busch/Fels entfernt). */
@@ -121,8 +123,14 @@ class Simulation {
         const val PROSPEKTOR_COST = 6.0
         const val WIND_POWER = 16.0      // Strom je Windrad (ohne Brennstoff)
 
-        // Grundflaeche je Typ (Breite, Hoehe in Zellen). Anker = unterste Zelle.
-        fun footprint(t: MType): Pair<Int, Int> = if (t == MType.WINDRAD) Pair(1, 2) else Pair(1, 1)
+        const val HOSE_MAX = 5           // max. Schlauchlaenge Reaktor -> Wasser
+
+        // Grundflaeche je Typ (Breite, Hoehe in Zellen). Anker = untere linke Zelle.
+        fun footprint(t: MType): Pair<Int, Int> = when (t) {
+            MType.WINDRAD -> Pair(1, 2)
+            MType.REAKTOR -> Pair(3, 3)
+            else -> Pair(1, 1)
+        }
 
         // Erloes beim Abbauen: keine, Nadelbaum, Laubbaum, Fels, Busch
         val DECO_VALUE = intArrayOf(0, 4, 4, 6, 2)
@@ -205,11 +213,81 @@ class Simulation {
         money = 0.0
         mapSeed = System.nanoTime() xor 0x5DEECE66DL
         tech.clear()
-        grid[startR][startC] = Machine(MType.REAKTOR)
-        // Startinsel schon aufgedeckt
-        for (dr in -3..3) for (dc in -3..3) {
-            val r = startR + dr; val c = startC + dc
-            if (r in 0 until n && c in 0 until n) surveyed[r * n + c] = true
+        placeReactor()
+    }
+
+    private fun rawWater(r: Int, c: Int) = r in 0 until n && c in 0 until n && !rawLand(r, c)
+
+    /** Von einem 3x3-Block (oben-links R,C) den kuerzesten Schlauch zum Wasser suchen. */
+    private fun walkHose(sr: Int, sc: Int, dr: Int, dc: Int): Triple<List<IntArray>, IntArray, IntArray>? {
+        val path = ArrayList<IntArray>()
+        var r = sr; var c = sc; var steps = 0
+        while (steps <= HOSE_MAX) {
+            if (r !in 0 until n || c !in 0 until n) return null
+            if (rawWater(r, c)) return Triple(path.toList(), intArrayOf(r, c), intArrayOf(sr - dr, sc - dc))
+            if (!rawLand(r, c) || !cellFree(r, c)) return null
+            path.add(intArrayOf(r, c)); r += dr; c += dc; steps++
+        }
+        return null
+    }
+    private fun hoseFor(R: Int, C: Int): Triple<List<IntArray>, IntArray, IntArray>? {
+        var best: Triple<List<IntArray>, IntArray, IntArray>? = null
+        val cand = listOf(
+            walkHose(R + 1, C + 3, 0, 1),   // rechts
+            walkHose(R + 1, C - 1, 0, -1),  // links
+            walkHose(R + 3, C + 1, 1, 0),   // unten
+            walkHose(R - 1, C + 1, -1, 0)   // oben
+        )
+        for (h in cand) if (h != null && (best == null || h.first.size < best!!.first.size)) best = h
+        return best
+    }
+
+    /** Reaktor (3x3) an einer Kueste platzieren, moeglichst zentral, mit Kuehlschlauch. */
+    fun placeReactor() {
+        reactorPipe.clear()
+        var bestR = -1; var bestC = -1
+        var bestHose: Triple<List<IntArray>, IntArray, IntArray>? = null
+        var bestScore = Int.MAX_VALUE
+        for (R in 0..n - 3) for (C in 0..n - 3) {
+            var ok = true
+            var dr = 0
+            while (dr < 3 && ok) { var dc = 0; while (dc < 3) { if (!rawLand(R + dr, C + dc) || !cellFree(R + dr, C + dc)) { ok = false; break }; dc++ }; dr++ }
+            if (!ok) continue
+            val hose = hoseFor(R, C) ?: continue
+            val score = kotlin.math.abs(R + 1 - startR) + kotlin.math.abs(C + 1 - startC) + hose.first.size * 3
+            if (score < bestScore) { bestScore = score; bestR = R; bestC = C; bestHose = hose }
+        }
+        if (bestR < 0) {                       // Notfall: in der Mitte erzwingen
+            placeReactorAt(startR - 2, startC)
+            surveyReactorArea(startR - 2, startC)
+            return
+        }
+        placeReactorAt(bestR, bestC)
+        val ar = bestR + 2; val ac = bestC
+        val (path, water, edge) = bestHose!!
+        reactorPipe.add(edge)                  // Reaktor-Randzelle (nur fuer die Zeichnung)
+        for (cell in path) {
+            occ[cell[0]][cell[1]] = intArrayOf(ar, ac)
+            surveyed[cell[0] * n + cell[1]] = true
+            reactorPipe.add(cell)
+        }
+        reactorPipe.add(water)                 // Wasser-Endpunkt (nicht belegt)
+        surveyReactorArea(bestR, bestC)
+    }
+
+    private fun placeReactorAt(R: Int, C: Int) {
+        val ar = R + 2; val ac = C
+        val m = Machine(MType.REAKTOR); m.w = 3; m.h = 3
+        grid[ar][ac] = m
+        for (dr in 0 until 3) for (dc in 0 until 3) {
+            val rr = R + dr; val cc = C + dc
+            if (rr in 0 until n && cc in 0 until n && (rr != ar || cc != ac)) occ[rr][cc] = intArrayOf(ar, ac)
+        }
+    }
+    private fun surveyReactorArea(R: Int, C: Int) {
+        for (dr in -3..5) for (dc in -3..5) {
+            val rr = R + dr; val cc = C + dc
+            if (rr in 0 until n && cc in 0 until n) surveyed[rr * n + cc] = true
         }
     }
 
@@ -248,10 +326,14 @@ class Simulation {
         }
         return v / norm
     }
-    /** Land, wenn das Rauschen es sagt – oder eine Maschine/Startzone dort ist. */
+    /** Reines Terrain (nur Rauschen), unabhaengig von Bebauung. */
+    private fun rawLand(r: Int, c: Int): Boolean =
+        r in 0 until n && c in 0 until n && landValue(r, c) > LAND_THRESH
+
+    /** Land, wenn Terrain es sagt – oder eine Maschine/Belegung dort ist. */
     fun isLand(r: Int, c: Int): Boolean {
-        if (grid[r][c] != null) return true
-        if (kotlin.math.abs(r - startR) <= 2 && kotlin.math.abs(c - startC) <= 2) return true
+        if (r !in 0 until n || c !in 0 until n) return false
+        if (grid[r][c] != null || occ[r][c] != null) return true
         return landValue(r, c) > LAND_THRESH
     }
 
@@ -826,7 +908,10 @@ class Simulation {
         val harv = JSONArray()
         for (i in harvested.indices) if (harvested[i]) harv.put(i)
         root.put("harv", harv)
-        root.put("world", 2)   // Weltformat: grosse Karte mit Terrain
+        val pipe = JSONArray()
+        for (cell in reactorPipe) pipe.put(JSONArray().put(cell[0]).put(cell[1]))
+        root.put("pipe", pipe)
+        root.put("world", 3)   // Weltformat 3: 3x3-Reaktor + Kuehlschlauch
         return root.toString()
     }
 
@@ -862,7 +947,12 @@ class Simulation {
             val (fw, fh) = footprint(m.type); m.w = fw; m.h = fh
             grid[r][c] = m
         }
-        // Belegung fuer mehrzellige Gebaeude wiederherstellen (Anker = unten, waechst nach oben).
+        val reactorNew = root.optInt("world", 2) >= 3 && root.has("pipe")
+        if (!reactorNew) {
+            // altes Format: alten (1x1) Reaktor entfernen -> wird als 3x3 neu platziert
+            for (r in 0 until n) for (c in 0 until n) if (grid[r][c]?.type == MType.REAKTOR) grid[r][c] = null
+        }
+        // Belegung fuer mehrzellige Gebaeude wiederherstellen (Anker = unten links, waechst hoch/rechts).
         forEachMachine { m, r, c ->
             if (m.w > 1 || m.h > 1) {
                 for (dy in 0 until m.h) for (dx in 0 until m.w) {
@@ -891,13 +981,28 @@ class Simulation {
             if (idx in harvested.indices) harvested[idx] = true
         }
 
-        // Sicherstellen, dass genau ein Reaktor existiert.
-        if (!hasReactor()) grid[startR][startC] = Machine(MType.REAKTOR)
+        // Reaktor-Kuehlschlauch laden (neues Format) bzw. Reaktor neu platzieren (altes Format).
+        reactorPipe.clear()
+        if (reactorNew) {
+            val ra = reactorAnchor()
+            val pipe = root.optJSONArray("pipe")
+            if (pipe != null) for (i in 0 until pipe.length()) {
+                val cellArr = pipe.optJSONArray(i) ?: continue
+                val pr = cellArr.optInt(0, -1); val pc = cellArr.optInt(1, -1)
+                if (pr in 0 until n && pc in 0 until n) {
+                    reactorPipe.add(intArrayOf(pr, pc))
+                    if (ra != null && i in 1 until pipe.length() - 1) occ[pr][pc] = intArrayOf(ra[0], ra[1])
+                }
+            }
+        }
+        // Reaktor sicherstellen (altes Format -> neuer 3x3-Reaktor + Schlauch).
+        if (!hasReactor()) placeReactor()
         return root.optLong("t", 0L)
     }
 
-    private fun hasReactor(): Boolean {
-        for (r in 0 until n) for (c in 0 until n) if (grid[r][c]?.type == MType.REAKTOR) return true
-        return false
+    private fun hasReactor(): Boolean = reactorAnchor() != null
+    private fun reactorAnchor(): IntArray? {
+        for (r in 0 until n) for (c in 0 until n) if (grid[r][c]?.type == MType.REAKTOR) return intArrayOf(r, c)
+        return null
     }
 }

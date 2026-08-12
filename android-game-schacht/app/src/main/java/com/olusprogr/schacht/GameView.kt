@@ -479,9 +479,12 @@ class GameView(context: Context) : View(context) {
         for (r in r0..r1) for (c in c0..c1) {
             drawGround(canvas, r, c, vLeft + c * cell, vTop + r * cell)
         }
-        // Pass 2: Maschinen (eine Reihe tiefer mitnehmen, wegen Gebaeuden die nach oben ragen)
-        val mr1 = (r1 + 1).coerceIn(0, an - 1)
-        for (r in r0..mr1) for (c in c0..c1) {
+        // Kuehlschlauch (unter den Maschinen)
+        if (screen == Screen.GAME) drawHose(canvas)
+        // Pass 2: Maschinen (Rand erweitern: Gebaeude ragen bis 2 Zellen nach oben/rechts)
+        val mr1 = (r1 + 2).coerceIn(0, an - 1)
+        val mc0 = (c0 - 2).coerceIn(0, an - 1)
+        for (r in r0..mr1) for (c in mc0..c1) {
             val m = sim.grid[r][c] ?: continue
             drawMachine(canvas, m, vLeft + c * cell, vTop + r * cell)
         }
@@ -671,6 +674,38 @@ class GameView(context: Context) : View(context) {
         canvas.restore()
     }
 
+    /** Kuehlwasser-Schlauch des Reaktors: Rohr entlang der Zellen + animierter Wasserfluss. */
+    private fun drawHose(canvas: Canvas) {
+        val pipe = sim.reactorPipe
+        if (pipe.size < 2) return
+        p.style = Paint.Style.STROKE
+        p.strokeCap = Paint.Cap.ROUND
+        for (i in 0 until pipe.size - 1) {
+            val a = pipe[i]; val b = pipe[i + 1]
+            val ax = vLeft + (a[1] + 0.5f) * cell; val ay = vTop + (a[0] + 0.5f) * cell
+            val bx = vLeft + (b[1] + 0.5f) * cell; val by = vTop + (b[0] + 0.5f) * cell
+            p.color = cGridLine; p.strokeWidth = cell * 0.32f; canvas.drawLine(ax, ay, bx, by, p)
+            p.color = Color.rgb(120, 126, 140); p.strokeWidth = cell * 0.20f; canvas.drawLine(ax, ay, bx, by, p)
+            p.color = Color.rgb(176, 182, 194); p.strokeWidth = cell * 0.06f
+            canvas.drawLine(ax, ay - cell * 0.05f, bx, by - cell * 0.05f, p)
+        }
+        // animierter Wasserfluss vom Wasser zum Reaktor
+        p.style = Paint.Style.FILL
+        val segs = pipe.size - 1
+        for (k in 0 until 2) {
+            val pos = (animT * 0.4f + k * 0.5f) % 1f
+            val idx = (1f - pos) * segs
+            val si = idx.toInt().coerceIn(0, segs - 1)
+            val f = idx - si
+            val a = pipe[si]; val b = pipe[si + 1]
+            val cx = vLeft + ((a[1] + (b[1] - a[1]) * f) + 0.5f) * cell
+            val cy = vTop + ((a[0] + (b[0] - a[0]) * f) + 0.5f) * cell
+            p.color = Color.rgb(96, 206, 228)
+            canvas.drawCircle(cx, cy, cell * 0.05f, p)
+        }
+        p.strokeCap = Paint.Cap.BUTT
+    }
+
     private fun drawSprite(canvas: Canvas, list: List<Px>, x: Float, y: Float, s: Float) {
         for (px in list) {
             pSprite.color = px.c
@@ -742,6 +777,20 @@ class GameView(context: Context) : View(context) {
             pSprite.color = Color.argb((120 * dustA).toInt().coerceIn(0, 255), 150, 120, 90)
             canvas.drawRect(x + cell * 0.30f, y + cell * 0.90f, x + cell * 0.40f, y + cell * 0.95f, pSprite)
             canvas.drawRect(x + cell * 0.60f, y + cell * 0.88f, x + cell * 0.70f, y + cell * 0.93f, pSprite)
+        }
+
+        // Reaktor: Dampf aus dem Kuehlturm
+        if (m.type == MType.REAKTOR) {
+            val tx = x + 2.22f * cell
+            val tyTop = topY + 0.60f * cell
+            for (k in 0 until 3) {
+                val ph = (animT * 0.5f + k * 0.34f) % 1f
+                val py = tyTop - ph * cell * 1.2f
+                val rad = cell * (0.10f + 0.16f * ph)
+                val al = (110 * (1f - ph)).toInt().coerceIn(0, 255)
+                p.color = Color.argb(al, 236, 240, 246)
+                canvas.drawCircle(tx + (k - 1) * cell * 0.12f, py, rad, p)
+            }
         }
 
         // Verschleiss: braun-roter Schleier bei niedrigem Zustand
