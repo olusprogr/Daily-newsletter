@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/video/why-stream-ring-maker-sandbar-says-the-future-of-ai-wearables-is-voice/",
+      "title": "Why Stream ring-maker Sandbar says the future of AI wearables is voice",
+      "summary": "AI notetaking hardware has taken off&#160;over&#160;the past&#160;couple of years, with credit-card-sized devices, pendants, pins,&#160;and&#160;even transcribing earbuds all promising to capture your meetings and turn them into summaries and action items. Now, a whole wave of wearables — rings especially — are betting people want to capture stray thoughts and ideas the same way.&#160; One of [&#8230;]",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-12T16:46:02+00:00",
+      "sent_at": "2026-08-12T16:56:10.563192+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/08/12/tesla-wants-to-build-a-10b-solar-factory-in-texas/",
+      "title": "Tesla wants to build a $10B solar factory in Texas",
+      "summary": "Tesla wants to build a massive solar factory in Texas, but first it wants the state to chip in to defray the costs.",
+      "source": "TechCrunch",
+      "category": "Hardware",
+      "published": "2026-08-12T16:18:31+00:00",
+      "sent_at": "2026-08-12T16:56:10.563192+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/08/12/facebook-officially-rolls-out-its-standalone-creator-studio-app-with-ai-tools-for-creators/",
+      "title": "Facebook officially rolls out its standalone Creator Studio app with AI tools for creators",
+      "summary": "The new app launches with Facebook's AI creator assistant built into it, providing creators with personalized recommendations based on their content style, performance, audience engagement, and goals.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-12T15:56:13+00:00",
+      "sent_at": "2026-08-12T16:56:10.563192+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/978982/daddario-guitar-ai-music-suno",
+      "title": "Guitar company D’Addario admits that AI music was used in a promotional video",
+      "summary": "After weeks of controversy and speculation, music company D'Addario has admitted that AI, specifically Suno, was used as part of a recent promotional video. For nearly two weeks, the company has denied the allegations, even as evidence piled up against it. It offered various explanations, from low-quality exports, to combinations of plugins like Autotune introducing [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-08-12T15:52:07+00:00",
+      "sent_at": "2026-08-12T16:56:10.563192+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/new-camera-tricks-on-google-latest-pixel-11-smartphones/",
+      "title": "4 New Camera Tricks on Google’s Latest Pixel 11 Smartphones",
+      "summary": "From Magic Capture and Instant Night Sight to a built-in teleprompter, here’s a look at a few camera features on Google’s new Pixel 11 series.",
+      "source": "Wired",
+      "category": "Hardware",
+      "published": "2026-08-12T14:00:00+00:00",
+      "sent_at": "2026-08-12T16:56:10.563192+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2235158/pixel-watch-5-hands-on-whats-new-google-health-ai-workout-builder/",
+      "title": "Pixel Watch 5 hands-on: Health, GPS and AI at the forefront",
+      "summary": "Most of this year's updates for Google's Pixel Watch series aren't in the hardware.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-08-12T14:00:00+00:00",
+      "sent_at": "2026-08-12T16:56:10.563192+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2234844/google-pixel-11-announced-specs-availability/",
+      "title": "Google's Pixel 11 has a 30-hour battery life and a slimmer camera bar",
+      "summary": "Long battery life, a slimmer camera bar and a new chip are all on the spec sheet for the Pixel 11.",
+      "source": "Engadget",
+      "category": "Hardware",
+      "published": "2026-08-12T14:00:00+00:00",
+      "sent_at": "2026-08-12T16:56:10.563192+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2234879/google-pixel-11-pro-announced-specs-price/",
+      "title": "Google's Pixel 11 Pro and Pro XL are the toughest Pixel phones yet",
+      "summary": "Camera upgrades, a thinner camera bar and a more powerful processor are available on the Pixel 11 Pro and Pro XL.",
+      "source": "Engadget",
+      "category": "Hardware",
+      "published": "2026-08-12T14:00:00+00:00",
+      "sent_at": "2026-08-12T16:56:10.563192+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/pc-components/gpus/nvidia-doubles-rtx-pro-6000-blackwells-msrp-to-a-staggering-usd16-000-96gb-card-started-pre-orders-below-usd8-000-last-year",
       "title": "Nvidia doubles RTX PRO 6000 Blackwell's MSRP to a staggering $16,000 — 96GB card started pre-orders below $8,000 last year",
       "summary": "A data center GPU has become more expensive because of the AI boom enabled by unprecedented data center buildouts — shocking. Nvidia's RTX 6000 Pro Blackwell is now twice as costly as it was last year at the time of its launch, and 20% more expensive than even a couple of months ago.",
