@@ -7,8 +7,8 @@ import kotlin.math.pow
 import org.json.JSONArray
 import org.json.JSONObject
 
-/** Rohstoffe. Tier 1-3: Roherz -> Barren -> Platte -> Komponente. Schrott = Nebenprodukt. */
-enum class Res { ROHERZ, BARREN, PLATTE, KOMPONENTE, SCHROTT }
+/** Rohstoffe. Tier 1-3: Roherz -> Barren -> Platte -> Komponente. */
+enum class Res { ROHERZ, BARREN, PLATTE, KOMPONENTE }
 
 // Reihenfolge = Save-Ordinal. Neue Typen ans ENDE anhaengen (Save-Kompatibilitaet).
 enum class MType(val label: String, val sym: String, val power: Double) {
@@ -23,7 +23,7 @@ enum class MType(val label: String, val sym: String, val power: Double) {
     VERSTAERKER("Verstaerker", "V", 6.0),
     HAENDLER("Haendler", "H", 0.0),
     PROSPEKTOR("Prospektor", "S", 2.0),
-    RECYCLER("Recycler", "Y", 6.0)
+    WINDRAD("Windrad", "W", 0.0)
 }
 
 class Machine(var type: MType) {
@@ -32,6 +32,8 @@ class Machine(var type: MType) {
     val output = DoubleArray(Res.values().size)
     var util = 0.0
     var starved = false
+    var w = 1     // Grundflaeche (Breite in Zellen)
+    var h = 1     // Grundflaeche (Hoehe in Zellen), Anker = unterste Zelle
 }
 
 data class OfflineEvent(val timeSec: Int, val dead: Boolean, val mType: MType, val r: Int, val c: Int)
@@ -65,6 +67,8 @@ class Simulation {
     val startR = n / 2
     val startC = n / 2
     val grid = Array(n) { arrayOfNulls<Machine>(n) }
+    /** Belegung durch mehrzellige Gebaeude: haelt die Anker-Koordinaten [r,c]. */
+    val occ = Array(n) { arrayOfNulls<IntArray>(n) }
     /** Aufgedeckte Chunks (Prospektor). true = Reichtum bekannt. */
     val surveyed = BooleanArray(n * n)
     /** Abgebaute Deko-Felder (Baum/Busch/Fels entfernt). */
@@ -100,8 +104,6 @@ class Simulation {
         const val OFEN_RATE = 0.34
         const val PRESSE_RATE = 0.25
         const val ASSEMBLER_RATE = 0.15
-        const val RECYCLER_RATE = 0.4       // Barren/s aus Schrott (2 Schrott -> 1 Barren)
-        const val SCHROTT_RATE = 0.25       // Anteil der Produktion, der als Schrott anfaellt
         const val LIFT = 3.0
         const val IN_CAP = 10.0
         const val OUT_CAP = 20.0
@@ -117,6 +119,10 @@ class Simulation {
         const val LAND_THRESH = 0.46     // Schwelle Land/Wasser aus dem Rauschen
         const val SCAN_R = 4             // Prospektor deckt Radius (Chebyshev) auf
         const val PROSPEKTOR_COST = 6.0
+        const val WIND_POWER = 16.0      // Strom je Windrad (ohne Brennstoff)
+
+        // Grundflaeche je Typ (Breite, Hoehe in Zellen). Anker = unterste Zelle.
+        fun footprint(t: MType): Pair<Int, Int> = if (t == MType.WINDRAD) Pair(1, 2) else Pair(1, 1)
 
         // Erloes beim Abbauen: keine, Nadelbaum, Laubbaum, Fels, Busch
         val DECO_VALUE = intArrayOf(0, 4, 4, 6, 2)
@@ -132,8 +138,8 @@ class Simulation {
             TechNode("t_drohne", "Wartungsdrohne freischalten", 40.0, 1.0, 1, "", "t_gen", Res.BARREN),
             TechNode("t_assembler", "Assembler freischalten", 25.0, 1.0, 1, "Platte -> Komponente", "t_presse", Res.PLATTE),
             TechNode("t_haendler", "Haendler freischalten", 20.0, 1.0, 1, "Komponenten -> Geld", "t_assembler", Res.PLATTE),
-            TechNode("t_recycler", "Recycler freischalten", 18.0, 1.0, 1, "Schrott -> Barren", "t_presse", Res.BARREN),
             TechNode("t_boost", "Verstaerker freischalten", 20.0, 1.0, 1, "beschleunigt Nachbarn", "t_gen", Res.PLATTE),
+            TechNode("t_wind", "Windrad freischalten", 28.0, 1.0, 1, "Strom aus Wind", "t_gen", Res.BARREN),
             // Upgrades (mit Geld bezahlt)
             TechNode("t_bspeed", "Bohrer-Tempo", 25.0, 1.3, 20, "+8%/Stufe", null, null),
             TechNode("t_ospeed", "Ofen-Tempo", 35.0, 1.3, 20, "+8%/Stufe", null, null),
@@ -155,7 +161,7 @@ class Simulation {
             MType.ASSEMBLER to "t_assembler",
             MType.VERSTAERKER to "t_boost",
             MType.HAENDLER to "t_haendler",
-            MType.RECYCLER to "t_recycler"
+            MType.WINDRAD to "t_wind"
         )
 
         // Hoechstzahl je platzierbarem Typ, damit die Karte nicht zuwuchert.
@@ -170,7 +176,7 @@ class Simulation {
             MType.VERSTAERKER to 12,
             MType.HAENDLER to 8,
             MType.PROSPEKTOR to 16,
-            MType.RECYCLER to 12
+            MType.WINDRAD to 8
         )
 
         // Baukosten: (Rohstoff, Menge). Presse=Barren, Assembler=Platten usw.
@@ -181,7 +187,7 @@ class Simulation {
             MType.GENERATOR to Pair(Res.BARREN, 10.0),
             MType.LAGER to Pair(Res.BARREN, 8.0),
             MType.PROSPEKTOR to Pair(Res.BARREN, PROSPEKTOR_COST),
-            MType.RECYCLER to Pair(Res.BARREN, 10.0),
+            MType.WINDRAD to Pair(Res.BARREN, 14.0),
             MType.ASSEMBLER to Pair(Res.PLATTE, 10.0),
             MType.HAENDLER to Pair(Res.PLATTE, 12.0),
             MType.DROHNE to Pair(Res.PLATTE, 8.0),
@@ -190,7 +196,7 @@ class Simulation {
     }
 
     fun newGame() {
-        for (r in 0 until n) for (c in 0 until n) grid[r][c] = null
+        for (r in 0 until n) for (c in 0 until n) { grid[r][c] = null; occ[r][c] = null }
         surveyed.fill(false)
         harvested.fill(false)
         globalBarren = START_BARREN
@@ -264,7 +270,7 @@ class Simulation {
 
     /** Deko-Kategorie: 0 keine, 1 Nadelbaum, 2 Laubbaum, 3 Fels, 4 Busch. */
     fun decoType(r: Int, c: Int): Int {
-        if (!landAt(r, c) || grid[r][c] != null || harvested[r * n + c]) return 0
+        if (!landAt(r, c) || grid[r][c] != null || occ[r][c] != null || harvested[r * n + c]) return 0
         if (!landAt(r - 1, c) || !landAt(r + 1, c) || !landAt(r, c - 1) || !landAt(r, c + 1)) return 0
         val h = decoHash(r, c); val pct = h % 100
         return when (biome(r, c)) {
@@ -290,7 +296,8 @@ class Simulation {
         var h = mapSeed xor (r.toLong() * 341873128712L) xor (c.toLong() * 132897987541L)
         h = h xor (h ushr 13); h *= -0x61c8864680b583ebL; h = h xor (h ushr 27)
         val v = ((h ushr 33).toInt() and 0x7fffffff) % 100
-        return when { v < 15 -> 0; v < 58 -> 1; v < 86 -> 2; else -> 3 }
+        // reicher Boden (Tier 3) halbiert: ~7% statt ~14%
+        return when { v < 15 -> 0; v < 58 -> 1; v < 93 -> 2; else -> 3 }
     }
     private fun oreMult(r: Int, c: Int) = if (isLand(r, c)) ORE_MULT[richness(r, c)] else 0.0
 
@@ -308,7 +315,6 @@ class Simulation {
         Res.PLATTE -> globalPlatten
         Res.KOMPONENTE -> globalKomponente
         Res.ROHERZ -> 0.0
-        Res.SCHROTT -> 0.0
     }
     fun available(res: Res) = globalOf(res) + lagerSum(res.ordinal)
     fun availableBarren() = available(Res.BARREN)
@@ -321,7 +327,6 @@ class Simulation {
             Res.PLATTE -> globalPlatten += amt
             Res.KOMPONENTE -> globalKomponente += amt
             Res.ROHERZ -> {}
-            Res.SCHROTT -> {}
         }
     }
 
@@ -335,7 +340,6 @@ class Simulation {
             Res.PLATTE -> globalPlatten -= g
             Res.KOMPONENTE -> globalKomponente -= g
             Res.ROHERZ -> {}
-            Res.SCHROTT -> {}
         }
         rem -= g
         if (rem > 1e-9) {
@@ -377,27 +381,49 @@ class Simulation {
 
     fun atLimit(t: MType): Boolean = count(t) >= maxCount(t)
 
+    /** Anker (Anker-Zelle) eines Gebaeudes, egal welche belegte Zelle man antippt. */
+    fun anchorOf(r: Int, c: Int): IntArray? {
+        if (r !in 0 until n || c !in 0 until n) return null
+        if (grid[r][c] != null) return intArrayOf(r, c)
+        return occ[r][c]
+    }
+    private fun cellFree(r: Int, c: Int) =
+        r in 0 until n && c in 0 until n && grid[r][c] == null && occ[r][c] == null
+
     fun build(t: MType, r: Int, c: Int): Boolean {
-        if (r < 0 || c < 0 || r >= areaN() || c >= areaN()) return false
-        if (grid[r][c] != null) return false
-        if (!isLand(r, c)) return false            // Bauen nur auf Land
         if (!canBuild(t)) return false
-        if (atLimit(t)) return false               // Hoechstzahl erreicht
+        if (atLimit(t)) return false
+        val (fw, fh) = footprint(t)
+        // Grundflaeche waechst nach OBEN (Anker = unten): Reihen r-(fh-1)..r
+        for (dy in 0 until fh) for (dx in 0 until fw) {
+            val rr = r - dy; val cc = c + dx
+            if (rr !in 0 until areaN() || cc !in 0 until areaN()) return false
+            if (!cellFree(rr, cc)) return false
+            if (!isLand(rr, cc)) return false           // Bauen nur auf Land
+        }
         val (res, amt) = buildCost(t)
         if (!spend(res, amt)) return false
-        grid[r][c] = Machine(t)
-        surveyed[r * n + c] = true   // wo man baut, kennt man den Boden
+        val m = Machine(t); m.w = fw; m.h = fh
+        grid[r][c] = m
+        for (dy in 0 until fh) for (dx in 0 until fw) {
+            val rr = r - dy; val cc = c + dx
+            surveyed[rr * n + cc] = true
+            if (dy != 0 || dx != 0) occ[rr][cc] = intArrayOf(r, c)
+        }
         return true
     }
 
     /** Verkauf: 50% der Baukosten (im gleichen Rohstoff), skaliert mit Zustand. */
     fun sell(r: Int, c: Int): Double {
-        val m = grid[r][c] ?: return 0.0
+        val a = anchorOf(r, c) ?: return 0.0
+        val ar = a[0]; val ac = a[1]
+        val m = grid[ar][ac] ?: return 0.0
         if (m.type == MType.REAKTOR) return 0.0
         val (res, amt) = buildCost(m.type)
         val refund = amt * 0.5 * (m.condition / 100.0)
         addGlobal(res, refund)
-        grid[r][c] = null
+        for (dy in 0 until m.h) for (dx in 0 until m.w) occ[ar - dy][ac + dx] = null
+        grid[ar][ac] = null
         return refund
     }
 
@@ -449,11 +475,6 @@ class Simulation {
                 if (m.starved) return 1
                 if (scale < 0.999 && m.util < 0.98) return 3
             }
-            MType.RECYCLER -> {
-                if (m.output[Res.BARREN.ordinal] >= OUT_CAP - 0.5) return 2
-                if (m.starved) return 1
-                if (scale < 0.999 && m.util < 0.98) return 3
-            }
             MType.GENERATOR -> {
                 if (m.starved) return 1
             }
@@ -481,7 +502,6 @@ class Simulation {
     private fun ofenRate() = OFEN_RATE * (1.0 + 0.08 * lvl("t_ospeed")) * globalMult()
     private fun presseRate() = PRESSE_RATE * (1.0 + 0.08 * lvl("t_pspeed")) * globalMult()
     private fun assemblerRate() = ASSEMBLER_RATE * (1.0 + 0.08 * lvl("t_aspeed")) * globalMult()
-    private fun recyclerRate() = RECYCLER_RATE * globalMult()
     fun componentPrice() = COMPONENT_PRICE * (1.0 + 0.25 * lvl("t_wert"))
 
     private fun wearPerSec(t: MType) = when (t) {
@@ -489,7 +509,6 @@ class Simulation {
         MType.OFEN -> 1.2 / 60.0
         MType.PRESSE -> 1.5 / 60.0
         MType.ASSEMBLER -> 1.6 / 60.0
-        MType.RECYCLER -> 1.4 / 60.0
         MType.GENERATOR -> 0.8 / 60.0
         MType.DROHNE -> 0.5 / 60.0
         MType.VERSTAERKER -> 0.6 / 60.0
@@ -526,17 +545,15 @@ class Simulation {
         MType.PRESSE -> intArrayOf(Res.BARREN.ordinal)
         MType.ASSEMBLER -> intArrayOf(Res.PLATTE.ordinal)
         MType.GENERATOR -> intArrayOf(Res.ROHERZ.ordinal)
-        MType.RECYCLER -> intArrayOf(Res.SCHROTT.ordinal)
-        MType.LAGER -> intArrayOf(0, 1, 2, 3, 4)
+        MType.LAGER -> intArrayOf(0, 1, 2, 3)
         else -> IntArray(0)
     }
 
     private fun offers(t: MType, res: Int): Boolean = when (t) {
         MType.BOHRER -> res == Res.ROHERZ.ordinal
-        MType.OFEN -> res == Res.BARREN.ordinal || res == Res.SCHROTT.ordinal
-        MType.PRESSE -> res == Res.PLATTE.ordinal || res == Res.SCHROTT.ordinal
-        MType.ASSEMBLER -> res == Res.KOMPONENTE.ordinal || res == Res.SCHROTT.ordinal
-        MType.RECYCLER -> res == Res.BARREN.ordinal
+        MType.OFEN -> res == Res.BARREN.ordinal
+        MType.PRESSE -> res == Res.PLATTE.ordinal
+        MType.ASSEMBLER -> res == Res.KOMPONENTE.ordinal
         MType.LAGER -> true
         else -> false
     }
@@ -546,7 +563,6 @@ class Simulation {
         MType.OFEN -> m.input[Res.ROHERZ.ordinal] > 1e-6 && m.output[Res.BARREN.ordinal] < OUT_CAP - 1e-9
         MType.PRESSE -> m.input[Res.BARREN.ordinal] > 1e-6 && m.output[Res.PLATTE.ordinal] < OUT_CAP - 1e-9
         MType.ASSEMBLER -> m.input[Res.PLATTE.ordinal] > 1e-6 && m.output[Res.KOMPONENTE.ordinal] < OUT_CAP - 1e-9
-        MType.RECYCLER -> m.input[Res.SCHROTT.ordinal] > 1e-6 && m.output[Res.BARREN.ordinal] < OUT_CAP - 1e-9
         MType.DROHNE -> neighbors(r, c).any { grid[it[0]][it[1]]?.let { g -> g.condition < 99.999 } == true }
         MType.VERSTAERKER -> neighbors(r, c).any {
             val g = grid[it[0]][it[1]]?.type
@@ -599,6 +615,7 @@ class Simulation {
         forEachMachine { m, _, _ ->
             if (m.type == MType.REAKTOR) supply += reactorPower()
             if (m.type == MType.GENERATOR && m.input[Res.ROHERZ.ordinal] > 1e-6) supply += GEN_POWER
+            if (m.type == MType.WINDRAD) supply += WIND_POWER
         }
         var demand = 0.0
         forEachMachine { m, r, c -> if (wantsToRun(m, r, c)) demand += m.type.power }
@@ -629,7 +646,6 @@ class Simulation {
                     val made = max(0.0, min(want, min(byInput, OUT_CAP - m.output[Res.BARREN.ordinal])))
                     m.input[Res.ROHERZ.ordinal] -= made * 2.0
                     m.output[Res.BARREN.ordinal] += made
-                    m.output[Res.SCHROTT.ordinal] = min(OUT_CAP, m.output[Res.SCHROTT.ordinal] + made * SCHROTT_RATE)
                     m.condition = max(0.0, m.condition - wearPerSec(MType.OFEN) * wf * (made / ofenRate()))
                     m.util = if (nominal > 1e-9) made / nominal else 0.0
                     barMade += made
@@ -642,7 +658,6 @@ class Simulation {
                     val made = max(0.0, min(want, min(byInput, OUT_CAP - m.output[Res.PLATTE.ordinal])))
                     m.input[Res.BARREN.ordinal] -= made * 2.0
                     m.output[Res.PLATTE.ordinal] += made
-                    m.output[Res.SCHROTT.ordinal] = min(OUT_CAP, m.output[Res.SCHROTT.ordinal] + made * SCHROTT_RATE)
                     m.condition = max(0.0, m.condition - wearPerSec(MType.PRESSE) * wf * (made / presseRate()))
                     m.util = if (nominal > 1e-9) made / nominal else 0.0
                     platMade += made
@@ -655,7 +670,6 @@ class Simulation {
                     val made = max(0.0, min(want, min(byInput, OUT_CAP - m.output[Res.KOMPONENTE.ordinal])))
                     m.input[Res.PLATTE.ordinal] -= made * 2.0
                     m.output[Res.KOMPONENTE.ordinal] += made
-                    m.output[Res.SCHROTT.ordinal] = min(OUT_CAP, m.output[Res.SCHROTT.ordinal] + made * SCHROTT_RATE)
                     m.condition = max(0.0, m.condition - wearPerSec(MType.ASSEMBLER) * wf * (made / assemblerRate()))
                     m.util = if (nominal > 1e-9) made / nominal else 0.0
                     kompMade += made
@@ -696,18 +710,7 @@ class Simulation {
                     }
                     m.util = if (revealed > 0) 1.0 else 0.0
                 }
-                MType.RECYCLER -> {
-                    val nominal = recyclerRate() * ddt * boostAt(r, c)
-                    val want = nominal * scale * wearMult(m.condition)
-                    val byInput = m.input[Res.SCHROTT.ordinal] / 2.0
-                    val made = max(0.0, min(want, min(byInput, OUT_CAP - m.output[Res.BARREN.ordinal])))
-                    m.input[Res.SCHROTT.ordinal] -= made * 2.0
-                    m.output[Res.BARREN.ordinal] += made
-                    m.condition = max(0.0, m.condition - wearPerSec(MType.RECYCLER) * wf * (made / recyclerRate()))
-                    m.util = if (nominal > 1e-9) made / nominal else 0.0
-                    barMade += made
-                    if (byInput <= 1e-9 && m.output[Res.BARREN.ordinal] < OUT_CAP - 1e-9) m.starved = true
-                }
+                MType.WINDRAD -> { m.util = 1.0 }   // dreht sich immer (Strom aus Wind)
                 MType.LAGER, MType.REAKTOR, MType.HAENDLER -> { m.util = 0.0 }
             }
         }
@@ -726,10 +729,6 @@ class Simulation {
                 MType.ASSEMBLER -> {
                     val amt = min(liftRate() * ddt, m.output[Res.KOMPONENTE.ordinal])
                     m.output[Res.KOMPONENTE.ordinal] -= amt; globalKomponente += amt
-                }
-                MType.RECYCLER -> {
-                    val amt = min(liftRate() * ddt, m.output[Res.BARREN.ordinal])
-                    m.output[Res.BARREN.ordinal] -= amt; globalBarren += amt
                 }
                 else -> {}
             }
@@ -833,7 +832,7 @@ class Simulation {
 
     fun fromJson(s: String): Long {
         val root = JSONObject(s)
-        for (r in 0 until n) for (c in 0 until n) grid[r][c] = null
+        for (r in 0 until n) for (c in 0 until n) { grid[r][c] = null; occ[r][c] = null }
         globalBarren = root.optDouble("gb", 0.0)
         globalPlatten = root.optDouble("gp", 0.0)
         globalKomponente = root.optDouble("gk", 0.0)
@@ -860,7 +859,17 @@ class Simulation {
             val ia = o.optJSONArray("in"); val oa = o.optJSONArray("out")
             if (ia != null) for (k in 0 until min(rc, ia.length())) m.input[k] = ia.optDouble(k, 0.0)
             if (oa != null) for (k in 0 until min(rc, oa.length())) m.output[k] = oa.optDouble(k, 0.0)
+            val (fw, fh) = footprint(m.type); m.w = fw; m.h = fh
             grid[r][c] = m
+        }
+        // Belegung fuer mehrzellige Gebaeude wiederherstellen (Anker = unten, waechst nach oben).
+        forEachMachine { m, r, c ->
+            if (m.w > 1 || m.h > 1) {
+                for (dy in 0 until m.h) for (dx in 0 until m.w) {
+                    val rr = r - dy; val cc = c + dx
+                    if (rr in 0 until n && cc in 0 until n && (dy != 0 || dx != 0)) occ[rr][cc] = intArrayOf(r, c)
+                }
+            }
         }
 
         // Aufgedeckte Chunks laden.

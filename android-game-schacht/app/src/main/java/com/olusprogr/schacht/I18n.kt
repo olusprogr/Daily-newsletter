@@ -61,8 +61,8 @@ object I18n {
         "m_prospektor" to "Prospektor", "ms_prospektor" to "Prospekt.",
         "t_scan" to "Prospektor-Reichweite", "tf_scan" to "+1 Chunk Radius",
         "unscanned" to "ungescannt", "scans" to "Deckt Chunks auf", "radius" to "Radius", "full" to "voll",
-        "schrott" to "Schrott", "m_recycler" to "Recycler", "ms_recycler" to "Recycl.",
-        "t_recycler" to "Recycler freischalten", "tf_recycler" to "Schrott -> Barren"
+        "m_windrad" to "Windrad", "ms_windrad" to "Windrad", "t_wind" to "Windrad freischalten",
+        "tf_wind" to "Strom aus Wind", "wind" to "Wind"
     )
 
     private val EN = mapOf(
@@ -118,8 +118,8 @@ object I18n {
         "m_prospektor" to "Prospector", "ms_prospektor" to "Prospect.",
         "t_scan" to "Prospector range", "tf_scan" to "+1 chunk radius",
         "unscanned" to "unscanned", "scans" to "Reveals chunks", "radius" to "Radius", "full" to "full",
-        "schrott" to "Scrap", "m_recycler" to "Recycler", "ms_recycler" to "Recycl.",
-        "t_recycler" to "Unlock recycler", "tf_recycler" to "Scrap -> Ingots"
+        "m_windrad" to "Wind turbine", "ms_windrad" to "Turbine", "t_wind" to "Unlock wind turbine",
+        "tf_wind" to "Power from wind", "wind" to "wind"
     )
 
     private val PL = mapOf(
@@ -175,8 +175,8 @@ object I18n {
         "m_prospektor" to "Prospektor", "ms_prospektor" to "Prospekt.",
         "t_scan" to "Zasieg prospektora", "tf_scan" to "+1 chunk promien",
         "unscanned" to "niezbadany", "scans" to "Odkrywa chunki", "radius" to "Promien", "full" to "pelne",
-        "schrott" to "Zlom", "m_recycler" to "Recykler", "ms_recycler" to "Recykl.",
-        "t_recycler" to "Odblok. recykler", "tf_recycler" to "Zlom -> Sztaby"
+        "m_windrad" to "Turbina", "ms_windrad" to "Turbina", "t_wind" to "Odblok. turbine",
+        "tf_wind" to "Prad z wiatru", "wind" to "wiatr"
     )
 
     private val M = mapOf(Lang.DE to DE, Lang.EN to EN, Lang.PL to PL)

@@ -123,7 +123,7 @@ class GameView(context: Context) : View(context) {
         MType.HAENDLER -> Color.rgb(242, 182, 102)
         MType.REAKTOR -> Color.rgb(172, 122, 232)
         MType.PROSPEKTOR -> Color.rgb(96, 200, 210)
-        MType.RECYCLER -> Color.rgb(96, 200, 120)
+        MType.WINDRAD -> Color.rgb(214, 220, 230)
     }
 
     private val p = Paint(Paint.ANTI_ALIAS_FLAG)
@@ -133,6 +133,8 @@ class GameView(context: Context) : View(context) {
     private val pTile = Paint().apply { isFilterBitmap = false; isDither = false; isAntiAlias = false }
     private val srcTile = Rect(0, 0, 32, 32)
     private val dstTile = RectF()
+    private val pBlade = Paint(Paint.ANTI_ALIAS_FLAG).apply { color = Color.rgb(232, 236, 244); style = Paint.Style.FILL }
+    private val bladePath = android.graphics.Path()
     private lateinit var bmpWater0: Bitmap
     private lateinit var bmpWater1: Bitmap
     private lateinit var grassUnknown: Bitmap
@@ -226,11 +228,11 @@ class GameView(context: Context) : View(context) {
 
     private val buildOrder = listOf(
         MType.BOHRER, MType.OFEN, MType.PROSPEKTOR, MType.PRESSE, MType.ASSEMBLER,
-        MType.HAENDLER, MType.RECYCLER, MType.GENERATOR, MType.LAGER, MType.DROHNE, MType.VERSTAERKER
+        MType.HAENDLER, MType.GENERATOR, MType.WINDRAD, MType.LAGER, MType.DROHNE, MType.VERSTAERKER
     )
 
     private fun resAbbr(res: Res) = when (res) {
-        Res.ROHERZ -> "E"; Res.BARREN -> "B"; Res.PLATTE -> "P"; Res.KOMPONENTE -> "K"; Res.SCHROTT -> "S"
+        Res.ROHERZ -> "E"; Res.BARREN -> "B"; Res.PLATTE -> "P"; Res.KOMPONENTE -> "K"
     }
     private fun tierName(t: Int) = I18n.t("tier$t")
     private fun mName(t: MType) = I18n.t("m_" + t.name.lowercase())
@@ -294,7 +296,7 @@ class GameView(context: Context) : View(context) {
                 MType.REAKTOR -> R.drawable.mach_reaktor
                 MType.HAENDLER -> R.drawable.mach_haendler
                 MType.PROSPEKTOR -> R.drawable.mach_prospektor
-                MType.RECYCLER -> R.drawable.mach_recycler
+                MType.WINDRAD -> R.drawable.mach_windrad
             })
         }
         I18n.lang = try { Lang.values()[prefs.getInt("lang", Lang.EN.ordinal)] } catch (_: Exception) { Lang.EN }
@@ -473,18 +475,23 @@ class GameView(context: Context) : View(context) {
         val c1 = (((gridLeft + gridW - vLeft) / cell).toInt() + 1).coerceIn(0, an - 1)
         val r0 = (((gridTop - vTop) / cell).toInt() - 1).coerceIn(0, an - 1)
         val r1 = (((gridTop + gridH - vTop) / cell).toInt() + 1).coerceIn(0, an - 1)
+        // Pass 1: Boden + Deko
         for (r in r0..r1) for (c in c0..c1) {
-            val x = vLeft + c * cell
-            val y = vTop + r * cell
-            drawGround(canvas, r, c, x, y)
-            val m = sim.grid[r][c]
-            if (m != null) drawMachine(canvas, m, x, y)
+            drawGround(canvas, r, c, vLeft + c * cell, vTop + r * cell)
+        }
+        // Pass 2: Maschinen (eine Reihe tiefer mitnehmen, wegen Gebaeuden die nach oben ragen)
+        val mr1 = (r1 + 1).coerceIn(0, an - 1)
+        for (r in r0..mr1) for (c in c0..c1) {
+            val m = sim.grid[r][c] ?: continue
+            drawMachine(canvas, m, vLeft + c * cell, vTop + r * cell)
         }
         if (screen == Screen.GAME) drawFlows(canvas)
         if (selR >= 0 && selR < an && selC < an && screen == Screen.GAME) {
+            val sm = sim.grid[selR][selC]
+            val fh = sm?.h ?: 1; val fw = sm?.w ?: 1
             p.color = cAccent; p.style = Paint.Style.STROKE; p.strokeWidth = dp(3f)
-            canvas.drawRect(vLeft + selC * cell + 1, vTop + selR * cell + 1,
-                vLeft + selC * cell + cell - 1, vTop + selR * cell + cell - 1, p)
+            canvas.drawRect(vLeft + selC * cell + 1, vTop + (selR - fh + 1) * cell + 1,
+                vLeft + (selC + fw) * cell - 1, vTop + (selR + 1) * cell - 1, p)
             p.style = Paint.Style.FILL
         }
         canvas.restore()
@@ -496,7 +503,6 @@ class GameView(context: Context) : View(context) {
         MType.OFEN -> Res.BARREN.ordinal
         MType.PRESSE -> Res.PLATTE.ordinal
         MType.ASSEMBLER -> Res.KOMPONENTE.ordinal
-        MType.RECYCLER -> Res.BARREN.ordinal
         else -> -1
     }
     private fun wantsRes(t: MType): Int = when (t) {
@@ -544,24 +550,6 @@ class GameView(context: Context) : View(context) {
                 val cx = sx + (ex - sx) * t
                 val cy = sy + (ey - sy) * t
                 drawIcon(canvas, icon, cx - isz / 2f, cy - isz / 2f, isz)
-            }
-        }
-
-        // Nebenprodukt: Schrott von Ofen/Presse/Assembler -> Recycler
-        val schrott = Res.SCHROTT.ordinal
-        val schrottIcon = Sprites.iconForRes(schrott)
-        for (r in 0 until an) for (c in 0 until an) {
-            val cm = sim.grid[r][c] ?: continue
-            if (cm.type != MType.RECYCLER) continue
-            for (dir in dirs) {
-                val pr = r + dir[0]; val pc = c + dir[1]
-                if (pr !in 0 until an || pc !in 0 until an) continue
-                val pm = sim.grid[pr][pc] ?: continue
-                if (pm.output[schrott] <= 0.2) continue
-                val sx = vLeft + pc * cell + half; val sy = vTop + pr * cell + half
-                val ex = vLeft + c * cell + half; val ey = vTop + r * cell + half
-                val t = (animT * 0.6f + (pr * 3 + pc + schrott) * 0.31f) % 1f
-                drawIcon(canvas, schrottIcon, sx + (ex - sx) * t - isz / 2f, sy + (ey - sy) * t - isz / 2f, isz)
             }
         }
     }
@@ -690,13 +678,42 @@ class GameView(context: Context) : View(context) {
         }
     }
 
+    /** Windrad (2 Zellen hoch): Turm-Bitmap + live rotierende Rotorblaetter. */
+    private fun drawWindrad(canvas: Canvas, x: Float, topY: Float) {
+        dstTile.set(x, topY, x + cell, topY + 2f * cell)
+        canvas.drawBitmap(machBmp[MType.WINDRAD.ordinal], null, dstTile, pTile)
+        val hx = x + cell * 0.5f
+        val hy = topY + cell * 0.44f          // Nabe im oberen Zellbereich
+        val bl = cell * 0.92f
+        val ang = animT * 80f                 // Grad/s
+        val wRoot = cell * 0.055f; val wTip = cell * 0.012f
+        for (k in 0 until 3) {
+            canvas.save()
+            canvas.rotate(ang + k * 120f, hx, hy)
+            bladePath.reset()
+            bladePath.moveTo(hx - wRoot, hy)
+            bladePath.lineTo(hx + wRoot, hy)
+            bladePath.lineTo(hx + wTip, hy + bl)
+            bladePath.lineTo(hx - wTip, hy + bl)
+            bladePath.close()
+            canvas.drawPath(bladePath, pBlade)
+            canvas.restore()
+        }
+        p.color = Color.rgb(52, 56, 64)
+        canvas.drawCircle(hx, hy, cell * 0.06f, p)
+    }
+
     private fun drawMachine(canvas: Canvas, m: Machine, x: Float, y: Float) {
+        // mehrzellige Gebaeude: Anker unten, Sprite ragt nach oben
+        val topY = y - (m.h - 1) * cell
+        if (m.type == MType.WINDRAD) { drawWindrad(canvas, x, topY); return }
+
         val hasWear = m.type != MType.REAKTOR && m.type != MType.LAGER &&
-            m.type != MType.HAENDLER && m.type != MType.PROSPEKTOR
+            m.type != MType.HAENDLER && m.type != MType.PROSPEKTOR && m.type != MType.WINDRAD
         val pad = cell * 0.08f
 
         // Basis-Sprite (64x64 Bild-Kachel)
-        dstTile.set(x, y, x + cell, y + cell)
+        dstTile.set(x, topY, x + m.w * cell, y + cell)
         canvas.drawBitmap(machBmp[m.type.ordinal], null, dstTile, pTile)
 
         // Arbeits-Status: blinkende LED oben rechts, wenn die Maschine laeuft
@@ -812,7 +829,7 @@ class GameView(context: Context) : View(context) {
                 "${tr("out")} ${oneDec(m.output[0])} ${tr("roherz")}   ${tr("floor")}: $floorTxt"
             }
             MType.PROSPEKTOR -> "${tr("scans")} (${tr("radius")} ${sim.scanRadius()})"
-            MType.RECYCLER -> "${tr("in")} ${oneDec(m.input[4])} ${tr("schrott")}   ${tr("out")} ${oneDec(m.output[1])} ${tr("barren")}"
+            MType.WINDRAD -> "${tr("provides")} ${Simulation.WIND_POWER.toInt()} ${tr("strom")} (${tr("wind")})"
             MType.OFEN -> "${tr("in")} ${oneDec(m.input[0])} ${tr("roherz")}   ${tr("out")} ${oneDec(m.output[1])} ${tr("barren")}"
             MType.PRESSE -> "${tr("in")} ${oneDec(m.input[1])} ${tr("barren")}   ${tr("out")} ${oneDec(m.output[2])} ${tr("platten")}"
             MType.ASSEMBLER -> "${tr("in")} ${oneDec(m.input[2])} ${tr("platten")}   ${tr("out")} ${oneDec(m.output[3])} ${tr("komp")}"
@@ -941,7 +958,7 @@ class GameView(context: Context) : View(context) {
 
     private fun techEffect(id: String): String = when (id) {
         "t_assembler" -> tr("tf_assembler"); "t_haendler" -> tr("tf_haendler"); "t_boost" -> tr("tf_boost")
-        "t_recycler" -> tr("tf_recycler")
+        "t_wind" -> tr("tf_wind")
         "t_diag" -> tr("tf_diag")
         "t_bspeed", "t_ospeed", "t_pspeed", "t_aspeed" -> tr("tf_speed")
         "t_wert" -> tr("tf_wert"); "t_scan" -> tr("tf_scan"); "t_takt" -> tr("tf_takt")
@@ -1302,9 +1319,9 @@ class GameView(context: Context) : View(context) {
     }
 
     private fun handleCell(r: Int, c: Int) {
-        val m = sim.grid[r][c]
-        if (m != null) {
-            selR = r; selC = c; audio.click()
+        val a = sim.anchorOf(r, c)
+        if (a != null) {
+            selR = a[0]; selC = a[1]; audio.click()   // auch belegte Zelle eines Gebaeudes waehlt den Anker
         } else {
             val t = buildTool
             if (t != null) {
