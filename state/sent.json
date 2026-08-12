@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/pc-components/gpus/nvidia-doubles-rtx-pro-6000-blackwells-msrp-to-a-staggering-usd16-000-96gb-card-started-pre-orders-below-usd8-000-last-year",
+      "title": "Nvidia doubles RTX PRO 6000 Blackwell's MSRP to a staggering $16,000 — 96GB card started pre-orders below $8,000 last year",
+      "summary": "A data center GPU has become more expensive because of the AI boom enabled by unprecedented data center buildouts — shocking. Nvidia's RTX 6000 Pro Blackwell is now twice as costly as it was last year at the time of its launch, and 20% more expensive than even a couple of months ago.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-08-12T15:53:19+00:00",
+      "sent_at": "2026-08-12T15:56:24.978939+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/coreweave-ceo-mike-intrator-says-it-has-signed-an-a100-contract-running-into-2029",
+      "title": "CoreWeave proves Nvidia's aging AI GPUs from 2020 can generate profit nine years after deployment, signs A100 contracts into 2029 — power constraints and legacy infrastructure keep old GPUs profitable",
+      "summary": "CoreWeave reported $2.58 billion in quarterly revenue, up 112% year over year.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-08-12T15:41:47+00:00",
+      "sent_at": "2026-08-12T15:56:24.978939+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/tech-policy/2026/08/heres-a-balm-if-the-idea-of-destroying-books-to-train-ai-breaks-your-heart/",
+      "title": "Booksellers suspect AI firms are buying and then destroying rare books",
+      "summary": "AI firms quietly bulk buying rare books face resistance from booksellers.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-08-12T15:19:17+00:00",
+      "sent_at": "2026-08-12T15:56:24.978939+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/08/12/silkroad-innovation-hubs-road-to-battlefield-competition-continues/",
+      "title": "Silkroad Innovation Hub’s Road to Battlefield competition continues",
+      "summary": "The Road to Battlefield competition is now in its second year, and its purpose is to give founders across Central Eurasia a direct route to Startup Battlefield",
+      "source": "TechCrunch",
+      "category": "Innovationen",
+      "published": "2026-08-12T15:02:00+00:00",
+      "sent_at": "2026-08-12T15:56:24.978939+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/cyber-security/suspected-china-linked-hackers-used-ai-to-run-the-first-ever-end-to-end-autonomous-cyberattack-on-taiwans-government-israeli-firm-says-open-source-built-tool-continuously-devised-effective-hack-strategies-in-real-time",
+      "title": "Suspected China-linked hackers used AI to run the first-ever end-to-end autonomous cyberattack on Taiwan's government, Israeli firm says — open-source-built tool continuously devised effective hack strategies in real-time",
+      "summary": "Suspected China-linked hackers used autonomous AI agents to breach Taiwanese government systems, compromising 85 accounts and stealing 2,500+ records.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-08-12T14:58:54+00:00",
+      "sent_at": "2026-08-12T15:56:24.978939+00:00"
+    },
+    {
+      "link": "https://www.reuters.com/legal/government/german-advocacy-group-lodges-criminal-complaint-over-meta-ai-glasses-2026-08-12/",
+      "title": "German advocacy group lodges criminal complaint over Meta AI glasses",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-12T14:06:03+00:00",
+      "sent_at": "2026-08-12T15:56:24.978939+00:00"
+    },
+    {
+      "link": "https://knownagents.com/insights",
+      "title": "Someone is running mass vulnerability scans, spoofing AI bots like ClaudeBot",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-12T14:02:46+00:00",
+      "sent_at": "2026-08-12T15:56:24.978939+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/pixel-11-pixel-watch-5-pixel-tag-everything-google-announced-at-its-made-by-google-2026-event/",
+      "title": "Google Pixel 11 Series, Pixel Watch 5, Pixel Tag: Specs, Features, Price, Release Date",
+      "summary": "The Pixel 11 smartphone lineup is here, alongside the Pixel Watch 5 and the all-new Pixel Tag.",
+      "source": "Wired",
+      "category": "Hardware",
+      "published": "2026-08-12T14:00:00+00:00",
+      "sent_at": "2026-08-12T15:56:24.978939+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/08/12/google-unveils-pixel-11-lineup-new-airtag-rival-and-gemini-features-at-made-by-google-2026/",
       "title": "Everything announced at Made by Google ’26: Pixel 11, Pixel Watch 5, Pixel Tag, and tons of Gemini features",
       "summary": "From the Pixel 11 series and a brand new competitor to Apple’s AirTag, here are all the announcements from the Made by Google 2026 event.",
