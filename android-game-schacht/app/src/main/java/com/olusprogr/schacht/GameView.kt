@@ -123,6 +123,7 @@ class GameView(context: Context) : View(context) {
         MType.HAENDLER -> Color.rgb(242, 182, 102)
         MType.REAKTOR -> Color.rgb(172, 122, 232)
         MType.PROSPEKTOR -> Color.rgb(96, 200, 210)
+        MType.RECYCLER -> Color.rgb(96, 200, 120)
     }
 
     private val p = Paint(Paint.ANTI_ALIAS_FLAG)
@@ -225,11 +226,11 @@ class GameView(context: Context) : View(context) {
 
     private val buildOrder = listOf(
         MType.BOHRER, MType.OFEN, MType.PROSPEKTOR, MType.PRESSE, MType.ASSEMBLER,
-        MType.HAENDLER, MType.GENERATOR, MType.LAGER, MType.DROHNE, MType.VERSTAERKER
+        MType.HAENDLER, MType.RECYCLER, MType.GENERATOR, MType.LAGER, MType.DROHNE, MType.VERSTAERKER
     )
 
     private fun resAbbr(res: Res) = when (res) {
-        Res.ROHERZ -> "E"; Res.BARREN -> "B"; Res.PLATTE -> "P"; Res.KOMPONENTE -> "K"
+        Res.ROHERZ -> "E"; Res.BARREN -> "B"; Res.PLATTE -> "P"; Res.KOMPONENTE -> "K"; Res.SCHROTT -> "S"
     }
     private fun tierName(t: Int) = I18n.t("tier$t")
     private fun mName(t: MType) = I18n.t("m_" + t.name.lowercase())
@@ -293,6 +294,7 @@ class GameView(context: Context) : View(context) {
                 MType.REAKTOR -> R.drawable.mach_reaktor
                 MType.HAENDLER -> R.drawable.mach_haendler
                 MType.PROSPEKTOR -> R.drawable.mach_prospektor
+                MType.RECYCLER -> R.drawable.mach_recycler
             })
         }
         I18n.lang = try { Lang.values()[prefs.getInt("lang", Lang.EN.ordinal)] } catch (_: Exception) { Lang.EN }
@@ -494,6 +496,7 @@ class GameView(context: Context) : View(context) {
         MType.OFEN -> Res.BARREN.ordinal
         MType.PRESSE -> Res.PLATTE.ordinal
         MType.ASSEMBLER -> Res.KOMPONENTE.ordinal
+        MType.RECYCLER -> Res.BARREN.ordinal
         else -> -1
     }
     private fun wantsRes(t: MType): Int = when (t) {
@@ -541,6 +544,24 @@ class GameView(context: Context) : View(context) {
                 val cx = sx + (ex - sx) * t
                 val cy = sy + (ey - sy) * t
                 drawIcon(canvas, icon, cx - isz / 2f, cy - isz / 2f, isz)
+            }
+        }
+
+        // Nebenprodukt: Schrott von Ofen/Presse/Assembler -> Recycler
+        val schrott = Res.SCHROTT.ordinal
+        val schrottIcon = Sprites.iconForRes(schrott)
+        for (r in 0 until an) for (c in 0 until an) {
+            val cm = sim.grid[r][c] ?: continue
+            if (cm.type != MType.RECYCLER) continue
+            for (dir in dirs) {
+                val pr = r + dir[0]; val pc = c + dir[1]
+                if (pr !in 0 until an || pc !in 0 until an) continue
+                val pm = sim.grid[pr][pc] ?: continue
+                if (pm.output[schrott] <= 0.2) continue
+                val sx = vLeft + pc * cell + half; val sy = vTop + pr * cell + half
+                val ex = vLeft + c * cell + half; val ey = vTop + r * cell + half
+                val t = (animT * 0.6f + (pr * 3 + pc + schrott) * 0.31f) % 1f
+                drawIcon(canvas, schrottIcon, sx + (ex - sx) * t - isz / 2f, sy + (ey - sy) * t - isz / 2f, isz)
             }
         }
     }
@@ -726,7 +747,7 @@ class GameView(context: Context) : View(context) {
     }
 
     private fun drawPalette(canvas: Canvas) {
-        val cols = 5
+        val cols = 6
         val margin = dp(8f)
         val gap = dp(5f)
         val bw = (W - 2 * margin - (cols - 1) * gap) / cols
@@ -791,6 +812,7 @@ class GameView(context: Context) : View(context) {
                 "${tr("out")} ${oneDec(m.output[0])} ${tr("roherz")}   ${tr("floor")}: $floorTxt"
             }
             MType.PROSPEKTOR -> "${tr("scans")} (${tr("radius")} ${sim.scanRadius()})"
+            MType.RECYCLER -> "${tr("in")} ${oneDec(m.input[4])} ${tr("schrott")}   ${tr("out")} ${oneDec(m.output[1])} ${tr("barren")}"
             MType.OFEN -> "${tr("in")} ${oneDec(m.input[0])} ${tr("roherz")}   ${tr("out")} ${oneDec(m.output[1])} ${tr("barren")}"
             MType.PRESSE -> "${tr("in")} ${oneDec(m.input[1])} ${tr("barren")}   ${tr("out")} ${oneDec(m.output[2])} ${tr("platten")}"
             MType.ASSEMBLER -> "${tr("in")} ${oneDec(m.input[2])} ${tr("platten")}   ${tr("out")} ${oneDec(m.output[3])} ${tr("komp")}"
@@ -919,6 +941,7 @@ class GameView(context: Context) : View(context) {
 
     private fun techEffect(id: String): String = when (id) {
         "t_assembler" -> tr("tf_assembler"); "t_haendler" -> tr("tf_haendler"); "t_boost" -> tr("tf_boost")
+        "t_recycler" -> tr("tf_recycler")
         "t_diag" -> tr("tf_diag")
         "t_bspeed", "t_ospeed", "t_pspeed", "t_aspeed" -> tr("tf_speed")
         "t_wert" -> tr("tf_wert"); "t_scan" -> tr("tf_scan"); "t_takt" -> tr("tf_takt")

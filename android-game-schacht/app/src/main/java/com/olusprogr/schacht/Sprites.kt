@@ -311,6 +311,7 @@ object Sprites {
             2 -> listOf(Px(11, 7, 10, 1, CYL))
             else -> listOf(Px(15, 4, 2, 2, CYA))
         }
+        MType.RECYCLER -> emptyList()
     }
 
     // --- Ressourcen-Icons im 12x12-Raster ---
@@ -352,10 +353,18 @@ object Sprites {
         Px(4, 4, 2, 1, ORG), Px(6, 5, 1, 1, YEL), Px(5, 6, 1, 1, YEL)
     )
 
+    // Schrott: grauer Metall-Verschnitt-Haufen.
+    val ICON_SCHROTT = listOf(
+        Px(2, 6, 4, 3, MDK), Px(6, 4, 4, 4, MMD), Px(4, 7, 5, 3, MM2),
+        Px(3, 5, 1, 1, MHI), Px(8, 5, 1, 1, MLT),
+        Px(2, 8, 1, 1, RUSTB), Px(7, 8, 1, 1, RUSTL)
+    )
+
     fun iconForRes(res: Int): List<Px> = when (res) {
         Res.ROHERZ.ordinal -> ICON_ROHERZ
         Res.BARREN.ordinal -> ICON_BARREN
         Res.PLATTE.ordinal -> ICON_PLATTE
+        Res.SCHROTT.ordinal -> ICON_SCHROTT
         else -> ICON_KOMP
     }
 
@@ -371,5 +380,6 @@ object Sprites {
         MType.REAKTOR -> REAKTOR
         MType.HAENDLER -> HAENDLER
         MType.PROSPEKTOR -> PROSPEKTOR
+        MType.RECYCLER -> GENERATOR
     }
 }

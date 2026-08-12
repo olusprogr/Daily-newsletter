@@ -7,8 +7,8 @@ import kotlin.math.pow
 import org.json.JSONArray
 import org.json.JSONObject
 
-/** Rohstoffe. Tier 1-3: Roherz -> Barren -> Platte -> Komponente. */
-enum class Res { ROHERZ, BARREN, PLATTE, KOMPONENTE }
+/** Rohstoffe. Tier 1-3: Roherz -> Barren -> Platte -> Komponente. Schrott = Nebenprodukt. */
+enum class Res { ROHERZ, BARREN, PLATTE, KOMPONENTE, SCHROTT }
 
 // Reihenfolge = Save-Ordinal. Neue Typen ans ENDE anhaengen (Save-Kompatibilitaet).
 enum class MType(val label: String, val sym: String, val power: Double) {
@@ -22,7 +22,8 @@ enum class MType(val label: String, val sym: String, val power: Double) {
     ASSEMBLER("Assembler", "A", 10.0),
     VERSTAERKER("Verstaerker", "V", 6.0),
     HAENDLER("Haendler", "H", 0.0),
-    PROSPEKTOR("Prospektor", "S", 2.0)
+    PROSPEKTOR("Prospektor", "S", 2.0),
+    RECYCLER("Recycler", "Y", 6.0)
 }
 
 class Machine(var type: MType) {
@@ -99,6 +100,8 @@ class Simulation {
         const val OFEN_RATE = 0.34
         const val PRESSE_RATE = 0.25
         const val ASSEMBLER_RATE = 0.15
+        const val RECYCLER_RATE = 0.4       // Barren/s aus Schrott (2 Schrott -> 1 Barren)
+        const val SCHROTT_RATE = 0.25       // Anteil der Produktion, der als Schrott anfaellt
         const val LIFT = 3.0
         const val IN_CAP = 10.0
         const val OUT_CAP = 20.0
@@ -129,6 +132,7 @@ class Simulation {
             TechNode("t_drohne", "Wartungsdrohne freischalten", 40.0, 1.0, 1, "", "t_gen", Res.BARREN),
             TechNode("t_assembler", "Assembler freischalten", 25.0, 1.0, 1, "Platte -> Komponente", "t_presse", Res.PLATTE),
             TechNode("t_haendler", "Haendler freischalten", 20.0, 1.0, 1, "Komponenten -> Geld", "t_assembler", Res.PLATTE),
+            TechNode("t_recycler", "Recycler freischalten", 18.0, 1.0, 1, "Schrott -> Barren", "t_presse", Res.BARREN),
             TechNode("t_boost", "Verstaerker freischalten", 20.0, 1.0, 1, "beschleunigt Nachbarn", "t_gen", Res.PLATTE),
             // Upgrades (mit Geld bezahlt)
             TechNode("t_bspeed", "Bohrer-Tempo", 25.0, 1.3, 20, "+8%/Stufe", null, null),
@@ -150,7 +154,8 @@ class Simulation {
             MType.DROHNE to "t_drohne",
             MType.ASSEMBLER to "t_assembler",
             MType.VERSTAERKER to "t_boost",
-            MType.HAENDLER to "t_haendler"
+            MType.HAENDLER to "t_haendler",
+            MType.RECYCLER to "t_recycler"
         )
 
         // Hoechstzahl je platzierbarem Typ, damit die Karte nicht zuwuchert.
@@ -164,7 +169,8 @@ class Simulation {
             MType.DROHNE to 8,
             MType.VERSTAERKER to 12,
             MType.HAENDLER to 8,
-            MType.PROSPEKTOR to 16
+            MType.PROSPEKTOR to 16,
+            MType.RECYCLER to 12
         )
 
         // Baukosten: (Rohstoff, Menge). Presse=Barren, Assembler=Platten usw.
@@ -175,6 +181,7 @@ class Simulation {
             MType.GENERATOR to Pair(Res.BARREN, 10.0),
             MType.LAGER to Pair(Res.BARREN, 8.0),
             MType.PROSPEKTOR to Pair(Res.BARREN, PROSPEKTOR_COST),
+            MType.RECYCLER to Pair(Res.BARREN, 10.0),
             MType.ASSEMBLER to Pair(Res.PLATTE, 10.0),
             MType.HAENDLER to Pair(Res.PLATTE, 12.0),
             MType.DROHNE to Pair(Res.PLATTE, 8.0),
@@ -301,6 +308,7 @@ class Simulation {
         Res.PLATTE -> globalPlatten
         Res.KOMPONENTE -> globalKomponente
         Res.ROHERZ -> 0.0
+        Res.SCHROTT -> 0.0
     }
     fun available(res: Res) = globalOf(res) + lagerSum(res.ordinal)
     fun availableBarren() = available(Res.BARREN)
@@ -313,6 +321,7 @@ class Simulation {
             Res.PLATTE -> globalPlatten += amt
             Res.KOMPONENTE -> globalKomponente += amt
             Res.ROHERZ -> {}
+            Res.SCHROTT -> {}
         }
     }
 
@@ -326,6 +335,7 @@ class Simulation {
             Res.PLATTE -> globalPlatten -= g
             Res.KOMPONENTE -> globalKomponente -= g
             Res.ROHERZ -> {}
+            Res.SCHROTT -> {}
         }
         rem -= g
         if (rem > 1e-9) {
@@ -439,6 +449,11 @@ class Simulation {
                 if (m.starved) return 1
                 if (scale < 0.999 && m.util < 0.98) return 3
             }
+            MType.RECYCLER -> {
+                if (m.output[Res.BARREN.ordinal] >= OUT_CAP - 0.5) return 2
+                if (m.starved) return 1
+                if (scale < 0.999 && m.util < 0.98) return 3
+            }
             MType.GENERATOR -> {
                 if (m.starved) return 1
             }
@@ -466,6 +481,7 @@ class Simulation {
     private fun ofenRate() = OFEN_RATE * (1.0 + 0.08 * lvl("t_ospeed")) * globalMult()
     private fun presseRate() = PRESSE_RATE * (1.0 + 0.08 * lvl("t_pspeed")) * globalMult()
     private fun assemblerRate() = ASSEMBLER_RATE * (1.0 + 0.08 * lvl("t_aspeed")) * globalMult()
+    private fun recyclerRate() = RECYCLER_RATE * globalMult()
     fun componentPrice() = COMPONENT_PRICE * (1.0 + 0.25 * lvl("t_wert"))
 
     private fun wearPerSec(t: MType) = when (t) {
@@ -473,6 +489,7 @@ class Simulation {
         MType.OFEN -> 1.2 / 60.0
         MType.PRESSE -> 1.5 / 60.0
         MType.ASSEMBLER -> 1.6 / 60.0
+        MType.RECYCLER -> 1.4 / 60.0
         MType.GENERATOR -> 0.8 / 60.0
         MType.DROHNE -> 0.5 / 60.0
         MType.VERSTAERKER -> 0.6 / 60.0
@@ -509,15 +526,17 @@ class Simulation {
         MType.PRESSE -> intArrayOf(Res.BARREN.ordinal)
         MType.ASSEMBLER -> intArrayOf(Res.PLATTE.ordinal)
         MType.GENERATOR -> intArrayOf(Res.ROHERZ.ordinal)
-        MType.LAGER -> intArrayOf(0, 1, 2, 3)
+        MType.RECYCLER -> intArrayOf(Res.SCHROTT.ordinal)
+        MType.LAGER -> intArrayOf(0, 1, 2, 3, 4)
         else -> IntArray(0)
     }
 
     private fun offers(t: MType, res: Int): Boolean = when (t) {
         MType.BOHRER -> res == Res.ROHERZ.ordinal
-        MType.OFEN -> res == Res.BARREN.ordinal
-        MType.PRESSE -> res == Res.PLATTE.ordinal
-        MType.ASSEMBLER -> res == Res.KOMPONENTE.ordinal
+        MType.OFEN -> res == Res.BARREN.ordinal || res == Res.SCHROTT.ordinal
+        MType.PRESSE -> res == Res.PLATTE.ordinal || res == Res.SCHROTT.ordinal
+        MType.ASSEMBLER -> res == Res.KOMPONENTE.ordinal || res == Res.SCHROTT.ordinal
+        MType.RECYCLER -> res == Res.BARREN.ordinal
         MType.LAGER -> true
         else -> false
     }
@@ -527,6 +546,7 @@ class Simulation {
         MType.OFEN -> m.input[Res.ROHERZ.ordinal] > 1e-6 && m.output[Res.BARREN.ordinal] < OUT_CAP - 1e-9
         MType.PRESSE -> m.input[Res.BARREN.ordinal] > 1e-6 && m.output[Res.PLATTE.ordinal] < OUT_CAP - 1e-9
         MType.ASSEMBLER -> m.input[Res.PLATTE.ordinal] > 1e-6 && m.output[Res.KOMPONENTE.ordinal] < OUT_CAP - 1e-9
+        MType.RECYCLER -> m.input[Res.SCHROTT.ordinal] > 1e-6 && m.output[Res.BARREN.ordinal] < OUT_CAP - 1e-9
         MType.DROHNE -> neighbors(r, c).any { grid[it[0]][it[1]]?.let { g -> g.condition < 99.999 } == true }
         MType.VERSTAERKER -> neighbors(r, c).any {
             val g = grid[it[0]][it[1]]?.type
@@ -609,6 +629,7 @@ class Simulation {
                     val made = max(0.0, min(want, min(byInput, OUT_CAP - m.output[Res.BARREN.ordinal])))
                     m.input[Res.ROHERZ.ordinal] -= made * 2.0
                     m.output[Res.BARREN.ordinal] += made
+                    m.output[Res.SCHROTT.ordinal] = min(OUT_CAP, m.output[Res.SCHROTT.ordinal] + made * SCHROTT_RATE)
                     m.condition = max(0.0, m.condition - wearPerSec(MType.OFEN) * wf * (made / ofenRate()))
                     m.util = if (nominal > 1e-9) made / nominal else 0.0
                     barMade += made
@@ -621,6 +642,7 @@ class Simulation {
                     val made = max(0.0, min(want, min(byInput, OUT_CAP - m.output[Res.PLATTE.ordinal])))
                     m.input[Res.BARREN.ordinal] -= made * 2.0
                     m.output[Res.PLATTE.ordinal] += made
+                    m.output[Res.SCHROTT.ordinal] = min(OUT_CAP, m.output[Res.SCHROTT.ordinal] + made * SCHROTT_RATE)
                     m.condition = max(0.0, m.condition - wearPerSec(MType.PRESSE) * wf * (made / presseRate()))
                     m.util = if (nominal > 1e-9) made / nominal else 0.0
                     platMade += made
@@ -633,6 +655,7 @@ class Simulation {
                     val made = max(0.0, min(want, min(byInput, OUT_CAP - m.output[Res.KOMPONENTE.ordinal])))
                     m.input[Res.PLATTE.ordinal] -= made * 2.0
                     m.output[Res.KOMPONENTE.ordinal] += made
+                    m.output[Res.SCHROTT.ordinal] = min(OUT_CAP, m.output[Res.SCHROTT.ordinal] + made * SCHROTT_RATE)
                     m.condition = max(0.0, m.condition - wearPerSec(MType.ASSEMBLER) * wf * (made / assemblerRate()))
                     m.util = if (nominal > 1e-9) made / nominal else 0.0
                     kompMade += made
@@ -673,6 +696,18 @@ class Simulation {
                     }
                     m.util = if (revealed > 0) 1.0 else 0.0
                 }
+                MType.RECYCLER -> {
+                    val nominal = recyclerRate() * ddt * boostAt(r, c)
+                    val want = nominal * scale * wearMult(m.condition)
+                    val byInput = m.input[Res.SCHROTT.ordinal] / 2.0
+                    val made = max(0.0, min(want, min(byInput, OUT_CAP - m.output[Res.BARREN.ordinal])))
+                    m.input[Res.SCHROTT.ordinal] -= made * 2.0
+                    m.output[Res.BARREN.ordinal] += made
+                    m.condition = max(0.0, m.condition - wearPerSec(MType.RECYCLER) * wf * (made / recyclerRate()))
+                    m.util = if (nominal > 1e-9) made / nominal else 0.0
+                    barMade += made
+                    if (byInput <= 1e-9 && m.output[Res.BARREN.ordinal] < OUT_CAP - 1e-9) m.starved = true
+                }
                 MType.LAGER, MType.REAKTOR, MType.HAENDLER -> { m.util = 0.0 }
             }
         }
@@ -691,6 +726,10 @@ class Simulation {
                 MType.ASSEMBLER -> {
                     val amt = min(liftRate() * ddt, m.output[Res.KOMPONENTE.ordinal])
                     m.output[Res.KOMPONENTE.ordinal] -= amt; globalKomponente += amt
+                }
+                MType.RECYCLER -> {
+                    val amt = min(liftRate() * ddt, m.output[Res.BARREN.ordinal])
+                    m.output[Res.BARREN.ordinal] -= amt; globalBarren += amt
                 }
                 else -> {}
             }

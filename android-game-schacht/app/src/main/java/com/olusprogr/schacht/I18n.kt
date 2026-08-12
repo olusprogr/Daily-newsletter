@@ -60,7 +60,9 @@ object I18n {
         "backup_failed" to "Backup fehlgeschlagen",
         "m_prospektor" to "Prospektor", "ms_prospektor" to "Prospekt.",
         "t_scan" to "Prospektor-Reichweite", "tf_scan" to "+1 Chunk Radius",
-        "unscanned" to "ungescannt", "scans" to "Deckt Chunks auf", "radius" to "Radius", "full" to "voll"
+        "unscanned" to "ungescannt", "scans" to "Deckt Chunks auf", "radius" to "Radius", "full" to "voll",
+        "schrott" to "Schrott", "m_recycler" to "Recycler", "ms_recycler" to "Recycl.",
+        "t_recycler" to "Recycler freischalten", "tf_recycler" to "Schrott -> Barren"
     )
 
     private val EN = mapOf(
@@ -115,7 +117,9 @@ object I18n {
         "backup_failed" to "Backup failed",
         "m_prospektor" to "Prospector", "ms_prospektor" to "Prospect.",
         "t_scan" to "Prospector range", "tf_scan" to "+1 chunk radius",
-        "unscanned" to "unscanned", "scans" to "Reveals chunks", "radius" to "Radius", "full" to "full"
+        "unscanned" to "unscanned", "scans" to "Reveals chunks", "radius" to "Radius", "full" to "full",
+        "schrott" to "Scrap", "m_recycler" to "Recycler", "ms_recycler" to "Recycl.",
+        "t_recycler" to "Unlock recycler", "tf_recycler" to "Scrap -> Ingots"
     )
 
     private val PL = mapOf(
@@ -170,7 +174,9 @@ object I18n {
         "backup_failed" to "Blad kopii",
         "m_prospektor" to "Prospektor", "ms_prospektor" to "Prospekt.",
         "t_scan" to "Zasieg prospektora", "tf_scan" to "+1 chunk promien",
-        "unscanned" to "niezbadany", "scans" to "Odkrywa chunki", "radius" to "Promien", "full" to "pelne"
+        "unscanned" to "niezbadany", "scans" to "Odkrywa chunki", "radius" to "Promien", "full" to "pelne",
+        "schrott" to "Zlom", "m_recycler" to "Recykler", "ms_recycler" to "Recykl.",
+        "t_recycler" to "Odblok. recykler", "tf_recycler" to "Zlom -> Sztaby"
     )
 
     private val M = mapOf(Lang.DE to DE, Lang.EN to EN, Lang.PL to PL)
