@@ -1,6 +1,42 @@
 {
   "items": [
     {
+      "link": "https://ai.google.dev/gemini-api/docs/models/gemini-3.7-flash",
+      "title": "Gemini 3.7 Flash",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-13T17:23:22+00:00",
+      "sent_at": "2026-08-13T17:54:54.297130+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/08/13/openai-hires-new-cro-as-executive-shake-up-continues/",
+      "title": "OpenAI hires new CRO as executive shake-up continues",
+      "summary": "Dali Rajic will take over as OpenAI's top salesperson.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-13T17:07:13+00:00",
+      "sent_at": "2026-08-13T17:54:54.297130+00:00"
+    },
+    {
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/",
+      "title": "Gemini 3.7 Flash",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-13T17:02:10+00:00",
+      "sent_at": "2026-08-13T17:54:54.297130+00:00"
+    },
+    {
+      "link": "https://www.seangoedecke.com/text-ai-watermarks/",
+      "title": "Text AI watermarks will always be trivial to remove",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-13T15:07:10+00:00",
+      "sent_at": "2026-08-13T17:54:54.297130+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/tech-industry/near-packaged-optics-gains-ground-aso-the-industry-hedges-against-co-packaged-optics-growing-pains",
       "title": "Near-packaged optics (NPO) gains ground as the industry hedges against CPO's growing pains — analysts say volume for NPO silicon photonics products will extend until the end of the decade",
       "summary": "The case for near-packaged optics (NPO) is strengthening, as the growing pains of co-packaged optics (CPO) become apparent. We explain the material differences between the two technologies as optics and silicon photonics make waves in the AI industry.",
