@@ -1,6 +1,24 @@
 {
   "items": [
     {
+      "link": "https://www.wired.com/story/mark-zuckerbergs-ai-manifesto-is-6500-words-and-barely-says-anything/",
+      "title": "Mark Zuckerberg’s AI Manifesto Is 6,500-Words—and Barely Says Anything",
+      "summary": "AI is shifting the culture, from tech CEO manifestos to 1 am job interviews. We unpack some of the latest, along with the top findings from Black Hat and Defcon, this week on Uncanny Valley.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-08-13T21:14:43+00:00",
+      "sent_at": "2026-08-13T21:41:26.483364+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/08/13/writer-introduces-new-ai-model-and-upgraded-harness-to-contain-token-costs/",
+      "title": "Writer introduces new AI model and upgraded harness to contain token costs",
+      "summary": "Built as a post-training variation on Z.ai's open source model GLM-5.2, Writer says the new system should provide deployment-ready capabilities at a much lower price.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-13T21:13:24+00:00",
+      "sent_at": "2026-08-13T21:41:26.483364+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/08/13/databricks-wanted-to-raise-1b-investors-wanted-15b-it-settled-on-5b-at-a-190b-valuation/",
       "title": "Databricks wanted to raise $1B, investors wanted $15B. It settled on $5B at a $190B valuation.",
       "summary": "AI is expensive, Ali Ghodsi tells TechCrunch. With so many investors wanting into his latest round, he said yes to more than planned.",
