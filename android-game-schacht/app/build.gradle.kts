@@ -11,8 +11,8 @@ android {
         applicationId = "com.olusprogr.schacht"
         minSdk = 24
         targetSdk = 34
-        versionCode = 37
-        versionName = "0.28-drone2"
+        versionCode = 38
+        versionName = "0.29-solar"
     }
 
     signingConfigs {

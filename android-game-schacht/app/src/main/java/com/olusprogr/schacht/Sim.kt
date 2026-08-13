@@ -23,7 +23,9 @@ enum class MType(val label: String, val sym: String, val power: Double) {
     VERSTAERKER("Verstaerker", "V", 6.0),
     HAENDLER("Haendler", "H", 0.0),
     PROSPEKTOR("Prospektor", "S", 2.0),
-    WINDRAD("Windrad", "W", 0.0)
+    WINDRAD("Windrad", "W", 0.0),
+    SOLAR("Solarpanel", "So", 0.0),
+    FORSCHUNG("Forschungszentrum", "Fz", 12.0)
 }
 
 class Machine(var type: MType) {
@@ -89,6 +91,7 @@ class Simulation {
 
     var powerSupply = 0.0
     var powerDemand = 0.0
+    var researchMult = 1.0           // globaler Produktionsbonus durch Forschungszentren
 
     // --- Statistik: geglaettete Auslastung je Maschinentyp ---
     val typeUtil = DoubleArray(MType.values().size)
@@ -131,6 +134,8 @@ class Simulation {
         const val SCAN_R = 4             // (Alt) Prospektor-Radius – Prospektor entfernt
         const val CHUNK_COST = 5.0       // Geld, um einen Chunk freizuschalten (1 Klick)
         const val WIND_POWER = 16.0      // Strom je Windrad (ohne Brennstoff)
+        const val SOLAR_POWER = 10.0     // Strom je Solarpanel (ohne Brennstoff)
+        const val RESEARCH_BOOST = 0.08  // globaler Produktionsbonus je Forschungszentrum
 
         const val HOSE_MAX = 5           // max. Schlauchlaenge Reaktor -> Wasser
 
@@ -138,6 +143,7 @@ class Simulation {
         fun footprint(t: MType): Pair<Int, Int> = when (t) {
             MType.WINDRAD -> Pair(1, 2)
             MType.REAKTOR -> Pair(3, 3)
+            MType.FORSCHUNG -> Pair(2, 1)
             else -> Pair(1, 1)
         }
 
@@ -156,6 +162,8 @@ class Simulation {
             TechNode("t_assembler", "Assembler freischalten", 25.0, 1.0, 1, "Platte -> Komponente", "t_presse", Res.PLATTE),
             TechNode("t_haendler", "Haendler freischalten", 20.0, 1.0, 1, "Komponenten -> Geld", "t_assembler", Res.PLATTE),
             TechNode("t_wind", "Windrad freischalten", 28.0, 1.0, 1, "Strom aus Wind", "t_gen", Res.BARREN),
+            TechNode("t_solar", "Solarpanel freischalten", 24.0, 1.0, 1, "Strom aus Sonne", "t_gen", Res.BARREN),
+            TechNode("t_research", "Forschungszentrum freischalten", 30.0, 1.0, 1, "boostet alle Maschinen", "t_assembler", Res.PLATTE),
             // Upgrades (mit Geld bezahlt)
             TechNode("t_bspeed", "Bohrer-Tempo", 25.0, 1.3, 20, "+8%/Stufe", null, null),
             TechNode("t_ospeed", "Ofen-Tempo", 35.0, 1.3, 20, "+8%/Stufe", null, null),
@@ -179,7 +187,9 @@ class Simulation {
             MType.DROHNE to "t_drohne",
             MType.ASSEMBLER to "t_assembler",
             MType.HAENDLER to "t_haendler",
-            MType.WINDRAD to "t_wind"
+            MType.WINDRAD to "t_wind",
+            MType.SOLAR to "t_solar",
+            MType.FORSCHUNG to "t_research"
         )
 
         // Hoechstzahl je platzierbarem Typ, damit die Karte nicht zuwuchert.
@@ -192,7 +202,9 @@ class Simulation {
             MType.LAGER to 16,
             MType.DROHNE to 8,
             MType.HAENDLER to 8,
-            MType.WINDRAD to 8
+            MType.WINDRAD to 8,
+            MType.SOLAR to 12,
+            MType.FORSCHUNG to 4
         )
 
         // Baukosten: (Rohstoff, Menge). Presse=Barren, Assembler=Platten usw.
@@ -203,6 +215,8 @@ class Simulation {
             MType.GENERATOR to Pair(Res.BARREN, 10.0),
             MType.LAGER to Pair(Res.BARREN, 8.0),
             MType.WINDRAD to Pair(Res.BARREN, 14.0),
+            MType.SOLAR to Pair(Res.BARREN, 10.0),
+            MType.FORSCHUNG to Pair(Res.PLATTE, 20.0),
             MType.ASSEMBLER to Pair(Res.PLATTE, 10.0),
             MType.HAENDLER to Pair(Res.PLATTE, 12.0),
             MType.DROHNE to Pair(Res.PLATTE, 8.0)
@@ -613,7 +627,7 @@ class Simulation {
     }
 
     // --- Tech-abhaengige Parameter ---
-    private fun globalMult() = 1.0 + 0.05 * lvl("t_takt")
+    private fun globalMult() = (1.0 + 0.05 * lvl("t_takt")) * researchMult
     private fun wearFactor() = max(0.3, 1.0 - 0.05 * lvl("t_robust"))
     private fun liftRate() = LIFT * (1.0 + 0.1 * lvl("t_lift"))
     private fun reactorPower() = REAKTOR_POWER + 5.0 * lvl("t_power")
@@ -634,6 +648,7 @@ class Simulation {
         MType.GENERATOR -> 0.8 / 60.0
         MType.DROHNE -> 0.5 / 60.0
         MType.VERSTAERKER -> 0.6 / 60.0
+        MType.FORSCHUNG -> 0.7 / 60.0
         else -> 0.0
     }
 
@@ -691,6 +706,7 @@ class Simulation {
             g == MType.BOHRER || g == MType.OFEN || g == MType.PRESSE || g == MType.ASSEMBLER
         }
         MType.PROSPEKTOR -> hasUnsurveyedInRange(r, c)
+        MType.FORSCHUNG -> true          // zieht Strom, solange es steht
         else -> false
     }
 
@@ -753,12 +769,18 @@ class Simulation {
             if (m.type == MType.REAKTOR) supply += reactorPower()
             if (m.type == MType.GENERATOR && m.input[Res.ROHERZ.ordinal] > 1e-6) supply += GEN_POWER
             if (m.type == MType.WINDRAD) supply += WIND_POWER
+            if (m.type == MType.SOLAR) supply += SOLAR_POWER
         }
         var demand = 0.0
         forEachMachine { m, r, c -> if (wantsToRun(m, r, c)) demand += m.type.power }
         val scale = if (demand <= 0.0) 1.0 else min(1.0, supply / demand)
         powerSupply = supply
         powerDemand = demand
+
+        // Forschungszentren: globaler Produktionsbonus (skaliert mit Stromversorgung)
+        var forsch = 0
+        forEachMachine { m, _, _ -> if (m.type == MType.FORSCHUNG) forsch++ }
+        researchMult = 1.0 + RESEARCH_BOOST * forsch * scale
 
         var barMade = 0.0
         var platMade = 0.0
@@ -863,6 +885,11 @@ class Simulation {
                     m.util = if (revealed > 0) 1.0 else 0.0
                 }
                 MType.WINDRAD -> { m.util = 1.0 }   // dreht sich immer (Strom aus Wind)
+                MType.SOLAR -> { m.util = 1.0 }      // liefert immer (Strom aus Sonne)
+                MType.FORSCHUNG -> {
+                    m.condition = max(0.0, m.condition - wearPerSec(MType.FORSCHUNG) * wf * ddt * scale)
+                    m.util = scale
+                }
                 MType.LAGER, MType.REAKTOR, MType.HAENDLER -> { m.util = 0.0 }
             }
         }

@@ -124,6 +124,8 @@ class GameView(context: Context) : View(context) {
         MType.REAKTOR -> Color.rgb(172, 122, 232)
         MType.PROSPEKTOR -> Color.rgb(96, 200, 210)
         MType.WINDRAD -> Color.rgb(214, 220, 230)
+        MType.SOLAR -> Color.rgb(96, 150, 220)
+        MType.FORSCHUNG -> Color.rgb(150, 130, 224)
     }
 
     private val p = Paint(Paint.ANTI_ALIAS_FLAG)
@@ -232,7 +234,8 @@ class GameView(context: Context) : View(context) {
 
     private val buildOrder = listOf(
         MType.BOHRER, MType.OFEN, MType.PRESSE, MType.ASSEMBLER,
-        MType.HAENDLER, MType.GENERATOR, MType.WINDRAD, MType.LAGER, MType.DROHNE
+        MType.HAENDLER, MType.GENERATOR, MType.WINDRAD, MType.SOLAR,
+        MType.LAGER, MType.DROHNE, MType.FORSCHUNG
     )
 
     private fun resAbbr(res: Res) = when (res) {
@@ -301,6 +304,8 @@ class GameView(context: Context) : View(context) {
                 MType.HAENDLER -> R.drawable.mach_haendler
                 MType.PROSPEKTOR -> R.drawable.mach_prospektor
                 MType.WINDRAD -> R.drawable.mach_windrad
+                MType.SOLAR -> R.drawable.mach_solar
+                MType.FORSCHUNG -> R.drawable.mach_research
             })
         }
         I18n.lang = try { Lang.values()[prefs.getInt("lang", Lang.EN.ordinal)] } catch (_: Exception) { Lang.EN }
@@ -833,7 +838,8 @@ class GameView(context: Context) : View(context) {
         if (m.type == MType.WINDRAD) { drawWindrad(canvas, x, topY); return }
 
         val hasWear = m.type != MType.REAKTOR && m.type != MType.LAGER &&
-            m.type != MType.HAENDLER && m.type != MType.PROSPEKTOR && m.type != MType.WINDRAD
+            m.type != MType.HAENDLER && m.type != MType.PROSPEKTOR && m.type != MType.WINDRAD &&
+            m.type != MType.SOLAR
         val pad = cell * 0.08f
 
         // Basis-Sprite (64x64 Bild-Kachel)
@@ -992,6 +998,8 @@ class GameView(context: Context) : View(context) {
             MType.LAGER -> "${tr("buffer")} ${oneDec(m.output[0])}E ${oneDec(m.output[1])}B ${oneDec(m.output[2])}P ${oneDec(m.output[3])}K"
             MType.VERSTAERKER -> "${tr("boosts")} (+${(Simulation.BOOST_PER * 100).toInt()}%)"
             MType.REAKTOR -> "${tr("provides")} ${Simulation.REAKTOR_POWER.toInt()} ${tr("strom")} (${tr("fixed")})"
+            MType.SOLAR -> "${tr("provides")} ${Simulation.SOLAR_POWER.toInt()} ${tr("strom")} (${tr("sun")})"
+            MType.FORSCHUNG -> "${tr("boosts_all")} +${(Simulation.RESEARCH_BOOST * 100).toInt()}%   x${sim.count(MType.FORSCHUNG)}"
             MType.DROHNE -> "${tr("repairs")} · R${sim.droneRange()} · ${sim.droneRepairRate().roundToInt()}%/s"
         }
         canvas.drawText(io, dp(12f), yy, pText)
@@ -1131,6 +1139,7 @@ class GameView(context: Context) : View(context) {
     private fun techEffect(id: String): String = when (id) {
         "t_assembler" -> tr("tf_assembler"); "t_haendler" -> tr("tf_haendler"); "t_boost" -> tr("tf_boost")
         "t_wind" -> tr("tf_wind")
+        "t_solar" -> tr("tf_solar"); "t_research" -> tr("tf_research")
         "t_diag" -> tr("tf_diag")
         "t_bspeed", "t_ospeed", "t_pspeed", "t_aspeed" -> tr("tf_speed")
         "t_wert" -> tr("tf_wert"); "t_scan" -> tr("tf_scan"); "t_takt" -> tr("tf_takt")

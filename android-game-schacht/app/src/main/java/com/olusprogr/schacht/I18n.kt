@@ -66,7 +66,11 @@ object I18n {
         "t_scan" to "Prospektor-Reichweite", "tf_scan" to "+1 Chunk Radius",
         "unscanned" to "ungescannt", "scans" to "Deckt Chunks auf", "radius" to "Radius", "full" to "voll",
         "m_windrad" to "Windrad", "ms_windrad" to "Windrad", "t_wind" to "Windrad freischalten",
-        "tf_wind" to "Strom aus Wind", "wind" to "Wind"
+        "tf_wind" to "Strom aus Wind", "wind" to "Wind",
+        "m_solar" to "Solarpanel", "ms_solar" to "Solar", "t_solar" to "Solarpanel freischalten",
+        "tf_solar" to "Strom aus Sonne", "sun" to "Sonne",
+        "m_forschung" to "Forschungszentrum", "ms_forschung" to "Forschung", "t_research" to "Forschung freischalten",
+        "tf_research" to "boostet alle Maschinen", "boosts_all" to "Boostet alle Maschinen"
     )
 
     private val EN = mapOf(
@@ -127,7 +131,11 @@ object I18n {
         "t_scan" to "Prospector range", "tf_scan" to "+1 chunk radius",
         "unscanned" to "unscanned", "scans" to "Reveals chunks", "radius" to "Radius", "full" to "full",
         "m_windrad" to "Wind turbine", "ms_windrad" to "Turbine", "t_wind" to "Unlock wind turbine",
-        "tf_wind" to "Power from wind", "wind" to "wind"
+        "tf_wind" to "Power from wind", "wind" to "wind",
+        "m_solar" to "Solar panel", "ms_solar" to "Solar", "t_solar" to "Unlock solar panel",
+        "tf_solar" to "Power from sun", "sun" to "sun",
+        "m_forschung" to "Research center", "ms_forschung" to "Research", "t_research" to "Unlock research",
+        "tf_research" to "boosts all machines", "boosts_all" to "Boosts all machines"
     )
 
     private val PL = mapOf(
@@ -188,7 +196,11 @@ object I18n {
         "t_scan" to "Zasieg prospektora", "tf_scan" to "+1 chunk promien",
         "unscanned" to "niezbadany", "scans" to "Odkrywa chunki", "radius" to "Promien", "full" to "pelne",
         "m_windrad" to "Turbina", "ms_windrad" to "Turbina", "t_wind" to "Odblok. turbine",
-        "tf_wind" to "Prad z wiatru", "wind" to "wiatr"
+        "tf_wind" to "Prad z wiatru", "wind" to "wiatr",
+        "m_solar" to "Panel solarny", "ms_solar" to "Solar", "t_solar" to "Odblok. panel solarny",
+        "tf_solar" to "Prad ze slonca", "sun" to "slonce",
+        "m_forschung" to "Centrum badan", "ms_forschung" to "Badania", "t_research" to "Odblok. badania",
+        "tf_research" to "wzmacnia wszystkie maszyny", "boosts_all" to "Wzmacnia wszystkie maszyny"
     )
 
     private val M = mapOf(Lang.DE to DE, Lang.EN to EN, Lang.PL to PL)
