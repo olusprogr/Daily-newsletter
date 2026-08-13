@@ -1,6 +1,33 @@
 {
   "items": [
     {
+      "link": "https://www.engadget.com/2236741/mico-microsofts-weird-lil-ai-guy-has-been-demoted/",
+      "title": "Mico, Microsoft's weird lil' AI guy, has been demoted",
+      "summary": "The amorphous corporate mascot will no longer haunt Copilot Voice.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-08-13T22:51:31+00:00",
+      "sent_at": "2026-08-13T23:37:50.234611+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/openai-safety-security-ai-agents-culture/",
+      "title": "The Safety Reckoning Inside OpenAI",
+      "summary": "OpenAI’s rogue agent hack was a watershed moment for AI safety and cybersecurity. It also sparked internal questions about the culture that led to it.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-08-13T22:37:19+00:00",
+      "sent_at": "2026-08-13T23:37:50.234611+00:00"
+    },
+    {
+      "link": "https://support.claude.com/en/articles/12326764-can-i-use-my-outputs-to-train-an-ai-model",
+      "title": "Can I use my Outputs to train an AI model?",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-13T09:34:13+00:00",
+      "sent_at": "2026-08-13T23:37:50.234611+00:00"
+    },
+    {
       "link": "https://www.theverge.com/tech/979869/flock-alpr-ai-surveillance-protest-privacy",
       "title": "The fight over Flock and other ALPRs",
       "summary": "There are over 120,000 of Flock’s automatic license plate reader (ALPR) cameras installed all over the US. Flock’s cameras, and others like them, use AI to identify and track vehicles based on their license plate number, make, model, color, and other info, networked together to track vehicles and people&#8217;s movements throughout the day and across [&#8230;]",
