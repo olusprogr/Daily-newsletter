@@ -34,6 +34,9 @@ class Machine(var type: MType) {
     var starved = false
     var w = 1     // Grundflaeche (Breite in Zellen)
     var h = 1     // Grundflaeche (Hoehe in Zellen), Anker = unterste Zelle
+    // Nur fuer die Drohnen-Station: aktuell angeflogene/reparierte Maschine (-1 = keine).
+    var svR = -1
+    var svC = -1
 }
 
 data class OfflineEvent(val timeSec: Int, val dead: Boolean, val mType: MType, val r: Int, val c: Int)
@@ -111,7 +114,8 @@ class Simulation {
         const val OUT_CAP = 20.0
         const val LAGER_CAP = 120.0
         const val REPAIR_COST = 5.0
-        const val DROHNE_RATE = 12.0
+        const val DROHNE_RATE = 30.0     // Reparaturtempo am aktuellen Ziel (%/s)
+        const val DROHNE_R = 3           // Reichweite der Station (Chebyshev-Radius)
         const val BOOST_PER = 0.20
         const val COMPONENT_PRICE = 8.0
         const val HAENDLER_SELL = 2.0
@@ -661,13 +665,27 @@ class Simulation {
         MType.OFEN -> m.input[Res.ROHERZ.ordinal] > 1e-6 && m.output[Res.BARREN.ordinal] < OUT_CAP - 1e-9
         MType.PRESSE -> m.input[Res.BARREN.ordinal] > 1e-6 && m.output[Res.PLATTE.ordinal] < OUT_CAP - 1e-9
         MType.ASSEMBLER -> m.input[Res.PLATTE.ordinal] > 1e-6 && m.output[Res.KOMPONENTE.ordinal] < OUT_CAP - 1e-9
-        MType.DROHNE -> neighbors(r, c).any { grid[it[0]][it[1]]?.let { g -> g.condition < 99.999 } == true }
+        MType.DROHNE -> damagedInRange(r, c) != null
         MType.VERSTAERKER -> neighbors(r, c).any {
             val g = grid[it[0]][it[1]]?.type
             g == MType.BOHRER || g == MType.OFEN || g == MType.PRESSE || g == MType.ASSEMBLER
         }
         MType.PROSPEKTOR -> hasUnsurveyedInRange(r, c)
         else -> false
+    }
+
+    /** Am staerksten beschaedigte Maschine im Umkreis der Station (oder null). */
+    private fun damagedInRange(r: Int, c: Int): IntArray? {
+        var bestR = -1; var bestC = -1; var worst = 99.999
+        for (dr in -DROHNE_R..DROHNE_R) for (dc in -DROHNE_R..DROHNE_R) {
+            val rr = r + dr; val cc = c + dc
+            if (rr !in 0 until n || cc !in 0 until n) continue
+            if (rr == r && cc == c) continue
+            val g = grid[rr][cc] ?: continue
+            if (g.type == MType.DROHNE) continue
+            if (g.condition < worst) { worst = g.condition; bestR = rr; bestC = cc }
+        }
+        return if (bestR >= 0) intArrayOf(bestR, bestC) else null
     }
 
     private fun hasUnsurveyedInRange(r: Int, c: Int): Boolean {
@@ -781,16 +799,20 @@ class Simulation {
                     if (fuel <= 1e-9) m.starved = true
                 }
                 MType.DROHNE -> {
-                    var did = false
-                    for (nb in neighbors(r, c)) {
-                        val g = grid[nb[0]][nb[1]] ?: continue
-                        if (g.condition < 99.999) {
-                            g.condition = min(100.0, g.condition + DROHNE_RATE * ddt * scale)
-                            did = true
-                        }
+                    // Aktuelles Ziel noch gueltig (in Reichweite & beschaedigt)?
+                    val cur = if (m.svR in 0 until n && m.svC in 0 until n) grid[m.svR][m.svC] else null
+                    val valid = cur != null && cur.type != MType.DROHNE && cur.condition < 99.999 &&
+                        kotlin.math.max(kotlin.math.abs(m.svR - r), kotlin.math.abs(m.svC - c)) <= DROHNE_R
+                    if (!valid) {
+                        val next = damagedInRange(r, c)
+                        if (next != null) { m.svR = next[0]; m.svC = next[1] } else { m.svR = -1; m.svC = -1 }
                     }
-                    if (did) m.condition = max(0.0, m.condition - wearPerSec(MType.DROHNE) * wf * ddt * scale)
-                    m.util = if (did) 1.0 else 0.0
+                    val tgt = if (m.svR >= 0) grid[m.svR][m.svC] else null
+                    if (tgt != null) {
+                        tgt.condition = min(100.0, tgt.condition + DROHNE_RATE * ddt * scale)
+                        m.condition = max(0.0, m.condition - wearPerSec(MType.DROHNE) * wf * ddt * scale)
+                        m.util = 1.0
+                    } else m.util = 0.0
                 }
                 MType.VERSTAERKER -> {
                     val active = wantsToRun(m, r, c)

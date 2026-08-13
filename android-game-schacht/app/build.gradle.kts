@@ -11,8 +11,8 @@ android {
         applicationId = "com.olusprogr.schacht"
         minSdk = 24
         targetSdk = 34
-        versionCode = 35
-        versionName = "0.26-grass2"
+        versionCode = 36
+        versionName = "0.27-drone"
     }
 
     signingConfigs {

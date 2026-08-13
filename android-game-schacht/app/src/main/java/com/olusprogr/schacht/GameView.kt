@@ -216,6 +216,10 @@ class GameView(context: Context) : View(context) {
 
     private var animT = 0f
 
+    // Animierte Position der Reparaturdrohne je Station (Zellkoordinaten).
+    private val droneAnimPos = HashMap<Int, FloatArray>()
+    private var droneLastT = 0f
+
     // Aufsteigende "+Geld"-Zahlen beim Abbauen von Hindernissen.
     private class Rise(val r: Int, val c: Int, val text: String, val start: Float)
     private val rises = ArrayList<Rise>()
@@ -488,6 +492,8 @@ class GameView(context: Context) : View(context) {
             val m = sim.grid[r][c] ?: continue
             drawMachine(canvas, m, vLeft + c * cell, vTop + r * cell)
         }
+        // Drohnen ueber allen Maschinen (fliegen zwischen Station und Zielen)
+        if (screen == Screen.GAME) drawDrones(canvas)
         if (screen == Screen.GAME) drawFlows(canvas)
         if (selR >= 0 && selR < an && selC < an && screen == Screen.GAME) {
             val sm = sim.grid[selR][selC]
@@ -738,6 +744,89 @@ class GameView(context: Context) : View(context) {
         canvas.drawCircle(hx, hy, cell * 0.06f, p)
     }
 
+    /** Reparaturdrohnen: fliegen von der Station zu beschaedigten Maschinen im Umkreis. */
+    private fun drawDrones(canvas: Canvas) {
+        val dt = (animT - droneLastT).coerceIn(0f, 0.1f); droneLastT = animT
+        val nn = sim.n
+        for (r in 0 until nn) for (c in 0 until nn) {
+            val m = sim.grid[r][c] ?: continue
+            if (m.type != MType.DROHNE) continue
+            val key = r * nn + c
+            val stX = c + 0.5f; val stY = r + 0.12f            // Ruheplatz ueber der Station
+            var tgtX = stX; var tgtY = stY; var repairing = false
+            if (m.svR in 0 until nn && m.svC in 0 until nn) {
+                val g = sim.grid[m.svR][m.svC]
+                if (g != null && g.condition < 99.999) {
+                    tgtX = m.svC + 0.5f; tgtY = m.svR + 0.32f; repairing = true
+                }
+            }
+            val pos = droneAnimPos.getOrPut(key) { floatArrayOf(stX, stY) }
+            val dx = tgtX - pos[0]; val dy = tgtY - pos[1]
+            val dist = kotlin.math.hypot(dx, dy)
+            val stepD = 6f * dt                                // 6 Zellen/s
+            if (dist > stepD && dist > 1e-4f) { pos[0] += dx / dist * stepD; pos[1] += dy / dist * stepD }
+            else { pos[0] = tgtX; pos[1] = tgtY }
+            val arrived = dist < 0.12f
+            val sx = vLeft + pos[0] * cell
+            val syBase = vTop + pos[1] * cell
+            if (sx < gridLeft - cell || sx > gridLeft + gridW + cell ||
+                syBase < gridTop - cell || syBase > gridTop + gridH + cell) continue
+            val hover = if (arrived) kotlin.math.sin(animT * 3.5f) * cell * 0.03f
+                        else kotlin.math.sin(animT * 11f) * cell * 0.012f
+            drawDroneSprite(canvas, sx, syBase + hover, repairing && arrived)
+        }
+    }
+
+    private fun drawDroneSprite(canvas: Canvas, cx: Float, cy: Float, repairing: Boolean) {
+        val u = cell
+        // Schatten
+        pSprite.color = Color.argb(60, 0, 0, 0)
+        canvas.drawOval(cx - u * 0.16f, cy + u * 0.24f, cx + u * 0.16f, cy + u * 0.32f, pSprite)
+        // Reparatur-Strahl + Funken
+        if (repairing) {
+            val fl = 0.5f + 0.5f * kotlin.math.sin(animT * 18f)
+            pSprite.color = Color.argb((90 * fl).toInt().coerceIn(0, 255), 120, 240, 180)
+            bladePath.reset()
+            bladePath.moveTo(cx - u * 0.04f, cy + u * 0.08f)
+            bladePath.lineTo(cx + u * 0.04f, cy + u * 0.08f)
+            bladePath.lineTo(cx + u * 0.10f, cy + u * 0.30f)
+            bladePath.lineTo(cx - u * 0.10f, cy + u * 0.30f)
+            bladePath.close()
+            canvas.drawPath(bladePath, pSprite)
+            for (k in 0 until 3) {
+                val ph = (animT * 2.2f + k * 0.33f) % 1f
+                val fx = cx + (k - 1) * u * 0.09f
+                val fy = cy + u * 0.30f - ph * u * 0.18f
+                pSprite.color = Color.argb(((1f - ph) * 220).toInt().coerceIn(0, 255), 190, 255, 210)
+                canvas.drawRect(fx - u * 0.012f, fy, fx + u * 0.012f, fy + u * 0.03f, pSprite)
+            }
+        }
+        // Arme (X)
+        p.color = Color.rgb(40, 44, 52); p.strokeWidth = u * 0.03f; p.style = Paint.Style.STROKE
+        canvas.drawLine(cx - u * 0.16f, cy - u * 0.08f, cx + u * 0.16f, cy + u * 0.08f, p)
+        canvas.drawLine(cx - u * 0.16f, cy + u * 0.08f, cx + u * 0.16f, cy - u * 0.08f, p)
+        p.style = Paint.Style.FILL
+        // Rotoren an den 4 Enden
+        val rot = floatArrayOf(-0.16f, -0.08f, 0.16f, -0.08f, -0.16f, 0.08f, 0.16f, 0.08f)
+        for (k in 0 until 4) {
+            val rx = cx + rot[k * 2] * u; val ry = cy + rot[k * 2 + 1] * u
+            pSprite.color = Color.argb(55, 180, 210, 235)
+            canvas.drawCircle(rx, ry, u * 0.085f, pSprite)
+            canvas.save(); canvas.rotate(animT * 720f + k * 40f, rx, ry)
+            p.color = Color.rgb(150, 170, 190); p.strokeWidth = u * 0.02f; p.style = Paint.Style.STROKE
+            canvas.drawLine(rx - u * 0.08f, ry, rx + u * 0.08f, ry, p)
+            p.style = Paint.Style.FILL; canvas.restore()
+            p.color = Color.rgb(60, 64, 74); canvas.drawCircle(rx, ry, u * 0.02f, p)
+        }
+        // Koerper
+        p.color = Color.rgb(52, 58, 68)
+        canvas.drawRoundRect(cx - u * 0.11f, cy - u * 0.07f, cx + u * 0.11f, cy + u * 0.07f, u * 0.03f, u * 0.03f, p)
+        // Scanner-Auge (gruen beim Reparieren, sonst blau)
+        p.color = if (repairing) Color.rgb(120, 240, 170) else Color.rgb(90, 190, 240)
+        canvas.drawCircle(cx, cy, u * 0.035f, p)
+        p.color = Color.argb(180, 255, 255, 255); canvas.drawCircle(cx - u * 0.01f, cy - u * 0.01f, u * 0.012f, p)
+    }
+
     private fun drawMachine(canvas: Canvas, m: Machine, x: Float, y: Float) {
         // mehrzellige Gebaeude: Anker unten, Sprite ragt nach oben
         val topY = y - (m.h - 1) * cell
@@ -903,7 +992,7 @@ class GameView(context: Context) : View(context) {
             MType.LAGER -> "${tr("buffer")} ${oneDec(m.output[0])}E ${oneDec(m.output[1])}B ${oneDec(m.output[2])}P ${oneDec(m.output[3])}K"
             MType.VERSTAERKER -> "${tr("boosts")} (+${(Simulation.BOOST_PER * 100).toInt()}%)"
             MType.REAKTOR -> "${tr("provides")} ${Simulation.REAKTOR_POWER.toInt()} ${tr("strom")} (${tr("fixed")})"
-            MType.DROHNE -> "${tr("repairs")} (${Simulation.DROHNE_RATE.toInt()}%/s)"
+            MType.DROHNE -> "${tr("repairs")} · R${Simulation.DROHNE_R} · ${Simulation.DROHNE_RATE.toInt()}%/s"
         }
         canvas.drawText(io, dp(12f), yy, pText)
         yy += dp(22f)
