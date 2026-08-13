@@ -312,6 +312,8 @@ object Sprites {
             else -> listOf(Px(15, 4, 2, 2, CYA))
         }
         MType.WINDRAD -> emptyList()
+        MType.SOLAR -> emptyList()
+        MType.FORSCHUNG -> emptyList()
     }
 
     // --- Ressourcen-Icons im 12x12-Raster ---
@@ -373,5 +375,7 @@ object Sprites {
         MType.HAENDLER -> HAENDLER
         MType.PROSPEKTOR -> PROSPEKTOR
         MType.WINDRAD -> GENERATOR
+        MType.SOLAR -> GENERATOR
+        MType.FORSCHUNG -> REAKTOR
     }
 }
