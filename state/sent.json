@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.engadget.com/2236313/spotify-has-roped-the-indie-pubisher-kobalt-into-its-ai-platform-for-covers-and-remixes/",
+      "title": "Spotify has roped the indie publisher Kobalt into its AI platform for covers and remixes",
+      "summary": "Spotify's forthcoming paid add-on lets fans generate content via \"AI-powered creative tools.\"",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-08-13T15:49:07+00:00",
+      "sent_at": "2026-08-13T15:56:10.091919+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/08/13/microsoft-kills-off-unsuccessful-ai-features-while-merging-its-separate-copilot-apps/",
+      "title": "Microsoft kills off unsuccessful AI features while merging its separate Copilot apps",
+      "summary": "Microsoft is simplifying Copilot by combining its consumer and business apps, and dropping AI-generated podcasts, Group Chats, Deep Research, and its Mico character.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-13T15:30:52+00:00",
+      "sent_at": "2026-08-13T15:56:10.091919+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/entertainment/977994/higgsfield-ai-cully-hill-boys-black-list",
+      "title": "I looked inside an AI generated movie, and the best parts were all human",
+      "summary": "Imagine a trio of bumbling, English lads who fantasize about becoming megastars while knocking back a few pints in a grimy pub somewhere in London. Picture the guys chortling and trying to one-up each other's idealized visions of the future with a series of increasingly glitzy fantasies in which their fame leads to access to [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-08-13T15:30:00+00:00",
+      "sent_at": "2026-08-13T15:56:10.091919+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/08/13/nvidias-new-500b-plan-is-risky-but-brilliant-especially-for-aging-gpus/",
+      "title": "Nvidia’s new $500B plan is risky but brilliant, especially for aging GPUs",
+      "summary": "Nvidia has a plan to make sure its GPUs won't lose value. It wants to convince a new crop of financiers to keep lending for AI buildouts.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-13T15:08:00+00:00",
+      "sent_at": "2026-08-13T15:56:10.091919+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/08/13/bartesian-duet-cocktail-maker-review/",
+      "title": "Who really needs a cocktail robot?",
+      "summary": "Bartesian's cocktail makers would be best described like a Keurig or Nespresso machine, but for alcoholic drinks.",
+      "source": "TechCrunch",
+      "category": "Innovationen",
+      "published": "2026-08-13T15:00:00+00:00",
+      "sent_at": "2026-08-13T15:56:10.091919+00:00"
+    },
+    {
+      "link": "https://spectrum.ieee.org/product-engineer",
+      "title": "Bring a Product Manager Mindset to Your Next Engineering Job",
+      "summary": "If you haven’t already seen a job listing for a “product engineer,” you probably will soon. The job everyone’s suddenly hiring for, this role is like a cross between a product manager and an engineer (as the name suggests). And it’s a hiring trend worth paying attention to. Companies are opening more of these roles every single month, but they’re struggling to fill them. The reason has almost nothing to do with engineers’ coding skills or years of experience. The best career move you can make to prepare for these types of roles has almost nothing to do with getting more technical. Instead, it comes down to one of the fluffiest, most overused, and potentially cringiest words in all of tech: mindset . Stick with me, I promise this goes somewhere useful. The problem: We were trained to be task-takers When I started out, my job looked like this: Drive to an office. Sit through meetings that led to other meetings until a project manager handed me a task they’d already chopped into tiny pieces. My job was to turn that task into code. It took years for me to get good at a coding language and tech stack, and once I did, I executed that knowledge against specs that somebody else wrote. You know what’s freakishly good at that exact job? I’ll give you a hint: It starts with A and ends with I. Boris Cherny, the creator of Claude Code, recently said: “coding is basically solved,” and “the bottleneck is going to be good ideas.” So if your entire value is “hand me a task and I’ll build it,” you’re in a footrace with the robots. I don’t like that for you. The bad news... that is also good news Many companies are flattening. Middle management is getting stripped out, for better or worse (mostly for worse), which means many of us are doing more with less. This might sound like purely more work, but it’s also an opening for anyone who cares about what they’re building and can put on their manager hat. Companies are no longer just hunting for the strongest engineer in one narrow domain. What’s rare, and what actually moves revenue, is an engineer who can spot the thing that’s quietly costing money and either flag it to leadership or just go fix it. What this actually looks like Being product-minded has NOTHING to do with your tech stack. Here’s where to start: Have an opinion and back it up. As a former engineering manager, the worst thing I ever heard was silence. I’d often ask the team what they thought because I doubted myself and wanted a gut check. I was grateful to the ones who said “nope, bad idea, here’s why.” Pushback is a gift. Learn the domain, casually. Work for a plumbing company? You don’t need to become a plumber, but spend an hour on Reddit threads where plumbers vent. Now your ideas come from your potential customers. Make experiments cheap and safe. This is where any engineer has massive leverage. Experiments are not free. A bad one loses customers and frustrates users. Tools like LaunchDarkly and Optimizely let you ship a change to 5 percent of users and roll it back the second it tanks. Learn them, or build a scrappy version yourself. A team that can quickly run safe experiments will out-learn everyone else in the building. Be data-driven. Stop fighting about button colors. Pick a goal: making money, finding product-market fit, or making the product sticky so people come back. Then measure it. If your gorgeous redesign tanks time-on-site, it failed, no matter how good it looked to you. If the ugly version makes more money, ship the ugly version. You don’t have to be the ideas person. Maybe you’re not a visionary. That’s fine. Organize a hackathon around an actual company goal. Pull up your company’s quarterly targets and build something against one of them. Don’t know what those targets are? That’s your first assignment. Good ideas are the new bottleneck—and they always have been When I was a manager, I asked myself one question every week: What’s the single most impactful thing I could do right now? The answer was almost never “write more code.” It was understanding a gnarly problem nobody had defined yet. Building a deck to spread knowledge that was in one person’s head. Getting the right three people in a room to actually make a decision we’d been putting off. Code is cheap, and it always has been. We just couldn’t see it, because for decades the typing took so long that it felt like the hard part. It never was. The hard part was always knowing what’s worth building. — Brian Siobahn Day Grady Wants Everyone to Be AI Literate In January 2025, Siobahn Day Grady launched the first AI research institute at a historically Black college or university. The institute aims to help expand AI skills for all students at North Carolina Central University, where Grady is an associate professor, through both AI research opportunities and skills training. Though the institute is the first of its kind, Grady hopes it could serve as a model for other HBCUs. Read more here . Should Researchers Write Papers for AI Instead of People? AI is increasingly used in the scientific research process. So does publishing need to change to keep up? Jiachen Liu recently co-authored a paper published on ArXiv arguing that the PDF should be replaced with an “Agent-Native Research Artifact” designed with AI in mind. In this interview with IEEE Spectrum , Liu lays out a provocative vision of AI-driven research and an infrastructure that captures—and learns from—details that often get left out of today’s papers. Read more here . Detect Dark Matter’s Mark From Your Backyard Astronomers still don’t know exactly what dark matter is, but they can detect it—and so can you. With a small radio telescope and a few other pieces, you can create a DIY setup to gauge how fast hydrogen clouds are moving across the Milky Way. Feed those measurements into a spreadsheet, and you can see the same signals that have baffled the astronomical community for decades. Read more here .",
+      "source": "IEEE Spectrum",
+      "category": "AI",
+      "published": "2026-08-13T14:44:50+00:00",
+      "sent_at": "2026-08-13T15:56:10.091919+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/ai/2026/08/anthropic-could-be-worth-2-trillion-when-it-goes-public/",
+      "title": "Anthropic could be worth $2 trillion when it goes public",
+      "summary": "Rapid revenue growth fuels hope Claude maker's IPO is the biggest listing in history",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-08-13T13:58:56+00:00",
+      "sent_at": "2026-08-13T15:56:10.091919+00:00"
+    },
+    {
+      "link": "https://alignment.anthropic.com/2026/conceptual-reasoning-index/",
+      "title": "Anthropic: Introducing The Conceptual Reasoning Index",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-13T13:48:14+00:00",
+      "sent_at": "2026-08-13T15:56:10.091919+00:00"
+    },
+    {
       "link": "https://electrek.co/2026/08/13/volkswagen-turning-id-buzz-into-electric-camper-van/",
       "title": "Volkswagen’s new electric camper van turns the ID. Buzz into a home on wheels",
       "summary": "Volkswagen is giving people what they want — an all-electric, fully fledged camper van that can be assembled in minutes. The ID. California Cruise is coming as the first all-electric California camper.",
