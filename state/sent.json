@@ -1,6 +1,33 @@
 {
   "items": [
     {
+      "link": "https://www.theverge.com/tech/979869/flock-alpr-ai-surveillance-protest-privacy",
+      "title": "The fight over Flock and other ALPRs",
+      "summary": "There are over 120,000 of Flock’s automatic license plate reader (ALPR) cameras installed all over the US. Flock’s cameras, and others like them, use AI to identify and track vehicles based on their license plate number, make, model, color, and other info, networked together to track vehicles and people&#8217;s movements throughout the day and across [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-08-13T21:46:21+00:00",
+      "sent_at": "2026-08-13T22:37:12.016390+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/979871/microsoft-copilot-mico-retired",
+      "title": "Microsoft’s Clippy-like Mico character is no longer the face of Copilot",
+      "summary": "Microsoft Copilot will no longer show its emotive yellow blob, Mico, when you use the chatbot's voice mode. In a support page, Microsoft says it's going to move Mico to its Learn Live platform, where the avatar will have \"more to react to,\" as reported earlier by GeekWire. Mico launched in Copilot's voice mode last [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-08-13T21:42:38+00:00",
+      "sent_at": "2026-08-13T22:37:12.016390+00:00"
+    },
+    {
+      "link": "https://cdn.openai.com/pdf/how-organizations-use-chatgpt.pdf",
+      "title": "How Organizations Use AI: Evidence from ChatGPT [pdf]",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-13T19:25:38+00:00",
+      "sent_at": "2026-08-13T22:37:12.016390+00:00"
+    },
+    {
       "link": "https://www.wired.com/story/mark-zuckerbergs-ai-manifesto-is-6500-words-and-barely-says-anything/",
       "title": "Mark Zuckerberg’s AI Manifesto Is 6,500-Words—and Barely Says Anything",
       "summary": "AI is shifting the culture, from tech CEO manifestos to 1 am job interviews. We unpack some of the latest, along with the top findings from Black Hat and Defcon, this week on Uncanny Valley.",
