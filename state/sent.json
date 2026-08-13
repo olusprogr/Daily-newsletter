@@ -1,6 +1,15 @@
 {
   "items": [
     {
+      "link": "https://openai.com/codex/",
+      "title": "ChatGPT Desktop (Codex Desktop) for Linux",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-13T04:53:41+00:00",
+      "sent_at": "2026-08-13T08:18:39.955765+00:00"
+    },
+    {
       "link": "https://arstechnica.com/ai/2026/08/new-font-turns-ordinary-webpages-into-nonsense-for-ai-scrapers/",
       "title": "The web’s newest weapon against AI scrapers is a font",
       "summary": "“ShieldFont” aims to poison AI training data without making pages unreadable for people.",
