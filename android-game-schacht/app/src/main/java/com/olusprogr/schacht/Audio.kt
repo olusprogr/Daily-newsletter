@@ -158,109 +158,166 @@ class Audio {
         return out
     }
 
-    private class Chord(val bass: Double, val tones: DoubleArray)
+    // MIDI-Note -> Frequenz (A4=69=440Hz)
+    private fun nf(midi: Int): Double = 440.0 * Math.pow(2.0, (midi - 69) / 12.0)
 
-    // Akkord-Bibliothek (Bass + drei Akkordtoene).
-    private fun chord(name: String): Chord = when (name) {
-        "Am" -> Chord(55.0, doubleArrayOf(220.0, 261.63, 329.63))
-        "F"  -> Chord(43.65, doubleArrayOf(174.61, 220.0, 261.63))
-        "C"  -> Chord(65.41, doubleArrayOf(261.63, 329.63, 392.0))
-        "G"  -> Chord(49.0, doubleArrayOf(196.0, 246.94, 293.66))
-        "E"  -> Chord(41.20, doubleArrayOf(207.65, 246.94, 329.63))
-        "Dm" -> Chord(73.42, doubleArrayOf(220.0, 293.66, 349.23))
-        else -> Chord(55.0, doubleArrayOf(220.0, 261.63, 329.63))
+    private class Ch(val root: Int, val triad: IntArray)
+    private fun chordOf(name: String): Ch = when (name) {
+        "Am" -> Ch(45, intArrayOf(57, 60, 64))
+        "F"  -> Ch(41, intArrayOf(53, 57, 60))
+        "C"  -> Ch(48, intArrayOf(60, 64, 67))
+        "G"  -> Ch(43, intArrayOf(55, 59, 62))
+        "E"  -> Ch(40, intArrayOf(52, 56, 59))
+        "Dm" -> Ch(50, intArrayOf(62, 65, 69))
+        else -> Ch(45, intArrayOf(57, 60, 64))
     }
 
-    /** Parameter einer Musik-Sektion – so bekommt jede Sektion einen eigenen Charakter. */
-    private class Section(
-        val prog: List<String>,
-        val withPad: Boolean,
-        val leadSteps: Int,
-        val leadPattern: IntArray,
-        val withPulse: Boolean,
-        val bassAmp: Double = 0.15
-    )
+    // --- Schlagzeug-Oneshots ---
+    private fun kickSample(): DoubleArray {
+        val n = (sr * 0.16).toInt(); val a = DoubleArray(n); var ph = 0.0
+        for (i in 0 until n) {
+            val p = i.toDouble() / n
+            val f = 120.0 * exp(-9.0 * p) + 46.0
+            ph += 2.0 * PI * f / sr
+            a[i] = sin(ph) * exp(-6.0 * p)
+        }
+        return a
+    }
+    private fun snareSample(): DoubleArray {
+        val n = (sr * 0.13).toInt(); val a = DoubleArray(n); val rnd = java.util.Random(7)
+        for (i in 0 until n) {
+            val p = i.toDouble() / n
+            val noise = rnd.nextDouble() * 2.0 - 1.0
+            val tone = sin(2.0 * PI * 185.0 * i.toDouble() / sr)
+            a[i] = (noise * 0.75 + tone * 0.5) * exp(-9.0 * p)
+        }
+        return a
+    }
+    private fun hatSample(): DoubleArray {
+        val n = (sr * 0.045).toInt(); val a = DoubleArray(n); val rnd = java.util.Random(11); var prev = 0.0
+        for (i in 0 until n) {
+            val p = i.toDouble() / n
+            val noise = rnd.nextDouble() * 2.0 - 1.0
+            val hp = noise - prev; prev = noise            // grobe Hochpass -> heller Hi-Hat
+            a[i] = hp * exp(-42.0 * p) * 0.6
+        }
+        return a
+    }
+    private fun addSample(mix: DoubleArray, start: Int, s: DoubleArray, amp: Double) {
+        for (i in s.indices) { val idx = start + i; if (idx < 0) continue; if (idx >= mix.size) break; mix[idx] += s[i] * amp }
+    }
+
+    // --- Bassnote (Sinus + etwas Rechteck-Oberton, perkussive Huelle) ---
+    private fun bassNote(mix: DoubleArray, start: Int, dur: Int, midi: Int, amp: Double) {
+        val f = nf(midi)
+        for (i in 0 until dur) {
+            val idx = start + i; if (idx >= mix.size) break
+            val p = i.toDouble() / dur
+            val env = if (p < 0.02) p / 0.02 else exp(-2.8 * p)
+            val s = sin(2.0 * PI * f * i.toDouble() / sr)
+            val w = s * 0.85 + (if (s >= 0) 1.0 else -1.0) * 0.15
+            mix[idx] += w * amp * env
+        }
+    }
+
+    // --- Lead-Pluck (Saegezahn+Rechteck, Vibrato, Zupf-Huelle) ---
+    private fun pluck(mix: DoubleArray, start: Int, dur: Int, midi: Int, amp: Double) {
+        if (midi < 0) return
+        val f = nf(midi)
+        for (i in 0 until dur) {
+            val idx = start + i; if (idx < 0) continue; if (idx >= mix.size) break
+            val p = i.toDouble() / dur
+            val env = exp(-3.0 * p) * (1.0 - 0.2 * p)
+            val ts = i.toDouble() / sr
+            val vib = 1.0 + 0.004 * sin(2.0 * PI * 5.5 * ts)
+            val ph = f * vib * ts
+            val saw = 2.0 * (ph - Math.floor(ph)) - 1.0
+            val sq = if (sin(2.0 * PI * f * ts) >= 0) 1.0 else -1.0
+            val w = saw * 0.5 + sq * 0.16
+            mix[idx] += w * amp * env
+        }
+    }
 
     /**
-     * Mehrteilige Musik statt eines einzigen Loops: vier je 8s lange Sektionen
-     * mit unterschiedlichen Akkordfolgen UND Instrumentierung (mal mit Pad, mal
-     * treibendes Arpeggio, mal ruhig). Ergibt ~32s Abwechslung, die sich nahtlos
-     * wiederholt. Weiche tanh-Begrenzung gegen hartes Clipping.
+     * Ein richtig komponierter, nahtlos loopender Track: Melodie + Bassline +
+     * Akkord-Pad + Schlagzeug (Kick/Snare/HiHat), aufgeteilt in Strophe und
+     * Refrain. 120 BPM in a-Moll, ~32s. Alles prozedural (keine Asset-Dateien).
      */
     private fun buildMusic(): ShortArray {
-        val secLen = (sr * 8.0).toInt()
-        val sections = listOf(
-            // A: ruhig-warm, volles Bild
-            Section(listOf("Am", "F", "C", "G"), true, 32, intArrayOf(0, 2, 1, 2, 0, 1, 2, 1), true),
-            // B: treibend, ohne Pad, schnelleres Arpeggio, kein Puls
-            Section(listOf("Am", "G", "F", "E"), false, 64, intArrayOf(0, 1, 2, 1), false, 0.17),
-            // C: hell und sparsam
-            Section(listOf("C", "G", "Am", "F"), true, 16, intArrayOf(2, 0, 1, 0), true, 0.13),
-            // D: bewegter Abschluss
-            Section(listOf("Dm", "F", "C", "G"), true, 32, intArrayOf(0, 2, 1, 3, 2, 1, 0, 1), true)
-        )
-        val nS = secLen * sections.size
-        val mix = DoubleArray(nS)
-        for ((si, sec) in sections.withIndex()) renderSection(mix, si * secLen, secLen, sec)
+        val bpm = 120.0
+        val six = (sr * (60.0 / bpm) / 4.0).toInt()   // Sechzehntel in Samples
+        val barLen = six * 16
 
-        val out = ShortArray(nS)
-        for (i in 0 until nS) {
-            val v = kotlin.math.tanh(mix[i] * 1.15)
-            out[i] = (v * 32767.0 * 0.82).toInt().coerceIn(-32767, 32767).toShort()
+        // Akkord je Takt (Strophe 8 + Refrain 8)
+        val prog = arrayOf(
+            "Am", "F", "C", "G", "Am", "F", "G", "E",
+            "C", "G", "Am", "F", "C", "G", "Dm", "E"
+        )
+        // Melodie je Takt: Paare (MIDI, Dauer in Sechzehnteln), -1 = Pause; Summe je Takt = 16
+        val mel = arrayOf(
+            intArrayOf(64,4, 69,4, 72,4, 71,4),          // Am
+            intArrayOf(69,4, 72,4, 69,2, 67,2, 65,4),    // F
+            intArrayOf(67,4, 72,4, 76,4, 74,4),          // C
+            intArrayOf(74,4, 71,4, 67,4, 62,4),          // G
+            intArrayOf(64,4, 69,4, 72,4, 76,4),          // Am
+            intArrayOf(77,4, 76,4, 72,4, 69,4),          // F
+            intArrayOf(71,4, 74,4, 67,4, 71,4),          // G
+            intArrayOf(64,4, 68,4, 71,4, 64,4),          // E
+            intArrayOf(72,2, 76,2, 79,4, 76,4, 72,4),    // C  (Refrain)
+            intArrayOf(74,2, 71,2, 67,4, 71,4, 74,4),    // G
+            intArrayOf(76,2, 72,2, 69,4, 72,4, 76,4),    // Am
+            intArrayOf(77,4, 76,4, 74,4, 72,4),          // F
+            intArrayOf(76,2, 79,2, 84,4, 79,4, 76,4),    // C
+            intArrayOf(74,2, 79,2, 83,4, 79,4, 74,4),    // G
+            intArrayOf(69,2, 74,2, 77,4, 81,4, 77,4),    // Dm
+            intArrayOf(68,4, 71,4, 76,4, 71,4)           // E
+        )
+        val nBars = prog.size
+        val total = barLen * nBars
+        val mix = DoubleArray(total)
+        val kick = kickSample(); val snare = snareSample(); val hat = hatSample()
+        val echo = six * 3
+
+        for (bar in 0 until nBars) {
+            val base = bar * barLen
+            val ch = chordOf(prog[bar])
+            val chorus = bar >= 8
+            // Pad (Dreiklang, weiche Huelle)
+            for (i in 0 until barLen) {
+                val idx = base + i; val p = i.toDouble() / barLen
+                val env = (if (p < 0.08) p / 0.08 else if (p > 0.92) (1.0 - p) / 0.08 else 1.0)
+                var pad = 0.0
+                for (m in ch.triad) pad += sin(2.0 * PI * nf(m) * idx.toDouble() / sr)
+                mix[idx] += pad * 0.016 * env
+            }
+            // Bass: acht Achtel, Grundton mit Quinte im Groove
+            val bassPat = intArrayOf(0, 0, 7, 0, 0, 7, 0, 7)
+            for (e in 0 until 8) bassNote(mix, base + e * (six * 2), six * 2, ch.root + bassPat[e], 0.17)
+            // Schlagzeug
+            addSample(mix, base + 0 * six, kick, 0.55)
+            addSample(mix, base + 8 * six, kick, 0.55)
+            addSample(mix, base + 10 * six, kick, 0.30)
+            addSample(mix, base + 4 * six, snare, 0.42)
+            addSample(mix, base + 12 * six, snare, 0.42)
+            for (h in 0 until 8) addSample(mix, base + h * 2 * six, hat, if (h % 2 == 0) 0.22 else 0.13)
+            if (chorus) { addSample(mix, base + 14 * six, snare, 0.24); addSample(mix, base + 15 * six, hat, 0.18) }
+            // Melodie (+ dezentes Echo)
+            val mb = mel[bar]; var step = 0; var j = 0
+            val lamp = if (chorus) 0.16 else 0.13
+            while (j + 1 < mb.size) {
+                val midi = mb[j]; val d = mb[j + 1]; j += 2
+                val st = base + step * six; val dur = d * six
+                pluck(mix, st, dur, midi, lamp)
+                pluck(mix, st + echo, dur, midi, lamp * 0.33)
+                step += d
+            }
+        }
+
+        val out = ShortArray(total)
+        for (i in 0 until total) {
+            val v = kotlin.math.tanh(mix[i] * 1.1)
+            out[i] = (v * 32767.0 * 0.85).toInt().coerceIn(-32767, 32767).toShort()
         }
         return out
-    }
-
-    private fun renderSection(mix: DoubleArray, offset: Int, len: Int, sec: Section) {
-        val chords = sec.prog.size
-        val chordLen = len / chords
-        for (ci in 0 until chords) {
-            val ch = chord(sec.prog[ci])
-            val start = offset + ci * chordLen
-            for (i in 0 until chordLen) {
-                val idx = start + i
-                if (idx >= mix.size) break
-                val p = i.toDouble() / chordLen
-                val t = idx.toDouble() / sr
-                val bEnv = (if (p < 0.03) p / 0.03 else if (p > 0.9) (1.0 - p) / 0.1 else 1.0).coerceIn(0.0, 1.0)
-                mix[idx] += sin(2.0 * PI * ch.bass * t) * sec.bassAmp * bEnv
-                mix[idx] += sin(2.0 * PI * ch.bass * 2.0 * t) * (sec.bassAmp * 0.23) * bEnv
-                if (sec.withPad) {
-                    var pad = 0.0
-                    for (f in ch.tones) pad += sin(2.0 * PI * f * t)
-                    val padEnv = (if (p < 0.15) p / 0.15 else if (p > 0.85) (1.0 - p) / 0.15 else 1.0).coerceIn(0.0, 1.0)
-                    mix[idx] += pad * 0.026 * padEnv
-                }
-            }
-        }
-        // Glocken-Lead
-        val stepLen = len / sec.leadSteps
-        for (s in 0 until sec.leadSteps) {
-            val ci = s * chords / sec.leadSteps
-            val ch = chord(sec.prog[ci])
-            val f = ch.tones[sec.leadPattern[s % sec.leadPattern.size] % ch.tones.size] * 2.0
-            for (i in 0 until stepLen) {
-                val idx = offset + s * stepLen + i
-                if (idx >= mix.size) break
-                val p = i.toDouble() / stepLen
-                val env = exp(-5.0 * p) * (1.0 - p)
-                mix[idx] += sin(2.0 * PI * f * (offset + s * stepLen + i) / sr) * 0.05 * env
-            }
-        }
-        // dezenter Puls
-        if (sec.withPulse) {
-            val beat = (sr * 0.5).toInt()
-            val tickLen = (sr * 0.03).toInt()
-            var b = 0
-            while (b < len) {
-                for (i in 0 until tickLen) {
-                    val idx = offset + b + i
-                    if (idx >= mix.size) break
-                    val env = exp(-28.0 * (i.toDouble() / tickLen))
-                    mix[idx] += sin(2.0 * PI * 1600.0 * idx / sr) * 0.012 * env
-                }
-                b += beat
-            }
-        }
     }
 }
