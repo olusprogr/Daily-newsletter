@@ -1,6 +1,6 @@
 from PIL import Image
 import random
-SRC="/root/.claude/uploads/d83acb4c-7a2c-5dd2-aa53-ab7b5d062310/bdbb4e68-1000077103.jpg"
+SRC="/root/.claude/uploads/d83acb4c-7a2c-5dd2-aa53-ab7b5d062310/e601ae3a-1000077151.png"
 OUT="/home/user/physik/android-game-schacht/app/src/main/res/drawable-nodpi"
 SP="/tmp/claude-0/-home-user-physik/d83acb4c-7a2c-5dd2-aa53-ab7b5d062310/scratchpad"
 
