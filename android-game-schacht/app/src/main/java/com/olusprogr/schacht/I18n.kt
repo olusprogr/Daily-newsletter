@@ -70,7 +70,8 @@ object I18n {
         "m_solar" to "Solarpanel", "ms_solar" to "Solar", "t_solar" to "Solarpanel freischalten",
         "tf_solar" to "Strom aus Sonne", "sun" to "Sonne",
         "m_forschung" to "Forschungszentrum", "ms_forschung" to "Forschung", "t_research" to "Forschung freischalten",
-        "tf_research" to "boostet alle Maschinen", "boosts_all" to "Boostet alle Maschinen"
+        "tf_research" to "produziert Forschung 1/s", "produces_research" to "Produziert Forschung",
+        "coast" to "Kueste", "res_short" to "Forschung"
     )
 
     private val EN = mapOf(
@@ -135,7 +136,8 @@ object I18n {
         "m_solar" to "Solar panel", "ms_solar" to "Solar", "t_solar" to "Unlock solar panel",
         "tf_solar" to "Power from sun", "sun" to "sun",
         "m_forschung" to "Research center", "ms_forschung" to "Research", "t_research" to "Unlock research",
-        "tf_research" to "boosts all machines", "boosts_all" to "Boosts all machines"
+        "tf_research" to "produces research 1/s", "produces_research" to "Produces research",
+        "coast" to "coast", "res_short" to "research"
     )
 
     private val PL = mapOf(
@@ -200,7 +202,8 @@ object I18n {
         "m_solar" to "Panel solarny", "ms_solar" to "Solar", "t_solar" to "Odblok. panel solarny",
         "tf_solar" to "Prad ze slonca", "sun" to "slonce",
         "m_forschung" to "Centrum badan", "ms_forschung" to "Badania", "t_research" to "Odblok. badania",
-        "tf_research" to "wzmacnia wszystkie maszyny", "boosts_all" to "Wzmacnia wszystkie maszyny"
+        "tf_research" to "produkuje badania 1/s", "produces_research" to "Produkuje badania",
+        "coast" to "wybrzeze", "res_short" to "badania"
     )
 
     private val M = mapOf(Lang.DE to DE, Lang.EN to EN, Lang.PL to PL)

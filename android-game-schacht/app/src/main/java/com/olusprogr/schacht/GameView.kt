@@ -110,6 +110,7 @@ class GameView(context: Context) : View(context) {
     private val cResPlatte = Color.rgb(104, 168, 216)
     private val cResKomp = Color.rgb(96, 214, 204)
     private val cResGeld = Color.rgb(246, 200, 98)
+    private val cResForsch = Color.rgb(186, 158, 244)
 
     private fun mColor(t: MType) = when (t) {
         MType.BOHRER -> Color.rgb(200, 152, 92)
@@ -448,6 +449,12 @@ class GameView(context: Context) : View(context) {
         val moneyW = pText.measureText(moneyStr)
         pText.textSize = dp(13f); pText.color = cGood
         canvas.drawText("+${fmt(sim.moneyPerMin)}/min", dp(32f) + moneyW + dp(10f), dp(27f), pText)
+
+        // Forschungswaehrung (rechts oben)
+        pText.textAlign = Paint.Align.RIGHT
+        pText.textSize = dp(17f); pText.color = cResForsch
+        canvas.drawText("◆ ${fmt(sim.research)}", W - dp(10f), dp(26f), pText)
+        pText.textAlign = Paint.Align.LEFT
 
         // Bestand inkl. Lager-Inhalten (mit Pixel-Icons)
         pText.textSize = dp(14f); pText.color = cText
@@ -939,14 +946,16 @@ class GameView(context: Context) : View(context) {
             val max = sim.maxCount(t)
             val full = used >= max
             val unlocked = sim.canBuild(t) && !full
-            val (cres, camt) = sim.buildCost(t)
-            val afford = sim.available(cres) >= camt
+            val moneyB = sim.isMoneyBuilt(t)
+            val camt = if (moneyB) sim.moneyBuildCost(t) else sim.buildCost(t).second
+            val curLabel = if (moneyB) "€" else resAbbr(sim.buildCost(t).first)
+            val afford = if (moneyB) sim.money >= camt else sim.available(sim.buildCost(t).first) >= camt
             val sub: String
             val subCol: Int
             when {
                 !sim.canBuild(t) -> { sub = tr("tech_needed"); subCol = cDim }
                 full -> { sub = "$used/$max ${tr("full")}"; subCol = cBad }
-                else -> { sub = "${camt.toInt()}${resAbbr(cres)} $used/$max"; subCol = if (afford) cDim else cBad }
+                else -> { sub = "${camt.toInt()}$curLabel $used/$max"; subCol = if (afford) cDim else cBad }
             }
             val active = buildTool == t
             val mc = mColor(t)
@@ -989,7 +998,11 @@ class GameView(context: Context) : View(context) {
                 "${tr("out")} ${oneDec(m.output[0])} ${tr("roherz")}   ${tr("floor")}: $floorTxt"
             }
             MType.PROSPEKTOR -> "${tr("scans")} (${tr("radius")} ${sim.scanRadius()})"
-            MType.WINDRAD -> "${tr("provides")} ${Simulation.WIND_POWER.toInt()} ${tr("strom")} (${tr("wind")})"
+            MType.WINDRAD -> {
+                val coast = sim.windCoastBonus(selR, selC) > 1.0
+                val wp = (Simulation.WIND_POWER * sim.windCoastBonus(selR, selC)).roundToInt()
+                "${tr("provides")} $wp ${tr("strom")} (${if (coast) tr("coast") else tr("wind")})"
+            }
             MType.OFEN -> "${tr("in")} ${oneDec(m.input[0])} ${tr("roherz")}   ${tr("out")} ${oneDec(m.output[1])} ${tr("barren")}"
             MType.PRESSE -> "${tr("in")} ${oneDec(m.input[1])} ${tr("barren")}   ${tr("out")} ${oneDec(m.output[2])} ${tr("platten")}"
             MType.ASSEMBLER -> "${tr("in")} ${oneDec(m.input[2])} ${tr("platten")}   ${tr("out")} ${oneDec(m.output[3])} ${tr("komp")}"
@@ -999,7 +1012,7 @@ class GameView(context: Context) : View(context) {
             MType.VERSTAERKER -> "${tr("boosts")} (+${(Simulation.BOOST_PER * 100).toInt()}%)"
             MType.REAKTOR -> "${tr("provides")} ${Simulation.REAKTOR_POWER.toInt()} ${tr("strom")} (${tr("fixed")})"
             MType.SOLAR -> "${tr("provides")} ${Simulation.SOLAR_POWER.toInt()} ${tr("strom")} (${tr("sun")})"
-            MType.FORSCHUNG -> "${tr("boosts_all")} +${(Simulation.RESEARCH_BOOST * 100).toInt()}%   x${sim.count(MType.FORSCHUNG)}"
+            MType.FORSCHUNG -> "${tr("produces_research")} +${Simulation.RESEARCH_RATE.toInt()}/s"
             MType.DROHNE -> "${tr("repairs")} · R${sim.droneRange()} · ${sim.droneRepairRate().roundToInt()}%/s"
         }
         canvas.drawText(io, dp(12f), yy, pText)
@@ -1017,10 +1030,12 @@ class GameView(context: Context) : View(context) {
         yy += dp(22f)
 
         pText.color = cDim; pText.textSize = dp(14f)
-        val (sres, samt) = sim.buildCost(m.type)
+        val moneyB = sim.isMoneyBuilt(m.type)
+        val samt = if (moneyB) sim.moneyBuildCost(m.type) else sim.buildCost(m.type).second
+        val curAbbr = if (moneyB) "€" else resAbbr(sim.buildCost(m.type).first)
         if (m.type != MType.REAKTOR) {
             val refund = samt * 0.5 * (m.condition / 100.0)
-            canvas.drawText("${tr("poweruse")} ${m.type.power.toInt()}     ${tr("sellvalue")} +${oneDec(refund)} ${resAbbr(sres)}", dp(12f), yy, pText)
+            canvas.drawText("${tr("poweruse")} ${m.type.power.toInt()}     ${tr("sellvalue")} +${oneDec(refund)} $curAbbr", dp(12f), yy, pText)
         }
 
         // Drohnen-Station: Reparatur-Limit einstellen (nur reparieren ab Guthaben >= Limit)
@@ -1053,13 +1068,13 @@ class GameView(context: Context) : View(context) {
             val half = (W - 3 * margin) / 2f
             val rSell = RectF(margin, by, margin + half, by + bh)
             val rRep = RectF(margin * 2 + half, by, margin * 2 + half * 2, by + bh)
-            drawButton(canvas, Btn(rSell, "sell_sel", "${tr("sell")} +$refund ${resAbbr(sres)}", true, false, cBad))
+            drawButton(canvas, Btn(rSell, "sell_sel", "${tr("sell")} +$refund $curAbbr", true, false, cBad))
             drawButton(canvas, Btn(rRep, "repair_sel", "${tr("repair")} ${Simulation.REPAIR_COST.toInt()} B", repEnabled, false, cAccent))
             buttons.add(Btn(rSell, "sell_sel", "Verkaufen"))
             buttons.add(Btn(rRep, "repair_sel", "Reparieren", repEnabled))
         } else if (canSell) {
             val rSell = RectF(margin, by, W - margin, by + bh)
-            drawButton(canvas, Btn(rSell, "sell_sel", "${tr("sell")} +$refund ${resAbbr(sres)}", true, false, cBad))
+            drawButton(canvas, Btn(rSell, "sell_sel", "${tr("sell")} +$refund $curAbbr", true, false, cBad))
             buttons.add(Btn(rSell, "sell_sel", "Verkaufen"))
         }
     }
@@ -1096,7 +1111,7 @@ class GameView(context: Context) : View(context) {
             val preOk = node.prereq == null || sim.has(node.prereq)
             val cost = sim.nextCost(node)
             val afford = sim.techAffordable(node)
-            val cur = if (node.costRes != null) resAbbr(node.costRes) else tr("geld")
+            val cur = if (node.costRes != null) resAbbr(node.costRes) else "◆ ${tr("res_short")}"
             p.color = if (l > 0) Color.rgb(46, 62, 50) else cPanel
             canvas.drawRoundRect(rect, dp(8f), dp(8f), p)
 
@@ -1129,7 +1144,7 @@ class GameView(context: Context) : View(context) {
         pText.color = cAccent; pText.textSize = dp(22f)
         canvas.drawText(tr("techtree"), dp(16f), dp(38f), pText)
         pText.color = cDim; pText.textSize = dp(13f)
-        canvas.drawText("${tr("geld")} ${fmt(sim.money)}  ·  B ${fmt(sim.availableBarren())}  ·  P ${fmt(sim.availablePlatten())}", dp(16f), dp(58f), pText)
+        canvas.drawText("◆ ${fmt(sim.research)}  ·  ${tr("geld")} ${fmt(sim.money)}  ·  B ${fmt(sim.availableBarren())}  ·  P ${fmt(sim.availablePlatten())}", dp(16f), dp(58f), pText)
 
         val cr = RectF(W / 2f - dp(70f), H - dp(56f), W / 2f + dp(70f), H - dp(16f))
         drawButton(canvas, Btn(cr, "close", tr("close"), true, false, cAccent))

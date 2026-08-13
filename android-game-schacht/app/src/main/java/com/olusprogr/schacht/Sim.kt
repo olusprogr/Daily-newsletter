@@ -86,12 +86,12 @@ class Simulation {
     var globalPlatten = 0.0
     var globalKomponente = 0.0
     var money = 0.0
+    var research = 0.0               // Forschungswaehrung (Forschungszentren) -> Upgrades
     var mapSeed = 12345L
     val tech = HashMap<String, Int>()
 
     var powerSupply = 0.0
     var powerDemand = 0.0
-    var researchMult = 1.0           // globaler Produktionsbonus durch Forschungszentren
 
     // --- Statistik: geglaettete Auslastung je Maschinentyp ---
     val typeUtil = DoubleArray(MType.values().size)
@@ -128,14 +128,15 @@ class Simulation {
         const val HAENDLER_SELL = 2.0
         const val OFFLINE_CAP = 8 * 3600
         const val START_BARREN = 35.0
-        const val START_MONEY = 30.0     // Startgeld, um erste Chunks/Hindernisse zu bezahlen
+        const val START_MONEY = 45.0     // Startgeld: erster Haendler (24) + ein paar Chunks
 
         const val LAND_THRESH = 0.46     // Schwelle Land/Wasser aus dem Rauschen
         const val SCAN_R = 4             // (Alt) Prospektor-Radius – Prospektor entfernt
         const val CHUNK_COST = 5.0       // Geld, um einen Chunk freizuschalten (1 Klick)
         const val WIND_POWER = 16.0      // Strom je Windrad (ohne Brennstoff)
         const val SOLAR_POWER = 10.0     // Strom je Solarpanel (ohne Brennstoff)
-        const val RESEARCH_BOOST = 0.08  // globaler Produktionsbonus je Forschungszentrum
+        const val RESEARCH_RATE = 1.0    // Forschung je Sekunde und Forschungszentrum
+        const val WIND_COAST_BONUS = 1.30 // Windrad neben Kueste: +30% Strom
 
         const val HOSE_MAX = 5           // max. Schlauchlaenge Reaktor -> Wasser
 
@@ -207,19 +208,23 @@ class Simulation {
             MType.FORSCHUNG to 4
         )
 
-        // Baukosten: (Rohstoff, Menge). Presse=Barren, Assembler=Platten usw.
+        // Baukosten in Rohstoffen: (Rohstoff, Menge).
         val BUILD_COST = mapOf(
             MType.BOHRER to Pair(Res.BARREN, 5.0),
             MType.OFEN to Pair(Res.BARREN, 8.0),
             MType.PRESSE to Pair(Res.BARREN, 12.0),
             MType.GENERATOR to Pair(Res.BARREN, 10.0),
-            MType.LAGER to Pair(Res.BARREN, 8.0),
-            MType.WINDRAD to Pair(Res.BARREN, 14.0),
             MType.SOLAR to Pair(Res.BARREN, 10.0),
             MType.FORSCHUNG to Pair(Res.PLATTE, 20.0),
-            MType.ASSEMBLER to Pair(Res.PLATTE, 10.0),
-            MType.HAENDLER to Pair(Res.PLATTE, 12.0),
-            MType.DROHNE to Pair(Res.PLATTE, 8.0)
+            MType.ASSEMBLER to Pair(Res.PLATTE, 10.0)
+        )
+
+        // Baukosten in GELD (Haendler/Turbine/Lager/Drohne), +100% teurer als zuvor.
+        val MONEY_BUILD = mapOf(
+            MType.HAENDLER to 24.0,   // vorher 12 Platte
+            MType.WINDRAD to 28.0,    // vorher 14 Barren
+            MType.LAGER to 16.0,      // vorher 8 Barren
+            MType.DROHNE to 16.0      // vorher 8 Platte
         )
     }
 
@@ -231,6 +236,7 @@ class Simulation {
         globalPlatten = 0.0
         globalKomponente = 0.0
         money = START_MONEY
+        research = 0.0
         mapSeed = System.nanoTime() xor 0x5DEECE66DL
         tech.clear()
         placeReactor()
@@ -482,6 +488,16 @@ class Simulation {
         return true
     }
 
+    private fun spendResearch(amt: Double): Boolean {
+        if (research < amt - 1e-9) return false
+        research -= amt
+        return true
+    }
+
+    /** Wird dieser Maschinentyp mit Geld statt Rohstoffen gebaut? */
+    fun isMoneyBuilt(t: MType): Boolean = MONEY_BUILD.containsKey(t)
+    fun moneyBuildCost(t: MType): Double = MONEY_BUILD[t] ?: 0.0
+
     fun canBuild(t: MType): Boolean = when (t) {
         MType.BOHRER, MType.OFEN -> true
         MType.REAKTOR, MType.VERSTAERKER, MType.PROSPEKTOR -> false
@@ -534,8 +550,12 @@ class Simulation {
             if (!isSurveyed(rr, cc)) return false        // Chunk muss freigeschaltet sein
             if (decoType(rr, cc) != 0) return false      // Hindernis muss erst weg
         }
-        val (res, amt) = buildCost(t)
-        if (!spend(res, amt)) return false
+        if (isMoneyBuilt(t)) {
+            if (!spendMoney(moneyBuildCost(t))) return false
+        } else {
+            val (res, amt) = buildCost(t)
+            if (!spend(res, amt)) return false
+        }
         val m = Machine(t); m.w = fw; m.h = fh
         grid[r][c] = m
         for (dy in 0 until fh) for (dx in 0 until fw) {
@@ -552,9 +572,15 @@ class Simulation {
         val ar = a[0]; val ac = a[1]
         val m = grid[ar][ac] ?: return 0.0
         if (m.type == MType.REAKTOR) return 0.0
-        val (res, amt) = buildCost(m.type)
-        val refund = amt * 0.5 * (m.condition / 100.0)
-        addGlobal(res, refund)
+        val refund: Double
+        if (isMoneyBuilt(m.type)) {
+            refund = moneyBuildCost(m.type) * 0.5 * (m.condition / 100.0)
+            money += refund
+        } else {
+            val (res, amt) = buildCost(m.type)
+            refund = amt * 0.5 * (m.condition / 100.0)
+            addGlobal(res, refund)
+        }
         for (dy in 0 until m.h) for (dx in 0 until m.w) occ[ar - dy][ac + dx] = null
         grid[ar][ac] = null
         return refund
@@ -565,7 +591,8 @@ class Simulation {
 
     fun techAffordable(node: TechNode): Boolean {
         val cost = nextCost(node)
-        return if (node.costRes != null) available(node.costRes) >= cost else money >= cost
+        // costRes==null bedeutet jetzt: mit Forschungswaehrung bezahlt (frueher Geld).
+        return if (node.costRes != null) available(node.costRes) >= cost else research >= cost
     }
 
     fun buyTech(id: String): Boolean {
@@ -574,7 +601,7 @@ class Simulation {
         if (l >= node.maxLevel) return false
         if (node.prereq != null && !has(node.prereq)) return false
         val cost = nextCost(node)
-        val ok = if (node.costRes != null) spend(node.costRes, cost) else spendMoney(cost)
+        val ok = if (node.costRes != null) spend(node.costRes, cost) else spendResearch(cost)
         if (!ok) return false
         tech[id] = l + 1
         return true
@@ -627,13 +654,22 @@ class Simulation {
     }
 
     // --- Tech-abhaengige Parameter ---
-    private fun globalMult() = (1.0 + 0.05 * lvl("t_takt")) * researchMult
+    private fun globalMult() = 1.0 + 0.05 * lvl("t_takt")
     private fun wearFactor() = max(0.3, 1.0 - 0.05 * lvl("t_robust"))
     private fun liftRate() = LIFT * (1.0 + 0.1 * lvl("t_lift"))
     private fun reactorPower() = REAKTOR_POWER + 5.0 * lvl("t_power")
     fun droneRepairRate() = DROHNE_RATE * (1.0 + 0.20 * lvl("t_drohne_rep"))
     fun droneRange() = DROHNE_R + lvl("t_drohne_range")
     fun droneSpeedMult() = 1.0 + 0.20 * lvl("t_drohne_speed")
+
+    /** Windrad neben der Kueste (angrenzendes Wasser): +30% Strom, sonst 1.0. */
+    fun windCoastBonus(r: Int, c: Int): Double {
+        // Windrad ist 1x2 (Anker unten r,c; Kopf r-1,c). Kueste = angrenzendes Wasser.
+        for (cell in listOf(intArrayOf(r, c), intArrayOf(r - 1, c))) {
+            for (nb in neighbors(cell[0], cell[1])) if (rawWater(nb[0], nb[1])) return WIND_COAST_BONUS
+        }
+        return 1.0
+    }
     private fun bohrerRate() = BOHRER_RATE * (1.0 + 0.08 * lvl("t_bspeed")) * globalMult()
     private fun ofenRate() = OFEN_RATE * (1.0 + 0.08 * lvl("t_ospeed")) * globalMult()
     private fun presseRate() = PRESSE_RATE * (1.0 + 0.08 * lvl("t_pspeed")) * globalMult()
@@ -768,7 +804,7 @@ class Simulation {
         forEachMachine { m, _, _ ->
             if (m.type == MType.REAKTOR) supply += reactorPower()
             if (m.type == MType.GENERATOR && m.input[Res.ROHERZ.ordinal] > 1e-6) supply += GEN_POWER
-            if (m.type == MType.WINDRAD) supply += WIND_POWER
+            if (m.type == MType.WINDRAD) supply += WIND_POWER * windCoastBonus(r, c)
             if (m.type == MType.SOLAR) supply += SOLAR_POWER
         }
         var demand = 0.0
@@ -776,11 +812,6 @@ class Simulation {
         val scale = if (demand <= 0.0) 1.0 else min(1.0, supply / demand)
         powerSupply = supply
         powerDemand = demand
-
-        // Forschungszentren: globaler Produktionsbonus (skaliert mit Stromversorgung)
-        var forsch = 0
-        forEachMachine { m, _, _ -> if (m.type == MType.FORSCHUNG) forsch++ }
-        researchMult = 1.0 + RESEARCH_BOOST * forsch * scale
 
         var barMade = 0.0
         var platMade = 0.0
@@ -887,6 +918,7 @@ class Simulation {
                 MType.WINDRAD -> { m.util = 1.0 }   // dreht sich immer (Strom aus Wind)
                 MType.SOLAR -> { m.util = 1.0 }      // liefert immer (Strom aus Sonne)
                 MType.FORSCHUNG -> {
+                    research += RESEARCH_RATE * ddt * scale     // produziert Forschungswaehrung
                     m.condition = max(0.0, m.condition - wearPerSec(MType.FORSCHUNG) * wf * ddt * scale)
                     m.util = scale
                 }
@@ -983,6 +1015,7 @@ class Simulation {
         root.put("gp", globalPlatten)
         root.put("gk", globalKomponente)
         root.put("money", money)
+        root.put("research", research)
         root.put("seed", mapSeed)
         val techObj = JSONObject()
         for ((k, v) in tech) techObj.put(k, v)
@@ -1020,6 +1053,7 @@ class Simulation {
         globalPlatten = root.optDouble("gp", 0.0)
         globalKomponente = root.optDouble("gk", 0.0)
         money = root.optDouble("money", 0.0)
+        research = root.optDouble("research", 0.0)
         mapSeed = root.optLong("seed", 12345L)
         tech.clear()
         val tv = root.opt("tech")
