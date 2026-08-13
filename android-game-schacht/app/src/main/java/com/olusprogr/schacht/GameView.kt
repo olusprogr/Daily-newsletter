@@ -1544,8 +1544,8 @@ class GameView(context: Context) : View(context) {
         while (rx < W - dp(8f)) { canvas.drawCircle(rx, dp(6f), dp(1.2f), p); rx += dp(18f) }
         hazardBar(canvas, 0f, dp(98f), W.toFloat(), dp(7f))
         pText.textAlign = Paint.Align.LEFT
-        pText.color = cAccent; pText.textSize = dp(34f)
-        canvas.drawText("SCHACHT", dp(16f), dp(50f), pText)
+        pText.color = cAccent; pText.textSize = dp(30f)
+        canvas.drawText("DEEP INDUSTRY", dp(16f), dp(48f), pText)
         pText.color = cText; pText.textSize = dp(14f)
         canvas.drawText("⚙ ${tr("choose_save")}", dp(16f), dp(80f), pText)
 
