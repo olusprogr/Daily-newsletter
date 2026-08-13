@@ -172,151 +172,155 @@ class Audio {
         else -> Ch(45, intArrayOf(57, 60, 64))
     }
 
-    // --- Schlagzeug-Oneshots ---
-    private fun kickSample(): DoubleArray {
-        val n = (sr * 0.16).toInt(); val a = DoubleArray(n); var ph = 0.0
-        for (i in 0 until n) {
-            val p = i.toDouble() / n
-            val f = 120.0 * exp(-9.0 * p) + 46.0
-            ph += 2.0 * PI * f / sr
-            a[i] = sin(ph) * exp(-6.0 * p)
-        }
-        return a
-    }
-    private fun snareSample(): DoubleArray {
-        val n = (sr * 0.13).toInt(); val a = DoubleArray(n); val rnd = java.util.Random(7)
-        for (i in 0 until n) {
-            val p = i.toDouble() / n
-            val noise = rnd.nextDouble() * 2.0 - 1.0
-            val tone = sin(2.0 * PI * 185.0 * i.toDouble() / sr)
-            a[i] = (noise * 0.75 + tone * 0.5) * exp(-9.0 * p)
-        }
-        return a
-    }
-    private fun hatSample(): DoubleArray {
-        val n = (sr * 0.045).toInt(); val a = DoubleArray(n); val rnd = java.util.Random(11); var prev = 0.0
-        for (i in 0 until n) {
-            val p = i.toDouble() / n
-            val noise = rnd.nextDouble() * 2.0 - 1.0
-            val hp = noise - prev; prev = noise            // grobe Hochpass -> heller Hi-Hat
-            a[i] = hp * exp(-42.0 * p) * 0.6
-        }
-        return a
-    }
     private fun addSample(mix: DoubleArray, start: Int, s: DoubleArray, amp: Double) {
         for (i in s.indices) { val idx = start + i; if (idx < 0) continue; if (idx >= mix.size) break; mix[idx] += s[i] * amp }
     }
 
-    // --- Bassnote (Sinus + etwas Rechteck-Oberton, perkussive Huelle) ---
-    private fun bassNote(mix: DoubleArray, start: Int, dur: Int, midi: Int, amp: Double) {
-        val f = nf(midi)
+    // Warmes Mallet/Glockenspiel-Lead (leicht inharmonisch, weiche Huelle) statt Synth-Saegezahn
+    private fun mallet(f: Double, dur: Int, amp: Double): DoubleArray {
+        val a = DoubleArray(dur); val at = (sr * 0.007).toInt()
         for (i in 0 until dur) {
-            val idx = start + i; if (idx >= mix.size) break
-            val p = i.toDouble() / dur
-            val env = if (p < 0.02) p / 0.02 else exp(-2.8 * p)
-            val s = sin(2.0 * PI * f * i.toDouble() / sr)
-            val w = s * 0.85 + (if (s >= 0) 1.0 else -1.0) * 0.15
-            mix[idx] += w * amp * env
+            val t = i.toDouble() / sr; val p = i.toDouble() / dur
+            var v = sin(2.0 * PI * f * t) * exp(-2.0 * p) +
+                    0.42 * sin(2.0 * PI * 2.0 * f * t) * exp(-3.4 * p) +
+                    0.16 * sin(2.0 * PI * 3.0 * f * t) * exp(-5.0 * p) +
+                    0.07 * sin(2.0 * PI * 4.2 * f * t) * exp(-6.5 * p)
+            if (at > 1 && i < at) v *= i.toDouble() / at
+            a[i] = v * amp
         }
+        return a
     }
-
-    // --- Lead-Pluck (Saegezahn+Rechteck, Vibrato, Zupf-Huelle) ---
-    private fun pluck(mix: DoubleArray, start: Int, dur: Int, midi: Int, amp: Double) {
-        if (midi < 0) return
-        val f = nf(midi)
+    // Warmer Bass (Sinus + leichter Oberton, runde Huelle)
+    private fun wbass(f: Double, dur: Int, amp: Double): DoubleArray {
+        val a = DoubleArray(dur)
         for (i in 0 until dur) {
-            val idx = start + i; if (idx < 0) continue; if (idx >= mix.size) break
-            val p = i.toDouble() / dur
-            val env = exp(-3.0 * p) * (1.0 - 0.2 * p)
-            val ts = i.toDouble() / sr
-            val vib = 1.0 + 0.004 * sin(2.0 * PI * 5.5 * ts)
-            val ph = f * vib * ts
-            val saw = 2.0 * (ph - Math.floor(ph)) - 1.0
-            val sq = if (sin(2.0 * PI * f * ts) >= 0) 1.0 else -1.0
-            val w = saw * 0.5 + sq * 0.16
-            mix[idx] += w * amp * env
+            val t = i.toDouble() / sr; val p = i.toDouble() / dur
+            val env = if (p < 0.02) p / 0.02 else exp(-2.0 * p)
+            a[i] = (sin(2.0 * PI * f * t) + 0.22 * sin(2.0 * PI * 2.0 * f * t)) * env * amp
         }
+        return a
+    }
+    // --- weiche Percussion ---
+    private fun softKick(): DoubleArray {
+        val n = (sr * 0.20).toInt(); val a = DoubleArray(n); var ph = 0.0
+        for (i in 0 until n) { val t = i.toDouble() / sr; val f = 95.0 * exp(-16.0 * t) + 48.0; ph += 2.0 * PI * f / sr; a[i] = sin(ph) * exp(-4.2 * t) }
+        return a
+    }
+    private fun rimSample(): DoubleArray {   // holziger Side-Stick
+        val n = (sr * 0.05).toInt(); val a = DoubleArray(n); val rnd = java.util.Random(3)
+        for (i in 0 until n) {
+            val t = i.toDouble() / sr
+            val nz = (rnd.nextDouble() * 2.0 - 1.0) * exp(-90.0 * t) * 0.25
+            a[i] = (sin(2.0 * PI * 430.0 * t) * exp(-55.0 * t) + 0.5 * sin(2.0 * PI * 820.0 * t) * exp(-75.0 * t) + nz) * 0.9
+        }
+        return a
+    }
+    private fun shakerSample(): DoubleArray {
+        val n = (sr * 0.05).toInt(); val a = DoubleArray(n); val rnd = java.util.Random(8); var prev = 0.0
+        for (i in 0 until n) { val t = i.toDouble() / sr; val nz = rnd.nextDouble() * 2.0 - 1.0; val hp = nz - prev; prev = nz; a[i] = hp * exp(-38.0 * t) * 0.5 }
+        return a
     }
 
     /**
-     * Ein richtig komponierter, nahtlos loopender Track: Melodie + Bassline +
-     * Akkord-Pad + Schlagzeug (Kick/Snare/HiHat), aufgeteilt in Strophe und
-     * Refrain. 120 BPM in a-Moll, ~32s. Alles prozedural (keine Asset-Dateien).
+     * Warmer, wenig-elektronischer Track: Mallet/Glockenspiel-Melodie (eine Oktave
+     * tiefer), warmes Sinus-Pad + Bass, sanfte Percussion (Kick/Side-Stick/Shaker),
+     * leiser Arpeggio-Teppich und viel natuerlicher Hall. 110 BPM in a-Moll,
+     * Aufbau Intro->Strophe->Refrain->Strophe->Turnaround, ~70s Loop.
      */
     private fun buildMusic(): ShortArray {
-        val bpm = 120.0
-        val six = (sr * (60.0 / bpm) / 4.0).toInt()   // Sechzehntel in Samples
+        val bpm = 110.0
+        val six = (sr * (60.0 / bpm) / 4.0).toInt()
         val barLen = six * 16
+        val verseP = arrayOf("Am", "F", "C", "G", "Am", "F", "G", "E")
+        val chorusP = arrayOf("C", "G", "Am", "F", "C", "G", "Dm", "E")
+        val turnP = arrayOf("F", "G", "Am", "E")
+        val prog = arrayOf("Am", "F", "C", "G") + verseP + chorusP + verseP + turnP
+        val verseM = arrayOf(
+            intArrayOf(64,4,69,4,72,4,71,4), intArrayOf(69,4,72,4,69,2,67,2,65,4),
+            intArrayOf(67,4,72,4,76,4,74,4), intArrayOf(74,4,71,4,67,4,62,4),
+            intArrayOf(64,4,69,4,72,4,76,4), intArrayOf(77,4,76,4,72,4,69,4),
+            intArrayOf(71,4,74,4,67,4,71,4), intArrayOf(64,4,68,4,71,4,64,4))
+        val chorusM = arrayOf(
+            intArrayOf(72,2,76,2,79,4,76,4,72,4), intArrayOf(74,2,71,2,67,4,71,4,74,4),
+            intArrayOf(76,2,72,2,69,4,72,4,76,4), intArrayOf(77,4,76,4,74,4,72,4),
+            intArrayOf(76,2,79,2,84,4,79,4,76,4), intArrayOf(74,2,79,2,83,4,79,4,74,4),
+            intArrayOf(69,2,74,2,77,4,81,4,77,4), intArrayOf(68,4,71,4,76,4,71,4))
+        val turnM = arrayOf(
+            intArrayOf(77,4,76,4,74,4,72,4), intArrayOf(74,4,71,4,67,4,62,4),
+            intArrayOf(64,4,69,4,72,4,64,4), intArrayOf(71,2,68,2,64,4,-1,8))
+        val mel = arrayOf(intArrayOf(), intArrayOf(), intArrayOf(), intArrayOf()) + verseM + chorusM + verseM + turnM
 
-        // Akkord je Takt (Strophe 8 + Refrain 8)
-        val prog = arrayOf(
-            "Am", "F", "C", "G", "Am", "F", "G", "E",
-            "C", "G", "Am", "F", "C", "G", "Dm", "E"
-        )
-        // Melodie je Takt: Paare (MIDI, Dauer in Sechzehnteln), -1 = Pause; Summe je Takt = 16
-        val mel = arrayOf(
-            intArrayOf(64,4, 69,4, 72,4, 71,4),          // Am
-            intArrayOf(69,4, 72,4, 69,2, 67,2, 65,4),    // F
-            intArrayOf(67,4, 72,4, 76,4, 74,4),          // C
-            intArrayOf(74,4, 71,4, 67,4, 62,4),          // G
-            intArrayOf(64,4, 69,4, 72,4, 76,4),          // Am
-            intArrayOf(77,4, 76,4, 72,4, 69,4),          // F
-            intArrayOf(71,4, 74,4, 67,4, 71,4),          // G
-            intArrayOf(64,4, 68,4, 71,4, 64,4),          // E
-            intArrayOf(72,2, 76,2, 79,4, 76,4, 72,4),    // C  (Refrain)
-            intArrayOf(74,2, 71,2, 67,4, 71,4, 74,4),    // G
-            intArrayOf(76,2, 72,2, 69,4, 72,4, 76,4),    // Am
-            intArrayOf(77,4, 76,4, 74,4, 72,4),          // F
-            intArrayOf(76,2, 79,2, 84,4, 79,4, 76,4),    // C
-            intArrayOf(74,2, 79,2, 83,4, 79,4, 74,4),    // G
-            intArrayOf(69,2, 74,2, 77,4, 81,4, 77,4),    // Dm
-            intArrayOf(68,4, 71,4, 76,4, 71,4)           // E
-        )
         val nBars = prog.size
         val total = barLen * nBars
         val mix = DoubleArray(total)
-        val kick = kickSample(); val snare = snareSample(); val hat = hatSample()
-        val echo = six * 3
+        val verb = DoubleArray(total)
+        val sk = softKick(); val rm = rimSample(); val sh = shakerSample()
 
         for (bar in 0 until nBars) {
             val base = bar * barLen
             val ch = chordOf(prog[bar])
-            val chorus = bar >= 8
-            // Pad (Dreiklang, weiche Huelle)
+            val kind = when { bar < 4 -> 0; bar < 12 -> 1; bar < 20 -> 2; bar < 28 -> 1; else -> 3 } // 0=Intro,1=Strophe,2=Refrain,3=Turn
+            val full = kind != 0 || bar >= 2
+            val chorus = kind == 2
+            // Warmes Pad (Sinus-Dreiklang + Oktave darunter)
             for (i in 0 until barLen) {
-                val idx = base + i; val p = i.toDouble() / barLen
-                val env = (if (p < 0.08) p / 0.08 else if (p > 0.92) (1.0 - p) / 0.08 else 1.0)
+                val idx = base + i; val t = idx.toDouble() / sr; val p = i.toDouble() / barLen
+                val env = if (p < 0.14) p / 0.14 else if (p > 0.88) (1.0 - p) / 0.12 else 1.0
                 var pad = 0.0
-                for (m in ch.triad) pad += sin(2.0 * PI * nf(m) * idx.toDouble() / sr)
-                mix[idx] += pad * 0.016 * env
+                for (m in ch.triad) pad += sin(2.0 * PI * nf(m) * t) + 0.5 * sin(2.0 * PI * nf(m - 12) * t) + 0.25 * sin(2.0 * PI * 2.0 * nf(m) * t)
+                val v = pad * 0.011 * env
+                mix[idx] += v; verb[idx] += v * 0.5
             }
-            // Bass: acht Achtel, Grundton mit Quinte im Groove
-            val bassPat = intArrayOf(0, 0, 7, 0, 0, 7, 0, 7)
-            for (e in 0 until 8) bassNote(mix, base + e * (six * 2), six * 2, ch.root + bassPat[e], 0.17)
-            // Schlagzeug
-            addSample(mix, base + 0 * six, kick, 0.55)
-            addSample(mix, base + 8 * six, kick, 0.55)
-            addSample(mix, base + 10 * six, kick, 0.30)
-            addSample(mix, base + 4 * six, snare, 0.42)
-            addSample(mix, base + 12 * six, snare, 0.42)
-            for (h in 0 until 8) addSample(mix, base + h * 2 * six, hat, if (h % 2 == 0) 0.22 else 0.13)
-            if (chorus) { addSample(mix, base + 14 * six, snare, 0.24); addSample(mix, base + 15 * six, hat, 0.18) }
-            // Melodie (+ dezentes Echo)
+            // Bass
+            if (full) {
+                val bp = intArrayOf(0, 0, 7, 0, 0, 7, 0, 7)
+                for (e in 0 until 8) addSample(mix, base + e * six * 2, wbass(nf(ch.root + bp[e]), six * 2, 0.20), 1.0)
+            }
+            // Sanfte Percussion (Kick 1&3, Side-Stick 2&4, leiser Shaker Achtel)
+            if (kind != 0 || bar >= 1) {
+                addSample(mix, base + 0 * six, sk, 0.5); addSample(mix, base + 8 * six, sk, 0.5)
+                addSample(mix, base + 4 * six, rm, 0.38); addSample(mix, base + 12 * six, rm, 0.38)
+                addSample(verb, base + 4 * six, rm, 0.18); addSample(verb, base + 12 * six, rm, 0.18)
+                if (kind != 0) for (h in 0 until 8) addSample(mix, base + h * 2 * six, sh, if (h % 2 == 0) 0.13 else 0.09)
+            }
+            // Leiser Arpeggio-Teppich (statt E-Delay)
+            if (full) {
+                val arp = intArrayOf(ch.triad[0], ch.triad[1], ch.triad[2], ch.triad[1])
+                for (aI in 0 until 4) {
+                    val st = base + aI * 4 * six; val s = mallet(nf(arp[aI]), 4 * six, 0.045)
+                    addSample(mix, st, s, 0.7); addSample(verb, st, s, 0.4)
+                }
+            }
+            // Melodie (warm, eine Oktave tiefer)
             val mb = mel[bar]; var step = 0; var j = 0
-            val lamp = if (chorus) 0.16 else 0.13
+            val lamp = if (chorus) 0.20 else 0.17
             while (j + 1 < mb.size) {
                 val midi = mb[j]; val d = mb[j + 1]; j += 2
-                val st = base + step * six; val dur = d * six
-                pluck(mix, st, dur, midi, lamp)
-                pluck(mix, st + echo, dur, midi, lamp * 0.33)
+                if (midi >= 0) {
+                    val st = base + step * six; val s = mallet(nf(midi - 12), d * six, lamp)
+                    addSample(mix, st, s, 0.95); addSample(verb, st, s, 0.6)
+                }
                 step += d
             }
         }
 
+        // Weicher Multi-Tap-Reverb auf dem Send-Bus
+        val rnd = java.util.Random(21)
+        for (k in 0 until 24) {
+            val tt = 0.03 + rnd.nextDouble() * 0.13
+            val d0 = (tt * sr).toInt(); val gain = 0.55 * exp(-tt * 5.0)
+            var i = d0
+            while (i < total) { mix[i] += verb[i - d0] * gain; i++ }
+        }
+
+        // Master: normalisieren + weiche tanh-Begrenzung
+        var peak = 1e-6
+        for (i in 0 until total) { val av = abs(mix[i]); if (av > peak) peak = av }
+        val norm = 1.0 / (peak * 1.1)
         val out = ShortArray(total)
         for (i in 0 until total) {
-            val v = kotlin.math.tanh(mix[i] * 1.1)
-            out[i] = (v * 32767.0 * 0.85).toInt().coerceIn(-32767, 32767).toShort()
+            val v = kotlin.math.tanh(mix[i] * norm * 1.15)
+            out[i] = (v * 32767.0 * 0.9).toInt().coerceIn(-32767, 32767).toShort()
         }
         return out
     }
