@@ -1414,53 +1414,136 @@ class GameView(context: Context) : View(context) {
         return by + bh + dp(12f)
     }
 
-    private fun drawReport(canvas: Canvas) {
-        val rep = report ?: return
-        p.color = Color.argb(248, 58, 50, 42)
-        canvas.drawRect(0f, 0f, W.toFloat(), H.toFloat(), p)
-        pText.color = cAccent; pText.textSize = dp(22f)
-        canvas.drawText(tr("report_title"), dp(16f), dp(40f), pText)
-        pText.color = cText; pText.textSize = dp(15f)
-        val away = fmtDur(rep.elapsedSeconds)
-        val simd = fmtDur(rep.simSeconds)
-        canvas.drawText("${tr("away")}: $away  ·  ${tr("sim")}: $simd  ·  Cap 8h", dp(16f), dp(66f), pText)
-        pText.color = cGood
-        canvas.drawText("+ ${fmt(rep.moneyGained)} ${tr("geld")}   + ${fmt(rep.barrenGained)} ${tr("barren")}   + ${fmt(rep.plattenGained)} ${tr("platten")}", dp(16f), dp(90f), pText)
+    /** Horizontale Scanlines fuer den CRT-/Terminal-Look. */
+    private fun drawScanlines(canvas: Canvas) {
+        p.color = Color.argb(26, 0, 0, 0)
+        var sy = 0f
+        while (sy < H) { canvas.drawRect(0f, sy, W.toFloat(), sy + 1f, p); sy += 3f }
+    }
 
-        pText.color = cText; pText.textSize = dp(14f)
-        canvas.drawText("${tr("timeline")}:", dp(16f), dp(120f), pText)
-        var yy = dp(142f)
-        if (rep.events.isEmpty()) {
-            pText.color = cDim
-            canvas.drawText(tr("all_ran"), dp(24f), yy, pText)
-        } else {
-            pText.textSize = dp(13f)
-            for (e in rep.events) {
-                if (yy > H - dp(90f)) break
-                pText.color = cDim
-                canvas.drawText(fmtDur(e.timeSec), dp(24f), yy, pText)
-                pText.color = cText
-                val evText = "${mName(e.mType)} (${e.r + 1},${e.c + 1}): ${if (e.dead) tr("ev_dead") else tr("ev_starved")}"
-                canvas.drawText(evText, dp(96f), yy, pText)
-                yy += dp(22f)
+    /** Schwarz-gelber Gefahrenstreifen. */
+    private fun hazardBar(canvas: Canvas, x: Float, y: Float, w: Float, h: Float) {
+        var i = 0f
+        while (i < w) {
+            p.color = if ((i / h).toInt() % 2 == 0) Color.rgb(238, 198, 70) else Color.rgb(22, 22, 26)
+            canvas.drawRect(x + i, y, x + kotlin.math.min(i + h, w), y + h, p)
+            i += h
+        }
+    }
+
+    /** Animierte Fabrik-Kulisse hinter dem Startmenue. */
+    private fun drawMenuBackground(canvas: Canvas) {
+        p.color = Color.rgb(30, 32, 42); canvas.drawRect(0f, 0f, W.toFloat(), H.toFloat(), p)
+        p.color = Color.rgb(22, 24, 32); canvas.drawRect(0f, H * 0.52f, W.toFloat(), H.toFloat(), p)
+        val groundY = H * 0.70f
+        val tS = dp(38f)
+        var gx = 0f
+        while (gx < W) { dstTile.set(gx, groundY, gx + tS, groundY + tS); canvas.drawBitmap(grassTiles[1], srcTile, dstTile, pTile); gx += tS }
+        p.color = Color.rgb(20, 22, 28); canvas.drawRect(0f, groundY + tS, W.toFloat(), H.toFloat(), p)
+        val sz = dp(50f)
+        fun place(t: MType, cxFrac: Float, scale: Float) {
+            val s = sz * scale; val cx = W * cxFrac
+            dstTile.set(cx - s / 2, groundY - s + dp(6f), cx + s / 2, groundY + dp(6f))
+            canvas.drawBitmap(machBmp[t.ordinal], null, dstTile, pTile)
+        }
+        place(MType.BOHRER, 0.12f, 0.85f)
+        place(MType.OFEN, 0.30f, 0.95f)
+        place(MType.GENERATOR, 0.46f, 0.9f)
+        place(MType.REAKTOR, 0.76f, 1.3f)
+        // Windrad (rotierend)
+        run {
+            val hx = W * 0.60f; val hy = groundY - sz * 1.15f
+            p.color = Color.rgb(196, 202, 214); canvas.drawRect(hx - dp(2f), hy, hx + dp(2f), groundY, p)
+            val ang = animT * 65f
+            for (k in 0 until 3) {
+                canvas.save(); canvas.rotate(ang + k * 120f, hx, hy)
+                bladePath.reset()
+                bladePath.moveTo(hx - dp(3f), hy); bladePath.lineTo(hx + dp(3f), hy)
+                bladePath.lineTo(hx + dp(1f), hy - dp(28f)); bladePath.lineTo(hx - dp(1f), hy - dp(28f)); bladePath.close()
+                canvas.drawPath(bladePath, pBlade); canvas.restore()
+            }
+            p.color = Color.rgb(52, 56, 64); canvas.drawCircle(hx, hy, dp(3f), p)
+        }
+        // Dampf ueber Ofen + Reaktor
+        for (pair in listOf(W * 0.30f to groundY - sz * 0.95f, W * 0.76f to groundY - sz * 1.3f)) {
+            for (k in 0 until 3) {
+                val ph = (animT * 0.4f + k * 0.33f) % 1f
+                val al = (85 * (1f - ph)).toInt().coerceIn(0, 255)
+                p.color = Color.argb(al, 226, 230, 238)
+                canvas.drawCircle(pair.first + (k - 1) * dp(5f), pair.second - ph * dp(38f), dp(4f) + ph * dp(6f), p)
             }
         }
-        val cr = RectF(W / 2f - dp(90f), H - dp(64f), W / 2f + dp(90f), H - dp(22f))
-        drawButton(canvas, Btn(cr, "close", tr("continue"), true, false, cAccent))
-        buttons.add(Btn(cr, "close", "Weiterspielen"))
+        // Ofen-Glut (pulsierend)
+        val glow = 0.5f + 0.5f * kotlin.math.sin(animT * 3f)
+        p.color = Color.argb((120 * glow).toInt().coerceIn(0, 255), 250, 150, 60)
+        canvas.drawCircle(W * 0.30f, groundY - sz * 0.32f, dp(6f), p)
+        // Overlay + Scanlines
+        p.color = Color.argb(130, 10, 10, 14); canvas.drawRect(0f, 0f, W.toFloat(), H.toFloat(), p)
+        drawScanlines(canvas)
+    }
+
+    private fun drawReport(canvas: Canvas) {
+        val rep = report ?: return
+        val green = Color.rgb(74, 240, 122); val amber = Color.rgb(255, 183, 0); val red = Color.rgb(255, 66, 60)
+        // CRT-Terminal-Grund + Metallrahmen + Hazard
+        p.color = Color.rgb(8, 16, 10); canvas.drawRect(0f, 0f, W.toFloat(), H.toFloat(), p)
+        p.color = Color.rgb(40, 44, 40); canvas.drawRect(0f, 0f, W.toFloat(), dp(6f), p)
+        hazardBar(canvas, 0f, dp(6f), W.toFloat(), dp(8f))
+        pText.textAlign = Paint.Align.LEFT
+        pText.color = amber; pText.textSize = dp(23f)
+        canvas.drawText("SCHICHTBERICHT", dp(16f), dp(46f), pText)
+        pText.color = green; pText.textSize = dp(14f)
+        canvas.drawText("ABWESENHEIT ${fmtDur(rep.elapsedSeconds)}   ·   SIM ${fmtDur(rep.simSeconds)}   ·   CAP 8h", dp(16f), dp(70f), pText)
+        p.color = Color.argb(120, 74, 240, 122); canvas.drawRect(dp(16f), dp(80f), W - dp(16f), dp(81f), p)
+        // Ertraege
+        pText.textSize = dp(16f); pText.color = green
+        var yy = dp(108f)
+        canvas.drawText("+ ${fmt(rep.moneyGained)}  ${tr("geld").uppercase()}", dp(20f), yy, pText); yy += dp(25f)
+        canvas.drawText("+ ${fmt(rep.barrenGained)}  ${tr("barren").uppercase()}", dp(20f), yy, pText); yy += dp(25f)
+        canvas.drawText("+ ${fmt(rep.plattenGained)}  ${tr("platten").uppercase()}", dp(20f), yy, pText); yy += dp(30f)
+        // Wartungs-Warnung
+        val dead = rep.events.count { it.dead }
+        if (dead > 0) {
+            hazardBar(canvas, dp(16f), yy - dp(14f), W - dp(32f), dp(7f))
+            pText.color = red; pText.textSize = dp(15f)
+            canvas.drawText("WARNUNG: $dead ${tr("need_service")}", dp(20f), yy + dp(6f), pText); yy += dp(30f)
+        }
+        // Protokoll
+        pText.color = Color.argb(210, 74, 240, 122); pText.textSize = dp(13f)
+        canvas.drawText("PROTOKOLL:", dp(20f), yy, pText); yy += dp(20f)
+        if (rep.events.isEmpty()) {
+            pText.color = Color.argb(150, 74, 240, 122)
+            canvas.drawText(tr("all_ran"), dp(28f), yy, pText)
+        } else {
+            for (e in rep.events) {
+                if (yy > H - dp(96f)) break
+                pText.color = if (e.dead) red else amber
+                canvas.drawText("${fmtDur(e.timeSec)}  ${mName(e.mType)} (${e.r + 1},${e.c + 1})  ${if (e.dead) tr("ev_dead") else tr("ev_starved")}", dp(28f), yy, pText)
+                yy += dp(20f)
+            }
+        }
+        drawScanlines(canvas)
+        val cr = RectF(dp(24f), H - dp(72f), W - dp(24f), H - dp(20f))
+        drawButton(canvas, Btn(cr, "collect", "▸ ${tr("collect")}", true, false, cGood))
+        buttons.add(Btn(cr, "collect", "collect"))
     }
 
     private fun drawMenu(canvas: Canvas) {
-        // Kopfbanner
-        p.color = cPanel
-        canvas.drawRect(0f, 0f, W.toFloat(), dp(104f), p)
-        p.color = cAccent
-        canvas.drawRect(0f, dp(102f), W.toFloat(), dp(104f), p)
+        // Animierte Fabrik-Kulisse
+        drawMenuBackground(canvas)
+        // Kopfbanner (Konsole mit Nieten + Hazard-Kante)
+        p.color = Color.argb(238, 40, 42, 52)
+        canvas.drawRect(0f, 0f, W.toFloat(), dp(98f), p)
+        p.color = cPanelHi; canvas.drawRect(0f, 0f, W.toFloat(), dp(2f), p)
+        p.color = Color.argb(90, 210, 216, 228)
+        var rx = dp(8f)
+        while (rx < W - dp(8f)) { canvas.drawCircle(rx, dp(6f), dp(1.2f), p); rx += dp(18f) }
+        hazardBar(canvas, 0f, dp(98f), W.toFloat(), dp(7f))
         pText.textAlign = Paint.Align.LEFT
         pText.color = cAccent; pText.textSize = dp(34f)
-        canvas.drawText("SCHACHT", dp(16f), dp(52f), pText)
-        pText.color = cDim; pText.textSize = dp(15f)
-        canvas.drawText(tr("choose_save"), dp(16f), dp(82f), pText)
+        canvas.drawText("SCHACHT", dp(16f), dp(50f), pText)
+        pText.color = cText; pText.textSize = dp(14f)
+        canvas.drawText("⚙ ${tr("choose_save")}", dp(16f), dp(80f), pText)
 
         val margin = dp(12f)
         val slots = menuSlots
@@ -1627,6 +1710,7 @@ class GameView(context: Context) : View(context) {
             id == "tech" -> { screen = if (screen == Screen.TECH) Screen.GAME else Screen.TECH; selR = -1; resetArmed = false; techScroll = 0f; audio.click() }
             id == "stat" -> { screen = if (screen == Screen.STAT) Screen.GAME else Screen.STAT; selR = -1; resetArmed = false; audio.click() }
             id == "close" -> { screen = Screen.GAME; report = null; resetArmed = false; audio.click() }
+            id == "collect" -> { screen = Screen.GAME; report = null; resetArmed = false; audio.buy() }
             id.startsWith("mvol_") -> setMusicVol(id.removePrefix("mvol_").toInt())
             id.startsWith("svol_") -> setSfxVol(id.removePrefix("svol_").toInt())
             id == "to_menu" -> { persist(); resetArmed = false; menuArmedDelete = null; selR = -1; refreshMenu(); screen = Screen.MENU; audio.click() }

@@ -10,6 +10,7 @@ object I18n {
 
     private val DE = mapOf(
         "tech" to "Tech", "stat" to "Statistik", "close" to "Schliessen", "continue" to "Weiterspielen",
+        "collect" to "Ertraege einsammeln", "need_service" to "MASCHINEN BENOETIGEN WARTUNG!",
         "buy" to "Kaufen", "buy_level" to "Stufe +", "max" to "MAX", "sell" to "Verkaufen", "repair" to "Reparieren",
         "sound_on" to "Ton: AN", "sound_off" to "Ton: AUS", "reset" to "Reset", "reset_confirm" to "Wirklich? Erneut tippen",
         "lang" to "Sprache",
@@ -76,6 +77,7 @@ object I18n {
 
     private val EN = mapOf(
         "tech" to "Tech", "stat" to "Stats", "close" to "Close", "continue" to "Continue",
+        "collect" to "Collect earnings", "need_service" to "MACHINES NEED SERVICE!",
         "buy" to "Buy", "buy_level" to "Level +", "max" to "MAX", "sell" to "Sell", "repair" to "Repair",
         "sound_on" to "Sound: ON", "sound_off" to "Sound: OFF", "reset" to "Reset", "reset_confirm" to "Sure? Tap again",
         "lang" to "Language",
@@ -142,6 +144,7 @@ object I18n {
 
     private val PL = mapOf(
         "tech" to "Tech", "stat" to "Statystyki", "close" to "Zamknij", "continue" to "Graj dalej",
+        "collect" to "Odbierz zyski", "need_service" to "MASZYNY WYMAGAJA SERWISU!",
         "buy" to "Kup", "buy_level" to "Poziom +", "max" to "MAX", "sell" to "Sprzedaj", "repair" to "Napraw",
         "sound_on" to "Dzwiek: WL", "sound_off" to "Dzwiek: WYL", "reset" to "Reset", "reset_confirm" to "Na pewno? Dotknij znow",
         "lang" to "Jezyk",
