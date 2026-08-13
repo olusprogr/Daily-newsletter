@@ -42,34 +42,34 @@ def r2(x,y,w,h,c): dd.rectangle([x,y,x+w-1,y+h-1],fill=c)
 CN=C(150,156,168); CNL=C(198,204,216); CND=C(104,110,124)
 GLASS=C(96,196,214); GLASSD=C(40,120,150); GLASSL=C(180,240,248)
 PUR=C(150,120,224); PURL=C(196,170,248)
-# Boden/Sockel
-r2(4,44,120,20,C(52,56,66)); r2(4,44,120,3,C(78,82,94))
-for gx in range(8,120,14): r2(gx,60,7,3,C(230,196,70)); r2(gx+7,60,7,3,OC)  # Hazard
-# Linker Laborblock
-r2(8,20,52,26,OC); r2(10,22,48,24,CN); r2(10,22,48,3,CNL); r2(10,43,48,3,CND)
-for wx in range(14,54,12):      # Fenster
-    r2(wx,27,8,10,GLASSD); r2(wx,27,8,4,GLASS); r2(wx,27,8,1,GLASSL)
-# Tuer
-r2(30,34,10,12,OC); r2(31,35,8,11,C(60,64,74))
-# Satellitenschuessel auf dem Dach
-dd.ellipse([12,6,30,20],fill=C(210,214,224)); dd.ellipse([15,8,27,18],fill=C(150,156,168))
-dd.line([(21,13),(30,4)],fill=C(90,96,110),width=2); dd.ellipse([28,2,33,7],fill=C(230,120,90))
-# Rechte Glaskuppel mit Atom-Symbol
-cx,cy=94,40; R=22
-dd.ellipse([cx-R-1,cy-R-1,cx+R+1,cy+R+1],fill=OC)
-# Kuppel nur obere Haelfte
-dd.pieslice([cx-R,cy-R,cx+R,cy+R],180,360,fill=GLASSD)
-dd.pieslice([cx-R,cy-R,cx+R,cy+R],180,360,outline=GLASS)
-r2(cx-R,cy-1,2*R,3,C(70,74,86))     # Sockel der Kuppel
-# Atom: 3 gedrehte Ellipsen + Kern
-for ang in (0,60,120):
+# Boden/Sockel (fast volle Breite)
+r2(2,46,124,18,C(52,56,66)); r2(2,46,124,3,C(78,82,94))
+for gx in range(4,124,14): r2(gx,61,7,3,C(230,196,70)); r2(gx+7,61,7,3,OC)  # Hazard
+# Langer Laborblock (breit ueber fast die ganze Kachel)
+r2(6,20,110,26,OC); r2(8,22,106,22,CN); r2(8,22,106,3,CNL); r2(8,41,106,3,CND)
+for rx in range(20,114,16): r2(rx,23,1,20,CND)          # vertikale Rippen
+# Fensterreihe
+for wx in range(12,110,15):
+    r2(wx,28,9,11,GLASSD); r2(wx,28,9,4,GLASS); r2(wx,28,9,1,GLASSL)
+# Tuer (mittig)
+r2(58,33,12,13,OC); r2(59,34,10,12,C(60,64,74)); r2(63,39,2,2,C(150,156,168))
+# Satellitenschuessel links auf dem Dach
+dd.ellipse([12,7,28,19],fill=C(210,214,224)); dd.ellipse([15,9,25,17],fill=C(150,156,168))
+dd.line([(20,13),(28,5)],fill=C(90,96,110),width=2); dd.ellipse([26,3,31,8],fill=C(230,120,90))
+# Kleine Glaskuppel mittig-rechts auf dem Dach + kleineres Atom
+cx=90; base=20; R=13
+r2(cx-R,base-1,2*R,3,C(70,74,86))                       # Kuppelsockel
+dd.pieslice([cx-R,base-R,cx+R,base+R],180,360,fill=GLASSD)
+dd.pieslice([cx-R,base-R,cx+R,base+R],180,360,outline=GLASS)
+ay=base-6                                               # Atom-Zentrum in der Kuppel
+for ang in (0,60,120):                                  # 3 gedrehte Ellipsen (kleiner)
     layer=Image.new("RGBA",(W2,H2),(0,0,0,0)); ld=ImageDraw.Draw(layer)
-    ld.ellipse([cx-18,cy-7,cx+18,cy+7],outline=PURL,width=2)
-    layer=layer.rotate(ang,center=(cx,cy))
+    ld.ellipse([cx-9,ay-4,cx+9,ay+4],outline=PURL,width=1)
+    layer=layer.rotate(ang,center=(cx,ay))
     rm.alpha_composite(layer)
-dd.ellipse([cx-4,cy-4,cx+4,cy+4],fill=PUR); dd.ellipse([cx-2,cy-3,cx+1,cy],fill=PURL)
-# Antenne mit Blinklicht
-r2(cx,10,2,10,C(120,126,140)); dd.ellipse([cx-2,6,cx+3,11],fill=C(120,240,170))
+dd.ellipse([cx-2,ay-2,cx+2,ay+2],fill=PUR); dd.ellipse([cx-1,ay-2,cx,ay-1],fill=PURL)
+# Antenne mit Blinklicht (rechtes Dachende)
+r2(110,11,2,10,C(120,126,140)); dd.ellipse([108,7,113,12],fill=C(120,240,170))
 rm.save(OUT+"/mach_research.png"); print("research ok")
 
 # ---- Vorschau ----
