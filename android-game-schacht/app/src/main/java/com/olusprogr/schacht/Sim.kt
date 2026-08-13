@@ -126,6 +126,8 @@ class Simulation {
         const val BOOST_PER = 0.20
         const val COMPONENT_PRICE = 8.0
         const val HAENDLER_SELL = 2.0
+        const val PLATTE_BUY_AMOUNT = 5.0   // Platten je Kauf am Haendler
+        const val PLATTE_BUY_COST = 20.0    // Geldkosten fuer einen Platten-Kauf
         const val OFFLINE_CAP = 8 * 3600
         const val START_BARREN = 35.0
         const val START_MONEY = 45.0     // Startgeld: erster Haendler (24) + ein paar Chunks
@@ -675,6 +677,13 @@ class Simulation {
     private fun presseRate() = PRESSE_RATE * (1.0 + 0.08 * lvl("t_pspeed")) * globalMult()
     private fun assemblerRate() = ASSEMBLER_RATE * (1.0 + 0.08 * lvl("t_aspeed")) * globalMult()
     fun componentPrice() = COMPONENT_PRICE * (1.0 + 0.25 * lvl("t_wert"))
+
+    /** Am Haendler Platten gegen Geld kaufen. true bei Erfolg. */
+    fun buyPlatten(): Boolean {
+        if (!spendMoney(PLATTE_BUY_COST)) return false
+        globalPlatten += PLATTE_BUY_AMOUNT
+        return true
+    }
 
     private fun wearPerSec(t: MType) = when (t) {
         MType.BOHRER -> 1.0 / 60.0

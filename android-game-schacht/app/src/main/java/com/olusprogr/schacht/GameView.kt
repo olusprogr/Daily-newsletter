@@ -1064,7 +1064,18 @@ class GameView(context: Context) : View(context) {
         val canSell = m.type != MType.REAKTOR
         val refund = (samt * 0.5 * (m.condition / 100.0)).roundToInt()
         val repEnabled = m.condition < 99.999 && sim.availableBarren() >= Simulation.REPAIR_COST
-        if (canRepair && canSell) {
+        if (m.type == MType.HAENDLER) {
+            // Haendler: Platten kaufen (Geld) + Station verkaufen
+            val half = (W - 3 * margin) / 2f
+            val rBuy = RectF(margin, by, margin + half, by + bh)
+            val rSell = RectF(margin * 2 + half, by, margin * 2 + half * 2, by + bh)
+            val buyEnabled = sim.money >= Simulation.PLATTE_BUY_COST
+            val buyLbl = "${tr("buy")} ${Simulation.PLATTE_BUY_AMOUNT.toInt()} P (${Simulation.PLATTE_BUY_COST.toInt()}€)"
+            drawButton(canvas, Btn(rBuy, "buy_platten", buyLbl, buyEnabled, false, cGood))
+            drawButton(canvas, Btn(rSell, "sell_sel", "${tr("sell")} +$refund $curAbbr", true, false, cBad))
+            buttons.add(Btn(rBuy, "buy_platten", "buy_platten", buyEnabled))
+            buttons.add(Btn(rSell, "sell_sel", "Verkaufen"))
+        } else if (canRepair && canSell) {
             val half = (W - 3 * margin) / 2f
             val rSell = RectF(margin, by, margin + half, by + bh)
             val rRep = RectF(margin * 2 + half, by, margin * 2 + half * 2, by + bh)
@@ -1506,6 +1517,7 @@ class GameView(context: Context) : View(context) {
                     screen = Screen.GAME; audio.sell()
                 }
             }
+            id == "buy_platten" -> { if (sim.buyPlatten()) audio.buy() else audio.error() }
             id == "gate_up" -> { if (selR >= 0) { sim.adjustDroneGate(selR, selC, Simulation.DROHNE_GATE_STEP); persist(); audio.click() } }
             id == "gate_dn" -> { if (selR >= 0) { sim.adjustDroneGate(selR, selC, -Simulation.DROHNE_GATE_STEP); persist(); audio.click() } }
             id == "repair_sel" -> { if (selR >= 0) sim.grid[selR][selC]?.let { if (sim.repair(it)) audio.buy() else audio.error() } }
