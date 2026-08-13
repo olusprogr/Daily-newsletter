@@ -801,7 +801,7 @@ class Simulation {
         transfers()
 
         var supply = 0.0
-        forEachMachine { m, _, _ ->
+        forEachMachine { m, r, c ->
             if (m.type == MType.REAKTOR) supply += reactorPower()
             if (m.type == MType.GENERATOR && m.input[Res.ROHERZ.ordinal] > 1e-6) supply += GEN_POWER
             if (m.type == MType.WINDRAD) supply += WIND_POWER * windCoastBonus(r, c)
