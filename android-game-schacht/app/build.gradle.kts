@@ -11,8 +11,8 @@ android {
         applicationId = "com.olusprogr.schacht"
         minSdk = 24
         targetSdk = 34
-        versionCode = 45
-        versionName = "0.35-menu"
+        versionCode = 46
+        versionName = "0.35.1-tilefix"
     }
 
     signingConfigs {

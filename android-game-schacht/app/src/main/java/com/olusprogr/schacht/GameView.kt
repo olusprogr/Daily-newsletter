@@ -1063,27 +1063,31 @@ class GameView(context: Context) : View(context) {
         pTile.alpha = savedA
         // Name
         pTextC.textAlign = Paint.Align.CENTER
-        pTextC.textSize = dp(10.5f); pTextC.color = if (canB) cText else cDim
-        canvas.drawText(mShort(t), r.centerX() + dp(2f), r.top + dp(42f), pTextC)
-        // Kosten-Zeile (Icon links + Betrag) und Anzahl rechts – oder Tech-Hinweis
-        val cy2 = r.bottom - dp(14f)
+        pTextC.textSize = dp(10f); pTextC.color = if (canB) cText else cDim
+        canvas.drawText(mShort(t), r.centerX() + dp(2f), r.top + dp(39f), pTextC)
         if (canB) {
+            // Kosten: Icon + Betrag als zentrierte Gruppe (eine Zeile)
             val costIcon = when {
                 moneyB -> Sprites.ICON_GELD
                 sim.buildCost(t).first == Res.PLATTE -> Sprites.ICON_PLATTE
                 else -> Sprites.ICON_BARREN
             }
-            drawIcon(canvas, costIcon, r.left + dp(7f), cy2, dp(11f))
-            pTextC.textAlign = Paint.Align.LEFT
-            pTextC.color = if (afford) cText else cBad; pTextC.textSize = dp(11f)
-            canvas.drawText("${camt.toInt()}", r.left + dp(21f), cy2 + dp(9f), pTextC)
-            pTextC.textAlign = Paint.Align.RIGHT
-            pTextC.color = if (full) cBad else cDim; pTextC.textSize = dp(10f)
-            canvas.drawText("$used/$max", r.right - dp(6f), cy2 + dp(9f), pTextC)
+            val amt = "${camt.toInt()}"
+            pTextC.textAlign = Paint.Align.LEFT; pTextC.textSize = dp(11f)
+            val tw = pTextC.measureText(amt)
+            val iw = dp(11f); val gap = dp(2.5f)
+            val sx = r.centerX() - (iw + gap + tw) / 2f
+            val costBase = r.bottom - dp(15f)
+            drawIcon(canvas, costIcon, sx, costBase - dp(9f), iw)
+            pTextC.color = if (afford) cText else cBad
+            canvas.drawText(amt, sx + iw + gap, costBase, pTextC)
             pTextC.textAlign = Paint.Align.CENTER
+            // Anzahl: eigene Zeile darunter (keine Ueberlappung mehr)
+            pTextC.color = if (full) cBad else cDim; pTextC.textSize = dp(9.5f)
+            canvas.drawText("$used/$max", r.centerX() + dp(1f), r.bottom - dp(3f), pTextC)
         } else {
             pTextC.color = cDim; pTextC.textSize = dp(9.5f)
-            canvas.drawText(tr("tech_needed"), r.centerX() + dp(2f), cy2 + dp(9f), pTextC)
+            canvas.drawText(tr("tech_needed"), r.centerX() + dp(2f), r.bottom - dp(8f), pTextC)
         }
         // Rahmen: aktiv (Akzent), sonst rot wenn nicht baubar (voll/zu teuer)
         if (active) {
