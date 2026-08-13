@@ -763,7 +763,7 @@ class GameView(context: Context) : View(context) {
             val pos = droneAnimPos.getOrPut(key) { floatArrayOf(stX, stY) }
             val dx = tgtX - pos[0]; val dy = tgtY - pos[1]
             val dist = kotlin.math.hypot(dx, dy)
-            val stepD = 6f * dt                                // 6 Zellen/s
+            val stepD = 3f * sim.droneSpeedMult().toFloat() * dt   // Basis 3 Zellen/s (halbiert) + Upgrade
             if (dist > stepD && dist > 1e-4f) { pos[0] += dx / dist * stepD; pos[1] += dy / dist * stepD }
             else { pos[0] = tgtX; pos[1] = tgtY }
             val arrived = dist < 0.12f
@@ -992,7 +992,7 @@ class GameView(context: Context) : View(context) {
             MType.LAGER -> "${tr("buffer")} ${oneDec(m.output[0])}E ${oneDec(m.output[1])}B ${oneDec(m.output[2])}P ${oneDec(m.output[3])}K"
             MType.VERSTAERKER -> "${tr("boosts")} (+${(Simulation.BOOST_PER * 100).toInt()}%)"
             MType.REAKTOR -> "${tr("provides")} ${Simulation.REAKTOR_POWER.toInt()} ${tr("strom")} (${tr("fixed")})"
-            MType.DROHNE -> "${tr("repairs")} · R${Simulation.DROHNE_R} · ${Simulation.DROHNE_RATE.toInt()}%/s"
+            MType.DROHNE -> "${tr("repairs")} · R${sim.droneRange()} · ${sim.droneRepairRate().roundToInt()}%/s"
         }
         canvas.drawText(io, dp(12f), yy, pText)
         yy += dp(22f)
@@ -1013,6 +1013,24 @@ class GameView(context: Context) : View(context) {
         if (m.type != MType.REAKTOR) {
             val refund = samt * 0.5 * (m.condition / 100.0)
             canvas.drawText("${tr("poweruse")} ${m.type.power.toInt()}     ${tr("sellvalue")} +${oneDec(refund)} ${resAbbr(sres)}", dp(12f), yy, pText)
+        }
+
+        // Drohnen-Station: Reparatur-Limit einstellen (nur reparieren ab Guthaben >= Limit)
+        if (m.type == MType.DROHNE) {
+            val y0 = top + dp(120f); val gh = dp(30f)
+            val paused = sim.money < m.moneyGate
+            pText.textSize = dp(13f)
+            pText.color = if (paused) cWarn else cText
+            val lab = "${tr("repair_limit")}: ${m.moneyGate.toInt()} ${tr("geld")}" +
+                if (paused) "  (${tr("paused")})" else ""
+            canvas.drawText(lab, dp(12f), y0 + dp(20f), pText)
+            val step = Simulation.DROHNE_GATE_STEP.toInt()
+            val mRect = RectF(W - dp(150f), y0, W - dp(84f), y0 + gh)
+            val pRect = RectF(W - dp(76f), y0, W - dp(10f), y0 + gh)
+            drawButton(canvas, Btn(mRect, "gate_dn", "− $step", m.moneyGate > 0.0, false, cAccent))
+            drawButton(canvas, Btn(pRect, "gate_up", "+ $step", true, false, cAccent))
+            buttons.add(Btn(mRect, "gate_dn", "gate_dn", m.moneyGate > 0.0))
+            buttons.add(Btn(pRect, "gate_up", "gate_up"))
         }
 
         // Aktions-Buttons unten
@@ -1117,6 +1135,8 @@ class GameView(context: Context) : View(context) {
         "t_bspeed", "t_ospeed", "t_pspeed", "t_aspeed" -> tr("tf_speed")
         "t_wert" -> tr("tf_wert"); "t_scan" -> tr("tf_scan"); "t_takt" -> tr("tf_takt")
         "t_robust" -> tr("tf_robust"); "t_lift" -> tr("tf_lift"); "t_power" -> tr("tf_power")
+        "t_drohne_rep" -> tr("tf_drohne_rep"); "t_drohne_speed" -> tr("tf_drohne_speed")
+        "t_drohne_range" -> tr("tf_drohne_range")
         else -> ""
     }
 
@@ -1462,6 +1482,8 @@ class GameView(context: Context) : View(context) {
                     screen = Screen.GAME; audio.sell()
                 }
             }
+            id == "gate_up" -> { if (selR >= 0) { sim.adjustDroneGate(selR, selC, Simulation.DROHNE_GATE_STEP); persist(); audio.click() } }
+            id == "gate_dn" -> { if (selR >= 0) { sim.adjustDroneGate(selR, selC, -Simulation.DROHNE_GATE_STEP); persist(); audio.click() } }
             id == "repair_sel" -> { if (selR >= 0) sim.grid[selR][selC]?.let { if (sim.repair(it)) audio.buy() else audio.error() } }
             id == "sell_sel" -> { if (selR >= 0) { sim.sell(selR, selC); selR = -1; selC = -1; audio.sell() } }
             id.startsWith("buy_") -> { if (sim.buyTech(id.removePrefix("buy_"))) audio.buy() else audio.error() }

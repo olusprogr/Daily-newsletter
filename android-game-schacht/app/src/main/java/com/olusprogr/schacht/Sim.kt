@@ -37,6 +37,8 @@ class Machine(var type: MType) {
     // Nur fuer die Drohnen-Station: aktuell angeflogene/reparierte Maschine (-1 = keine).
     var svR = -1
     var svC = -1
+    // Drohnen-Station: repariert nur, wenn Guthaben >= dieser Schwelle (per Klick einstellbar).
+    var moneyGate = 0.0
 }
 
 data class OfflineEvent(val timeSec: Int, val dead: Boolean, val mType: MType, val r: Int, val c: Int)
@@ -114,8 +116,10 @@ class Simulation {
         const val OUT_CAP = 20.0
         const val LAGER_CAP = 120.0
         const val REPAIR_COST = 5.0
-        const val DROHNE_RATE = 30.0     // Reparaturtempo am aktuellen Ziel (%/s)
-        const val DROHNE_R = 3           // Reichweite der Station (Chebyshev-Radius)
+        const val DROHNE_RATE = 5.0      // Basis-Reparaturtempo am aktuellen Ziel (%/s)
+        const val DROHNE_R = 3           // Basis-Reichweite der Station (Chebyshev-Radius)
+        const val DROHNE_REPAIR_COST_PER = 0.1  // Geld je repariertem Zustands-% (Drohne)
+        const val DROHNE_GATE_STEP = 25.0       // Schrittweite fuer das Reparatur-Limit
         const val BOOST_PER = 0.20
         const val COMPONENT_PRICE = 8.0
         const val HAENDLER_SELL = 2.0
@@ -161,7 +165,11 @@ class Simulation {
             TechNode("t_takt", "Fabrik-Takt (alle Maschinen)", 50.0, 1.35, 20, "+5%/Stufe", null, null),
             TechNode("t_robust", "Robustheit (weniger Verschleiss)", 40.0, 1.3, 10, "-5%/Stufe", null, null),
             TechNode("t_lift", "Lift-Tempo", 35.0, 1.3, 10, "+10%/Stufe", null, null),
-            TechNode("t_power", "Reaktor-Leistung", 45.0, 1.3, 20, "+5 Strom/Stufe", null, null)
+            TechNode("t_power", "Reaktor-Leistung", 45.0, 1.3, 20, "+5 Strom/Stufe", null, null),
+            // Drohnen-Upgrades (mit Geld bezahlt)
+            TechNode("t_drohne_rep", "Drohnen-Reparatur", 40.0, 1.35, 15, "+20%/Stufe", "t_drohne", null),
+            TechNode("t_drohne_speed", "Drohnen-Fluggeschwindigkeit", 35.0, 1.3, 10, "+20%/Stufe", "t_drohne", null),
+            TechNode("t_drohne_range", "Drohnen-Reichweite", 60.0, 1.6, 3, "+1 Feld/Stufe", "t_drohne", null)
         )
 
         val UNLOCK = mapOf(
@@ -471,6 +479,15 @@ class Simulation {
 
     fun buildCost(t: MType): Pair<Res, Double> = BUILD_COST[t] ?: Pair(Res.BARREN, 0.0)
 
+    /** Reparatur-Limit einer Drohnen-Station um delta verschieben (>= 0). Neuer Wert. */
+    fun adjustDroneGate(r: Int, c: Int, delta: Double): Double {
+        val a = anchorOf(r, c) ?: return 0.0
+        val m = grid[a[0]][a[1]] ?: return 0.0
+        if (m.type != MType.DROHNE) return m.moneyGate
+        m.moneyGate = (m.moneyGate + delta).coerceAtLeast(0.0)
+        return m.moneyGate
+    }
+
     fun maxCount(t: MType): Int = MAX_COUNT[t] ?: Int.MAX_VALUE
 
     fun count(t: MType): Int {
@@ -600,6 +617,9 @@ class Simulation {
     private fun wearFactor() = max(0.3, 1.0 - 0.05 * lvl("t_robust"))
     private fun liftRate() = LIFT * (1.0 + 0.1 * lvl("t_lift"))
     private fun reactorPower() = REAKTOR_POWER + 5.0 * lvl("t_power")
+    fun droneRepairRate() = DROHNE_RATE * (1.0 + 0.20 * lvl("t_drohne_rep"))
+    fun droneRange() = DROHNE_R + lvl("t_drohne_range")
+    fun droneSpeedMult() = 1.0 + 0.20 * lvl("t_drohne_speed")
     private fun bohrerRate() = BOHRER_RATE * (1.0 + 0.08 * lvl("t_bspeed")) * globalMult()
     private fun ofenRate() = OFEN_RATE * (1.0 + 0.08 * lvl("t_ospeed")) * globalMult()
     private fun presseRate() = PRESSE_RATE * (1.0 + 0.08 * lvl("t_pspeed")) * globalMult()
@@ -665,7 +685,7 @@ class Simulation {
         MType.OFEN -> m.input[Res.ROHERZ.ordinal] > 1e-6 && m.output[Res.BARREN.ordinal] < OUT_CAP - 1e-9
         MType.PRESSE -> m.input[Res.BARREN.ordinal] > 1e-6 && m.output[Res.PLATTE.ordinal] < OUT_CAP - 1e-9
         MType.ASSEMBLER -> m.input[Res.PLATTE.ordinal] > 1e-6 && m.output[Res.KOMPONENTE.ordinal] < OUT_CAP - 1e-9
-        MType.DROHNE -> damagedInRange(r, c) != null
+        MType.DROHNE -> money >= m.moneyGate && damagedInRange(r, c) != null
         MType.VERSTAERKER -> neighbors(r, c).any {
             val g = grid[it[0]][it[1]]?.type
             g == MType.BOHRER || g == MType.OFEN || g == MType.PRESSE || g == MType.ASSEMBLER
@@ -676,8 +696,9 @@ class Simulation {
 
     /** Am staerksten beschaedigte Maschine im Umkreis der Station (oder null). */
     private fun damagedInRange(r: Int, c: Int): IntArray? {
+        val rad = droneRange()
         var bestR = -1; var bestC = -1; var worst = 99.999
-        for (dr in -DROHNE_R..DROHNE_R) for (dc in -DROHNE_R..DROHNE_R) {
+        for (dr in -rad..rad) for (dc in -rad..rad) {
             val rr = r + dr; val cc = c + dc
             if (rr !in 0 until n || cc !in 0 until n) continue
             if (rr == r && cc == c) continue
@@ -799,20 +820,31 @@ class Simulation {
                     if (fuel <= 1e-9) m.starved = true
                 }
                 MType.DROHNE -> {
-                    // Aktuelles Ziel noch gueltig (in Reichweite & beschaedigt)?
-                    val cur = if (m.svR in 0 until n && m.svC in 0 until n) grid[m.svR][m.svC] else null
-                    val valid = cur != null && cur.type != MType.DROHNE && cur.condition < 99.999 &&
-                        kotlin.math.max(kotlin.math.abs(m.svR - r), kotlin.math.abs(m.svC - c)) <= DROHNE_R
-                    if (!valid) {
-                        val next = damagedInRange(r, c)
-                        if (next != null) { m.svR = next[0]; m.svC = next[1] } else { m.svR = -1; m.svC = -1 }
+                    if (money < m.moneyGate) {
+                        // Reparatur-Limit nicht erreicht: Drohne pausiert und kehrt heim.
+                        m.svR = -1; m.svC = -1; m.util = 0.0
+                    } else {
+                        val cur = if (m.svR in 0 until n && m.svC in 0 until n) grid[m.svR][m.svC] else null
+                        val valid = cur != null && cur.type != MType.DROHNE && cur.condition < 99.999 &&
+                            kotlin.math.max(kotlin.math.abs(m.svR - r), kotlin.math.abs(m.svC - c)) <= droneRange()
+                        if (!valid) {
+                            val next = damagedInRange(r, c)
+                            if (next != null) { m.svR = next[0]; m.svC = next[1] } else { m.svR = -1; m.svC = -1 }
+                        }
+                        val tgt = if (m.svR >= 0) grid[m.svR][m.svC] else null
+                        if (tgt != null) {
+                            var delta = min(droneRepairRate() * ddt * scale, 100.0 - tgt.condition)
+                            // Geld fuer die Reparatur abziehen; nur so viel, wie bezahlbar ist.
+                            val maxByMoney = if (DROHNE_REPAIR_COST_PER > 1e-9) money / DROHNE_REPAIR_COST_PER else delta
+                            if (maxByMoney < delta) delta = maxByMoney
+                            if (delta > 1e-9) {
+                                tgt.condition = min(100.0, tgt.condition + delta)
+                                money = max(0.0, money - delta * DROHNE_REPAIR_COST_PER)
+                                m.condition = max(0.0, m.condition - wearPerSec(MType.DROHNE) * wf * ddt * scale)
+                                m.util = 1.0
+                            } else m.util = 0.0
+                        } else m.util = 0.0
                     }
-                    val tgt = if (m.svR >= 0) grid[m.svR][m.svC] else null
-                    if (tgt != null) {
-                        tgt.condition = min(100.0, tgt.condition + DROHNE_RATE * ddt * scale)
-                        m.condition = max(0.0, m.condition - wearPerSec(MType.DROHNE) * wf * ddt * scale)
-                        m.util = 1.0
-                    } else m.util = 0.0
                 }
                 MType.VERSTAERKER -> {
                     val active = wantsToRun(m, r, c)
@@ -933,6 +965,7 @@ class Simulation {
         forEachMachine { m, r, c ->
             val o = JSONObject()
             o.put("r", r); o.put("c", c); o.put("ty", m.type.ordinal); o.put("cond", m.condition)
+            if (m.type == MType.DROHNE) o.put("gate", m.moneyGate)
             val ia = JSONArray(); val oa = JSONArray()
             for (k in 0 until rc) { ia.put(m.input[k]); oa.put(m.output[k]) }
             o.put("in", ia); o.put("out", oa)
@@ -979,6 +1012,7 @@ class Simulation {
             if (r < 0 || r >= n || c < 0 || c >= n) continue
             val m = Machine(MType.values()[ty])
             m.condition = o.optDouble("cond", 100.0)
+            m.moneyGate = o.optDouble("gate", 0.0)
             val ia = o.optJSONArray("in"); val oa = o.optJSONArray("out")
             if (ia != null) for (k in 0 until min(rc, ia.length())) m.input[k] = ia.optDouble(k, 0.0)
             if (oa != null) for (k in 0 until min(rc, oa.length())) m.output[k] = oa.optDouble(k, 0.0)
