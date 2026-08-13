@@ -223,6 +223,13 @@ class GameView(context: Context) : View(context) {
     private val droneAnimPos = HashMap<Int, FloatArray>()
     private var droneLastT = 0f
 
+    // Button-Druck-Feedback (Juice): gedrueckte Button-ID + Zeitpunkt.
+    private var pressedBtn: String? = null
+
+    // Bau-Staubwolken (kurzer Effekt beim Platzieren).
+    private class Puff(val r: Int, val c: Int, val start: Float)
+    private val puffs = ArrayList<Puff>()
+
     // Aufsteigende "+Geld"-Zahlen beim Abbauen von Hindernissen.
     private class Rise(val r: Int, val c: Int, val text: String, val start: Float)
     private val rises = ArrayList<Rise>()
@@ -409,7 +416,8 @@ class GameView(context: Context) : View(context) {
         if (screen == Screen.MENU) { drawMenu(canvas); return }
         drawHeader(canvas)
         drawGrid(canvas)
-        if (screen == Screen.GAME) drawRises(canvas)
+        if (screen == Screen.GAME) { drawPuffs(canvas); drawRises(canvas) }
+        if (screen == Screen.GAME) drawPowerPulse(canvas)
         if (screen == Screen.GAME) {
             if (selR >= 0 && sim.grid[selR][selC] != null) drawDetail(canvas) else drawPalette(canvas)
         }
@@ -431,47 +439,68 @@ class GameView(context: Context) : View(context) {
         canvas.drawRect(x, cy - s / 2, x + s, cy - s / 2 + dp(2f), p)
     }
 
+    // Helle, kontrastreiche Ressourcenfarben fuer die Top-Bar
+    private val cValSilver = Color.rgb(214, 220, 232)
+    private val cValCyan = Color.rgb(120, 200, 234)
+    private val cValPurple = Color.rgb(196, 168, 244)
+
     private fun drawHeader(canvas: Canvas) {
+        // Konsolen-Panel (skeuomorph): Grund + heller Grat oben + Nietenreihe + Akzentkante unten
         p.color = cPanel
         canvas.drawRect(0f, 0f, W.toFloat(), headerH, p)
         p.color = cPanelHi
         canvas.drawRect(0f, 0f, W.toFloat(), dp(2f), p)
+        p.color = Color.argb(60, 0, 0, 0)
+        canvas.drawRect(0f, headerH - dp(4f), W.toFloat(), headerH - dp(2f), p)
         p.color = cAccent
         canvas.drawRect(0f, headerH - dp(2f), W.toFloat(), headerH, p)
+        // Nieten
+        p.color = Color.argb(90, 210, 216, 228)
+        var rx = dp(6f)
+        while (rx < W - dp(100f)) { canvas.drawCircle(rx, dp(5f), dp(1.1f), p); rx += dp(16f) }
 
         pText.textAlign = Paint.Align.LEFT
 
-        // Titel: Geld hervorgehoben mit Muenz-Icon
-        drawIcon(canvas, Sprites.ICON_GELD, dp(9f), dp(11f), dp(18f))
+        // Reihe 1: Geld gross mit Muenz-Icon + Einkommen klein
+        drawIcon(canvas, Sprites.ICON_GELD, dp(9f), dp(9f), dp(18f))
         pText.textSize = dp(20f); pText.color = cResGeld
         val moneyStr = fmt(sim.money)
-        canvas.drawText(moneyStr, dp(32f), dp(27f), pText)
+        canvas.drawText(moneyStr, dp(32f), dp(25f), pText)
         val moneyW = pText.measureText(moneyStr)
-        pText.textSize = dp(13f); pText.color = cGood
-        canvas.drawText("+${fmt(sim.moneyPerMin)}/min", dp(32f) + moneyW + dp(10f), dp(27f), pText)
+        pText.textSize = dp(12f); pText.color = cGood
+        canvas.drawText("+${fmt(sim.moneyPerMin)}/min", dp(32f) + moneyW + dp(8f), dp(25f), pText)
 
-        // Forschungswaehrung (rechts oben)
+        // Forschungswaehrung als Chip rechts (vor den Menue-Buttons)
+        val fStr = "◆ ${fmt(sim.research)}"
+        pText.textSize = dp(16f)
+        val fW = pText.measureText(fStr)
         pText.textAlign = Paint.Align.RIGHT
-        pText.textSize = dp(17f); pText.color = cResForsch
-        canvas.drawText("◆ ${fmt(sim.research)}", W - dp(10f), dp(26f), pText)
+        pText.color = cResForsch
+        canvas.drawText(fStr, W - dp(102f), dp(24f), pText)
         pText.textAlign = Paint.Align.LEFT
 
-        // Bestand inkl. Lager-Inhalten (mit Pixel-Icons)
-        pText.textSize = dp(14f); pText.color = cText
-        drawIcon(canvas, Sprites.ICON_BARREN, dp(9f), dp(39f), dp(15f))
-        canvas.drawText(fmt(sim.availableBarren()), dp(28f), dp(48f), pText)
-        drawIcon(canvas, Sprites.ICON_PLATTE, dp(110f), dp(39f), dp(15f))
-        canvas.drawText(fmt(sim.availablePlatten()), dp(128f), dp(48f), pText)
-        drawIcon(canvas, Sprites.ICON_KOMP, dp(206f), dp(39f), dp(15f))
-        canvas.drawText(fmt(sim.availableKomponente()), dp(226f), dp(48f), pText)
+        // Reihe 2: Rohstoffe hell & kontrastreich
+        pText.textSize = dp(14f)
+        drawIcon(canvas, Sprites.ICON_BARREN, dp(9f), dp(37f), dp(15f))
+        pText.color = cValSilver; canvas.drawText(fmt(sim.availableBarren()), dp(28f), dp(47f), pText)
+        drawIcon(canvas, Sprites.ICON_PLATTE, dp(108f), dp(37f), dp(15f))
+        pText.color = cValCyan; canvas.drawText(fmt(sim.availablePlatten()), dp(127f), dp(47f), pText)
+        drawIcon(canvas, Sprites.ICON_KOMP, dp(196f), dp(37f), dp(15f))
+        pText.color = cValPurple; canvas.drawText(fmt(sim.availableKomponente()), dp(215f), dp(47f), pText)
 
+        // Reihe 3: Strom-Konsole (Chip, gruen=Ueberschuss / rot=Mangel)
         val powOk = sim.powerDemand <= sim.powerSupply + 1e-6
         val rest = sim.powerSupply - sim.powerDemand
-        drawIcon(canvas, Sprites.ICON_STROM, dp(9f), dp(61f), dp(15f))
+        drawIcon(canvas, Sprites.ICON_STROM, dp(9f), dp(59f), dp(15f))
+        val chip = RectF(dp(28f), dp(57f), dp(150f), dp(74f))
+        p.color = if (powOk) Color.argb(55, 90, 200, 120) else Color.argb(70, 224, 84, 72)
+        canvas.drawRoundRect(chip, dp(4f), dp(4f), p)
+        p.color = if (powOk) cGood else cBad; p.style = Paint.Style.STROKE; p.strokeWidth = dp(1.3f)
+        canvas.drawRoundRect(chip, dp(4f), dp(4f), p); p.style = Paint.Style.FILL
         pText.color = if (powOk) cGood else cBad
-        canvas.drawText("${tr("reststrom")} ${if (rest < 0) "-" + fmt(-rest) else fmt(rest)}", dp(28f), dp(70f), pText)
-        pText.color = cDim
-        canvas.drawText("${fmt(sim.powerSupply)}/${fmt(sim.powerDemand)}", dp(170f), dp(70f), pText)
+        canvas.drawText("${tr("reststrom")} ${if (rest < 0) "-" + fmt(-rest) else "+" + fmt(rest)}", dp(34f), dp(70f), pText)
+        pText.color = cDim; pText.textSize = dp(12f)
+        canvas.drawText("${fmt(sim.powerSupply)}/${fmt(sim.powerDemand)}", dp(158f), dp(70f), pText)
 
         val bw = dp(84f); val bh = dp(30f)
         val tR = RectF(W - dp(12f) - bw, dp(8f), W - dp(12f), dp(8f) + bh)
@@ -671,6 +700,44 @@ class GameView(context: Context) : View(context) {
     }
 
     /** Aufsteigende, ausblendende "+Geld"-Zahlen ueber abgebauten Feldern. */
+    /** Kurze Bau-Staubwolke beim Platzieren. */
+    private fun drawPuffs(canvas: Canvas) {
+        if (puffs.isEmpty()) return
+        canvas.save()
+        canvas.clipRect(gridLeft, gridTop, gridLeft + gridW, gridTop + gridH)
+        val it = puffs.iterator()
+        while (it.hasNext()) {
+            val pf = it.next()
+            val age = animT - pf.start
+            if (age > 0.5f) { it.remove(); continue }
+            val prog = age / 0.5f
+            val cx = vLeft + (pf.c + 0.5f) * cell
+            val cy = vTop + (pf.r + 0.85f) * cell
+            val al = (170 * (1f - prog)).toInt().coerceIn(0, 255)
+            p.color = Color.argb(al, 210, 200, 180)
+            for (k in 0 until 5) {
+                val ang = k * 1.2566f
+                val dist = cell * (0.10f + 0.42f * prog)
+                val rad = cell * (0.16f - 0.10f * prog)
+                canvas.drawCircle(cx + kotlin.math.cos(ang) * dist, cy - kotlin.math.sin(ang) * dist * 0.5f, rad, p)
+            }
+        }
+        canvas.restore()
+    }
+
+    /** Roter Rand-Puls bei Stromknappheit (statt Text auf dem Raster). */
+    private fun drawPowerPulse(canvas: Canvas) {
+        if (sim.powerDemand <= sim.powerSupply + 1e-6) return
+        val pulse = 0.5f + 0.5f * kotlin.math.sin(animT * 4f)
+        val a = (70 * pulse).toInt().coerceIn(0, 255)
+        val th = dp(6f)
+        p.color = Color.argb(a, 230, 70, 60)
+        canvas.drawRect(gridLeft, gridTop, gridLeft + gridW, gridTop + th, p)
+        canvas.drawRect(gridLeft, gridTop + gridH - th, gridLeft + gridW, gridTop + gridH, p)
+        canvas.drawRect(gridLeft, gridTop, gridLeft + th, gridTop + gridH, p)
+        canvas.drawRect(gridLeft + gridW - th, gridTop, gridLeft + gridW, gridTop + gridH, p)
+    }
+
     private fun drawRises(canvas: Canvas) {
         if (rises.isEmpty()) return
         canvas.save()
@@ -946,22 +1013,88 @@ class GameView(context: Context) : View(context) {
             val max = sim.maxCount(t)
             val full = used >= max
             val unlocked = sim.canBuild(t) && !full
-            val moneyB = sim.isMoneyBuilt(t)
-            val camt = if (moneyB) sim.moneyBuildCost(t) else sim.buildCost(t).second
-            val curLabel = if (moneyB) "€" else resAbbr(sim.buildCost(t).first)
-            val afford = if (moneyB) sim.money >= camt else sim.available(sim.buildCost(t).first) >= camt
-            val sub: String
-            val subCol: Int
-            when {
-                !sim.canBuild(t) -> { sub = tr("tech_needed"); subCol = cDim }
-                full -> { sub = "$used/$max ${tr("full")}"; subCol = cBad }
-                else -> { sub = "${camt.toInt()}$curLabel $used/$max"; subCol = if (afford) cDim else cBad }
-            }
-            val active = buildTool == t
-            val mc = mColor(t)
-            drawButton(canvas, Btn(rect, "build_${t.name}", mShort(t), unlocked, active, mc, sub, subCol, mc))
+            drawBuildTile(canvas, rect, t, buildTool == t, used, max, full)
             buttons.add(Btn(rect, "build_${t.name}", mShort(t), unlocked))
         }
+    }
+
+    /** Skeuomorphes Baumodul: Sprite-Icon, Name, Kosten mit Icon, LED-Statusstreifen, Zustaende. */
+    private fun drawBuildTile(canvas: Canvas, rect: RectF, t: MType, active: Boolean, used: Int, max: Int, full: Boolean) {
+        val pressed = pressedBtn == "build_${t.name}"
+        val r = if (pressed) RectF(rect.left, rect.top + dp(1.5f), rect.right, rect.bottom + dp(1.5f)) else rect
+        val mc = mColor(t)
+        val canB = sim.canBuild(t)
+        val moneyB = sim.isMoneyBuilt(t)
+        val camt = if (moneyB) sim.moneyBuildCost(t) else sim.buildCost(t).second
+        val afford = if (moneyB) sim.money >= camt else sim.available(sim.buildCost(t).first) >= camt
+        // Grund + Bevel
+        p.color = if (!canB) cBtnSh else if (active) mc else cBtn
+        canvas.drawRoundRect(r, dp(8f), dp(8f), p)
+        if (canB) {
+            p.color = Color.argb(70, 255, 255, 255)
+            canvas.drawRect(r.left + dp(6f), r.top + dp(2f), r.right - dp(6f), r.top + dp(3.5f), p)
+            p.color = Color.argb(55, 0, 0, 0)
+            canvas.drawRect(r.left + dp(6f), r.bottom - dp(3f), r.right - dp(6f), r.bottom - dp(1.5f), p)
+        }
+        // Eck-Nieten
+        p.color = Color.argb(120, 210, 216, 228)
+        canvas.drawCircle(r.left + dp(4f), r.top + dp(4f), dp(1.1f), p)
+        canvas.drawCircle(r.right - dp(4f), r.top + dp(4f), dp(1.1f), p)
+        canvas.drawCircle(r.left + dp(4f), r.bottom - dp(4f), dp(1.1f), p)
+        canvas.drawCircle(r.right - dp(4f), r.bottom - dp(4f), dp(1.1f), p)
+        // LED-Statusstreifen links (Kategorie)
+        val nSeg = 4
+        val segH = (r.height() - dp(16f)) / nSeg
+        for (k in 0 until nSeg) {
+            val yy0 = r.top + dp(8f) + k * segH
+            p.color = if (canB) mc else Color.argb(70, Color.red(mc), Color.green(mc), Color.blue(mc))
+            canvas.drawRoundRect(RectF(r.left + dp(3.5f), yy0 + dp(1f), r.left + dp(6.5f), yy0 + segH - dp(1f)), dp(1.5f), dp(1.5f), p)
+        }
+        // Sprite-Icon (aspektgetreu)
+        val bmp = machBmp[t.ordinal]
+        val box = dp(26f); val ar = bmp.width.toFloat() / bmp.height
+        var iw = box; var ih = box
+        if (ar > 1f) ih = box / ar else iw = box * ar
+        val icx = r.centerX() + dp(2f); val icTop = r.top + dp(5f)
+        val dst = RectF(icx - iw / 2, icTop + (box - ih) / 2, icx + iw / 2, icTop + (box + ih) / 2)
+        val savedA = pTile.alpha
+        pTile.alpha = if (canB) 255 else 90
+        canvas.drawBitmap(bmp, null, dst, pTile)
+        pTile.alpha = savedA
+        // Name
+        pTextC.textAlign = Paint.Align.CENTER
+        pTextC.textSize = dp(10.5f); pTextC.color = if (canB) cText else cDim
+        canvas.drawText(mShort(t), r.centerX() + dp(2f), r.top + dp(42f), pTextC)
+        // Kosten-Zeile (Icon links + Betrag) und Anzahl rechts – oder Tech-Hinweis
+        val cy2 = r.bottom - dp(14f)
+        if (canB) {
+            val costIcon = when {
+                moneyB -> Sprites.ICON_GELD
+                sim.buildCost(t).first == Res.PLATTE -> Sprites.ICON_PLATTE
+                else -> Sprites.ICON_BARREN
+            }
+            drawIcon(canvas, costIcon, r.left + dp(7f), cy2, dp(11f))
+            pTextC.textAlign = Paint.Align.LEFT
+            pTextC.color = if (afford) cText else cBad; pTextC.textSize = dp(11f)
+            canvas.drawText("${camt.toInt()}", r.left + dp(21f), cy2 + dp(9f), pTextC)
+            pTextC.textAlign = Paint.Align.RIGHT
+            pTextC.color = if (full) cBad else cDim; pTextC.textSize = dp(10f)
+            canvas.drawText("$used/$max", r.right - dp(6f), cy2 + dp(9f), pTextC)
+            pTextC.textAlign = Paint.Align.CENTER
+        } else {
+            pTextC.color = cDim; pTextC.textSize = dp(9.5f)
+            canvas.drawText(tr("tech_needed"), r.centerX() + dp(2f), cy2 + dp(9f), pTextC)
+        }
+        // Rahmen: aktiv (Akzent), sonst rot wenn nicht baubar (voll/zu teuer)
+        if (active) {
+            p.color = cAccent; p.style = Paint.Style.STROKE; p.strokeWidth = dp(2f)
+            canvas.drawRoundRect(r, dp(8f), dp(8f), p); p.style = Paint.Style.FILL
+        } else if (canB && (!afford || full)) {
+            p.color = cBad; p.style = Paint.Style.STROKE; p.strokeWidth = dp(1.6f)
+            canvas.drawRoundRect(r, dp(8f), dp(8f), p); p.style = Paint.Style.FILL
+        }
+        // Press-Verdunkelung
+        if (pressed) { p.color = Color.argb(45, 0, 0, 0); canvas.drawRoundRect(r, dp(8f), dp(8f), p) }
     }
 
     private fun shortLabel(t: MType) = when (t) {
@@ -1384,6 +1517,8 @@ class GameView(context: Context) : View(context) {
     }
 
     private fun drawButton(canvas: Canvas, b: Btn) {
+        val pressed = pressedBtn == b.id && b.enabled
+        if (pressed) { canvas.save(); canvas.translate(0f, dp(1.5f)) }
         val bg = when {
             !b.enabled -> cBtnSh
             b.active -> if (b.color != 0) b.color else cAccent
@@ -1422,6 +1557,10 @@ class GameView(context: Context) : View(context) {
             pTextC.color = if (b.subColor != 0) b.subColor else cDim; pTextC.textSize = dp(11f)
             canvas.drawText(b.sub, b.rect.centerX(), b.rect.centerY() + dp(15f), pTextC)
         }
+        if (pressed) {
+            p.color = Color.argb(40, 0, 0, 0); canvas.drawRoundRect(b.rect, dp(9f), dp(9f), p)
+            canvas.restore()
+        }
     }
 
     // ---------------- Eingabe ----------------
@@ -1436,10 +1575,16 @@ class GameView(context: Context) : View(context) {
                 lastPanX = panX; lastPanY = panY; moved = false
                 downInGrid = downX >= gridLeft && downX <= gridLeft + gridW &&
                     downY >= gridTop && downY <= gridTop + gridH
+                // Button unter dem Finger fuer Druck-Feedback merken
+                pressedBtn = buttons.lastOrNull { it.enabled && it.rect.contains(downX, downY) }?.id
+                if (pressedBtn != null) invalidate()
                 return true
             }
             MotionEvent.ACTION_MOVE -> {
-                if (kotlin.math.abs(event.x - downX) > slop || kotlin.math.abs(event.y - downY) > slop) moved = true
+                if (kotlin.math.abs(event.x - downX) > slop || kotlin.math.abs(event.y - downY) > slop) {
+                    moved = true
+                    if (pressedBtn != null) { pressedBtn = null; invalidate() }
+                }
                 // Karte-Scrollen laeuft ueber gestureDetector.onScroll.
                 if (screen == Screen.TECH) {
                     techScroll = (downScroll - (event.y - downY)).coerceIn(0f, techMaxScroll)
@@ -1449,8 +1594,10 @@ class GameView(context: Context) : View(context) {
             }
             MotionEvent.ACTION_UP -> {
                 if (!moved && !scaleDetector.isInProgress) handleClick(event.x, event.y)
+                if (pressedBtn != null) { pressedBtn = null; invalidate() }
                 return true
             }
+            MotionEvent.ACTION_CANCEL -> { if (pressedBtn != null) { pressedBtn = null; invalidate() }; return true }
             else -> return true
         }
     }
@@ -1543,7 +1690,7 @@ class GameView(context: Context) : View(context) {
         // 3) Freies, geraeumtes Feld: bauen (falls Werkzeug) sonst Auswahl loeschen
         val t = buildTool
         if (t != null) {
-            if (sim.build(t, r, c)) { selR = -1; selC = -1; audio.place() } else audio.error()
+            if (sim.build(t, r, c)) { puffs.add(Puff(r, c, animT)); selR = -1; selC = -1; audio.place() } else audio.error()
         } else { selR = -1; selC = -1 }
         invalidate()
     }
