@@ -1,6 +1,42 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/pc-components/cpus/raptor-lake-is-a-core-part-of-the-portfolio-for-years-to-come-says-intel-theres-been-a-sudden-inrush-of-demand-for-lga-1700-chips-due-to-ddr5-prices",
+      "title": "Older Raptor Lake CPUs are a ‘core part of the portfolio’ for years to come, says Intel — there’s been a ‘sudden inrush of demand’ for LGA 1700 chips due to DDR5 prices",
+      "summary": "Intel has seen a “sudden inrush” of demand for Raptor Lake CPUs, and it says they’ll remain a part of the company’s lineup for desktop builders “for years to come.”",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-08-14T11:39:52+00:00",
+      "sent_at": "2026-08-14T11:47:21.580304+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/games/977646/msi-claw-8-ex-review-intel-panther-lake-handheld",
+      "title": "The MSI Claw EX is the most important handheld since Steam Deck — I still wouldn’t buy one",
+      "summary": "As The Verge's resident handheld reviewer, I have nearly every portable gaming PC on a shelf in my house. The MSI Claw 8 EX AI Plus is now the first one I reach for. Thanks to a next-gen Intel chip and improved MSI design, the Claw EX is the most powerful handheld that truly feels [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-08-14T11:00:00+00:00",
+      "sent_at": "2026-08-14T11:47:21.580304+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/cpus/intel-vp-robert-hallock-sets-nova-lake-expectations-teases-return-to-raptor-lake-for-ddr4-platforms-our-full-1-1-interview-transcript",
+      "title": "Intel VP Robert Hallock sets Nova Lake expectations, teases return to Raptor Lake for DDR4 platforms — our full 1:1 interview transcript",
+      "summary": "We speak to Robert Hallock, Intel VP & GM of Enthusiast Channel Business, about Nova Lake rumors, how the company is focusing on DIY builders during RAMageddon, and how Raptor Lake refresh induced a paradigm shift for the company.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-08-14T11:00:00+00:00",
+      "sent_at": "2026-08-14T11:47:21.580304+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2236912/deepseek-ai-models-get-four-times-pricier/",
+      "title": "DeepSeek's AI models are about to cost four times more",
+      "summary": "DeepSeek has announced price hikes for its V4 models.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-08-14T10:58:24+00:00",
+      "sent_at": "2026-08-14T11:47:21.580304+00:00"
+    },
+    {
       "link": "https://www.wired.com/story/these-masturbation-consultants-were-hired-to-pleasure-themselves-using-ai/",
       "title": "These ‘Masturbation Consultants’ Were Hired to Pleasure Themselves With AI",
       "summary": "Joi AI hired 10 people to masturbate using AI companions as part of a monthlong “wellness” study. The company claims the practice could help “solve male loneliness.”",
