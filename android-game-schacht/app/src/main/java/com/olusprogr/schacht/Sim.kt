@@ -918,9 +918,12 @@ class Simulation {
                 MType.WINDRAD -> { m.util = 1.0 }   // dreht sich immer (Strom aus Wind)
                 MType.SOLAR -> { m.util = 1.0 }      // liefert immer (Strom aus Sonne)
                 MType.FORSCHUNG -> {
-                    research += RESEARCH_RATE * ddt * scale     // produziert Forschungswaehrung
-                    m.condition = max(0.0, m.condition - wearPerSec(MType.FORSCHUNG) * wf * ddt * scale)
-                    m.util = scale
+                    // Produziert die volle Rate (nicht mehr durch die globale Strom-Drossel
+                    // heruntergezogen); nur bei praktisch totem Netz pausiert es.
+                    val active = if (scale > 0.05) 1.0 else 0.0
+                    research += RESEARCH_RATE * ddt * active     // produziert Forschungswaehrung
+                    m.condition = max(0.0, m.condition - wearPerSec(MType.FORSCHUNG) * wf * ddt * active)
+                    m.util = active
                 }
                 MType.LAGER, MType.REAKTOR, MType.HAENDLER -> { m.util = 0.0 }
             }
