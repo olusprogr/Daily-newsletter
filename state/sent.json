@@ -1,6 +1,33 @@
 {
   "items": [
     {
+      "link": "https://www.theverge.com/tech/980416/google-gemini-ai-watermarks-removal",
+      "title": "You can now turn off Google Gemini&#8217;s visible watermarks",
+      "summary": "Google will now allow you to remove visible watermarks from the images, videos, and music made with AI tools. With the update, you can toggle off a new \"Media watermark\" setting in Gemini and Google's AI video generator, Flow. When toggled off, Google will remove the \"sparkle\" watermark that appears in the bottom-right corner of [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-08-14T16:39:32+00:00",
+      "sent_at": "2026-08-14T17:27:22.306625+00:00"
+    },
+    {
+      "link": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/",
+      "title": "Google is making private AI practical with homomorphic encryption",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-14T15:43:10+00:00",
+      "sent_at": "2026-08-14T17:27:22.306625+00:00"
+    },
+    {
+      "link": "https://cursor.com/blog/joining-spacex",
+      "title": "Cursor is now a part of SpaceX",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Innovationen",
+      "published": "2026-08-14T13:10:12+00:00",
+      "sent_at": "2026-08-14T17:27:22.306625+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/08/14/google-will-now-allow-users-to-remove-visible-watermark-from-its-ai-generations/",
       "title": "Google will now allow users to remove visible watermark from its AI generations",
       "summary": "Turning off this setting won't affect invisible benchmarks used to identify an AI generated file",
