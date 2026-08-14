@@ -1,6 +1,33 @@
 {
   "items": [
     {
+      "link": "https://electrek.co/2026/08/14/waymo-cpuc-approval-california-expansion-18-counties/",
+      "title": "Waymo wins California approval to expand robotaxis across 18 counties",
+      "summary": "Waymo says California regulators have signed off on the biggest expansion of its robotaxi service yet, covering 18 counties from Sonoma down to San Diego. The California Public Utilities Commission approval clears Waymo to charge for fully driverless rides across the whole Bay Area and Los Angeles, and to open two brand-new markets in Sacramento and San Diego.",
+      "source": "Electrek",
+      "category": "Autonomes Fahren",
+      "published": "2026-08-14T19:47:16+00:00",
+      "sent_at": "2026-08-14T20:03:40.911500+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/08/14/thrives-joshua-kushner-chides-silicon-valley-vcs-over-ai-euphoria/",
+      "title": "Thrive’s Joshua Kushner chides Silicon Valley VCs over AI euphoria",
+      "summary": "The AI opportunity is huge but \"it would also be a grave error in our minds to let excitement weaken our investment discipline,\" Kushner warns in his first-ever investment letter.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-14T19:33:00+00:00",
+      "sent_at": "2026-08-14T20:03:40.911500+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/gadgets/980547/samsung-galaxy-h1-over-ear-headphones",
+      "title": "Samsung has new Galaxy headphones in the works",
+      "summary": "Strings of code in Samsung's Galaxy Wearable app hint at an upcoming pair of over-ear headphones that could compete with the AirPods Max, SamMobile reports. Samsung's reportedly referring to the headphones as the \"Galaxy H1,\" and SamMobile says they could launch sometime in 2027. That would make these the company's first pair of over-ear headphones [&#8230;]",
+      "source": "The Verge",
+      "category": "Innovationen",
+      "published": "2026-08-14T19:18:45+00:00",
+      "sent_at": "2026-08-14T20:03:40.911500+00:00"
+    },
+    {
       "link": "https://www.engadget.com/2237340/google-will-now-allow-users-to-remove-visible-watermarks-from-ai-content/",
       "title": "Google will now allow users to remove visible watermarks from AI content",
       "summary": "The invisible SynthID will remain.",
