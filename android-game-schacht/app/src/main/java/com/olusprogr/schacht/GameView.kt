@@ -1149,7 +1149,7 @@ class GameView(context: Context) : View(context) {
             MType.VERSTAERKER -> "${tr("boosts")} (+${(Simulation.BOOST_PER * 100).toInt()}%)"
             MType.REAKTOR -> "${tr("provides")} ${Simulation.REAKTOR_POWER.toInt()} ${tr("strom")} (${tr("fixed")})"
             MType.SOLAR -> "${tr("provides")} ${Simulation.SOLAR_POWER.toInt()} ${tr("strom")} (${tr("sun")})"
-            MType.FORSCHUNG -> "${tr("produces_research")} +${Simulation.RESEARCH_RATE.toInt()}/s"
+            MType.FORSCHUNG -> "${tr("produces_research")} +${oneDec(sim.researchRate())}/s"
             MType.DROHNE -> "${tr("repairs")} · R${sim.droneRange()} · ${sim.droneRepairRate().roundToInt()}%/s"
         }
         canvas.drawText(io, dp(12f), yy, pText)
@@ -1297,7 +1297,7 @@ class GameView(context: Context) : View(context) {
         "t_wert" -> tr("tf_wert"); "t_scan" -> tr("tf_scan"); "t_takt" -> tr("tf_takt")
         "t_robust" -> tr("tf_robust"); "t_lift" -> tr("tf_lift"); "t_power" -> tr("tf_power")
         "t_drohne_rep" -> tr("tf_drohne_rep"); "t_drohne_speed" -> tr("tf_drohne_speed")
-        "t_drohne_range" -> tr("tf_drohne_range")
+        "t_drohne_range" -> tr("tf_drohne_range"); "t_research_rate" -> tr("tf_research_rate")
         else -> ""
     }
 

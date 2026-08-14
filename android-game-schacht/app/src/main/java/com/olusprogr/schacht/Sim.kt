@@ -135,7 +135,7 @@ class Simulation {
         const val CHUNK_COST = 5.0       // Geld, um einen Chunk freizuschalten (1 Klick)
         const val WIND_POWER = 16.0      // Strom je Windrad (ohne Brennstoff)
         const val SOLAR_POWER = 10.0     // Strom je Solarpanel (ohne Brennstoff)
-        const val RESEARCH_RATE = 1.0    // Forschung je Sekunde und Forschungszentrum
+        const val RESEARCH_RATE = 0.1    // Basis-Forschung je Sekunde und Forschungszentrum (Upgrade erhoeht)
         const val WIND_COAST_BONUS = 1.30 // Windrad neben Kueste: +30% Strom
 
         const val HOSE_MAX = 5           // max. Schlauchlaenge Reaktor -> Wasser
@@ -178,7 +178,9 @@ class Simulation {
             // Drohnen-Upgrades (mit Geld bezahlt)
             TechNode("t_drohne_rep", "Drohnen-Reparatur", 40.0, 1.35, 15, "+20%/Stufe", "t_drohne", null),
             TechNode("t_drohne_speed", "Drohnen-Fluggeschwindigkeit", 35.0, 1.3, 10, "+20%/Stufe", "t_drohne", null),
-            TechNode("t_drohne_range", "Drohnen-Reichweite", 60.0, 1.6, 3, "+1 Feld/Stufe", "t_drohne", null)
+            TechNode("t_drohne_range", "Drohnen-Reichweite", 60.0, 1.6, 3, "+1 Feld/Stufe", "t_drohne", null),
+            // Forschungszentrum-Upgrade (mit Forschung bezahlt)
+            TechNode("t_research_rate", "Forschungs-Tempo", 30.0, 1.4, 12, "+0.1/s pro Stufe", "t_research", null)
         )
 
         val UNLOCK = mapOf(
@@ -661,6 +663,7 @@ class Simulation {
     fun droneRepairRate() = DROHNE_RATE * (1.0 + 0.20 * lvl("t_drohne_rep"))
     fun droneRange() = DROHNE_R + lvl("t_drohne_range")
     fun droneSpeedMult() = 1.0 + 0.20 * lvl("t_drohne_speed")
+    fun researchRate() = RESEARCH_RATE + 0.1 * lvl("t_research_rate")   // +0.1/s je Stufe
 
     /** Windrad neben der Kueste (angrenzendes Wasser): +30% Strom, sonst 1.0. */
     fun windCoastBonus(r: Int, c: Int): Double {
@@ -918,10 +921,9 @@ class Simulation {
                 MType.WINDRAD -> { m.util = 1.0 }   // dreht sich immer (Strom aus Wind)
                 MType.SOLAR -> { m.util = 1.0 }      // liefert immer (Strom aus Sonne)
                 MType.FORSCHUNG -> {
-                    // Produziert die volle Rate (nicht mehr durch die globale Strom-Drossel
-                    // heruntergezogen); nur bei praktisch totem Netz pausiert es.
+                    // Basis 0.1/s, per Upgrade hoeher; laeuft, solange das Netz nicht tot ist.
                     val active = if (scale > 0.05) 1.0 else 0.0
-                    research += RESEARCH_RATE * ddt * active     // produziert Forschungswaehrung
+                    research += researchRate() * ddt * active     // produziert Forschungswaehrung
                     m.condition = max(0.0, m.condition - wearPerSec(MType.FORSCHUNG) * wf * ddt * active)
                     m.util = active
                 }

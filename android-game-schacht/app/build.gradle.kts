@@ -11,8 +11,8 @@ android {
         applicationId = "com.olusprogr.schacht"
         minSdk = 24
         targetSdk = 34
-        versionCode = 51
-        versionName = "0.39-music-v3"
+        versionCode = 52
+        versionName = "0.39.1-research"
     }
 
     signingConfigs {
