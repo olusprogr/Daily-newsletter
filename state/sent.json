@@ -1,6 +1,24 @@
 {
   "items": [
     {
+      "link": "https://www.theverge.com/tech/980467/google-pixel-11-camera-looks-older-phones",
+      "title": "Google&#8217;s best new camera feature is only for the Pixel 11 series",
+      "summary": "Arguably the coolest new photo feature for the Pixel 11 lineup is Google's new Camera Looks, which process image data differently at the sensor level to produce photos that don't have that \"smartphone\" look. The result is new styles like \"Digi,\" which mimics the style of photos taken by older digital cameras. But to use [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-08-14T17:34:14+00:00",
+      "sent_at": "2026-08-14T18:25:20.358340+00:00"
+    },
+    {
+      "link": "https://www.npr.org/2026/08/10/nx-s1-5925350/the-nerd-reich-tracks-the-unmasking-of-silicon-valleys-true-politics",
+      "title": "'The Nerd Reich' tracks the 'unmasking of Silicon Valley's true politics'",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Hardware",
+      "published": "2026-08-14T15:22:25+00:00",
+      "sent_at": "2026-08-14T18:25:20.358340+00:00"
+    },
+    {
       "link": "https://www.theverge.com/tech/980416/google-gemini-ai-watermarks-removal",
       "title": "You can now turn off Google Gemini&#8217;s visible watermarks",
       "summary": "Google will now allow you to remove visible watermarks from the images, videos, and music made with AI tools. With the update, you can toggle off a new \"Media watermark\" setting in Gemini and Google's AI video generator, Flow. When toggled off, Google will remove the \"sparkle\" watermark that appears in the bottom-right corner of [&#8230;]",
