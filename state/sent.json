@@ -1,6 +1,24 @@
 {
   "items": [
     {
+      "link": "https://www.wired.com/story/unitree-influencer-4-foot-robot-from-china/",
+      "title": "The Next Big Influencer Is This 4-Foot-Tall Robot From China",
+      "summary": "The Unitree G1 has found online fame as a relatively affordable robot that can charm a crowd. But can it ever hold down a real job?",
+      "source": "Wired",
+      "category": "Innovationen",
+      "published": "2026-08-14T20:59:03+00:00",
+      "sent_at": "2026-08-14T21:21:01.428349+00:00"
+    },
+    {
+      "link": "https://www-cdn.anthropic.com/f61d49fa5596956a5dec75fea0e973bf6a6a8378/Redacted%20Risk%20Report%20August%202026%20.pdf",
+      "title": "Anthropic Risk August 2026 [pdf]",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-14T19:32:15+00:00",
+      "sent_at": "2026-08-14T21:21:01.428349+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/08/14/self-driving-trucks-are-officially-testing-on-california-highways/",
       "title": "Self-driving trucks are officially testing on California highways",
       "summary": "Aurora Innovation and Kodiak AI, two companies developing self-driving trucks, have received permits from the California Department of Motor Vehicles.",
