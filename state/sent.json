@@ -1,6 +1,51 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/08/14/google-will-now-allow-users-to-remove-visible-watermark-from-its-ai-generations/",
+      "title": "Google will now allow users to remove visible watermark from its AI generations",
+      "summary": "Turning off this setting won't affect invisible benchmarks used to identify an AI generated file",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-14T16:13:40+00:00",
+      "sent_at": "2026-08-14T16:22:08.957632+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/08/14/tesla-flying-roadster-demo-this-month-no-driver/",
+      "title": "Tesla ‘flying’ Roadster demo could come this month, with no one inside",
+      "summary": "Tesla is planning to finally show its new Roadster as early as this month, and the event is supposed to include a stunt where the car lifts off the ground, according to a new report from The Information (paywall). There’s a catch. The car will be operated remotely with nobody in it, and spectators will be kept several hundred yards back because the SpaceX-developed cold gas thrusters are loud enough to damage their eardrums.",
+      "source": "Electrek",
+      "category": "Innovationen",
+      "published": "2026-08-14T15:43:40+00:00",
+      "sent_at": "2026-08-14T16:22:08.957632+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/video/does-mark-zuckerberg-really-believe-ai-is-for-everyone/",
+      "title": "Does Mark Zuckerberg really believe AI is ‘for everyone’?",
+      "summary": "Meta released Glimmer this week, an open-weight AI&#160;model&#160;anyone can download and run on their own hardware&#160;— a contrast to&#160;Muse&#160;Spark, the company’s more powerful model that stays locked behind its own APIs. The release landed alongside&#160;a letter from Mark Zuckerberg&#160;arguing AI should be “for everyone” rather than controlled by a handful of labs, but as Equity’s [&#8230;]",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-14T15:43:28+00:00",
+      "sent_at": "2026-08-14T16:22:08.957632+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/ram/g-skill-trident-z5-neox-rgb-ddr5-6000-c30-2x16gb-review",
+      "title": "G.Skill Trident Z5 NeoX RGB DDR5-6000 C30 2x16GB Review — EXPO ULL memory kit to max out your Ryzen",
+      "summary": "G.Skill's Trident Z5 NeoX is the brand's latest series with the AMD EXPO ULL feature, but can the DDR5-6000 C30 prove to be the fastest memory kit for AMD?",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-08-14T15:30:00+00:00",
+      "sent_at": "2026-08-14T16:22:08.957632+00:00"
+    },
+    {
+      "link": "https://weightythoughts.com/p/when-genius-failsthe-intellectual",
+      "title": "When Genius Fails: The Intellectual Arrogance of the AI Labs",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-14T14:34:49+00:00",
+      "sent_at": "2026-08-14T16:22:08.957632+00:00"
+    },
+    {
       "link": "https://www.wired.com/story/tech-visionary-says-the-big-ai-labs-dont-get-what-people-want/",
       "title": "Tech Visionary Says the Big AI Labs Don’t Get What People Want",
       "summary": "Tim O’Reilly built a publishing empire that AI is helping to destroy. Yet he loves AI—as long as it’s open source.",
