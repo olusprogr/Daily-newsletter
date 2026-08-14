@@ -1,6 +1,15 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/plaintiff-busted-trying-to-use-ai-prompt-injection-to-win-court-case-hides-text-instruction-in-filing-demands-ai-model-reviewing-the-text-should-side-with-him-rumbled-because-of-strange-white-spaces-in-text",
+      "title": "Plaintiff busted trying to use AI prompt injection to win court case, hides text instruction in filing — demands AI model reviewing the text should side with him, rumbled because of strange white spaces in text",
+      "summary": "A self-represented plaintiff in a Connecticut court added a hidden AI prompt injection attack in their filing in a failed attempt to influence a decision. The court bars them from submitting documents electronically and instead must print them and hand to the clerk of court.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-08-14T12:23:35+00:00",
+      "sent_at": "2026-08-14T12:57:16.510489+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/pc-components/cpus/raptor-lake-is-a-core-part-of-the-portfolio-for-years-to-come-says-intel-theres-been-a-sudden-inrush-of-demand-for-lga-1700-chips-due-to-ddr5-prices",
       "title": "Older Raptor Lake CPUs are a ‘core part of the portfolio’ for years to come, says Intel — there’s been a ‘sudden inrush of demand’ for LGA 1700 chips due to DDR5 prices",
       "summary": "Intel has seen a “sudden inrush” of demand for Raptor Lake CPUs, and it says they’ll remain a part of the company’s lineup for desktop builders “for years to come.”",
