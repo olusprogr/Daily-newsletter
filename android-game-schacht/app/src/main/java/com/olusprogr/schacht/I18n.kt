@@ -10,6 +10,11 @@ object I18n {
 
     private val DE = mapOf(
         "tech" to "Tech", "stat" to "Statistik", "close" to "Schliessen", "continue" to "Weiterspielen",
+        "company_title" to "UNTERNEHMEN", "lvl1" to "Bergbau", "lvl2" to "Kernkraft", "lvl3" to "Petrochemie", "lvl4" to "High-Tech",
+        "sell_company" to "Firma verkaufen", "sell_confirm" to "Wirklich verkaufen?", "sale_locked" to "Ziel nicht erreicht",
+        "goal" to "Verkaufsziel", "shares" to "Aktien", "dividends" to "Dividende", "value" to "Verkaufswert", "lvl_bonus" to "Level-Bonus",
+        "sell_keep" to "Bleibt: Aktien, Dividenden, Firmen-Level.",
+        "sell_lose" to "Zurueckgesetzt: Karte, Maschinen, Geld, Forschung, Upgrades.",
         "collect" to "Ertraege einsammeln", "need_service" to "MASCHINEN BENOETIGEN WARTUNG!",
         "buy" to "Kaufen", "buy_level" to "Stufe +", "max" to "MAX", "sell" to "Verkaufen", "repair" to "Reparieren",
         "sound_on" to "Ton: AN", "sound_off" to "Ton: AUS", "reset" to "Reset", "reset_confirm" to "Wirklich? Erneut tippen",
@@ -78,6 +83,11 @@ object I18n {
 
     private val EN = mapOf(
         "tech" to "Tech", "stat" to "Stats", "close" to "Close", "continue" to "Continue",
+        "company_title" to "COMPANY", "lvl1" to "Mining", "lvl2" to "Nuclear", "lvl3" to "Petrochemical", "lvl4" to "High-Tech",
+        "sell_company" to "Sell company", "sell_confirm" to "Really sell?", "sale_locked" to "Goal not reached",
+        "goal" to "Sale goal", "shares" to "Shares", "dividends" to "Dividend", "value" to "sale value", "lvl_bonus" to "Level bonus",
+        "sell_keep" to "Kept: shares, dividends, company level.",
+        "sell_lose" to "Reset: map, machines, money, research, upgrades.",
         "collect" to "Collect earnings", "need_service" to "MACHINES NEED SERVICE!",
         "buy" to "Buy", "buy_level" to "Level +", "max" to "MAX", "sell" to "Sell", "repair" to "Repair",
         "sound_on" to "Sound: ON", "sound_off" to "Sound: OFF", "reset" to "Reset", "reset_confirm" to "Sure? Tap again",
@@ -146,6 +156,11 @@ object I18n {
 
     private val PL = mapOf(
         "tech" to "Tech", "stat" to "Statystyki", "close" to "Zamknij", "continue" to "Graj dalej",
+        "company_title" to "FIRMA", "lvl1" to "Gornictwo", "lvl2" to "Energia jadrowa", "lvl3" to "Petrochemia", "lvl4" to "High-Tech",
+        "sell_company" to "Sprzedaj firme", "sell_confirm" to "Na pewno sprzedac?", "sale_locked" to "Cel nieosiagniety",
+        "goal" to "Cel sprzedazy", "shares" to "Akcje", "dividends" to "Dywidenda", "value" to "wartosc", "lvl_bonus" to "Bonus poziomu",
+        "sell_keep" to "Zostaje: akcje, dywidendy, poziom firmy.",
+        "sell_lose" to "Reset: mapa, maszyny, pieniadze, badania, ulepszenia.",
         "collect" to "Odbierz zyski", "need_service" to "MASZYNY WYMAGAJA SERWISU!",
         "buy" to "Kup", "buy_level" to "Poziom +", "max" to "MAX", "sell" to "Sprzedaj", "repair" to "Napraw",
         "sound_on" to "Dzwiek: WL", "sound_off" to "Dzwiek: WYL", "reset" to "Reset", "reset_confirm" to "Na pewno? Dotknij znow",

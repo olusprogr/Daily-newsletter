@@ -26,7 +26,7 @@ class GameView(context: Context) : View(context) {
     // Aktives Bau-Werkzeug (null = kein Bauen; Antippen zeigt dann Info).
     private var buildTool: MType? = null
 
-    private enum class Screen { MENU, GAME, TECH, STAT, REPORT }
+    private enum class Screen { MENU, GAME, TECH, STAT, REPORT, COMPANY }
     private var screen = Screen.MENU
 
     private val saveStore = SaveStore(context)
@@ -39,6 +39,7 @@ class GameView(context: Context) : View(context) {
     private var selC = -1
     private var report: OfflineReport? = null
     private var resetArmed = false
+    private var sellArmed = false
 
     private var techScroll = 0f
     private var techMaxScroll = 0f
@@ -392,7 +393,7 @@ class GameView(context: Context) : View(context) {
     override fun onSizeChanged(w: Int, h: Int, ow: Int, oh: Int) {
         super.onSizeChanged(w, h, ow, oh)
         W = w; H = h
-        headerH = dp(78f)
+        headerH = dp(96f)
         val margin = dp(8f)
         // Palette unten (5 Spalten, 2 Reihen), Buttons wieder ~50% hoeher
         val palRows = 2
@@ -422,6 +423,7 @@ class GameView(context: Context) : View(context) {
             if (selR >= 0 && sim.grid[selR][selC] != null) drawDetail(canvas) else drawPalette(canvas)
         }
         when (screen) {
+            Screen.COMPANY -> drawCompany(canvas)
             Screen.TECH -> drawTech(canvas)
             Screen.STAT -> drawStat(canvas)
             Screen.REPORT -> drawReport(canvas)
@@ -501,6 +503,34 @@ class GameView(context: Context) : View(context) {
         canvas.drawText("${tr("reststrom")} ${if (rest < 0) "-" + fmt(-rest) else "+" + fmt(rest)}", dp(34f), dp(70f), pText)
         pText.color = cDim; pText.textSize = dp(12f)
         canvas.drawText("${fmt(sim.powerSupply)}/${fmt(sim.powerDemand)}", dp(158f), dp(70f), pText)
+
+        // --- Firmenleiste: Level + Fortschritt zum Verkaufsziel ---
+        run {
+            val cy0 = dp(78f); val cy1 = dp(93f)
+            val ready = sim.canSellCompany()
+            val pulse = 0.5f + 0.5f * kotlin.math.sin(animT * 4f)
+            val barL = dp(96f); val barR = W - dp(96f)
+            p.color = Color.argb(70, 0, 0, 0)
+            canvas.drawRect(0f, cy0 - dp(2f), W.toFloat(), cy1 + dp(1f), p)
+            pText.textSize = dp(11.5f); pText.textAlign = Paint.Align.LEFT
+            pText.color = if (ready) cAccent else cText
+            canvas.drawText("LVL ${sim.companyLevel} · ${tr("lvl" + sim.companyLevel.coerceAtMost(4))}", dp(8f), cy1 - dp(3f), pText)
+            // Fortschrittsbalken
+            val prog = sim.levelProgress().toFloat()
+            p.color = cGridLine; canvas.drawRect(barL, cy0 + dp(1f), barR, cy1 - dp(3f), p)
+            p.color = if (ready) Color.argb((160 + 95 * pulse).toInt().coerceIn(0, 255), 246, 200, 98)
+                      else Color.rgb(96, 170, 220)
+            canvas.drawRect(barL, cy0 + dp(1f), barL + (barR - barL) * prog, cy1 - dp(3f), p)
+            pText.textAlign = Paint.Align.RIGHT
+            pText.color = if (ready) cAccent else cDim
+            val label = if (ready) "▸ ${tr("sell_company")}" else "${fmt(sim.money)} / ${fmt(sim.levelGoal())}"
+            canvas.drawText(label, W - dp(8f), cy1 - dp(3f), pText)
+            pText.textAlign = Paint.Align.LEFT
+            if (screen == Screen.GAME) {
+                val cRect = RectF(0f, cy0 - dp(2f), W.toFloat(), cy1 + dp(1f))
+                buttons.add(Btn(cRect, "company", "company"))
+            }
+        }
 
         val bw = dp(84f); val bh = dp(30f)
         val tR = RectF(W - dp(12f) - bw, dp(8f), W - dp(12f), dp(8f) + bh)
@@ -1486,6 +1516,61 @@ class GameView(context: Context) : View(context) {
         drawScanlines(canvas)
     }
 
+    /** Firmen-/Prestige-Screen: Level, Aktien, Dividenden, Verkauf. */
+    private fun drawCompany(canvas: Canvas) {
+        p.color = Color.rgb(16, 18, 24); canvas.drawRect(0f, 0f, W.toFloat(), H.toFloat(), p)
+        hazardBar(canvas, 0f, 0f, W.toFloat(), dp(8f))
+        pText.textAlign = Paint.Align.LEFT
+        pText.color = cAccent; pText.textSize = dp(22f)
+        canvas.drawText(tr("company_title"), dp(16f), dp(44f), pText)
+        pText.color = cText; pText.textSize = dp(15f)
+        canvas.drawText("LVL ${sim.companyLevel} · ${tr("lvl" + sim.companyLevel.coerceAtMost(4))}", dp(16f), dp(70f), pText)
+
+        // Fortschritt zum Ziel
+        var yy = dp(96f)
+        pText.color = cDim; pText.textSize = dp(13f)
+        canvas.drawText("${tr("goal")}: ${fmt(sim.levelGoal())}", dp(16f), yy, pText)
+        yy += dp(10f)
+        val bl = dp(16f); val br = W - dp(16f)
+        p.color = cGridLine; canvas.drawRect(bl, yy, br, yy + dp(14f), p)
+        val ready = sim.canSellCompany()
+        p.color = if (ready) cAccent else Color.rgb(96, 170, 220)
+        canvas.drawRect(bl, yy, bl + (br - bl) * sim.levelProgress().toFloat(), yy + dp(14f), p)
+        pText.color = cText; pText.textSize = dp(12f); pText.textAlign = Paint.Align.CENTER
+        canvas.drawText("${fmt(sim.money)} / ${fmt(sim.levelGoal())}", (bl + br) / 2f, yy + dp(11f), pText)
+        pText.textAlign = Paint.Align.LEFT
+        yy += dp(38f)
+
+        // Kennzahlen
+        pText.textSize = dp(14f)
+        for (line in listOf(
+            "${tr("shares")}: ${fmt(sim.shares)}   (+${((sim.shareBonus() - 1.0) * 100).roundToInt()}% ${tr("value")})",
+            "${tr("dividends")}: ${fmt(sim.dividends)}/s",
+            "${tr("lvl_bonus")}: x${fmt(sim.companyMult())} ${tr("value")}"
+        )) { pText.color = cText; canvas.drawText(line, dp(16f), yy, pText); yy += dp(24f) }
+
+        yy += dp(6f)
+        hazardBar(canvas, dp(16f), yy, W - dp(32f), dp(7f)); yy += dp(24f)
+        pText.color = cDim; pText.textSize = dp(12f)
+        for (line in listOf(tr("sell_keep"), tr("sell_lose"))) { canvas.drawText(line, dp(16f), yy, pText); yy += dp(18f) }
+        if (ready) {
+            yy += dp(8f)
+            pText.color = cGood; pText.textSize = dp(14f)
+            canvas.drawText("+ ${fmt(sim.sharesGain())} ${tr("shares")}", dp(16f), yy, pText)
+        }
+
+        // Buttons
+        val by = H - dp(58f); val bh = dp(42f); val margin = dp(14f)
+        val half = (W - 3 * margin) / 2f
+        val rSell = RectF(margin, by, margin + half, by + bh)
+        val rClose = RectF(margin * 2 + half, by, margin * 2 + half * 2, by + bh)
+        val lbl = if (!ready) tr("sale_locked") else if (sellArmed) tr("sell_confirm") else tr("sell_company")
+        drawButton(canvas, Btn(rSell, "sell_company", lbl, ready, sellArmed, cAccent))
+        drawButton(canvas, Btn(rClose, "close", tr("close"), true, false, cAccent))
+        if (ready) buttons.add(Btn(rSell, "sell_company", "sell"))
+        buttons.add(Btn(rClose, "close", "close"))
+    }
+
     private fun drawReport(canvas: Canvas) {
         val rep = report ?: return
         val green = Color.rgb(74, 240, 122); val amber = Color.rgb(255, 183, 0); val red = Color.rgb(255, 66, 60)
@@ -1713,7 +1798,17 @@ class GameView(context: Context) : View(context) {
         when {
             id == "tech" -> { screen = if (screen == Screen.TECH) Screen.GAME else Screen.TECH; selR = -1; resetArmed = false; techScroll = 0f; audio.click() }
             id == "stat" -> { screen = if (screen == Screen.STAT) Screen.GAME else Screen.STAT; selR = -1; resetArmed = false; audio.click() }
-            id == "close" -> { screen = Screen.GAME; report = null; resetArmed = false; audio.click() }
+            id == "close" -> { screen = Screen.GAME; report = null; resetArmed = false; sellArmed = false; audio.click() }
+            id == "company" -> { screen = if (screen == Screen.COMPANY) Screen.GAME else Screen.COMPANY; selR = -1; sellArmed = false; audio.click() }
+            id == "sell_company" -> {
+                if (!sellArmed) { sellArmed = true; audio.click() }
+                else {
+                    if (sim.sellCompany()) {
+                        persist(); sellArmed = false; buildTool = null; selR = -1; selC = -1
+                        needCenter = true; screen = Screen.GAME; audio.buy()
+                    } else audio.error()
+                }
+            }
             id == "collect" -> { screen = Screen.GAME; report = null; resetArmed = false; audio.buy() }
             id.startsWith("mvol_") -> setMusicVol(id.removePrefix("mvol_").toInt())
             id.startsWith("svol_") -> setSfxVol(id.removePrefix("svol_").toInt())
@@ -1822,6 +1917,8 @@ class GameView(context: Context) : View(context) {
     private fun fmt(v: Double): String {
         val a = if (v < 0) 0.0 else v
         return when {
+            a >= 1e12 -> oneDec(a / 1e12) + "Bio"
+            a >= 1e9 -> oneDec(a / 1e9) + "Mrd"
             a >= 1_000_000 -> oneDec(a / 1_000_000) + "M"
             a >= 1_000 -> oneDec(a / 1_000) + "k"
             else -> a.roundToInt().toString()

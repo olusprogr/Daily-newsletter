@@ -87,6 +87,10 @@ class Simulation {
     var globalKomponente = 0.0
     var money = 0.0
     var research = 0.0               // Forschungswaehrung (Forschungszentren) -> Upgrades
+    // --- Unternehmens-/Prestige-System ---
+    var companyLevel = 1             // 1 Bergbau, 2 Kernkraft, 3 Petrochemie, 4 High-Tech
+    var shares = 0.0                 // permanente Aktien aus Firmenverkaeufen
+    var dividends = 0.0              // passives Einkommen/s aus verkauften Firmen
     var mapSeed = 12345L
     val tech = HashMap<String, Int>()
 
@@ -137,6 +141,10 @@ class Simulation {
         const val SOLAR_POWER = 10.0     // Strom je Solarpanel (ohne Brennstoff)
         const val RESEARCH_RATE = 0.1    // Basis-Forschung je Sekunde und Forschungszentrum (Upgrade erhoeht)
         const val WIND_COAST_BONUS = 1.30 // Windrad neben Kueste: +30% Strom
+
+        // Verkaufsziele je Unternehmens-Level (danach x100 pro weiterem Level).
+        val LEVEL_GOAL = doubleArrayOf(10_000_000.0, 1_000_000_000.0, 100_000_000_000.0, 10_000_000_000_000.0)
+        const val MAX_LEVEL = 4
 
         const val HOSE_MAX = 5           // max. Schlauchlaenge Reaktor -> Wasser
 
@@ -241,6 +249,7 @@ class Simulation {
         research = 0.0
         mapSeed = System.nanoTime() xor 0x5DEECE66DL
         tech.clear()
+        companyLevel = 1; shares = 0.0; dividends = 0.0
         placeReactor()
     }
 
@@ -509,6 +518,55 @@ class Simulation {
         }
     }
 
+    // --- Unternehmens-/Prestige-System ---
+    /** Geldziel fuer den Verkauf der aktuellen Firma. */
+    fun levelGoal(): Double =
+        if (companyLevel <= MAX_LEVEL) LEVEL_GOAL[companyLevel - 1]
+        else LEVEL_GOAL[MAX_LEVEL - 1] * Math.pow(100.0, (companyLevel - MAX_LEVEL).toDouble())
+
+    /** Fortschritt 0..1 zum Verkaufsziel. */
+    fun levelProgress(): Double = (money / levelGoal()).coerceIn(0.0, 1.0)
+
+    /** Firma verkaufsbereit? */
+    fun canSellCompany(): Boolean = money >= levelGoal()
+
+    /** Aktien, die der Verkauf jetzt einbringen wuerde. */
+    fun sharesGain(): Double {
+        if (!canSellCompany()) return 0.0
+        return Math.floor(25.0 * companyLevel * Math.sqrt(money / levelGoal()))
+    }
+
+    /** Aktien-Bonus auf den Verkaufswert (permanent). */
+    fun shareBonus(): Double = 1.0 + 0.04 * shares
+
+    /** Level-Multiplikator auf den Verkaufswert (jedes Level ist wertvoller). */
+    fun companyMult(): Double = Math.pow(8.0, (companyLevel - 1).toDouble())
+
+    /**
+     * Firma verkaufen: naechstes Level, permanente Aktien, alte Fabrik zahlt
+     * ab jetzt Dividende. Karte, Maschinen, Geld, Forschung und Tech werden
+     * zurueckgesetzt – Aktien/Dividenden/Level bleiben.
+     */
+    fun sellCompany(): Boolean {
+        if (!canSellCompany()) return false
+        shares += sharesGain()
+        dividends += levelGoal() * 5e-6      // 10M -> 50/s, 1Mrd -> 5000/s
+        companyLevel++
+        resetFactory()
+        return true
+    }
+
+    /** Setzt nur die Fabrik zurueck (Prestige-Daten bleiben erhalten). */
+    private fun resetFactory() {
+        for (r in 0 until n) for (c in 0 until n) { grid[r][c] = null; occ[r][c] = null }
+        surveyed.fill(false); harvested.fill(false)
+        globalBarren = START_BARREN; globalPlatten = 0.0; globalKomponente = 0.0
+        money = START_MONEY; research = 0.0
+        mapSeed = System.nanoTime() xor 0x5DEECE66DL
+        tech.clear()
+        placeReactor()
+    }
+
     fun buildCost(t: MType): Pair<Res, Double> = BUILD_COST[t] ?: Pair(Res.BARREN, 0.0)
 
     /** Reparatur-Limit einer Drohnen-Station um delta verschieben (>= 0). Neuer Wert. */
@@ -520,7 +578,10 @@ class Simulation {
         return m.moneyGate
     }
 
-    fun maxCount(t: MType): Int = MAX_COUNT[t] ?: Int.MAX_VALUE
+    fun maxCount(t: MType): Int {
+        val base = MAX_COUNT[t] ?: return Int.MAX_VALUE
+        return base + 4 * (companyLevel - 1)      // hoehere Level erlauben groessere Fabriken
+    }
 
     fun count(t: MType): Int {
         var k = 0
@@ -677,7 +738,7 @@ class Simulation {
     private fun ofenRate() = OFEN_RATE * (1.0 + 0.08 * lvl("t_ospeed")) * globalMult()
     private fun presseRate() = PRESSE_RATE * (1.0 + 0.08 * lvl("t_pspeed")) * globalMult()
     private fun assemblerRate() = ASSEMBLER_RATE * (1.0 + 0.08 * lvl("t_aspeed")) * globalMult()
-    fun componentPrice() = COMPONENT_PRICE * (1.0 + 0.25 * lvl("t_wert"))
+    fun componentPrice() = COMPONENT_PRICE * (1.0 + 0.25 * lvl("t_wert")) * companyMult() * shareBonus()
 
     private fun wearPerSec(t: MType) = when (t) {
         MType.BOHRER -> 1.0 / 60.0
@@ -965,6 +1026,9 @@ class Simulation {
             }
         }
 
+        // Dividenden aus verkauften Unternehmen (passives Einkommen)
+        if (dividends > 0.0) { val d = dividends * ddt; money += d; soldValue += d }
+
         val tau = 8.0
         val a = 1.0 - exp(-ddt / tau)
         emaBarrenPerSec += (barMade / ddt - emaBarrenPerSec) * a
@@ -1021,6 +1085,9 @@ class Simulation {
         root.put("gk", globalKomponente)
         root.put("money", money)
         root.put("research", research)
+        root.put("clvl", companyLevel)
+        root.put("shares", shares)
+        root.put("divi", dividends)
         root.put("seed", mapSeed)
         val techObj = JSONObject()
         for ((k, v) in tech) techObj.put(k, v)
@@ -1059,6 +1126,9 @@ class Simulation {
         globalKomponente = root.optDouble("gk", 0.0)
         money = root.optDouble("money", 0.0)
         research = root.optDouble("research", 0.0)
+        companyLevel = root.optInt("clvl", 1).coerceAtLeast(1)
+        shares = root.optDouble("shares", 0.0)
+        dividends = root.optDouble("divi", 0.0)
         mapSeed = root.optLong("seed", 12345L)
         tech.clear()
         val tv = root.opt("tech")
