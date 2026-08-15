@@ -1,6 +1,15 @@
 {
   "items": [
     {
+      "link": "https://www.wired.com/story/amazon-uses-your-twitch-content-to-train-its-ai-how-to-opt-out/",
+      "title": "Amazon Can Use Your Twitch Content to Train Its AI—Unless You Opt Out",
+      "summary": "When Twitch announced that streamers could opt out, thousands of users questioned why their content was being used to train AI models in the first place.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-08-15T09:00:00+00:00",
+      "sent_at": "2026-08-15T09:21:39.702601+00:00"
+    },
+    {
       "link": "https://arxiv.org/abs/2608.12700",
       "title": "A Contract-Grade Verifier for LLM-Generated GPU Kernels",
       "summary": "",
