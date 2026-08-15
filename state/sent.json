@@ -1,6 +1,42 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/pc-components/cpus/amd-ryzen-7-7700x3d-vs-ryzen-7-7800x3d-faceoff",
+      "title": "AMD Ryzen 7 7700X3D vs Ryzen 7 7800X3D faceoff — seeing double with Zen 4 X3D",
+      "summary": "AMD's Ryzen 7 7700X3D takes on the old favorite across performance, pricing, and power consumption.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-08-15T13:25:00+00:00",
+      "sent_at": "2026-08-15T13:26:45.736942+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2237655/spacex-officially-acquired-ai-coding-startup-cursor/",
+      "title": "SpaceX has officially acquired AI coding startup Cursor",
+      "summary": "The $60 billion acquisition has been finalized.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-08-15T12:51:33+00:00",
+      "sent_at": "2026-08-15T13:26:45.736942+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/this-week-on-toms-hardware-premium-august-14-2026-testing-the-bc-250-our-interview-with-intels-robert-hallock-and-a-big-week-for-optical",
+      "title": "This week on Tom's Hardware Premium: August 14, 2026 — Testing the BC-250, our interview with Intel's Robert Hallock, and a big week for optical",
+      "summary": "This week, we tested AMD's BC-250 in gaming workloads, published an unredacted interview with an AMD executive, and published a slew of articles surrounding a new flashpoint in the ongoing AI buildout: optical interconnects.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-08-15T12:30:00+00:00",
+      "sent_at": "2026-08-15T13:26:45.736942+00:00"
+    },
+    {
+      "link": "https://lists.debian.org/debian-devel-announce/2026/08/msg00002.html",
+      "title": "Debian has begun voting on the future of AI/LLM contributions",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-15T09:20:07+00:00",
+      "sent_at": "2026-08-15T13:26:45.736942+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/pc-components/liquid-cooling/ocypus-sigma-l36-pro-review",
       "title": "Ocypus Sigma L36 Pro Review: How is this LCD AIO so cheap?",
       "summary": "The Ocypus Sigma L36 Pro is a high-performance AIO that includes a fancy 3.5-inch display and a low price tag. We’ve tested this liquid cooler paired with AMD’s Ryzen 9 9950X3D CPU to benchmark thermal efficiency.",
