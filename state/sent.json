@@ -1,6 +1,15 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/08/15/spacex-officially-closes-its-cursor-acquisition/",
+      "title": "SpaceX officially closes its Cursor acquisition",
+      "summary": "AI coding startup Cursor is now officially a part of SpaceX.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-15T16:30:00+00:00",
+      "sent_at": "2026-08-15T16:49:08.721678+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/08/15/how-to-tell-if-your-ai-platforms-accounts-have-been-hacked/",
       "title": "How to tell if your AI platforms’ accounts have been hacked",
       "summary": "A guide on how to check if hackers have broken into your accounts on the most popular AI platforms.",
