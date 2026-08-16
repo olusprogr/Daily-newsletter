@@ -128,6 +128,11 @@ class GameView(context: Context) : View(context) {
         MType.WINDRAD -> Color.rgb(214, 220, 230)
         MType.SOLAR -> Color.rgb(96, 150, 220)
         MType.FORSCHUNG -> Color.rgb(150, 130, 224)
+        MType.BLEIBOHRER -> Color.rgb(140, 146, 166)
+        MType.WASSERPUMPE -> Color.rgb(90, 170, 224)
+        MType.ZENTRIFUGE -> Color.rgb(120, 210, 232)
+        MType.BLEIPRESSE -> Color.rgb(110, 116, 136)
+        MType.BRENNSTABWERK -> Color.rgb(236, 196, 88)
     }
 
     private val p = Paint(Paint.ANTI_ALIAS_FLAG)
@@ -241,18 +246,32 @@ class GameView(context: Context) : View(context) {
     private val cGroundLite = Color.rgb(55, 50, 44)
     private val cGroundRust = Color.rgb(61, 37, 30)
 
-    private val buildOrder = listOf(
+    private val buildOrderLvl1 = listOf(
         MType.BOHRER, MType.OFEN, MType.PRESSE, MType.ASSEMBLER,
         MType.HAENDLER, MType.GENERATOR, MType.WINDRAD, MType.SOLAR,
         MType.LAGER, MType.DROHNE, MType.FORSCHUNG
     )
+    private val buildOrderLvl2 = listOf(
+        MType.BOHRER, MType.BLEIBOHRER, MType.WASSERPUMPE, MType.ZENTRIFUGE, MType.BLEIPRESSE, MType.BRENNSTABWERK,
+        MType.HAENDLER, MType.GENERATOR, MType.WINDRAD, MType.SOLAR,
+        MType.LAGER, MType.DROHNE, MType.FORSCHUNG
+    )
+    /** Bau-Palette haengt vom Unternehmens-Level ab ("komplett andere placeable items" ab Level 2). */
+    private fun buildOrderFor(level: Int): List<MType> = if (level >= 2) buildOrderLvl2 else buildOrderLvl1
 
     private fun resAbbr(res: Res) = when (res) {
         Res.ROHERZ -> "E"; Res.BARREN -> "B"; Res.PLATTE -> "P"; Res.KOMPONENTE -> "K"
+        Res.WASSER -> "W"; Res.BLEI -> "Pb"
     }
     private fun tierName(t: Int) = I18n.t("tier$t")
-    private fun mName(t: MType) = I18n.t("m_" + t.name.lowercase())
-    private fun mShort(t: MType) = I18n.t("ms_" + t.name.lowercase())
+    private fun mName(t: MType): String {
+        if (t == MType.BOHRER && sim.companyLevel >= 2) return tr("m_uranbohrer")
+        return I18n.t("m_" + t.name.lowercase())
+    }
+    private fun mShort(t: MType): String {
+        if (t == MType.BOHRER && sim.companyLevel >= 2) return tr("ms_uranbohrer")
+        return I18n.t("ms_" + t.name.lowercase())
+    }
     private fun tr(k: String) = I18n.t(k)
 
     private fun drawIcon(canvas: Canvas, list: List<Px>, x: Float, y: Float, size: Float) =
@@ -315,6 +334,11 @@ class GameView(context: Context) : View(context) {
                 MType.WINDRAD -> R.drawable.mach_windrad
                 MType.SOLAR -> R.drawable.mach_solar
                 MType.FORSCHUNG -> R.drawable.mach_research
+                MType.BLEIBOHRER -> R.drawable.mach_bleibohrer
+                MType.WASSERPUMPE -> R.drawable.mach_wasserpumpe
+                MType.ZENTRIFUGE -> R.drawable.mach_zentrifuge
+                MType.BLEIPRESSE -> R.drawable.mach_bleipresse
+                MType.BRENNSTABWERK -> R.drawable.mach_brennstabwerk
             })
         }
         I18n.lang = try { Lang.values()[prefs.getInt("lang", Lang.EN.ordinal)] } catch (_: Exception) { Lang.EN }
@@ -583,12 +607,20 @@ class GameView(context: Context) : View(context) {
         MType.OFEN -> Res.BARREN.ordinal
         MType.PRESSE -> Res.PLATTE.ordinal
         MType.ASSEMBLER -> Res.KOMPONENTE.ordinal
+        MType.BLEIBOHRER -> Res.BLEI.ordinal
+        MType.WASSERPUMPE -> Res.WASSER.ordinal
+        MType.ZENTRIFUGE -> Res.BARREN.ordinal
+        MType.BLEIPRESSE -> Res.PLATTE.ordinal
+        MType.BRENNSTABWERK -> Res.KOMPONENTE.ordinal
         else -> -1
     }
     private fun wantsRes(t: MType): Int = when (t) {
         MType.OFEN, MType.GENERATOR -> Res.ROHERZ.ordinal
         MType.PRESSE -> Res.BARREN.ordinal
         MType.ASSEMBLER -> Res.PLATTE.ordinal
+        MType.ZENTRIFUGE -> Res.ROHERZ.ordinal
+        MType.BLEIPRESSE -> Res.BLEI.ordinal
+        MType.BRENNSTABWERK -> Res.BARREN.ordinal
         else -> -1
     }
 
@@ -643,9 +675,52 @@ class GameView(context: Context) : View(context) {
         r in 0 until sim.n && c in 0 until sim.n && sim.isLand(r, c)
 
     /** Zeichnet einen Karten-Chunk aus echten Bild-Kacheln + prozeduraler Kueste/Fog. */
+    /** Level-2-Plattform: metallischer Kern, gelb-schwarzer Warnrand an den Aussenkanten. */
+    private fun drawPlatformTile(canvas: Canvas, r: Int, c: Int, x: Float, y: Float) {
+        val metal = Color.rgb(120, 126, 138); val metalL = Color.rgb(154, 160, 172); val metalD = Color.rgb(80, 86, 98)
+        p.color = metal; canvas.drawRect(x, y, x + cell, y + cell, p)
+        p.color = metalD
+        canvas.drawRect(x, y, x + cell, y + cell * 0.06f, p)
+        canvas.drawRect(x, y, x + cell * 0.06f, y + cell, p)
+        p.color = metalL
+        canvas.drawRect(x + cell * 0.94f, y, x + cell, y + cell, p)
+        canvas.drawRect(x, y + cell * 0.94f, x + cell, y + cell, p)
+        // Eck-Nieten
+        p.color = metalD
+        val nr = cell * 0.045f
+        canvas.drawCircle(x + cell * 0.18f, y + cell * 0.18f, nr, p)
+        canvas.drawCircle(x + cell * 0.82f, y + cell * 0.18f, nr, p)
+        canvas.drawCircle(x + cell * 0.18f, y + cell * 0.82f, nr, p)
+        canvas.drawCircle(x + cell * 0.82f, y + cell * 0.82f, nr, p)
+        // Gelb-schwarzer Warnrand nur an den AUSSENkanten der Plattform
+        val t = cell * 0.14f
+        if (r == sim.platformR0) drawHazardStrip(canvas, x, y, cell, t, true)
+        if (r == sim.platformR1) drawHazardStrip(canvas, x, y + cell - t, cell, t, true)
+        if (c == sim.platformC0) drawHazardStrip(canvas, x, y, t, cell, false)
+        if (c == sim.platformC1) drawHazardStrip(canvas, x + cell - t, y, t, cell, false)
+    }
+    private fun drawHazardStrip(canvas: Canvas, x: Float, y: Float, w: Float, h: Float, horizontal: Boolean) {
+        val n = 3
+        for (i in 0 until n) {
+            p.color = if (i % 2 == 0) Color.rgb(240, 200, 70) else Color.rgb(24, 24, 28)
+            if (horizontal) {
+                val segW = w / n
+                canvas.drawRect(x + i * segW, y, x + (i + 1) * segW, y + h, p)
+            } else {
+                val segH = h / n
+                canvas.drawRect(x, y + i * segH, x + w, y + i * segH + segH, p)
+            }
+        }
+    }
+
     private fun drawGround(canvas: Canvas, r: Int, c: Int, x: Float, y: Float) {
         val u = cell / 8f
         dstTile.set(x, y, x + cell, y + cell)
+
+        if (sim.hasPlatform() && sim.isPlatform(r, c)) {
+            drawPlatformTile(canvas, r, c, x, y)
+            return
+        }
 
         if (!sim.isLand(r, c)) {
             // --- Wasser: zwei Kachel-Frames sanft abwechselnd ---
@@ -1033,7 +1108,7 @@ class GameView(context: Context) : View(context) {
         val gap = dp(5f)
         val bw = (W - 2 * margin - (cols - 1) * gap) / cols
         val bh = dp(66f)
-        for ((i, t) in buildOrder.withIndex()) {
+        for ((i, t) in buildOrderFor(sim.companyLevel).withIndex()) {
             val col = i % cols
             val row = i / cols
             val x = margin + col * (bw + gap)
@@ -1156,13 +1231,14 @@ class GameView(context: Context) : View(context) {
         var yy = top + dp(48f)
         canvas.drawText("${tr("condition")} ${m.condition.roundToInt()}%     ${tr("util")} ${(m.util * 100).roundToInt()}%", dp(12f), yy, pText)
         yy += dp(22f)
+        val oreLabel = if (sim.companyLevel >= 2) tr("uranerz") else tr("roherz")
         val io = when (m.type) {
             MType.BOHRER -> {
                 val floorTxt = if (sim.isSurveyed(selR, selC)) {
                     val tier = sim.richness(selR, selC)
                     "${tierName(tier)} (x${Simulation.ORE_MULT[tier]})"
                 } else tr("unscanned")
-                "${tr("out")} ${oneDec(m.output[0])} ${tr("roherz")}   ${tr("floor")}: $floorTxt"
+                "${tr("out")} ${oneDec(m.output[0])} $oreLabel   ${tr("floor")}: $floorTxt"
             }
             MType.PROSPEKTOR -> "${tr("scans")} (${tr("radius")} ${sim.scanRadius()})"
             MType.WINDRAD -> {
@@ -1170,17 +1246,28 @@ class GameView(context: Context) : View(context) {
                 val wp = (Simulation.WIND_POWER * sim.windCoastBonus(selR, selC)).roundToInt()
                 "${tr("provides")} $wp ${tr("strom")} (${if (coast) tr("coast") else tr("wind")})"
             }
-            MType.OFEN -> "${tr("in")} ${oneDec(m.input[0])} ${tr("roherz")}   ${tr("out")} ${oneDec(m.output[1])} ${tr("barren")}"
+            MType.OFEN -> "${tr("in")} ${oneDec(m.input[0])} $oreLabel   ${tr("out")} ${oneDec(m.output[1])} ${tr("barren")}"
             MType.PRESSE -> "${tr("in")} ${oneDec(m.input[1])} ${tr("barren")}   ${tr("out")} ${oneDec(m.output[2])} ${tr("platten")}"
             MType.ASSEMBLER -> "${tr("in")} ${oneDec(m.input[2])} ${tr("platten")}   ${tr("out")} ${oneDec(m.output[3])} ${tr("komp")}"
             MType.HAENDLER -> "${tr("sells_comp")} (${oneDec(sim.componentPrice())}${tr("per_piece")})"
-            MType.GENERATOR -> "${tr("fuel")} ${oneDec(m.input[0])} ${tr("roherz")}  ->  +${Simulation.GEN_POWER.toInt()} ${tr("strom")}"
+            MType.GENERATOR -> "${tr("fuel")} ${oneDec(m.input[0])} $oreLabel  ->  +${Simulation.GEN_POWER.toInt()} ${tr("strom")}"
             MType.LAGER -> "${tr("buffer")} ${oneDec(m.output[0])}E ${oneDec(m.output[1])}B ${oneDec(m.output[2])}P ${oneDec(m.output[3])}K"
             MType.VERSTAERKER -> "${tr("boosts")} (+${(Simulation.BOOST_PER * 100).toInt()}%)"
             MType.REAKTOR -> "${tr("provides")} ${Simulation.REAKTOR_POWER.toInt()} ${tr("strom")} (${tr("fixed")})"
             MType.SOLAR -> "${tr("provides")} ${Simulation.SOLAR_POWER.toInt()} ${tr("strom")} (${tr("sun")})"
             MType.FORSCHUNG -> "${tr("produces_research")} +${oneDec(sim.researchRate())}/s"
             MType.DROHNE -> "${tr("repairs")} · R${sim.droneRange()} · ${sim.droneRepairRate().roundToInt()}%/s"
+            MType.BLEIBOHRER -> {
+                val floorTxt = if (sim.isSurveyed(selR, selC)) {
+                    val tier = sim.richness(selR, selC)
+                    "${tierName(tier)} (x${Simulation.ORE_MULT[tier]})"
+                } else tr("unscanned")
+                "${tr("out")} ${oneDec(m.output[Res.BLEI.ordinal])} ${tr("blei")}   ${tr("floor")}: $floorTxt"
+            }
+            MType.WASSERPUMPE -> "${tr("out")} ${oneDec(m.output[Res.WASSER.ordinal])} ${tr("wasser")}   (${tr("needs_coast")})"
+            MType.ZENTRIFUGE -> "${tr("in")} ${oneDec(m.input[Res.ROHERZ.ordinal])} ${tr("uranerz")} + ${oneDec(m.input[Res.WASSER.ordinal])} ${tr("wasser")}   ${tr("out")} ${oneDec(m.output[Res.BARREN.ordinal])} ${tr("angeruran")}"
+            MType.BLEIPRESSE -> "${tr("in")} ${oneDec(m.input[Res.BLEI.ordinal])} ${tr("blei")}   ${tr("out")} ${oneDec(m.output[Res.PLATTE.ordinal])} ${tr("bleiverkl")}"
+            MType.BRENNSTABWERK -> "${tr("in")} ${oneDec(m.input[Res.BARREN.ordinal])} ${tr("angeruran")} + ${oneDec(m.input[Res.PLATTE.ordinal])} ${tr("bleiverkl")}   ${tr("out")} ${oneDec(m.output[Res.KOMPONENTE.ordinal])} ${tr("brennstab")}"
         }
         canvas.drawText(io, dp(12f), yy, pText)
         yy += dp(22f)
@@ -1248,7 +1335,7 @@ class GameView(context: Context) : View(context) {
 
     private fun bnLabel(code: Int) = when (code) {
         1 -> tr("bn_input"); 2 -> tr("bn_output"); 3 -> tr("bn_power")
-        4 -> tr("bn_dead"); 5 -> tr("bn_soil"); else -> tr("bn_ok")
+        4 -> tr("bn_dead"); 5 -> tr("bn_soil"); 6 -> tr("bn_water"); else -> tr("bn_ok")
     }
 
     private fun bnColor(code: Int) = when (code) {
@@ -1355,7 +1442,9 @@ class GameView(context: Context) : View(context) {
         pText.color = cAccent; pText.textSize = dp(16f)
         canvas.drawText(tr("s_prod_title"), dp(16f), yy, pText)
         yy += dp(22f)
-        val producers = listOf(MType.BOHRER, MType.OFEN, MType.PRESSE, MType.ASSEMBLER, MType.HAENDLER)
+        val producers = if (sim.companyLevel >= 2)
+            listOf(MType.BOHRER, MType.BLEIBOHRER, MType.WASSERPUMPE, MType.ZENTRIFUGE, MType.BLEIPRESSE, MType.BRENNSTABWERK, MType.HAENDLER)
+        else listOf(MType.BOHRER, MType.OFEN, MType.PRESSE, MType.ASSEMBLER, MType.HAENDLER)
         pText.textSize = dp(13f)
         for (t in producers) {
             val i = t.ordinal
@@ -1880,7 +1969,7 @@ class GameView(context: Context) : View(context) {
 
     /** Zaehlt die Engpass-Ursachen ueber alle Maschinen und benennt die haeufigste. */
     private fun bottleneckSummary(): String {
-        val counts = IntArray(6)
+        val counts = IntArray(7)
         var total = 0
         for (r in 0 until sim.n) for (c in 0 until sim.n) {
             val m = sim.grid[r][c] ?: continue
@@ -1891,7 +1980,7 @@ class GameView(context: Context) : View(context) {
         }
         if (total == 0) return tr("bn_none")
         var worst = 1
-        for (i in 1 until 6) if (counts[i] > counts[worst]) worst = i
+        for (i in 1 until 7) if (counts[i] > counts[worst]) worst = i
         return "${bnLabel(worst)} (${counts[worst]})"
     }
 

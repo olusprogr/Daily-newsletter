@@ -8,7 +8,7 @@ import org.json.JSONArray
 import org.json.JSONObject
 
 /** Rohstoffe. Tier 1-3: Roherz -> Barren -> Platte -> Komponente. */
-enum class Res { ROHERZ, BARREN, PLATTE, KOMPONENTE }
+enum class Res { ROHERZ, BARREN, PLATTE, KOMPONENTE, WASSER, BLEI }
 
 // Reihenfolge = Save-Ordinal. Neue Typen ans ENDE anhaengen (Save-Kompatibilitaet).
 enum class MType(val label: String, val sym: String, val power: Double) {
@@ -25,7 +25,12 @@ enum class MType(val label: String, val sym: String, val power: Double) {
     PROSPEKTOR("Prospektor", "S", 2.0),
     WINDRAD("Windrad", "W", 0.0),
     SOLAR("Solarpanel", "So", 0.0),
-    FORSCHUNG("Forschungszentrum", "Fz", 12.0)
+    FORSCHUNG("Forschungszentrum", "Fz", 12.0),
+    BLEIBOHRER("Tiefen-Bohrer", "Pb", 4.0),
+    WASSERPUMPE("Wasserpumpe", "Aq", 3.0),
+    ZENTRIFUGE("Zentrifuge", "Zf", 9.0),
+    BLEIPRESSE("Bleipresse", "Bp", 8.0),
+    BRENNSTABWERK("Brennstabwerk", "Bw", 11.0)
 }
 
 class Machine(var type: MType) {
@@ -91,6 +96,8 @@ class Simulation {
     var companyLevel = 1             // 1 Bergbau, 2 Kernkraft, 3 Petrochemie, 4 High-Tech
     var shares = 0.0                 // permanente Aktien aus Firmenverkaeufen
     var dividends = 0.0              // passives Einkommen/s aus verkauften Firmen
+    // Level-2-Plattform (bereits errichtet, gelb-schwarzer Rand, metallischer Kern).
+    var platformR0 = -1; var platformC0 = -1; var platformR1 = -1; var platformC1 = -1
     var mapSeed = 12345L
     val tech = HashMap<String, Int>()
 
@@ -118,6 +125,12 @@ class Simulation {
         const val OFEN_RATE = 0.34
         const val PRESSE_RATE = 0.25
         const val ASSEMBLER_RATE = 0.15
+        // --- Level 2: Kernkraft ---
+        const val BLEIBOHRER_RATE = 0.45
+        const val WASSERPUMPE_RATE = 0.6
+        const val ZENTRIFUGE_RATE = 0.18
+        const val BLEIPRESSE_RATE = 0.22
+        const val BRENNSTABWERK_RATE = 0.12
         const val LIFT = 3.0
         const val IN_CAP = 10.0
         const val OUT_CAP = 20.0
@@ -188,7 +201,12 @@ class Simulation {
             TechNode("t_drohne_speed", "Drohnen-Fluggeschwindigkeit", 35.0, 1.3, 10, "+20%/Stufe", "t_drohne", null),
             TechNode("t_drohne_range", "Drohnen-Reichweite", 60.0, 1.6, 3, "+1 Feld/Stufe", "t_drohne", null),
             // Forschungszentrum-Upgrade (mit Forschung bezahlt)
-            TechNode("t_research_rate", "Forschungs-Tempo", 30.0, 1.4, 12, "+0.1/s pro Stufe", "t_research", null)
+            TechNode("t_research_rate", "Forschungs-Tempo", 30.0, 1.4, 12, "+0.1/s pro Stufe", "t_research", null),
+            // --- Level 2: Kernkraft-Freischaltungen (mit Rohstoffen bezahlt) ---
+            TechNode("t_wasserpumpe", "Wasserpumpe freischalten", 20.0, 1.0, 1, "Wasser aus der Kueste", null, Res.BARREN),
+            TechNode("t_zentrifuge", "Zentrifuge freischalten", 30.0, 1.0, 1, "Uranerz+Wasser -> Angereichertes Uran", "t_wasserpumpe", Res.BARREN),
+            TechNode("t_bleipresse", "Bleipresse freischalten", 20.0, 1.0, 1, "Blei -> Blei-Verkleidung", null, Res.BARREN),
+            TechNode("t_brennstabwerk", "Brennstabwerk freischalten", 25.0, 1.0, 1, "Fertigt Brennstabsaetze", "t_bleipresse", Res.PLATTE)
         )
 
         val UNLOCK = mapOf(
@@ -200,7 +218,11 @@ class Simulation {
             MType.HAENDLER to "t_haendler",
             MType.WINDRAD to "t_wind",
             MType.SOLAR to "t_solar",
-            MType.FORSCHUNG to "t_research"
+            MType.FORSCHUNG to "t_research",
+            MType.WASSERPUMPE to "t_wasserpumpe",
+            MType.ZENTRIFUGE to "t_zentrifuge",
+            MType.BLEIPRESSE to "t_bleipresse",
+            MType.BRENNSTABWERK to "t_brennstabwerk"
         )
 
         // Hoechstzahl je platzierbarem Typ, damit die Karte nicht zuwuchert.
@@ -215,7 +237,12 @@ class Simulation {
             MType.HAENDLER to 8,
             MType.WINDRAD to 8,
             MType.SOLAR to 12,
-            MType.FORSCHUNG to 4
+            MType.FORSCHUNG to 4,
+            MType.BLEIBOHRER to 24,
+            MType.WASSERPUMPE to 10,
+            MType.ZENTRIFUGE to 16,
+            MType.BLEIPRESSE to 16,
+            MType.BRENNSTABWERK to 12
         )
 
         // Baukosten in Rohstoffen: (Rohstoff, Menge).
@@ -227,7 +254,13 @@ class Simulation {
             MType.SOLAR to Pair(Res.BARREN, 10.0),
             MType.FORSCHUNG to Pair(Res.PLATTE, 20.0),
             MType.ASSEMBLER to Pair(Res.PLATTE, 10.0),
-            MType.HAENDLER to Pair(Res.PLATTE, 24.0)   // Haendler mit Platten kaufen
+            MType.HAENDLER to Pair(Res.PLATTE, 24.0),   // Haendler mit Platten kaufen
+            // --- Level 2: Kernkraft ---
+            MType.BLEIBOHRER to Pair(Res.BARREN, 6.0),
+            MType.WASSERPUMPE to Pair(Res.BARREN, 8.0),
+            MType.ZENTRIFUGE to Pair(Res.BARREN, 14.0),
+            MType.BLEIPRESSE to Pair(Res.BARREN, 12.0),
+            MType.BRENNSTABWERK to Pair(Res.PLATTE, 16.0)
         )
 
         // Baukosten in GELD (Turbine/Lager/Drohne), +100% teurer als zuvor.
@@ -250,6 +283,7 @@ class Simulation {
         mapSeed = System.nanoTime() xor 0x5DEECE66DL
         tech.clear()
         companyLevel = 1; shares = 0.0; dividends = 0.0
+        placePlatform()
         placeReactor()
     }
 
@@ -371,6 +405,7 @@ class Simulation {
     fun isLand(r: Int, c: Int): Boolean {
         if (r !in 0 until n || c !in 0 until n) return false
         if (grid[r][c] != null || occ[r][c] != null) return true
+        if (isPlatform(r, c)) return true       // Plattform ist immer Land/bebaubar
         return landValue(r, c) > LAND_THRESH
     }
 
@@ -389,6 +424,7 @@ class Simulation {
 
     /** Deko-Kategorie: 0 keine, 1 Nadelbaum, 2 Laubbaum, 3 Fels, 4 Busch. */
     fun decoType(r: Int, c: Int): Int {
+        if (isPlatform(r, c)) return 0
         if (!landAt(r, c) || grid[r][c] != null || occ[r][c] != null || harvested[r * n + c]) return 0
         if (!landAt(r - 1, c) || !landAt(r + 1, c) || !landAt(r, c - 1) || !landAt(r, c + 1)) return 0
         val h = decoHash(r, c); val pct = h % 100
@@ -453,7 +489,7 @@ class Simulation {
         Res.BARREN -> globalBarren
         Res.PLATTE -> globalPlatten
         Res.KOMPONENTE -> globalKomponente
-        Res.ROHERZ -> 0.0
+        Res.ROHERZ, Res.WASSER, Res.BLEI -> 0.0   // lokale Ressourcen, kein globaler Pool
     }
     fun available(res: Res) = globalOf(res) + lagerSum(res.ordinal)
     fun availableBarren() = available(Res.BARREN)
@@ -465,7 +501,7 @@ class Simulation {
             Res.BARREN -> globalBarren += amt
             Res.PLATTE -> globalPlatten += amt
             Res.KOMPONENTE -> globalKomponente += amt
-            Res.ROHERZ -> {}
+            Res.ROHERZ, Res.WASSER, Res.BLEI -> {}
         }
     }
 
@@ -478,7 +514,7 @@ class Simulation {
             Res.BARREN -> globalBarren -= g
             Res.PLATTE -> globalPlatten -= g
             Res.KOMPONENTE -> globalKomponente -= g
-            Res.ROHERZ -> {}
+            Res.ROHERZ, Res.WASSER, Res.BLEI -> {}
         }
         rem -= g
         if (rem > 1e-9) {
@@ -510,7 +546,7 @@ class Simulation {
     fun moneyBuildCost(t: MType): Double = MONEY_BUILD[t] ?: 0.0
 
     fun canBuild(t: MType): Boolean = when (t) {
-        MType.BOHRER, MType.OFEN -> true
+        MType.BOHRER, MType.OFEN, MType.BLEIBOHRER -> true
         MType.REAKTOR, MType.VERSTAERKER, MType.PROSPEKTOR -> false
         else -> {
             val u = UNLOCK[t]
@@ -556,6 +592,45 @@ class Simulation {
         return true
     }
 
+    fun hasPlatform(): Boolean = platformR0 >= 0
+    fun isPlatform(r: Int, c: Int): Boolean =
+        hasPlatform() && r in platformR0..platformR1 && c in platformC0..platformC1
+    fun isPlatformEdge(r: Int, c: Int): Boolean =
+        isPlatform(r, c) && (r == platformR0 || r == platformR1 || c == platformC0 || c == platformC1)
+
+    /**
+     * Level-2-Plattform: ein bereits errichtetes, grosses Baufeld nahe einer
+     * Wasserquelle, moeglichst zentral auf der Karte. Wird nur fuer companyLevel==2
+     * platziert; alle Zellen gelten sofort als Land, freigeschaltet und bebaubar.
+     */
+    private fun placePlatform() {
+        platformR0 = -1; platformC0 = -1; platformR1 = -1; platformC1 = -1
+        if (companyLevel != 2) return
+        val size = 9
+        var bestR = -1; var bestC = -1; var bestScore = Int.MAX_VALUE
+        for (R in 0..n - size) for (C in 0..n - size) {
+            var waterAdj = false
+            for (dr in -1..size) for (dc in -1..size) {
+                if (dr in 0 until size && dc in 0 until size) continue   // nur der Rand zaehlt
+                val rr = R + dr; val cc = C + dc
+                if (rr !in 0 until n || cc !in 0 until n) continue
+                if (rawWater(rr, cc)) { waterAdj = true }
+            }
+            if (!waterAdj) continue
+            val cr = R + size / 2; val cc2 = C + size / 2
+            val score = kotlin.math.abs(cr - startR) + kotlin.math.abs(cc2 - startC)
+            if (score < bestScore) { bestScore = score; bestR = R; bestC = C }
+        }
+        if (bestR < 0) {
+            // Notfall: erzwinge eine zentrale Position, auch ohne Kuestennaehe.
+            bestR = (startR - size / 2).coerceIn(0, n - size)
+            bestC = (startC - size / 2).coerceIn(0, n - size)
+        }
+        platformR0 = bestR; platformC0 = bestC
+        platformR1 = bestR + size - 1; platformC1 = bestC + size - 1
+        for (r in platformR0..platformR1) for (c in platformC0..platformC1) surveyed[r * n + c] = true
+    }
+
     /** Setzt nur die Fabrik zurueck (Prestige-Daten bleiben erhalten). */
     private fun resetFactory() {
         for (r in 0 until n) for (c in 0 until n) { grid[r][c] = null; occ[r][c] = null }
@@ -564,6 +639,7 @@ class Simulation {
         money = START_MONEY; research = 0.0
         mapSeed = System.nanoTime() xor 0x5DEECE66DL
         tech.clear()
+        placePlatform()
         placeReactor()
     }
 
@@ -704,6 +780,31 @@ class Simulation {
             MType.HAENDLER -> {
                 if (availableKomponente() <= 1e-6 && m.util < 0.5) return 1
             }
+            MType.BLEIBOHRER -> {
+                if (oreMult(r, c) <= 0.0) return 5
+                if (m.output[Res.BLEI.ordinal] >= OUT_CAP - 0.5) return 2
+                if (scale < 0.999 && m.util < 0.98) return 3
+            }
+            MType.WASSERPUMPE -> {
+                if (!adjWater(r, c)) return 6
+                if (m.output[Res.WASSER.ordinal] >= OUT_CAP - 0.5) return 2
+                if (scale < 0.999 && m.util < 0.98) return 3
+            }
+            MType.ZENTRIFUGE -> {
+                if (m.output[Res.BARREN.ordinal] >= OUT_CAP - 0.5) return 2
+                if (m.starved) return 1
+                if (scale < 0.999 && m.util < 0.98) return 3
+            }
+            MType.BLEIPRESSE -> {
+                if (m.output[Res.PLATTE.ordinal] >= OUT_CAP - 0.5) return 2
+                if (m.starved) return 1
+                if (scale < 0.999 && m.util < 0.98) return 3
+            }
+            MType.BRENNSTABWERK -> {
+                if (m.output[Res.KOMPONENTE.ordinal] >= OUT_CAP - 0.5) return 2
+                if (m.starved) return 1
+                if (scale < 0.999 && m.util < 0.98) return 3
+            }
             else -> {}
         }
         return 0
@@ -738,6 +839,11 @@ class Simulation {
     private fun ofenRate() = OFEN_RATE * (1.0 + 0.08 * lvl("t_ospeed")) * globalMult()
     private fun presseRate() = PRESSE_RATE * (1.0 + 0.08 * lvl("t_pspeed")) * globalMult()
     private fun assemblerRate() = ASSEMBLER_RATE * (1.0 + 0.08 * lvl("t_aspeed")) * globalMult()
+    private fun bleibohrerRate() = BLEIBOHRER_RATE * globalMult()
+    private fun wasserpumpeRate() = WASSERPUMPE_RATE * globalMult()
+    private fun zentrifugeRate() = ZENTRIFUGE_RATE * globalMult()
+    private fun bleipresseRate() = BLEIPRESSE_RATE * globalMult()
+    private fun brennstabwerkRate() = BRENNSTABWERK_RATE * globalMult()
     fun componentPrice() = COMPONENT_PRICE * (1.0 + 0.25 * lvl("t_wert")) * companyMult() * shareBonus()
 
     private fun wearPerSec(t: MType) = when (t) {
@@ -749,6 +855,11 @@ class Simulation {
         MType.DROHNE -> 0.5 / 60.0
         MType.VERSTAERKER -> 0.6 / 60.0
         MType.FORSCHUNG -> 0.7 / 60.0
+        MType.BLEIBOHRER -> 1.0 / 60.0
+        MType.WASSERPUMPE -> 0.8 / 60.0
+        MType.ZENTRIFUGE -> 1.2 / 60.0
+        MType.BLEIPRESSE -> 1.5 / 60.0
+        MType.BRENNSTABWERK -> 1.6 / 60.0
         else -> 0.0
     }
 
@@ -770,6 +881,8 @@ class Simulation {
         }
         return res
     }
+    /** Wasserpumpe: braucht ein angrenzendes Wasserfeld (Kueste/Fluss), um zu foerdern. */
+    fun adjWater(r: Int, c: Int): Boolean = neighbors(r, c).any { rawWater(it[0], it[1]) }
 
     private fun boostAt(r: Int, c: Int): Double {
         var k = 0
@@ -782,7 +895,10 @@ class Simulation {
         MType.PRESSE -> intArrayOf(Res.BARREN.ordinal)
         MType.ASSEMBLER -> intArrayOf(Res.PLATTE.ordinal)
         MType.GENERATOR -> intArrayOf(Res.ROHERZ.ordinal)
-        MType.LAGER -> intArrayOf(0, 1, 2, 3)
+        MType.LAGER -> intArrayOf(0, 1, 2, 3, 4, 5)
+        MType.ZENTRIFUGE -> intArrayOf(Res.ROHERZ.ordinal, Res.WASSER.ordinal)
+        MType.BLEIPRESSE -> intArrayOf(Res.BLEI.ordinal)
+        MType.BRENNSTABWERK -> intArrayOf(Res.BARREN.ordinal, Res.PLATTE.ordinal)
         else -> IntArray(0)
     }
 
@@ -792,6 +908,11 @@ class Simulation {
         MType.PRESSE -> res == Res.PLATTE.ordinal
         MType.ASSEMBLER -> res == Res.KOMPONENTE.ordinal
         MType.LAGER -> true
+        MType.BLEIBOHRER -> res == Res.BLEI.ordinal
+        MType.WASSERPUMPE -> res == Res.WASSER.ordinal
+        MType.ZENTRIFUGE -> res == Res.BARREN.ordinal
+        MType.BLEIPRESSE -> res == Res.PLATTE.ordinal
+        MType.BRENNSTABWERK -> res == Res.KOMPONENTE.ordinal
         else -> false
     }
 
@@ -807,6 +928,13 @@ class Simulation {
         }
         MType.PROSPEKTOR -> hasUnsurveyedInRange(r, c)
         MType.FORSCHUNG -> true          // zieht Strom, solange es steht
+        MType.BLEIBOHRER -> m.output[Res.BLEI.ordinal] < OUT_CAP - 1e-9 && oreMult(r, c) > 0.0
+        MType.WASSERPUMPE -> m.output[Res.WASSER.ordinal] < OUT_CAP - 1e-9 && adjWater(r, c)
+        MType.ZENTRIFUGE -> m.input[Res.ROHERZ.ordinal] > 1e-6 && m.input[Res.WASSER.ordinal] > 1e-6 &&
+            m.output[Res.BARREN.ordinal] < OUT_CAP - 1e-9
+        MType.BLEIPRESSE -> m.input[Res.BLEI.ordinal] > 1e-6 && m.output[Res.PLATTE.ordinal] < OUT_CAP - 1e-9
+        MType.BRENNSTABWERK -> m.input[Res.BARREN.ordinal] > 1e-6 && m.input[Res.PLATTE.ordinal] > 1e-6 &&
+            m.output[Res.KOMPONENTE.ordinal] < OUT_CAP - 1e-9
         else -> false
     }
 
@@ -988,6 +1116,63 @@ class Simulation {
                     m.condition = max(0.0, m.condition - wearPerSec(MType.FORSCHUNG) * wf * ddt * active)
                     m.util = active
                 }
+                // --- Level 2: Kernkraft ---
+                MType.BLEIBOHRER -> {
+                    val nominal = bleibohrerRate() * ddt * boostAt(r, c) * oreMult(r, c)
+                    val want = nominal * scale * wearMult(m.condition)
+                    val made = max(0.0, min(want, OUT_CAP - m.output[Res.BLEI.ordinal]))
+                    m.output[Res.BLEI.ordinal] += made
+                    if (bleibohrerRate() > 0) m.condition = max(0.0, m.condition - wearPerSec(MType.BLEIBOHRER) * wf * (made / bleibohrerRate()))
+                    m.util = if (nominal > 1e-9) made / nominal else 0.0
+                }
+                MType.WASSERPUMPE -> {
+                    val nominal = wasserpumpeRate() * ddt
+                    val want = nominal * scale * wearMult(m.condition)
+                    val made = if (adjWater(r, c)) max(0.0, min(want, OUT_CAP - m.output[Res.WASSER.ordinal])) else 0.0
+                    m.output[Res.WASSER.ordinal] += made
+                    if (wasserpumpeRate() > 0) m.condition = max(0.0, m.condition - wearPerSec(MType.WASSERPUMPE) * wf * (made / wasserpumpeRate()))
+                    m.util = if (nominal > 1e-9) made / nominal else 0.0
+                }
+                MType.ZENTRIFUGE -> {
+                    val nominal = zentrifugeRate() * ddt * boostAt(r, c)
+                    val want = nominal * scale * wearMult(m.condition)
+                    val byOre = m.input[Res.ROHERZ.ordinal] / 3.0
+                    val byWater = m.input[Res.WASSER.ordinal]
+                    val made = max(0.0, min(want, min(byOre, min(byWater, OUT_CAP - m.output[Res.BARREN.ordinal]))))
+                    m.input[Res.ROHERZ.ordinal] -= made * 3.0
+                    m.input[Res.WASSER.ordinal] -= made
+                    m.output[Res.BARREN.ordinal] += made
+                    m.condition = max(0.0, m.condition - wearPerSec(MType.ZENTRIFUGE) * wf * (made / zentrifugeRate()))
+                    m.util = if (nominal > 1e-9) made / nominal else 0.0
+                    barMade += made
+                    if ((byOre <= 1e-9 || byWater <= 1e-9) && m.output[Res.BARREN.ordinal] < OUT_CAP - 1e-9) m.starved = true
+                }
+                MType.BLEIPRESSE -> {
+                    val nominal = bleipresseRate() * ddt * boostAt(r, c)
+                    val want = nominal * scale * wearMult(m.condition)
+                    val byInput = m.input[Res.BLEI.ordinal] / 2.0
+                    val made = max(0.0, min(want, min(byInput, OUT_CAP - m.output[Res.PLATTE.ordinal])))
+                    m.input[Res.BLEI.ordinal] -= made * 2.0
+                    m.output[Res.PLATTE.ordinal] += made
+                    m.condition = max(0.0, m.condition - wearPerSec(MType.BLEIPRESSE) * wf * (made / bleipresseRate()))
+                    m.util = if (nominal > 1e-9) made / nominal else 0.0
+                    platMade += made
+                    if (byInput <= 1e-9 && m.output[Res.PLATTE.ordinal] < OUT_CAP - 1e-9) m.starved = true
+                }
+                MType.BRENNSTABWERK -> {
+                    val nominal = brennstabwerkRate() * ddt * boostAt(r, c)
+                    val want = nominal * scale * wearMult(m.condition)
+                    val byUran = m.input[Res.BARREN.ordinal] / 2.0
+                    val byBlei = m.input[Res.PLATTE.ordinal] / 2.0
+                    val made = max(0.0, min(want, min(byUran, min(byBlei, OUT_CAP - m.output[Res.KOMPONENTE.ordinal]))))
+                    m.input[Res.BARREN.ordinal] -= made * 2.0
+                    m.input[Res.PLATTE.ordinal] -= made * 2.0
+                    m.output[Res.KOMPONENTE.ordinal] += made
+                    m.condition = max(0.0, m.condition - wearPerSec(MType.BRENNSTABWERK) * wf * (made / brennstabwerkRate()))
+                    m.util = if (nominal > 1e-9) made / nominal else 0.0
+                    kompMade += made
+                    if ((byUran <= 1e-9 || byBlei <= 1e-9) && m.output[Res.KOMPONENTE.ordinal] < OUT_CAP - 1e-9) m.starved = true
+                }
                 MType.LAGER, MType.REAKTOR, MType.HAENDLER -> { m.util = 0.0 }
             }
         }
@@ -995,15 +1180,15 @@ class Simulation {
         transfers()
         forEachMachine { m, _, _ ->
             when (m.type) {
-                MType.OFEN -> {
+                MType.OFEN, MType.ZENTRIFUGE -> {
                     val amt = min(liftRate() * ddt, m.output[Res.BARREN.ordinal])
                     m.output[Res.BARREN.ordinal] -= amt; globalBarren += amt
                 }
-                MType.PRESSE -> {
+                MType.PRESSE, MType.BLEIPRESSE -> {
                     val amt = min(liftRate() * ddt, m.output[Res.PLATTE.ordinal])
                     m.output[Res.PLATTE.ordinal] -= amt; globalPlatten += amt
                 }
-                MType.ASSEMBLER -> {
+                MType.ASSEMBLER, MType.BRENNSTABWERK -> {
                     val amt = min(liftRate() * ddt, m.output[Res.KOMPONENTE.ordinal])
                     m.output[Res.KOMPONENTE.ordinal] -= amt; globalKomponente += amt
                 }
@@ -1065,7 +1250,8 @@ class Simulation {
                     seenDead.add(m)
                     if (events.size < 24) events.add(OfflineEvent(t, true, m.type, r, c))
                 }
-                if ((m.type == MType.OFEN || m.type == MType.PRESSE || m.type == MType.ASSEMBLER || m.type == MType.GENERATOR) &&
+                if ((m.type == MType.OFEN || m.type == MType.PRESSE || m.type == MType.ASSEMBLER || m.type == MType.GENERATOR ||
+                     m.type == MType.ZENTRIFUGE || m.type == MType.BLEIPRESSE || m.type == MType.BRENNSTABWERK) &&
                     m.starved && !seenStarve.contains(m)
                 ) {
                     seenStarve.add(m)
@@ -1088,6 +1274,9 @@ class Simulation {
         root.put("clvl", companyLevel)
         root.put("shares", shares)
         root.put("divi", dividends)
+        if (hasPlatform()) {
+            root.put("plat", JSONArray().put(platformR0).put(platformC0).put(platformR1).put(platformC1))
+        }
         root.put("seed", mapSeed)
         val techObj = JSONObject()
         for ((k, v) in tech) techObj.put(k, v)
@@ -1130,6 +1319,16 @@ class Simulation {
         shares = root.optDouble("shares", 0.0)
         dividends = root.optDouble("divi", 0.0)
         mapSeed = root.optLong("seed", 12345L)
+        // Plattform-Koordinaten laden (braucht mapSeed, falls neu platziert werden muss).
+        val plat = root.optJSONArray("plat")
+        if (plat != null && plat.length() == 4) {
+            platformR0 = plat.optInt(0, -1); platformC0 = plat.optInt(1, -1)
+            platformR1 = plat.optInt(2, -1); platformC1 = plat.optInt(3, -1)
+        } else if (companyLevel == 2) {
+            placePlatform()   // Alt-Speicherstand ohne Plattform-Daten, aber schon Level 2
+        } else {
+            platformR0 = -1; platformC0 = -1; platformR1 = -1; platformC1 = -1
+        }
         tech.clear()
         val tv = root.opt("tech")
         if (tv is JSONArray) {

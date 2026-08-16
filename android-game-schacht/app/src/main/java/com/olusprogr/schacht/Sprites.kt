@@ -314,6 +314,11 @@ object Sprites {
         MType.WINDRAD -> emptyList()
         MType.SOLAR -> emptyList()
         MType.FORSCHUNG -> emptyList()
+        MType.BLEIBOHRER -> emptyList()
+        MType.WASSERPUMPE -> emptyList()
+        MType.ZENTRIFUGE -> emptyList()
+        MType.BLEIPRESSE -> emptyList()
+        MType.BRENNSTABWERK -> emptyList()
     }
 
     // --- Ressourcen-Icons im 12x12-Raster ---
@@ -377,5 +382,10 @@ object Sprites {
         MType.WINDRAD -> GENERATOR
         MType.SOLAR -> GENERATOR
         MType.FORSCHUNG -> REAKTOR
+        MType.BLEIBOHRER -> BOHRER
+        MType.WASSERPUMPE -> GENERATOR
+        MType.ZENTRIFUGE -> OFEN
+        MType.BLEIPRESSE -> PRESSE
+        MType.BRENNSTABWERK -> ASSEMBLER
     }
 }
