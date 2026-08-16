@@ -1,6 +1,15 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/pc-components/cpus/the-pc-age-began-45-years-ago-with-the-breakthrough-intel-8088-processor-8-bit-bus-fueled-45-years-of-x86-dominance",
+      "title": "The PC age began 45 years ago with the breakthrough Intel 8088 processor — 8-bit bus fueled 45 years of x86 dominance",
+      "summary": "45 years ago, in August 1981, the PC age began in earnest with the launch of the IBM PC Model 5150. At its heart was the Intel 8088 microprocessor.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-08-16T11:20:00+00:00",
+      "sent_at": "2026-08-16T11:43:36.751787+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/pc-components/gpus/thieves-swap-rtx-5080-gpus-for-rtx-3060s-in-chinese-gaming-hotels-rogue-downgrades-go-unnoticed-until-sudden-blackout-exposes-usd12-000-heist",
       "title": "Thieves swap RTX 5080 GPUs for RTX 3060s in Chinese gaming hotels — rogue 'downgrades' go unnoticed until sudden blackout exposes $12,000 heist",
       "summary": "Two thieves in China have been arrested after they were caught stealing high-end GPUs from gaming hotels. They'd check into rooms with RTX 5080s, replace them with RTX 3060s that looked similar, and no one noticed the performance difference.",
