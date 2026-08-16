@@ -1,6 +1,15 @@
 {
   "items": [
     {
+      "link": "https://news.ycombinator.com/item?id=49324078",
+      "title": "Claude Seems Down",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-16T21:52:59+00:00",
+      "sent_at": "2026-08-16T22:45:55.214806+00:00"
+    },
+    {
       "link": "https://www.bloomberg.com/news/articles/2026-08-16/stripe-nears-deal-to-buy-ai-firm-openrouter-for-over-7-billion",
       "title": "Stripe Clinches over $7B Deal to Buy AI Firm OpenRouter",
       "summary": "",
