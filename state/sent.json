@@ -1,6 +1,15 @@
 {
   "items": [
     {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/980817/openai-disbands-preparedness-team",
+      "title": "OpenAI reportedly disbanded its preparedness team",
+      "summary": "According to the Financial Times, OpenAI disbanded its preparedness team at the end of last month. The job of the preparedness team was to assess if models posed serious risks and develop ways to mitigate those risks. (You know, like the possibility that it could go rogue and hack another company.) According to FT, responsibility [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-08-16T21:32:56+00:00",
+      "sent_at": "2026-08-16T21:43:06.414897+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/",
       "title": "Stripe will reportedly acquire AI gateway startup OpenRouter for $7B+",
       "summary": "OpenRouter's CEO recently described the startup as Stripe for AI.",
