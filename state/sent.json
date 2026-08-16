@@ -1,6 +1,15 @@
 {
   "items": [
     {
+      "link": "https://www.bloomberg.com/news/articles/2026-08-16/stripe-nears-deal-to-buy-ai-firm-openrouter-for-over-7-billion",
+      "title": "Stripe Clinches over $7B Deal to Buy AI Firm OpenRouter",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-16T20:31:16+00:00",
+      "sent_at": "2026-08-16T22:16:24.231424+00:00"
+    },
+    {
       "link": "https://www.theverge.com/ai-artificial-intelligence/980817/openai-disbands-preparedness-team",
       "title": "OpenAI reportedly disbanded its preparedness team",
       "summary": "According to the Financial Times, OpenAI disbanded its preparedness team at the end of last month. The job of the preparedness team was to assess if models posed serious risks and develop ways to mitigate those risks. (You know, like the possibility that it could go rogue and hack another company.) According to FT, responsibility [&#8230;]",
