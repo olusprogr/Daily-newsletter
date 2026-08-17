@@ -647,16 +647,24 @@ class GameView(context: Context) : View(context) {
         val an = sim.areaN()
         val half = cell / 2f
         val isz = (cell * 0.26f).coerceAtLeast(dp(9f))   // kleiner als vorher
-        val dirs = arrayOf(intArrayOf(-1, 0), intArrayOf(1, 0), intArrayOf(0, -1), intArrayOf(0, 1))
         for (r in 0 until an) for (c in 0 until an) {
             val cm = sim.grid[r][c] ?: continue
             val isLager = cm.type == MType.LAGER
             val want = wantsRes(cm.type)
             if (want < 0 && !isLager) continue
-            for (dir in dirs) {
-                val pr = r + dir[0]; val pc = c + dir[1]
+            // Kanten der GESAMTEN Grundflaeche (nicht nur der Anker-Zelle) - sonst
+            // zeigt ein 2x2/2x3-Gebaeude (Reaktorkern, Kuehlturm) nur an einer Seite
+            // einen Materialfluss an.
+            val rTop = r - (cm.h - 1); val rBot = r
+            val cLeft = c; val cRight = c + (cm.w - 1)
+            val edges = ArrayList<IntArray>()
+            for (cc in cLeft..cRight) { edges.add(intArrayOf(rTop - 1, cc)); edges.add(intArrayOf(rBot + 1, cc)) }
+            for (rr in rTop..rBot) { edges.add(intArrayOf(rr, cLeft - 1)); edges.add(intArrayOf(rr, cRight + 1)) }
+            for (edge in edges) {
+                val pr = edge[0]; val pc = edge[1]
                 if (pr !in 0 until an || pc !in 0 until an) continue
-                val pm = sim.grid[pr][pc] ?: continue
+                val pa = sim.anchorOf(pr, pc) ?: continue
+                val pm = sim.grid[pa[0]][pa[1]] ?: continue
                 val off = offersRes(pm.type)
                 if (off < 0) continue
                 val res = if (isLager) off else want
@@ -666,8 +674,8 @@ class GameView(context: Context) : View(context) {
                 val producing = pm.util > 0.03 || pm.output[res] > 0.2
                 if (!consuming || !producing) continue
 
-                val sx = vLeft + pc * cell + half
-                val sy = vTop + pr * cell + half
+                val sx = vLeft + pa[1] * cell + half
+                val sy = vTop + pa[0] * cell + half
                 val ex = vLeft + c * cell + half
                 val ey = vTop + r * cell + half
                 val icon = Sprites.iconForRes(res, sim.companyLevel)

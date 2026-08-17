@@ -1038,6 +1038,22 @@ class Simulation {
         }
         return res
     }
+
+    /**
+     * Alle Zellen direkt AUSSERHALB der Grundflaeche eines (moeglicherweise mehrzelligen)
+     * Gebaeudes, dessen Anker bei (r,c) liegt (Anker = unten links, waechst nach oben/
+     * rechts um w-1/h-1). Fuer 1x1-Gebaeude identisch zu neighbors(r,c). Ohne das waeren
+     * Nachbarn nur an der Anker-Zelle sichtbar - ein 2x2- oder 2x3-Gebaeude (Reaktorkern,
+     * Kuehlturm) haette dann an 3 von 4 Seiten "blinde" Kanten fuer den Materialfluss.
+     */
+    private fun footprintNeighbors(r: Int, c: Int, w: Int, h: Int): List<IntArray> {
+        val res = ArrayList<IntArray>()
+        val rTop = r - (h - 1); val rBot = r
+        val cLeft = c; val cRight = c + (w - 1)
+        for (cc in cLeft..cRight) { res.add(intArrayOf(rTop - 1, cc)); res.add(intArrayOf(rBot + 1, cc)) }
+        for (rr in rTop..rBot) { res.add(intArrayOf(rr, cLeft - 1)); res.add(intArrayOf(rr, cRight + 1)) }
+        return res.filter { it[0] in 0 until n && it[1] in 0 until n }
+    }
     /** Wasserpumpe: braucht ein angrenzendes Wasserfeld (Kueste/Fluss), um zu foerdern. */
     fun adjWater(r: Int, c: Int): Boolean = neighbors(r, c).any { rawWater(it[0], it[1]) }
 
@@ -1131,11 +1147,18 @@ class Simulation {
             if (wants.isEmpty()) return@forEachMachine
             val target = if (c.type == MType.LAGER) c.output else c.input
             val cap = if (c.type == MType.LAGER) LAGER_CAP else IN_CAP
+            // Nachbarn der GESAMTEN Grundflaeche (nicht nur der Anker-Zelle) - sonst
+            // waeren mehrzellige Gebaeude (Reaktorkern 2x2, Kuehlturm 2x3, ...) nur von
+            // einer Seite aus belieferbar.
+            val nbs = footprintNeighbors(r, cc, c.w, c.h)
             for (res in wants) {
                 var space = cap - target[res]
                 if (space <= 1e-9) continue
-                for (nb in neighbors(r, cc)) {
-                    val nm = grid[nb[0]][nb[1]] ?: continue
+                for (nb in nbs) {
+                    // Ueber anchorOf() aufloesen, damit auch mehrzellige LIEFERANTEN
+                    // erkannt werden, wenn die Nachbarzelle nicht deren Anker ist.
+                    val a = anchorOf(nb[0], nb[1]) ?: continue
+                    val nm = grid[a[0]][a[1]] ?: continue
                     if (!offers(nm.type, res)) continue
                     val avail = nm.output[res]
                     if (avail <= 1e-9) continue
