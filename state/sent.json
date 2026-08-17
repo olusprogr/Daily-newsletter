@@ -1,6 +1,15 @@
 {
   "items": [
     {
+      "link": "https://www.reuters.com/business/anthropic-ipo-valuation-hinges-190-200-billion-2028-revenue-forecast-sources-say-2026-08-15/",
+      "title": "Anthropic IPO valuation hinges on $190-200B 2028 revenue forecast",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-16T21:00:25+00:00",
+      "sent_at": "2026-08-17T03:45:56.534403+00:00"
+    },
+    {
       "link": "https://daringfireball.net/2026/08/anthropics_watermark_text_adulteration_in_claude_is_a_perversion_of_writing",
       "title": "Anthropic's 'Watermark' Text Adulteration in Claude Is a Perversion of Writing",
       "summary": "",
