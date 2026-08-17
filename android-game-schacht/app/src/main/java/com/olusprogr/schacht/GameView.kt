@@ -43,9 +43,12 @@ class GameView(context: Context) : View(context) {
 
     private var techScroll = 0f
     private var techMaxScroll = 0f
+    private var statScroll = 0f
+    private var statMaxScroll = 0f
     private var downX = 0f
     private var downY = 0f
     private var downScroll = 0f
+    private var downStatScroll = 0f
     private var moved = false
     private var downInGrid = false
 
@@ -513,9 +516,9 @@ class GameView(context: Context) : View(context) {
 
         // Reihe 2: Rohstoffe hell & kontrastreich
         pText.textSize = dp(14f)
-        drawIcon(canvas, Sprites.ICON_BARREN, dp(9f), dp(37f), dp(15f))
+        drawIcon(canvas, Sprites.iconForRes(Res.BARREN.ordinal, sim.companyLevel), dp(9f), dp(37f), dp(15f))
         pText.color = cValSilver; canvas.drawText(fmt(sim.availableBarren()), dp(28f), dp(47f), pText)
-        drawIcon(canvas, Sprites.ICON_PLATTE, dp(108f), dp(37f), dp(15f))
+        drawIcon(canvas, Sprites.iconForRes(Res.PLATTE.ordinal, sim.companyLevel), dp(108f), dp(37f), dp(15f))
         pText.color = cValCyan; canvas.drawText(fmt(sim.availablePlatten()), dp(127f), dp(47f), pText)
         drawIcon(canvas, if (sim.companyLevel >= 2) Sprites.ICON_STROM else Sprites.ICON_KOMP, dp(196f), dp(37f), dp(15f))
         pText.color = cValPurple
@@ -667,7 +670,7 @@ class GameView(context: Context) : View(context) {
                 val sy = vTop + pr * cell + half
                 val ex = vLeft + c * cell + half
                 val ey = vTop + r * cell + half
-                val icon = Sprites.iconForRes(res)
+                val icon = Sprites.iconForRes(res, sim.companyLevel)
                 val base = animT * 0.6f + (pr * 3 + pc + res) * 0.31f   // langsamer
                 val t = base % 1f
                 val cx = sx + (ex - sx) * t
@@ -1066,6 +1069,20 @@ class GameView(context: Context) : View(context) {
             }
         }
 
+        // Kuehlturm (2x3): aufsteigende Dampfwolke ueber der Muendung, animiert.
+        if (m.type == MType.KUEHLTURM) {
+            val tx = x + 1.0f * cell
+            val tyTop = topY + 0.5f * cell
+            for (k in 0 until 4) {
+                val ph = (animT * 0.4f + k * 0.25f) % 1f
+                val py = tyTop - ph * cell * 1.8f
+                val rad = cell * (0.16f + 0.22f * ph)
+                val al = (130 * (1f - ph)).toInt().coerceIn(0, 255)
+                p.color = Color.argb(al, 238, 242, 248)
+                canvas.drawCircle(tx + (k - 1.5f) * cell * 0.14f, py, rad, p)
+            }
+        }
+
         // Verschleiss: braun-roter Schleier bei niedrigem Zustand
         if (hasWear) {
             if (m.condition < 50) {
@@ -1357,17 +1374,21 @@ class GameView(context: Context) : View(context) {
         val gap = dp(6f)
         val startY = dp(66f)
         val bandBottom = H - dp(66f)
-        val content = Simulation.TECHS.size * (bh + gap)
+        // Nur Techs zeigen, die im aktuellen Unternehmens-Level ueberhaupt Sinn ergeben
+        // (z.B. keine "Presse freischalten" im Nuklear-Modus, nur "Bleipresse").
+        val techs = Simulation.TECHS.filter { sim.techVisible(it.id) }
+        val content = techs.size * (bh + gap)
         techMaxScroll = (content - (bandBottom - startY)).coerceAtLeast(0f)
         techScroll = techScroll.coerceIn(0f, techMaxScroll)
 
-        for ((i, node) in Simulation.TECHS.withIndex()) {
+        for ((i, node) in techs.withIndex()) {
             val yy = startY + i * (bh + gap) - techScroll
             if (yy + bh < startY || yy > bandBottom) continue
             val rect = RectF(dp(12f), yy, W - dp(12f), yy + bh)
             val l = sim.lvl(node.id)
             val maxed = l >= node.maxLevel
-            val preOk = node.prereq == null || sim.has(node.prereq)
+            val prereq = sim.prereqOf(node)
+            val preOk = prereq == null || sim.has(prereq)
             val cost = sim.techDisplayCost(node)
             val afford = sim.techAffordable(node)
             val nuclearPaid = sim.companyLevel >= 2 && node.costRes != null
@@ -1383,7 +1404,7 @@ class GameView(context: Context) : View(context) {
             val fx = techEffect(node.id)
             val sub = when {
                 maxed -> tr("maxed")
-                !preOk -> "${tr("requires")}: ${tr(node.prereq!!)}"
+                !preOk -> "${tr("requires")}: ${tr(prereq!!)}"
                 node.maxLevel > 1 -> "$fx  ·  ${tr("next")}: ${cost.toInt()} $cur"
                 else -> "${tr("cost")}: ${cost.toInt()} $cur" + (if (fx.isNotEmpty()) "  ·  $fx" else "")
             }
@@ -1425,13 +1446,23 @@ class GameView(context: Context) : View(context) {
         else -> ""
     }
 
+    /**
+     * Statistik + Einstellungen. Der Inhalt (Ressourcen, Produktion, Hinweise, Sprache,
+     * Ton) ist scrollbar zwischen einem festen Kopf (Titel) und Fuss (Hauptmenue,
+     * Reset, Schliessen) - so ueberlappt nichts mehr, egal wie viele Maschinentypen
+     * (Level 1 oder 2) in der Produktionsliste stehen.
+     */
     private fun drawStat(canvas: Canvas) {
         p.color = Color.argb(246, 58, 50, 42)
         canvas.drawRect(0f, 0f, W.toFloat(), H.toFloat(), p)
-        pText.color = cAccent; pText.textSize = dp(22f)
-        canvas.drawText(tr("stat_title"), dp(16f), dp(40f), pText)
-        pText.color = cText; pText.textSize = dp(15f)
-        var yy = dp(74f)
+
+        val margin = dp(12f)
+        val startY = dp(66f)
+        val footerH = dp(150f)
+        val bandBottom = H - footerH
+        fun visible(top: Float, h: Float) = top + h >= startY && top <= bandBottom
+
+        var yy = startY - statScroll
         val nuc = sim.companyLevel >= 2
         val lines = listOf(
             "${tr("s_money")}: ${fmt(sim.money)}   (+${fmt(sim.moneyPerMin)}/min)",
@@ -1443,12 +1474,15 @@ class GameView(context: Context) : View(context) {
             "${tr("s_machines")}: ${machineCount()}",
             "${tr("s_upgrades")}: ${sim.tech.values.sum()}"
         )
-        for (l in lines) { canvas.drawText(l, dp(16f), yy, pText); yy += dp(25f) }
+        pText.textSize = dp(15f)
+        for (l in lines) {
+            if (visible(yy - dp(15f), dp(25f))) { pText.color = cText; canvas.drawText(l, dp(16f), yy, pText) }
+            yy += dp(25f)
+        }
 
         // Produktions-Auslastung je Typ (geglaettet) + groesster Engpass
         yy += dp(6f)
-        pText.color = cAccent; pText.textSize = dp(16f)
-        canvas.drawText(tr("s_prod_title"), dp(16f), yy, pText)
+        if (visible(yy - dp(16f), dp(22f))) { pText.color = cAccent; pText.textSize = dp(16f); canvas.drawText(tr("s_prod_title"), dp(16f), yy, pText) }
         yy += dp(22f)
         val producers = if (nuc)
             listOf(MType.BOHRER, MType.BLEIBOHRER, MType.WASSERPUMPE, MType.ZENTRIFUGE, MType.BLEIPRESSE, MType.BRENNSTABWERK,
@@ -1459,57 +1493,68 @@ class GameView(context: Context) : View(context) {
             val i = t.ordinal
             val cnt = sim.typeCount[i]
             if (cnt == 0) continue
-            val u = sim.typeUtil[i].coerceIn(0.0, 1.0)
-            pText.color = cText
-            canvas.drawText("${mName(t)} x$cnt", dp(20f), yy + dp(11f), pText)
-            val barL = dp(150f); val barR = W - dp(70f); val barY = yy + dp(3f); val barH = dp(11f)
-            p.color = cGridLine
-            canvas.drawRect(barL, barY, barR, barY + barH, p)
-            p.color = when { u >= 0.66 -> cGood; u >= 0.33 -> cWarn; else -> cBad }
-            canvas.drawRect(barL, barY, barL + (barR - barL) * u.toFloat(), barY + barH, p)
-            pText.color = cDim; pText.textAlign = Paint.Align.RIGHT
-            canvas.drawText("${(u * 100).roundToInt()}%", W - dp(16f), yy + dp(11f), pText)
-            pText.textAlign = Paint.Align.LEFT
+            if (visible(yy - dp(11f), dp(20f))) {
+                val u = sim.typeUtil[i].coerceIn(0.0, 1.0)
+                pText.color = cText
+                canvas.drawText("${mName(t)} x$cnt", dp(20f), yy + dp(11f), pText)
+                val barL = dp(150f); val barR = W - dp(70f); val barY = yy + dp(3f); val barH = dp(11f)
+                p.color = cGridLine
+                canvas.drawRect(barL, barY, barR, barY + barH, p)
+                p.color = when { u >= 0.66 -> cGood; u >= 0.33 -> cWarn; else -> cBad }
+                canvas.drawRect(barL, barY, barL + (barR - barL) * u.toFloat(), barY + barH, p)
+                pText.color = cDim; pText.textAlign = Paint.Align.RIGHT
+                canvas.drawText("${(u * 100).roundToInt()}%", W - dp(16f), yy + dp(11f), pText)
+                pText.textAlign = Paint.Align.LEFT
+            }
             yy += dp(20f)
         }
         val bn = bottleneckSummary()
-        pText.color = cDim; pText.textSize = dp(13f)
         yy += dp(2f)
-        canvas.drawText("${tr("s_bottleneck")}: $bn", dp(16f), yy, pText)
+        if (visible(yy - dp(13f), dp(20f))) { pText.color = cDim; pText.textSize = dp(13f); canvas.drawText("${tr("s_bottleneck")}: $bn", dp(16f), yy, pText) }
 
         yy += dp(20f)
-        pText.color = cDim; pText.textSize = dp(12f)
-        canvas.drawText(tr("hint_floor"), dp(16f), yy, pText)
-        yy += dp(16f)
-        canvas.drawText(tr("hint_trade"), dp(16f), yy, pText)
-        yy += dp(16f)
-        canvas.drawText(tr("hint_unlock"), dp(16f), yy, pText)
+        pText.textSize = dp(12f)
+        for (hint in listOf(tr("hint_floor"), tr("hint_trade"), tr("hint_unlock"))) {
+            if (visible(yy - dp(12f), dp(16f))) { pText.color = cDim; canvas.drawText(hint, dp(16f), yy, pText) }
+            yy += dp(16f)
+        }
 
-        val margin = dp(12f)
         // Sprachauswahl DE / EN / PL
-        pText.color = cText; pText.textSize = dp(14f)
-        canvas.drawText("${tr("lang")}:", dp(16f), yy + dp(30f), pText)
+        yy += dp(20f)
+        if (visible(yy - dp(14f), dp(20f))) { pText.color = cText; pText.textSize = dp(14f); canvas.drawText("${tr("lang")}:", dp(16f), yy, pText) }
         val lw = (W - 2 * margin - dp(80f) - 2 * dp(6f)) / 3f
         val ly = yy + dp(16f); val lh = dp(34f)
         val langs = listOf(Lang.DE to "DE", Lang.EN to "EN", Lang.PL to "PL")
-        for ((i, lv) in langs.withIndex()) {
-            val lx = dp(80f) + margin + i * (lw + dp(6f))
-            val lr = RectF(lx, ly, lx + lw, ly + lh)
-            drawButton(canvas, Btn(lr, "lang_${lv.first.name}", lv.second, true, I18n.lang == lv.first, cAccent))
-            buttons.add(Btn(lr, "lang_${lv.first.name}", "lang"))
+        if (visible(ly, lh)) {
+            for ((i, lv) in langs.withIndex()) {
+                val lx = dp(80f) + margin + i * (lw + dp(6f))
+                val lr = RectF(lx, ly, lx + lw, ly + lh)
+                drawButton(canvas, Btn(lr, "lang_${lv.first.name}", lv.second, true, I18n.lang == lv.first, cAccent))
+                buttons.add(Btn(lr, "lang_${lv.first.name}", "lang"))
+            }
         }
 
         // Ton-Einstellungen: Musik + Effekte, je vier Stufen
         var sy = ly + lh + dp(12f)
-        sy = drawSoundRow(canvas, "snd_music", (audio.musicVol * 100).roundToInt(), "mvol", sy, margin)
-        sy = drawSoundRow(canvas, "snd_sfx", (audio.sfxVol * 100).roundToInt(), "svol", sy, margin)
+        sy = drawSoundRow(canvas, "snd_music", (audio.musicVol * 100).roundToInt(), "mvol", sy, margin, startY, bandBottom)
+        sy = drawSoundRow(canvas, "snd_sfx", (audio.sfxVol * 100).roundToInt(), "svol", sy, margin, startY, bandBottom)
+        yy = sy
 
-        // Hauptmenue
+        statMaxScroll = (yy + statScroll - bandBottom).coerceAtLeast(0f)
+        statScroll = statScroll.coerceIn(0f, statMaxScroll)
+
+        // Kopf- und Fussbereich ueberdecken (verdeckt gescrollten Inhalt sauber).
+        p.color = Color.argb(246, 58, 50, 42)
+        canvas.drawRect(0f, 0f, W.toFloat(), startY, p)
+        canvas.drawRect(0f, bandBottom, W.toFloat(), H.toFloat(), p)
+        pText.color = cAccent; pText.textSize = dp(22f)
+        canvas.drawText(tr("stat_title"), dp(16f), dp(40f), pText)
+
+        // Fester Fussbereich: Hauptmenue, Reset, Schliessen.
         val menuR = RectF(margin, H - dp(104f), W - margin, H - dp(104f) + dp(38f))
         drawButton(canvas, Btn(menuR, "to_menu", tr("to_menu"), true, false, cAccent))
         buttons.add(Btn(menuR, "to_menu", "menu"))
 
-        // Reset + Schliessen
         val by = H - dp(58f); val bh = dp(40f)
         val half = (W - 3 * margin) / 2f
         val rReset = RectF(margin, by, margin + half, by + bh)
@@ -1529,19 +1574,25 @@ class GameView(context: Context) : View(context) {
     }
 
     /** Eine Ton-Zeile (Label + 4 Stufen-Buttons); gibt das neue Y zurueck. */
-    private fun drawSoundRow(canvas: Canvas, labelKey: String, cur: Int, idPrefix: String, y: Float, margin: Float): Float {
-        pText.color = cText; pText.textSize = dp(14f); pText.textAlign = Paint.Align.LEFT
-        canvas.drawText(tr(labelKey), dp(16f), y + dp(2f), pText)
+    /** `bandTop`/`bandBottom`: nur zeichnen/anfassbar machen, wenn innerhalb des sichtbaren (gescrollten) Bereichs. */
+    private fun drawSoundRow(
+        canvas: Canvas, labelKey: String, cur: Int, idPrefix: String, y: Float, margin: Float,
+        bandTop: Float = -1e9f, bandBottom: Float = 1e9f
+    ): Float {
         val by = y + dp(8f); val bh = dp(34f)
-        val gap = dp(6f)
-        val bw = (W - 2 * margin - 3 * gap) / 4f
-        val lbls = listOf(tr("snd_off"), tr("snd_low"), tr("snd_mid"), tr("snd_high"))
-        val active = nearestLevel(cur)
-        for (i in 0 until 4) {
-            val bx = margin + i * (bw + gap)
-            val r = RectF(bx, by, bx + bw, by + bh)
-            drawButton(canvas, Btn(r, "${idPrefix}_${sndLevels[i]}", lbls[i], true, active == i, cAccent))
-            buttons.add(Btn(r, "${idPrefix}_${sndLevels[i]}", "snd"))
+        if (by + bh >= bandTop && y <= bandBottom) {
+            pText.color = cText; pText.textSize = dp(14f); pText.textAlign = Paint.Align.LEFT
+            canvas.drawText(tr(labelKey), dp(16f), y + dp(2f), pText)
+            val gap = dp(6f)
+            val bw = (W - 2 * margin - 3 * gap) / 4f
+            val lbls = listOf(tr("snd_off"), tr("snd_low"), tr("snd_mid"), tr("snd_high"))
+            val active = nearestLevel(cur)
+            for (i in 0 until 4) {
+                val bx = margin + i * (bw + gap)
+                val r = RectF(bx, by, bx + bw, by + bh)
+                drawButton(canvas, Btn(r, "${idPrefix}_${sndLevels[i]}", lbls[i], true, active == i, cAccent))
+                buttons.add(Btn(r, "${idPrefix}_${sndLevels[i]}", "snd"))
+            }
         }
         return by + bh + dp(12f)
     }
@@ -1841,7 +1892,7 @@ class GameView(context: Context) : View(context) {
         val slop = dp(8f)
         when (event.actionMasked) {
             MotionEvent.ACTION_DOWN -> {
-                downX = event.x; downY = event.y; downScroll = techScroll
+                downX = event.x; downY = event.y; downScroll = techScroll; downStatScroll = statScroll
                 lastPanX = panX; lastPanY = panY; moved = false
                 downInGrid = downX >= gridLeft && downX <= gridLeft + gridW &&
                     downY >= gridTop && downY <= gridTop + gridH
@@ -1858,6 +1909,10 @@ class GameView(context: Context) : View(context) {
                 // Karte-Scrollen laeuft ueber gestureDetector.onScroll.
                 if (screen == Screen.TECH) {
                     techScroll = (downScroll - (event.y - downY)).coerceIn(0f, techMaxScroll)
+                    invalidate()
+                }
+                if (screen == Screen.STAT) {
+                    statScroll = (downStatScroll - (event.y - downY)).coerceIn(0f, statMaxScroll)
                     invalidate()
                 }
                 return true
@@ -1895,7 +1950,7 @@ class GameView(context: Context) : View(context) {
     private fun handleButton(id: String) {
         when {
             id == "tech" -> { screen = if (screen == Screen.TECH) Screen.GAME else Screen.TECH; selR = -1; resetArmed = false; techScroll = 0f; audio.click() }
-            id == "stat" -> { screen = if (screen == Screen.STAT) Screen.GAME else Screen.STAT; selR = -1; resetArmed = false; audio.click() }
+            id == "stat" -> { screen = if (screen == Screen.STAT) Screen.GAME else Screen.STAT; selR = -1; resetArmed = false; statScroll = 0f; audio.click() }
             id == "close" -> { screen = Screen.GAME; report = null; resetArmed = false; sellArmed = false; audio.click() }
             id == "company" -> { screen = if (screen == Screen.COMPANY) Screen.GAME else Screen.COMPANY; selR = -1; sellArmed = false; audio.click() }
             id == "sell_company" -> {

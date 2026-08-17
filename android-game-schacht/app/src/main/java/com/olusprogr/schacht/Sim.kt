@@ -171,6 +171,8 @@ class Simulation {
             MType.WINDRAD -> Pair(1, 2)
             MType.REAKTOR -> Pair(3, 3)
             MType.FORSCHUNG -> Pair(2, 1)
+            MType.REAKTORKERN -> Pair(2, 2)
+            MType.KUEHLTURM -> Pair(2, 3)
             else -> Pair(1, 1)
         }
 
@@ -314,6 +316,19 @@ class Simulation {
             "t_brennstabwerk" to 0.15,
             "t_reaktorkern" to 0.25,
             "t_kuehlturm" to 0.3
+        )
+        // Techs, die nur bei companyLevel==1 Sinn ergeben (Gebaeude/Reaktor, die es ab
+        // Level 2 nicht mehr gibt) bzw. nur ab companyLevel>=2 (Kernkraft-Freischaltungen).
+        // Steuert, was im Tech-Baum je Level ueberhaupt angezeigt wird.
+        val LEVEL1_ONLY_TECHS = setOf("t_presse", "t_assembler", "t_ospeed", "t_pspeed", "t_aspeed", "t_power")
+        val LEVEL2_ONLY_TECHS = setOf("t_wasserpumpe", "t_zentrifuge", "t_bleipresse", "t_brennstabwerk", "t_reaktorkern", "t_kuehlturm")
+        // Ab Level 2 zeigen manche weiterhin genutzten Techs urspruenglich auf einen
+        // Level-1-only-Prereq ("Assembler freischalten") - hier durch eine erreichbare
+        // Kernkraft-Alternative ersetzt, sonst waeren sie fuer immer gesperrt.
+        val NUCLEAR_PREREQ_OVERRIDE = mapOf(
+            "t_haendler" to "t_zentrifuge",
+            "t_research" to "t_wasserpumpe",
+            "t_wert" to "t_haendler"
         )
     }
 
@@ -832,6 +847,23 @@ class Simulation {
     fun techDisplayCost(node: TechNode): Double =
         if (companyLevel >= 2 && node.costRes != null) techMoneyCost(node) else nextCost(node)
 
+    /**
+     * Ist diese Tech im aktuellen Unternehmens-Level ueberhaupt relevant? Level-1-Techs
+     * fuer Gebaeude, die es ab Level 2 nicht mehr gibt (Presse/Assembler/...), werden im
+     * Nuklear-Modus ausgeblendet - und umgekehrt die Kernkraft-Freischaltungen bei Level 1.
+     */
+    fun techVisible(id: String): Boolean =
+        if (companyLevel >= 2) id !in LEVEL1_ONLY_TECHS else id !in LEVEL2_ONLY_TECHS
+
+    /**
+     * Effektiver Prereq: ab Level 2 zeigen manche (weiterhin genutzte) Techs urspruenglich
+     * auf einen Level-1-only-Prereq (z.B. "Assembler freischalten", das es ab Level 2 nicht
+     * mehr gibt) - das wuerde sie fuer immer unerreichbar machen. Hier durch eine sinnvolle
+     * Kernkraft-Alternative ersetzt.
+     */
+    fun prereqOf(node: TechNode): String? =
+        if (companyLevel >= 2) (NUCLEAR_PREREQ_OVERRIDE[node.id] ?: node.prereq) else node.prereq
+
     fun techAffordable(node: TechNode): Boolean {
         if (companyLevel >= 2 && node.costRes != null) return money >= techMoneyCost(node)
         val cost = nextCost(node)
@@ -843,7 +875,8 @@ class Simulation {
         val node = TECHS.firstOrNull { it.id == id } ?: return false
         val l = lvl(id)
         if (l >= node.maxLevel) return false
-        if (node.prereq != null && !has(node.prereq)) return false
+        val prereq = prereqOf(node)
+        if (prereq != null && !has(prereq)) return false
         val ok = if (companyLevel >= 2 && node.costRes != null) {
             spendMoney(techMoneyCost(node))
         } else {

@@ -32,6 +32,13 @@ private val SM2 = 0x669A9A9A.toInt()  // Rauch hell ~0.4
 private val STEEL = 0xFFBCC2CC.toInt()
 private val BLUE = 0xFF68A8D8.toInt()
 private val BLUEL = 0xFFA9D6F2.toInt()
+// Level-2 (Kernkraft) Icon-Farben
+private val URN = 0xFF8FCB3E.toInt()    // Uran-Gruen (Basis)
+private val URNL = 0xFFD4F27A.toInt()   // Uran-Gruen hell (Glut)
+private val PBC = 0xFF5C6270.toInt()    // Blei (dunkles Blaugrau)
+private val PBL = 0xFF9AA2B4.toInt()    // Blei hell
+private val STM = 0xFFE8ECF2.toInt()    // Dampf hell
+private val STMD = 0xFFC4CCD8.toInt()   // Dampf dunkler
 
 object Sprites {
 
@@ -361,11 +368,53 @@ object Sprites {
         Px(3, 6, 6, 2, RUSTB),
         Px(4, 4, 2, 1, ORG), Px(6, 5, 1, 1, YEL), Px(5, 6, 1, 1, YEL)
     )
+    // --- Level-2-Icons (Kernkraft): fuer jede Zwischenstufe ein eigenes, klar
+    // unterscheidbares Icon, damit Fluss-Animation und Kopfzeile nie den generischen
+    // Level-1-Look (Eisen/Stahl) fuer Uran/Blei/Dampf/Strom wiederverwenden.
+    val ICON_URANERZ = listOf(
+        Px(4, 2, 4, 1, OUT), Px(3, 3, 6, 1, OUT),
+        Px(2, 4, 1, 4, OUT), Px(9, 4, 1, 4, OUT),
+        Px(3, 8, 6, 1, OUT),
+        Px(3, 4, 6, 4, RUSTB),
+        Px(3, 6, 6, 2, RUSTL),
+        Px(4, 4, 2, 1, URN), Px(6, 5, 1, 1, URNL), Px(5, 6, 1, 1, URNL)
+    )
+    val ICON_BLEI = listOf(
+        Px(2, 5, 8, 1, OUT), Px(1, 6, 10, 4, OUT),
+        Px(3, 5, 6, 1, MHI),
+        Px(2, 6, 8, 3, PBC), Px(2, 6, 8, 1, PBL), Px(2, 8, 8, 1, MDK)
+    )
+    val ICON_WASSER = listOf(
+        Px(5, 1, 2, 1, OUT), Px(4, 2, 4, 1, OUT), Px(3, 3, 1, 1, OUT), Px(8, 3, 1, 1, OUT),
+        Px(2, 4, 1, 4, OUT), Px(9, 4, 1, 4, OUT),
+        Px(2, 8, 8, 1, OUT), Px(3, 9, 6, 1, OUT),
+        Px(5, 2, 2, 1, BLUEL), Px(4, 3, 4, 1, BLUE),
+        Px(3, 4, 6, 4, BLUE), Px(3, 8, 6, 1, BLUE), Px(4, 9, 4, 1, BLUE),
+        Px(5, 5, 2, 2, BLUEL)
+    )
+    val ICON_ANGERURAN = listOf(
+        Px(2, 4, 8, 1, OUT), Px(1, 5, 10, 4, OUT),
+        Px(3, 4, 5, 1, URNL),
+        Px(2, 5, 8, 3, RUSTB), Px(2, 5, 8, 1, URN), Px(2, 7, 8, 1, MDK)
+    )
+    val ICON_BLEIVERKL = listOf(
+        Px(1, 4, 10, 1, OUT), Px(1, 5, 10, 4, OUT),
+        Px(2, 4, 8, 1, MHI), Px(2, 5, 8, 3, PBC), Px(2, 5, 8, 1, PBL)
+    )
+    val ICON_DAMPF = listOf(
+        Px(3, 2, 1, 1, STMD), Px(5, 1, 1, 1, STMD),
+        Px(4, 4, 2, 2, STMD), Px(6, 3, 2, 2, STMD), Px(8, 4, 1, 1, STMD),
+        Px(3, 7, 2, 2, STM), Px(5, 8, 2, 2, STM), Px(7, 6, 2, 2, STM)
+    )
 
-    fun iconForRes(res: Int): List<Px> = when (res) {
-        Res.ROHERZ.ordinal -> ICON_ROHERZ
-        Res.BARREN.ordinal -> ICON_BARREN
-        Res.PLATTE.ordinal -> ICON_PLATTE
+    fun iconForRes(res: Int, level: Int = 1): List<Px> = when (res) {
+        Res.ROHERZ.ordinal -> if (level >= 2) ICON_URANERZ else ICON_ROHERZ
+        Res.BARREN.ordinal -> if (level >= 2) ICON_ANGERURAN else ICON_BARREN
+        Res.PLATTE.ordinal -> if (level >= 2) ICON_BLEIVERKL else ICON_PLATTE
+        Res.WASSER.ordinal -> ICON_WASSER
+        Res.BLEI.ordinal -> ICON_BLEI
+        Res.DAMPF.ordinal -> ICON_DAMPF
+        Res.STROM.ordinal -> ICON_STROM
         else -> ICON_KOMP
     }
 

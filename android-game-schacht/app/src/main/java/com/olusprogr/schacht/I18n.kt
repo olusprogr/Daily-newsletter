@@ -9,7 +9,7 @@ object I18n {
     fun t(k: String): String = M[lang]?.get(k) ?: EN[k] ?: k
 
     private val DE = mapOf(
-        "tech" to "Tech", "stat" to "Statistik", "close" to "Schliessen", "continue" to "Weiterspielen",
+        "tech" to "Tech", "stat" to "Einstellungen", "close" to "Schliessen", "continue" to "Weiterspielen",
         "m_uranbohrer" to "Uranbohrer", "ms_uranbohrer" to "Uranbohrer",
         "m_bleibohrer" to "Tiefen-Bohrer", "ms_bleibohrer" to "Tiefenb.",
         "m_wasserpumpe" to "Wasserpumpe", "ms_wasserpumpe" to "Pumpe",
@@ -51,7 +51,7 @@ object I18n {
         "techtree" to "Tech-Baum", "tech_hint" to "wischen zum Scrollen", "maxed" to "voll ausgebaut",
         "requires" to "benoetigt", "cost" to "Kosten", "next" to "naechste", "level" to "Stufe",
         "tech_needed" to "Tech noetig",
-        "stat_title" to "Statistik", "s_money" to "Geld", "s_barren" to "Barren (inkl.Lager)",
+        "stat_title" to "Einstellungen", "s_money" to "Geld", "s_barren" to "Barren (inkl.Lager)",
         "s_platten" to "Platten (inkl.Lager)", "s_komp" to "Komponenten", "s_strom" to "Strom",
         "s_area" to "Sektor-Flaeche", "s_machines" to "Maschinen gebaut", "s_upgrades" to "Upgrade-Stufen",
         "hint_floor" to "Boden: grau=leer, braun=normal, gruen=moderat, gold=reich.",
@@ -98,7 +98,7 @@ object I18n {
     )
 
     private val EN = mapOf(
-        "tech" to "Tech", "stat" to "Stats", "close" to "Close", "continue" to "Continue",
+        "tech" to "Tech", "stat" to "Settings", "close" to "Close", "continue" to "Continue",
         "m_uranbohrer" to "Uranium drill", "ms_uranbohrer" to "U-Drill",
         "m_bleibohrer" to "Deep drill", "ms_bleibohrer" to "Deep dr.",
         "m_wasserpumpe" to "Water pump", "ms_wasserpumpe" to "Pump",
@@ -140,7 +140,7 @@ object I18n {
         "techtree" to "Tech tree", "tech_hint" to "swipe to scroll", "maxed" to "maxed out",
         "requires" to "requires", "cost" to "Cost", "next" to "next", "level" to "Level",
         "tech_needed" to "Tech needed",
-        "stat_title" to "Statistics", "s_money" to "Money", "s_barren" to "Ingots (incl.storage)",
+        "stat_title" to "Settings", "s_money" to "Money", "s_barren" to "Ingots (incl.storage)",
         "s_platten" to "Plates (incl.storage)", "s_komp" to "Components", "s_strom" to "Power",
         "s_area" to "Sector area", "s_machines" to "Machines built", "s_upgrades" to "Upgrade levels",
         "hint_floor" to "Floor: grey=empty, brown=normal, green=moderate, gold=rich.",
@@ -187,7 +187,7 @@ object I18n {
     )
 
     private val PL = mapOf(
-        "tech" to "Tech", "stat" to "Statystyki", "close" to "Zamknij", "continue" to "Graj dalej",
+        "tech" to "Tech", "stat" to "Ustawienia", "close" to "Zamknij", "continue" to "Graj dalej",
         "m_uranbohrer" to "Wiertlo uranowe", "ms_uranbohrer" to "U-Wiertlo",
         "m_bleibohrer" to "Wiertlo glebokie", "ms_bleibohrer" to "Gleb.",
         "m_wasserpumpe" to "Pompa wody", "ms_wasserpumpe" to "Pompa",
@@ -229,7 +229,7 @@ object I18n {
         "techtree" to "Drzewko tech", "tech_hint" to "przesun by przewinac", "maxed" to "maksimum",
         "requires" to "wymaga", "cost" to "Koszt", "next" to "nastepny", "level" to "Poziom",
         "tech_needed" to "Wymaga tech",
-        "stat_title" to "Statystyki", "s_money" to "Pieniadze", "s_barren" to "Sztaby (z magaz.)",
+        "stat_title" to "Ustawienia", "s_money" to "Pieniadze", "s_barren" to "Sztaby (z magaz.)",
         "s_platten" to "Plyty (z magaz.)", "s_komp" to "Komponenty", "s_strom" to "Prad",
         "s_area" to "Teren sektora", "s_machines" to "Zbud. maszyn", "s_upgrades" to "Poziomy ulepszen",
         "hint_floor" to "Podloze: szary=pusty, braz=zwykly, ziel=sredni, zloto=bogaty.",
