@@ -1,6 +1,69 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/tech-industry/photonics/ai-data-center-optical-interconnect-market-to-hit-usd144-billion-by-2030-an-over-ten-fold-increase-from-2024-figures-according-to-new-projections-silicon-photonics-expected-to-account-for-nearly-two-thirds-of-revenue-driven-by-co-packaged-optics",
+      "title": "AI data center optical interconnect market to hit $144 billion by 2030, an over ten-fold increase from 2024 figures, according to new projections — silicon photonics expected to account for nearly two-thirds of revenue, driven by co-packaged optics",
+      "summary": "A new CIC forecast projects that the data center optical interconnect market will grow from $13.7 billion in 2024 to $144.4 billion by 2030, with silicon photonics accounting for 63.7% of revenue.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-08-17T11:20:00+00:00",
+      "sent_at": "2026-08-17T11:28:54.887565+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/970021/how-to-take-better-pet-photos",
+      "title": "How to take better photos of your pets",
+      "summary": "Like the pets of any self-respecting millennial, my cats have their own Instagram account. Noodle and Loaf - aka Carb Cats - aren't exactly celebrities. But they are used to having their photos taken a lot. Between their Instagram account, my regular need to test smartphone cameras, and the fact that they are two adorable [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-08-17T11:00:00+00:00",
+      "sent_at": "2026-08-17T11:28:54.887565+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/978323/whisker-litter-robot-5-pro-review",
+      "title": "Whisker’s AI-powered litter robot thinks my cats swapped bodies",
+      "summary": "The greatest invention in pet tech in recent years is the litter robot. A machine that scoops your kitties' poop so you don't have to - what else could a cat owner possibly want? How about insights into your kitty's litter box usage that could flag health issues? Sign me up. But I have two [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-08-17T11:00:00+00:00",
+      "sent_at": "2026-08-17T11:28:54.887565+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/pc-partner-warns-of-rising-gpu-prices-and-budget-card-shortages-analyst-suggests-makers-are-hiking-prices-beyond-memory-costs",
+      "title": "PC Partner warns of rising GPU prices and budget card shortages — analyst suggests makers are hiking prices beyond memory costs",
+      "summary": "PC Partner warns that graphics card prices will rise further in H2 2026 as memory costs climb and supplies tighten and entry-level boards will gain the most. This is how they gain money, says Jon Peddie.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-08-17T11:00:00+00:00",
+      "sent_at": "2026-08-17T11:28:54.887565+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/980869/anthropic-claude-watermarks-synthid-text-system",
+      "title": "Anthropic explains how Claude&#8217;s invisible text watermarks will work",
+      "summary": "Anthropic has clarified how it's planning to apply invisible watermarks to Claude-generated text in order to comply with Europe's AI transparency rules. On Friday, Anthropic announced that Claude's text marking system is \"a version of the SynthID-Text approach\" - an open-source watermarking technology developed by Google DeepMind that creates detectable patterns using wording probabilities. This [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-08-17T10:57:13+00:00",
+      "sent_at": "2026-08-17T11:28:54.887565+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/desktops/gaming-pcs/get-an-rtx-5090-alienware-pc-for-less-than-the-price-of-the-gpu-alone-usd1-550-discount-means-area-51-is-usd20-cheaper-than-buying-the-card-by-itself",
+      "title": "Get an RTX 5090 Alienware PC for less than the price of the GPU alone — $1,550 discount means Area-51 is $20 cheaper than buying the card by itself",
+      "summary": "Get an RTX 5090 Alienware gaming PC for less than the standalone cost of the GPU.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-08-17T10:55:01+00:00",
+      "sent_at": "2026-08-17T11:28:54.887565+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/gpus/japanese-repair-shop-sells-gddr6-vram-upgrades-for-usd25-per-gb-during-memory-crisis-rtx-2080-ti-modded-to-22gb-for-just-usd282-double-the-vram-creates-a-budget-ai-powerhouse",
+      "title": "Japanese repair shop sells GDDR6 VRAM upgrades for $25 per GB during memory crisis — RTX 2080 Ti modded to 22GB for just $282, double the VRAM creates a budget AI powerhouse",
+      "summary": "This vendor can upgrade your RTX 2080 Ti to feature 22GB of VRAM for less than $300, converting it into an AI powerhouse without breaking the bank.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-08-17T10:30:00+00:00",
+      "sent_at": "2026-08-17T11:28:54.887565+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/3d-printing/desktop-uv-printers-and-wild-custom-builds-take-over-open-sauce-2026-usd1-700-full-color-printers-flash-cured-resin-and-a-rideable-speeder-bike",
       "title": "Desktop UV printers and wild custom builds take over Open Sauce 2026 — $1,700 full-color printers, flash-cured resin, and a rideable speeder bike",
       "summary": "If you want to see the bleeding edge of 3D printing tech, you go to FormNext in Frankfurt, Germany. If you want to see the latest in consumer electronics, you go to CES in Las Vegas. If you want to see what it’s like to microwave your own head, you go to Open Sauce in San Mateo, California.",
