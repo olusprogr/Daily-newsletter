@@ -1,6 +1,33 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/alibaba-sells-its-gaming-studio-for-at-least-1-5-billion-to-help-fund-ai-buildout",
+      "title": "Alibaba is selling its gaming studio for at least $1.5 billion to help fund AI buildout, mirroring Micron's exit from consumer business — dumps entire stake in Lingxi Games, which made 'Three Kingdoms: Strategy Edition'",
+      "summary": "Alibaba has agreed to sell its game development unit, Lingxi Games, to Asian private equity firm Trustar Capital, according to an internal staff memo.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-08-17T15:39:28+00:00",
+      "sent_at": "2026-08-17T15:48:50.913826+00:00"
+    },
+    {
+      "link": "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug",
+      "title": "AI-Generated GitHub Copilot \"Autofix\" Allowed Compromise of Snowflake's Jira",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-17T14:18:38+00:00",
+      "sent_at": "2026-08-17T15:48:50.913826+00:00"
+    },
+    {
+      "link": "https://www.librarian.net/notoai/",
+      "title": "How to disable or avoid intrusive AI",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-17T14:07:56+00:00",
+      "sent_at": "2026-08-17T15:48:50.913826+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/08/17/nvidia-investing-1-5b-in-softbank-data-center-developer-behind-openai-project/",
       "title": "Nvidia investing $1.5B in SoftBank data center developer behind OpenAI project",
       "summary": "Nvidia's investment in SoftBank's data center developer will guarantee its chips power an OpenAI data center.",
