@@ -1,6 +1,33 @@
 {
   "items": [
     {
+      "link": "https://speko.ai/",
+      "title": "Launch HN: Speko (YC S26) – OpenRouter for Voice AI",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-17T15:36:18+00:00",
+      "sent_at": "2026-08-17T17:54:56.991519+00:00"
+    },
+    {
+      "link": "https://twitter.com/TheAhmadOsman/status/2065307070044234186",
+      "title": "Anthropic's War on open source AI",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-17T15:24:34+00:00",
+      "sent_at": "2026-08-17T17:54:56.991519+00:00"
+    },
+    {
+      "link": "https://reason.com/volokh/2026/08/17/judges-allegedly-relying-wholly-on-ai-in-order-is-covered-by-judicial-immunity-court-rules/",
+      "title": "Judge relying wholly on AI in order is covered by judicial immunity, court rules",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-17T14:30:09+00:00",
+      "sent_at": "2026-08-17T17:54:56.991519+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/tech-industry/cyber-security/geekom-admits-to-shipping-malware-laced-network-drivers-for-amd-mini-pcs-company-responds-with-guidance-removes-malicious-package",
       "title": "Geekom admits to shipping malware-laced network drivers for AMD mini PCs — company responds with guidance, removes malicious package",
       "summary": "Geekom admits to shipping malware-laced network drivers for AMD mini-PCs — maker requests takedown of report on the situation",
