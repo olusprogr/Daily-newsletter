@@ -1,6 +1,24 @@
 {
   "items": [
     {
+      "link": "https://blog.roboflow.com/openai-gpt-5-6/",
+      "title": "GPT 5.6 Sol is the best \"vision\" model OpenAI ever released",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-17T12:09:42+00:00",
+      "sent_at": "2026-08-17T13:36:40.882077+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/space/2026/08/theres-a-huge-launch-crunch-right-now-and-it-will-probably-get-worse/",
+      "title": "Satellite operators are in panic mode due to a worsening launch crisis",
+      "summary": "What happens if the Falcon rockets stop flying?",
+      "source": "Ars Technica",
+      "category": "Innovationen",
+      "published": "2026-08-17T11:00:26+00:00",
+      "sent_at": "2026-08-17T13:36:40.882077+00:00"
+    },
+    {
       "link": "https://www.technologyreview.com/2026/08/17/1142175/the-download-dead-robot-friends-censorship-industrial-complex/",
       "title": "The Download: dead robot friends and the “censorship-industrial complex”",
       "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. What happens when a kid’s robot best friend dies? When Xander first met Moxie, she taught him how to calm down when he was anxious or mad. Six years later, she&#8230;",
