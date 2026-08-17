@@ -101,6 +101,8 @@ class Simulation {
     var dividends = 0.0              // passives Einkommen/s aus verkauften Firmen
     // Level-2-Plattform (bereits errichtet, gelb-schwarzer Rand, metallischer Kern).
     var platformR0 = -1; var platformC0 = -1; var platformR1 = -1; var platformC1 = -1
+    // Oel-Bohrinsel (3x3, dekorativ): Spoiler fuers naechste Level (Petrochemie).
+    var oilRigR0 = -1; var oilRigC0 = -1; var oilRigR1 = -1; var oilRigC1 = -1
     var mapSeed = 12345L
     val tech = HashMap<String, Int>()
 
@@ -346,6 +348,7 @@ class Simulation {
         tech.clear()
         companyLevel = 1; shares = 0.0; dividends = 0.0
         placePlatform()
+        placeOilRig()
         placeReactor()
     }
 
@@ -676,6 +679,38 @@ class Simulation {
     fun isPlatformEdge(r: Int, c: Int): Boolean =
         isPlatform(r, c) && (r == platformR0 || r == platformR1 || c == platformC0 || c == platformC1)
 
+    fun hasOilRig(): Boolean = oilRigR0 >= 0
+    fun isOilRig(r: Int, c: Int): Boolean =
+        hasOilRig() && r in oilRigR0..oilRigR1 && c in oilRigC0..oilRigC1
+
+    /**
+     * Oel-Bohrinsel (3x3, rein dekorativ): ein "Spoiler" fuers naechste Unternehmens-
+     * Level (Petrochemie/Oel-Raffinerie) - genau wie der Level-1-Reaktor schon vor dem
+     * Kernkraft-Level zu sehen war. Steht auf offenem Wasser, in Sichtweite der
+     * Plattform aber nicht direkt angrenzend. Rein visuell, keine Bau-/Spielmechanik.
+     */
+    private fun placeOilRig() {
+        oilRigR0 = -1; oilRigC0 = -1; oilRigR1 = -1; oilRigC1 = -1
+        if (companyLevel != 2 || !hasPlatform()) return
+        val size = 3
+        val pr = (platformR0 + platformR1) / 2; val pc = (platformC0 + platformC1) / 2
+        var bestR = -1; var bestC = -1; var bestScore = Int.MAX_VALUE
+        for (R in 0..n - size) for (C in 0..n - size) {
+            var allWater = true
+            for (dr in 0 until size) for (dc in 0 until size) if (!rawWater(R + dr, C + dc)) allWater = false
+            if (!allWater) continue
+            val cr = R + size / 2; val cc = C + size / 2
+            val dist = kotlin.math.abs(cr - pr) + kotlin.math.abs(cc - pc)
+            if (dist < 9 || dist > 20) continue   // nicht direkt an der Plattform, aber auch nicht zu weit weg
+            val score = kotlin.math.abs(dist - 13)
+            if (score < bestScore) { bestScore = score; bestR = R; bestC = C }
+        }
+        if (bestR < 0) return   // kein passender Wasserfleck gefunden -> einfach weglassen
+        oilRigR0 = bestR; oilRigC0 = bestC
+        oilRigR1 = bestR + size - 1; oilRigC1 = bestC + size - 1
+        for (r in oilRigR0..oilRigR1) for (c in oilRigC0..oilRigC1) surveyed[r * n + c] = true
+    }
+
     /**
      * Level-2-Plattform: ein bereits errichtetes, grosses Baufeld nahe einer
      * Wasserquelle, moeglichst zentral auf der Karte. Wird nur fuer companyLevel==2
@@ -749,6 +784,7 @@ class Simulation {
         mapSeed = System.nanoTime() xor 0x5DEECE66DL
         tech.clear()
         placePlatform()
+        placeOilRig()
         // Der fertig gebaute Reaktor gibt es nur beim ersten (Bergbau-)Unternehmen.
         // Ab Level 2 baut man sein eigenes Kraftwerk (Reaktorkern + Kuehlturm) selbst.
         if (companyLevel == 1) placeReactor() else reactorPipe.clear()
@@ -1496,6 +1532,9 @@ class Simulation {
         if (hasPlatform()) {
             root.put("plat", JSONArray().put(platformR0).put(platformC0).put(platformR1).put(platformC1))
         }
+        if (hasOilRig()) {
+            root.put("orig", JSONArray().put(oilRigR0).put(oilRigC0).put(oilRigR1).put(oilRigC1))
+        }
         root.put("seed", mapSeed)
         val techObj = JSONObject()
         for ((k, v) in tech) techObj.put(k, v)
@@ -1548,6 +1587,16 @@ class Simulation {
             placePlatform()   // Alt-Speicherstand ohne Plattform-Daten, aber schon Level 2
         } else {
             platformR0 = -1; platformC0 = -1; platformR1 = -1; platformC1 = -1
+        }
+        // Oel-Bohrinsel (dekorativ) laden bzw. bei Alt-Speicherstaenden nachtraeglich setzen.
+        val orig = root.optJSONArray("orig")
+        if (orig != null && orig.length() == 4) {
+            oilRigR0 = orig.optInt(0, -1); oilRigC0 = orig.optInt(1, -1)
+            oilRigR1 = orig.optInt(2, -1); oilRigC1 = orig.optInt(3, -1)
+        } else if (companyLevel == 2 && hasPlatform()) {
+            placeOilRig()
+        } else {
+            oilRigR0 = -1; oilRigC0 = -1; oilRigR1 = -1; oilRigC1 = -1
         }
         tech.clear()
         val tv = root.opt("tech")

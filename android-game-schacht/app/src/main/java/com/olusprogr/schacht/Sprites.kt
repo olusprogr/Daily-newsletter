@@ -407,10 +407,18 @@ object Sprites {
         Px(3, 7, 2, 2, STM), Px(5, 8, 2, 2, STM), Px(7, 6, 2, 2, STM)
     )
 
+    // Brennstabsatz (Level-2-KOMPONENTE, Brennstabwerk -> Reaktorkern): Buendel aus
+    // Staeben mit gelbem Haltering, statt des generischen Level-1-Komponenten-Symbols.
+    val ICON_BRENNSTAB = listOf(
+        Px(3, 3, 1, 7, PBL), Px(5, 3, 1, 7, MHI), Px(7, 3, 1, 7, PBL), Px(9, 3, 1, 7, MHI),
+        Px(2, 2, 9, 1, YEL), Px(2, 5, 9, 1, YEL), Px(2, 2, 1, 4, YEL), Px(10, 2, 1, 4, YEL)
+    )
+
     fun iconForRes(res: Int, level: Int = 1): List<Px> = when (res) {
         Res.ROHERZ.ordinal -> if (level >= 2) ICON_URANERZ else ICON_ROHERZ
         Res.BARREN.ordinal -> if (level >= 2) ICON_ANGERURAN else ICON_BARREN
         Res.PLATTE.ordinal -> if (level >= 2) ICON_BLEIVERKL else ICON_PLATTE
+        Res.KOMPONENTE.ordinal -> if (level >= 2) ICON_BRENNSTAB else ICON_KOMP
         Res.WASSER.ordinal -> ICON_WASSER
         Res.BLEI.ordinal -> ICON_BLEI
         Res.DAMPF.ordinal -> ICON_DAMPF

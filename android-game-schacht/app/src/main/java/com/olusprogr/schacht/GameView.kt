@@ -157,6 +157,7 @@ class GameView(context: Context) : View(context) {
     private lateinit var decoLeafs: Array<Bitmap>
     private lateinit var decoRock: Bitmap
     private lateinit var decoBush: Bitmap
+    private lateinit var bmpOilRig: Bitmap        // 192x192, 3x3 dekorative Oel-Bohrinsel
     private lateinit var machBmp: Array<Bitmap>   // 64x64 Maschinen-Sprites
     private val decoDst = RectF()
     private val pText = Paint(Paint.ANTI_ALIAS_FLAG).apply { color = cText; textAlign = Paint.Align.LEFT }
@@ -326,6 +327,7 @@ class GameView(context: Context) : View(context) {
         decoLeafs = arrayOf(ld(R.drawable.deco_leaf1), ld(R.drawable.deco_leaf2))
         decoRock = ld(R.drawable.deco_rock)
         decoBush = ld(R.drawable.deco_bush)
+        bmpOilRig = ld(R.drawable.deco_oilrig)
         machBmp = Array(MType.values().size) { i ->
             ld(when (MType.values()[i]) {
                 MType.BOHRER -> R.drawable.mach_bohrer
@@ -602,6 +604,7 @@ class GameView(context: Context) : View(context) {
         for (r in r0..r1) for (c in c0..c1) {
             drawGround(canvas, r, c, vLeft + c * cell, vTop + r * cell)
         }
+        drawOilRig(canvas)
         // Kuehlschlauch (unter den Maschinen)
         if (screen == Screen.GAME) drawHose(canvas)
         // Pass 2: Maschinen (Rand erweitern: Gebaeude ragen bis 2 Zellen nach oben/rechts)
@@ -625,6 +628,20 @@ class GameView(context: Context) : View(context) {
         canvas.restore()
     }
 
+    /**
+     * Oel-Bohrinsel (3x3, rein dekorativ): steht auf offenem Wasser, kein Machine-
+     * Objekt, keine Interaktion - nur ein "Spoiler" fuers naechste Unternehmens-Level.
+     */
+    private fun drawOilRig(canvas: Canvas) {
+        if (!sim.hasOilRig()) return
+        val x = vLeft + sim.oilRigC0 * cell
+        val y = vTop + sim.oilRigR0 * cell
+        val w = (sim.oilRigC1 - sim.oilRigC0 + 1) * cell
+        val h = (sim.oilRigR1 - sim.oilRigR0 + 1) * cell
+        dstTile.set(x, y, x + w, y + h)
+        canvas.drawBitmap(bmpOilRig, null, dstTile, pTile)
+    }
+
     // Welchen Rohstoff gibt ein Produzent aus / will ein Verbraucher.
     private fun offersRes(t: MType): Int = when (t) {
         MType.BOHRER -> Res.ROHERZ.ordinal
@@ -640,16 +657,19 @@ class GameView(context: Context) : View(context) {
         MType.KUEHLTURM -> Res.STROM.ordinal
         else -> -1
     }
-    private fun wantsRes(t: MType): Int = when (t) {
-        MType.OFEN, MType.GENERATOR -> Res.ROHERZ.ordinal
-        MType.PRESSE -> Res.BARREN.ordinal
-        MType.ASSEMBLER -> Res.PLATTE.ordinal
-        MType.ZENTRIFUGE -> Res.ROHERZ.ordinal
-        MType.BLEIPRESSE -> Res.BLEI.ordinal
-        MType.BRENNSTABWERK -> Res.BARREN.ordinal
-        MType.REAKTORKERN -> Res.KOMPONENTE.ordinal
-        MType.KUEHLTURM -> Res.DAMPF.ordinal
-        else -> -1
+    // IntArray statt Einzelwert: manche Maschinen wollen ZWEI Rohstoffe gleichzeitig
+    // (Zentrifuge: Uranerz+Wasser; Brennstabwerk: Angereichertes Uran+Blei-Verkleidung) -
+    // mit nur einem Rueckgabewert wurde die zweite Zulieferung nie als Fluss angezeigt.
+    private fun wantsRes(t: MType): IntArray = when (t) {
+        MType.OFEN, MType.GENERATOR -> intArrayOf(Res.ROHERZ.ordinal)
+        MType.PRESSE -> intArrayOf(Res.BARREN.ordinal)
+        MType.ASSEMBLER -> intArrayOf(Res.PLATTE.ordinal)
+        MType.ZENTRIFUGE -> intArrayOf(Res.ROHERZ.ordinal, Res.WASSER.ordinal)
+        MType.BLEIPRESSE -> intArrayOf(Res.BLEI.ordinal)
+        MType.BRENNSTABWERK -> intArrayOf(Res.BARREN.ordinal, Res.PLATTE.ordinal)
+        MType.REAKTORKERN -> intArrayOf(Res.KOMPONENTE.ordinal)
+        MType.KUEHLTURM -> intArrayOf(Res.DAMPF.ordinal)
+        else -> IntArray(0)
     }
 
     /**
@@ -664,8 +684,8 @@ class GameView(context: Context) : View(context) {
         for (r in 0 until an) for (c in 0 until an) {
             val cm = sim.grid[r][c] ?: continue
             val isLager = cm.type == MType.LAGER
-            val want = wantsRes(cm.type)
-            if (want < 0 && !isLager) continue
+            val wants = wantsRes(cm.type)
+            if (wants.isEmpty() && !isLager) continue
             // Kanten der GESAMTEN Grundflaeche (nicht nur der Anker-Zelle) - sonst
             // zeigt ein 2x2/2x3-Gebaeude (Reaktorkern, Kuehlturm) nur an einer Seite
             // einen Materialfluss an.
@@ -681,8 +701,8 @@ class GameView(context: Context) : View(context) {
                 val pm = sim.grid[pa[0]][pa[1]] ?: continue
                 val off = offersRes(pm.type)
                 if (off < 0) continue
-                val res = if (isLager) off else want
-                if (!isLager && off != want) continue
+                if (!isLager && off !in wants) continue
+                val res = off
                 // nur zeichnen, wenn tatsaechlich Material fliesst
                 val consuming = if (isLager) pm.output[res] > 0.3 else cm.util > 0.03
                 val producing = pm.util > 0.03 || pm.output[res] > 0.2
