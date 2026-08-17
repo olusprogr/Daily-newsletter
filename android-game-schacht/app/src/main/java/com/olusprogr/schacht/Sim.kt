@@ -8,7 +8,7 @@ import org.json.JSONArray
 import org.json.JSONObject
 
 /** Rohstoffe. Tier 1-3: Roherz -> Barren -> Platte -> Komponente. */
-enum class Res { ROHERZ, BARREN, PLATTE, KOMPONENTE, WASSER, BLEI }
+enum class Res { ROHERZ, BARREN, PLATTE, KOMPONENTE, WASSER, BLEI, DAMPF, STROM }
 
 // Reihenfolge = Save-Ordinal. Neue Typen ans ENDE anhaengen (Save-Kompatibilitaet).
 enum class MType(val label: String, val sym: String, val power: Double) {
@@ -30,7 +30,9 @@ enum class MType(val label: String, val sym: String, val power: Double) {
     WASSERPUMPE("Wasserpumpe", "Aq", 3.0),
     ZENTRIFUGE("Zentrifuge", "Zf", 9.0),
     BLEIPRESSE("Bleipresse", "Bp", 8.0),
-    BRENNSTABWERK("Brennstabwerk", "Bw", 11.0)
+    BRENNSTABWERK("Brennstabwerk", "Bw", 11.0),
+    REAKTORKERN("Reaktorkern", "Rk", 12.0),
+    KUEHLTURM("Kuehlturm", "Kt", 10.0)
 }
 
 class Machine(var type: MType) {
@@ -90,6 +92,7 @@ class Simulation {
     var globalBarren = 0.0
     var globalPlatten = 0.0
     var globalKomponente = 0.0
+    var globalStrom = 0.0     // Level 2: Endprodukt (Kuehlturm), das der Haendler verkauft
     var money = 0.0
     var research = 0.0               // Forschungswaehrung (Forschungszentren) -> Upgrades
     // --- Unternehmens-/Prestige-System ---
@@ -131,6 +134,8 @@ class Simulation {
         const val ZENTRIFUGE_RATE = 0.18
         const val BLEIPRESSE_RATE = 0.22
         const val BRENNSTABWERK_RATE = 0.12
+        const val REAKTORKERN_RATE = 0.5     // Brennstabsatz -> Dampf
+        const val KUEHLTURM_RATE = 0.45      // Dampf -> Strom (verkaufbar)
         const val LIFT = 3.0
         const val IN_CAP = 10.0
         const val OUT_CAP = 20.0
@@ -206,7 +211,9 @@ class Simulation {
             TechNode("t_wasserpumpe", "Wasserpumpe freischalten", 20.0, 1.0, 1, "Wasser aus der Kueste", null, Res.BARREN),
             TechNode("t_zentrifuge", "Zentrifuge freischalten", 30.0, 1.0, 1, "Uranerz+Wasser -> Angereichertes Uran", "t_wasserpumpe", Res.BARREN),
             TechNode("t_bleipresse", "Bleipresse freischalten", 20.0, 1.0, 1, "Blei -> Blei-Verkleidung", null, Res.BARREN),
-            TechNode("t_brennstabwerk", "Brennstabwerk freischalten", 25.0, 1.0, 1, "Fertigt Brennstabsaetze", "t_bleipresse", Res.PLATTE)
+            TechNode("t_brennstabwerk", "Brennstabwerk freischalten", 25.0, 1.0, 1, "Fertigt Brennstabsaetze", "t_bleipresse", Res.PLATTE),
+            TechNode("t_reaktorkern", "Reaktorkern freischalten", 30.0, 1.0, 1, "Brennstabsatz -> Dampf", "t_brennstabwerk", Res.PLATTE),
+            TechNode("t_kuehlturm", "Kuehlturm freischalten", 35.0, 1.0, 1, "Dampf -> Strom", "t_reaktorkern", Res.PLATTE)
         )
 
         val UNLOCK = mapOf(
@@ -222,7 +229,9 @@ class Simulation {
             MType.WASSERPUMPE to "t_wasserpumpe",
             MType.ZENTRIFUGE to "t_zentrifuge",
             MType.BLEIPRESSE to "t_bleipresse",
-            MType.BRENNSTABWERK to "t_brennstabwerk"
+            MType.BRENNSTABWERK to "t_brennstabwerk",
+            MType.REAKTORKERN to "t_reaktorkern",
+            MType.KUEHLTURM to "t_kuehlturm"
         )
 
         // Hoechstzahl je platzierbarem Typ, damit die Karte nicht zuwuchert.
@@ -242,7 +251,9 @@ class Simulation {
             MType.WASSERPUMPE to 10,
             MType.ZENTRIFUGE to 16,
             MType.BLEIPRESSE to 16,
-            MType.BRENNSTABWERK to 12
+            MType.BRENNSTABWERK to 12,
+            MType.REAKTORKERN to 6,
+            MType.KUEHLTURM to 6
         )
 
         // Baukosten in Rohstoffen: (Rohstoff, Menge).
@@ -260,7 +271,9 @@ class Simulation {
             MType.WASSERPUMPE to Pair(Res.BARREN, 8.0),
             MType.ZENTRIFUGE to Pair(Res.BARREN, 14.0),
             MType.BLEIPRESSE to Pair(Res.BARREN, 12.0),
-            MType.BRENNSTABWERK to Pair(Res.PLATTE, 16.0)
+            MType.BRENNSTABWERK to Pair(Res.PLATTE, 16.0),
+            MType.REAKTORKERN to Pair(Res.PLATTE, 20.0),
+            MType.KUEHLTURM to Pair(Res.PLATTE, 24.0)
         )
 
         // Baukosten in GELD (Turbine/Lager/Drohne), +100% teurer als zuvor.
@@ -268,6 +281,39 @@ class Simulation {
             MType.WINDRAD to 28.0,    // vorher 14 Barren
             MType.LAGER to 16.0,      // vorher 8 Barren
             MType.DROHNE to 16.0      // vorher 8 Platte
+        )
+
+        // Ab Level 2 (Nuklear) wird ALLES mit Geld gekauft, verankert an der Geld/Minute-Rate
+        // (Dividende) der zuletzt verkauften Firma: ein fester Bruchteil einer Minute "Gehalt"
+        // je Gebaeude. So bleiben Baukosten immer fair (skalieren mit dem Fortschritt) und
+        // trotzdem fordernd. Werte per Wirtschafts-Simulation gegengeprueft (kein Soft-Lock).
+        val NUCLEAR_COST_FACTOR = mapOf(
+            MType.BOHRER to 0.05,
+            MType.BLEIBOHRER to 0.06,
+            MType.WASSERPUMPE to 0.08,
+            MType.GENERATOR to 0.1,
+            MType.SOLAR to 0.12,
+            MType.LAGER to 0.1,
+            MType.WINDRAD to 0.15,
+            MType.DROHNE to 0.2,
+            MType.BLEIPRESSE to 0.3,
+            MType.ZENTRIFUGE to 0.35,
+            MType.FORSCHUNG to 0.4,
+            MType.HAENDLER to 0.5,
+            MType.BRENNSTABWERK to 0.6,
+            MType.REAKTORKERN to 0.9,
+            MType.KUEHLTURM to 1.0
+        )
+        // Ab Level 2 werden auch Tech-Freischaltungen (bisher mit Barren/Platte bezahlt) in
+        // Geld umgerechnet - sonst entsteht ein Zirkel-Deadlock (z.B. Zentrifuge freischalten
+        // braucht Barren, aber nur die Zentrifuge selbst produziert welche).
+        val NUCLEAR_TECH_FACTOR = mapOf(
+            "t_wasserpumpe" to 0.05,
+            "t_zentrifuge" to 0.1,
+            "t_bleipresse" to 0.05,
+            "t_brennstabwerk" to 0.15,
+            "t_reaktorkern" to 0.25,
+            "t_kuehlturm" to 0.3
         )
     }
 
@@ -278,6 +324,7 @@ class Simulation {
         globalBarren = START_BARREN
         globalPlatten = 0.0
         globalKomponente = 0.0
+        globalStrom = 0.0
         money = START_MONEY
         research = 0.0
         mapSeed = System.nanoTime() xor 0x5DEECE66DL
@@ -489,19 +536,22 @@ class Simulation {
         Res.BARREN -> globalBarren
         Res.PLATTE -> globalPlatten
         Res.KOMPONENTE -> globalKomponente
-        Res.ROHERZ, Res.WASSER, Res.BLEI -> 0.0   // lokale Ressourcen, kein globaler Pool
+        Res.STROM -> globalStrom
+        Res.ROHERZ, Res.WASSER, Res.BLEI, Res.DAMPF -> 0.0   // lokale Ressourcen, kein globaler Pool
     }
     fun available(res: Res) = globalOf(res) + lagerSum(res.ordinal)
     fun availableBarren() = available(Res.BARREN)
     fun availablePlatten() = available(Res.PLATTE)
     fun availableKomponente() = available(Res.KOMPONENTE)
+    fun availableStrom() = available(Res.STROM)
 
     private fun addGlobal(res: Res, amt: Double) {
         when (res) {
             Res.BARREN -> globalBarren += amt
             Res.PLATTE -> globalPlatten += amt
             Res.KOMPONENTE -> globalKomponente += amt
-            Res.ROHERZ, Res.WASSER, Res.BLEI -> {}
+            Res.STROM -> globalStrom += amt
+            Res.ROHERZ, Res.WASSER, Res.BLEI, Res.DAMPF -> {}
         }
     }
 
@@ -514,7 +564,8 @@ class Simulation {
             Res.BARREN -> globalBarren -= g
             Res.PLATTE -> globalPlatten -= g
             Res.KOMPONENTE -> globalKomponente -= g
-            Res.ROHERZ, Res.WASSER, Res.BLEI -> {}
+            Res.STROM -> globalStrom -= g
+            Res.ROHERZ, Res.WASSER, Res.BLEI, Res.DAMPF -> {}
         }
         rem -= g
         if (rem > 1e-9) {
@@ -541,9 +592,21 @@ class Simulation {
         return true
     }
 
-    /** Wird dieser Maschinentyp mit Geld statt Rohstoffen gebaut? */
-    fun isMoneyBuilt(t: MType): Boolean = MONEY_BUILD.containsKey(t)
-    fun moneyBuildCost(t: MType): Double = MONEY_BUILD[t] ?: 0.0
+    /** Wird dieser Maschinentyp mit Geld statt Rohstoffen gebaut? Ab Level 2: immer. */
+    fun isMoneyBuilt(t: MType): Boolean = if (companyLevel >= 2) true else MONEY_BUILD.containsKey(t)
+    fun moneyBuildCost(t: MType): Double = if (companyLevel >= 2) nuclearMoneyCost(t) else (MONEY_BUILD[t] ?: 0.0)
+
+    /** Geld/Minute-Anker: die Dividende der zuletzt verkauften Firma, mit Mindestwert. */
+    private fun payAnchor(): Double = max(dividends * 60.0, 300.0)
+
+    /**
+     * Level-2+-Baukosten: reines Geld, verankert an der Geld/Minute-Rate (Dividende) der
+     * zuletzt verkauften Firma. So bleibt jedes Gebaeude immer ein fester Bruchteil einer
+     * Minute "Gehalt" der letzten Firma wert - fair (skaliert mit dem Fortschritt) und
+     * trotzdem fordernd (nie geschenkt).
+     */
+    private fun nuclearMoneyCost(t: MType): Double =
+        kotlin.math.round(payAnchor() * (NUCLEAR_COST_FACTOR[t] ?: 1.0))
 
     fun canBuild(t: MType): Boolean = when (t) {
         MType.BOHRER, MType.OFEN, MType.BLEIBOHRER -> true
@@ -603,23 +666,54 @@ class Simulation {
      * Wasserquelle, moeglichst zentral auf der Karte. Wird nur fuer companyLevel==2
      * platziert; alle Zellen gelten sofort als Land, freigeschaltet und bebaubar.
      */
+    /**
+     * Sucht eine Plattform-Position, die eine "echte" Kueste an genau EINER Seite hat
+     * (nie zwei gegenueberliegende Seiten -> sonst wuerde ein Gewaesser durchschnitten
+     * werden). `strict` verlangt zusaetzlich, dass das Innere ueberwiegend natuerliches
+     * Land ist - sonst saehe es aus, als haette die Plattform ein Stueck See/Fluss
+     * abgeschnitten. Gibt den Zentrierungs-Score zurueck oder null bei Ablehnung.
+     */
+    private fun scorePlatform(R: Int, C: Int, size: Int, strict: Boolean): Int? {
+        val sideThresh = size / 3   // mind. 1/3 einer Kante muss Wasser sein: "echte" Kueste
+        var wN = 0; var wS = 0; var wE = 0; var wW = 0
+        for (i in 0 until size) {
+            if (rawWater(R - 1, C + i)) wN++
+            if (rawWater(R + size, C + i)) wS++
+            if (rawWater(R + i, C - 1)) wW++
+            if (rawWater(R + i, C + size)) wE++
+        }
+        val nSide = wN >= sideThresh; val sSide = wS >= sideThresh
+        val wSide = wW >= sideThresh; val eSide = wE >= sideThresh
+        if (!nSide && !sSide && !wSide && !eSide) return null   // keine echte Kueste in der Naehe
+        if (nSide && sSide) return null                          // wuerde ein Gewaesser durchschneiden
+        if (wSide && eSide) return null                          // dito, andere Achse
+        if (strict) {
+            var waterInside = 0
+            for (dr in 0 until size) for (dc in 0 until size) if (rawWater(R + dr, C + dc)) waterInside++
+            if (waterInside > size * size / 8) return null       // zu viel Wasser im Innern -> abgelehnt
+        }
+        val cr = R + size / 2; val cc2 = C + size / 2
+        return kotlin.math.abs(cr - startR) + kotlin.math.abs(cc2 - startC)
+    }
+
+    /**
+     * Level-2-Plattform: ein bereits errichtetes, grosses Baufeld nahe einer Wasserquelle,
+     * moeglichst zentral auf der Karte - so platziert, dass sie nie aussieht, als haette sie
+     * ein Stueck See/Fluss abgeschnitten (nur eine echte Kuestenseite, ueberwiegend Land im
+     * Innern). Wird nur fuer companyLevel==2 platziert; alle Zellen gelten sofort als Land,
+     * freigeschaltet und bebaubar.
+     */
     private fun placePlatform() {
         platformR0 = -1; platformC0 = -1; platformR1 = -1; platformC1 = -1
         if (companyLevel != 2) return
         val size = 9
         var bestR = -1; var bestC = -1; var bestScore = Int.MAX_VALUE
-        for (R in 0..n - size) for (C in 0..n - size) {
-            var waterAdj = false
-            for (dr in -1..size) for (dc in -1..size) {
-                if (dr in 0 until size && dc in 0 until size) continue   // nur der Rand zaehlt
-                val rr = R + dr; val cc = C + dc
-                if (rr !in 0 until n || cc !in 0 until n) continue
-                if (rawWater(rr, cc)) { waterAdj = true }
+        for (strict in booleanArrayOf(true, false)) {
+            for (R in 0..n - size) for (C in 0..n - size) {
+                val sc = scorePlatform(R, C, size, strict) ?: continue
+                if (sc < bestScore) { bestScore = sc; bestR = R; bestC = C }
             }
-            if (!waterAdj) continue
-            val cr = R + size / 2; val cc2 = C + size / 2
-            val score = kotlin.math.abs(cr - startR) + kotlin.math.abs(cc2 - startC)
-            if (score < bestScore) { bestScore = score; bestR = R; bestC = C }
+            if (bestR >= 0) break
         }
         if (bestR < 0) {
             // Notfall: erzwinge eine zentrale Position, auch ohne Kuestennaehe.
@@ -635,12 +729,14 @@ class Simulation {
     private fun resetFactory() {
         for (r in 0 until n) for (c in 0 until n) { grid[r][c] = null; occ[r][c] = null }
         surveyed.fill(false); harvested.fill(false)
-        globalBarren = START_BARREN; globalPlatten = 0.0; globalKomponente = 0.0
+        globalBarren = START_BARREN; globalPlatten = 0.0; globalKomponente = 0.0; globalStrom = 0.0
         money = START_MONEY; research = 0.0
         mapSeed = System.nanoTime() xor 0x5DEECE66DL
         tech.clear()
         placePlatform()
-        placeReactor()
+        // Der fertig gebaute Reaktor gibt es nur beim ersten (Bergbau-)Unternehmen.
+        // Ab Level 2 baut man sein eigenes Kraftwerk (Reaktorkern + Kuehlturm) selbst.
+        if (companyLevel == 1) placeReactor() else reactorPipe.clear()
     }
 
     fun buildCost(t: MType): Pair<Res, Double> = BUILD_COST[t] ?: Pair(Res.BARREN, 0.0)
@@ -728,7 +824,16 @@ class Simulation {
     fun nextCost(node: TechNode): Double =
         kotlin.math.round(node.baseCost * node.growth.pow(lvl(node.id)))
 
+    /** Ab Level 2 werden Rohstoff-Freischaltungen (costRes!=null) ebenfalls in Geld bezahlt. */
+    private fun techMoneyCost(node: TechNode): Double =
+        kotlin.math.round(payAnchor() * (NUCLEAR_TECH_FACTOR[node.id] ?: 0.3))
+
+    /** Tatsaechlich angezeigter/zu zahlender Preis (fuer die Tech-Baum-UI). */
+    fun techDisplayCost(node: TechNode): Double =
+        if (companyLevel >= 2 && node.costRes != null) techMoneyCost(node) else nextCost(node)
+
     fun techAffordable(node: TechNode): Boolean {
+        if (companyLevel >= 2 && node.costRes != null) return money >= techMoneyCost(node)
         val cost = nextCost(node)
         // costRes==null bedeutet jetzt: mit Forschungswaehrung bezahlt (frueher Geld).
         return if (node.costRes != null) available(node.costRes) >= cost else research >= cost
@@ -739,8 +844,12 @@ class Simulation {
         val l = lvl(id)
         if (l >= node.maxLevel) return false
         if (node.prereq != null && !has(node.prereq)) return false
-        val cost = nextCost(node)
-        val ok = if (node.costRes != null) spend(node.costRes, cost) else spendResearch(cost)
+        val ok = if (companyLevel >= 2 && node.costRes != null) {
+            spendMoney(techMoneyCost(node))
+        } else {
+            val cost = nextCost(node)
+            if (node.costRes != null) spend(node.costRes, cost) else spendResearch(cost)
+        }
         if (!ok) return false
         tech[id] = l + 1
         return true
@@ -778,7 +887,8 @@ class Simulation {
                 if (m.starved) return 1
             }
             MType.HAENDLER -> {
-                if (availableKomponente() <= 1e-6 && m.util < 0.5) return 1
+                val avail = if (companyLevel >= 2) availableStrom() else availableKomponente()
+                if (avail <= 1e-6 && m.util < 0.5) return 1
             }
             MType.BLEIBOHRER -> {
                 if (oreMult(r, c) <= 0.0) return 5
@@ -802,6 +912,16 @@ class Simulation {
             }
             MType.BRENNSTABWERK -> {
                 if (m.output[Res.KOMPONENTE.ordinal] >= OUT_CAP - 0.5) return 2
+                if (m.starved) return 1
+                if (scale < 0.999 && m.util < 0.98) return 3
+            }
+            MType.REAKTORKERN -> {
+                if (m.output[Res.DAMPF.ordinal] >= OUT_CAP - 0.5) return 2
+                if (m.starved) return 1
+                if (scale < 0.999 && m.util < 0.98) return 3
+            }
+            MType.KUEHLTURM -> {
+                if (m.output[Res.STROM.ordinal] >= OUT_CAP - 0.5) return 2
                 if (m.starved) return 1
                 if (scale < 0.999 && m.util < 0.98) return 3
             }
@@ -844,6 +964,8 @@ class Simulation {
     private fun zentrifugeRate() = ZENTRIFUGE_RATE * globalMult()
     private fun bleipresseRate() = BLEIPRESSE_RATE * globalMult()
     private fun brennstabwerkRate() = BRENNSTABWERK_RATE * globalMult()
+    private fun reaktorkernRate() = REAKTORKERN_RATE * globalMult()
+    private fun kuehlturmRate() = KUEHLTURM_RATE * globalMult()
     fun componentPrice() = COMPONENT_PRICE * (1.0 + 0.25 * lvl("t_wert")) * companyMult() * shareBonus()
 
     private fun wearPerSec(t: MType) = when (t) {
@@ -860,6 +982,8 @@ class Simulation {
         MType.ZENTRIFUGE -> 1.2 / 60.0
         MType.BLEIPRESSE -> 1.5 / 60.0
         MType.BRENNSTABWERK -> 1.6 / 60.0
+        MType.REAKTORKERN -> 1.8 / 60.0
+        MType.KUEHLTURM -> 1.4 / 60.0
         else -> 0.0
     }
 
@@ -895,10 +1019,12 @@ class Simulation {
         MType.PRESSE -> intArrayOf(Res.BARREN.ordinal)
         MType.ASSEMBLER -> intArrayOf(Res.PLATTE.ordinal)
         MType.GENERATOR -> intArrayOf(Res.ROHERZ.ordinal)
-        MType.LAGER -> intArrayOf(0, 1, 2, 3, 4, 5)
+        MType.LAGER -> intArrayOf(0, 1, 2, 3, 4, 5, 6, 7)
         MType.ZENTRIFUGE -> intArrayOf(Res.ROHERZ.ordinal, Res.WASSER.ordinal)
         MType.BLEIPRESSE -> intArrayOf(Res.BLEI.ordinal)
         MType.BRENNSTABWERK -> intArrayOf(Res.BARREN.ordinal, Res.PLATTE.ordinal)
+        MType.REAKTORKERN -> intArrayOf(Res.KOMPONENTE.ordinal)
+        MType.KUEHLTURM -> intArrayOf(Res.DAMPF.ordinal)
         else -> IntArray(0)
     }
 
@@ -913,6 +1039,8 @@ class Simulation {
         MType.ZENTRIFUGE -> res == Res.BARREN.ordinal
         MType.BLEIPRESSE -> res == Res.PLATTE.ordinal
         MType.BRENNSTABWERK -> res == Res.KOMPONENTE.ordinal
+        MType.REAKTORKERN -> res == Res.DAMPF.ordinal
+        MType.KUEHLTURM -> res == Res.STROM.ordinal
         else -> false
     }
 
@@ -935,6 +1063,8 @@ class Simulation {
         MType.BLEIPRESSE -> m.input[Res.BLEI.ordinal] > 1e-6 && m.output[Res.PLATTE.ordinal] < OUT_CAP - 1e-9
         MType.BRENNSTABWERK -> m.input[Res.BARREN.ordinal] > 1e-6 && m.input[Res.PLATTE.ordinal] > 1e-6 &&
             m.output[Res.KOMPONENTE.ordinal] < OUT_CAP - 1e-9
+        MType.REAKTORKERN -> m.input[Res.KOMPONENTE.ordinal] > 1e-6 && m.output[Res.DAMPF.ordinal] < OUT_CAP - 1e-9
+        MType.KUEHLTURM -> m.input[Res.DAMPF.ordinal] > 1e-6 && m.output[Res.STROM.ordinal] < OUT_CAP - 1e-9
         else -> false
     }
 
@@ -1170,8 +1300,32 @@ class Simulation {
                     m.output[Res.KOMPONENTE.ordinal] += made
                     m.condition = max(0.0, m.condition - wearPerSec(MType.BRENNSTABWERK) * wf * (made / brennstabwerkRate()))
                     m.util = if (nominal > 1e-9) made / nominal else 0.0
-                    kompMade += made
+                    // Brennstabsaetze bleiben lokal (kein Lift!) - erst Reaktorkern + Kuehlturm
+                    // wandeln sie in Strom um, der global verkauft werden kann.
                     if ((byUran <= 1e-9 || byBlei <= 1e-9) && m.output[Res.KOMPONENTE.ordinal] < OUT_CAP - 1e-9) m.starved = true
+                }
+                MType.REAKTORKERN -> {
+                    val nominal = reaktorkernRate() * ddt * boostAt(r, c)
+                    val want = nominal * scale * wearMult(m.condition)
+                    val byBrennstab = m.input[Res.KOMPONENTE.ordinal]
+                    val made = max(0.0, min(want, min(byBrennstab, OUT_CAP - m.output[Res.DAMPF.ordinal])))
+                    m.input[Res.KOMPONENTE.ordinal] -= made
+                    m.output[Res.DAMPF.ordinal] += made
+                    m.condition = max(0.0, m.condition - wearPerSec(MType.REAKTORKERN) * wf * (made / reaktorkernRate()))
+                    m.util = if (nominal > 1e-9) made / nominal else 0.0
+                    if (byBrennstab <= 1e-9 && m.output[Res.DAMPF.ordinal] < OUT_CAP - 1e-9) m.starved = true
+                }
+                MType.KUEHLTURM -> {
+                    val nominal = kuehlturmRate() * ddt * boostAt(r, c)
+                    val want = nominal * scale * wearMult(m.condition)
+                    val byDampf = m.input[Res.DAMPF.ordinal]
+                    val made = max(0.0, min(want, min(byDampf, OUT_CAP - m.output[Res.STROM.ordinal])))
+                    m.input[Res.DAMPF.ordinal] -= made
+                    m.output[Res.STROM.ordinal] += made
+                    m.condition = max(0.0, m.condition - wearPerSec(MType.KUEHLTURM) * wf * (made / kuehlturmRate()))
+                    m.util = if (nominal > 1e-9) made / nominal else 0.0
+                    kompMade += made
+                    if (byDampf <= 1e-9 && m.output[Res.STROM.ordinal] < OUT_CAP - 1e-9) m.starved = true
                 }
                 MType.LAGER, MType.REAKTOR, MType.HAENDLER -> { m.util = 0.0 }
             }
@@ -1188,22 +1342,29 @@ class Simulation {
                     val amt = min(liftRate() * ddt, m.output[Res.PLATTE.ordinal])
                     m.output[Res.PLATTE.ordinal] -= amt; globalPlatten += amt
                 }
-                MType.ASSEMBLER, MType.BRENNSTABWERK -> {
+                MType.ASSEMBLER -> {
                     val amt = min(liftRate() * ddt, m.output[Res.KOMPONENTE.ordinal])
                     m.output[Res.KOMPONENTE.ordinal] -= amt; globalKomponente += amt
+                }
+                MType.KUEHLTURM -> {
+                    val amt = min(liftRate() * ddt, m.output[Res.STROM.ordinal])
+                    m.output[Res.STROM.ordinal] -= amt; globalStrom += amt
                 }
                 else -> {}
             }
         }
 
-        // Haendler verkaufen Komponenten aus dem globalen Bestand -> Geld
+        // Haendler verkaufen aus dem globalen Bestand -> Geld: Level 1 Komponenten, ab
+        // Level 2 Strom (das Endprodukt der Kernkraft-Kette, aus dem Kuehlturm).
         var soldValue = 0.0
         val price = componentPrice()
+        val sellNuclear = companyLevel >= 2
         forEachMachine { m, _, _ ->
             if (m.type == MType.HAENDLER) {
-                val sold = min(HAENDLER_SELL * ddt, globalKomponente)
+                val pool = if (sellNuclear) globalStrom else globalKomponente
+                val sold = min(HAENDLER_SELL * ddt, pool)
                 if (sold > 1e-9) {
-                    globalKomponente -= sold
+                    if (sellNuclear) globalStrom -= sold else globalKomponente -= sold
                     money += sold * price
                     soldValue += sold * price
                     m.util = 1.0
@@ -1251,7 +1412,8 @@ class Simulation {
                     if (events.size < 24) events.add(OfflineEvent(t, true, m.type, r, c))
                 }
                 if ((m.type == MType.OFEN || m.type == MType.PRESSE || m.type == MType.ASSEMBLER || m.type == MType.GENERATOR ||
-                     m.type == MType.ZENTRIFUGE || m.type == MType.BLEIPRESSE || m.type == MType.BRENNSTABWERK) &&
+                     m.type == MType.ZENTRIFUGE || m.type == MType.BLEIPRESSE || m.type == MType.BRENNSTABWERK ||
+                     m.type == MType.REAKTORKERN || m.type == MType.KUEHLTURM) &&
                     m.starved && !seenStarve.contains(m)
                 ) {
                     seenStarve.add(m)
@@ -1269,6 +1431,7 @@ class Simulation {
         root.put("gb", globalBarren)
         root.put("gp", globalPlatten)
         root.put("gk", globalKomponente)
+        root.put("gs", globalStrom)
         root.put("money", money)
         root.put("research", research)
         root.put("clvl", companyLevel)
@@ -1313,6 +1476,7 @@ class Simulation {
         globalBarren = root.optDouble("gb", 0.0)
         globalPlatten = root.optDouble("gp", 0.0)
         globalKomponente = root.optDouble("gk", 0.0)
+        globalStrom = root.optDouble("gs", 0.0)
         money = root.optDouble("money", 0.0)
         research = root.optDouble("research", 0.0)
         companyLevel = root.optInt("clvl", 1).coerceAtLeast(1)
@@ -1355,9 +1519,13 @@ class Simulation {
             grid[r][c] = m
         }
         // Entfernte Maschinentypen (Verstaerker/Prospektor) aus Alt-Spielstaenden tilgen.
+        // Der fertig gebaute Reaktor gehoert nur zum ersten (Bergbau-)Unternehmen - in
+        // Alt-Spielstaenden ab Level 2 wird er entfernt (man baut ab dort sein eigenes
+        // Kraftwerk selbst, mit Reaktorkern + Kuehlturm).
         for (r in 0 until n) for (c in 0 until n) {
             val ty = grid[r][c]?.type
             if (ty == MType.VERSTAERKER || ty == MType.PROSPEKTOR) grid[r][c] = null
+            if (ty == MType.REAKTOR && companyLevel >= 2) grid[r][c] = null
         }
         val reactorNew = root.optInt("world", 2) >= 3 && root.has("pipe")
         if (!reactorNew) {
@@ -1394,8 +1562,9 @@ class Simulation {
         }
 
         // Reaktor-Kuehlschlauch laden (neues Format) bzw. Reaktor neu platzieren (altes Format).
+        // Nur fuer Level 1 - ab Level 2 gibt es keinen fertig gebauten Reaktor mehr.
         reactorPipe.clear()
-        if (reactorNew) {
+        if (reactorNew && companyLevel == 1) {
             val ra = reactorAnchor()
             val pipe = root.optJSONArray("pipe")
             if (pipe != null) for (i in 0 until pipe.length()) {
@@ -1407,8 +1576,8 @@ class Simulation {
                 }
             }
         }
-        // Reaktor sicherstellen (altes Format -> neuer 3x3-Reaktor + Schlauch).
-        if (!hasReactor()) placeReactor()
+        // Reaktor sicherstellen (altes Format -> neuer 3x3-Reaktor + Schlauch); nur Level 1.
+        if (companyLevel == 1 && !hasReactor()) placeReactor()
         return root.optLong("t", 0L)
     }
 

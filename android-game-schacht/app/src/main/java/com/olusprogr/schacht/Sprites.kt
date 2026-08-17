@@ -319,6 +319,8 @@ object Sprites {
         MType.ZENTRIFUGE -> emptyList()
         MType.BLEIPRESSE -> emptyList()
         MType.BRENNSTABWERK -> emptyList()
+        MType.REAKTORKERN -> emptyList()
+        MType.KUEHLTURM -> emptyList()
     }
 
     // --- Ressourcen-Icons im 12x12-Raster ---
@@ -387,5 +389,7 @@ object Sprites {
         MType.ZENTRIFUGE -> OFEN
         MType.BLEIPRESSE -> PRESSE
         MType.BRENNSTABWERK -> ASSEMBLER
+        MType.REAKTORKERN -> REAKTOR
+        MType.KUEHLTURM -> ASSEMBLER
     }
 }

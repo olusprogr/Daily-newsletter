@@ -133,6 +133,8 @@ class GameView(context: Context) : View(context) {
         MType.ZENTRIFUGE -> Color.rgb(120, 210, 232)
         MType.BLEIPRESSE -> Color.rgb(110, 116, 136)
         MType.BRENNSTABWERK -> Color.rgb(236, 196, 88)
+        MType.REAKTORKERN -> Color.rgb(96, 190, 236)
+        MType.KUEHLTURM -> Color.rgb(180, 178, 172)
     }
 
     private val p = Paint(Paint.ANTI_ALIAS_FLAG)
@@ -190,6 +192,8 @@ class GameView(context: Context) : View(context) {
     private fun reactorRC(): Pair<Int, Int> {
         for (r in 0 until sim.n) for (c in 0 until sim.n)
             if (sim.grid[r][c]?.type == MType.REAKTOR) return r to c
+        // Ab Level 2 gibt es keinen Reaktor mehr - dann auf die Plattform zentrieren.
+        if (sim.hasPlatform()) return (sim.platformR0 + sim.platformR1) / 2 to (sim.platformC0 + sim.platformC1) / 2
         return sim.startR to sim.startC
     }
 
@@ -253,7 +257,7 @@ class GameView(context: Context) : View(context) {
     )
     private val buildOrderLvl2 = listOf(
         MType.BOHRER, MType.BLEIBOHRER, MType.WASSERPUMPE, MType.ZENTRIFUGE, MType.BLEIPRESSE, MType.BRENNSTABWERK,
-        MType.HAENDLER, MType.GENERATOR, MType.WINDRAD, MType.SOLAR,
+        MType.REAKTORKERN, MType.KUEHLTURM, MType.HAENDLER, MType.GENERATOR, MType.WINDRAD, MType.SOLAR,
         MType.LAGER, MType.DROHNE, MType.FORSCHUNG
     )
     /** Bau-Palette haengt vom Unternehmens-Level ab ("komplett andere placeable items" ab Level 2). */
@@ -261,7 +265,7 @@ class GameView(context: Context) : View(context) {
 
     private fun resAbbr(res: Res) = when (res) {
         Res.ROHERZ -> "E"; Res.BARREN -> "B"; Res.PLATTE -> "P"; Res.KOMPONENTE -> "K"
-        Res.WASSER -> "W"; Res.BLEI -> "Pb"
+        Res.WASSER -> "W"; Res.BLEI -> "Pb"; Res.DAMPF -> "D"; Res.STROM -> "St"
     }
     private fun tierName(t: Int) = I18n.t("tier$t")
     private fun mName(t: MType): String {
@@ -339,6 +343,8 @@ class GameView(context: Context) : View(context) {
                 MType.ZENTRIFUGE -> R.drawable.mach_zentrifuge
                 MType.BLEIPRESSE -> R.drawable.mach_bleipresse
                 MType.BRENNSTABWERK -> R.drawable.mach_brennstabwerk
+                MType.REAKTORKERN -> R.drawable.mach_reaktorkern
+                MType.KUEHLTURM -> R.drawable.mach_kuehlturm
             })
         }
         I18n.lang = try { Lang.values()[prefs.getInt("lang", Lang.EN.ordinal)] } catch (_: Exception) { Lang.EN }
@@ -511,8 +517,9 @@ class GameView(context: Context) : View(context) {
         pText.color = cValSilver; canvas.drawText(fmt(sim.availableBarren()), dp(28f), dp(47f), pText)
         drawIcon(canvas, Sprites.ICON_PLATTE, dp(108f), dp(37f), dp(15f))
         pText.color = cValCyan; canvas.drawText(fmt(sim.availablePlatten()), dp(127f), dp(47f), pText)
-        drawIcon(canvas, Sprites.ICON_KOMP, dp(196f), dp(37f), dp(15f))
-        pText.color = cValPurple; canvas.drawText(fmt(sim.availableKomponente()), dp(215f), dp(47f), pText)
+        drawIcon(canvas, if (sim.companyLevel >= 2) Sprites.ICON_STROM else Sprites.ICON_KOMP, dp(196f), dp(37f), dp(15f))
+        pText.color = cValPurple
+        canvas.drawText(fmt(if (sim.companyLevel >= 2) sim.availableStrom() else sim.availableKomponente()), dp(215f), dp(47f), pText)
 
         // Reihe 3: Strom-Konsole (Chip, gruen=Ueberschuss / rot=Mangel)
         val powOk = sim.powerDemand <= sim.powerSupply + 1e-6
@@ -612,6 +619,8 @@ class GameView(context: Context) : View(context) {
         MType.ZENTRIFUGE -> Res.BARREN.ordinal
         MType.BLEIPRESSE -> Res.PLATTE.ordinal
         MType.BRENNSTABWERK -> Res.KOMPONENTE.ordinal
+        MType.REAKTORKERN -> Res.DAMPF.ordinal
+        MType.KUEHLTURM -> Res.STROM.ordinal
         else -> -1
     }
     private fun wantsRes(t: MType): Int = when (t) {
@@ -621,6 +630,8 @@ class GameView(context: Context) : View(context) {
         MType.ZENTRIFUGE -> Res.ROHERZ.ordinal
         MType.BLEIPRESSE -> Res.BLEI.ordinal
         MType.BRENNSTABWERK -> Res.BARREN.ordinal
+        MType.REAKTORKERN -> Res.KOMPONENTE.ordinal
+        MType.KUEHLTURM -> Res.DAMPF.ordinal
         else -> -1
     }
 
@@ -675,42 +686,30 @@ class GameView(context: Context) : View(context) {
         r in 0 until sim.n && c in 0 until sim.n && sim.isLand(r, c)
 
     /** Zeichnet einen Karten-Chunk aus echten Bild-Kacheln + prozeduraler Kueste/Fog. */
-    /** Level-2-Plattform: metallischer Kern, gelb-schwarzer Warnrand an den Aussenkanten. */
+    /**
+     * Level-2-Plattform: schlichter metallischer Kern (grosse, ruhige Deckplatten statt
+     * Nieten pro Kachel) mit einem durchgehenden gelb-schwarzen Warnrand nur an der
+     * echten Aussenkante. Der Streifen alternierst nach absoluter Gitter-Koordinate,
+     * damit er nahtlos ueber die ganze Kante durchlaeuft (keine Naht pro Kachel).
+     */
     private fun drawPlatformTile(canvas: Canvas, r: Int, c: Int, x: Float, y: Float) {
-        val metal = Color.rgb(120, 126, 138); val metalL = Color.rgb(154, 160, 172); val metalD = Color.rgb(80, 86, 98)
+        val metal = Color.rgb(126, 132, 143); val metalSeam = Color.rgb(100, 106, 117)
         p.color = metal; canvas.drawRect(x, y, x + cell, y + cell, p)
-        p.color = metalD
-        canvas.drawRect(x, y, x + cell, y + cell * 0.06f, p)
-        canvas.drawRect(x, y, x + cell * 0.06f, y + cell, p)
-        p.color = metalL
-        canvas.drawRect(x + cell * 0.94f, y, x + cell, y + cell, p)
-        canvas.drawRect(x, y + cell * 0.94f, x + cell, y + cell, p)
-        // Eck-Nieten
-        p.color = metalD
-        val nr = cell * 0.045f
-        canvas.drawCircle(x + cell * 0.18f, y + cell * 0.18f, nr, p)
-        canvas.drawCircle(x + cell * 0.82f, y + cell * 0.18f, nr, p)
-        canvas.drawCircle(x + cell * 0.18f, y + cell * 0.82f, nr, p)
-        canvas.drawCircle(x + cell * 0.82f, y + cell * 0.82f, nr, p)
-        // Gelb-schwarzer Warnrand nur an den AUSSENkanten der Plattform
-        val t = cell * 0.14f
-        if (r == sim.platformR0) drawHazardStrip(canvas, x, y, cell, t, true)
-        if (r == sim.platformR1) drawHazardStrip(canvas, x, y + cell - t, cell, t, true)
-        if (c == sim.platformC0) drawHazardStrip(canvas, x, y, t, cell, false)
-        if (c == sim.platformC1) drawHazardStrip(canvas, x + cell - t, y, t, cell, false)
+        // Grosse, ruhige Deckplatten-Fugen alle 3 Zellen statt Nieten pro Kachel.
+        p.color = metalSeam
+        val lw = (cell * 0.035f).coerceAtLeast(1f)
+        if (((r - sim.platformR0) % 3 + 3) % 3 == 0) canvas.drawRect(x, y, x + cell, y + lw, p)
+        if (((c - sim.platformC0) % 3 + 3) % 3 == 0) canvas.drawRect(x, y, x + lw, y + cell, p)
+        // Gelb-schwarzer Warnrand nur an den AUSSENkanten der Plattform.
+        val t = cell * 0.16f
+        if (r == sim.platformR0) drawHazardStrip(canvas, x, y, cell, t, c)
+        if (r == sim.platformR1) drawHazardStrip(canvas, x, y + cell - t, cell, t, c)
+        if (c == sim.platformC0) drawHazardStrip(canvas, x, y, t, cell, r)
+        if (c == sim.platformC1) drawHazardStrip(canvas, x + cell - t, y, t, cell, r)
     }
-    private fun drawHazardStrip(canvas: Canvas, x: Float, y: Float, w: Float, h: Float, horizontal: Boolean) {
-        val n = 3
-        for (i in 0 until n) {
-            p.color = if (i % 2 == 0) Color.rgb(240, 200, 70) else Color.rgb(24, 24, 28)
-            if (horizontal) {
-                val segW = w / n
-                canvas.drawRect(x + i * segW, y, x + (i + 1) * segW, y + h, p)
-            } else {
-                val segH = h / n
-                canvas.drawRect(x, y + i * segH, x + w, y + i * segH + segH, p)
-            }
-        }
+    private fun drawHazardStrip(canvas: Canvas, x: Float, y: Float, w: Float, h: Float, coord: Int) {
+        p.color = if (coord % 2 == 0) Color.rgb(244, 196, 32) else Color.rgb(26, 26, 30)
+        canvas.drawRect(x, y, x + w, y + h, p)
     }
 
     private fun drawGround(canvas: Canvas, r: Int, c: Int, x: Float, y: Float) {
@@ -1249,9 +1248,13 @@ class GameView(context: Context) : View(context) {
             MType.OFEN -> "${tr("in")} ${oneDec(m.input[0])} $oreLabel   ${tr("out")} ${oneDec(m.output[1])} ${tr("barren")}"
             MType.PRESSE -> "${tr("in")} ${oneDec(m.input[1])} ${tr("barren")}   ${tr("out")} ${oneDec(m.output[2])} ${tr("platten")}"
             MType.ASSEMBLER -> "${tr("in")} ${oneDec(m.input[2])} ${tr("platten")}   ${tr("out")} ${oneDec(m.output[3])} ${tr("komp")}"
-            MType.HAENDLER -> "${tr("sells_comp")} (${oneDec(sim.componentPrice())}${tr("per_piece")})"
+            MType.HAENDLER -> "${tr(if (sim.companyLevel >= 2) "sells_strom" else "sells_comp")} (${oneDec(sim.componentPrice())}${tr("per_piece")})"
             MType.GENERATOR -> "${tr("fuel")} ${oneDec(m.input[0])} $oreLabel  ->  +${Simulation.GEN_POWER.toInt()} ${tr("strom")}"
-            MType.LAGER -> "${tr("buffer")} ${oneDec(m.output[0])}E ${oneDec(m.output[1])}B ${oneDec(m.output[2])}P ${oneDec(m.output[3])}K"
+            MType.LAGER -> {
+                val parts = ArrayList<String>()
+                for (ri in Res.values().indices) if (m.output[ri] > 0.05) parts.add("${oneDec(m.output[ri])}${resAbbr(Res.values()[ri])}")
+                "${tr("buffer")} " + if (parts.isEmpty()) "-" else parts.joinToString(" ")
+            }
             MType.VERSTAERKER -> "${tr("boosts")} (+${(Simulation.BOOST_PER * 100).toInt()}%)"
             MType.REAKTOR -> "${tr("provides")} ${Simulation.REAKTOR_POWER.toInt()} ${tr("strom")} (${tr("fixed")})"
             MType.SOLAR -> "${tr("provides")} ${Simulation.SOLAR_POWER.toInt()} ${tr("strom")} (${tr("sun")})"
@@ -1268,6 +1271,8 @@ class GameView(context: Context) : View(context) {
             MType.ZENTRIFUGE -> "${tr("in")} ${oneDec(m.input[Res.ROHERZ.ordinal])} ${tr("uranerz")} + ${oneDec(m.input[Res.WASSER.ordinal])} ${tr("wasser")}   ${tr("out")} ${oneDec(m.output[Res.BARREN.ordinal])} ${tr("angeruran")}"
             MType.BLEIPRESSE -> "${tr("in")} ${oneDec(m.input[Res.BLEI.ordinal])} ${tr("blei")}   ${tr("out")} ${oneDec(m.output[Res.PLATTE.ordinal])} ${tr("bleiverkl")}"
             MType.BRENNSTABWERK -> "${tr("in")} ${oneDec(m.input[Res.BARREN.ordinal])} ${tr("angeruran")} + ${oneDec(m.input[Res.PLATTE.ordinal])} ${tr("bleiverkl")}   ${tr("out")} ${oneDec(m.output[Res.KOMPONENTE.ordinal])} ${tr("brennstab")}"
+            MType.REAKTORKERN -> "${tr("in")} ${oneDec(m.input[Res.KOMPONENTE.ordinal])} ${tr("brennstab")}   ${tr("out")} ${oneDec(m.output[Res.DAMPF.ordinal])} ${tr("dampf")}"
+            MType.KUEHLTURM -> "${tr("in")} ${oneDec(m.input[Res.DAMPF.ordinal])} ${tr("dampf")}   ${tr("out")} ${oneDec(m.output[Res.STROM.ordinal])} ${tr("netzstrom")}"
         }
         canvas.drawText(io, dp(12f), yy, pText)
         yy += dp(22f)
@@ -1363,9 +1368,10 @@ class GameView(context: Context) : View(context) {
             val l = sim.lvl(node.id)
             val maxed = l >= node.maxLevel
             val preOk = node.prereq == null || sim.has(node.prereq)
-            val cost = sim.nextCost(node)
+            val cost = sim.techDisplayCost(node)
             val afford = sim.techAffordable(node)
-            val cur = if (node.costRes != null) resAbbr(node.costRes) else "◆ ${tr("res_short")}"
+            val nuclearPaid = sim.companyLevel >= 2 && node.costRes != null
+            val cur = if (nuclearPaid) "€" else if (node.costRes != null) resAbbr(node.costRes) else "◆ ${tr("res_short")}"
             p.color = if (l > 0) Color.rgb(46, 62, 50) else cPanel
             canvas.drawRoundRect(rect, dp(8f), dp(8f), p)
 
@@ -1415,6 +1421,7 @@ class GameView(context: Context) : View(context) {
         "t_robust" -> tr("tf_robust"); "t_lift" -> tr("tf_lift"); "t_power" -> tr("tf_power")
         "t_drohne_rep" -> tr("tf_drohne_rep"); "t_drohne_speed" -> tr("tf_drohne_speed")
         "t_drohne_range" -> tr("tf_drohne_range"); "t_research_rate" -> tr("tf_research_rate")
+        "t_reaktorkern" -> tr("tf_reaktorkern"); "t_kuehlturm" -> tr("tf_kuehlturm")
         else -> ""
     }
 
@@ -1425,11 +1432,12 @@ class GameView(context: Context) : View(context) {
         canvas.drawText(tr("stat_title"), dp(16f), dp(40f), pText)
         pText.color = cText; pText.textSize = dp(15f)
         var yy = dp(74f)
+        val nuc = sim.companyLevel >= 2
         val lines = listOf(
             "${tr("s_money")}: ${fmt(sim.money)}   (+${fmt(sim.moneyPerMin)}/min)",
-            "${tr("s_barren")}: ${fmt(sim.availableBarren())}  (${oneDec(sim.barrenPerMin)}/min)",
-            "${tr("s_platten")}: ${fmt(sim.availablePlatten())}  (${oneDec(sim.plattenPerMin)}/min)",
-            "${tr("s_komp")}: ${fmt(sim.availableKomponente())}  (${oneDec(sim.komponentenPerMin)}/min)",
+            "${tr(if (nuc) "angeruran" else "s_barren")}: ${fmt(sim.availableBarren())}  (${oneDec(sim.barrenPerMin)}/min)",
+            "${tr(if (nuc) "bleiverkl" else "s_platten")}: ${fmt(sim.availablePlatten())}  (${oneDec(sim.plattenPerMin)}/min)",
+            "${tr(if (nuc) "netzstrom" else "s_komp")}: ${fmt(if (nuc) sim.availableStrom() else sim.availableKomponente())}  (${oneDec(sim.komponentenPerMin)}/min)",
             "${tr("s_strom")}: ${fmt(sim.powerSupply)} / ${fmt(sim.powerDemand)}",
             "${tr("s_area")}: ${sim.areaN()} x ${sim.areaN()}",
             "${tr("s_machines")}: ${machineCount()}",
@@ -1442,8 +1450,9 @@ class GameView(context: Context) : View(context) {
         pText.color = cAccent; pText.textSize = dp(16f)
         canvas.drawText(tr("s_prod_title"), dp(16f), yy, pText)
         yy += dp(22f)
-        val producers = if (sim.companyLevel >= 2)
-            listOf(MType.BOHRER, MType.BLEIBOHRER, MType.WASSERPUMPE, MType.ZENTRIFUGE, MType.BLEIPRESSE, MType.BRENNSTABWERK, MType.HAENDLER)
+        val producers = if (nuc)
+            listOf(MType.BOHRER, MType.BLEIBOHRER, MType.WASSERPUMPE, MType.ZENTRIFUGE, MType.BLEIPRESSE, MType.BRENNSTABWERK,
+                MType.REAKTORKERN, MType.KUEHLTURM, MType.HAENDLER)
         else listOf(MType.BOHRER, MType.OFEN, MType.PRESSE, MType.ASSEMBLER, MType.HAENDLER)
         pText.textSize = dp(13f)
         for (t in producers) {
