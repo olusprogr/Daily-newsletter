@@ -265,6 +265,7 @@ class GameView(context: Context) : View(context) {
     )
     /** Bau-Palette haengt vom Unternehmens-Level ab ("komplett andere placeable items" ab Level 2). */
     private fun buildOrderFor(level: Int): List<MType> = if (level >= 2) buildOrderLvl2 else buildOrderLvl1
+    private val paletteCols = 6
 
     private fun resAbbr(res: Res) = when (res) {
         Res.ROHERZ -> "E"; Res.BARREN -> "B"; Res.PLATTE -> "P"; Res.KOMPONENTE -> "K"
@@ -423,20 +424,32 @@ class GameView(context: Context) : View(context) {
         audio.click(); invalidate()
     }
 
+    /**
+     * Palettenhoehe (Zeilenzahl) haengt von der Anzahl der Bau-Items im aktuellen Level
+     * ab - Level 2 hat mehr Maschinentypen als Level 1 und braucht daher mehr Zeilen,
+     * sonst fallen die letzten Kacheln (z.B. Lager/Drohne/Forschung) aus dem festen
+     * 2-Zeilen-Raster heraus und sind unsichtbar/nicht antippbar. Wird jeden Frame neu
+     * berechnet (nicht nur bei onSizeChanged), damit ein Level-Aufstieg MITTEN in einer
+     * laufenden Sitzung (ohne Bildschirm-Resize) sofort die richtige Zeilenzahl bekommt.
+     */
+    private fun updatePaletteLayout() {
+        val items = buildOrderFor(sim.companyLevel).size
+        val palRows = ((items + paletteCols - 1) / paletteCols).coerceAtLeast(1)
+        val palBh = dp(66f); val palGap = dp(5f)
+        paletteH = palRows * palBh + (palRows - 1) * palGap + dp(8f)
+        paletteTop = H - paletteH
+        gridH = paletteTop - gridTop - dp(4f)        // Karten-Fenster fuellt fast alles
+    }
+
     override fun onSizeChanged(w: Int, h: Int, ow: Int, oh: Int) {
         super.onSizeChanged(w, h, ow, oh)
         W = w; H = h
         headerH = dp(96f)
         val margin = dp(8f)
-        // Palette unten (5 Spalten, 2 Reihen), Buttons wieder ~50% hoeher
-        val palRows = 2
-        val palBh = dp(66f); val palGap = dp(5f)
-        paletteH = palRows * palBh + (palRows - 1) * palGap + dp(8f)
-        paletteTop = H - paletteH
         gridLeft = margin
         gridTop = headerH + dp(4f)
         gridW = w - 2 * margin
-        gridH = paletteTop - gridTop - dp(4f)        // Karten-Fenster fuellt fast alles
+        updatePaletteLayout()
         cell = gridW / visibleAt1
         needCenter = true
     }
@@ -445,6 +458,7 @@ class GameView(context: Context) : View(context) {
 
     override fun onDraw(canvas: Canvas) {
         buttons.clear()
+        if (W > 0 && H > 0) updatePaletteLayout()   // Zeilenzahl an aktuelles Level anpassen
         updateView()   // setzt cell/vLeft/vTop aus Zoom & Pan
         canvas.drawColor(cBg)
         if (screen == Screen.MENU) { drawMenu(canvas); return }
@@ -1127,7 +1141,7 @@ class GameView(context: Context) : View(context) {
     }
 
     private fun drawPalette(canvas: Canvas) {
-        val cols = 6
+        val cols = paletteCols
         val margin = dp(8f)
         val gap = dp(5f)
         val bw = (W - 2 * margin - (cols - 1) * gap) / cols
