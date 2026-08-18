@@ -529,7 +529,11 @@ class GameView(context: Context) : View(context) {
         if (screen == Screen.GAME) { drawPuffs(canvas); drawRises(canvas) }
         if (screen == Screen.GAME) drawPowerPulse(canvas)
         if (screen == Screen.GAME) {
-            if (selR >= 0 && sim.grid[selR][selC] != null) drawDetail(canvas) else drawPalette(canvas)
+            when {
+                selR >= 0 && sim.grid[selR][selC] != null -> drawDetail(canvas)
+                selR >= 0 && sim.canExpandInfra(selR, selC) -> drawExpandPanel(canvas)
+                else -> drawPalette(canvas)
+            }
         }
         when (screen) {
             Screen.COMPANY -> drawCompany(canvas)
@@ -784,11 +788,9 @@ class GameView(context: Context) : View(context) {
                     intArrayOf(off)
                 }
                 for (res in offerCandidates) {
-                    // nur zeichnen, wenn tatsaechlich Material fliesst
-                    val consuming = if (isLager) pm.output[res] > 0.3 else cm.util > 0.03
-                    val producing = pm.util > 0.03 || pm.output[res] > 0.2
-                    if (!consuming || !producing) continue
-
+                    // Immer zeigen, sobald die Verbindung strukturell existiert (nicht nur,
+                    // wenn gerade in diesem Sekundenbruchteil etwas Messbares fliesst) - so
+                    // ist jede Produktionskette jederzeit als durchgehende Animation sichtbar.
                     val sx = vLeft + pa[1] * cell + half
                     val sy = vTop + pa[0] * cell + half
                     val ex = vLeft + c * cell + half
@@ -843,8 +845,22 @@ class GameView(context: Context) : View(context) {
         val u = cell / 8f
         dstTile.set(x, y, x + cell, y + cell)
 
-        if (sim.hasPlatform() && sim.isPlatform(r, c)) {
+        if ((sim.hasPlatform() && sim.isPlatform(r, c)) || sim.isExpandedPlatform(r, c)) {
             drawPlatformTile(canvas, r, c, x, y)
+            return
+        }
+
+        if (sim.isExpandedCanal(r, c)) {
+            // Kuenstlicher Kanal: wie Wasser, aber mit einem schmalen Betonrand markiert,
+            // damit man ihn von echtem Meer unterscheiden kann.
+            val wb = if ((animT * 2f).toInt() and 1 == 0) bmpWater0 else bmpWater1
+            canvas.drawBitmap(wb, srcTile, dstTile, pTile)
+            p.color = Color.argb(170, 150, 150, 158)
+            val bw2 = cell * 0.07f
+            canvas.drawRect(x, y, x + cell, y + bw2, p)
+            canvas.drawRect(x, y + cell - bw2, x + cell, y + cell, p)
+            canvas.drawRect(x, y, x + bw2, y + cell, p)
+            canvas.drawRect(x + cell - bw2, y, x + cell, y + cell, p)
             return
         }
 
@@ -1371,7 +1387,10 @@ class GameView(context: Context) : View(context) {
     private fun detailExtraH(m: Machine): Float {
         var extra = 0f
         if (sim.canUpgradeMachine(m.type)) extra += dp(36f)
-        if (m.type == MType.LAGER) extra += dp(90f)   // Inhalts-Uebersicht + Annahme-Filter
+        // Lager laesst dafuer Zustand/Auslastung, Puffer-Zeile und Engpass-Ampel weg (siehe
+        // drawDetail) - braucht also trotz der neuen Inhalts-/Filter-Reihe insgesamt WENIGER
+        // Platz als vorher, nicht mehr.
+        if (m.type == MType.LAGER) extra += dp(20f)
         if (m.type == MType.DROHNE) extra += dp(36f)
         return extra
     }
@@ -1391,8 +1410,12 @@ class GameView(context: Context) : View(context) {
 
         pText.color = cText; pText.textSize = dp(14f)
         var yy = top + dp(48f)
-        canvas.drawText("${tr("condition")} ${m.condition.roundToInt()}%     ${tr("util")} ${(m.util * 100).roundToInt()}%", dp(12f), yy, pText)
-        yy += dp(22f)
+        // Zustand/Auslastung ist bei einem Lager immer 100%/0% (kein Verschleiss, keine
+        // eigene Produktion) - unnoetige Zeile, spart Platz im ohnehin schon vollen Panel.
+        if (m.type != MType.LAGER) {
+            canvas.drawText("${tr("condition")} ${m.condition.roundToInt()}%     ${tr("util")} ${(m.util * 100).roundToInt()}%", dp(12f), yy, pText)
+            yy += dp(22f)
+        }
         val oreLabel = if (sim.companyLevel >= 2) tr("uranerz") else tr("roherz")
         val io = when (m.type) {
             MType.BOHRER -> {
@@ -1436,19 +1459,24 @@ class GameView(context: Context) : View(context) {
             MType.REAKTORKERN -> "${tr("in")} ${oneDec(m.input[Res.KOMPONENTE.ordinal])} ${tr("brennstab")}   ${tr("out")} ${oneDec(m.output[Res.DAMPF.ordinal])} ${tr("dampf")}"
             MType.KUEHLTURM -> "${tr("in")} ${oneDec(m.input[Res.DAMPF.ordinal])} ${tr("dampf")}   ${tr("out")} ${oneDec(m.output[Res.STROM.ordinal])} ${tr("netzstrom")}"
         }
-        canvas.drawText(io, dp(12f), yy, pText)
-        yy += dp(22f)
+        // Fuer ein Lager sagen weder die Puffer-Zeile noch die Engpass-Ampel etwas
+        // Nuetzliches aus (kein Rezept, kein "blockiert") - beide weglassen, die neue
+        // Inhalts-Uebersicht unten zeigt ohnehin alles Relevante als Icons.
+        if (m.type != MType.LAGER) {
+            canvas.drawText(io, dp(12f), yy, pText)
+            yy += dp(22f)
 
-        // Engpass-Ampel: zeigt in Klartext, warum die Maschine (nicht) laeuft
-        val code = sim.bottleneck(m, selR, selC)
-        val dotR = dp(5f); val dotCx = dp(17f); val dotCy = yy - dp(4f)
-        p.color = bnColor(code)
-        canvas.drawCircle(dotCx, dotCy, dotR, p)
-        p.color = cGridLine; p.style = Paint.Style.STROKE; p.strokeWidth = dp(1f)
-        canvas.drawCircle(dotCx, dotCy, dotR, p); p.style = Paint.Style.FILL
-        pText.color = bnColor(code); pText.textSize = dp(14f)
-        canvas.drawText(bnLabel(code), dp(30f), yy, pText)
-        yy += dp(22f)
+            // Engpass-Ampel: zeigt in Klartext, warum die Maschine (nicht) laeuft
+            val code = sim.bottleneck(m, selR, selC)
+            val dotR = dp(5f); val dotCx = dp(17f); val dotCy = yy - dp(4f)
+            p.color = bnColor(code)
+            canvas.drawCircle(dotCx, dotCy, dotR, p)
+            p.color = cGridLine; p.style = Paint.Style.STROKE; p.strokeWidth = dp(1f)
+            canvas.drawCircle(dotCx, dotCy, dotR, p); p.style = Paint.Style.FILL
+            pText.color = bnColor(code); pText.textSize = dp(14f)
+            canvas.drawText(bnLabel(code), dp(30f), yy, pText)
+            yy += dp(22f)
+        }
 
         pText.color = cDim; pText.textSize = dp(14f)
         val moneyB = sim.isMoneyBuilt(m.type)
@@ -1476,55 +1504,46 @@ class GameView(context: Context) : View(context) {
             yy += dp(36f)
         }
 
-        // Lager: Inhalts-Uebersicht - Icon je Rohstoff statt Buchstaben-Kuerzel, mit Menge
-        // darunter; leere Sorten deutlich abgedunkelt, damit auf einen Blick klar ist, was
-        // drin ist und was nicht.
+        // Lager: EINE kompakte Icon-Reihe fuer Inhalt + Annahme-Filter + Entnahme (statt
+        // vorher zwei getrennte Reihen) - randnah/volle Breite, damit die Icons so gross
+        // wie moeglich sind. Antippen der Kachel entnimmt den Bestand in den globalen
+        // Bestand (wird NICHT geloescht, macht nur im Lager wieder Platz); die kleine
+        // Ecke oben rechts schaltet Annahme/Blockade fuer diesen Rohstoff um.
         if (m.type == MType.LAGER) {
             pText.color = cDim; pText.textSize = dp(11f)
             canvas.drawText(tr("lager_content"), dp(12f), yy + dp(8f), pText)
-            val cy = yy + dp(12f); val cs = dp(26f); val cgap = dp(5f)
+            val margin2 = dp(6f); val cgap = dp(4f)
             val n = Res.values().size
-            val totalW = n * cs + (n - 1) * cgap
-            var cx = (W - totalW) / 2f
+            val cs = (W - 2 * margin2 - (n - 1) * cgap) / n
+            val cy = yy + dp(12f)
+            var cx = margin2
             for (ri in 0 until n) {
                 val amt = m.output[ri]
                 val has = amt > 0.05
+                val on = m.acceptRes[ri]
+                val withdrawable = has && sim.canWithdrawFromLager(ri)
                 val r = RectF(cx, cy, cx + cs, cy + cs)
-                p.color = if (has) Color.argb(60, 120, 190, 230) else Color.argb(35, 120, 120, 130)
+                p.color = when { !on -> Color.argb(70, 220, 80, 70); has -> Color.argb(60, 120, 190, 230); else -> Color.argb(35, 120, 120, 130) }
                 canvas.drawRoundRect(r, dp(4f), dp(4f), p)
-                p.color = if (has) cAccent else cGridLine; p.style = Paint.Style.STROKE; p.strokeWidth = dp(1.1f)
+                p.color = when { !on -> cBad; has -> cAccent; else -> cGridLine }
+                p.style = Paint.Style.STROKE; p.strokeWidth = dp(1.1f)
                 canvas.drawRoundRect(r, dp(4f), dp(4f), p); p.style = Paint.Style.FILL
-                drawIcon(canvas, Sprites.iconForRes(ri, sim.companyLevel), cx + cs * 0.16f, cy + cs * 0.16f, cs * 0.68f)
+                drawIcon(canvas, Sprites.iconForRes(ri, sim.companyLevel), cx + cs * 0.14f, cy + cs * 0.14f, cs * 0.6f)
+                if (!on) { p.color = cBad; p.strokeWidth = dp(1.6f); canvas.drawLine(cx + 2, cy + 2, cx + cs - 2, cy + cs - 2, p) }
                 pText.textAlign = Paint.Align.CENTER; pText.textSize = dp(9f)
                 pText.color = if (has) cText else cDim
                 canvas.drawText(if (has) oneDec(amt) else "-", cx + cs / 2f, cy + cs + dp(11f), pText)
                 pText.textAlign = Paint.Align.LEFT
+                // Kleine Ecke oben rechts: Annahme/Blockade umschalten (eigener Tap-Bereich).
+                val chip = dp(11f)
+                val chipR = RectF(cx + cs - chip - dp(1.5f), cy + dp(1.5f), cx + cs - dp(1.5f), cy + chip + dp(1.5f))
+                p.color = if (on) cGood else cBad
+                canvas.drawRoundRect(chipR, dp(2.5f), dp(2.5f), p)
+                buttons.add(Btn(r, "lagerwd_$ri", "wd", withdrawable))
+                buttons.add(Btn(chipR, "lageracc_$ri", "acc"))
                 cx += cs + cgap
             }
-            yy += dp(40f)
-        }
-
-        // Lager: je Rohstoff annehmen/blockieren (kompakte Icon-Reihe).
-        if (m.type == MType.LAGER) {
-            pText.color = cDim; pText.textSize = dp(11f)
-            canvas.drawText(tr("lager_filter"), dp(12f), yy + dp(8f), pText)
-            val fy = yy + dp(12f); val fs = dp(26f); val fgap = dp(5f)
-            val n = Res.values().size
-            val totalW = n * fs + (n - 1) * fgap
-            var fx = (W - totalW) / 2f
-            for (ri in 0 until n) {
-                val on = m.acceptRes[ri]
-                val r = RectF(fx, fy, fx + fs, fy + fs)
-                p.color = if (on) Color.argb(60, 120, 220, 140) else Color.argb(80, 220, 80, 70)
-                canvas.drawRoundRect(r, dp(4f), dp(4f), p)
-                p.color = if (on) cGood else cBad; p.style = Paint.Style.STROKE; p.strokeWidth = dp(1.3f)
-                canvas.drawRoundRect(r, dp(4f), dp(4f), p); p.style = Paint.Style.FILL
-                drawIcon(canvas, Sprites.iconForRes(ri, sim.companyLevel), fx + fs * 0.16f, fy + fs * 0.16f, fs * 0.68f)
-                if (!on) { p.color = cBad; p.strokeWidth = dp(1.6f); canvas.drawLine(fx + 2, fy + 2, fx + fs - 2, fy + fs - 2, p) }
-                buttons.add(Btn(r, "lageracc_$ri", "acc"))
-                fx += fs + fgap
-            }
-            yy += dp(50f)
+            yy += dp(48f)
         }
 
         // Drohnen-Station: Reparatur-Limit einstellen (nur reparieren ab Guthaben >= Limit)
@@ -1567,6 +1586,44 @@ class GameView(context: Context) : View(context) {
             drawButton(canvas, Btn(rSell, "sell_sel", "${tr("sell")} +$refund $curAbbr", true, false, cBad))
             buttons.add(Btn(rSell, "sell_sel", "Verkaufen"))
         }
+    }
+
+    /**
+     * Infrastruktur-Ausbau (Level 2): auf einem leeren, bereits gekauften Landfeld
+     * entweder die AKW-Plattform erweitern (bebaubar, ausser Windrad/Solar) oder einen
+     * kuenstlichen Wasserkanal graben (nur bei natuerlichem Wasser in der Naehe, dafuer
+     * kein Baugrund mehr - dient nur als schwache Wasserquelle fuer eine Wasserpumpe
+     * daneben).
+     */
+    private fun drawExpandPanel(canvas: Canvas) {
+        val top = H - dp(180f)
+        p.color = cPanel
+        canvas.drawRect(0f, top, W.toFloat(), H.toFloat(), p)
+        p.color = cPanelHi
+        canvas.drawRect(0f, top, W.toFloat(), top + dp(2f), p)
+
+        pText.color = cAccent; pText.textSize = dp(18f)
+        canvas.drawText(tr("expand_title"), dp(12f), top + dp(26f), pText)
+        pText.color = cDim; pText.textSize = dp(12.5f)
+        canvas.drawText(tr("expand_hint"), dp(12f), top + dp(46f), pText)
+
+        val margin = dp(10f)
+        val bw = W - 2 * margin
+        val bh = dp(52f)
+
+        val platCost = sim.expandPlatformCost()
+        val canPlat = sim.money >= platCost
+        val r1 = RectF(margin, top + dp(58f), margin + bw, top + dp(58f) + bh)
+        drawButton(canvas, Btn(r1, "expand_plat", tr("expand_platform"), canPlat, false, cAccent, "${platCost.toInt()}€"))
+        buttons.add(Btn(r1, "expand_plat", "ep", canPlat))
+
+        val waterNear = sim.hasNaturalWaterAdjacent(selR, selC)
+        val canalCost = sim.expandCanalCost()
+        val canCanal = waterNear && sim.money >= canalCost
+        val r2 = RectF(margin, r1.bottom + dp(10f), margin + bw, r1.bottom + dp(10f) + bh)
+        val canalSub = if (waterNear) "${canalCost.toInt()}€" else tr("expand_needs_water")
+        drawButton(canvas, Btn(r2, "expand_canal", tr("expand_canal"), canCanal, false, cAccent, canalSub, if (!waterNear) cBad else 0))
+        buttons.add(Btn(r2, "expand_canal", "ec", canCanal))
     }
 
     private fun bnLabel(code: Int) = when (code) {
@@ -2286,10 +2343,33 @@ class GameView(context: Context) : View(context) {
             id == "repair_sel" -> { if (selR >= 0) sim.grid[selR][selC]?.let { if (sim.repair(it)) audio.buy() else audio.error() } }
             id == "sell_sel" -> { if (selR >= 0) { sim.sell(selR, selC); selR = -1; selC = -1; audio.sell() } }
             id == "upgrade_sel" -> { if (selR >= 0) { if (sim.upgradeMachine(selR, selC)) audio.buy() else audio.error() } }
+            id == "expand_plat" -> {
+                if (selR >= 0) {
+                    val cost = sim.expandPlatformCost()
+                    if (sim.expandToPlatform(selR, selC)) {
+                        rises.add(Rise(selR, selC, "-${cost.toInt()}", animT)); selR = -1; selC = -1; audio.buy()
+                    } else audio.error()
+                }
+            }
+            id == "expand_canal" -> {
+                if (selR >= 0) {
+                    val cost = sim.expandCanalCost()
+                    if (sim.expandToCanal(selR, selC)) {
+                        rises.add(Rise(selR, selC, "-${cost.toInt()}", animT)); selR = -1; selC = -1; audio.buy()
+                    } else audio.error()
+                }
+            }
             id.startsWith("lageracc_") -> {
                 if (selR >= 0) sim.grid[selR][selC]?.let { m ->
                     val ri = id.removePrefix("lageracc_").toIntOrNull()
                     if (ri != null && ri in m.acceptRes.indices) { m.acceptRes[ri] = !m.acceptRes[ri]; audio.click() }
+                }
+            }
+            id.startsWith("lagerwd_") -> {
+                if (selR >= 0) {
+                    val ri = id.removePrefix("lagerwd_").toIntOrNull()
+                    val amt = if (ri != null) sim.withdrawFromLager(selR, selC, ri) else 0.0
+                    if (amt > 1e-9) { rises.add(Rise(selR, selC, "+${oneDec(amt)}", animT)); audio.sell() } else audio.error()
                 }
             }
             id.startsWith("buy_") -> { if (sim.buyTech(id.removePrefix("buy_"))) audio.buy() else audio.error() }
@@ -2325,10 +2405,14 @@ class GameView(context: Context) : View(context) {
             else audio.error()
             invalidate(); return
         }
-        // 3) Freies, geraeumtes Feld: bauen (falls Werkzeug) sonst Auswahl loeschen
+        // 3) Freies, geraeumtes Feld: bauen (falls Werkzeug), sonst - auf bereits gekauftem
+        // Land ab Level 2 - die Infrastruktur-Ausbauwahl anbieten (AKW-Flaeche/Kanal),
+        // ansonsten die Auswahl einfach loeschen.
         val t = buildTool
         if (t != null) {
             if (sim.build(t, r, c)) { puffs.add(Puff(r, c, animT)); selR = -1; selC = -1; audio.place() } else audio.error()
+        } else if (sim.canExpandInfra(r, c)) {
+            selR = r; selC = c; audio.click()
         } else { selR = -1; selC = -1 }
         invalidate()
     }

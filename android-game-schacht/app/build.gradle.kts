@@ -11,8 +11,8 @@ android {
         applicationId = "com.olusprogr.schacht"
         minSdk = 24
         targetSdk = 34
-        versionCode = 61
-        versionName = "0.48-flexplay1"
+        versionCode = 62
+        versionName = "0.49-canalworks1"
     }
 
     signingConfigs {

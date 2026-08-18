@@ -99,6 +99,10 @@ class Simulation {
     val surveyed = BooleanArray(n * n)
     /** Abgebaute Deko-Felder (Baum/Busch/Fels entfernt). */
     val harvested = BooleanArray(n * n)
+    /** Vom Spieler auf bereits gekauftem Land ausgebaute AKW-Plattform (Level 2). */
+    val expandedPlatform = BooleanArray(n * n)
+    /** Vom Spieler gegrabener kuenstlicher Wasserkanal (Level 2, an Land, kein echtes Wasser). */
+    val expandedCanal = BooleanArray(n * n)
     var globalBarren = 0.0
     var globalPlatten = 0.0
     var globalKomponente = 0.0
@@ -168,6 +172,12 @@ class Simulation {
         const val LAND_THRESH = 0.46     // Schwelle Land/Wasser aus dem Rauschen
         const val SCAN_R = 4             // (Alt) Prospektor-Radius – Prospektor entfernt
         const val CHUNK_COST = 5.0       // Geld, um einen Chunk freizuschalten (1 Klick)
+        // Infrastruktur-Ausbau (Level 2): bereits gekauftes Land in AKW-Plattform ODER
+        // kuenstlichen Wasserkanal umwandeln - deutlich teurer als jede einzelne Maschine,
+        // skaliert daher (wie die uebrigen Level-2-Kosten) mit payAnchor().
+        const val EXPAND_PLATFORM_FACTOR = 2.0
+        const val EXPAND_CANAL_FACTOR = 1.5
+        const val CANAL_WATER_MULT = 0.006      // 0.6% Ertrag ggue. einer echten Wasserquelle
         const val WIND_POWER = 16.0      // Strom je Windrad (ohne Brennstoff)
         const val SOLAR_POWER = 10.0     // Strom je Solarpanel (ohne Brennstoff)
         const val RESEARCH_RATE = 0.1    // Basis-Forschung je Sekunde und Forschungszentrum (Upgrade erhoeht)
@@ -368,15 +378,17 @@ class Simulation {
             MType.BLEIPRESSE to 36.0, MType.BRENNSTABWERK to 60.0, MType.REAKTORKERN to 90.0, MType.KUEHLTURM to 100.0
         )
         // Nicht upgradebar: keine echten placeable items (auto-platziert / abgeschaltet),
-        // oder ein Einzel-Upgrade waere sinnlos, weil Forschung/Handel ohnehin nur einmal
-        // pro Basis wirklich gebraucht werden (Forschungszentrum, Haendler).
-        val NOT_UPGRADABLE = setOf(MType.REAKTOR, MType.VERSTAERKER, MType.PROSPEKTOR, MType.FORSCHUNG, MType.HAENDLER)
+        // oder ein Einzel-Upgrade waere ueberfluessig, weil es dafuer schon den Tech-Baum
+        // gibt (Forschungszentrum, Haendler, Drohnen-Station - siehe t_drohne_* Techs).
+        val NOT_UPGRADABLE = setOf(MType.REAKTOR, MType.VERSTAERKER, MType.PROSPEKTOR, MType.FORSCHUNG, MType.HAENDLER, MType.DROHNE)
     }
 
     fun newGame() {
         for (r in 0 until n) for (c in 0 until n) { grid[r][c] = null; occ[r][c] = null }
         surveyed.fill(false)
         harvested.fill(false)
+        expandedPlatform.fill(false)
+        expandedCanal.fill(false)
         globalBarren = START_BARREN
         globalPlatten = 0.0
         globalKomponente = 0.0
@@ -510,8 +522,12 @@ class Simulation {
         if (r !in 0 until n || c !in 0 until n) return false
         if (grid[r][c] != null || occ[r][c] != null) return true
         if (isPlatform(r, c)) return true       // Plattform ist immer Land/bebaubar
+        if (expandedCanal[r * n + c]) return false   // gegrabener Kanal - aus Land gemacht, jetzt wie Wasser
+        if (expandedPlatform[r * n + c]) return true // vom Spieler ausgebaute Plattform-Flaeche
         return landValue(r, c) > LAND_THRESH
     }
+    fun isExpandedPlatform(r: Int, c: Int): Boolean = r in 0 until n && c in 0 until n && expandedPlatform[r * n + c]
+    fun isExpandedCanal(r: Int, c: Int): Boolean = r in 0 until n && c in 0 until n && expandedCanal[r * n + c]
 
     /** Biom 0..3 (Ebene, Wald, Fels, Bluemwiese) – grossflaechig aus Rauschen. */
     fun biome(r: Int, c: Int): Int {
@@ -528,7 +544,7 @@ class Simulation {
 
     /** Deko-Kategorie: 0 keine, 1 Nadelbaum, 2 Laubbaum, 3 Fels, 4 Busch. */
     fun decoType(r: Int, c: Int): Int {
-        if (isPlatform(r, c)) return 0
+        if (isPlatform(r, c) || isExpandedPlatform(r, c)) return 0
         if (!landAt(r, c) || grid[r][c] != null || occ[r][c] != null || harvested[r * n + c]) return 0
         if (!landAt(r - 1, c) || !landAt(r + 1, c) || !landAt(r, c - 1) || !landAt(r, c + 1)) return 0
         val h = decoHash(r, c); val pct = h % 100
@@ -567,6 +583,51 @@ class Simulation {
         if (!isLocked(r, c)) return false
         if (!spendMoney(CHUNK_COST)) return false
         markSurveyed(r, c)
+        return true
+    }
+
+    // --- Infrastruktur-Ausbau (nur Level 2): bereits gekauftes, leeres Land in AKW-
+    // Plattform ODER kuenstlichen Wasserkanal umwandeln. ---
+
+    /** Darf dieses Feld ueberhaupt ausgebaut werden (Plattform oder Kanal)? */
+    fun canExpandInfra(r: Int, c: Int): Boolean {
+        if (companyLevel < 2) return false
+        if (r !in 0 until n || c !in 0 until n) return false
+        if (grid[r][c] != null || occ[r][c] != null) return false
+        if (isLocked(r, c)) return false
+        if (hasObstacle(r, c)) return false
+        if (isPlatform(r, c) || expandedPlatform[r * n + c] || expandedCanal[r * n + c]) return false
+        return isLand(r, c)   // muss (noch) normales, freies Land sein
+    }
+
+    /** Natuerliche (nicht kuenstliche) Wasserquelle direkt angrenzend - Pflicht fuer den Kanal. */
+    fun hasNaturalWaterAdjacent(r: Int, c: Int): Boolean {
+        for (dr in -1..1) for (dc in -1..1) {
+            if (dr == 0 && dc == 0) continue
+            val rr = r + dr; val cc = c + dc
+            if (rr !in 0 until n || cc !in 0 until n) continue
+            if (!isLand(rr, cc) && !expandedCanal[rr * n + cc]) return true
+        }
+        return false
+    }
+
+    fun expandPlatformCost(): Double = kotlin.math.round(payAnchor() * EXPAND_PLATFORM_FACTOR)
+    fun expandCanalCost(): Double = kotlin.math.round(payAnchor() * EXPAND_CANAL_FACTOR)
+
+    /** Feld in ausgebaute AKW-Plattform umwandeln (bebaubar, ausser Windrad/Solar). */
+    fun expandToPlatform(r: Int, c: Int): Boolean {
+        if (!canExpandInfra(r, c)) return false
+        if (!spendMoney(expandPlatformCost())) return false
+        expandedPlatform[r * n + c] = true
+        return true
+    }
+
+    /** Feld zum kuenstlichen Wasserkanal graben (nicht mehr bebaubar, aber Wasserquelle). */
+    fun expandToCanal(r: Int, c: Int): Boolean {
+        if (!canExpandInfra(r, c)) return false
+        if (!hasNaturalWaterAdjacent(r, c)) return false
+        if (!spendMoney(expandCanalCost())) return false
+        expandedCanal[r * n + c] = true
         return true
     }
 
@@ -610,6 +671,28 @@ class Simulation {
             Res.STROM -> globalStrom += amt
             Res.ROHERZ, Res.WASSER, Res.BLEI, Res.DAMPF -> {}
         }
+    }
+
+    /** Nur diese vier Sorten haben einen globalen Pool - fuer die anderen (Roherz, Wasser,
+     *  Blei, Dampf) gibt es keinen "globalen" Platz, wohin entnommener Bestand koennte. */
+    fun canWithdrawFromLager(res: Int): Boolean = res == Res.BARREN.ordinal || res == Res.PLATTE.ordinal ||
+        res == Res.KOMPONENTE.ordinal || res == Res.STROM.ordinal
+
+    /**
+     * Entnimmt den kompletten Bestand eines Rohstoffs aus einem Lager in den globalen
+     * Bestand - wird NICHT geloescht, bleibt weiterhin nutz-/verkaufbar, macht aber im
+     * Lager-Puffer wieder Platz fuer neuen Nachschub (sonst blockiert ein volles Lager
+     * irgendwann die Zulieferer). Gibt die entnommene Menge zurueck (0 = nichts passiert).
+     */
+    fun withdrawFromLager(r: Int, c: Int, res: Int): Double {
+        val a = anchorOf(r, c) ?: return 0.0
+        val m = grid[a[0]][a[1]] ?: return 0.0
+        if (m.type != MType.LAGER || !canWithdrawFromLager(res)) return 0.0
+        val amt = m.output[res]
+        if (amt <= 1e-9) return 0.0
+        m.output[res] = 0.0
+        addGlobal(Res.values()[res], amt)
+        return amt
     }
 
     /** Zahlt einen Rohstoff: erst global, dann aus den Lagern. */
@@ -818,6 +901,7 @@ class Simulation {
     private fun resetFactory() {
         for (r in 0 until n) for (c in 0 until n) { grid[r][c] = null; occ[r][c] = null }
         surveyed.fill(false); harvested.fill(false)
+        expandedPlatform.fill(false); expandedCanal.fill(false)
         globalBarren = START_BARREN; globalPlatten = 0.0; globalKomponente = 0.0; globalStrom = 0.0
         money = START_MONEY; research = 0.0
         mapSeed = System.nanoTime() xor 0x5DEECE66DL
@@ -874,6 +958,9 @@ class Simulation {
             if (!isLand(rr, cc)) return false           // Bauen nur auf Land
             if (!isSurveyed(rr, cc)) return false        // Chunk muss freigeschaltet sein
             if (decoType(rr, cc) != 0) return false      // Hindernis muss erst weg
+            // Auf ausgebauter Infrastruktur (vom Spieler zur Plattform gemachtes Land) darf
+            // alles ausser Windrad/Solar stehen - die brauchen natuerlichen Wind/Himmel.
+            if ((t == MType.WINDRAD || t == MType.SOLAR) && expandedPlatform[rr * n + cc]) return false
         }
         if (isMoneyBuilt(t)) {
             if (!spendMoney(moneyBuildCost(t))) return false
@@ -1151,7 +1238,16 @@ class Simulation {
         return res.filter { it[0] in 0 until n && it[1] in 0 until n }
     }
     /** Wasserpumpe: braucht ein angrenzendes Wasserfeld (Kueste/Fluss), um zu foerdern. */
-    fun adjWater(r: Int, c: Int): Boolean = neighbors(r, c).any { rawWater(it[0], it[1]) }
+    fun adjWater(r: Int, c: Int): Boolean =
+        neighbors(r, c).any { rawWater(it[0], it[1]) || expandedCanal[it[0] * n + it[1]] }
+
+    /** Ergiebigkeit der Wasserversorgung: volle Kraft an echtem Wasser, nur ein Bruchteil
+     *  an einem kuenstlich gegrabenen Kanal (weniger effizient als eine echte Quelle). */
+    private fun waterEfficiency(r: Int, c: Int): Double {
+        if (neighbors(r, c).any { rawWater(it[0], it[1]) }) return 1.0
+        if (neighbors(r, c).any { expandedCanal[it[0] * n + it[1]] }) return CANAL_WATER_MULT
+        return 0.0
+    }
 
     private fun boostAt(r: Int, c: Int): Double {
         var k = 0
@@ -1446,9 +1542,11 @@ class Simulation {
                 }
                 MType.WASSERPUMPE -> {
                     val mult = machineUpgradeMult(m)
-                    val nominal = wasserpumpeRate() * mult * ddt
+                    // An einem kuenstlichen Kanal statt echtem Wasser nur ein Bruchteil des
+                    // Ertrags (CANAL_WATER_MULT) - weniger effizient als eine natuerliche Quelle.
+                    val nominal = wasserpumpeRate() * mult * ddt * waterEfficiency(r, c)
                     val want = nominal * scale * wearMult(m.condition)
-                    val made = if (adjWater(r, c)) max(0.0, min(want, OUT_CAP - m.output[Res.WASSER.ordinal])) else 0.0
+                    val made = max(0.0, min(want, OUT_CAP - m.output[Res.WASSER.ordinal]))
                     m.output[Res.WASSER.ordinal] += made
                     if (wasserpumpeRate() > 0) m.condition = max(0.0, m.condition - wearPerSec(MType.WASSERPUMPE) * wf * (made / (wasserpumpeRate() * mult)))
                     m.util = if (nominal > 1e-9) made / nominal else 0.0
@@ -1679,6 +1777,12 @@ class Simulation {
         val harv = JSONArray()
         for (i in harvested.indices) if (harvested[i]) harv.put(i)
         root.put("harv", harv)
+        val expp = JSONArray()
+        for (i in expandedPlatform.indices) if (expandedPlatform[i]) expp.put(i)
+        root.put("expp", expp)
+        val expc = JSONArray()
+        for (i in expandedCanal.indices) if (expandedCanal[i]) expc.put(i)
+        root.put("expc", expc)
         val pipe = JSONArray()
         for (cell in reactorPipe) pipe.put(JSONArray().put(cell[0]).put(cell[1]))
         root.put("pipe", pipe)
@@ -1788,6 +1892,18 @@ class Simulation {
         if (harv != null) for (i in 0 until harv.length()) {
             val idx = harv.optInt(i, -1)
             if (idx in harvested.indices) harvested[idx] = true
+        }
+        expandedPlatform.fill(false)
+        val expp = root.optJSONArray("expp")
+        if (expp != null) for (i in 0 until expp.length()) {
+            val idx = expp.optInt(i, -1)
+            if (idx in expandedPlatform.indices) expandedPlatform[idx] = true
+        }
+        expandedCanal.fill(false)
+        val expc = root.optJSONArray("expc")
+        if (expc != null) for (i in 0 until expc.length()) {
+            val idx = expc.optInt(i, -1)
+            if (idx in expandedCanal.indices) expandedCanal[idx] = true
         }
 
         // Reaktor-Kuehlschlauch laden (neues Format) bzw. Reaktor neu platzieren (altes Format).

@@ -1,6 +1,7 @@
 package com.olusprogr.schacht
 
 import android.net.Uri
+import android.os.Build
 import android.os.Bundle
 import android.view.WindowManager
 import android.widget.Toast
@@ -64,8 +65,17 @@ class MainActivity : AppCompatActivity() {
      */
     private fun enforceFullscreen() {
         WindowCompat.setDecorFitsSystemWindows(window, false)
+        // Ohne das reserviert Android auf Geraeten mit Notch/Punch-Hole oben weiterhin
+        // Platz fuer die Aussparung, selbst wenn die Statusleiste ausgeblendet ist -
+        // das war der Grund, warum bisher nur unten (Navigationsleiste), nicht aber
+        // oben (Statusleiste/Notch) wirklich Vollbild war.
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+            window.attributes = window.attributes.apply {
+                layoutInDisplayCutoutMode = WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES
+            }
+        }
         val controller = WindowCompat.getInsetsController(window, window.decorView)
-        controller.hide(WindowInsetsCompat.Type.systemBars())
+        controller.hide(WindowInsetsCompat.Type.statusBars() or WindowInsetsCompat.Type.navigationBars())
         controller.systemBarsBehavior = WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
     }
 
