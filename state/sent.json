@@ -1,6 +1,60 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/pc-components/cpus/intels-next-gen-nova-lake-chips-may-skip-bllc-for-mobile-skus-and-debut-on-razor-lake-hx-instead-leaker-claims-new-rumor-says-razor-lake-family-reportedly-uses-tsmcs-n2x-node",
+      "title": "Intel's next-gen Nova Lake chips may skip game-boosting X3D cache rival for mobile SKUs and debut on Razor Lake-HX instead, leaker claims — new rumor says Razor Lake family reportedly uses TSMC's N2X node",
+      "summary": "Nova Lake desktop CPUs look to be the exclusive recipient of bLLC, Intel's answer to AMD's X3D, as the company looks to debut bLLC on mobile with Razor Lake-HX, and possibly Razor Lake-AX. As such, the Razor Lake family is also rumored to be manufactured on TSCM's N2X process node.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-08-18T14:18:57+00:00",
+      "sent_at": "2026-08-18T14:29:18.924762+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/08/18/warps-new-system-is-an-out-of-the-box-software-factory-for-ai-development/",
+      "title": "Warp’s new system is an out-of-the-box software factory for AI development",
+      "summary": "On Tuesday, Warp introduced Warp Factories, a new infrastrructure system designed to make building AI software factories as easy as possible.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-18T14:00:00+00:00",
+      "sent_at": "2026-08-18T14:29:18.924762+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/amd-claims-its-2026-rack-scale-ai-solution-is-4x-more-energy-efficient-than-its-2024-ai-platform-company-says-its-pacing-ahead-of-20x-efficiency-by-2030",
+      "title": "AMD claims its 2026 rack-scale AI solution is 4X more energy efficient than its 2024 AI platform — company says it's pacing ahead of 20X efficiency by 2030",
+      "summary": "AMD says its 2025 rack-scale AI system is 4X more energy efficient compared to its 2024 AI solution, though does not produce actual benchmark results.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-08-18T14:00:00+00:00",
+      "sent_at": "2026-08-18T14:29:18.924762+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/08/18/openai-launches-a-safer-chatgpt-for-teens-years-after-teens-started-using-it/",
+      "title": "OpenAI launches a safer ChatGPT for teens — years after teens started using it",
+      "summary": "ChatGPT for Teens adds age-appropriate safety measures, parental controls, and learning tools designed to steer teens away from harmful content — and from using AI to cheat on their homework.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-18T13:50:30+00:00",
+      "sent_at": "2026-08-18T14:29:18.924762+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/08/18/perplexitys-free-ai-offer-left-it-with-millions-more-users-in-india/",
+      "title": "Perplexity’s free AI offer left it with millions more users in India",
+      "summary": "Perplexity's India revenue rose about 60% after the Airtel offer ended for new users, even as downloads declined.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-18T13:45:40+00:00",
+      "sent_at": "2026-08-18T14:29:18.924762+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/security/2026/08/microsoft-copilot-reveals-secret-input-that-allowed-it-to-be-hacked/",
+      "title": "Microsoft Copilot reveals secret input that allowed it to be hacked",
+      "summary": "Secret parameter allowed hackers to steal passwords when a target clicked on a link.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-08-18T13:00:04+00:00",
+      "sent_at": "2026-08-18T14:29:18.924762+00:00"
+    },
+    {
       "link": "https://www.theverge.com/ai-artificial-intelligence/981283/mozilla-firefox-smart-window-ai-features",
       "title": "Firefox&#8217;s Smart Window promises a better AI browser",
       "summary": "Starting today, AI chats in Firefox's Smart Window AI browsing mode can pull from current web info and show source links in chat responses through a partnership with Exa. Smart Window can also now automatically suggest tab groups and show visual previews of pages you previously visited when you search your browsing history using natural [&#8230;]",
