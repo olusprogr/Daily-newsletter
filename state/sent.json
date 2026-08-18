@@ -1,6 +1,33 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/08/18/etcheds-valuation-doubles-to-21b-in-a-month/",
+      "title": "Etched’s valuation doubles to $21B in a month",
+      "summary": "Jane Street has installed Etched's first shipped AI cluster system, and was so impressed, it led another massive round, the startup says.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-18T17:21:58+00:00",
+      "sent_at": "2026-08-18T17:22:35.814149+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/08/18/tesla-robotaxi-rams-through-bollards-austin/",
+      "title": "Tesla ‘Robotaxi’ rams through bollards weeks after ‘impeccable’ claim",
+      "summary": "A Tesla “Robotaxi” running with no safety monitor onboard drove straight through a row of bollards protecting a closed-off lane in Austin, then kept driving. The video surfaced Monday, less than a month after Tesla’s head of AI told investors the Robotaxi program has an “impeccable safety record” with “zero notable incidents.” While no one was hurt or in danger in this incident, it is worrying to see an unsupervised Tesla vehicle ram through clearly visible bollards with plenty of time to see them and think about going around them.",
+      "source": "Electrek",
+      "category": "AI",
+      "published": "2026-08-18T17:04:56+00:00",
+      "sent_at": "2026-08-18T17:22:35.814149+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/08/18/einride-strikes-deal-to-add-500-tesla-semis-to-its-fleet/",
+      "title": "Einride strikes deal to add 500 Tesla Semis to its fleet",
+      "summary": "The deal will triple the size of Einride's fleet while sweetening the company's sales pitch for its Saga AI software. The Tesla Semis will be available to customers across North America.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-18T10:30:00+00:00",
+      "sent_at": "2026-08-18T17:22:35.814149+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/08/18/why-apples-camera-equipped-airpods-may-not-be-the-pervert-pods-consumers-fear/",
       "title": "Why Apple’s camera-equipped AirPods may not be the ‘pervert pods’ consumers fear",
       "summary": "Apple’s leaked camera-equipped AirPods might avoid the privacy pitfalls of other AI wearables by preventing users from recording photos and videos.",
