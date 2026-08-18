@@ -1,6 +1,24 @@
 {
   "items": [
     {
+      "link": "https://www.onethousandmeans.com/p/norway-should-buy-openai",
+      "title": "Norway Should Buy OpenAI",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-18T19:30:29+00:00",
+      "sent_at": "2026-08-18T19:48:23.223462+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/981640/openai-security-changes-ai-hugging-face-hack",
+      "title": "OpenAI lays out new security changes after its AI hacked Hugging Face",
+      "summary": "OpenAI is announcing security updates following the July news that its AI broke out of a sandboxed environment and accidentally hacked Hugging Face, including improvements to its research environments, monitoring, and alignment techniques. The company had already put the brakes on a new model, Astra, that it thinks could have \"critical\" cybersecurity capabilities, and the [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-08-18T19:28:30+00:00",
+      "sent_at": "2026-08-18T19:48:23.223462+00:00"
+    },
+    {
       "link": "https://www.engadget.com/2239392/nvidia-geforce-now-adds-firefox-support-on-windows/",
       "title": "NVIDIA GeForce Now adds Firefox support on Windows",
       "summary": "NVIDIA GeForce Now adds Firefox support on Windows.",
