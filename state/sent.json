@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/google-buys-spirit-airlines-data-for-ai-training-for-just-usd10-million-purchase-includes-hundreds-of-millions-of-emails-microsoft-teams-chats-billions-of-flight-pricing-records-and-anonymized-passenger-records",
+      "title": "Google buys Spirit Airlines data for AI training for just $10 million — purchase includes hundreds of millions of emails, Microsoft Teams chats, billions of flight pricing records, and anonymized passenger records",
+      "summary": "A U.S. bankruptcy court auctioned off Spirit Airlines' treasure trove of data, with Google making the winning bid. The tech giant is paying $10 million for various information, including hundreds of millions of emails and Microsoft Teams conversations, and billions of flight pricing data and transaction records.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-08-18T11:02:02+00:00",
+      "sent_at": "2026-08-18T11:21:26.800860+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/08/18/reach-capital-raises-265m-fund-v-to-back-ai-founders-building-to-expand-human-potential/",
+      "title": "Reach Capital raises $265M Fund V to back AI founders building to ‘expand human potential’",
+      "summary": "Reach Capital announced Tuesday an oversubscribed $265M Fund V.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-18T11:00:00+00:00",
+      "sent_at": "2026-08-18T11:21:26.800860+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/981333/openai-chatgpt-teen-mode",
+      "title": "ChatGPT is getting a dedicated mode for teens",
+      "summary": "OpenAI is introducing a dedicated ChatGPT mode for teenagers, combining existing youth safeguards and new safety features under one roof. The launch comes amid mounting public scrutiny over how AI tools affect younger users, as other platforms implement their own age checks and teen-specific protections. ChatGPT for Teens is \"an experience designed to help teens [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-08-18T11:00:00+00:00",
+      "sent_at": "2026-08-18T11:21:26.800860+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2238773/chatgpt-stricter-teen-mode-starts-rolling-out-today/",
+      "title": "ChatGPT's stricter teen mode starts rolling out today",
+      "summary": "OpenAI will attempt to automatically enroll all young users in the new experience.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-08-18T11:00:00+00:00",
+      "sent_at": "2026-08-18T11:21:26.800860+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/judges-who-use-ai-to-make-decisions-still-protected-by-judicial-immunity-court-ruling-protects-outcomes-regardless-of-ai-usage",
+      "title": "Judge allegedly outsourced entire ruling to AI and still can't be sued — federal court upholds blanket judicial immunity",
+      "summary": "A U.S. federal court has ruled that a judge accused of relying entirely on AI to make a judicial decision can still retain judicial immunity from civil lawsuits, although the ruling does not determine whether such use of AI is legally or ethically permissible.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-08-18T11:00:00+00:00",
+      "sent_at": "2026-08-18T11:21:26.800860+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/you-can-finally-buy-a-fairphone-a-sustainable-repairable-smartphone-in-the-us/",
+      "title": "Exclusive: You Can Finally Buy a Fairphone—a Sustainable, Repairable Smartphone—in the US",
+      "summary": "More than a decade after launching in Europe, the Netherlands company is now selling its repairable phones in the US, starting with the Fairphone (Gen 6+).",
+      "source": "Wired",
+      "category": "Hardware",
+      "published": "2026-08-18T10:30:00+00:00",
+      "sent_at": "2026-08-18T11:21:26.800860+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/the-big-interview-podcast-andy-yen-proton/",
+      "title": "Can AI Coexist With Privacy? Proton’s Andy Yen Says It Will Have To",
+      "summary": "Proton’s CEO is a champion of encryption for everyone. So why is he going all in on un-encryptable AI?",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-08-18T10:30:00+00:00",
+      "sent_at": "2026-08-18T11:21:26.800860+00:00"
+    },
+    {
+      "link": "https://www.theregister.com/ai-and-ml/2026/08/18/google-buys-crashed-airline-spirits-data-at-auction-because-ai/5288962",
+      "title": "Google buys crashed airline Spirit's data at auction, because AI",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-18T10:13:28+00:00",
+      "sent_at": "2026-08-18T11:21:26.800860+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/laptops/gaming-laptops/best-buy-has-slashed-usd1-350-off-this-outstanding-oled-rtx-5080-laptop-16-inch-lenovo-legion-pro-7i-features-a-24-core-arrow-lake-cpu-and-32gb-of-ddr5-ram",
       "title": "Best Buy has slashed $1,350 off this 'outstanding' OLED RTX 5080 laptop — 16-inch Lenovo Legion Pro 7i features a 24-core Arrow Lake CPU and 32GB of DDR5 RAM",
       "summary": "Get $1,350 off this Lenovo Legion Pro 7i with RTX 5080.",
