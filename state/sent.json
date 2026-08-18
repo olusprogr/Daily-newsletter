@@ -1,6 +1,15 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/08/18/openai-institutes-new-safeguards-after-hugging-face-breach/",
+      "title": "OpenAI institutes new safeguards after Hugging Face breach",
+      "summary": "The new safeguards include more detailed monitoring of models during the development process, as well as greater emphasis on alignment and security during the post-training process.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-18T18:00:00+00:00",
+      "sent_at": "2026-08-18T18:32:16.010934+00:00"
+    },
+    {
       "link": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion",
       "title": "Claude Code weekly limits reduce by a third tomorrow",
       "summary": "",
