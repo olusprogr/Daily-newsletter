@@ -1,9 +1,10 @@
 """
-Wasserpumpe v2: deutlich substantiellere Pumpstation statt der duennen
-Box mit schwebendem Tropfen - Betonsockel mit Bolzen, zylindrisches
-Pumpengehaeuse mit Bullauge (Wasser darin sichtbar), Steigrohr mit
-Ventilrad, Ansaug- und Auslassrohr mit flieszendem Wasser (Wellen-Muster),
-im selben Detailgrad wie der normale Bohrer.
+Wasserpumpe v3: substantielle Pumpstation - Betonsockel mit Bolzen, zylindrisches
+Pumpengehaeuse mit Bullauge (Wasser darin sichtbar), Steigrohr mit Ventilrad,
+Druckmesser und generischen Rohrflanschen links/rechts (statt fest "links=Ansaug,
+rechts=Auslass" eingebackener Stutzen - die tatsaechliche Verbindung zur Wasser-
+quelle bzw. Zentrifuge zeichnet GameView.kt jetzt dynamisch in die richtige
+Richtung, siehe drawWasserpumpePipes()/drawPipeSeg()).
 """
 from PIL import Image, ImageDraw
 S = 64
@@ -14,6 +15,7 @@ MDK = (64, 68, 78, A); MMD = (104, 110, 122, A); MLT = (150, 158, 172, A); MHI =
 BLU = (70, 150, 214, A); BLUL = (150, 210, 246, A); BLUD = (40, 96, 150, A)
 YEL = (240, 200, 70, A); OCN = (30, 30, 34, A)
 CONC = (86, 88, 96, A); CONCD = (60, 62, 70, A)
+RED = (232, 76, 64, A)
 
 im = Image.new("RGBA", (S, S), (0, 0, 0, 0))
 d = ImageDraw.Draw(im)
@@ -56,12 +58,16 @@ panel(23, 3, 18, 7, MDK, MHI, MMD)
 disc(32, 6, 5, MDK); im.putpixel((32, 2), MHI); im.putpixel((28, 6), MHI); im.putpixel((36, 6), MHI)
 disc(32, 6, 2, MLT)
 
-# Ansaug (links, Richtung Kueste) + Auslass (rechts) mit Wasserwellen
-rect(4, 40, 12, 6, MMD); rect(4, 40, 12, 2, MLT)
-for i, yy in enumerate(range(41, 45, 2)): rect(6 + (i % 2) * 2, yy, 6, 1, BLU)
-rect(48, 40, 12, 6, MMD); rect(48, 40, 12, 2, MLT)
-for i, yy in enumerate(range(41, 45, 2)): rect(50 + (i % 2) * 2, yy, 6, 1, BLU)
-# Austretendes Wasser (kleine Tropfen/Wellen unten rechts)
-rect(50, 47, 8, 1, BLUL); rect(52, 49, 6, 1, BLU); rect(54, 51, 4, 1, BLUL)
+# Druckmesser (kleines rundes Manometer an der Gehaeuseseite) - zusaetzliches
+# mechanisches Detail statt der vorherigen, richtungsfesten Ansaug/Auslass-Wellen.
+disc(41, 30, 4, MHI); disc(41, 30, 3, OCN)
+im.putpixel((41, 28), RED); im.putpixel((41, 27), RED)
+d.line([(41, 30), (43, 28)], fill=YEL, width=1)
 
-im.save(OUT + "/mach_wasserpumpe.png"); print("wasserpumpe v2 ok")
+# Generische Rohrflansche links/rechts am Gehaeuse (keine feste Richtung mehr -
+# die tatsaechliche Leitung wird dynamisch in GameView.kt gezeichnet).
+for fx in (14, 48):
+    rect(fx, 39, 4, 8, MMD); rect(fx, 39, 4, 2, MLT)
+    rect(fx, 40, 4, 1, OC); rect(fx, 45, 4, 1, OC)
+
+im.save(OUT + "/mach_wasserpumpe.png"); print("wasserpumpe v3 ok")

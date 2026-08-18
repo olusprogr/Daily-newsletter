@@ -690,16 +690,19 @@ class Simulation {
         }
     }
 
-    /** Nur diese vier Sorten haben einen globalen Pool - fuer die anderen (Roherz, Wasser,
-     *  Blei, Dampf) gibt es keinen "globalen" Platz, wohin entnommener Bestand koennte. */
-    fun canWithdrawFromLager(res: Int): Boolean = res == Res.BARREN.ordinal || res == Res.PLATTE.ordinal ||
-        res == Res.KOMPONENTE.ordinal || res == Res.STROM.ordinal
+    /** Jede Sorte laesst sich aus einem Lager entnehmen - fuer die vier Sorten mit
+     *  globalem Pool (Barren/Platte/Komponente/Strom) wandert der Bestand dorthin (bleibt
+     *  also erhalten); fuer die vier rein lokalen Sorten (Roherz/Wasser/Blei/Dampf) gibt
+     *  es keinen globalen Pool - die werden schlicht geleert, genau wie jeder Nachschub-
+     *  Ueberschuss, den ein Nachfolger nicht schnell genug abnimmt, sonst ohnehin verpufft. */
+    fun canWithdrawFromLager(res: Int): Boolean = res in Res.values().indices
 
     /**
-     * Entnimmt den kompletten Bestand eines Rohstoffs aus einem Lager in den globalen
-     * Bestand - wird NICHT geloescht, bleibt weiterhin nutz-/verkaufbar, macht aber im
-     * Lager-Puffer wieder Platz fuer neuen Nachschub (sonst blockiert ein volles Lager
-     * irgendwann die Zulieferer). Gibt die entnommene Menge zurueck (0 = nichts passiert).
+     * Entnimmt den kompletten Bestand eines Rohstoffs aus einem Lager - macht im Lager-
+     * Puffer wieder Platz fuer neuen Nachschub (sonst blockiert ein volles Lager irgend-
+     * wann die Zulieferer). Bei den vier global gepoolten Sorten bleibt der Bestand
+     * erhalten (wandert in den globalen Pool); bei den restlichen vier wird er geleert.
+     * Gibt die entnommene Menge zurueck (0 = nichts passiert).
      */
     fun withdrawFromLager(r: Int, c: Int, res: Int): Double {
         val a = anchorOf(r, c) ?: return 0.0
@@ -1263,6 +1266,19 @@ class Simulation {
     /** Wasserpumpe: braucht ein angrenzendes Wasserfeld (Kueste/Fluss), um zu foerdern. */
     fun adjWater(r: Int, c: Int): Boolean =
         neighbors(r, c).any { rawWater(it[0], it[1]) || expandedCanal[it[0] * n + it[1]] }
+
+    /** Richtungs-Offset (dr,dc) des ersten angrenzenden Wasserfeldes (Meer ODER Kanal),
+     *  oder null - fuer das Ansaugrohr der Wasserpumpe (GameView.kt), das wirklich bis
+     *  zur tatsaechlichen Wasserquelle reicht statt an einer festen Stelle zu kleben. */
+    fun waterNeighborDir(r: Int, c: Int): IntArray? {
+        val dirs = arrayOf(intArrayOf(-1, 0), intArrayOf(1, 0), intArrayOf(0, -1), intArrayOf(0, 1))
+        for (o in dirs) {
+            val rr = r + o[0]; val cc = c + o[1]
+            if (rr !in 0 until n || cc !in 0 until n) continue
+            if (rawWater(rr, cc) || expandedCanal[rr * n + cc]) return o
+        }
+        return null
+    }
 
     /** Ergiebigkeit der Wasserversorgung: volle Kraft an echtem Wasser, nur ein Bruchteil
      *  an einem kuenstlich gegrabenen Kanal (weniger effizient als eine echte Quelle). */

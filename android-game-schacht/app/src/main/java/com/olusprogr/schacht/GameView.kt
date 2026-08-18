@@ -698,6 +698,7 @@ class GameView(context: Context) : View(context) {
         drawOilRig(canvas)
         // Kuehlschlauch (unter den Maschinen)
         if (screen == Screen.GAME) drawHose(canvas)
+        if (screen == Screen.GAME) drawWasserpumpePipes(canvas)
         // Pass 2: Maschinen (Rand erweitern: Gebaeude ragen bis 2 Zellen nach oben/rechts)
         val mr1 = (r1 + 2).coerceIn(0, an - 1)
         val mc0 = (c0 - 2).coerceIn(0, an - 1)
@@ -1070,6 +1071,55 @@ class GameView(context: Context) : View(context) {
         p.strokeCap = Paint.Cap.BUTT
     }
 
+    /** Ein Rohrsegment im selben Stil wie der Reaktor-Kuehlschlauch (drawHose): dunkler
+     *  Aussenrand, mittelgrauer Kern, heller Glanzstreifen oben. */
+    private fun drawPipeSeg(canvas: Canvas, ax: Float, ay: Float, bx: Float, by: Float) {
+        p.style = Paint.Style.STROKE; p.strokeCap = Paint.Cap.ROUND
+        p.color = cGridLine; p.strokeWidth = cell * 0.18f; canvas.drawLine(ax, ay, bx, by, p)
+        p.color = Color.rgb(120, 126, 140); p.strokeWidth = cell * 0.10f; canvas.drawLine(ax, ay, bx, by, p)
+        p.color = Color.rgb(176, 182, 194); p.strokeWidth = cell * 0.035f
+        canvas.drawLine(ax, ay - cell * 0.03f, bx, by - cell * 0.03f, p)
+        p.strokeCap = Paint.Cap.BUTT
+    }
+
+    /** Ein animierter Wassertropfen, der von (ax,ay) nach (bx,by) durch ein Rohrsegment wandert. */
+    private fun drawPipeFlow(canvas: Canvas, ax: Float, ay: Float, bx: Float, by: Float, phase: Float) {
+        p.style = Paint.Style.FILL
+        val pos = phase - kotlin.math.floor(phase)
+        p.color = Color.rgb(96, 206, 228)
+        canvas.drawCircle(ax + (bx - ax) * pos, ay + (by - ay) * pos, cell * 0.035f, p)
+    }
+
+    /**
+     * Wasserpumpe: echtes Ansaugrohr zur tatsaechlich angrenzenden Wasserquelle (Meer oder
+     * Kanal, welche Richtung auch immer) UND ein Abgaberohr zu einer direkt angrenzenden
+     * Zentrifuge, falls vorhanden - beide beruehren sich ueber die Pumpe hinweg, statt wie
+     * vorher ein fest eingebackener Stutzen zu sein, der selten zur echten Platzierung passt.
+     */
+    private fun drawWasserpumpePipes(canvas: Canvas) {
+        val an = sim.areaN()
+        for (r in 0 until an) for (c in 0 until an) {
+            val m = sim.grid[r][c] ?: continue
+            if (m.type != MType.WASSERPUMPE) continue
+            val px = vLeft + (c + 0.5f) * cell; val py = vTop + (r + 0.5f) * cell
+            val wdir = sim.waterNeighborDir(r, c)
+            if (wdir != null) {
+                val wx = vLeft + (c + wdir[1] + 0.5f) * cell; val wy = vTop + (r + wdir[0] + 0.5f) * cell
+                drawPipeSeg(canvas, px, py, wx, wy)
+                drawPipeFlow(canvas, wx, wy, px, py, animT * 0.5f)   // Wasser stroemt VON der Quelle ZUR Pumpe
+            }
+            for (d in arrayOf(intArrayOf(-1, 0), intArrayOf(1, 0), intArrayOf(0, -1), intArrayOf(0, 1))) {
+                val nr = r + d[0]; val nc = c + d[1]
+                if (nr !in 0 until an || nc !in 0 until an) continue
+                if (sim.grid[nr][nc]?.type != MType.ZENTRIFUGE) continue
+                val zx = vLeft + (nc + 0.5f) * cell; val zy = vTop + (nr + 0.5f) * cell
+                drawPipeSeg(canvas, px, py, zx, zy)
+                drawPipeFlow(canvas, px, py, zx, zy, animT * 0.5f + 0.5f)   // VON der Pumpe ZUR Zentrifuge
+                break
+            }
+        }
+    }
+
     private fun drawSprite(canvas: Canvas, list: List<Px>, x: Float, y: Float, s: Float) {
         for (px in list) {
             pSprite.color = px.c
@@ -1210,8 +1260,9 @@ class GameView(context: Context) : View(context) {
             canvas.drawRect(x + cell * 0.74f, y + cell * 0.12f, x + cell * 0.74f + ld, y + cell * 0.12f + ld, pSprite)
         }
 
-        // Bohrer bohrt: nach unten wandernde Glanzbaender (Schnecke dreht sich) + Staub
-        if (working && m.type == MType.BOHRER) {
+        // Bohrer bohrt: nach unten wandernde Glanzbaender (Schnecke dreht sich) + Staub -
+        // genauso fuer den Tiefen-Bohrer (Bleibohrer), der bisher keine Animation hatte.
+        if (working && (m.type == MType.BOHRER || m.type == MType.BLEIBOHRER)) {
             val cx = x + cell * 0.5f
             for (k in 0 until 2) {
                 val phase = (animT * 2.5f + k * 0.5f) % 1f
