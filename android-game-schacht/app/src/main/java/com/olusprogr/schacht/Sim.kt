@@ -521,8 +521,10 @@ class Simulation {
     fun isLand(r: Int, c: Int): Boolean {
         if (r !in 0 until n || c !in 0 until n) return false
         if (grid[r][c] != null || occ[r][c] != null) return true
+        // Kanal geht IMMER vor - auch mitten auf der (sonst immer als Land geltenden)
+        // Plattform, sonst liesse sich dort kein Kanal graben.
+        if (expandedCanal[r * n + c]) return false
         if (isPlatform(r, c)) return true       // Plattform ist immer Land/bebaubar
-        if (expandedCanal[r * n + c]) return false   // gegrabener Kanal - aus Land gemacht, jetzt wie Wasser
         if (expandedPlatform[r * n + c]) return true // vom Spieler ausgebaute Plattform-Flaeche
         return landValue(r, c) > LAND_THRESH
     }
@@ -589,16 +591,25 @@ class Simulation {
     // --- Infrastruktur-Ausbau (nur Level 2): bereits gekauftes, leeres Land in AKW-
     // Plattform ODER kuenstlichen Wasserkanal umwandeln. ---
 
-    /** Darf dieses Feld ueberhaupt ausgebaut werden (Plattform oder Kanal)? */
+    /**
+     * Darf an diesem Feld ueberhaupt etwas an der Infrastruktur ausgebaut werden (Basis
+     * fuer Plattform-Erweiterung UND Kanal-Grabung)? Ein Kanal laesst sich auch auf der
+     * (bereits vorhandenen) AKW-Plattform selbst graben, nicht nur auf freiem Land daneben.
+     */
     fun canExpandInfra(r: Int, c: Int): Boolean {
         if (companyLevel < 2) return false
         if (r !in 0 until n || c !in 0 until n) return false
         if (grid[r][c] != null || occ[r][c] != null) return false
         if (isLocked(r, c)) return false
         if (hasObstacle(r, c)) return false
-        if (isPlatform(r, c) || expandedPlatform[r * n + c] || expandedCanal[r * n + c]) return false
-        return isLand(r, c)   // muss (noch) normales, freies Land sein
+        if (expandedCanal[r * n + c]) return false
+        return isLand(r, c)   // muss (noch) Land sein - egal ob normal, Plattform oder Erweiterung
     }
+
+    /** Speziell die Plattform-Erweiterung: nur auf noch normalem Land, keine bereits
+     *  vorhandene Plattform "nochmal" erweitern. */
+    fun canExpandPlatformHere(r: Int, c: Int): Boolean =
+        canExpandInfra(r, c) && !isPlatform(r, c) && !expandedPlatform[r * n + c]
 
     /** Natuerliche (nicht kuenstliche) Wasserquelle direkt angrenzend - Pflicht fuer den Kanal. */
     fun hasNaturalWaterAdjacent(r: Int, c: Int): Boolean {
@@ -616,17 +627,19 @@ class Simulation {
 
     /** Feld in ausgebaute AKW-Plattform umwandeln (bebaubar, ausser Windrad/Solar). */
     fun expandToPlatform(r: Int, c: Int): Boolean {
-        if (!canExpandInfra(r, c)) return false
+        if (!canExpandPlatformHere(r, c)) return false
         if (!spendMoney(expandPlatformCost())) return false
         expandedPlatform[r * n + c] = true
         return true
     }
 
-    /** Feld zum kuenstlichen Wasserkanal graben (nicht mehr bebaubar, aber Wasserquelle). */
+    /** Feld zum kuenstlichen Wasserkanal graben (auch mitten auf der Plattform moeglich) -
+     *  nicht mehr bebaubar, dafuer (schwache) Wasserquelle. */
     fun expandToCanal(r: Int, c: Int): Boolean {
         if (!canExpandInfra(r, c)) return false
         if (!hasNaturalWaterAdjacent(r, c)) return false
         if (!spendMoney(expandCanalCost())) return false
+        expandedPlatform[r * n + c] = false   // falls hier vorher Plattform war: sauber ersetzen
         expandedCanal[r * n + c] = true
         return true
     }
@@ -958,9 +971,15 @@ class Simulation {
             if (!isLand(rr, cc)) return false           // Bauen nur auf Land
             if (!isSurveyed(rr, cc)) return false        // Chunk muss freigeschaltet sein
             if (decoType(rr, cc) != 0) return false      // Hindernis muss erst weg
-            // Auf ausgebauter Infrastruktur (vom Spieler zur Plattform gemachtes Land) darf
-            // alles ausser Windrad/Solar stehen - die brauchen natuerlichen Wind/Himmel.
-            if ((t == MType.WINDRAD || t == MType.SOLAR) && expandedPlatform[rr * n + cc]) return false
+            // Ab Level 2 ist die AKW-Flaeche (Plattform + Erweiterungen) strikt fuer die
+            // Industrie reserviert: alles ausser Windrad/Solar NUR dort, Windrad/Solar NUR
+            // auf normalem Land daneben (brauchen freien Wind/Himmel).
+            if (companyLevel >= 2) {
+                val onPlatform = isPlatform(rr, cc) || expandedPlatform[rr * n + cc]
+                if (t == MType.WINDRAD || t == MType.SOLAR) {
+                    if (onPlatform) return false
+                } else if (!onPlatform) return false
+            }
         }
         if (isMoneyBuilt(t)) {
             if (!spendMoney(moneyBuildCost(t))) return false

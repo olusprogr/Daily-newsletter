@@ -788,9 +788,15 @@ class GameView(context: Context) : View(context) {
                     intArrayOf(off)
                 }
                 for (res in offerCandidates) {
-                    // Immer zeigen, sobald die Verbindung strukturell existiert (nicht nur,
-                    // wenn gerade in diesem Sekundenbruchteil etwas Messbares fliesst) - so
-                    // ist jede Produktionskette jederzeit als durchgehende Animation sichtbar.
+                    // Nur zeichnen, wenn wirklich etwas fliesst: eine vom Lager blockierte
+                    // Sorte NIE zeigen, sonst nur wenn die Quelle etwas anzubieten hat UND
+                    // das Ziel es auch annimmt (Lager: nicht blockiert reicht; sonst muss
+                    // das Ziel gerade aktiv laufen).
+                    if (isLager && !cm.acceptRes[res]) continue
+                    val hasSupply = pm.output[res] > 0.2 || pm.util > 0.03
+                    val isAccepted = isLager || cm.util > 0.03
+                    if (!hasSupply || !isAccepted) continue
+
                     val sx = vLeft + pa[1] * cell + half
                     val sy = vTop + pa[0] * cell + half
                     val ex = vLeft + c * cell + half
@@ -829,13 +835,19 @@ class GameView(context: Context) : View(context) {
         val lw = (cell * 0.035f).coerceAtLeast(1f)
         if (((r - sim.platformR0) % 3 + 3) % 3 == 0) canvas.drawRect(x, y, x + cell, y + lw, p)
         if (((c - sim.platformC0) % 3 + 3) % 3 == 0) canvas.drawRect(x, y, x + lw, y + cell, p)
-        // Gelb-schwarzer Warnrand nur an den AUSSENkanten der Plattform.
+        // Gelb-schwarzer Warnrand an den AUSSENkanten der GESAMTEN Industrieflaeche
+        // (feste Plattform + spielerausgebaute Erweiterungen) - ein Nachbar-Check statt
+        // eines festen Rechtecks, damit der Rand immer nahtlos ums tatsaechliche Areal
+        // (inkl. hineingegrabener Kanal-"Loecher") herumlaeuft, egal wie es gewachsen ist.
         val t = cell * 0.16f
-        if (r == sim.platformR0) drawHazardStrip(canvas, x, y, cell, t, c)
-        if (r == sim.platformR1) drawHazardStrip(canvas, x, y + cell - t, cell, t, c)
-        if (c == sim.platformC0) drawHazardStrip(canvas, x, y, t, cell, r)
-        if (c == sim.platformC1) drawHazardStrip(canvas, x + cell - t, y, t, cell, r)
+        if (!isIndustrialFloor(r - 1, c)) drawHazardStrip(canvas, x, y, cell, t, c)
+        if (!isIndustrialFloor(r + 1, c)) drawHazardStrip(canvas, x, y + cell - t, cell, t, c)
+        if (!isIndustrialFloor(r, c - 1)) drawHazardStrip(canvas, x, y, t, cell, r)
+        if (!isIndustrialFloor(r, c + 1)) drawHazardStrip(canvas, x + cell - t, y, t, cell, r)
     }
+    /** Plattform ODER spielerausgebaute Erweiterung, aber KEIN dort gegrabener Kanal. */
+    private fun isIndustrialFloor(r: Int, c: Int): Boolean =
+        !sim.isExpandedCanal(r, c) && ((sim.hasPlatform() && sim.isPlatform(r, c)) || sim.isExpandedPlatform(r, c))
     private fun drawHazardStrip(canvas: Canvas, x: Float, y: Float, w: Float, h: Float, coord: Int) {
         p.color = if (coord % 2 == 0) Color.rgb(244, 196, 32) else Color.rgb(26, 26, 30)
         canvas.drawRect(x, y, x + w, y + h, p)
@@ -845,14 +857,10 @@ class GameView(context: Context) : View(context) {
         val u = cell / 8f
         dstTile.set(x, y, x + cell, y + cell)
 
-        if ((sim.hasPlatform() && sim.isPlatform(r, c)) || sim.isExpandedPlatform(r, c)) {
-            drawPlatformTile(canvas, r, c, x, y)
-            return
-        }
-
         if (sim.isExpandedCanal(r, c)) {
             // Kuenstlicher Kanal: wie Wasser, aber mit einem schmalen Betonrand markiert,
-            // damit man ihn von echtem Meer unterscheiden kann.
+            // damit man ihn von echtem Meer unterscheiden kann. Muss VOR der Plattform-
+            // Pruefung kommen - ein Kanal kann auch mitten in der Plattform gegraben sein.
             val wb = if ((animT * 2f).toInt() and 1 == 0) bmpWater0 else bmpWater1
             canvas.drawBitmap(wb, srcTile, dstTile, pTile)
             p.color = Color.argb(170, 150, 150, 158)
@@ -861,6 +869,11 @@ class GameView(context: Context) : View(context) {
             canvas.drawRect(x, y + cell - bw2, x + cell, y + cell, p)
             canvas.drawRect(x, y, x + bw2, y + cell, p)
             canvas.drawRect(x + cell - bw2, y, x + cell, y + cell, p)
+            return
+        }
+
+        if ((sim.hasPlatform() && sim.isPlatform(r, c)) || sim.isExpandedPlatform(r, c)) {
+            drawPlatformTile(canvas, r, c, x, y)
             return
         }
 
@@ -1388,9 +1401,9 @@ class GameView(context: Context) : View(context) {
         var extra = 0f
         if (sim.canUpgradeMachine(m.type)) extra += dp(36f)
         // Lager laesst dafuer Zustand/Auslastung, Puffer-Zeile und Engpass-Ampel weg (siehe
-        // drawDetail) - braucht also trotz der neuen Inhalts-/Filter-Reihe insgesamt WENIGER
-        // Platz als vorher, nicht mehr.
-        if (m.type == MType.LAGER) extra += dp(20f)
+        // drawDetail), braucht aber die Inhalts-/Filter-Reihe PLUS den "Alles entnehmen"-
+        // Button darunter.
+        if (m.type == MType.LAGER) extra += dp(48f)
         if (m.type == MType.DROHNE) extra += dp(36f)
         return extra
     }
@@ -1504,11 +1517,11 @@ class GameView(context: Context) : View(context) {
             yy += dp(36f)
         }
 
-        // Lager: EINE kompakte Icon-Reihe fuer Inhalt + Annahme-Filter + Entnahme (statt
-        // vorher zwei getrennte Reihen) - randnah/volle Breite, damit die Icons so gross
-        // wie moeglich sind. Antippen der Kachel entnimmt den Bestand in den globalen
-        // Bestand (wird NICHT geloescht, macht nur im Lager wieder Platz); die kleine
-        // Ecke oben rechts schaltet Annahme/Blockade fuer diesen Rohstoff um.
+        // Lager: EINE kompakte Icon-Reihe fuer Inhalt + Annahme-Filter, randnah/volle
+        // Breite, damit die Icons so gross wie moeglich sind. Antippen einer Kachel
+        // schaltet Annahme/Blockade fuer diesen Rohstoff um (grosser Tap-Bereich, keine
+        // winzige Ecke mehr). Entnahme laeuft ueber den eigenen Button darunter, der auf
+        // einmal ALLES entnimmt statt jede Sorte einzeln antippen zu muessen.
         if (m.type == MType.LAGER) {
             pText.color = cDim; pText.textSize = dp(11f)
             canvas.drawText(tr("lager_content"), dp(12f), yy + dp(8f), pText)
@@ -1521,29 +1534,30 @@ class GameView(context: Context) : View(context) {
                 val amt = m.output[ri]
                 val has = amt > 0.05
                 val on = m.acceptRes[ri]
-                val withdrawable = has && sim.canWithdrawFromLager(ri)
                 val r = RectF(cx, cy, cx + cs, cy + cs)
                 p.color = when { !on -> Color.argb(70, 220, 80, 70); has -> Color.argb(60, 120, 190, 230); else -> Color.argb(35, 120, 120, 130) }
                 canvas.drawRoundRect(r, dp(4f), dp(4f), p)
                 p.color = when { !on -> cBad; has -> cAccent; else -> cGridLine }
                 p.style = Paint.Style.STROKE; p.strokeWidth = dp(1.1f)
                 canvas.drawRoundRect(r, dp(4f), dp(4f), p); p.style = Paint.Style.FILL
-                drawIcon(canvas, Sprites.iconForRes(ri, sim.companyLevel), cx + cs * 0.14f, cy + cs * 0.14f, cs * 0.6f)
+                drawIcon(canvas, Sprites.iconForRes(ri, sim.companyLevel), cx + cs * 0.16f, cy + cs * 0.16f, cs * 0.68f)
                 if (!on) { p.color = cBad; p.strokeWidth = dp(1.6f); canvas.drawLine(cx + 2, cy + 2, cx + cs - 2, cy + cs - 2, p) }
                 pText.textAlign = Paint.Align.CENTER; pText.textSize = dp(9f)
                 pText.color = if (has) cText else cDim
                 canvas.drawText(if (has) oneDec(amt) else "-", cx + cs / 2f, cy + cs + dp(11f), pText)
                 pText.textAlign = Paint.Align.LEFT
-                // Kleine Ecke oben rechts: Annahme/Blockade umschalten (eigener Tap-Bereich).
-                val chip = dp(11f)
-                val chipR = RectF(cx + cs - chip - dp(1.5f), cy + dp(1.5f), cx + cs - dp(1.5f), cy + chip + dp(1.5f))
-                p.color = if (on) cGood else cBad
-                canvas.drawRoundRect(chipR, dp(2.5f), dp(2.5f), p)
-                buttons.add(Btn(r, "lagerwd_$ri", "wd", withdrawable))
-                buttons.add(Btn(chipR, "lageracc_$ri", "acc"))
+                buttons.add(Btn(r, "lageracc_$ri", "acc"))
                 cx += cs + cgap
             }
-            yy += dp(48f)
+            yy += dp(40f)
+            // Alles entnehmen: kompletten Bestand aller Sorten mit globalem Pool auf einmal
+            // in den globalen Bestand ueberfuehren, statt jede Sorte einzeln antippen zu
+            // muessen (wird NICHT geloescht, bleibt weiter nutz-/verkaufbar).
+            val anyWithdrawable = (0 until n).any { m.output[it] > 0.05 && sim.canWithdrawFromLager(it) }
+            val wdR = RectF(margin2, yy, W - margin2, yy + dp(30f))
+            drawButton(canvas, Btn(wdR, "lager_wd_all", tr("withdraw_all"), anyWithdrawable, false, cAccent))
+            buttons.add(Btn(wdR, "lager_wd_all", "wda", anyWithdrawable))
+            yy += dp(38f)
         }
 
         // Drohnen-Station: Reparatur-Limit einstellen (nur reparieren ab Guthaben >= Limit)
@@ -1596,7 +1610,14 @@ class GameView(context: Context) : View(context) {
      * daneben).
      */
     private fun drawExpandPanel(canvas: Canvas) {
-        val top = H - dp(180f)
+        // Auf einer schon vorhandenen Plattform-Zelle ergibt "Plattform erweitern" keinen
+        // Sinn (schon Plattform) - dort nur die Kanal-Option zeigen, Panel entsprechend
+        // niedriger. Ein Kanal laesst sich dagegen ueberall graben (auch mitten auf der
+        // Plattform), solange natuerliches Wasser in der Naehe ist.
+        val canPlatformHere = sim.canExpandPlatformHere(selR, selC)
+        val bh = dp(52f); val gap = dp(10f)
+        val rows = if (canPlatformHere) 2 else 1
+        val top = H - dp(58f) - rows * bh - (rows - 1) * gap - dp(6f)
         p.color = cPanel
         canvas.drawRect(0f, top, W.toFloat(), H.toFloat(), p)
         p.color = cPanelHi
@@ -1609,18 +1630,21 @@ class GameView(context: Context) : View(context) {
 
         val margin = dp(10f)
         val bw = W - 2 * margin
-        val bh = dp(52f)
+        var by = top + dp(58f)
 
-        val platCost = sim.expandPlatformCost()
-        val canPlat = sim.money >= platCost
-        val r1 = RectF(margin, top + dp(58f), margin + bw, top + dp(58f) + bh)
-        drawButton(canvas, Btn(r1, "expand_plat", tr("expand_platform"), canPlat, false, cAccent, "${platCost.toInt()}€"))
-        buttons.add(Btn(r1, "expand_plat", "ep", canPlat))
+        if (canPlatformHere) {
+            val platCost = sim.expandPlatformCost()
+            val canPlat = sim.money >= platCost
+            val r1 = RectF(margin, by, margin + bw, by + bh)
+            drawButton(canvas, Btn(r1, "expand_plat", tr("expand_platform"), canPlat, false, cAccent, "${platCost.toInt()}€"))
+            buttons.add(Btn(r1, "expand_plat", "ep", canPlat))
+            by += bh + gap
+        }
 
         val waterNear = sim.hasNaturalWaterAdjacent(selR, selC)
         val canalCost = sim.expandCanalCost()
         val canCanal = waterNear && sim.money >= canalCost
-        val r2 = RectF(margin, r1.bottom + dp(10f), margin + bw, r1.bottom + dp(10f) + bh)
+        val r2 = RectF(margin, by, margin + bw, by + bh)
         val canalSub = if (waterNear) "${canalCost.toInt()}€" else tr("expand_needs_water")
         drawButton(canvas, Btn(r2, "expand_canal", tr("expand_canal"), canCanal, false, cAccent, canalSub, if (!waterNear) cBad else 0))
         buttons.add(Btn(r2, "expand_canal", "ec", canCanal))
@@ -2365,11 +2389,11 @@ class GameView(context: Context) : View(context) {
                     if (ri != null && ri in m.acceptRes.indices) { m.acceptRes[ri] = !m.acceptRes[ri]; audio.click() }
                 }
             }
-            id.startsWith("lagerwd_") -> {
+            id == "lager_wd_all" -> {
                 if (selR >= 0) {
-                    val ri = id.removePrefix("lagerwd_").toIntOrNull()
-                    val amt = if (ri != null) sim.withdrawFromLager(selR, selC, ri) else 0.0
-                    if (amt > 1e-9) { rises.add(Rise(selR, selC, "+${oneDec(amt)}", animT)); audio.sell() } else audio.error()
+                    var total = 0.0
+                    for (ri in Res.values().indices) total += sim.withdrawFromLager(selR, selC, ri)
+                    if (total > 1e-9) { rises.add(Rise(selR, selC, "+${oneDec(total)}", animT)); audio.sell() } else audio.error()
                 }
             }
             id.startsWith("buy_") -> { if (sim.buyTech(id.removePrefix("buy_"))) audio.buy() else audio.error() }
