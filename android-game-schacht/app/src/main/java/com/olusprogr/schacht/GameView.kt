@@ -1396,15 +1396,23 @@ class GameView(context: Context) : View(context) {
         else -> t.label
     }
 
-    /** Zusaetzliche Panelhoehe fuer Ausbau-Zeile bzw. Lager-Filter/Drohnen-Reihe. */
+    /**
+     * Zusaetzliche Panelhoehe ueber die Basis (top = H - 214 - extra) hinaus, damit der
+     * feste Aktions-Button-Abstand (H - 54) am Ende genau die gleiche kleine Luecke laesst
+     * wie bei einer "normalen" Maschine (4 Standardzeilen x 22dp = 88dp) - JEDER Beitrag
+     * hier ist die ECHTE Differenz zu diesen 88dp Standard-Inhalt, sonst entsteht (wie
+     * beim Lager schon einmal passiert) eine riesige leere Luecke ueber den Buttons.
+     */
     private fun detailExtraH(m: Machine): Float {
         var extra = 0f
-        if (sim.canUpgradeMachine(m.type)) extra += dp(36f)
-        // Lager laesst dafuer Zustand/Auslastung, Puffer-Zeile und Engpass-Ampel weg (siehe
-        // drawDetail), braucht aber die Inhalts-/Filter-Reihe PLUS den "Alles entnehmen"-
-        // Button darunter.
-        if (m.type == MType.LAGER) extra += dp(48f)
-        if (m.type == MType.DROHNE) extra += dp(36f)
+        if (sim.canUpgradeMachine(m.type)) extra += dp(36f)   // eigene Zeile, +36 ueber die 88dp
+        if (m.type == MType.LAGER) {
+            // Lager laesst 3 der 4 Standardzeilen weg (Zustand/Auslastung, Puffer-Zeile,
+            // Engpass-Ampel = -66dp), zeichnet dafuer die Inhalts-/Filter-Reihe (40dp) UND
+            // den "Alles entnehmen"-Button darunter (38dp): netto 40+38-66 = +12dp.
+            extra += dp(12f)
+        }
+        if (m.type == MType.DROHNE) extra += dp(36f)   // Reparatur-Limit-Zeile, +36 ueber die 88dp
         return extra
     }
 
