@@ -1,6 +1,33 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/pc-components/gpus/famed-overclocker-1usmus-updates-hydra-overclocking-tool-with-up-to-3000-mhz-memory-offset-new-update-gives-vram-and-power-limit-controls-to-rtx-50-series-gpus",
+      "title": "Overclocker updates Hydra overclocking tool with VRAM and power limit controls for RTX 50-series GPUs — new update gives up to +3000 MHz memory offset",
+      "summary": "Overclocker 1usmus has released a new update for their Hydra overclocking tool that features VRAM and power limit controls for RTX 50-series GPUs.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-08-18T11:40:00+00:00",
+      "sent_at": "2026-08-18T11:50:38.092754+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2238945/ai-generated-bills-causing-problems-in-the-capitol/",
+      "title": "AI-generated bills are reportedly causing problems in the Capitol",
+      "summary": "According to Politico, the US House Office of Legislative Counsel is swamped with error-riddled AI-generated bills.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-08-18T11:33:15+00:00",
+      "sent_at": "2026-08-18T11:50:38.092754+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/chinas-homegrown-ai-accelerators-to-supply-90-percent-of-the-countrys-domestic-market-analysts-suggest-cambricon-and-huawei-expected-to-be-the-biggest-winners-in-the-shift-away-from-nvidia-and-amd",
+      "title": "China's homegrown AI accelerators to supply 90% of the country's domestic market, analysts suggest — Cambricon and Huawei expected to be the biggest winners in the shift away from Nvidia and AMD",
+      "summary": "China could become almost self-sufficient in high-end AI accelerators in 2026 as Chinese IHVs led by Huawei expected to supply 90% of AI processors used domestically.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-08-18T11:20:00+00:00",
+      "sent_at": "2026-08-18T11:50:38.092754+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/google-buys-spirit-airlines-data-for-ai-training-for-just-usd10-million-purchase-includes-hundreds-of-millions-of-emails-microsoft-teams-chats-billions-of-flight-pricing-records-and-anonymized-passenger-records",
       "title": "Google buys Spirit Airlines data for AI training for just $10 million — purchase includes hundreds of millions of emails, Microsoft Teams chats, billions of flight pricing records, and anonymized passenger records",
       "summary": "A U.S. bankruptcy court auctioned off Spirit Airlines' treasure trove of data, with Google making the winning bid. The tech giant is paying $10 million for various information, including hundreds of millions of emails and Microsoft Teams conversations, and billions of flight pricing data and transaction records.",
