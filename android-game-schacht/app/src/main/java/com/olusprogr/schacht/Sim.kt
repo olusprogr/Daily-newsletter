@@ -48,6 +48,10 @@ class Machine(var type: MType) {
     var svC = -1
     // Drohnen-Station: repariert nur, wenn Guthaben >= dieser Schwelle (per Klick einstellbar).
     var moneyGate = 0.0
+    // Individuelle Ausbau-Stufe DIESER Maschine (unabhaengig vom globalen Tech-Baum).
+    var lvl = 0
+    // Nur fuer Lager: je Rohstoff, ob dieses Lager ihn annimmt (Standard: alle).
+    val acceptRes = BooleanArray(Res.values().size) { true }
 }
 
 data class OfflineEvent(val timeSec: Int, val dead: Boolean, val mType: MType, val r: Int, val c: Int)
@@ -217,7 +221,16 @@ class Simulation {
             TechNode("t_bleipresse", "Bleipresse freischalten", 20.0, 1.0, 1, "Blei -> Blei-Verkleidung", null, Res.BARREN),
             TechNode("t_brennstabwerk", "Brennstabwerk freischalten", 25.0, 1.0, 1, "Fertigt Brennstabsaetze", "t_bleipresse", Res.PLATTE),
             TechNode("t_reaktorkern", "Reaktorkern freischalten", 30.0, 1.0, 1, "Brennstabsatz -> Dampf", "t_brennstabwerk", Res.PLATTE),
-            TechNode("t_kuehlturm", "Kuehlturm freischalten", 35.0, 1.0, 1, "Dampf -> Strom", "t_reaktorkern", Res.PLATTE)
+            TechNode("t_kuehlturm", "Kuehlturm freischalten", 35.0, 1.0, 1, "Dampf -> Strom", "t_reaktorkern", Res.PLATTE),
+            // Level-2-Tempo-Upgrades (mit Forschung bezahlt) - Gegenstuecke zu
+            // t_bspeed/t_ospeed/t_pspeed/t_aspeed fuer die Kernkraft-Maschinen.
+            TechNode("t_pbspeed", "Tiefen-Bohrer-Tempo", 25.0, 1.3, 20, "+8%/Stufe", "t_gen", null),
+            TechNode("t_wpspeed", "Wasserpumpe-Tempo", 30.0, 1.3, 20, "+8%/Stufe", "t_wasserpumpe", null),
+            TechNode("t_zfspeed", "Zentrifuge-Tempo", 40.0, 1.3, 20, "+8%/Stufe", "t_zentrifuge", null),
+            TechNode("t_bpspeed", "Bleipresse-Tempo", 35.0, 1.3, 20, "+8%/Stufe", "t_bleipresse", null),
+            TechNode("t_bwspeed", "Brennstabwerk-Tempo", 50.0, 1.3, 20, "+8%/Stufe", "t_brennstabwerk", null),
+            TechNode("t_rkspeed", "Reaktorkern-Tempo", 60.0, 1.3, 20, "+8%/Stufe", "t_reaktorkern", null),
+            TechNode("t_ktspeed", "Kuehlturm-Tempo", 65.0, 1.3, 20, "+8%/Stufe", "t_kuehlturm", null)
         )
 
         val UNLOCK = mapOf(
@@ -323,7 +336,10 @@ class Simulation {
         // Level 2 nicht mehr gibt) bzw. nur ab companyLevel>=2 (Kernkraft-Freischaltungen).
         // Steuert, was im Tech-Baum je Level ueberhaupt angezeigt wird.
         val LEVEL1_ONLY_TECHS = setOf("t_presse", "t_assembler", "t_ospeed", "t_pspeed", "t_aspeed", "t_power")
-        val LEVEL2_ONLY_TECHS = setOf("t_wasserpumpe", "t_zentrifuge", "t_bleipresse", "t_brennstabwerk", "t_reaktorkern", "t_kuehlturm")
+        val LEVEL2_ONLY_TECHS = setOf(
+            "t_wasserpumpe", "t_zentrifuge", "t_bleipresse", "t_brennstabwerk", "t_reaktorkern", "t_kuehlturm",
+            "t_pbspeed", "t_wpspeed", "t_zfspeed", "t_bpspeed", "t_bwspeed", "t_rkspeed", "t_ktspeed"
+        )
         // Ab Level 2 zeigen manche weiterhin genutzten Techs urspruenglich auf einen
         // Level-1-only-Prereq ("Assembler freischalten") - hier durch eine erreichbare
         // Kernkraft-Alternative ersetzt, sonst waeren sie fuer immer gesperrt.
@@ -332,6 +348,20 @@ class Simulation {
             "t_research" to "t_wasserpumpe",
             "t_wert" to "t_haendler"
         )
+
+        // --- Individuelle Maschinen-Upgrades (pro platziertem Exemplar, mit Geld bezahlt) ---
+        const val MACHINE_UPGRADE_GROWTH = 1.16
+        const val MACHINE_UPGRADE_BONUS = 0.12    // +12% Tempo/Ertrag je Stufe
+        const val MACHINE_UPGRADE_MAXLVL = 20
+        val MACHINE_UPGRADE_BASE = mapOf(
+            MType.BOHRER to 18.0, MType.OFEN to 22.0, MType.PRESSE to 28.0, MType.ASSEMBLER to 35.0,
+            MType.GENERATOR to 20.0, MType.WINDRAD to 24.0, MType.SOLAR to 22.0, MType.LAGER to 16.0,
+            MType.DROHNE to 26.0, MType.HAENDLER to 30.0, MType.FORSCHUNG to 32.0,
+            MType.BLEIBOHRER to 20.0, MType.WASSERPUMPE to 22.0, MType.ZENTRIFUGE to 45.0,
+            MType.BLEIPRESSE to 36.0, MType.BRENNSTABWERK to 60.0, MType.REAKTORKERN to 90.0, MType.KUEHLTURM to 100.0
+        )
+        // Nicht upgradebar: keine echten placeable items (auto-platziert / abgeschaltet).
+        val NOT_UPGRADABLE = setOf(MType.REAKTOR, MType.VERSTAERKER, MType.PROSPEKTOR)
     }
 
     fun newGame() {
@@ -1006,6 +1036,27 @@ class Simulation {
         return true
     }
 
+    /** Kann DIESER Maschinentyp individuell hochgestuft werden? (nur echte placeable items) */
+    fun canUpgradeMachine(t: MType): Boolean = t !in NOT_UPGRADABLE
+
+    /** Geldkosten fuer die naechste individuelle Ausbaustufe dieser Maschine. */
+    fun machineUpgradeCost(m: Machine): Double =
+        kotlin.math.round((MACHINE_UPGRADE_BASE[m.type] ?: 20.0) * MACHINE_UPGRADE_GROWTH.pow(m.lvl))
+
+    /** Tempo-/Ertrags-Multiplikator aus der individuellen Ausbaustufe dieser Maschine. */
+    fun machineUpgradeMult(m: Machine): Double = 1.0 + MACHINE_UPGRADE_BONUS * m.lvl
+
+    /** Eine einzelne platzierte Maschine individuell hochstufen (mit Geld bezahlt). */
+    fun upgradeMachine(r: Int, c: Int): Boolean {
+        val a = anchorOf(r, c) ?: return false
+        val m = grid[a[0]][a[1]] ?: return false
+        if (!canUpgradeMachine(m.type)) return false
+        if (m.lvl >= MACHINE_UPGRADE_MAXLVL) return false
+        if (!spendMoney(machineUpgradeCost(m))) return false
+        m.lvl++
+        return true
+    }
+
     // --- Tech-abhaengige Parameter ---
     private fun globalMult() = 1.0 + 0.05 * lvl("t_takt")
     private fun wearFactor() = max(0.3, 1.0 - 0.05 * lvl("t_robust"))
@@ -1028,13 +1079,13 @@ class Simulation {
     private fun ofenRate() = OFEN_RATE * (1.0 + 0.08 * lvl("t_ospeed")) * globalMult()
     private fun presseRate() = PRESSE_RATE * (1.0 + 0.08 * lvl("t_pspeed")) * globalMult()
     private fun assemblerRate() = ASSEMBLER_RATE * (1.0 + 0.08 * lvl("t_aspeed")) * globalMult()
-    private fun bleibohrerRate() = BLEIBOHRER_RATE * globalMult()
-    private fun wasserpumpeRate() = WASSERPUMPE_RATE * globalMult()
-    private fun zentrifugeRate() = ZENTRIFUGE_RATE * globalMult()
-    private fun bleipresseRate() = BLEIPRESSE_RATE * globalMult()
-    private fun brennstabwerkRate() = BRENNSTABWERK_RATE * globalMult()
-    private fun reaktorkernRate() = REAKTORKERN_RATE * globalMult()
-    private fun kuehlturmRate() = KUEHLTURM_RATE * globalMult()
+    private fun bleibohrerRate() = BLEIBOHRER_RATE * (1.0 + 0.08 * lvl("t_pbspeed")) * globalMult()
+    private fun wasserpumpeRate() = WASSERPUMPE_RATE * (1.0 + 0.08 * lvl("t_wpspeed")) * globalMult()
+    private fun zentrifugeRate() = ZENTRIFUGE_RATE * (1.0 + 0.08 * lvl("t_zfspeed")) * globalMult()
+    private fun bleipresseRate() = BLEIPRESSE_RATE * (1.0 + 0.08 * lvl("t_bpspeed")) * globalMult()
+    private fun brennstabwerkRate() = BRENNSTABWERK_RATE * (1.0 + 0.08 * lvl("t_bwspeed")) * globalMult()
+    private fun reaktorkernRate() = REAKTORKERN_RATE * (1.0 + 0.08 * lvl("t_rkspeed")) * globalMult()
+    private fun kuehlturmRate() = KUEHLTURM_RATE * (1.0 + 0.08 * lvl("t_ktspeed")) * globalMult()
     fun componentPrice() = COMPONENT_PRICE * (1.0 + 0.25 * lvl("t_wert")) * companyMult() * shareBonus()
 
     private fun wearPerSec(t: MType) = when (t) {
@@ -1182,12 +1233,15 @@ class Simulation {
             val wants = wantedRes(c.type)
             if (wants.isEmpty()) return@forEachMachine
             val target = if (c.type == MType.LAGER) c.output else c.input
-            val cap = if (c.type == MType.LAGER) LAGER_CAP else IN_CAP
+            // Lager-Kapazitaet waechst mit der individuellen Ausbaustufe.
+            val cap = if (c.type == MType.LAGER) LAGER_CAP * machineUpgradeMult(c) else IN_CAP
             // Nachbarn der GESAMTEN Grundflaeche (nicht nur der Anker-Zelle) - sonst
             // waeren mehrzellige Gebaeude (Reaktorkern 2x2, Kuehlturm 2x3, ...) nur von
             // einer Seite aus belieferbar.
             val nbs = footprintNeighbors(r, cc, c.w, c.h)
             for (res in wants) {
+                // Lager: je Rohstoff individuell blockierbar (siehe acceptRes-Toggle im UI).
+                if (c.type == MType.LAGER && !c.acceptRes[res]) continue
                 var space = cap - target[res]
                 if (space <= 1e-9) continue
                 for (nb in nbs) {
@@ -1217,9 +1271,9 @@ class Simulation {
         var supply = 0.0
         forEachMachine { m, r, c ->
             if (m.type == MType.REAKTOR) supply += reactorPower()
-            if (m.type == MType.GENERATOR && m.input[Res.ROHERZ.ordinal] > 1e-6) supply += GEN_POWER
-            if (m.type == MType.WINDRAD) supply += WIND_POWER * windCoastBonus(r, c)
-            if (m.type == MType.SOLAR) supply += SOLAR_POWER
+            if (m.type == MType.GENERATOR && m.input[Res.ROHERZ.ordinal] > 1e-6) supply += GEN_POWER * machineUpgradeMult(m)
+            if (m.type == MType.WINDRAD) supply += WIND_POWER * windCoastBonus(r, c) * machineUpgradeMult(m)
+            if (m.type == MType.SOLAR) supply += SOLAR_POWER * machineUpgradeMult(m)
         }
         var demand = 0.0
         forEachMachine { m, r, c -> if (wantsToRun(m, r, c)) demand += m.type.power }
@@ -1236,45 +1290,49 @@ class Simulation {
             val wf = wearFactor()
             when (m.type) {
                 MType.BOHRER -> {
-                    val nominal = bohrerRate() * ddt * boostAt(r, c) * oreMult(r, c)
+                    val mult = machineUpgradeMult(m)
+                    val nominal = bohrerRate() * mult * ddt * boostAt(r, c) * oreMult(r, c)
                     val want = nominal * scale * wearMult(m.condition)
                     val made = max(0.0, min(want, OUT_CAP - m.output[Res.ROHERZ.ordinal]))
                     m.output[Res.ROHERZ.ordinal] += made
-                    if (bohrerRate() > 0) m.condition = max(0.0, m.condition - wearPerSec(MType.BOHRER) * wf * (made / bohrerRate()))
+                    if (bohrerRate() > 0) m.condition = max(0.0, m.condition - wearPerSec(MType.BOHRER) * wf * (made / (bohrerRate() * mult)))
                     m.util = if (nominal > 1e-9) made / nominal else 0.0
                 }
                 MType.OFEN -> {
-                    val nominal = ofenRate() * ddt * boostAt(r, c)
+                    val mult = machineUpgradeMult(m)
+                    val nominal = ofenRate() * mult * ddt * boostAt(r, c)
                     val want = nominal * scale * wearMult(m.condition)
                     val byInput = m.input[Res.ROHERZ.ordinal] / 2.0
                     val made = max(0.0, min(want, min(byInput, OUT_CAP - m.output[Res.BARREN.ordinal])))
                     m.input[Res.ROHERZ.ordinal] -= made * 2.0
                     m.output[Res.BARREN.ordinal] += made
-                    m.condition = max(0.0, m.condition - wearPerSec(MType.OFEN) * wf * (made / ofenRate()))
+                    m.condition = max(0.0, m.condition - wearPerSec(MType.OFEN) * wf * (made / (ofenRate() * mult)))
                     m.util = if (nominal > 1e-9) made / nominal else 0.0
                     barMade += made
                     if (byInput <= 1e-9 && m.output[Res.BARREN.ordinal] < OUT_CAP - 1e-9) m.starved = true
                 }
                 MType.PRESSE -> {
-                    val nominal = presseRate() * ddt * boostAt(r, c)
+                    val mult = machineUpgradeMult(m)
+                    val nominal = presseRate() * mult * ddt * boostAt(r, c)
                     val want = nominal * scale * wearMult(m.condition)
                     val byInput = m.input[Res.BARREN.ordinal] / 2.0
                     val made = max(0.0, min(want, min(byInput, OUT_CAP - m.output[Res.PLATTE.ordinal])))
                     m.input[Res.BARREN.ordinal] -= made * 2.0
                     m.output[Res.PLATTE.ordinal] += made
-                    m.condition = max(0.0, m.condition - wearPerSec(MType.PRESSE) * wf * (made / presseRate()))
+                    m.condition = max(0.0, m.condition - wearPerSec(MType.PRESSE) * wf * (made / (presseRate() * mult)))
                     m.util = if (nominal > 1e-9) made / nominal else 0.0
                     platMade += made
                     if (byInput <= 1e-9 && m.output[Res.PLATTE.ordinal] < OUT_CAP - 1e-9) m.starved = true
                 }
                 MType.ASSEMBLER -> {
-                    val nominal = assemblerRate() * ddt * boostAt(r, c)
+                    val mult = machineUpgradeMult(m)
+                    val nominal = assemblerRate() * mult * ddt * boostAt(r, c)
                     val want = nominal * scale * wearMult(m.condition)
                     val byInput = m.input[Res.PLATTE.ordinal] / 2.0
                     val made = max(0.0, min(want, min(byInput, OUT_CAP - m.output[Res.KOMPONENTE.ordinal])))
                     m.input[Res.PLATTE.ordinal] -= made * 2.0
                     m.output[Res.KOMPONENTE.ordinal] += made
-                    m.condition = max(0.0, m.condition - wearPerSec(MType.ASSEMBLER) * wf * (made / assemblerRate()))
+                    m.condition = max(0.0, m.condition - wearPerSec(MType.ASSEMBLER) * wf * (made / (assemblerRate() * mult)))
                     m.util = if (nominal > 1e-9) made / nominal else 0.0
                     kompMade += made
                     if (byInput <= 1e-9 && m.output[Res.KOMPONENTE.ordinal] < OUT_CAP - 1e-9) m.starved = true
@@ -1300,7 +1358,7 @@ class Simulation {
                         }
                         val tgt = if (m.svR >= 0) grid[m.svR][m.svC] else null
                         if (tgt != null) {
-                            var delta = min(droneRepairRate() * ddt * scale, 100.0 - tgt.condition)
+                            var delta = min(droneRepairRate() * machineUpgradeMult(m) * ddt * scale, 100.0 - tgt.condition)
                             // Geld fuer die Reparatur abziehen; nur so viel, wie bezahlbar ist.
                             val maxByMoney = if (DROHNE_REPAIR_COST_PER > 1e-9) money / DROHNE_REPAIR_COST_PER else delta
                             if (maxByMoney < delta) delta = maxByMoney
@@ -1334,29 +1392,32 @@ class Simulation {
                 MType.FORSCHUNG -> {
                     // Basis 0.1/s, per Upgrade hoeher; laeuft, solange das Netz nicht tot ist.
                     val active = if (scale > 0.05) 1.0 else 0.0
-                    research += researchRate() * ddt * active     // produziert Forschungswaehrung
+                    research += researchRate() * machineUpgradeMult(m) * ddt * active   // produziert Forschungswaehrung
                     m.condition = max(0.0, m.condition - wearPerSec(MType.FORSCHUNG) * wf * ddt * active)
                     m.util = active
                 }
                 // --- Level 2: Kernkraft ---
                 MType.BLEIBOHRER -> {
-                    val nominal = bleibohrerRate() * ddt * boostAt(r, c) * oreMult(r, c)
+                    val mult = machineUpgradeMult(m)
+                    val nominal = bleibohrerRate() * mult * ddt * boostAt(r, c) * oreMult(r, c)
                     val want = nominal * scale * wearMult(m.condition)
                     val made = max(0.0, min(want, OUT_CAP - m.output[Res.BLEI.ordinal]))
                     m.output[Res.BLEI.ordinal] += made
-                    if (bleibohrerRate() > 0) m.condition = max(0.0, m.condition - wearPerSec(MType.BLEIBOHRER) * wf * (made / bleibohrerRate()))
+                    if (bleibohrerRate() > 0) m.condition = max(0.0, m.condition - wearPerSec(MType.BLEIBOHRER) * wf * (made / (bleibohrerRate() * mult)))
                     m.util = if (nominal > 1e-9) made / nominal else 0.0
                 }
                 MType.WASSERPUMPE -> {
-                    val nominal = wasserpumpeRate() * ddt
+                    val mult = machineUpgradeMult(m)
+                    val nominal = wasserpumpeRate() * mult * ddt
                     val want = nominal * scale * wearMult(m.condition)
                     val made = if (adjWater(r, c)) max(0.0, min(want, OUT_CAP - m.output[Res.WASSER.ordinal])) else 0.0
                     m.output[Res.WASSER.ordinal] += made
-                    if (wasserpumpeRate() > 0) m.condition = max(0.0, m.condition - wearPerSec(MType.WASSERPUMPE) * wf * (made / wasserpumpeRate()))
+                    if (wasserpumpeRate() > 0) m.condition = max(0.0, m.condition - wearPerSec(MType.WASSERPUMPE) * wf * (made / (wasserpumpeRate() * mult)))
                     m.util = if (nominal > 1e-9) made / nominal else 0.0
                 }
                 MType.ZENTRIFUGE -> {
-                    val nominal = zentrifugeRate() * ddt * boostAt(r, c)
+                    val mult = machineUpgradeMult(m)
+                    val nominal = zentrifugeRate() * mult * ddt * boostAt(r, c)
                     val want = nominal * scale * wearMult(m.condition)
                     val byOre = m.input[Res.ROHERZ.ordinal] / 3.0
                     val byWater = m.input[Res.WASSER.ordinal]
@@ -1364,25 +1425,27 @@ class Simulation {
                     m.input[Res.ROHERZ.ordinal] -= made * 3.0
                     m.input[Res.WASSER.ordinal] -= made
                     m.output[Res.BARREN.ordinal] += made
-                    m.condition = max(0.0, m.condition - wearPerSec(MType.ZENTRIFUGE) * wf * (made / zentrifugeRate()))
+                    m.condition = max(0.0, m.condition - wearPerSec(MType.ZENTRIFUGE) * wf * (made / (zentrifugeRate() * mult)))
                     m.util = if (nominal > 1e-9) made / nominal else 0.0
                     barMade += made
                     if ((byOre <= 1e-9 || byWater <= 1e-9) && m.output[Res.BARREN.ordinal] < OUT_CAP - 1e-9) m.starved = true
                 }
                 MType.BLEIPRESSE -> {
-                    val nominal = bleipresseRate() * ddt * boostAt(r, c)
+                    val mult = machineUpgradeMult(m)
+                    val nominal = bleipresseRate() * mult * ddt * boostAt(r, c)
                     val want = nominal * scale * wearMult(m.condition)
                     val byInput = m.input[Res.BLEI.ordinal] / 2.0
                     val made = max(0.0, min(want, min(byInput, OUT_CAP - m.output[Res.PLATTE.ordinal])))
                     m.input[Res.BLEI.ordinal] -= made * 2.0
                     m.output[Res.PLATTE.ordinal] += made
-                    m.condition = max(0.0, m.condition - wearPerSec(MType.BLEIPRESSE) * wf * (made / bleipresseRate()))
+                    m.condition = max(0.0, m.condition - wearPerSec(MType.BLEIPRESSE) * wf * (made / (bleipresseRate() * mult)))
                     m.util = if (nominal > 1e-9) made / nominal else 0.0
                     platMade += made
                     if (byInput <= 1e-9 && m.output[Res.PLATTE.ordinal] < OUT_CAP - 1e-9) m.starved = true
                 }
                 MType.BRENNSTABWERK -> {
-                    val nominal = brennstabwerkRate() * ddt * boostAt(r, c)
+                    val mult = machineUpgradeMult(m)
+                    val nominal = brennstabwerkRate() * mult * ddt * boostAt(r, c)
                     val want = nominal * scale * wearMult(m.condition)
                     val byUran = m.input[Res.BARREN.ordinal] / 2.0
                     val byBlei = m.input[Res.PLATTE.ordinal] / 2.0
@@ -1390,31 +1453,33 @@ class Simulation {
                     m.input[Res.BARREN.ordinal] -= made * 2.0
                     m.input[Res.PLATTE.ordinal] -= made * 2.0
                     m.output[Res.KOMPONENTE.ordinal] += made
-                    m.condition = max(0.0, m.condition - wearPerSec(MType.BRENNSTABWERK) * wf * (made / brennstabwerkRate()))
+                    m.condition = max(0.0, m.condition - wearPerSec(MType.BRENNSTABWERK) * wf * (made / (brennstabwerkRate() * mult)))
                     m.util = if (nominal > 1e-9) made / nominal else 0.0
                     // Brennstabsaetze bleiben lokal (kein Lift!) - erst Reaktorkern + Kuehlturm
                     // wandeln sie in Strom um, der global verkauft werden kann.
                     if ((byUran <= 1e-9 || byBlei <= 1e-9) && m.output[Res.KOMPONENTE.ordinal] < OUT_CAP - 1e-9) m.starved = true
                 }
                 MType.REAKTORKERN -> {
-                    val nominal = reaktorkernRate() * ddt * boostAt(r, c)
+                    val mult = machineUpgradeMult(m)
+                    val nominal = reaktorkernRate() * mult * ddt * boostAt(r, c)
                     val want = nominal * scale * wearMult(m.condition)
                     val byBrennstab = m.input[Res.KOMPONENTE.ordinal]
                     val made = max(0.0, min(want, min(byBrennstab, OUT_CAP - m.output[Res.DAMPF.ordinal])))
                     m.input[Res.KOMPONENTE.ordinal] -= made
                     m.output[Res.DAMPF.ordinal] += made
-                    m.condition = max(0.0, m.condition - wearPerSec(MType.REAKTORKERN) * wf * (made / reaktorkernRate()))
+                    m.condition = max(0.0, m.condition - wearPerSec(MType.REAKTORKERN) * wf * (made / (reaktorkernRate() * mult)))
                     m.util = if (nominal > 1e-9) made / nominal else 0.0
                     if (byBrennstab <= 1e-9 && m.output[Res.DAMPF.ordinal] < OUT_CAP - 1e-9) m.starved = true
                 }
                 MType.KUEHLTURM -> {
-                    val nominal = kuehlturmRate() * ddt * boostAt(r, c)
+                    val mult = machineUpgradeMult(m)
+                    val nominal = kuehlturmRate() * mult * ddt * boostAt(r, c)
                     val want = nominal * scale * wearMult(m.condition)
                     val byDampf = m.input[Res.DAMPF.ordinal]
                     val made = max(0.0, min(want, min(byDampf, OUT_CAP - m.output[Res.STROM.ordinal])))
                     m.input[Res.DAMPF.ordinal] -= made
                     m.output[Res.STROM.ordinal] += made
-                    m.condition = max(0.0, m.condition - wearPerSec(MType.KUEHLTURM) * wf * (made / kuehlturmRate()))
+                    m.condition = max(0.0, m.condition - wearPerSec(MType.KUEHLTURM) * wf * (made / (kuehlturmRate() * mult)))
                     m.util = if (nominal > 1e-9) made / nominal else 0.0
                     kompMade += made
                     if (byDampf <= 1e-9 && m.output[Res.STROM.ordinal] < OUT_CAP - 1e-9) m.starved = true
@@ -1454,7 +1519,7 @@ class Simulation {
         forEachMachine { m, _, _ ->
             if (m.type == MType.HAENDLER) {
                 val pool = if (sellNuclear) globalStrom else globalKomponente
-                val sold = min(HAENDLER_SELL * ddt, pool)
+                val sold = min(HAENDLER_SELL * machineUpgradeMult(m) * ddt, pool)
                 if (sold > 1e-9) {
                     if (sellNuclear) globalStrom -= sold else globalKomponente -= sold
                     money += sold * price
@@ -1489,15 +1554,24 @@ class Simulation {
         }
     }
 
-    fun runOffline(elapsedSeconds: Int): OfflineReport {
+    /**
+     * `onProgress` (0..1, optional) wird zwischendurch aufgerufen - fuer eine Ladeanzeige
+     * waehrend eines langen Offline-Nachrechnens. Simuliert in 2-Sekunden-Schritten statt
+     * 1-Sekunden-Schritten (step() erlaubt maximal dt=2.0) - halbiert die Anzahl der
+     * teuren Voll-Gitter-Durchlaeufe (schnelleres Nachrechnen bei sehr langer Abwesenheit).
+     */
+    fun runOffline(elapsedSeconds: Int, onProgress: ((Float) -> Unit)? = null): OfflineReport {
         val cap = min(elapsedSeconds, OFFLINE_CAP)
         val b0 = globalBarren; val p0 = globalPlatten; val m0 = money
         val events = ArrayList<OfflineEvent>()
         val seenStarve = HashSet<Machine>()
         val seenDead = HashSet<Machine>()
         var t = 0
+        val reportEvery = (cap / 80).coerceAtLeast(1)
+        var sinceReport = 0
         while (t < cap) {
-            step(1.0)
+            val dtNow = min(2.0, (cap - t).toDouble())
+            step(dtNow)
             forEachMachine { m, r, c ->
                 if (m.condition <= 0.0 && !seenDead.contains(m)) {
                     seenDead.add(m)
@@ -1512,8 +1586,11 @@ class Simulation {
                     if (events.size < 24) events.add(OfflineEvent(t, false, m.type, r, c))
                 }
             }
-            t++
+            t += max(1, dtNow.toInt())
+            sinceReport += max(1, dtNow.toInt())
+            if (onProgress != null && sinceReport >= reportEvery) { onProgress(t.toFloat() / cap); sinceReport = 0 }
         }
+        onProgress?.invoke(1f)
         return OfflineReport(elapsedSeconds, cap, globalBarren - b0, globalPlatten - p0, money - m0, events)
     }
 
@@ -1545,6 +1622,12 @@ class Simulation {
             val o = JSONObject()
             o.put("r", r); o.put("c", c); o.put("ty", m.type.ordinal); o.put("cond", m.condition)
             if (m.type == MType.DROHNE) o.put("gate", m.moneyGate)
+            if (m.lvl > 0) o.put("lvl", m.lvl)
+            if (m.type == MType.LAGER && m.acceptRes.any { !it }) {
+                val acc = JSONArray()
+                for (k in 0 until rc) acc.put(m.acceptRes[k])
+                o.put("acc", acc)
+            }
             val ia = JSONArray(); val oa = JSONArray()
             for (k in 0 until rc) { ia.put(m.input[k]); oa.put(m.output[k]) }
             o.put("in", ia); o.put("out", oa)
@@ -1617,6 +1700,9 @@ class Simulation {
             val m = Machine(MType.values()[ty])
             m.condition = o.optDouble("cond", 100.0)
             m.moneyGate = o.optDouble("gate", 0.0)
+            m.lvl = o.optInt("lvl", 0)
+            val acc = o.optJSONArray("acc")
+            if (acc != null) for (k in 0 until min(rc, acc.length())) m.acceptRes[k] = acc.optBoolean(k, true)
             val ia = o.optJSONArray("in"); val oa = o.optJSONArray("out")
             if (ia != null) for (k in 0 until min(rc, ia.length())) m.input[k] = ia.optDouble(k, 0.0)
             if (oa != null) for (k in 0 until min(rc, oa.length())) m.output[k] = oa.optDouble(k, 0.0)

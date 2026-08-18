@@ -26,7 +26,7 @@ class GameView(context: Context) : View(context) {
     // Aktives Bau-Werkzeug (null = kein Bauen; Antippen zeigt dann Info).
     private var buildTool: MType? = null
 
-    private enum class Screen { MENU, GAME, TECH, STAT, REPORT, COMPANY }
+    private enum class Screen { MENU, GAME, TECH, STAT, REPORT, COMPANY, LOADING }
     private var screen = Screen.MENU
 
     private val saveStore = SaveStore(context)
@@ -388,7 +388,15 @@ class GameView(context: Context) : View(context) {
         } catch (_: Exception) { }
     }
 
-    /** Einen gespeicherten Slot laden und (bei Bedarf) Offline-Fortschritt zeigen. */
+    // Fortschritt (0..1) des Offline-Nachrechnens, waehrend Screen.LOADING aktiv ist.
+    private var loadingProgress = 0f
+
+    /**
+     * Einen gespeicherten Slot laden und (bei Bedarf) Offline-Fortschritt zeigen. Das
+     * Nachrechnen laesst sich bei langer Abwesenheit spuerbar hinziehen - laeuft daher
+     * auf einem Hintergrund-Thread, waehrend Screen.LOADING jede Eingabe blockiert und
+     * einen Ladebalken zeigt (kommt aus sim.runOffline()s onProgress-Callback).
+     */
     private fun openSlot(id: String) {
         val blob = saveStore.loadState(id)
         currentSlot = id
@@ -399,8 +407,19 @@ class GameView(context: Context) : View(context) {
             val savedT = sim.fromJson(blob)
             val elapsed = ((System.currentTimeMillis() - savedT) / 1000L).toInt()
             if (savedT > 0 && elapsed > 60) {
-                report = sim.runOffline(elapsed)
-                screen = Screen.REPORT
+                loadingProgress = 0f
+                screen = Screen.LOADING
+                invalidate()
+                Thread {
+                    val result = sim.runOffline(elapsed) { p ->
+                        handler.post { loadingProgress = p; invalidate() }
+                    }
+                    handler.post {
+                        report = result
+                        screen = Screen.REPORT
+                        invalidate()
+                    }
+                }.start()
             } else screen = Screen.GAME
         } catch (_: Exception) {
             sim.newGame(); screen = Screen.GAME
@@ -464,6 +483,8 @@ class GameView(context: Context) : View(context) {
         updateView()   // setzt cell/vLeft/vTop aus Zoom & Pan
         canvas.drawColor(cBg)
         if (screen == Screen.MENU) { drawMenu(canvas); return }
+        // Waehrend des Offline-Nachrechnens (Hintergrund-Thread) NICHT auf sim.* zugreifen.
+        if (screen == Screen.LOADING) { drawLoading(canvas); return }
         drawHeader(canvas)
         drawGrid(canvas)
         if (screen == Screen.GAME) { drawPuffs(canvas); drawRises(canvas) }
@@ -1273,10 +1294,20 @@ class GameView(context: Context) : View(context) {
         else -> t.label
     }
 
+    /** Zusaetzliche Panelhoehe fuer Ausbau-Zeile bzw. Lager-Filter/Drohnen-Reihe. */
+    private fun detailExtraH(m: Machine): Float {
+        var extra = 0f
+        if (sim.canUpgradeMachine(m.type)) extra += dp(36f)
+        if (m.type == MType.LAGER) extra += dp(50f)
+        if (m.type == MType.DROHNE) extra += dp(36f)
+        return extra
+    }
+
     private fun drawDetail(canvas: Canvas) {
         val m = sim.grid[selR][selC] ?: return
-        // eigenes, hoeheres Overlay unten (unabhaengig von der kompakten Palette)
-        val top = H - dp(214f)
+        // eigenes, hoeheres Overlay unten (unabhaengig von der kompakten Palette) -
+        // waechst je nach Maschine (Ausbau-Zeile, Lager-Filter, Drohnen-Reihe).
+        val top = H - dp(214f) - detailExtraH(m)
         p.color = cPanel
         canvas.drawRect(0f, top, W.toFloat(), H.toFloat(), p)
         p.color = cPanelHi
@@ -1355,10 +1386,50 @@ class GameView(context: Context) : View(context) {
             val refund = samt * 0.5 * (m.condition / 100.0)
             canvas.drawText("${tr("poweruse")} ${m.type.power.toInt()}     ${tr("sellvalue")} +${oneDec(refund)} $curAbbr", dp(12f), yy, pText)
         }
+        yy += dp(22f)
+
+        // Individuelle Ausbaustufe DIESER Maschine (unabhaengig vom Tech-Baum).
+        if (sim.canUpgradeMachine(m.type)) {
+            val cost = sim.machineUpgradeCost(m)
+            val maxed = m.lvl >= Simulation.MACHINE_UPGRADE_MAXLVL
+            val canAfford = sim.money >= cost
+            pText.color = cText; pText.textSize = dp(13f)
+            val lab = "${tr("upgrade_lvl")} ${m.lvl}" + if (maxed) " · ${tr("upgrade_max")}" else ""
+            canvas.drawText(lab, dp(12f), yy + dp(18f), pText)
+            if (!maxed) {
+                val ur = RectF(W - dp(150f), yy - dp(2f), W - dp(10f), yy + dp(28f))
+                drawButton(canvas, Btn(ur, "upgrade_sel", "${tr("upgrade")} ${cost.toInt()}€", canAfford, false, cAccent))
+                buttons.add(Btn(ur, "upgrade_sel", "upgrade", canAfford))
+            }
+            yy += dp(36f)
+        }
+
+        // Lager: je Rohstoff annehmen/blockieren (kompakte Icon-Reihe).
+        if (m.type == MType.LAGER) {
+            pText.color = cDim; pText.textSize = dp(11f)
+            canvas.drawText(tr("lager_filter"), dp(12f), yy + dp(8f), pText)
+            val fy = yy + dp(12f); val fs = dp(26f); val fgap = dp(5f)
+            val n = Res.values().size
+            val totalW = n * fs + (n - 1) * fgap
+            var fx = (W - totalW) / 2f
+            for (ri in 0 until n) {
+                val on = m.acceptRes[ri]
+                val r = RectF(fx, fy, fx + fs, fy + fs)
+                p.color = if (on) Color.argb(60, 120, 220, 140) else Color.argb(80, 220, 80, 70)
+                canvas.drawRoundRect(r, dp(4f), dp(4f), p)
+                p.color = if (on) cGood else cBad; p.style = Paint.Style.STROKE; p.strokeWidth = dp(1.3f)
+                canvas.drawRoundRect(r, dp(4f), dp(4f), p); p.style = Paint.Style.FILL
+                drawIcon(canvas, Sprites.iconForRes(ri, sim.companyLevel), fx + fs * 0.16f, fy + fs * 0.16f, fs * 0.68f)
+                if (!on) { p.color = cBad; p.strokeWidth = dp(1.6f); canvas.drawLine(fx + 2, fy + 2, fx + fs - 2, fy + fs - 2, p) }
+                buttons.add(Btn(r, "lageracc_$ri", "acc"))
+                fx += fs + fgap
+            }
+            yy += dp(50f)
+        }
 
         // Drohnen-Station: Reparatur-Limit einstellen (nur reparieren ab Guthaben >= Limit)
         if (m.type == MType.DROHNE) {
-            val y0 = top + dp(120f); val gh = dp(30f)
+            val y0 = yy - dp(4f); val gh = dp(30f)
             val paused = sim.money < m.moneyGate
             pText.textSize = dp(13f)
             pText.color = if (paused) cWarn else cText
@@ -1372,6 +1443,7 @@ class GameView(context: Context) : View(context) {
             drawButton(canvas, Btn(pRect, "gate_up", "+ $step", true, false, cAccent))
             buttons.add(Btn(mRect, "gate_dn", "gate_dn", m.moneyGate > 0.0))
             buttons.add(Btn(pRect, "gate_up", "gate_up"))
+            yy += dp(36f)
         }
 
         // Aktions-Buttons unten
@@ -1479,7 +1551,8 @@ class GameView(context: Context) : View(context) {
         "t_wind" -> tr("tf_wind")
         "t_solar" -> tr("tf_solar"); "t_research" -> tr("tf_research")
         "t_diag" -> tr("tf_diag")
-        "t_bspeed", "t_ospeed", "t_pspeed", "t_aspeed" -> tr("tf_speed")
+        "t_bspeed", "t_ospeed", "t_pspeed", "t_aspeed",
+        "t_pbspeed", "t_wpspeed", "t_zfspeed", "t_bpspeed", "t_bwspeed", "t_rkspeed", "t_ktspeed" -> tr("tf_speed")
         "t_wert" -> tr("tf_wert"); "t_scan" -> tr("tf_scan"); "t_takt" -> tr("tf_takt")
         "t_robust" -> tr("tf_robust"); "t_lift" -> tr("tf_lift"); "t_power" -> tr("tf_power")
         "t_drohne_rep" -> tr("tf_drohne_rep"); "t_drohne_speed" -> tr("tf_drohne_speed")
@@ -1808,6 +1881,34 @@ class GameView(context: Context) : View(context) {
         buttons.add(Btn(cr, "collect", "collect"))
     }
 
+    /**
+     * Ladebildschirm waehrend das Offline-Nachrechnen auf dem Hintergrund-Thread laeuft.
+     * Blockiert jede Eingabe (siehe onTouchEvent/handleClick), zeigt einen echten
+     * Fortschrittsbalken statt eines unbestimmten Spinners.
+     */
+    private fun drawLoading(canvas: Canvas) {
+        canvas.drawColor(cBg)
+        pText.textAlign = Paint.Align.CENTER
+        pText.color = cAccent; pText.textSize = dp(20f)
+        canvas.drawText(tr("loading_title"), W / 2f, H / 2f - dp(40f), pText)
+        pText.color = cDim; pText.textSize = dp(13f)
+        canvas.drawText(tr("loading_hint"), W / 2f, H / 2f - dp(16f), pText)
+
+        val barW = (W - dp(64f)).coerceAtMost(dp(360f)); val barH = dp(18f)
+        val bx = (W - barW) / 2f; val by = H / 2f
+        p.color = cGridLine; canvas.drawRoundRect(RectF(bx, by, bx + barW, by + barH), dp(4f), dp(4f), p)
+        p.color = cAccent
+        canvas.drawRoundRect(RectF(bx, by, bx + barW * loadingProgress.coerceIn(0f, 1f), by + barH), dp(4f), dp(4f), p)
+        p.color = cPanelHi; p.style = Paint.Style.STROKE; p.strokeWidth = dp(1.5f)
+        canvas.drawRoundRect(RectF(bx, by, bx + barW, by + barH), dp(4f), dp(4f), p); p.style = Paint.Style.FILL
+
+        pText.color = cText; pText.textSize = dp(13f)
+        canvas.drawText("${(loadingProgress.coerceIn(0f, 1f) * 100).roundToInt()}%", W / 2f, by + barH + dp(24f), pText)
+        pText.textAlign = Paint.Align.LEFT
+
+        hazardBar(canvas, 0f, H - dp(7f), W.toFloat(), dp(7f))
+    }
+
     private fun drawMenu(canvas: Canvas) {
         // Animierte Fabrik-Kulisse
         drawMenuBackground(canvas)
@@ -1929,6 +2030,8 @@ class GameView(context: Context) : View(context) {
     // ---------------- Eingabe ----------------
 
     override fun onTouchEvent(event: MotionEvent): Boolean {
+        // Waehrend des Offline-Nachrechnens (Hintergrund-Thread) jede Eingabe blockieren.
+        if (screen == Screen.LOADING) return true
         scaleDetector.onTouchEvent(event)
         gestureDetector.onTouchEvent(event)
         val slop = dp(8f)
@@ -2035,6 +2138,13 @@ class GameView(context: Context) : View(context) {
             id == "gate_dn" -> { if (selR >= 0) { sim.adjustDroneGate(selR, selC, -Simulation.DROHNE_GATE_STEP); persist(); audio.click() } }
             id == "repair_sel" -> { if (selR >= 0) sim.grid[selR][selC]?.let { if (sim.repair(it)) audio.buy() else audio.error() } }
             id == "sell_sel" -> { if (selR >= 0) { sim.sell(selR, selC); selR = -1; selC = -1; audio.sell() } }
+            id == "upgrade_sel" -> { if (selR >= 0) { if (sim.upgradeMachine(selR, selC)) audio.buy() else audio.error() } }
+            id.startsWith("lageracc_") -> {
+                if (selR >= 0) sim.grid[selR][selC]?.let { m ->
+                    val ri = id.removePrefix("lageracc_").toIntOrNull()
+                    if (ri != null && ri in m.acceptRes.indices) { m.acceptRes[ri] = !m.acceptRes[ri]; audio.click() }
+                }
+            }
             id.startsWith("buy_") -> { if (sim.buyTech(id.removePrefix("buy_"))) audio.buy() else audio.error() }
             id.startsWith("build_") -> {
                 val t = MType.valueOf(id.removePrefix("build_"))
@@ -2103,7 +2213,10 @@ class GameView(context: Context) : View(context) {
         super.onDetachedFromWindow()
         running = false
         handler.removeCallbacks(loop)
-        persist()
+        // Waehrend des Offline-Nachrechnens laeuft ein Hintergrund-Thread auf sim.* -
+        // hier NICHT gleichzeitig speichern (der Spielstand auf der Platte ist noch der
+        // unveraenderte, gerade erst geladene - das reicht, bis der Thread fertig ist).
+        if (screen != Screen.LOADING) persist()
         audio.release()
     }
 
