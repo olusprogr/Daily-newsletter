@@ -209,10 +209,9 @@ class GameView(context: Context) : View(context) {
     private var headerH = 0f
     private var paletteTop = 0f
     private var paletteH = 0f
-    // Bau-Palette ein-/ausklappbar (Griff-Leiste bleibt immer sichtbar); Zustand wird
-    // gemerkt, damit er nach Neustart erhalten bleibt.
+    // Bau-Palette ein-/ausklappbar ueber einen schwebenden Button (drawPaletteToggle);
+    // Zustand wird gemerkt, damit er nach Neustart erhalten bleibt.
     private var paletteCollapsed = false
-    private val paletteToggleH: Float get() = dp(20f)
 
     // Zoom & Verschiebung der (grossen) Karte
     private val visibleAt1 = 9f   // ~9 Chunks quer bei Zoom 1
@@ -493,12 +492,27 @@ class GameView(context: Context) : View(context) {
         val items = buildOrderFor(sim.companyLevel).size
         val palRows = ((items + paletteCols - 1) / paletteCols).coerceAtLeast(1)
         val palBh = dp(66f); val palGap = dp(5f)
-        // Griff-Leiste zum Ein-/Ausklappen bleibt IMMER sichtbar - nur die Kachelreihen
-        // selbst verschwinden, wenn eingeklappt (mehr Platz fuer die Karte).
-        val content = if (paletteCollapsed) 0f else palRows * palBh + (palRows - 1) * palGap + dp(8f)
-        paletteH = content + paletteToggleH
+        // Eingeklappt braucht die Palette selbst GAR KEINEN Platz mehr (der Auf-/Zuklapp-
+        // Button schwebt separat ueber der Karte, siehe drawPaletteToggle()).
+        paletteH = if (paletteCollapsed) 0f else palRows * palBh + (palRows - 1) * palGap + dp(8f)
         paletteTop = H - paletteH
-        gridH = paletteTop - gridTop - dp(4f)        // Karten-Fenster fuellt fast alles
+    }
+
+    /**
+     * Kartenfenster-Hoehe: haengt davon ab, was GERADE unten gezeigt wird (Palette,
+     * Detail-Panel einer Maschine oder das Infrastruktur-Ausbau-Panel) - nicht mehr
+     * pauschal von der Palette allein. Sonst blieb (wenn z.B. ein kuerzeres Detail-Panel
+     * statt der Palette gezeigt wurde) eine unnoetige graue Luecke zwischen Karte und
+     * Panel stehen, weil die Karte weiterhin nur bis zur (oft hoeheren) Paletten-Kante
+     * geclippt wurde.
+     */
+    private fun updateGridViewport() {
+        val bottomTop = if (screen != Screen.GAME) H.toFloat() else when {
+            selR >= 0 && sim.grid[selR][selC] != null -> H - dp(214f) - detailExtraH(sim.grid[selR][selC]!!)
+            selR >= 0 && sim.canExpandInfra(selR, selC) -> expandPanelTop()
+            else -> paletteTop
+        }
+        gridH = bottomTop - gridTop - dp(4f)
     }
 
     override fun onSizeChanged(w: Int, h: Int, ow: Int, oh: Int) {
@@ -518,7 +532,7 @@ class GameView(context: Context) : View(context) {
 
     override fun onDraw(canvas: Canvas) {
         buttons.clear()
-        if (W > 0 && H > 0) updatePaletteLayout()   // Zeilenzahl an aktuelles Level anpassen
+        if (W > 0 && H > 0) { updatePaletteLayout(); updateGridViewport() }   // an aktuellen Zustand anpassen
         updateView()   // setzt cell/vLeft/vTop aus Zoom & Pan
         canvas.drawColor(cBg)
         if (screen == Screen.MENU) { drawMenu(canvas); return }
@@ -532,7 +546,7 @@ class GameView(context: Context) : View(context) {
             when {
                 selR >= 0 && sim.grid[selR][selC] != null -> drawDetail(canvas)
                 selR >= 0 && sim.canExpandInfra(selR, selC) -> drawExpandPanel(canvas)
-                else -> drawPalette(canvas)
+                else -> { drawPalette(canvas); drawPaletteToggle(canvas) }
             }
         }
         when (screen) {
@@ -858,17 +872,19 @@ class GameView(context: Context) : View(context) {
         dstTile.set(x, y, x + cell, y + cell)
 
         if (sim.isExpandedCanal(r, c)) {
-            // Kuenstlicher Kanal: wie Wasser, aber mit einem schmalen Betonrand markiert,
-            // damit man ihn von echtem Meer unterscheiden kann. Muss VOR der Plattform-
-            // Pruefung kommen - ein Kanal kann auch mitten in der Plattform gegraben sein.
+            // Kuenstlicher Kanal: wie Wasser, mit einem Betonrand nur an den Seiten, wo
+            // wirklich Land/AKW-Flaeche angrenzt (nicht zum offenen Meer oder zum
+            // naechsten Kanal-Glied hin, sonst zerschneidet der Rand einen ganzen Fluss
+            // aus mehreren Kanal-Feldern in lauter einzelne Kaestchen). Muss VOR der
+            // Plattform-Pruefung kommen - ein Kanal kann auch mitten in der Plattform sein.
             val wb = if ((animT * 2f).toInt() and 1 == 0) bmpWater0 else bmpWater1
             canvas.drawBitmap(wb, srcTile, dstTile, pTile)
-            p.color = Color.argb(170, 150, 150, 158)
-            val bw2 = cell * 0.07f
-            canvas.drawRect(x, y, x + cell, y + bw2, p)
-            canvas.drawRect(x, y + cell - bw2, x + cell, y + cell, p)
-            canvas.drawRect(x, y, x + bw2, y + cell, p)
-            canvas.drawRect(x + cell - bw2, y, x + cell, y + cell, p)
+            p.color = Color.argb(190, 150, 150, 158)
+            val bw2 = cell * 0.1f
+            if (sim.isLand(r - 1, c)) canvas.drawRect(x, y, x + cell, y + bw2, p)
+            if (sim.isLand(r + 1, c)) canvas.drawRect(x, y + cell - bw2, x + cell, y + cell, p)
+            if (sim.isLand(r, c - 1)) canvas.drawRect(x, y, x + bw2, y + cell, p)
+            if (sim.isLand(r, c + 1)) canvas.drawRect(x + cell - bw2, y, x + cell, y + cell, p)
             return
         }
 
@@ -1271,19 +1287,8 @@ class GameView(context: Context) : View(context) {
     }
 
     private fun drawPalette(canvas: Canvas) {
-        // Griff-Leiste zum Ein-/Ausklappen - bleibt immer sichtbar, auch wenn zu.
-        val toggleH = paletteToggleH
-        val handleR = RectF(0f, paletteTop, W.toFloat(), paletteTop + toggleH)
-        p.color = cPanel; canvas.drawRect(handleR, p)
-        p.color = cPanelHi; canvas.drawRect(0f, paletteTop, W.toFloat(), paletteTop + dp(2f), p)
-        p.color = Color.argb(140, 210, 216, 228)
-        canvas.drawRoundRect(RectF(W / 2f - dp(16f), paletteTop + dp(7f), W / 2f + dp(16f), paletteTop + dp(10f)), dp(2f), dp(2f), p)
-        pTextC.textAlign = Paint.Align.RIGHT; pTextC.color = cDim; pTextC.textSize = dp(12f)
-        canvas.drawText(if (paletteCollapsed) "▲" else "▼", W - dp(10f), paletteTop + dp(15f), pTextC)
-        pTextC.textAlign = Paint.Align.CENTER
-        buttons.add(Btn(handleR, "palette_toggle", "pt"))
-        if (paletteCollapsed) return
-
+        if (paletteCollapsed) return   // keine Kacheln zeichnen - der schwebende Auf-/
+        // Zuklapp-Button (drawPaletteToggle) reicht als einziges sichtbares Element.
         val cols = paletteCols
         val margin = dp(8f)
         val gap = dp(5f)
@@ -1293,7 +1298,7 @@ class GameView(context: Context) : View(context) {
             val col = i % cols
             val row = i / cols
             val x = margin + col * (bw + gap)
-            val yy = paletteTop + toggleH + dp(6f) + row * (bh + gap)
+            val yy = paletteTop + dp(6f) + row * (bh + gap)
             val rect = RectF(x, yy, x + bw, yy + bh)
             val used = sim.typeCount[t.ordinal]
             val max = sim.maxCount(t)
@@ -1302,6 +1307,27 @@ class GameView(context: Context) : View(context) {
             drawBuildTile(canvas, rect, t, buildTool == t, used, max, full)
             buttons.add(Btn(rect, "build_${t.name}", mShort(t), unlocked))
         }
+    }
+
+    /**
+     * Einzelner schwebender Auf-/Zuklapp-Button unten links (statt einer duennen Griff-
+     * Leiste ueber die volle Breite, die zu klein zum Treffen war). Sitzt eingeklappt
+     * ganz unten auf der Karte, ausgeklappt direkt ueber den Bau-Kacheln - und wird gar
+     * nicht erst aufgerufen, wenn statt der Palette ein Detail-/Ausbau-Panel gezeigt wird
+     * (siehe onDraw), verschwindet also automatisch, sobald man etwas anderes antippt.
+     */
+    private fun drawPaletteToggle(canvas: Canvas) {
+        val bw = dp(48f); val bh = dp(34f)
+        val bx = dp(8f)
+        val by = if (paletteCollapsed) H - dp(8f) - bh else paletteTop - dp(8f) - bh
+        val r = RectF(bx, by, bx + bw, by + bh)
+        p.color = cPanel
+        canvas.drawRoundRect(r, dp(8f), dp(8f), p)
+        p.color = cPanelHi; p.style = Paint.Style.STROKE; p.strokeWidth = dp(1.5f)
+        canvas.drawRoundRect(r, dp(8f), dp(8f), p); p.style = Paint.Style.FILL
+        pTextC.color = cText; pTextC.textSize = dp(16f)
+        canvas.drawText(if (paletteCollapsed) "▲" else "▼", r.centerX(), r.centerY() + dp(6f), pTextC)
+        buttons.add(Btn(r, "palette_toggle", "pt"))
     }
 
     /** Skeuomorphes Baumodul: Sprite-Icon, Name, Kosten mit Icon, LED-Statusstreifen, Zustaende. */
@@ -1408,12 +1434,23 @@ class GameView(context: Context) : View(context) {
         if (sim.canUpgradeMachine(m.type)) extra += dp(36f)   // eigene Zeile, +36 ueber die 88dp
         if (m.type == MType.LAGER) {
             // Lager laesst 3 der 4 Standardzeilen weg (Zustand/Auslastung, Puffer-Zeile,
-            // Engpass-Ampel = -66dp), zeichnet dafuer die Inhalts-/Filter-Reihe (40dp) UND
-            // den "Alles entnehmen"-Button darunter (38dp): netto 40+38-66 = +12dp.
-            extra += dp(12f)
+            // Engpass-Ampel = -66dp), zeichnet dafuer die Inhalts-/Filter-Reihe (12dp Kopf +
+            // cs hohe Icons + 20dp Luft = 32+cs) UND den "Alles entnehmen"-Button darunter
+            // (38dp): netto (32+cs)+38-66 = cs+4. cs haengt von der Bildschirmbreite ab
+            // (lagerCellSize()) - MUSS hier exakt mitgerechnet werden, sonst driftet die
+            // Panelhoehe wieder auseinander wie zuvor schon zweimal passiert.
+            extra += lagerCellSize() + dp(4f)
         }
         if (m.type == MType.DROHNE) extra += dp(36f)   // Reparatur-Limit-Zeile, +36 ueber die 88dp
         return extra
+    }
+
+    /** Kantenlaenge einer Lager-Icon-Kachel: 8 Sorten fuellen die volle Panel-Breite
+     *  (minus schmalem Rand) aus - von detailExtraH() UND drawDetail() gemeinsam genutzt,
+     *  damit beide garantiert denselben Wert verwenden. */
+    private fun lagerCellSize(): Float {
+        val margin2 = dp(6f); val cgap = dp(4f); val n = Res.values().size
+        return (W - 2 * margin2 - (n - 1) * cgap) / n
     }
 
     private fun drawDetail(canvas: Canvas) {
@@ -1518,7 +1555,7 @@ class GameView(context: Context) : View(context) {
             val lab = "${tr("upgrade_lvl")} ${m.lvl}" + if (maxed) " · ${tr("upgrade_max")}" else ""
             canvas.drawText(lab, dp(12f), yy + dp(18f), pText)
             if (!maxed) {
-                val ur = RectF(W - dp(150f), yy - dp(2f), W - dp(10f), yy + dp(28f))
+                val ur = RectF(W - dp(150f), yy - dp(2f), W - dp(6f), yy + dp(28f))
                 drawButton(canvas, Btn(ur, "upgrade_sel", "${tr("upgrade")} ${cost.toInt()}€", canAfford, false, cAccent))
                 buttons.add(Btn(ur, "upgrade_sel", "upgrade", canAfford))
             }
@@ -1535,7 +1572,7 @@ class GameView(context: Context) : View(context) {
             canvas.drawText(tr("lager_content"), dp(12f), yy + dp(8f), pText)
             val margin2 = dp(6f); val cgap = dp(4f)
             val n = Res.values().size
-            val cs = (W - 2 * margin2 - (n - 1) * cgap) / n
+            val cs = lagerCellSize()
             val cy = yy + dp(12f)
             var cx = margin2
             for (ri in 0 until n) {
@@ -1557,7 +1594,11 @@ class GameView(context: Context) : View(context) {
                 buttons.add(Btn(r, "lageracc_$ri", "acc"))
                 cx += cs + cgap
             }
-            yy += dp(40f)
+            // WICHTIG: cs ist dynamisch (haengt von der Bildschirmbreite ab, siehe
+            // lagerCellSize()) - yy muss darauf basierend weiterwandern, statt mit einem
+            // festen Wert, sonst ueberlappt der Entnahme-Button die Icon-Reihe (auf breiten
+            // Bildschirmen wird cs groesser als der frueher fest angenommene Wert).
+            yy = cy + cs + dp(20f)
             // Alles entnehmen: kompletten Bestand aller Sorten mit globalem Pool auf einmal
             // in den globalen Bestand ueberfuehren, statt jede Sorte einzeln antippen zu
             // muessen (wird NICHT geloescht, bleibt weiter nutz-/verkaufbar).
@@ -1587,8 +1628,10 @@ class GameView(context: Context) : View(context) {
             yy += dp(36f)
         }
 
-        // Aktions-Buttons unten
-        val margin = dp(10f)
+        // Aktions-Buttons unten - schmalerer Rand, damit die Buttons die Breite ausnutzen
+        // (statt der vorher breiteren 10dp, die neben dem grosszuegigeren Lager-Rand von
+        // nur 6dp unnoetig viel Platz verschenkt haben).
+        val margin = dp(6f)
         val by = H - dp(54f)
         val bh = dp(40f)
         val canRepair = m.type != MType.REAKTOR && m.type != MType.LAGER && m.type != MType.HAENDLER
@@ -1611,9 +1654,23 @@ class GameView(context: Context) : View(context) {
     }
 
     /**
+     * Obere Kante des Infrastruktur-Ausbau-Panels - eigene Funktion (statt inline in
+     * drawExpandPanel), damit auch updateGridViewport() weiss, wo die Karte enden muss,
+     * OHNE das Panel selbst zu zeichnen (sonst bleibt eine unnoetige graue Luecke
+     * zwischen Karte und Panel, wenn die Kartenhoehe noch von der Palette ausging).
+     */
+    private fun expandPanelTop(): Float {
+        val canPlatformHere = sim.canExpandPlatformHere(selR, selC)
+        val bh = dp(52f); val gap = dp(10f)
+        val rows = if (canPlatformHere) 2 else 1
+        return H - dp(58f) - rows * bh - (rows - 1) * gap - dp(6f)
+    }
+
+    /**
      * Infrastruktur-Ausbau (Level 2): auf einem leeren, bereits gekauften Landfeld
      * entweder die AKW-Plattform erweitern (bebaubar, ausser Windrad/Solar) oder einen
-     * kuenstlichen Wasserkanal graben (nur bei natuerlichem Wasser in der Naehe, dafuer
+     * kuenstlichen Wasserkanal graben (nur bei Wasser in der Naehe - Meer ODER ein
+     * bereits gegrabener Kanal, damit man ganze Fluesse aneinanderreihen kann; dafuer
      * kein Baugrund mehr - dient nur als schwache Wasserquelle fuer eine Wasserpumpe
      * daneben).
      */
@@ -1621,11 +1678,10 @@ class GameView(context: Context) : View(context) {
         // Auf einer schon vorhandenen Plattform-Zelle ergibt "Plattform erweitern" keinen
         // Sinn (schon Plattform) - dort nur die Kanal-Option zeigen, Panel entsprechend
         // niedriger. Ein Kanal laesst sich dagegen ueberall graben (auch mitten auf der
-        // Plattform), solange natuerliches Wasser in der Naehe ist.
+        // Plattform).
         val canPlatformHere = sim.canExpandPlatformHere(selR, selC)
         val bh = dp(52f); val gap = dp(10f)
-        val rows = if (canPlatformHere) 2 else 1
-        val top = H - dp(58f) - rows * bh - (rows - 1) * gap - dp(6f)
+        val top = expandPanelTop()
         p.color = cPanel
         canvas.drawRect(0f, top, W.toFloat(), H.toFloat(), p)
         p.color = cPanelHi
@@ -1649,7 +1705,7 @@ class GameView(context: Context) : View(context) {
             by += bh + gap
         }
 
-        val waterNear = sim.hasNaturalWaterAdjacent(selR, selC)
+        val waterNear = sim.hasWaterAdjacent(selR, selC)
         val canalCost = sim.expandCanalCost()
         val canCanal = waterNear && sim.money >= canalCost
         val r2 = RectF(margin, by, margin + bw, by + bh)

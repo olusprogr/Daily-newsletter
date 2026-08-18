@@ -611,13 +611,17 @@ class Simulation {
     fun canExpandPlatformHere(r: Int, c: Int): Boolean =
         canExpandInfra(r, c) && !isPlatform(r, c) && !expandedPlatform[r * n + c]
 
-    /** Natuerliche (nicht kuenstliche) Wasserquelle direkt angrenzend - Pflicht fuer den Kanal. */
-    fun hasNaturalWaterAdjacent(r: Int, c: Int): Boolean {
+    /**
+     * Wasser direkt angrenzend - Pflicht fuer den Kanal. Zaehlt echtes Meer GENAUSO wie
+     * ein bereits gegrabener Nachbar-Kanal, damit man Kanaele aneinanderreihen und so
+     * richtige kuenstliche Fluesse bauen kann, statt nur direkt am Meer graben zu koennen.
+     */
+    fun hasWaterAdjacent(r: Int, c: Int): Boolean {
         for (dr in -1..1) for (dc in -1..1) {
             if (dr == 0 && dc == 0) continue
             val rr = r + dr; val cc = c + dc
             if (rr !in 0 until n || cc !in 0 until n) continue
-            if (!isLand(rr, cc) && !expandedCanal[rr * n + cc]) return true
+            if (!isLand(rr, cc)) return true   // offenes Meer ODER schon ein Kanal (beide isLand=false)
         }
         return false
     }
@@ -637,7 +641,7 @@ class Simulation {
      *  nicht mehr bebaubar, dafuer (schwache) Wasserquelle. */
     fun expandToCanal(r: Int, c: Int): Boolean {
         if (!canExpandInfra(r, c)) return false
-        if (!hasNaturalWaterAdjacent(r, c)) return false
+        if (!hasWaterAdjacent(r, c)) return false
         if (!spendMoney(expandCanalCost())) return false
         expandedPlatform[r * n + c] = false   // falls hier vorher Plattform war: sauber ersetzen
         expandedCanal[r * n + c] = true
