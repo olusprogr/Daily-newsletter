@@ -1,6 +1,24 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/08/18/cursor-capitalizes-on-github-frustration-launches-rival-hosting-platform/",
+      "title": "Cursor capitalizes on Github frustration, launches rival hosting platform",
+      "summary": "Cursor, known for its AI Code Editor, is launching a new code hosting platform to rival developers' long preferred favorite, Github.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-18T22:14:25+00:00",
+      "sent_at": "2026-08-18T22:19:03.992011+00:00"
+    },
+    {
+      "link": "https://cdn.kuber.studio/chat/hp-laser-1008a-driver",
+      "title": "Claude Code Teaching macOS to Natively Print to the HP Laser 1008a",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-18T21:14:21+00:00",
+      "sent_at": "2026-08-18T22:19:03.992011+00:00"
+    },
+    {
       "link": "https://arstechnica.com/space/2026/08/its-christmastime-at-spacex-as-company-salvages-starship-from-indian-ocean/",
       "title": "Against all odds, SpaceX finally tugs Starship into port after 24 days at sea",
       "summary": "\"A team of SpaceX engineers is on their way to conduct additional analysis on the vehicle.\"",
