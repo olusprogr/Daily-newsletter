@@ -177,7 +177,7 @@ class Simulation {
         // skaliert daher (wie die uebrigen Level-2-Kosten) mit payAnchor().
         const val EXPAND_PLATFORM_FACTOR = 2.0
         const val EXPAND_CANAL_FACTOR = 1.5
-        const val CANAL_WATER_MULT = 0.006      // 0.6% Ertrag ggue. einer echten Wasserquelle
+        const val CANAL_WATER_MULT = 0.75       // nur etwas weniger ergiebig als eine echte Quelle
         const val WIND_POWER = 16.0      // Strom je Windrad (ohne Brennstoff)
         const val SOLAR_POWER = 10.0     // Strom je Solarpanel (ohne Brennstoff)
         const val RESEARCH_RATE = 0.1    // Basis-Forschung je Sekunde und Forschungszentrum (Upgrade erhoeht)

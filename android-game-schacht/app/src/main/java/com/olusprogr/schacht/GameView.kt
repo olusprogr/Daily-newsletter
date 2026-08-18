@@ -805,10 +805,13 @@ class GameView(context: Context) : View(context) {
                     // Nur zeichnen, wenn wirklich etwas fliesst: eine vom Lager blockierte
                     // Sorte NIE zeigen, sonst nur wenn die Quelle etwas anzubieten hat UND
                     // das Ziel es auch annimmt (Lager: nicht blockiert reicht; sonst muss
-                    // das Ziel gerade aktiv laufen).
+                    // das Ziel gerade aktiv laufen). Winzige Epsilons statt fester "Mindest-
+                    // mengen" (0.2/0.03) - bei knappen Ketten (z.B. Brennstabsatz/Dampf,
+                    // wenn Wasser der Engpass ist) blieb sonst auch ein echter, aber kleiner
+                    // Fluss unsichtbar, weil er nie ueber die willkuerliche Schwelle kam.
                     if (isLager && !cm.acceptRes[res]) continue
-                    val hasSupply = pm.output[res] > 0.2 || pm.util > 0.03
-                    val isAccepted = isLager || cm.util > 0.03
+                    val hasSupply = pm.output[res] > 1e-6 || pm.util > 1e-6
+                    val isAccepted = isLager || cm.util > 1e-6
                     if (!hasSupply || !isAccepted) continue
 
                     val sx = vLeft + pa[1] * cell + half
