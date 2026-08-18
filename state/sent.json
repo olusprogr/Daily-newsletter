@@ -1,6 +1,42 @@
 {
   "items": [
     {
+      "link": "https://www.technologyreview.com/2026/08/18/1142229/the-download-how-people-use-ai-flock-cameras-design/",
+      "title": "The Download: how people really use AI, and Flock’s design choices",
+      "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. We still don’t know how people are really using AI AI companies like Anthropic and OpenAI regularly publish reports on how people are using their products. But they only release the&#8230;",
+      "source": "MIT Technology Review",
+      "category": "AI",
+      "published": "2026-08-18T12:10:00+00:00",
+      "sent_at": "2026-08-18T12:37:16.840010+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/981269/google-home-gemini-pet-memory-nest-camera-review",
+      "title": "Google&#8217;s Pet Memory forgot who my cats are",
+      "summary": "One of the best things my smart home does is help me care for my pets, and security cameras are particularly useful for keeping track of my many critters. But the barrage of notifications they send often means I miss important ones. So, when Google announced its new Pet Memory feature for Gemini for Home, [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-08-18T12:01:29+00:00",
+      "sent_at": "2026-08-18T12:37:16.840010+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/978402/parrot-ate-keyboard-protect",
+      "title": "My parrot ate my keyboard",
+      "summary": "One of the great joys in life is having pets. The unconditional love, the snuggles, the excitement they show when you get home - these things add an emotional fulfillment to daily existence that can't be achieved in another way. I think everyone's life would be better with a pet (or two) in their lives. [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-08-18T12:00:00+00:00",
+      "sent_at": "2026-08-18T12:37:16.840010+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/motherboards/how-to-choose-a-new-motherboard-without-overpaying-scoping-out-the-features-you-need-and-what-you-might-never-use-as-component-costs-soar",
+      "title": "How to choose a new motherboard without overpaying — scoping out the features you need, and what you might never use as component costs soar",
+      "summary": "How much motherboard is too much? We look at what you actually get as prices climb — from VRMs and connectivity to premium features and diminishing returns.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-08-18T12:00:00+00:00",
+      "sent_at": "2026-08-18T12:37:16.840010+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/pc-components/gpus/famed-overclocker-1usmus-updates-hydra-overclocking-tool-with-up-to-3000-mhz-memory-offset-new-update-gives-vram-and-power-limit-controls-to-rtx-50-series-gpus",
       "title": "Overclocker updates Hydra overclocking tool with VRAM and power limit controls for RTX 50-series GPUs — new update gives up to +3000 MHz memory offset",
       "summary": "Overclocker 1usmus has released a new update for their Hydra overclocking tool that features VRAM and power limit controls for RTX 50-series GPUs.",
