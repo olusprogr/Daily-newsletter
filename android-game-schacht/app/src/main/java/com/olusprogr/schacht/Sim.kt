@@ -46,6 +46,12 @@ class Machine(var type: MType) {
     // Nur fuer die Drohnen-Station: aktuell angeflogene/reparierte Maschine (-1 = keine).
     var svR = -1
     var svC = -1
+    // Nur fuer die Drohnen-Station: aktuelle Flugposition (fraktionale Gitterkoordinaten,
+    // Y=Zeile/X=Spalte). -1.0 = noch nicht initialisiert (erster step() setzt sie auf die
+    // Ruheposition ueber der Station). Die Reparatur greift erst, wenn diese Position das
+    // Ziel wirklich erreicht hat - kein reines Reichweiten-Aura-Heilen mehr.
+    var flyR = -1.0
+    var flyC = -1.0
     // Drohnen-Station: repariert nur, wenn Guthaben >= dieser Schwelle (per Klick einstellbar).
     var moneyGate = 0.0
     // Individuelle Ausbau-Stufe DIESER Maschine (unabhaengig vom globalen Tech-Baum).
@@ -151,6 +157,7 @@ class Simulation {
         const val DROHNE_R = 3           // Basis-Reichweite der Station (Chebyshev-Radius)
         const val DROHNE_REPAIR_COST_PER = 0.1  // Geld je repariertem Zustands-% (Drohne)
         const val DROHNE_GATE_STEP = 25.0       // Schrittweite fuer das Reparatur-Limit
+        const val DROHNE_FLY_SPEED = 3.0        // Basis-Fluggeschwindigkeit (Zellen/s)
         const val BOOST_PER = 0.20
         const val COMPONENT_PRICE = 8.0
         const val HAENDLER_SELL = 2.0
@@ -360,8 +367,10 @@ class Simulation {
             MType.BLEIBOHRER to 20.0, MType.WASSERPUMPE to 22.0, MType.ZENTRIFUGE to 45.0,
             MType.BLEIPRESSE to 36.0, MType.BRENNSTABWERK to 60.0, MType.REAKTORKERN to 90.0, MType.KUEHLTURM to 100.0
         )
-        // Nicht upgradebar: keine echten placeable items (auto-platziert / abgeschaltet).
-        val NOT_UPGRADABLE = setOf(MType.REAKTOR, MType.VERSTAERKER, MType.PROSPEKTOR)
+        // Nicht upgradebar: keine echten placeable items (auto-platziert / abgeschaltet),
+        // oder ein Einzel-Upgrade waere sinnlos, weil Forschung/Handel ohnehin nur einmal
+        // pro Basis wirklich gebraucht werden (Forschungszentrum, Haendler).
+        val NOT_UPGRADABLE = setOf(MType.REAKTOR, MType.VERSTAERKER, MType.PROSPEKTOR, MType.FORSCHUNG, MType.HAENDLER)
     }
 
     fun newGame() {
@@ -1219,6 +1228,21 @@ class Simulation {
         return if (bestR >= 0) intArrayOf(bestR, bestC) else null
     }
 
+    /**
+     * Bewegt die Flugposition einer Drohne (fraktionale Gitterkoordinaten) einen Schritt
+     * Richtung Ziel; Geschwindigkeit skaliert mit Tempo-Tech/Ausbau. Gibt true zurueck,
+     * sobald das Ziel diesen Tick erreicht wurde - DAS gattert die eigentliche Reparatur,
+     * damit die Drohne wirklich hinfliegen muss statt per Reichweiten-Aura zu heilen.
+     */
+    private fun flyTowards(m: Machine, tY: Double, tX: Double, ddt: Double): Boolean {
+        val dY = tY - m.flyR; val dX = tX - m.flyC
+        val dist = kotlin.math.hypot(dY, dX)
+        val step = DROHNE_FLY_SPEED * droneSpeedMult() * ddt
+        if (dist <= step || dist < 1e-4) { m.flyR = tY; m.flyC = tX; return true }
+        m.flyR += dY / dist * step; m.flyC += dX / dist * step
+        return false
+    }
+
     private fun hasUnsurveyedInRange(r: Int, c: Int): Boolean {
         val rad = scanRadius()
         for (dr in -rad..rad) for (dc in -rad..rad) {
@@ -1345,9 +1369,12 @@ class Simulation {
                     if (fuel <= 1e-9) m.starved = true
                 }
                 MType.DROHNE -> {
+                    // Ruheposition ueber der eigenen Station initialisieren (einmalig).
+                    if (m.flyR < 0.0) { m.flyR = r + 0.12; m.flyC = c + 0.5 }
                     if (money < m.moneyGate) {
                         // Reparatur-Limit nicht erreicht: Drohne pausiert und kehrt heim.
                         m.svR = -1; m.svC = -1; m.util = 0.0
+                        flyTowards(m, r + 0.12, c + 0.5, ddt)
                     } else {
                         val cur = if (m.svR in 0 until n && m.svC in 0 until n) grid[m.svR][m.svC] else null
                         val valid = cur != null && cur.type != MType.DROHNE && cur.condition < 99.999 &&
@@ -1358,17 +1385,28 @@ class Simulation {
                         }
                         val tgt = if (m.svR >= 0) grid[m.svR][m.svC] else null
                         if (tgt != null) {
-                            var delta = min(droneRepairRate() * machineUpgradeMult(m) * ddt * scale, 100.0 - tgt.condition)
-                            // Geld fuer die Reparatur abziehen; nur so viel, wie bezahlbar ist.
-                            val maxByMoney = if (DROHNE_REPAIR_COST_PER > 1e-9) money / DROHNE_REPAIR_COST_PER else delta
-                            if (maxByMoney < delta) delta = maxByMoney
-                            if (delta > 1e-9) {
-                                tgt.condition = min(100.0, tgt.condition + delta)
-                                money = max(0.0, money - delta * DROHNE_REPAIR_COST_PER)
-                                m.condition = max(0.0, m.condition - wearPerSec(MType.DROHNE) * wf * ddt * scale)
-                                m.util = 1.0
-                            } else m.util = 0.0
-                        } else m.util = 0.0
+                            // Erst hinfliegen, DANN reparieren - reines Reichweiten-Heilen ganz
+                            // ohne echten Flug war der gemeldete Bug ("brauchen nicht mehr zu
+                            // fliegen, weil sich alles von selbst repariert").
+                            val arrived = flyTowards(m, m.svR + 0.32, m.svC + 0.5, ddt)
+                            if (!arrived) {
+                                m.util = 0.5
+                            } else {
+                                var delta = min(droneRepairRate() * machineUpgradeMult(m) * ddt * scale, 100.0 - tgt.condition)
+                                // Geld fuer die Reparatur abziehen; nur so viel, wie bezahlbar ist.
+                                val maxByMoney = if (DROHNE_REPAIR_COST_PER > 1e-9) money / DROHNE_REPAIR_COST_PER else delta
+                                if (maxByMoney < delta) delta = maxByMoney
+                                if (delta > 1e-9) {
+                                    tgt.condition = min(100.0, tgt.condition + delta)
+                                    money = max(0.0, money - delta * DROHNE_REPAIR_COST_PER)
+                                    m.condition = max(0.0, m.condition - wearPerSec(MType.DROHNE) * wf * ddt * scale)
+                                    m.util = 1.0
+                                } else m.util = 0.0
+                            }
+                        } else {
+                            m.util = 0.0
+                            flyTowards(m, r + 0.12, c + 0.5, ddt)
+                        }
                     }
                 }
                 MType.VERSTAERKER -> {

@@ -35,6 +35,38 @@ class GameView(context: Context) : View(context) {
     private var menuSlots: List<SlotInfo> = emptyList()   // gecachte Liste fuers Menue
     private fun refreshMenu() { menuSlots = saveStore.slots() }
 
+    // Zuschauer-Modus: anderes Unternehmen (Spielstand-Slot) ansehen, ohne etwas daran
+    // aendern zu koennen. viewOnlyId = die Slot-ID, die gerade betrachtet wird (null =
+    // normales eigenes Spiel). ownSnapshot haelt den EIGENEN Spielstand fest, waehrend
+    // "sim" voruebergehend mit den fremden Daten befuellt ist, damit persist() niemals
+    // versehentlich die fremden Daten in den eigenen Slot schreibt.
+    private var viewOnlyId: String? = null
+    private var ownSnapshot: String? = null
+    private val viewOnly: Boolean get() = viewOnlyId != null
+
+    private fun enterViewOnly(id: String) {
+        if (id == currentSlot) return
+        val blob = saveStore.loadState(id) ?: return
+        if (viewOnlyId == null) ownSnapshot = sim.toJson(System.currentTimeMillis())
+        try {
+            sim.fromJson(blob)
+            viewOnlyId = id
+            selR = -1; selC = -1; buildTool = null
+            needCenter = true
+            screen = Screen.GAME
+            audio.click()
+        } catch (_: Exception) { audio.error() }
+    }
+
+    private fun exitViewOnly() {
+        val snap = ownSnapshot
+        viewOnlyId = null; ownSnapshot = null
+        if (snap != null) { try { sim.fromJson(snap) } catch (_: Exception) { } }
+        selR = -1; selC = -1; buildTool = null
+        needCenter = true
+        audio.click()
+    }
+
     private var selR = -1
     private var selC = -1
     private var report: OfflineReport? = null
@@ -177,6 +209,10 @@ class GameView(context: Context) : View(context) {
     private var headerH = 0f
     private var paletteTop = 0f
     private var paletteH = 0f
+    // Bau-Palette ein-/ausklappbar (Griff-Leiste bleibt immer sichtbar); Zustand wird
+    // gemerkt, damit er nach Neustart erhalten bleibt.
+    private var paletteCollapsed = false
+    private val paletteToggleH: Float get() = dp(20f)
 
     // Zoom & Verschiebung der (grossen) Karte
     private val visibleAt1 = 9f   // ~9 Chunks quer bei Zoom 1
@@ -232,10 +268,6 @@ class GameView(context: Context) : View(context) {
     private val buttons = ArrayList<Btn>()
 
     private var animT = 0f
-
-    // Animierte Position der Reparaturdrohne je Station (Zellkoordinaten).
-    private val droneAnimPos = HashMap<Int, FloatArray>()
-    private var droneLastT = 0f
 
     // Button-Druck-Feedback (Juice): gedrueckte Button-ID + Zeitpunkt.
     private var pressedBtn: String? = null
@@ -356,6 +388,7 @@ class GameView(context: Context) : View(context) {
         I18n.lang = try { Lang.values()[prefs.getInt("lang", Lang.EN.ordinal)] } catch (_: Exception) { Lang.EN }
         audio.setMusicVol(prefs.getInt("musicVol", 50) / 100f)
         audio.setSfxVol(prefs.getInt("sfxVol", 33) / 100f)
+        paletteCollapsed = prefs.getBoolean("paletteCollapsed", false)
         // Start immer im Hauptmenue mit der Slot-Auswahl.
         sim.newGame()
         screen = Screen.MENU
@@ -382,6 +415,9 @@ class GameView(context: Context) : View(context) {
     }
 
     fun persist() {
+        // Im Zuschauer-Modus enthaelt "sim" gerade FREMDE Firmendaten - niemals in den
+        // eigenen Slot schreiben, egal von wo persist() aufgerufen wird.
+        if (viewOnly) return
         val slot = currentSlot ?: return
         try {
             saveStore.saveState(slot, sim.toJson(System.currentTimeMillis()))
@@ -457,7 +493,10 @@ class GameView(context: Context) : View(context) {
         val items = buildOrderFor(sim.companyLevel).size
         val palRows = ((items + paletteCols - 1) / paletteCols).coerceAtLeast(1)
         val palBh = dp(66f); val palGap = dp(5f)
-        paletteH = palRows * palBh + (palRows - 1) * palGap + dp(8f)
+        // Griff-Leiste zum Ein-/Ausklappen bleibt IMMER sichtbar - nur die Kachelreihen
+        // selbst verschwinden, wenn eingeklappt (mehr Platz fuer die Karte).
+        val content = if (paletteCollapsed) 0f else palRows * palBh + (palRows - 1) * palGap + dp(8f)
+        paletteH = content + paletteToggleH
         paletteTop = H - paletteH
         gridH = paletteTop - gridTop - dp(4f)        // Karten-Fenster fuellt fast alles
     }
@@ -575,9 +614,22 @@ class GameView(context: Context) : View(context) {
         pText.color = cDim; pText.textSize = dp(12f)
         canvas.drawText("${fmt(sim.powerSupply)}/${fmt(sim.powerDemand)}", dp(158f), dp(70f), pText)
 
-        // --- Firmenleiste: Level + Fortschritt zum Verkaufsziel ---
+        // --- Firmenleiste: Level + Fortschritt zum Verkaufsziel (oder, im Zuschauer-
+        // Modus, ein deutlicher Hinweis + direkter Rueckweg zur eigenen Firma) ---
         run {
             val cy0 = dp(78f); val cy1 = dp(93f)
+            if (viewOnly) {
+                val cRect = RectF(0f, cy0 - dp(2f), W.toFloat(), cy1 + dp(1f))
+                p.color = Color.argb(90, 224, 84, 72)
+                canvas.drawRect(cRect, p)
+                pText.textSize = dp(11.5f); pText.textAlign = Paint.Align.LEFT; pText.color = cBad
+                canvas.drawText("👁 ${tr("viewonly_badge")}", dp(8f), cy1 - dp(3f), pText)
+                pText.textAlign = Paint.Align.RIGHT; pText.color = cText
+                canvas.drawText("◂ ${tr("exit_viewonly")}", W - dp(8f), cy1 - dp(3f), pText)
+                pText.textAlign = Paint.Align.LEFT
+                buttons.add(Btn(cRect, "exit_viewonly", "exit"))
+                return@run
+            }
             val ready = sim.canSellCompany()
             val pulse = 0.5f + 0.5f * kotlin.math.sin(animT * 4f)
             val barL = dp(96f); val barR = W - dp(96f)
@@ -720,25 +772,34 @@ class GameView(context: Context) : View(context) {
                 if (pr !in 0 until an || pc !in 0 until an) continue
                 val pa = sim.anchorOf(pr, pc) ?: continue
                 val pm = sim.grid[pa[0]][pa[1]] ?: continue
-                val off = offersRes(pm.type)
-                if (off < 0) continue
-                if (!isLager && off !in wants) continue
-                val res = off
-                // nur zeichnen, wenn tatsaechlich Material fliesst
-                val consuming = if (isLager) pm.output[res] > 0.3 else cm.util > 0.03
-                val producing = pm.util > 0.03 || pm.output[res] > 0.2
-                if (!consuming || !producing) continue
+                // Welche Rohstoffe koennte dieser Nachbar liefern? Ein Lager liefert (anders
+                // als ein normaler Produzent mit genau einem festen Ausstoss) JEDEN gerade
+                // gelagerten Rohstoff - sonst wuerde nur der Zufluss INS Lager animiert,
+                // nie der Abfluss AUS dem Lager zu einem Abnehmer.
+                val offerCandidates: IntArray = if (pm.type == MType.LAGER) {
+                    if (isLager) IntArray(Res.values().size) { it } else wants
+                } else {
+                    val off = offersRes(pm.type)
+                    if (off < 0 || (!isLager && off !in wants)) continue
+                    intArrayOf(off)
+                }
+                for (res in offerCandidates) {
+                    // nur zeichnen, wenn tatsaechlich Material fliesst
+                    val consuming = if (isLager) pm.output[res] > 0.3 else cm.util > 0.03
+                    val producing = pm.util > 0.03 || pm.output[res] > 0.2
+                    if (!consuming || !producing) continue
 
-                val sx = vLeft + pa[1] * cell + half
-                val sy = vTop + pa[0] * cell + half
-                val ex = vLeft + c * cell + half
-                val ey = vTop + r * cell + half
-                val icon = Sprites.iconForRes(res, sim.companyLevel)
-                val base = animT * 0.6f + (pr * 3 + pc + res) * 0.31f   // langsamer
-                val t = base % 1f
-                val cx = sx + (ex - sx) * t
-                val cy = sy + (ey - sy) * t
-                drawIcon(canvas, icon, cx - isz / 2f, cy - isz / 2f, isz)
+                    val sx = vLeft + pa[1] * cell + half
+                    val sy = vTop + pa[0] * cell + half
+                    val ex = vLeft + c * cell + half
+                    val ey = vTop + r * cell + half
+                    val icon = Sprites.iconForRes(res, sim.companyLevel)
+                    val base = animT * 0.6f + (pr * 3 + pc + res) * 0.31f   // langsamer
+                    val t = base % 1f
+                    val cx = sx + (ex - sx) * t
+                    val cy = sy + (ey - sy) * t
+                    drawIcon(canvas, icon, cx - isz / 2f, cy - isz / 2f, isz)
+                }
             }
         }
     }
@@ -993,15 +1054,20 @@ class GameView(context: Context) : View(context) {
         canvas.drawCircle(hx, hy, cell * 0.06f, p)
     }
 
-    /** Reparaturdrohnen: fliegen von der Station zu beschaedigten Maschinen im Umkreis. */
+    /**
+     * Reparaturdrohnen: fliegen von der Station zu beschaedigten Maschinen im Umkreis.
+     * Die Flugposition kommt direkt aus der Simulation (Sim.kt flyTowards()) statt aus
+     * einer eigenen, potenziell davon abweichenden Interpolation hier - so zeigt die
+     * Animation immer exakt, wann wirklich (und woran) repariert wird.
+     */
     private fun drawDrones(canvas: Canvas) {
-        val dt = (animT - droneLastT).coerceIn(0f, 0.1f); droneLastT = animT
         val nn = sim.n
         for (r in 0 until nn) for (c in 0 until nn) {
             val m = sim.grid[r][c] ?: continue
             if (m.type != MType.DROHNE) continue
-            val key = r * nn + c
             val stX = c + 0.5f; val stY = r + 0.12f            // Ruheplatz ueber der Station
+            val px = if (m.flyC >= 0.0) m.flyC.toFloat() else stX
+            val py = if (m.flyR >= 0.0) m.flyR.toFloat() else stY
             var tgtX = stX; var tgtY = stY; var repairing = false
             if (m.svR in 0 until nn && m.svC in 0 until nn) {
                 val g = sim.grid[m.svR][m.svC]
@@ -1009,15 +1075,9 @@ class GameView(context: Context) : View(context) {
                     tgtX = m.svC + 0.5f; tgtY = m.svR + 0.32f; repairing = true
                 }
             }
-            val pos = droneAnimPos.getOrPut(key) { floatArrayOf(stX, stY) }
-            val dx = tgtX - pos[0]; val dy = tgtY - pos[1]
-            val dist = kotlin.math.hypot(dx, dy)
-            val stepD = 3f * sim.droneSpeedMult().toFloat() * dt   // Basis 3 Zellen/s (halbiert) + Upgrade
-            if (dist > stepD && dist > 1e-4f) { pos[0] += dx / dist * stepD; pos[1] += dy / dist * stepD }
-            else { pos[0] = tgtX; pos[1] = tgtY }
-            val arrived = dist < 0.12f
-            val sx = vLeft + pos[0] * cell
-            val syBase = vTop + pos[1] * cell
+            val arrived = kotlin.math.hypot(tgtX - px, tgtY - py) < 0.12f
+            val sx = vLeft + px * cell
+            val syBase = vTop + py * cell
             if (sx < gridLeft - cell || sx > gridLeft + gridW + cell ||
                 syBase < gridTop - cell || syBase > gridTop + gridH + cell) continue
             val hover = if (arrived) kotlin.math.sin(animT * 3.5f) * cell * 0.03f
@@ -1182,6 +1242,19 @@ class GameView(context: Context) : View(context) {
     }
 
     private fun drawPalette(canvas: Canvas) {
+        // Griff-Leiste zum Ein-/Ausklappen - bleibt immer sichtbar, auch wenn zu.
+        val toggleH = paletteToggleH
+        val handleR = RectF(0f, paletteTop, W.toFloat(), paletteTop + toggleH)
+        p.color = cPanel; canvas.drawRect(handleR, p)
+        p.color = cPanelHi; canvas.drawRect(0f, paletteTop, W.toFloat(), paletteTop + dp(2f), p)
+        p.color = Color.argb(140, 210, 216, 228)
+        canvas.drawRoundRect(RectF(W / 2f - dp(16f), paletteTop + dp(7f), W / 2f + dp(16f), paletteTop + dp(10f)), dp(2f), dp(2f), p)
+        pTextC.textAlign = Paint.Align.RIGHT; pTextC.color = cDim; pTextC.textSize = dp(12f)
+        canvas.drawText(if (paletteCollapsed) "▲" else "▼", W - dp(10f), paletteTop + dp(15f), pTextC)
+        pTextC.textAlign = Paint.Align.CENTER
+        buttons.add(Btn(handleR, "palette_toggle", "pt"))
+        if (paletteCollapsed) return
+
         val cols = paletteCols
         val margin = dp(8f)
         val gap = dp(5f)
@@ -1191,7 +1264,7 @@ class GameView(context: Context) : View(context) {
             val col = i % cols
             val row = i / cols
             val x = margin + col * (bw + gap)
-            val yy = paletteTop + dp(6f) + row * (bh + gap)
+            val yy = paletteTop + toggleH + dp(6f) + row * (bh + gap)
             val rect = RectF(x, yy, x + bw, yy + bh)
             val used = sim.typeCount[t.ordinal]
             val max = sim.maxCount(t)
@@ -1298,7 +1371,7 @@ class GameView(context: Context) : View(context) {
     private fun detailExtraH(m: Machine): Float {
         var extra = 0f
         if (sim.canUpgradeMachine(m.type)) extra += dp(36f)
-        if (m.type == MType.LAGER) extra += dp(50f)
+        if (m.type == MType.LAGER) extra += dp(90f)   // Inhalts-Uebersicht + Annahme-Filter
         if (m.type == MType.DROHNE) extra += dp(36f)
         return extra
     }
@@ -1332,24 +1405,23 @@ class GameView(context: Context) : View(context) {
             MType.PROSPEKTOR -> "${tr("scans")} (${tr("radius")} ${sim.scanRadius()})"
             MType.WINDRAD -> {
                 val coast = sim.windCoastBonus(selR, selC) > 1.0
-                val wp = (Simulation.WIND_POWER * sim.windCoastBonus(selR, selC)).roundToInt()
+                val wp = (Simulation.WIND_POWER * sim.windCoastBonus(selR, selC) * sim.machineUpgradeMult(m)).roundToInt()
                 "${tr("provides")} $wp ${tr("strom")} (${if (coast) tr("coast") else tr("wind")})"
             }
             MType.OFEN -> "${tr("in")} ${oneDec(m.input[0])} $oreLabel   ${tr("out")} ${oneDec(m.output[1])} ${tr("barren")}"
             MType.PRESSE -> "${tr("in")} ${oneDec(m.input[1])} ${tr("barren")}   ${tr("out")} ${oneDec(m.output[2])} ${tr("platten")}"
             MType.ASSEMBLER -> "${tr("in")} ${oneDec(m.input[2])} ${tr("platten")}   ${tr("out")} ${oneDec(m.output[3])} ${tr("komp")}"
             MType.HAENDLER -> "${tr(if (sim.companyLevel >= 2) "sells_strom" else "sells_comp")} (${oneDec(sim.componentPrice())}${tr("per_piece")})"
-            MType.GENERATOR -> "${tr("fuel")} ${oneDec(m.input[0])} $oreLabel  ->  +${Simulation.GEN_POWER.toInt()} ${tr("strom")}"
-            MType.LAGER -> {
-                val parts = ArrayList<String>()
-                for (ri in Res.values().indices) if (m.output[ri] > 0.05) parts.add("${oneDec(m.output[ri])}${resAbbr(Res.values()[ri])}")
-                "${tr("buffer")} " + if (parts.isEmpty()) "-" else parts.joinToString(" ")
-            }
+            MType.GENERATOR -> "${tr("fuel")} ${oneDec(m.input[0])} $oreLabel  ->  +${(Simulation.GEN_POWER * sim.machineUpgradeMult(m)).roundToInt()} ${tr("strom")}"
+            // Inhalt wird unten als eigene Icon-Reihe gezeigt (siehe die "Lager:
+            // Inhalts-Uebersicht"-Zeilen in drawDetail) - hier nur noch der Kopf-Hinweis,
+            // keine Buchstaben-Abkuerzungen mehr.
+            MType.LAGER -> tr("buffer")
             MType.VERSTAERKER -> "${tr("boosts")} (+${(Simulation.BOOST_PER * 100).toInt()}%)"
             MType.REAKTOR -> "${tr("provides")} ${Simulation.REAKTOR_POWER.toInt()} ${tr("strom")} (${tr("fixed")})"
-            MType.SOLAR -> "${tr("provides")} ${Simulation.SOLAR_POWER.toInt()} ${tr("strom")} (${tr("sun")})"
+            MType.SOLAR -> "${tr("provides")} ${(Simulation.SOLAR_POWER * sim.machineUpgradeMult(m)).roundToInt()} ${tr("strom")} (${tr("sun")})"
             MType.FORSCHUNG -> "${tr("produces_research")} +${oneDec(sim.researchRate())}/s"
-            MType.DROHNE -> "${tr("repairs")} · R${sim.droneRange()} · ${sim.droneRepairRate().roundToInt()}%/s"
+            MType.DROHNE -> "${tr("repairs")} · R${sim.droneRange()} · ${(sim.droneRepairRate() * sim.machineUpgradeMult(m)).roundToInt()}%/s"
             MType.BLEIBOHRER -> {
                 val floorTxt = if (sim.isSurveyed(selR, selC)) {
                     val tier = sim.richness(selR, selC)
@@ -1402,6 +1474,34 @@ class GameView(context: Context) : View(context) {
                 buttons.add(Btn(ur, "upgrade_sel", "upgrade", canAfford))
             }
             yy += dp(36f)
+        }
+
+        // Lager: Inhalts-Uebersicht - Icon je Rohstoff statt Buchstaben-Kuerzel, mit Menge
+        // darunter; leere Sorten deutlich abgedunkelt, damit auf einen Blick klar ist, was
+        // drin ist und was nicht.
+        if (m.type == MType.LAGER) {
+            pText.color = cDim; pText.textSize = dp(11f)
+            canvas.drawText(tr("lager_content"), dp(12f), yy + dp(8f), pText)
+            val cy = yy + dp(12f); val cs = dp(26f); val cgap = dp(5f)
+            val n = Res.values().size
+            val totalW = n * cs + (n - 1) * cgap
+            var cx = (W - totalW) / 2f
+            for (ri in 0 until n) {
+                val amt = m.output[ri]
+                val has = amt > 0.05
+                val r = RectF(cx, cy, cx + cs, cy + cs)
+                p.color = if (has) Color.argb(60, 120, 190, 230) else Color.argb(35, 120, 120, 130)
+                canvas.drawRoundRect(r, dp(4f), dp(4f), p)
+                p.color = if (has) cAccent else cGridLine; p.style = Paint.Style.STROKE; p.strokeWidth = dp(1.1f)
+                canvas.drawRoundRect(r, dp(4f), dp(4f), p); p.style = Paint.Style.FILL
+                drawIcon(canvas, Sprites.iconForRes(ri, sim.companyLevel), cx + cs * 0.16f, cy + cs * 0.16f, cs * 0.68f)
+                pText.textAlign = Paint.Align.CENTER; pText.textSize = dp(9f)
+                pText.color = if (has) cText else cDim
+                canvas.drawText(if (has) oneDec(amt) else "-", cx + cs / 2f, cy + cs + dp(11f), pText)
+                pText.textAlign = Paint.Align.LEFT
+                cx += cs + cgap
+            }
+            yy += dp(40f)
         }
 
         // Lager: je Rohstoff annehmen/blockieren (kompakte Icon-Reihe).
@@ -1654,6 +1754,33 @@ class GameView(context: Context) : View(context) {
         sy = drawSoundRow(canvas, "snd_music", (audio.musicVol * 100).roundToInt(), "mvol", sy, margin, startY, bandBottom)
         sy = drawSoundRow(canvas, "snd_sfx", (audio.sfxVol * 100).roundToInt(), "svol", sy, margin, startY, bandBottom)
         yy = sy
+
+        // Zuschauer-Modus: andere eigene Unternehmen (Spielstaende) nur ANSEHEN, ohne
+        // etwas daran aendern zu koennen - z.B. um kurz eine zweite Firma zu pruefen.
+        val otherSlots = saveStore.slots().filter { it.id != currentSlot }
+        if (otherSlots.isNotEmpty()) {
+            yy += dp(10f)
+            if (visible(yy - dp(14f), dp(20f))) {
+                pText.color = cText; pText.textSize = dp(14f)
+                canvas.drawText(tr("view_company"), dp(16f), yy, pText)
+            }
+            yy += dp(4f)
+            if (visible(yy, dp(16f))) {
+                pText.color = cDim; pText.textSize = dp(11f)
+                canvas.drawText(tr("view_company_hint"), dp(16f), yy + dp(11f), pText)
+            }
+            yy += dp(20f)
+            val rowH = dp(36f); val rowGap = dp(6f)
+            for (s in otherSlots) {
+                if (visible(yy, rowH)) {
+                    val rr = RectF(margin, yy, W - margin, yy + rowH)
+                    val active = viewOnlyId == s.id
+                    drawButton(canvas, Btn(rr, "vo_${s.id}", "${s.name}  ·  ${fmt(s.money)}€", true, active, cAccent))
+                    buttons.add(Btn(rr, "vo_${s.id}", "vo"))
+                }
+                yy += rowH + rowGap
+            }
+        }
 
         statMaxScroll = (yy + statScroll - bandBottom).coerceAtLeast(0f)
         statScroll = statScroll.coerceIn(0f, statMaxScroll)
@@ -2093,7 +2220,27 @@ class GameView(context: Context) : View(context) {
     }
 
     private fun handleButton(id: String) {
+        // Im Zuschauer-Modus (fremdes Unternehmen ansehen) nur Navigation/Anzeige erlauben -
+        // alles was den Spielstand aendern wuerde stumm abweisen. "to_menu" beendet den
+        // Zuschauer-Modus zuerst, damit man dort wieder im EIGENEN Spiel landet.
+        if (viewOnly && id == "to_menu") exitViewOnly()
+        else if (viewOnly) {
+            val navAllowed = id == "tech" || id == "stat" || id == "close" || id == "company" ||
+                id.startsWith("mvol_") || id.startsWith("svol_") || id.startsWith("lang_") ||
+                id == "exit_viewonly" || id.startsWith("vo_") || id == "palette_toggle"
+            if (!navAllowed) { audio.error(); invalidate(); return }
+        }
         when {
+            id == "exit_viewonly" -> exitViewOnly()
+            id.startsWith("vo_") -> {
+                val sid = id.removePrefix("vo_")
+                if (viewOnlyId == sid) exitViewOnly() else enterViewOnly(sid)
+            }
+            id == "palette_toggle" -> {
+                paletteCollapsed = !paletteCollapsed
+                prefs.edit().putBoolean("paletteCollapsed", paletteCollapsed).apply()
+                audio.click()
+            }
             id == "tech" -> { screen = if (screen == Screen.TECH) Screen.GAME else Screen.TECH; selR = -1; resetArmed = false; techScroll = 0f; audio.click() }
             id == "stat" -> { screen = if (screen == Screen.STAT) Screen.GAME else Screen.STAT; selR = -1; resetArmed = false; statScroll = 0f; audio.click() }
             id == "close" -> { screen = Screen.GAME; report = null; resetArmed = false; sellArmed = false; audio.click() }
@@ -2161,6 +2308,9 @@ class GameView(context: Context) : View(context) {
             selR = a[0]; selC = a[1]; audio.click()   // auch belegte Zelle eines Gebaeudes waehlt den Anker
             invalidate(); return
         }
+        // Im Zuschauer-Modus keine Chunks freischalten, Hindernisse entfernen oder bauen -
+        // nur bereits platzierte Maschinen ansehen (siehe Anker-Auswahl oben).
+        if (viewOnly) { selR = -1; selC = -1; audio.error(); invalidate(); return }
         // 1) Gesperrter Chunk? -> mit Geld freischalten
         if (sim.isLocked(r, c)) {
             val cost = sim.chunkCost().toInt()

@@ -6,6 +6,9 @@ import android.view.WindowManager
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.WindowCompat
+import androidx.core.view.WindowInsetsCompat
+import androidx.core.view.WindowInsetsControllerCompat
 
 /**
  * Einzige Activity. Die GameView uebernimmt Simulation, Rendering und Eingabe.
@@ -52,11 +55,31 @@ class MainActivity : AppCompatActivity() {
 
     private fun toast(s: String) = Toast.makeText(this, s, Toast.LENGTH_SHORT).show()
 
+    /**
+     * Echtes Vollbild (immersive sticky): Status- und Navigationsleiste komplett
+     * ausblenden, damit oben/unten keine Luecke bleibt. Ein Wisch vom Rand holt sie
+     * kurz zurueck (System-Standardverhalten), danach verschwinden sie wieder - muss
+     * nach jedem Fokus-Wechsel neu gesetzt werden, sonst bleiben sie nach einem Dialog
+     * (Backup speichern/laden) oder App-Wechsel dauerhaft sichtbar.
+     */
+    private fun enforceFullscreen() {
+        WindowCompat.setDecorFitsSystemWindows(window, false)
+        val controller = WindowCompat.getInsetsController(window, window.decorView)
+        controller.hide(WindowInsetsCompat.Type.systemBars())
+        controller.systemBarsBehavior = WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
+        enforceFullscreen()
         view = GameView(this)
         setContentView(view)
+    }
+
+    override fun onWindowFocusChanged(hasFocus: Boolean) {
+        super.onWindowFocusChanged(hasFocus)
+        if (hasFocus) enforceFullscreen()
     }
 
     override fun onPause() {
@@ -67,6 +90,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
+        enforceFullscreen()
         view.resumeAudio()
     }
 }
