@@ -1,6 +1,42 @@
 {
   "items": [
     {
+      "link": "https://www.engadget.com/2239823/nasa-images-show-crater-on-the-moon-caused-by-spacex-falcon-9-crash/",
+      "title": "NASA images show crater on the moon caused by SpaceX Falcon 9 crash",
+      "summary": "NASA's Lunar Reconnaissance Orbiter took images of the crater created by a SpaceX rocket crashing into the moon.",
+      "source": "Engadget",
+      "category": "Innovationen",
+      "published": "2026-08-19T12:10:27+00:00",
+      "sent_at": "2026-08-19T12:38:46.919930+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/981668/nvidias-goldman-blackrock-gpu-compute-asset",
+      "title": "Nvidia’s new financial strategy does not compute",
+      "summary": "April - 1805 Napoleon is master of Europe Only the British fleet stands before him Compute is now an asset class I see it is once again time to talk financial innovation. Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs, and KKR are all working with Nvidia to put together $500 billion in financing to turn compute [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-08-19T12:00:00+00:00",
+      "sent_at": "2026-08-19T12:38:46.919930+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/data-centers/jason-kelce-led-marketing-campaign-asks-beer-drinkers-to-send-their-pee-to-ai-data-centers-liquid-death-and-garage-beer-skit-claims-ai-data-centers-waste-millions-of-gallons-of-water",
+      "title": "Jason Kelce-led marketing campaign asks beer drinkers to send their pee to AI data centers — Liquid Death and Garage Beer skit claims 'AI data centers waste millions of gallons of water'",
+      "summary": "Two indie brands join together in a viral ad campaign asking people to pee on computers. Taylor Swift's brother-in-law, Jason Kelce, who co-owns one of the brands, stars in this humorous ad where he pees in a bottle and carries it to a post office to send to his AI data center of choice.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-08-19T11:55:24+00:00",
+      "sent_at": "2026-08-19T12:38:46.919930+00:00"
+    },
+    {
+      "link": "https://dl.acm.org/doi/10.1145/3789240.3829151",
+      "title": "λλ: A Programming Language for Silicon Photonics",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Hardware",
+      "published": "2026-08-19T06:09:16+00:00",
+      "sent_at": "2026-08-19T12:38:46.919930+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/beijing-ai-bar-pours-pints-of-foam-with-free-deepseek-tokens-served-from-two-nvidia-dgx-sparks",
       "title": "Beijing AI bar that offers unlimited free DeepSeek coding tokens with $1.50 drink haemorrhaging cash — 'the bar is completely losing money, ' owner admits",
       "summary": "An AI-themed bar in Beijing's Zhongguancun tech hub hands out free, unlimited DeepSeek tokens with its drinks, running inference locally on two Nvidia DGX Spark mini-PCs.",
