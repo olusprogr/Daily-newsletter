@@ -1,6 +1,24 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/08/19/openai-seeks-to-one-up-anthropic-with-new-customer-privacy-protections/",
+      "title": "OpenAI seeks to one-up Anthropic with new customer privacy protections",
+      "summary": "A competition is developing between OpenAI and Anthropic over who can provide the best privacy protections for enterprise customer data.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-19T22:10:46+00:00",
+      "sent_at": "2026-08-19T22:20:30.173875+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/08/19/cognition-ceo-denies-report-that-spacex-tried-to-acquire-the-startup/",
+      "title": "Cognition CEO denies report that SpaceX tried to acquire the startup",
+      "summary": "SpaceX was reportedly in talks to buy AI coding startup Cognition. SpaceX has already acquired Cursor as it races to catch up to rivals like OpenAI and Anthropic in enterprise AI.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-19T21:51:23+00:00",
+      "sent_at": "2026-08-19T22:20:30.173875+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/08/19/travis-kalanick-kicks-off-another-round-of-vc-bashing-1-are-helpful/",
       "title": "Travis Kalanick kicks off another round of VC bashing: ‘1% are helpful’",
       "summary": "After raising $1.7 billion for his new robotics company Atoms, Travis Kalanick is introspective about the role VCs have played in his career.",
