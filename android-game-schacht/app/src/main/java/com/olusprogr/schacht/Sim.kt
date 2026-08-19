@@ -282,7 +282,7 @@ class Simulation {
             MType.SOLAR to 12,
             MType.FORSCHUNG to 4,
             MType.BLEIBOHRER to 24,
-            MType.WASSERPUMPE to 10,
+            MType.WASSERPUMPE to 20,
             MType.ZENTRIFUGE to 16,
             MType.BLEIPRESSE to 16,
             MType.BRENNSTABWERK to 12,
