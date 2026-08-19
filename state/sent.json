@@ -1,6 +1,60 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/tech-industry/samsung-raises-advanced-foundry-prices-by-up-to-15-percent-as-ai-demand-fills-its-4nm-lines",
+      "title": "Samsung raises advanced foundry prices by up to 15% as AI demand fills its 4nm lines, report claims — Chinese customers accepting the largest hikes",
+      "summary": "Samsung raised prices on new orders across its 4nm, 5nm, and 8nm foundry processes in July, with increases reaching 15% for customers in China.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-08-19T16:15:53+00:00",
+      "sent_at": "2026-08-19T16:31:23.234238+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2240069/flock-testing-new-ai-police-tool-tracks-identifies-drivers/",
+      "title": "Flock is testing a new AI tool that tracks and identifies people based on their driving habits",
+      "summary": "This goes way, way further than keeping an eye on license plates.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-08-19T16:15:00+00:00",
+      "sent_at": "2026-08-19T16:31:23.234238+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/981956/google-pixel-11-pro-fold-review",
+      "title": "Google’s Pixel 11 Pro Fold feels like the end of an era",
+      "summary": "The foldable phone market is in the middle of a huge transformation, but no one told Google. Last year, Samsung transformed its Galaxy Z Fold 7 with a dramatically thinner design. This year, it made its phones thinner and lighter again, almost eliminated the crease, and introduced a new passport-sized form factor that feels like [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-08-19T16:00:00+00:00",
+      "sent_at": "2026-08-19T16:31:23.234238+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/981957/google-pixel-watch-5-review-wearables-smartwatch",
+      "title": "Google’s Pixel Watch 5 is promising — but it isn’t finished",
+      "summary": "The Google Pixel Watch 5 has, in many ways, been the hardest Pixel Watch to accurately review. Barely anything has changed in terms of hardware. The sizes are the same, the chips and battery got an itty-bitty boost, and there's a new pyrite satin case finish. Instead, the big updates are all software-related: This year's [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-08-19T16:00:00+00:00",
+      "sent_at": "2026-08-19T16:31:23.234238+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2240042/google-pixel-11-review/",
+      "title": "Google Pixel 11 review: A lot of phone for a little more money",
+      "summary": "The Pixel 11 is $100 more than last year and didn't change a ton, but is still one of the best smartphones on the market.",
+      "source": "Engadget",
+      "category": "Hardware",
+      "published": "2026-08-19T16:00:00+00:00",
+      "sent_at": "2026-08-19T16:31:23.234238+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2240038/google-pixel-11-pro-review-gemini-ai-camera-samples/",
+      "title": "Pixel 11 Pro review: Google AI as your enabler",
+      "summary": "Just because it doesn't meet the high standard its predecessor set doesn't mean the Pixel 11 Pro isn't a great phone.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-08-19T16:00:00+00:00",
+      "sent_at": "2026-08-19T16:31:23.234238+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/tech-industry/data-centers/china-shifting-massive-ai-data-center-complexes-to-rural-provinces-to-tap-surplus-energy-eastern-data-western-computing-strategy-has-chinese-tech-giants-huawei-and-tencent-building-ai-infrastructure-guizhou",
       "title": "China shifting massive AI data center complexes to rural provinces to tap surplus energy — ‘Eastern Data, Western Computing’ strategy has Chinese tech giants Huawei and Tencent building AI infrastructure Guizhou",
       "summary": "Chinese tech giants are putting up data centers in rural Chinese provinces with zero resistance. The abundance of land and energy in these areas allowed infrastructure to easily be built with limited issues, although some experts still question how much development they can bring to these areas.",
