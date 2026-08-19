@@ -1,6 +1,24 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/video-games/minecraft-creator-works-around-in-game-math-limitations-to-implement-an-llm-using-445k-command-blocks-clever-approach-shrank-initial-block-count-from-over-1-million-requires-no-mods-plugins-or-datapacks-to-work",
+      "title": "Player builds working AI chatbot in vanilla Minecraft using 445K command blocks — clever approach shrank initial block count from over 1 million, requires no mods, plugins, or datapacks to work",
+      "summary": "Building neural networks in Minecraft using redstone is a relatively common pursuit, but a clever creator has worked around the limitations of command blocks' available math operations to implement an LLM in just 445,782 blocks, down from over a million in the initial implementation.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-08-19T09:30:00+00:00",
+      "sent_at": "2026-08-19T10:00:31.815826+00:00"
+    },
+    {
+      "link": "https://www.modular.com/blog/modcon-announcements",
+      "title": "The Mojo language (by Modular, now Qualcomm) is now open-source",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Hardware",
+      "published": "2026-08-19T07:47:19+00:00",
+      "sent_at": "2026-08-19T10:00:31.815826+00:00"
+    },
+    {
       "link": "https://www.wired.com/story/flock-safety-os-investigate/",
       "title": "Flock Has a Powerful New AI Tool for Police. We Got Its Code",
       "summary": "Flock’s surveillance cameras have already sparked outrage. WIRED reconstructed its next-generation AI system, already in use by some police, to confirm it goes much further than tracking license plates.",
