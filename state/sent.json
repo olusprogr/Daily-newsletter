@@ -1,6 +1,15 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/08/19/waymos-cheaper-next-gen-robotaxi-is-now-open-to-all-riders-in-these-three-cities/",
+      "title": "Waymo’s cheaper, next-gen robotaxi is now open to all riders in these three cities",
+      "summary": "The next-generation robotaxi, called the Waymo Ojai, is central to the company's push towards mass scale, and eventually, profitability.",
+      "source": "TechCrunch",
+      "category": "Autonomes Fahren",
+      "published": "2026-08-19T22:25:01+00:00",
+      "sent_at": "2026-08-19T22:50:19.270528+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/08/19/openai-seeks-to-one-up-anthropic-with-new-customer-privacy-protections/",
       "title": "OpenAI seeks to one-up Anthropic with new customer privacy protections",
       "summary": "A competition is developing between OpenAI and Anthropic over who can provide the best privacy protections for enterprise customer data.",
