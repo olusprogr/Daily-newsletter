@@ -1,6 +1,33 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/08/19/rillet-raises-100m-series-c-at-1b-valuation-2-years-after-emerging-from-stealth/",
+      "title": "Rillet raises $100M Series C at $1B valuation — 2 years after emerging from stealth",
+      "summary": "AI-native account startup Rillet became a unicorn, led by ICONIQ after it doubled its ARR in the past three months, it said.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-19T20:12:33+00:00",
+      "sent_at": "2026-08-19T20:22:08.746563+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2240357/a-robot-could-eventually-conduct-your-blood-draw-at-the-doctors-office/",
+      "title": "A robot could eventually conduct your blood draw at the doctor's office",
+      "summary": "The FDA has approved a first-of-its-kind automated blood draw device for outpatient settings.",
+      "source": "Engadget",
+      "category": "Innovationen",
+      "published": "2026-08-19T20:02:52+00:00",
+      "sent_at": "2026-08-19T20:22:08.746563+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/entertainment/982358/nielsen-ratings-ppm-smart-watch-cowatching-big-data",
+      "title": "Nielsen is leaning more on wearables to hear what people are watching",
+      "summary": "In order to beef up its ability to accurately measure viewership data in the streaming era, Nielsen is moving forward with a plan to use more information gathered from its partners' wearable devices. Today, Nielsen announced \"a number of key enhancements\" that are being added to its data capturing process ahead of the upcoming fall [&#8230;]",
+      "source": "The Verge",
+      "category": "Innovationen",
+      "published": "2026-08-19T19:53:09+00:00",
+      "sent_at": "2026-08-19T20:22:08.746563+00:00"
+    },
+    {
       "link": "https://www.wired.com/story/generalist-ai-robots-learn-like-clever-toddlers/",
       "title": "I Saw the Future of AI in a Robot That Can Learn on the Spot",
       "summary": "During a recent visit to Generalist AI, I watched a robotic arm improvise and use a banana as a tool.",
