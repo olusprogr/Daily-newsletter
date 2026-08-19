@@ -1,6 +1,33 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/video/meet-the-startup-helping-wall-street-put-a-price-on-ai-compute/",
+      "title": "Meet the startup helping Wall Street put a price on AI compute",
+      "summary": "The AI buildout shows no signs of slowing. And&#160;with&#160;hundreds of&#160;billions of dollars a year going into data centers and GPUs,&#160;compute has&#160;become the single biggest cost for anyone building AI products. But for all that spending, there still&#160;isn’t&#160;a straightforward way to put a price on&#160;compute&#160;— or&#160;for firms to hedge their exposure when the price&#160;changes.&#160; Silicon Data [&#8230;]",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-19T17:26:48+00:00",
+      "sent_at": "2026-08-19T17:49:46.201262+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/982323/openai-hit-brakes-voluntary-pacing-ai",
+      "title": "OpenAI hit the brakes. Now what?",
+      "summary": "With a looming IPO, intense competition from Anthropic, and Chinese and open-weight rivals nipping at its heels, OpenAI has plenty of reasons to move fast. Instead, it hit the brakes. On Tuesday, the company said it had slowed the pace of some AI development while it tightened security and safeguards. That included a two-week pause [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-08-19T17:10:09+00:00",
+      "sent_at": "2026-08-19T17:49:46.201262+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/982270/meta-ai-mac-app",
+      "title": "Meta AI is getting a Mac app",
+      "summary": "Meta is launching a new Mac app dedicated to its AI chatbot. In an announcement on Wednesday, Meta says you can share your window with its AI chatbot, which can provide suggestions, answer questions, or create content based on what's on your screen. Meta AI on the Mac also supports dictation across all apps. The [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-08-19T17:00:00+00:00",
+      "sent_at": "2026-08-19T17:49:46.201262+00:00"
+    },
+    {
       "link": "https://www.engadget.com/2240154/meta-ai-now-has-a-dedicated-desktop-app-for-mac/",
       "title": "Meta AI now has a dedicated desktop app for Mac",
       "summary": "Meta's new Mac app is part of the company's push to make more business-friendly AI tools.",
