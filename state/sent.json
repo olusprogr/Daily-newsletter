@@ -1,6 +1,15 @@
 {
   "items": [
     {
+      "link": "https://github.com/anthropics/claude-code/issues/6235",
+      "title": "Anthropic Refuses to Support Agents.md",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-19T21:19:50+00:00",
+      "sent_at": "2026-08-19T23:19:11.186939+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/08/19/waymos-cheaper-next-gen-robotaxi-is-now-open-to-all-riders-in-these-three-cities/",
       "title": "Waymo’s cheaper, next-gen robotaxi is now open to all riders in these three cities",
       "summary": "The next-generation robotaxi, called the Waymo Ojai, is central to the company's push towards mass scale, and eventually, profitability.",
