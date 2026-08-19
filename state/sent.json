@@ -1,6 +1,33 @@
 {
   "items": [
     {
+      "link": "https://www.wired.com/story/generalist-ai-robots-learn-like-clever-toddlers/",
+      "title": "I Saw the Future of AI in a Robot That Can Learn on the Spot",
+      "summary": "During a recent visit to Generalist AI, I watched a robotic arm improvise and use a banana as a tool.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-08-19T19:30:00+00:00",
+      "sent_at": "2026-08-19T19:48:45.320690+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/08/19/ai-was-supposed-to-win-people-over-by-now-it-hasnt/",
+      "title": "AI was supposed to win people over by now — it hasn’t",
+      "summary": "As AI becomes harder to avoid, consumers are growing more wary of the technology — and Silicon Valley is discovering that widespread adoption doesn’t necessarily lead to acceptance.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-19T19:11:40+00:00",
+      "sent_at": "2026-08-19T19:48:45.320690+00:00"
+    },
+    {
+      "link": "https://arxiv.org/abs/2608.16753",
+      "title": "Mathematics in the Age of AI",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-19T15:14:25+00:00",
+      "sent_at": "2026-08-19T19:48:45.320690+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/08/19/google-launches-new-study-tools-for-students-across-search-and-gemini/",
       "title": "Google launches new study tools for students across Search and Gemini",
       "summary": "The launch of the new study features marks Google's latest effort to make Gemini the AI assistant that students turn to when learning and studying, as it continues to compete with companies like OpenAI.",
