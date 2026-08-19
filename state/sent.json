@@ -1,6 +1,51 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/pc-components/gpus/first-nvidia-h200-shipments-reach-bytedance-and-tencent-as-beijing-loosens-its-import-block",
+      "title": "First Nvidia H200 shipments reach China, ByteDance and Tencent take deliveries as Beijing loosens its import block — most licensed chips must stay in Hong Kong, which can't power them",
+      "summary": "Beijing wants most of each company's U.S.-licensed allowance, which the FT puts at up to 100,000 units apiece, kept off the mainland.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-08-19T10:37:13+00:00",
+      "sent_at": "2026-08-19T10:54:21.018390+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/desktops/gaming-pcs/cut-the-stress-out-of-pc-building-with-this-usd500-discount-on-this-rx-9060-xt-16gb-desktop-intel-core-ultra-9-285-build-also-features-32gb-of-ddr5-2tb-ssd",
+      "title": "Cut the stress out of PC building with this $500 discount on this RX 9060 XT 16GB desktop — Intel Core Ultra 9 285 build also features 32GB of DDR5, 2TB SSD",
+      "summary": "Get an Intel Core Ultra 9 285 PC with an RX 9060 XT 16GB GPU for just $1,849.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-08-19T10:18:31+00:00",
+      "sent_at": "2026-08-19T10:54:21.018390+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/gadgets/981894/framework-laptop-12-update-intel-core-linux-availability",
+      "title": "Framework gave its 12-inch laptop some hardware upgrades",
+      "summary": "Framework has refreshed its 12-inch convertible laptop, introducing Intel's latest Core Series 3 processors, expanded hardware customizations, and a pre-built Linux option. The cheapest pre-built base configuration for the Framework Laptop 12 now starts at $699 - $100 less than the previous version when it launched last year. Preorders are open now, with the first [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-08-19T10:14:26+00:00",
+      "sent_at": "2026-08-19T10:54:21.018390+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/dev-uses-claude-ai-to-create-native-macos-driver-for-obscure-windows-only-printer-linux-container-hack-enables-system-wide-cmd-p-printing-driver-now-available-on-github",
+      "title": "Dev uses Claude AI to create native macOS driver for 'obscure' Windows-only printer — Linux container hack enables system-wide Cmd-P printing, driver now available on Github",
+      "summary": "A developer has revealed that they used Claude Code to create a macOS laser printer driver for the HP Laser 1008a, a machine designed for Windows users.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-08-19T10:00:00+00:00",
+      "sent_at": "2026-08-19T10:54:21.018390+00:00"
+    },
+    {
+      "link": "https://www.cam.ac.uk/research/news/tiny-satellite-will-use-the-dark-side-of-the-moon-to-eavesdrop-on-whispers-from-the-early-universe",
+      "title": "Tiny satellite will use the dark side of the Moon as a shield",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Innovationen",
+      "published": "2026-08-19T01:06:03+00:00",
+      "sent_at": "2026-08-19T10:54:21.018390+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/video-games/minecraft-creator-works-around-in-game-math-limitations-to-implement-an-llm-using-445k-command-blocks-clever-approach-shrank-initial-block-count-from-over-1-million-requires-no-mods-plugins-or-datapacks-to-work",
       "title": "Player builds working AI chatbot in vanilla Minecraft using 445K command blocks — clever approach shrank initial block count from over 1 million, requires no mods, plugins, or datapacks to work",
       "summary": "Building neural networks in Minecraft using redstone is a relatively common pursuit, but a clever creator has worked around the limitations of command blocks' available math operations to implement an LLM in just 445,782 blocks, down from over a million in the initial implementation.",
