@@ -1,6 +1,33 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/tech-industry/data-centers/china-shifting-massive-ai-data-center-complexes-to-rural-provinces-to-tap-surplus-energy-eastern-data-western-computing-strategy-has-chinese-tech-giants-huawei-and-tencent-building-ai-infrastructure-guizhou",
+      "title": "China shifting massive AI data center complexes to rural provinces to tap surplus energy — ‘Eastern Data, Western Computing’ strategy has Chinese tech giants Huawei and Tencent building AI infrastructure Guizhou",
+      "summary": "Chinese tech giants are putting up data centers in rural Chinese provinces with zero resistance. The abundance of land and energy in these areas allowed infrastructure to easily be built with limited issues, although some experts still question how much development they can bring to these areas.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-08-19T15:49:04+00:00",
+      "sent_at": "2026-08-19T15:56:52.184472+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/08/19/terrapowers-nuclear-reactor-has-a-secret-weapon-for-powering-ai-data-centers/",
+      "title": "TerraPower’s nuclear reactor has a secret weapon for powering AI data centers",
+      "summary": "TerraPower's nuclear power plant possesses a strategic advantage over competitors, especially when chasing after data center deals.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-19T15:44:53+00:00",
+      "sent_at": "2026-08-19T15:56:52.184472+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/laptops/qualcomm-retracts-select-snapdragon-c-power-efficiency-benchmarks-nearly-a-week-after-publication-updated-slide-removes-idle-apps-and-web-browsing-results",
+      "title": "Qualcomm retracts select Snapdragon C power efficiency benchmarks nearly a week after publication — updated slide removes idle apps and web browsing results",
+      "summary": "Qualcomm has issued an updated slide for its Snapdragon C power efficiency claims, removing two benchmarks from the results.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-08-19T15:28:06+00:00",
+      "sent_at": "2026-08-19T15:56:52.184472+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/08/19/amazon-makes-its-ai-powered-alexa-free-on-fire-tv-no-prime-required/",
       "title": "Amazon makes its AI-powered Alexa+ free on Fire TV, no Prime required",
       "summary": "Amazon is making its AI-powered Alexa+ assistant free on all compatible Fire TV devices in the U.S., automatically upgrading users whether or not they subscribe to Prime.",
