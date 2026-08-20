@@ -179,6 +179,15 @@ class GameView(context: Context) : View(context) {
         MType.POLYMERWERK -> Color.rgb(206, 176, 120)
         MType.CRACKER -> Color.rgb(214, 128, 62)
         MType.RAFFINERIE -> Color.rgb(228, 172, 78)
+        // --- Level 4: High-Tech (Reinraum-Palette: Sand, Silizium-Silber, Platinengruen) ---
+        MType.SANDMINE -> Color.rgb(222, 200, 140)
+        MType.SELTENERD -> Color.rgb(162, 122, 214)
+        MType.REINSTWASSER -> Color.rgb(150, 214, 226)
+        MType.WAFERFAB -> Color.rgb(176, 190, 208)
+        MType.DOTIERWERK -> Color.rgb(86, 158, 116)
+        MType.CHIPFAB -> Color.rgb(78, 88, 106)
+        MType.SATELLITENWERK -> Color.rgb(226, 190, 108)
+        MType.STARTRAMPE -> Color.rgb(232, 228, 222)
     }
 
     private val p = Paint(Paint.ANTI_ALIAS_FLAG)
@@ -314,9 +323,15 @@ class GameView(context: Context) : View(context) {
         MType.POLYMERWERK, MType.CRACKER, MType.RAFFINERIE, MType.HAENDLER, MType.GENERATOR,
         MType.WINDRAD, MType.SOLAR, MType.LAGER, MType.DROHNE, MType.FORSCHUNG
     )
+    private val buildOrderLvl4 = listOf(
+        MType.SANDMINE, MType.SELTENERD, MType.REINSTWASSER, MType.WAFERFAB, MType.DOTIERWERK,
+        MType.CHIPFAB, MType.SATELLITENWERK, MType.STARTRAMPE, MType.HAENDLER, MType.GENERATOR,
+        MType.WINDRAD, MType.SOLAR, MType.LAGER, MType.DROHNE, MType.FORSCHUNG
+    )
     /** Bau-Palette haengt vom Unternehmens-Level ab - je Level eine eigene Liste. */
     private fun buildOrderFor(level: Int): List<MType> = when {
-        level >= 3 -> buildOrderLvl3
+        level >= 4 -> buildOrderLvl4
+        level == 3 -> buildOrderLvl3
         level == 2 -> buildOrderLvl2
         else -> buildOrderLvl1
     }
@@ -414,6 +429,14 @@ class GameView(context: Context) : View(context) {
                 MType.POLYMERWERK -> R.drawable.mach_polymerwerk
                 MType.CRACKER -> R.drawable.mach_cracker
                 MType.RAFFINERIE -> R.drawable.mach_raffinerie
+                MType.SANDMINE -> R.drawable.mach_sandmine
+                MType.SELTENERD -> R.drawable.mach_seltenerd
+                MType.REINSTWASSER -> R.drawable.mach_reinstwasser
+                MType.WAFERFAB -> R.drawable.mach_waferfab
+                MType.DOTIERWERK -> R.drawable.mach_dotierwerk
+                MType.CHIPFAB -> R.drawable.mach_chipfab
+                MType.SATELLITENWERK -> R.drawable.mach_satellitenwerk
+                MType.STARTRAMPE -> R.drawable.mach_startrampe
             })
         }
         I18n.lang = try { Lang.values()[prefs.getInt("lang", Lang.EN.ordinal)] } catch (_: Exception) { Lang.EN }
@@ -801,6 +824,14 @@ class GameView(context: Context) : View(context) {
         MType.POLYMERWERK -> Res.KOMPONENTE.ordinal
         MType.CRACKER -> Res.DAMPF.ordinal
         MType.RAFFINERIE -> Res.STROM.ordinal
+        MType.SANDMINE -> Res.ROHERZ.ordinal
+        MType.SELTENERD -> Res.BLEI.ordinal
+        MType.REINSTWASSER -> Res.WASSER.ordinal
+        MType.WAFERFAB -> Res.BARREN.ordinal
+        MType.DOTIERWERK -> Res.PLATTE.ordinal
+        MType.CHIPFAB -> Res.KOMPONENTE.ordinal
+        MType.SATELLITENWERK -> Res.DAMPF.ordinal
+        MType.STARTRAMPE -> Res.STROM.ordinal
         else -> -1
     }
     // IntArray statt Einzelwert: manche Maschinen wollen ZWEI Rohstoffe gleichzeitig
@@ -820,6 +851,11 @@ class GameView(context: Context) : View(context) {
         MType.POLYMERWERK -> intArrayOf(Res.BARREN.ordinal, Res.PLATTE.ordinal)
         MType.CRACKER -> intArrayOf(Res.KOMPONENTE.ordinal)
         MType.RAFFINERIE -> intArrayOf(Res.DAMPF.ordinal)
+        MType.WAFERFAB -> intArrayOf(Res.ROHERZ.ordinal, Res.WASSER.ordinal)
+        MType.DOTIERWERK -> intArrayOf(Res.BLEI.ordinal)
+        MType.CHIPFAB -> intArrayOf(Res.BARREN.ordinal, Res.PLATTE.ordinal)
+        MType.SATELLITENWERK -> intArrayOf(Res.KOMPONENTE.ordinal)
+        MType.STARTRAMPE -> intArrayOf(Res.DAMPF.ordinal)
         else -> IntArray(0)
     }
 
@@ -875,7 +911,8 @@ class GameView(context: Context) : View(context) {
                     // NICHT zusaetzlich noch Icons durch die Luft fliegen lassen. Gilt
                     // nur fuer genau dieses Paar; Lager rein/raus bleibt unveraendert.
                     if ((pm.type == MType.WASSERPUMPE && cm.type == MType.ZENTRIFUGE) ||
-                        (pm.type == MType.SEEWASSER && cm.type == MType.DESTILLATION)) continue
+                        (pm.type == MType.SEEWASSER && cm.type == MType.DESTILLATION) ||
+                        (pm.type == MType.REINSTWASSER && cm.type == MType.WAFERFAB)) continue
                     val hasSupply = pm.output[res] > 1e-6 || pm.util > 1e-6
                     val isAccepted = isLager || cm.util > 1e-6
                     if (!hasSupply || !isAccepted) continue
@@ -911,13 +948,37 @@ class GameView(context: Context) : View(context) {
      * damit er nahtlos ueber die ganze Kante durchlaeuft (keine Naht pro Kachel).
      */
     private fun drawPlatformTile(canvas: Canvas, r: Int, c: Int, x: Float, y: Float) {
-        // Ab Level 3 ist die Plattform eine BOHRINSEL auf offener See: dunkleres
-        // Stahldeck mit Gitterrost-Struktur und Messing-Fugen statt des hellen
-        // AKW-Betondecks. Gleiche Geometrie, andere Materialsprache.
-        val rig = sim.companyLevel >= 3
-        val metal = if (rig) Color.rgb(92, 96, 104) else Color.rgb(126, 132, 143)
-        val metalSeam = if (rig) Color.rgb(150, 116, 58) else Color.rgb(100, 106, 117)
+        // Jedes Level hat seine eigene Materialsprache, gleiche Geometrie:
+        //   Level 2 = helles AKW-Betondeck, Level 3 = dunkles Bohrinsel-Stahldeck mit
+        //   Gitterrost/Messing, Level 4 = heller Reinraum-Epoxidboden mit Leitlinien.
+        val rig = sim.companyLevel == 3
+        val lab = sim.companyLevel >= 4
+        val metal = when {
+            rig -> Color.rgb(92, 96, 104)
+            lab -> Color.rgb(206, 210, 218)
+            else -> Color.rgb(126, 132, 143)
+        }
+        val metalSeam = when {
+            rig -> Color.rgb(150, 116, 58)
+            lab -> Color.rgb(168, 176, 190)
+            else -> Color.rgb(100, 106, 117)
+        }
         p.color = metal; canvas.drawRect(x, y, x + cell, y + cell, p)
+        if (lab) {
+            // Reinraum: mattweisser Epoxidboden mit feinem Rasterfugen-Netz und einer
+            // blauen Leitlinie alle 2 Zellen (wie die Wegfuehrung in einer echten Fab).
+            p.color = Color.rgb(190, 196, 206)
+            val gw = (cell * 0.02f).coerceAtLeast(1f)
+            canvas.drawRect(x, y + cell * 0.5f - gw * 0.5f, x + cell, y + cell * 0.5f + gw * 0.5f, p)
+            canvas.drawRect(x + cell * 0.5f - gw * 0.5f, y, x + cell * 0.5f + gw * 0.5f, y + cell, p)
+            if (((c - sim.platformC0) % 4 + 4) % 4 == 0) {
+                p.color = Color.rgb(96, 156, 216)
+                canvas.drawRect(x + cell * 0.44f, y, x + cell * 0.56f, y + cell, p)
+            }
+            // leichter Glanz oben links, damit der Boden poliert wirkt
+            p.color = Color.argb(60, 255, 255, 255)
+            canvas.drawRect(x, y, x + cell, y + cell * 0.18f, p)
+        }
         if (rig) {
             // Gitterrost: feine Querstege, damit das Deck als begehbarer Rost lesbar wird
             p.color = Color.rgb(74, 78, 86)
@@ -1184,7 +1245,7 @@ class GameView(context: Context) : View(context) {
         val an = sim.areaN()
         for (r in 0 until an) for (c in 0 until an) {
             val m = sim.grid[r][c] ?: continue
-            if (m.type != MType.WASSERPUMPE && m.type != MType.SEEWASSER) continue
+            if (m.type != MType.WASSERPUMPE && m.type != MType.SEEWASSER && m.type != MType.REINSTWASSER) continue
             val px = vLeft + (c + 0.5f) * cell; val py = vTop + (r + 0.5f) * cell
             val wdir = sim.waterNeighborDir(r, c)
             if (wdir != null) {
@@ -1196,7 +1257,7 @@ class GameView(context: Context) : View(context) {
                 val nr = r + d[0]; val nc = c + d[1]
                 if (nr !in 0 until an || nc !in 0 until an) continue
                 val nt = sim.grid[nr][nc]?.type
-                if (nt != MType.ZENTRIFUGE && nt != MType.DESTILLATION) continue
+                if (nt != MType.ZENTRIFUGE && nt != MType.DESTILLATION && nt != MType.WAFERFAB) continue
                 val zx = vLeft + (nc + 0.5f) * cell; val zy = vTop + (nr + 0.5f) * cell
                 drawPipeSeg(canvas, px, py, zx, zy)
                 drawPipeFlow(canvas, px, py, zx, zy, animT * 0.5f + 0.5f)   // VON der Pumpe ZUR Zentrifuge
@@ -1350,7 +1411,8 @@ class GameView(context: Context) : View(context) {
         // Bohrer bohrt: nach unten wandernde Glanzbaender (Schnecke dreht sich) + Staub -
         // genauso fuer den Tiefen-Bohrer (Bleibohrer), der bisher keine Animation hatte.
         if (working && (m.type == MType.BOHRER || m.type == MType.BLEIBOHRER ||
-                m.type == MType.OELBOHRTURM || m.type == MType.GASBOHRER)) {
+                m.type == MType.OELBOHRTURM || m.type == MType.GASBOHRER ||
+                m.type == MType.SANDMINE || m.type == MType.SELTENERD)) {
             val cx = x + cell * 0.5f
             for (k in 0 until 2) {
                 val phase = (animT * 2.5f + k * 0.5f) % 1f
@@ -1622,7 +1684,8 @@ class GameView(context: Context) : View(context) {
             yy += dp(22f)
         }
         val oreLabel = when {
-            sim.companyLevel >= 3 -> tr("rohoel")
+            sim.companyLevel >= 4 -> tr("quarzsand")
+            sim.companyLevel == 3 -> tr("rohoel")
             sim.companyLevel == 2 -> tr("uranerz")
             else -> tr("roherz")
         }
@@ -1645,7 +1708,8 @@ class GameView(context: Context) : View(context) {
             MType.ASSEMBLER -> "${tr("in")} ${oneDec(m.input[2])} ${tr("platten")}   ${tr("out")} ${oneDec(m.output[3])} ${tr("komp")}"
             MType.HAENDLER -> {
                 val what = when {
-                    sim.companyLevel >= 3 -> "sells_treibstoff"
+                    sim.companyLevel >= 4 -> "sells_orbit"
+                    sim.companyLevel == 3 -> "sells_treibstoff"
                     sim.companyLevel == 2 -> "sells_strom"
                     else -> "sells_comp"
                 }
@@ -1695,6 +1759,27 @@ class GameView(context: Context) : View(context) {
             MType.POLYMERWERK -> "${tr("in")} ${oneDec(m.input[Res.BARREN.ordinal])} ${tr("naphtha")} + ${oneDec(m.input[Res.PLATTE.ordinal])} ${tr("additive")}   ${tr("out")} ${oneDec(m.output[Res.KOMPONENTE.ordinal])} ${tr("granulat")}"
             MType.CRACKER -> "${tr("in")} ${oneDec(m.input[Res.KOMPONENTE.ordinal])} ${tr("granulat")}   ${tr("out")} ${oneDec(m.output[Res.DAMPF.ordinal])} ${tr("crackgas")}"
             MType.RAFFINERIE -> "${tr("in")} ${oneDec(m.input[Res.DAMPF.ordinal])} ${tr("crackgas")}   ${tr("out")} ${oneDec(m.output[Res.STROM.ordinal])} ${tr("treibstoff")}"
+            // --- Level 4: High-Tech ---
+            MType.SANDMINE -> {
+                val floorTxt = if (sim.isSurveyed(selR, selC)) {
+                    val tier = sim.richness(selR, selC)
+                    "${tierName(tier)} (x${Simulation.ORE_MULT[tier]})"
+                } else tr("unscanned")
+                "${tr("out")} ${oneDec(m.output[Res.ROHERZ.ordinal])} ${tr("quarzsand")}   ${tr("floor")}: $floorTxt"
+            }
+            MType.SELTENERD -> {
+                val floorTxt = if (sim.isSurveyed(selR, selC)) {
+                    val tier = sim.richness(selR, selC)
+                    "${tierName(tier)} (x${Simulation.ORE_MULT[tier]})"
+                } else tr("unscanned")
+                "${tr("out")} ${oneDec(m.output[Res.BLEI.ordinal])} ${tr("seltenerd")}   ${tr("floor")}: $floorTxt"
+            }
+            MType.REINSTWASSER -> "${tr("out")} ${oneDec(m.output[Res.WASSER.ordinal])} ${tr("reinstwasser")}   (${tr("needs_coast")})"
+            MType.WAFERFAB -> "${tr("in")} ${oneDec(m.input[Res.ROHERZ.ordinal])} ${tr("quarzsand")} + ${oneDec(m.input[Res.WASSER.ordinal])} ${tr("reinstwasser")}   ${tr("out")} ${oneDec(m.output[Res.BARREN.ordinal])} ${tr("wafer")}"
+            MType.DOTIERWERK -> "${tr("in")} ${oneDec(m.input[Res.BLEI.ordinal])} ${tr("seltenerd")}   ${tr("out")} ${oneDec(m.output[Res.PLATTE.ordinal])} ${tr("substrat")}"
+            MType.CHIPFAB -> "${tr("in")} ${oneDec(m.input[Res.BARREN.ordinal])} ${tr("wafer")} + ${oneDec(m.input[Res.PLATTE.ordinal])} ${tr("substrat")}   ${tr("out")} ${oneDec(m.output[Res.KOMPONENTE.ordinal])} ${tr("mikrochip")}"
+            MType.SATELLITENWERK -> "${tr("in")} ${oneDec(m.input[Res.KOMPONENTE.ordinal])} ${tr("mikrochip")}   ${tr("out")} ${oneDec(m.output[Res.DAMPF.ordinal])} ${tr("satmodul")}"
+            MType.STARTRAMPE -> "${tr("in")} ${oneDec(m.input[Res.DAMPF.ordinal])} ${tr("satmodul")}   ${tr("out")} ${oneDec(m.output[Res.STROM.ordinal])} ${tr("orbit")}"
         }
         // Fuer ein Lager sagen weder die Puffer-Zeile noch die Engpass-Ampel etwas
         // Nuetzliches aus (kein Rezept, kein "blockiert") - beide weglassen, die neue
@@ -1870,7 +1955,7 @@ class GameView(context: Context) : View(context) {
         canvas.drawRect(0f, top, W.toFloat(), top + dp(2f), p)
 
         pText.color = cAccent; pText.textSize = dp(18f)
-        val sea = sim.companyLevel >= 3
+        val sea = sim.companyLevel == 3
         canvas.drawText(tr(if (sea) "expand_title_sea" else "expand_title"), dp(12f), top + dp(26f), pText)
         pText.color = cDim; pText.textSize = dp(12.5f)
         canvas.drawText(tr(if (sea) "expand_hint_sea" else "expand_hint"), dp(12f), top + dp(46f), pText)
@@ -1983,8 +2068,12 @@ class GameView(context: Context) : View(context) {
      * es einen "<id>.l2"-Eintrag, wird der ab Level 2 verwendet, sonst der normale Name.
      */
     private fun techLabel(id: String): String {
-        // Von speziell nach allgemein: erst der Level-3-Name, dann der Level-2-Name.
-        if (sim.companyLevel >= 3) {
+        // Von speziell nach allgemein: erst der Level-4-, dann der Level-3-, dann der Level-2-Name.
+        if (sim.companyLevel >= 4) {
+            val k = "$id.l4"; val v = I18n.t(k)
+            if (v != k) return v
+        }
+        if (sim.companyLevel == 3) {
             val k = "$id.l3"; val v = I18n.t(k)
             if (v != k) return v          // I18n.t() gibt den Key zurueck, wenn unbekannt
         }
@@ -2014,6 +2103,10 @@ class GameView(context: Context) : View(context) {
         "t_pwspeed", "t_crspeed", "t_rfspeed" -> tr("tf_speed")
         "t_cracker" -> tr("tf_cracker"); "t_raffinerie" -> tr("tf_raffinerie")
         "t_flare" -> tr("tf_flare")
+        "t_smspeed", "t_sespeed", "t_rwspeed", "t_wfspeed", "t_dwspeed",
+        "t_cfspeed", "t_saspeed", "t_srspeed" -> tr("tf_speed")
+        "t_satellitenwerk" -> tr("tf_satellitenwerk"); "t_startrampe" -> tr("tf_startrampe")
+        "t_reinraum" -> tr("tf_reinraum")
         else -> ""
     }
 
@@ -2035,11 +2128,12 @@ class GameView(context: Context) : View(context) {
 
         var yy = startY - statScroll
         val nuc = sim.companyLevel >= 2
-        val petro = sim.companyLevel >= 3
+        val petro = sim.companyLevel == 3
+        val tech4 = sim.companyLevel >= 4
         // Die drei Lager-Slots heissen je Level anders (gleiche Res-Slots, andere Bedeutung).
-        val kBarren = if (petro) "naphtha" else if (nuc) "angeruran" else "s_barren"
-        val kPlatte = if (petro) "additive" else if (nuc) "bleiverkl" else "s_platten"
-        val kFinal = if (petro) "treibstoff" else if (nuc) "netzstrom" else "s_komp"
+        val kBarren = if (tech4) "wafer" else if (petro) "naphtha" else if (nuc) "angeruran" else "s_barren"
+        val kPlatte = if (tech4) "substrat" else if (petro) "additive" else if (nuc) "bleiverkl" else "s_platten"
+        val kFinal = if (tech4) "orbit" else if (petro) "treibstoff" else if (nuc) "netzstrom" else "s_komp"
         val lines = listOf(
             "${tr("s_money")}: ${fmt(sim.money)}   (+${fmt(sim.moneyPerMin)}/min)",
             "${tr(kBarren)}: ${fmt(sim.availableBarren())}  (${oneDec(sim.barrenPerMin)}/min)",
@@ -2061,6 +2155,8 @@ class GameView(context: Context) : View(context) {
         if (visible(yy - dp(16f), dp(22f))) { pText.color = cAccent; pText.textSize = dp(16f); canvas.drawText(tr("s_prod_title"), dp(16f), yy, pText) }
         yy += dp(22f)
         val producers = when {
+            tech4 -> listOf(MType.SANDMINE, MType.SELTENERD, MType.REINSTWASSER, MType.WAFERFAB,
+                MType.DOTIERWERK, MType.CHIPFAB, MType.SATELLITENWERK, MType.STARTRAMPE, MType.HAENDLER)
             petro -> listOf(MType.OELBOHRTURM, MType.GASBOHRER, MType.SEEWASSER, MType.DESTILLATION,
                 MType.GASWAESCHE, MType.POLYMERWERK, MType.CRACKER, MType.RAFFINERIE, MType.HAENDLER)
             nuc -> listOf(MType.BOHRER, MType.BLEIBOHRER, MType.WASSERPUMPE, MType.ZENTRIFUGE, MType.BLEIPRESSE,

@@ -41,7 +41,16 @@ enum class MType(val label: String, val sym: String, val power: Double) {
     GASWAESCHE("Gaswaesche", "Gw", 8.0),
     POLYMERWERK("Polymerwerk", "Pw", 12.0),
     CRACKER("Cracker", "Cr", 13.0),
-    RAFFINERIE("Raffinerie", "Rf", 11.0)
+    RAFFINERIE("Raffinerie", "Rf", 11.0),
+    // --- Level 4: High-Tech (ans ENDE anhaengen, Reihenfolge = Save-Ordinal) ---
+    SANDMINE("Quarzsand-Mine", "Qz", 4.0),
+    SELTENERD("Seltenerd-Mine", "Se", 5.0),
+    REINSTWASSER("Reinstwasserwerk", "Rw", 4.0),
+    WAFERFAB("Waferfabrik", "Wf", 10.0),
+    DOTIERWERK("Dotierwerk", "Dw", 8.0),
+    CHIPFAB("Chipfabrik", "Cf", 12.0),
+    SATELLITENWERK("Satellitenwerk", "Sa", 13.0),
+    STARTRAMPE("Startrampe", "Sr", 11.0)
 }
 
 class Machine(var type: MType) {
@@ -173,6 +182,15 @@ class Simulation {
         const val POLYMERWERK_RATE = 0.12    // Naphtha+Additive -> Granulat
         const val CRACKER_RATE = 0.5         // Granulat -> Crackgas
         const val RAFFINERIE_RATE = 0.45     // Crackgas -> Treibstoff (verkaufbar)
+        // --- Level 4: High-Tech (gleiche Balance-Kurve wie die Stufen davor) ---
+        const val SANDMINE_RATE = 0.5        // Quarzsand
+        const val SELTENERD_RATE = 0.45      // Seltene Erden
+        const val REINSTWASSER_RATE = 0.6    // Reinstwasser
+        const val WAFERFAB_RATE = 0.18       // Sand+Wasser -> Wafer
+        const val DOTIERWERK_RATE = 0.22     // Seltene Erden -> Substrat
+        const val CHIPFAB_RATE = 0.12        // Wafer+Substrat -> Mikrochip
+        const val SATELLITENWERK_RATE = 0.5  // Mikrochip -> Satellitenmodul
+        const val STARTRAMPE_RATE = 0.45     // Satellitenmodul -> Orbit-Dienste (verkaufbar)
         const val LIFT = 3.0
         const val IN_CAP = 10.0
         const val OUT_CAP = 20.0
@@ -221,6 +239,9 @@ class Simulation {
             MType.DESTILLATION -> Pair(1, 2)
             MType.CRACKER -> Pair(2, 2)
             MType.RAFFINERIE -> Pair(2, 3)
+            MType.WAFERFAB -> Pair(1, 2)
+            MType.CHIPFAB -> Pair(2, 2)
+            MType.STARTRAMPE -> Pair(2, 3)
             else -> Pair(1, 1)
         }
 
@@ -299,7 +320,26 @@ class Simulation {
             TechNode("t_crspeed", "Cracker-Tempo", 120.0, 1.3, 20, "+8%/Stufe", "t_cracker", null),
             TechNode("t_rfspeed", "Raffinerie-Tempo", 130.0, 1.3, 20, "+8%/Stufe", "t_raffinerie", null),
             // Nur Level 3: Fackel-Rueckgewinnung (Ausbeute der ganzen Petro-Kette)
-            TechNode("t_flare", "Fackel-Rueckgewinnung", 120.0, 1.4, 8, "+4%/Stufe", "t_cracker", null)
+            TechNode("t_flare", "Fackel-Rueckgewinnung", 120.0, 1.4, 8, "+4%/Stufe", "t_cracker", null),
+            // --- Level 4: High-Tech-Freischaltungen (ab Level 2 in Geld bezahlt) ---
+            TechNode("t_reinstwasser", "Reinstwasserwerk freischalten", 40.0, 1.0, 1, "Reinstwasser fuer die Fab", null, Res.BARREN),
+            TechNode("t_seltenerd", "Seltenerd-Mine freischalten", 40.0, 1.0, 1, "Foerdert Seltene Erden", null, Res.BARREN),
+            TechNode("t_waferfab", "Waferfabrik freischalten", 60.0, 1.0, 1, "Quarzsand+Wasser -> Wafer", "t_reinstwasser", Res.BARREN),
+            TechNode("t_dotierwerk", "Dotierwerk freischalten", 50.0, 1.0, 1, "Seltene Erden -> Substrat", "t_seltenerd", Res.BARREN),
+            TechNode("t_chipfab", "Chipfabrik freischalten", 70.0, 1.0, 1, "Wafer+Substrat -> Mikrochip", "t_dotierwerk", Res.PLATTE),
+            TechNode("t_satellitenwerk", "Satellitenwerk freischalten", 80.0, 1.0, 1, "Mikrochip -> Satellitenmodul", "t_chipfab", Res.PLATTE),
+            TechNode("t_startrampe", "Startrampe freischalten", 90.0, 1.0, 1, "Satellitenmodul -> Orbit-Dienste", "t_satellitenwerk", Res.PLATTE),
+            // Level-4-Tempo-Upgrades (mit Forschung bezahlt)
+            TechNode("t_smspeed", "Quarzsand-Tempo", 50.0, 1.3, 20, "+8%/Stufe", null, null),
+            TechNode("t_sespeed", "Seltenerd-Tempo", 55.0, 1.3, 20, "+8%/Stufe", "t_seltenerd", null),
+            TechNode("t_rwspeed", "Reinstwasser-Tempo", 60.0, 1.3, 20, "+8%/Stufe", "t_reinstwasser", null),
+            TechNode("t_wfspeed", "Waferfabrik-Tempo", 80.0, 1.3, 20, "+8%/Stufe", "t_waferfab", null),
+            TechNode("t_dwspeed", "Dotierwerk-Tempo", 70.0, 1.3, 20, "+8%/Stufe", "t_dotierwerk", null),
+            TechNode("t_cfspeed", "Chipfabrik-Tempo", 100.0, 1.3, 20, "+8%/Stufe", "t_chipfab", null),
+            TechNode("t_saspeed", "Satellitenwerk-Tempo", 120.0, 1.3, 20, "+8%/Stufe", "t_satellitenwerk", null),
+            TechNode("t_srspeed", "Startrampen-Tempo", 130.0, 1.3, 20, "+8%/Stufe", "t_startrampe", null),
+            // Nur Level 4: Reinraum-Klasse hebt die Ausbeute der GANZEN Fab-Kette
+            TechNode("t_reinraum", "Reinraum-Klasse", 120.0, 1.4, 8, "+4%/Stufe", "t_chipfab", null)
         )
 
         val UNLOCK = mapOf(
@@ -325,7 +365,15 @@ class Simulation {
             MType.GASWAESCHE to "t_gaswaesche",
             MType.POLYMERWERK to "t_polymerwerk",
             MType.CRACKER to "t_cracker",
-            MType.RAFFINERIE to "t_raffinerie"
+            MType.RAFFINERIE to "t_raffinerie",
+            // Level 4: Quarzsand-Mine braucht (wie der Bohrer) keine Freischaltung
+            MType.REINSTWASSER to "t_reinstwasser",
+            MType.SELTENERD to "t_seltenerd",
+            MType.WAFERFAB to "t_waferfab",
+            MType.DOTIERWERK to "t_dotierwerk",
+            MType.CHIPFAB to "t_chipfab",
+            MType.SATELLITENWERK to "t_satellitenwerk",
+            MType.STARTRAMPE to "t_startrampe"
         )
 
         // Hoechstzahl je platzierbarem Typ, damit die Karte nicht zuwuchert.
@@ -356,7 +404,16 @@ class Simulation {
             MType.GASWAESCHE to 20,
             MType.POLYMERWERK to 20,
             MType.CRACKER to 12,
-            MType.RAFFINERIE to 8
+            MType.RAFFINERIE to 8,
+            // Level 4: High-Tech
+            MType.SANDMINE to 30,
+            MType.SELTENERD to 24,
+            MType.REINSTWASSER to 20,
+            MType.WAFERFAB to 20,
+            MType.DOTIERWERK to 20,
+            MType.CHIPFAB to 20,
+            MType.SATELLITENWERK to 12,
+            MType.STARTRAMPE to 8
         )
 
         // Baukosten in Rohstoffen: (Rohstoff, Menge).
@@ -407,8 +464,25 @@ class Simulation {
             MType.REAKTORKERN to 0.9,
             MType.KUEHLTURM to 1.0
         )
-        // Level 3 (Petrochemie): eigene Faktoren - sonst wuerde Level 3 stillschweigend
-        // die Kernkraft-Preise erben und die neuen Gebaeude haetten gar keinen Eintrag.
+        // Level 4 (High-Tech): eigene Faktoren - sonst wuerde Level 4 stillschweigend die
+        // Petrochemie-Preise erben und die neuen Gebaeude haetten gar keinen Eintrag.
+        val HIGHTECH_COST_FACTOR = mapOf(
+            MType.SANDMINE to 0.06,
+            MType.SELTENERD to 0.07,
+            MType.REINSTWASSER to 0.08,
+            MType.GENERATOR to 0.1,
+            MType.SOLAR to 0.12,
+            MType.LAGER to 0.1,
+            MType.WINDRAD to 0.15,
+            MType.DROHNE to 0.2,
+            MType.DOTIERWERK to 0.3,
+            MType.WAFERFAB to 0.4,
+            MType.FORSCHUNG to 0.4,
+            MType.HAENDLER to 0.5,
+            MType.CHIPFAB to 0.65,
+            MType.SATELLITENWERK to 0.9,
+            MType.STARTRAMPE to 1.0
+        )
         val PETRO_COST_FACTOR = mapOf(
             MType.OELBOHRTURM to 0.06,
             MType.GASBOHRER to 0.07,
@@ -429,6 +503,15 @@ class Simulation {
         // Ab Level 2 werden auch Tech-Freischaltungen (bisher mit Barren/Platte bezahlt) in
         // Geld umgerechnet - sonst entsteht ein Zirkel-Deadlock (z.B. Zentrifuge freischalten
         // braucht Barren, aber nur die Zentrifuge selbst produziert welche).
+        val HIGHTECH_TECH_FACTOR = mapOf(
+            "t_reinstwasser" to 0.1,
+            "t_seltenerd" to 0.1,
+            "t_waferfab" to 0.25,
+            "t_dotierwerk" to 0.2,
+            "t_chipfab" to 0.35,
+            "t_satellitenwerk" to 0.5,
+            "t_startrampe" to 0.6
+        )
         val PETRO_TECH_FACTOR = mapOf(
             "t_seewasser" to 0.1,
             "t_gasbohrer" to 0.1,
@@ -462,7 +545,18 @@ class Simulation {
         )
         // Kanaele gibt es ab Level 2 aufwaerts (Infrastruktur-Ausbau), also KEIN
         // level-exklusiver Tech - nur auf Level 1 unsichtbar.
+        val LEVEL4_ONLY_TECHS = setOf(
+            "t_reinstwasser", "t_seltenerd", "t_waferfab", "t_dotierwerk", "t_chipfab",
+            "t_satellitenwerk", "t_startrampe",
+            "t_smspeed", "t_sespeed", "t_rwspeed", "t_wfspeed", "t_dwspeed", "t_cfspeed",
+            "t_saspeed", "t_srspeed", "t_reinraum"
+        )
         val NOT_LEVEL1_TECHS = setOf("t_kanal")
+        // Techs, die nur auf Level 1+2 etwas bewirken: t_bspeed beschleunigt ausschliesslich
+        // den BOHRER (Level 1 Erz, Level 2 Uran). Ab Level 3/4 foerdern Oelbohrturm bzw.
+        // Sandmine ueber eigene Techs (t_obspeed/t_smspeed) - t_bspeed waere dort ein
+        // wirkungsloser Eintrag im Baum und wird deshalb ausgeblendet.
+        val LEVEL12_ONLY_TECHS = setOf("t_bspeed")
         // Ab Level 2 zeigen manche weiterhin genutzten Techs urspruenglich auf einen
         // Level-1-only-Prereq ("Assembler freischalten") - hier durch eine erreichbare
         // Kernkraft-Alternative ersetzt, sonst waeren sie fuer immer gesperrt.
@@ -473,6 +567,12 @@ class Simulation {
         )
         // Dasselbe fuer Level 3: die Level-2-Prereqs sind dort ausgeblendet und damit
         // unerreichbar - hier auf die Petrochemie-Kette umgebogen.
+        val HIGHTECH_PREREQ_OVERRIDE = mapOf(
+            "t_haendler" to "t_waferfab",
+            "t_research" to "t_reinstwasser",
+            "t_wert" to "t_haendler",
+            "t_kanal" to "t_reinstwasser"
+        )
         val PETRO_PREREQ_OVERRIDE = mapOf(
             "t_haendler" to "t_destillation",
             "t_research" to "t_seewasser",
@@ -488,7 +588,15 @@ class Simulation {
             MType.BOHRER to 18.0, MType.OFEN to 22.0, MType.PRESSE to 28.0, MType.ASSEMBLER to 35.0,
             MType.GENERATOR to 20.0, MType.WINDRAD to 24.0, MType.SOLAR to 22.0, MType.LAGER to 16.0,
             MType.BLEIBOHRER to 20.0, MType.WASSERPUMPE to 22.0, MType.ZENTRIFUGE to 45.0,
-            MType.BLEIPRESSE to 36.0, MType.BRENNSTABWERK to 60.0, MType.REAKTORKERN to 90.0, MType.KUEHLTURM to 100.0
+            MType.BLEIPRESSE to 36.0, MType.BRENNSTABWERK to 60.0, MType.REAKTORKERN to 90.0, MType.KUEHLTURM to 100.0,
+            // Level 3 (Petrochemie)
+            MType.OELBOHRTURM to 22.0, MType.GASBOHRER to 22.0, MType.SEEWASSER to 24.0,
+            MType.DESTILLATION to 50.0, MType.GASWAESCHE to 38.0, MType.POLYMERWERK to 70.0,
+            MType.CRACKER to 95.0, MType.RAFFINERIE to 110.0,
+            // Level 4 (High-Tech)
+            MType.SANDMINE to 24.0, MType.SELTENERD to 26.0, MType.REINSTWASSER to 28.0,
+            MType.WAFERFAB to 55.0, MType.DOTIERWERK to 42.0, MType.CHIPFAB to 80.0,
+            MType.SATELLITENWERK to 110.0, MType.STARTRAMPE to 130.0
         )
         // Nicht upgradebar: keine echten placeable items (auto-platziert / abgeschaltet),
         // oder ein Einzel-Upgrade waere ueberfluessig, weil es dafuer schon den Tech-Baum
@@ -634,9 +742,10 @@ class Simulation {
      * angehoben, sodass die Welt zum Ozean mit ein paar Inseln wird. Ohne das hatte
      * ueber die Haelfte aller Karten gar kein freies 9x9-Wasserfeld - die Bohrinsel
      * landete per Notfall-Fallback an Land, und rundherum war ebenfalls Land, sodass
-     * sich Windrad/Solar (die ab Level 3 offenes Wasser brauchen) nirgends setzen liessen.
+     * sich Windrad/Solar (die auf Level 3 offenes Wasser brauchen) nirgends setzen liessen.
+     * NUR Level 3: Level 4 (High-Tech) spielt wieder an Land, dort gilt die Normalschwelle.
      */
-    private fun landThresh(): Double = if (companyLevel >= 3) 0.65 else LAND_THRESH
+    private fun landThresh(): Double = if (companyLevel == 3) 0.65 else LAND_THRESH
 
     private fun rawLand(r: Int, c: Int): Boolean =
         r in 0 until n && c in 0 until n && landValue(r, c) > landThresh()
@@ -740,16 +849,18 @@ class Simulation {
         if (hasObstacle(r, c)) return false
         if (expandedCanal[r * n + c]) return false
         if (isLaunchPad(r, c)) return false   // Raumhafen bleibt unangetastet
-        // Ab Level 3 liegt alles auf See: die Bohrinsel waechst aufs offene WASSER,
+        // Auf Level 3 liegt alles auf See: die Bohrinsel waechst aufs offene WASSER,
         // nicht auf Land - und nur ANGRENZEND, damit ein zusammenhaengendes Deck entsteht
-        // statt verstreuter Einzelplattformen quer ueber die Karte.
-        if (companyLevel >= 3) return isOpenWater(r, c) && touchesPlatform(r, c)
+        // statt verstreuter Einzelplattformen quer ueber die Karte. Level 4 baut wieder
+        // an Land (Campus-Gelaende) und nutzt daher den normalen Land-Zweig.
+        if (companyLevel == 3) return isOpenWater(r, c) && touchesPlatform(r, c)
         return isLand(r, c)   // muss (noch) Land sein - egal ob normal, Plattform oder Erweiterung
     }
 
     /**
-     * Kanaele ergeben nur bis Level 2 Sinn: ab Level 3 steht ohnehin alles im Meer,
-     * jede Zelle am Plattformrand hat also bereits Wasser als Nachbarn.
+     * Kanaele ergeben auf Level 3 keinen Sinn: dort steht ohnehin alles im Meer, jede
+     * Zelle am Plattformrand hat also bereits Wasser als Nachbarn. Auf Level 1/2/4 sind
+     * sie wieder erlaubt (Level 4 braucht Wasser fuers Reinstwasserwerk).
      */
     /** Grenzt das Feld direkt (4er-Nachbarschaft) an die Plattform bzw. eine Erweiterung? */
     private fun touchesPlatform(r: Int, c: Int): Boolean {
@@ -761,7 +872,7 @@ class Simulation {
         return false
     }
 
-    fun canDigCanalHere(r: Int, c: Int): Boolean = companyLevel < 3 && canExpandInfra(r, c)
+    fun canDigCanalHere(r: Int, c: Int): Boolean = companyLevel != 3 && canExpandInfra(r, c)
 
     /** Speziell die Plattform-Erweiterung: nur auf noch normalem Land, keine bereits
      *  vorhandene Plattform "nochmal" erweitern. */
@@ -916,7 +1027,11 @@ class Simulation {
 
     /** Kostenfaktor-Tabelle des aktuellen Levels (Level 2 Kernkraft, ab Level 3 Petrochemie). */
     private fun costFactors(): Map<MType, Double> =
-        if (companyLevel >= 3) PETRO_COST_FACTOR else NUCLEAR_COST_FACTOR
+        when {
+            companyLevel >= 4 -> HIGHTECH_COST_FACTOR
+            companyLevel == 3 -> PETRO_COST_FACTOR
+            else -> NUCLEAR_COST_FACTOR
+        }
 
     /** Geld/Minute-Anker: die Dividende der zuletzt verkauften Firma, mit Mindestwert. */
     private fun payAnchor(): Double = max(dividends * 60.0, 300.0)
@@ -933,7 +1048,7 @@ class Simulation {
     fun canBuild(t: MType): Boolean = when (t) {
         // Start-Foerderer der jeweiligen Stufe brauchen keine Freischaltung - ohne den
         // Oelbohrturm liesse sich die Petrochemie-Kette ueberhaupt nicht anfangen.
-        MType.BOHRER, MType.OFEN, MType.BLEIBOHRER, MType.OELBOHRTURM -> true
+        MType.BOHRER, MType.OFEN, MType.BLEIBOHRER, MType.OELBOHRTURM, MType.SANDMINE -> true
         MType.REAKTOR, MType.VERSTAERKER, MType.PROSPEKTOR -> false
         else -> {
             val u = UNLOCK[t]
@@ -1016,7 +1131,7 @@ class Simulation {
         // Erst ab Level 3: in Level 2 gibt es die Deko-Bohrinsel nicht mehr (dort war sie
         // nur ein Spoiler; ab Level 3 ist die Bohrinsel die Plattform selbst, die Deko-
         // Insel steht als zusaetzliche Kulisse daneben).
-        if (companyLevel < 3 || !hasPlatform()) return
+        if (companyLevel != 3 || !hasPlatform()) return
         val size = 3
         val pr = (platformR0 + platformR1) / 2; val pc = (platformC0 + platformC1) / 2
         var bestR = -1; var bestC = -1; var bestScore = Int.MAX_VALUE
@@ -1043,7 +1158,9 @@ class Simulation {
      */
     private fun placeLaunchPad() {
         padR0 = -1; padC0 = -1; padR1 = -1; padC1 = -1
-        if (companyLevel < 3 || !hasPlatform()) return
+        // Nur Level 3: auf Level 4 baut man echte Startrampen, ein Deko-Spoiler waere dort
+        // nur verwirrend (und wuerde Bauflaeche blockieren).
+        if (companyLevel != 3 || !hasPlatform()) return
         val size = 3
         val pr = (platformR0 + platformR1) / 2; val pc = (platformC0 + platformC1) / 2
         var bestR = -1; var bestC = -1; var bestScore = Int.MAX_VALUE
@@ -1118,9 +1235,10 @@ class Simulation {
         if (companyLevel < 2) return
         val size = 9
         var bestR = -1; var bestC = -1; var bestScore = Int.MAX_VALUE
-        // Ab Level 3 (Petrochemie) liegt das Territorium KOMPLETT auf dem Wasser: die
-        // Startplattform ist eine Bohrinsel auf offener See, kein Kuestenstueck.
-        if (companyLevel >= 3) {
+        // Auf Level 3 (Petrochemie) liegt das Territorium KOMPLETT auf dem Wasser: die
+        // Startplattform ist eine Bohrinsel auf offener See, kein Kuestenstueck. Level 4
+        // (High-Tech) ist wieder ein Landgelaende und nutzt den normalen Kuesten-Zweig.
+        if (companyLevel == 3) {
             for (R in 0..n - size) for (C in 0..n - size) {
                 var allWater = true
                 for (dr in 0 until size) for (dc in 0 until size) if (!rawWater(R + dr, C + dc)) allWater = false
@@ -1230,7 +1348,7 @@ class Simulation {
             if (companyLevel >= 2) {
                 if (t == MType.WINDRAD || t == MType.SOLAR) {
                     if (onPlatform) return false
-                    if (companyLevel >= 3) {
+                    if (companyLevel == 3) {
                         if (isLand(rr, cc)) return false            // offshore: muss Wasser sein
                     } else {
                         if (!isLand(rr, cc)) return false
@@ -1287,7 +1405,11 @@ class Simulation {
 
     /** Tech-Kostenfaktoren des aktuellen Levels (Kernkraft bzw. ab Level 3 Petrochemie). */
     private fun techFactors(): Map<String, Double> =
-        if (companyLevel >= 3) PETRO_TECH_FACTOR else NUCLEAR_TECH_FACTOR
+        when {
+            companyLevel >= 4 -> HIGHTECH_TECH_FACTOR
+            companyLevel == 3 -> PETRO_TECH_FACTOR
+            else -> NUCLEAR_TECH_FACTOR
+        }
 
     /** Tatsaechlich angezeigter/zu zahlender Preis (fuer die Tech-Baum-UI). */
     fun techDisplayCost(node: TechNode): Double =
@@ -1298,13 +1420,14 @@ class Simulation {
      * fuer Gebaeude, die es ab Level 2 nicht mehr gibt (Presse/Assembler/...), werden im
      * Nuklear-Modus ausgeblendet - und umgekehrt die Kernkraft-Freischaltungen bei Level 1.
      */
-    fun techVisible(id: String): Boolean = when {
-        // Level 1: nur die Bergbau-Techs
-        companyLevel == 1 -> id !in LEVEL2_ONLY_TECHS && id !in LEVEL3_ONLY_TECHS && id !in NOT_LEVEL1_TECHS
-        // Level 2: Kernkraft - keine Bergbau-only- und keine Petro-Techs
-        companyLevel == 2 -> id !in LEVEL1_ONLY_TECHS && id !in LEVEL3_ONLY_TECHS
-        // Ab Level 3: Petrochemie - keine Bergbau- und keine Kernkraft-Techs
-        else -> id !in LEVEL1_ONLY_TECHS && id !in LEVEL2_ONLY_TECHS
+    fun techVisible(id: String): Boolean = when (companyLevel) {
+        // Jede Stufe sieht nur ihre eigenen Spezial-Techs plus die stufenuebergreifenden.
+        1 -> id !in LEVEL2_ONLY_TECHS && id !in LEVEL3_ONLY_TECHS && id !in LEVEL4_ONLY_TECHS && id !in NOT_LEVEL1_TECHS
+        2 -> id !in LEVEL1_ONLY_TECHS && id !in LEVEL3_ONLY_TECHS && id !in LEVEL4_ONLY_TECHS
+        3 -> id !in LEVEL1_ONLY_TECHS && id !in LEVEL2_ONLY_TECHS && id !in LEVEL4_ONLY_TECHS &&
+            id !in LEVEL12_ONLY_TECHS
+        else -> id !in LEVEL1_ONLY_TECHS && id !in LEVEL2_ONLY_TECHS && id !in LEVEL3_ONLY_TECHS &&
+            id !in LEVEL12_ONLY_TECHS
     }
 
     /**
@@ -1314,7 +1437,8 @@ class Simulation {
      * Kernkraft-Alternative ersetzt.
      */
     fun prereqOf(node: TechNode): String? = when {
-        companyLevel >= 3 -> PETRO_PREREQ_OVERRIDE[node.id] ?: node.prereq
+        companyLevel >= 4 -> HIGHTECH_PREREQ_OVERRIDE[node.id] ?: node.prereq
+        companyLevel == 3 -> PETRO_PREREQ_OVERRIDE[node.id] ?: node.prereq
         companyLevel == 2 -> NUCLEAR_PREREQ_OVERRIDE[node.id] ?: node.prereq
         else -> node.prereq
     }
@@ -1454,6 +1578,47 @@ class Simulation {
                 if (m.starved) return 1
                 if (scale < 0.999 && m.util < 0.98) return 3
             }
+            // --- Level 4: High-Tech ---
+            MType.SANDMINE -> {
+                if (oreMult(r, c) <= 0.0) return 5
+                if (m.output[Res.ROHERZ.ordinal] >= OUT_CAP - 0.5) return 2
+                if (scale < 0.999 && m.util < 0.98) return 3
+            }
+            MType.SELTENERD -> {
+                if (oreMult(r, c) <= 0.0) return 5
+                if (m.output[Res.BLEI.ordinal] >= OUT_CAP - 0.5) return 2
+                if (scale < 0.999 && m.util < 0.98) return 3
+            }
+            MType.REINSTWASSER -> {
+                if (!adjWater(r, c)) return 6
+                if (m.output[Res.WASSER.ordinal] >= OUT_CAP - 0.5) return 2
+                if (scale < 0.999 && m.util < 0.98) return 3
+            }
+            MType.WAFERFAB -> {
+                if (m.output[Res.BARREN.ordinal] >= OUT_CAP - 0.5) return 2
+                if (m.starved) return 1
+                if (scale < 0.999 && m.util < 0.98) return 3
+            }
+            MType.DOTIERWERK -> {
+                if (m.output[Res.PLATTE.ordinal] >= OUT_CAP - 0.5) return 2
+                if (m.starved) return 1
+                if (scale < 0.999 && m.util < 0.98) return 3
+            }
+            MType.CHIPFAB -> {
+                if (m.output[Res.KOMPONENTE.ordinal] >= OUT_CAP - 0.5) return 2
+                if (m.starved) return 1
+                if (scale < 0.999 && m.util < 0.98) return 3
+            }
+            MType.SATELLITENWERK -> {
+                if (m.output[Res.DAMPF.ordinal] >= OUT_CAP - 0.5) return 2
+                if (m.starved) return 1
+                if (scale < 0.999 && m.util < 0.98) return 3
+            }
+            MType.STARTRAMPE -> {
+                if (m.output[Res.STROM.ordinal] >= OUT_CAP - 0.5) return 2
+                if (m.starved) return 1
+                if (scale < 0.999 && m.util < 0.98) return 3
+            }
             else -> {}
         }
         return 0
@@ -1533,6 +1698,17 @@ class Simulation {
     private fun polymerwerkRate() = POLYMERWERK_RATE * (1.0 + 0.08 * lvl("t_pwspeed")) * globalMult() * flareMult()
     private fun crackerRate() = CRACKER_RATE * (1.0 + 0.08 * lvl("t_crspeed")) * globalMult() * flareMult()
     private fun raffinerieRate() = RAFFINERIE_RATE * (1.0 + 0.08 * lvl("t_rfspeed")) * globalMult() * flareMult()
+    // --- Level 4: High-Tech. cleanMult() ist das Gegenstueck zu flareMult(): eine
+    // hoehere Reinraum-Klasse hebt die Ausbeute der GESAMTEN Fab-Kette.
+    private fun cleanMult() = 1.0 + 0.04 * lvl("t_reinraum")
+    private fun sandmineRate() = SANDMINE_RATE * (1.0 + 0.08 * lvl("t_smspeed")) * globalMult()
+    private fun seltenerdRate() = SELTENERD_RATE * (1.0 + 0.08 * lvl("t_sespeed")) * globalMult()
+    private fun reinstwasserRate() = REINSTWASSER_RATE * (1.0 + 0.08 * lvl("t_rwspeed")) * globalMult()
+    private fun waferfabRate() = WAFERFAB_RATE * (1.0 + 0.08 * lvl("t_wfspeed")) * globalMult() * cleanMult()
+    private fun dotierwerkRate() = DOTIERWERK_RATE * (1.0 + 0.08 * lvl("t_dwspeed")) * globalMult() * cleanMult()
+    private fun chipfabRate() = CHIPFAB_RATE * (1.0 + 0.08 * lvl("t_cfspeed")) * globalMult() * cleanMult()
+    private fun satellitenwerkRate() = SATELLITENWERK_RATE * (1.0 + 0.08 * lvl("t_saspeed")) * globalMult() * cleanMult()
+    private fun startrampeRate() = STARTRAMPE_RATE * (1.0 + 0.08 * lvl("t_srspeed")) * globalMult() * cleanMult()
     fun componentPrice() = COMPONENT_PRICE * (1.0 + 0.25 * lvl("t_wert")) * companyMult() * shareBonus()
 
     private fun wearPerSec(t: MType) = when (t) {
@@ -1559,6 +1735,14 @@ class Simulation {
         MType.POLYMERWERK -> 1.6 / 60.0
         MType.CRACKER -> 1.8 / 60.0
         MType.RAFFINERIE -> 1.4 / 60.0
+        MType.SANDMINE -> 1.0 / 60.0
+        MType.SELTENERD -> 1.0 / 60.0
+        MType.REINSTWASSER -> 0.8 / 60.0
+        MType.WAFERFAB -> 1.2 / 60.0
+        MType.DOTIERWERK -> 1.5 / 60.0
+        MType.CHIPFAB -> 1.6 / 60.0
+        MType.SATELLITENWERK -> 1.8 / 60.0
+        MType.STARTRAMPE -> 1.4 / 60.0
         else -> 0.0
     }
 
@@ -1645,6 +1829,12 @@ class Simulation {
         MType.POLYMERWERK -> intArrayOf(Res.BARREN.ordinal, Res.PLATTE.ordinal)   // Naphtha + Additive
         MType.CRACKER -> intArrayOf(Res.KOMPONENTE.ordinal)                       // Granulat
         MType.RAFFINERIE -> intArrayOf(Res.DAMPF.ordinal)                         // Crackgas
+        // --- Level 4: High-Tech (gleiche Slots, andere Bedeutung) ---
+        MType.WAFERFAB -> intArrayOf(Res.ROHERZ.ordinal, Res.WASSER.ordinal)      // Quarzsand + Reinstwasser
+        MType.DOTIERWERK -> intArrayOf(Res.BLEI.ordinal)                          // Seltene Erden
+        MType.CHIPFAB -> intArrayOf(Res.BARREN.ordinal, Res.PLATTE.ordinal)       // Wafer + Substrat
+        MType.SATELLITENWERK -> intArrayOf(Res.KOMPONENTE.ordinal)                // Mikrochips
+        MType.STARTRAMPE -> intArrayOf(Res.DAMPF.ordinal)                         // Satellitenmodule
         else -> IntArray(0)
     }
 
@@ -1670,6 +1860,15 @@ class Simulation {
         MType.POLYMERWERK -> res == Res.KOMPONENTE.ordinal // Granulat
         MType.CRACKER -> res == Res.DAMPF.ordinal         // Crackgas
         MType.RAFFINERIE -> res == Res.STROM.ordinal      // Treibstoff (Verkaufsprodukt)
+        // --- Level 4: High-Tech ---
+        MType.SANDMINE -> res == Res.ROHERZ.ordinal        // Quarzsand
+        MType.SELTENERD -> res == Res.BLEI.ordinal         // Seltene Erden
+        MType.REINSTWASSER -> res == Res.WASSER.ordinal    // Reinstwasser
+        MType.WAFERFAB -> res == Res.BARREN.ordinal        // Wafer
+        MType.DOTIERWERK -> res == Res.PLATTE.ordinal      // Substrat
+        MType.CHIPFAB -> res == Res.KOMPONENTE.ordinal     // Mikrochip
+        MType.SATELLITENWERK -> res == Res.DAMPF.ordinal   // Satellitenmodul
+        MType.STARTRAMPE -> res == Res.STROM.ordinal       // Orbit-Dienste (Verkaufsprodukt)
         else -> false
     }
 
@@ -1682,7 +1881,8 @@ class Simulation {
         MType.VERSTAERKER -> neighbors(r, c).any {
             val g = grid[it[0]][it[1]]?.type
             g == MType.BOHRER || g == MType.OFEN || g == MType.PRESSE || g == MType.ASSEMBLER ||
-                g == MType.OELBOHRTURM || g == MType.DESTILLATION || g == MType.POLYMERWERK
+                g == MType.OELBOHRTURM || g == MType.DESTILLATION || g == MType.POLYMERWERK ||
+                g == MType.SANDMINE || g == MType.WAFERFAB || g == MType.CHIPFAB
         }
         MType.PROSPEKTOR -> hasUnsurveyedInRange(r, c)
         MType.FORSCHUNG -> true          // zieht Strom, solange es steht
@@ -1706,6 +1906,17 @@ class Simulation {
             m.output[Res.KOMPONENTE.ordinal] < OUT_CAP - 1e-9
         MType.CRACKER -> m.input[Res.KOMPONENTE.ordinal] > 1e-6 && m.output[Res.DAMPF.ordinal] < OUT_CAP - 1e-9
         MType.RAFFINERIE -> m.input[Res.DAMPF.ordinal] > 1e-6 && m.output[Res.STROM.ordinal] < OUT_CAP - 1e-9
+        // --- Level 4: High-Tech ---
+        MType.SANDMINE -> m.output[Res.ROHERZ.ordinal] < OUT_CAP - 1e-9 && oreMult(r, c) > 0.0
+        MType.SELTENERD -> m.output[Res.BLEI.ordinal] < OUT_CAP - 1e-9 && oreMult(r, c) > 0.0
+        MType.REINSTWASSER -> m.output[Res.WASSER.ordinal] < OUT_CAP - 1e-9 && adjWater(r, c)
+        MType.WAFERFAB -> m.input[Res.ROHERZ.ordinal] > 1e-6 && m.input[Res.WASSER.ordinal] > 1e-6 &&
+            m.output[Res.BARREN.ordinal] < OUT_CAP - 1e-9
+        MType.DOTIERWERK -> m.input[Res.BLEI.ordinal] > 1e-6 && m.output[Res.PLATTE.ordinal] < OUT_CAP - 1e-9
+        MType.CHIPFAB -> m.input[Res.BARREN.ordinal] > 1e-6 && m.input[Res.PLATTE.ordinal] > 1e-6 &&
+            m.output[Res.KOMPONENTE.ordinal] < OUT_CAP - 1e-9
+        MType.SATELLITENWERK -> m.input[Res.KOMPONENTE.ordinal] > 1e-6 && m.output[Res.DAMPF.ordinal] < OUT_CAP - 1e-9
+        MType.STARTRAMPE -> m.input[Res.DAMPF.ordinal] > 1e-6 && m.output[Res.STROM.ordinal] < OUT_CAP - 1e-9
         else -> false
     }
 
@@ -2116,6 +2327,97 @@ class Simulation {
                     kompMade += made
                     if (byGas <= 1e-9 && m.output[Res.STROM.ordinal] < OUT_CAP - 1e-9) m.starved = true
                 }
+                // ================= Level 4: High-Tech =================
+                MType.SANDMINE -> {
+                    val mult = machineUpgradeMult(m)
+                    val nominal = sandmineRate() * mult * ddt * boostAt(r, c) * oreMult(r, c)
+                    val want = nominal * scale * wearMult(m.condition)
+                    val made = max(0.0, min(want, OUT_CAP - m.output[Res.ROHERZ.ordinal]))
+                    m.output[Res.ROHERZ.ordinal] += made
+                    if (sandmineRate() > 0) m.condition = max(0.0, m.condition - wearPerSec(MType.SANDMINE) * wf * (made / (sandmineRate() * mult)))
+                    m.util = if (nominal > 1e-9) made / nominal else 0.0
+                }
+                MType.SELTENERD -> {
+                    val mult = machineUpgradeMult(m)
+                    val nominal = seltenerdRate() * mult * ddt * boostAt(r, c) * oreMult(r, c)
+                    val want = nominal * scale * wearMult(m.condition)
+                    val made = max(0.0, min(want, OUT_CAP - m.output[Res.BLEI.ordinal]))
+                    m.output[Res.BLEI.ordinal] += made
+                    if (seltenerdRate() > 0) m.condition = max(0.0, m.condition - wearPerSec(MType.SELTENERD) * wf * (made / (seltenerdRate() * mult)))
+                    m.util = if (nominal > 1e-9) made / nominal else 0.0
+                }
+                MType.REINSTWASSER -> {
+                    val mult = machineUpgradeMult(m)
+                    val nominal = reinstwasserRate() * mult * ddt * waterEfficiency(r, c)
+                    val want = nominal * scale * wearMult(m.condition)
+                    val made = max(0.0, min(want, OUT_CAP - m.output[Res.WASSER.ordinal]))
+                    m.output[Res.WASSER.ordinal] += made
+                    if (reinstwasserRate() > 0) m.condition = max(0.0, m.condition - wearPerSec(MType.REINSTWASSER) * wf * (made / (reinstwasserRate() * mult)))
+                    m.util = if (nominal > 1e-9) made / nominal else 0.0
+                }
+                MType.WAFERFAB -> {
+                    val mult = machineUpgradeMult(m)
+                    val nominal = waferfabRate() * mult * ddt * boostAt(r, c)
+                    val want = nominal * scale * wearMult(m.condition)
+                    val byInput = min(m.input[Res.ROHERZ.ordinal], m.input[Res.WASSER.ordinal])
+                    val made = max(0.0, min(want, min(byInput, OUT_CAP - m.output[Res.BARREN.ordinal])))
+                    m.input[Res.ROHERZ.ordinal] -= made; m.input[Res.WASSER.ordinal] -= made
+                    m.output[Res.BARREN.ordinal] += made
+                    m.condition = max(0.0, m.condition - wearPerSec(MType.WAFERFAB) * wf * (made / (waferfabRate() * mult)))
+                    m.util = if (nominal > 1e-9) made / nominal else 0.0
+                    barMade += made
+                    if (byInput <= 1e-9 && m.output[Res.BARREN.ordinal] < OUT_CAP - 1e-9) m.starved = true
+                }
+                MType.DOTIERWERK -> {
+                    val mult = machineUpgradeMult(m)
+                    val nominal = dotierwerkRate() * mult * ddt * boostAt(r, c)
+                    val want = nominal * scale * wearMult(m.condition)
+                    val byIn = m.input[Res.BLEI.ordinal]
+                    val made = max(0.0, min(want, min(byIn, OUT_CAP - m.output[Res.PLATTE.ordinal])))
+                    m.input[Res.BLEI.ordinal] -= made
+                    m.output[Res.PLATTE.ordinal] += made
+                    m.condition = max(0.0, m.condition - wearPerSec(MType.DOTIERWERK) * wf * (made / (dotierwerkRate() * mult)))
+                    m.util = if (nominal > 1e-9) made / nominal else 0.0
+                    platMade += made
+                    if (byIn <= 1e-9 && m.output[Res.PLATTE.ordinal] < OUT_CAP - 1e-9) m.starved = true
+                }
+                MType.CHIPFAB -> {
+                    val mult = machineUpgradeMult(m)
+                    val nominal = chipfabRate() * mult * ddt * boostAt(r, c)
+                    val want = nominal * scale * wearMult(m.condition)
+                    val byInput = min(m.input[Res.BARREN.ordinal], m.input[Res.PLATTE.ordinal])
+                    val made = max(0.0, min(want, min(byInput, OUT_CAP - m.output[Res.KOMPONENTE.ordinal])))
+                    m.input[Res.BARREN.ordinal] -= made; m.input[Res.PLATTE.ordinal] -= made
+                    m.output[Res.KOMPONENTE.ordinal] += made
+                    m.condition = max(0.0, m.condition - wearPerSec(MType.CHIPFAB) * wf * (made / (chipfabRate() * mult)))
+                    m.util = if (nominal > 1e-9) made / nominal else 0.0
+                    if (byInput <= 1e-9 && m.output[Res.KOMPONENTE.ordinal] < OUT_CAP - 1e-9) m.starved = true
+                }
+                MType.SATELLITENWERK -> {
+                    val mult = machineUpgradeMult(m)
+                    val nominal = satellitenwerkRate() * mult * ddt * boostAt(r, c)
+                    val want = nominal * scale * wearMult(m.condition)
+                    val byIn = m.input[Res.KOMPONENTE.ordinal]
+                    val made = max(0.0, min(want, min(byIn, OUT_CAP - m.output[Res.DAMPF.ordinal])))
+                    m.input[Res.KOMPONENTE.ordinal] -= made
+                    m.output[Res.DAMPF.ordinal] += made
+                    m.condition = max(0.0, m.condition - wearPerSec(MType.SATELLITENWERK) * wf * (made / (satellitenwerkRate() * mult)))
+                    m.util = if (nominal > 1e-9) made / nominal else 0.0
+                    if (byIn <= 1e-9 && m.output[Res.DAMPF.ordinal] < OUT_CAP - 1e-9) m.starved = true
+                }
+                MType.STARTRAMPE -> {
+                    val mult = machineUpgradeMult(m)
+                    val nominal = startrampeRate() * mult * ddt * boostAt(r, c)
+                    val want = nominal * scale * wearMult(m.condition)
+                    val byIn = m.input[Res.DAMPF.ordinal]
+                    val made = max(0.0, min(want, min(byIn, OUT_CAP - m.output[Res.STROM.ordinal])))
+                    m.input[Res.DAMPF.ordinal] -= made
+                    m.output[Res.STROM.ordinal] += made
+                    m.condition = max(0.0, m.condition - wearPerSec(MType.STARTRAMPE) * wf * (made / (startrampeRate() * mult)))
+                    m.util = if (nominal > 1e-9) made / nominal else 0.0
+                    kompMade += made
+                    if (byIn <= 1e-9 && m.output[Res.STROM.ordinal] < OUT_CAP - 1e-9) m.starved = true
+                }
                 MType.LAGER, MType.REAKTOR, MType.HAENDLER -> { m.util = 0.0 }
             }
         }
@@ -2123,19 +2425,19 @@ class Simulation {
         transfers()
         forEachMachine { m, _, _ ->
             when (m.type) {
-                MType.OFEN, MType.ZENTRIFUGE, MType.DESTILLATION -> {
+                MType.OFEN, MType.ZENTRIFUGE, MType.DESTILLATION, MType.WAFERFAB -> {
                     val amt = min(liftRate() * ddt, m.output[Res.BARREN.ordinal])
                     m.output[Res.BARREN.ordinal] -= amt; globalBarren += amt
                 }
-                MType.PRESSE, MType.BLEIPRESSE, MType.GASWAESCHE -> {
+                MType.PRESSE, MType.BLEIPRESSE, MType.GASWAESCHE, MType.DOTIERWERK -> {
                     val amt = min(liftRate() * ddt, m.output[Res.PLATTE.ordinal])
                     m.output[Res.PLATTE.ordinal] -= amt; globalPlatten += amt
                 }
-                MType.ASSEMBLER, MType.POLYMERWERK -> {
+                MType.ASSEMBLER, MType.POLYMERWERK, MType.CHIPFAB -> {
                     val amt = min(liftRate() * ddt, m.output[Res.KOMPONENTE.ordinal])
                     m.output[Res.KOMPONENTE.ordinal] -= amt; globalKomponente += amt
                 }
-                MType.KUEHLTURM, MType.RAFFINERIE -> {
+                MType.KUEHLTURM, MType.RAFFINERIE, MType.STARTRAMPE -> {
                     val amt = min(liftRate() * ddt, m.output[Res.STROM.ordinal])
                     m.output[Res.STROM.ordinal] -= amt; globalStrom += amt
                 }
@@ -2213,7 +2515,9 @@ class Simulation {
                      m.type == MType.ZENTRIFUGE || m.type == MType.BLEIPRESSE || m.type == MType.BRENNSTABWERK ||
                      m.type == MType.REAKTORKERN || m.type == MType.KUEHLTURM ||
                      m.type == MType.DESTILLATION || m.type == MType.GASWAESCHE || m.type == MType.POLYMERWERK ||
-                     m.type == MType.CRACKER || m.type == MType.RAFFINERIE) &&
+                     m.type == MType.CRACKER || m.type == MType.RAFFINERIE ||
+                     m.type == MType.WAFERFAB || m.type == MType.DOTIERWERK || m.type == MType.CHIPFAB ||
+                     m.type == MType.SATELLITENWERK || m.type == MType.STARTRAMPE) &&
                     m.starved && !seenStarve.contains(m)
                 ) {
                     seenStarve.add(m)
@@ -2319,7 +2623,7 @@ class Simulation {
         if (orig != null && orig.length() == 4) {
             oilRigR0 = orig.optInt(0, -1); oilRigC0 = orig.optInt(1, -1)
             oilRigR1 = orig.optInt(2, -1); oilRigC1 = orig.optInt(3, -1)
-        } else if (companyLevel >= 3 && hasPlatform()) {
+        } else if (companyLevel == 3 && hasPlatform()) {
             placeOilRig()
         } else {
             oilRigR0 = -1; oilRigC0 = -1; oilRigR1 = -1; oilRigC1 = -1
@@ -2329,7 +2633,7 @@ class Simulation {
         if (padA != null && padA.length() == 4) {
             padR0 = padA.optInt(0, -1); padC0 = padA.optInt(1, -1)
             padR1 = padA.optInt(2, -1); padC1 = padA.optInt(3, -1)
-        } else if (companyLevel >= 3 && hasPlatform()) {
+        } else if (companyLevel == 3 && hasPlatform()) {
             placeLaunchPad()
         } else {
             padR0 = -1; padC0 = -1; padR1 = -1; padC1 = -1

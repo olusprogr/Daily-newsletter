@@ -54,6 +54,34 @@ private val CRK = 0xFFD9772E.toInt()    // Crackgas (heisses Orange)
 private val CRKL = 0xFFF6BC7A.toInt()   // Crackgas hell
 private val FUEL = 0xFFE64A32.toInt()   // Treibstoff (Benzin-Rot)
 private val FUELL = 0xFFFF9A78.toInt()  // Treibstoff hell
+// Level-4 (High-Tech) Icon-Farben
+private val QRZ = 0xFFE0C98A.toInt()    // Quarzsand
+private val QRZL = 0xFFF7ECC4.toInt()   // Quarzsand hell / Kristall
+private val QRZD = 0xFFB9A06A.toInt()   // Quarzsand Schatten
+private val REE = 0xFF9B6FD6.toInt()    // Seltene Erden (violettes Kristall)
+private val REEL = 0xFFCFA8F2.toInt()   // Seltene Erden hell
+private val REED = 0xFF6A45A0.toInt()   // Seltene Erden Schatten
+private val WAF = 0xFFC2CBD6.toInt()    // Wafer (Silizium-Silber)
+private val WAFL = 0xFFEFF4FA.toInt()   // Wafer Glanzlicht
+private val WAFI = 0xFF7FD9C8.toInt()   // Wafer Interferenz-Schimmer
+private val SUB = 0xFF2F7A4C.toInt()    // Substrat (Platinengruen)
+private val SUBL = 0xFF4FA872.toInt()   // Substrat hell
+private val CU = 0xFFC98A46.toInt()     // Leiterbahn (Kupfer)
+private val CUL = 0xFFEFBF7A.toInt()    // Leiterbahn hell
+private val CHP = 0xFF23262E.toInt()    // Chip-Gehaeuse
+private val CHPL = 0xFF3C424E.toInt()   // Chip-Gehaeuse Kante
+private val DIE = 0xFF3E8FD8.toInt()    // Silizium-Die
+private val DIEL = 0xFF8FC8F2.toInt()   // Die hell
+private val GLD = 0xFFE2B84E.toInt()    // Goldfolie / Chip-Pins
+private val GLDL = 0xFFF8DC90.toInt()   // Gold hell
+private val GLDD = 0xFFA9832F.toInt()   // Gold Schatten
+private val SOLB = 0xFF2F5FA8.toInt()   // Solarfluegel
+private val SOLL = 0xFF6F9BD8.toInt()   // Solarfluegel hell
+private val SOLD = 0xFF1E3F72.toInt()   // Solarfluegel Schatten
+private val ORB = 0xFF3FA9D8.toInt()    // Orbit/Planet
+private val ORBL = 0xFF9FE0F5.toInt()   // Planet hell
+private val ORBD = 0xFF23708F.toInt()   // Planet Schatten
+private val ORBR = 0xFFE8ECF2.toInt()   // Umlaufbahn
 
 object Sprites {
 
@@ -369,6 +397,40 @@ object Sprites {
             2 -> listOf(Px(17, 10, 2, 2, ORG))
             else -> listOf(Px(18, 9, 2, 2, YEL))
         }
+        // --- Level 4: High-Tech. Die Minen bekommen ihre Bewegung aus GameView
+        // (Bohranimation), die Werke hier ein blinkendes Prozess-/Reinraumlicht.
+        MType.SANDMINE -> emptyList()
+        MType.SELTENERD -> emptyList()
+        MType.REINSTWASSER -> emptyList()
+        MType.WAFERFAB -> when (frame) {
+            0 -> listOf(Px(13, 14, 2, 1, CYL))
+            1 -> listOf(Px(16, 14, 2, 1, CYA), Px(15, 7, 2, 1, MHI))
+            2 -> listOf(Px(13, 16, 2, 1, CYL))
+            else -> listOf(Px(16, 16, 2, 1, CYA))
+        }
+        MType.DOTIERWERK -> when (frame) {
+            0 -> listOf(Px(14, 15, 4, 1, ORG))
+            2 -> listOf(Px(14, 17, 4, 1, YEL))
+            else -> emptyList()
+        }
+        MType.CHIPFAB -> when (frame) {
+            0 -> listOf(Px(12, 12, 2, 2, CYA), Px(19, 17, 1, 1, CYL))
+            1 -> listOf(Px(15, 12, 2, 2, CYL), Px(11, 17, 1, 1, CYA))
+            2 -> listOf(Px(18, 12, 2, 2, CYA), Px(15, 18, 1, 1, CYL))
+            else -> listOf(Px(15, 12, 2, 2, CYL), Px(19, 17, 1, 1, CYA))
+        }
+        MType.SATELLITENWERK -> when (frame) {
+            0 -> listOf(Px(15, 10, 2, 2, YEL))
+            1 -> listOf(Px(11, 14, 1, 1, CYL), Px(20, 14, 1, 1, CYL))
+            2 -> listOf(Px(15, 10, 2, 2, CYL))
+            else -> listOf(Px(15, 12, 2, 1, YEL))
+        }
+        MType.STARTRAMPE -> when (frame) {
+            0 -> listOf(Px(14, 24, 4, 3, ORG), Px(15, 27, 2, 2, YEL))
+            1 -> listOf(Px(13, 24, 6, 4, YEL), Px(14, 28, 4, 2, ORG))
+            2 -> listOf(Px(14, 24, 4, 5, ORG), Px(15, 29, 2, 2, YEL))
+            else -> listOf(Px(13, 24, 6, 3, YEL), Px(14, 27, 4, 3, ORG))
+        }
     }
 
     // --- Ressourcen-Icons im 12x12-Raster ---
@@ -537,15 +599,115 @@ object Sprites {
         Px(3, 9, 3, 2, MDK), Px(3, 9, 3, 1, MMD)
     )
 
+    // --- Level-4-Icons (High-Tech). Wieder je Stufe eine eigene Silhouette, damit
+    // die Fluss-Animation auch bei 9dp lesbar bleibt: Duene+Kristall (Quarzsand) /
+    // Kristallcluster (Seltene Erden) / runde Scheibe (Wafer) / Platine (Substrat) /
+    // IC mit Beinchen (Mikrochip) / Satellit mit Fluegeln (Satellitenmodul) /
+    // Planet mit Umlaufbahn (Orbit-Dienste).
+    val ICON_QUARZSAND = listOf(
+        // Duene (unten links)
+        Px(4, 5, 3, 1, OUT), Px(3, 6, 1, 1, OUT), Px(7, 6, 1, 1, OUT),
+        Px(2, 7, 1, 1, OUT), Px(8, 7, 1, 1, OUT),
+        Px(1, 8, 1, 1, OUT), Px(9, 8, 1, 1, OUT), Px(0, 9, 12, 1, OUT),
+        Px(4, 6, 3, 1, QRZL), Px(3, 7, 5, 1, QRZ), Px(2, 8, 7, 1, QRZD),
+        Px(4, 7, 2, 1, QRZL), Px(3, 8, 2, 1, QRZ),
+        // Quarzkristall (oben rechts, ragt aus der Duene)
+        Px(8, 0, 2, 1, OUT), Px(7, 1, 1, 5, OUT), Px(10, 1, 1, 5, OUT), Px(8, 6, 2, 1, OUT),
+        Px(8, 1, 2, 5, QRZL), Px(9, 2, 1, 4, QRZ), Px(8, 1, 1, 1, WAFL)
+    )
+    val ICON_SELTENERD = listOf(
+        // Schuettung als Basis
+        Px(0, 10, 12, 1, OUT), Px(1, 9, 10, 1, REED),
+        // hoher Kristall (Mitte)
+        Px(5, 0, 2, 1, OUT), Px(4, 1, 1, 8, OUT), Px(7, 1, 1, 8, OUT), Px(4, 9, 4, 1, OUT),
+        Px(5, 1, 2, 8, REE), Px(5, 1, 1, 8, REEL), Px(6, 3, 1, 5, REED),
+        // kleiner Kristall links
+        Px(2, 4, 1, 1, OUT), Px(1, 5, 1, 4, OUT), Px(3, 5, 1, 4, OUT), Px(1, 9, 3, 1, OUT),
+        Px(2, 5, 1, 4, REE), Px(2, 5, 1, 1, REEL),
+        // kleiner Kristall rechts
+        Px(9, 3, 1, 1, OUT), Px(8, 4, 1, 5, OUT), Px(10, 4, 1, 5, OUT), Px(8, 9, 3, 1, OUT),
+        Px(9, 4, 1, 5, REE), Px(9, 4, 1, 1, REEL),
+        // Glanzpunkt
+        Px(5, 2, 1, 1, WAFL)
+    )
+    val ICON_WAFER = listOf(
+        // Scheiben-Silhouette
+        Px(4, 0, 4, 1, OUT), Px(3, 1, 6, 1, OUT), Px(2, 2, 8, 1, OUT),
+        Px(1, 3, 10, 1, OUT), Px(1, 4, 10, 1, OUT), Px(1, 5, 10, 1, OUT), Px(1, 6, 10, 1, OUT),
+        Px(2, 7, 8, 1, OUT), Px(3, 8, 6, 1, OUT), Px(4, 9, 4, 1, OUT),
+        // spiegelnde Siliziumflaeche
+        Px(4, 1, 4, 1, WAF), Px(3, 2, 6, 1, WAF),
+        Px(2, 3, 8, 1, WAF), Px(2, 4, 8, 1, WAF), Px(2, 5, 8, 1, WAF), Px(2, 6, 8, 1, WAF),
+        Px(3, 7, 6, 1, WAF), Px(4, 8, 4, 1, WAF),
+        // Interferenz-Schimmer (das Erkennungszeichen des Wafers)
+        Px(2, 5, 8, 1, WAFI), Px(3, 6, 6, 1, WAFI),
+        // Glanzlicht oben links
+        Px(4, 2, 3, 1, WAFL), Px(3, 3, 2, 1, WAFL),
+        // Notch oben mittig
+        Px(5, 0, 2, 2, OUT)
+    )
+    val ICON_SUBSTRAT = listOf(
+        // Platine
+        Px(1, 2, 10, 1, OUT), Px(0, 3, 1, 6, OUT), Px(11, 3, 1, 6, OUT), Px(1, 9, 10, 1, OUT),
+        Px(1, 3, 10, 6, SUB), Px(1, 3, 10, 1, SUBL),
+        // Leiterbahnen
+        Px(2, 4, 7, 1, CU), Px(8, 4, 1, 4, CU), Px(3, 7, 6, 1, CU), Px(3, 5, 1, 3, CU),
+        Px(5, 5, 3, 1, CU),
+        // Kontaktpunkte
+        Px(2, 4, 1, 1, CUL), Px(8, 7, 1, 1, CUL), Px(5, 5, 1, 1, CUL)
+    )
+    val ICON_MIKROCHIP = listOf(
+        // Beinchen links/rechts (zuerst, damit das Gehaeuse sie sauber abschneidet)
+        Px(0, 4, 3, 1, GLD), Px(0, 6, 3, 1, GLD), Px(0, 8, 3, 1, GLD),
+        Px(9, 4, 3, 1, GLD), Px(9, 6, 3, 1, GLD), Px(9, 8, 3, 1, GLD),
+        // Gehaeuse
+        Px(3, 2, 6, 1, OUT), Px(2, 3, 1, 7, OUT), Px(9, 3, 1, 7, OUT), Px(3, 10, 6, 1, OUT),
+        Px(3, 3, 6, 7, CHP), Px(3, 3, 6, 1, CHPL),
+        // Silizium-Die
+        Px(4, 5, 4, 3, DIE), Px(4, 5, 4, 1, DIEL),
+        // Pin-1-Markierung
+        Px(4, 4, 1, 1, GLD)
+    )
+    val ICON_SATMODUL = listOf(
+        // Ausleger
+        Px(2, 5, 8, 1, MMD),
+        // Solarfluegel links
+        Px(0, 3, 4, 1, OUT), Px(0, 4, 1, 4, OUT), Px(3, 4, 1, 4, OUT), Px(0, 8, 4, 1, OUT),
+        Px(1, 4, 2, 4, SOLB), Px(1, 4, 2, 1, SOLL), Px(2, 4, 1, 4, SOLD),
+        // Solarfluegel rechts
+        Px(8, 3, 4, 1, OUT), Px(8, 4, 1, 4, OUT), Px(11, 4, 1, 4, OUT), Px(8, 8, 4, 1, OUT),
+        Px(9, 4, 2, 4, SOLB), Px(9, 4, 2, 1, SOLL), Px(10, 4, 1, 4, SOLD),
+        // Korpus in Goldfolie
+        Px(4, 2, 4, 1, OUT), Px(3, 3, 1, 6, OUT), Px(8, 3, 1, 6, OUT), Px(4, 9, 4, 1, OUT),
+        Px(4, 3, 4, 6, GLD), Px(4, 3, 4, 1, GLDL), Px(7, 3, 1, 6, GLDD),
+        // Antenne
+        Px(5, 0, 2, 1, OUT), Px(5, 1, 2, 1, MHI)
+    )
+    val ICON_ORBIT = listOf(
+        // Umlaufbahn (hinter dem Planeten beginnend)
+        Px(0, 5, 1, 2, ORBR), Px(11, 5, 1, 2, ORBR),
+        // Planet
+        Px(4, 1, 4, 1, OUT), Px(3, 2, 6, 1, OUT), Px(2, 3, 8, 1, OUT), Px(2, 4, 8, 1, OUT),
+        Px(2, 5, 8, 1, OUT), Px(2, 6, 8, 1, OUT), Px(3, 7, 6, 1, OUT), Px(4, 8, 4, 1, OUT),
+        Px(4, 2, 4, 1, ORB), Px(3, 3, 6, 1, ORB), Px(3, 4, 6, 1, ORB),
+        Px(3, 5, 6, 1, ORB), Px(3, 6, 6, 1, ORB), Px(4, 7, 4, 1, ORB),
+        Px(4, 3, 2, 1, ORBL), Px(6, 5, 2, 1, ORBL), Px(3, 6, 2, 1, ORBD),
+        // Umlaufbahn vor dem Planeten
+        Px(1, 7, 1, 1, ORBR), Px(10, 7, 1, 1, ORBR),
+        Px(2, 8, 2, 1, ORBR), Px(8, 8, 2, 1, ORBR), Px(4, 9, 4, 1, ORBR),
+        // Satellit auf der Bahn
+        Px(9, 2, 2, 2, OUT), Px(9, 2, 2, 1, CYL)
+    )
+
     fun iconForRes(res: Int, level: Int = 1): List<Px> = when (res) {
-        Res.ROHERZ.ordinal -> when { level >= 3 -> ICON_ROHOEL; level == 2 -> ICON_URANERZ; else -> ICON_ROHERZ }
-        Res.BARREN.ordinal -> when { level >= 3 -> ICON_NAPHTHA; level == 2 -> ICON_ANGERURAN; else -> ICON_BARREN }
-        Res.PLATTE.ordinal -> when { level >= 3 -> ICON_ADDITIVE; level == 2 -> ICON_BLEIVERKL; else -> ICON_PLATTE }
-        Res.KOMPONENTE.ordinal -> when { level >= 3 -> ICON_GRANULAT; level == 2 -> ICON_BRENNSTAB; else -> ICON_KOMP }
+        Res.ROHERZ.ordinal -> when { level >= 4 -> ICON_QUARZSAND; level == 3 -> ICON_ROHOEL; level == 2 -> ICON_URANERZ; else -> ICON_ROHERZ }
+        Res.BARREN.ordinal -> when { level >= 4 -> ICON_WAFER; level == 3 -> ICON_NAPHTHA; level == 2 -> ICON_ANGERURAN; else -> ICON_BARREN }
+        Res.PLATTE.ordinal -> when { level >= 4 -> ICON_SUBSTRAT; level == 3 -> ICON_ADDITIVE; level == 2 -> ICON_BLEIVERKL; else -> ICON_PLATTE }
+        Res.KOMPONENTE.ordinal -> when { level >= 4 -> ICON_MIKROCHIP; level == 3 -> ICON_GRANULAT; level == 2 -> ICON_BRENNSTAB; else -> ICON_KOMP }
         Res.WASSER.ordinal -> ICON_WASSER
-        Res.BLEI.ordinal -> if (level >= 3) ICON_ERDGAS else ICON_BLEI
-        Res.DAMPF.ordinal -> if (level >= 3) ICON_CRACKGAS else ICON_DAMPF
-        Res.STROM.ordinal -> if (level >= 3) ICON_TREIBSTOFF else ICON_STROM
+        Res.BLEI.ordinal -> when { level >= 4 -> ICON_SELTENERD; level == 3 -> ICON_ERDGAS; else -> ICON_BLEI }
+        Res.DAMPF.ordinal -> when { level >= 4 -> ICON_SATMODUL; level == 3 -> ICON_CRACKGAS; else -> ICON_DAMPF }
+        Res.STROM.ordinal -> when { level >= 4 -> ICON_ORBIT; level == 3 -> ICON_TREIBSTOFF; else -> ICON_STROM }
         else -> ICON_KOMP
     }
 
@@ -579,5 +741,14 @@ object Sprites {
         MType.POLYMERWERK -> ASSEMBLER
         MType.CRACKER -> REAKTOR
         MType.RAFFINERIE -> ASSEMBLER
+        // --- Level 4: High-Tech ---
+        MType.SANDMINE -> BOHRER
+        MType.SELTENERD -> BOHRER
+        MType.REINSTWASSER -> GENERATOR
+        MType.WAFERFAB -> OFEN
+        MType.DOTIERWERK -> PRESSE
+        MType.CHIPFAB -> ASSEMBLER
+        MType.SATELLITENWERK -> REAKTOR
+        MType.STARTRAMPE -> ASSEMBLER
     }
 }
