@@ -911,8 +911,25 @@ class GameView(context: Context) : View(context) {
      * damit er nahtlos ueber die ganze Kante durchlaeuft (keine Naht pro Kachel).
      */
     private fun drawPlatformTile(canvas: Canvas, r: Int, c: Int, x: Float, y: Float) {
-        val metal = Color.rgb(126, 132, 143); val metalSeam = Color.rgb(100, 106, 117)
+        // Ab Level 3 ist die Plattform eine BOHRINSEL auf offener See: dunkleres
+        // Stahldeck mit Gitterrost-Struktur und Messing-Fugen statt des hellen
+        // AKW-Betondecks. Gleiche Geometrie, andere Materialsprache.
+        val rig = sim.companyLevel >= 3
+        val metal = if (rig) Color.rgb(92, 96, 104) else Color.rgb(126, 132, 143)
+        val metalSeam = if (rig) Color.rgb(150, 116, 58) else Color.rgb(100, 106, 117)
         p.color = metal; canvas.drawRect(x, y, x + cell, y + cell, p)
+        if (rig) {
+            // Gitterrost: feine Querstege, damit das Deck als begehbarer Rost lesbar wird
+            p.color = Color.rgb(74, 78, 86)
+            val gw = (cell * 0.14f).coerceAtLeast(1f)
+            var gy = y + gw
+            while (gy < y + cell) { canvas.drawRect(x, gy, x + cell, gy + gw * 0.34f, p); gy += gw }
+            // Nieten in den Ecken
+            p.color = Color.argb(150, 200, 206, 218)
+            val br = (cell * 0.045f).coerceAtLeast(1f)
+            canvas.drawCircle(x + cell * 0.12f, y + cell * 0.12f, br, p)
+            canvas.drawCircle(x + cell * 0.88f, y + cell * 0.12f, br, p)
+        }
         // Grosse, ruhige Deckplatten-Fugen alle 3 Zellen statt Nieten pro Kachel.
         p.color = metalSeam
         val lw = (cell * 0.035f).coerceAtLeast(1f)
@@ -962,8 +979,10 @@ class GameView(context: Context) : View(context) {
             return
         }
 
-        if (!sim.isLand(r, c)) {
-            // --- Wasser: zwei Kachel-Frames sanft abwechselnd ---
+        if (sim.isOpenWater(r, c)) {
+            // --- Wasser: zwei Kachel-Frames sanft abwechselnd. isOpenWater() statt
+            // !isLand(), weil isLand() jede BELEGTE Zelle als Land meldet - unter einem
+            // Offshore-Windrad (Level 3) laege sonst ploetzlich eine Graskachel. ---
             val wb = if ((animT * 2f).toInt() and 1 == 0) bmpWater0 else bmpWater1
             canvas.drawBitmap(wb, srcTile, dstTile, pTile)
             return
@@ -1821,9 +1840,11 @@ class GameView(context: Context) : View(context) {
      * zwischen Karte und Panel, wenn die Kartenhoehe noch von der Palette ausging).
      */
     private fun expandPanelTop(): Float {
-        val canPlatformHere = sim.canExpandPlatformHere(selR, selC)
         val bh = dp(52f); val gap = dp(10f)
-        val rows = if (canPlatformHere) 2 else 1
+        var rows = 0
+        if (sim.canExpandPlatformHere(selR, selC)) rows++
+        if (sim.canDigCanalHere(selR, selC)) rows++
+        if (rows == 0) rows = 1
         return H - dp(58f) - rows * bh - (rows - 1) * gap - dp(6f)
     }
 
@@ -1849,9 +1870,10 @@ class GameView(context: Context) : View(context) {
         canvas.drawRect(0f, top, W.toFloat(), top + dp(2f), p)
 
         pText.color = cAccent; pText.textSize = dp(18f)
-        canvas.drawText(tr("expand_title"), dp(12f), top + dp(26f), pText)
+        val sea = sim.companyLevel >= 3
+        canvas.drawText(tr(if (sea) "expand_title_sea" else "expand_title"), dp(12f), top + dp(26f), pText)
         pText.color = cDim; pText.textSize = dp(12.5f)
-        canvas.drawText(tr("expand_hint"), dp(12f), top + dp(46f), pText)
+        canvas.drawText(tr(if (sea) "expand_hint_sea" else "expand_hint"), dp(12f), top + dp(46f), pText)
 
         val margin = dp(10f)
         val bw = W - 2 * margin
@@ -1861,18 +1883,21 @@ class GameView(context: Context) : View(context) {
             val platCost = sim.expandPlatformCost()
             val canPlat = sim.money >= platCost
             val r1 = RectF(margin, by, margin + bw, by + bh)
-            drawButton(canvas, Btn(r1, "expand_plat", tr("expand_platform"), canPlat, false, cAccent, "${platCost.toInt()}€"))
+            val lab = tr(if (sea) "expand_platform_sea" else "expand_platform")
+            drawButton(canvas, Btn(r1, "expand_plat", lab, canPlat, false, cAccent, "${platCost.toInt()}€"))
             buttons.add(Btn(r1, "expand_plat", "ep", canPlat))
             by += bh + gap
         }
 
-        val waterNear = sim.hasWaterAdjacent(selR, selC)
-        val canalCost = sim.expandCanalCost()
-        val canCanal = waterNear && sim.money >= canalCost
-        val r2 = RectF(margin, by, margin + bw, by + bh)
-        val canalSub = if (waterNear) "${canalCost.toInt()}€" else tr("expand_needs_water")
-        drawButton(canvas, Btn(r2, "expand_canal", tr("expand_canal"), canCanal, false, cAccent, canalSub, if (!waterNear) cBad else 0))
-        buttons.add(Btn(r2, "expand_canal", "ec", canCanal))
+        if (sim.canDigCanalHere(selR, selC)) {
+            val waterNear = sim.hasWaterAdjacent(selR, selC)
+            val canalCost = sim.expandCanalCost()
+            val canCanal = waterNear && sim.money >= canalCost
+            val r2 = RectF(margin, by, margin + bw, by + bh)
+            val canalSub = if (waterNear) "${canalCost.toInt()}€" else tr("expand_needs_water")
+            drawButton(canvas, Btn(r2, "expand_canal", tr("expand_canal"), canCanal, false, cAccent, canalSub, if (!waterNear) cBad else 0))
+            buttons.add(Btn(r2, "expand_canal", "ec", canCanal))
+        }
     }
 
     private fun bnLabel(code: Int) = when (code) {
@@ -2486,6 +2511,28 @@ class GameView(context: Context) : View(context) {
             by += bh + gap
         }
 
+        // --- Geld-Cheat: beliebig viel Geld dazugeben ---
+        by += dp(8f)
+        pText.color = cDim; pText.textSize = dp(13f)
+        canvas.drawText("${tr("debug_money")}  ·  ${fmt(sim.money)} €", margin, by + dp(12f), pText)
+        by += dp(20f)
+        val amounts = listOf(1_000.0, 1_000_000.0, 1_000_000_000.0, 1_000_000_000_000.0)
+        val gap2 = dp(6f); val mw = (W - 2 * margin - (amounts.size - 1) * gap2) / amounts.size
+        for ((i, amt) in amounts.withIndex()) {
+            val mr = RectF(margin + i * (mw + gap2), by, margin + i * (mw + gap2) + mw, by + dp(42f))
+            drawButton(canvas, Btn(mr, "debug_money_$i", "+${fmt(amt)}", true, false, cGood))
+            buttons.add(Btn(mr, "debug_money_$i", "dm"))
+        }
+        by += dp(50f)
+        // x1000 auf den aktuellen Bestand + Zuruecksetzen
+        val hw = (W - 2 * margin - gap2) / 2f
+        val rx1 = RectF(margin, by, margin + hw, by + dp(40f))
+        val rx2 = RectF(margin + hw + gap2, by, margin + hw * 2 + gap2, by + dp(40f))
+        drawButton(canvas, Btn(rx1, "debug_money_x", tr("debug_money_x"), true, false, cGood))
+        drawButton(canvas, Btn(rx2, "debug_money_0", tr("debug_money_0"), true, false, cBad))
+        buttons.add(Btn(rx1, "debug_money_x", "dmx"))
+        buttons.add(Btn(rx2, "debug_money_0", "dm0"))
+
         val cr = RectF(margin, H - dp(74f), W - margin, H - dp(74f) + dp(48f))
         drawButton(canvas, Btn(cr, "debug_close", tr("close"), true, false, cAccent))
         buttons.add(Btn(cr, "debug_close", "dc"))
@@ -2645,6 +2692,18 @@ class GameView(context: Context) : View(context) {
             id == "new_slot" -> { startNewSlot(); menuArmedDelete = null; audio.place() }
             id == "debug_open" -> { debugOpen = !debugOpen; audio.click() }
             id == "debug_close" -> { debugOpen = false; audio.click() }
+            id.startsWith("debug_money_") -> {
+                // NUR ZUM TESTEN: Geld dazugeben / vervielfachen / auf 0 setzen.
+                when (val k = id.removePrefix("debug_money_")) {
+                    "x" -> sim.debugAddMoney(sim.money * 999.0)   // x1000
+                    "0" -> sim.debugAddMoney(-sim.money)
+                    else -> k.toIntOrNull()?.let {
+                        val amounts = doubleArrayOf(1_000.0, 1_000_000.0, 1_000_000_000.0, 1_000_000_000_000.0)
+                        if (it in amounts.indices) sim.debugAddMoney(amounts[it])
+                    }
+                }
+                persist(); audio.buy()
+            }
             id.startsWith("debug_lvl_") -> {
                 // NUR ZUM TESTEN: direkt auf das gewaehlte Level springen. Ohne offenen
                 // Spielstand vorher einen neuen anlegen, sonst gaebe es nichts zu speichern.

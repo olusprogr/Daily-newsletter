@@ -643,6 +643,18 @@ class Simulation {
         if (expandedPlatform[r * n + c]) return true // vom Spieler ausgebaute Plattform-Flaeche
         return landValue(r, c) > LAND_THRESH
     }
+    /**
+     * Echtes offenes Wasser - unabhaengig davon, ob dort eine Maschine steht. isLand()
+     * meldet fuer jede belegte Zelle "Land"; ab Level 3 stehen Windraeder/Solar aber auf
+     * SEE, und ohne diese Unterscheidung wuerde unter einem Offshore-Windrad ploetzlich
+     * eine Graskachel gezeichnet.
+     */
+    fun isOpenWater(r: Int, c: Int): Boolean {
+        if (r !in 0 until n || c !in 0 until n) return false
+        if (isPlatform(r, c) || expandedPlatform[r * n + c]) return false
+        return expandedCanal[r * n + c] || !rawLand(r, c)
+    }
+
     fun isExpandedPlatform(r: Int, c: Int): Boolean = r in 0 until n && c in 0 until n && expandedPlatform[r * n + c]
     fun isExpandedCanal(r: Int, c: Int): Boolean = r in 0 until n && c in 0 until n && expandedCanal[r * n + c]
 
@@ -719,8 +731,28 @@ class Simulation {
         if (hasObstacle(r, c)) return false
         if (expandedCanal[r * n + c]) return false
         if (isLaunchPad(r, c)) return false   // Raumhafen bleibt unangetastet
+        // Ab Level 3 liegt alles auf See: die Bohrinsel waechst aufs offene WASSER,
+        // nicht auf Land - und nur ANGRENZEND, damit ein zusammenhaengendes Deck entsteht
+        // statt verstreuter Einzelplattformen quer ueber die Karte.
+        if (companyLevel >= 3) return isOpenWater(r, c) && touchesPlatform(r, c)
         return isLand(r, c)   // muss (noch) Land sein - egal ob normal, Plattform oder Erweiterung
     }
+
+    /**
+     * Kanaele ergeben nur bis Level 2 Sinn: ab Level 3 steht ohnehin alles im Meer,
+     * jede Zelle am Plattformrand hat also bereits Wasser als Nachbarn.
+     */
+    /** Grenzt das Feld direkt (4er-Nachbarschaft) an die Plattform bzw. eine Erweiterung? */
+    private fun touchesPlatform(r: Int, c: Int): Boolean {
+        for (o in arrayOf(intArrayOf(-1, 0), intArrayOf(1, 0), intArrayOf(0, -1), intArrayOf(0, 1))) {
+            val rr = r + o[0]; val cc = c + o[1]
+            if (rr !in 0 until n || cc !in 0 until n) continue
+            if (isPlatform(rr, cc) || expandedPlatform[rr * n + cc]) return true
+        }
+        return false
+    }
+
+    fun canDigCanalHere(r: Int, c: Int): Boolean = companyLevel < 3 && canExpandInfra(r, c)
 
     /** Speziell die Plattform-Erweiterung: nur auf noch normalem Land, keine bereits
      *  vorhandene Plattform "nochmal" erweitern. */
@@ -941,6 +973,8 @@ class Simulation {
      * ohne es vorher durchspielen zu muessen. Setzt die Fabrik zurueck (wie ein Verkauf),
      * vergibt aber weder Aktien noch Dividenden. Wird spaeter wieder entfernt.
      */
+    fun debugAddMoney(amt: Double) { money = (money + amt).coerceAtLeast(0.0) }
+
     fun debugSetLevel(level: Int) {
         companyLevel = level.coerceIn(1, MAX_LEVEL)
         resetFactory()
@@ -968,7 +1002,10 @@ class Simulation {
      */
     private fun placeOilRig() {
         oilRigR0 = -1; oilRigC0 = -1; oilRigR1 = -1; oilRigC1 = -1
-        if (companyLevel < 2 || !hasPlatform()) return
+        // Erst ab Level 3: in Level 2 gibt es die Deko-Bohrinsel nicht mehr (dort war sie
+        // nur ein Spoiler; ab Level 3 ist die Bohrinsel die Plattform selbst, die Deko-
+        // Insel steht als zusaetzliche Kulisse daneben).
+        if (companyLevel < 3 || !hasPlatform()) return
         val size = 3
         val pr = (platformR0 + platformR1) / 2; val pc = (platformC0 + platformC1) / 2
         var bestR = -1; var bestC = -1; var bestScore = Int.MAX_VALUE
@@ -1070,6 +1107,31 @@ class Simulation {
         if (companyLevel < 2) return
         val size = 9
         var bestR = -1; var bestC = -1; var bestScore = Int.MAX_VALUE
+        // Ab Level 3 (Petrochemie) liegt das Territorium KOMPLETT auf dem Wasser: die
+        // Startplattform ist eine Bohrinsel auf offener See, kein Kuestenstueck.
+        if (companyLevel >= 3) {
+            for (R in 0..n - size) for (C in 0..n - size) {
+                var allWater = true
+                for (dr in 0 until size) for (dc in 0 until size) if (!rawWater(R + dr, C + dc)) allWater = false
+                if (!allWater) continue
+                val cr = R + size / 2; val cc = C + size / 2
+                val sc = kotlin.math.abs(cr - startR) + kotlin.math.abs(cc - startC)
+                if (sc < bestScore) { bestScore = sc; bestR = R; bestC = C }
+            }
+            if (bestR < 0) {
+                // Notfall: groesste Wasserflaeche irgendwo suchen (moeglichst viel Wasser)
+                var bestWater = -1
+                for (R in 0..n - size) for (C in 0..n - size) {
+                    var w = 0
+                    for (dr in 0 until size) for (dc in 0 until size) if (rawWater(R + dr, C + dc)) w++
+                    if (w > bestWater) { bestWater = w; bestR = R; bestC = C }
+                }
+            }
+            platformR0 = bestR; platformC0 = bestC
+            platformR1 = bestR + size - 1; platformC1 = bestC + size - 1
+            for (r in platformR0..platformR1) for (c in platformC0..platformC1) surveyed[r * n + c] = true
+            return
+        }
         for (strict in booleanArrayOf(true, false)) {
             for (R in 0..n - size) for (C in 0..n - size) {
                 val sc = scorePlatform(R, C, size, strict) ?: continue
@@ -1147,18 +1209,26 @@ class Simulation {
             val rr = r - dy; val cc = c + dx
             if (rr !in 0 until areaN() || cc !in 0 until areaN()) return false
             if (!cellFree(rr, cc)) return false
-            if (!isLand(rr, cc)) return false           // Bauen nur auf Land
-            if (!isSurveyed(rr, cc)) return false        // Chunk muss freigeschaltet sein
             if (decoType(rr, cc) != 0) return false      // Hindernis muss erst weg
             if (isLaunchPad(rr, cc)) return false        // Raumhafen ist reine Kulisse
-            // Ab Level 2 ist die AKW-Flaeche (Plattform + Erweiterungen) strikt fuer die
-            // Industrie reserviert: alles ausser Windrad/Solar NUR dort, Windrad/Solar NUR
-            // auf normalem Land daneben (brauchen freien Wind/Himmel).
+            val onPlatform = isPlatform(rr, cc) || expandedPlatform[rr * n + cc]
+            // Ab Level 2 ist die Plattform (+ Erweiterungen) strikt fuer die Industrie
+            // reserviert: alles ausser Windrad/Solar NUR dort. Windrad/Solar brauchen
+            // freien Wind/Himmel - auf Level 2 also Land daneben, ab Level 3 (alles See)
+            // offenes Wasser daneben, also offshore.
             if (companyLevel >= 2) {
-                val onPlatform = isPlatform(rr, cc) || expandedPlatform[rr * n + cc]
                 if (t == MType.WINDRAD || t == MType.SOLAR) {
                     if (onPlatform) return false
+                    if (companyLevel >= 3) {
+                        if (isLand(rr, cc)) return false            // offshore: muss Wasser sein
+                    } else {
+                        if (!isLand(rr, cc)) return false
+                        if (!isSurveyed(rr, cc)) return false
+                    }
                 } else if (!onPlatform) return false
+            } else {
+                if (!isLand(rr, cc)) return false        // Level 1: Bauen nur auf Land
+                if (!isSurveyed(rr, cc)) return false     // Chunk muss freigeschaltet sein
             }
         }
         if (isMoneyBuilt(t)) {
@@ -2238,7 +2308,7 @@ class Simulation {
         if (orig != null && orig.length() == 4) {
             oilRigR0 = orig.optInt(0, -1); oilRigC0 = orig.optInt(1, -1)
             oilRigR1 = orig.optInt(2, -1); oilRigC1 = orig.optInt(3, -1)
-        } else if (companyLevel >= 2 && hasPlatform()) {
+        } else if (companyLevel >= 3 && hasPlatform()) {
             placeOilRig()
         } else {
             oilRigR0 = -1; oilRigC0 = -1; oilRigR1 = -1; oilRigC1 = -1
