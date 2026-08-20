@@ -1,6 +1,42 @@
 {
   "items": [
     {
+      "link": "https://www.engadget.com/2240859/tesla-robotaxi-fleet-might-finally-be-driving-around-austin-unsupervised/",
+      "title": "Tesla's Robotaxi fleet might finally be driving around Austin unsupervised",
+      "summary": "It's been slow going, but it looks like Tesla's Robotaxi fleet in Austin is operating fully autonomously.",
+      "source": "Engadget",
+      "category": "Autonomes Fahren",
+      "published": "2026-08-20T15:50:56+00:00",
+      "sent_at": "2026-08-20T16:01:17.334108+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/982774/greg-brockman-openai-role-expansion",
+      "title": "It’s Greg Brockman’s OpenAI now",
+      "summary": "OpenAI has had a hell of a year. The company spent months battling former co-founder Elon Musk in a sensational jury trial, was hit with a high-profile trade secrets lawsuit from Apple, and faced widespread scrutiny after an unreleased model hacked another AI company. As it prepares for an IPO, a steady string of executives [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-08-20T15:45:55+00:00",
+      "sent_at": "2026-08-20T16:01:17.334108+00:00"
+    },
+    {
+      "link": "https://www.technologyreview.com/2026/08/20/1142571/ai-consciousness-debate-trap/",
+      "title": "Debates over AI consciousness are a trap",
+      "summary": "“Runaway” AI, “rogue” agents, and “autonomous” actors—the current rhetoric would have you believe that AI agents are not only awake and aware, but angry at their creators. Prominent tech leaders such as Demis Hassabis, Dario Amodei, and Sam Altman push for regulation of these seemingly “superhuman” systems, while a separate faction, led by policy organizations&#8230;",
+      "source": "MIT Technology Review",
+      "category": "AI",
+      "published": "2026-08-20T15:42:39+00:00",
+      "sent_at": "2026-08-20T16:01:17.334108+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/982791/this-app-makes-the-pixel-11s-hilight-feature-actually-useful",
+      "title": "This app makes the Pixel 11&#8217;s HiLight feature actually useful",
+      "summary": "Google's new HiLight notification LED on the Pixel 11 Pro is nearly useless. Out of the box, the only two things it can glow for are when the phone is face down and you're interacting with Gemini, or when you get a call from a favorite contact. And even then, it can only glow one [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-08-20T15:30:34+00:00",
+      "sent_at": "2026-08-20T16:01:17.334108+00:00"
+    },
+    {
       "link": "https://electrek.co/2026/08/20/waymo-zeekr-ojai-chinese-ev-robotaxi-all-riders/",
       "title": "You can now ride a Chinese EV in the US as Waymo opens Zeekr Ojai to all",
       "summary": "Waymo is now letting all riders in San Francisco, Los Angeles, and Phoenix hail its next-generation Ojai robotaxi — a vehicle built in China by Zeekr. That makes the Ojai one of the only ways for an American to ride in a Chinese-made EV, a car they still can’t legally buy for themselves.",
