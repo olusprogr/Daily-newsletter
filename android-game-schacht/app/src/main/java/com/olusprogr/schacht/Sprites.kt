@@ -343,6 +343,32 @@ object Sprites {
         MType.BRENNSTABWERK -> emptyList()
         MType.REAKTORKERN -> emptyList()
         MType.KUEHLTURM -> emptyList()
+        // --- Level 3: Petrochemie. Die grossen Werke (Cracker/Raffinerie/Destillation)
+        // haben ihre Glut/Flamme schon fest im PNG bzw. bekommen ihre Bewegung aus
+        // GameView (Bohranimation) - hier nur die Overlays, die wirklich zucken sollen.
+        MType.OELBOHRTURM -> emptyList()
+        MType.GASBOHRER -> emptyList()
+        MType.SEEWASSER -> emptyList()
+        MType.DESTILLATION -> emptyList()
+        MType.GASWAESCHE -> emptyList()
+        MType.POLYMERWERK -> when (frame) {
+            0 -> listOf(Px(15, 16, 2, 2, ORG))
+            1 -> listOf(Px(16, 15, 2, 2, YEL))
+            2 -> listOf(Px(15, 17, 2, 2, ORG))
+            else -> listOf(Px(16, 16, 2, 2, YEL))
+        }
+        MType.CRACKER -> when (frame) {
+            0 -> listOf(Px(14, 12, 2, 2, ORG), Px(19, 14, 1, 1, YEL))
+            1 -> listOf(Px(15, 11, 2, 2, YEL), Px(18, 13, 1, 1, ORG))
+            2 -> listOf(Px(14, 13, 2, 2, ORG), Px(19, 12, 1, 1, YEL))
+            else -> listOf(Px(15, 12, 2, 2, YEL), Px(18, 14, 1, 1, ORG))
+        }
+        MType.RAFFINERIE -> when (frame) {
+            0 -> listOf(Px(17, 9, 2, 2, ORG))
+            1 -> listOf(Px(18, 8, 2, 2, YEL))
+            2 -> listOf(Px(17, 10, 2, 2, ORG))
+            else -> listOf(Px(18, 9, 2, 2, YEL))
+        }
     }
 
     // --- Ressourcen-Icons im 12x12-Raster ---
