@@ -629,8 +629,17 @@ class Simulation {
         return v / norm
     }
     /** Reines Terrain (nur Rauschen), unabhaengig von Bebauung. */
+    /**
+     * Land/Wasser-Schwelle. Ab Level 3 spielt alles auf offener See: die Schwelle wird
+     * angehoben, sodass die Welt zum Ozean mit ein paar Inseln wird. Ohne das hatte
+     * ueber die Haelfte aller Karten gar kein freies 9x9-Wasserfeld - die Bohrinsel
+     * landete per Notfall-Fallback an Land, und rundherum war ebenfalls Land, sodass
+     * sich Windrad/Solar (die ab Level 3 offenes Wasser brauchen) nirgends setzen liessen.
+     */
+    private fun landThresh(): Double = if (companyLevel >= 3) 0.65 else LAND_THRESH
+
     private fun rawLand(r: Int, c: Int): Boolean =
-        r in 0 until n && c in 0 until n && landValue(r, c) > LAND_THRESH
+        r in 0 until n && c in 0 until n && landValue(r, c) > landThresh()
 
     /** Land, wenn Terrain es sagt – oder eine Maschine/Belegung dort ist. */
     fun isLand(r: Int, c: Int): Boolean {
@@ -641,7 +650,7 @@ class Simulation {
         if (expandedCanal[r * n + c]) return false
         if (isPlatform(r, c)) return true       // Plattform ist immer Land/bebaubar
         if (expandedPlatform[r * n + c]) return true // vom Spieler ausgebaute Plattform-Flaeche
-        return landValue(r, c) > LAND_THRESH
+        return landValue(r, c) > landThresh()
     }
     /**
      * Echtes offenes Wasser - unabhaengig davon, ob dort eine Maschine steht. isLand()
@@ -922,7 +931,9 @@ class Simulation {
         kotlin.math.round(payAnchor() * (costFactors()[t] ?: 1.0))
 
     fun canBuild(t: MType): Boolean = when (t) {
-        MType.BOHRER, MType.OFEN, MType.BLEIBOHRER -> true
+        // Start-Foerderer der jeweiligen Stufe brauchen keine Freischaltung - ohne den
+        // Oelbohrturm liesse sich die Petrochemie-Kette ueberhaupt nicht anfangen.
+        MType.BOHRER, MType.OFEN, MType.BLEIBOHRER, MType.OELBOHRTURM -> true
         MType.REAKTOR, MType.VERSTAERKER, MType.PROSPEKTOR -> false
         else -> {
             val u = UNLOCK[t]
