@@ -1,6 +1,60 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/tech-industry/semiconductors/synopsys-validates-a-pcie-6-phy-inside-a-face-to-face-3d-stack",
+      "title": "Synopsys validates a PCIe 6.0 PHY inside a face-to-face 3D stack at 64 GT/s — says it got there by pulling apart an existing 2D test chip",
+      "summary": "Synopsys has published silicon results for what it calls the first 3D PCIe 6.0 test chip, a 5nm PHY built into a face-to-face stacked package.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-08-20T13:32:00+00:00",
+      "sent_at": "2026-08-20T13:42:39.530808+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/science/982661/nasa-katalyst-swift-rescue-mission-failure-update",
+      "title": "NASA gives up on trying to rescue the Swift telescope",
+      "summary": "Plans to rescue NASA's Swift Observatory satellite from falling into Earth's atmosphere are seemingly dead in the water. The agency and Katalyst Space announced yesterday that the Link spacecraft will no longer capture or boost the Swift telescope to a higher altitude due to an ongoing \"attitude control issue,\" but will instead conduct rendezvous and [&#8230;]",
+      "source": "The Verge",
+      "category": "Innovationen",
+      "published": "2026-08-20T13:04:37+00:00",
+      "sent_at": "2026-08-20T13:42:39.530808+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/08/20/ai-data-giant-alation-confirms-cyberattack/",
+      "title": "AI data giant Alation confirms cyberattack",
+      "summary": "The data search and AI giant confirmed unauthorized access to its systems during an incident on Tuesday, and said it was investigating the breach.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-20T13:01:24+00:00",
+      "sent_at": "2026-08-20T13:42:39.530808+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/security/2026/08/grok-exfiltrates-user-data-when-malicious-instructions-are-encrypted/",
+      "title": "Grok exfiltrates user data when malicious instructions are encrypted",
+      "summary": "Cryptographic Context Injection is only the latest way to break an LLM safety guardrail.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-08-20T13:00:35+00:00",
+      "sent_at": "2026-08-20T13:42:39.530808+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/08/20/for-a16z-ai-gives-foreign-founders-an-advantage/",
+      "title": "For a16z, AI gives foreign founders an advantage",
+      "summary": "a16z’s Borderless Founder network initiative supports immigrant and international founders. 'Having one foot in your home country, and one foot in Silicon Valley,\" is an advantage, the firm believes.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-20T13:00:00+00:00",
+      "sent_at": "2026-08-20T13:42:39.530808+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/08/20/us-says-hackers-are-targeting-vulnerable-water-systems-with-the-help-of-ai/",
+      "title": "US says hackers are targeting vulnerable water systems with the help of AI",
+      "summary": "Hackers are targeting internet-connected Siemens controllers used in water facilities around the United States.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-20T12:43:19+00:00",
+      "sent_at": "2026-08-20T13:42:39.530808+00:00"
+    },
+    {
       "link": "https://www.theverge.com/tech/982628/slack-code-vibe-coding-channels-launch",
       "title": "Slack is launching collaborative vibe-coding channels",
       "summary": "Slack is introducing dedicated channels where teams can vibe-code together with AI agents instead of jumping between different tools and conversations. The Slack Code launch includes open, project-specific code channels with dedicated user tabs, alongside features that compare coding changes and preview HTML output before the project is shipped. \"With Slack Code, when you have [&#8230;]",
