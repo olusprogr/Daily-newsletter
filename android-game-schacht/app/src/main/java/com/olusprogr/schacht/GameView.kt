@@ -170,6 +170,15 @@ class GameView(context: Context) : View(context) {
         MType.BRENNSTABWERK -> Color.rgb(236, 196, 88)
         MType.REAKTORKERN -> Color.rgb(96, 190, 236)
         MType.KUEHLTURM -> Color.rgb(180, 178, 172)
+        // --- Level 3: Petrochemie (Oel-/Gas-Palette: warmes Braun, Messing, Petrol) ---
+        MType.OELBOHRTURM -> Color.rgb(96, 76, 58)
+        MType.GASBOHRER -> Color.rgb(150, 132, 92)
+        MType.SEEWASSER -> Color.rgb(86, 158, 178)
+        MType.DESTILLATION -> Color.rgb(196, 150, 84)
+        MType.GASWAESCHE -> Color.rgb(128, 156, 140)
+        MType.POLYMERWERK -> Color.rgb(206, 176, 120)
+        MType.CRACKER -> Color.rgb(214, 128, 62)
+        MType.RAFFINERIE -> Color.rgb(228, 172, 78)
     }
 
     private val p = Paint(Paint.ANTI_ALIAS_FLAG)
@@ -190,6 +199,7 @@ class GameView(context: Context) : View(context) {
     private lateinit var decoRock: Bitmap
     private lateinit var decoBush: Bitmap
     private lateinit var bmpOilRig: Bitmap        // 192x192, 3x3 dekorative Oel-Bohrinsel
+    private lateinit var bmpLaunchPad: Bitmap  // 192x192, 3x3 dekorativer Raumhafen
     private lateinit var machBmp: Array<Bitmap>   // 64x64 Maschinen-Sprites
     private val decoDst = RectF()
     private val pText = Paint(Paint.ANTI_ALIAS_FLAG).apply { color = cText; textAlign = Paint.Align.LEFT }
@@ -299,8 +309,17 @@ class GameView(context: Context) : View(context) {
         MType.REAKTORKERN, MType.KUEHLTURM, MType.HAENDLER, MType.GENERATOR, MType.WINDRAD, MType.SOLAR,
         MType.LAGER, MType.DROHNE, MType.FORSCHUNG
     )
-    /** Bau-Palette haengt vom Unternehmens-Level ab ("komplett andere placeable items" ab Level 2). */
-    private fun buildOrderFor(level: Int): List<MType> = if (level >= 2) buildOrderLvl2 else buildOrderLvl1
+    private val buildOrderLvl3 = listOf(
+        MType.OELBOHRTURM, MType.GASBOHRER, MType.SEEWASSER, MType.DESTILLATION, MType.GASWAESCHE,
+        MType.POLYMERWERK, MType.CRACKER, MType.RAFFINERIE, MType.HAENDLER, MType.GENERATOR,
+        MType.WINDRAD, MType.SOLAR, MType.LAGER, MType.DROHNE, MType.FORSCHUNG
+    )
+    /** Bau-Palette haengt vom Unternehmens-Level ab - je Level eine eigene Liste. */
+    private fun buildOrderFor(level: Int): List<MType> = when {
+        level >= 3 -> buildOrderLvl3
+        level == 2 -> buildOrderLvl2
+        else -> buildOrderLvl1
+    }
     private val paletteCols = 6
 
     private fun resAbbr(res: Res) = when (res) {
@@ -309,11 +328,11 @@ class GameView(context: Context) : View(context) {
     }
     private fun tierName(t: Int) = I18n.t("tier$t")
     private fun mName(t: MType): String {
-        if (t == MType.BOHRER && sim.companyLevel >= 2) return tr("m_uranbohrer")
+        if (t == MType.BOHRER && sim.companyLevel == 2) return tr("m_uranbohrer")
         return I18n.t("m_" + t.name.lowercase())
     }
     private fun mShort(t: MType): String {
-        if (t == MType.BOHRER && sim.companyLevel >= 2) return tr("ms_uranbohrer")
+        if (t == MType.BOHRER && sim.companyLevel == 2) return tr("ms_uranbohrer")
         return I18n.t("ms_" + t.name.lowercase())
     }
     private fun tr(k: String) = I18n.t(k)
@@ -363,6 +382,7 @@ class GameView(context: Context) : View(context) {
         decoRock = ld(R.drawable.deco_rock)
         decoBush = ld(R.drawable.deco_bush)
         bmpOilRig = ld(R.drawable.deco_oilrig)
+        bmpLaunchPad = ld(R.drawable.deco_launchpad)
         machBmp = Array(MType.values().size) { i ->
             ld(when (MType.values()[i]) {
                 MType.BOHRER -> R.drawable.mach_bohrer
@@ -386,6 +406,14 @@ class GameView(context: Context) : View(context) {
                 MType.BRENNSTABWERK -> R.drawable.mach_brennstabwerk
                 MType.REAKTORKERN -> R.drawable.mach_reaktorkern
                 MType.KUEHLTURM -> R.drawable.mach_kuehlturm
+                MType.OELBOHRTURM -> R.drawable.mach_oelbohrturm
+                MType.GASBOHRER -> R.drawable.mach_gasbohrer
+                MType.SEEWASSER -> R.drawable.mach_seewasser
+                MType.DESTILLATION -> R.drawable.mach_destillation
+                MType.GASWAESCHE -> R.drawable.mach_gaswaesche
+                MType.POLYMERWERK -> R.drawable.mach_polymerwerk
+                MType.CRACKER -> R.drawable.mach_cracker
+                MType.RAFFINERIE -> R.drawable.mach_raffinerie
             })
         }
         I18n.lang = try { Lang.values()[prefs.getInt("lang", Lang.EN.ordinal)] } catch (_: Exception) { Lang.EN }
@@ -618,7 +646,9 @@ class GameView(context: Context) : View(context) {
         pText.color = cValSilver; canvas.drawText(fmt(sim.availableBarren()), dp(28f), dp(47f), pText)
         drawIcon(canvas, Sprites.iconForRes(Res.PLATTE.ordinal, sim.companyLevel), dp(108f), dp(37f), dp(15f))
         pText.color = cValCyan; canvas.drawText(fmt(sim.availablePlatten()), dp(127f), dp(47f), pText)
-        drawIcon(canvas, if (sim.companyLevel >= 2) Sprites.ICON_STROM else Sprites.ICON_KOMP, dp(196f), dp(37f), dp(15f))
+        drawIcon(canvas, Sprites.iconForRes(
+            if (sim.companyLevel >= 2) Res.STROM.ordinal else Res.KOMPONENTE.ordinal, sim.companyLevel),
+            dp(196f), dp(37f), dp(15f))
         pText.color = cValPurple
         canvas.drawText(fmt(if (sim.companyLevel >= 2) sim.availableStrom() else sim.availableKomponente()), dp(215f), dp(47f), pText)
 
@@ -700,6 +730,7 @@ class GameView(context: Context) : View(context) {
             drawGround(canvas, r, c, vLeft + c * cell, vTop + r * cell)
         }
         drawOilRig(canvas)
+        drawLaunchPad(canvas)
         // Kuehlschlauch (unter den Maschinen)
         if (screen == Screen.GAME) drawHose(canvas)
         if (screen == Screen.GAME) drawWasserpumpePipes(canvas)
@@ -728,6 +759,17 @@ class GameView(context: Context) : View(context) {
      * Oel-Bohrinsel (3x3, rein dekorativ): steht auf offenem Wasser, kein Machine-
      * Objekt, keine Interaktion - nur ein "Spoiler" fuers naechste Unternehmens-Level.
      */
+    /** Raumhafen (3x3, rein dekorativ): Spoiler fuers High-Tech-Level, sichtbar ab Level 3. */
+    private fun drawLaunchPad(canvas: Canvas) {
+        if (!sim.hasLaunchPad()) return
+        val x = vLeft + sim.padC0 * cell
+        val y = vTop + sim.padR0 * cell
+        val w = (sim.padC1 - sim.padC0 + 1) * cell
+        val h = (sim.padR1 - sim.padR0 + 1) * cell
+        dstTile.set(x, y, x + w, y + h)
+        canvas.drawBitmap(bmpLaunchPad, null, dstTile, pTile)
+    }
+
     private fun drawOilRig(canvas: Canvas) {
         if (!sim.hasOilRig()) return
         val x = vLeft + sim.oilRigC0 * cell
@@ -751,6 +793,14 @@ class GameView(context: Context) : View(context) {
         MType.BRENNSTABWERK -> Res.KOMPONENTE.ordinal
         MType.REAKTORKERN -> Res.DAMPF.ordinal
         MType.KUEHLTURM -> Res.STROM.ordinal
+        MType.OELBOHRTURM -> Res.ROHERZ.ordinal
+        MType.GASBOHRER -> Res.BLEI.ordinal
+        MType.SEEWASSER -> Res.WASSER.ordinal
+        MType.DESTILLATION -> Res.BARREN.ordinal
+        MType.GASWAESCHE -> Res.PLATTE.ordinal
+        MType.POLYMERWERK -> Res.KOMPONENTE.ordinal
+        MType.CRACKER -> Res.DAMPF.ordinal
+        MType.RAFFINERIE -> Res.STROM.ordinal
         else -> -1
     }
     // IntArray statt Einzelwert: manche Maschinen wollen ZWEI Rohstoffe gleichzeitig
@@ -765,6 +815,11 @@ class GameView(context: Context) : View(context) {
         MType.BRENNSTABWERK -> intArrayOf(Res.BARREN.ordinal, Res.PLATTE.ordinal)
         MType.REAKTORKERN -> intArrayOf(Res.KOMPONENTE.ordinal)
         MType.KUEHLTURM -> intArrayOf(Res.DAMPF.ordinal)
+        MType.DESTILLATION -> intArrayOf(Res.ROHERZ.ordinal, Res.WASSER.ordinal)
+        MType.GASWAESCHE -> intArrayOf(Res.BLEI.ordinal)
+        MType.POLYMERWERK -> intArrayOf(Res.BARREN.ordinal, Res.PLATTE.ordinal)
+        MType.CRACKER -> intArrayOf(Res.KOMPONENTE.ordinal)
+        MType.RAFFINERIE -> intArrayOf(Res.DAMPF.ordinal)
         else -> IntArray(0)
     }
 
@@ -819,7 +874,8 @@ class GameView(context: Context) : View(context) {
                     // Wasserleitung mit Tropfen-Animation (drawWasserpumpePipes) - hier
                     // NICHT zusaetzlich noch Icons durch die Luft fliegen lassen. Gilt
                     // nur fuer genau dieses Paar; Lager rein/raus bleibt unveraendert.
-                    if (pm.type == MType.WASSERPUMPE && cm.type == MType.ZENTRIFUGE) continue
+                    if ((pm.type == MType.WASSERPUMPE && cm.type == MType.ZENTRIFUGE) ||
+                        (pm.type == MType.SEEWASSER && cm.type == MType.DESTILLATION)) continue
                     val hasSupply = pm.output[res] > 1e-6 || pm.util > 1e-6
                     val isAccepted = isLager || cm.util > 1e-6
                     if (!hasSupply || !isAccepted) continue
@@ -1109,7 +1165,7 @@ class GameView(context: Context) : View(context) {
         val an = sim.areaN()
         for (r in 0 until an) for (c in 0 until an) {
             val m = sim.grid[r][c] ?: continue
-            if (m.type != MType.WASSERPUMPE) continue
+            if (m.type != MType.WASSERPUMPE && m.type != MType.SEEWASSER) continue
             val px = vLeft + (c + 0.5f) * cell; val py = vTop + (r + 0.5f) * cell
             val wdir = sim.waterNeighborDir(r, c)
             if (wdir != null) {
@@ -1120,7 +1176,8 @@ class GameView(context: Context) : View(context) {
             for (d in arrayOf(intArrayOf(-1, 0), intArrayOf(1, 0), intArrayOf(0, -1), intArrayOf(0, 1))) {
                 val nr = r + d[0]; val nc = c + d[1]
                 if (nr !in 0 until an || nc !in 0 until an) continue
-                if (sim.grid[nr][nc]?.type != MType.ZENTRIFUGE) continue
+                val nt = sim.grid[nr][nc]?.type
+                if (nt != MType.ZENTRIFUGE && nt != MType.DESTILLATION) continue
                 val zx = vLeft + (nc + 0.5f) * cell; val zy = vTop + (nr + 0.5f) * cell
                 drawPipeSeg(canvas, px, py, zx, zy)
                 drawPipeFlow(canvas, px, py, zx, zy, animT * 0.5f + 0.5f)   // VON der Pumpe ZUR Zentrifuge
@@ -1273,7 +1330,8 @@ class GameView(context: Context) : View(context) {
 
         // Bohrer bohrt: nach unten wandernde Glanzbaender (Schnecke dreht sich) + Staub -
         // genauso fuer den Tiefen-Bohrer (Bleibohrer), der bisher keine Animation hatte.
-        if (working && (m.type == MType.BOHRER || m.type == MType.BLEIBOHRER)) {
+        if (working && (m.type == MType.BOHRER || m.type == MType.BLEIBOHRER ||
+                m.type == MType.OELBOHRTURM || m.type == MType.GASBOHRER)) {
             val cx = x + cell * 0.5f
             for (k in 0 until 2) {
                 val phase = (animT * 2.5f + k * 0.5f) % 1f
@@ -1544,7 +1602,11 @@ class GameView(context: Context) : View(context) {
             canvas.drawText(head, dp(12f), yy, pText)
             yy += dp(22f)
         }
-        val oreLabel = if (sim.companyLevel >= 2) tr("uranerz") else tr("roherz")
+        val oreLabel = when {
+            sim.companyLevel >= 3 -> tr("rohoel")
+            sim.companyLevel == 2 -> tr("uranerz")
+            else -> tr("roherz")
+        }
         val io = when (m.type) {
             MType.BOHRER -> {
                 val floorTxt = if (sim.isSurveyed(selR, selC)) {
@@ -1562,7 +1624,14 @@ class GameView(context: Context) : View(context) {
             MType.OFEN -> "${tr("in")} ${oneDec(m.input[0])} $oreLabel   ${tr("out")} ${oneDec(m.output[1])} ${tr("barren")}"
             MType.PRESSE -> "${tr("in")} ${oneDec(m.input[1])} ${tr("barren")}   ${tr("out")} ${oneDec(m.output[2])} ${tr("platten")}"
             MType.ASSEMBLER -> "${tr("in")} ${oneDec(m.input[2])} ${tr("platten")}   ${tr("out")} ${oneDec(m.output[3])} ${tr("komp")}"
-            MType.HAENDLER -> "${tr(if (sim.companyLevel >= 2) "sells_strom" else "sells_comp")} (${oneDec(sim.componentPrice())}${tr("per_piece")})"
+            MType.HAENDLER -> {
+                val what = when {
+                    sim.companyLevel >= 3 -> "sells_treibstoff"
+                    sim.companyLevel == 2 -> "sells_strom"
+                    else -> "sells_comp"
+                }
+                "${tr(what)} (${oneDec(sim.componentPrice())}${tr("per_piece")})"
+            }
             MType.GENERATOR -> "${tr("fuel")} ${oneDec(m.input[0])} $oreLabel  ->  +${(sim.genPower() * sim.machineUpgradeMult(m)).roundToInt()} ${tr("strom")}"
             // Inhalt wird unten als eigene Icon-Reihe gezeigt (siehe die "Lager:
             // Inhalts-Uebersicht"-Zeilen in drawDetail) - hier nur noch der Kopf-Hinweis,
@@ -1586,6 +1655,27 @@ class GameView(context: Context) : View(context) {
             MType.BRENNSTABWERK -> "${tr("in")} ${oneDec(m.input[Res.BARREN.ordinal])} ${tr("angeruran")} + ${oneDec(m.input[Res.PLATTE.ordinal])} ${tr("bleiverkl")}   ${tr("out")} ${oneDec(m.output[Res.KOMPONENTE.ordinal])} ${tr("brennstab")}"
             MType.REAKTORKERN -> "${tr("in")} ${oneDec(m.input[Res.KOMPONENTE.ordinal])} ${tr("brennstab")}   ${tr("out")} ${oneDec(m.output[Res.DAMPF.ordinal])} ${tr("dampf")}"
             MType.KUEHLTURM -> "${tr("in")} ${oneDec(m.input[Res.DAMPF.ordinal])} ${tr("dampf")}   ${tr("out")} ${oneDec(m.output[Res.STROM.ordinal])} ${tr("netzstrom")}"
+            // --- Level 3: Petrochemie ---
+            MType.OELBOHRTURM -> {
+                val floorTxt = if (sim.isSurveyed(selR, selC)) {
+                    val tier = sim.richness(selR, selC)
+                    "${tierName(tier)} (x${Simulation.ORE_MULT[tier]})"
+                } else tr("unscanned")
+                "${tr("out")} ${oneDec(m.output[Res.ROHERZ.ordinal])} ${tr("rohoel")}   ${tr("floor")}: $floorTxt"
+            }
+            MType.GASBOHRER -> {
+                val floorTxt = if (sim.isSurveyed(selR, selC)) {
+                    val tier = sim.richness(selR, selC)
+                    "${tierName(tier)} (x${Simulation.ORE_MULT[tier]})"
+                } else tr("unscanned")
+                "${tr("out")} ${oneDec(m.output[Res.BLEI.ordinal])} ${tr("erdgas")}   ${tr("floor")}: $floorTxt"
+            }
+            MType.SEEWASSER -> "${tr("out")} ${oneDec(m.output[Res.WASSER.ordinal])} ${tr("wasser")}   (${tr("needs_coast")})"
+            MType.DESTILLATION -> "${tr("in")} ${oneDec(m.input[Res.ROHERZ.ordinal])} ${tr("rohoel")} + ${oneDec(m.input[Res.WASSER.ordinal])} ${tr("wasser")}   ${tr("out")} ${oneDec(m.output[Res.BARREN.ordinal])} ${tr("naphtha")}"
+            MType.GASWAESCHE -> "${tr("in")} ${oneDec(m.input[Res.BLEI.ordinal])} ${tr("erdgas")}   ${tr("out")} ${oneDec(m.output[Res.PLATTE.ordinal])} ${tr("additive")}"
+            MType.POLYMERWERK -> "${tr("in")} ${oneDec(m.input[Res.BARREN.ordinal])} ${tr("naphtha")} + ${oneDec(m.input[Res.PLATTE.ordinal])} ${tr("additive")}   ${tr("out")} ${oneDec(m.output[Res.KOMPONENTE.ordinal])} ${tr("granulat")}"
+            MType.CRACKER -> "${tr("in")} ${oneDec(m.input[Res.KOMPONENTE.ordinal])} ${tr("granulat")}   ${tr("out")} ${oneDec(m.output[Res.DAMPF.ordinal])} ${tr("crackgas")}"
+            MType.RAFFINERIE -> "${tr("in")} ${oneDec(m.input[Res.DAMPF.ordinal])} ${tr("crackgas")}   ${tr("out")} ${oneDec(m.output[Res.STROM.ordinal])} ${tr("treibstoff")}"
         }
         // Fuer ein Lager sagen weder die Puffer-Zeile noch die Engpass-Ampel etwas
         // Nuetzliches aus (kein Rezept, kein "blockiert") - beide weglassen, die neue
@@ -1868,10 +1958,14 @@ class GameView(context: Context) : View(context) {
      * es einen "<id>.l2"-Eintrag, wird der ab Level 2 verwendet, sonst der normale Name.
      */
     private fun techLabel(id: String): String {
-        if (sim.companyLevel >= 2) {
-            val k = "$id.l2"
-            val v = I18n.t(k)
+        // Von speziell nach allgemein: erst der Level-3-Name, dann der Level-2-Name.
+        if (sim.companyLevel >= 3) {
+            val k = "$id.l3"; val v = I18n.t(k)
             if (v != k) return v          // I18n.t() gibt den Key zurueck, wenn unbekannt
+        }
+        if (sim.companyLevel == 2) {
+            val k = "$id.l2"; val v = I18n.t(k)
+            if (v != k) return v
         }
         return tr(id)
     }
@@ -1891,6 +1985,10 @@ class GameView(context: Context) : View(context) {
         "t_ore" -> tr("tf_ore"); "t_lagercap" -> tr("tf_lagercap")
         "t_genpower", "t_windpower", "t_solarpower" -> tr("tf_power_plus")
         "t_kanal" -> tr("tf_kanal")
+        "t_obspeed", "t_gbspeed", "t_swspeed", "t_dsspeed", "t_gwspeed",
+        "t_pwspeed", "t_crspeed", "t_rfspeed" -> tr("tf_speed")
+        "t_cracker" -> tr("tf_cracker"); "t_raffinerie" -> tr("tf_raffinerie")
+        "t_flare" -> tr("tf_flare")
         else -> ""
     }
 
@@ -1912,11 +2010,16 @@ class GameView(context: Context) : View(context) {
 
         var yy = startY - statScroll
         val nuc = sim.companyLevel >= 2
+        val petro = sim.companyLevel >= 3
+        // Die drei Lager-Slots heissen je Level anders (gleiche Res-Slots, andere Bedeutung).
+        val kBarren = if (petro) "naphtha" else if (nuc) "angeruran" else "s_barren"
+        val kPlatte = if (petro) "additive" else if (nuc) "bleiverkl" else "s_platten"
+        val kFinal = if (petro) "treibstoff" else if (nuc) "netzstrom" else "s_komp"
         val lines = listOf(
             "${tr("s_money")}: ${fmt(sim.money)}   (+${fmt(sim.moneyPerMin)}/min)",
-            "${tr(if (nuc) "angeruran" else "s_barren")}: ${fmt(sim.availableBarren())}  (${oneDec(sim.barrenPerMin)}/min)",
-            "${tr(if (nuc) "bleiverkl" else "s_platten")}: ${fmt(sim.availablePlatten())}  (${oneDec(sim.plattenPerMin)}/min)",
-            "${tr(if (nuc) "netzstrom" else "s_komp")}: ${fmt(if (nuc) sim.availableStrom() else sim.availableKomponente())}  (${oneDec(sim.komponentenPerMin)}/min)",
+            "${tr(kBarren)}: ${fmt(sim.availableBarren())}  (${oneDec(sim.barrenPerMin)}/min)",
+            "${tr(kPlatte)}: ${fmt(sim.availablePlatten())}  (${oneDec(sim.plattenPerMin)}/min)",
+            "${tr(kFinal)}: ${fmt(if (nuc) sim.availableStrom() else sim.availableKomponente())}  (${oneDec(sim.komponentenPerMin)}/min)",
             "${tr("s_strom")}: ${fmt(sim.powerSupply)} / ${fmt(sim.powerDemand)}",
             "${tr("s_area")}: ${sim.areaN()} x ${sim.areaN()}",
             "${tr("s_machines")}: ${machineCount()}",
@@ -1932,10 +2035,13 @@ class GameView(context: Context) : View(context) {
         yy += dp(6f)
         if (visible(yy - dp(16f), dp(22f))) { pText.color = cAccent; pText.textSize = dp(16f); canvas.drawText(tr("s_prod_title"), dp(16f), yy, pText) }
         yy += dp(22f)
-        val producers = if (nuc)
-            listOf(MType.BOHRER, MType.BLEIBOHRER, MType.WASSERPUMPE, MType.ZENTRIFUGE, MType.BLEIPRESSE, MType.BRENNSTABWERK,
-                MType.REAKTORKERN, MType.KUEHLTURM, MType.HAENDLER)
-        else listOf(MType.BOHRER, MType.OFEN, MType.PRESSE, MType.ASSEMBLER, MType.HAENDLER)
+        val producers = when {
+            petro -> listOf(MType.OELBOHRTURM, MType.GASBOHRER, MType.SEEWASSER, MType.DESTILLATION,
+                MType.GASWAESCHE, MType.POLYMERWERK, MType.CRACKER, MType.RAFFINERIE, MType.HAENDLER)
+            nuc -> listOf(MType.BOHRER, MType.BLEIBOHRER, MType.WASSERPUMPE, MType.ZENTRIFUGE, MType.BLEIPRESSE,
+                MType.BRENNSTABWERK, MType.REAKTORKERN, MType.KUEHLTURM, MType.HAENDLER)
+            else -> listOf(MType.BOHRER, MType.OFEN, MType.PRESSE, MType.ASSEMBLER, MType.HAENDLER)
+        }
         pText.textSize = dp(13f)
         for (t in producers) {
             val i = t.ordinal

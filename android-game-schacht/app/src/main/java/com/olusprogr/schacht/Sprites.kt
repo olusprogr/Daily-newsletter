@@ -39,6 +39,21 @@ private val PBC = 0xFF5C6270.toInt()    // Blei (dunkles Blaugrau)
 private val PBL = 0xFF9AA2B4.toInt()    // Blei hell
 private val STM = 0xFFE8ECF2.toInt()    // Dampf hell
 private val STMD = 0xFFC4CCD8.toInt()   // Dampf dunkler
+// Level-3 (Petrochemie) Icon-Farben
+private val OIL = 0xFF241C18.toInt()    // Rohoel (fast schwarz, warmer Stich)
+private val OILH = 0xFF4A382C.toInt()   // Rohoel Glanzkante
+private val GAS = 0xFFBFD8C4.toInt()    // Erdgas (blassgruen)
+private val GASL = 0xFFE4F2E6.toInt()   // Erdgas hell
+private val NAP = 0xFFE0B45C.toInt()    // Naphtha (bernstein)
+private val NAPL = 0xFFF7DC9E.toInt()   // Naphtha hell
+private val ADD = 0xFF7FA898.toInt()    // Additive (mattes Petrolgruen)
+private val ADDL = 0xFFB5D2C6.toInt()   // Additive hell
+private val PLY = 0xFFE8E2D2.toInt()    // Granulat (cremeweiss)
+private val PLYD = 0xFFB8AE96.toInt()   // Granulat Schatten
+private val CRK = 0xFFD9772E.toInt()    // Crackgas (heisses Orange)
+private val CRKL = 0xFFF6BC7A.toInt()   // Crackgas hell
+private val FUEL = 0xFFE64A32.toInt()   // Treibstoff (Benzin-Rot)
+private val FUELL = 0xFFFF9A78.toInt()  // Treibstoff hell
 
 object Sprites {
 
@@ -414,15 +429,97 @@ object Sprites {
         Px(2, 2, 9, 1, YEL), Px(2, 5, 9, 1, YEL), Px(2, 2, 1, 4, YEL), Px(10, 2, 1, 4, YEL)
     )
 
+    // --- Level-3-Icons (Petrochemie). Jede Stufe bekommt eine eigene Silhouette,
+    // damit man sie in der Fluss-Animation auch bei 9dp Groesse auseinanderhaelt:
+    // Tropfen (Rohoel) / Blase (Erdgas) / Kanister (Naphtha) / Fass (Additive) /
+    // Kuegelchen (Granulat) / Flamme (Crackgas) / Zapfpistole (Treibstoff).
+    val ICON_ROHOEL = listOf(
+        // Oeltropfen mit Glanzpunkt
+        Px(5, 1, 2, 1, OUT), Px(4, 2, 4, 1, OUT), Px(3, 3, 1, 1, OUT), Px(8, 3, 1, 1, OUT),
+        Px(2, 4, 1, 4, OUT), Px(9, 4, 1, 4, OUT),
+        Px(2, 8, 8, 1, OUT), Px(3, 9, 6, 1, OUT),
+        Px(5, 2, 2, 1, OILH), Px(4, 3, 4, 1, OIL),
+        Px(3, 4, 6, 4, OIL), Px(3, 8, 6, 1, OIL), Px(4, 9, 4, 1, OIL),
+        Px(4, 4, 2, 2, OILH), Px(4, 4, 1, 1, MHI)
+    )
+    val ICON_ERDGAS = listOf(
+        // grosse Blase unten links
+        Px(3, 6, 4, 1, OUT), Px(2, 7, 1, 2, OUT), Px(7, 7, 1, 2, OUT), Px(3, 9, 4, 1, OUT),
+        Px(3, 7, 4, 2, GAS), Px(3, 7, 2, 1, GASL),
+        // mittlere Blase oben rechts
+        Px(7, 2, 3, 1, OUT), Px(6, 3, 1, 2, OUT), Px(10, 3, 1, 2, OUT), Px(7, 5, 3, 1, OUT),
+        Px(7, 3, 3, 2, GAS), Px(7, 3, 1, 1, GASL),
+        // kleine Blase dazwischen
+        Px(4, 2, 2, 1, OUT), Px(3, 3, 1, 1, OUT), Px(6, 3, 1, 1, OUT), Px(4, 4, 2, 1, OUT),
+        Px(4, 3, 2, 1, GASL)
+    )
+    val ICON_NAPHTHA = listOf(
+        // Kanister mit Griff
+        Px(2, 3, 7, 1, OUT), Px(1, 4, 1, 6, OUT), Px(9, 4, 1, 6, OUT), Px(2, 10, 7, 1, OUT),
+        Px(2, 4, 7, 6, NAP), Px(2, 4, 7, 1, NAPL), Px(2, 8, 7, 1, PLYD),
+        Px(3, 5, 3, 2, NAPL),
+        Px(6, 1, 3, 1, OUT), Px(6, 2, 1, 1, OUT), Px(8, 2, 1, 1, OUT), Px(7, 2, 1, 1, MHI)
+    )
+    val ICON_ADDITIVE = listOf(
+        // liegendes Fass mit Spannreifen
+        Px(2, 3, 8, 1, OUT), Px(1, 4, 1, 5, OUT), Px(10, 4, 1, 5, OUT), Px(2, 9, 8, 1, OUT),
+        Px(2, 4, 8, 5, ADD), Px(2, 4, 8, 1, ADDL),
+        Px(4, 4, 1, 5, ADDL), Px(7, 4, 1, 5, ADDL),
+        Px(2, 8, 8, 1, MDK)
+    )
+    val ICON_GRANULAT = listOf(
+        // Haufen/Schuettung als Basis
+        Px(2, 8, 8, 1, OUT), Px(1, 9, 10, 2, OUT),
+        Px(2, 9, 8, 1, PLY), Px(2, 10, 8, 1, PLYD),
+        // drei Kuegelchen mit geschlossenem Rand darueber
+        Px(3, 4, 2, 1, OUT), Px(2, 5, 1, 2, OUT), Px(5, 5, 1, 2, OUT), Px(3, 7, 2, 1, OUT),
+        Px(3, 5, 2, 2, PLY), Px(3, 5, 1, 1, MHI),
+        Px(7, 2, 2, 1, OUT), Px(6, 3, 1, 2, OUT), Px(9, 3, 1, 2, OUT), Px(7, 5, 2, 1, OUT),
+        Px(7, 3, 2, 2, PLY), Px(7, 3, 1, 1, MHI),
+        Px(7, 6, 2, 1, OUT), Px(6, 7, 1, 1, OUT), Px(9, 7, 1, 1, OUT), Px(7, 8, 2, 1, OUT),
+        Px(7, 7, 2, 1, PLYD)
+    )
+    val ICON_CRACKGAS = listOf(
+        // Flammen-Silhouette: schmale Spitze, breiter Bauch
+        Px(5, 0, 2, 1, OUT),
+        Px(4, 1, 1, 2, OUT), Px(7, 1, 1, 2, OUT),
+        Px(3, 3, 1, 3, OUT), Px(8, 3, 1, 3, OUT),
+        Px(2, 6, 1, 3, OUT), Px(9, 6, 1, 3, OUT),
+        Px(3, 9, 6, 1, OUT),
+        // heisser Koerper
+        Px(5, 1, 2, 2, CRK),
+        Px(4, 3, 4, 3, CRK),
+        Px(3, 6, 6, 3, CRK),
+        // heller Kern
+        Px(5, 3, 2, 3, CRKL),
+        Px(4, 6, 4, 2, CRKL),
+        Px(5, 6, 2, 2, YEL),
+        // Funken
+        Px(10, 4, 1, 1, CRKL), Px(1, 7, 1, 1, CRK)
+    )
+    val ICON_TREIBSTOFF = listOf(
+        // Duese (oben rechts, ragt heraus)
+        Px(8, 1, 3, 1, OUT), Px(8, 2, 1, 1, OUT), Px(10, 2, 1, 1, OUT), Px(8, 3, 3, 1, OUT),
+        Px(9, 2, 1, 1, MHI),
+        // Pistolenkoerper
+        Px(2, 3, 6, 1, OUT), Px(1, 4, 1, 4, OUT), Px(8, 4, 1, 4, OUT), Px(2, 8, 6, 1, OUT),
+        Px(2, 4, 6, 4, FUEL), Px(2, 4, 6, 1, FUELL),
+        Px(3, 5, 2, 2, FUELL),
+        Px(4, 6, 3, 1, YEL),
+        // Griff nach unten
+        Px(3, 9, 3, 1, OUT), Px(2, 9, 1, 2, OUT), Px(6, 9, 1, 2, OUT), Px(3, 11, 3, 1, OUT),
+        Px(3, 9, 3, 2, MDK), Px(3, 9, 3, 1, MMD)
+    )
+
     fun iconForRes(res: Int, level: Int = 1): List<Px> = when (res) {
-        Res.ROHERZ.ordinal -> if (level >= 2) ICON_URANERZ else ICON_ROHERZ
-        Res.BARREN.ordinal -> if (level >= 2) ICON_ANGERURAN else ICON_BARREN
-        Res.PLATTE.ordinal -> if (level >= 2) ICON_BLEIVERKL else ICON_PLATTE
-        Res.KOMPONENTE.ordinal -> if (level >= 2) ICON_BRENNSTAB else ICON_KOMP
+        Res.ROHERZ.ordinal -> when { level >= 3 -> ICON_ROHOEL; level == 2 -> ICON_URANERZ; else -> ICON_ROHERZ }
+        Res.BARREN.ordinal -> when { level >= 3 -> ICON_NAPHTHA; level == 2 -> ICON_ANGERURAN; else -> ICON_BARREN }
+        Res.PLATTE.ordinal -> when { level >= 3 -> ICON_ADDITIVE; level == 2 -> ICON_BLEIVERKL; else -> ICON_PLATTE }
+        Res.KOMPONENTE.ordinal -> when { level >= 3 -> ICON_GRANULAT; level == 2 -> ICON_BRENNSTAB; else -> ICON_KOMP }
         Res.WASSER.ordinal -> ICON_WASSER
-        Res.BLEI.ordinal -> ICON_BLEI
-        Res.DAMPF.ordinal -> ICON_DAMPF
-        Res.STROM.ordinal -> ICON_STROM
+        Res.BLEI.ordinal -> if (level >= 3) ICON_ERDGAS else ICON_BLEI
+        Res.DAMPF.ordinal -> if (level >= 3) ICON_CRACKGAS else ICON_DAMPF
+        Res.STROM.ordinal -> if (level >= 3) ICON_TREIBSTOFF else ICON_STROM
         else -> ICON_KOMP
     }
 
@@ -448,5 +545,13 @@ object Sprites {
         MType.BRENNSTABWERK -> ASSEMBLER
         MType.REAKTORKERN -> REAKTOR
         MType.KUEHLTURM -> ASSEMBLER
+        MType.OELBOHRTURM -> BOHRER
+        MType.GASBOHRER -> BOHRER
+        MType.SEEWASSER -> GENERATOR
+        MType.DESTILLATION -> OFEN
+        MType.GASWAESCHE -> PRESSE
+        MType.POLYMERWERK -> ASSEMBLER
+        MType.CRACKER -> REAKTOR
+        MType.RAFFINERIE -> ASSEMBLER
     }
 }
