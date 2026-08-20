@@ -213,6 +213,10 @@ class GameView(context: Context) : View(context) {
     // Zustand wird gemerkt, damit er nach Neustart erhalten bleibt.
     private var paletteCollapsed = false
 
+    // NUR ZUM TESTEN: Debug-Overlay im Hauptmenue, um direkt auf ein Level zu springen.
+    // Wird spaeter wieder entfernt.
+    private var debugOpen = false
+
     // Zoom & Verschiebung der (grossen) Karte
     private val visibleAt1 = 9f   // ~9 Chunks quer bei Zoom 1
     private val zoomMin = 0.7f
@@ -811,6 +815,11 @@ class GameView(context: Context) : View(context) {
                     // wenn Wasser der Engpass ist) blieb sonst auch ein echter, aber kleiner
                     // Fluss unsichtbar, weil er nie ueber die willkuerliche Schwelle kam.
                     if (isLager && !cm.acceptRes[res]) continue
+                    // Wasserpumpe -> Zentrifuge hat bereits eine eigene, sichtbare
+                    // Wasserleitung mit Tropfen-Animation (drawWasserpumpePipes) - hier
+                    // NICHT zusaetzlich noch Icons durch die Luft fliegen lassen. Gilt
+                    // nur fuer genau dieses Paar; Lager rein/raus bleibt unveraendert.
+                    if (pm.type == MType.WASSERPUMPE && cm.type == MType.ZENTRIFUGE) continue
                     val hasSupply = pm.output[res] > 1e-6 || pm.util > 1e-6
                     val isAccepted = isLager || cm.util > 1e-6
                     if (!hasSupply || !isAccepted) continue
@@ -1239,9 +1248,11 @@ class GameView(context: Context) : View(context) {
         val topY = y - (m.h - 1) * cell
         if (m.type == MType.WINDRAD) { drawWindrad(canvas, x, topY); return }
 
+        // Drohnen nutzen sich nicht mehr ab (sie kosten stattdessen laufend Geld) -
+        // also auch keine Zustands-Leiste und kein Schadens-Overlay mehr fuer sie.
         val hasWear = m.type != MType.REAKTOR && m.type != MType.LAGER &&
             m.type != MType.HAENDLER && m.type != MType.PROSPEKTOR && m.type != MType.WINDRAD &&
-            m.type != MType.SOLAR
+            m.type != MType.SOLAR && m.type != MType.DROHNE
         val pad = cell * 0.08f
 
         // Basis-Sprite (64x64 Bild-Kachel)
@@ -1525,7 +1536,12 @@ class GameView(context: Context) : View(context) {
         // Zustand/Auslastung ist bei einem Lager immer 100%/0% (kein Verschleiss, keine
         // eigene Produktion) - unnoetige Zeile, spart Platz im ohnehin schon vollen Panel.
         if (m.type != MType.LAGER) {
-            canvas.drawText("${tr("condition")} ${m.condition.roundToInt()}%     ${tr("util")} ${(m.util * 100).roundToInt()}%", dp(12f), yy, pText)
+            // Drohne: kein Verschleiss mehr -> statt "Zustand" die laufenden Betriebskosten.
+            val head = if (m.type == MType.DROHNE)
+                "${tr("upkeep")} ${oneDec(Simulation.DROHNE_UPKEEP)} €/s     ${tr("util")} ${(m.util * 100).roundToInt()}%"
+            else
+                "${tr("condition")} ${m.condition.roundToInt()}%     ${tr("util")} ${(m.util * 100).roundToInt()}%"
+            canvas.drawText(head, dp(12f), yy, pText)
             yy += dp(22f)
         }
         val oreLabel = if (sim.companyLevel >= 2) tr("uranerz") else tr("roherz")
@@ -1540,21 +1556,21 @@ class GameView(context: Context) : View(context) {
             MType.PROSPEKTOR -> "${tr("scans")} (${tr("radius")} ${sim.scanRadius()})"
             MType.WINDRAD -> {
                 val coast = sim.windCoastBonus(selR, selC) > 1.0
-                val wp = (Simulation.WIND_POWER * sim.windCoastBonus(selR, selC) * sim.machineUpgradeMult(m)).roundToInt()
+                val wp = (sim.windPower() * sim.windCoastBonus(selR, selC) * sim.machineUpgradeMult(m)).roundToInt()
                 "${tr("provides")} $wp ${tr("strom")} (${if (coast) tr("coast") else tr("wind")})"
             }
             MType.OFEN -> "${tr("in")} ${oneDec(m.input[0])} $oreLabel   ${tr("out")} ${oneDec(m.output[1])} ${tr("barren")}"
             MType.PRESSE -> "${tr("in")} ${oneDec(m.input[1])} ${tr("barren")}   ${tr("out")} ${oneDec(m.output[2])} ${tr("platten")}"
             MType.ASSEMBLER -> "${tr("in")} ${oneDec(m.input[2])} ${tr("platten")}   ${tr("out")} ${oneDec(m.output[3])} ${tr("komp")}"
             MType.HAENDLER -> "${tr(if (sim.companyLevel >= 2) "sells_strom" else "sells_comp")} (${oneDec(sim.componentPrice())}${tr("per_piece")})"
-            MType.GENERATOR -> "${tr("fuel")} ${oneDec(m.input[0])} $oreLabel  ->  +${(Simulation.GEN_POWER * sim.machineUpgradeMult(m)).roundToInt()} ${tr("strom")}"
+            MType.GENERATOR -> "${tr("fuel")} ${oneDec(m.input[0])} $oreLabel  ->  +${(sim.genPower() * sim.machineUpgradeMult(m)).roundToInt()} ${tr("strom")}"
             // Inhalt wird unten als eigene Icon-Reihe gezeigt (siehe die "Lager:
             // Inhalts-Uebersicht"-Zeilen in drawDetail) - hier nur noch der Kopf-Hinweis,
             // keine Buchstaben-Abkuerzungen mehr.
             MType.LAGER -> tr("buffer")
             MType.VERSTAERKER -> "${tr("boosts")} (+${(Simulation.BOOST_PER * 100).toInt()}%)"
             MType.REAKTOR -> "${tr("provides")} ${Simulation.REAKTOR_POWER.toInt()} ${tr("strom")} (${tr("fixed")})"
-            MType.SOLAR -> "${tr("provides")} ${(Simulation.SOLAR_POWER * sim.machineUpgradeMult(m)).roundToInt()} ${tr("strom")} (${tr("sun")})"
+            MType.SOLAR -> "${tr("provides")} ${(sim.solarPower() * sim.machineUpgradeMult(m)).roundToInt()} ${tr("strom")} (${tr("sun")})"
             MType.FORSCHUNG -> "${tr("produces_research")} +${oneDec(sim.researchRate())}/s"
             MType.DROHNE -> "${tr("repairs")} · R${sim.droneRange()} · ${(sim.droneRepairRate() * sim.machineUpgradeMult(m)).roundToInt()}%/s"
             MType.BLEIBOHRER -> {
@@ -1688,7 +1704,8 @@ class GameView(context: Context) : View(context) {
         val margin = dp(6f)
         val by = H - dp(54f)
         val bh = dp(40f)
-        val canRepair = m.type != MType.REAKTOR && m.type != MType.LAGER && m.type != MType.HAENDLER
+        val canRepair = m.type != MType.REAKTOR && m.type != MType.LAGER && m.type != MType.HAENDLER &&
+            m.type != MType.DROHNE
         val canSell = m.type != MType.REAKTOR
         val refund = (samt * 0.5 * (m.condition / 100.0)).roundToInt()
         val repEnabled = m.condition < 99.999 && sim.availableBarren() >= Simulation.REPAIR_COST
@@ -1810,14 +1827,14 @@ class GameView(context: Context) : View(context) {
             canvas.drawRoundRect(rect, dp(8f), dp(8f), p)
 
             pText.color = cText; pText.textSize = dp(15f)
-            val label = tr(node.id)
+            val label = techLabel(node.id)
             val title = if (node.maxLevel > 1) "$label  (${tr("level")} $l/${node.maxLevel})" else label
             canvas.drawText(title, dp(24f), yy + dp(20f), pText)
             pText.textSize = dp(12f); pText.color = cDim
             val fx = techEffect(node.id)
             val sub = when {
                 maxed -> tr("maxed")
-                !preOk -> "${tr("requires")}: ${tr(prereq!!)}"
+                !preOk -> "${tr("requires")}: ${techLabel(prereq!!)}"
                 node.maxLevel > 1 -> "$fx  ·  ${tr("next")}: ${cost.toInt()} $cur"
                 else -> "${tr("cost")}: ${cost.toInt()} $cur" + (if (fx.isNotEmpty()) "  ·  $fx" else "")
             }
@@ -1845,6 +1862,20 @@ class GameView(context: Context) : View(context) {
         buttons.add(Btn(cr, "close", "Schliessen"))
     }
 
+    /**
+     * Tech-Name, level-abhaengig: manche Techs betreffen ab Level 2 eine andere Maschine
+     * bzw. ein anderes Produkt (Bohrer->Uranbohrer, Komponenten-Preis->Strom-Preis). Gibt
+     * es einen "<id>.l2"-Eintrag, wird der ab Level 2 verwendet, sonst der normale Name.
+     */
+    private fun techLabel(id: String): String {
+        if (sim.companyLevel >= 2) {
+            val k = "$id.l2"
+            val v = I18n.t(k)
+            if (v != k) return v          // I18n.t() gibt den Key zurueck, wenn unbekannt
+        }
+        return tr(id)
+    }
+
     private fun techEffect(id: String): String = when (id) {
         "t_assembler" -> tr("tf_assembler"); "t_haendler" -> tr("tf_haendler"); "t_boost" -> tr("tf_boost")
         "t_wind" -> tr("tf_wind")
@@ -1857,6 +1888,9 @@ class GameView(context: Context) : View(context) {
         "t_drohne_rep" -> tr("tf_drohne_rep"); "t_drohne_speed" -> tr("tf_drohne_speed")
         "t_drohne_range" -> tr("tf_drohne_range"); "t_research_rate" -> tr("tf_research_rate")
         "t_reaktorkern" -> tr("tf_reaktorkern"); "t_kuehlturm" -> tr("tf_kuehlturm")
+        "t_ore" -> tr("tf_ore"); "t_lagercap" -> tr("tf_lagercap")
+        "t_genpower", "t_windpower", "t_solarpower" -> tr("tf_power_plus")
+        "t_kanal" -> tr("tf_kanal")
         else -> ""
     }
 
@@ -2252,6 +2286,14 @@ class GameView(context: Context) : View(context) {
         pText.color = cText; pText.textSize = dp(14f)
         canvas.drawText("⚙ ${tr("choose_save")}", dp(16f), dp(80f), pText)
 
+        // Debug-Knopf (nur zum Testen) oben rechts
+        run {
+            val dw = dp(74f); val dh = dp(30f)
+            val dr = RectF(W - dp(12f) - dw, dp(12f), W - dp(12f), dp(12f) + dh)
+            drawButton(canvas, Btn(dr, "debug_open", tr("debug"), true, debugOpen, cBad))
+            buttons.add(Btn(dr, "debug_open", "dbg"))
+        }
+
         val margin = dp(12f)
         val slots = menuSlots
         var yy = dp(124f)
@@ -2304,6 +2346,43 @@ class GameView(context: Context) : View(context) {
         val nr = RectF(margin, H - dp(74f), W - margin, H - dp(74f) + dp(54f))
         drawButton(canvas, Btn(nr, "new_slot", "+ ${tr("new_game")}", true, false, cGood))
         buttons.add(Btn(nr, "new_slot", "new"))
+
+        if (debugOpen) drawDebugOverlay(canvas)
+    }
+
+    /**
+     * NUR ZUM TESTEN: Overlay im Hauptmenue, das direkt auf ein beliebiges Unternehmens-
+     * Level springt, ohne die vorherigen durchspielen zu muessen. Legt bei Bedarf einen
+     * neuen Spielstand an und setzt die Fabrik zurueck. Wird spaeter wieder entfernt.
+     */
+    private fun drawDebugOverlay(canvas: Canvas) {
+        // Alle darunter liegenden Menue-Buttons wieder verwerfen, damit man im Overlay
+        // nicht versehentlich einen Spielstand darunter trifft.
+        buttons.clear()
+        p.color = Color.argb(238, 30, 24, 22)
+        canvas.drawRect(0f, 0f, W.toFloat(), H.toFloat(), p)
+
+        pText.textAlign = Paint.Align.LEFT
+        pText.color = cBad; pText.textSize = dp(22f)
+        canvas.drawText(tr("debug_title"), dp(16f), dp(48f), pText)
+        pText.color = cDim; pText.textSize = dp(13f)
+        canvas.drawText(tr("debug_hint"), dp(16f), dp(72f), pText)
+
+        val margin = dp(14f)
+        val bh = dp(56f); val gap = dp(10f)
+        var by = dp(96f)
+        for (lv in 1..Simulation.MAX_LEVEL) {
+            val r = RectF(margin, by, W - margin, by + bh)
+            val name = tr("lvl$lv")
+            val active = sim.companyLevel == lv
+            drawButton(canvas, Btn(r, "debug_lvl_$lv", "LVL $lv · $name", true, active, cAccent))
+            buttons.add(Btn(r, "debug_lvl_$lv", "dl"))
+            by += bh + gap
+        }
+
+        val cr = RectF(margin, H - dp(74f), W - margin, H - dp(74f) + dp(48f))
+        drawButton(canvas, Btn(cr, "debug_close", tr("close"), true, false, cAccent))
+        buttons.add(Btn(cr, "debug_close", "dc"))
     }
 
     private fun drawButton(canvas: Canvas, b: Btn) {
@@ -2458,6 +2537,22 @@ class GameView(context: Context) : View(context) {
             id.startsWith("svol_") -> setSfxVol(id.removePrefix("svol_").toInt())
             id == "to_menu" -> { persist(); resetArmed = false; menuArmedDelete = null; selR = -1; refreshMenu(); screen = Screen.MENU; audio.click() }
             id == "new_slot" -> { startNewSlot(); menuArmedDelete = null; audio.place() }
+            id == "debug_open" -> { debugOpen = !debugOpen; audio.click() }
+            id == "debug_close" -> { debugOpen = false; audio.click() }
+            id.startsWith("debug_lvl_") -> {
+                // NUR ZUM TESTEN: direkt auf das gewaehlte Level springen. Ohne offenen
+                // Spielstand vorher einen neuen anlegen, sonst gaebe es nichts zu speichern.
+                val lv = id.removePrefix("debug_lvl_").toIntOrNull()
+                if (lv != null) {
+                    if (currentSlot == null) startNewSlot()
+                    sim.debugSetLevel(lv)
+                    persist()
+                    debugOpen = false
+                    buildTool = null; selR = -1; selC = -1; report = null
+                    needCenter = true; screen = Screen.GAME
+                    audio.buy()
+                }
+            }
             id == "backup_save" -> { (context as? MainActivity)?.startBackupExport(); audio.click() }
             id == "backup_load" -> { (context as? MainActivity)?.startBackupImport(); audio.click() }
             id.startsWith("open_") -> { openSlot(id.removePrefix("open_")); menuArmedDelete = null; audio.click() }

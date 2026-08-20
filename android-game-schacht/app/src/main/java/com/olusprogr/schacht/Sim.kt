@@ -162,6 +162,7 @@ class Simulation {
         const val DROHNE_REPAIR_COST_PER = 0.1  // Geld je repariertem Zustands-% (Drohne)
         const val DROHNE_GATE_STEP = 25.0       // Schrittweite fuer das Reparatur-Limit
         const val DROHNE_FLY_SPEED = 3.0        // Basis-Fluggeschwindigkeit (Zellen/s)
+        const val DROHNE_UPKEEP = 2.0           // Geld/s Betriebskosten je Drohnen-Station
         const val BOOST_PER = 0.20
         const val COMPONENT_PRICE = 8.0
         const val HAENDLER_SELL = 2.0
@@ -207,47 +208,55 @@ class Simulation {
 
         val TECHS = listOf(
             // Maschinen-Freischaltungen (mit Rohstoffen bezahlt)
-            TechNode("t_lager", "Lager freischalten", 15.0, 1.0, 1, "", null, Res.BARREN),
-            TechNode("t_presse", "Presse freischalten", 20.0, 1.0, 1, "", null, Res.BARREN),
-            TechNode("t_gen", "Generator freischalten", 30.0, 1.0, 1, "", null, Res.BARREN),
-            TechNode("t_drohne", "Wartungsdrohne freischalten", 40.0, 1.0, 1, "", "t_gen", Res.BARREN),
-            TechNode("t_assembler", "Assembler freischalten", 25.0, 1.0, 1, "Platte -> Komponente", "t_presse", Res.PLATTE),
-            TechNode("t_haendler", "Haendler freischalten", 20.0, 1.0, 1, "Komponenten -> Geld", "t_assembler", Res.PLATTE),
-            TechNode("t_wind", "Windrad freischalten", 28.0, 1.0, 1, "Strom aus Wind", "t_gen", Res.BARREN),
-            TechNode("t_solar", "Solarpanel freischalten", 24.0, 1.0, 1, "Strom aus Sonne", "t_gen", Res.BARREN),
-            TechNode("t_research", "Forschungszentrum freischalten", 30.0, 1.0, 1, "boostet alle Maschinen", "t_assembler", Res.PLATTE),
+            TechNode("t_lager", "Lager freischalten", 30.0, 1.0, 1, "", null, Res.BARREN),
+            TechNode("t_presse", "Presse freischalten", 40.0, 1.0, 1, "", null, Res.BARREN),
+            TechNode("t_gen", "Generator freischalten", 60.0, 1.0, 1, "", null, Res.BARREN),
+            TechNode("t_drohne", "Wartungsdrohne freischalten", 80.0, 1.0, 1, "", "t_gen", Res.BARREN),
+            TechNode("t_assembler", "Assembler freischalten", 50.0, 1.0, 1, "Platte -> Komponente", "t_presse", Res.PLATTE),
+            TechNode("t_haendler", "Haendler freischalten", 40.0, 1.0, 1, "Komponenten -> Geld", "t_assembler", Res.PLATTE),
+            TechNode("t_wind", "Windrad freischalten", 56.0, 1.0, 1, "Strom aus Wind", "t_gen", Res.BARREN),
+            TechNode("t_solar", "Solarpanel freischalten", 48.0, 1.0, 1, "Strom aus Sonne", "t_gen", Res.BARREN),
+            TechNode("t_research", "Forschungszentrum freischalten", 60.0, 1.0, 1, "boostet alle Maschinen", "t_assembler", Res.PLATTE),
             // Upgrades (mit Geld bezahlt)
-            TechNode("t_bspeed", "Bohrer-Tempo", 25.0, 1.3, 20, "+8%/Stufe", null, null),
-            TechNode("t_ospeed", "Ofen-Tempo", 35.0, 1.3, 20, "+8%/Stufe", null, null),
-            TechNode("t_pspeed", "Presse-Tempo", 45.0, 1.3, 20, "+8%/Stufe", "t_presse", null),
-            TechNode("t_aspeed", "Assembler-Tempo", 55.0, 1.3, 20, "+8%/Stufe", "t_assembler", null),
-            TechNode("t_wert", "Komponenten-Preis", 60.0, 1.4, 10, "+25%/Stufe", "t_assembler", null),
-            TechNode("t_takt", "Fabrik-Takt (alle Maschinen)", 50.0, 1.35, 20, "+5%/Stufe", null, null),
-            TechNode("t_robust", "Robustheit (weniger Verschleiss)", 40.0, 1.3, 10, "-5%/Stufe", null, null),
-            TechNode("t_lift", "Lift-Tempo", 35.0, 1.3, 10, "+10%/Stufe", null, null),
-            TechNode("t_power", "Reaktor-Leistung", 45.0, 1.3, 20, "+5 Strom/Stufe", null, null),
+            TechNode("t_bspeed", "Bohrer-Tempo", 50.0, 1.3, 20, "+8%/Stufe", null, null),
+            TechNode("t_ospeed", "Ofen-Tempo", 70.0, 1.3, 20, "+8%/Stufe", null, null),
+            TechNode("t_pspeed", "Presse-Tempo", 90.0, 1.3, 20, "+8%/Stufe", "t_presse", null),
+            TechNode("t_aspeed", "Assembler-Tempo", 110.0, 1.3, 20, "+8%/Stufe", "t_assembler", null),
+            TechNode("t_wert", "Komponenten-Preis", 120.0, 1.4, 10, "+25%/Stufe", "t_assembler", null),
+            TechNode("t_takt", "Fabrik-Takt (alle Maschinen)", 100.0, 1.35, 20, "+5%/Stufe", null, null),
+            TechNode("t_robust", "Robustheit (weniger Verschleiss)", 80.0, 1.3, 10, "-5%/Stufe", null, null),
+            TechNode("t_lift", "Lift-Tempo", 70.0, 1.3, 10, "+10%/Stufe", null, null),
+            TechNode("t_power", "Reaktor-Leistung", 90.0, 1.3, 20, "+5 Strom/Stufe", null, null),
             // Drohnen-Upgrades (mit Geld bezahlt)
-            TechNode("t_drohne_rep", "Drohnen-Reparatur", 40.0, 1.35, 15, "+20%/Stufe", "t_drohne", null),
-            TechNode("t_drohne_speed", "Drohnen-Fluggeschwindigkeit", 35.0, 1.3, 10, "+20%/Stufe", "t_drohne", null),
-            TechNode("t_drohne_range", "Drohnen-Reichweite", 60.0, 1.6, 3, "+1 Feld/Stufe", "t_drohne", null),
+            TechNode("t_drohne_rep", "Drohnen-Reparatur", 80.0, 1.35, 15, "+20%/Stufe", "t_drohne", null),
+            TechNode("t_drohne_speed", "Drohnen-Fluggeschwindigkeit", 70.0, 1.3, 10, "+20%/Stufe", "t_drohne", null),
+            TechNode("t_drohne_range", "Drohnen-Reichweite", 120.0, 1.6, 3, "+1 Feld/Stufe", "t_drohne", null),
             // Forschungszentrum-Upgrade (mit Forschung bezahlt)
-            TechNode("t_research_rate", "Forschungs-Tempo", 30.0, 1.4, 12, "+0.1/s pro Stufe", "t_research", null),
+            TechNode("t_research_rate", "Forschungs-Tempo", 60.0, 1.4, 12, "+0.1/s pro Stufe", "t_research", null),
             // --- Level 2: Kernkraft-Freischaltungen (mit Rohstoffen bezahlt) ---
-            TechNode("t_wasserpumpe", "Wasserpumpe freischalten", 20.0, 1.0, 1, "Wasser aus der Kueste", null, Res.BARREN),
-            TechNode("t_zentrifuge", "Zentrifuge freischalten", 30.0, 1.0, 1, "Uranerz+Wasser -> Angereichertes Uran", "t_wasserpumpe", Res.BARREN),
-            TechNode("t_bleipresse", "Bleipresse freischalten", 20.0, 1.0, 1, "Blei -> Blei-Verkleidung", null, Res.BARREN),
-            TechNode("t_brennstabwerk", "Brennstabwerk freischalten", 25.0, 1.0, 1, "Fertigt Brennstabsaetze", "t_bleipresse", Res.PLATTE),
-            TechNode("t_reaktorkern", "Reaktorkern freischalten", 30.0, 1.0, 1, "Brennstabsatz -> Dampf", "t_brennstabwerk", Res.PLATTE),
-            TechNode("t_kuehlturm", "Kuehlturm freischalten", 35.0, 1.0, 1, "Dampf -> Strom", "t_reaktorkern", Res.PLATTE),
+            TechNode("t_wasserpumpe", "Wasserpumpe freischalten", 40.0, 1.0, 1, "Wasser aus der Kueste", null, Res.BARREN),
+            TechNode("t_zentrifuge", "Zentrifuge freischalten", 60.0, 1.0, 1, "Uranerz+Wasser -> Angereichertes Uran", "t_wasserpumpe", Res.BARREN),
+            TechNode("t_bleipresse", "Bleipresse freischalten", 40.0, 1.0, 1, "Blei -> Blei-Verkleidung", null, Res.BARREN),
+            TechNode("t_brennstabwerk", "Brennstabwerk freischalten", 50.0, 1.0, 1, "Fertigt Brennstabsaetze", "t_bleipresse", Res.PLATTE),
+            TechNode("t_reaktorkern", "Reaktorkern freischalten", 60.0, 1.0, 1, "Brennstabsatz -> Dampf", "t_brennstabwerk", Res.PLATTE),
+            TechNode("t_kuehlturm", "Kuehlturm freischalten", 70.0, 1.0, 1, "Dampf -> Strom", "t_reaktorkern", Res.PLATTE),
             // Level-2-Tempo-Upgrades (mit Forschung bezahlt) - Gegenstuecke zu
             // t_bspeed/t_ospeed/t_pspeed/t_aspeed fuer die Kernkraft-Maschinen.
-            TechNode("t_pbspeed", "Tiefen-Bohrer-Tempo", 25.0, 1.3, 20, "+8%/Stufe", "t_gen", null),
-            TechNode("t_wpspeed", "Wasserpumpe-Tempo", 30.0, 1.3, 20, "+8%/Stufe", "t_wasserpumpe", null),
-            TechNode("t_zfspeed", "Zentrifuge-Tempo", 40.0, 1.3, 20, "+8%/Stufe", "t_zentrifuge", null),
-            TechNode("t_bpspeed", "Bleipresse-Tempo", 35.0, 1.3, 20, "+8%/Stufe", "t_bleipresse", null),
-            TechNode("t_bwspeed", "Brennstabwerk-Tempo", 50.0, 1.3, 20, "+8%/Stufe", "t_brennstabwerk", null),
-            TechNode("t_rkspeed", "Reaktorkern-Tempo", 60.0, 1.3, 20, "+8%/Stufe", "t_reaktorkern", null),
-            TechNode("t_ktspeed", "Kuehlturm-Tempo", 65.0, 1.3, 20, "+8%/Stufe", "t_kuehlturm", null)
+            TechNode("t_pbspeed", "Tiefen-Bohrer-Tempo", 50.0, 1.3, 20, "+8%/Stufe", "t_gen", null),
+            TechNode("t_wpspeed", "Wasserpumpe-Tempo", 60.0, 1.3, 20, "+8%/Stufe", "t_wasserpumpe", null),
+            TechNode("t_zfspeed", "Zentrifuge-Tempo", 80.0, 1.3, 20, "+8%/Stufe", "t_zentrifuge", null),
+            TechNode("t_bpspeed", "Bleipresse-Tempo", 70.0, 1.3, 20, "+8%/Stufe", "t_bleipresse", null),
+            TechNode("t_bwspeed", "Brennstabwerk-Tempo", 100.0, 1.3, 20, "+8%/Stufe", "t_brennstabwerk", null),
+            TechNode("t_rkspeed", "Reaktorkern-Tempo", 120.0, 1.3, 20, "+8%/Stufe", "t_reaktorkern", null),
+            TechNode("t_ktspeed", "Kuehlturm-Tempo", 130.0, 1.3, 20, "+8%/Stufe", "t_kuehlturm", null),
+            // --- Bisher fehlende Techs (beide Level, sofern nicht level-spezifisch) ---
+            TechNode("t_ore", "Bohr-Ausbeute", 90.0, 1.35, 15, "+6%/Stufe", null, null),
+            TechNode("t_lagercap", "Lager-Kapazitaet", 60.0, 1.3, 10, "+15%/Stufe", "t_lager", null),
+            TechNode("t_genpower", "Generator-Leistung", 80.0, 1.3, 10, "+10%/Stufe", "t_gen", null),
+            TechNode("t_windpower", "Windrad-Leistung", 90.0, 1.3, 10, "+10%/Stufe", "t_wind", null),
+            TechNode("t_solarpower", "Solar-Leistung", 85.0, 1.3, 10, "+10%/Stufe", "t_solar", null),
+            // Nur Level 2: Kanaele gibt es erst ab der Kernkraft-Stufe.
+            TechNode("t_kanal", "Kanal-Ergiebigkeit", 110.0, 1.4, 5, "+5%/Stufe", "t_wasserpumpe", null)
         )
 
         val UNLOCK = mapOf(
@@ -283,11 +292,11 @@ class Simulation {
             MType.FORSCHUNG to 4,
             MType.BLEIBOHRER to 24,
             MType.WASSERPUMPE to 20,
-            MType.ZENTRIFUGE to 16,
-            MType.BLEIPRESSE to 16,
-            MType.BRENNSTABWERK to 12,
-            MType.REAKTORKERN to 6,
-            MType.KUEHLTURM to 6
+            MType.ZENTRIFUGE to 20,
+            MType.BLEIPRESSE to 20,
+            MType.BRENNSTABWERK to 20,
+            MType.REAKTORKERN to 12,
+            MType.KUEHLTURM to 8
         )
 
         // Baukosten in Rohstoffen: (Rohstoff, Menge).
@@ -342,12 +351,12 @@ class Simulation {
         // Geld umgerechnet - sonst entsteht ein Zirkel-Deadlock (z.B. Zentrifuge freischalten
         // braucht Barren, aber nur die Zentrifuge selbst produziert welche).
         val NUCLEAR_TECH_FACTOR = mapOf(
-            "t_wasserpumpe" to 0.05,
-            "t_zentrifuge" to 0.1,
-            "t_bleipresse" to 0.05,
-            "t_brennstabwerk" to 0.15,
-            "t_reaktorkern" to 0.25,
-            "t_kuehlturm" to 0.3
+            "t_wasserpumpe" to 0.1,
+            "t_zentrifuge" to 0.2,
+            "t_bleipresse" to 0.1,
+            "t_brennstabwerk" to 0.3,
+            "t_reaktorkern" to 0.5,
+            "t_kuehlturm" to 0.6
         )
         // Techs, die nur bei companyLevel==1 Sinn ergeben (Gebaeude/Reaktor, die es ab
         // Level 2 nicht mehr gibt) bzw. nur ab companyLevel>=2 (Kernkraft-Freischaltungen).
@@ -355,7 +364,8 @@ class Simulation {
         val LEVEL1_ONLY_TECHS = setOf("t_presse", "t_assembler", "t_ospeed", "t_pspeed", "t_aspeed", "t_power")
         val LEVEL2_ONLY_TECHS = setOf(
             "t_wasserpumpe", "t_zentrifuge", "t_bleipresse", "t_brennstabwerk", "t_reaktorkern", "t_kuehlturm",
-            "t_pbspeed", "t_wpspeed", "t_zfspeed", "t_bpspeed", "t_bwspeed", "t_rkspeed", "t_ktspeed"
+            "t_pbspeed", "t_wpspeed", "t_zfspeed", "t_bpspeed", "t_bwspeed", "t_rkspeed", "t_ktspeed",
+            "t_kanal"
         )
         // Ab Level 2 zeigen manche weiterhin genutzten Techs urspruenglich auf einen
         // Level-1-only-Prereq ("Assembler freischalten") - hier durch eine erreichbare
@@ -373,7 +383,6 @@ class Simulation {
         val MACHINE_UPGRADE_BASE = mapOf(
             MType.BOHRER to 18.0, MType.OFEN to 22.0, MType.PRESSE to 28.0, MType.ASSEMBLER to 35.0,
             MType.GENERATOR to 20.0, MType.WINDRAD to 24.0, MType.SOLAR to 22.0, MType.LAGER to 16.0,
-            MType.DROHNE to 26.0, MType.HAENDLER to 30.0, MType.FORSCHUNG to 32.0,
             MType.BLEIBOHRER to 20.0, MType.WASSERPUMPE to 22.0, MType.ZENTRIFUGE to 45.0,
             MType.BLEIPRESSE to 36.0, MType.BRENNSTABWERK to 60.0, MType.REAKTORKERN to 90.0, MType.KUEHLTURM to 100.0
         )
@@ -656,7 +665,8 @@ class Simulation {
         // reicher Boden (Tier 3) halbiert: ~7% statt ~14%
         return when { v < 15 -> 0; v < 58 -> 1; v < 93 -> 2; else -> 3 }
     }
-    private fun oreMult(r: Int, c: Int) = if (isLand(r, c)) ORE_MULT[richness(r, c)] else 0.0
+    private fun oreMult(r: Int, c: Int) =
+        if (isLand(r, c)) ORE_MULT[richness(r, c)] * (1.0 + 0.06 * lvl("t_ore")) else 0.0
 
     // --- Bestand (inkl. Lager) + Waehrungen ---
     private fun lagerSum(res: Int): Double {
@@ -813,6 +823,16 @@ class Simulation {
         companyLevel++
         resetFactory()
         return true
+    }
+
+    /**
+     * NUR ZUM TESTEN (Debug-Menue): direkt auf ein beliebiges Unternehmens-Level springen,
+     * ohne es vorher durchspielen zu muessen. Setzt die Fabrik zurueck (wie ein Verkauf),
+     * vergibt aber weder Aktien noch Dividenden. Wird spaeter wieder entfernt.
+     */
+    fun debugSetLevel(level: Int) {
+        companyLevel = level.coerceIn(1, MAX_LEVEL)
+        resetFactory()
     }
 
     fun hasPlatform(): Boolean = platformR0 >= 0
@@ -1184,6 +1204,10 @@ class Simulation {
     private fun wearFactor() = max(0.3, 1.0 - 0.05 * lvl("t_robust"))
     private fun liftRate() = LIFT * (1.0 + 0.1 * lvl("t_lift"))
     private fun reactorPower() = REAKTOR_POWER + 5.0 * lvl("t_power")
+    fun lagerCap() = LAGER_CAP * (1.0 + 0.15 * lvl("t_lagercap"))
+    fun genPower() = GEN_POWER * (1.0 + 0.10 * lvl("t_genpower"))
+    fun windPower() = WIND_POWER * (1.0 + 0.10 * lvl("t_windpower"))
+    fun solarPower() = SOLAR_POWER * (1.0 + 0.10 * lvl("t_solarpower"))
     fun droneRepairRate() = DROHNE_RATE * (1.0 + 0.20 * lvl("t_drohne_rep"))
     fun droneRange() = DROHNE_R + lvl("t_drohne_range")
     fun droneSpeedMult() = 1.0 + 0.20 * lvl("t_drohne_speed")
@@ -1216,7 +1240,7 @@ class Simulation {
         MType.PRESSE -> 1.5 / 60.0
         MType.ASSEMBLER -> 1.6 / 60.0
         MType.GENERATOR -> 0.8 / 60.0
-        MType.DROHNE -> 0.5 / 60.0
+        MType.DROHNE -> 0.0   // kein Verschleiss - Drohnen kosten stattdessen Geld/s (DROHNE_UPKEEP)
         MType.VERSTAERKER -> 0.6 / 60.0
         MType.FORSCHUNG -> 0.7 / 60.0
         MType.BLEIBOHRER -> 1.0 / 60.0
@@ -1284,7 +1308,8 @@ class Simulation {
      *  an einem kuenstlich gegrabenen Kanal (weniger effizient als eine echte Quelle). */
     private fun waterEfficiency(r: Int, c: Int): Double {
         if (neighbors(r, c).any { rawWater(it[0], it[1]) }) return 1.0
-        if (neighbors(r, c).any { expandedCanal[it[0] * n + it[1]] }) return CANAL_WATER_MULT
+        if (neighbors(r, c).any { expandedCanal[it[0] * n + it[1]] })
+            return min(1.0, CANAL_WATER_MULT + 0.05 * lvl("t_kanal"))
         return 0.0
     }
 
@@ -1393,7 +1418,7 @@ class Simulation {
             if (wants.isEmpty()) return@forEachMachine
             val target = if (c.type == MType.LAGER) c.output else c.input
             // Lager-Kapazitaet waechst mit der individuellen Ausbaustufe.
-            val cap = if (c.type == MType.LAGER) LAGER_CAP * machineUpgradeMult(c) else IN_CAP
+            val cap = if (c.type == MType.LAGER) lagerCap() * machineUpgradeMult(c) else IN_CAP
             // Nachbarn der GESAMTEN Grundflaeche (nicht nur der Anker-Zelle) - sonst
             // waeren mehrzellige Gebaeude (Reaktorkern 2x2, Kuehlturm 2x3, ...) nur von
             // einer Seite aus belieferbar.
@@ -1430,9 +1455,9 @@ class Simulation {
         var supply = 0.0
         forEachMachine { m, r, c ->
             if (m.type == MType.REAKTOR) supply += reactorPower()
-            if (m.type == MType.GENERATOR && m.input[Res.ROHERZ.ordinal] > 1e-6) supply += GEN_POWER * machineUpgradeMult(m)
-            if (m.type == MType.WINDRAD) supply += WIND_POWER * windCoastBonus(r, c) * machineUpgradeMult(m)
-            if (m.type == MType.SOLAR) supply += SOLAR_POWER * machineUpgradeMult(m)
+            if (m.type == MType.GENERATOR && m.input[Res.ROHERZ.ordinal] > 1e-6) supply += genPower() * machineUpgradeMult(m)
+            if (m.type == MType.WINDRAD) supply += windPower() * windCoastBonus(r, c) * machineUpgradeMult(m)
+            if (m.type == MType.SOLAR) supply += solarPower() * machineUpgradeMult(m)
         }
         var demand = 0.0
         forEachMachine { m, r, c -> if (wantsToRun(m, r, c)) demand += m.type.power }
@@ -1506,6 +1531,9 @@ class Simulation {
                 MType.DROHNE -> {
                     // Ruheposition ueber der eigenen Station initialisieren (einmalig).
                     if (m.flyR < 0.0) { m.flyR = r + 0.12; m.flyC = c + 0.5 }
+                    // Betriebskosten: eine Drohnen-Station kostet laufend Geld statt sich
+                    // abzunutzen - man "bedient" sie also mit Geld, nicht mit Reparaturen.
+                    money = max(0.0, money - DROHNE_UPKEEP * ddt)
                     if (money < m.moneyGate) {
                         // Reparatur-Limit nicht erreicht: Drohne pausiert und kehrt heim.
                         m.svR = -1; m.svC = -1; m.util = 0.0
@@ -1534,7 +1562,6 @@ class Simulation {
                                 if (delta > 1e-9) {
                                     tgt.condition = min(100.0, tgt.condition + delta)
                                     money = max(0.0, money - delta * DROHNE_REPAIR_COST_PER)
-                                    m.condition = max(0.0, m.condition - wearPerSec(MType.DROHNE) * wf * ddt * scale)
                                     m.util = 1.0
                                 } else m.util = 0.0
                             }
@@ -1565,7 +1592,9 @@ class Simulation {
                 MType.FORSCHUNG -> {
                     // Basis 0.1/s, per Upgrade hoeher; laeuft, solange das Netz nicht tot ist.
                     val active = if (scale > 0.05) 1.0 else 0.0
-                    research += researchRate() * machineUpgradeMult(m) * ddt * active   // produziert Forschungswaehrung
+                    // Kein Einzel-Ausbau mehr fuer Forschungszentren: die Rate kommt
+                    // ausschliesslich aus RESEARCH_RATE (0.1/s) + dem Tech t_research_rate.
+                    research += researchRate() * ddt * active   // produziert Forschungswaehrung
                     m.condition = max(0.0, m.condition - wearPerSec(MType.FORSCHUNG) * wf * ddt * active)
                     m.util = active
                 }
@@ -1882,6 +1911,10 @@ class Simulation {
             m.condition = o.optDouble("cond", 100.0)
             m.moneyGate = o.optDouble("gate", 0.0)
             m.lvl = o.optInt("lvl", 0)
+            // Typen, die inzwischen nicht mehr einzeln ausbaubar sind (Forschung,
+            // Haendler, Drohne), verlieren ihre alte Stufe - sonst wirkte der Bonus
+            // aus einem aelteren Spielstand unsichtbar weiter.
+            if (!canUpgradeMachine(m.type)) m.lvl = 0
             val acc = o.optJSONArray("acc")
             if (acc != null) for (k in 0 until min(rc, acc.length())) m.acceptRes[k] = acc.optBoolean(k, true)
             val ia = o.optJSONArray("in"); val oa = o.optJSONArray("out")
