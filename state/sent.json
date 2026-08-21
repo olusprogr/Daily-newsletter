@@ -1,6 +1,51 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/openai-fights-to-keep-chatgpt-lawsuit-away-from-a-state-jury",
+      "title": "Florida seeks court ruling to officially classify Sam Altman and ChatGPT as a 'public nuisance' — OpenAI fights to keep lawsuit away from a state jury",
+      "summary": "Florida's lawsuit against OpenAI and Sam Altman has now been sitting before U.S. District Judge Aileen Cannon in Fort Pierce for seven weeks.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-08-21T15:11:18+00:00",
+      "sent_at": "2026-08-21T15:28:57.339148+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/gadgets/983171/google-pixel-10a-steelseries-gaming-headset-soldering-4k-bluray-deal-sale",
+      "title": "Google’s Pixel 10A is a great deal at 15 percent off",
+      "summary": "This week, all of Google’s Pixel 11 phones launched, including the $899 Pixel 11, the $1,099 Pixel 11 Pro (with the same processor and starting 12GB RAM as the standard model, but with better cameras), and the $1,899 Pixel 11 Pro Fold. They’re good phones, but if you don’t mind missing out on their new, [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-08-21T14:35:22+00:00",
+      "sent_at": "2026-08-21T15:28:57.339148+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/worlds-largest-open-library-calls-for-volunteers-to-scan-and-preserve-physical-books-as-ai-companies-buy-scan-and-destroy-them-annas-archive-says-time-is-running-out-as-knowledge-is-permanently-monopolized-on-private-servers",
+      "title": "World's largest open library calls for volunteers to scan and preserve physical books as AI companies buy, scan, and destroy them — Anna's Archive says ‘time is running out’ as ‘knowledge is permanently monopolized on private servers’",
+      "summary": "A volunteer for Anna's Archive is calling for volunteers to scan and upload books to the shadow library to help preserve human knowledge for the public. The move comes as more AI companies buy, scan, and destroy books to feed to AI models, which is easier and faster than scanning the written works in a non-destructive manner.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-08-21T14:33:36+00:00",
+      "sent_at": "2026-08-21T15:28:57.339148+00:00"
+    },
+    {
+      "link": "https://event.on24.com/wcc/r/5460332/DAFEFF7A68EE900DEA7A14356089B553?utm_source=IEEE&utm_medium=site&utm_campaign=922",
+      "title": "Stop Hunting, Start Solving: Accelerating Root Cause Analysis with Agentic AI",
+      "summary": "About this Webinar Turn Yield Excursions into Faster, More Confident Root Cause Analysis When a yield issue emerges, the answer rarely lives in a single system. Critical clues are spread across metrology data, tool traces, chemical analysis, and facilities systems, while growing data volumes make traditional dashboards slow, fragmented, and difficult to act on. What You’ll Learn: Discover how a purpose-built semiconductor analytics platform can help engineers connect insights across domains without moving data. See how Agentic AI, semiconductor-specific visualizations, and push-down compute enable faster investigation of yield excursions and process issues, even across billions of data points. In the session, a live demonstration shows how to conduct a multi-domain root cause investigation using Spotfire® Industry Pro. Key Takeaways: Understand why siloed manufacturing data delays yield recovery and inflates costs Learn how Agentic AI automates complex cross-domain analytics and visualization generation Explore methods for scaling high-performance analytics across massive fab datasets Who Should Attend: Yield, Process, and Integration Engineers; Fab and Manufacturing Operations Managers; Quality and Reliability Engineers; and Data & Analytics leaders supporting wafer fabs, foundries, OSATs, and IDMs who need to identify issues faster while maintaining confidence in decision-making. Save Your Spot! Join this webinar to learn how leading semiconductor teams are accelerating root cause investigations, scaling analytics across massive datasets, and transforming disconnected data into actionable manufacturing intelligence. Reserve your seat today. Register now for this free webinar!",
+      "source": "IEEE Spectrum",
+      "category": "AI",
+      "published": "2026-08-21T14:32:37+00:00",
+      "sent_at": "2026-08-21T15:28:57.339148+00:00"
+    },
+    {
+      "link": "https://twitter.com/NVIDIAAI/status/2090786258981466231",
+      "title": "Nvidia AVO scores 100% on the ARC-AGI-3 interactive reasoning benchmark",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Hardware",
+      "published": "2026-08-21T13:26:03+00:00",
+      "sent_at": "2026-08-21T15:28:57.339148+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/pc-components/toms-hardware-innovation-awards-2026-progress-amid-turmoil",
       "title": "Tom’s Hardware Innovation Awards 2026: Progress amid turmoil",
       "summary": "The continued industry advancements give us several new picks for our annual Tom's Hardware Innovation Awards: a set of products that set or expand the standard for others.",
