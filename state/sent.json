@@ -1,6 +1,15 @@
 {
   "items": [
     {
+      "link": "https://allaboutcoding.ghinda.com/a-week-of-using-codex-more-than-claude/",
+      "title": "Quick impressions: A week of using Codex more than Claude",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-21T19:51:48+00:00",
+      "sent_at": "2026-08-21T21:20:20.783362+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/08/21/nvidia-just-showed-that-the-harness-not-the-ai-model-is-now-the-real-hero/",
       "title": "Nvidia just showed that the harness, not the AI model, is now the real hero",
       "summary": "Nvidia research shows that AI agents can perform well, and not go off the deep end, through fine-tuning, even if the AI model isn't that great at the task.",
