@@ -1,6 +1,24 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/08/21/how-ai-accounting-startup-rillet-raised-100m-and-became-a-unicorn-in-48-hours/",
+      "title": "How AI accounting startup Rillet raised $100M and became a unicorn in 48-hours",
+      "summary": "Rillet CEO Nicholas Koop shared growth numbers at a board meeting and set off a fundraising frenzy from Iconiq, Sequoia and others. Without even trying.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-21T22:10:01+00:00",
+      "sent_at": "2026-08-21T22:20:03.215721+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/983502/linkedin-ai-slop-button-one-million-people-message",
+      "title": "Over 1 million people have clicked LinkedIn’s AI slop button",
+      "summary": "LinkedIn actually announced a \"Seems like AI slop\" button on July 30th, and the company says that a lot of people have already used it. According to a Thursday post from chief product officer Hari Srinivasan, \"over a million people\" have clicked on the button, which is accessible from the three dots menu on a [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-08-21T21:25:50+00:00",
+      "sent_at": "2026-08-21T22:20:03.215721+00:00"
+    },
+    {
       "link": "https://allaboutcoding.ghinda.com/a-week-of-using-codex-more-than-claude/",
       "title": "Quick impressions: A week of using Codex more than Claude",
       "summary": "",
