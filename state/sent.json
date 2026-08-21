@@ -1,6 +1,42 @@
 {
   "items": [
     {
+      "link": "https://www.technologyreview.com/2026/08/21/1142627/when-ai-designs-a-drug-who-gets-the-credit/",
+      "title": "When AI designs a drug, who gets the credit?",
+      "summary": "When the biotech company Insilico Medicine used its computer models to propose a promising drug for pulmonary fibrosis, it enthusiastically claimed in a press release that the molecule had been “discovered by” its generative AI platform. Insilico leads a pack of companies using AI to rapidly come up with drug ideas humans might never think&#8230;",
+      "source": "MIT Technology Review",
+      "category": "AI",
+      "published": "2026-08-21T09:00:00+00:00",
+      "sent_at": "2026-08-21T09:32:43.947577+00:00"
+    },
+    {
+      "link": "https://www.technologyreview.com/2026/08/21/1142755/space-mirrors-night-sky/",
+      "title": "This company’s plans to deploy space mirrors could jeopardize the night sky for many",
+      "summary": "A company that plans to beam sunlight from space to Earth on demand might unintentionally brighten the night sky for many more people than intended, according to a new study. Later this year, the US company Reflect Orbital plans to launch a test satellite called Eärendil-1 that will extend an 18-by-18-meter mirror in orbit. The&#8230;",
+      "source": "MIT Technology Review",
+      "category": "Innovationen",
+      "published": "2026-08-21T09:00:00+00:00",
+      "sent_at": "2026-08-21T09:32:43.947577+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2241379/nevada-allows-uber-tesla-waymo-paid-robotaxis/",
+      "title": "Nevada allows Uber, Tesla and Waymo to start paid robotaxi service",
+      "summary": "Nevada's transportation authorities approved the companies' application to charge for robotaxi rides.",
+      "source": "Engadget",
+      "category": "Autonomes Fahren",
+      "published": "2026-08-21T08:47:02+00:00",
+      "sent_at": "2026-08-21T09:32:43.947577+00:00"
+    },
+    {
+      "link": "https://encore.dev/blog/firecracker-apple-silicon",
+      "title": "We Rebuilt the Linux MicroVM Stack on Apple Silicon",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Hardware",
+      "published": "2026-08-21T06:59:40+00:00",
+      "sent_at": "2026-08-21T09:32:43.947577+00:00"
+    },
+    {
       "link": "https://www.engadget.com/2241354/genesis-gv90-neolun-luxury-suv-heated-floors-coach-doors/",
       "title": "Genesis' GV90 NeoLun is a luxury electric SUV with heated floors and coach doors",
       "summary": "Genesis' new electric SUV is loaded with innovation, but not in the dash or drivetrain as you might expect.",
