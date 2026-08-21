@@ -1,6 +1,33 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/tech-industry/semiconductors/lg-enters-chip-packaging-arena-with-laser-direct-imaging-machine-as-tsmcs-cowos-remains-constrained-maskless-machine-is-designed-to-pattern-fine-interconnects-trading-resolution-for-higher-throughput",
+      "title": "LG enters chip packaging arena with Laser Direct Imaging machine, as TSMC's CoWoS remains constrained — maskless machine is designed to pattern fine interconnects, trading resolution for higher throughput",
+      "summary": "LG rolls-out laser direct imaging lithography machine for chip packaging and high-density PCBs.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-08-21T13:35:14+00:00",
+      "sent_at": "2026-08-21T13:41:54.317642+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2241179/child-safety-experts-skeptical-of-openai-chatgpt-for-teens/",
+      "title": "Child safety experts are skeptical of OpenAI's ChatGPT for Teens",
+      "summary": "They say the company must prove it can be trusted before products like these get a pass.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-08-21T13:00:00+00:00",
+      "sent_at": "2026-08-21T13:41:54.317642+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/unlock-toms-hardware-premiums-hot-chips-2026-coverage-for-free-sign-up-for-an-account-to-read-technical-breakdowns-from-the-show",
+      "title": "Unlock Tom's Hardware Premium's Hot Chips 2026 coverage for free — sign up for an account to read technical breakdowns from the show",
+      "summary": "For a limited time, you’ll be able to read all of our latest reports from Hot Chips 2026 with a Tom’s Hardware account, no payment required.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-08-21T13:00:00+00:00",
+      "sent_at": "2026-08-21T13:41:54.317642+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/tech-industry/big-tech/supermicro-fires-several-employees-following-investigation-into-usd2-5-billion-china-ai-chip-smuggling-claims-that-senior-management-had-no-knowledge-of-illicit-transactions",
       "title": "Supermicro fires several employees following investigation into $2.5 billion China AI chip smuggling — claims that senior management had no knowledge of illicit transactions",
       "summary": "An independent investigation on Supermicro clears senior management from any wrong-doing and also says that its financial statements were still reliable, despite the alleged diversion of its restricted products. Nevertheless, some of its employees from sales, technical support, and business development departments were fired for failing to 'follow Company policies or the Company’s code of conduct.'",
