@@ -1,6 +1,42 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/pc-components/toms-hardware-innovation-awards-2026-progress-amid-turmoil",
+      "title": "Tom’s Hardware Innovation Awards 2026: Progress amid turmoil",
+      "summary": "The continued industry advancements give us several new picks for our annual Tom's Hardware Innovation Awards: a set of products that set or expand the standard for others.",
+      "source": "Tom's Hardware",
+      "category": "Innovationen",
+      "published": "2026-08-21T14:02:24+00:00",
+      "sent_at": "2026-08-21T14:31:00.033936+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/983181/matti-haapoja-sam-kold-kolder-higgsfield-seedance-backlash",
+      "title": "Major YouTube creators are facing backlash for accepting AI money",
+      "summary": "Over the past few days, a number of prominent filmmaking content creators including Matti Haapoja and Sam \"Kold\" Kolder have posted videos of themselves demonstrating what's possible with AI platform Higgsfield. The videos highlight Higgsfield's recently added Seedance 2.5 functionality and pitch these technologies as the future of video production. In response to these videos, [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-08-21T13:37:52+00:00",
+      "sent_at": "2026-08-21T14:31:00.033936+00:00"
+    },
+    {
+      "link": "https://cymerys.com/w/im-becoming-ai-blind",
+      "title": "I'm Becoming AI-Blind",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-21T11:48:05+00:00",
+      "sent_at": "2026-08-21T14:31:00.033936+00:00"
+    },
+    {
+      "link": "https://www.law.berkeley.edu/academics/registrar/academic-rules/artificial-intelligence-policy/",
+      "title": "Artificial Intelligence Policy",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-21T01:37:27+00:00",
+      "sent_at": "2026-08-21T14:31:00.033936+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/tech-industry/semiconductors/lg-enters-chip-packaging-arena-with-laser-direct-imaging-machine-as-tsmcs-cowos-remains-constrained-maskless-machine-is-designed-to-pattern-fine-interconnects-trading-resolution-for-higher-throughput",
       "title": "LG enters chip packaging arena with Laser Direct Imaging machine, as TSMC's CoWoS remains constrained — maskless machine is designed to pattern fine interconnects, trading resolution for higher throughput",
       "summary": "LG rolls-out laser direct imaging lithography machine for chip packaging and high-density PCBs.",
