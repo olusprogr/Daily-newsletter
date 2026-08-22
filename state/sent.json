@@ -1,6 +1,15 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/08/22/openai-says-california-should-strengthen-its-ai-safety-bill/",
+      "title": "OpenAI says California should strengthen its AI safety bill",
+      "summary": "OpenAI is calling for California to strengthen SB 53, an AI safety bill that the company previously opposed.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-22T16:30:34+00:00",
+      "sent_at": "2026-08-22T16:48:31.766313+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/08/22/frontier-ai-labs-still-wont-say-how-theyd-contain-a-rogue-model/",
       "title": "Frontier AI labs still won’t say how they’d contain a rogue model",
       "summary": "A new study finds leading AI labs have few publicly documented plans for containing rogue models, raising questions about preparedness as AI systems increasingly demonstrate unexpected and potentially dangerous behavior.",
