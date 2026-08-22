@@ -1,6 +1,15 @@
 {
   "items": [
     {
+      "link": "https://www.wired.com/story/nasa-cancels-its-rescue-mission-for-the-aging-swift-telescope/",
+      "title": "NASA Cancels Its Rescue Mission for the Aging Swift Telescope",
+      "summary": "The LINK probe was supposed to use robotic arms to capture Swift and lift it into a safe orbit. Problems with its control system forced NASA to call off the attempt.",
+      "source": "Wired",
+      "category": "Innovationen",
+      "published": "2026-08-22T09:00:00+00:00",
+      "sent_at": "2026-08-22T09:30:49.916268+00:00"
+    },
+    {
       "link": "https://developers.openai.com/api/docs/models/gpt-5.6-sol",
       "title": "GPT 5.6 Sol 20% price reduction",
       "summary": "",
