@@ -1,6 +1,24 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/08/21/michael-polansky-is-training-an-ai-model-on-skin-thats-still-alive/",
+      "title": "Michael Polansky is training an AI model on skin that’s still alive",
+      "summary": "Michael Polansky — better known publicly as Lady Gaga's partner and a former top deputy to Sean Parker — has quietly spent years building an AI-driven startup that keeps living human skin tissue alive for weeks outside the body to discover new skincare compounds, and is only now going public about it.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-22T01:31:04+00:00",
+      "sent_at": "2026-08-22T02:33:09.241318+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/08/21/japanese-space-tech-startup-letara-expands-beyond-satellite-thrusters-with-16m/",
+      "title": "Japanese space tech startup Letara expands beyond satellite thrusters with $16M",
+      "summary": "Japanese space startup Letara is betting its hybrid rocket technology can move beyond small satellite thrusters into a broader market for space, defense and security, after raising ¥2.6 billion ($16 million).",
+      "source": "TechCrunch",
+      "category": "Innovationen",
+      "published": "2026-08-22T01:03:06+00:00",
+      "sent_at": "2026-08-22T02:33:09.241318+00:00"
+    },
+    {
       "link": "https://claude.com/blog/bringing-claude-mythos-5-to-more-defenders",
       "title": "Bringing the cybersecurity capabilities of Claude Mythos 5 to more defenders",
       "summary": "",
