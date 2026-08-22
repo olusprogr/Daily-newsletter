@@ -1,6 +1,15 @@
 {
   "items": [
     {
+      "link": "https://developers.openai.com/api/docs/models/gpt-5.6-sol",
+      "title": "GPT 5.6 Sol 20% price reduction",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-22T04:33:06+00:00",
+      "sent_at": "2026-08-22T07:28:13.008512+00:00"
+    },
+    {
       "link": "https://www.engadget.com/2242070/apple-reportedly-cut-more-than-200-jobs-across-vision-pro-and-siri-software-teams/",
       "title": "Apple reportedly cut more than 200 jobs across Vision Pro and Siri software teams",
       "summary": "Apple has laid off employees in its Vision Pro and Siri teams as it shifts focus to smart glasses and next-gen AI tech.",
