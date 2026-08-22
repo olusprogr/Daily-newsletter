@@ -1,6 +1,33 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/08/22/frontier-ai-labs-still-wont-say-how-theyd-contain-a-rogue-model/",
+      "title": "Frontier AI labs still won’t say how they’d contain a rogue model",
+      "summary": "A new study finds leading AI labs have few publicly documented plans for containing rogue models, raising questions about preparedness as AI systems increasingly demonstrate unexpected and potentially dangerous behavior.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-22T16:00:00+00:00",
+      "sent_at": "2026-08-22T16:18:50.469756+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/software/linux/25-years-after-the-death-of-3dfx-the-voodoo-3-gets-a-linux-driver-update-classic-voodoo-gpus-can-now-boot-without-a-pc-bios",
+      "title": "25 years after the death of 3dfx, the Voodoo 3 gets a Linux driver update — classic Voodoo GPUs can now boot without a PC BIOS",
+      "summary": "It's been a quarter-century since the firm folded, but the graphics chips still have utility in esoteric use cases.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-08-22T15:48:10+00:00",
+      "sent_at": "2026-08-22T16:18:50.469756+00:00"
+    },
+    {
+      "link": "https://www.theguardian.com/technology/2026/aug/22/the-hollywood-creatives-training-ai-to-do-their-jobs",
+      "title": "Digging the grave of my skills: Hollywood creatives training AI to do their jobs",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-22T14:13:05+00:00",
+      "sent_at": "2026-08-22T16:18:50.469756+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/08/22/pixel-11-pro-xl-review-snappier-cameras-cant-hide-an-iterative-upgrade/",
       "title": "Pixel 11 Pro XL review: Snappier cameras can’t hide an iterative upgrade",
       "summary": "Google’s Pixel 11 Pro XL brings snappier cameras and genuinely useful AI features like Rambler, but its iterative upgrades may not be enough to tempt recent Pixel owners.",
@@ -6317,51 +6344,6 @@
       "category": "Hardware",
       "published": "2026-08-08T17:08:45+00:00",
       "sent_at": "2026-08-08T17:56:19.629544+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2229993/claude-vs-chatgpt-how-ai-assistants-differ/",
-      "title": "Claude Vs ChatGPT: How These AI Assistants Differ",
-      "summary": "In a practical breakdown of how Claude and ChatGPT AI models differ, one tends to fall short when it comes to quality responses and overall user experience.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-08-08T15:30:00+00:00",
-      "sent_at": "2026-08-08T15:36:44.345959+00:00"
-    },
-    {
-      "link": "https://social.treehouse.systems/@mgorny/117058483039362779",
-      "title": "Gentoo bugzilla closed due AI bot scraper overload",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-08T13:55:42+00:00",
-      "sent_at": "2026-08-08T15:36:44.345959+00:00"
-    },
-    {
-      "link": "https://twitter.com/un1c0rnioz/status/2084686552299634805",
-      "title": "Lost my phone at the office. Claude suggested tracking Bluetooth signal strength",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-07T20:25:04+00:00",
-      "sent_at": "2026-08-08T14:59:16.774452+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/cpus/save-usd160-off-amds-ultimate-gaming-cpu-combo-includes-motherboard-and-chip-cooler-usd458-combo-features-ryzen-7-9800x3d-b850-motherboard-and-a-240mm-liquid-aio",
-      "title": "Save $160 off AMD's ultimate gaming CPU combo, includes motherboard and chip cooler — $458 combo features Ryzen 7 9800X3D, B850 motherboard, and a 240mm liquid AIO",
-      "summary": "Newegg is offering a big discount on a Ryzen 7 9800X3D bundle that includes an MSI B850 Gaming Plus WiFi motherboard and an MSI MAG Coreliquid A13 240 AIO liquid cooler.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-08T14:06:16+00:00",
-      "sent_at": "2026-08-08T14:28:12.289596+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/data-centers/amazon-secretly-circumvents-community-vote-for-massive-ai-data-center-45-year-old-rules-lock-gilroy-residents-out-of-public-comment-window",
-      "title": "Amazon secretly circumvents community vote for massive AI data center using 45-year-old rules — Gilroy residents locked out of public comment window",
-      "summary": "Residents of Gilroy, California, were caught by surprise when an Amazon data center started construction in their city. Negotiations for the project started in 2020, with public comments open until 2024, but it flew under the radar.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-08-08T13:51:24+00:00",
-      "sent_at": "2026-08-08T14:28:12.289596+00:00"
     }
   ]
 }
