@@ -574,10 +574,12 @@ class GameView(context: Context) : View(context) {
         super.onSizeChanged(w, h, ow, oh)
         W = w; H = h
         headerH = dp(96f)
-        val margin = dp(8f)
-        gridLeft = margin
+        // Karte nutzt die volle Bildschirmbreite: der frueher hier gesetzte 8dp-Rand
+        // links/rechts war reine Verschwendung - am linken Kartenrand blieb ein grauer
+        // Streifen Hintergrund stehen, statt dass dort Karte zu sehen war.
+        gridLeft = 0f
         gridTop = headerH + dp(4f)
-        gridW = w - 2 * margin
+        gridW = w.toFloat()
         updatePaletteLayout()
         cell = gridW / visibleAt1
         needCenter = true

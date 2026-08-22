@@ -11,8 +11,8 @@ android {
         applicationId = "com.olusprogr.schacht"
         minSdk = 24
         targetSdk = 34
-        versionCode = 74
-        versionName = "0.56-hightech"
+        versionCode = 75
+        versionName = "0.57-fullwidth"
     }
 
     signingConfigs {
