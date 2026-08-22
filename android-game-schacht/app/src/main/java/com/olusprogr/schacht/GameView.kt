@@ -26,7 +26,7 @@ class GameView(context: Context) : View(context) {
     // Aktives Bau-Werkzeug (null = kein Bauen; Antippen zeigt dann Info).
     private var buildTool: MType? = null
 
-    private enum class Screen { MENU, GAME, TECH, STAT, REPORT, COMPANY, LOADING }
+    private enum class Screen { MENU, GAME, TECH, STAT, REPORT, COMPANY, LOADING, SPEC }
     private var screen = Screen.MENU
 
     private val saveStore = SaveStore(context)
@@ -595,6 +595,12 @@ class GameView(context: Context) : View(context) {
         if (screen == Screen.MENU) { drawMenu(canvas); return }
         // Waehrend des Offline-Nachrechnens (Hintergrund-Thread) NICHT auf sim.* zugreifen.
         if (screen == Screen.LOADING) { drawLoading(canvas); return }
+        // Neue Firma ohne gewaehlte Ausrichtung -> erst die Auswahl, dann das Spiel.
+        // Gilt auch fuer Alt-Spielstaende, die noch keine gespeicherte Ausrichtung haben.
+        // NICHT im Zuschauer-Modus: dort liegen fremde Firmendaten in sim, an denen man
+        // ohnehin nichts aendern darf.
+        if (screen == Screen.GAME && sim.spec == null && !viewOnly) screen = Screen.SPEC
+        if (screen == Screen.SPEC) { drawSpecChoice(canvas); return }
         drawHeader(canvas)
         drawGrid(canvas)
         if (screen == Screen.GAME) { drawPuffs(canvas); drawRises(canvas) }
@@ -2402,6 +2408,31 @@ class GameView(context: Context) : View(context) {
             "${tr("lvl_bonus")}: x${fmt(sim.companyMult())} ${tr("value")}"
         )) { pText.color = cText; canvas.drawText(line, dp(16f), yy, pText); yy += dp(24f) }
 
+        // Ausrichtung + Standortfaktor dieser Firma - hier kann man jederzeit nachsehen,
+        // wofuer man sich bei der Gruendung entschieden hat und was der Standort mitbringt.
+        sim.spec?.let { sp ->
+            pText.color = cDim; pText.textSize = dp(11.5f)
+            canvas.drawText(tr("spec_label").uppercase(), dp(16f), yy, pText); yy += dp(16f)
+            pText.color = cAccent; pText.textSize = dp(14f)
+            canvas.drawText(specName(sp), dp(16f), yy, pText); yy += dp(17f)
+            pText.textSize = dp(12.5f)
+            for ((txt, good) in specLines(sp)) {
+                pText.color = if (good) cGood else cBad
+                canvas.drawText(txt, dp(22f), yy, pText); yy += dp(16f)
+            }
+            yy += dp(6f)
+            pText.color = cDim; pText.textSize = dp(11.5f)
+            canvas.drawText(tr("mut_label").uppercase(), dp(16f), yy, pText); yy += dp(16f)
+            pText.color = Color.rgb(186, 158, 244); pText.textSize = dp(14f)
+            canvas.drawText(mutName(sim.mutation), dp(16f), yy, pText); yy += dp(17f)
+            pText.textSize = dp(12.5f)
+            for ((txt, good) in mutLines(sim.mutation)) {
+                pText.color = if (good) cGood else cBad
+                canvas.drawText(txt, dp(22f), yy, pText); yy += dp(16f)
+            }
+            yy += dp(4f)
+        }
+
         yy += dp(6f)
         hazardBar(canvas, dp(16f), yy, W - dp(32f), dp(7f)); yy += dp(24f)
         pText.color = cDim; pText.textSize = dp(12f)
@@ -2422,6 +2453,147 @@ class GameView(context: Context) : View(context) {
         drawButton(canvas, Btn(rClose, "close", tr("close"), true, false, cAccent))
         if (ready) buttons.add(Btn(rSell, "sell_company", "sell"))
         buttons.add(Btn(rClose, "close", "close"))
+    }
+
+    /**
+     * Effektzeilen einer Ausrichtung bzw. eines Standortfaktors. Werden AUS DEN
+     * ENUM-WERTEN erzeugt statt fest getextet - so kann die Anzeige nach einer
+     * Balancing-Aenderung nicht mehr luegen.
+     */
+    private fun effectLines(pairs: List<Triple<String, Double, Boolean>>): List<Pair<String, Boolean>> {
+        val out = ArrayList<Pair<String, Boolean>>()
+        for ((key, v, goodIfHigh) in pairs) {
+            if (kotlin.math.abs(v - 1.0) < 1e-9) continue
+            val pct = ((v - 1.0) * 100).roundToInt()
+            if (pct == 0) continue
+            val good = if (goodIfHigh) pct > 0 else pct < 0
+            out.add("${tr(key)}  ${if (pct > 0) "+" else ""}$pct%" to good)
+        }
+        return out
+    }
+
+    private fun specLines(sp: Spec) = effectLines(listOf(
+        Triple("sp_extract", sp.extract, true),
+        Triple("sp_process", sp.process, true),
+        Triple("sp_storage", sp.storage, true),
+        Triple("sp_logistics", sp.logistics, true),
+        Triple("sp_wear", sp.wear, false),
+        Triple("sp_power", sp.power, false),
+        Triple("sp_build", sp.build, false)
+    ))
+
+    private fun mutLines(mu: Mutation): List<Pair<String, Boolean>> {
+        val l = ArrayList(effectLines(listOf(
+            Triple("sp_extract", mu.extract, true),
+            Triple("sp_ore", mu.ore, true),
+            Triple("sp_wind", mu.wind, true),
+            Triple("sp_sun", mu.sun, true),
+            Triple("sp_price", mu.price, true),
+            Triple("sp_storage", mu.storage, true),
+            Triple("sp_wear", mu.wear, false),
+            Triple("sp_build", mu.build, false)
+        )))
+        if (mu.unstableGrid) l.add(tr("sp_grid") to false)
+        return l
+    }
+
+    private fun specName(sp: Spec) = tr("spec_" + sp.name.lowercase())
+    private fun mutName(mu: Mutation) = tr("mut_" + mu.name.lowercase())
+
+    /**
+     * Gruendungs-Bildschirm einer neuen Firma: oben der zufaellige Standortfaktor (einmal
+     * neu wuerfelbar), darunter die drei Ausrichtungen zur Auswahl. Erscheint bei jedem
+     * Neustart und nach jedem Firmenverkauf - das ist der Moment, der einen Durchlauf vom
+     * naechsten unterscheidet.
+     */
+    private fun drawSpecChoice(canvas: Canvas) {
+        p.color = Color.rgb(16, 18, 24); canvas.drawRect(0f, 0f, W.toFloat(), H.toFloat(), p)
+        hazardBar(canvas, 0f, 0f, W.toFloat(), dp(8f))
+        pText.textAlign = Paint.Align.LEFT
+        pText.color = cAccent; pText.textSize = dp(22f)
+        canvas.drawText(tr("spec_title"), dp(16f), dp(46f), pText)
+        pText.color = cDim; pText.textSize = dp(13f)
+        canvas.drawText("LVL ${sim.companyLevel} · ${tr("lvl" + sim.companyLevel.coerceAtMost(4))} — ${tr("spec_hint")}",
+            dp(16f), dp(68f), pText)
+
+        val margin = dp(14f)
+        val cw = W - 2 * margin
+
+        // --- Standortfaktor -----------------------------------------------------------
+        val mu = sim.mutation
+        val muLines = mutLines(mu)
+        var top = dp(82f)
+        // Mindesthoehe, damit der Neuwurf-Knopf unten rechts nie in den Namen rutscht.
+        val muH = kotlin.math.max(dp(102f), dp(56f) + muLines.size * dp(17f) + dp(10f))
+        p.color = Color.rgb(30, 34, 44)
+        canvas.drawRoundRect(RectF(margin, top, margin + cw, top + muH), dp(9f), dp(9f), p)
+        p.color = Color.rgb(154, 134, 232)
+        canvas.drawRect(margin, top, margin + dp(4f), top + muH, p)
+        pText.color = cDim; pText.textSize = dp(11.5f)
+        canvas.drawText(tr("mut_label").uppercase(), margin + dp(14f), top + dp(18f), pText)
+        pText.color = Color.rgb(186, 158, 244); pText.textSize = dp(16f)
+        canvas.drawText(mutName(mu), margin + dp(14f), top + dp(38f), pText)
+        var ly = top + dp(56f)
+        pText.textSize = dp(12.5f)
+        for ((txt, good) in muLines) {
+            pText.color = if (good) cGood else cBad
+            canvas.drawText(txt, margin + dp(16f), ly, pText); ly += dp(17f)
+        }
+        // Neuwurf-Knopf unten rechts in der Karte - die Effektzeilen stehen links und sind
+        // kurz, dort kollidiert nichts mit dem (moeglicherweise langen) Namen darueber.
+        val rrW = dp(104f); val rrH = dp(30f)
+        val rrTop = top + muH - rrH - dp(10f)
+        val rrRect = RectF(margin + cw - rrW - dp(10f), rrTop, margin + cw - dp(10f), rrTop + rrH)
+        val canRr = !sim.mutRerollUsed
+        drawButton(canvas, Btn(rrRect, "mut_reroll",
+            if (canRr) tr("mut_reroll") else tr("mut_reroll_used"), canRr, false, cAccent))
+        if (canRr) buttons.add(Btn(rrRect, "mut_reroll", "reroll"))
+
+        // --- Ausrichtungen ------------------------------------------------------------
+        top += muH + dp(16f)
+        pText.color = cDim; pText.textSize = dp(11.5f)
+        canvas.drawText(tr("spec_label").uppercase(), margin + dp(2f), top, pText)
+        top += dp(10f)
+        val specs = Spec.values()
+        val gap = dp(10f)
+        // Die Karten fuellen die restliche Hoehe komplett aus - keine feste Obergrenze,
+        // sonst bliebe unten ein grosser toter Streifen. Der Inhalt wird in der Karte
+        // vertikal zentriert, damit die zusaetzliche Hoehe nicht als Leere wirkt.
+        val avail = H - top - dp(16f) - (specs.size - 1) * gap
+        val ch = (avail / specs.size).coerceAtLeast(dp(92f))
+        // Auf kleinen Displays enger setzen, statt die Effektzeilen aus der Karte laufen
+        // zu lassen (Logistik hat drei Zeilen und ist damit die hoechste Karte).
+        val tight = ch < dp(112f)
+        val lineH = if (tight) dp(14.5f) else dp(17f)
+        val lineSize = if (tight) dp(11.5f) else dp(12.5f)
+        for (sp in specs) {
+            val r = RectF(margin, top, margin + cw, top + ch)
+            val pressed = pressedBtn == "spec_" + sp.name
+            if (pressed) { canvas.save(); canvas.translate(0f, dp(1.5f)) }
+            p.color = Color.rgb(38, 42, 52)
+            canvas.drawRoundRect(r, dp(9f), dp(9f), p)
+            p.color = Color.argb(75, 255, 255, 255)
+            canvas.drawRect(r.left + dp(8f), r.top + dp(2f), r.right - dp(8f), r.top + dp(3.5f), p)
+            p.color = cAccent
+            canvas.drawRect(r.left, r.top, r.left + dp(4f), r.bottom, p)
+            val lines = specLines(sp)
+            val contentH = dp(26f) + lines.size * lineH
+            val cTop = r.top + kotlin.math.max(dp(6f), (ch - contentH) / 2f)
+            pText.color = cAccent; pText.textSize = dp(17f)
+            canvas.drawText(specName(sp), r.left + dp(14f), cTop + dp(20f), pText)
+            var yy2 = cTop + (if (tight) dp(38f) else dp(42f))
+            pText.textSize = lineSize
+            for ((txt, good) in lines) {
+                pText.color = if (good) cGood else cBad
+                canvas.drawText(txt, r.left + dp(16f), yy2, pText); yy2 += lineH
+            }
+            pText.color = cDim; pText.textSize = dp(11.5f); pText.textAlign = Paint.Align.RIGHT
+            canvas.drawText(tr("spec_pick"), r.right - dp(14f), r.bottom - dp(10f), pText)
+            pText.textAlign = Paint.Align.LEFT
+            if (pressed) canvas.restore()
+            buttons.add(Btn(r, "spec_" + sp.name, specName(sp)))
+            top += ch + gap
+        }
     }
 
     private fun drawReport(canvas: Canvas) {
@@ -2773,6 +2945,14 @@ class GameView(context: Context) : View(context) {
             id == "tech" -> { screen = if (screen == Screen.TECH) Screen.GAME else Screen.TECH; selR = -1; resetArmed = false; techScroll = 0f; audio.click() }
             id == "stat" -> { screen = if (screen == Screen.STAT) Screen.GAME else Screen.STAT; selR = -1; resetArmed = false; statScroll = 0f; audio.click() }
             id == "close" -> { screen = Screen.GAME; report = null; resetArmed = false; sellArmed = false; audio.click() }
+            id == "mut_reroll" -> { if (sim.rerollMutation()) { persist(); audio.buy() } else audio.error() }
+            id.startsWith("spec_") -> {
+                val sp = Spec.values().firstOrNull { it.name == id.removePrefix("spec_") }
+                if (sp != null) {
+                    sim.chooseSpec(sp); persist()
+                    screen = Screen.GAME; needCenter = true; audio.buy()
+                }
+            }
             id == "company" -> { screen = if (screen == Screen.COMPANY) Screen.GAME else Screen.COMPANY; selR = -1; sellArmed = false; audio.click() }
             id == "sell_company" -> {
                 if (!sellArmed) { sellArmed = true; audio.click() }

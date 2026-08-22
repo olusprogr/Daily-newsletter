@@ -90,6 +90,70 @@ data class OfflineReport(
 )
 
 /**
+ * Unternehmens-Spezialisierung. Wird beim Start JEDER neuen Firma einmal gewaehlt und
+ * gilt dann fuer diesen ganzen Durchlauf. Jede Ausrichtung hat genau einen deutlichen
+ * Vorteil und einen deutlichen Preis - es soll keine "beste" Wahl geben, sondern eine,
+ * die zum geplanten Fabrik-Layout passt.
+ *
+ * Reihenfolge = Save-Ordinal, gespeichert wird aber der NAME (siehe toJson) - neue
+ * Ausrichtungen lassen sich deshalb gefahrlos einfuegen.
+ */
+enum class Spec(
+    val extract: Double,     // Tempo der Rohstoff-Gewinnung (Bohrer, Pumpen, Minen)
+    val process: Double,     // Tempo der Verarbeitung (alles mit Eingang)
+    val wear: Double,        // Verschleiss-Tempo (>1 = Maschinen halten kuerzer)
+    val power: Double,       // Strombedarf
+    val storage: Double,     // Lager-Kapazitaet
+    val logistics: Double,   // Foerder- und Verkaufstempo
+    val build: Double        // Baukosten
+) {
+    /** Foerderkonzern: holt viel aus dem Boden, verschleisst die Technik dabei schneller. */
+    FOERDER(1.25, 1.0, 1.15, 1.0, 1.0, 1.0, 1.0),
+    /** Industriekonzern: schnelle Verarbeitung, dafuer hungriger nach Strom. */
+    INDUSTRIE(1.0, 1.20, 1.0, 1.12, 1.0, 1.0, 1.0),
+    /** Logistikkonzern: grosse Puffer und schneller Abtransport, aber teurer Aufbau. */
+    LOGISTIK(1.0, 1.0, 1.0, 1.0, 1.5, 1.25, 1.15)
+}
+
+/**
+ * Zufaellige Besonderheit der Firma ("Standortfaktor"). Wird aus dem Karten-Seed
+ * abgeleitet, damit dieselbe Karte immer dieselbe Eigenheit hat, und laesst sich EINMAL
+ * pro Firma neu wuerfeln, falls sie ueberhaupt nicht zur gewaehlten Ausrichtung passt.
+ *
+ * Bewusst nicht nur Nachteile: der Spieler soll beim Start denken "interessant, wie baue
+ * ich das jetzt?" und nicht "schon wieder Pech".
+ */
+enum class Mutation(
+    val extract: Double = 1.0,
+    val ore: Double = 1.0,
+    val wind: Double = 1.0,
+    val sun: Double = 1.0,
+    val wear: Double = 1.0,
+    val price: Double = 1.0,
+    val storage: Double = 1.0,
+    val build: Double = 1.0,
+    /** Netz schwankt: die Stromerzeugung pendelt langsam um ihren Mittelwert. */
+    val unstableGrid: Boolean = false
+) {
+    /** Extreme Tiefe: langsamer, aber jede Foerderstelle gibt deutlich mehr her. */
+    TIEFE(extract = 0.70, ore = 1.50),
+    /** Windreiche Region. */
+    WIND(wind = 2.0),
+    /** Sonnenreiche Region. */
+    SONNE(sun = 1.8),
+    /** Instabiles Netz: schwankende Leistung - dafuer zahlt der Markt hier besser. */
+    NETZ(price = 1.10, unstableGrid = true),
+    /** Reiche Ader: alle Lagerstaetten sind ergiebiger. */
+    ADER(ore = 1.35),
+    /** Eingespielte Belegschaft: alles haelt deutlich laenger. */
+    FACHKRAFT(wear = 0.70),
+    /** Starker Absatzmarkt: bessere Preise, aber knappe Lagerflaechen. */
+    ABSATZ(price = 1.20, storage = 0.75),
+    /** Karges Land: magere Vorkommen, dafuer ist der Aufbau billig. */
+    KARG(ore = 0.80, build = 0.65)
+}
+
+/**
  * Ein Tech-Knoten. `costRes` bestimmt die Waehrung: BARREN/PLATTE fuer
  * Maschinen-Freischaltungen, null = Geld fuer die eigentlichen Upgrades.
  */
@@ -131,6 +195,14 @@ class Simulation {
     var companyLevel = 1             // 1 Bergbau, 2 Kernkraft, 3 Petrochemie, 4 High-Tech
     var shares = 0.0                 // permanente Aktien aus Firmenverkaeufen
     var dividends = 0.0              // passives Einkommen/s aus verkauften Firmen
+    /** Gewaehlte Ausrichtung dieser Firma. null = noch nicht gewaehlt -> Auswahl zeigen. */
+    var spec: Spec? = null
+    /** Standortfaktor dieser Firma (aus dem Karten-Seed abgeleitet). */
+    var mutation: Mutation = Mutation.ADER
+    /** Der eine erlaubte Neuwurf des Standortfaktors ist verbraucht. */
+    var mutRerollUsed = false
+    /** Laufende Simulationszeit in Sekunden - nur fuer zeitabhaengige Effekte (NETZ). */
+    private var simClock = 0.0
     // Level-2-Plattform (bereits errichtet, gelb-schwarzer Rand, metallischer Kern).
     var platformR0 = -1; var platformC0 = -1; var platformR1 = -1; var platformC1 = -1
     // Oel-Bohrinsel (3x3, dekorativ): Spoiler fuers naechste Level (Petrochemie).
@@ -620,6 +692,10 @@ class Simulation {
         mapSeed = System.nanoTime() xor 0x5DEECE66DL
         tech.clear()
         companyLevel = 1; shares = 0.0; dividends = 0.0
+        // Neue Firma -> Ausrichtung muss neu gewaehlt werden, Standortfaktor neu wuerfeln.
+        spec = null
+        rollMutationFromSeed()
+        simClock = 0.0
         placePlatform()
         placeOilRig()
         placeLaunchPad()
@@ -925,7 +1001,7 @@ class Simulation {
         return when { v < 15 -> 0; v < 58 -> 1; v < 93 -> 2; else -> 3 }
     }
     private fun oreMult(r: Int, c: Int) =
-        if (isLand(r, c)) ORE_MULT[richness(r, c)] * (1.0 + 0.06 * lvl("t_ore")) else 0.0
+        if (isLand(r, c)) ORE_MULT[richness(r, c)] * (1.0 + 0.06 * lvl("t_ore")) * mutation.ore else 0.0
 
     // --- Bestand (inkl. Lager) + Waehrungen ---
     private fun lagerSum(res: Int): Double {
@@ -1023,7 +1099,8 @@ class Simulation {
 
     /** Wird dieser Maschinentyp mit Geld statt Rohstoffen gebaut? Ab Level 2: immer. */
     fun isMoneyBuilt(t: MType): Boolean = if (companyLevel >= 2) true else MONEY_BUILD.containsKey(t)
-    fun moneyBuildCost(t: MType): Double = if (companyLevel >= 2) levelMoneyCost(t) else (MONEY_BUILD[t] ?: 0.0)
+    fun moneyBuildCost(t: MType): Double =
+        kotlin.math.round((if (companyLevel >= 2) levelMoneyCost(t) else (MONEY_BUILD[t] ?: 0.0)) * buildMult())
 
     /** Kostenfaktor-Tabelle des aktuellen Levels (Level 2 Kernkraft, ab Level 3 Petrochemie). */
     private fun costFactors(): Map<MType, Double> =
@@ -1288,6 +1365,11 @@ class Simulation {
         money = START_MONEY; research = 0.0
         mapSeed = System.nanoTime() xor 0x5DEECE66DL
         tech.clear()
+        // Jede neue Firma bekommt eine frische Ausrichtung (Auswahl) und einen frischen
+        // Standortfaktor - genau das macht den naechsten Durchlauf anders als den letzten.
+        spec = null
+        rollMutationFromSeed()
+        simClock = 0.0
         placePlatform()
         placeOilRig()
         placeLaunchPad()
@@ -1296,7 +1378,10 @@ class Simulation {
         if (companyLevel == 1) placeReactor() else reactorPipe.clear()
     }
 
-    fun buildCost(t: MType): Pair<Res, Double> = BUILD_COST[t] ?: Pair(Res.BARREN, 0.0)
+    fun buildCost(t: MType): Pair<Res, Double> {
+        val b = BUILD_COST[t] ?: return Pair(Res.BARREN, 0.0)
+        return Pair(b.first, kotlin.math.round(b.second * buildMult()))
+    }
 
     /** Reparatur-Limit einer Drohnen-Station um delta verschieben (>= 0). Neuer Wert. */
     fun adjustDroneGate(r: Int, c: Int, delta: Double): Double {
@@ -1652,15 +1737,55 @@ class Simulation {
         return true
     }
 
+    // --- Ausrichtung + Standortfaktor -------------------------------------------------
+    // Beide greifen bewusst NICHT an 30 einzelnen Stellen ein, sondern an den wenigen
+    // Sammelpunkten, durch die ohnehin schon jede Rate laeuft. exMult()/prMult() ersetzen
+    // dabei globalMult() in den Raten der Foerder- bzw. Verarbeitungsmaschinen.
+    private fun sp() = spec
+    /** Foerder-Maschinen (kein Eingang): Bohrer, Pumpen, Minen, Einlaesse. */
+    private fun exMult() = globalMult() * (sp()?.extract ?: 1.0) * mutation.extract
+    /** Verarbeitende Maschinen (mit Eingang). */
+    private fun prMult() = globalMult() * (sp()?.process ?: 1.0)
+    /** Foerderband- und Verkaufstempo. */
+    private fun logiMult() = sp()?.logistics ?: 1.0
+    /** Faktor auf ALLE Baukosten (Geld wie Rohstoffe). */
+    fun buildMult() = (sp()?.build ?: 1.0) * mutation.build
+
+    /** Kurzbeschreibung der Ausrichtung fuer die Auswahl (I18n-Key-Basis). */
+    fun chooseSpec(s: Spec) { spec = s }
+
+    /**
+     * Standortfaktor einmalig neu wuerfeln. Bewusst echter Zufall statt "naechster in der
+     * Liste", damit sich der Neuwurf nicht durchklicken laesst.
+     */
+    fun rerollMutation(): Boolean {
+        if (mutRerollUsed) return false
+        val all = Mutation.values()
+        var next = mutation
+        var guard = 0
+        while (next == mutation && guard++ < 16) next = all[(Math.random() * all.size).toInt().coerceIn(0, all.size - 1)]
+        mutation = next
+        mutRerollUsed = true
+        return true
+    }
+
+    /** Standortfaktor deterministisch aus dem Karten-Seed ableiten. */
+    private fun rollMutationFromSeed() {
+        val h = (mapSeed xor (mapSeed ushr 29)) * -3750763034362895579L
+        val idx = ((h ushr 33).toInt() and 0x7fffffff) % Mutation.values().size
+        mutation = Mutation.values()[idx]
+        mutRerollUsed = false
+    }
+
     // --- Tech-abhaengige Parameter ---
     private fun globalMult() = 1.0 + 0.05 * lvl("t_takt")
-    private fun wearFactor() = max(0.3, 1.0 - 0.05 * lvl("t_robust"))
-    private fun liftRate() = LIFT * (1.0 + 0.1 * lvl("t_lift"))
+    private fun wearFactor() = max(0.3, 1.0 - 0.05 * lvl("t_robust")) * (sp()?.wear ?: 1.0) * mutation.wear
+    private fun liftRate() = LIFT * (1.0 + 0.1 * lvl("t_lift")) * logiMult()
     private fun reactorPower() = REAKTOR_POWER + 5.0 * lvl("t_power")
-    fun lagerCap() = LAGER_CAP * (1.0 + 0.15 * lvl("t_lagercap"))
+    fun lagerCap() = LAGER_CAP * (1.0 + 0.15 * lvl("t_lagercap")) * (sp()?.storage ?: 1.0) * mutation.storage
     fun genPower() = GEN_POWER * (1.0 + 0.10 * lvl("t_genpower"))
-    fun windPower() = WIND_POWER * (1.0 + 0.10 * lvl("t_windpower"))
-    fun solarPower() = SOLAR_POWER * (1.0 + 0.10 * lvl("t_solarpower"))
+    fun windPower() = WIND_POWER * (1.0 + 0.10 * lvl("t_windpower")) * mutation.wind
+    fun solarPower() = SOLAR_POWER * (1.0 + 0.10 * lvl("t_solarpower")) * mutation.sun
     fun droneRepairRate() = DROHNE_RATE * (1.0 + 0.20 * lvl("t_drohne_rep"))
     fun droneRange() = DROHNE_R + lvl("t_drohne_range")
     fun droneSpeedMult() = 1.0 + 0.20 * lvl("t_drohne_speed")
@@ -1674,42 +1799,42 @@ class Simulation {
         }
         return 1.0
     }
-    private fun bohrerRate() = BOHRER_RATE * (1.0 + 0.08 * lvl("t_bspeed")) * globalMult()
-    private fun ofenRate() = OFEN_RATE * (1.0 + 0.08 * lvl("t_ospeed")) * globalMult()
-    private fun presseRate() = PRESSE_RATE * (1.0 + 0.08 * lvl("t_pspeed")) * globalMult()
-    private fun assemblerRate() = ASSEMBLER_RATE * (1.0 + 0.08 * lvl("t_aspeed")) * globalMult()
-    private fun bleibohrerRate() = BLEIBOHRER_RATE * (1.0 + 0.08 * lvl("t_pbspeed")) * globalMult()
-    private fun wasserpumpeRate() = WASSERPUMPE_RATE * (1.0 + 0.08 * lvl("t_wpspeed")) * globalMult()
-    private fun zentrifugeRate() = ZENTRIFUGE_RATE * (1.0 + 0.08 * lvl("t_zfspeed")) * globalMult()
-    private fun bleipresseRate() = BLEIPRESSE_RATE * (1.0 + 0.08 * lvl("t_bpspeed")) * globalMult()
-    private fun brennstabwerkRate() = BRENNSTABWERK_RATE * (1.0 + 0.08 * lvl("t_bwspeed")) * globalMult()
-    private fun reaktorkernRate() = REAKTORKERN_RATE * (1.0 + 0.08 * lvl("t_rkspeed")) * globalMult()
-    private fun kuehlturmRate() = KUEHLTURM_RATE * (1.0 + 0.08 * lvl("t_ktspeed")) * globalMult()
+    private fun bohrerRate() = BOHRER_RATE * (1.0 + 0.08 * lvl("t_bspeed")) * exMult()
+    private fun ofenRate() = OFEN_RATE * (1.0 + 0.08 * lvl("t_ospeed")) * prMult()
+    private fun presseRate() = PRESSE_RATE * (1.0 + 0.08 * lvl("t_pspeed")) * prMult()
+    private fun assemblerRate() = ASSEMBLER_RATE * (1.0 + 0.08 * lvl("t_aspeed")) * prMult()
+    private fun bleibohrerRate() = BLEIBOHRER_RATE * (1.0 + 0.08 * lvl("t_pbspeed")) * exMult()
+    private fun wasserpumpeRate() = WASSERPUMPE_RATE * (1.0 + 0.08 * lvl("t_wpspeed")) * exMult()
+    private fun zentrifugeRate() = ZENTRIFUGE_RATE * (1.0 + 0.08 * lvl("t_zfspeed")) * prMult()
+    private fun bleipresseRate() = BLEIPRESSE_RATE * (1.0 + 0.08 * lvl("t_bpspeed")) * prMult()
+    private fun brennstabwerkRate() = BRENNSTABWERK_RATE * (1.0 + 0.08 * lvl("t_bwspeed")) * prMult()
+    private fun reaktorkernRate() = REAKTORKERN_RATE * (1.0 + 0.08 * lvl("t_rkspeed")) * prMult()
+    private fun kuehlturmRate() = KUEHLTURM_RATE * (1.0 + 0.08 * lvl("t_ktspeed")) * prMult()
     // --- Level 3: Petrochemie. flareMult() ist der Ketten-Bonus aus der Fackel-
     // Rueckgewinnung: abgefackeltes Gas wird zurueckgefuehrt und hebt die AUSBEUTE der
     // gesamten Petro-Kette (nicht nur einer Maschine) - der strukturelle Unterschied
     // zur Kernkraft-Kette, die nur Einzel-Tempo-Techs kennt.
     private fun flareMult() = 1.0 + 0.04 * lvl("t_flare")
-    private fun oelbohrturmRate() = OELBOHRTURM_RATE * (1.0 + 0.08 * lvl("t_obspeed")) * globalMult()
-    private fun gasbohrerRate() = GASBOHRER_RATE * (1.0 + 0.08 * lvl("t_gbspeed")) * globalMult()
-    private fun seewasserRate() = SEEWASSER_RATE * (1.0 + 0.08 * lvl("t_swspeed")) * globalMult()
-    private fun destillationRate() = DESTILLATION_RATE * (1.0 + 0.08 * lvl("t_dsspeed")) * globalMult() * flareMult()
-    private fun gaswaescheRate() = GASWAESCHE_RATE * (1.0 + 0.08 * lvl("t_gwspeed")) * globalMult() * flareMult()
-    private fun polymerwerkRate() = POLYMERWERK_RATE * (1.0 + 0.08 * lvl("t_pwspeed")) * globalMult() * flareMult()
-    private fun crackerRate() = CRACKER_RATE * (1.0 + 0.08 * lvl("t_crspeed")) * globalMult() * flareMult()
-    private fun raffinerieRate() = RAFFINERIE_RATE * (1.0 + 0.08 * lvl("t_rfspeed")) * globalMult() * flareMult()
+    private fun oelbohrturmRate() = OELBOHRTURM_RATE * (1.0 + 0.08 * lvl("t_obspeed")) * exMult()
+    private fun gasbohrerRate() = GASBOHRER_RATE * (1.0 + 0.08 * lvl("t_gbspeed")) * exMult()
+    private fun seewasserRate() = SEEWASSER_RATE * (1.0 + 0.08 * lvl("t_swspeed")) * exMult()
+    private fun destillationRate() = DESTILLATION_RATE * (1.0 + 0.08 * lvl("t_dsspeed")) * prMult() * flareMult()
+    private fun gaswaescheRate() = GASWAESCHE_RATE * (1.0 + 0.08 * lvl("t_gwspeed")) * prMult() * flareMult()
+    private fun polymerwerkRate() = POLYMERWERK_RATE * (1.0 + 0.08 * lvl("t_pwspeed")) * prMult() * flareMult()
+    private fun crackerRate() = CRACKER_RATE * (1.0 + 0.08 * lvl("t_crspeed")) * prMult() * flareMult()
+    private fun raffinerieRate() = RAFFINERIE_RATE * (1.0 + 0.08 * lvl("t_rfspeed")) * prMult() * flareMult()
     // --- Level 4: High-Tech. cleanMult() ist das Gegenstueck zu flareMult(): eine
     // hoehere Reinraum-Klasse hebt die Ausbeute der GESAMTEN Fab-Kette.
     private fun cleanMult() = 1.0 + 0.04 * lvl("t_reinraum")
-    private fun sandmineRate() = SANDMINE_RATE * (1.0 + 0.08 * lvl("t_smspeed")) * globalMult()
-    private fun seltenerdRate() = SELTENERD_RATE * (1.0 + 0.08 * lvl("t_sespeed")) * globalMult()
-    private fun reinstwasserRate() = REINSTWASSER_RATE * (1.0 + 0.08 * lvl("t_rwspeed")) * globalMult()
-    private fun waferfabRate() = WAFERFAB_RATE * (1.0 + 0.08 * lvl("t_wfspeed")) * globalMult() * cleanMult()
-    private fun dotierwerkRate() = DOTIERWERK_RATE * (1.0 + 0.08 * lvl("t_dwspeed")) * globalMult() * cleanMult()
-    private fun chipfabRate() = CHIPFAB_RATE * (1.0 + 0.08 * lvl("t_cfspeed")) * globalMult() * cleanMult()
-    private fun satellitenwerkRate() = SATELLITENWERK_RATE * (1.0 + 0.08 * lvl("t_saspeed")) * globalMult() * cleanMult()
-    private fun startrampeRate() = STARTRAMPE_RATE * (1.0 + 0.08 * lvl("t_srspeed")) * globalMult() * cleanMult()
-    fun componentPrice() = COMPONENT_PRICE * (1.0 + 0.25 * lvl("t_wert")) * companyMult() * shareBonus()
+    private fun sandmineRate() = SANDMINE_RATE * (1.0 + 0.08 * lvl("t_smspeed")) * exMult()
+    private fun seltenerdRate() = SELTENERD_RATE * (1.0 + 0.08 * lvl("t_sespeed")) * exMult()
+    private fun reinstwasserRate() = REINSTWASSER_RATE * (1.0 + 0.08 * lvl("t_rwspeed")) * exMult()
+    private fun waferfabRate() = WAFERFAB_RATE * (1.0 + 0.08 * lvl("t_wfspeed")) * prMult() * cleanMult()
+    private fun dotierwerkRate() = DOTIERWERK_RATE * (1.0 + 0.08 * lvl("t_dwspeed")) * prMult() * cleanMult()
+    private fun chipfabRate() = CHIPFAB_RATE * (1.0 + 0.08 * lvl("t_cfspeed")) * prMult() * cleanMult()
+    private fun satellitenwerkRate() = SATELLITENWERK_RATE * (1.0 + 0.08 * lvl("t_saspeed")) * prMult() * cleanMult()
+    private fun startrampeRate() = STARTRAMPE_RATE * (1.0 + 0.08 * lvl("t_srspeed")) * prMult() * cleanMult()
+    fun componentPrice() = COMPONENT_PRICE * (1.0 + 0.25 * lvl("t_wert")) * companyMult() * shareBonus() * mutation.price
 
     private fun wearPerSec(t: MType) = when (t) {
         MType.BOHRER -> 1.0 / 60.0
@@ -1996,6 +2121,7 @@ class Simulation {
     fun step(dt: Double) {
         val ddt = dt.coerceIn(0.0, 2.0)
         if (ddt <= 0.0) return
+        simClock += ddt
 
         transfers()
 
@@ -2007,7 +2133,11 @@ class Simulation {
             if (m.type == MType.SOLAR) supply += solarPower() * machineUpgradeMult(m)
         }
         var demand = 0.0
-        forEachMachine { m, r, c -> if (wantsToRun(m, r, c)) demand += m.type.power }
+        forEachMachine { m, r, c -> if (wantsToRun(m, r, c)) demand += m.type.power * (sp()?.power ?: 1.0) }
+        // Instabiles Netz (Standortfaktor NETZ): die Erzeugung pendelt langsam um ihren
+        // Mittelwert. Bewusst ueber die Sim-Uhr, damit Offline-Nachrechnen dieselbe
+        // Schwankung sieht wie das laufende Spiel.
+        if (mutation.unstableGrid) supply *= 1.0 + 0.28 * kotlin.math.sin(simClock * 0.11)
         val scale = if (demand <= 0.0) 1.0 else min(1.0, supply / demand)
         powerSupply = supply
         powerDemand = demand
@@ -2453,7 +2583,7 @@ class Simulation {
         forEachMachine { m, _, _ ->
             if (m.type == MType.HAENDLER) {
                 val pool = if (sellNuclear) globalStrom else globalKomponente
-                val sold = min(HAENDLER_SELL * machineUpgradeMult(m) * ddt, pool)
+                val sold = min(HAENDLER_SELL * machineUpgradeMult(m) * logiMult() * ddt, pool)
                 if (sold > 1e-9) {
                     if (sellNuclear) globalStrom -= sold else globalKomponente -= sold
                     money += sold * price
@@ -2544,6 +2674,9 @@ class Simulation {
         root.put("clvl", companyLevel)
         root.put("shares", shares)
         root.put("divi", dividends)
+        spec?.let { root.put("spec", it.name) }        // Name statt Ordinal: Enum bleibt erweiterbar
+        root.put("mut", mutation.name)
+        root.put("mutrr", mutRerollUsed)
         if (hasPlatform()) {
             root.put("plat", JSONArray().put(platformR0).put(platformC0).put(platformR1).put(platformC1))
         }
@@ -2608,6 +2741,19 @@ class Simulation {
         shares = root.optDouble("shares", 0.0)
         dividends = root.optDouble("divi", 0.0)
         mapSeed = root.optLong("seed", 12345L)
+        simClock = 0.0
+        // Ausrichtung/Standortfaktor: fehlen sie (Alt-Spielstand oder unbekannter Name),
+        // bleibt spec = null - dann zeigt die Oberflaeche einmalig die Auswahl.
+        val specName = root.optString("spec", "")
+        spec = Spec.values().firstOrNull { it.name == specName }
+        val mutName = root.optString("mut", "")
+        val savedMut = Mutation.values().firstOrNull { it.name == mutName }
+        if (savedMut != null) {
+            mutation = savedMut
+            mutRerollUsed = root.optBoolean("mutrr", false)
+        } else {
+            rollMutationFromSeed()   // Alt-Spielstand: aus dem gespeicherten Seed nachziehen
+        }
         // Plattform-Koordinaten laden (braucht mapSeed, falls neu platziert werden muss).
         val plat = root.optJSONArray("plat")
         if (plat != null && plat.length() == 4) {
