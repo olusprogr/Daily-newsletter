@@ -1,6 +1,24 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/08/22/pixel-11-pro-xl-review-snappier-cameras-cant-hide-an-iterative-upgrade/",
+      "title": "Pixel 11 Pro XL review: Snappier cameras can’t hide an iterative upgrade",
+      "summary": "Google’s Pixel 11 Pro XL brings snappier cameras and genuinely useful AI features like Rambler, but its iterative upgrades may not be enough to tempt recent Pixel owners.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-22T14:00:00+00:00",
+      "sent_at": "2026-08-22T14:17:20.825905+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/cyber-security/us-authorities-say-siemens-controllers-used-for-water-and-other-infrastructure-are-being-targeted-by-hackers-agencies-claim-threat-actors-use-ai-tools-to-generate-exploitation-scripts",
+      "title": "US authorities say Siemens controllers used for water and other infrastructure are being targeted by hackers — agencies claim threat actors use AI tools to generate exploitation scripts",
+      "summary": "Siemens S7 PLCs, commonly used in critical infrastructure, are reportedly being targeted by hackers and could potentially lead to disruption of industrial processes, safety incidents, downtime or equipment damage, and more. U.S. agencies are telling operators to protect these systems by keeping them updated and ensuring that they're off the internet if possible.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-08-22T13:57:17+00:00",
+      "sent_at": "2026-08-22T14:17:20.825905+00:00"
+    },
+    {
       "link": "https://www.theverge.com/tech/983554/hp-omnibook-3-16-snapdragon-laptop-review",
       "title": "An okay laptop with 16GB of RAM is better than a nice laptop with 8GB, and this $520 HP OmniBook proves it",
       "summary": "Laptop prices are out of whack. $500 used to get you a tolerable laptop, and $900 got you a really good one. They often had similar CPU, RAM, and storage options because that stuff was comparatively cheap; the difference was often in build quality and screen rather than power. But RAMageddon has thrown everything off. [&#8230;]",
@@ -6344,78 +6362,6 @@
       "category": "AI",
       "published": "2026-08-08T13:51:24+00:00",
       "sent_at": "2026-08-08T14:28:12.289596+00:00"
-    },
-    {
-      "link": "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/",
-      "title": "DeepMind's WeatherNext model achieves breakthrough forecasting cyclones",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-08T09:18:50+00:00",
-      "sent_at": "2026-08-08T13:42:01.383025+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2229315/ai-changing-cybersecurity-quick-terrifying-way/",
-      "title": "AI is changing cybersecurity in quick and terrifying ways",
-      "summary": "Hackers employing AI in their tactics are finding ways to exploit vulnerabilities that didn't even exist before.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-08-07T16:30:00+00:00",
-      "sent_at": "2026-08-08T13:42:01.383025+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/07/cloudflare-launches-kitesurf-a-browser-built-for-ai-agents/",
-      "title": "Cloudflare launches Kitesurf, a browser built for AI agents",
-      "summary": "Kitesurf is a cloud-hosted browser designed for AI agents instead of people. It uses less computing power than Chromium for common automation tasks, helping developers build browser-based AI agents more efficiently.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-07T16:16:09+00:00",
-      "sent_at": "2026-08-08T13:42:01.383025+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/cpus/amazon-cracks-down-on-cpu-waste-among-engineers-as-agentic-ai-crunch-intensifies-cpu-demand-makes-low-utilization-ec2-instances-a-hot-commodity",
-      "title": "Amazon cracks down on 'CPU waste' among engineers as agentic AI crunch intensifies — CPU demand makes low-utilization EC2 instances a hot commodity [Updated]",
-      "summary": "Amazon Web Services is telling engineers to slow down on EC2 usage as it struggles to meet CPU capacity demand for external customers.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-08-07T15:49:52+00:00",
-      "sent_at": "2026-08-08T13:42:01.383025+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/mamdani-assembles-his-nyc-tech-team/",
-      "title": "Zohran Mamdani’s NYC Tech Team Is What DOGE Should Have Been",
-      "summary": "The mayor of New York City has assembled a crew of Silicon Valley and United States Digital Service veterans to overhaul city services with better software.",
-      "source": "Wired",
-      "category": "Hardware",
-      "published": "2026-08-07T15:00:00+00:00",
-      "sent_at": "2026-08-08T13:42:01.383025+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/data-centers/protesters-haul-a-guillotine-to-city-council-meeting-about-a-potential-ai-data-center-company-rep-cornered-by-protestors-it-no-longer-felt-safe-to-stay-developer-escorted-out-by-police",
-      "title": "Protesters haul a guillotine to city council meeting about a potential AI data center, company rep cornered by protestors — ‘ it no longer felt safe to stay,’ developer escorted out by police",
-      "summary": "Some protesters brought a guillotine to public consultation for a potential data center in Salem, Oregon. Even though this was displayed outside the venue, it was a confrontation between the data center's representatives and some of the community members that led the latter to leave early.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-08-07T14:32:26+00:00",
-      "sent_at": "2026-08-08T13:42:01.383025+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/07/chinese-ai-model-kimi-escaped-its-cybersecurity-testing-environment-researchers-say/",
-      "title": "Chinese AI model Kimi escaped its cybersecurity testing environment, researchers say",
-      "summary": "In the Kimi test, the sandbox designed to contain the experiment was not properly configured.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-07T14:28:31+00:00",
-      "sent_at": "2026-08-08T13:42:01.383025+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/07/airbnb-says-ai-is-helping-it-ship-features-faster-as-it-tests-a-new-search-function/",
-      "title": "Airbnb says AI is helping it ship features faster as it tests a new search function",
-      "summary": "Airbnb will debut a new AI-powered search experience with a toggle.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-07T14:22:49+00:00",
-      "sent_at": "2026-08-08T13:42:01.383025+00:00"
     }
   ]
 }
