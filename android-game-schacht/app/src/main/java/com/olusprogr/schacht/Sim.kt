@@ -86,7 +86,13 @@ data class OfflineReport(
     val barrenGained: Double,
     val plattenGained: Double,
     val moneyGained: Double,
-    val events: List<OfflineEvent>
+    val events: List<OfflineEvent>,
+    /** Weltereignisse, die waehrend der Abwesenheit ausgeloest wurden (haeufigste zuerst). */
+    val worldEvents: List<Pair<EventKind, Int>> = emptyList(),
+    /** In der Abwesenheit fertig gewordene Vertraege. */
+    val contractsDone: Int = 0,
+    /** In der Abwesenheit erreichte Zwischenziele. */
+    val goalsDone: Int = 0
 )
 
 /**
@@ -154,6 +160,77 @@ enum class Mutation(
 }
 
 /**
+ * Zufaelliges Weltereignis. Laeuft eine Weile und veraendert dabei genau die
+ * Sammel-Multiplikatoren, durch die ohnehin jede Rate laeuft - kein Ereignis muss
+ * also eine Maschine kennen. `area = true` heisst: wirkt nur auf einen Kartenausschnitt
+ * (dort wird auch die Markierung gezeichnet), sonst firmenweit.
+ *
+ * Bewusst gemischt: auf jedes Aergernis kommt eine Chance, damit der Spieler beim
+ * Aufploppen "was mache ich jetzt damit?" denkt und nicht nur genervt wegklickt.
+ */
+enum class EventKind(
+    val good: Boolean,
+    val dur: Double,
+    val minLevel: Int = 1,
+    val maxLevel: Int = 4,
+    val area: Boolean = false,
+    val extract: Double = 1.0,   // Foerderung firmenweit
+    val process: Double = 1.0,   // Verarbeitung firmenweit
+    val price: Double = 1.0,     // Verkaufspreis
+    val wind: Double = 1.0,      // Windkraft
+    val wear: Double = 1.0,      // Verschleiss-Tempo
+    val cell: Double = 1.0,      // Faktor auf Maschinen IM Wirkgebiet (nur area)
+    val instant: Boolean = false // wirkt einmalig statt ueber Zeit
+) {
+    /** Erzader entdeckt: ein Gebiet liefert deutlich mehr. */
+    ERZADER(true, 200.0, area = true, cell = 1.6),
+    /** Netzausfall: ein Sektor liegt fast still. */
+    NETZAUSFALL(false, 100.0, area = true, cell = 0.25),
+    /** Maschinenbrand: eine einzelne Maschine nimmt sofort Schaden. */
+    BRAND(false, 0.0, instant = true),
+    /** Marktboom: das Endprodukt verkauft sich doppelt so teuer. */
+    MARKTBOOM(true, 130.0, price = 2.0),
+    /** Markteinbruch. */
+    MARKTFLAUTE(false, 130.0, price = 0.6),
+    /** Lieferengpass: die Verarbeitung stockt. */
+    LIEFERENGPASS(false, 120.0, process = 0.7),
+    /** Aufschwung: die ganze Firma laeuft rund. */
+    AUFSCHWUNG(true, 160.0, extract = 1.2, process = 1.2),
+    /** Level 3: Sturm ueber See - Foerderung leidet, die Windraeder drehen auf. */
+    STURM(false, 150.0, minLevel = 3, maxLevel = 3, extract = 0.65, wind = 1.8),
+    /** Level 2: Strahlungsproblem in einem Sektor - dort muss gewartet werden. */
+    STRAHLUNG(false, 130.0, minLevel = 2, maxLevel = 2, area = true, cell = 0.4, wear = 1.5),
+    /** Level 4: Startfenster - die ganze Fab arbeitet auf den Start hin. */
+    SATFENSTER(true, 100.0, minLevel = 4, maxLevel = 4, process = 1.6, price = 1.25)
+}
+
+/** Ein gerade laufendes Ereignis. r/c/rad sind nur bei `kind.area` gesetzt. */
+class ActiveEvent(val kind: EventKind, var left: Double, val r: Int, val c: Int, val rad: Int) {
+    fun covers(rr: Int, cc: Int) =
+        kind.area && kotlin.math.abs(rr - r) <= rad && kotlin.math.abs(cc - c) <= rad
+}
+
+/**
+ * Liefervertrag: fester Auftrag mit Uhr. Annahme ist freiwillig, ein Fehlschlag kostet
+ * nichts ausser der Belohnung - so bleibt Zeitdruck eine Chance und keine Strafe.
+ */
+class Contract(
+    val id: Int,           // stabile Kennung fuer die Oberflaeche (Index verschiebt sich)
+    val res: Int,          // Res-Slot (BARREN / PLATTE / Endprodukt)
+    val amount: Double,
+    val reward: Double,
+    val totalTime: Double,
+    var left: Double,
+    var done: Double = 0.0,
+    var accepted: Boolean = false
+) {
+    val progress: Double get() = if (amount <= 0.0) 1.0 else (done / amount).coerceIn(0.0, 1.0)
+}
+
+/** Art eines Zwischenziels der leisen Zielkette. */
+enum class GoalKind { MACHINES, FINAL, POWER, MONEY, TECHS, UPGRADES }
+
+/**
  * Ein Tech-Knoten. `costRes` bestimmt die Waehrung: BARREN/PLATTE fuer
  * Maschinen-Freischaltungen, null = Geld fuer die eigentlichen Upgrades.
  */
@@ -203,6 +280,25 @@ class Simulation {
     var mutRerollUsed = false
     /** Laufende Simulationszeit in Sekunden - nur fuer zeitabhaengige Effekte (NETZ). */
     private var simClock = 0.0
+
+    // --- Ereignisse ---
+    val activeEvents = ArrayList<ActiveEvent>()
+    private var eventCooldown = EVENT_FIRST
+    /** Wird beim Ausloesen eines Ereignisses gerufen (fuer den Offline-Bericht). */
+    var onEventSpawn: ((EventKind) -> Unit)? = null
+
+    // --- Vertraege ---
+    val contracts = ArrayList<Contract>()
+    private var nextContractId = 1
+    private var contractCooldown = CONTRACT_FIRST
+    /** Zuletzt fertig gewordener Vertrag (fuer die Erfolgsmeldung in der Oberflaeche). */
+    var lastContractDone: Contract? = null
+
+    // --- Leise Zielkette ---
+    var goalIndex = 0
+    /** In diesem Durchlauf insgesamt erzeugtes Endprodukt (Zaehler fuer Zwischenziele). */
+    var producedFinal = 0.0
+    var lastGoalDone = -1
     // Level-2-Plattform (bereits errichtet, gelb-schwarzer Rand, metallischer Kern).
     var platformR0 = -1; var platformC0 = -1; var platformR1 = -1; var platformC1 = -1
     // Oel-Bohrinsel (3x3, dekorativ): Spoiler fuers naechste Level (Petrochemie).
@@ -264,6 +360,17 @@ class Simulation {
         const val SATELLITENWERK_RATE = 0.5  // Mikrochip -> Satellitenmodul
         const val STARTRAMPE_RATE = 0.45     // Satellitenmodul -> Orbit-Dienste (verkaufbar)
         const val LIFT = 3.0
+        // --- Ereignisse: Abstaende bewusst gross, damit sie besonders bleiben ---
+        const val EVENT_FIRST = 150.0        // erstes Ereignis fruehestens nach 2,5 Min
+        const val EVENT_MIN = 190.0
+        const val EVENT_MAX = 400.0
+        const val EVENT_MAX_ACTIVE = 2
+        const val EVENT_AREA_RAD = 4         // Wirkradius eines Gebiets-Ereignisses (Zellen)
+        const val BRAND_DAMAGE = 34.0
+        // --- Vertraege ---
+        const val CONTRACT_FIRST = 90.0
+        const val CONTRACT_GAP = 210.0
+        const val CONTRACT_MAX_OFFERS = 2
         const val IN_CAP = 10.0
         const val OUT_CAP = 20.0
         const val LAGER_CAP = 120.0
@@ -696,6 +803,7 @@ class Simulation {
         spec = null
         rollMutationFromSeed()
         simClock = 0.0
+        resetRunState()
         placePlatform()
         placeOilRig()
         placeLaunchPad()
@@ -1370,6 +1478,7 @@ class Simulation {
         spec = null
         rollMutationFromSeed()
         simClock = 0.0
+        resetRunState()
         placePlatform()
         placeOilRig()
         placeLaunchPad()
@@ -1743,9 +1852,9 @@ class Simulation {
     // dabei globalMult() in den Raten der Foerder- bzw. Verarbeitungsmaschinen.
     private fun sp() = spec
     /** Foerder-Maschinen (kein Eingang): Bohrer, Pumpen, Minen, Einlaesse. */
-    private fun exMult() = globalMult() * (sp()?.extract ?: 1.0) * mutation.extract
+    private fun exMult() = globalMult() * (sp()?.extract ?: 1.0) * mutation.extract * evExtract()
     /** Verarbeitende Maschinen (mit Eingang). */
-    private fun prMult() = globalMult() * (sp()?.process ?: 1.0)
+    private fun prMult() = globalMult() * (sp()?.process ?: 1.0) * evProcess()
     /** Foerderband- und Verkaufstempo. */
     private fun logiMult() = sp()?.logistics ?: 1.0
     /** Faktor auf ALLE Baukosten (Geld wie Rohstoffe). */
@@ -1769,6 +1878,13 @@ class Simulation {
         return true
     }
 
+    /** Alles, was nur fuer den LAUFENDEN Durchlauf gilt, zuruecksetzen. */
+    private fun resetRunState() {
+        activeEvents.clear(); eventCooldown = EVENT_FIRST
+        contracts.clear(); contractCooldown = CONTRACT_FIRST; lastContractDone = null
+        goalIndex = 0; producedFinal = 0.0; lastGoalDone = -1
+    }
+
     /** Standortfaktor deterministisch aus dem Karten-Seed ableiten. */
     private fun rollMutationFromSeed() {
         val h = (mapSeed xor (mapSeed ushr 29)) * -3750763034362895579L
@@ -1779,12 +1895,12 @@ class Simulation {
 
     // --- Tech-abhaengige Parameter ---
     private fun globalMult() = 1.0 + 0.05 * lvl("t_takt")
-    private fun wearFactor() = max(0.3, 1.0 - 0.05 * lvl("t_robust")) * (sp()?.wear ?: 1.0) * mutation.wear
+    private fun wearFactor() = max(0.3, 1.0 - 0.05 * lvl("t_robust")) * (sp()?.wear ?: 1.0) * mutation.wear * evWear()
     private fun liftRate() = LIFT * (1.0 + 0.1 * lvl("t_lift")) * logiMult()
     private fun reactorPower() = REAKTOR_POWER + 5.0 * lvl("t_power")
     fun lagerCap() = LAGER_CAP * (1.0 + 0.15 * lvl("t_lagercap")) * (sp()?.storage ?: 1.0) * mutation.storage
     fun genPower() = GEN_POWER * (1.0 + 0.10 * lvl("t_genpower"))
-    fun windPower() = WIND_POWER * (1.0 + 0.10 * lvl("t_windpower")) * mutation.wind
+    fun windPower() = WIND_POWER * (1.0 + 0.10 * lvl("t_windpower")) * mutation.wind * evWind()
     fun solarPower() = SOLAR_POWER * (1.0 + 0.10 * lvl("t_solarpower")) * mutation.sun
     fun droneRepairRate() = DROHNE_RATE * (1.0 + 0.20 * lvl("t_drohne_rep"))
     fun droneRange() = DROHNE_R + lvl("t_drohne_range")
@@ -1834,7 +1950,7 @@ class Simulation {
     private fun chipfabRate() = CHIPFAB_RATE * (1.0 + 0.08 * lvl("t_cfspeed")) * prMult() * cleanMult()
     private fun satellitenwerkRate() = SATELLITENWERK_RATE * (1.0 + 0.08 * lvl("t_saspeed")) * prMult() * cleanMult()
     private fun startrampeRate() = STARTRAMPE_RATE * (1.0 + 0.08 * lvl("t_srspeed")) * prMult() * cleanMult()
-    fun componentPrice() = COMPONENT_PRICE * (1.0 + 0.25 * lvl("t_wert")) * companyMult() * shareBonus() * mutation.price
+    fun componentPrice() = COMPONENT_PRICE * (1.0 + 0.25 * lvl("t_wert")) * companyMult() * shareBonus() * mutation.price * evPrice()
 
     private fun wearPerSec(t: MType) = when (t) {
         MType.BOHRER -> 1.0 / 60.0
@@ -1925,16 +2041,206 @@ class Simulation {
     /** Ergiebigkeit der Wasserversorgung: volle Kraft an echtem Wasser, nur ein Bruchteil
      *  an einem kuenstlich gegrabenen Kanal (weniger effizient als eine echte Quelle). */
     private fun waterEfficiency(r: Int, c: Int): Double {
-        if (neighbors(r, c).any { rawWater(it[0], it[1]) }) return 1.0
+        // Wasserfoerderer laufen ohne boostAt() - der Faktor aus Gebiets-Ereignissen muss
+        // deshalb hier mit hinein, sonst waeren sie als Einzige davon ausgenommen.
+        val ev = eventCellMult(r, c)
+        if (neighbors(r, c).any { rawWater(it[0], it[1]) }) return ev
         if (neighbors(r, c).any { expandedCanal[it[0] * n + it[1]] })
-            return min(1.0, CANAL_WATER_MULT + 0.05 * lvl("t_kanal"))
+            return min(1.0, CANAL_WATER_MULT + 0.05 * lvl("t_kanal")) * ev
         return 0.0
     }
 
     private fun boostAt(r: Int, c: Int): Double {
         var k = 0
         for (nb in neighbors(r, c)) if (grid[nb[0]][nb[1]]?.type == MType.VERSTAERKER) k++
-        return 1.0 + BOOST_PER * min(k, 3)
+        return (1.0 + BOOST_PER * min(k, 3)) * eventCellMult(r, c)
+    }
+
+    // --- Ereignisse ------------------------------------------------------------------
+    // Alle Ereignisse greifen ueber genau fuenf Sammelpunkte (exMult/prMult/Preis/Wind/
+    // Verschleiss) plus boostAt() fuer die ortsgebundenen - kein Ereignis kennt eine
+    // einzelne Maschine.
+    private fun evProduct(sel: (EventKind) -> Double): Double {
+        var f = 1.0
+        for (e in activeEvents) f *= sel(e.kind)
+        return f
+    }
+    private fun evExtract() = evProduct { it.extract }
+    private fun evProcess() = evProduct { it.process }
+    private fun evPrice() = evProduct { it.price }
+    private fun evWind() = evProduct { it.wind }
+    private fun evWear() = evProduct { it.wear }
+    /** Faktor aus ortsgebundenen Ereignissen auf genau dieses Feld. */
+    fun eventCellMult(r: Int, c: Int): Double {
+        var f = 1.0
+        for (e in activeEvents) if (e.covers(r, c)) f *= e.kind.cell
+        return f
+    }
+    /** Liegt dieses Feld in einem Gebiets-Ereignis? (nur fuer die Markierung) */
+    fun eventAt(r: Int, c: Int): ActiveEvent? = activeEvents.firstOrNull { it.covers(r, c) }
+
+    private fun eventPool(): List<EventKind> =
+        EventKind.values().filter { companyLevel in it.minLevel..it.maxLevel }
+
+    /** Mittelpunkt der eigenen Anlage - Gebiets-Ereignisse sollen dort passieren, wo etwas steht. */
+    private fun factoryCenter(): IntArray {
+        var sr = 0; var sc = 0; var k = 0
+        forEachMachine { _, r, c -> sr += r; sc += c; k++ }
+        if (k == 0) return intArrayOf(if (hasPlatform()) (platformR0 + platformR1) / 2 else startR,
+            if (hasPlatform()) (platformC0 + platformC1) / 2 else startC)
+        return intArrayOf(sr / k, sc / k)
+    }
+
+    private fun spawnEvent() {
+        val pool = eventPool().filter { k -> activeEvents.none { it.kind == k } }
+        if (pool.isEmpty()) return
+        val kind = pool[(Math.random() * pool.size).toInt().coerceIn(0, pool.size - 1)]
+        if (kind.instant) {
+            // Maschinenbrand: trifft eine zufaellige, noch halbwegs heile Maschine.
+            val cands = ArrayList<Machine>()
+            forEachMachine { m, _, _ -> if (m.condition > 40.0 && wearPerSec(m.type) > 0.0) cands.add(m) }
+            if (cands.isEmpty()) return
+            val victim = cands[(Math.random() * cands.size).toInt().coerceIn(0, cands.size - 1)]
+            victim.condition = max(1.0, victim.condition - BRAND_DAMAGE)
+            onEventSpawn?.invoke(kind)
+            return
+        }
+        var rr = -1; var cc = -1
+        if (kind.area) {
+            val ctr = factoryCenter()
+            // leicht versetzt um die Anlage herum, damit nicht immer dieselbe Ecke trifft
+            rr = (ctr[0] + ((Math.random() * 9).toInt() - 4)).coerceIn(0, n - 1)
+            cc = (ctr[1] + ((Math.random() * 9).toInt() - 4)).coerceIn(0, n - 1)
+        }
+        activeEvents.add(ActiveEvent(kind, kind.dur, rr, cc, EVENT_AREA_RAD))
+        onEventSpawn?.invoke(kind)
+    }
+
+    private fun stepEvents(ddt: Double) {
+        var i = activeEvents.size - 1
+        while (i >= 0) {
+            val e = activeEvents[i]
+            e.left -= ddt
+            if (e.left <= 0.0) activeEvents.removeAt(i)
+            i--
+        }
+        eventCooldown -= ddt
+        if (eventCooldown <= 0.0) {
+            if (activeEvents.size < EVENT_MAX_ACTIVE) spawnEvent()
+            eventCooldown = EVENT_MIN + Math.random() * (EVENT_MAX - EVENT_MIN)
+        }
+    }
+
+    // --- Vertraege -------------------------------------------------------------------
+    /** Res-Slot des Endprodukts der aktuellen Stufe (Level 1 Komponente, ab Level 2 Strom). */
+    fun finalRes(): Int = if (companyLevel >= 2) Res.STROM.ordinal else Res.KOMPONENTE.ordinal
+
+    private fun currentRatePerSec(res: Int): Double = when (res) {
+        Res.BARREN.ordinal -> emaBarrenPerSec
+        Res.PLATTE.ordinal -> emaPlattePerSec
+        else -> emaKompPerSec
+    }
+
+    private fun makeOffer(): Contract? {
+        val choices = intArrayOf(Res.BARREN.ordinal, Res.PLATTE.ordinal, finalRes())
+        val res = choices[(Math.random() * choices.size).toInt().coerceIn(0, choices.size - 1)]
+        val time = doubleArrayOf(180.0, 300.0, 420.0)[(Math.random() * 3).toInt().coerceIn(0, 2)]
+        val rate = currentRatePerSec(res)
+        // Menge an der TATSAECHLICHEN Produktion ausrichten: ~70% dessen, was in der Zeit
+        // ohnehin entstuende. Fordernd, aber nie unmoeglich - und im fruehen Spiel klein.
+        val amount = kotlin.math.round(max(20.0, rate * time * 0.7))
+        if (amount <= 0.0) return null
+        // Belohnung an Geld/Minute verankert, mit Sockel: auch bei noch magerem Einkommen
+        // lohnt sich ein Auftrag, spaeter skaliert er automatisch mit.
+        val reward = kotlin.math.round(payAnchor() * 1.5 + moneyPerMin * (time / 60.0) * 1.3)
+        return Contract(nextContractId++, res, amount, reward, time, time)
+    }
+
+    private fun stepContracts(ddt: Double, madeBar: Double, madePlat: Double, madeFinal: Double) {
+        var i = contracts.size - 1
+        while (i >= 0) {
+            val ct = contracts[i]
+            if (ct.accepted) {
+                ct.done += when (ct.res) {
+                    Res.BARREN.ordinal -> madeBar
+                    Res.PLATTE.ordinal -> madePlat
+                    else -> madeFinal
+                }
+                if (ct.done >= ct.amount) {
+                    money += ct.reward
+                    lastContractDone = ct
+                    contracts.removeAt(i)
+                } else {
+                    ct.left -= ddt
+                    if (ct.left <= 0.0) contracts.removeAt(i)   // abgelaufen: kostet nur die Belohnung
+                }
+            }
+            i--
+        }
+        contractCooldown -= ddt
+        if (contractCooldown <= 0.0) {
+            if (contracts.count { !it.accepted } < CONTRACT_MAX_OFFERS) makeOffer()?.let { contracts.add(it) }
+            contractCooldown = CONTRACT_GAP
+        }
+    }
+
+    /** Angebot annehmen (Uhr laeuft ab jetzt). */
+    fun contractById(id: Int): Contract? = contracts.firstOrNull { it.id == id }
+
+    fun acceptContract(ct: Contract): Boolean {
+        if (ct.accepted || !contracts.contains(ct)) return false
+        ct.accepted = true
+        ct.left = ct.totalTime
+        return true
+    }
+    /** Angebot ablehnen - macht Platz fuer ein neues. */
+    fun declineContract(ct: Contract): Boolean {
+        if (ct.accepted) return false
+        return contracts.remove(ct)
+    }
+
+    // --- Leise Zielkette --------------------------------------------------------------
+    // Endlos: die sechs Zielarten wiederholen sich, die Vorgabe waechst je Runde. So gibt
+    // es immer ein naechstes kleines Ziel, ohne dass jemand hundert Ziele texten muesste.
+    private val goalKinds = GoalKind.values()
+    fun goalKind(i: Int): GoalKind = goalKinds[i % goalKinds.size]
+    fun goalTarget(i: Int): Double {
+        val round = i / goalKinds.size
+        val g = Math.pow(2.2, round.toDouble())
+        return when (goalKind(i)) {
+            GoalKind.MACHINES -> kotlin.math.round(4.0 + 3.0 * round)
+            GoalKind.FINAL -> kotlin.math.round(50.0 * g)
+            GoalKind.POWER -> kotlin.math.round(40.0 * g)
+            GoalKind.MONEY -> kotlin.math.round(payAnchor() * 4.0 * g)
+            GoalKind.TECHS -> kotlin.math.round(3.0 + 4.0 * round)
+            GoalKind.UPGRADES -> kotlin.math.round(2.0 + 4.0 * round)
+        }
+    }
+    fun goalProgress(i: Int): Double = when (goalKind(i)) {
+        GoalKind.MACHINES -> machineCountCached.toDouble()
+        GoalKind.FINAL -> producedFinal
+        GoalKind.POWER -> powerSupply
+        GoalKind.MONEY -> money
+        GoalKind.TECHS -> tech.values.sum().toDouble()
+        GoalKind.UPGRADES -> upgradeLevelsCached.toDouble()
+    }
+    fun goalReward(i: Int): Double = kotlin.math.round(payAnchor() * (0.6 + 0.15 * (i / goalKinds.size)))
+
+    // Werden in der Statistik-Schleife am Ende von step() mitgezaehlt - ein eigener
+    // Gitter-Durchlauf je Tick waere im Offline-Nachrechnen (Tausende Ticks) teuer.
+    var machineCountCached = 0
+        private set
+    var upgradeLevelsCached = 0
+        private set
+
+    private fun stepGoals() {
+        // Mehrere Stufen auf einmal moeglich (z.B. nach langer Abwesenheit).
+        var guard = 0
+        while (guard++ < 8 && goalProgress(goalIndex) >= goalTarget(goalIndex)) {
+            money += goalReward(goalIndex)
+            lastGoalDone = goalIndex
+            goalIndex++
+        }
     }
 
     private fun wantedRes(t: MType): IntArray = when (t) {
@@ -2122,6 +2428,7 @@ class Simulation {
         val ddt = dt.coerceIn(0.0, 2.0)
         if (ddt <= 0.0) return
         simClock += ddt
+        stepEvents(ddt)
 
         transfers()
 
@@ -2596,6 +2903,12 @@ class Simulation {
         // Dividenden aus verkauften Unternehmen (passives Einkommen)
         if (dividends > 0.0) { val d = dividends * ddt; money += d; soldValue += d }
 
+        // Vertraege und Zielkette zaehlen die in DIESEM Tick fertig gewordene Ware -
+        // dieselben Groessen, aus denen auch die Produktionsanzeige gespeist wird.
+        producedFinal += kompMade
+        stepContracts(ddt, barMade, platMade, kompMade)
+        stepGoals()
+
         val tau = 8.0
         val a = 1.0 - exp(-ddt / tau)
         emaBarrenPerSec += (barMade / ddt - emaBarrenPerSec) * a
@@ -2606,11 +2919,16 @@ class Simulation {
         // Auslastung je Maschinentyp (geglaettet) fuer die Statistik
         val sumU = DoubleArray(typeUtil.size)
         val cnt = IntArray(typeUtil.size)
+        var mc = 0; var ul = 0
         forEachMachine { m, _, _ ->
             val i = m.type.ordinal
             sumU[i] += m.util
             cnt[i]++
+            if (m.type != MType.REAKTOR) mc++
+            ul += m.lvl
         }
+        machineCountCached = mc
+        upgradeLevelsCached = ul
         for (i in typeUtil.indices) {
             typeCount[i] = cnt[i]
             val avg = if (cnt[i] > 0) sumU[i] / cnt[i] else 0.0
@@ -2627,6 +2945,11 @@ class Simulation {
     fun runOffline(elapsedSeconds: Int, onProgress: ((Float) -> Unit)? = null): OfflineReport {
         val cap = min(elapsedSeconds, OFFLINE_CAP)
         val b0 = globalBarren; val p0 = globalPlatten; val m0 = money
+        val goal0 = goalIndex
+        var ctDone = 0
+        val worldCount = HashMap<EventKind, Int>()
+        val prevHook = onEventSpawn
+        onEventSpawn = { k -> worldCount[k] = (worldCount[k] ?: 0) + 1 }
         val events = ArrayList<OfflineEvent>()
         val seenStarve = HashSet<Machine>()
         val seenDead = HashSet<Machine>()
@@ -2635,7 +2958,13 @@ class Simulation {
         var sinceReport = 0
         while (t < cap) {
             val dtNow = min(2.0, (cap - t).toDouble())
+            val ctBefore = contracts.count { it.accepted }
             step(dtNow)
+            // Ein angenommener Vertrag verschwindet entweder fertig oder abgelaufen; nur
+            // die fertigen zaehlen, erkennbar an lastContractDone.
+            if (contracts.count { it.accepted } < ctBefore && lastContractDone != null) {
+                ctDone++; lastContractDone = null
+            }
             forEachMachine { m, r, c ->
                 if (m.condition <= 0.0 && !seenDead.contains(m)) {
                     seenDead.add(m)
@@ -2659,7 +2988,13 @@ class Simulation {
             if (onProgress != null && sinceReport >= reportEvery) { onProgress(t.toFloat() / cap); sinceReport = 0 }
         }
         onProgress?.invoke(1f)
-        return OfflineReport(elapsedSeconds, cap, globalBarren - b0, globalPlatten - p0, money - m0, events)
+        onEventSpawn = prevHook
+        // Was waehrend der Abwesenheit fertig wurde, steht im Bericht - nicht zusaetzlich
+        // beim ersten Frame nochmal als Erfolgsmeldung einblenden.
+        lastContractDone = null; lastGoalDone = -1
+        val world = worldCount.entries.sortedByDescending { it.value }.map { it.key to it.value }
+        return OfflineReport(elapsedSeconds, cap, globalBarren - b0, globalPlatten - p0, money - m0, events,
+            world, ctDone, goalIndex - goal0)
     }
 
     fun toJson(nowMillis: Long): String {
@@ -2677,6 +3012,22 @@ class Simulation {
         spec?.let { root.put("spec", it.name) }        // Name statt Ordinal: Enum bleibt erweiterbar
         root.put("mut", mutation.name)
         root.put("mutrr", mutRerollUsed)
+        root.put("goal", goalIndex)
+        root.put("pfin", producedFinal)
+        root.put("evcd", eventCooldown)
+        root.put("ctcd", contractCooldown)
+        val evs = JSONArray()
+        for (e in activeEvents) {
+            evs.put(JSONObject().put("k", e.kind.name).put("l", e.left)
+                .put("r", e.r).put("c", e.c).put("rad", e.rad))
+        }
+        root.put("evs", evs)
+        val cts = JSONArray()
+        for (ct in contracts) {
+            cts.put(JSONObject().put("id", ct.id).put("res", ct.res).put("amt", ct.amount).put("rw", ct.reward)
+                .put("tt", ct.totalTime).put("l", ct.left).put("d", ct.done).put("a", ct.accepted))
+        }
+        root.put("cts", cts)
         if (hasPlatform()) {
             root.put("plat", JSONArray().put(platformR0).put(platformC0).put(platformR1).put(platformC1))
         }
@@ -2753,6 +3104,32 @@ class Simulation {
             mutRerollUsed = root.optBoolean("mutrr", false)
         } else {
             rollMutationFromSeed()   // Alt-Spielstand: aus dem gespeicherten Seed nachziehen
+        }
+        goalIndex = root.optInt("goal", 0).coerceAtLeast(0)
+        producedFinal = root.optDouble("pfin", 0.0)
+        eventCooldown = root.optDouble("evcd", EVENT_FIRST)
+        contractCooldown = root.optDouble("ctcd", CONTRACT_FIRST)
+        lastContractDone = null; lastGoalDone = -1
+        activeEvents.clear()
+        root.optJSONArray("evs")?.let { arr ->
+            for (i in 0 until arr.length()) {
+                val o = arr.optJSONObject(i) ?: continue
+                val k = EventKind.values().firstOrNull { it.name == o.optString("k", "") } ?: continue
+                val left = o.optDouble("l", 0.0)
+                if (left > 0.0) activeEvents.add(ActiveEvent(k, left, o.optInt("r", -1), o.optInt("c", -1), o.optInt("rad", EVENT_AREA_RAD)))
+            }
+        }
+        contracts.clear()
+        root.optJSONArray("cts")?.let { arr ->
+            for (i in 0 until arr.length()) {
+                val o = arr.optJSONObject(i) ?: continue
+                val cid = o.optInt("id", nextContractId)
+                nextContractId = max(nextContractId, cid + 1).toInt()
+                contracts.add(Contract(
+                    cid, o.optInt("res", Res.BARREN.ordinal), o.optDouble("amt", 0.0), o.optDouble("rw", 0.0),
+                    o.optDouble("tt", 300.0), o.optDouble("l", 300.0), o.optDouble("d", 0.0),
+                    o.optBoolean("a", false)))
+            }
         }
         // Plattform-Koordinaten laden (braucht mapSeed, falls neu platziert werden muss).
         val plat = root.optJSONArray("plat")

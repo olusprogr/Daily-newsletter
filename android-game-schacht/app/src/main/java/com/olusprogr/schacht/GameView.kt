@@ -26,7 +26,7 @@ class GameView(context: Context) : View(context) {
     // Aktives Bau-Werkzeug (null = kein Bauen; Antippen zeigt dann Info).
     private var buildTool: MType? = null
 
-    private enum class Screen { MENU, GAME, TECH, STAT, REPORT, COMPANY, LOADING, SPEC }
+    private enum class Screen { MENU, GAME, TECH, STAT, REPORT, COMPANY, LOADING, SPEC, CONTRACT }
     private var screen = Screen.MENU
 
     private val saveStore = SaveStore(context)
@@ -290,6 +290,11 @@ class GameView(context: Context) : View(context) {
     private val buttons = ArrayList<Btn>()
 
     private var animT = 0f
+
+    // Kurze Erfolgsmeldung (Vertrag erfuellt / Zwischenziel erreicht). Wird ueber der
+    // Ticker-Leiste eingeblendet - eine Belohnung, die niemand bemerkt, ist keine.
+    private var flashMsg: String? = null
+    private var flashT = 0f
 
     // Button-Druck-Feedback (Juice): gedrueckte Button-ID + Zeitpunkt.
     private var pressedBtn: String? = null
@@ -561,7 +566,11 @@ class GameView(context: Context) : View(context) {
      * Panel stehen, weil die Karte weiterhin nur bis zur (oft hoeheren) Paletten-Kante
      * geclippt wurde.
      */
+    /** Hoehe der Ereignis-/Auftrags-/Ziel-Leiste direkt unter dem Kopfbereich. */
+    private fun tickerH(): Float = if (screen == Screen.GAME || screen == Screen.CONTRACT) dp(30f) else 0f
+
     private fun updateGridViewport() {
+        gridTop = headerH + dp(4f) + tickerH()
         val bottomTop = if (screen != Screen.GAME) H.toFloat() else when {
             selR >= 0 && sim.grid[selR][selC] != null -> H - dp(214f) - detailExtraH(sim.grid[selR][selC]!!)
             selR >= 0 && sim.canExpandInfra(selR, selC) -> expandPanelTop()
@@ -602,6 +611,7 @@ class GameView(context: Context) : View(context) {
         if (screen == Screen.GAME && sim.spec == null && !viewOnly) screen = Screen.SPEC
         if (screen == Screen.SPEC) { drawSpecChoice(canvas); return }
         drawHeader(canvas)
+        if (screen == Screen.GAME || screen == Screen.CONTRACT) drawTicker(canvas)
         drawGrid(canvas)
         if (screen == Screen.GAME) { drawPuffs(canvas); drawRises(canvas) }
         if (screen == Screen.GAME) drawPowerPulse(canvas)
@@ -613,6 +623,7 @@ class GameView(context: Context) : View(context) {
             }
         }
         when (screen) {
+            Screen.CONTRACT -> drawContracts(canvas)
             Screen.COMPANY -> drawCompany(canvas)
             Screen.TECH -> drawTech(canvas)
             Screen.STAT -> drawStat(canvas)
@@ -762,6 +773,7 @@ class GameView(context: Context) : View(context) {
         }
         drawOilRig(canvas)
         drawLaunchPad(canvas)
+        drawEventAreas(canvas)
         // Kuehlschlauch (unter den Maschinen)
         if (screen == Screen.GAME) drawHose(canvas)
         if (screen == Screen.GAME) drawWasserpumpePipes(canvas)
@@ -784,6 +796,39 @@ class GameView(context: Context) : View(context) {
             p.style = Paint.Style.FILL
         }
         canvas.restore()
+    }
+
+    /**
+     * Wirkgebiet laufender Ereignisse auf der Karte: ein pulsierend getoenter Bereich mit
+     * Rahmen und Beschriftung. Wird als EIN Rechteck je Ereignis gezeichnet (nicht je
+     * Zelle), damit es auch bei grossem Radius billig bleibt.
+     */
+    private fun drawEventAreas(canvas: Canvas) {
+        if (sim.activeEvents.isEmpty()) return
+        val pulse = 0.5f + 0.5f * kotlin.math.sin(animT * 3f)
+        for (e in sim.activeEvents) {
+            if (!e.kind.area || e.r < 0) continue
+            val r0 = (e.r - e.rad).coerceAtLeast(0); val r1 = (e.r + e.rad).coerceAtMost(sim.areaN() - 1)
+            val c0 = (e.c - e.rad).coerceAtLeast(0); val c1 = (e.c + e.rad).coerceAtMost(sim.areaN() - 1)
+            val x0 = vLeft + c0 * cell; val y0 = vTop + r0 * cell
+            val x1 = vLeft + (c1 + 1) * cell; val y1 = vTop + (r1 + 1) * cell
+            val col = if (e.kind.good) Color.rgb(120, 214, 140) else Color.rgb(234, 104, 94)
+            p.color = Color.argb((26 + 26 * pulse).toInt(), Color.red(col), Color.green(col), Color.blue(col))
+            canvas.drawRect(x0, y0, x1, y1, p)
+            p.color = Color.argb((150 + 80 * pulse).toInt(), Color.red(col), Color.green(col), Color.blue(col))
+            p.style = Paint.Style.STROKE; p.strokeWidth = dp(2.5f)
+            canvas.drawRect(x0, y0, x1, y1, p)
+            p.style = Paint.Style.FILL
+            // Beschriftung oben links im Gebiet, damit klar ist WAS dort passiert
+            pText.textAlign = Paint.Align.LEFT
+            pText.textSize = dp(12f)
+            val label = evName(e.kind)
+            val tw = pText.measureText(label)
+            p.color = Color.argb(200, 20, 20, 24)
+            canvas.drawRect(x0, y0, x0 + tw + dp(10f), y0 + dp(17f), p)
+            pText.color = col
+            canvas.drawText(label, x0 + dp(5f), y0 + dp(13f), pText)
+        }
     }
 
     /**
@@ -2506,6 +2551,203 @@ class GameView(context: Context) : View(context) {
      * Neustart und nach jedem Firmenverkauf - das ist der Moment, der einen Durchlauf vom
      * naechsten unterscheidet.
      */
+    // ---------------- Ereignisse / Vertraege / Zielkette ----------------
+    private fun evName(k: EventKind) = tr("ev_" + k.name.lowercase())
+    private fun goalName(i: Int) = when (sim.goalKind(i)) {
+        GoalKind.MACHINES -> tr("goal_machines")
+        GoalKind.FINAL -> finalResName()
+        GoalKind.POWER -> tr("goal_power")
+        GoalKind.MONEY -> tr("goal_money")
+        GoalKind.TECHS -> tr("goal_techs")
+        GoalKind.UPGRADES -> tr("goal_upgrades")
+    }
+    /** Name des Endprodukts der aktuellen Stufe (dieselbe Zuordnung wie in der Statistik). */
+    private fun finalResName(): String = tr(when {
+        sim.companyLevel >= 4 -> "orbit"
+        sim.companyLevel == 3 -> "treibstoff"
+        sim.companyLevel == 2 -> "netzstrom"
+        else -> "s_komp"
+    })
+    private fun resName(res: Int): String = when (res) {
+        Res.BARREN.ordinal -> tr(when {
+            sim.companyLevel >= 4 -> "wafer"; sim.companyLevel == 3 -> "naphtha"
+            sim.companyLevel == 2 -> "angeruran"; else -> "s_barren" })
+        Res.PLATTE.ordinal -> tr(when {
+            sim.companyLevel >= 4 -> "substrat"; sim.companyLevel == 3 -> "additive"
+            sim.companyLevel == 2 -> "bleiverkl"; else -> "s_platten" })
+        else -> finalResName()
+    }
+    private fun fmtClock(sec: Double): String {
+        val t = sec.coerceAtLeast(0.0).toInt()
+        return "${t / 60}:${(t % 60).toString().padStart(2, '0')}"
+    }
+
+    /**
+     * Schmale Leiste unter dem Kopfbereich: laufendes Ereignis, laufender Vertrag und -
+     * wenn nichts davon ansteht - das aktuelle Zwischenziel. Bewusst eine einzige Zeile,
+     * damit die Zielkette leise bleibt und der Karte kaum Platz nimmt.
+     */
+    private fun drawTicker(canvas: Canvas) {
+        val top = headerH + dp(2f)
+        val h = tickerH() - dp(4f)
+        p.color = Color.rgb(30, 28, 24)
+        canvas.drawRect(0f, top, W.toFloat(), top + h, p)
+
+        // Fertige Vertraege / erreichte Ziele aus der Simulation abholen und melden.
+        sim.lastContractDone?.let { ct ->
+            flashMsg = "${tr("ct_done")}  + ${fmt(ct.reward)}"
+            flashT = animT; sim.lastContractDone = null; audio.sell()
+        }
+        if (sim.lastGoalDone >= 0) {
+            flashMsg = "${tr("goal_done")}  + ${fmt(sim.goalReward(sim.lastGoalDone))}"
+            flashT = animT; sim.lastGoalDone = -1; audio.buy()
+        }
+        val age = animT - flashT
+        val msg = flashMsg
+        if (msg != null && age < 4f) {
+            val a = (255 * (1f - (age / 4f).coerceIn(0f, 1f) * (age / 4f).coerceIn(0f, 1f))).toInt().coerceIn(0, 255)
+            p.color = Color.argb((a * 0.85f).toInt(), 30, 90, 50)
+            canvas.drawRect(0f, top, W.toFloat(), top + h, p)
+            pText.textAlign = Paint.Align.CENTER
+            pText.color = Color.argb(a, 150, 245, 175); pText.textSize = dp(13f)
+            canvas.drawText(msg, W / 2f, top + h * 0.5f + dp(4.5f), pText)
+            pText.textAlign = Paint.Align.LEFT
+            return                      // Meldung hat fuer den Moment Vorrang
+        } else if (msg != null) flashMsg = null
+
+        // Rechts: Auftragsknopf mit Angebots-Zaehler
+        val offers = sim.contracts.count { !it.accepted }
+        val bw = dp(84f)
+        val bRect = RectF(W - bw - dp(6f), top + dp(2f), W - dp(6f), top + h - dp(2f))
+        val lbl = if (offers > 0) "${tr("contracts")} ($offers)" else tr("contracts")
+        drawButton(canvas, Btn(bRect, "contracts", lbl, true, screen == Screen.CONTRACT || offers > 0, cAccent))
+        buttons.add(Btn(bRect, "contracts", "contracts"))
+
+        var x = dp(8f)
+        val right = bRect.left - dp(6f)
+        val ev = sim.activeEvents.maxByOrNull { if (it.kind.good) 1 else 2 }   // Aerger zuerst zeigen
+        val ct = sim.contracts.firstOrNull { it.accepted }
+        // Wie viele Felder teilen sich den Platz?
+        val slots = (if (ev != null) 1 else 0) + (if (ct != null) 1 else 0)
+        val cw = if (slots >= 2) (right - x - dp(6f)) / 2f else right - x
+
+        pText.textAlign = Paint.Align.LEFT
+        if (ev != null) {
+            val col = if (ev.kind.good) cGood else cBad
+            p.color = Color.argb(50, Color.red(col), Color.green(col), Color.blue(col))
+            canvas.drawRoundRect(RectF(x, top + dp(2f), x + cw, top + h - dp(2f)), dp(4f), dp(4f), p)
+            p.color = col
+            canvas.drawRect(x, top + dp(2f), x + dp(3f), top + h - dp(2f), p)
+            pText.color = col; pText.textSize = dp(12f)
+            val t = "${evName(ev.kind)}  ${fmtClock(ev.left)}"
+            canvas.drawText(ellipsize(t, cw - dp(12f)), x + dp(8f), top + h * 0.5f + dp(4f), pText)
+            // Restzeit als duenner Balken unten
+            p.color = Color.argb(140, Color.red(col), Color.green(col), Color.blue(col))
+            val f = (ev.left / ev.kind.dur).coerceIn(0.0, 1.0).toFloat()
+            canvas.drawRect(x, top + h - dp(3f), x + cw * f, top + h - dp(2f), p)
+            x += cw + dp(6f)
+        }
+        if (ct != null) {
+            p.color = Color.argb(40, 246, 200, 98)
+            canvas.drawRoundRect(RectF(x, top + dp(2f), x + cw, top + h - dp(2f)), dp(4f), dp(4f), p)
+            p.color = cAccent
+            canvas.drawRect(x, top + dp(2f), x + dp(3f), top + h - dp(2f), p)
+            pText.color = cAccent; pText.textSize = dp(12f)
+            val t = "${tr("contract_label")} ${(ct.progress * 100).roundToInt()}%  ${fmtClock(ct.left)}"
+            canvas.drawText(ellipsize(t, cw - dp(12f)), x + dp(8f), top + h * 0.5f + dp(4f), pText)
+            p.color = Color.argb(150, 246, 200, 98)
+            canvas.drawRect(x, top + h - dp(3f), x + cw * ct.progress.toFloat(), top + h - dp(2f), p)
+        }
+        if (slots == 0) {
+            // Leise Zielkette: nur sichtbar, wenn sonst nichts los ist.
+            val i = sim.goalIndex
+            val prog = sim.goalProgress(i); val tgt = sim.goalTarget(i)
+            pText.color = cDim; pText.textSize = dp(12f)
+            val t = "${tr("goal_label")}  ${goalName(i)}  ${fmt(prog.coerceAtMost(tgt))} / ${fmt(tgt)}"
+            canvas.drawText(ellipsize(t, cw - dp(8f)), x, top + h * 0.5f + dp(4f), pText)
+            p.color = Color.argb(120, 150, 140, 130)
+            val f = (prog / tgt).coerceIn(0.0, 1.0).toFloat()
+            canvas.drawRect(x, top + h - dp(3f), x + cw * f, top + h - dp(2f), p)
+        }
+    }
+
+    /** Kuerzt Text auf die verfuegbare Breite und haengt ein Auslassungszeichen an. */
+    private fun ellipsize(t: String, maxW: Float): String {
+        if (pText.measureText(t) <= maxW) return t
+        var e = t.length
+        while (e > 1 && pText.measureText(t.substring(0, e) + "…") > maxW) e--
+        return t.substring(0, e) + "…"
+    }
+
+    /**
+     * Auftragsbildschirm: offene Angebote zum Annehmen/Ablehnen und der laufende Vertrag
+     * mit Fortschritt und Restzeit. Ein Fehlschlag kostet nichts ausser der Belohnung -
+     * deshalb steht das auch so als Hinweis dabei.
+     */
+    private fun drawContracts(canvas: Canvas) {
+        p.color = Color.rgb(18, 20, 26); canvas.drawRect(0f, 0f, W.toFloat(), H.toFloat(), p)
+        hazardBar(canvas, 0f, 0f, W.toFloat(), dp(8f))
+        pText.textAlign = Paint.Align.LEFT
+        pText.color = cAccent; pText.textSize = dp(22f)
+        canvas.drawText(tr("ct_title"), dp(16f), dp(46f), pText)
+        pText.color = cDim; pText.textSize = dp(12.5f)
+        canvas.drawText(tr("ct_hint"), dp(16f), dp(68f), pText)
+
+        val margin = dp(14f); val cw = W - 2 * margin
+        var top = dp(84f)
+        if (sim.contracts.isEmpty()) {
+            pText.color = cDim; pText.textSize = dp(14f)
+            canvas.drawText(tr("ct_none"), dp(16f), top + dp(24f), pText)
+        }
+        for (ct in sim.contracts.toList()) {
+            val ch = dp(112f)
+            if (top + ch > H - dp(70f)) break
+            val r = RectF(margin, top, margin + cw, top + ch)
+            p.color = Color.rgb(38, 42, 52); canvas.drawRoundRect(r, dp(9f), dp(9f), p)
+            p.color = if (ct.accepted) cAccent else Color.rgb(120, 202, 162)
+            canvas.drawRect(r.left, r.top, r.left + dp(4f), r.bottom, p)
+
+            drawIcon(canvas, Sprites.iconForRes(ct.res, sim.companyLevel), r.left + dp(14f), r.top + dp(12f), dp(20f))
+            pText.color = cText; pText.textSize = dp(16f)
+            canvas.drawText("${fmt(ct.amount)} ${resName(ct.res)}", r.left + dp(42f), r.top + dp(28f), pText)
+            pText.color = cGood; pText.textSize = dp(14f)
+            canvas.drawText("+ ${fmt(ct.reward)}", r.left + dp(42f), r.top + dp(48f), pText)
+            pText.color = cDim; pText.textSize = dp(12f)
+            pText.textAlign = Paint.Align.RIGHT
+            canvas.drawText("${tr("ct_time")} ${fmtClock(if (ct.accepted) ct.left else ct.totalTime)}",
+                r.right - dp(14f), r.top + dp(28f), pText)
+            pText.textAlign = Paint.Align.LEFT
+
+            if (ct.accepted) {
+                val bl = r.left + dp(14f); val br2 = r.right - dp(14f); val by2 = r.top + dp(62f)
+                p.color = cGridLine; canvas.drawRect(bl, by2, br2, by2 + dp(12f), p)
+                p.color = cAccent
+                canvas.drawRect(bl, by2, bl + (br2 - bl) * ct.progress.toFloat(), by2 + dp(12f), p)
+                pText.color = cText; pText.textSize = dp(11.5f)
+                canvas.drawText("${fmt(ct.done)} / ${fmt(ct.amount)}", bl + dp(4f), by2 + dp(10f), pText)
+            } else {
+                val bh2 = dp(32f); val by2 = r.bottom - bh2 - dp(10f)
+                val halfW = (cw - dp(38f)) / 2f
+                val aR = RectF(r.left + dp(14f), by2, r.left + dp(14f) + halfW, by2 + bh2)
+                val dR = RectF(aR.right + dp(10f), by2, aR.right + dp(10f) + halfW, by2 + bh2)
+                val key = contractKey(ct)
+                drawButton(canvas, Btn(aR, "ctok_$key", tr("ct_accept"), true, false, cAccent))
+                drawButton(canvas, Btn(dR, "ctno_$key", tr("ct_decline"), true, false, cAccent))
+                buttons.add(Btn(aR, "ctok_$key", "accept"))
+                buttons.add(Btn(dR, "ctno_$key", "decline"))
+            }
+            top += ch + dp(10f)
+        }
+
+        val by = H - dp(58f); val bh = dp(42f)
+        val rClose = RectF(margin, by, W - margin, by + bh)
+        drawButton(canvas, Btn(rClose, "close", tr("close"), true, false, cAccent))
+        buttons.add(Btn(rClose, "close", "close"))
+    }
+
+    /** Stabile Kennung eines Angebots fuer die Button-IDs. */
+    private fun contractKey(ct: Contract) = ct.id.toString()
+
     private fun drawSpecChoice(canvas: Canvas) {
         p.color = Color.rgb(16, 18, 24); canvas.drawRect(0f, 0f, W.toFloat(), H.toFloat(), p)
         hazardBar(canvas, 0f, 0f, W.toFloat(), dp(8f))
@@ -2621,6 +2863,25 @@ class GameView(context: Context) : View(context) {
             hazardBar(canvas, dp(16f), yy - dp(14f), W - dp(32f), dp(7f))
             pText.color = red; pText.textSize = dp(15f)
             canvas.drawText("WARNUNG: $dead ${tr("need_service")}", dp(20f), yy + dp(6f), pText); yy += dp(30f)
+        }
+        // Was in der Abwesenheit sonst noch passiert ist: Weltereignisse, fertige
+        // Vertraege, erreichte Zwischenziele. Bewusst kompakt - eine Zeile je Sache.
+        if (rep.worldEvents.isNotEmpty() || rep.contractsDone > 0 || rep.goalsDone > 0) {
+            pText.color = amber; pText.textSize = dp(13f)
+            for ((k, cnt) in rep.worldEvents.take(3)) {
+                if (yy > H - dp(150f)) break
+                canvas.drawText("· ${evName(k)}${if (cnt > 1) " x$cnt" else ""}", dp(20f), yy, pText)
+                yy += dp(19f)
+            }
+            if (rep.contractsDone > 0) {
+                pText.color = green
+                canvas.drawText("· ${rep.contractsDone} ${tr("rep_contracts")}", dp(20f), yy, pText); yy += dp(19f)
+            }
+            if (rep.goalsDone > 0) {
+                pText.color = green
+                canvas.drawText("· ${rep.goalsDone} ${tr("rep_goals")}", dp(20f), yy, pText); yy += dp(19f)
+            }
+            yy += dp(6f)
         }
         // Protokoll
         pText.color = Color.argb(210, 74, 240, 122); pText.textSize = dp(13f)
@@ -2927,6 +3188,7 @@ class GameView(context: Context) : View(context) {
         if (viewOnly && id == "to_menu") exitViewOnly()
         else if (viewOnly) {
             val navAllowed = id == "tech" || id == "stat" || id == "close" || id == "company" ||
+                id == "contracts" ||
                 id.startsWith("mvol_") || id.startsWith("svol_") || id.startsWith("lang_") ||
                 id == "exit_viewonly" || id.startsWith("vo_") || id == "palette_toggle"
             if (!navAllowed) { audio.error(); invalidate(); return }
@@ -2946,6 +3208,18 @@ class GameView(context: Context) : View(context) {
             id == "stat" -> { screen = if (screen == Screen.STAT) Screen.GAME else Screen.STAT; selR = -1; resetArmed = false; statScroll = 0f; audio.click() }
             id == "close" -> { screen = Screen.GAME; report = null; resetArmed = false; sellArmed = false; audio.click() }
             id == "mut_reroll" -> { if (sim.rerollMutation()) { persist(); audio.buy() } else audio.error() }
+            id == "contracts" -> {
+                screen = if (screen == Screen.CONTRACT) Screen.GAME else Screen.CONTRACT
+                selR = -1; selC = -1; audio.click()
+            }
+            id.startsWith("ctok_") -> {
+                val ct = id.removePrefix("ctok_").toIntOrNull()?.let { sim.contractById(it) }
+                if (ct != null && sim.acceptContract(ct)) { persist(); audio.buy() } else audio.error()
+            }
+            id.startsWith("ctno_") -> {
+                val ct = id.removePrefix("ctno_").toIntOrNull()?.let { sim.contractById(it) }
+                if (ct != null && sim.declineContract(ct)) { persist(); audio.click() } else audio.error()
+            }
             id.startsWith("spec_") -> {
                 val sp = Spec.values().firstOrNull { it.name == id.removePrefix("spec_") }
                 if (sp != null) {
