@@ -1,6 +1,15 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/tech-industry/data-centers/death-threats-hit-data-center-opponents-as-towns-cancel-votes-and-close-public-comment",
+      "title": "Local officials face death threats and gunfire over AI data center projects — More than 500 towns restrict builds as councils shutter public comment",
+      "summary": "Recent data published in the Soufan Center's July IntelBrief found hundreds of posts with threat language between July 2025 and July 2026, and a volume surge beginning in April.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-08-23T10:30:00+00:00",
+      "sent_at": "2026-08-23T10:49:04.966976+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/pc-components/gpus/enthusiast-mods-gtx-1080-ti-with-a-dual-tower-cpu-cooler-sees-up-to-32-c-reduction-in-temps-mod-yields-30w-power-savings-and-9-percent-higher-fps",
       "title": "Enthusiast mods GTX 1080 Ti with a dual-tower CPU cooler, sees up to 32°C reduction in temps — Mod yields 30W power savings and 9% higher FPS",
       "summary": "What if you could have twice the CPU cooler in your computer? If that's a question that piques your interest, then TrashBench has answered your curiosity in droves with an experiment that ended up working incredibly well.",
