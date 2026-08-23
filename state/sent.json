@@ -1,6 +1,15 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/08/23/is-it-legal-to-train-ai-models-on-copyrighted-books-its-complicated/",
+      "title": "Is it legal to train AI models on copyrighted books? It’s complicated",
+      "summary": "Most published authors have, without their knowledge or consent, contributed to the development of the same AI tools that threaten to undermine their livelihoods. That seems illegal, right?",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-23T15:00:00+00:00",
+      "sent_at": "2026-08-23T15:18:15.354514+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/pc-components/gpus/grab-the-asus-prime-radeon-rx-9070-oc-for-usd629-99-save-usd120-on-this-16gb-gaming-gpu-for-reliable-1440p-and-4k-gaming",
       "title": "Grab the Asus Prime Radeon RX 9070 OC for $629.99 — save $120 on this 16GB gaming GPU for reliable 1440p and 4K gaming",
       "summary": "The Asus Prime Radeon RX 9070 OC is available for just $629.99 on Amazon, delivering strong 1440p performance, 16GB of VRAM, a 2,610MHz boost clock, and a triple-fan cooling system at a $120 discount.",
@@ -6326,42 +6335,6 @@
       "category": "Hardware",
       "published": "2026-08-09T10:06:37+00:00",
       "sent_at": "2026-08-09T15:26:59.047289+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/09/the-ai-safety-test-is-becoming-a-safety-risk/",
-      "title": "The AI safety test is becoming a safety risk",
-      "summary": "AI agents are escaping cybersecurity testing environments and reaching real-world systems, raising questions about whether safety infrastructure, industry standards and regulation can keep pace with increasingly powerful models.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-09T14:30:00+00:00",
-      "sent_at": "2026-08-09T14:30:58.581572+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/liquid-cooling/modder-pumps-liquid-directly-over-bare-gpu-silicon-via-3d-printed-block-drops-rtx-2060-super-load-temps-to-28-c-despite-initial-leaks",
-      "title": "Modder pumps liquid directly over bare GPU silicon via 3D-printed block — drops RTX 2060 Super load temps to 28°C despite initial leaks",
-      "summary": "The fearless TrashBench has been testing direct die water cooling of graphics cards and suffered most of the leaky nightmares you might expect.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-09T14:15:00+00:00",
-      "sent_at": "2026-08-09T14:30:58.581572+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/semiconductors/musks-terafab-projected-to-be-larger-than-the-pentagon-apple-park-mall-of-america-and-giga-texas-combined-all-in-one-chip-manufacturing-facility-visualized-to-show-the-projects-massive-footprint",
-      "title": "Musk’s Terafab projected to be larger than the Pentagon, Apple Park, Mall of America, and Giga Texas, combined — all-in-one chip manufacturing facility visualized to show the project’s massive footprint",
-      "summary": "Elon Musk's Terafab will have at least 100 million sq. ft of interior space, making it the largest such structure on Earth by a big margin. It seems that it will need this amount of space, though, for Musk's ambitious plan of bringing multiple semiconductor manufacturing processes under one roof.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-09T13:55:00+00:00",
-      "sent_at": "2026-08-09T14:30:58.581572+00:00"
-    },
-    {
-      "link": "https://www.cnbc.com/2026/08/09/israeli-startup-irregular-linked-to-ai-hacks-openai-anthropic-meta.html",
-      "title": "Israeli startup was linked to rogue AI hacks at OpenAI, Anthropic and Meta",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-09T13:03:49+00:00",
-      "sent_at": "2026-08-09T14:30:58.581572+00:00"
     }
   ]
 }
