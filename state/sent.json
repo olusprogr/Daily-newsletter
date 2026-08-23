@@ -1,6 +1,15 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/pc-components/gpus/enthusiast-mods-gtx-1080-ti-with-a-dual-tower-cpu-cooler-sees-up-to-32-c-reduction-in-temps-mod-yields-30w-power-savings-and-9-percent-higher-fps",
+      "title": "Enthusiast mods GTX 1080 Ti with a dual-tower CPU cooler, sees up to 32°C reduction in temps — Mod yields 30W power savings and 9% higher FPS",
+      "summary": "What if you could have twice the CPU cooler in your computer? If that's a question that piques your interest, then TrashBench has answered your curiosity in droves with an experiment that ended up working incredibly well.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-08-23T10:00:00+00:00",
+      "sent_at": "2026-08-23T10:19:42.300683+00:00"
+    },
+    {
       "link": "https://www.primeintellect.ai/research/nanogpt-speedrun",
       "title": "NanoGPT Speedrun Frontier",
       "summary": "",
@@ -6371,33 +6380,6 @@
       "category": "Hardware",
       "published": "2026-08-09T11:00:00+00:00",
       "sent_at": "2026-08-09T11:04:03.945269+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/ai-billionaires-are-pledging-their-wealth-good-or-bad/",
-      "title": "These AI Barons Are Ready to Give Away Their Fortunes",
-      "summary": "A new generation of philanthropists made rich by artificial intelligence are preparing to give away their vast wealth. What should we make of a multi-billion-dollar pinky promise?",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-08-09T09:30:00+00:00",
-      "sent_at": "2026-08-09T09:35:24.589194+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/ai/2026/07/chatgpt-stops-cloning-famous-writers-voices-but-may-capture-a-similar-feeling/",
-      "title": "ChatGPT starts blocking direct requests to copy an author's style",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-09T02:01:38+00:00",
-      "sent_at": "2026-08-09T07:31:02.919473+00:00"
-    },
-    {
-      "link": "https://www.compactmag.com/article/the-ai-apocalypse-is-already-here/",
-      "title": "The AI Apocalypse Is Here",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-09T01:28:36+00:00",
-      "sent_at": "2026-08-09T07:31:02.919473+00:00"
     }
   ]
 }
