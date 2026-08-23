@@ -1,6 +1,15 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/pc-components/gpus/lucky-shopper-finds-pny-rtx-5080-for-just-usd702-at-walmart-saves-almost-usd800-compared-to-current-retail-prices",
+      "title": "Lucky shopper finds RTX 5080 for just $702 at Walmart — saves almost $800 compared to current retail prices",
+      "summary": "Walmart’s clearance aisle delivers another remarkable GPU bargain, with a shopper finding a PNY RTX 5080 for nearly half its current retail price.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-08-23T11:00:00+00:00",
+      "sent_at": "2026-08-23T11:17:11.036130+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/tech-industry/data-centers/death-threats-hit-data-center-opponents-as-towns-cancel-votes-and-close-public-comment",
       "title": "Local officials face death threats and gunfire over AI data center projects — More than 500 towns restrict builds as councils shutter public comment",
       "summary": "Recent data published in the Soufan Center's July IntelBrief found hundreds of posts with threat language between July 2025 and July 2026, and a volume surge beginning in April.",
@@ -6380,15 +6389,6 @@
       "category": "Hardware",
       "published": "2026-08-09T11:20:00+00:00",
       "sent_at": "2026-08-09T11:54:56.410915+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/cpus/owner-of-original-intel-8080-pre-production-layout-seeks-restorer-handcrafted-rubylith-mask-shows-5-000-transistors-and-interconnect-patterns-of-the-fabled-2-mhz-cpu",
-      "title": "Owner of original Intel 8080 pre-production layout seeks restorer — handcrafted Rubylith mask shows 5,000 transistors and interconnect patterns of the fabled 2 MHz CPU",
-      "summary": "The owner of 'the original engineering copy of the Intel 8080 rubylith mask' is looking for a skilled restorer.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-09T11:00:00+00:00",
-      "sent_at": "2026-08-09T11:04:03.945269+00:00"
     }
   ]
 }
