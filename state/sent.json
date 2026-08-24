@@ -1,6 +1,69 @@
 {
   "items": [
     {
+      "link": "https://chipsandcheese.com/p/hot-chips-2026-cuda-targets-risc",
+      "title": "Hot Chips 2026: CUDA Targets RISC-V – By Chester Lam",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Hardware",
+      "published": "2026-08-24T16:52:01+00:00",
+      "sent_at": "2026-08-24T19:25:43.170985+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/tech-policy/2026/08/nvidia-senior-manager-linked-to-supermicro-scheme-smuggling-ai-servers-to-china/",
+      "title": "Nvidia senior manager linked to Supermicro scheme smuggling AI servers to China",
+      "summary": "Nvidia worker indicted after Jensen Huang scolded Supermicro for AI server smuggling.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-08-24T16:41:45+00:00",
+      "sent_at": "2026-08-24T19:25:43.170985+00:00"
+    },
+    {
+      "link": "https://status.claude.com/uptime",
+      "title": "Anthropic Claude and API service outages",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-24T06:32:28+00:00",
+      "sent_at": "2026-08-24T19:25:43.170985+00:00"
+    },
+    {
+      "link": "https://github.com/thiagotigaz/ocr-it",
+      "title": "OCR It – pull text out of un-copyable documents for your LLM",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-24T06:25:31+00:00",
+      "sent_at": "2026-08-24T19:25:43.170985+00:00"
+    },
+    {
+      "link": "https://cmart.blog/claude-writing/",
+      "title": "Why is Anthropic's public writing style so unlike Claude's?",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-24T03:32:42+00:00",
+      "sent_at": "2026-08-24T19:25:43.170985+00:00"
+    },
+    {
+      "link": "https://pantel.is/projects/ai-gaming-companion/",
+      "title": "I built a low-latency AI companion that plays Skyrim with me",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-23T23:18:17+00:00",
+      "sent_at": "2026-08-24T19:25:43.170985+00:00"
+    },
+    {
+      "link": "https://github.com/AlpinDale/gpt2.cmake",
+      "title": "Implementation of GPT-2 in pure CMake",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-23T21:41:17+00:00",
+      "sent_at": "2026-08-24T19:25:43.170985+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/08/24/instincts-powerful-ai-assistant-is-raising-privacy-and-security-concerns/",
       "title": "Instinct’s powerful AI assistant is raising privacy and security concerns",
       "summary": "Early testers are raving about what Instinct can do, but some say the AI assistant’s sweeping access, broad terms and ability to act on users’ behalf come with uncomfortable trade-offs",
@@ -6101,51 +6164,6 @@
       "category": "AI",
       "published": "2026-08-10T14:20:41+00:00",
       "sent_at": "2026-08-10T19:53:10.627894+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/08/10/tesla-first-cybercab-starlink-integration/",
-      "title": "Tesla unveils first Cybercab with Starlink antenna integrated",
-      "summary": "Tesla’s robotaxi account posted photos today of what it’s calling the first Cybercab with a Starlink antenna built into the vehicle. The pictures show a gold Cybercab parked at Gigafactory Texas, with a low-profile satellite antenna integrated into the roof. It’s the physical version of an integration Tesla teased with a diagram last month.",
-      "source": "Electrek",
-      "category": "Autonomes Fahren",
-      "published": "2026-08-10T18:38:40+00:00",
-      "sent_at": "2026-08-10T18:52:09.641053+00:00"
-    },
-    {
-      "link": "https://venturebeat.com/orchestration/brex-assumes-its-ai-agents-could-do-anything-so-it-watches-the-network-not-the-code",
-      "title": "Brex assumes its AI agents could do anything — so it watches the network, not the code",
-      "summary": "Brex CEO Pedro Franceschi offered a blueprint for one of the pressing challenges facing the enterprise today at VB Transform 2026 : securely deploying AI agents, like the open-source OpenClaw, into production environments. Unlocking this enterprise value requires a mindset shift. The industry needs to move past vague terminology and focus on concrete enterprise roles. “People talk a lot about agents, but I think &#x27;agents&#x27; is a terrible name. It&#x27;s this Silicon Valley concept that doesn&#x27;t really mean much,” Franceschi said. Instead, the goal should be creating entities that can genuinely collaborate with human workers. &quot;The concept we always had in mind was the idea of a virtual employee — someone on Slack, an entity, it has an email address, it can join meetings, you can email it, and that you can work with,&quot; Franceschi said. Realizing this vision demands a new security paradigm. Franceschi’s presentation detailed how Brex pointed OpenClaw at internal roles, realized traditional security models failed, and built a novel network-level security layer called CrabTrap. The OpenClaw security dilemma The journey began following a breakthrough in December, when coding models reached a level of maturity that enabled the January release of OpenClaw . This marked the moment agents could finally self-bootstrap and maintain their own codebases instead of relying on hard-coded, static tools. However, when Franceschi proposed deploying this to automate internal functions, the Brex security team firmly rejected the idea. “They said, &#x27;Hell no. How could we trust an agent doing these things? This thing has code execution capabilities. There&#x27;s no way to control it,&#x27;” Franceschi said. That caution isn&#x27;t unique to Brex — enterprises broadly have been wary of granting agents uncontrolled code execution on corporate networks. To solve this, Brex had to shift the security perimeter. Franceschi contrasted this with approaches like Nvidia&#x27;s NemoClaw , which he said secure agents by limiting their tool usage — a model he believes neutralizes the coding capabilities that give agents their value. “… the premise we had was that the coding capabilities were critical to the model having the ability to do a variety of tasks,” he said. Brex&#x27;s fix was to shift the security boundary to the network layer instead. Instead of policing the ever-changing code inside the container, the focus must shift to monitoring what the code actually attempts to send or receive from the outside world. CrabTrap and the LLM-as-a-judge solution This network-centric approach led to the creation of CrabTrap , an open-source HTTP proxy built by Brex. The mechanism operates on the assumption that OpenClaw can do anything and might already be compromised. Therefore, CrabTrap monitors all outbound network traffic between the container and the internet, using an LLM to judge whether that traffic aligns with the agent&#x27;s approved policy. “Instead of trying to control the code running in the container, assume the thing can do anything and monitor the network traffic between that container and the internet,” Franceschi said. Using a large language model (LLM) to judge every single network request introduces unacceptable latency, often adding thousands of milliseconds to response times. Brex solved this by passing traffic through a bifurcated system. Routine, low-risk actions pass through static, pre-approved rules instantly. If a recruiting agent tries to view a LinkedIn profile, the static rule allows it. However, high-risk actions such as sending emails are flagged and routed to the LLM judge for evaluation. Franceschi said that architecture ensures only about 2% of complex requests actually face LLM latency. A surprising finding from the project was how effectively the LLM judge performs this role. Franceschi attributed this to the models&#x27; training: LLMs are exposed to billions of web pages and HTTP requests, giving them what he described as an inherent semantic understanding of network traffic patterns. “[Models] are very good at discerning what is within the policy and what is not,” Franceschi said, adding that this capability emerges naturally through pre-training without needing heavy prompting. Brex put this infrastructure to the test with “Jim,” a virtual recruiter built on OpenClaw. Jim handles various tasks, including sourcing candidates, scoring inbound applicants, and sending emails. When Jim attempts an action that falls outside the established policy, CrabTrap relies on a human-in-the-loop workflow. If the LLM judge flags an unapproved outbound email, CrabTrap pings a human manager on Slack. The Slack notification explains the agent&#x27;s underlying intent and suggests a policy change that would allow the action. The human manager can then review the context and click &quot;yes&quot; or &quot;no&quot; to update the rules dynamically. &quot;I like the virtual employee analogy because a lot of these things were solved already in a company, in the context of humans,&quot; Franceschi said. &quot;When an employee hits a wall, they escalate to their manager.&quot; The cost of the frontier Brex is a fintech company, not a cybersecurity vendor. The decision to build CrabTrap in-house was driven by a lack of mature commercial solutions that could satisfy their security team. Franceschi acknowledged the inherent cost of operating at the bleeding edge, admitting that commercial vendor solutions will likely catch up. “When we built this, it was clear to me there was a 70% chance we would throw it away in six months... But what we learned by being six months ahead was worth it in shaping our AI adoption strategy,” he said. The investment in building internal tools provided Brex with the experience needed to safely deploy agents months ahead of the broader market. For enterprise leaders navigating the AI landscape, the core takeaway is the necessity of building the cultural and technical muscle to operate in an agentic world today. “We don&#x27;t have all the answers, but the answer is not to do nothing,” Franceschi said.",
-      "source": "VentureBeat",
-      "category": "AI",
-      "published": "2026-08-10T18:31:04+00:00",
-      "sent_at": "2026-08-10T18:52:09.641053+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2232430/what-does-100-dollar-smartphone-get-you-2026/",
-      "title": "What does a $100 smartphone get you in 2026?",
-      "summary": "To get a decent cell phone at or under $100, you're going to have to get creative. Here's what to do.",
-      "source": "Engadget",
-      "category": "Hardware",
-      "published": "2026-08-10T18:30:00+00:00",
-      "sent_at": "2026-08-10T18:52:09.641053+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/10/clicks-power-keyboard-brings-blackberry-style-typing-to-any-phone-with-some-compromises/",
-      "title": "Clicks’ Power Keyboard brings BlackBerry-style typing to any phone — with some compromises",
-      "summary": "Clicks’ $99 Power Keyboard brings a customizable, slide-out physical keyboard to MagSafe and Qi2 smartphones, but its added heft can make larger phones awkward to use.",
-      "source": "TechCrunch",
-      "category": "Hardware",
-      "published": "2026-08-10T18:00:39+00:00",
-      "sent_at": "2026-08-10T18:52:09.641053+00:00"
-    },
-    {
-      "link": "https://kuber.studio/blog/Reflections/Humanising-LLM-Outputs-is-Actually-Dumb",
-      "title": "Humanising LLM Outputs Is Dumb",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-10T13:35:40+00:00",
-      "sent_at": "2026-08-10T18:52:09.641053+00:00"
     }
   ]
 }
