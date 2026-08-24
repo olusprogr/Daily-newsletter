@@ -1,6 +1,69 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/08/24/instincts-powerful-ai-assistant-is-raising-privacy-and-security-concerns/",
+      "title": "Instinct’s powerful AI assistant is raising privacy and security concerns",
+      "summary": "Early testers are raving about what Instinct can do, but some say the AI assistant’s sweeping access, broad terms and ability to act on users’ behalf come with uncomfortable trade-offs",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-24T18:03:55+00:00",
+      "sent_at": "2026-08-24T18:48:04.281467+00:00"
+    },
+    {
+      "link": "https://spectrum.ieee.org/ieee-senior-membership-demystified",
+      "title": "IEEE Senior Membership Demystified",
+      "summary": "For most of my career, my IEEE membership sat quietly in the background—a line on my résumé, a discount code for a conference registration, and access to the IEEE Xplore digital library , which I underutilized. I didn’t think much about the grade of membership available above that of the regular member. I assumed senior membership was reserved for people further along in their career than I was. They published more papers, had more gray hair, and had worked longer in the field. I was wrong on all three counts. The misunderstanding cost me an important validation of my skills and professional competency. I suspect a lot of other qualified members are where I was one year ago: eligible but unaware of the benefits of senior membership, and one application away from a meaningful career credential. The myths that almost stopped me Here are a few of the misconceptions about senior membership: It’s mostly for academics and longtime IEEE volunteers. It isn’t. The grade is explicitly built around a person’s professional engineering experience. Plenty of successful applicants have never published a paper. Industry experience counts for a lot. You need a graduate degree. You don’t. A bachelor’s degree plus enough years of qualifying experience is sufficient on its own. An advanced degree simply offsets some of the required years of experience. If I’m not well-known in my field, I won’t qualify. Senior membership isn’t a popularity contest. Rather, it hinges on whether you meet specific experience metrics. The requirement is “sustained, significant technical contribution,” not “known beyond your organization.” I should wait until I have more significant achievements to point to. I believed this for longer than I should have. If you meet the 10-year experience threshold with five years of significant performance, you’re already eligible. Waiting doesn’t strengthen a qualifying application; it just delays getting a credential you’ve already earned. Why I applied for senior membership The push to apply came from a practical need. As a senior data scientist at Apple in Austin, Texas, I work in applied machine learning, building large-scale systems that affect customer-support operations. I already had started taking on more peer-review work—checking papers for journals including Neural Networks and IEEE Transactions on Knowledge and Data Engineering , mentoring at Apple, and writing on public platforms such as Medium and SimpleTalk . I wanted a credential that reflected that shift from “engineer who codes” to “engineer who helps shape the field.” The IEEE senior member grade turned out to be the validation of my work I was looking for. It’s not an award for a single achievement. You have to apply for it, and it’s a peer-evaluated process that confirms you’ve sustained a meaningful level of professional contributions over time. That distinction matters. Having a research paper published or being granted a patent proves a moment in time. Senior membership reflects a pattern of continuous contributions. The benefits to my career happened faster than I expected. It strengthened how search committees, IEEE conference organizers, and IEEE awards panels viewed me. Only senior members can hold certain IEEE leadership positions . The senior grade also opened doors to editorial and reviewer roles I hadn’t even pursued before. Journal editors and conference organizers often look for reviewers with a track record they can verify quickly, and senior membership gives them that signal without extra vetting on their end. It also gave me a credential I could point to in professional contexts, including, in my case, supporting documentation for a U.S. employment-based immigration petition, where third-party peer recognition carries real evidentiary weight. Navigating the process The process for applying for senior membership is easier than the title might suggest. To qualify, you need a combination of professional and academic experience in an IEEE-designated field: engineering, computer science, information technology, physical sciences, mathematics, or technical communications. The two must total at least 10 years, with at least five of them showing significant performance. Crucially, experience isn’t limited to job titles. Graduate research, technical leadership, and progressively responsible engineering work all count toward the total number of years. I’d been quietly accumulating qualifying years without ever framing them that way. “I suspect a lot of other qualified members are exactly where I was a year ago: eligible but unaware of the benefits of senior membership, and one application away from a meaningful career credential.” You submit your application through IEEE’s member portal, mapped against the experience requirement, along with three references from current IEEE members—at least two of whom must be senior members or IEEE Fellows who can vouch for the credibility of your work. The IEEE member grade evaluation committee reviews applications and renders decisions. How to find references The part everyone underestimates is references. Applications can stall at this point. References must be IEEE members in good standing, and at least two need to be IEEE senior members—which means you can’t necessarily ask people who know you best. You need to find references who are both willing to vouch for you and are grade-eligible. My advice is to identify and confirm all three references before you submit your application. It might be difficult to add or swap a reference during the process, and a stalled reference could delay your file. Where to find references is the part I worried most about. But it turned out to be far easier than I expected. Here are several sources: IEEE Collabratec. This is IEEE’s professional networking platform and, in my opinion, is an underused resource. You can search by technical interest, geography, or society membership and message members directly. I found several of my eventual references this way—colleagues I’d never have thought to ask simply because we hadn’t worked together directly, but ones who knew my technical work through shared communities or conference circles. Coworkers and colleagues, current and former. If you’ve worked alongside IEEE members—especially ones senior to you—they’re often the most natural fit because they can speak specifically to your day-to-day technical contributions. Former professors. If you did graduate work, your advisor or committee members are usually IEEE members and are well positioned to speak to your research contributions, even years later. LinkedIn. A surprising number of my qualifying references came from reconnecting with people on LinkedIn I’d lost touch with professionally. A short, specific, polite message explaining what you’re applying for and why you thought of the person can go a long way. A pattern I noticed when looking for references is that people are generally glad to be asked. Serving as a reference is a small lift for them and a meaningful one for you. Most senior engineers remember someone doing the same for them and are happy to pay it forward. If you’re on the fence If you’ve been in the field for a decade or more, doing real technical work, and IEEE membership has been sitting quietly in the background of your career the way it did in mine, it’s worth 10 minutes to check the eligibility criteria against your history. You might find, as I did, that you qualified for the membership upgrade a while ago.",
+      "source": "IEEE Spectrum",
+      "category": "AI",
+      "published": "2026-08-24T18:00:01+00:00",
+      "sent_at": "2026-08-24T18:48:04.281467+00:00"
+    },
+    {
+      "link": "https://arxiv.org/abs/2608.16603",
+      "title": "Public services are increasingly strained by LLM-written appeals for benefits",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-24T16:30:21+00:00",
+      "sent_at": "2026-08-24T18:48:04.281467+00:00"
+    },
+    {
+      "link": "https://larsfaye.com/articles/ai-coding-will-prevent-expertise",
+      "title": "Coding expertise is going to collapse from AI reliance",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-24T15:52:33+00:00",
+      "sent_at": "2026-08-24T18:48:04.281467+00:00"
+    },
+    {
+      "link": "https://developers.openai.com/api/docs/pricing",
+      "title": "OpenAI: GPT 5.6 Sol price reduction (until at least Nov 21)",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-24T15:22:43+00:00",
+      "sent_at": "2026-08-24T18:48:04.281467+00:00"
+    },
+    {
+      "link": "https://twitter.com/lemire/status/2091894299289874926",
+      "title": "Xiaomi: New CPU matches Apple cores single threaded, much faster multithreaded",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Hardware",
+      "published": "2026-08-24T15:08:17+00:00",
+      "sent_at": "2026-08-24T18:48:04.281467+00:00"
+    },
+    {
+      "link": "https://twitter.com/paulg/status/2091544343589060625",
+      "title": "I were 17, I'd learn how to build LLMs from scratch",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-23T20:38:09+00:00",
+      "sent_at": "2026-08-24T18:48:04.281467+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/tech-industry/semiconductors/sk-hynix-says-hybrid-bonding-wont-be-ready-for-hbm4e-as-ai-memory-runs-into-a-775-micron-ceiling",
       "title": "SK hynix pushes hybrid bonding HBM5 as AI memory hits 775-micron ceiling — firm extends MR-MUF through Nvidia Rubin",
       "summary": "The problem, per SK, is that HBM cubes are capped at a total thickness of 775 microns, the standard thickness of a 300mm logic wafer.",
