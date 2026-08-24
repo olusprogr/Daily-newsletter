@@ -1,6 +1,42 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/tech-industry/semiconductors/sk-hynix-says-hybrid-bonding-wont-be-ready-for-hbm4e-as-ai-memory-runs-into-a-775-micron-ceiling",
+      "title": "SK hynix pushes hybrid bonding HBM5 as AI memory hits 775-micron ceiling — firm extends MR-MUF through Nvidia Rubin",
+      "summary": "The problem, per SK, is that HBM cubes are capped at a total thickness of 775 microns, the standard thickness of a 300mm logic wafer.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-08-24T17:55:45+00:00",
+      "sent_at": "2026-08-24T17:58:31.515252+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/08/24/how-a-toyota-dealer-cut-energy-costs-55-percent-even-with-dc-fast-chargers/",
+      "title": "How a Toyota dealer cut energy costs 55%, even with DC fast chargers",
+      "summary": "A Toyota dealer on Long Island says it cut its energy costs by an average of 55% over three months by putting solar, battery storage, DC fast chargers, and AI-powered energy management under one roof.",
+      "source": "Electrek",
+      "category": "AI",
+      "published": "2026-08-24T17:46:18+00:00",
+      "sent_at": "2026-08-24T17:58:31.515252+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/cpus/ibms-first-dual-isa-core-natively-executes-arm-and-z-architecture-in-the-same-core-all-cores-run-at-5-7-ghz-base-frequency-next-gen-mainframe-ai-processor-is-built-on-2nm-node-with-11-cores",
+      "title": "IBM's first dual-ISA core natively executes ARM and z/Architecture in the same core; all cores run at 5.7 GHz base frequency — next-gen mainframe AI processor is built on 2nm node with 11 cores",
+      "summary": "IBM is vastly expanding softwarte support on its mainframes with its first dual-ISA CPU core that natively supports z/Architecture and ARM instructions.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-08-24T17:42:34+00:00",
+      "sent_at": "2026-08-24T17:58:31.515252+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2240311/how-to-cancel-chatgpt-subscription-why-might-want-to/",
+      "title": "How to cancel your ChatGPT subscription (and why you might want to)",
+      "summary": "If you've had it with OpenAI, here's how to cancel your subscription and delete your account.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-08-24T17:30:00+00:00",
+      "sent_at": "2026-08-24T17:58:31.515252+00:00"
+    },
+    {
       "link": "https://electrek.co/2026/08/24/tesla-cybercab-exclusive-access-robotaxi-sept-3/",
       "title": "Tesla confirms Cybercab launch coming next week",
       "summary": "Tesla confirmed it will hold a Cybercab event in Austin on September 3, promoting it with a poster that reads “Exclusive Access: Cybercab.” It’s an invite-only affair for the top scorers in its Robotaxi rider sweepstakes, and Tesla says it will livestream the launch for everyone else. The framing suggests something big is coming. What’s actually coming is a two-seat car with no steering wheel added to the same driverless service Tesla has been running in Austin for over a year — a fleet that our tracking still puts at roughly two dozen unsupervised vehicles.",
@@ -6047,42 +6083,6 @@
       "category": "AI",
       "published": "2026-08-10T13:35:40+00:00",
       "sent_at": "2026-08-10T18:52:09.641053+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/977448/made-by-google-2026-pixel-hardware-launch-event",
-      "title": "What to expect from Google’s 2026 Pixel hardware launch event",
-      "summary": "It's that time of year: On Wednesday, Google is set to host its annual Made by Google hardware launch event for Pixel gadgets. Google itself has already teased new slab-style and foldable Pixel smartphones, but leaks also indicate that the company could announce updated watches, a new color for familiar earbuds, and perhaps a brand [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-08-10T17:30:00+00:00",
-      "sent_at": "2026-08-10T17:49:00.013737+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/gpus/geforce-rtx-50-series-gpu-prices-spike-as-much-as-39-percent-as-blackwell-price-hikes-hit-the-us-rtx-5070-gets-a-36-percent-hike-rtx-5060-up-27-percent-at-the-median-of-newegg-listings",
-      "title": "GeForce RTX 50-series GPU prices spike as much as 39% as Blackwell price hikes hit the US — RTX 5070 gets a 36% hike, RTX 5060 up 27% at the median of Newegg listings",
-      "summary": "After recent news of price hikes on RTX 50-series GPUs in other regions, those same increases now appear to have come Stateside, as Newegg prices for some Blackwell cards have spiked as much as 39% compared to June 2026.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-10T16:55:46+00:00",
-      "sent_at": "2026-08-10T17:49:00.013737+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/08/10/49ers-shanahan-tesla-autopilot-crash-phone/",
-      "title": "49ers’ Shanahan crashed his Tesla on Autopilot reaching for his phone",
-      "summary": "San Francisco 49ers head coach Kyle Shanahan crashed his Tesla Model S on July 14 while the car was running on Autopilot. He was reaching for a phone that had dropped out of reach, and he took his eyes off the road. The crash left him with a concussion, a broken nose, three broken ribs, a broken left hand, and 40 stitches over his right eye. And to his credit, he isn’t blaming the car.",
-      "source": "Electrek",
-      "category": "Autonomes Fahren",
-      "published": "2026-08-10T16:55:29+00:00",
-      "sent_at": "2026-08-10T17:49:00.013737+00:00"
-    },
-    {
-      "link": "https://www.wcax.com/2026/08/07/kinney-drugs-pulls-back-ai-phone-assistant-after-hundreds-customer-complaints/",
-      "title": "Kinney Drugs pulls back AI phone assistant after hundreds of customer complaints",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-10T14:56:32+00:00",
-      "sent_at": "2026-08-10T17:49:00.013737+00:00"
     }
   ]
 }
