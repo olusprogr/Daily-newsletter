@@ -1,6 +1,33 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/tech-industry/kyoto-university-demonstrates-a-sic-transistor-that-runs-at-600c-using-standard-ion-implantation",
+      "title": "Kyoto University builds transistor that survives 600C temperatures, compatible with standard fabs — Standard ion implantation and bottom-gate design fix leakage and voltage drift",
+      "summary": "A research team at Kyoto University has built a silicon carbide transistor that operates at 600°C (873 K) using ion implantation.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-08-24T10:30:00+00:00",
+      "sent_at": "2026-08-24T10:33:58.799736+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/desktops/gaming-pcs/huge-usd2-200-discount-makes-this-rtx-5090-gaming-pc-cheaper-than-the-gpus-standalone-price-epic-hp-omen-max-45l-rig-ships-with-64gb-ddr5-and-a-2tb-ssd-for-just-usd4-799",
+      "title": "Huge $2,200 discount makes this RTX 5090 gaming PC cheaper than the GPU's standalone price — epic HP Omen Max 45L rig ships with 64GB DDR5 and a 2TB SSD for just $4,799",
+      "summary": "A massive discount means this $4,799 HP Omen Max 45L gaming PC is now cheaper than individually buying the RTX 5090 it uses, thanks to a $2,200 discount.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-08-24T10:11:23+00:00",
+      "sent_at": "2026-08-24T10:33:58.799736+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2242415/taiwan-reportedly-indicted-nvidia-employees-for-exporting-prohibited-ai-servers-to-china/",
+      "title": "Taiwan reportedly indicted NVIDIA employees for exporting prohibited AI servers to China",
+      "summary": "Even though the US has relaxed its restrictions of AI chip exports to China, illegal exports are apparently still taking place.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-08-24T10:02:03+00:00",
+      "sent_at": "2026-08-24T10:33:58.799736+00:00"
+    },
+    {
       "link": "https://www.wired.com/story/teachers-deepfake-ai-students-content/",
       "title": "They Dedicated Their Lives to Teaching. Then the Deepfakes Started",
       "summary": "The deepfake epidemic in schools is affecting more than students. Four teachers tell WIRED about becoming targets of sexualized, AI-generated content—and how difficult it was to find accountability.",
@@ -6164,51 +6191,6 @@
       "category": "AI",
       "published": "2026-08-10T10:30:00+00:00",
       "sent_at": "2026-08-10T11:30:06.516314+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/chinese-farmer-kills-25-acres-of-crops-after-following-ai-generated-weed-and-pest-control-advice-farmer-trusted-pesticide-recipe-after-months-of-successful-advice",
-      "title": "Chinese farmer kills 25 acres of crops after following AI-generated weed and pest control advice — farmer trusted pesticide recipe after months of successful advice",
-      "summary": "A farmer in China followed an AI app's advice for his 25-acre farmland, resulting in the death of his entire crop of sesame seedlings. 67-year-old man was initially skeptical of the tool but eventually trusted it after months of using it.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-08-10T10:00:00+00:00",
-      "sent_at": "2026-08-10T10:17:44.583391+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/space/europe-expands-its-starlink-rival-to-348-satellites-as-iris2-moves-into-implementation-eur15-6-billion-network-will-boost-eu-government-capacity-by-60-percent-with-launches-starting-in-2029",
-      "title": "Europe expands its Starlink rival to 348 satellites as IRIS² moves into implementation — €15.6 billion network will boost EU government capacity by 60%, with launches starting in 2029",
-      "summary": "Europe has finalized plans for its €15.6 billion IRIS² satellite network, expanding it to 348 satellites with first launches scheduled for 2029.",
-      "source": "Tom's Hardware",
-      "category": "Innovationen",
-      "published": "2026-08-10T09:30:00+00:00",
-      "sent_at": "2026-08-10T10:17:44.583391+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2233237/openai-slows-down-astra-development-due-to-cybersecurity-concerns/",
-      "title": "OpenAI slows down Astra development due to cybersecurity concerns",
-      "summary": "Meta slowed down development of its Astra model as it couldn't 'rule out critical cyber capabilities.'",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-08-10T09:19:11+00:00",
-      "sent_at": "2026-08-10T10:17:44.583391+00:00"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/08/10/1141384/ai-agents-for-science/",
-      "title": "AI for science needs reasoning, not just data",
-      "summary": "Every few decades, someone announces that science has reached its end. In 1903, the revered physicist Albert Michelson wrote that the “facts of physical science have all been discovered.” In the 1980s, Stephen Hawking predicted that theoretical physics might be finished by the end of the century. With the explosive arrival of artificial intelligence, the&#8230;",
-      "source": "MIT Technology Review",
-      "category": "AI",
-      "published": "2026-08-10T09:00:00+00:00",
-      "sent_at": "2026-08-10T10:17:44.583391+00:00"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/08/10/1141511/these-startups-are-chasing-the-next-big-thing-in-llms/",
-      "title": "These startups are chasing the next big thing in LLMs",
-      "summary": "MIT Technology Review’s What’s Next series looks across industries, trends, and technologies to give you a first look at the future. You can read the rest of them&#160;here. Way back in the summer of 2017, AI researchers at Google put out a paper called “Attention Is All You Need,” in which they described a new&#8230;",
-      "source": "MIT Technology Review",
-      "category": "AI",
-      "published": "2026-08-10T09:00:00+00:00",
-      "sent_at": "2026-08-10T10:17:44.583391+00:00"
     }
   ]
 }
