@@ -1,6 +1,15 @@
 {
   "items": [
     {
+      "link": "https://arstechnica.com/ai/2026/08/ai-is-hitting-entry-level-jobs-hardest-stanford-study-finds/",
+      "title": "AI is hitting entry-level jobs hardest, Stanford study finds",
+      "summary": "Young employment in AI-impacted fields down 19% compared to more AI-resistant occupations.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-08-24T21:45:53+00:00",
+      "sent_at": "2026-08-24T22:52:41.767413+00:00"
+    },
+    {
       "link": "https://electrek.co/2026/08/24/tesla-robotaxi-failing-fans-texas/",
       "title": "Tesla ‘Robotaxi’ sold a 66-minute 2.3-mile ride and left a rider 3 miles from his destination",
       "summary": "Tesla’s “Robotaxi” service is racking up a wave of terrible rider experiences in Texas — and the complaints are increasingly coming from Tesla’s own fans and ambassadors. A self-described “Tesla Ambassador” says the service quoted him 66 minutes for a 2.3-mile trip and left him to call an Uber, while a four-time Tesla owner has logged a string of missed pickups and drop-offs left blocks — sometimes miles — from the destination.",
@@ -6119,51 +6128,6 @@
       "category": "AI",
       "published": "2026-08-10T17:14:00+00:00",
       "sent_at": "2026-08-10T23:31:19.607125+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/977623/mark-zuckerberg-ai-manifesto-dim-vision",
-      "title": "Mark Zuckerberg doesn’t understand how to live",
-      "summary": "Recently, a man I was rock climbing with told me about how he'd used AI to make a motivational poster for himself, which he'd hung on his bedroom wall: a bear, walking a slackline over a canyon, holding a sign that said, \"Do cool shit.\" I made what I hoped was a polite noise. What [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-08-10T22:00:00+00:00",
-      "sent_at": "2026-08-10T22:33:10.913982+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2234108/apple-may-introduce-a-photo-authentication-tool-in-ios-27/",
-      "title": "Apple may introduce a photo authentication tool in iOS 27",
-      "summary": "Reference Image could be a new way to prove provenance in the wake of generative AI.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-08-10T21:48:44+00:00",
-      "sent_at": "2026-08-10T22:33:10.913982+00:00"
-    },
-    {
-      "link": "https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content",
-      "title": "How Claude marks AI-generated content",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-10T21:36:56+00:00",
-      "sent_at": "2026-08-10T22:33:10.913982+00:00"
-    },
-    {
-      "link": "https://cactuscompute.com/needle",
-      "title": "Show HN: Needle2: 14MB agentic LLM for phones, wearables, smart home and robots",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-10T17:22:07+00:00",
-      "sent_at": "2026-08-10T22:33:10.913982+00:00"
-    },
-    {
-      "link": "https://www.meta.com/thefutureisforeveryone/",
-      "title": "The Future Is for Everyone – The Path to a Positive AI Future",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-10T10:15:55+00:00",
-      "sent_at": "2026-08-10T22:33:10.913982+00:00"
     }
   ]
 }
