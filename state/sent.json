@@ -1,6 +1,33 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/08/24/trump-bought-spacex-shares-two-weeks-after-blockbuster-ipo/",
+      "title": "Trump bought SpaceX shares two weeks after blockbuster IPO",
+      "summary": "The president bought when the stock was in the mid-$150 range. SpaceX finished trading on Monday back at its IPO price of $135.",
+      "source": "TechCrunch",
+      "category": "Innovationen",
+      "published": "2026-08-24T21:24:17+00:00",
+      "sent_at": "2026-08-24T21:34:35.088554+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/cpus/intel-xeon-7-diamond-rapids-comes-with-up-to-256-p-cores-1-28-gb-of-last-level-cache-next-gen-18a-p-cpu-also-brings-avx-10-2-and-uses-ucie-s-instead-of-emib",
+      "title": "Intel Xeon 7 'Diamond Rapids' comes with up to 256 P-cores, 1.28 GB of last-level cache — next-gen 18A-P CPU also brings AVX 10.2 and uses UCIe-S instead of EMIB",
+      "summary": "Intel has pulled back the curtain on its next-gen Diamond Rapids Xeon CPUs, packing up to 256 P-cores and 1.28 TB of last-level cache.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-08-24T21:07:45+00:00",
+      "sent_at": "2026-08-24T21:34:35.088554+00:00"
+    },
+    {
+      "link": "https://boydkane.com/essays/llms-could-control-their-host-machines-by-exploiting-inference-engines",
+      "title": "LLMs could control their host machines by exploiting inference engines",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-24T19:03:06+00:00",
+      "sent_at": "2026-08-24T21:34:35.088554+00:00"
+    },
+    {
       "link": "https://chipsandcheese.com/p/hot-chips-2026-applying-high-bandwidth",
       "title": "Hot Chips 2026: Applying High Bandwidth Flash (HBF)",
       "summary": "",
