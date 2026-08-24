@@ -1,6 +1,24 @@
 {
   "items": [
     {
+      "link": "https://electrek.co/2026/08/24/tesla-robotaxi-failing-fans-texas/",
+      "title": "Tesla ‘Robotaxi’ sold a 66-minute 2.3-mile ride and left a rider 3 miles from his destination",
+      "summary": "Tesla’s “Robotaxi” service is racking up a wave of terrible rider experiences in Texas — and the complaints are increasingly coming from Tesla’s own fans and ambassadors. A self-described “Tesla Ambassador” says the service quoted him 66 minutes for a 2.3-mile trip and left him to call an Uber, while a four-time Tesla owner has logged a string of missed pickups and drop-offs left blocks — sometimes miles — from the destination.",
+      "source": "Electrek",
+      "category": "Autonomes Fahren",
+      "published": "2026-08-24T21:43:53+00:00",
+      "sent_at": "2026-08-24T22:21:31.276384+00:00"
+    },
+    {
+      "link": "https://github.com/l3a0/claude-plugins",
+      "title": "A Claude Code skill that recovers export-blocked Kindle highlights",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-24T19:32:18+00:00",
+      "sent_at": "2026-08-24T22:21:31.276384+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/08/24/trump-bought-spacex-shares-two-weeks-after-blockbuster-ipo/",
       "title": "Trump bought SpaceX shares two weeks after blockbuster IPO",
       "summary": "The president bought when the stock was in the mid-$150 range. SpaceX finished trading on Monday back at its IPO price of $135.",
@@ -6146,15 +6164,6 @@
       "category": "AI",
       "published": "2026-08-10T10:15:55+00:00",
       "sent_at": "2026-08-10T22:33:10.913982+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/10/mark-zuckerbergs-ai-manifesto-is-exactly-why-people-dont-like-ai/",
-      "title": "Mark Zuckerberg’s AI manifesto is exactly why people don’t like AI",
-      "summary": "On Monday, Mark Zuckerberg published a 6,500-word manifesto about personal AI, largely about the possibilities for the \"personal superintelligence\" systems Meta AI is building.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-10T20:53:02+00:00",
-      "sent_at": "2026-08-10T21:37:51.036944+00:00"
     }
   ]
 }
