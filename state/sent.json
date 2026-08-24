@@ -1,6 +1,24 @@
 {
   "items": [
     {
+      "link": "https://electrek.co/2026/08/24/xpeng-robotics-900m-iron-humanoid-robot-valuation/",
+      "title": "XPeng robotics raises $900M at $6.3B valuation for IRON robot push",
+      "summary": "XPeng’s robotics business has raised over $900 million at a post-money valuation of more than $6.3 billion, the Chinese EV maker announced today. XPeng calls it the largest single-round private financing in the history of China’s embodied AI industry. The round is meant to push XPeng’s IRON humanoid robot into mass production by the end of 2026 — a timeline that keeps the automaker ahead of Tesla’s stalling Optimus program.",
+      "source": "Electrek",
+      "category": "AI",
+      "published": "2026-08-24T12:35:16+00:00",
+      "sent_at": "2026-08-24T12:40:49.792272+00:00"
+    },
+    {
+      "link": "https://www.technologyreview.com/2026/08/24/1142863/the-download-kids-outlearning-ai-space-travel-agents/",
+      "title": "The Download: kids outlearning AI, and space travel agents",
+      "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Kids outlearn AI—and we still don’t know why Teaching a computer to use human language requires an inhuman amount of data. An LLM can easily churn through a hundred thousand times&#8230;",
+      "source": "MIT Technology Review",
+      "category": "AI",
+      "published": "2026-08-24T12:10:00+00:00",
+      "sent_at": "2026-08-24T12:40:49.792272+00:00"
+    },
+    {
       "link": "https://www.theverge.com/tech/983714/grapheneos-motorola-razr-fold-ultra-support-pixel-11",
       "title": "De-Googled GrapheneOS is coming to Motorola’s foldables next year",
       "summary": "GrapheneOS, an open source version of Android that prioritizes security and privacy, has detailed its plans for supporting Motorola smartphones. Official support is set to arrive next year, starting with traditional flagships, before rolling out to Motorola's foldable phones and perhaps cheaper models, eventually. In a Mastodon thread, the GrapheneOS Foundation announced that it will [&#8230;]",
