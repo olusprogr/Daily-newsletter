@@ -1,6 +1,15 @@
 {
   "items": [
     {
+      "link": "https://www.wired.com/story/applying-for-a-job-is-too-damn-easy/",
+      "title": "It Should Be Harder to Apply for a Job. No, Really",
+      "summary": "Thanks to a dwindling supply of open roles, “one-click” applications, and the rise of artificial intelligence, it’s easier than ever to apply for a job. We’re all paying the price.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-08-25T09:30:00+00:00",
+      "sent_at": "2026-08-25T10:27:44.970846+00:00"
+    },
+    {
       "link": "https://www.theverge.com/ai-artificial-intelligence/984239/alabama-attorney-general-subpoena-openai-hugging-face-hack",
       "title": "OpenAI subpoenaed by Alabama AG over Hugging Face hack",
       "summary": "Alabama's attorney general issued a subpoena to OpenAI on Monday as part of an investigation into how one of its AI agents escaped a supposedly secure testing environment and autonomously hacked another company last month. The investigation seeks to determine whether OpenAI's safety practices violated state consumer protection laws and pose a risk to Alabama [&#8230;]",
@@ -6047,15 +6056,6 @@
       "category": "AI",
       "published": "2026-08-11T09:40:15+00:00",
       "sent_at": "2026-08-11T10:46:37.158085+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/case-mods/diy-modder-creates-heat-engine-computing-device-powered-by-a-stirling-engine-80-mhz-esp32-can-run-tetris-snake-and-pong-on-just-150-milliwatts-of-power",
-      "title": "DIY modder creates 'heat engine computing device' powered by a Stirling engine, can run Tetris, Snake, and Pong — 80 MHz processor operates on just 150 milliwatts of power",
-      "summary": "The custom machine uses an ESP32-C3, OLED display, and 16-key keypad while squeezing retro gaming into a tiny 150mW power budget.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-11T09:30:00+00:00",
-      "sent_at": "2026-08-11T09:33:17.935948+00:00"
     }
   ]
 }
