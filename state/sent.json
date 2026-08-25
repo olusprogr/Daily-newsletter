@@ -1,6 +1,51 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/pc-components/get-16gb-of-ddr5-ram-for-usd70-and-start-your-am5-gaming-rig-with-this-bundle-usd568-for-ryzen-7-7700x3d-16gb-g-skill-ddr5-ram-asus-tuf-b650-e-motherboard-and-free-aio",
+      "title": "Get 16GB of DDR5 RAM for $70 and start your AM5 gaming rig with this bundle — $568 for Ryzen 7 7700X3D, 16GB G.Skill DDR5 RAM, Asus TUF B650-E motherboard, and free AIO",
+      "summary": "568.99 ($200/26% off) gets you a 3-item Newegg combo: a Ryzen 7 7700X3D, Asus B650 board, 16GB of G.Skill DDR5-6000, and a free 240mm AIO thrown in — a inexpensive avenue into AM5.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-08-25T15:59:08+00:00",
+      "sent_at": "2026-08-25T16:32:38.166193+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/cpus/hot-chips-2026-intel-details-cutting-edge-tech-in-entry-level-wildcat-lake-value-focused-18a-chips-necessitated-ucie-integration",
+      "title": "Hot Chips 2026: Intel details cutting-edge tech in entry-level Wildcat Lake — value-focused 18A chips necessitated UCIe integration",
+      "summary": "Intel's Wildcat Lake is competing in the budget laptop market, but it takes a very different approach, leveraging a UCIe interconnect and Intel's latest 18A node.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-08-25T15:45:08+00:00",
+      "sent_at": "2026-08-25T16:32:38.166193+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2243733/waymo-is-expanding-to-germany-with-service-in-munich-planned-for-2027/",
+      "title": "Waymo is expanding to Germany, with service in Munich planned for 2027",
+      "summary": "Waymo has set up subsidiaries in several European countries this summer as it prepares to expand.",
+      "source": "Engadget",
+      "category": "Autonomes Fahren",
+      "published": "2026-08-25T15:40:02+00:00",
+      "sent_at": "2026-08-25T16:32:38.166193+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/health/2026/08/ai-wont-replace-radiologists-but-it-will-dramatically-change-their-jobs/",
+      "title": "AI won’t replace radiologists, but it will dramatically change their jobs",
+      "summary": "A pioneering AI scientist once predicted computers would replace human radiologists. They haven't.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-08-25T15:10:03+00:00",
+      "sent_at": "2026-08-25T16:32:38.166193+00:00"
+    },
+    {
+      "link": "https://9to5mac.com/2026/08/24/openai-restores-5-hour-codex-and-work-limits-for-chatgpt-plus-users/",
+      "title": "OpenAI restores 5-hour Codex and Work limits for ChatGPT Plus users",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-25T12:33:00+00:00",
+      "sent_at": "2026-08-25T16:32:38.166193+00:00"
+    },
+    {
       "link": "https://www.engadget.com/2243702/apple-m5-ultra-vs-m3-ultra-whats-changed/",
       "title": "Apple M5 Ultra vs M3 Ultra: What's changed?",
       "summary": "Everything you need to know about Apple's powerful new chip.",
@@ -6038,51 +6083,6 @@
       "category": "AI",
       "published": "2026-08-11T16:57:09+00:00",
       "sent_at": "2026-08-11T18:24:33.609301+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/11/an-unreleased-anthropic-model-made-progress-on-one-of-maths-biggest-unsolved-problems/",
-      "title": "An unreleased Anthropic model made progress on one of math’s biggest unsolved problems",
-      "summary": "For more than 150 years, the Riemann hypothesis has stood as one of the major unsolved problems in mathematics. Anthropic hasn't solved it — but the company's models made more progress than you might expect.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-11T16:25:20+00:00",
-      "sent_at": "2026-08-11T16:25:32.707376+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/11/rivian-ceo-rj-scaringe-is-betting-on-evs-robots-and-autonomy-all-at-once-hell-explain-why-at-disrupt-2026/",
-      "title": "Rivian CEO RJ Scaringe is betting on EVs, robots, and autonomy all at once — he’ll explain why at Disrupt 2026",
-      "summary": "Rivian's CEO RJ Scaringe is speaking at TechCrunch Disrupt 2026 to detail his journey, and the lessons it’s bestowed.",
-      "source": "TechCrunch",
-      "category": "Innovationen",
-      "published": "2026-08-11T15:30:00+00:00",
-      "sent_at": "2026-08-11T16:25:32.707376+00:00"
-    },
-    {
-      "link": "https://github.com/trycua/cua/blob/main/blog/gpu-passthrough-macos-vms.md",
-      "title": "Apple Silicon and macOS VMs: 11–16× Faster LLM Inference with Llama.cpp",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-11T14:50:33+00:00",
-      "sent_at": "2026-08-11T16:25:32.707376+00:00"
-    },
-    {
-      "link": "https://aimagazine.com/news/why-did-openai-head-of-ethics-chloe-bakalar-leave",
-      "title": "Why Did OpenAI's Head of Ethics Chloé Bakalar Leave?",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-11T14:03:18+00:00",
-      "sent_at": "2026-08-11T16:25:32.707376+00:00"
-    },
-    {
-      "link": "https://stratechery.com/2026/nvidias-risky-business/",
-      "title": "Nvidia's Risky Business",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Hardware",
-      "published": "2026-08-11T10:02:00+00:00",
-      "sent_at": "2026-08-11T16:25:32.707376+00:00"
     }
   ]
 }
