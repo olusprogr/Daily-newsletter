@@ -1,6 +1,33 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/desktops/gaming-pcs/save-usd500-on-this-1440p-ready-gaming-pc-with-an-nvidia-geforce-rtx-5070-right-now-msi-codex-r2-pre-built-drops-below-usd1-500-with-a-20-core-intel-cpu-16gb-ddr5-and-a-1tb-ssd",
+      "title": "Save $500 on this 1440p-ready gaming PC with an Nvidia GeForce RTX 5070 right now — MSI Codex R2 pre-built drops below $1,500 with a 20-core Intel CPU, 16GB DDR5, and a 1TB SSD",
+      "summary": "This $1,499 MSI Codex R2 gaming PC comes with a $500 saving for a PC with an Nvidia GeForce RTX 5070, 16GB of DDR5 RAM, and a 1TB SSD.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-08-25T10:47:19+00:00",
+      "sent_at": "2026-08-25T11:00:29.527591+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/big-tech/spacexai-will-deploy-standalone-nvidia-vera-cpus-for-groks-agentic-workloads",
+      "title": "SpaceXAI will deploy standalone Nvidia Vera CPUs for Grok's agentic workloads — will use optimized Vera Rubin NVL72 in space with Starmind satellite",
+      "summary": "Nvidia claims the chip completes agentic, reinforcement learning, and data processing tasks up to 1.8 times faster than x86 processors.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-08-25T10:41:54+00:00",
+      "sent_at": "2026-08-25T11:00:29.527591+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/software/windows/windows-veterans-vibe-coded-task-manager-now-also-runs-on-mac-and-linux-downloadable-app-is-the-result-of-a-107-page-spec-fed-to-claude-code",
+      "title": "Windows veteran's vibe-coded Task Manager now also runs on Mac and Linux — downloadable app is the result of a 107-page spec fed to Claude Code",
+      "summary": "Legendary Windows developer Dave Plummer has been busy finessing his revamped Task Manager, now dubbed TMOG.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-08-25T10:30:00+00:00",
+      "sent_at": "2026-08-25T11:00:29.527591+00:00"
+    },
+    {
       "link": "https://www.wired.com/story/applying-for-a-job-is-too-damn-easy/",
       "title": "It Should Be Harder to Apply for a Job. No, Really",
       "summary": "Thanks to a dwindling supply of open roles, “one-click” applications, and the rise of artificial intelligence, it’s easier than ever to apply for a job. We’re all paying the price.",
@@ -6029,33 +6056,6 @@
       "category": "AI",
       "published": "2026-08-11T11:00:00+00:00",
       "sent_at": "2026-08-11T11:41:16.628632+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/book-excerpt-rise-and-fall-of-the-artificial-state-jill-lepore-silicon-valley-sci-fi/",
-      "title": "Elon Musk, Sam Altman, and the Misreading of Science Fiction",
-      "summary": "Beyond Elon Musk’s interpretation of The Odyssey, Silicon Valley leaders have often misunderstood classic books like Foundation and The Hitchhiker’s Guide to the Galaxy. It’s evident in their tech.",
-      "source": "Wired",
-      "category": "Hardware",
-      "published": "2026-08-11T10:30:00+00:00",
-      "sent_at": "2026-08-11T10:46:37.158085+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/organoids-lab-grown-brains-neural-networks/",
-      "title": "AI Is Dead. Organoids Are Alive",
-      "summary": "Mini human brains are being grown in labs all over the world. Soon, they could outthink neural networks.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-08-11T10:00:00+00:00",
-      "sent_at": "2026-08-11T10:46:37.158085+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2234335/openai-daybreak-model-less-likely-to-refuse-higher-risk-tasks/",
-      "title": "OpenAI gives Daybreak partners access to a more powerful cybersecurity model",
-      "summary": "OpenAI's Daybreak program now has two tiers, with the higher one giving partners access to a more advanced cybersecurity model.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-08-11T09:40:15+00:00",
-      "sent_at": "2026-08-11T10:46:37.158085+00:00"
     }
   ]
 }
