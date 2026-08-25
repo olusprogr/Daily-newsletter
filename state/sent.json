@@ -1,6 +1,15 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/08/25/stability-ai-maker-of-image-generator-stable-diffusion-raises-76-million-in-fresh-funding/",
+      "title": "Stability AI, maker of image generator Stable Diffusion, raises $76 million in fresh funding",
+      "summary": "The company's new fundraising total now stands at $232 million.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-25T19:03:47+00:00",
+      "sent_at": "2026-08-25T19:28:10.452204+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/pc-components/dram/hot-chips-2026-samsung-makes-lpddr5x-smart-with-logic-unit-in-memory-lpddr5x-pim-is-3-01x-faster-than-lpddr5x-in-ai-inference-with-8x-the-bandwidth",
       "title": "Hot Chips 2026: Samsung makes LPDDR5X smart with logic unit in memory — LPDDR5X-PIM is 3.01x faster than LPDDR5X in AI inference with 8x the bandwidth",
       "summary": "Samsung detailed the industry's first LPDDR5X-PIM at Hot Chips 2026, adding logic directly to memory to speed up data-intensive workloads like AI inference.",
