@@ -1,6 +1,33 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/enthusiast-turns-a-lenovo-yoga-laptop-an-m-2-slot-and-amd-radeon-rx-7900-xt-into-the-worlds-stupidest-desktop-for-local-ai-chatbots-m-2-franken-rig-crippled-by-laptop-dram-swap",
+      "title": "Enthusiast turns a Lenovo Yoga laptop, an M.2 slot, and AMD Radeon RX 7900 XT into 'the world's stupidest' desktop for local AI chatbots — M.2 franken-rig crippled by laptop DRAM swap",
+      "summary": "Enthusiast turns a Lenovo Yoga laptop and an AMD Radeon RX 7900 XT into \"the world's stupidest\" desktop for local LLMs",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-08-26T09:30:00+00:00",
+      "sent_at": "2026-08-26T09:36:24.257435+00:00"
+    },
+    {
+      "link": "https://www.technologyreview.com/2026/08/26/1141949/editors-letter-september-2026/",
+      "title": "Raised on AI",
+      "summary": "When my oldest child was born, I immediately set up Gmail and Twitter accounts in her name. I broadly announced her birth online and proceeded to plaster her photo across all sorts of platforms. In short, I began creating her digital footprint long before she could stand on her own two feet.&#160; Fast-forward a couple&#8230;",
+      "source": "MIT Technology Review",
+      "category": "AI",
+      "published": "2026-08-26T09:00:00+00:00",
+      "sent_at": "2026-08-26T09:36:24.257435+00:00"
+    },
+    {
+      "link": "https://www.technologyreview.com/2026/08/26/1141952/puzzles-ai-models-flub-these-tests/",
+      "title": "AI models flub these intelligence tests. Can you fare any better?",
+      "summary": "Puzzles and games have been central to AI development since the very beginning. Just as we humans like to test our smarts with crosswords or logic puzzles, developers can test how far models have advanced with a gaming gauntlet. The term “machine learning” was popularized in a 1959 article by the IBM computer scientist Arthur&#8230;",
+      "source": "MIT Technology Review",
+      "category": "AI",
+      "published": "2026-08-26T09:00:00+00:00",
+      "sent_at": "2026-08-26T09:36:24.257435+00:00"
+    },
+    {
       "link": "https://www.engadget.com/2244379/spacex-is-building-a-100-billion-starbase-launch-site-in-louisiana/",
       "title": "SpaceX is building a $100 billion 'Starbase' launch site in Louisiana",
       "summary": "'We're preparing to build a spaceport that, until now, has only existed in science fiction,'",
