@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.engadget.com/2244816/meta-reportedly-abandoned-an-ai-focused-restructuring-plan/",
+      "title": "Meta reportedly abandoned an AI-focused restructuring plan that would have laid off thousands",
+      "summary": "The problem with Meta's AI restructuring plan is the AI wasn't good enough.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-08-26T17:36:41+00:00",
+      "sent_at": "2026-08-26T18:13:40.112730+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2244799/google-gemini-latest-transcription-model-can-turn-ramblings-into-structured-text/",
+      "title": "Google says its latest Gemini transcription model can turn your ramblings into structured text",
+      "summary": "Google says Gemini 3.5 Transcribe will soon let you use speech-to-text in any web field in Chrome.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-08-26T17:25:36+00:00",
+      "sent_at": "2026-08-26T18:13:40.112730+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/candidates-are-signing-a-pact-promising-action-on-data-centers-and-ai-safety/",
+      "title": "Candidates Are Signing a Pact Promising Action on Data Centers and AI Safety",
+      "summary": "More than 15 politicians from across the country have signed on to the AI Pact, vowing to regulate data centers and AI. “We’ve got to get this right,” says Senate candidate Dan Osborn of Nebraska.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-08-26T17:13:37+00:00",
+      "sent_at": "2026-08-26T18:13:40.112730+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/985186/google-gemini-3-5-transcribe-audio-ai",
+      "title": "Google’s new AI transcription edits out your &#8216;ums&#8217; and &#8216;ahs&#8217;",
+      "summary": "Google has updated Gemini Audio with new transcription capabilities that automatically detect specialized jargon and more than 85 languages. Gemini 3.5 Transcribe is a new addition to the Gemini family that follows the launch of 3.5 Live Translate, and comes as we're still waiting for Google to release the Gemini 3.5 Pro model that it [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-08-26T17:00:00+00:00",
+      "sent_at": "2026-08-26T18:13:40.112730+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/08/26/tesla-owners-filming-breaking-law-fsd/",
+      "title": "Tesla owners are now filming themselves breaking the law on FSD — and posting it for clout",
+      "summary": "Tesla owners used to hide the fact that they were abusing Full Self-Driving. Now they film it, add a caption, and post it for the algorithm. Sleeping at highway speed, gaming with a controller, watching live TV, answering emails on a laptop — a whole genre of “look what my Tesla lets me get away with” content has taken over Instagram, TikTok, and X, and almost every clip in it shows a driver doing something that is flatly illegal in the country where it was filmed.",
+      "source": "Electrek",
+      "category": "Autonomes Fahren",
+      "published": "2026-08-26T16:45:08+00:00",
+      "sent_at": "2026-08-26T18:13:40.112730+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/semiconductors/nvidia-presents-groq-3-lpx-architecture-and-unveils-its-first-third-party-inference-benchmark",
+      "title": "Hot Chips 2026: Nvidia presents Groq 3 LPX architecture and unveils its first third-party inference benchmark — LP30-based rack already in production, company says",
+      "summary": "Igor Arsovski, now Nvidia's VP of hardware, presented the Groq 3 LPX rack's architecture and published the first third-party benchmark of the hardware.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-08-26T16:23:37+00:00",
+      "sent_at": "2026-08-26T18:13:40.112730+00:00"
+    },
+    {
+      "link": "https://www.gatesnotes.com/a-turbulent-ai-era-and-critical-choices-to-make",
+      "title": "The turbulent AI era is here",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-26T15:55:15+00:00",
+      "sent_at": "2026-08-26T18:13:40.112730+00:00"
+    },
+    {
+      "link": "https://www.ssp.sh/brain/using-obsidian-with-ai/",
+      "title": "It’s so hard to finish an idea that is not yours and is just suggested by AI",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-26T15:30:05+00:00",
+      "sent_at": "2026-08-26T18:13:40.112730+00:00"
+    },
+    {
       "link": "https://venturebeat.com/security/the-fix-for-the-ai-agent-that-hijacked-a-companys-dns-it-can-propose-the-change-but-it-cant-approve-it",
       "title": "The fix for the AI agent that hijacked a company's DNS: it can propose the change, but it can't approve it",
       "summary": "A security agent read a Cloudflare log, found an attacker’s prompt-injection payload sitting inside it, and rewrote the company’s DNS. The firewall had already blocked that payload, and blocking it is what wrote it into the log. That chain is GhostJacking , which Tenet Security demonstrated on the DEF CON 34 main stage on August 9. A request hits Cloudflare’s managed ruleset, gets blocked, and is stored byte for byte with its poisoned User-Agent header. An AI coding agent reviewing those blocked events reads the attacker&#x27;s text as an instruction — with no way to tell it apart from one the company meant to give it — and acts on it with credentials the company issued months earlier. In Tenet’s benchmark, Claude Code on Sonnet 4.6 followed the planted instruction in nine of 10 attempts under Cloudflare’s recommended configuration. The block rate is not the boundary Nothing malfunctioned. The firewall worked, and every call after it carried a valid credential already issued to the agent. Endpoint detection, the web application firewall and identity management stayed quiet because no rule broke. Tenet found public evidence of the exposed setup at 48 organizations, six confirmed Fortune 500 companies, and SecurityWeek reported the same chain against Datadog and Sentry, where the injection surface is an alert or an error report. No single platform patch removes the architectural risk: an agent that consumes attacker-reachable data and can independently execute high-impact changes. That is why a high prompt-injection block rate cannot serve as a security boundary. OWASP’s co-lead names the fix “The first thing I’d do is put an authorization gate outside the model,” said Steve Wilson, Chief AI and Product Officer at Exabeam and project co-lead for the OWASP Top 10 for LLM Applications, in written responses to VentureBeat. “The agent can propose the exact DNS change, but it cannot grant itself the authority to make it.” The move relocates the decision into code that either passes or fails. A safe change, defined cleanly, clears a deterministic policy check and stays autonomous. Anything ambiguous or high in blast radius routes to a named human who approves the actual change. “The tradeoff is that the agent loses the ability to improvise arbitrary, high-impact infrastructure changes on its own, while retaining autonomous investigation and routine, bounded remediation,” Wilson wrote. On teams that try to solve this inside the prompt, Wilson is blunt. “We have to remember that security rules written inside prompts may shape the model’s behavior, but they are still suggestions to the model, not enforceable security controls,” he wrote. The blocked payload became the instruction GhostJacking needs no compromised admin account and no bypassed firewall. It needs an agent that reads operational data and holds write access to the systems that data describes. Every step in Tenet’s chain is something the agent was already allowed to do, so tools tuned to catch unauthorized actions have nothing to catch. The mechanism is specific. SC Media reported that the agent Tenet drove live at Cloudflare was Cursor, reading through a GraphQL integration and writing through the Cloudflare API, and that pairing closes the chain. Tenet ran the chain against more than one coding agent. Cursor carried the demonstration, and the nine of 10 figure came from separate testing of the same attack against Claude Code. The Cursor agent ingests the poisoned header, patches the DNS A record and adds a CNAME to “resolve” the injected finding, giving the attacker a path to reroute the company’s web and email traffic. One agent’s output became the next agent’s input Events reach Sentry through a public write-only endpoint with no authentication, by design. Tenet used a leaked identifier to post a crafted error report. On an ordinary triage prompt, the coding agent escalated it to Sentry’s own AI, Seer, then trusted the analysis it got back. Seer had already absorbed the attacker’s proposed fix and returned it as its own finding. What reached the coding agent was a recommendation from another AI, and it implemented that recommendation. That walked straight through a control Sentry had already written. Sentry&#x27;s guidance instructs agents reading its event data never to follow directives found there, and the coding agent held to the letter of that rule. It acted on Seer&#x27;s conclusion instead, and that conclusion belonged to the attacker. It was acting on Seer’s conclusion, and that conclusion belonged to the attacker. An authorization boundary that accepts another model’s output inherits every injection that model absorbed, which is why Wilson’s gate belongs between agents too. OWASP moved excessive agency from sixth to third The 2026 OWASP Top 10 for LLM Applications , published August 4, elevated Excessive Agency three places on a ranking blending a 75% practitioner vote with 25% incident data from 6,639 documented cases. It was the largest upward move on the list, driven by real-world incidents clustering in agentic deployments. The fix isn&#x27;t better prompting — it&#x27;s the permission map: which actions are pre-approved, and which need a human. Reading logs, correlating alerts and drafting timelines stay autonomous. A bounded remediation like restarting a named service inside a fixed condition set clears a policy check outside the model. Anything that changes DNS, alters identity privileges, deploys code or reroutes production traffic needs a named human, and letting an agent open new access paths or approve its own proposals defeats the point of the gate. Useful autonomy survives that. What does not survive is the path from an attacker’s text to unreviewed production authority. What the control costs in practice Tenet co-founder and CEO Barak Sternberg told Dark Reading that a request the firewall already blocked was the way in, and that the firewall never went down, it just stopped mattering. His own fix is to split what an agent can read from what it can execute, and he concedes the cost, because an agent that reads alerts but cannot act on them is not the agent anyone deployed. The cheaper first step is an inventory. Every agent that reads outside data and can also write or execute belongs on a risk register, and that register needs no new tooling. Wilson’s design survives that cost because the split it draws is proposal from approval rather than read from write. The agent still reads its alerts, still investigates and still runs bounded work. What it loses is the ability to invent a high-impact change and carry it out on its own authority. Almost nobody has built it. Kayne McGladrey, a senior member of the IEEE, has argued for years that an AI deployment needs a hard governance threshold, a named human holding a kill switch and a way to roll back. Asked whether any Fortune 500 company runs that, he was blunt. “I haven’t seen it done, and no, they haven’t come out and publicly said it,” McGladrey told VentureBeat. His reason is economic. Companies “are accepting the risk, and they’re accepting it either deliberately or unconsciously,” he observed, betting the advantage beats the penalty. “What I think would change behavior in the space is if the penalties and the consequences were to outweigh the advantages.” The gate belongs outside the model for a reason unrelated to malice. “If you get into the inference layer, it won’t tell you it’s cheating, and it will lie about having cheated,” he argued, pointing to findings from the U.K.’s AI Safety Institute among others. A system that cannot reliably report its own shortcuts should not authorize its own. The industry is not positioned to make that split quickly. Ivanti’s 2026 State of Cybersecurity Report found 77% of security professionals at least somewhat comfortable letting AI act without human review, the exact posture Wilson’s gate constrains. CrowdStrike pushed its prompt-injection taxonomy past 200 techniques in July, naming indirect injection through data an agent reads as the critical vector for agents that call tools and run commands. The architect who moved the boundary before the attack had a name Egiziago Cioffi hit a related failure in production months before GhostJacking had a name, with one caveat. Cioffi is CEO of SynSphere Italia, a Microsoft reseller, the architect who built and sold the system rather than a security leader defending one he inherited. His Azure OpenAI assistant over SharePoint scored well on faithfulness and still returned content the asking user could not have opened. “An evaluation set with no identity dimension cannot fail an authorisation bug, however high the faithfulness score,” Cioffi told VentureBeat in written answers. He fixed it with a query-time filter built from the asking user’s group claims, so an unentitled chunk never becomes a candidate and never reaches the model. GhostJacking turns on what the model may do, the half Wilson’s gate is built for. One gap stays open here. No sitting CISO has gone on the record with a change made since August 9 and what it cost in agent capability. Until one does, the cost side rests on the people who specified the control, not anyone defending a production environment with it. What security leaders need to do this week Four questions produce an honest picture faster than any procurement cycle. Which agents read attacker-reachable material, which of those can also change production systems, whose permissions run at retrieval, and which changes a policy engine can approve without a human. Then run the negative test. Plant an adversarial instruction in a log the agent is expected to inspect, and keep the transcript, because that transcript is the difference between claiming a control and showing a test of it. Tenet, which sells runtime protection for AI agents, leads its own defender guidance with denying an agent outbound network access by default, cutting the leg where the poisoned instruction fetches a payload and reroutes traffic. But an agent that investigates without a standing path to the open internet loses a capability few workflows will miss. Enumerate the service principals in the tenant, drop the Microsoft first-party apps that ship pre-provisioned, then filter to those holding a credential or app-role assignment. Every identity on that list needs an owner and an expiry date, because one with both gets reviewed and one with neither never does. For any agent with production authority, write the containment sequence before an incident, not during one. Revoke or rotate its workload credential, disable its write-capable API or tool integration, preserve the execution transcript, then validate and roll back whatever infrastructure it changed. McGladrey’s read on why the work keeps getting deferred is uncomfortable. “I think that there’s a level of tolerance that’s being given right now in AI that is unlike anything else in society,” he said. GhostJacking makes that visible. A blocked payload reaches the agent through the system built to record blocked payloads, and once it arrives the question is no longer whether the model recognizes an attack. It is whether the model holds the authority to turn one into a production change.",
@@ -5966,150 +6038,6 @@
       "category": "AI",
       "published": "2026-08-12T13:37:12+00:00",
       "sent_at": "2026-08-12T18:59:58.217500+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/12/as-ai-safety-concerns-mount-three-pioneers-make-the-case-for-staying-open/",
-      "title": "As AI safety concerns mount, three pioneers make the case for staying open",
-      "summary": "At Ai4, three of the world's most respected AI experts—Geoffrey Hinton, Fei-Fei Li, and Andrew Ng—debated regulation, open-source access, and how America can compete as China advances in Asia.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-12T17:51:00+00:00",
-      "sent_at": "2026-08-12T17:56:12.060120+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2235640/honor-launches-its-long-awaited-robot-phone-and-yes-it-can-wiggle-at-you/",
-      "title": "Honor launches its long-awaited Robot Phone and yes it can wiggle at you",
-      "summary": "The big news with Honor's latest is the automated pop-up camera gimbal.",
-      "source": "Engadget",
-      "category": "Innovationen",
-      "published": "2026-08-12T17:42:53+00:00",
-      "sent_at": "2026-08-12T17:56:12.060120+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/12/openai-backed-thrive-holdings-raises-2b-to-bring-ai-to-the-enterprise/",
-      "title": "OpenAI-backed Thrive Holdings raises $2B to bring AI to the enterprise",
-      "summary": "Thrive Holdings has raised $2 billion in new funding at a $12 billion valuation from investors like SoftBank, D1 Capital Partners, and Alitmeter Capital.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-12T17:41:29+00:00",
-      "sent_at": "2026-08-12T17:56:12.060120+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/979112/twitch-streamers-can-now-opt-out-from-training-amazons-ai",
-      "title": "Twitch streamers can now opt out from training Amazon’s AI",
-      "summary": "Twitch users can now opt out of allowing their content to be used to train Amazon's generative AI models. Opting out means that \"your streams, VODs, clips, stream chats, and pictures and text on your channel\" won't be used in \"future training\" of an Amazon AI model \"whose purpose is to generate or synthesize text, [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-08-12T17:29:10+00:00",
-      "sent_at": "2026-08-12T17:56:12.060120+00:00"
-    },
-    {
-      "link": "https://venturebeat.com/technology/spacexai-debuts-grok-4-6-overtaking-kimi-k3s-performance-and-matching-gpt-5-6-sol-for-worlds-third-best-on-artificial-analysis",
-      "title": "SpaceXAI debuts Grok 4.6, overtaking Kimi K3's performance and matching GPT-5.6 Sol for world's third best on Artificial Analysis",
-      "summary": "Elon Musk&#x27;s company SpaceXAI, formerly known as xAI, has released Grok 4.6 , its latest frontier AI model, with a focus on long-running agents, coding and knowledge work — and a pricing strategy designed to make those workloads cheaper to run. The model scores 61 on the third-party Artificial Analysis Intelligence Index , surpassing the popular open weights Chinese model from Moonshot, Kimi K3, and tying rival OpenAI&#x27;s GPT-5.6 Sol Max and improving five points over Grok 4.5 High. Anthropic&#x27;s Claude Opus 5 and Fable 5 occupy the number one and two spots, respectively. More consequential for enterprises evaluating AI agents, Grok 4.6 posts sizable gains over its predecessor across coding, terminal, knowledge-work and agent benchmarks while retaining an application programming interface (API) price starting at $2 per million input tokens and $6 per million output tokens, making it a mid-priced frontier model comparing leading options that are both proprietary and open source, globally, according to VentureBeat&#x27;s analysis. Model Input ($/1M) Output ($/1M) Total ($/1M) Source Muse Spark 1.2 Contributor $0.10 $0.20 $0.30 Meta MiMo-V2.5 Flash $0.10 $0.30 $0.40 Xiaomi deepseek-v4-flash $0.14 $0.28 $0.42 DeepSeek deepseek-v4-pro $0.435 $0.87 $1.305 DeepSeek GPT-5.6 Luna $0.20 $1.20 $1.40 OpenAI MiniMax-M3 $0.30 $1.20 $1.50 MiniMax LongCat-2.0 — limited-time promo $0.30 $1.20 $1.50 LongCat MiMo-V2.5 $0.40 $2.00 $2.40 Xiaomi LongCat-2.0 — standard $0.75 $2.95 $3.70 LongCat MiMo-V2.5 Pro (≤256K) $1.00 $3.00 $4.00 Xiaomi Muse Spark 1.1 / 1.2 $1.25 $4.25 $5.50 Meta GLM-5.2 $1.40 $4.40 $5.80 Z.ai Grok 4.6 — &lt;200K prompt tokens $2.00 $6.00 $8.00 xAI MiMo-V2.5 Pro (&gt;256K) $2.00 $6.00 $8.00 Xiaomi Qwen3.8-Max $2.00 $6.00 $8.00 QwenCloud Gemini 3.6 Flash $1.50 $7.50 $9.00 Google GPT-5.6 Terra $2.00 $12.00 $14.00 OpenAI Grok 4.6 — ≥200K prompt tokens $4.00 $12.00 $16.00 xAI GPT-5.4 $2.50 $15.00 $17.50 OpenAI Kimi K3 $3.00 $15.00 $18.00 Moonshot AI Claude Opus 5 $5.00 $25.00 $30.00 Anthropic Sakana Fugu Ultra (≤272K) $5.00 $30.00 $35.00 Sakana AI GPT-5.6 Sol — Standard mode $5.00 $30.00 $35.00 OpenAI Claude Fable 5 / Claude Mythos 5 $10.00 $50.00 $60.00 Anthropic GPT-5.6 Sol — Fast mode $10.00 $60.00 $70.00 OpenAI Still, that&#x27;s less than half of what GPT-5.6 Sol costs over OpenAI&#x27;s API in standard mode. SpaceXAI says Grok 4.6 is available today in Grok Build, SpaceXAI&#x27;s answer to Anthropic&#x27;s Claude Code and OpenAI&#x27;s Codex, which is available starting in the $30 per month SuperGrok plan . It&#x27;s also available in SpaceX&#x27;s recent acquisition of the AI coding startup Cursor, and from partners including OpenRouter, Vercel and Cloudflare. SpaceXAI is providing twice the included usage for Grok 4.6 in Cursor and Grok Build during the first week. The release arrives only weeks after Grok 4.5, which SpaceXAI launched in July as a model targeting coding, agentic tasks and knowledge work, and one day after the launch of Grok Bot , a new system for assigning AI agents to complete designated tasks as virtual employees. The bigger change is agent behavior, not just another benchmark point SpaceXAI describes Grok 4.6 as being built specifically to stay on task across longer sequences of work, including researching unfamiliar topics, analyzing information, navigating codebases and converting product ideas into working applications. The company says it subjected the model to a longer supplemental training run than Grok 4.5, using curated model-generated reasoning and technical data alongside engineering data and changes to its optimizer and training recipe. It then used Grok 4.5 to regenerate supervised fine-tuning trajectories across reasoning levels, agent harnesses, STEM, software engineering and knowledge work, filtering problematic trajectories with model-based checks. Reinforcement learning also targeted agentic environments spanning general coding, knowledge work, kernel optimization, web development and computer-aided design. That matters because enterprise AI deployments are increasingly moving beyond isolated prompt-and-response interactions toward agents expected to maintain state, operate tools, modify code and recover from problems across longer execution paths. SpaceXAI says that during its testing, Grok 4.6 showed more self-testing and verification on longer trajectories, checking its own work before proceeding. It also reports stronger first attempts on interactive and visual projects than Grok 4.5. Those are company observations rather than independent guarantees of production behavior, but they indicate where SpaceXAI concentrated the model’s post-training work. Grok 4.6 reaches the frontier, but does not sweep it Grok 4.6&#x27;s improvement over Grok 4.5 at this juncture of the AI model competition cannot be overstated. According to Artificial Analysis, Grok 4.6 reaches an Elo score (human preference of head-to-head model outputs, adapted from chess) of 1,753 on GDPVal-AA v2 , the benchmark measuring performance on real-world tasks like scheduling and diagramming, versus 1,526 for Grok 4.5, 1,728 for GPT-5.6 Sol Max and 1,741 for Fable 5 Max. The coding results from SpaceXAI show a similar generational improvement but more competition at the frontier. Grok 4.6 scores 69.9% on CursorBench v3.2, up from 66.7%, while Fable 5 Max reaches 70.5%. On DeepSWE v1.1, Grok rises sharply from 54% to 65.9%, but GPT-5.6 Sol Max leads at 73%. FrontierCode v1.1 Extended moves from 56.6% to 61.3%, compared with 60.6% for GPT-5.6 Sol Max and a leading 63.6% for Fable 5 Max. Agent benchmarks tell much the same story. Grok 4.6 reaches 57.5% on APEX-Agents, a 10.4-point increase over Grok 4.5’s 47.1%, narrowly exceeding GPT-5.6 Sol Max’s 56.7% but trailing Fable 5 Max at 59.2%. On APEX-SWE, Grok 4.6 rises to 56.4% from 53.6%, while Fable 5 Max scores 58.8%. Terminal-Bench v3.0 exposes a larger remaining gap. Grok 4.6 improves from 15.7% to 26%, but GPT-5.6 Sol Max and Fable 5 Max score 34.6% and 34.1%, respectively. Two of Grok 4.6’s strongest results come from longer-horizon professional work. On AA-Briefcase it scores an Elo of 1,577, narrowly exceeding Fable 5 Max’s 1,574 and topping GPT-5.6 Sol Max’s 1,502. On Harvey LAB, Grok 4.6 reaches 15.8%, versus 12.9% for Grok 4.5, 11.3% for Fable 5 Max and 2.5% for GPT-5.6 Sol Max. SpaceXAI notes an important methodological caveat: third-party scores in its table use the best self-reported or publicly available results. The comparison therefore should not be interpreted as a perfectly controlled four-model evaluation. In other words, the evidence supports a substantial upgrade over Grok 4.5 more clearly than it supports across-the-board superiority over rival frontier models. Grok 4.6 wins several of the displayed evaluations while GPT-5.6 Sol Max and Fable 5 Max retain meaningful leads elsewhere. Cost could be the more important enterprise benchmark Artificial Analysis’ supplied evaluation adds another dimension: how much work the model performs for the money spent. The testing places Grok 4.6 on its Intelligence-versus-Cost-per-Task Pareto frontier at a reported $0.84 per task — which actually makes it less of a bargain than its predecessor, Grok 4.5, and less economical than OpenAI&#x27;s GPT-5.6 Luna, z.ai&#x27;s GLM-5.2, and Meta&#x27;s new Muse Spark 1.2, among other models. Artificial Analysis also reports that Grok 4.6 completed its AA-Briefcase workloads in roughly 53 turns and about 0.5 billion input tokens on average, versus approximately 103 turns and 2 billion input tokens for Claude Opus 5 Max. Those measurements do not prove that every production agent will use fewer tokens or finish twice as quickly. Agent costs depend heavily on harness design, prompts, tool calls, caching, retry behavior and the task itself. But they point toward an increasingly important enterprise metric: the cost of completing a workflow, rather than simply the cost of generating one million tokens. That distinction is central to SpaceXAI’s positioning. The standard Grok 4.6 API starts at $2 per million input tokens and $6 per million output tokens, and SpaceXAI also offers a faster variant at twice the price. The supplied API documentation adds an important caveat for long-context deployments. Grok 4.6 supports a 500,000-token context window, but prompts below 200,000 tokens are billed at $2 per million input tokens, $0.50 per million cached-input tokens and $6 per million output tokens. Once a prompt reaches 200,000 tokens, those rates rise to $4, $1 and $12 respectively, with the higher pricing applying to all tokens in that request. That means enterprises should not extrapolate the $2/$6 headline pricing across the model’s entire context window when estimating total cost of ownership. Artificial Analysis says the standard headline rates remain more than 60% below the competing frontier-model prices it cites for Claude Opus 5 and GPT-5.6 Sol. The practical savings will depend on how many tokens each model consumes to complete the same workload. The Grok name carries considerable baggage and controversy, separate from the general AI skepticism Performance and price may not be the only hurdles SpaceXAI faces in converting Grok 4.6&#x27;s benchmark gains into enterprise adoption. The Grok brand arrives with an unusually visible history of safety and governance controversies — including extremist and antisemitic outputs, politically skewed responses, exaggerated praise of Elon Musk and, more recently, the use of Grok&#x27;s image-generation capabilities to produce non-consensual sexualized imagery. For companies with strict compliance, brand-safety or responsible-AI requirements, that history could become a procurement consideration separate from the technical capabilities of Grok 4.6 itself. The most notorious text-generation episode came in July 2025, when Grok produced antisemitic posts, praised Adolf Hitler and in some responses referred to itself as &quot; MechaHitler .&quot; SpaceXAI&#x27;s predecessor xAI subsequently said it was removing inappropriate posts and taking steps to prevent hate speech from being published by Grok. Also in summer 2025, Grok began inserting references to an alleged &quot;white genocide&quot; in South Africa into answers to unrelated questions. xAI said an unauthorized modification to Grok&#x27;s response software had directed the system to produce a particular response on a political topic while bypassing its normal review process. The company said the change violated its policies and subsequently pledged to publish Grok&#x27;s system prompts and establish round-the-clock monitoring for problematic responses. The South African government has rejected claims that a genocide against white South Africans is taking place. Grok&#x27;s objectivity came under scrutiny again in November of the same year after the chatbot repeatedly produced implausibly flattering assessments of Musk . Among the examples reported at the time were claims placing Musk above elite athletes and historic intellectual figures. Musk said Grok had been manipulated through adversarial prompting into making &quot;absurdly positive&quot; statements about him. Whatever the underlying cause, the incident illustrated the reputational problem for an enterprise model whose outputs can become entangled with the public persona of the executive most closely associated with its developer. The most serious controversy has involved image generation. In January 2026, U.K. regulator Ofcom opened a formal investigation into X after reports that the Grok account was being used to create and distribute undressed images of people and sexualized images of children. Ofcom said the material under examination could amount to non-consensual intimate-image abuse, pornography and child sexual abuse material. X subsequently said it had implemented measures intended to stop the Grok account from being used to create intimate images of people, but Ofcom said its investigation remained open. The scrutiny extends beyond Ofcom. Britain&#x27;s Information Commissioner&#x27;s Office is investigating X and xAI over both the development and deployment of Grok, including whether personal data was handled lawfully and whether adequate safeguards existed to prevent harmful manipulated imagery. The European Commission, meanwhile, opened a separate formal investigation under the Digital Services Act examining X&#x27;s management of systemic risks connected to Grok , including the dissemination of manipulated sexually explicit material. Those investigations concern X and the earlier xAI organization rather than establishing a finding that the newly released Grok 4.6 API violates those laws. Nevertheless, they are unlikely to help SpaceXAI sell Grok to businesses. SpaceX acquired xAI in February 2026, and the AI operation now markets itself as SpaceXAI, meaning Grok&#x27;s newest models sit under a different corporate structure but retain the same consumer-facing brand. There is no evidence in the material examined here that Grok 4.6 itself repeats the specific &quot;MechaHitler,&quot; &quot;white genocide,&quot; sexual-image or Musk-flattery incidents associated with earlier Grok deployments. But enterprise procurement teams rarely evaluate a model in isolation from its vendor and product history. For SpaceXAI, that means Grok 4.6 may have to demonstrate not only that it is cheaper or more capable than competing frontier models, but that the controls around it are sufficiently predictable for organizations that cannot afford their AI supplier to become a brand-safety event. That continuity creates a potential adoption problem that benchmark tables cannot measure. Developers choosing a model for an internal coding agent may care primarily about price, latency and task completion. A bank, government agency, healthcare provider or consumer brand deploying the same model into customer-facing or regulated workflows may also have to consider vendor governance, content-safety controls, auditability and reputational exposure. A model designed to be deployed, not just chatted with Grok 4.6 supports text and image inputs with text output, function calling, structured outputs and reasoning, according to the supplied API specifications. Those specifications also list rate limits of 150 requests per second and 50 million tokens per minute, with API availability in us-east-1 and us-west-2 . Cursor’s launch announcement similarly characterizes Grok 4.6 as designed for long-running agents and ambitious interactive and visual work, giving developers immediate access to the model inside an established coding-agent environment rather than requiring them to build a new harness around the API first. For enterprise buyers, that distribution may matter almost as much as another leaderboard result. Models increasingly compete not just on reasoning scores but on whether developers can place them inside existing coding, research and operational workflows without destabilizing those workflows or dramatically increasing inference costs, as well as incurring any blowback from associating with a controversial brand. Grok 4.6 does not establish an uncontested performance lead. Its launch instead presents a different proposition: frontier-level intelligence, large improvements over the previous generation, stronger long-running agent behavior and relatively aggressive token economics. The next test will be whether the efficiency Artificial Analysis observes on controlled agentic workloads carries into production. If Grok 4.6 can consistently complete long-running coding and knowledge-work tasks with fewer turns and fewer tokens, the model’s most important benchmark may ultimately be the enterprise inference bill rather than the leaderboard.",
-      "source": "VentureBeat",
-      "category": "AI",
-      "published": "2026-08-12T17:26:58+00:00",
-      "sent_at": "2026-08-12T17:56:12.060120+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/gadgets/975237/google-pixel-11-pro-comparison-specs-price-features",
-      "title": "How Google’s new Pixel 11 phones compare to last year’s models",
-      "summary": "Google just added four new phones to the Pixel family: the Pixel 11, Pixel 11 Pro, Pixel 11 Pro XL, and the Pixel 11 Pro Fold. They're slightly more expensive than their predecessors, but they come with some notable upgrades, including improved cameras and a new Tensor G6 chip that should deliver faster performance. The [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-08-12T17:00:00+00:00",
-      "sent_at": "2026-08-12T17:56:12.060120+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2235525/why-excited-about-smartphone-colors-in-2026/",
-      "title": "I'm more excited about smartphone colors than any actual new features in 2026",
-      "summary": "Forget AI, we are most looking forward to fun new colors this coming hardware season.",
-      "source": "Engadget",
-      "category": "Hardware",
-      "published": "2026-08-12T17:00:00+00:00",
-      "sent_at": "2026-08-12T17:56:12.060120+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/12/mesh-automattics-crm-for-everyone-comes-to-android/",
-      "title": "Mesh, Automattic’s CRM for everyone, comes to Android",
-      "summary": "Mesh, an AI-powered contacts app and relationship manager from Automattic is now an Android app.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-12T16:57:58+00:00",
-      "sent_at": "2026-08-12T17:56:12.060120+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/video/why-stream-ring-maker-sandbar-says-the-future-of-ai-wearables-is-voice/",
-      "title": "Why Stream ring-maker Sandbar says the future of AI wearables is voice",
-      "summary": "AI notetaking hardware has taken off&#160;over&#160;the past&#160;couple of years, with credit-card-sized devices, pendants, pins,&#160;and&#160;even transcribing earbuds all promising to capture your meetings and turn them into summaries and action items. Now, a whole wave of wearables — rings especially — are betting people want to capture stray thoughts and ideas the same way.&#160; One of [&#8230;]",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-12T16:46:02+00:00",
-      "sent_at": "2026-08-12T16:56:10.563192+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/12/tesla-wants-to-build-a-10b-solar-factory-in-texas/",
-      "title": "Tesla wants to build a $10B solar factory in Texas",
-      "summary": "Tesla wants to build a massive solar factory in Texas, but first it wants the state to chip in to defray the costs.",
-      "source": "TechCrunch",
-      "category": "Hardware",
-      "published": "2026-08-12T16:18:31+00:00",
-      "sent_at": "2026-08-12T16:56:10.563192+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/12/facebook-officially-rolls-out-its-standalone-creator-studio-app-with-ai-tools-for-creators/",
-      "title": "Facebook officially rolls out its standalone Creator Studio app with AI tools for creators",
-      "summary": "The new app launches with Facebook's AI creator assistant built into it, providing creators with personalized recommendations based on their content style, performance, audience engagement, and goals.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-12T15:56:13+00:00",
-      "sent_at": "2026-08-12T16:56:10.563192+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/978982/daddario-guitar-ai-music-suno",
-      "title": "Guitar company D’Addario admits that AI music was used in a promotional video",
-      "summary": "After weeks of controversy and speculation, music company D'Addario has admitted that AI, specifically Suno, was used as part of a recent promotional video. For nearly two weeks, the company has denied the allegations, even as evidence piled up against it. It offered various explanations, from low-quality exports, to combinations of plugins like Autotune introducing [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-08-12T15:52:07+00:00",
-      "sent_at": "2026-08-12T16:56:10.563192+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/new-camera-tricks-on-google-latest-pixel-11-smartphones/",
-      "title": "4 New Camera Tricks on Google’s Latest Pixel 11 Smartphones",
-      "summary": "From Magic Capture and Instant Night Sight to a built-in teleprompter, here’s a look at a few camera features on Google’s new Pixel 11 series.",
-      "source": "Wired",
-      "category": "Hardware",
-      "published": "2026-08-12T14:00:00+00:00",
-      "sent_at": "2026-08-12T16:56:10.563192+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2235158/pixel-watch-5-hands-on-whats-new-google-health-ai-workout-builder/",
-      "title": "Pixel Watch 5 hands-on: Health, GPS and AI at the forefront",
-      "summary": "Most of this year's updates for Google's Pixel Watch series aren't in the hardware.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-08-12T14:00:00+00:00",
-      "sent_at": "2026-08-12T16:56:10.563192+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2234844/google-pixel-11-announced-specs-availability/",
-      "title": "Google's Pixel 11 has a 30-hour battery life and a slimmer camera bar",
-      "summary": "Long battery life, a slimmer camera bar and a new chip are all on the spec sheet for the Pixel 11.",
-      "source": "Engadget",
-      "category": "Hardware",
-      "published": "2026-08-12T14:00:00+00:00",
-      "sent_at": "2026-08-12T16:56:10.563192+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2234879/google-pixel-11-pro-announced-specs-price/",
-      "title": "Google's Pixel 11 Pro and Pro XL are the toughest Pixel phones yet",
-      "summary": "Camera upgrades, a thinner camera bar and a more powerful processor are available on the Pixel 11 Pro and Pro XL.",
-      "source": "Engadget",
-      "category": "Hardware",
-      "published": "2026-08-12T14:00:00+00:00",
-      "sent_at": "2026-08-12T16:56:10.563192+00:00"
     }
   ]
 }
