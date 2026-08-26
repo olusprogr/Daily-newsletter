@@ -1,6 +1,24 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/tech-industry/data-centers/u-s-govt-moves-to-suppress-pushback-on-data-centers-by-removing-requirements-for-public-input-on-pollution-epa-change-would-allow-air-pollution-permits-without-publicizing-them",
+      "title": "U.S. gov't moves to suppress pushback on data centers by removing requirements for public input on pollution — EPA change would allow air pollution permits without publicizing them",
+      "summary": "A proposed change to the EPA's regulations would remove the requirement for states to seek public input on air pollution permits, particularly around AI data centers.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-08-26T10:00:00+00:00",
+      "sent_at": "2026-08-26T10:31:01.182601+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/openai-bans-russian-chatgpt-accounts-behind-a-fake-think-tank-pushing-pro-kremlin-narratives",
+      "title": "OpenAI bans Russian ChatGPT accounts posing as a fake Israeli think tank — used VPNs to push pro-Kremlin narratives and steal academic papers for its website",
+      "summary": "Instead of using ChatGPT to write the articles, the operators used the chatbot to strip any wording that might mark them as Russian speakers.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-08-26T09:41:55+00:00",
+      "sent_at": "2026-08-26T10:31:01.182601+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/enthusiast-turns-a-lenovo-yoga-laptop-an-m-2-slot-and-amd-radeon-rx-7900-xt-into-the-worlds-stupidest-desktop-for-local-ai-chatbots-m-2-franken-rig-crippled-by-laptop-dram-swap",
       "title": "Enthusiast turns a Lenovo Yoga laptop, an M.2 slot, and AMD Radeon RX 7900 XT into 'the world's stupidest' desktop for local AI chatbots — M.2 franken-rig crippled by laptop DRAM swap",
       "summary": "Enthusiast turns a Lenovo Yoga laptop and an AMD Radeon RX 7900 XT into \"the world's stupidest\" desktop for local LLMs",
