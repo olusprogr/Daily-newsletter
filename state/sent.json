@@ -1,6 +1,24 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/bill-gates-calls-for-some-jobs-to-be-human-reserved-suggests-taxing-ai-tokens-and-robots-billionaire-says-that-ai-era-will-be-one-of-the-most-turbulent-times-in-human-history",
+      "title": "Bill Gates calls for some jobs to be ‘Human Reserved,’ suggests taxing AI tokens and robots — billionaire says that ‘AI era will be one of the most turbulent times in human history’",
+      "summary": "The billionaire philanthropist penned a 6,000-word essay raising the societal risks that AI bring and his proposed solutions to protect the average person.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-08-26T11:34:04+00:00",
+      "sent_at": "2026-08-26T11:55:35.522461+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/ai/2026/08/ibms-new-granite-4-2-models-ride-the-wave-of-interest-in-local-llms/",
+      "title": "IBM's new Granite 4.2 models ride the wave of interest in local LLMs",
+      "summary": "The focus is on agentic capability and predictable enterprise deployment.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-08-26T11:10:49+00:00",
+      "sent_at": "2026-08-26T11:55:35.522461+00:00"
+    },
+    {
       "link": "https://www.theverge.com/ai-artificial-intelligence/984923/bill-gates-is-deeply-worried-about-ai-and-hes-no-longer-staying-quiet",
       "title": "Bill Gates is deeply worried about AI, and he’s no longer staying quiet",
       "summary": "Bill Gates has been reflecting a lot on AI lately, and the process has triggered a stark awakening. Once a staunch AI optimist, the Microsoft cofounder is now deeply pessimistic about what AI means for our collective future. Having been conspicuously quiet on AI issues recently, Gates is back with a nearly 6,000-word essay seeking [&#8230;]",
