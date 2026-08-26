@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://electrek.co/2026/08/26/tesla-denies-china-fsd-data-center-pullout/",
+      "title": "Tesla denies rumors it’s abandoning ‘Full Self-Driving’ push in China",
+      "summary": "Tesla is denying rumors that it has pulled its “Full Self-Driving” team out of China, saying its Shanghai data center is “operating normally” and that it has even reported the claims to police. The denial comes as China remains conspicuously absent from Tesla’s own list of markets where customers can subscribe to FSD because of the regulatory limbo the driver assist system faces.",
+      "source": "Electrek",
+      "category": "Autonomes Fahren",
+      "published": "2026-08-26T13:46:59+00:00",
+      "sent_at": "2026-08-26T13:52:11.331124+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/08/26/robot-brain-builders-are-pushing-out-of-their-gpt-2-era/",
+      "title": "Robot brain builders are pushing out of their GPT-2 era",
+      "summary": "Robot bodies are waiting for their AI brains to catch up.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-26T13:30:00+00:00",
+      "sent_at": "2026-08-26T13:52:11.331124+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/cpus/fujitsus-monaka-cpu-stacks-its-entire-cache-on-a-separate-5nm-die-and-narrows-to-256-bit-sve2",
+      "title": "Hot Chips 2026: Fujitsu's Monaka CPU stacks its entire cache on a separate 5nm die and narrows to 256-bit SVE2 — 350W and 500W SKUs due in 2027",
+      "summary": "Fujitsu gave us a detailed look at its 144-core Monaka server CPU at Hot Chips 2026 on August 24, confirming for the first time that the Arm chip runs dual 256-bit SVE2 vector units, down from the 512-bit SVE in its A64FX predecessor.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-08-26T13:30:00+00:00",
+      "sent_at": "2026-08-26T13:52:11.331124+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/laptops/chuwi-unibook-review-a-budget-rival-to-the-macbook-neo-and-dell-xps-13",
+      "title": "Chuwi UniBook Review: A budget rival to the MacBook Neo and Dell XPS 13",
+      "summary": "A budget-friendly ultraportable with premium aspirations, the Chuwi UniBook packs modern Intel hardware, excellent connectivity, and impressive battery life into a sleek metal chassis.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-08-26T13:05:00+00:00",
+      "sent_at": "2026-08-26T13:52:11.331124+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/08/26/querystory-wants-you-to-believe-what-ai-is-telling-you/",
+      "title": "QueryStory wants you to believe what AI is telling you",
+      "summary": "The startup came out of stealth with $6 million in seed funding and a plan to use LLMs and cybersecurity know-how to make AI queries coherent.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-26T13:00:00+00:00",
+      "sent_at": "2026-08-26T13:52:11.331124+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/ssds/hot-chips-2026-high-bandwidth-flash-promises-massive-bandwidth-and-capacity-but-its-usability-is-extremely-limited-new-memory-format-strikes-a-balance-between-hbm-and-nand-flash",
+      "title": "Hot Chips 2026: High Bandwidth Flash promises massive bandwidth and capacity, but its usability is extremely limited — new memory format strikes a balance between HBM and NAND flash",
+      "summary": "OXMIQ presented its High Bandwidth Flash (HBF) use-case scenarios at Hot Chips 2026, which dramatically narrow the circumstances under which HBF makes sense.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-08-26T13:00:00+00:00",
+      "sent_at": "2026-08-26T13:52:11.331124+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/08/26/arga-is-building-a-better-way-to-train-enterprise-ai-agents/",
+      "title": "Arga Labs is building a better way to train enterprise AI agents",
+      "summary": "Arga has raised $10 million in a seed funding round that was led by General Catalyst, with participation from Box Group, Emergence, Gradient and SV Angel.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-26T12:55:28+00:00",
+      "sent_at": "2026-08-26T13:52:11.331124+00:00"
+    },
+    {
+      "link": "https://www.gatesnotes.com/work/make-ai-work-for-everyone/reader/a-turbulent-ai-era-and-critical-choices-to-make",
+      "title": "Bill Gates: The turbulent AI era is here",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-26T12:47:47+00:00",
+      "sent_at": "2026-08-26T13:52:11.331124+00:00"
+    },
+    {
       "link": "https://www.technologyreview.com/2026/08/26/1143000/the-download-kids-issue-launch-bill-gates-ai-fears/",
       "title": "The Download: the Kids issue arrives, and Bill Gates reveals his AI fears",
       "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Introducing: the Kids issue If the desire to limit kids&#8217; use of technology was once a subcurrent, it has become a raging flood. Countries around the world are banning children from&#8230;",
