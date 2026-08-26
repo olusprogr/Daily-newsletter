@@ -1,6 +1,24 @@
 {
   "items": [
     {
+      "link": "https://www.wired.com/story/vitamix-promo-code/",
+      "title": "Vitamix Promo Codes and Deals: $25 Off + Free Shipping",
+      "summary": "Score discounts on blenders, food processors, immersion blenders, and more with our selection of Vitamix coupons and deals.",
+      "source": "Wired",
+      "category": "Hardware",
+      "published": "2026-08-26T05:00:00+00:00",
+      "sent_at": "2026-08-26T05:30:35.415852+00:00"
+    },
+    {
+      "link": "https://waymo.com/blog/2026/08/waymo-in-munich/",
+      "title": "Servus München: Waymo Is Coming to Germany",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Autonomes Fahren",
+      "published": "2026-08-25T14:24:02+00:00",
+      "sent_at": "2026-08-26T05:30:35.415852+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/08/25/indias-ringg-gets-backing-from-peak-xv-as-it-pushes-voice-ai-past-the-phone-call/",
       "title": "India’s Ringg gets backing from Peak XV as it pushes voice AI past the phone call",
       "summary": "Ringg has raised $10 million from Peak XV as a part of its Series A extension.",
@@ -6101,42 +6119,6 @@
       "category": "AI",
       "published": "2026-08-12T10:00:00+00:00",
       "sent_at": "2026-08-12T11:03:56.966323+00:00"
-    },
-    {
-      "link": "https://www.404media.co/company-offering-100-human-written-never-ai-peer-review-is-entirely-ai/",
-      "title": "Company Offering '100% Human-Written, Never AI' Medical Research Is 100% AI",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-12T02:05:42+00:00",
-      "sent_at": "2026-08-12T04:03:48.055923+00:00"
-    },
-    {
-      "link": "https://twitter.com/_can1357/status/2087228354399265125",
-      "title": "OpenAI and Anthropic hidden CoT leaks when given deep_think tool.",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-11T22:06:14+00:00",
-      "sent_at": "2026-08-12T04:03:48.055923+00:00"
-    },
-    {
-      "link": "https://www.suzanne3d.com/",
-      "title": "Suzanne: AI tool for designing and manufacturing physical products",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-11T21:28:26+00:00",
-      "sent_at": "2026-08-12T04:03:48.055923+00:00"
-    },
-    {
-      "link": "https://arxiv.org/abs/2601.01828",
-      "title": "Emergent Introspective Awareness in Large Language Models",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-11T21:14:10+00:00",
-      "sent_at": "2026-08-12T04:03:48.055923+00:00"
     }
   ]
 }
