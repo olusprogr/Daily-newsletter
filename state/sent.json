@@ -1,6 +1,60 @@
 {
   "items": [
     {
+      "link": "https://venturebeat.com/security/the-fix-for-the-ai-agent-that-hijacked-a-companys-dns-it-can-propose-the-change-but-it-cant-approve-it",
+      "title": "The fix for the AI agent that hijacked a company's DNS: it can propose the change, but it can't approve it",
+      "summary": "A security agent read a Cloudflare log, found an attacker’s prompt-injection payload sitting inside it, and rewrote the company’s DNS. The firewall had already blocked that payload, and blocking it is what wrote it into the log. That chain is GhostJacking , which Tenet Security demonstrated on the DEF CON 34 main stage on August 9. A request hits Cloudflare’s managed ruleset, gets blocked, and is stored byte for byte with its poisoned User-Agent header. An AI coding agent reviewing those blocked events reads the attacker&#x27;s text as an instruction — with no way to tell it apart from one the company meant to give it — and acts on it with credentials the company issued months earlier. In Tenet’s benchmark, Claude Code on Sonnet 4.6 followed the planted instruction in nine of 10 attempts under Cloudflare’s recommended configuration. The block rate is not the boundary Nothing malfunctioned. The firewall worked, and every call after it carried a valid credential already issued to the agent. Endpoint detection, the web application firewall and identity management stayed quiet because no rule broke. Tenet found public evidence of the exposed setup at 48 organizations, six confirmed Fortune 500 companies, and SecurityWeek reported the same chain against Datadog and Sentry, where the injection surface is an alert or an error report. No single platform patch removes the architectural risk: an agent that consumes attacker-reachable data and can independently execute high-impact changes. That is why a high prompt-injection block rate cannot serve as a security boundary. OWASP’s co-lead names the fix “The first thing I’d do is put an authorization gate outside the model,” said Steve Wilson, Chief AI and Product Officer at Exabeam and project co-lead for the OWASP Top 10 for LLM Applications, in written responses to VentureBeat. “The agent can propose the exact DNS change, but it cannot grant itself the authority to make it.” The move relocates the decision into code that either passes or fails. A safe change, defined cleanly, clears a deterministic policy check and stays autonomous. Anything ambiguous or high in blast radius routes to a named human who approves the actual change. “The tradeoff is that the agent loses the ability to improvise arbitrary, high-impact infrastructure changes on its own, while retaining autonomous investigation and routine, bounded remediation,” Wilson wrote. On teams that try to solve this inside the prompt, Wilson is blunt. “We have to remember that security rules written inside prompts may shape the model’s behavior, but they are still suggestions to the model, not enforceable security controls,” he wrote. The blocked payload became the instruction GhostJacking needs no compromised admin account and no bypassed firewall. It needs an agent that reads operational data and holds write access to the systems that data describes. Every step in Tenet’s chain is something the agent was already allowed to do, so tools tuned to catch unauthorized actions have nothing to catch. The mechanism is specific. SC Media reported that the agent Tenet drove live at Cloudflare was Cursor, reading through a GraphQL integration and writing through the Cloudflare API, and that pairing closes the chain. Tenet ran the chain against more than one coding agent. Cursor carried the demonstration, and the nine of 10 figure came from separate testing of the same attack against Claude Code. The Cursor agent ingests the poisoned header, patches the DNS A record and adds a CNAME to “resolve” the injected finding, giving the attacker a path to reroute the company’s web and email traffic. One agent’s output became the next agent’s input Events reach Sentry through a public write-only endpoint with no authentication, by design. Tenet used a leaked identifier to post a crafted error report. On an ordinary triage prompt, the coding agent escalated it to Sentry’s own AI, Seer, then trusted the analysis it got back. Seer had already absorbed the attacker’s proposed fix and returned it as its own finding. What reached the coding agent was a recommendation from another AI, and it implemented that recommendation. That walked straight through a control Sentry had already written. Sentry&#x27;s guidance instructs agents reading its event data never to follow directives found there, and the coding agent held to the letter of that rule. It acted on Seer&#x27;s conclusion instead, and that conclusion belonged to the attacker. It was acting on Seer’s conclusion, and that conclusion belonged to the attacker. An authorization boundary that accepts another model’s output inherits every injection that model absorbed, which is why Wilson’s gate belongs between agents too. OWASP moved excessive agency from sixth to third The 2026 OWASP Top 10 for LLM Applications , published August 4, elevated Excessive Agency three places on a ranking blending a 75% practitioner vote with 25% incident data from 6,639 documented cases. It was the largest upward move on the list, driven by real-world incidents clustering in agentic deployments. The fix isn&#x27;t better prompting — it&#x27;s the permission map: which actions are pre-approved, and which need a human. Reading logs, correlating alerts and drafting timelines stay autonomous. A bounded remediation like restarting a named service inside a fixed condition set clears a policy check outside the model. Anything that changes DNS, alters identity privileges, deploys code or reroutes production traffic needs a named human, and letting an agent open new access paths or approve its own proposals defeats the point of the gate. Useful autonomy survives that. What does not survive is the path from an attacker’s text to unreviewed production authority. What the control costs in practice Tenet co-founder and CEO Barak Sternberg told Dark Reading that a request the firewall already blocked was the way in, and that the firewall never went down, it just stopped mattering. His own fix is to split what an agent can read from what it can execute, and he concedes the cost, because an agent that reads alerts but cannot act on them is not the agent anyone deployed. The cheaper first step is an inventory. Every agent that reads outside data and can also write or execute belongs on a risk register, and that register needs no new tooling. Wilson’s design survives that cost because the split it draws is proposal from approval rather than read from write. The agent still reads its alerts, still investigates and still runs bounded work. What it loses is the ability to invent a high-impact change and carry it out on its own authority. Almost nobody has built it. Kayne McGladrey, a senior member of the IEEE, has argued for years that an AI deployment needs a hard governance threshold, a named human holding a kill switch and a way to roll back. Asked whether any Fortune 500 company runs that, he was blunt. “I haven’t seen it done, and no, they haven’t come out and publicly said it,” McGladrey told VentureBeat. His reason is economic. Companies “are accepting the risk, and they’re accepting it either deliberately or unconsciously,” he observed, betting the advantage beats the penalty. “What I think would change behavior in the space is if the penalties and the consequences were to outweigh the advantages.” The gate belongs outside the model for a reason unrelated to malice. “If you get into the inference layer, it won’t tell you it’s cheating, and it will lie about having cheated,” he argued, pointing to findings from the U.K.’s AI Safety Institute among others. A system that cannot reliably report its own shortcuts should not authorize its own. The industry is not positioned to make that split quickly. Ivanti’s 2026 State of Cybersecurity Report found 77% of security professionals at least somewhat comfortable letting AI act without human review, the exact posture Wilson’s gate constrains. CrowdStrike pushed its prompt-injection taxonomy past 200 techniques in July, naming indirect injection through data an agent reads as the critical vector for agents that call tools and run commands. The architect who moved the boundary before the attack had a name Egiziago Cioffi hit a related failure in production months before GhostJacking had a name, with one caveat. Cioffi is CEO of SynSphere Italia, a Microsoft reseller, the architect who built and sold the system rather than a security leader defending one he inherited. His Azure OpenAI assistant over SharePoint scored well on faithfulness and still returned content the asking user could not have opened. “An evaluation set with no identity dimension cannot fail an authorisation bug, however high the faithfulness score,” Cioffi told VentureBeat in written answers. He fixed it with a query-time filter built from the asking user’s group claims, so an unentitled chunk never becomes a candidate and never reaches the model. GhostJacking turns on what the model may do, the half Wilson’s gate is built for. One gap stays open here. No sitting CISO has gone on the record with a change made since August 9 and what it cost in agent capability. Until one does, the cost side rests on the people who specified the control, not anyone defending a production environment with it. What security leaders need to do this week Four questions produce an honest picture faster than any procurement cycle. Which agents read attacker-reachable material, which of those can also change production systems, whose permissions run at retrieval, and which changes a policy engine can approve without a human. Then run the negative test. Plant an adversarial instruction in a log the agent is expected to inspect, and keep the transcript, because that transcript is the difference between claiming a control and showing a test of it. Tenet, which sells runtime protection for AI agents, leads its own defender guidance with denying an agent outbound network access by default, cutting the leg where the poisoned instruction fetches a payload and reroutes traffic. But an agent that investigates without a standing path to the open internet loses a capability few workflows will miss. Enumerate the service principals in the tenant, drop the Microsoft first-party apps that ship pre-provisioned, then filter to those holding a credential or app-role assignment. Every identity on that list needs an owner and an expiry date, because one with both gets reviewed and one with neither never does. For any agent with production authority, write the containment sequence before an incident, not during one. Revoke or rotate its workload credential, disable its write-capable API or tool integration, preserve the execution transcript, then validate and roll back whatever infrastructure it changed. McGladrey’s read on why the work keeps getting deferred is uncomfortable. “I think that there’s a level of tolerance that’s being given right now in AI that is unlike anything else in society,” he said. GhostJacking makes that visible. A blocked payload reaches the agent through the system built to record blocked payloads, and once it arrives the question is no longer whether the model recognizes an attack. It is whether the model holds the authority to turn one into a production change.",
+      "source": "VentureBeat",
+      "category": "AI",
+      "published": "2026-08-26T16:13:50+00:00",
+      "sent_at": "2026-08-26T16:15:01.065162+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/video/whats-driving-swedens-startup-boom-from-lovable-to-legora/",
+      "title": "What’s driving Sweden’s startup boom, from Lovable to Legora",
+      "summary": "Vibe-coding darling&#160;Lovable just raised $400 million at a&#160;$13.3 billion&#160;valuation,&#160;roughly doubling&#160;its worth in eight months. But Lovable&#160;isn’t&#160;the only Stockholm startup putting up&#160;huge numbers&#160;lately — legal AI company&#160;Legora&#160;and health tech startup&#160;Neko Health&#160;are right there with it.&#160; On this episode of TechCrunch’s&#160;Equity&#160;podcast,&#160;Dominic-Madori Davis is joined by&#160;Sophia Bendz, a partner at Cherry Ventures and longtime fixture of Europe’s startup [&#8230;]",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-26T16:00:00+00:00",
+      "sent_at": "2026-08-26T16:15:01.065162+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/08/26/radar-makes-podcasts-searchable-and-usable-by-ai-agents/",
+      "title": "Radar makes podcasts searchable — and usable by AI agents",
+      "summary": "Particle’s new podcast intelligence platform transcribes and analyzes more than 130,000 podcasts, making their conversations searchable on the web and accessible to AI agents through an API and MCP.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-26T15:47:28+00:00",
+      "sent_at": "2026-08-26T16:15:01.065162+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/08/26/ex-meta-scientists-want-to-bring-visual-ai-to-the-factory-floor/",
+      "title": "Ex-Meta scientists want to bring visual AI to the factory floor",
+      "summary": "Perceptron offers an AI model that it says can help machines navigate the world while also providing in-depth visual intelligence.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-26T15:00:00+00:00",
+      "sent_at": "2026-08-26T16:15:01.065162+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/data-centers/hot-chips-2026-nvidia-touts-benefits-of-its-dsx-maxlps-site-power-management-approach-tech-allows-for-more-compute-from-fixed-data-center-power-budgets",
+      "title": "Hot Chips 2026: Nvidia touts benefits of its DSX MaxLPS site power management approach — tech allows for more compute from fixed data center power budgets",
+      "summary": "During Nvidia's Hot Chips presentation on the Rubin GPU, the company emphasized power as a hard limit on data center capacity and touted the amount of compute that Vera Rubin NVL72 systems can deliver within an example fixed facility power budget of 100MW.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-08-26T14:42:10+00:00",
+      "sent_at": "2026-08-26T16:15:01.065162+00:00"
+    },
+    {
+      "link": "https://www.reuters.com/investigations/mark-zuckerberg-had-bold-plan-replace-meta-staff-with-ai-heres-how-it-imploded-2026-08-26/",
+      "title": "Mark Zuckerberg had a bold plan to replace Meta staff with AI",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-26T10:40:58+00:00",
+      "sent_at": "2026-08-26T16:15:01.065162+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/08/26/bill-gates-wants-to-see-a-robot-tax-and-human-reserved-jobs-to-mitigate-harms-from-ai/",
       "title": "Bill Gates wants to see a robot tax and ‘Human Reserved’ jobs to mitigate harms from AI",
       "summary": "Gates is mostly in the Responsible AI camp, but there are a few ideas in here we hadn't heard before.",
@@ -6056,150 +6110,6 @@
       "category": "Hardware",
       "published": "2026-08-12T14:00:00+00:00",
       "sent_at": "2026-08-12T16:56:10.563192+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/gpus/nvidia-doubles-rtx-pro-6000-blackwells-msrp-to-a-staggering-usd16-000-96gb-card-started-pre-orders-below-usd8-000-last-year",
-      "title": "Nvidia doubles RTX PRO 6000 Blackwell's MSRP to a staggering $16,000 — 96GB card started pre-orders below $8,000 last year",
-      "summary": "A data center GPU has become more expensive because of the AI boom enabled by unprecedented data center buildouts — shocking. Nvidia's RTX 6000 Pro Blackwell is now twice as costly as it was last year at the time of its launch, and 20% more expensive than even a couple of months ago.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-08-12T15:53:19+00:00",
-      "sent_at": "2026-08-12T15:56:24.978939+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/coreweave-ceo-mike-intrator-says-it-has-signed-an-a100-contract-running-into-2029",
-      "title": "CoreWeave proves Nvidia's aging AI GPUs from 2020 can generate profit nine years after deployment, signs A100 contracts into 2029 — power constraints and legacy infrastructure keep old GPUs profitable",
-      "summary": "CoreWeave reported $2.58 billion in quarterly revenue, up 112% year over year.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-08-12T15:41:47+00:00",
-      "sent_at": "2026-08-12T15:56:24.978939+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/tech-policy/2026/08/heres-a-balm-if-the-idea-of-destroying-books-to-train-ai-breaks-your-heart/",
-      "title": "Booksellers suspect AI firms are buying and then destroying rare books",
-      "summary": "AI firms quietly bulk buying rare books face resistance from booksellers.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-08-12T15:19:17+00:00",
-      "sent_at": "2026-08-12T15:56:24.978939+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/12/silkroad-innovation-hubs-road-to-battlefield-competition-continues/",
-      "title": "Silkroad Innovation Hub’s Road to Battlefield competition continues",
-      "summary": "The Road to Battlefield competition is now in its second year, and its purpose is to give founders across Central Eurasia a direct route to Startup Battlefield",
-      "source": "TechCrunch",
-      "category": "Innovationen",
-      "published": "2026-08-12T15:02:00+00:00",
-      "sent_at": "2026-08-12T15:56:24.978939+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/cyber-security/suspected-china-linked-hackers-used-ai-to-run-the-first-ever-end-to-end-autonomous-cyberattack-on-taiwans-government-israeli-firm-says-open-source-built-tool-continuously-devised-effective-hack-strategies-in-real-time",
-      "title": "Suspected China-linked hackers used AI to run the first-ever end-to-end autonomous cyberattack on Taiwan's government, Israeli firm says — open-source-built tool continuously devised effective hack strategies in real-time",
-      "summary": "Suspected China-linked hackers used autonomous AI agents to breach Taiwanese government systems, compromising 85 accounts and stealing 2,500+ records.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-08-12T14:58:54+00:00",
-      "sent_at": "2026-08-12T15:56:24.978939+00:00"
-    },
-    {
-      "link": "https://www.reuters.com/legal/government/german-advocacy-group-lodges-criminal-complaint-over-meta-ai-glasses-2026-08-12/",
-      "title": "German advocacy group lodges criminal complaint over Meta AI glasses",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-12T14:06:03+00:00",
-      "sent_at": "2026-08-12T15:56:24.978939+00:00"
-    },
-    {
-      "link": "https://knownagents.com/insights",
-      "title": "Someone is running mass vulnerability scans, spoofing AI bots like ClaudeBot",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-12T14:02:46+00:00",
-      "sent_at": "2026-08-12T15:56:24.978939+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/pixel-11-pixel-watch-5-pixel-tag-everything-google-announced-at-its-made-by-google-2026-event/",
-      "title": "Google Pixel 11 Series, Pixel Watch 5, Pixel Tag: Specs, Features, Price, Release Date",
-      "summary": "The Pixel 11 smartphone lineup is here, alongside the Pixel Watch 5 and the all-new Pixel Tag.",
-      "source": "Wired",
-      "category": "Hardware",
-      "published": "2026-08-12T14:00:00+00:00",
-      "sent_at": "2026-08-12T15:56:24.978939+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/12/google-unveils-pixel-11-lineup-new-airtag-rival-and-gemini-features-at-made-by-google-2026/",
-      "title": "Everything announced at Made by Google ’26: Pixel 11, Pixel Watch 5, Pixel Tag, and tons of Gemini features",
-      "summary": "From the Pixel 11 series and a brand new competitor to Apple’s AirTag, here are all the announcements from the Made by Google 2026 event.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-12T14:20:33+00:00",
-      "sent_at": "2026-08-12T14:53:59.084154+00:00"
-    },
-    {
-      "link": "https://content.knowledgehub.wiley.com/the-2026-state-of-visual-and-physical-ai-a-survey-of-700-practitioners-on-data-models-and-production/",
-      "title": "Inside the Data Bottleneck Slowing Visual and Physical AI",
-      "summary": "A survey of over 700 professionals examines how visual and physical AI teams build systems, why models fail, and where data work drives production. Download this free whitepaper now!",
-      "source": "IEEE Spectrum",
-      "category": "AI",
-      "published": "2026-08-12T14:18:05+00:00",
-      "sent_at": "2026-08-12T14:53:59.084154+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/08/12/waymo-ojai-robotaxis-arizona-factory/",
-      "title": "Waymo has nearly 1,000 robotaxis waiting at its Arizona factory",
-      "summary": "Waymo has 684 of its new Ojai robotaxis finished and ready to deploy at its factory in Mesa, Arizona, according to the latest aerial count of the site. That’s out of 953 Ojai vehicles on the lot in total, or 72% already converted. It’s the clearest sign yet of how much driverless capacity Waymo is stockpiling.",
-      "source": "Electrek",
-      "category": "Autonomes Fahren",
-      "published": "2026-08-12T14:01:59+00:00",
-      "sent_at": "2026-08-12T14:53:59.084154+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/gadgets/2026/08/google-reveals-2026-hardware-lineup-pixel-11-pixel-watch-5-and-pixel-tag/",
-      "title": "Google reveals 2026 hardware lineup: Pixel 11, Pixel Watch 5, and Pixel Tag",
-      "summary": "Google focuses more on AI and curated experiences than spec upgrades in 2026.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-08-12T14:00:51+00:00",
-      "sent_at": "2026-08-12T14:53:59.084154+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/12/pixel-11-has-few-hardware-changes-and-more-gemini/",
-      "title": "Google’s Pixel 11 lineup offer fewer hardware changes, but much more Gemini",
-      "summary": "Google Pixel 11 Series starts $100 costlier than the last year, but offers 256GB base storage",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-12T14:00:00+00:00",
-      "sent_at": "2026-08-12T14:53:59.084154+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/12/google-unveils-the-pixel-watch-5-with-a-smarter-gemini-and-advanced-health-monitoring/",
-      "title": "Google unveils the Pixel Watch 5 with a smarter Gemini and advanced health monitoring",
-      "summary": "The new smartwatch, which starts at $399, can track blood pressure patterns and insulin resistance, as well as deliver personalized help and better sleep tracking.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-12T14:00:00+00:00",
-      "sent_at": "2026-08-12T14:53:59.084154+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/978084/google-camera-looks-interview-computational-photography",
-      "title": "Google is making the Pixel cameras better by making them worse",
-      "summary": "If you look at a photo taken by a smartphone today, it's hard to find much that's technically wrong. Faces are bright and visible. The skies are pristine and blue. Even at night, scenes are well lit and noise-free. If the physical limitations of a tiny camera are what you're trying to solve for, you [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-08-12T14:00:00+00:00",
-      "sent_at": "2026-08-12T14:53:59.084154+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/978094/pixel-watch-5-hands-on-made-by-google-gemini-wearables-smartwatch",
-      "title": "Google’s Pixel Watch 5 dives deeper into AI and health",
-      "summary": "The $399 Google Pixel Watch 5 isn't about the hardware. Sure, there's a new satin pyrite case finish, a few new strap colors, and a Steph Curry Special Edition. Under the hood, there's a slightly faster Qualcomm processor and an itty-bitty battery bump. There's a $50 price hike from last year, too, because the Pixel [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-08-12T14:00:00+00:00",
-      "sent_at": "2026-08-12T14:53:59.084154+00:00"
     }
   ]
 }
