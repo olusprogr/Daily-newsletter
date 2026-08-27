@@ -1,8 +1,0 @@
-<resources>
-    <style name="Theme.Schacht" parent="Theme.AppCompat.DayNight.NoActionBar" />
-
-    <style name="Theme.Schacht.Fullscreen" parent="Theme.Schacht">
-        <item name="android:windowFullscreen">true</item>
-        <item name="android:windowNoTitle">true</item>
-    </style>
-</resources>
