@@ -82,6 +82,12 @@ private val ORB = 0xFF3FA9D8.toInt()    // Orbit/Planet
 private val ORBL = 0xFF9FE0F5.toInt()   // Planet hell
 private val ORBD = 0xFF23708F.toInt()   // Planet Schatten
 private val ORBR = 0xFFE8ECF2.toInt()   // Umlaufbahn
+// Marker-Farben fuer seltene Fundorte
+private val GLDI = 0xFFF0B429.toInt()   // Goldnugget
+private val GLDL2 = 0xFFFFE08A.toInt()  // Gold hell
+private val GLDD2 = 0xFFB07C12.toInt()  // Gold Schatten
+private val DEEP = 0xFF2B6A96.toInt()   // Tiefenwasser
+private val ENR = 0xFF78E2C8.toInt()    // Energiequelle (Ring)
 
 object Sprites {
 
@@ -697,6 +703,56 @@ object Sprites {
         Px(2, 8, 2, 1, ORBR), Px(8, 8, 2, 1, ORBR), Px(4, 9, 4, 1, ORBR),
         // Satellit auf der Bahn
         Px(9, 2, 2, 2, OUT), Px(9, 2, 2, 1, CYL)
+    )
+
+    // --- Marker fuer seltene Fundorte (12x12, auf der Karte). Jeder bekommt eine
+    // eigene Silhouette, damit man ihn schon beim Ueberfliegen der Karte erkennt:
+    // Nugget-Haufen (Gold) / Kristall (Mineralien) / Quelle (Tiefenwasser) /
+    // Blitz im Kreis (Energiequelle).
+    val ICON_SITE_GOLD = listOf(
+        // Nugget-Haufen mit hartem Rand
+        Px(3, 4, 4, 1, OUT), Px(2, 5, 1, 3, OUT), Px(7, 5, 1, 3, OUT), Px(3, 8, 4, 1, OUT),
+        Px(3, 5, 4, 3, GLDI), Px(3, 5, 3, 1, GLDL2), Px(3, 7, 4, 1, GLDD2),
+        Px(7, 2, 3, 1, OUT), Px(6, 3, 1, 2, OUT), Px(10, 3, 1, 2, OUT), Px(7, 5, 3, 1, OUT),
+        Px(7, 3, 3, 2, GLDI), Px(7, 3, 2, 1, GLDL2),
+        Px(5, 9, 3, 1, OUT), Px(4, 10, 1, 1, OUT), Px(8, 10, 1, 1, OUT), Px(5, 11, 3, 1, OUT),
+        Px(5, 10, 3, 1, GLDD2),
+        Px(4, 5, 1, 1, WAFL)
+    )
+    val ICON_SITE_MINERAL = listOf(
+        // Kristallgruppe, violett
+        Px(5, 0, 2, 1, OUT), Px(4, 1, 1, 8, OUT), Px(7, 1, 1, 8, OUT), Px(4, 9, 4, 1, OUT),
+        Px(5, 1, 2, 8, REE), Px(5, 1, 1, 8, REEL), Px(6, 3, 1, 5, REED),
+        Px(2, 4, 1, 1, OUT), Px(1, 5, 1, 5, OUT), Px(3, 5, 1, 5, OUT), Px(1, 10, 3, 1, OUT),
+        Px(2, 5, 1, 5, REE), Px(2, 5, 1, 1, REEL),
+        Px(9, 5, 1, 1, OUT), Px(8, 6, 1, 4, OUT), Px(10, 6, 1, 4, OUT), Px(8, 10, 3, 1, OUT),
+        Px(9, 6, 1, 4, REE), Px(9, 6, 1, 1, REEL),
+        Px(5, 2, 1, 1, WAFL)
+    )
+    val ICON_SITE_WASSER = listOf(
+        // Quellbecken mit Ringen - klar unterscheidbar vom Wasser-Rohstofftropfen
+        Px(3, 3, 6, 1, OUT), Px(1, 4, 10, 1, OUT),
+        Px(0, 5, 1, 4, OUT), Px(11, 5, 1, 4, OUT),
+        Px(1, 9, 10, 1, OUT), Px(3, 10, 6, 1, OUT),
+        Px(1, 5, 10, 4, DEEP), Px(3, 4, 6, 1, DEEP), Px(3, 9, 6, 1, DEEP),
+        // konzentrische Ringe
+        Px(2, 6, 8, 1, BLUE), Px(3, 8, 6, 1, BLUE),
+        Px(4, 7, 4, 1, BLUEL),
+        // aufsteigender Tropfen
+        Px(5, 0, 2, 1, OUT), Px(4, 1, 1, 1, OUT), Px(7, 1, 1, 1, OUT), Px(4, 2, 4, 1, OUT),
+        Px(5, 1, 2, 1, BLUEL), Px(5, 2, 2, 1, BLUE)
+    )
+    val ICON_SITE_ENERGIE = listOf(
+        // Blitz - ohne Ring, der Rahmen kommt schon von der Feldmarkierung
+        Px(5, 0, 5, 1, OUT), Px(4, 1, 5, 1, OUT), Px(3, 2, 5, 1, OUT),
+        Px(2, 3, 7, 1, OUT), Px(2, 4, 7, 1, OUT),
+        Px(4, 5, 5, 1, OUT), Px(3, 6, 5, 1, OUT), Px(2, 7, 5, 1, OUT),
+        Px(3, 8, 4, 1, OUT), Px(4, 9, 3, 1, OUT), Px(4, 10, 2, 1, OUT),
+        Px(6, 1, 3, 1, ENR), Px(5, 2, 3, 1, ENR), Px(4, 3, 3, 1, ENR),
+        Px(3, 4, 5, 1, YEL),
+        Px(5, 5, 3, 1, YEL), Px(4, 6, 3, 1, YEL), Px(3, 7, 3, 1, YEL),
+        Px(4, 8, 2, 1, ENR), Px(5, 9, 1, 1, ENR),
+        Px(6, 1, 1, 1, WAFL)
     )
 
     fun iconForRes(res: Int, level: Int = 1): List<Px> = when (res) {

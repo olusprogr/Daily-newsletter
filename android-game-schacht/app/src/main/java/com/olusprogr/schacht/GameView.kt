@@ -347,6 +347,14 @@ class GameView(context: Context) : View(context) {
         Res.WASSER -> "W"; Res.BLEI -> "Pb"; Res.DAMPF -> "D"; Res.STROM -> "St"
     }
     private fun tierName(t: Int) = I18n.t("tier$t")
+    private fun terrainName(t: Terrain) = I18n.t("terrain_" + t.name.lowercase())
+    private fun siteName(k: SiteKind) = I18n.t("site_" + k.name.lowercase())
+    private fun siteColor(k: SiteKind) = when (k) {
+        SiteKind.GOLDADER -> Color.rgb(246, 200, 98)
+        SiteKind.MINERAL -> Color.rgb(186, 130, 244)
+        SiteKind.TIEFENWASSER -> Color.rgb(96, 190, 236)
+        SiteKind.ENERGIEQUELLE -> Color.rgb(120, 226, 200)
+    }
     private fun mName(t: MType): String {
         if (t == MType.BOHRER && sim.companyLevel == 2) return tr("m_uranbohrer")
         return I18n.t("m_" + t.name.lowercase())
@@ -1146,7 +1154,66 @@ class GameView(context: Context) : View(context) {
             pSprite.color = cSand; canvas.drawRect(x + cell - t, y, x + cell - b, y + cell, pSprite)
         }
 
+        // --- Gebirge: kuehler, steiniger Anstrich + gezackte Grate. Bewusst ueber der
+        // Graskachel statt als eigene Kachel-Datei - so bleibt der Uebergang zur Ebene
+        // weich und es kommt keine neue Kachelgrenze dazu. ---
+        if (sim.terrainAt(r, c) == Terrain.BERG) drawMountain(canvas, r, c, x, y)
+
         drawDeco(canvas, r, c, x, y)
+
+        // --- Seltener Fundort: erst sichtbar, wenn der Chunk freigeschaltet ist. ---
+        if (surveyed) sim.siteAt(r, c)?.let { drawSite(canvas, r, c, x, y, it) }
+    }
+
+    /**
+     * Fels-Anstrich fuer Gebirgsfelder: ein paar deterministisch gesetzte Grate und
+     * Geroellflecken. Kein Zufall pro Frame - dasselbe Feld sieht immer gleich aus.
+     */
+    private fun drawMountain(canvas: Canvas, r: Int, c: Int, x: Float, y: Float) {
+        val h = decoHash(r, c)
+        // kuehler Steinton ueber das Gras legen
+        pSprite.color = Color.argb(120, 118, 116, 112)
+        canvas.drawRect(x, y, x + cell, y + cell, pSprite)
+        val u = cell / 8f
+        // zwei bis drei Grate, Position/Groesse aus dem Hash
+        val n = 2 + (h ushr 3) % 2
+        for (i in 0 until n) {
+            val hh = h ushr (5 + i * 6)
+            val gx = x + ((hh % 5) + 1) * u
+            val gy = y + (((hh ushr 3) % 4) + 2) * u
+            val gw = (1.2f + ((hh ushr 6) % 3) * 0.5f) * u
+            val gh = (1.0f + ((hh ushr 9) % 3) * 0.4f) * u
+            pSprite.color = Color.argb(210, 92, 90, 88)
+            canvas.drawRect(gx, gy, gx + gw, gy + gh, pSprite)
+            pSprite.color = Color.argb(210, 158, 156, 152)   // Licht von oben links
+            canvas.drawRect(gx, gy, gx + gw * 0.55f, gy + gh * 0.4f, pSprite)
+        }
+    }
+
+    /**
+     * Marker eines seltenen Fundorts: farbiger Schein plus das passende Symbol, leicht
+     * pulsierend. Bewusst auffaellig - genau danach soll man beim Freischalten suchen.
+     */
+    private fun drawSite(canvas: Canvas, r: Int, c: Int, x: Float, y: Float, k: SiteKind) {
+        val pulse = 0.5f + 0.5f * kotlin.math.sin(animT * 2.4f + (r * 1.3f + c))
+        val col = siteColor(k)
+        // Schein
+        pSprite.color = Color.argb((44 + 42 * pulse).toInt(), Color.red(col), Color.green(col), Color.blue(col))
+        canvas.drawRect(x, y, x + cell, y + cell, pSprite)
+        // Rahmen
+        p.color = Color.argb((130 + 90 * pulse).toInt(), Color.red(col), Color.green(col), Color.blue(col))
+        p.style = Paint.Style.STROKE; p.strokeWidth = cell * 0.06f
+        canvas.drawRect(x + cell * 0.06f, y + cell * 0.06f, x + cell * 0.94f, y + cell * 0.94f, p)
+        p.style = Paint.Style.FILL
+        // Symbol
+        val icon = when (k) {
+            SiteKind.GOLDADER -> Sprites.ICON_SITE_GOLD
+            SiteKind.MINERAL -> Sprites.ICON_SITE_MINERAL
+            SiteKind.TIEFENWASSER -> Sprites.ICON_SITE_WASSER
+            SiteKind.ENERGIEQUELLE -> Sprites.ICON_SITE_ENERGIE
+        }
+        val sz = cell * 0.52f
+        drawIcon(canvas, icon, x + (cell - sz) / 2f, y + (cell - sz) / 2f, sz)
     }
 
     private fun decoHash(r: Int, c: Int): Int {
@@ -1775,7 +1842,7 @@ class GameView(context: Context) : View(context) {
             MType.LAGER -> tr("buffer")
             MType.VERSTAERKER -> "${tr("boosts")} (+${(Simulation.BOOST_PER * 100).toInt()}%)"
             MType.REAKTOR -> "${tr("provides")} ${Simulation.REAKTOR_POWER.toInt()} ${tr("strom")} (${tr("fixed")})"
-            MType.SOLAR -> "${tr("provides")} ${(sim.solarPower() * sim.machineUpgradeMult(m)).roundToInt()} ${tr("strom")} (${tr("sun")})"
+            MType.SOLAR -> "${tr("provides")} ${(sim.solarPowerAt(selR, selC) * sim.machineUpgradeMult(m)).roundToInt()} ${tr("strom")} (${tr("sun")})"
             MType.FORSCHUNG -> "${tr("produces_research")} +${oneDec(sim.researchRate())}/s"
             MType.DROHNE -> "${tr("repairs")} · R${sim.droneRange()} · ${(sim.droneRepairRate() * sim.machineUpgradeMult(m)).roundToInt()}%/s"
             MType.BLEIBOHRER -> {
@@ -1840,6 +1907,25 @@ class GameView(context: Context) : View(context) {
         if (m.type != MType.LAGER) {
             canvas.drawText(io, dp(12f), yy, pText)
             yy += dp(22f)
+
+            // Standort: Gelaende und - falls vorhanden - der seltene Fundort. Nur zeigen,
+            // wenn wirklich etwas Besonderes dran ist; die Ebene ohne Fund sagt nichts.
+            val ter = sim.terrainAt(selR, selC)
+            val site = sim.visibleSiteAt(selR, selC)
+            if (ter == Terrain.BERG || ter == Terrain.KUESTE || site != null) {
+                var sx = dp(12f)
+                if (ter == Terrain.BERG || ter == Terrain.KUESTE) {
+                    pText.color = cDim; pText.textSize = dp(13f)
+                    val t2 = terrainName(ter)
+                    canvas.drawText(t2, sx, yy, pText)
+                    sx += pText.measureText(t2) + dp(12f)
+                }
+                if (site != null) {
+                    pText.color = siteColor(site); pText.textSize = dp(13f)
+                    canvas.drawText("◆ ${siteName(site)}", sx, yy, pText)
+                }
+                yy += dp(20f)
+            }
 
             // Engpass-Ampel: zeigt in Klartext, warum die Maschine (nicht) laeuft
             val code = sim.bottleneck(m, selR, selC)

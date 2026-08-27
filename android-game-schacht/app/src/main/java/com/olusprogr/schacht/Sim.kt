@@ -160,6 +160,40 @@ enum class Mutation(
 }
 
 /**
+ * Gelaendetyp eines Feldes. Wird aus demselben Rauschen abgeleitet wie Land/Wasser -
+ * es gibt also nichts zusaetzlich zu speichern, und dieselbe Karte sieht immer gleich aus.
+ *
+ * Die Wirkung ist bewusst so gewaehlt, dass sie eine echte Platzierungsfrage aufmacht:
+ * Foerderer gehoeren ins Gebirge, Verarbeitung in die Ebene, Windraeder an die Kueste.
+ */
+enum class Terrain(val ore: Double, val work: Double, val sun: Double) {
+    /** Offenes Wasser - hier waechst nichts und steht nichts. */
+    WASSER(0.0, 1.0, 1.0),
+    /** Kuestenstreifen: der Windbonus haengt ohnehin schon daran. */
+    KUESTE(1.0, 1.0, 1.0),
+    /** Ebene: guter Baugrund, kurze Wege - alles arbeitet etwas fixer. */
+    EBENE(1.0, 1.08, 1.0),
+    /** Gebirge: ergiebige Lagerstaetten, aber sperriges Gelaende. */
+    BERG(1.40, 0.95, 1.12)
+}
+
+/**
+ * Seltener Fundort. Rein aus dem Karten-Seed abgeleitet (nichts zu speichern) und erst
+ * sichtbar, wenn der Chunk freigeschaltet ist - das Freischalten wird damit zur
+ * Entdeckung statt zur reinen Ausgabe.
+ */
+enum class SiteKind(val ore: Double = 1.0, val work: Double = 1.0, val water: Double = 1.0) {
+    /** Goldader: die ergiebigste Lagerstaette der Karte. */
+    GOLDADER(ore = 2.6),
+    /** Seltene Mineralien. */
+    MINERAL(ore = 1.9),
+    /** Tiefenwasserquelle: ein Wasserfoerderer hier braucht kein Nachbarwasser. */
+    TIEFENWASSER(water = 1.8),
+    /** Natuerliche Energiequelle: alles auf diesem Feld arbeitet spuerbar schneller. */
+    ENERGIEQUELLE(work = 1.6)
+}
+
+/**
  * Zufaelliges Weltereignis. Laeuft eine Weile und veraendert dabei genau die
  * Sammel-Multiplikatoren, durch die ohnehin jede Rate laeuft - kein Ereignis muss
  * also eine Maschine kennen. `area = true` heisst: wirkt nur auf einen Kartenausschnitt
@@ -361,6 +395,14 @@ class Simulation {
         const val STARTRAMPE_RATE = 0.45     // Satellitenmodul -> Orbit-Dienste (verkaufbar)
         const val LIFT = 3.0
         // --- Ereignisse: Abstaende bewusst gross, damit sie besonders bleiben ---
+        /**
+         * Abstand ueber der Land/Wasser-Schwelle, ab dem ein Feld als Gebirge zaehlt.
+         * 0.20 ergibt ueber viele Karten gemittelt rund 25% Gebirge, 51% Ebene und
+         * 24% Kueste - die Ebene bleibt der Normalfall, das Gebirge lohnt die Suche.
+         */
+        const val BERG_MARGIN = 0.20
+        /** Seltenheit der Fundorte: Treffer, wenn hash % 10000 kleiner ist (90 = ~0,9%). */
+        const val SITE_RARITY = 90
         const val EVENT_FIRST = 150.0        // erstes Ereignis fruehestens nach 2,5 Min
         const val EVENT_MIN = 190.0
         const val EVENT_MAX = 400.0
@@ -931,6 +973,42 @@ class Simulation {
      */
     private fun landThresh(): Double = if (companyLevel == 3) 0.65 else LAND_THRESH
 
+    /**
+     * Gelaendetyp eines Feldes. Kueste geht vor Gebirge: ein Feld direkt am Wasser ist
+     * spielerisch immer der Windrad-Platz, egal wie hoch das Rauschen dort liegt.
+     */
+    fun terrainAt(r: Int, c: Int): Terrain {
+        if (r !in 0 until n || c !in 0 until n) return Terrain.WASSER
+        if (!rawLand(r, c)) return Terrain.WASSER
+        for (o in arrayOf(intArrayOf(-1, 0), intArrayOf(1, 0), intArrayOf(0, -1), intArrayOf(0, 1))) {
+            if (rawWater(r + o[0], c + o[1])) return Terrain.KUESTE
+        }
+        return if (landValue(r, c) > landThresh() + BERG_MARGIN) Terrain.BERG else Terrain.EBENE
+    }
+
+    /**
+     * Seltener Fundort auf diesem Feld (oder null). Deterministisch aus dem Karten-Seed,
+     * nur an Land, und nie unter dem fest gesetzten Reaktor - dort waere er unerreichbar.
+     */
+    fun siteAt(r: Int, c: Int): SiteKind? {
+        if (r !in 0 until n || c !in 0 until n) return null
+        if (!rawLand(r, c)) return null
+        var h = mapSeed xor (r.toLong() * 2654435761L) xor (c.toLong() * 40503L) xor -0x61c8864680b583ebL
+        h = h xor (h ushr 15); h *= -0x7ee3623a03d3c83fL; h = h xor (h ushr 29)
+        val v = ((h ushr 31).toInt() and 0x7fffffff) % 10000
+        // ~0.9% aller Landfelder - selten genug, dass ein Fund etwas bedeutet.
+        if (v >= SITE_RARITY) return null
+        return when (v % 8) {
+            0 -> SiteKind.GOLDADER                      // die seltenste (1 von 8 Fundorten)
+            1, 2 -> SiteKind.MINERAL
+            3, 4, 5 -> SiteKind.TIEFENWASSER
+            else -> SiteKind.ENERGIEQUELLE
+        }
+    }
+
+    /** Fundort, aber nur wenn der Chunk schon freigeschaltet ist (fuer die Anzeige). */
+    fun visibleSiteAt(r: Int, c: Int): SiteKind? = if (isSurveyed(r, c)) siteAt(r, c) else null
+
     private fun rawLand(r: Int, c: Int): Boolean =
         r in 0 until n && c in 0 until n && landValue(r, c) > landThresh()
 
@@ -1109,7 +1187,10 @@ class Simulation {
         return when { v < 15 -> 0; v < 58 -> 1; v < 93 -> 2; else -> 3 }
     }
     private fun oreMult(r: Int, c: Int) =
-        if (isLand(r, c)) ORE_MULT[richness(r, c)] * (1.0 + 0.06 * lvl("t_ore")) * mutation.ore else 0.0
+        if (isLand(r, c))
+            ORE_MULT[richness(r, c)] * (1.0 + 0.06 * lvl("t_ore")) * mutation.ore *
+                terrainAt(r, c).ore * (siteAt(r, c)?.ore ?: 1.0)
+        else 0.0
 
     // --- Bestand (inkl. Lager) + Waehrungen ---
     private fun lagerSum(res: Int): Double {
@@ -1902,6 +1983,8 @@ class Simulation {
     fun genPower() = GEN_POWER * (1.0 + 0.10 * lvl("t_genpower"))
     fun windPower() = WIND_POWER * (1.0 + 0.10 * lvl("t_windpower")) * mutation.wind * evWind()
     fun solarPower() = SOLAR_POWER * (1.0 + 0.10 * lvl("t_solarpower")) * mutation.sun
+    /** Solar-Ertrag am konkreten Platz: im Gebirge steht das Panel hoeher und liefert mehr. */
+    fun solarPowerAt(r: Int, c: Int) = solarPower() * terrainAt(r, c).sun
     fun droneRepairRate() = DROHNE_RATE * (1.0 + 0.20 * lvl("t_drohne_rep"))
     fun droneRange() = DROHNE_R + lvl("t_drohne_range")
     fun droneSpeedMult() = 1.0 + 0.20 * lvl("t_drohne_speed")
@@ -2023,7 +2106,8 @@ class Simulation {
     }
     /** Wasserpumpe: braucht ein angrenzendes Wasserfeld (Kueste/Fluss), um zu foerdern. */
     fun adjWater(r: Int, c: Int): Boolean =
-        neighbors(r, c).any { rawWater(it[0], it[1]) || expandedCanal[it[0] * n + it[1]] }
+        siteAt(r, c) == SiteKind.TIEFENWASSER ||
+            neighbors(r, c).any { rawWater(it[0], it[1]) || expandedCanal[it[0] * n + it[1]] }
 
     /** Richtungs-Offset (dr,dc) des ersten angrenzenden Wasserfeldes (Meer ODER Kanal),
      *  oder null - fuer das Ansaugrohr der Wasserpumpe (GameView.kt), das wirklich bis
@@ -2044,6 +2128,9 @@ class Simulation {
         // Wasserfoerderer laufen ohne boostAt() - der Faktor aus Gebiets-Ereignissen muss
         // deshalb hier mit hinein, sonst waeren sie als Einzige davon ausgenommen.
         val ev = eventCellMult(r, c)
+        // Tiefenwasserquelle: der Foerderer steht direkt darauf und braucht gar kein
+        // Nachbarwasser - das ist der Grund, so einen Fundort ueberhaupt anzusteuern.
+        siteAt(r, c)?.let { if (it == SiteKind.TIEFENWASSER) return ev * it.water }
         if (neighbors(r, c).any { rawWater(it[0], it[1]) }) return ev
         if (neighbors(r, c).any { expandedCanal[it[0] * n + it[1]] })
             return min(1.0, CANAL_WATER_MULT + 0.05 * lvl("t_kanal")) * ev
@@ -2053,7 +2140,8 @@ class Simulation {
     private fun boostAt(r: Int, c: Int): Double {
         var k = 0
         for (nb in neighbors(r, c)) if (grid[nb[0]][nb[1]]?.type == MType.VERSTAERKER) k++
-        return (1.0 + BOOST_PER * min(k, 3)) * eventCellMult(r, c)
+        return (1.0 + BOOST_PER * min(k, 3)) * eventCellMult(r, c) *
+            terrainAt(r, c).work * (siteAt(r, c)?.work ?: 1.0)
     }
 
     // --- Ereignisse ------------------------------------------------------------------
@@ -2437,7 +2525,7 @@ class Simulation {
             if (m.type == MType.REAKTOR) supply += reactorPower()
             if (m.type == MType.GENERATOR && m.input[Res.ROHERZ.ordinal] > 1e-6) supply += genPower() * machineUpgradeMult(m)
             if (m.type == MType.WINDRAD) supply += windPower() * windCoastBonus(r, c) * machineUpgradeMult(m)
-            if (m.type == MType.SOLAR) supply += solarPower() * machineUpgradeMult(m)
+            if (m.type == MType.SOLAR) supply += solarPowerAt(r, c) * machineUpgradeMult(m)
         }
         var demand = 0.0
         forEachMachine { m, r, c -> if (wantsToRun(m, r, c)) demand += m.type.power * (sp()?.power ?: 1.0) }
