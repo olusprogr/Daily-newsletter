@@ -1,13 +1,13 @@
 """Entry point: fetch -> categorize -> send what's new -> archive.
 
-The workflow runs every 30 minutes and delivers articles as they show up,
-instead of collecting them for one daily digest. What keeps that from
-resending the same article every half hour is state/sent.json: every link
+The workflow runs hourly and delivers articles as they show up, instead of
+collecting them for one daily digest. What keeps that from resending the
+same article every hour is state/sent.json: every link
 that went out is recorded there and committed back to the repo, so the next
 run can tell "new" from "already seen" (see newsletter/state.py).
 
 The state is only written *after* WhatsApp accepted the messages. A failed
-send therefore leaves no trace, and the next run 30 minutes later retries
+send therefore leaves no trace, and the next run an hour later retries
 those same articles rather than dropping them.
 
 The daily file under digests/ is no longer the trigger for anything - it is
@@ -76,7 +76,7 @@ def run(force=False, dry_run=False, state_path=state.STATE_PATH):
     if len(new_items) > MAX_ITEMS_PER_RUN:
         print(
             f"[info] Auf {MAX_ITEMS_PER_RUN} Artikel begrenzt; der Rest kommt beim "
-            "nächsten Lauf in 30 Minuten."
+            "nächsten Lauf in einer Stunde."
         )
         new_items = new_items[:MAX_ITEMS_PER_RUN]
 

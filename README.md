@@ -1,6 +1,6 @@
 # 📰 Daily Tech Newsletter
 
-Vollautomatischer Tech-Newsletter per WhatsApp. Läuft **alle 30 Minuten** via
+Vollautomatischer Tech-Newsletter per WhatsApp. Läuft **stündlich** via
 GitHub Actions, prüft die Feeds auf neue Artikel und schickt dir jede relevante
 Meldung **sofort** — kein Warten auf eine feste Uhrzeit. Was schon draußen ist,
 kommt nie ein zweites Mal.
@@ -20,7 +20,7 @@ Pro Beitrag: Titel, max. 2 kurze Sätze Zusammenfassung, Link zum Weiterlesen.
 ## Wie „nur Neues" funktioniert
 
 Jeder verschickte Link landet in `state/sent.json`, das der Workflow zurück ins
-Repo committet. Der nächste Lauf 30 Minuten später vergleicht die Feeds dagegen
+Repo committet. Der nächste Lauf eine Stunde später vergleicht die Feeds dagegen
 und verschickt nur, was dort noch nicht steht — das Repo ist also selbst der
 Speicher, ohne externe Datenbank.
 
@@ -84,7 +84,7 @@ CallMeBot ist ein kostenloser Dienst für private WhatsApp-Nachrichten per API.
 
 Der Workflow `.github/workflows/newsletter.yml` läuft automatisch, sobald er
 im **default branch** (`main`) liegt — GitHub führt geplante (`schedule`)
-Workflows nur dort aus. Der Cron `*/30 * * * *` prüft alle 30 Minuten auf neue
+Workflows nur dort aus. Der Cron `0 * * * *` prüft stündlich auf neue
 Artikel. GitHub verzögert geplante Läufe bei Last oft um 5–20 Minuten; das
 macht hier nichts, weil nichts mehr an einer festen Uhrzeit hängt.
 
@@ -95,9 +95,9 @@ Manuell testen: **Actions → Tech Newsletter → Run workflow** mit
 `dry_run: true` — dann landen die Nachrichten nur im Workflow-Log, ohne
 WhatsApp und ohne den Zustand zu verändern.
 
-> 💡 Kosten: ~48 Läufe/Tag à ~1 Minute ≈ 1.400 Actions-Minuten/Monat. Der
-> Free-Tier für private Repos liegt bei 2.000 Minuten — passt, ist aber kein
-> großer Puffer. Wenn es knapp wird: Cron auf `0 * * * *` (stündlich) stellen.
+> 💡 Kosten: ~24 Läufe/Tag à ~1 Minute ≈ 720 Actions-Minuten/Monat. Der
+> Free-Tier für private Repos liegt bei 2.000 Minuten — dagegen ist das
+> reichlich Puffer.
 
 ### 3. Archiv-Webseite (optional, aber empfohlen)
 

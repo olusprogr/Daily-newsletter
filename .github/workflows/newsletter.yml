@@ -2,10 +2,10 @@ name: Tech Newsletter
 
 on:
   schedule:
-    # Every 30 minutes: new articles go out as they appear. GitHub often
-    # delays scheduled runs by 5-20 minutes under load, which is fine here -
-    # nothing depends on hitting an exact wall-clock time any more.
-    - cron: '*/30 * * * *'
+    # Hourly: new articles go out as they appear. GitHub often delays scheduled
+    # runs by 5-20 minutes under load, which is fine here - nothing depends on
+    # hitting an exact wall-clock time any more.
+    - cron: '0 * * * *'
   workflow_dispatch:
     inputs:
       force:

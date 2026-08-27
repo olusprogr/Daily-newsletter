@@ -1,8 +1,0 @@
-<resources>
-    <style name="Theme.PhysikHuepfer" parent="Theme.AppCompat.DayNight.NoActionBar" />
-
-    <style name="Theme.PhysikHuepfer.Fullscreen" parent="Theme.PhysikHuepfer">
-        <item name="android:windowFullscreen">true</item>
-        <item name="android:windowNoTitle">true</item>
-    </style>
-</resources>
