@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/08/26/amazon-just-tripled-its-order-of-nvidia-chips-over-surging-demand/",
+      "title": "Amazon just tripled its order of Nvidia chips over ‘surging demand’",
+      "summary": "Amazon is adding another 2 million Nvidia GPU chips to its data centers over the next two years. But this extended partnerships stretches beyond buying more chips.",
+      "source": "TechCrunch",
+      "category": "Hardware",
+      "published": "2026-08-26T23:47:18+00:00",
+      "sent_at": "2026-08-27T00:24:43.308613+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2245151/australia-s-recording-association-bans-ai-made-music-from-charts/",
+      "title": "Australia's recording association bans AI-made music from charts",
+      "summary": "Songs using gen-AI as a support tool will still be allowed, so long as they're \"substantially human made.\"",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-08-26T23:00:49+00:00",
+      "sent_at": "2026-08-27T00:24:43.308613+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/dram/nvidia-custom-nvhbm-promises-30-percent-higher-bandwidth-15-percent-lower-power-than-commodity-hbm4e-custom-base-die-and-phy-will-be-available-to-nvlink-fusion-partners",
+      "title": "Nvidia custom 'NVHBM' promises 30% higher bandwidth, 15% lower power than commodity HBM4e — custom base die and PHY will be available to NVLink Fusion partners",
+      "summary": "Nvidia has unveiled NVHBM, a custom high-bandwidth memory implementation that promises higher bandwidth and lower power for customers building chips within the NVLink Fusion partner program.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-08-26T22:45:22+00:00",
+      "sent_at": "2026-08-27T00:24:43.308613+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2245119/openai-details-the-failures-that-led-to-hugging-face-breach-in-official-report/",
+      "title": "OpenAI details the failures that led to Hugging Face breach in official report",
+      "summary": "Transparency from the company is good, but real trust in its people would be better.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-08-26T21:54:58+00:00",
+      "sent_at": "2026-08-27T00:24:43.308613+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/985387/nvidia-hundred-billion-dollar-quarterly-revenue",
+      "title": "Nvidia is about to be a hundred-billion-dollar-a-quarter company",
+      "summary": "Nvidia's predicting it will pull in $108 billion in revenue within just a few months. It wouldn't be the first company to rake in over $100 billion in quarterly revenue - Amazon, Apple, and Alphabet have repeatedly reached the milestone. Nvidia said in its latest earnings report that it brought in a record $96.2 billion [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-08-26T21:40:53+00:00",
+      "sent_at": "2026-08-27T00:24:43.308613+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/08/26/anthropic-continues-compute-gobbling-streak-in-45-billion-deal-with-nscale/",
+      "title": "Anthropic continues compute-gobbling streak in $45B deal with Nscale",
+      "summary": "The new deal with the infrastructure provider is the latest example of Anthropic's white-hot compute-gobbling streak.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-26T21:37:39+00:00",
+      "sent_at": "2026-08-27T00:24:43.308613+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/985385/openais-rogue-ai-model-hugging-face-cybersecurity-incident-reports-metr",
+      "title": "OpenAI’s rogue AI model incident was worse than we thought",
+      "summary": "In July, an unreleased OpenAI model broke out of a restricted environment, figured out how to get access to the internet, allowed AI agents to talk to each other using a secret \"message board,\" and hacked into the internal systems of a different AI lab, Hugging Face. It took nearly two weeks for OpenAI to [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-08-26T21:36:06+00:00",
+      "sent_at": "2026-08-27T00:24:43.308613+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/ai/2026/08/metas-scrapped-plans-to-go-ai-native-included-slashing-teams-by-60-percent/",
+      "title": "AI agents meant to replace Meta workers made “large-scale, disruptive actions”",
+      "summary": "Report shows Meta's challenges replacing people with AI agents.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-08-26T21:25:27+00:00",
+      "sent_at": "2026-08-27T00:24:43.308613+00:00"
+    },
+    {
       "link": "https://www.engadget.com/2245011/why-mac-mini-m5-pro-more-expensive-than-m6/",
       "title": "Why is the Mac mini M5 Pro more expensive than the M6?",
       "summary": "When it comes to Apple Silicon, a higher number doesn't necessarily mean a better chip.",
@@ -5930,87 +6002,6 @@
       "category": "AI",
       "published": "2026-08-13T04:53:41+00:00",
       "sent_at": "2026-08-13T08:18:39.955765+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/ai/2026/08/new-font-turns-ordinary-webpages-into-nonsense-for-ai-scrapers/",
-      "title": "The web’s newest weapon against AI scrapers is a font",
-      "summary": "“ShieldFont” aims to poison AI training data without making pages unreadable for people.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-08-12T22:02:25+00:00",
-      "sent_at": "2026-08-13T00:05:43.592422+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2235928/how-to-stop-twitch-training-ai-on-streams/",
-      "title": "How to stop Twitch from training AI on your streams",
-      "summary": "And why the company didn't make the feature opt-in.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-08-12T22:38:45+00:00",
-      "sent_at": "2026-08-12T23:08:54.503082+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/12/some-claude-users-are-mad-that-anthropics-new-watermarks-will-catch-them-cheating-at-their-jobs-classes/",
-      "title": "Some Claude users are mad that Anthropic’s new watermarks will catch them using it at their jobs, classes",
-      "summary": "Is Anthropic's new watermarking system a travesty? Some have taken to social media to complain that it is.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-12T22:26:37+00:00",
-      "sent_at": "2026-08-12T23:08:54.503082+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2235919/claude-cowork-can-now-run-in-a-chrome-sidebar/",
-      "title": "Claude Cowork can now run in a Chrome sidebar",
-      "summary": "Take your conversations with the chatbot into the Anthropic browser extension.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-08-12T22:19:29+00:00",
-      "sent_at": "2026-08-12T23:08:54.503082+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/security/2026/08/terabytes-of-credentials-leaked-in-massive-supply-chain-attack/",
-      "title": "Terabytes of credentials leaked in massive supply-chain attack",
-      "summary": "The data was scraped and exfiltrated from 2,500 users of a compromised AI package.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-08-12T21:43:21+00:00",
-      "sent_at": "2026-08-12T22:09:44.404320+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/cpus/qualcomm-details-snapdragon-c-specs-for-usd300-laptops-for-the-first-time-claims-67-percent-faster-performance-on-battery-than-intel-n250-ac-performance-remains-a-mystery",
-      "title": "Qualcomm details Snapdragon C specs for $300 laptops for the first time — claims 67% faster performance on battery than Intel N250, AC performance remains a mystery",
-      "summary": "Qualcomm has detailed the specs for its Snapdragon C processor, with 8 cores and claimed \"all-day\" battery life.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-12T21:14:33+00:00",
-      "sent_at": "2026-08-12T22:09:44.404320+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/ai/2026/08/twitch-content-has-trained-amazon-ai-for-years-but-users-can-opt-out-now/",
-      "title": "Twitch content has trained Amazon AI for years, but users can opt out now",
-      "summary": "Streaming platform says user-generated content \"may be used for future Gen AI model improvements.\"",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-08-12T21:00:30+00:00",
-      "sent_at": "2026-08-12T22:09:44.404320+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/the-white-house-is-going-to-expand-its-ai-policy/",
-      "title": "The White House Is Going to Expand Its AI Policy",
-      "summary": "Open models may soon be added to an updated AI framework, sources tell WIRED, as the White House continues to grapple with how to regulate a technology it has tried not to regulate.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-08-12T21:00:00+00:00",
-      "sent_at": "2026-08-12T21:13:05.868302+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/12/northrops-robot-space-mechanic-is-a-new-way-to-keep-satellites-at-work-longer/",
-      "title": "Northrop’s robot space mechanic is a new way to keep satellites at work longer",
-      "summary": "The Mission Robotic Vehicle is making the first attempt to attach a new thruster to an aging satellite.",
-      "source": "TechCrunch",
-      "category": "Innovationen",
-      "published": "2026-08-12T20:53:41+00:00",
-      "sent_at": "2026-08-12T21:13:05.868302+00:00"
     }
   ]
 }
