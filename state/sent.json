@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/08/28/chinese-automakers-are-following-teslas-bet-that-robots-are-the-next-big-profit-machine/",
+      "title": "Chinese automakers are following Tesla’s bet that robots are the next big profit machine",
+      "summary": "Technical progress has encouraged a new batch of companies to jump in on the promise of profits from humanoid robots. And they're all Chinese automakers.",
+      "source": "TechCrunch",
+      "category": "Innovationen",
+      "published": "2026-08-28T23:24:27+00:00",
+      "sent_at": "2026-08-28T23:51:29.525422+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/986364/google-search-ai-overviews-auto-expand",
+      "title": "Google further buries search results under AI mode",
+      "summary": "Google is now automatically expanding its AI search summaries at the top of the results page for some searches, as reported by Search Engine Roundtable. The change, when it kicks in, pushes the typical list of links from a search much farther down Google's results page; instead of seeing part of an AI Overview with [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-08-28T22:48:11+00:00",
+      "sent_at": "2026-08-28T23:51:29.525422+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/nvidia-ceo-jensen-huang-took-a-call-from-donald-trump-in-the-middle-of-an-all-hands/",
+      "title": "Nvidia CEO Jensen Huang Took a Call From Donald Trump in the Middle of an All-Hands",
+      "summary": "The unexpected interruption came hours before the president wrote a congratulatory post on Truth Social about the company’s most recent earnings report.",
+      "source": "Wired",
+      "category": "Hardware",
+      "published": "2026-08-28T22:29:13+00:00",
+      "sent_at": "2026-08-28T23:51:29.525422+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/08/28/neocloud-lambda-secures-1b-in-debt-to-buy-more-chips/",
+      "title": "Neocloud Lambda secures $1B in debt to buy more chips",
+      "summary": "Neocloud Lambda has raised $1B in private debt to buy Nvidia AI chips and lease them to Microsoft. It's the latest in a string of loans, underscoring the high cost of the AI boom.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-28T20:24:11+00:00",
+      "sent_at": "2026-08-28T23:51:29.525422+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/08/28/an-anthropic-researcher-just-gave-us-a-peek-at-self-improving-ai/",
+      "title": "An Anthropic researcher just gave us a peek at self-improving AI",
+      "summary": "Given 10 benchmarks for specific misaligned behaviors, the automated systems were able to improve performance on every single one without degrading overall performance.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-28T19:30:38+00:00",
+      "sent_at": "2026-08-28T23:51:29.525422+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2246658/early-leak-of-nvidia-dlss5-has-an-uncanny-valley-problem/",
+      "title": "Early leak of NVIDIA's DLSS 5 has an uncanny valley problem",
+      "summary": "People are grafting a pre-release version of DLSS 5 onto their favorite games with unspectacular results.",
+      "source": "Engadget",
+      "category": "Hardware",
+      "published": "2026-08-28T19:20:33+00:00",
+      "sent_at": "2026-08-28T23:51:29.525422+00:00"
+    },
+    {
+      "link": "https://handbook.sutro.sh",
+      "title": "The Analytical AI Handbook",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-28T19:01:47+00:00",
+      "sent_at": "2026-08-28T23:51:29.525422+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/08/28/open-weight-ai-companies-are-the-valleys-hottest-acquisition-targets/",
+      "title": "Open-weight AI companies are the Valley’s hottest acquisition targets",
+      "summary": "There's a lot of capital pouring into the business of giving models away.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-28T18:19:40+00:00",
+      "sent_at": "2026-08-28T23:51:29.525422+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/pc-components/gpus/exclusive-dlss-5-has-already-been-ported-to-work-on-rtx-4000-series-graphics-cards-incompatible-cuda-instructions-get-patched-to-work-on-previous-gen-hardware",
       "title": "DLSS 5 has already been ported to work on RTX 4000 Series graphics cards — incompatible CUDA instructions get patched to work on previous-gen hardware",
       "summary": "One modder has reverse-engineered DLSS 5 to function on RTX 4000 series Ada Lovelace-based GPUs, porting incompatible CUDA instructions within the Neural Rendering DLL, enabling them to be read on previous-gen hardware.",
@@ -5246,258 +5318,6 @@
       "category": "AI",
       "published": "2026-08-14T16:57:14+00:00",
       "sent_at": "2026-08-15T07:26:37.320260+00:00"
-    },
-    {
-      "link": "https://venturebeat.com/technology/glm-5-3-is-here-with-advanced-cyber-capabilities-and-reportedly-already-found-a-serious-vulnerability-in-cursor",
-      "title": "GLM-5.3 is here with advanced cyber capabilities — and reportedly already found a 'serious vulnerability' in Cursor",
-      "summary": "Chinese AI startup Z.ai, known internationally for its growing lineup of powerful, largely open source GLM series of language models, today released GLM-5.3 with substantial gains in long-horizon coding and a more consequential — and potentially sensitive — jump in cybersecurity capabilities. Already, GLM-5.3&#x27;s cyber capabilities have found a &quot;potentially serious vulnerability in Cursor,&quot; the AI coding startup recently acquired by SpaceX , according to z.ai developer advocate Lou, posting on X . VentureBeat also tagged Cursor for confirmation on X and is awaiting response. GLM-5.3 is available initially only through the company&#x27;s GLM Coding Plan and ZCode coding environment, while API access and open weights are coming later, &quot;once safety evaluation and hardening are complete,&quot; according to the company. Z.ai says it plans to release weights approximately two weeks after launch. For enterprise developers, the notable part of the release is not simply another round of benchmark improvements. Z.ai says GLM-5.3 uses the same base model as GLM-5.2, with the improvements coming entirely from scaling post-training across more environments, more diverse tasks and additional reinforcement-learning compute. That makes GLM-5.3 something of a test of how far a frontier-scale base model can be pushed without another expensive pretraining cycle. “Scaling post-training is all we did for GLM-5.3,” Z.ai wrote in its technical announcement. The results suggest considerable headroom. But they have also produced an unusual problem for an open-model developer: according to Z.ai, cybersecurity capabilities improved faster than anticipated as training scaled, particularly as tasks progressed from vulnerability identification toward constructing complete exploitation chains. Reuters reported Friday that Z.ai is also introducing controls around some of the model&#x27;s more advanced capabilities, including a “trusted access” approach for sensitive functionality. A large jump in coding without another base model GLM-5.3 builds on the 743-billion-parameter-scale base model behind GLM-5.2 rather than replacing it. Z.ai instead expanded the post-training system it had already assembled around long-horizon reinforcement learning. Those environments increasingly resemble complete engineering jobs rather than isolated programming exercises. Z.ai describes scenarios in which an agent receives access to codebases, documentation, compute clusters, storage systems and experimental results, then has to diagnose problems, modify systems, run experiments and demonstrate a measurable improvement while preserving correctness. Some tasks are designed to approximate several days of work for an experienced engineer. The approach produced sizable generation-over-generation improvements on Z.ai&#x27;s reported evaluations. GLM-5.3 jumps from 4.6 to 28.3 on Terminal-Bench 3.0, from 46.2 to 66.9 on DeepSWE v1.1, and from 26.2 to 48.2 on AutomationBench. On Agents&#x27; Last Exam CLI, it improves from 23.8 to 28.5. The model does not dominate every frontier competitor. Z.ai&#x27;s own benchmark table shows GPT-5.6 Sol at 34.6 and Claude Fable 5 at 33.7 on Terminal-Bench 3.0, compared with GLM-5.3&#x27;s 28.3. On DeepSWE v1.1, GLM-5.3 scores 66.9, compared with 72.7 for GPT-5.6 Sol and 69.7 for Fable 5. But Z.ai is also emphasizing efficiency rather than benchmark position alone. On its private Z.ai Code Bench, GLM-5.3 reaches a 34.5% result at its Max reasoning setting while consuming roughly 75,000 output tokens per task. GLM-5.2 reaches 23.4% while consuming approximately 96,000. At High effort, GLM-5.3 reaches 31.4% at roughly 50,000 output tokens, compared with Z.ai&#x27;s reported 29.5% for Claude Opus 4.8 using 120,000. Because Code Bench is Z.ai&#x27;s own private evaluation, those comparisons should be treated as company-reported results rather than independent measurements. Still, reducing token consumption while improving task completion is operationally important for enterprises deploying coding agents, where long-running loops can make inference cost and latency compound quickly. Cyber capabilities developed faster than Z.ai expected The more unusual development is cybersecurity. Z.ai introduced vulnerability-discovery environments into GLM-5.3&#x27;s post-training mix expecting the model to improve at finding software flaws. Instead, the company says capability began progressing further along the exploitation chain. “As we scaled post-training, cyber capability developed faster than we expected,” Z.ai wrote. On CyberGym, which tests vulnerability discovery and validation against source code, GLM-5.3 scores 84.5%, compared with 77.2% for GLM-5.2. That also edges Z.ai&#x27;s reported scores for GPT-5.6 Sol at 83.6% and Mythos 5 at 83.8%. The advantage does not extend across the entire exploitation stack. GLM-5.3 scores 54.4% on ExploitBench, more than twice GLM-5.2&#x27;s 24.4%, but remains well behind the 76.5% Z.ai reports for GPT-5.6 Sol and 78% for Mythos 5. Similarly, on ExploitGym, GLM-5.3 completes 105 tasks under a normalized two-hour budget and 130 under six hours, up from 29 and 39 for GLM-5.2. Fable 5 reaches 181 and 247, while GPT-5.6 Sol reaches 216 and 293. The direction of travel may matter more than the leaderboard position. Z.ai says work with security teams in China has resulted in 2,436 vulnerability findings across 269 projects after expert review, screening and deduplication. Its disclosure ledger lists 1,097 as critical or high severity, with 53 publicly disclosed and 2,383 still under embargo at the time of the release. That creates a tension increasingly facing frontier model providers: the same long-horizon agent capabilities that make models more useful for software engineering can also make them more capable security researchers — and potentially more capable offensive operators. GLM-5.3 also requires developers to change how they call the model Developers migrating existing GLM applications should pay attention to a breaking API behavior. GLM-5.3 supports three reasoning-effort levels — low , high and max — with max the default and Z.ai&#x27;s recommended setting for coding. But unlike previous releases, thinking cannot be disabled. Applications currently sending thinking.type: &quot;disabled&quot; must change the value to enabled and specify a reasoning effort before switching the model identifier to GLM-5.3. Otherwise, Z.ai says the request will fail. That makes GLM-5.3 an actual migration rather than simply a model-name substitution for some production applications. From GLM-4.5 to GLM-5.3: Z.ai&#x27;s rapid push into agentic engineering GLM-5.3 is the latest step in a rapid shift by Z.ai — formerly known as Zhipu AI — toward coding agents and long-running autonomous engineering workloads. GLM-4.5, released in July 2025, established much of that direction. The 355-billion-parameter mixture-of-experts model was designed to combine reasoning, coding and agent capabilities, while the smaller GLM-4.5-Air offered 106 billion total parameters. Z.ai released the models with open weights and emphasized integration with agent frameworks. GLM-4.6 followed in September, expanding context from 128,000 to 200,000 tokens and targeting coding, tool use and agent workflows in environments including Claude Code, Cline, Roo Code and Kilo Code. Z.ai also began placing greater emphasis on token efficiency in real-world coding evaluations rather than benchmark performance alone. The larger architectural jump came with GLM-5 in February 2026. Z.ai scaled the model from GLM-4.5&#x27;s 355 billion parameters to 744 billion, with 40 billion active parameters, and increased pretraining data to 28.5 trillion tokens. It also introduced its “slime” asynchronous reinforcement-learning infrastructure and explicitly repositioned the GLM family around “agentic engineering” and long-horizon tasks. By June, GLM-5.2 had turned that strategy into a more direct enterprise proposition. The 753-billion-parameter model arrived with a stable 1-million-token context window, open weights under an MIT license and support across more than 20 coding environments. It also introduced IndexShare, which reuses an indexer across sparse-attention layers to reduce the computational burden of very long contexts. GLM-5.2 was priced at $1.40 per million API input tokens and $4.40 per million output tokens, with cached input priced substantially lower, positioning Z.ai as both a technical and pricing competitor to proprietary frontier labs. Z.ai&#x27;s ambitions have been expanding outside model development as well. Reuters reported last month that Zhipu AI raised roughly HK$31.4 billion, or about $4 billion, through a Hong Kong share sale, with proceeds intended for areas including research and development, computing infrastructure, talent and business expansion. Taken together, the releases show a consistent progression: GLM-4.5 unified reasoning, coding and agents; GLM-5 substantially scaled the foundation model; GLM-5.2 attacked long-context and long-horizon engineering; and GLM-5.3 is now attempting to extract substantially more capability from that same foundation through post-training. Pricing, ZCode and availability GLM-5.3 is available now through Z.ai&#x27;s GLM Coding Plan and ZCode. ZCode is the company&#x27;s own coding-agent environment and supports long-running “Goal” tasks that plan, implement, test and verify work. It also offers remote control of running tasks and is available on macOS, Windows and Linux. Individual GLM Coding Plans currently start at a listed promotional price of $12.60 per month for Lite with 10,000 credits per week. Pro is listed at $56 per month with six times Lite usage, while Max costs $117.60 per month with 14 times Lite usage. Team Standard and Premium seats are listed at $88 and $188 per user per month, respectively. Z.ai has also moved the Coding Plan to a points-based quota system that separately accounts for input, cached-input and output tokens. Calls outside the company&#x27;s weekday peak period consume 50% of the normal points. The company has not yet provided general GLM-5.3 API pricing in the supplied launch materials, making total production API cost difficult to compare directly with GLM-5.2 or competing frontier models until staged API access arrives. That staged release may ultimately be the most important part of GLM-5.3. Z.ai spent the past year pushing an open-model strategy centered on permissive weights, low-cost inference and compatibility with existing coding-agent ecosystems. GLM-5.3 demonstrates what happens when that strategy succeeds perhaps too well in one sensitive domain: better autonomous engineering also means better autonomous security research. The result is a model that advances Z.ai&#x27;s coding ambitions while forcing the company to confront the same capability-versus-access tradeoff facing the largest closed frontier labs. For enterprise developers, GLM-5.3 is therefore worth watching for two reasons. Its coding results provide another indication that increasingly capable agents can emerge from better post-training and environments without continuously rebuilding the underlying foundation model. Its cybersecurity results show why deciding how those agents are distributed may become just as important as deciding how they are trained.",
-      "source": "VentureBeat",
-      "category": "AI",
-      "published": "2026-08-14T22:56:16+00:00",
-      "sent_at": "2026-08-14T23:17:48.406828+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2237530/waymo-receives-permission-to-offer-rides-in-sacramento-and-san-diego/",
-      "title": "Waymo receives permission to offer rides in Sacramento and San Diego",
-      "summary": "The company will also be able to expand its fleet across more of the San Francisco Bay Area and Los Angeles.",
-      "source": "Engadget",
-      "category": "Autonomes Fahren",
-      "published": "2026-08-14T22:50:04+00:00",
-      "sent_at": "2026-08-14T23:17:48.406828+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/unitree-influencer-4-foot-robot-from-china/",
-      "title": "The Next Big Influencer Is This 4-Foot-Tall Robot From China",
-      "summary": "The Unitree G1 has found online fame as a relatively affordable robot that can charm a crowd. But can it ever hold down a real job?",
-      "source": "Wired",
-      "category": "Innovationen",
-      "published": "2026-08-14T20:59:03+00:00",
-      "sent_at": "2026-08-14T21:21:01.428349+00:00"
-    },
-    {
-      "link": "https://www-cdn.anthropic.com/f61d49fa5596956a5dec75fea0e973bf6a6a8378/Redacted%20Risk%20Report%20August%202026%20.pdf",
-      "title": "Anthropic Risk August 2026 [pdf]",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-14T19:32:15+00:00",
-      "sent_at": "2026-08-14T21:21:01.428349+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/14/self-driving-trucks-are-officially-testing-on-california-highways/",
-      "title": "Self-driving trucks are officially testing on California highways",
-      "summary": "Aurora Innovation and Kodiak AI, two companies developing self-driving trucks, have received permits from the California Department of Motor Vehicles.",
-      "source": "TechCrunch",
-      "category": "Autonomes Fahren",
-      "published": "2026-08-14T20:37:49+00:00",
-      "sent_at": "2026-08-14T20:55:07.438618+00:00"
-    },
-    {
-      "link": "https://spectrum.ieee.org/digital-signal-processing",
-      "title": "Digital Signal Processing Pioneer Bede Liu Dies At 91",
-      "summary": "Bede Liu, a digital signal processing pioneer, died on 7 May. He was 91. Liu was widely regarded as one of the founders of modern digital signal processing, a field that applies mathematical algorithms to analyze, modify, and transmit signals including sound, images, and video. The IEEE Life Fellow taught electrical engineering at Princeton for more than 50 years. From 1994 to 1997, he chaired the university’s electrical and computer engineering department . Liu’s research aided the transition from analog to digital processing of sound, images, and video. His work helped establish many of the mathematical and engineering techniques that underpin modern communications, multimedia systems, and consumer electronics. Although little known outside engineering circles, his work is embedded in technologies used by billions of people. The low-power digital signal processors that make cellphone calls, streaming video, and Internet communications possible can be traced to research he conducted in the 1970s and ‘80s. Liu received the 2018 IEEE Jack S. Kilby Signal Processing Medal for “sustained contributions to the analysis and the development of low-complexity realizations of digital signal processing algorithms.” “We stream music and video. We take photos with our phones, and we send them around. We don’t even think about it,” IEEE Life Fellow H. Vincent Poor said in an obituary for Liu . “But it’s all because of the signal processing, image processing, and video processing that’s been developed over the years, as well as other technologies that have grown up beside it and enabled it, like semiconductors. The development of these processing advances was exactly what Bede was a major part of.” Poor is a professor of electrical and computer engineering at Princeton. An impactful scholar and teacher Liu was born in Shanghai in 1934. During his childhood, his family relocated to Taiwan amid the upheaval of the Chinese Civil War . His father, Henry Liu Sr., was an electrical engineer. Liu earned his bachelor’s degree in electrical engineering in 1954 from the National Taiwan University , in Taipei. After graduating, he and his family moved to the United States. Liu and his father attended the Polytechnic Institute of Brooklyn (now the New York University Tandon School of Engineering ) together. They earned their master’s degrees in electrical engineering in 1956. Liu continued his studies at the school, earning a doctoral degree in electrical engineering four years later. In 1959 he was awarded a Bell Labs fellowship and worked at the company’s Murray Hill, N.J., location until he joined Princeton in 1962. “Liu was a highly impactful scholar and teacher—always thinking ahead of future needs and changing technologies,” said IEEE Life Fellow Peter J. Ramadge , a Princeton professor emeritus of engineering. Cellphones make use of a considerable amount of digital signal processing, Liu once noted. Many of the field’s advances, he added, involved making sophisticated processing practical on devices with limited computing power—which is the challenge that confronted generations of engineers designing portable electronics. Liu’s research contributions helped shape both the theory and practice of digital signal processing. With Abe Peled , a former graduate student, he authored the 1976 textbook Digital Signal Processing: Theory, Design, and Implementation , which is a standard reference for engineers. Published before digital signal processing had fully emerged as a distinct discipline, it helped define the subject for practitioners and students around the world. Liu also published 250 technical papers and was granted 12 U.S. patents. His papers are available to read on the IEEE Xplore Digital Library . The first patent granted to him and Peled was in 1976 for a hardware design that processed bits in parallel, rather than in sequence. The innovation greatly increased computing efficiency for data including sound and communication signals. Peled says Liu “demonstrated an openness to new ideas and a willingness to challenge the orthodoxy of the EE department at that time—which leaned heavily toward more theoretical information theory.” A mentor to well-known engineers Liu’s influence extended beyond his own research. He advised 53 doctoral students, many of whom went on to distinguished careers in academia and industry, including leadership positions at Google and IBM . One former student, computer scientist Robert Kahn , helped create the architecture of the modern Internet. Kahn, an IEEE Life Fellow, received the 2024 IEEE Medal of Honor . “His former students were very successful,” Poor said of Liu, “and I think that’s a testament to his skill as a mentor.” “Liu was a highly impactful scholar and teacher—always thinking ahead of future needs and changing technologies.” —Peter J. Ramadge Together with several Ph.D. students, Liu developed methods of filtering and compressing digital signals to mitigate errors and dramatically reduce the computation needed for signal processing. As digital signal processing moved from laboratories into commercial products, the impact of Liu’s ideas spread across industries. His research helped spawn the development of lower-cost and lower-power electronics and contributed to advances in mobile communications, multimedia technology, industrial automation, and biomedical imaging. A focus on media integrity and copyrights In the 2000s, Liu turned his attention to media integrity and copyright issues. “With the increasing accessibility of digital media source material, the protection of ownership and the prevention of unauthorized alteration has become an important concern,” he wrote in his 2002 book, Multimedia Data Hiding . The book, which he co-wrote with his former doctoral student IEEE Fellow Min Wu, discussed the theory, techniques, applications, and security of digital watermarking—hidden signals that could identify a genuine copy of a song, image or video to prevent unauthorized distribution or tampering. A Princeton team that included Liu, Wu, and another of his doctoral students uncovered serious vulnerabilities in watermarking technologies being considered by an industry consortium. They found that the standardization efforts were immature and would not protect against digital piracy. “Now nearly every copy of a Hollywood film given to a critic or theater carries a unique digital forensic watermark to prevent unauthorized redistribution,” said Wu. A force in the community Liu, an active IEEE volunteer, served on the IEEE Board of Directors in 1984 and 1985. He was the 1982 president of the IEEE Circuits and Systems Society . He was a member of the U.S. National Academy of Engineering , an academician of China’s Academia Sinica , and a foreign member of the Chinese Academy of Sciences . Outside the classroom, he was recognized for his humility, humor, enthusiasm, and generosity. When thinking of Liu, IEEE Life Fellow Kenneth Steiglitz says, cheer is the first word that comes to mind. Liu was “always ready with a positive remark, a quick smile or, maybe, some tips on the right way to cook a duck,” says Steiglitz, professor emeritus of computer science at Princeton. Liu encouraged his students to take on ambitious, unconventional projects, and he inspired students and colleagues with his adventurous spirit.",
-      "source": "IEEE Spectrum",
-      "category": "Hardware",
-      "published": "2026-08-14T18:00:02+00:00",
-      "sent_at": "2026-08-14T20:55:07.438618+00:00"
-    },
-    {
-      "link": "https://hashagent.pages.dev/",
-      "title": "HashAgent – Share an AI agent as a URL, runs locally via WebGPU",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-14T12:57:02+00:00",
-      "sent_at": "2026-08-14T20:55:07.438618+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/08/14/waymo-cpuc-approval-california-expansion-18-counties/",
-      "title": "Waymo wins California approval to expand robotaxis across 18 counties",
-      "summary": "Waymo says California regulators have signed off on the biggest expansion of its robotaxi service yet, covering 18 counties from Sonoma down to San Diego. The California Public Utilities Commission approval clears Waymo to charge for fully driverless rides across the whole Bay Area and Los Angeles, and to open two brand-new markets in Sacramento and San Diego.",
-      "source": "Electrek",
-      "category": "Autonomes Fahren",
-      "published": "2026-08-14T19:47:16+00:00",
-      "sent_at": "2026-08-14T20:03:40.911500+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/14/thrives-joshua-kushner-chides-silicon-valley-vcs-over-ai-euphoria/",
-      "title": "Thrive’s Joshua Kushner chides Silicon Valley VCs over AI euphoria",
-      "summary": "The AI opportunity is huge but \"it would also be a grave error in our minds to let excitement weaken our investment discipline,\" Kushner warns in his first-ever investment letter.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-14T19:33:00+00:00",
-      "sent_at": "2026-08-14T20:03:40.911500+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/gadgets/980547/samsung-galaxy-h1-over-ear-headphones",
-      "title": "Samsung has new Galaxy headphones in the works",
-      "summary": "Strings of code in Samsung's Galaxy Wearable app hint at an upcoming pair of over-ear headphones that could compete with the AirPods Max, SamMobile reports. Samsung's reportedly referring to the headphones as the \"Galaxy H1,\" and SamMobile says they could launch sometime in 2027. That would make these the company's first pair of over-ear headphones [&#8230;]",
-      "source": "The Verge",
-      "category": "Innovationen",
-      "published": "2026-08-14T19:18:45+00:00",
-      "sent_at": "2026-08-14T20:03:40.911500+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2237340/google-will-now-allow-users-to-remove-visible-watermarks-from-ai-content/",
-      "title": "Google will now allow users to remove visible watermarks from AI content",
-      "summary": "The invisible SynthID will remain.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-08-14T19:04:42+00:00",
-      "sent_at": "2026-08-14T19:28:01.451490+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/tech-policy/2026/08/suspecting-court-of-using-ai-man-injected-prompts-in-filings-to-try-to-win-case/",
-      "title": "Suspecting court of using AI, man injected prompts in filings to try to win case",
-      "summary": "Judge warns pro se litigants are using chatbots wrong and getting desperate.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-08-14T17:26:53+00:00",
-      "sent_at": "2026-08-14T19:28:01.451490+00:00"
-    },
-    {
-      "link": "https://claude.com/blog/maximizing-the-value-of-your-claude-code-sessions",
-      "title": "Maximizing the value of your Claude Code sessions",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-14T16:15:21+00:00",
-      "sent_at": "2026-08-14T19:28:01.451490+00:00"
-    },
-    {
-      "link": "https://www.wsj.com/tech/ai/claude-dario-amodei-wife-anthropic-e1eeda7d",
-      "title": "Even Claude Is in the Dark About Dario Amodei's Wife",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-14T03:06:04+00:00",
-      "sent_at": "2026-08-14T19:28:01.451490+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/980467/google-pixel-11-camera-looks-older-phones",
-      "title": "Google&#8217;s best new camera feature is only for the Pixel 11 series",
-      "summary": "Arguably the coolest new photo feature for the Pixel 11 lineup is Google's new Camera Looks, which process image data differently at the sensor level to produce photos that don't have that \"smartphone\" look. The result is new styles like \"Digi,\" which mimics the style of photos taken by older digital cameras. But to use [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-08-14T17:34:14+00:00",
-      "sent_at": "2026-08-14T18:25:20.358340+00:00"
-    },
-    {
-      "link": "https://www.npr.org/2026/08/10/nx-s1-5925350/the-nerd-reich-tracks-the-unmasking-of-silicon-valleys-true-politics",
-      "title": "'The Nerd Reich' tracks the 'unmasking of Silicon Valley's true politics'",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Hardware",
-      "published": "2026-08-14T15:22:25+00:00",
-      "sent_at": "2026-08-14T18:25:20.358340+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/980416/google-gemini-ai-watermarks-removal",
-      "title": "You can now turn off Google Gemini&#8217;s visible watermarks",
-      "summary": "Google will now allow you to remove visible watermarks from the images, videos, and music made with AI tools. With the update, you can toggle off a new \"Media watermark\" setting in Gemini and Google's AI video generator, Flow. When toggled off, Google will remove the \"sparkle\" watermark that appears in the bottom-right corner of [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-08-14T16:39:32+00:00",
-      "sent_at": "2026-08-14T17:27:22.306625+00:00"
-    },
-    {
-      "link": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/",
-      "title": "Google is making private AI practical with homomorphic encryption",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-14T15:43:10+00:00",
-      "sent_at": "2026-08-14T17:27:22.306625+00:00"
-    },
-    {
-      "link": "https://cursor.com/blog/joining-spacex",
-      "title": "Cursor is now a part of SpaceX",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Innovationen",
-      "published": "2026-08-14T13:10:12+00:00",
-      "sent_at": "2026-08-14T17:27:22.306625+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/14/google-will-now-allow-users-to-remove-visible-watermark-from-its-ai-generations/",
-      "title": "Google will now allow users to remove visible watermark from its AI generations",
-      "summary": "Turning off this setting won't affect invisible benchmarks used to identify an AI generated file",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-14T16:13:40+00:00",
-      "sent_at": "2026-08-14T16:22:08.957632+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/08/14/tesla-flying-roadster-demo-this-month-no-driver/",
-      "title": "Tesla ‘flying’ Roadster demo could come this month, with no one inside",
-      "summary": "Tesla is planning to finally show its new Roadster as early as this month, and the event is supposed to include a stunt where the car lifts off the ground, according to a new report from The Information (paywall). There’s a catch. The car will be operated remotely with nobody in it, and spectators will be kept several hundred yards back because the SpaceX-developed cold gas thrusters are loud enough to damage their eardrums.",
-      "source": "Electrek",
-      "category": "Innovationen",
-      "published": "2026-08-14T15:43:40+00:00",
-      "sent_at": "2026-08-14T16:22:08.957632+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/video/does-mark-zuckerberg-really-believe-ai-is-for-everyone/",
-      "title": "Does Mark Zuckerberg really believe AI is ‘for everyone’?",
-      "summary": "Meta released Glimmer this week, an open-weight AI&#160;model&#160;anyone can download and run on their own hardware&#160;— a contrast to&#160;Muse&#160;Spark, the company’s more powerful model that stays locked behind its own APIs. The release landed alongside&#160;a letter from Mark Zuckerberg&#160;arguing AI should be “for everyone” rather than controlled by a handful of labs, but as Equity’s [&#8230;]",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-14T15:43:28+00:00",
-      "sent_at": "2026-08-14T16:22:08.957632+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/ram/g-skill-trident-z5-neox-rgb-ddr5-6000-c30-2x16gb-review",
-      "title": "G.Skill Trident Z5 NeoX RGB DDR5-6000 C30 2x16GB Review — EXPO ULL memory kit to max out your Ryzen",
-      "summary": "G.Skill's Trident Z5 NeoX is the brand's latest series with the AMD EXPO ULL feature, but can the DDR5-6000 C30 prove to be the fastest memory kit for AMD?",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-14T15:30:00+00:00",
-      "sent_at": "2026-08-14T16:22:08.957632+00:00"
-    },
-    {
-      "link": "https://weightythoughts.com/p/when-genius-failsthe-intellectual",
-      "title": "When Genius Fails: The Intellectual Arrogance of the AI Labs",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-14T14:34:49+00:00",
-      "sent_at": "2026-08-14T16:22:08.957632+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/tech-visionary-says-the-big-ai-labs-dont-get-what-people-want/",
-      "title": "Tech Visionary Says the Big AI Labs Don’t Get What People Want",
-      "summary": "Tim O’Reilly built a publishing empire that AI is helping to destroy. Yet he loves AI—as long as it’s open source.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-08-14T15:00:00+00:00",
-      "sent_at": "2026-08-14T15:20:46.680419+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/14/kog-is-going-deeper-to-squeeze-more-inference-out-of-gpus/",
-      "title": "Kog is going deeper to squeeze more inference out of GPUs",
-      "summary": "The idea that GPUs are poorly suited for agentic workflows may be a misconception, according to French startup Kog.",
-      "source": "TechCrunch",
-      "category": "Hardware",
-      "published": "2026-08-14T14:50:11+00:00",
-      "sent_at": "2026-08-14T15:20:46.680419+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/air-cooling/scythe-magoroku-review",
-      "title": "Scythe Magoroku Review: excellent RAM thermals, but needs improvement elsewhere",
-      "summary": "Scythe is back with another dual-tower air cooler, the Magoroku. This cooler performs best with an Intel Arrow Lake system.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-14T14:42:29+00:00",
-      "sent_at": "2026-08-14T15:20:46.680419+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/ai/2026/08/openai-and-anthropic-in-price-war-as-chinese-ai-rivals-gain-ground/",
-      "title": "OpenAI and Anthropic in price war as Chinese AI rivals gain ground",
-      "summary": "US groups release cheaper models after new challenges to their trillion-dollar ambitions.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-08-14T14:27:14+00:00",
-      "sent_at": "2026-08-14T15:20:46.680419+00:00"
     }
   ]
 }
