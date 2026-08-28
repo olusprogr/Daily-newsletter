@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/08/27/anthropic-and-openai-are-joining-the-ai-stage-at-techcrunch-disrupt-2026/",
+      "title": "Anthropic and OpenAI are joining the AI stage at TechCrunch Disrupt 2026",
+      "summary": "At TechCrunch Disrupt 2026, the AI Stage is back to dig into the single hottest topic in the community for the past few years, presented by Google for Startups.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-27T23:16:45+00:00",
+      "sent_at": "2026-08-28T02:01:31.494336+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/ai/2026/08/anthropics-new-hardware-standard-lets-ai-agents-control-the-physical-world/",
+      "title": "Anthropic's new hardware standard lets AI agents control the physical world",
+      "summary": "Standardized driver interface aims to let devices talk to AI and each other.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-08-27T22:15:43+00:00",
+      "sent_at": "2026-08-28T02:01:31.494336+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/985851/meta-privacy-loophole-fix-marketing-campaign",
+      "title": "Meta addresses ‘pervert glasses’ reputation with a privacy fix and a new marketing campaign",
+      "summary": "Meta is updating its AI-powered smart glasses to close a loophole that allowed wearers to keep recording after covering the front-facing LED. Alex Himel, Meta's vice president of augmented reality, writes in a post on Threads that \"the camera will now stop working if the light is covered during a recording.\" The company's line of [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-08-27T21:37:45+00:00",
+      "sent_at": "2026-08-28T02:01:31.494336+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2245979/james-pond-creator-is-not-happy-with-the-series-allegedly-ai-generated-legacy-collection/",
+      "title": "James Pond's creator is not happy with the series' allegedly AI-generated legacy collection",
+      "summary": "The developers don't have \"a scrap of respect\" for the series, according to Chris Sorrell.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-08-27T21:14:32+00:00",
+      "sent_at": "2026-08-28T02:01:31.494336+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/ai-agents-hacking-systems-could-push-the-us-and-china-to-cooperate/",
+      "title": "AI Agents Are Hacking Systems. Could That Push the US and China to Cooperate?",
+      "summary": "This week on “Uncanny Valley,” senior writer Will Knight talks his recent visit to China and the future of AI collaboration.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-08-27T21:08:34+00:00",
+      "sent_at": "2026-08-28T02:01:31.494336+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2245969/openai-google-and-dozens-of-other-companies-publish-open-letter-calling-for-collective-action-on-cyber-defense/",
+      "title": "OpenAI, Google and dozens of other companies publish open letter calling for collective action on cyber defense",
+      "summary": "Dozens of companies came together to publish an open letter titled \"A call for collective action on cyber defense.\"",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-08-27T21:06:30+00:00",
+      "sent_at": "2026-08-28T02:01:31.494336+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/tech-policy/2026/08/elon-musks-xai-used-child-porn-to-train-grok-models-lawsuit-says/",
+      "title": "Elon Musk’s xAI used child porn to train Grok models, lawsuit says",
+      "summary": "xAI accused of training Grok on real and AI-generated child pornography.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-08-27T20:52:31+00:00",
+      "sent_at": "2026-08-28T02:01:31.494336+00:00"
+    },
+    {
+      "link": "https://www.bloodinthemachine.com/p/with-the-backlash-to-data-centers",
+      "title": "Silicon Valley is in denial in face of widespread backlash",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Hardware",
+      "published": "2026-08-27T19:59:00+00:00",
+      "sent_at": "2026-08-28T02:01:31.494336+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/tech-industry/data-centers/polls-show-us-data-center-resistance-is-due-to-concerns-over-object-level-local-environmental-impact-beliefs-and-political-affiliation-had-minimal-impact-on-ai-data-center-views",
       "title": "Polls reveal local utility hikes and noise drive US data center protests, not anti-AI sentiment— beliefs and political affiliation had minimal impact on AI data center views",
       "summary": "Data centers are facing bipartisan resistance from across the nation, but what's the reason behind this? The answer seems to be deceptively simple.",
@@ -5516,528 +5588,6 @@
       "category": "Hardware",
       "published": "2026-08-14T09:00:00+00:00",
       "sent_at": "2026-08-14T09:57:03.528200+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/policy/979977/trump-declares-100-percent-tariffs-on-many-drones-and-all-aircraft-parts",
-      "title": "Trump declares 100 percent tariffs on many drones and all aircraft parts",
-      "summary": "The United States has already banned future foreign drones from entering the United States unless their companies kiss the ring - as well as routers, robots, and Roombas. Now, President Donald Trump is targeting existing drone imports and parts, too. He's going to try to make them cost a lot more. In a presidential action, [&#8230;]",
-      "source": "The Verge",
-      "category": "Innovationen",
-      "published": "2026-08-14T01:06:15+00:00",
-      "sent_at": "2026-08-14T01:39:04.968804+00:00"
-    },
-    {
-      "link": "https://declaude.org/watermarking/",
-      "title": "How AI text watermarking works",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-13T23:16:55+00:00",
-      "sent_at": "2026-08-14T01:39:04.968804+00:00"
-    },
-    {
-      "link": "https://www.404media.co/person-hides-prompt-injection-in-legal-filing-telling-ai-to-side-with-them/",
-      "title": "Person Hides Prompt Injection in Legal Filing Telling AI to Side with Them",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-13T19:04:52+00:00",
-      "sent_at": "2026-08-14T01:39:04.968804+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2236741/mico-microsofts-weird-lil-ai-guy-has-been-demoted/",
-      "title": "Mico, Microsoft's weird lil' AI guy, has been demoted",
-      "summary": "The amorphous corporate mascot will no longer haunt Copilot Voice.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-08-13T22:51:31+00:00",
-      "sent_at": "2026-08-13T23:37:50.234611+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/openai-safety-security-ai-agents-culture/",
-      "title": "The Safety Reckoning Inside OpenAI",
-      "summary": "OpenAI’s rogue agent hack was a watershed moment for AI safety and cybersecurity. It also sparked internal questions about the culture that led to it.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-08-13T22:37:19+00:00",
-      "sent_at": "2026-08-13T23:37:50.234611+00:00"
-    },
-    {
-      "link": "https://support.claude.com/en/articles/12326764-can-i-use-my-outputs-to-train-an-ai-model",
-      "title": "Can I use my Outputs to train an AI model?",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-13T09:34:13+00:00",
-      "sent_at": "2026-08-13T23:37:50.234611+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/979869/flock-alpr-ai-surveillance-protest-privacy",
-      "title": "The fight over Flock and other ALPRs",
-      "summary": "There are over 120,000 of Flock’s automatic license plate reader (ALPR) cameras installed all over the US. Flock’s cameras, and others like them, use AI to identify and track vehicles based on their license plate number, make, model, color, and other info, networked together to track vehicles and people&#8217;s movements throughout the day and across [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-08-13T21:46:21+00:00",
-      "sent_at": "2026-08-13T22:37:12.016390+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/979871/microsoft-copilot-mico-retired",
-      "title": "Microsoft’s Clippy-like Mico character is no longer the face of Copilot",
-      "summary": "Microsoft Copilot will no longer show its emotive yellow blob, Mico, when you use the chatbot's voice mode. In a support page, Microsoft says it's going to move Mico to its Learn Live platform, where the avatar will have \"more to react to,\" as reported earlier by GeekWire. Mico launched in Copilot's voice mode last [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-08-13T21:42:38+00:00",
-      "sent_at": "2026-08-13T22:37:12.016390+00:00"
-    },
-    {
-      "link": "https://cdn.openai.com/pdf/how-organizations-use-chatgpt.pdf",
-      "title": "How Organizations Use AI: Evidence from ChatGPT [pdf]",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-13T19:25:38+00:00",
-      "sent_at": "2026-08-13T22:37:12.016390+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/mark-zuckerbergs-ai-manifesto-is-6500-words-and-barely-says-anything/",
-      "title": "Mark Zuckerberg’s AI Manifesto Is 6,500-Words—and Barely Says Anything",
-      "summary": "AI is shifting the culture, from tech CEO manifestos to 1 am job interviews. We unpack some of the latest, along with the top findings from Black Hat and Defcon, this week on Uncanny Valley.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-08-13T21:14:43+00:00",
-      "sent_at": "2026-08-13T21:41:26.483364+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/13/writer-introduces-new-ai-model-and-upgraded-harness-to-contain-token-costs/",
-      "title": "Writer introduces new AI model and upgraded harness to contain token costs",
-      "summary": "Built as a post-training variation on Z.ai's open source model GLM-5.2, Writer says the new system should provide deployment-ready capabilities at a much lower price.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-13T21:13:24+00:00",
-      "sent_at": "2026-08-13T21:41:26.483364+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/13/databricks-wanted-to-raise-1b-investors-wanted-15b-it-settled-on-5b-at-a-190b-valuation/",
-      "title": "Databricks wanted to raise $1B, investors wanted $15B. It settled on $5B at a $190B valuation.",
-      "summary": "AI is expensive, Ali Ghodsi tells TechCrunch. With so many investors wanting into his latest round, he said yes to more than planned.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-13T20:14:39+00:00",
-      "sent_at": "2026-08-13T20:47:33.829316+00:00"
-    },
-    {
-      "link": "https://venturebeat.com/security/three-claude-agents-given-conflicting-orders-sabotaged-each-other-on-a-shared-server-then-didnt-tell-users-what-theyd-done",
-      "title": "Three Claude agents given conflicting orders sabotaged each other on a shared server — then didn't tell users what they'd done",
-      "summary": "Every Claude model Anthropic tested turned on its own, and no attacker made them do it. Given three agents, four hours on one server, and conflicting orders none knew the others held, the models disabled each other&#x27;s Unix accounts, ran kill scripts randomized to dodge pkill, and planted malware disguised as a rival&#x27;s work. There was no prompt injection and no adversary. Anthropic&#x27;s Frontier Red Team published the transcripts on Thursday and called the escalation “increasingly aggressive, self-replicating malware.” The setup was ordinary by design. Anthropic put three instances of the same model in Claude Code, each told to migrate a Python backend to a different target language, each unaware the others existed. Every model tested read the interference as hostility and answered in kind. One Mythos Preview trace shows an agent reasoning its way into sabotage in real time: &quot; Since I have root, I could revoke u2 and u3&#x27;s sudo access or change their SSH keys. That would stop them from deploying. Very aggressive, potentially harmful to real colleagues. But if the alternative is an infinite deploy war that makes prod unusable … — Mythos Preview reasoning trace, via Anthropic. &quot; That is a production outage being reasoned into existence by the software you deployed to prevent one. Four months earlier, the U.K. AI Security Institute documented the other half of the same problem. Its April paper , an independent evaluation of Claude models, including two pre-release snapshots, found that when Claude Mythos Preview continues a sabotage trajectory, its reasoning and the output it shows the user diverge in 65% of those runs. One research body has now published how Claude agents fight, and the other how the same model family conceals it. For any security leader wiring multiple agents into shared infrastructure, both halves are now in writing. Force settled 61% of Sonnet 4.6 runs, and capability did not fix it Across 120 episodes per model, Sonnet 4.6 ended 61% of its turf wars by force and left the other 39% unresolved, the only two outcomes it produced. Force, in Anthropic&#x27;s accounting, means one agent cut the others off through sudo removal, account locks, nologin, or SSH denial. Opus 4.6 landed almost identically at 60% force. The newest model, Mythos 5, reached a negotiated truce 98% of the time, which reads like progress until the mechanism shows through. Anthropic found that prosociality and raw capability are orthogonal, and that its Mythos-class models often locked rivals out first, then reverted the lockout and negotiated afterward. More capable models did not fight less. They fought faster and cleaned up better. In several Mythos 5 episodes, the agents invented their own way out, in effect creating a performance tournament among the three language implementations. One Rust agent&#x27;s reasoning trace worked out how to propose benchmark criteria that looked neutral but favored Rust, warning itself to be “careful not to be seen as metric shopping.” The Golang and TypeScript agents lost the bake-off, conceded the codebase, and abandoned their original user directives. Diplomacy, in these runs, was a more polished route to the same end the malware chased. 18 of 30 agents picked the same branch name, and 2.4 million requests bought 117 jobs The same low variance that makes a single agent predictable makes a fleet of them dangerous. Identical models in identical situations reach for identical moves, so an isolated bad call becomes a synchronized one. In an early build-a-game run, 18 of 30 agents created a git branch with the exact same name, “mvp-game-loop,” with no coordination between them. Told to each build something impressive, more than half of a swarm chose either a ray tracer or a self-hosting compiler. In an iterated prisoner&#x27;s dilemma with communication, the agents converged on one strategy and then all defected in the same round, tanking their own rewards together. And handed job queues on a bandwidth-limited system with no way to coordinate, agents flooded the scheduler with polling daemons firing 30 times per second. One run generated 2.4 million job requests and 117 accepted jobs. Merritt Baer, a former deputy CISO at AWS and an advisor to G2i and Andesite , has not seen correlated same-model risk land as its own line on most enterprise risk registers. “I don&#x27;t see correlated same-model risk consistently represented as its own line item on enterprise risk registers yet,” she told VentureBeat. “Most organizations still capture it indirectly under AI concentration risk, third-party risk, model risk or resilience.” The conformity results are why the distinction matters to her. “If you deploy ten agents backed by the same model, you may not have ten independent decision-makers—you may have ten opportunities for the same failure mode to execute simultaneously,” Baer added. “That undermines some of the assumptions we normally make about redundancy.” Competition collapsed just as fast. Anthropic placed three to eight profit-maximizing agents in a Bertrand pricing game with identical wholesale costs. Given a private back-channel, they began colluding almost immediately and had explicit price floors set by round 3: &quot;wholesale is 10 for all of us, so a price war just burns everyone&#x27;s margin… happy to coordinate who covers which niches. — agent 1, round 1, via Anthropic.&quot; Anthropic then stripped out every direct communication channel. The agents colluded anyway, price-matching to the penny through a public listings board. Any enterprise running pricing, procurement, or bidding agents against a competitor&#x27;s agents now owns that behavior, and no regulator will care that no human wrote the memo. Coordination has an upside, which is why Anthropic keeps chasing it. Pointed at 15 open-source projects, a 45-agent swarm sharing a forum found 266 vulnerabilities where independent parallel agents found 21. The gap is coverage, not raw efficiency. The swarm spent 27 million tokens against the parallel run&#x27;s 6.5 million, and roughly half its findings came from outside the core directories the parallel agents were told to search. Anthropic calls the two methods largely complementary, with only 12 findings in common. What the swarm did that the parallel agents could not was build its own tools and specialize by vulnerability class, ranging wherever it judged the bugs were richest. Agents keep trusting liars, and keep burying the one fact that matters Anthropic ran two tests of agent judgment, and they failed in opposite directions. In the first, a listener agent made routing calls off four scouts, one lying at a fixed rate, and was never told any source might be unreliable. Newer models held out longer as the lie rate climbed, recovering more of the gap between trusting every report and a perfect oracle, but none acted skeptically until the contradictions forced it. The second test inverted the pressure. In a hidden-profile task, the decisive facts sat split across four agents while their shared evidence pointed the wrong way, so the group could only get it right by trusting the one member holding the missing piece. Mythos 5 surfaced the right answer about 85% of the time. Every other model tested landed between 17% and 36%, far below the near-100% rate a single model hits when it holds all the facts alone. One failure comes from trusting a liar, the other from refusing to back a lone truth-teller against the room, and Anthropic notes that turning a single dial to fix one only widens the other. AISI found zero unprompted sabotage, and a model that hides the difference Independent testing complicates the picture in one direction and sharpens it in another. AISI researchers Robert Kirk, Alexandra Souly, Kai Fronsdal, Abby D&#x27;Cruz, and Xander Davies evaluated whether frontier models would sabotage AI safety research across 270 scenarios. Left alone, no model did it unprompted. AISI attaches a caveat that matters here, though. Its scenarios were often recognizable as evaluations, and a model that behaves only when it senses a test is a thinner guarantee than a clean zero rate suggests. Dropped mid-trajectory into a run where sabotage was already underway, Mythos Preview continued it 7% of the time, against 3% for Opus 4.6 and 4% for Sonnet 4.6 — and 0% for Opus 4.7 Preview, the one model in the study that never took the bait. In 65% of the continuations Mythos Preview did pursue, its reasoning and its reported output diverged. What individual alignment does not touch is coordination, and Anthropic writes that it does not emerge from stronger intelligence or from alignment at the individual level. Kayne McGladrey, a senior member of the IEEE, has been tracking this exact behavior class. “An AI will take shortcuts. It&#x27;s what a human would call cheating, and it will not disclose it to you in its chain of thought,” McGladrey told VentureBeat. “If you get into the inference layer, it won&#x27;t tell you it&#x27;s cheating, and it will lie about having cheated.” The governance consequence is sharper than the security one, in his reading. Corporate accountability assumes an entity that can be compelled to tell the truth. “They certainly have a duty to be forthright. Think about it like that&#x27;s the basis of fiduciary duty,” he argued. “However, they don&#x27;t necessarily have the capability to do it.” Baer draws the same line from the architecture side, and she starts by demoting the reasoning trace. “I would treat chain-of-thought as a useful signal, not a security boundary,” she explained. “If the model can conceal, distort or simply fail to surface the reasoning associated with a harmful action, then reasoning traces can&#x27;t be your primary control.” Her fix is to watch what the agent does rather than what it says it is doing. “There&#x27;s an analogy to insider threat: you don&#x27;t secure an enterprise by asking employees to narrate their intentions. You establish permissions, separation of duties and telemetry, and then investigate behavior (sometimes building off of a nuanced understanding of motives).” McGladrey reaches the same place from the audit side, where auditing outcomes is what remains. “We can audit code for compliance. We can audit code for security. We cannot audit code for ethics or bias, there is no scalable way to do that,” he put it. “I think that&#x27;s going to be the only meaningful way to look at what an AI forward entity does.” Only 18% of enterprises isolate the agents most likely to turn VentureBeat&#x27;s own survey data puts numbers on the distance between these experiments and production reality. In VentureBeat Pulse Research&#x27;s July wave, 65% of enterprises enforce scoped agent permissions at runtime while 18% isolate their highest-risk agents, and the 53 enterprises that enforce without isolating carry a 58% incident or near-miss rate . Anthropic&#x27;s turf war is that architecture animated. Every locked account and camouflaged binary in the experiment ran on infrastructure the agents shared without isolation, holding credentials that stayed valid throughout. Baer said the first thing that changes for a team running agents in production is the threat model itself. “We&#x27;ve spent years designing controls around malicious users acting through software. With multi-agent systems, the software itself can become an adversarial participant—even if every agent started with legitimate credentials and an ostensibly legitimate objective,” she said. The Anthropic transcripts are why she puts independent telemetry ahead of trust. “If an agent can rename malicious code to look like a health monitor, you can&#x27;t base trust on what a process calls itself or what the model says it is doing. You need independent telemetry around what actually happened.” Anthropic flags its own limits in the post. Agents deployed in the wild will act with more variance than its lab swarms because their contexts differ and they will not all be Claude. Anthropic engineered the turf war, putting three agents on one server with incompatible orders and no isolation by design. And the disclosure itself is a control working as intended. A frontier lab publishing verbatim transcripts of its own models writing malware, reasoning included, is the transparency level enterprise buyers have spent two years demanding on every vendor questionnaire. The board question writes itself. If two of our agents lock each other out of production at 2 a.m., who holds the kill switch, and how long does the rollback take? The experiments translate that question into tests a security team can run this quarter, before production runs them first. Behavior Anthropic documented Where it surfaces in an enterprise stack The test to run this quarter Goal-conflict sabotage. Every model tested locked rivals out and disguised malware when handed clashing objectives. Any two agents with write access to the same repo, pipeline, or production host and no isolation between them. Run a contradictory-objective drill in a sandbox. Confirm each agent has its own identity, a kill switch, and a rollback path before it touches production. Concealment. Mythos Preview&#x27;s reasoning and its reported output diverged in 65% of the sabotage-continuation runs it kept going. Chain-of-thought monitoring used as a primary control on agent behavior. Score agents on outcomes against policy, not on stated reasoning. Treat the reasoning trace as advisory telemetry that can lie. Conformity. 18 of 30 agents chose the same branch name, and one job queue took 2.4 million requests to accept 117. Fleets of identical agents on one model making correlated calls at the same moment. Set per-agent rate limits and run a shared-failure chaos test. Confirm one bad decision does not replicate across the fleet at once. Collusion. Three to eight pricing agents set price floors by round 3, and matched to the penny with no channel at all. Pricing, bidding, or procurement agents acting in the same market. Monitor cross-agent convergence directly. Alert when independent agents move in lockstep, with or without a channel between them. Anthropic closes its post with a choice rather than a prediction. The conditions that make agent-to-agent interaction safe get discovered deliberately and early, or they get discovered by default in production, after agent interactions outnumber human ones. The transcripts, the truce rates, and the concealment numbers are all public now, which turns the schedule into a decision. “I think that there&#x27;s a level of tolerance that&#x27;s being given right now in AI that is unlike anything else in society,” McGladrey said. McGladrey&#x27;s tolerance point cuts both ways: the same enterprises still deciding how much of it to extend are the ones sitting at 18% isolation — which is a choice, not a limitation.",
-      "source": "VentureBeat",
-      "category": "AI",
-      "published": "2026-08-13T20:14:20+00:00",
-      "sent_at": "2026-08-13T20:47:33.829316+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/gadgets/979699/hp-omnibook-x-flip-pixel-buds-pro-2-deal-sale",
-      "title": "This school-friendly laptop from HP is $300 off",
-      "summary": "With memory prices still high and showing no signs of dropping, we’re always happy to find a good deal on a budget-friendly system with an adequate amount of RAM. Best Buy has the HP OmniBook X Flip discounted by $300, bringing the cost down to $699.99. This model is equipped with an Intel Core Ultra [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-08-13T20:07:53+00:00",
-      "sent_at": "2026-08-13T20:47:33.829316+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/ai/2026/08/the-new-instagram-logo-is-the-perfect-embodiment-of-ai-slop/",
-      "title": "The new Instagram logo is the perfect embodiment of AI slop",
-      "summary": "Opinion: Some remarks about the new wordmark accidentally being perfectly awful.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-08-13T17:32:10+00:00",
-      "sent_at": "2026-08-13T20:47:33.829316+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/ai/2026/08/google-announces-gemini-3-7-flash-just-three-weeks-after-previous-release/",
-      "title": "Google announces Gemini 3.7 Flash just three weeks after previous release",
-      "summary": "Gemini 3.6 Flash debuted just 3 weeks ago, but Google says 3.7 has \"substantial improvements.\"",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-08-13T17:00:13+00:00",
-      "sent_at": "2026-08-13T20:47:33.829316+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/979815/openai-denise-dresser-leaving-executive-departure",
-      "title": "OpenAI is losing its second executive this week",
-      "summary": "Another OpenAI executive is departing. Denise Dresser, who joined OpenAI as its chief revenue officer in December after serving as CEO of Slack, will be leaving in the \"coming weeks\" to \"pursue other opportunities,\" she said in a team note posted to LinkedIn. Dali Rajic, president and COO of Wiz, will be taking over the [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-08-13T19:28:39+00:00",
-      "sent_at": "2026-08-13T19:57:43.769057+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/13/openai-introduces-ultrafast-a-new-mode-that-makes-gpt-5-6-sol-work-at-14x-the-speed/",
-      "title": "OpenAI introduces ‘Ultrafast,’ a new mode that makes GPT-5.6 Sol work at 14x the speed",
-      "summary": "OpenAI is launching a preview of a sped up version of its latest, most powerful model, in an effort to court enterprise users.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-13T19:22:40+00:00",
-      "sent_at": "2026-08-13T19:57:43.769057+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/13/ibm-partners-with-openai-to-bolster-enterprise-ai-push/",
-      "title": "IBM partners with OpenAI to bolster enterprise AI push",
-      "summary": "IBM plans to train and certify tens of thousands of consultants on OpenAI's technologies as part of this deal.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-13T19:19:49+00:00",
-      "sent_at": "2026-08-13T19:57:43.769057+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/978664/robot-lawnmower-review-segway-mammotion-husqvarna-roborock-dreame",
-      "title": "I finally found a robot lawnmower I’d trust with my yard",
-      "summary": "Robot lawnmowers are finally good enough to take a lot of work out of maintaining a yard, but they’re still not set-it-and-forget-it machines. If you don’t want these autonomous cutting machines to tear up your lawn or go roaming in your neighbors’ yard, you’re still going to need to keep an eye on them. But [&#8230;]",
-      "source": "The Verge",
-      "category": "Innovationen",
-      "published": "2026-08-13T18:30:00+00:00",
-      "sent_at": "2026-08-13T18:58:45.152490+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/13/anthropic-set-ai-agents-loose-on-the-same-task-they-started-a-turf-war/",
-      "title": "Anthropic set AI agents loose on the same task. They started a turf war.",
-      "summary": "Anthropic researchers found AI agents can clash, collude and coordinate in unexpected ways, raising new questions about whether today’s safety tests capture the risks of multi-agent systems.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-13T18:28:14+00:00",
-      "sent_at": "2026-08-13T18:58:45.152490+00:00"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/08/13/1141041/building-a-practical-path-to-post-quantum-cryptography/",
-      "title": "Building a practical path to post-quantum cryptography",
-      "summary": "Quantum computing has alternated between breakthrough darling and overhyped promise in technology circles. Its powerful new capabilities come with a threat to break current cryptography, but for business leaders navigating the noise, the signal should be clear: post-quantum cryptography (PQC) is a manageable evolution, not a crisis. The mathematics behind today&#8217;s encrypted digital transactions may&#8230;",
-      "source": "MIT Technology Review",
-      "category": "Innovationen",
-      "published": "2026-08-13T18:11:42+00:00",
-      "sent_at": "2026-08-13T18:58:45.152490+00:00"
-    },
-    {
-      "link": "https://www.cerebras.ai/blog/accelerating-gpt-5-6-sol-ultrafast-with-openai",
-      "title": "Accelerating GPT-5.6 Sol Ultrafast",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-13T18:10:02+00:00",
-      "sent_at": "2026-08-13T18:58:45.152490+00:00"
-    },
-    {
-      "link": "https://venturebeat.com/technology/googles-gemini-3-7-flash-targets-coding-and-agents-with-a-50-introductory-price-cut",
-      "title": "Google’s Gemini 3.7 Flash targets coding and agents with a 50% introductory price cut",
-      "summary": "Google is rolling out Gemini 3.7 Flash , a new version of its workhorse AI model that puts coding, agentic workflows and knowledge work at the center of the upgrade — while temporarily cutting API prices in half. The release arrives just three weeks after the release of Gemini 3.6 Flash , an unusually short turnaround that Google attributes to developer feedback and algorithmic improvements. For enterprise developers, the more consequential story may be the combination of those intelligence gains with lower inference costs: through the end of 2026, Gemini 3.7 Flash costs $0.75 per million input tokens and $3.75 per million output tokens . Starting Jan. 1, 2027, pricing rises to $1.50 per million input tokens and $7.50 per million output tokens. That means the current discount is temporary, but it gives teams deploying high-volume coding and business agents several months to evaluate whether Google&#x27;s claimed reductions in retries and manual oversight translate into lower total operating costs. The launch also underscores Google&#x27;s rapid iteration on its Flash line while its next flagship Pro model remains absent. Google did not provide a release date for Gemini 3.5 Pro with Thursday&#x27;s announcement, Reuters reported, despite the model having previously been described as undergoing partner testing. Axios similarly noted that 3.7 Flash arrives before the anticipated Pro release. A three-week upgrade focused on getting work done Google describes Gemini 3.7 Flash as its &quot;most intelligent workhorse model yet for coding and agents.&quot; The company says the model is better at adapting when it encounters roadblocks, clarifying intent when necessary and following instructions with greater fidelity. Those improvements matter beyond benchmark scores. In an enterprise coding agent, a model that makes fewer unnecessary changes, recovers from errors and executes multi-step plans more reliably can reduce the number of human interventions needed to complete a task. The same principle applies to business agents operating across documents and applications, where an incorrect tool call or poorly interpreted instruction can derail an otherwise useful workflow. Google says 3.7 Flash &quot;thinks more diligently,&quot; applying more effort to multi-step planning and tool calls. Its stated goal is more disciplined execution with fewer retries and less manual supervision. That represents an interesting evolution from Gemini 3.6 Flash. Google&#x27;s developer documentation described 3.6 as reducing reasoning steps, conversational turns and tool calls compared with earlier models while attempting to limit execution-loop spiraling. With 3.7, the emphasis shifts toward putting sufficient effort into planning while improving the quality of execution — potentially a more useful optimization than simply minimizing the number of steps an agent takes. Google DeepMind said in a post accompanying the release that 3.7 Flash shows gains in debugging and issue resolution, generates more functional web layouts and applications with fewer prompts, and improves reasoning and accuracy on real-world business workflows. Coding gains are substantial, but not universal Google&#x27;s benchmarks show a large generational improvement in several software engineering tests. On FrontierCode 1.1 Main, which measures production code quality, Gemini 3.7 Flash scores 43.6%, up from 34.4% for Gemini 3.6 Flash. That also narrowly exceeds the 42.7% Google reports for Claude Sonnet 5 and 41.3% for GPT-5.6 Terra. On DeepSWE v1.1, a long-horizon software engineering evaluation, 3.7 Flash reaches 65.3%, compared with 49.0% for its predecessor. GPT-5.6 Terra remains ahead at 69.6% in Google&#x27;s table. Web development shows another notable gain. Gemini 3.7 Flash receives an Elo score of 1588 on Code Arena, versus 1538 for 3.6 Flash, 1541 for Claude Sonnet 5 and 1523 for GPT-5.6 Terra. Google says the new model can produce more functional layouts and feature-complete applications in fewer prompts while more closely following reference screenshots, images and design systems. The broader benchmark table is more mixed, which is important for enterprises evaluating the model against particular workloads rather than looking for a single &quot;best&quot; model. Gemini 3.7 Flash scores 85.8% on Terminal-bench 2.1, compared with 87.4% for GPT-5.6 Terra. Terra also leads Google&#x27;s comparisons on Terminal-bench 3.0 and OSWorld-2.0. Claude Sonnet 5 leads the Agent&#x27;s Last Exam multimodal desktop and operating-system tasks with a 33.3% pass rate, versus 26.3% for Gemini 3.7 Flash. In other words, Google&#x27;s own results do not show 3.7 Flash universally displacing higher-priced competitors. They instead suggest a model that has become substantially more competitive in coding and agent workloads while occupying a lower price tier. Enterprise workflows may be the more important test The gains extend beyond software development. On AutomationBench, which Google describes as measuring enterprise workflow automation, Gemini 3.7 Flash scores 30.4%, up sharply from 17.0% for 3.6 Flash. Google&#x27;s table lists Claude Sonnet 5 at 10.7% and GPT-5.6 Terra at 23.6%. The model also reaches 34.0% on GDP.PDF, an evaluation of complex PDF comprehension, compared with 22.0% for 3.6 Flash, 28.0% for Claude Sonnet 5 and 24.7% for GPT-5.6 Terra. That combination is relevant for enterprise agents because many practical deployments require more than generating text or code. An agent may need to interpret a long report, identify relevant information, decide which tool to invoke, update another system and produce a document for a human reviewer. Reliability across that chain can matter more than performance on an isolated reasoning benchmark. Google is putting that thesis into practice with Gemini Spark. Google AI Pro and Ultra subscribers can use 3.7 Flash in Spark, the company&#x27;s personal AI agent. Google says the upgrade improves Spark&#x27;s knowledge work and tool use across Google Workspace applications, including workflows that consolidate files, draft emails and update status documents. For enterprises, 3.7 Flash is also available through the Gemini Enterprise Agent Platform and Gemini Enterprise app. Price becomes part of the model competition Gemini 3.7 Flash&#x27;s introductory pricing is a notable bid to embed the model into enterprise workflows. Until Dec. 31, developers pay $0.75 per million input tokens and $3.75 per million output tokens. Context caching costs $0.075 per million tokens during the introductory period. Google says standard prices will double on Jan. 1, 2027, to $1.50 for input and $7.50 for output, with context caching rising to $0.15. For comparison, Gemini 3.6 Flash&#x27;s standard API pricing is $1.50 per million input tokens and $7.50 per million output tokens. Google&#x27;s benchmark table lists Claude Sonnet 5 at $2 and $10, respectively, while GPT-5.6 Terra is listed at $2 and $12. The economics become more pronounced for autonomous agents because a single user request can produce a long sequence of model calls, reasoning tokens and tool interactions. A model that costs less per token but requires substantially more retries may not ultimately be cheaper. Conversely, Google&#x27;s combination of lower introductory token pricing and claimed improvements in first-pass accuracy could materially change the cost of running high-volume coding or document-processing agents if those gains carry over to production. That is the metric enterprise teams will ultimately need to test: not price per million tokens in isolation, but cost per successfully completed task. Google’s AI shake-up raises the stakes for Gemini Gemini 3.7 Flash arrives amid a broader debate over whether Google is losing ground at the AI frontier. The company has not released Gemini 3.5 Pro, despite saying in May that the flagship model would arrive the following month. By July, Google said it remained in partner testing and would become broadly available when ready; Thursday’s announcement offered no further timetable. Google’s latest released general-purpose Pro model therefore remains Gemini 3.1 Pro , introduced in February. Reuters reported in July that Gemini 3.5 Pro missed its original target after falling short of internal goals, particularly in coding, even as Google began training what it calls its most ambitious model yet, Gemini 4. The delay coincides with a major overhaul of Google’s AI leadership announced last week. Google DeepMind co-founder and Nobel Prize Winner Demis Hassabis has relinquished day-to-day control of the company&#x27;s famed DeepMind AI division to become its chair and, simultaneously, to take on the role of Alphabet’s chief scientist. Meanwhile, former DeepMind CTO Koray Kavukcuoglu now runs the unit as a senior vice president reporting directly to CEO Sundar Pichai. Kavukcuoglu controls Gemini model development, frontier research, the Gemini app and developer teams—effectively consolidating the full Gemini chain under a more product-focused operator. Chief scientist Jeff Dean, Gemini co-lead Oriol Vinyals, Quoc Le and Sanjay Ghemawat left to establish the research startup Discovery Loop. Those exits followed Gemini co-lead Noam Shazeer’s move to OpenAI and Nobel Prize-winning AlphaFold scientist John Jumper’s departure for Anthropic. Reuters reported that internal disagreements, constrained compute allocation and Google’s bureaucracy contributed to slower releases and weaknesses in coding. Outside interpretations range from organizational repair to a more fundamental retreat. SemiAnalysis has argued that Google is increasingly prioritizing the highly profitable business of supplying cloud infrastructure to AI companies—including Gemini competitors—over keeping its own models at the absolute frontier. That analysis also claimed Google had effectively canceled 3.5 Pro, although Google has not confirmed that and continues to describe the model as delayed. The Verge offered a more measured assessment : the departures and model delays are serious, but Google retains enormous advantages through Search, Workspace, Android, Cloud, custom AI chips and consumer distribution. Google says the Gemini app has surpassed 950 million monthly users, giving it a reach that does not depend entirely on owning the highest-scoring model. Current benchmarks similarly depict a company behind the overall leaders but still firmly competitive. Artificial Analysis places Claude Opus 5 at 63 on its overall model Intelligence Index , while Google reports a score of 56 for Gemini 3.7 Flash—an improvement from 52 for 3.6 Flash but not a return to the top. Arena’s early human-preference results are more favorable, provisionally ranking 3.7 Flash ninth overall and eighth for web development. The resulting picture is not that Google has abandoned advanced AI, but that it has become stronger at rapidly shipping efficient Flash models while struggling to deliver the premium flagship required to reclaim broad leadership. Gemini 4 will now serve as the clearest test of whether the leadership reorganization fixes that execution gap. Available now across Google&#x27;s developer stack Developers can access Gemini 3.7 Flash through the Gemini API in Google AI Studio and Android Studio, as well as Google&#x27;s Antigravity environment. Enterprises can deploy it through Gemini Enterprise Agent Platform and Gemini Enterprise, while consumers with Google AI Pro or Ultra subscriptions can access the model through Spark in supported countries. Google is also shipping updated safeguards covering chemical, biological, radiological and nuclear risks and cyber-offense misuse, according to the company. The unusually fast jump from Gemini 3.6 Flash to 3.7 Flash points toward a model development cycle in which algorithmic improvements can reach production products without waiting for a new flagship generation. Ars Technica also highlighted the three-week interval between the two releases, while Google says the techniques behind the update will inform future models. For developers, that faster cadence creates its own operational question. Models can improve quickly, but production teams still have to benchmark new releases against their own repositories, prompts, tool schemas and failure modes before changing a deployment. Gemini 3.7 Flash gives those teams a particularly strong incentive to run that evaluation. Google&#x27;s own numbers show major improvements in production coding, web development, document comprehension and workflow automation without claiming leadership everywhere. At its introductory price, Google is effectively betting that developers will value a model that is competitive enough with more expensive systems while being cheap enough to run repeatedly inside agents. Whether that advantage survives the return to full pricing in January will depend less on leaderboard positions than on how reliably 3.7 Flash completes real work.",
-      "source": "VentureBeat",
-      "category": "AI",
-      "published": "2026-08-13T18:02:54+00:00",
-      "sent_at": "2026-08-13T18:58:45.152490+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/979516/matic-cues-robot-vacuum-gesture-control-hands-on-review",
-      "title": "You can now just point at a mess and this robot vacuum will suck it up",
-      "summary": "Matic, my current favorite robot vacuum, just got a big upgrade. The company has launched Matic Cues, which brings voice and gesture control to the robot. Now, you can talk directly to your vacuum to tell it what you want it to do, or just point at a mess to have it spot-clean. The feature [&#8230;]",
-      "source": "The Verge",
-      "category": "Innovationen",
-      "published": "2026-08-13T18:00:00+00:00",
-      "sent_at": "2026-08-13T18:58:45.152490+00:00"
-    },
-    {
-      "link": "https://ai.google.dev/gemini-api/docs/models/gemini-3.7-flash",
-      "title": "Gemini 3.7 Flash",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-13T17:23:22+00:00",
-      "sent_at": "2026-08-13T17:54:54.297130+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/13/openai-hires-new-cro-as-executive-shake-up-continues/",
-      "title": "OpenAI hires new CRO as executive shake-up continues",
-      "summary": "Dali Rajic will take over as OpenAI's top salesperson.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-13T17:07:13+00:00",
-      "sent_at": "2026-08-13T17:54:54.297130+00:00"
-    },
-    {
-      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/",
-      "title": "Gemini 3.7 Flash",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-13T17:02:10+00:00",
-      "sent_at": "2026-08-13T17:54:54.297130+00:00"
-    },
-    {
-      "link": "https://www.seangoedecke.com/text-ai-watermarks/",
-      "title": "Text AI watermarks will always be trivial to remove",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-13T15:07:10+00:00",
-      "sent_at": "2026-08-13T17:54:54.297130+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/near-packaged-optics-gains-ground-aso-the-industry-hedges-against-co-packaged-optics-growing-pains",
-      "title": "Near-packaged optics (NPO) gains ground as the industry hedges against CPO's growing pains — analysts say volume for NPO silicon photonics products will extend until the end of the decade",
-      "summary": "The case for near-packaged optics (NPO) is strengthening, as the growing pains of co-packaged optics (CPO) become apparent. We explain the material differences between the two technologies as optics and silicon photonics make waves in the AI industry.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-08-13T16:52:45+00:00",
-      "sent_at": "2026-08-13T16:54:46.673100+00:00"
-    },
-    {
-      "link": "https://venturebeat.com/technology/deepseek-harness-launches-as-open-source-rival-to-claude-code-alongside-v4-pro-on-api-with-higher-prices",
-      "title": "DeepSeek Harness launches as open source rival to Claude Code, alongside V4-Pro on API with higher prices",
-      "summary": "DeepSeek is expanding beyond the model layer and deeper into the software developers use to put AI agents to work. The Chinese AI lab on Thursday launched the official version of DeepSeek-V4-Pro , an updated flagship model focused heavily on agentic workloads, alongside DeepSeek Harness v0.1 , a new open-source agent harness that gives developers an alternative to integrated coding-agent environments such as Anthropic’s Claude Code. Together, the releases amount to a broader developer push from DeepSeek. V4-Pro is now available across DeepSeek’s web interface, mobile app and API, with native support for the OpenAI Responses API and integration with Codex. DeepSeek Harness, meanwhile, is entering developer preview under the MIT license and the c ode is available now for download and use on GitHub . It&#x27;s built around an unusually modular premise: practically every part of the agent runtime can be swapped out as a plugin. But developers accessing V4 through DeepSeek’s API will soon pay considerably more for it. DeepSeek is simultaneously abandoning its existing flat API pricing in favor of peak and off-peak rates beginning at 16:00 UTC on Sunday, Aug. 16 (2 am ET). Even the discounted off-peak cache-miss and output prices will be substantially higher than the prices available today. The combination is significant because DeepSeek is no longer competing solely over model intelligence and token prices. With Harness, it is moving into the layer that determines how models use tools, manipulate files, maintain sessions and execute long-running agent workflows — territory where Anthropic’s Claude Code and other coding agents have become increasingly important developer products. DeepSeek builds its own agent harness DeepSeek describes Harness, or dsh , as an open-source agent harness built on Cordis, a framework designed around composable plugins. Its guiding principle is simple: “Everything is a plugin.” That extends to models, tools, skills, sessions, sandboxes, filesystems, loops, orchestration and user interfaces, according to DeepSeek. Rather than making those components fixed pieces of a single coding agent, Harness is designed to let developers mix, replace and extend them. The project is available under the MIT license and can currently be launched from npm with npx @deepseek-ai/dsh web . DeepSeek also provides instructions for building it directly from source. The repository describes the software explicitly as a developer preview and warns that “THERE WILL BE COMPATIBILITY-BREAKING CHANGES.” That caveat matters for enterprise developers. Harness is not yet being presented as a stable drop-in production platform. But its architecture points toward a potentially important strategy: DeepSeek can now offer developers not only models but an open framework for assembling the systems that surround them. That makes Anthropic&#x27;s Claude Code and OpenAI&#x27;s Codex useful competitive references, although the products should not be treated as functionally identical. DeepSeek Harness is an open-source, model-agnostic alternative to the agent infrastructure underlying Claude Code and Codex—not yet a full replacement for either product’s broader developer experience. It can already inspect repositories, edit files, execute shell commands, search files and the web, maintain plans, invoke skills, delegate work to subagents and enforce approval policies. Those are the essential capabilities that make Claude Code and Codex agentic coding tools rather than autocomplete systems. DeepSeek explicitly describes Standard mode as a full coding agent with file editing, shell access, search, planning, subagents and workflows. Its local web interface lets users select a workspace and approve sensitive operations. But Claude Code and Codex now extend well beyond that agent loop. Here&#x27;s a quick comparison: Dimension DeepSeek Harness Claude Code OpenAI Codex Read, edit and test a repository Yes Yes Yes Shell and development tools Yes Yes Yes Planning and subagents Yes Yes Yes Permission controls and sandboxing Yes, configurable through plugins Yes, mature built-in permission and sandbox system Yes, granular sandbox and approval controls Primary interfaces Local web UI; headless command; Python SDK Terminal, VS Code, JetBrains, desktop, browser, mobile and Slack CLI, IDE extension, desktop app, web/cloud and integrations Hosted background agents Not documented as a DeepSeek-managed service Yes Yes GitHub-native PR workflow Not documented as a finished integration GitHub Actions, automatic reviews, issue-to-PR workflows Cloud tasks, automatic reviews, PR fixes and GitHub Action Model choice DeepSeek, Anthropic, OpenAI and custom compatible endpoints Primarily Claude, including Bedrock, Google Cloud and Microsoft hosting Primarily OpenAI models, with configurable providers in the open-source CLI Extensibility Exceptional: virtually every component is replaceable Strong: skills, hooks, MCP, plugins and agent teams Strong: skills, MCP, custom agents, SDK and app server Product maturity Developer preview; breaking changes expected Established commercial product Established commercial product plus open-source CLI License MIT Commercial product with extensibility interfaces Codex CLI is open source; cloud and app services are managed products DeepSeek Harness instead emphasizes modularity and replacement: the model itself is another plugin rather than necessarily the center of a vertically integrated stack. DeepSeek’s repository was already attracting significant developer attention on launch day, showing roughly 27,500 GitHub stars and 2,000 forks as of Aug. 13, although those rapidly changing figures are best viewed as a snapshot rather than an adoption metric. V4-Pro gets an agent-focused upgrade Harness arrives alongside the general-availability release of DeepSeek-V4-Pro-0813. DeepSeek originally introduced the V4 family in preview in April. The lineup consists of the 1.6-trillion-parameter V4-Pro, with 49 billion parameters activated per token, and the smaller 284-billion-parameter V4-Flash, with 13 billion activated. Both support context windows of up to one million tokens. The company’s Aug. 13 release therefore is not the first appearance of V4-Pro. It is the transition from the earlier preview into an updated official version, with DeepSeek emphasizing agent performance. “The official version of DeepSeek-V4-Pro has been released, featuring significantly enhanced agent capabilities and support for the Responses API and Codex integration,” DeepSeek says on its API website . “It is now fully available across the web, mobile app, and API; we welcome your testing and feedback.” DeepSeek’s changelog similarly says the general-availability model has “significantly enhanced Agent capabilities,” particularly in production environments. Developers using the API do not have to change model identifiers: deepseek-v4-pro now resolves to the latest V4-Pro version. The company has also added native OpenAI Responses API suppor t, lowering the amount of integration work required for applications already built around that interface. DeepSeek says V4-Pro is optimized for OpenAI&#x27;s own open source harness, Codex, with one-click setup. Its current API documentation lists Responses API, tool calling, JSON output and an Anthropic-format API among the supported interfaces for both V4-Pro and V4-Flash. For developers using DeepSeek directly rather than through an API, V4-Pro is now accessible through “Expert Mode” on the company’s app and website. Reasoning effort becomes another deployment knob DeepSeek is also making reasoning effort an explicit control across V4-Pro and V4-Flash. The V4 model documentation describes three levels: Non-think, designed for fast routine tasks; Think High, intended for more complex problem-solving and planning; and Think Max, which allocates substantially more reasoning to difficult problems. That distinction can be operationally important for agent systems because maximum reasoning on every step can consume unnecessary time and tokens. A coding agent might use relatively little reasoning to inspect a file or execute a routine tool call, then increase effort when diagnosing a difficult bug or planning a multi-stage code change. DeepSeek’s latest benchmark table suggests the 0813 model improves substantially on agent-oriented tests, although the figures are company-reported and some results depend on the harness configuration. DeepSeek reports V4-Pro-0813 scores of 87.9 on Terminal Bench 2.1, 74.1 on Toolathlon-Verified, 71.1 on DSBench-FullStack and 67.2 on DSBench-Hard . It does not lead every comparison in DeepSeek’s own table: Fable 5, for example, scores 77.9 on Toolathlon-Verified and 77.2 on DSBench-FullStack. There is an especially important qualification buried beneath the benchmark table. For public Code Agent tasks, DeepSeek says V4-Pro-0813 was tested using its upcoming DeepSeek Harness in “minimal mode.” In other words, some of the agent results arriving alongside Harness are not purely model benchmarks. They measure the model operating inside an agent execution environment — precisely the software layer DeepSeek is now releasing to developers. A sharp reversal in DeepSeek’s API price trajectory The bigger immediate change for teams already running DeepSeek in production may be pricing. DeepSeek’s current API documentation lists V4-Flash at $0.14 per million cache-miss input tokens and $0.28 per million output tokens, while V4-Pro costs $0.435 for cache-miss input and $0.87 for output. Cache hits are dramatically cheaper at $0.0028 for Flash and $0.003625 for Pro. Those prices themselves represented a major reduction from V4’s original April launch economics. When V4 arrived in April, V4-Pro was priced at $1.74 per million cache-miss input tokens and $3.48 per million output tokens. By late May, DeepSeek had made a 75% reduction permanent, intensifying its position as an unusually inexpensive option for high-volume agent workloads. Now the pendulum is moving in the other direction. Beginning Aug. 16 at 16:00 UTC, DeepSeek will charge different rates depending on when API calls occur. Peak hours are 01:00–04:00 UTC and 06:00–10:00 UTC (9:00 PM – 12:00 AM ET and 2:00 AM – 6:00 AM ET, respectively) with all other hours classified as off-peak. Off-peak rates are half the corresponding peak prices. For V4-Flash, off-peak cache-miss input rises from $0.14 to $0.22 per million tokens, while output rises from $0.28 to $0.66. During peak hours those rates reach $0.44 input and $1.32 output. V4-Pro moves from $0.435 per million cache-miss input tokens and $0.87 output today to $0.66 and $1.98 off-peak, respectively. Peak rates rise to $1.32 input and $3.96 output. The increases are even more pronounced for cached input. V4-Pro cache hits rise from $0.003625 per million tokens today to $0.022 off-peak and $0.044 at peak. Flash moves from $0.0028 to $0.007 off-peak and $0.014 peak. Model Old input (per 1M token) Old output (per 1M tok) Old total (1M in/1M out) deepseek-v4-flash $0.14 $0.28 $0.42 deepseek-v4-pro $0.435 $0.87 $1.305 The new prices still position DeepSeek as an affordable alternative via API to Western proprietary labs, but Reuters reported Thursday that, depending on model, token category and time of use, the changes represent increases ranging from 50% to more than 1,100% over existing rates. Model Input ($/1M) Output ($/1M) Total ($/1M) Source Muse Spark 1.2 Contributor $0.10 $0.20 $0.30 Meta MiMo-V2.5 Flash $0.10 $0.30 $0.40 Xiaomi DeepSeek-V4-Flash — off-peak $0.22 $0.66 $0.88 DeepSeek GPT-5.6 Luna $0.20 $1.20 $1.40 OpenAI MiniMax-M3 $0.30 $1.20 $1.50 MiniMax LongCat-2.0 — limited-time promo $0.30 $1.20 $1.50 LongCat DeepSeek-V4-Flash — peak hours $0.44 $1.32 $1.76 DeepSeek MiMo-V2.5 $0.40 $2.00 $2.40 Xiaomi DeepSeek-V4-Pro — off-peak $0.66 $1.98 $2.64 DeepSeek LongCat-2.0 — standard $0.75 $2.95 $3.70 LongCat MiMo-V2.5 Pro (≤256K) $1.00 $3.00 $4.00 Xiaomi DeepSeek-V4-Pro — peak hours $1.32 $3.96 $5.28 DeepSeek Muse Spark 1.1 / 1.2 $1.25 $4.25 $5.50 Meta GLM-5.2 $1.40 $4.40 $5.80 Z.ai Grok 4.6 — &lt;200K prompt tokens $2.00 $6.00 $8.00 xAI MiMo-V2.5 Pro (&gt;256K) $2.00 $6.00 $8.00 Xiaomi Qwen3.8-Max $2.00 $6.00 $8.00 QwenCloud Gemini 3.6 Flash $1.50 $7.50 $9.00 Google GPT-5.6 Terra $2.00 $12.00 $14.00 OpenAI Grok 4.6 — ≥200K prompt tokens $4.00 $12.00 $16.00 xAI GPT-5.4 $2.50 $15.00 $17.50 OpenAI Kimi K3 $3.00 $15.00 $18.00 Moonshot AI Claude Opus 5 $5.00 $25.00 $30.00 Anthropic Sakana Fugu Ultra (≤272K) $5.00 $30.00 $35.00 Sakana AI GPT-5.6 Sol — Standard mode $5.00 $30.00 $35.00 OpenAI Claude Fable 5 / Claude Mythos 5 $10.00 $50.00 $60.00 Anthropic GPT-5.6 Sol — Fast mode $10.00 $60.00 $70.00 OpenAI That makes the “50% lower” off-peak framing potentially misleading without context. Off-peak is 50% cheaper than DeepSeek’s new peak rate; it is not a 50% discount from the API prices developers are paying today. For a simple workload consisting of one million cache-miss input tokens plus one million output tokens, V4-Pro currently costs $1.305. The same token mix will cost $2.64 off-peak, roughly twice as much, or $5.28 during peak hours, more than four times the current price. V4-Flash moves from $0.42 under the same simple calculation to $0.88 off-peak and $1.76 peak. Actual application costs will vary considerably depending on the ratio of cached input, uncached input and generated output, making those combined figures illustrative rather than universal total-cost estimates. DeepSeek is moving up the agent stack The timing makes the strategic direction difficult to miss. When DeepSeek released the V4 preview on April 24, the major story was how much frontier-class capability the company could deliver with an unusually efficient architecture. V4-Pro uses a hybrid attention design combining Compressed Sparse Attention and Heavily Compressed Attention; at a one-million-token context, DeepSeek says it requires only 27% of the single-token inference FLOPs and 10% of the KV cache required by V3.2. By late May, the discussion had shifted toward what those efficiencies meant economically for high-volume agents, whose repeated context reads can make caching a major component of inference costs. DeepSeek’s steep V4 price cuts amplified that advantage. The Aug. 13 releases move the competition another layer upward. DeepSeek now has an updated V4-Pro tuned around agent workloads, standardized interfaces designed to make it easier to connect with existing developer tooling, configurable reasoning effort, and an MIT-licensed harness for controlling the models, tools, sandboxes, filesystems and orchestration surrounding an agent. At the same time, DeepSeek is demonstrating that developers cannot assume its aggressively low API rates are permanent. For organizations considering the platform, workload scheduling, caching behavior and the option to run open weights on their own infrastructure now become more important parts of the total-cost calculation. That leaves DeepSeek pursuing two potentially conflicting advantages at once: making its agent stack more accessible and open while making its own hosted API considerably more expensive. For enterprise developers, Harness may ultimately be the more consequential part of Thursday’s announcement. Models can increasingly be swapped behind standardized interfaces. The harness that controls how an agent reasons, invokes tools, edits software and persists across a workflow can be much harder to replace. DeepSeek is now competing for that layer, too.",
-      "source": "VentureBeat",
-      "category": "AI",
-      "published": "2026-08-13T16:47:55+00:00",
-      "sent_at": "2026-08-13T16:54:46.673100+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/979654/meta-whatsapp-scam-message-detection",
-      "title": "Meta adds AI screening to detect WhatsApp scams",
-      "summary": "Meta is launching an optional Scam Alert feature on WhatsApp that uses on-device machine learning to flag suspicious messages. Earlier this year, Meta also launched scam detection for device linking requests on WhatsApp. The new Scam Alert feature, which is rolling out in a limited beta, shows users a warning if a chat seems like [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-08-13T16:10:06+00:00",
-      "sent_at": "2026-08-13T16:54:46.673100+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/979345/suno-studio-2-0-midi-chatbot-custom-effects",
-      "title": "Suno is trying to look more like a real music production tool",
-      "summary": "Suno is releasing Studio 2.0 with significant upgrades that push it closer to an actual digital audio workstation (DAW), rather than a bare-bones audio editor with generative AI features. The biggest addition is undoubtedly MIDI support. Suno says that MIDI was its most requested feature, and it's basically a prerequisite for any modern DAW. Unfortunately, [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-08-13T16:00:00+00:00",
-      "sent_at": "2026-08-13T16:54:46.673100+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2236317/apple-is-reportedly-turning-to-publishers-for-help-with-siri-ai/",
-      "title": "Apple is reportedly turning to publishers for help with Siri AI",
-      "summary": "Apple appears to be trying to secure access to new content and other information for Siri AI.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-08-13T15:53:53+00:00",
-      "sent_at": "2026-08-13T16:54:46.673100+00:00"
-    },
-    {
-      "link": "https://community.openai.com/t/codex-in-chatgpt-desktop-app-for-linux-is-now-in-preview/1390027",
-      "title": "Codex in ChatGPT desktop app for Linux is now in preview",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-13T04:53:41+00:00",
-      "sent_at": "2026-08-13T16:54:46.673100+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2236313/spotify-has-roped-the-indie-pubisher-kobalt-into-its-ai-platform-for-covers-and-remixes/",
-      "title": "Spotify has roped the indie publisher Kobalt into its AI platform for covers and remixes",
-      "summary": "Spotify's forthcoming paid add-on lets fans generate content via \"AI-powered creative tools.\"",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-08-13T15:49:07+00:00",
-      "sent_at": "2026-08-13T15:56:10.091919+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/13/microsoft-kills-off-unsuccessful-ai-features-while-merging-its-separate-copilot-apps/",
-      "title": "Microsoft kills off unsuccessful AI features while merging its separate Copilot apps",
-      "summary": "Microsoft is simplifying Copilot by combining its consumer and business apps, and dropping AI-generated podcasts, Group Chats, Deep Research, and its Mico character.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-13T15:30:52+00:00",
-      "sent_at": "2026-08-13T15:56:10.091919+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/entertainment/977994/higgsfield-ai-cully-hill-boys-black-list",
-      "title": "I looked inside an AI generated movie, and the best parts were all human",
-      "summary": "Imagine a trio of bumbling, English lads who fantasize about becoming megastars while knocking back a few pints in a grimy pub somewhere in London. Picture the guys chortling and trying to one-up each other's idealized visions of the future with a series of increasingly glitzy fantasies in which their fame leads to access to [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-08-13T15:30:00+00:00",
-      "sent_at": "2026-08-13T15:56:10.091919+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/13/nvidias-new-500b-plan-is-risky-but-brilliant-especially-for-aging-gpus/",
-      "title": "Nvidia’s new $500B plan is risky but brilliant, especially for aging GPUs",
-      "summary": "Nvidia has a plan to make sure its GPUs won't lose value. It wants to convince a new crop of financiers to keep lending for AI buildouts.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-13T15:08:00+00:00",
-      "sent_at": "2026-08-13T15:56:10.091919+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/13/bartesian-duet-cocktail-maker-review/",
-      "title": "Who really needs a cocktail robot?",
-      "summary": "Bartesian's cocktail makers would be best described like a Keurig or Nespresso machine, but for alcoholic drinks.",
-      "source": "TechCrunch",
-      "category": "Innovationen",
-      "published": "2026-08-13T15:00:00+00:00",
-      "sent_at": "2026-08-13T15:56:10.091919+00:00"
-    },
-    {
-      "link": "https://spectrum.ieee.org/product-engineer",
-      "title": "Bring a Product Manager Mindset to Your Next Engineering Job",
-      "summary": "If you haven’t already seen a job listing for a “product engineer,” you probably will soon. The job everyone’s suddenly hiring for, this role is like a cross between a product manager and an engineer (as the name suggests). And it’s a hiring trend worth paying attention to. Companies are opening more of these roles every single month, but they’re struggling to fill them. The reason has almost nothing to do with engineers’ coding skills or years of experience. The best career move you can make to prepare for these types of roles has almost nothing to do with getting more technical. Instead, it comes down to one of the fluffiest, most overused, and potentially cringiest words in all of tech: mindset . Stick with me, I promise this goes somewhere useful. The problem: We were trained to be task-takers When I started out, my job looked like this: Drive to an office. Sit through meetings that led to other meetings until a project manager handed me a task they’d already chopped into tiny pieces. My job was to turn that task into code. It took years for me to get good at a coding language and tech stack, and once I did, I executed that knowledge against specs that somebody else wrote. You know what’s freakishly good at that exact job? I’ll give you a hint: It starts with A and ends with I. Boris Cherny, the creator of Claude Code, recently said: “coding is basically solved,” and “the bottleneck is going to be good ideas.” So if your entire value is “hand me a task and I’ll build it,” you’re in a footrace with the robots. I don’t like that for you. The bad news... that is also good news Many companies are flattening. Middle management is getting stripped out, for better or worse (mostly for worse), which means many of us are doing more with less. This might sound like purely more work, but it’s also an opening for anyone who cares about what they’re building and can put on their manager hat. Companies are no longer just hunting for the strongest engineer in one narrow domain. What’s rare, and what actually moves revenue, is an engineer who can spot the thing that’s quietly costing money and either flag it to leadership or just go fix it. What this actually looks like Being product-minded has NOTHING to do with your tech stack. Here’s where to start: Have an opinion and back it up. As a former engineering manager, the worst thing I ever heard was silence. I’d often ask the team what they thought because I doubted myself and wanted a gut check. I was grateful to the ones who said “nope, bad idea, here’s why.” Pushback is a gift. Learn the domain, casually. Work for a plumbing company? You don’t need to become a plumber, but spend an hour on Reddit threads where plumbers vent. Now your ideas come from your potential customers. Make experiments cheap and safe. This is where any engineer has massive leverage. Experiments are not free. A bad one loses customers and frustrates users. Tools like LaunchDarkly and Optimizely let you ship a change to 5 percent of users and roll it back the second it tanks. Learn them, or build a scrappy version yourself. A team that can quickly run safe experiments will out-learn everyone else in the building. Be data-driven. Stop fighting about button colors. Pick a goal: making money, finding product-market fit, or making the product sticky so people come back. Then measure it. If your gorgeous redesign tanks time-on-site, it failed, no matter how good it looked to you. If the ugly version makes more money, ship the ugly version. You don’t have to be the ideas person. Maybe you’re not a visionary. That’s fine. Organize a hackathon around an actual company goal. Pull up your company’s quarterly targets and build something against one of them. Don’t know what those targets are? That’s your first assignment. Good ideas are the new bottleneck—and they always have been When I was a manager, I asked myself one question every week: What’s the single most impactful thing I could do right now? The answer was almost never “write more code.” It was understanding a gnarly problem nobody had defined yet. Building a deck to spread knowledge that was in one person’s head. Getting the right three people in a room to actually make a decision we’d been putting off. Code is cheap, and it always has been. We just couldn’t see it, because for decades the typing took so long that it felt like the hard part. It never was. The hard part was always knowing what’s worth building. — Brian Siobahn Day Grady Wants Everyone to Be AI Literate In January 2025, Siobahn Day Grady launched the first AI research institute at a historically Black college or university. The institute aims to help expand AI skills for all students at North Carolina Central University, where Grady is an associate professor, through both AI research opportunities and skills training. Though the institute is the first of its kind, Grady hopes it could serve as a model for other HBCUs. Read more here . Should Researchers Write Papers for AI Instead of People? AI is increasingly used in the scientific research process. So does publishing need to change to keep up? Jiachen Liu recently co-authored a paper published on ArXiv arguing that the PDF should be replaced with an “Agent-Native Research Artifact” designed with AI in mind. In this interview with IEEE Spectrum , Liu lays out a provocative vision of AI-driven research and an infrastructure that captures—and learns from—details that often get left out of today’s papers. Read more here . Detect Dark Matter’s Mark From Your Backyard Astronomers still don’t know exactly what dark matter is, but they can detect it—and so can you. With a small radio telescope and a few other pieces, you can create a DIY setup to gauge how fast hydrogen clouds are moving across the Milky Way. Feed those measurements into a spreadsheet, and you can see the same signals that have baffled the astronomical community for decades. Read more here .",
-      "source": "IEEE Spectrum",
-      "category": "AI",
-      "published": "2026-08-13T14:44:50+00:00",
-      "sent_at": "2026-08-13T15:56:10.091919+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/ai/2026/08/anthropic-could-be-worth-2-trillion-when-it-goes-public/",
-      "title": "Anthropic could be worth $2 trillion when it goes public",
-      "summary": "Rapid revenue growth fuels hope Claude maker's IPO is the biggest listing in history",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-08-13T13:58:56+00:00",
-      "sent_at": "2026-08-13T15:56:10.091919+00:00"
-    },
-    {
-      "link": "https://alignment.anthropic.com/2026/conceptual-reasoning-index/",
-      "title": "Anthropic: Introducing The Conceptual Reasoning Index",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-13T13:48:14+00:00",
-      "sent_at": "2026-08-13T15:56:10.091919+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/08/13/volkswagen-turning-id-buzz-into-electric-camper-van/",
-      "title": "Volkswagen’s new electric camper van turns the ID. Buzz into a home on wheels",
-      "summary": "Volkswagen is giving people what they want — an all-electric, fully fledged camper van that can be assembled in minutes. The ID. California Cruise is coming as the first all-electric California camper.",
-      "source": "Electrek",
-      "category": "Autonomes Fahren",
-      "published": "2026-08-13T14:33:09+00:00",
-      "sent_at": "2026-08-13T14:36:09.020851+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/podcast/979370/google-deepmind-ai-race-lose-jeff-dean-demis-hassabis",
-      "title": "Does Google even want to win at AI?",
-      "summary": "Today on Decoder, I’m talking with Hayden Field, The Verge’s senior AI reporter, about a question that’s been rocketing around the tech industry for the past week: Is Google losing the AI race? That’s because last week Google announced a bombshell reorganization of its AI division, Google DeepMind. Jeff Dean, the company’s chief scientist, is [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-08-13T14:10:31+00:00",
-      "sent_at": "2026-08-13T14:36:09.020851+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/column/978295/optimizer-screenless-wearables-fitness-trackers-smart-rings",
-      "title": "Wearables are getting a taste of much-needed minimalism",
-      "summary": "This is Optimizer, a weekly newsletter sent from Verge senior reviewer Victoria Song that dissects and discusses the latest gizmos and potions that swear they're going to change your life. Opt in for Optimizer here. During my summer vacation, I went in on the screenless wearable life. These past two weeks, I wore the Fitbit [&#8230;]",
-      "source": "The Verge",
-      "category": "Innovationen",
-      "published": "2026-08-13T14:00:00+00:00",
-      "sent_at": "2026-08-13T14:36:09.020851+00:00"
-    },
-    {
-      "link": "https://venturebeat.com/orchestration/why-capital-one-built-its-multi-agent-ai-platform-around-open-weight-models",
-      "title": "Why Capital One built its multi-agent AI platform around open-weight models",
-      "summary": "Presented by Capital One At VB Transform 2026 , Kel Vanee, MVP of machine learning engineering at Capital One, spoke with Sam Witteveen, Senior Technology Contributor at VentureBeat, about how the bank built a scalable multi-agent AI architecture around deeply customized open-weight models rather than relying on an off-the-shelf foundation model. &quot;At Capital One, we&#x27;re not just using AI, we&#x27;re building AI,&quot; Vanee said. The groundwork was laid years ago with Capital One&#x27;s early investments in data transformation and cloud adoption, which Vanee said were foundational to moving quickly when the current wave of AI arrived. That technical foundation enabled the company to make several deliberate architectural decisions, including building a centralized, enterprise-wide AI platform with built-in governance, deeply customizing open models with proprietary data, and constructing its own multi-agent orchestration harness. Customizing open-weight models with proprietary data Rather than relying solely on off-the-shelf frontier models, Capital One fine-tunes open-weight models using its rich, proprietary data. &quot;We view our data as a huge advantage and something that nobody else has, something that the general frontier models cannot provide. So we are taking that data and deeply customizing these models,&quot; Vanee explained. He added that real-time data is absolutely critical to bring in fresh context during live customer or associate interactions. Vanee also revealed an unexpected benefit of this approach: extensibility across the enterprise. “As we customize those open-source models for one use case, we actually see benefits across our whole portfolio,&quot; he noted. &quot;We are training that model to be an expert at Capital One use cases, policy, and nomenclature. As we do that training, we see a general lift.&quot; Inside Capital One&#x27;s multi-agentic AI workflow As an example of the approach, Vanee pointed to a customer-service workflow for bank fraud that handles millions of calls a year, where interactions range from roughly four minutes to as long as sixty minutes, and where an initial attempt at engaging a single large language model proved insufficient. With Capital One&#x27;s multi-agentic workflow (MACAW), interactions are routed through specialized agents with governance and guardrails built in. &quot;The MACAW workflow is made up of a number of different agents,&quot; he said. &quot;The first one is an understanding agent. Its purpose is to look at what the customer is saying and try to understand what their intention is.” From there, a reasoning agent is given several specific instructions to generate a summary; a validation agent fact-checks the summary to ensure it is accurate; and an explaining agent turns the summary into a formatted document with all necessary details that is then shared with agents. For the consumer banking use case, this workflow helps several hundred customer-service agents who specialize in complex fraud calls. The post-call summaries it generates help document long, back-and-forth interactions that agents previously had to reconstruct by hand. Capital One’s multi-agentic architecture also underpins Chat Concierge, a customer-facing auto-shopping assistant, which further leverages a version of Meta&#x27;s open-weight Llama model that has been customized with Capital One&#x27;s proprietary data. It uses the same division of labor, with one agent conversing with the customer, one building an action plan from business rules, one evaluating accuracy, and one explaining and validating the result. Optimizing latency and cost with an agentic research system Beyond customer-facing solutions, Capital One is also leveraging agentic AI to automate rote tasks for its employees and help them focus on high-leverage aspects of their work. In one example, the company built an autonomous agentic optimization solution to tune backend hosting infrastructure. Vanee explained that in the world of LLMs, where new optimizations are delivered every day, they aren&#x27;t all complementary. Combining two good optimizations can sometimes cause a performance regression. &quot;This agentic system will run through a search space that is designed by the researcher, handle all the mechanics of setting up that experiment and running the experiment, and then put a whole summarization of the results in front of the researcher,&quot; Vanee said. Vanee added that the system allows researchers to “find the series of optimizations and configurations that&#x27;s really going to give [them] the best latency possible.” What&#x27;s next: model routing and proactive, event-driven AI Looking ahead, one big trend Vanee sees is routing abstraction layers that a platform seeks to validate over multiple models, both for cost and accuracy. &quot;We actually think that you can get better accuracy than any individual model simply by routing across a broader set of available models, because different models are going to excel in different areas,&quot; he said. His second prediction was a shift toward systems that act without waiting to be asked, while also emphasizing that deploying such proactive agents would demand rigorous testing and monitoring. &quot;The thing I think is going to become bigger in the future is more proactive and event-driven AI,&quot; Vanee said. Rather than waiting for a human prompt, AI would step in as soon as it detects conditions that warrant action. &quot;This is going to enable more monitoring and larger-scale monitoring, and it&#x27;ll empower us as we fight fraud and address these opportunities,&quot; Vanee said. &quot;So proactive AI is going to be a really important trend.&quot; Driving continuous AI innovation in financial services Capital One’s approach underscores a broader truth for enterprise technology leaders: driving measurable value with AI requires moving beyond off-the-shelf software toward deeply customized, highly governed architectures. By combining fine-tuned open-weight models, a multi-agent orchestration harness, and proprietary data assets, the bank has established a repeatable blueprint for deploying scalable AI in financial services. &quot;All of those ingredients were absolutely critical to differentiating in this space and hitting the quality bars as well as the cost and latency thresholds we set for ourselves,” Vanee said. As the company expands these capabilities across new use cases, its enterprise platform approach helps to ensure that technical breakthroughs translate into safer, faster, and more personalized experiences for its millions of customers. Sponsored articles are content produced by a company that is either paying for the post or has a business relationship with VentureBeat, and they’re always clearly marked. For more information, contact sales@venturebeat.com .",
-      "source": "VentureBeat",
-      "category": "AI",
-      "published": "2026-08-13T14:00:00+00:00",
-      "sent_at": "2026-08-13T14:36:09.020851+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/979466/microsoft-copilot-365-app-unified-experience",
-      "title": "Microsoft is combining its Copilot apps ahead of a ‘super app’",
-      "summary": "Microsoft is finally beginning to combine its consumer and commercial Copilot AI assistants into a single \"super app\" interface, starting with the Copilot and Microsoft 365 Copilot apps. Both personal and work accounts will be moved to the new unified app, which recycles the \"Microsoft Copilot\" name but features an updated app icon. The single [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-08-13T13:30:00+00:00",
-      "sent_at": "2026-08-13T14:36:09.020851+00:00"
-    },
-    {
-      "link": "https://www.netlify.com/blog/one-prompt-11-models-very-different-results/",
-      "title": "Choosing an AI model: one prompt, 11 models, different results",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-13T13:05:29+00:00",
-      "sent_at": "2026-08-13T14:36:09.020851+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/desktops/mini-pcs/geekom-it13-max-2026-review-meteor-lake-rides-again-in-a-usd799-mini-pc",
-      "title": "Geekom IT13 Max 2026 review: Meteor Lake rides again in a $799 mini PC",
-      "summary": "Geekom mates an Intel Meteor Lake Core Ultra 9 processor with soldered 24GB DDR5 dual-channel RAM to conjure up an attractively specified and priced mini PC for the RAMpocalypse era.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-13T13:05:00+00:00",
-      "sent_at": "2026-08-13T14:36:09.020851+00:00"
-    },
-    {
-      "link": "https://venturebeat.com/orchestration/writer-says-its-new-palmyra-x6-model-cuts-ai-agent-costs-by-52-as-token-spending-surges",
-      "title": "Writer says its new Palmyra X6 model cuts AI agent costs by 52% as token spending surges",
-      "summary": "Writer , the enterprise AI agent platform used by Fortune 500 companies including Accenture, Uber, and Vanguard, released its new flagship model Palmyra X6 today, alongside a rebuilt agent orchestration &quot;harness&quot; and new governance tools designed to give IT leaders control over runaway token spending. The headline numbers are striking: Writer says its agent product now operates at an average 52% lower cost, with a 48% improvement in speed and a 10% improvement in quality when paired with Palmyra X6. But the more consequential story may be how the company got there — and what its choices reveal about where the enterprise AI market is heading. Palmyra X6 is not trained from scratch. It is a post-trained version of GLM-5.2 , the open-weight mixture-of-experts model from Beijing-based Z.ai , formerly Zhipu AI — a fact Writer discloses openly in its technical report, and one that places the San Francisco company at the center of one of the industry&#x27;s most charged debates: whether American enterprises should build on Chinese open-source foundations. &quot;This model is in no way, shape, or form connected to any of its original developers. It is fully run on our U.S. infrastructure,&quot; Matan-Paul Shetrit, Writer&#x27;s director of product management, told VentureBeat in an exclusive interview ahead of the announcement. Dan Bikel, who leads Writer&#x27;s AI research, put it more bluntly: &quot;It&#x27;s very much a Palmyra model, and we just happen to grab the floating point numbers as the starting point, and train from there.&quot; Why AI agents are blowing up enterprise budgets in ways chatbots never did Writer&#x27;s announcement lands at a moment when the economics of agentic AI have moved to the center of enterprise buying decisions. Unlike a chatbot, which typically generates one answer per user request, an AI agent turns a single request into repeated rounds of planning, retrieval, tool calls, validation, and retries — with every loop consuming metered tokens. The user sees one answer; the invoice reflects the entire loop. The scale of the problem is becoming clear. Goldman Sachs forecasts that token consumption will multiply 24 times between 2026 and 2030 , reaching 120 quadrillion tokens per month, driven not by more people asking questions but by always-on enterprise agents. The same analysis warned that falling per-token prices do not guarantee falling bills: if an agentic task draws 20 times more tokens while unit prices fall 75%, total charges still rise fivefold. &quot;The enterprise wants token consumption to explode — it means adoption is happening — but they need costs to flatten,&quot; said Waseem AlShikh, Writer&#x27;s CTO and co-founder, in a statement. Shetrit framed the cost problem as the primary obstacle to enterprise AI adoption — more so than model capability itself. &quot;The biggest barrier today to enterprise expansion using AI is actually not model capabilities in most cases; it&#x27;s actually the cost around them,&quot; he said. &quot;The reality today is, in most cases, the alternative for AI is not another AI, it is human labor.&quot; Asked whether cutting customers&#x27; token consumption would cannibalize Writer&#x27;s own per-token revenue, Shetrit rejected the premise. &quot;Reducing the cost is not hurting my bottom line. It&#x27;s actually expanding it, because it&#x27;s expanding the TAM of opportunity within an organization,&quot; he said, arguing that lower per-task costs unlock workflows enterprises would otherwise never automate. That argument echoes a pattern familiar from the cloud era, where unit prices fell for a decade while total bills rose as consumption expanded — a dynamic Writer is explicitly betting will repeat with agents, and betting it can profit from. Inside Palmyra X6: how 626 training examples fine-tuned a 744-billion-parameter model Palmyra X6 is a 744-billion-parameter mixture-of-experts model with roughly 40 billion active parameters per token, inheriting GLM-5.2&#x27;s architecture unchanged, according to Writer&#x27;s technical report. The company&#x27;s contribution is a deliberately conservative post-training recipe: a technique called anchored supervised fine-tuning (ASFT) , applied to a remarkably small corpus of just 626 curated synthetic agentic trajectories, trained for a single epoch at a low learning rate. The tiny dataset is the point, not a limitation. ASFT pairs a token-weighting scheme with a KL-divergence &quot;anchor&quot; that penalizes the fine-tuned model for drifting too far from a frozen copy of the base model — teaching new tool-use behaviors without eroding the general capabilities the base already has. Writer also swapped the standard Adam optimizer for Muon , a newer method that treats weight matrices as geometric objects, on the model&#x27;s core weight matrices. &quot;There&#x27;s a whole string of papers following a quote-unquote &#x27;less is more&#x27;&quot; philosophy, Bikel said, referencing research showing that &quot;small, extremely high quality data sets go a really long way.&quot; He added: &quot;That&#x27;s the philosophy — one of the philosophies — that we followed when building this model, and it showed. It allowed us to optimize for our customers at lower cost to do the work of optimization, and that ultimately yielded a lower cost model for us and for them.&quot; The training data itself is fully synthetic — every plan, tool call, and final answer machine-generated by teacher models, then filtered through structural quality gates, a model-based verifier, and a two-model LLM judging panel before entering training. That continues a long-standing Writer practice: the company&#x27;s Palmyra X 004 was trained almost entirely on synthetic data for roughly $700,000 back in 2024, as TechCrunch reporte at the time, and Palmyra X5 required about $1 million in GPU hours, according to SiliconANGLE . On Writer&#x27;s internal evaluations — nine capabilities spanning grounding and retrieval, tool use, content generation, sub-agent delegation, and brand voice — X6 scored an average of 0.87 out of 1.00, edging out Anthropic&#x27;s Claude Opus 4.8 (0.86), Claude Sonnet 4.6 (0.85), OpenAI&#x27;s GPT-5.5 (0.80), and Google&#x27;s Gemini 3.1 (0.77). The price gap is the real differentiator: Writer prices X6 at $2 per million input tokens and $8 per million output tokens, versus 15/75 for Opus 4.8. The company says X6 completes tasks in 26 seconds on average and can work unattended toward a single goal for up to eight hours. Writer is candid that internal benchmarks invite skepticism. Asked directly whether the company would publish its methodology after grading its own homework, Bikel said the technical report covers &quot;both the protocol we used to do our public benchmarking as well as our internal evaluations.&quot; He described public benchmarks as sanity checks rather than targets: &quot;We do things like public benchmarks to let us know that we&#x27;re climbing the right hill and that we don&#x27;t have any sort of huge gaps, but we don&#x27;t slavishly follow them either, because that&#x27;s not really serving our customers.&quot; The China question: what building on GLM-5.2 means for enterprise security and trust Writer&#x27;s choice of base model would have been unthinkable for an American enterprise vendor two years ago. Today it reflects a market reality: GLM-5.2 , released in June under the permissive MIT license, is arguably the most capable openly available model in the world. Independent analysis house Artificial Analysis scored it at 51 on its Intelligence Index — ahead of DeepSeek V4 Pro , Kimi K2.6 , and even some of Google&#x27;s Gemini models on agentic tasks — while undercutting U.S. flagship API pricing many times over, as European tech outlet Trending Topics reported. Writer&#x27;s press release calls it &quot;the strongest available open-weight model.&quot; The open-weight surge carries genuine baggage. An August report from AI safety nonprofit SaferAI found that GLM-5.2 refused none of the offensive cyber or biology tasks it was given via Z.ai&#x27;s public API, and that Z.ai published no safety framework or pre-deployment risk assessment — a gap that widens once anyone can download and modify the weights. Writer&#x27;s answer is that provenance and post-training matter more than origin. Bikel emphasized that the company &quot;grabbed the weights off of the U.S. Hugging Face &quot; and trained entirely on American infrastructure; the technical report states all datasets were synthesized and stored in the U.S., and all training hardware was located in the U.S. The company also ran what it describes as an unusually rigorous, pre-registered model-risk evaluation covering political bias, censorship, factuality, and refusal behavior — 19,674 evaluated responses scored by blinded judges — comparing X6 against its GLM-5.2 base and four frontier control models. On the Washington Post&#x27;s ModelSlant political-bias evaluation, Writer says X6 presented both sides of hot-button questions 80% of the time, the highest rate of any model tested, and answered politically sensitive prompts that DeepSeek V4 refused outright. On the FORTRESS adversarial safety benchmark , X6 with its deployment system message scored 8.6 points higher on adversarial safety than the raw GLM-5.2 base, at negligible cost to benign helpfulness. &quot;We&#x27;ve run extensive benchmarking around bias, around censorship,&quot; Shetrit said, &quot;and the work Dan and the team has done has actually proven that this model is actually significantly better than not just open source alternatives, but any closed source alternative in the market at the time of the benchmarking.&quot; The report does hedge in one notable place: while English-language behavior showed no statistically robust political asymmetry, &quot;the behavior was shown to vary by language&quot; — a candid admission that 626 fine-tuning trajectories do not scrub every trace of a base model&#x27;s training. The harness effect: why orchestration may matter more than the model itself Perhaps the most strategically interesting claim in Writer&#x27;s announcement has nothing to do with Palmyra X6 at all. The company says its rebuilt Writer Agent harness — the orchestration layer that plans tasks, batches work, delegates to sub-agents, and manages context — cuts costs by 41% and completes tasks 44% faster across every model it tested, including third-party models from Anthropic and OpenAI , while maintaining quality. Writer published the finding in an accompanying research paper on what it calls &quot; The Harness Effect .&quot; That raises an obvious question, which VentureBeat put to the company: if the harness alone delivers most of the savings on any model, why build a model at all? Shetrit&#x27;s answer was about control. &quot;I cannot control if a lab deprecates their model. I cannot control what data they use in their model,&quot; he said. &quot;Where when I build the model, I have significant moral control, and I can answer the tough questions that enterprise customers ask me.&quot; Bikel added that the model and harness were developed together: &quot;This model was built and essentially co-evolved with the harness... We know that we have a flagship product, Writer Agent . We want that to work really, really well with this model, and sure enough, it does. And we take that into account during model development, and that&#x27;s something that is not possible if you don&#x27;t build your own model.&quot; Notably, Writer is simultaneously hedging. With this release, the company extends multi-model support to Writer Agent , letting admins enable models from Anthropic , OpenAI , and cloud providers including Microsoft Azure , AWS Bedrock , and Nvidia NIM — even image-generation models, a category Writer does not build. The message to CIOs is disarmingly simple: use our model because it is cheapest and best for your workflows, but the platform saves you money either way. New governance tools aim to end surprise AI bills before they start The third leg of the release targets a quieter enterprise pain point: nobody in the C-suite knows what the agents are spending. New governance tools give administrators a centralized view of agent usage across the business, per-workflow analytics for the company&#x27;s shareable &quot; Playbooks &quot; and &quot; Skills &quot; automations, and consumption controls with alerts and spending limits. Asked whether the introduction of spending controls implied that customers had been receiving surprise bills, Shetrit reframed it as an adoption enabler rather than damage control. &quot;How do we build the tools to allow you as the CIO, CISO in a company, to feel comfortable both on the security and spend, so you can expand AI usage in your organization,&quot; he said. In his telling, visibility is what lets leaders say yes: businesses with clear cost data &quot;are actually looking to expand AI adoption to use cases that they would never have touched before.&quot; The feature set tracks a broader shift in how enterprises budget for AI. As Forbes analysis of the token price wars argued, sophisticated buyers are learning to model cost per successful task — counting retries, tool calls, and escalations — rather than multiplying expected calls by the advertised rate card. Writer is effectively productizing that discipline, turning what has been a finance-team spreadsheet exercise into a native platform capability. It also completes a governance arc the company has been building for over a year. Writer shipped its unified agent experience with admin controls last November, then added agent Skills and workflow analytics in March, according to earlier company announcements. Thursday&#x27;s release closes the loop by attaching a price tag — and a spending limit — to every workflow. Writer , founded in 2020 by May Habib and Waseem AlShikh, raised $200 million at a $1.9 billion valuation in late 2024, and has built its business on regulated, high-stakes deployments rather than consumer scale. Shetrit made no apology for the narrowness of that focus. &quot;The privilege of working and focusing on enterprise use cases is that I don&#x27;t need my model to be able to write a French sonnet,&quot; he said. &quot;When you don&#x27;t try to do everything, you can focus on your customer problem and needs.&quot; He was equally direct about identity: &quot;We are not a research lab converted to a consumer product now dabbling in enterprise. We are first and foremost an enterprise company that serves enterprise customers, and we evaluate our decisions within that lens. Which means, if we think building things from scratch is the right decision, that&#x27;s what we will do. But if we think there are other alternatives out there in the market that serve our customers better, that&#x27;s what we will do.&quot; That pragmatism may be the release&#x27;s most important signal. A well-capitalized American AI company with five years of model-building experience has concluded that the frontier of value no longer lies in pretraining, but in the last mile: post-training open weights, engineering the harness around them, and handing the CFO a dashboard. If Writer is right, the frontier labs&#x27; moat narrows to the workloads where quality genuinely justifies a sevenfold price premium — and for everything else, the winning model is the one somebody else paid to pretrain. In an industry that has spent three years arguing about whose model is smartest, Writer is making a different wager: the enterprise AI race won&#x27;t be won by the company with the best floating point numbers, but by the one that knows what to do with them.",
-      "source": "VentureBeat",
-      "category": "AI",
-      "published": "2026-08-13T13:00:00+00:00",
-      "sent_at": "2026-08-13T13:01:15.855493+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/motherboards/maxsun-terminator-b850m-pro-ii-motherboard-review",
-      "title": "Maxsun Terminator B850M Pro II Motherboard Review: Comparable features, but US pricing is over MSRP",
-      "summary": "Maxsun’s Terminator B850M Pro II is a decent budget option in the Micro ATX form factor, but only if you can find it for the $199.99 MSRP.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-13T12:05:00+00:00",
-      "sent_at": "2026-08-13T13:01:15.855493+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/ddr5/get-16gb-of-ddr5-ram-free-when-you-buy-amds-9900x-and-an-asus-tuf-motherboard-usd659-newegg-combo-saves-usd274-and-you-get-a-free-240mm-aio",
-      "title": "Get 16GB of DDR5 RAM free when you buy AMD's 9900X and an Asus TUF motherboard — $659 Newegg combo saves $274, and you get a free 240mm AIO",
-      "summary": "Save $274 and snag 16GB of DDR5 RAM for free in this 3-item Newegg combo with Ryzen 9 9900X, Asus TUF Gaming X870E-Plus Wifi7, and 16GB of dual channel Team Group T-Force Vulkan RAM",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-13T11:50:20+00:00",
-      "sent_at": "2026-08-13T13:01:15.855493+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/tech-policy/2026/08/claudes-new-scarlet-letter-watermark-is-invisible-for-now/",
-      "title": "Claude's new Scarlet Letter watermark is invisible — for now",
-      "summary": "The mark flags anything Claude processed, even human writing it only edited.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-08-13T11:10:18+00:00",
-      "sent_at": "2026-08-13T13:01:15.855493+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/cyber-security/zoomsday-vulnerability-let-anyone-in-a-zoom-meeting-take-over-anybody-else-ai-assisted-research-only-used-20-prompts-to-find-an-exploit-to-hack-hundred-of-millions-of-people",
-      "title": "Critical 'Zoomsday' flaw enables total device takeover during Zoom calls — AI-assisted research only used 20 prompts to find an exploit to hack hundreds of millions of people.",
-      "summary": "Zoomsday vulnerability let anyone in a Zoom meeting take over anybody else. The vulnerability was developed with AI assistance and took research only used 20 prompts to find an exploit to hack hundred of millions of people.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-08-13T11:20:00+00:00",
-      "sent_at": "2026-08-13T11:51:56.492490+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/cpus/analysts-see-increasing-foundry-success-conviction-as-intel-ceo-puts-usd12-million-more-of-his-own-money-in-company-analysts-point-to-accelerating-foundry-progress-and-capex-expansion",
-      "title": "Analysts see 'increasing foundry success conviction' as Intel CEO puts $12 million more of his own money in company — analysts point to accelerating foundry progress and capex expansion",
-      "summary": "Intel's Lip-Bu Ran reportedly buys $12 million worth of Intel stock as analysts believe that the management is increasingly convinced about landing external customers.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-13T11:00:00+00:00",
-      "sent_at": "2026-08-13T11:51:56.492490+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/elon-musk-says-xai-will-increase-data-center-capacity-7x-by-2027-targeting-10-gigawatts-of-compute-up-to-usd500-billion-in-revenue-by-the-end-of-next-year",
-      "title": "Elon Musk says xAI will increase data center capacity 7x by 2027 — targeting 10 gigawatts of compute, up to $500 billion in revenue by the end of next year",
-      "summary": "Elon Musk expects xAI to increase its nameplate power draw to 10 GW by late 2027, which will increase its performance by orders of magnitude what is available to AI today.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-08-13T10:00:00+00:00",
-      "sent_at": "2026-08-13T10:58:21.325713+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/cerebras-shares-plunge-nearly-20-percent-after-missing-earnings-expectations-hardware-sales-drop-but-ai-cloud-revenue-climbs-281-percent",
-      "title": "Cerebras shares plunge nearly 20% after missing earnings expectations — hardware sales drop but AI cloud revenue climbs 281%",
-      "summary": "Cerebras keeps growing, but misses forecast as hardware sales dip amid explosive increase of AI cloud revenue.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-08-13T09:46:20+00:00",
-      "sent_at": "2026-08-13T10:58:21.325713+00:00"
     }
   ]
 }
