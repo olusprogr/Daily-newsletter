@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/pc-components/gpus/exclusive-dlss-5-has-already-been-ported-to-work-on-rtx-4000-series-graphics-cards-incompatible-cuda-instructions-get-patched-to-work-on-previous-gen-hardware",
+      "title": "DLSS 5 has already been ported to work on RTX 4000 Series graphics cards — incompatible CUDA instructions get patched to work on previous-gen hardware",
+      "summary": "One modder has reverse-engineered DLSS 5 to function on RTX 4000 series Ada Lovelace-based GPUs, porting incompatible CUDA instructions within the Neural Rendering DLL, enabling them to be read on previous-gen hardware.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-08-28T13:57:35+00:00",
+      "sent_at": "2026-08-28T14:52:20.340767+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/nvidia-denies-pausing-ai-cloud-commitments-initiative-after-reported-partner-backlash-report-claims-company-told-cloud-providers-it-could-only-lease-its-gpus-to-nvidia-approved-customers",
+      "title": "Nvidia denies pausing AI cloud commitments initiative after reported partner backlash — report claims company told cloud providers it could only lease its GPUs to Nvidia-approved customers",
+      "summary": "Nvidia denies putting AI cloud commitments initiative on hold despite reports that some deals were paused amid partner pushback over customer controls and concerns about potential antitrust scrutiny.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-08-28T13:13:58+00:00",
+      "sent_at": "2026-08-28T14:52:20.340767+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/micron-workers-increasingly-support-strike-over-bonus-pay-labor-union-wants-profit-sharing-scheme-as-employees-at-samsung-sk-hynix-enjoy-bonuses-worth-hundreds-of-thousands-of-dollars",
+      "title": "Micron workers increasingly support strike over bonus pay — labor union wants profit-sharing scheme, as employees at Samsung, SK hynix enjoy bonuses worth hundreds of thousands of dollars",
+      "summary": "80% of Micron workers in Taiwan have signaled that they're willing to go on strike if the company does not strike a deal over bonuses. The employees want to replace the current bonus system with a profit-sharing scheme, allowing them to take advantage of the AI-driven memory boom.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-08-28T13:07:55+00:00",
+      "sent_at": "2026-08-28T14:52:20.340767+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/08/28/anthropic-gets-its-first-court-win-over-the-pentagons-supply-chain-risk-label/",
+      "title": "Anthropic gets its first court win over the Pentagon’s supply chain risk label",
+      "summary": "A federal judge ruled the Trump administration illegally labeled Anthropic a supply chain risk, handing the AI company a victory as its second Pentagon lawsuit continues in Washington.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-28T12:46:12+00:00",
+      "sent_at": "2026-08-28T14:52:20.340767+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/08/28/meta-executive-leaves-for-openai-as-the-social-media-giant-faces-growing-scrutiny-in-india/",
+      "title": "Meta executive leaves for OpenAI as the social media giant faces growing scrutiny in India",
+      "summary": "Sandhya Devanathan will oversee some OpenAI operations across Southeast Asia and Australia in her new role.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-08-28T12:21:06+00:00",
+      "sent_at": "2026-08-28T14:52:20.340767+00:00"
+    },
+    {
+      "link": "https://github.com/openai/openai-python/blob/main/httpx2.md",
+      "title": "OpenAI: Migrating to HTTPX2",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-28T11:51:20+00:00",
+      "sent_at": "2026-08-28T14:52:20.340767+00:00"
+    },
+    {
+      "link": "https://www.reuters.com/legal/government/us-judge-blocks-pentagons-anthropic-blacklisting-2026-08-28/",
+      "title": "Pentagon's blacklisting of Anthropic was unlawful, US judge rules",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-28T11:25:30+00:00",
+      "sent_at": "2026-08-28T14:52:20.340767+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/policy/x-busts-200-000-strong-chinese-bot-farm-including-accounts-making-claims-about-ai-data-centers-and-electricity-suspect-accounts-posted-claims-about-pricing-and-grid-strain-to-manipulate-debate",
+      "title": "X busts 200,000-strong Chinese bot farm, including accounts making claims about AI data centers and electricity — suspect accounts posted claims about pricing and grid strain to 'manipulate' debate",
+      "summary": "The X Safety Team said that at least 200 bot accounts have been making posts to influence public opinion data centers and energy policy. The accounts share links to legitimate news stories and then add their own spin designed to inflame emotions.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-08-28T11:07:22+00:00",
+      "sent_at": "2026-08-28T14:52:20.340767+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/08/27/anthropic-and-openai-are-joining-the-ai-stage-at-techcrunch-disrupt-2026/",
       "title": "Anthropic and OpenAI are joining the AI stage at TechCrunch Disrupt 2026",
       "summary": "At TechCrunch Disrupt 2026, the AI Stage is back to dig into the single hottest topic in the community for the past few years, presented by Google for Startups.",
@@ -5426,168 +5498,6 @@
       "category": "AI",
       "published": "2026-08-14T14:27:14+00:00",
       "sent_at": "2026-08-14T15:20:46.680419+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/cargo-thieves-rammed-security-escorts-to-hijack-ai-hardware-shipments-in-california",
-      "title": "AI Cargo thieves ram security escorts to hijack hardware shipments in California — brazen thefts employ PIT maneuver, rear-ending tactics to secure goods for the black market",
-      "summary": "Cargo thieves knocked two private security escort vehicles out of action on California roads in recent months, then made off with millions of dollars in AI data center hardware.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-08-14T14:13:41+00:00",
-      "sent_at": "2026-08-14T14:16:03.786056+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/14/hyperscalers-might-regret-embracing-natural-gas-if-new-forecast-proves-correct/",
-      "title": "Hyperscalers might regret embracing natural gas if new forecast proves correct",
-      "summary": "Natural gas prices could triple in some parts of the U.S., which could saddle hyperscalers with massive bills to power their AI data centers.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-14T14:05:00+00:00",
-      "sent_at": "2026-08-14T14:16:03.786056+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/plaintiff-busted-trying-to-use-ai-prompt-injection-to-win-court-case-hides-text-instruction-in-filing-demands-ai-model-reviewing-the-text-should-side-with-him-rumbled-because-of-strange-white-spaces-in-text",
-      "title": "Plaintiff busted trying to use AI prompt injection to win court case, hides text instruction in filing — demands AI model reviewing the text should side with him, rumbled because of strange white spaces in text",
-      "summary": "A self-represented plaintiff in a Connecticut court added a hidden AI prompt injection attack in their filing in a failed attempt to influence a decision. The court bars them from submitting documents electronically and instead must print them and hand to the clerk of court.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-08-14T12:23:35+00:00",
-      "sent_at": "2026-08-14T12:57:16.510489+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/cpus/raptor-lake-is-a-core-part-of-the-portfolio-for-years-to-come-says-intel-theres-been-a-sudden-inrush-of-demand-for-lga-1700-chips-due-to-ddr5-prices",
-      "title": "Older Raptor Lake CPUs are a ‘core part of the portfolio’ for years to come, says Intel — there’s been a ‘sudden inrush of demand’ for LGA 1700 chips due to DDR5 prices",
-      "summary": "Intel has seen a “sudden inrush” of demand for Raptor Lake CPUs, and it says they’ll remain a part of the company’s lineup for desktop builders “for years to come.”",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-14T11:39:52+00:00",
-      "sent_at": "2026-08-14T11:47:21.580304+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/games/977646/msi-claw-8-ex-review-intel-panther-lake-handheld",
-      "title": "The MSI Claw EX is the most important handheld since Steam Deck — I still wouldn’t buy one",
-      "summary": "As The Verge's resident handheld reviewer, I have nearly every portable gaming PC on a shelf in my house. The MSI Claw 8 EX AI Plus is now the first one I reach for. Thanks to a next-gen Intel chip and improved MSI design, the Claw EX is the most powerful handheld that truly feels [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-08-14T11:00:00+00:00",
-      "sent_at": "2026-08-14T11:47:21.580304+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/cpus/intel-vp-robert-hallock-sets-nova-lake-expectations-teases-return-to-raptor-lake-for-ddr4-platforms-our-full-1-1-interview-transcript",
-      "title": "Intel VP Robert Hallock sets Nova Lake expectations, teases return to Raptor Lake for DDR4 platforms — our full 1:1 interview transcript",
-      "summary": "We speak to Robert Hallock, Intel VP & GM of Enthusiast Channel Business, about Nova Lake rumors, how the company is focusing on DIY builders during RAMageddon, and how Raptor Lake refresh induced a paradigm shift for the company.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-14T11:00:00+00:00",
-      "sent_at": "2026-08-14T11:47:21.580304+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2236912/deepseek-ai-models-get-four-times-pricier/",
-      "title": "DeepSeek's AI models are about to cost four times more",
-      "summary": "DeepSeek has announced price hikes for its V4 models.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-08-14T10:58:24+00:00",
-      "sent_at": "2026-08-14T11:47:21.580304+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/these-masturbation-consultants-were-hired-to-pleasure-themselves-using-ai/",
-      "title": "These ‘Masturbation Consultants’ Were Hired to Pleasure Themselves With AI",
-      "summary": "Joi AI hired 10 people to masturbate using AI companions as part of a monthlong “wellness” study. The company claims the practice could help “solve male loneliness.”",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-08-14T10:45:00+00:00",
-      "sent_at": "2026-08-14T10:58:16.818855+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/14/uber-and-pony-ai-plan-to-bring-2000-robotaxis-to-europe/",
-      "title": "Uber and Pony.ai plan to bring 2,000 robotaxis to Europe",
-      "summary": "The partnership is expanding beyond the initial market of Zagreb, Croatia to four additional European cities.",
-      "source": "TechCrunch",
-      "category": "Autonomes Fahren",
-      "published": "2026-08-14T10:44:30+00:00",
-      "sent_at": "2026-08-14T10:58:16.818855+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/desktops/gaming-pcs/start-your-pc-gaming-journey-with-this-usd1-100-1080p-gaming-rig-now-usd300-off-rtx-5060-rig-from-newegg-ships-with-a-10-core-intel-cpu-32gb-of-ram-and-a-1tb-ssd",
-      "title": "Start your PC gaming journey with this $1,100 1080p gaming rig, now $300 off — RTX 5060 rig from Newegg ships with a 10-core Intel CPU, 32GB of RAM, and a 1TB SSD",
-      "summary": "This pre-built ABS Cyclone Aqua comes with a ten-core Intel Core i5-14400F CPU, an Nvidia GeForce RTX 5060 GPU, a 1TB SSD, and 32GB of RAM, all for $1,099.99.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-14T10:43:57+00:00",
-      "sent_at": "2026-08-14T10:58:16.818855+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/nvidia-jetson-chip-found-in-russian-cruise-missile-ukraine-claims-presence-in-s-71-monochrome-weapon-may-indicate-use-of-ai-tech",
-      "title": "Nvidia Jetson chip found in Russian cruise missile, Ukraine claims — presence in S-71 'Monochrome' weapon may indicate use of AI tech",
-      "summary": "Ukraine intelligence claims that Russia's latest S-71 'Monochrome' cruise missiles use Nvidia's Jetson Orin NX modules with AI capabilities, allegedly for terminal guidance.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-08-14T10:30:00+00:00",
-      "sent_at": "2026-08-14T10:58:16.818855+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/people-are-marrying-chatbots-these-lawmakers-want-to-stop-them/",
-      "title": "People Are ‘Marrying’ Chatbots. These Lawmakers Want to Stop Them",
-      "summary": "Human-AI marriages are not currently recognized by US law. Some Republican state policymakers are drafting legislation to keep it that way.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-08-14T10:15:00+00:00",
-      "sent_at": "2026-08-14T10:58:16.818855+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/cooling/modder-straps-two-desktop-cpu-coolers-to-zte-nubia-z70-ultra-turns-smartphone-into-a-gaming-pc-snapdragon-8-elite-soc-with-24gb-of-ram-runs-the-witcher-3-at-1080p-ultra",
-      "title": "Modder straps two desktop CPU coolers to ZTE handset, turns smartphone into a gaming PC — Snapdragon 8 Elite SoC with 24GB of RAM runs The Witcher 3 at 1080p ultra",
-      "summary": "The heavily modified ZTE Nubia Z70 Ultra uses two full-size CPU coolers to keep its Snapdragon 8 Elite running under sustained loads, while Termux, Linux and compatibility layers turn it into a makeshift desktop PC.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-14T10:00:00+00:00",
-      "sent_at": "2026-08-14T10:58:16.818855+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/cpus/amd-borrows-usd4-75-billion-for-general-corporate-purposes-company-gives-no-insight-into-how-it-plans-to-spend-cash-injection",
-      "title": "AMD borrows $4.75 billion for 'general corporate purposes' — company gives no insight into how it plans to spend cash injection",
-      "summary": "In a surprising move, AMD announces plans to raise $4.75 billion and does not give a clue how it plans to spend them.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-14T09:48:59+00:00",
-      "sent_at": "2026-08-14T09:57:03.528200+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/motherboards/gigabyte-resurrects-8-year-old-b450-chipset-with-new-motherboards-am4-budget-king-returns-as-another-ddr4-solution-to-exorbitant-ram-prices",
-      "title": "Gigabyte resurrects 8-year-old B450 chipset with new motherboards — AM4 budget king returns as another DDR4 solution to exorbitant RAM prices",
-      "summary": "Gigabyte has quietly launched the B450M D3HP and B450M D3HP WIFI6E motherboards based on the AMD B450 chipset, which launched in 2018.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-14T09:43:55+00:00",
-      "sent_at": "2026-08-14T09:57:03.528200+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/cyber-security/just-one-instruction-on-amds-2015-era-cpus-gets-you-access-to-platform-security-processor-microcode-and-system-management-interface-exploit-for-15h-and-16h-chip-families-cracks-open-secret-memory-areas",
-      "title": "Just one instruction on AMD's 2015-era CPUs gets you access to Platform Security Processor, microcode, and System Management Interface — exploit for 15h and 16h chip families cracks open secret memory areas",
-      "summary": "Just one instruction on AMD CPUs gets you access to Platform Security Processor, microcode, and System Management Interface — exploit for 15h and 16h chip families cracks open secret memory areas",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-14T09:33:09+00:00",
-      "sent_at": "2026-08-14T09:57:03.528200+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/980160/apple-intelligence-china-custom-ai-model-alibaba",
-      "title": "Apple trained its own AI model for China with help from Alibaba",
-      "summary": "Apple has reportedly trained a custom AI model for the China market alongside domestic tech giant Alibaba, a rare cross-border partnership that cuts across growing tensions between Beijing and Washington. The China-focused large language model was developed in partnership with Alibaba and trained with the company's support, Reuters reports, citing three unnamed people familiar with [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-08-14T09:21:17+00:00",
-      "sent_at": "2026-08-14T09:57:03.528200+00:00"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/08/14/1141431/job-titles-space-travel-agent-roman-chiporukha/",
-      "title": "Job titles of the future: Space travel agent",
-      "summary": "Roman Chiporukha has long turned wild travel dreams into reality. Over two decades as co-owner of the luxury lifestyle firm Roman &#38; Erica, he has orchestrated everything from the construction of a client’s superyacht to vacations in the Bahamas at a location so private that guests must sign an NDA.&#160; The experiences earned him “the&#8230;",
-      "source": "MIT Technology Review",
-      "category": "Hardware",
-      "published": "2026-08-14T09:00:00+00:00",
-      "sent_at": "2026-08-14T09:57:03.528200+00:00"
     }
   ]
 }
