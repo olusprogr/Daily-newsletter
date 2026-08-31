@@ -1,6 +1,42 @@
 {
   "items": [
     {
+      "link": "https://www.wired.com/gallery/best-magsafe-grips/",
+      "title": "The 9 Best MagSafe Phone Grips for Your Butter Fingers (2026)",
+      "summary": "Keep your phone firmly in hand and add some personality with these comfortable, durable, and nifty smartphone grips.",
+      "source": "Wired",
+      "category": "Hardware",
+      "published": "2026-08-31T10:00:00+00:00",
+      "sent_at": "2026-08-31T10:29:26.483698+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/man-uses-robot-vacuum-to-covertly-record-his-wifes-affair-wins-divorce-settlement-but-gets-sentenced-to-prison-for-making-an-illegal-recording-husband-lands-behind-bars-after-counter-suit-over-privacy-rights",
+      "title": "Man uses robot vacuum to covertly record his wife's affair, wins divorce settlement but gets sentenced to prison for making an illegal recording — Husband lands behind bars after counter-suit over privacy rights",
+      "summary": "A Taiwanese man sued his wife for having an affair using recordings from a robot vacuum to prove his case. He won, but got sued by the wife for infringing on her personal privacy and was fined the equivalent of 30% of what he earned as compensation previously.",
+      "source": "Tom's Hardware",
+      "category": "Innovationen",
+      "published": "2026-08-31T09:30:00+00:00",
+      "sent_at": "2026-08-31T10:29:26.483698+00:00"
+    },
+    {
+      "link": "https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/",
+      "title": "Breaking Claude Code Opus 5 Auto Mode",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-31T07:49:18+00:00",
+      "sent_at": "2026-08-31T10:29:26.483698+00:00"
+    },
+    {
+      "link": "https://tokenstead.ai/guides/eu-ai-act-first-enforcement-security-rfis",
+      "title": "The EU has begun enforcing the AI Act: first RFIs to model providers",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-08-31T03:45:57+00:00",
+      "sent_at": "2026-08-31T10:29:26.483698+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/08/30/the-u-s-is-building-barriers-around-drones-and-robots-china-still-has-scale/",
       "title": "The U.S. is building barriers around drones and robots, but China has scale to get around them",
       "summary": "The U.S. is shutting out more foreign-made drones and robots. China’s scale means the global competition may simply move elsewhere.",
@@ -5255,69 +5291,6 @@
       "category": "AI",
       "published": "2026-08-17T10:30:00+00:00",
       "sent_at": "2026-08-17T11:28:54.887565+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/3d-printing/desktop-uv-printers-and-wild-custom-builds-take-over-open-sauce-2026-usd1-700-full-color-printers-flash-cured-resin-and-a-rideable-speeder-bike",
-      "title": "Desktop UV printers and wild custom builds take over Open Sauce 2026 — $1,700 full-color printers, flash-cured resin, and a rideable speeder bike",
-      "summary": "If you want to see the bleeding edge of 3D printing tech, you go to FormNext in Frankfurt, Germany. If you want to see the latest in consumer electronics, you go to CES in Las Vegas. If you want to see what it’s like to microwave your own head, you go to Open Sauce in San Mateo, California.",
-      "source": "Tom's Hardware",
-      "category": "Innovationen",
-      "published": "2026-08-17T09:45:00+00:00",
-      "sent_at": "2026-08-17T10:27:50.443364+00:00"
-    },
-    {
-      "link": "https://duti.dev/blog/2026/spr/",
-      "title": "HackEurope 2026: A short rant on AI and hackathons",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-17T07:28:43+00:00",
-      "sent_at": "2026-08-17T10:27:50.443364+00:00"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/08/17/1141568/moxie-when-kids-robot-best-friend-dies/",
-      "title": "What happens when a kid’s robot best friend dies?",
-      "summary": "When Xander first met Moxie, she taught him that when he was anxious, he could calm down by exhaling through his lips so that he buzzed like a bee. They practiced breathing like dragons to manage feeling mad and sniffing like bunnies to boost his energy. But in the six years they’ve known each other,&#8230;",
-      "source": "MIT Technology Review",
-      "category": "Innovationen",
-      "published": "2026-08-17T09:00:00+00:00",
-      "sent_at": "2026-08-17T09:37:04.559951+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2237916/openai-reportedly-disbanded-its-preparedness-team-as-part-of-streamlining-process/",
-      "title": "OpenAI reportedly disbanded its preparedness team as part of a 'streamlining' process",
-      "summary": "As part of a restructuring, OpenAI reportedly disbanded a team that assesses the potential for catastrophic risks with its models.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-08-17T08:45:09+00:00",
-      "sent_at": "2026-08-17T09:37:04.559951+00:00"
-    },
-    {
-      "link": "https://www.cst.cam.ac.uk/news/red-queen-hypothesis-new-way-forward-self-improving-ai",
-      "title": "Red queen hypothesis – A new way forward for self-improving AI",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-16T20:01:13+00:00",
-      "sent_at": "2026-08-17T07:49:10.301074+00:00"
-    },
-    {
-      "link": "https://www.cnbc.com/2026/08/14/nvidia-discloses-21-billion-stake-in-spacex-at-end-of-second-quarter.html",
-      "title": "Nvidia discloses $21B stake in SpaceX at end of second quarter",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Hardware",
-      "published": "2026-08-16T18:40:54+00:00",
-      "sent_at": "2026-08-17T05:32:06.492251+00:00"
-    },
-    {
-      "link": "https://www.reuters.com/business/anthropic-ipo-valuation-hinges-190-200-billion-2028-revenue-forecast-sources-say-2026-08-15/",
-      "title": "Anthropic IPO valuation hinges on $190-200B 2028 revenue forecast",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-16T21:00:25+00:00",
-      "sent_at": "2026-08-17T03:45:56.534403+00:00"
     }
   ]
 }
