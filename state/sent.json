@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.theverge.com/tech/986236/smartphones-september-ifa-apple-iphone-oppo-vivo-xiaomi",
+      "title": "Get ready for a really busy month of smartphones",
+      "summary": "We're not even half a day into September, and two new smartphones have already launched: the Poco F9 Pro and F9 Ultra. We're expecting more this week, as the IFA trade show kicks off in Berlin, before we get new iPhones a week after that. And that's only the beginning of what promises to be [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-09-01T13:00:00+00:00",
+      "sent_at": "2026-09-01T13:03:45.254092+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/986378/nvidia-dlss-5-launch-nba-2k27",
+      "title": "Nvidia&#8217;s controversial DLSS 5 arrives September 3rd and requires serious GPU horsepower",
+      "summary": "Nvidia is officially launching DLSS 5 this week, following a divisive announcement in March where we likened the AI upscaling tech to a \"real-time generative AI filter for video games\" and \"motion smoothing for video games, but worse.\" DLSS 5 will officially be available on RTX 50-series desktop and laptop GPUs and through GeForce Now [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-01T13:00:00+00:00",
+      "sent_at": "2026-09-01T13:03:45.254092+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/games/986980/nvidias-dlss-5-explained",
+      "title": "Nvidia’s DLSS 5, explained",
+      "summary": "Nvidia knows that DLSS 5 left a bad first impression. In March, many gamers took one look at Resident Evil Requiem protagonist Grace Ashcroft's DLSS 5-ified face and declared it AI slop. So this week, the company's re-introducing its controversial \"neural rendering\" with firm messaging about how it \"preserves artistic intent,\" \"respects the rendered frame,\" [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-01T13:00:00+00:00",
+      "sent_at": "2026-09-01T13:03:45.254092+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2248399/nvidia-dlss-5-launches-nba-2k27-september-3/",
+      "title": "NVIDIA's DLSS 5 launches with NBA 2K27 on September 3, but there's little reason for excitement",
+      "summary": "NVIDIA's controversial DLSS 5 finally arrives this week, but there's little reason to celebrate it.",
+      "source": "Engadget",
+      "category": "Hardware",
+      "published": "2026-09-01T13:00:00+00:00",
+      "sent_at": "2026-09-01T13:03:45.254092+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2243520/poco-f9-ultra-is-a-midrange-phone-with-a-flagship-processor-and-185hz-display/",
+      "title": "Poco's F9 Ultra is a midrange phone with a flagship processor and a 185Hz display",
+      "summary": "Poco's newest smartphone isn't headed to the US, but you might want it to.",
+      "source": "Engadget",
+      "category": "Hardware",
+      "published": "2026-09-01T12:45:00+00:00",
+      "sent_at": "2026-09-01T13:03:45.254092+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/09/01/tesla-autopilot-fsd-crashes-hidden-data/",
+      "title": "Tracking the fatal Tesla Autopilot and FSD crashes hidden in its data",
+      "summary": "Tesla reports its Autopilot and “Full Self-Driving” crashes to the federal government, as it’s required to — and then blacks out almost everything in those reports, so the public never learns what happened in those crashes. Tesla always end up blaming the driver. We’re matching those redacted reports, one by one, to real fatal crashes that were covered in the news as ordinary accidents. This is a running investigation, and we’ll add each crash we confirm to this page. You can view this as an investigative hub keeping track of our ongoing investigation. more…",
+      "source": "Electrek",
+      "category": "Autonomes Fahren",
+      "published": "2026-09-01T12:40:56+00:00",
+      "sent_at": "2026-09-01T13:03:45.254092+00:00"
+    },
+    {
+      "link": "https://www.technologyreview.com/2026/09/01/1143199/the-download-engineered-microbes-openai-safety-culture/",
+      "title": "The Download: engineered microbes for crops, and OpenAI’s culture problem",
+      "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. How engineered microbes could help feed the world’s crops Fertilizer is crucial for the global food supply, but making it uses a lot of energy and produces a lot of emissions.&#8230;",
+      "source": "MIT Technology Review",
+      "category": "AI",
+      "published": "2026-09-01T12:10:00+00:00",
+      "sent_at": "2026-09-01T13:03:45.254092+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/gpus/nvidias-top-end-rtx-5090-gaming-gpu-now-costs-at-least-usd5-000-blackwell-cards-continue-to-endure-drastic-price-hikes",
+      "title": "Nvidia's top-end RTX 5090 gaming GPU now costs at least $5,000 — Blackwell cards continue to endure drastic price hikes",
+      "summary": "The entire PC hardware industry is in shambles when it comes to consumer products, and GPUs are one of the most affected components. Everything from budget options to high-end models is now significantly more expensive than what it could be had for a year ago.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-01T12:04:18+00:00",
+      "sent_at": "2026-09-01T13:03:45.254092+00:00"
+    },
+    {
       "link": "https://venturebeat.com/technology/openclaw-2-0-is-here-what-it-means-for-enterprises",
       "title": "OpenClaw 2.0 is here, ushering in the era of 'multiplayer' AI coding: What it means for enterprises",
       "summary": "The viral fervor we saw earlier this year around OpenClaw, the open source AI harness that turns powerful language models into autonomous workers the user can message via their favorite channels (Telegram, iMessage, WhatsApp, Discord etc), has cooled off substantially from its peak in March 2026. But over the weekend, OpenClaw&#x27;s creator Peter Steinberger and current team of co-developers gave the world — especially enterprises — a reason to look at it again, announcing OpenClaw 2.0 , billed as the most significant update to the harness and surrounding platform yet. OpenClaw 2.0 seeks to transform what began largely as a personal agent harness into something increasingly designed for teams, shared infrastructure and enterprise workflows. OpenClaw 2.0 introduces a rebuilt browser interface that brings conversations, files, approvals, configuration and live agent activity into a common workspace. It adds shared cloud sessions and multi-user collaboration. And it expands the security model with stronger sandboxing, role-based permissions, approval controls, secrets handling and auditing. Together, those additions move OpenClaw closer to being infrastructure that an organization could deploy for employees rather than simply a powerful agent an individual developer runs locally. They also sharpen a competitive question surrounding the project: whether OpenClaw has addressed the security and isolation concerns that helped inspire newer alternatives such as NanoClaw. The answer is increasingly yes at the capability level — but not necessarily by default. OpenClaw wants to become the shared agent layer Released under the official name of v2026.8.1 , the update spans installation, messaging, memory, skills, models, automations, browser and native applications, plugins and security. Steinberger described the development of OpenClaw 2.0 as an exercise in using the product to build itself. “Two months ago, we started the mission to ‘build OpenClaw with OpenClaw,’” Steinberger wrote on X early on August 31. Over that period, he said, OpenClaw gradually moved its team away from individual local coding harnesses and toward team.openclaw.ai, a shared agent environment aware of what team members are working on. “Multiplayer coding + infinite compute with nodes and cloud sessions has been a game changer for how we build,” Steinberger wrote, adding that local harnesses now “feel like relics of the past.” That claim points toward one of the more important changes in OpenClaw’s enterprise proposition. The dominant model for AI coding agents has generally been individual: a developer runs an agent in a terminal, IDE or desktop application, gives it access to a repository and lets it execute work within that environment. OpenClaw 2.0 is pushing toward something different. Agent sessions can become persistent workspaces that outlive a single terminal or employee. They can be shared with colleagues, executed across other machines or cloud workers, and supervised through a browser. For enterprises, that potentially turns the agent from an employee-level productivity application into a shared operational layer. A new UI could broaden OpenClaw beyond developers The redesigned Control UI is central to that strategy. OpenClaw has shifted away from an Overview-first web application and made conversations the primary interface. Threads sit in a sidebar, while the active conversation occupies the main workspace. Files, approvals, settings and ongoing agent activity remain accessible around it. The design deliberately brings OpenClaw closer to the interaction model employees already know from OpenAI&#x27;s ChatGPT, Anthropic&#x27;s Claude, Google&#x27;s Gemini and other conversational AI products. That lowers an important barrier to enterprise adoption. Open-source agent frameworks are often powerful precisely because they expose low-level configuration, terminals, tools and runtime controls. Those same characteristics can make them difficult to deploy beyond engineering organizations. OpenClaw 2.0 attempts to preserve the underlying control while putting a conversational interface on top of it. An employee can ask an agent to perform work without treating the terminal as the primary product interface. But OpenClaw does not hide what is happening underneath. The Control UI can surface session files, terminal activity, Git-backed changes, pull-request state, browser activity and interactive dashboards. The release also places more emphasis on observability during agent execution. Tool calls and results are paired more clearly, file changes can appear as focused diffs, command activity is easier to inspect, and long-running background tasks can remain visible alongside the conversation. That combination matters for enterprise use. Employees get a simpler interface for delegating work. Technical users retain access to the artifacts and execution state behind the conversation. Administrators gain a centralized place to configure and supervise the system. The redesigned Settings workspace now encompasses agents, memory, plugins, MCP servers, devices, communication channels and device pairing. OpenClaw also consolidates model-provider administration, including credential status and, where providers expose it, model availability, quota, account balance, budget and spending information. Limited-access browser users can request administrator privileges rather than automatically receiving them, with another administrator required to approve the escalation. These are not especially flashy agent features. For companies deploying AI systems to dozens or hundreds of employees, they may be among the most important additions in the release. Multiplayer sessions turn agent context into shared context OpenClaw 2.0 also expands the agent from a personal workspace into a collaborative one. Shared cloud sessions allow another employee to enter work already in progress without discarding the context accumulated by the agent. Multi-user Gateways — the service that connects users and agents to tools, files, credentials and other resources — can track who created a conversation and which prompts were submitted by identified participants. Owners and administrators can determine whether another user can read a session, suggest changes, work in draft mode or participate directly. The interface adds session ownership, participant attribution, presence and even typing indicators. For coding teams, that introduces a workflow closer to collaborative software development than traditional AI chat. A developer could initiate a task and allow an agent to work on it remotely. Another engineer could inspect the resulting changes. A senior engineer or administrator could approve an operation requiring additional privileges. The work does not have to remain attached to the laptop or terminal where it started. Sessions can also move execution to paired devices or cloud workers while maintaining the broader workspace. For enterprises experimenting with long-running agents, that is significant. Persistent agents need mechanisms for shift changes, escalation, supervision and ownership transfer. Otherwise, organizations simply create fleets of personal agents whose state disappears into individual user environments. OpenClaw is attempting to turn that state into collaborative infrastructure. Already, some teams outside the developers of the open source project are adopting it. Colin Johnson, CEO of marketing metrics software firm Solvely , described a similar shift in his own development workflow in a post on X. His team had already been using OpenClaw agents through Discord, where developers could assign tasks, run commands and interact with their development environment. But he said that model still felt like “messaging a bot”: developers could share access to an agent without actually sharing the agent’s working context. The new multiplayer WebUI changed that, he wrote, because two developers could open the same live session, see the same history and artifacts, and add information without first exporting or reconstructing what the agent had already done. “We were working inside the same context,” Colin wrote. In one example, another developer was taking over a project he had been working on; instead of preparing a traditional handoff document, Colin joined the developer’s existing agent thread and added the missing project context directly. “The session itself became the handoff document,” he wrote. For enterprise teams, that is a useful illustration of why persistent multiplayer sessions may matter beyond convenience: agent context can become a shared work artifact rather than information trapped inside one employee’s private conversation. Colin’s deployment also illustrates both the enterprise potential and the remaining security boundary. His team runs its OpenClaw Gateway on a development server reachable through GitHub authentication, Cloudflare Access and a Cloudflare Tunnel, with the Gateway itself listening only on the server’s loopback interface rather than an exposed public port. But he explicitly cautioned that this does not make the shared Gateway a multitenant environment. The developers already trust one another with the repositories, tools and agent capabilities behind it. As he put it, Cloudflare controls who can enter the workspace, while OpenClaw tracks who created, owns or contributed to the work; stronger separation still requires separate infrastructure. Security becomes much more enterprise-oriented That shift creates a corresponding security problem: a shared agent can potentially act with broader organizational authority than one running on a developer laptop. OpenClaw 2.0 responds with considerably more granular controls. Approvals can now be tied to a specific request, command, session and person. Command permissions can be constrained to specific arguments and working directories. For script-backed execution, OpenClaw can verify that the script being executed still matches what was originally reviewed. Sessions can operate under different permission levels, including read-only, guarded, workspace and full-access modes, with the highest level restricted to administrators. Organizations can also define operator roles that require sandboxed execution for sessions created by specific identities. OpenClaw says those requirements cannot be bypassed using elevated execution or host overrides; if the required sandbox cannot be provisioned, execution fails rather than silently falling back to the host. Credentials receive additional protection. OpenClaw’s team-scoped Secret Store distinguishes protected secrets from ordinary environment data available to the agent. For supported requests, a protected credential can be substituted into a Gateway-hosted HTTPS request without exposing that credential directly to the model. OpenClaw can also reference external systems including 1Password and Vault. Auditing has expanded around execution identity, approvals, session actions and outbound messages. Plugin installation can trigger capability reviews associated with the specific artifact being installed. Those controls address questions enterprises inevitably face when deploying agents: Who initiated an action? Which agent performed it? What resources could it access? Who approved the operation? And what happens to those permissions when work moves between people or machines? NanoClaw still takes a different approach to security OpenClaw’s changes also make the comparison with open source, enterprise-friendly rival NanoClaw more nuanced. NanoClaw is one of several subsequent projects to emerge around the idea that AI agents need stronger isolation and simpler security boundaries. Its architecture places operating-system-level containment at the center of the design. NanoClaw runs agents inside Docker containers, limits those containers to explicitly mounted filesystems and runs their processes as an unprivileged user. Sessions and agent groups can remain isolated rather than automatically sharing files and conversation history. Its credential architecture follows the same principle. Supported outbound requests can pass through OneCLI’s Agent Vault, allowing credentials to be injected by a gateway rather than placed inside the agent container itself. NanoClaw also provides an optional egress-lockdown mode that puts agents on an internal Docker network and routes supported external traffic through the gateway. OpenClaw 2.0 can now reproduce many elements of that hardened model. It supports Docker and Podman sandboxes, per-agent and per-session sandbox scopes, configurable read-only or read-write workspace access, role-enforced sandboxing, remote execution nodes and disposable cloud workers. The key difference is the starting posture. OpenClaw’s documentation explicitly says sandboxing and execution approvals are off by default. Its baseline configuration assumes a trusted single operator and permits host execution unless administrators configure stronger restrictions. NanoClaw makes isolation more fundamental to how agent execution is structured. So does OpenClaw 2.0 have security parity with NanoClaw? In terms of available controls, it is much closer than before. In terms of defaults and architectural philosophy, no. An enterprise can configure OpenClaw into a substantially hardened environment, but it has to make that decision deliberately. One Gateway is still one trust domain Another limitation is particularly important for larger organizations. OpenClaw says a Gateway should be treated as a single trust domain. Its new multi-user permissions are designed to govern collaboration among trusted users. They should not be treated as hard isolation between mutually untrusted tenants. For organizations requiring stronger separation — between business units, customers or other security domains, for example — OpenClaw recommends separate Gateway instances, described as “cells,” with separate state, credentials and workspaces. Fleet tooling for managing those cells remains experimental. That distinction could matter significantly for enterprises considering OpenClaw as a centrally operated service. Role-based access inside one Gateway may be sufficient for a trusted engineering department or internal team. It is a different proposition from a multi-tenant platform intended to isolate customers or users who should be assumed hostile to one another. NanoClaw has its own configuration requirements and limitations, and even its stronger outbound-network lockdown remains optional. But its smaller architecture and container-centric execution model may appeal to organizations that want a narrower security boundary that is easier to reason about. OpenClaw is optimizing for a broader problem. OpenClaw’s biggest advantage may be the control plane The tradeoff is product breadth. NanoClaw emphasizes a relatively small codebase, container isolation and customization through code and skills. Its second-generation architecture supports owner, administrator and member roles, and a separate monitoring dashboard can provide visibility into deployments. OpenClaw 2.0 is trying to build a much broader operational environment. Its Control UI combines employee interaction, live execution, files, approvals, terminals, code review, model-provider configuration, devices and shared sessions. That gives OpenClaw a potential advantage for enterprises that need not only secure agent execution but a usable control plane around it. Security teams care about isolation. Platform teams also need deployment, authentication, model configuration, auditing and policy enforcement. Employees need an interface they can actually use. Managers need a way to understand what is running. Developers need access to the underlying files and tools when something goes wrong. OpenClaw 2.0 increasingly tries to serve all of those constituencies through one system. What is OpenAI&#x27;s role? OpenClaw says 933 contributors, including 569 first-time contributors, participated in the release, which includes more than 16,000 pull requests — roughly half of all pull requests ever merged into the project. Interestingly, the release was not shared by Steinberger&#x27;s employer, OpenAI. Recall that the Austrian developer announced on Feb. 14, 2026 that he was joining OpenAI to work on bringing agents to a broader audience, a move OpenAI CEO Sam Altman publicly confirmed the following day. But OpenClaw was not folded into OpenAI. Steinberger said at the time that OpenClaw would move to a foundation and “stay open and independent,” while OpenAI would support the project. OpenClaw now says it is stewarded by the OpenClaw Foundation, an independent 501(c)(3), with OpenAI listed alongside Microsoft, GitHub, NVIDIA, Atlassian, Tencent and other organizations as partners. Based on the available public information, OpenClaw 2.0 should therefore be understood as an OpenClaw Foundation release, not an OpenAI product or OpenAI software release, despite Steinberger’s employment at OpenAI and OpenAI’s financial and organizational support for the project. Enterprise readiness now depends on configuration OpenClaw 2.0 does not eliminate the security risks associated with autonomous agents, and its own documentation identifies limitations. Secret Store values, for example, are not themselves encrypted at rest and rely on filesystem protections. Protected credential substitution does not cover every possible execution path, including some raw sockets, containers, remote nodes and provider-native harnessesIts multi-user permissions are collaboration controls, not hostile-tenant isolation. Those caveats should prevent enterprises from interpreting OpenClaw 2.0 as secure-by-default agent infrastructure.But they also illustrate how much the conversation around the project has changed. The relevant comparison is increasingly not simply OpenClaw versus NanoClaw. It is a container-first, constrained system such as NanoClaw versus a deliberately hardened OpenClaw deployment that provides a substantially broader employee and administrator experience. NanoClaw retains a strong proposition for organizations prioritizing a small attack surface, container-first execution and architectural simplicity. OpenClaw is making another bet: that enterprises ultimately need an agent platform to function as both runtime and workplace. OpenClaw 2.0 provides many of the primitives needed to build that environment — sandboxing, permissions, protected credentials, approvals, identity, auditing and isolated deployments — alongside a browser interface designed to make the system accessible to employees who will never configure an agent from a terminal. The remaining caveat is important: enterprises have to turn those primitives into policy . OpenClaw 2.0 doesn&#x27;t automatically make OpenClaw enterprise-ready, but it does make an enterprise-grade OpenClaw deployment far easier out-of-the-box. And as Steinberger’s description of OpenClaw’s own development process suggests, the long-term ambition may be larger still. Rather than giving every employee another AI assistant, OpenClaw is positioning the agent itself as shared infrastructure — a persistent layer where people, models and compute collaborate on the same work.",
@@ -4913,222 +4985,6 @@
       "category": "AI",
       "published": "2026-08-18T12:22:58+00:00",
       "sent_at": "2026-08-18T13:38:39.896124+00:00"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/08/18/1142229/the-download-how-people-use-ai-flock-cameras-design/",
-      "title": "The Download: how people really use AI, and Flock’s design choices",
-      "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. We still don’t know how people are really using AI AI companies like Anthropic and OpenAI regularly publish reports on how people are using their products. But they only release the&#8230;",
-      "source": "MIT Technology Review",
-      "category": "AI",
-      "published": "2026-08-18T12:10:00+00:00",
-      "sent_at": "2026-08-18T12:37:16.840010+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/981269/google-home-gemini-pet-memory-nest-camera-review",
-      "title": "Google&#8217;s Pet Memory forgot who my cats are",
-      "summary": "One of the best things my smart home does is help me care for my pets, and security cameras are particularly useful for keeping track of my many critters. But the barrage of notifications they send often means I miss important ones. So, when Google announced its new Pet Memory feature for Gemini for Home, [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-08-18T12:01:29+00:00",
-      "sent_at": "2026-08-18T12:37:16.840010+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/978402/parrot-ate-keyboard-protect",
-      "title": "My parrot ate my keyboard",
-      "summary": "One of the great joys in life is having pets. The unconditional love, the snuggles, the excitement they show when you get home - these things add an emotional fulfillment to daily existence that can't be achieved in another way. I think everyone's life would be better with a pet (or two) in their lives. [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-08-18T12:00:00+00:00",
-      "sent_at": "2026-08-18T12:37:16.840010+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/motherboards/how-to-choose-a-new-motherboard-without-overpaying-scoping-out-the-features-you-need-and-what-you-might-never-use-as-component-costs-soar",
-      "title": "How to choose a new motherboard without overpaying — scoping out the features you need, and what you might never use as component costs soar",
-      "summary": "How much motherboard is too much? We look at what you actually get as prices climb — from VRMs and connectivity to premium features and diminishing returns.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-18T12:00:00+00:00",
-      "sent_at": "2026-08-18T12:37:16.840010+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/gpus/famed-overclocker-1usmus-updates-hydra-overclocking-tool-with-up-to-3000-mhz-memory-offset-new-update-gives-vram-and-power-limit-controls-to-rtx-50-series-gpus",
-      "title": "Overclocker updates Hydra overclocking tool with VRAM and power limit controls for RTX 50-series GPUs — new update gives up to +3000 MHz memory offset",
-      "summary": "Overclocker 1usmus has released a new update for their Hydra overclocking tool that features VRAM and power limit controls for RTX 50-series GPUs.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-18T11:40:00+00:00",
-      "sent_at": "2026-08-18T11:50:38.092754+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2238945/ai-generated-bills-causing-problems-in-the-capitol/",
-      "title": "AI-generated bills are reportedly causing problems in the Capitol",
-      "summary": "According to Politico, the US House Office of Legislative Counsel is swamped with error-riddled AI-generated bills.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-08-18T11:33:15+00:00",
-      "sent_at": "2026-08-18T11:50:38.092754+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/chinas-homegrown-ai-accelerators-to-supply-90-percent-of-the-countrys-domestic-market-analysts-suggest-cambricon-and-huawei-expected-to-be-the-biggest-winners-in-the-shift-away-from-nvidia-and-amd",
-      "title": "China's homegrown AI accelerators to supply 90% of the country's domestic market, analysts suggest — Cambricon and Huawei expected to be the biggest winners in the shift away from Nvidia and AMD",
-      "summary": "China could become almost self-sufficient in high-end AI accelerators in 2026 as Chinese IHVs led by Huawei expected to supply 90% of AI processors used domestically.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-08-18T11:20:00+00:00",
-      "sent_at": "2026-08-18T11:50:38.092754+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/google-buys-spirit-airlines-data-for-ai-training-for-just-usd10-million-purchase-includes-hundreds-of-millions-of-emails-microsoft-teams-chats-billions-of-flight-pricing-records-and-anonymized-passenger-records",
-      "title": "Google buys Spirit Airlines data for AI training for just $10 million — purchase includes hundreds of millions of emails, Microsoft Teams chats, billions of flight pricing records, and anonymized passenger records",
-      "summary": "A U.S. bankruptcy court auctioned off Spirit Airlines' treasure trove of data, with Google making the winning bid. The tech giant is paying $10 million for various information, including hundreds of millions of emails and Microsoft Teams conversations, and billions of flight pricing data and transaction records.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-08-18T11:02:02+00:00",
-      "sent_at": "2026-08-18T11:21:26.800860+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/18/reach-capital-raises-265m-fund-v-to-back-ai-founders-building-to-expand-human-potential/",
-      "title": "Reach Capital raises $265M Fund V to back AI founders building to ‘expand human potential’",
-      "summary": "Reach Capital announced Tuesday an oversubscribed $265M Fund V.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-18T11:00:00+00:00",
-      "sent_at": "2026-08-18T11:21:26.800860+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/981333/openai-chatgpt-teen-mode",
-      "title": "ChatGPT is getting a dedicated mode for teens",
-      "summary": "OpenAI is introducing a dedicated ChatGPT mode for teenagers, combining existing youth safeguards and new safety features under one roof. The launch comes amid mounting public scrutiny over how AI tools affect younger users, as other platforms implement their own age checks and teen-specific protections. ChatGPT for Teens is \"an experience designed to help teens [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-08-18T11:00:00+00:00",
-      "sent_at": "2026-08-18T11:21:26.800860+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2238773/chatgpt-stricter-teen-mode-starts-rolling-out-today/",
-      "title": "ChatGPT's stricter teen mode starts rolling out today",
-      "summary": "OpenAI will attempt to automatically enroll all young users in the new experience.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-08-18T11:00:00+00:00",
-      "sent_at": "2026-08-18T11:21:26.800860+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/judges-who-use-ai-to-make-decisions-still-protected-by-judicial-immunity-court-ruling-protects-outcomes-regardless-of-ai-usage",
-      "title": "Judge allegedly outsourced entire ruling to AI and still can't be sued — federal court upholds blanket judicial immunity",
-      "summary": "A U.S. federal court has ruled that a judge accused of relying entirely on AI to make a judicial decision can still retain judicial immunity from civil lawsuits, although the ruling does not determine whether such use of AI is legally or ethically permissible.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-08-18T11:00:00+00:00",
-      "sent_at": "2026-08-18T11:21:26.800860+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/you-can-finally-buy-a-fairphone-a-sustainable-repairable-smartphone-in-the-us/",
-      "title": "Exclusive: You Can Finally Buy a Fairphone—a Sustainable, Repairable Smartphone—in the US",
-      "summary": "More than a decade after launching in Europe, the Netherlands company is now selling its repairable phones in the US, starting with the Fairphone (Gen 6+).",
-      "source": "Wired",
-      "category": "Hardware",
-      "published": "2026-08-18T10:30:00+00:00",
-      "sent_at": "2026-08-18T11:21:26.800860+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/the-big-interview-podcast-andy-yen-proton/",
-      "title": "Can AI Coexist With Privacy? Proton’s Andy Yen Says It Will Have To",
-      "summary": "Proton’s CEO is a champion of encryption for everyone. So why is he going all in on un-encryptable AI?",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-08-18T10:30:00+00:00",
-      "sent_at": "2026-08-18T11:21:26.800860+00:00"
-    },
-    {
-      "link": "https://www.theregister.com/ai-and-ml/2026/08/18/google-buys-crashed-airline-spirits-data-at-auction-because-ai/5288962",
-      "title": "Google buys crashed airline Spirit's data at auction, because AI",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-18T10:13:28+00:00",
-      "sent_at": "2026-08-18T11:21:26.800860+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/laptops/gaming-laptops/best-buy-has-slashed-usd1-350-off-this-outstanding-oled-rtx-5080-laptop-16-inch-lenovo-legion-pro-7i-features-a-24-core-arrow-lake-cpu-and-32gb-of-ddr5-ram",
-      "title": "Best Buy has slashed $1,350 off this 'outstanding' OLED RTX 5080 laptop — 16-inch Lenovo Legion Pro 7i features a 24-core Arrow Lake CPU and 32GB of DDR5 RAM",
-      "summary": "Get $1,350 off this Lenovo Legion Pro 7i with RTX 5080.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-18T10:31:02+00:00",
-      "sent_at": "2026-08-18T10:35:58.203282+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/secret-tracking-device-placed-in-rare-book-ends-up-in-amazon-processing-facility-destroying-books-to-train-ai-models-is-all-the-vegas-warehouse-does",
-      "title": "Secret tracking device placed in rare book ends up in Amazon processing facility — destroying books to train AI models is 'all' the Vegas warehouse does",
-      "summary": "404 Media placed an AirTag inside a shipment of 1,000 books, which landed at an Amazon facility that reportedly spends all day cutting the spine off of, and scanning, books.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-08-18T10:30:00+00:00",
-      "sent_at": "2026-08-18T10:35:58.203282+00:00"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/08/18/1142226/how-people-use-ai/",
-      "title": "We still don’t know how people are really using AI",
-      "summary": "AI companies like Anthropic and OpenAI regularly publish reports on how people are using products like Claude and ChatGPT, but they only release the data they want us to see, AI researchers say.&#160; “There is no independent source to corroborate it,” says Anka Reuel, a Computer Science PhD candidate at the Stanford Trustworthy AI Research&#8230;",
-      "source": "MIT Technology Review",
-      "category": "AI",
-      "published": "2026-08-18T10:06:43+00:00",
-      "sent_at": "2026-08-18T10:35:58.203282+00:00"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/08/18/1142188/ai-recursive-self-improvement/",
-      "title": "AI’s recursive self-improvement might not come so quickly after all",
-      "summary": "The AI industry’s boldest promise right now is that AI will soon improve itself, with almost no need for human oversight. LLMs can already write code, generate synthetic data for training, and optimize the computer chips they run on. Forecasts of explosive AI progress predict that what researchers call recursive self-improvement is on the horizon.&#160;&#8230;",
-      "source": "MIT Technology Review",
-      "category": "AI",
-      "published": "2026-08-18T09:00:00+00:00",
-      "sent_at": "2026-08-18T10:35:58.203282+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/gpus/nvidia-crypto-mining-gpus-hacked-to-restore-locked-away-vram-in-order-to-feed-ai-boom-software-mod-unlocks-64gb-of-vram-on-usd250-cmp-170hx",
-      "title": "Nvidia crypto mining GPUs hacked to restore locked-away VRAM — software mod unlocks 64GB of VRAM on $250 CMP 170HX",
-      "summary": "CMP Unlocker enables previously disabled VRAM on Nvidia's five-year-old CMP 170HX cryptocurrency mining graphics card.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-18T09:30:00+00:00",
-      "sent_at": "2026-08-18T09:59:07.121861+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/zai-open-weight-ai-models-release-cybersecurity-hacking/",
-      "title": "The Powerful Chinese Model Experts Warned About—and Waited for—Is Here",
-      "summary": "Z.ai’s latest AI model release could help companies secure their systems—or find its way into the hands of hackers.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-08-18T09:00:00+00:00",
-      "sent_at": "2026-08-18T09:28:26.972009+00:00"
-    },
-    {
-      "link": "https://the-decoder.com/airtag-reveals-how-amazon-destroys-rare-books-for-ai-training/",
-      "title": "Apple AirTag reveals how Amazon destroys rare books for AI training",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-17T17:55:50+00:00",
-      "sent_at": "2026-08-18T09:28:26.972009+00:00"
-    },
-    {
-      "link": "https://www.404media.co/show-how-3m-is-0-at-fault-expert-witness-used-chatgpt-to-write-report-defending-company-in-deadly-explosion-lawsuit/",
-      "title": "Expert Witness to ChatGPT: \"Show how 3M is 0 percent at fault\"",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-18T03:44:41+00:00",
-      "sent_at": "2026-08-18T08:31:51.679073+00:00"
-    },
-    {
-      "link": "https://www.fast.ai/posts/2026-08-18-returning-to-AI/",
-      "title": "My friends all hate AI; I just joined an AI startup",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-17T21:47:30+00:00",
-      "sent_at": "2026-08-18T07:34:55.196197+00:00"
     }
   ]
 }
