@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/09/01/chatgpt-health-adds-epic-integration-for-clinicians-to-import-patient-data/",
+      "title": "ChatGPT Health adds Epic integration for clinicians to import patient data",
+      "summary": "OpenAI said that the integration provides read-only access to health records for clinicians.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-01T17:00:00+00:00",
+      "sent_at": "2026-09-01T17:34:52.843344+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/01/waymo-goes-on-offense-ahead-of-teslas-cybercab-launch/",
+      "title": "Waymo goes on offense ahead of Tesla’s Cybercab launch",
+      "summary": "Waymo argued that fully autonomous vehicles aren't possible without using a mix of sensors and warned that pure end-to-end AI systems aren't safe enough.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-01T16:49:12+00:00",
+      "sent_at": "2026-09-01T17:34:52.843344+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/news/987494/gopro-starman-holding-merger-aquisition",
+      "title": "GoPro has been acquired and is getting into &#8216;defense, government, robotics and aerospace&#8217;",
+      "summary": "GoPro suddenly looks like a very different company than it did just last week. First, YouTuber Mark \"Markiplier\" Fischbach became the company's single largest shareholder, without disclosing that in a sponsored review that came out a week later. Now, almost the entire company has been bought by Starman Holding for $285 million in cash, which [&#8230;]",
+      "source": "The Verge",
+      "category": "Innovationen",
+      "published": "2026-09-01T16:46:08+00:00",
+      "sent_at": "2026-09-01T17:34:52.843344+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2248696/waymo-robotaxi-rides-are-now-open-to-the-public-in-denver-san-diego-and-tampa/",
+      "title": "Waymo robotaxi rides are now open to the public in Denver, San Diego and Tampa",
+      "summary": "Waymo robotaxi rides are now open to the public in Denver, San Diego and Tampa.",
+      "source": "Engadget",
+      "category": "Autonomes Fahren",
+      "published": "2026-09-01T16:24:24+00:00",
+      "sent_at": "2026-09-01T17:34:52.843344+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/987486/john-deere-jd-ai-chatbot",
+      "title": "John Deere launched an AI chatbot for farmers",
+      "summary": "John Deere is testing a new \"JD\" AI assistant that it says can help farmers make more money, with answers about best practices and historical trends that are based on their own data. It uses their \"field, machine and operational data\" to answer questions on topics like equipment settings, fuel usage, or harvest timing. The [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-01T16:00:52+00:00",
+      "sent_at": "2026-09-01T17:34:52.843344+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/987423/google-pics-ai-image-editor-generator",
+      "title": "Google Pics is like Canva, but with even more AI",
+      "summary": "Google has a new suite of creative design tools for Workspace users called Google Pics, which aims to make editing and generating \"professional-grade\" AI images less cumbersome for businesses. Built around Gemini and the Nano Banana generative AI model, Google Pics is designed to give more granular control over prompt-based image making and manipulation, allowing [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-01T16:00:00+00:00",
+      "sent_at": "2026-09-01T17:34:52.843344+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2247619/google-brings-its-pics-image-editor-to-ai-pro-and-ultra-subscribers/",
+      "title": "Google brings its Pics image editor to AI Pro and Ultra subscribers",
+      "summary": "Google brings its Pics image editor to AI Pro and Ultra subscribers.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-09-01T16:00:00+00:00",
+      "sent_at": "2026-09-01T17:34:52.843344+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/01/gopro-to-be-acquired-for-285m-will-remain-a-public-company/",
+      "title": "GoPro to be acquired for $285M, will remain a public company",
+      "summary": "GoPro is merging with a company that builds AI infrastructure, and will continue supporting existing consumer products.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-01T15:57:23+00:00",
+      "sent_at": "2026-09-01T17:34:52.843344+00:00"
+    },
+    {
       "link": "https://www.theverge.com/tech/986236/smartphones-september-ifa-apple-iphone-oppo-vivo-xiaomi",
       "title": "Get ready for a really busy month of smartphones",
       "summary": "We're not even half a day into September, and two new smartphones have already launched: the Poco F9 Pro and F9 Ultra. We're expecting more this week, as the IFA trade show kicks off in Berlin, before we get new iPhones a week after that. And that's only the beginning of what promises to be [&#8230;]",
@@ -4832,159 +4904,6 @@
       "category": "AI",
       "published": "2026-08-18T17:02:15+00:00",
       "sent_at": "2026-08-18T17:53:12.576570+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/18/etcheds-valuation-doubles-to-21b-in-a-month/",
-      "title": "Etched’s valuation doubles to $21B in a month",
-      "summary": "Jane Street has installed Etched's first shipped AI cluster system, and was so impressed, it led another massive round, the startup says.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-18T17:21:58+00:00",
-      "sent_at": "2026-08-18T17:22:35.814149+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/08/18/tesla-robotaxi-rams-through-bollards-austin/",
-      "title": "Tesla ‘Robotaxi’ rams through bollards weeks after ‘impeccable’ claim",
-      "summary": "A Tesla “Robotaxi” running with no safety monitor onboard drove straight through a row of bollards protecting a closed-off lane in Austin, then kept driving. The video surfaced Monday, less than a month after Tesla’s head of AI told investors the Robotaxi program has an “impeccable safety record” with “zero notable incidents.” While no one was hurt or in danger in this incident, it is worrying to see an unsupervised Tesla vehicle ram through clearly visible bollards with plenty of time to see them and think about going around them.",
-      "source": "Electrek",
-      "category": "AI",
-      "published": "2026-08-18T17:04:56+00:00",
-      "sent_at": "2026-08-18T17:22:35.814149+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/18/einride-strikes-deal-to-add-500-tesla-semis-to-its-fleet/",
-      "title": "Einride strikes deal to add 500 Tesla Semis to its fleet",
-      "summary": "The deal will triple the size of Einride's fleet while sweetening the company's sales pitch for its Saga AI software. The Tesla Semis will be available to customers across North America.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-18T10:30:00+00:00",
-      "sent_at": "2026-08-18T17:22:35.814149+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/18/why-apples-camera-equipped-airpods-may-not-be-the-pervert-pods-consumers-fear/",
-      "title": "Why Apple’s camera-equipped AirPods may not be the ‘pervert pods’ consumers fear",
-      "summary": "Apple’s leaked camera-equipped AirPods might avoid the privacy pitfalls of other AI wearables by preventing users from recording photos and videos.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-18T16:19:10+00:00",
-      "sent_at": "2026-08-18T16:30:29.506616+00:00"
-    },
-    {
-      "link": "https://www.wheresyoured.at/what-happens-if-openai-dies/",
-      "title": "What Happens If OpenAI Dies?",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-18T15:32:04+00:00",
-      "sent_at": "2026-08-18T16:30:29.506616+00:00"
-    },
-    {
-      "link": "https://venturebeat.com/data/85-of-companies-burned-by-an-ai-mistake-are-racing-to-cut-the-humans-who-might-catch-the-next-one",
-      "title": "85% of companies burned by an AI mistake are racing to cut the humans who might catch the next one",
-      "summary": "Enterprises that already got burned by an AI agent passing its evals and then failing in production are moving faster toward removing humans from deployment decisions, not slower — even as trust in automated evaluation is rising across the board, new VB Pulse research shows . In July, 13% of 108 enterprises surveyed said they trust automated evaluation, up from just 5% the month prior . Meanwhile, survey respondents citing poor alignment between tests and real-world results as their biggest concern fell 10 points, from 29% to 19%, month over month. Yet, 49% of survey respondents said that an AI agent or LLM-powered feature that had cleared company testing subsequently created a problem visible to customers , essentially unchanged from 50% in June. And nearly a quarter, 24%, said this troubling outcome had occurred more than once. The latest findings from VentureBeat Intelligence uncovered a more troubling phase of the enterprise agent rollout: the gap is no longer only between how much autonomy companies give agents and how well they can verify them. It is increasingly a gap between confidence in the evaluation layer and evidence that the layer is getting better at preventing failures. The most revealing split appears inside the July data. Of the enterprises that experienced an AI feature clear testing only to go on to disappoint a customer, 4% placed complete faith in automated checks. Of those that had detected no comparable incident, 24% expressed full confidence — a sixfold difference. It makes sense: those who experienced test-passing agents failing in live production are, unsurprisingly, more likely to doubt the automated checking process. Perhaps it makes sense then, that companies geared toward tackling this problem — like automated agent error monitoring and mitigation platform Raindrop.ai — are seeing the market transform wildly from just a few months ago. &quot;We are seeing the great-decline of evals as we know them,&quot; Raindrop CTO Ben Hylak told VentureBeat in a direct message. &quot;The Fortune 100 are increasingly reducing eval sets and deprioritizing maintenance. As systems grow more complex (MCPs, subagents, etc.) it becomes impossible to fully enumerate the failure cases. Instead, they’re leaning on anomaly and issue detection solutions, both before and after production.&quot; A directional finding, not a market census VentureBeat fielded the July wave among 108 people representing companies with workforces of at least 100. This is down from 157 respondents in June. Of the 108, 69% described themselves as final AI-buying authorities or people who recommend and influence those purchases. The sample skewed toward midsize organizations: 63% worked at companies with 100 to 2,499 employees. The findings should be read directionally. The survey is self-selected rather than a probability sample, and the burned-vs.-unburned splits cited throughout this piece rest on groups of 41 to 53 respondents, and other cross-tabs in the report range from 40 to 68. The industry mix also changed: technology and software participation declined nine points, ending at 14%, while the retail and consumer share added four points and ended at 19%. The report nevertheless identifies four month-to-month changes worth noticing: more respondents professing complete confidence, fewer naming poor real-world alignment, more choosing integration ease as the decisive buying factor, and Braintrust gaining primary-platform share. Confidence in automated evals improved, but outcomes stayed flat VentureBeat&#x27;s June research identified an enterprise evaluation gap : companies were granting agents more authority faster than they were developing reliable ways to test them. July preserves the key number from that first wave. Across 265 enterprise responses over the two months, the proportion reporting at least one test-approved system that disappointed customers stayed within a single percentage point : 50% in June and 49% in July. This figure does not mean that 49% of all agent runs fail, or that any particular evaluation product has a 49% failure rate. The survey asks whether an organization experienced at least one customer-facing incident in the previous year after an AI feature passed its internal tests. Companies that deploy far more agents have more opportunities to encounter such an incident. But that limitation does not make the result less important. An internal evaluation serves as a release gate. If roughly half of surveyed organizations have seen that gate approve a system that later fails in front of customers, a passing score cannot be treated as proof of production reliability. The cross-tab reinforces the point. Ten of the 41 enterprises with no identified testing miss placed complete faith in automation. Only two of the 53 previously burned enterprises said the same. Confidence is strongest among respondents with the least evidence that the release gate can fail. The enterprises that got burned are moving faster toward zero-human deployment The counterintuitive finding is what companies do after an evaluation miss. Overall, 67% either let an agent push code or change a system without a person&#x27;s approval in certain low-risk cases, or are modifying their pipelines to support that practice during the coming year . That is unchanged from June. In July, 37% already permitted it in limited cases and another 30% were building toward it. Among enterprises where a test-approved system had disappointed a customer, however, 85% were pursuing that no-approval model , compared with 61% in the group reporting no comparable incident. Only 11% of burned respondents rejected end-to-end deployment automation for the years ahead, versus 24% of unburned respondents. It would be easy to read that as recklessness, but the data supports another plausible explanation: deployment maturity. Organizations running more agents, at higher volume and across more consequential workflows, are more likely both to encounter failures and to have the engineering infrastructure needed for automated deployment. The survey cannot establish which explanation dominates. It does establish that a customer-visible incident does not appear to stop the move toward autonomy. Respondents with firsthand proof that testing can miss defects are also moving most aggressively to let those tests authorize production changes. If their per-deployment failure rate remains constant while deployment volume rises, the total incident count could grow even without the percentage of affected companies increasing. The July data does not measure incident volume, so that remains a risk implied by the pattern rather than a measured outcome. The release gate is automated, but production quality monitoring still lags Pre-deployment evaluation and production monitoring answer different questions. An evaluation asks whether an agent appears ready to ship. Production monitoring asks what the agent is doing after release and whether its live outputs remain correct. Most companies in the July sample still emphasize whether the system functions, not whether the answer is correct. Among the 106 valid responses to this question, 26% used inline quality assertions — automated judges or guardrails checking live traffic for output-quality problems. Another 26% focused on transaction traces such as infrastructure spans, token usage and raw inputs and outputs, while 24% mainly tracked gateway metrics such as latency, errors and cost. Trace and gateway data can reveal outages, slowdowns and broken requests. They may not flag a fluent, fast and confidently wrong answer. Grouped by the report according to what each architecture actually watches, half of respondents monitored whether an agent was functioning, while just over a quarter automatically monitored whether its production output was correct. The gap is sharpest among the 40 respondents already permitting no-approval deployment in limited cases. Only 28% of that group automatically checked the meaning and correctness of live answers . In other words, most enterprises that have eliminated a person from at least some release decisions have not installed automated semantic-quality monitoring as the production backstop. This is the clearest operational lesson in the data. A pre-deployment test suite and infrastructure observability are necessary, but they do not cover the same failure mode. Enterprises need a way to detect bad outputs after the agent begins interacting with real users, data and tools — especially when nobody reviews the deployment decision first. An independent agent-evaluation market begins to take shape The vendor data offers a more encouraging sign: enterprises are adding dedicated evaluation tools, and specialist platforms are gaining ground. OpenAI&#x27;s native evals and traces narrowly led as the primary platform at 18%, followed by Confident AI&#x27;s DeepEval at 17% and Braintrust at 15% . Anthropic&#x27;s Claude Console and Workbench held 12%, tied with organizations reporting no dedicated evaluation platform. Three options each held 6%: internally built tools, Promptfoo and LangSmith. Braintrust&#x27;s primary share increased from 8% in June to 15% in July, the biggest gain by one vendor and the one the report flags as statistically significant. DeepEval rose from 12% to 17%. Use of no purpose-built platform declined five points to 12%, although that smaller change does not by itself confirm a trend. Because many companies use more than one tool, the broader footprints are larger. OpenAI native evaluation appeared somewhere in 31% of stacks, DeepEval in 27%, Braintrust in 22% and Anthropic&#x27;s native tooling in 20%. Custom internal tooling reached 14%, while Weights &amp; Biases Weave and open-source Langfuse each reached 11%. These are adoption figures, not product-performance scores. The survey does not establish that one vendor produces more reliable agents than another. Still, the results point toward evaluation becoming a distinct enterprise software layer rather than a loose collection of internal scripts or a feature used only inside a model provider&#x27;s platform. Purchasing priorities are changing with that market. The proportion choosing integration ease as the decisive factor climbed 12 points to 39% , displacing cost, which fell from 28% to 23%. Evaluation accuracy ranked second at 28%. The combined average for satisfaction, implementation simplicity and economic value was 3.9 out of five. The move from price toward integration suggests enterprises increasingly want a tool they can install into existing development and monitoring pipelines now. Yet their leading success metric remains evaluation consistency at 38%, followed by fewer failures and regressions at 20%. Buyers are selecting for fit while still judging results on repeatability. Switching intent also cooled: 56% still expected to add or replace a platform during the coming year, down from 64% in June. The proportion staying put increased eight points, reaching 44%. Together with specialist adoption, they suggest some buyers are moving from evaluation to implementation. Human review is becoming the hedge against automated misses The budget data reveals how enterprises are managing the contradiction between greater autonomy and unreliable evaluation. People-centered review workflows edged narrowly ahead of production observability as the most frequently cited area for increased investment, 31% to 30%. Automated evaluation pipelines ranked third at 19%, followed by testing for safety and policy compliance at 16%. Only 6% said their reliability and evaluation budget was not increasing. Among enterprises that had experienced a testing miss, 38% said people-centered review would receive the fastest investment growth, compared with 24% of organizations that had not been burned. That produces an apparent paradox: the burned group is most likely to remove people from the release checkpoint and most likely to increase spending on people elsewhere in the process. The strategy appears to be automation with a human backstop — allow agents to move faster, then use reviewers to catch what automated evaluation misses. The open question is whether that model scales. Agent deployments and automated checks can grow with software volume. Reviewer hours do not fall at the same rate. Enterprises may therefore be replacing a human approval step with a larger downstream review function rather than eliminating human oversight. The narrow but consequential read July&#x27;s data does not show that enterprise agent evaluation is failing everywhere, nor does it prove automated judges are getting worse. It shows something more precise: confidence rose before the measured failure incidence improved . At the same time, the infrastructure around evaluation is maturing. More enterprises are adopting specialist tools, integration has become the leading purchase criterion and companies that have already experienced failures are increasing investment in human review. The market recognizes the problem and is spending against it. But the central reliability result remains stubborn. Nearly half of surveyed enterprises still report that an AI feature cleared internal checks before disappointing a customer. Respondents with that experience place less faith in automation — and move faster toward deployments with no human approval. The report frames this as an incomplete verification model: a passing pre-deployment score marks the start of monitoring, not the end of it. For most enterprises, the production quality checks and evaluation testing that would close that gap still aren&#x27;t in place.",
-      "source": "VentureBeat",
-      "category": "AI",
-      "published": "2026-08-18T15:35:16+00:00",
-      "sent_at": "2026-08-18T15:56:29.942688+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/3d-printing/start-your-3d-printing-journey-with-bambu-labs-awesome-p1s-printer-and-ams-color-printing-module-bundle-for-the-all-time-low-price-of-usd499-in-best-buys-60th-anniversary-sale",
-      "title": "Start your 3D printing journey with Bambu Labs' awesome P1S printer and AMS color-printing module bundle for the all-time low price of $499 in Best Buy's 60th Anniversary Sale",
-      "summary": "Step into 3D printing with Bambu Lab's P1S and AMS combo bundle for $499. Back on sale at its lowest-ever price point.",
-      "source": "Tom's Hardware",
-      "category": "Innovationen",
-      "published": "2026-08-18T15:31:40+00:00",
-      "sent_at": "2026-08-18T15:56:29.942688+00:00"
-    },
-    {
-      "link": "https://venturebeat.com/orchestration/commerce-ai-is-fragmenting-here-is-why-that-matters",
-      "title": "Commerce AI is fragmenting. Here is why that matters.",
-      "summary": "Presented by Rezolve Ai Enterprise AI investment in commerce has never been higher. And enterprise AI outcomes in commerce have rarely been more inconsistent. That gap is not a coincidence. It is the predictable result of a pattern that has repeated itself across every major technology shift in retail: the industry adds new capabilities faster than it integrates them. That pattern is now playing out in commerce AI. The point solution pattern The dominant approach to commerce AI over the past three years has been an additive one. Brands have layered AI-powered search on top of existing catalog infrastructure. They have added conversational interfaces on top of existing checkout flows. They have deployed recommendation engines alongside personalization tools that were themselves deployed alongside earlier recommendation engines. Each addition was justified by a discrete metric improvement, and none were designed to work as a cohesive system. This is the point solution pattern, and commerce has lived inside it for two decades. It produced genuine progress in isolated capabilities: faster search, better recommendations, lower friction at specific points in the journey. What it did not produce is coherence across the journey. Consumers experience that incoherence as inconsistency, context loss, and the feeling that each part of the shopping experience doesn&#x27;t know what the others are doing. AI amplifies the cost of that incoherence. When a general-purpose AI tool makes a recommendation based on incomplete or inconsistent data, it doesn&#x27;t surface a suboptimal product. It confidently surfaces the wrong one, and often excludes the incomplete one altogether. The hallucination problem in commerce AI is largely a data coherence problem in disguise. Tools that don&#x27;t share a common understanding of inventory, pricing, policy, and product truth will produce outputs that contradict each other and mislead consumers. Where the metrics lie The fragmented approach to commerce AI creates a specific kind of reporting problem: individual tools perform well in isolation while the system underperforms in aggregate. A conversational AI tool can show strong engagement metrics. The search layer can show improved relevance scores. The checkout system can show reduced abandonment within its own funnel. None of these metrics captures what happens at the handoffs between them, where context breaks, sessions drop, and purchase intent that was successfully generated in one layer fails to convert in the next. This is why brands investing aggressively in commerce AI are sometimes reporting strong tool-level performance alongside flat or declining overall conversion. The tools are working. The system isn&#x27;t. And the standard analytics stack, built to measure individual touchpoints rather than journey coherence, will not surface that distinction. Bain research shows that organic web traffic to retail sites has declined 15 to 25% as AI-driven zero-click search has grown. Brands are losing top-of-funnel visibility to AI disintermediation at the same time their internal AI tools are generating positive performance reports. That combination — external pressure compressing the funnel while internal fragmentation leaks it — represents a structural problem that point-level optimization cannot solve. What separates the companies closing the gap The brands that are generating consistent, measurable outcomes from commerce AI share a common architectural characteristic: they have built or adopted a unifying execution layer that sits across their AI investments rather than beneath them. This isn&#x27;t a new technology category. It is a different design philosophy. Instead of asking what AI capability to add next, these brands have asked what the connecting tissue between AI capabilities needs to look like in order for those capabilities to produce a coherent consumer experience and a reliable transaction outcome. The answer, in practice, involves three things: a shared data layer that gives every AI tool in the stack access to the same real-time product, pricing, and inventory truth; a policy and governance framework that ensures AI-generated recommendations operate within the brand&#x27;s established rules; and a transaction layer that can receive intent from any AI surface and convert it into a completed order without breaking context or requiring the consumer to restart. Brands that have those three things in place are not just getting better results from individual tools. They are compounding improvements across tools, because each capability in the stack is operating on consistent inputs and contributing to a coherent output. The architectural question commerce can&#x27;t defer The window for treating commerce AI fragmentation as a temporary problem is closing. As agentic commerce matures and AI systems begin to initiate and complete transactions on behalf of consumers, the stakes of incoherence rise significantly. An AI agent acting on behalf of a consumer doesn&#x27;t have the patience to navigate a broken handoff between a recommendation layer and a checkout system. It will fail, and it will not return. The brands that establish architectural coherence now, before agentic transactions become the norm, will enter that era with a compounding advantage. Those that continue to add point solutions will find that each new tool adds a new potential point of failure. Commerce AI isn&#x27;t fragmenting because the tools are bad. It is fragmenting because the connective infrastructure was never built. The brands that recognize that distinction — and act on it — are the ones that will define what commerce looks like in the next decade. Sponsored articles are content produced by a company that is either paying for the post or has a business relationship with VentureBeat, and they’re always clearly marked. For more information, contact sales@venturebeat.com .",
-      "source": "VentureBeat",
-      "category": "AI",
-      "published": "2026-08-18T14:30:00+00:00",
-      "sent_at": "2026-08-18T15:03:26.240554+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/cpus/intels-next-gen-nova-lake-chips-may-skip-bllc-for-mobile-skus-and-debut-on-razor-lake-hx-instead-leaker-claims-new-rumor-says-razor-lake-family-reportedly-uses-tsmcs-n2x-node",
-      "title": "Intel's next-gen Nova Lake chips may skip game-boosting X3D cache rival for mobile SKUs and debut on Razor Lake-HX instead, leaker claims — new rumor says Razor Lake family reportedly uses TSMC's N2X node",
-      "summary": "Nova Lake desktop CPUs look to be the exclusive recipient of bLLC, Intel's answer to AMD's X3D, as the company looks to debut bLLC on mobile with Razor Lake-HX, and possibly Razor Lake-AX. As such, the Razor Lake family is also rumored to be manufactured on TSCM's N2X process node.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-18T14:18:57+00:00",
-      "sent_at": "2026-08-18T14:29:18.924762+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/18/warps-new-system-is-an-out-of-the-box-software-factory-for-ai-development/",
-      "title": "Warp’s new system is an out-of-the-box software factory for AI development",
-      "summary": "On Tuesday, Warp introduced Warp Factories, a new infrastrructure system designed to make building AI software factories as easy as possible.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-18T14:00:00+00:00",
-      "sent_at": "2026-08-18T14:29:18.924762+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/amd-claims-its-2026-rack-scale-ai-solution-is-4x-more-energy-efficient-than-its-2024-ai-platform-company-says-its-pacing-ahead-of-20x-efficiency-by-2030",
-      "title": "AMD claims its 2026 rack-scale AI solution is 4X more energy efficient than its 2024 AI platform — company says it's pacing ahead of 20X efficiency by 2030",
-      "summary": "AMD says its 2025 rack-scale AI system is 4X more energy efficient compared to its 2024 AI solution, though does not produce actual benchmark results.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-08-18T14:00:00+00:00",
-      "sent_at": "2026-08-18T14:29:18.924762+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/18/openai-launches-a-safer-chatgpt-for-teens-years-after-teens-started-using-it/",
-      "title": "OpenAI launches a safer ChatGPT for teens — years after teens started using it",
-      "summary": "ChatGPT for Teens adds age-appropriate safety measures, parental controls, and learning tools designed to steer teens away from harmful content — and from using AI to cheat on their homework.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-18T13:50:30+00:00",
-      "sent_at": "2026-08-18T14:29:18.924762+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/18/perplexitys-free-ai-offer-left-it-with-millions-more-users-in-india/",
-      "title": "Perplexity’s free AI offer left it with millions more users in India",
-      "summary": "Perplexity's India revenue rose about 60% after the Airtel offer ended for new users, even as downloads declined.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-18T13:45:40+00:00",
-      "sent_at": "2026-08-18T14:29:18.924762+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/security/2026/08/microsoft-copilot-reveals-secret-input-that-allowed-it-to-be-hacked/",
-      "title": "Microsoft Copilot reveals secret input that allowed it to be hacked",
-      "summary": "Secret parameter allowed hackers to steal passwords when a target clicked on a link.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-08-18T13:00:04+00:00",
-      "sent_at": "2026-08-18T14:29:18.924762+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/981283/mozilla-firefox-smart-window-ai-features",
-      "title": "Firefox&#8217;s Smart Window promises a better AI browser",
-      "summary": "Starting today, AI chats in Firefox's Smart Window AI browsing mode can pull from current web info and show source links in chat responses through a partnership with Exa. Smart Window can also now automatically suggest tab groups and show visual previews of pages you previously visited when you search your browsing history using natural [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-08-18T13:00:00+00:00",
-      "sent_at": "2026-08-18T13:38:39.896124+00:00"
-    },
-    {
-      "link": "https://venturebeat.com/orchestration/enterprises-are-overpaying-for-simple-ai-queries-snowflakes-gateway-now-auto-routes-to-cut-costs-up-to-3x",
-      "title": "Enterprises are overpaying for simple AI queries — Snowflake's gateway now auto-routes to cut costs up to 3x",
-      "summary": "Enterprise teams running AI agents at scale are finding that a single model handles every task poorly — either the model is too expensive for simple questions or not capable enough for hard ones. Model routing, which picks the right model for each task automatically, is becoming the fix. Snowflake’s Cortex AI Gateway now offers dynamic model routing to address that: enterprises can select “auto” instead of a fixed model, and the system routes each task to whichever model offers the best combination of quality and cost. Snowflake said the capability can cut token costs by as much as 3x on some workloads — a figure from the company’s own internal testing — after finding that simple questions were often handled by its most capable model, making responses more expensive and slower than necessary. The move lands amid a broader industry shift toward automated model routing. Databricks, AWS, Google Cloud and Nvidia have all announced some form of model routing technology. Snowflake argues that model routing is more complex than just price and performance, it&#x27;s also about governance and context. &quot;For high quality, enterprise grade agents to be built, it&#x27;s crucial to get the context and the governance right,&quot; Baris Gultekin, vice president of AI at Snowflake, told VentureBeat. “Context, trust and model choice all go hand in hand.&quot; Two mechanisms decide where a task goes The capability builds on Cortex AI Gateway, which Snowflake launched in July 2026 as a governance layer for agent and model traffic. Before dynamic routing, model selection ran off a static list per task rather than a true fallback system, Gultekin said. Dynamic routing itself runs on two mechanisms, according to Gultekin. A small model tries first. Under what Snowflake calls an advisor pattern, a smaller model attempts a task first. If it cannot finish the job, it calls a larger model as a tool and continues from there. A classifier sorts by task history. A separate classifier, trained on past queries, automatically routes straightforward questions to simpler models. Customers can still pin a model. Auto routing is optional. Customers can restrict routing to one model or a defined set of models, and the system routes only within that boundary. There is no separate fee. Snowflake prices AI purely on token usage. Routing to a cheaper model produces a cheaper bill, with no additional charge for the routing decision itself. Access controls follow the task, not just the data Snowflake ties routing to the same access controls it already uses for data governance. Governance starts at the data level with role-based access controls. It extends to models next, where customer roles map to buckets of approved models. It extends again to agents, where an agent can be restricted to narrower privileges than the user invoking it. Open models can run from a customer&#x27;s own region to satisfy data residency requirements. Gultekin said all inference, open and proprietary alike, stays inside Snowflake&#x27;s security boundary rather than routing out to an external provider. That regional and perimeter setup matters specifically for open models with non-U.S. origins, including DeepSeek-V4-Flash and GLM-5.3, both developed in China. Snowflake&#x27;s recent acquisition of Natoma adds another layer. The deal brings more than 100 MCP connectors with scoped, governed access. An agent could get read-only access to a connected tool like email, for example, rather than broader permissions. Context lets a cheaper model do the work Snowflake recently announced its Horizon Context and Cortex Sense tools that provide context capabilities. Without good context, a model has to do the exploratory work itself, writing and testing SQL, searching through data and retrying when something does not work. Gultekin explained that the process is expensive, and getting it right typically requires a more capable model. Packaging the context in advance removes that exploratory step, which means a simpler, cheaper model can often handle the same task. Snowflake also builds agent memory into that context. As an agent is used repeatedly, its memory updates and gets folded back into future queries. The system does not re-solve the same problem from scratch each time. Memory becomes part of the context passed to the model. OpenRouter, Databricks and Nvidia are chasing the same problem There is no shortage of technologies in the model routing space. OpenRouter is one of the most widely known options, providing a platform that enables organizations to route based on cost and performance. Nvidia on August 11 announced Switchyard as a technology layer to help route AI model choice . Databricks has an offering as well with Smart Routing for its Unity AI Gateway. &quot;The interesting part is what it says about where differentiation has moved,&quot; Sanjeev Mohan, Principal and Founder, SanjMo, told VentureBeat. &quot;Snowflake isn&#x27;t really selling routing, it&#x27;s selling routing that never leaves the governed data boundary, with access controls, tagging, and cost attribution already attached.&quot; Mohan added that for a company whose data and compliance already center on Snowflake, routing that keeps data in place and attributes spend by team is a real lever on that problem. For a company without that center of gravity, a neutral gateway may route across more models with less friction. Mohan frames the market as three distinct camps rather than one competitive field. Databricks approaches governance from data engineering and ML lineage. Its Unity Catalog governs data, models and pipelines for teams building and training models. Snowflake approaches governance from analytics and access control, governing who can touch which data and attributing usage across business units. A third camp includes neutral gateways such as OpenRouter, LiteLLM, Portkey and hyperscaler routers like Azure AI Foundry. These compete on model breadth and avoiding lock-in rather than deep governance. Choosing a router means choosing a governance model Model routing is now table stakes for enterprises. The decision that matters is which governance model already fits how their data and teams are organized, not which vendor’s router is fastest or cheapest. Manual model selection is becoming a cost liability at agent scale. What worked when a team ran a handful of agents breaks down at scale. Hundreds of agents making routine model calls with no automated cost check in place adds up fast. Evaluate the governance model, not the router&#x27;s feature list. The real question, per Mohan, is which governance model matches the data estate already in place, and which one gives the cost visibility needed to avoid an unpleasant surprise. The right starting point depends on where an enterprise&#x27;s data already lives. A Snowflake shop gets more value from in-platform routing that respects its existing access model and bills back to cost centers than from raw model breadth, according to Mohan. A Databricks-centric team worried about lineage across training and deployment is better served by a gateway built around that same lineage. A multi-platform or model-first team that wants maximum choice with minimal lock-in fits better with a neutral gateway, the same pitch behind OpenRouter&#x27;s valuation. &quot;For a practitioner, don&#x27;t start with the router, start with where your governed data and platform commitment already live, and with how exposed your margins are to inference cost,&quot; Mohan said.",
-      "source": "VentureBeat",
-      "category": "AI",
-      "published": "2026-08-18T13:00:00+00:00",
-      "sent_at": "2026-08-18T13:38:39.896124+00:00"
-    },
-    {
-      "link": "https://twitter.com/kuberwastaken/status/2089377982536388964",
-      "title": "Claude writing a macOS driver for my obscure HP printer built only for Windows",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-18T12:22:58+00:00",
-      "sent_at": "2026-08-18T13:38:39.896124+00:00"
     }
   ]
 }
