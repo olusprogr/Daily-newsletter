@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/09/02/psa-amazons-shopping-ai-can-now-tell-you-if-that-message-is-a-scam/",
+      "title": "PSA: Amazon’s shopping AI can now tell you if that message is a scam",
+      "summary": "Amazon is adding a scam-detection feature to Alexa for Shopping that can verify whether suspicious emails, texts, and other messages actually came from the retailer.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-02T14:56:34+00:00",
+      "sent_at": "2026-09-02T14:57:03.945559+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/data-centers/gopro-to-expand-into-ai-data-centers-after-usd285-million-merger-with-optical-photonics-company-move-to-solve-camera-makers-financial-woes-move-manufacturing-back-into-the-us",
+      "title": "GoPro to expand into AI data centers after $285 million merger with optical-photonics company — move to solve camera maker’s financial woes, move manufacturing back into the US",
+      "summary": "GoPro is merging with optical-photonics company Starman Optical in a deal worth at least $285 million. This move will wipe out the company's $92 million outstanding debt, let it start manufacturing its cameras in the U.S., and expand its portfolio to include optical transceivers for AI data centers.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-02T14:43:10+00:00",
+      "sent_at": "2026-09-02T14:57:03.945559+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/dram/samsung-teases-new-hbm5-with-twice-the-performance-of-hbm4e-ambitious-data-transfer-rates-could-hint-at-4-096-bit-interface",
+      "title": "Samsung teases new HBM5 with twice the performance of HBM4E —ambitious data transfer rates could hint at 4,096-bit interface",
+      "summary": "Samsung expects HBM5 to deliver 4 TB/s of bandwidth per stack by late 2020s, which will enable AI accelerators with aggregated memory bandwidth of around 100 TB/s.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-02T14:38:20+00:00",
+      "sent_at": "2026-09-02T14:57:03.945559+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/988261/openai-tumbler-ridge-shooting-lawsuit-aiding-abetting",
+      "title": "OpenAI accused of ‘aiding and abetting’ Tumbler Ridge mass shooting in dozens of new lawsuits",
+      "summary": "OpenAI and its CEO Sam Altman are facing 30 new lawsuits that accuse them of providing \"substantial assistance and encouragement\" to the suspect in Canada's Tumbler Ridge school shooting, as reported earlier by TechCrunch. The new wave of lawsuits was filed in a California federal court on Wednesday by the students, teachers, and the principal [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-02T14:35:03+00:00",
+      "sent_at": "2026-09-02T14:57:03.945559+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/policy/988228/nyc-ai-restrictions-in-schools-chatbot-ban",
+      "title": "NYC bans AI use for students until they reach high school",
+      "summary": "New York City mayor Zohran Mamdani has announced a new policy today that will ban younger schoolchildren from using AI in classrooms. The one-year moratorium, effective in the 2026-2027 school year, will impact about 600,000 public school students in 2-K through eighth grade and is being introduced alongside additional limits on digital devices and a [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-02T14:30:00+00:00",
+      "sent_at": "2026-09-02T14:57:03.945559+00:00"
+    },
+    {
+      "link": "https://venturebeat.com/orchestration/forward-deployed-engineering-is-how-enterprise-ai-learns",
+      "title": "Forward-deployed engineering is how enterprise AI learns",
+      "summary": "Presented by Zeta Every forward-deployed engineering (FDE) pitch sounds identical for the first ten minutes: an engineer embedded on-site, a workflow encoded within weeks, a demo that finally works on the customer&#x27;s real data. What differs is what happens in the following months, and most vendors will not tell you until you ask directly. FDE has become one of enterprise AI’s most consequential operating models. Vendors are building entire go-to-market motions around engineers who embed with customers, wire products into operating environments, and make the demo real. Investors often read FDE headcount as a growth signal and buyers read it as a promise of speed. Neither tells you whether the work is becoming a product advantage or simply accumulating as delivery labor. The test is simple: after an FDE engagement, does the next customer start with more product and fewer unknowns — or just a new services team? FDE is not one thing. At its weakest, it papers over a product that cannot yet stand on its own, translating by hand what the software should eventually understand. At its strongest, it is a disciplined product-learning function: it finds the edge cases of an AI-native architecture and turns them into reusable capability. The org chart looks the same, but the economics and trajectory do not. FDE is valuable because it creates automation that powers a system of intelligence. A system of intelligence is more than software that executes workflows. It captures enterprise context, incorporates what it learns from every deployment, and improves the quality of future decisions. Forward-deployed engineers are how that context enters the system in the first place. The engineers are the context layer Model choice still matters in some domains. But in many enterprise workflows, the bigger constraint is not the model, it is what the enterprise knows about itself including business rules, exceptions, workflow logic, and definitions that took a decade of operating history to settle. Access to data is not the same as understanding the business. In one large telecommunications deployment, an initial definition of a “high-intent” customer did not survive contact with the operating systems. The model’s signal said one thing while the retention team’s actual save-desk criteria said another. Those criteria were built from years of which offers actually worked, on which tenure bands, in which regions. No schema documented that logic; it lived in the judgment of people who’d been doing the job for a decade. An engineer had to sit with them, extract the knowledge, and encode it before the intelligence layer we were building could be trusted to trigger an action instead of just a score. Once that logic was encoded into the intelligence layer, new acquisition and retention use cases could move from idea to execution in days rather than months. Rather than rebuilding the integration each time, teams were adding decisions to a shared foundation. That kind of work produces more than an answer for one customer. Properly captured, it can become a semantic mapping, a policy module, a workflow template, a connector, or an evaluation that guards the decision in future deployments. The FDE is the context layer delivered first as a person, who then translates and delivers it as product. Sandbox, mud, and what happens to the learning The useful question in a diligence call or renewal conversation is not whether a vendor has FDEs. It&#x27;s whether an engineer touching your environment is playing in a sandbox of tools, or trying to dig you out of the mud. In the sandbox, FDEs use a general-purpose engine in specific, gnarly environments. Their job is to find where the engine needs a new part, install it, and feed the learning back so that part can ship again. In the mud, the engineer manually constructs a missing capability one customer at a time, and there is no engine underneath waiting to receive the part; instead, it’s another custom build. Do not mistake these for a clean binary, though. Most companies live somewhere in the middle: reusable playbooks and connectors for the common cases, bespoke judgment for everything else. From the outside, sandbox, mud, and the middle can all look identical: a smart engineer, on-site, writing code against your data. The tell is what happens to what they learn. Either the next deployment begins with fewer unknowns, less custom code, and better tests, or it begins from zero with a prettier deck. The strategic version of FDE treats every engagement as a disciplined learning loop. It starts with observing the exception in the field, codifying it into a reusable artifact, validating it with an evaluation and security review, releasing it into the product, then measuring whether the next deployment actually got easier. That last step is where most companies quietly fail. Not every field discovery belongs in the core product. Some customer logic is proprietary, temporary, or too idiosyncratic to generalize. Good teams know the difference between three things that get lumped together under “FDE”: product intelligence that compounds across every customer, configurable customer logic that&#x27;s reusable for one account but shouldn&#x27;t ship broadly, and one-off services work that is exactly what it looks like. Customization is expected. The failure lies in not labeling which bucket the work is in, or in losing the learning from the parts that can compound. This is the difference between a company that gets better at deploying and a product that gets better at understanding. The former can build a capable services business; its advantage lies in execution and relationships. The latter builds compounding product capability that persists after the engineer leaves. The best FDE organization changes shape The uncomfortable conclusion for teams building FDE functions is that human translation should shrink per unit of value delivered, even as absolute headcount grows. A fast-growing company may keep adding FDEs while still making each deployment materially lighter because more of the required logic already exists in the product. Each deployment should require less custom engineering than the last, with engineers spending more time extending reusable capabilities than rebuilding the same integrations, workflows, and decision logic. Track four things: engineers per live workflow engineering hours per deployment time-to-value by vertical and the share of implementation work that gets reused rather than rebuilt. Track one more that matters just as much and gets watched far less: the productization lag, the time between a field discovery, and a tested capability available to the next customer. Over time, that lag should fall, custom engineering should decline, and reuse should increase. If none of these are improving, the organization is delivering, without learning whatever the headcount chart says. FDE is scaffolding only when it stays outside the building. The goal isn&#x27;t to eliminate the people doing the work; it&#x27;s to ensure more of what they learn becomes load-bearing product capability. Three questions that get past the pitch 1. How is FDE priced? Pricing is a signal rather than a verdict. A separate professional-services line may reflect honest transparency, bundled FDE may be a loss leader paid for by utilization. The more useful question is whether the contract, renewal, and margin story make clear which work is repeatable productization and which is bespoke delivery. 2. Where does field learning go? Don&#x27;t infer this from résumés alone. Ask who owns the handoff from FDE to product, what artifacts are produced, and how quickly they become tested, supported capabilities. The organizational interface is what reveals whether learning compounds, not the job title. 3. What got faster on the last repeat deployment? Ask for a specific vertical and a specific delta such as fewer engineering hours, fewer weeks to value, fewer custom integrations, or a higher reuse rate. A credible vendor can name what changed and how it was measured. General claims about “learnings” and “playbooks” are not enough. Enterprise AI creates lasting advantage when every deployment leaves behind more than a satisfied customer. It leaves behind a deeper understanding of how enterprises operate. The goal isn’t simply to deploy AI. It’s to build a system of intelligence that captures enterprise context, converts customer learnings into reusable capability, and compounds over time. Neej Gore is Chief Data Officer at Zeta. Sponsored articles are content produced by a company that is either paying for the post or has a business relationship with VentureBeat, and they’re always clearly marked. For more information, contact sales@venturebeat.com .",
+      "source": "VentureBeat",
+      "category": "AI",
+      "published": "2026-09-02T14:00:00+00:00",
+      "sent_at": "2026-09-02T14:57:03.945559+00:00"
+    },
+    {
+      "link": "https://www.technologyreview.com/2026/09/02/1142879/facilitating-ai-integration-with-simplicity-at-scale/",
+      "title": "Facilitating AI integration with simplicity at scale",
+      "summary": "As companies scale, the technology supporting operations can become a liability just as quickly as it becomes an asset. Disconnected systems, site-specific tools, spreadsheets, and manual workarounds can create data silos that make it harder to spot problems early, coordinate responses, and make decisions with confidence. For Jabil, a global manufacturing company with more than&#8230;",
+      "source": "MIT Technology Review",
+      "category": "AI",
+      "published": "2026-09-02T14:00:00+00:00",
+      "sent_at": "2026-09-02T14:57:03.945559+00:00"
+    },
+    {
+      "link": "https://aisle.com/blog/aisle-discovered-six-curl-cves-after-openai-and-anthropic-found-zero",
+      "title": "Six curl CVEs after OpenAI and Anthropic came back with zero",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-02T13:43:14+00:00",
+      "sent_at": "2026-09-02T14:57:03.945559+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/researchers-easily-trick-fortune-500-companies-ai-agents-into-running-arbitrary-code-supply-chain-attack-via-llms-txt-guidance-file-illustrates-how-data-has-become-code",
       "title": "Researchers easily trick Fortune-500 companies' AI agents into running arbitrary code — supply-chain attack via llms.txt guidance file illustrates how data has become code",
       "summary": "Researchers easily trick Fortune-500 companies' AI agents into running arbitrary code. This supply-chain attack, done via using data in public llms.txt guidance files, illustrates the dangers of data becoming code.",
@@ -4904,204 +4976,6 @@
       "category": "AI",
       "published": "2026-08-19T15:00:00+00:00",
       "sent_at": "2026-08-19T15:03:11.163139+00:00"
-    },
-    {
-      "link": "https://venturebeat.com/ai/venturebeat-names-rob-strechay-as-its-first-lead-analyst-expanding-its-enterprise-ai-research-push",
-      "title": "VentureBeat names Rob Strechay as its first Lead Analyst, expanding its enterprise AI research push",
-      "summary": "Rob Strechay, until recently managing director and principal analyst at theCUBE Research, has joined VentureBeat as our first Lead Analyst and a founding analyst of VentureBeat Research. His arrival is the next step in a deliberate move at VentureBeat toward deeper specialization: analysis built for the technical decision-makers — the directors, VPs, CIOs, and CTOs — who are evaluating, buying, and deploying enterprise AI. The enterprise AI stack is being rewritten in real time, and the decision-makers I talk with are starved for objective, defendable data. Rob Strechay has the mix of technical rigor and operating experience needed to dissect the architecture behind the next phase of enterprise AI deployment. The questions enterprise technology leaders are asking have changed. As organizations move past experimentation with generative AI toward production deployment, they want to know how to orchestrate multi-vendor environments, where the security gaps in their agentic pipelines sit, and how to fix the utilization problems draining their infrastructure budgets. Answering those questions requires more depth than news coverage alone provides, and that is the gap this research offering is built to fill. An analyst who has sat on every side of the table Strechay brings nearly three decades of experience as a practitioner, product executive, and industry analyst. Before becoming an analyst, he was an executive at numerous startups, including Zerto; he joined Amazon Web Services to help build a new analytics service; and he held executive roles across enterprise infrastructure. He later served as a senior analyst at Enterprise Strategy Group and most recently as managing director and principal analyst at theCUBE Research and SiliconANGLE, where he hosted executive interviews and analyzed the evolution of cloud, data, and AI infrastructure. Strechay will initially focus his coverage on cloud infrastructure, advanced data infrastructure, platform engineering and DevOps orchestration and observability, and the intersection points where AI and enterprise security collide. Already at work: GPU utilization and the VB Pulse surveys Strechay has already been contributing to VentureBeat&#x27;s research . In May he published an analysis of enterprise GPU utilization , examining the compute waste sitting inside enterprise AI infrastructure, and he provided a substantive review of our AI Infrastructure &amp; Compute survey before it went into the field. His infrastructure-level focus complements the research engine VentureBeat has built around its monthly VB Pulse surveys, which track five areas of enterprise AI adoption: agentic orchestration, agent reliability and evals, agentic security and identity, AI infrastructure and compute, and context layers, including retrieval-augmented generation (RAG). Our June report on agentic orchestration , drawn from a survey of 145 enterprises, found that two-thirds of those enterprises had hedged their AI model strategy rather than committing to a single provider — a posture whose value the June outage of Anthropic&#x27;s Claude models made plain. VB In Conversation: The first vehicle A core vehicle for this expanded research footprint will be a deepening of VentureBeat&#x27;s existing VB In Conversation video interview series, which Strechay will host. Rather than high-level industry overviews, the series will bring architectural blueprints, actual deployment barriers, and back-end infrastructure realities to light through in-depth technical interviews with the architects and product leaders behind leading enterprise AI systems — an unvarnished look at which tools perform under production-grade pressure. &quot;VentureBeat has built an audience of enterprise builders and technology buyers that any analyst would want to serve,&quot; Strechay said. &quot;My goal is to use deep empirical metrics and VentureBeat&#x27;s proprietary tracking data to help enterprise buyers and the people building for them make sound platform and infrastructure decisions during the most disruptive transition enterprise technology has seen.&quot; The expanded VB In Conversation series will appear on VentureBeat and on VentureBeat&#x27;s YouTube channel , alongside Rob&#x27;s written analysis on the site. Enterprise practitioners who want to take part in our monthly VB Pulse surveys, or arrange an analyst briefing with Rob, can reach the research team here .",
-      "source": "VentureBeat",
-      "category": "AI",
-      "published": "2026-08-19T14:18:12+00:00",
-      "sent_at": "2026-08-19T14:28:58.510871+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/981874/mova-v70-ultra-robot-vacuum-mop-arm-hands-on-review",
-      "title": "This robot vacuum solves my kitchen stool problem",
-      "summary": "Robot vacuums are great at keeping your floors clean, but there are a few areas they fall down on the job - stairs being one. Another is chairs and stools. You know the scenario: You have a row of stools at a kitchen table, or chairs tucked under a dining table, and the robovac just [&#8230;]",
-      "source": "The Verge",
-      "category": "Innovationen",
-      "published": "2026-08-19T14:00:00+00:00",
-      "sent_at": "2026-08-19T14:28:58.510871+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/overclocking/you-can-now-buy-a-delidded-ryzen-9-9950x3d2-dual-edition-for-usd1-403-stripped-dual-cache-offering-is-usd500-more-expensive-than-regular-version",
-      "title": "You can now buy a delidded Ryzen 9 9950X3D2 Dual Edition for $1,403 — stripped dual-cache offering is $500 more expensive than regular version",
-      "summary": "Thermal Grizzly offers the halo CPU with the pop topped for an egregious price, yet it almost makes sense on this chip.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-19T13:44:47+00:00",
-      "sent_at": "2026-08-19T14:28:58.510871+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/08/19/ex-tesla-president-roadster-delay-spacex-thrusters/",
-      "title": "Ex-Tesla president: Roadster delay is about getting closer to SpaceX ahead of merger",
-      "summary": "A former Tesla president says the endlessly delayed next-generation Roadster is being held up by SpaceX “hovering” technology — and that the project is really about pulling Tesla and SpaceX closer together. Jon McNeill, Tesla’s president from 2015 to 2018 and now co-founder of VistaShares and CEO of DVx Ventures, made the comments as Tesla preps a long-promised Roadster demo nearly nine years after the car was first unveiled.",
-      "source": "Electrek",
-      "category": "Innovationen",
-      "published": "2026-08-19T13:40:39+00:00",
-      "sent_at": "2026-08-19T14:28:58.510871+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/phones/google-to-stop-making-pixel-devices-in-china-report-claims-india-and-vietnam-prime-candidates-for-manufacturing-shift-owing-to-beijing-washington-tensions",
-      "title": "Google to stop making Pixel devices in China, report claims — India and Vietnam prime candidates for manufacturing shift owing to Beijing-Washington tensions",
-      "summary": "To reduce reliance on China, Google plans to relocate production of Pixel smartphones, smartwatches, and headsets from China to India and Vietnam.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-19T12:40:00+00:00",
-      "sent_at": "2026-08-19T13:40:37.512389+00:00"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/08/19/1140195/the-download-ai-recursive-self-improvement-problem-heatwave-causes/",
-      "title": "The Download: AI’s self-improvement problem, and what’s driving the heat",
-      "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. AI’s recursive self-improvement might not come so quickly after all The AI industry’s boldest promise right now is that AI will soon improve itself, with almost no need for human oversight.&#8230;",
-      "source": "MIT Technology Review",
-      "category": "AI",
-      "published": "2026-08-19T12:10:00+00:00",
-      "sent_at": "2026-08-19T13:40:37.512389+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2239823/nasa-images-show-crater-on-the-moon-caused-by-spacex-falcon-9-crash/",
-      "title": "NASA images show crater on the moon caused by SpaceX Falcon 9 crash",
-      "summary": "NASA's Lunar Reconnaissance Orbiter took images of the crater created by a SpaceX rocket crashing into the moon.",
-      "source": "Engadget",
-      "category": "Innovationen",
-      "published": "2026-08-19T12:10:27+00:00",
-      "sent_at": "2026-08-19T12:38:46.919930+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/981668/nvidias-goldman-blackrock-gpu-compute-asset",
-      "title": "Nvidia’s new financial strategy does not compute",
-      "summary": "April - 1805 Napoleon is master of Europe Only the British fleet stands before him Compute is now an asset class I see it is once again time to talk financial innovation. Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs, and KKR are all working with Nvidia to put together $500 billion in financing to turn compute [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-08-19T12:00:00+00:00",
-      "sent_at": "2026-08-19T12:38:46.919930+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/data-centers/jason-kelce-led-marketing-campaign-asks-beer-drinkers-to-send-their-pee-to-ai-data-centers-liquid-death-and-garage-beer-skit-claims-ai-data-centers-waste-millions-of-gallons-of-water",
-      "title": "Jason Kelce-led marketing campaign asks beer drinkers to send their pee to AI data centers — Liquid Death and Garage Beer skit claims 'AI data centers waste millions of gallons of water'",
-      "summary": "Two indie brands join together in a viral ad campaign asking people to pee on computers. Taylor Swift's brother-in-law, Jason Kelce, who co-owns one of the brands, stars in this humorous ad where he pees in a bottle and carries it to a post office to send to his AI data center of choice.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-08-19T11:55:24+00:00",
-      "sent_at": "2026-08-19T12:38:46.919930+00:00"
-    },
-    {
-      "link": "https://dl.acm.org/doi/10.1145/3789240.3829151",
-      "title": "λλ: A Programming Language for Silicon Photonics",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Hardware",
-      "published": "2026-08-19T06:09:16+00:00",
-      "sent_at": "2026-08-19T12:38:46.919930+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/beijing-ai-bar-pours-pints-of-foam-with-free-deepseek-tokens-served-from-two-nvidia-dgx-sparks",
-      "title": "Beijing AI bar that offers unlimited free DeepSeek coding tokens with $1.50 drink haemorrhaging cash — 'the bar is completely losing money, ' owner admits",
-      "summary": "An AI-themed bar in Beijing's Zhongguancun tech hub hands out free, unlimited DeepSeek tokens with its drinks, running inference locally on two Nvidia DGX Spark mini-PCs.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-08-19T11:44:32+00:00",
-      "sent_at": "2026-08-19T11:49:47.169471+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/semiconductors/ajinomoto-reportedly-cuts-abf-chip-packaging-film-supply-to-china-by-30-percent",
-      "title": "Ajinomoto reportedly cuts critical chip packaging film supply to China by 30% as domestic substitutes race to qualify — ABF restriction comes following Beijing's rare earth export curbs",
-      "summary": "Japanese chemical maker Ajinomoto has reportedly told customers in mainland China that it will cut the supply of ABF.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-19T11:40:00+00:00",
-      "sent_at": "2026-08-19T11:49:47.169471+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/desktops/gaming-pcs/snag-amds-ryzen-7-7700x3d-with-16gb-of-ram-motherboard-and-a-cooler-for-just-usd609-save-usd124-on-a-b650-atx-board-and-corsair-vengeance-ram-for-a-new-gaming-build",
-      "title": "Snag AMD’s Ryzen 7 7700X3D with 16GB of RAM, motherboard, and a cooler for just $609 — save $124 on a B650 ATX board and Corsair Vengeance RAM for a new gaming build",
-      "summary": "Newegg's combo deal pairs the gaming-centric Ryzen 7 7700X3D, Asus ROG Strix B650-A motherboard, and Corsair Vengeance DDR5 RAM for $609.99, plus a free 240mm AIO—an affordable way into AM5 amid the RAMpocalypse.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-19T11:36:03+00:00",
-      "sent_at": "2026-08-19T11:49:47.169471+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/gadgets/981143/airtag-corgi-pet-tech-tracking",
-      "title": "The everyday tech I use to track my corgi",
-      "summary": "The Apple AirTag may be a jack-of-all-trades - people use it for keeping track of keys, suitcases, backpacks, purses - but I think the most logical use case for it, by far, is keeping track of your pet. I attach it to my corgi Jelly's collar via a matching silicone holder. Have I ever once [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-08-19T11:30:00+00:00",
-      "sent_at": "2026-08-19T11:49:47.169471+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/motherboards/asrock-x870e-taichi-white-motherboard-review",
-      "title": "ASRock X870E Taichi White Motherboard Review: A Taichi washed in white, now with 10 GbE",
-      "summary": "The ASRock X870E Taichi White updates the original with a cleaner all-white design and 10 GbE, and is the first ASRock board to feature all-white components. But pricing could scare away some users.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-19T11:15:00+00:00",
-      "sent_at": "2026-08-19T11:21:01.718702+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/window-cleaning-robots-are-kinda-terrible/",
-      "title": "I Tried a Window-Cleaning Robot: Do Not Recommend",
-      "summary": "I tested the top-of-the-line Ecovacs Winbot W2S Omni window-cleaning robot on my Victorian home, and it was an unmitigated disaster.",
-      "source": "Wired",
-      "category": "Innovationen",
-      "published": "2026-08-19T11:08:00+00:00",
-      "sent_at": "2026-08-19T11:21:01.718702+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/taiwan-to-pay-every-resident-314-from-its-ai-boom-windfall",
-      "title": "AI server boom funds $314 universal cash payout in Taiwan — President Lai Ching-te says the payout ensures the country's AI windfall 'can be shared by all,' 11% GDP growth and $903B export surge finance $7.4B dividend",
-      "summary": "Taiwan will hand roughly $314 USD in cash to every resident next year as a boon for the island's residents generated by the AI gold rush. The 2027 central government budget sets aside $7.4 billion USD for the dividend.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-08-19T11:00:00+00:00",
-      "sent_at": "2026-08-19T11:21:01.718702+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/gpus/first-nvidia-h200-shipments-reach-bytedance-and-tencent-as-beijing-loosens-its-import-block",
-      "title": "First Nvidia H200 shipments reach China, ByteDance and Tencent take deliveries as Beijing loosens its import block — most licensed chips must stay in Hong Kong, which can't power them",
-      "summary": "Beijing wants most of each company's U.S.-licensed allowance, which the FT puts at up to 100,000 units apiece, kept off the mainland.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-19T10:37:13+00:00",
-      "sent_at": "2026-08-19T10:54:21.018390+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/desktops/gaming-pcs/cut-the-stress-out-of-pc-building-with-this-usd500-discount-on-this-rx-9060-xt-16gb-desktop-intel-core-ultra-9-285-build-also-features-32gb-of-ddr5-2tb-ssd",
-      "title": "Cut the stress out of PC building with this $500 discount on this RX 9060 XT 16GB desktop — Intel Core Ultra 9 285 build also features 32GB of DDR5, 2TB SSD",
-      "summary": "Get an Intel Core Ultra 9 285 PC with an RX 9060 XT 16GB GPU for just $1,849.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-19T10:18:31+00:00",
-      "sent_at": "2026-08-19T10:54:21.018390+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/gadgets/981894/framework-laptop-12-update-intel-core-linux-availability",
-      "title": "Framework gave its 12-inch laptop some hardware upgrades",
-      "summary": "Framework has refreshed its 12-inch convertible laptop, introducing Intel's latest Core Series 3 processors, expanded hardware customizations, and a pre-built Linux option. The cheapest pre-built base configuration for the Framework Laptop 12 now starts at $699 - $100 less than the previous version when it launched last year. Preorders are open now, with the first [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-08-19T10:14:26+00:00",
-      "sent_at": "2026-08-19T10:54:21.018390+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/dev-uses-claude-ai-to-create-native-macos-driver-for-obscure-windows-only-printer-linux-container-hack-enables-system-wide-cmd-p-printing-driver-now-available-on-github",
-      "title": "Dev uses Claude AI to create native macOS driver for 'obscure' Windows-only printer — Linux container hack enables system-wide Cmd-P printing, driver now available on Github",
-      "summary": "A developer has revealed that they used Claude Code to create a macOS laser printer driver for the HP Laser 1008a, a machine designed for Windows users.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-08-19T10:00:00+00:00",
-      "sent_at": "2026-08-19T10:54:21.018390+00:00"
-    },
-    {
-      "link": "https://www.cam.ac.uk/research/news/tiny-satellite-will-use-the-dark-side-of-the-moon-to-eavesdrop-on-whispers-from-the-early-universe",
-      "title": "Tiny satellite will use the dark side of the Moon as a shield",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Innovationen",
-      "published": "2026-08-19T01:06:03+00:00",
-      "sent_at": "2026-08-19T10:54:21.018390+00:00"
     }
   ]
 }
