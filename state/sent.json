@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.theverge.com/news/988415/uber-wayve-robotaxi-london-launch",
+      "title": "Uber beats Waymo as first to launch robotaxis in London",
+      "summary": "Uber beat out Waymo in launching a commercial robotaxi service in London, the city's first. The vehicles use autonomous driving tech developed by Wayve, a UK-based startup, and will initially feature safety drivers behind the wheel. The launch is a milestone for Uber, which has been plotting a UK launch with Wayve for several years. [&#8230;]",
+      "source": "The Verge",
+      "category": "Autonomes Fahren",
+      "published": "2026-09-02T23:00:00+00:00",
+      "sent_at": "2026-09-02T23:50:50.328761+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2248610/uber-launches-first-robotaxis-in-london-with-human-supervisors/",
+      "title": "Uber launches first robotaxis in London (with human supervisors)",
+      "summary": "Uber launches first robotaxis in London (with human supervisors).",
+      "source": "Engadget",
+      "category": "Autonomes Fahren",
+      "published": "2026-09-02T23:00:00+00:00",
+      "sent_at": "2026-09-02T23:50:50.328761+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/02/palo-alto-networks-paid-500m-for-thrive-backed-console-sources-say/",
+      "title": "Palo Alto Networks paid $500M for Thrive-backed Console, sources say",
+      "summary": "The acquisition also leaves Sequoia-backed Serval as the de facto startup leader in AI IT service automation, industry watchers believe.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-02T22:44:56+00:00",
+      "sent_at": "2026-09-02T23:50:50.328761+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/02/techcrunch-disrupt-2026s-new-real-world-ai-stage-features-nvidia-robots-and-extinct-animals/",
+      "title": "TechCrunch Disrupt 2026’s new Real World AI Stage features Nvidia, robots, and extinct animals",
+      "summary": "On our new Real World AI stage, we’ll be focusing on the intersection between the digital and physical, and all the ways we’ll continue to see a blending of the two.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-02T22:24:09+00:00",
+      "sent_at": "2026-09-02T23:50:50.328761+00:00"
+    },
+    {
+      "link": "https://www.nytimes.com/2026/09/01/nyregion/ai-ban-schools-nyc.html",
+      "title": "Mamdani Bans AI in NYC Schools",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-02T20:57:04+00:00",
+      "sent_at": "2026-09-02T23:50:50.328761+00:00"
+    },
+    {
+      "link": "https://ploum.net/2026-09-02-i_dont_have_a_smartphone.html",
+      "title": "I Don't Have a Smartphone",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Hardware",
+      "published": "2026-09-02T17:51:29+00:00",
+      "sent_at": "2026-09-02T23:50:50.328761+00:00"
+    },
+    {
+      "link": "https://quesma.com/blog/mushroom-llm-vision/",
+      "title": "Mushroom hunting with LLMs: what can go wrong?",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-02T16:58:34+00:00",
+      "sent_at": "2026-09-02T23:50:50.328761+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/988334/openai-astra-ai-monitoring-safety",
+      "title": "Researchers fear safety disaster ahead of OpenAI&#8217;s Astra release",
+      "summary": "OpenAI is on the cusp of releasing its most powerful AI model yet, Astra, following weeks of delays to shore up safety protocols after its agents attacked real targets during testing. As details about the model trickle out, researchers are warning it \"may be the single worst development for AI security/safety to date.\" Shortly after [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-02T16:40:50+00:00",
+      "sent_at": "2026-09-02T23:50:50.328761+00:00"
+    },
+    {
       "link": "https://venturebeat.com/technology/meta-prices-muse-voice-transcribe-at-0-18-an-hour-with-real-time-diarization-for-20-speakers-a-steal-for-enterprises",
       "title": "Meta prices Muse Voice Transcribe at $0.18 an hour, with real-time diarization for 20+ speakers: a steal for enterprises?",
       "summary": "Meta is entering the increasingly competitive real-time speech-to-text market with Muse Voice Transcribe, a new audio perception model that combines streaming transcription, endpoint detection and speaker diarization for more than 20 speakers — at a public API price of just $0.18 per hour of processed audio. Developed by Meta Superintelligence Labs, Muse is designed to process speech while it happens rather than waiting for a recording to finish. Meta’s launch post for Muse Voice Transcribe says the model supports long audio exceeding an hour, seamless multilingual code-switching, language and keyword biasing, and diarization without a separate post-processing pipeline. The model was trained across more than 70 languages, with 25 extensively validated for the initial release. The 20-plus-speaker figure is substantial, but it is not a world record. A review of current vendor documentation turns up systems with higher published ceilings. Speechmatics&#x27; real-time transcription service says it can identify 50 speakers by default and up to 100 when the limit is increased, while Amazon Transcribe&#x27;s diarization documentation specifies a maximum of 30 unique speakers, including for streaming transcription. ( Speechmatics ) Muse nevertheless lands toward the high end of the market, and Meta&#x27;s broader proposition is arguably more important than the raw maximum: high-capacity real-time diarization combined with low-latency transcription, endpointing, multilingual code-switching and aggressive API pricing in the same model. For enterprise developers building meeting systems, call analytics, live assistants or ambient AI, that combination could matter more than who holds the speaker-count record. Diarization is becoming part of the core voice stack Traditional speech recognition answers a relatively simple question: What was said? Diarization adds another: Who said it? That distinction becomes critical as transcripts feed downstream AI systems. A meeting assistant can correctly transcribe every sentence and still create an unreliable corporate record if it attributes an approval, commitment or objection to the wrong participant. The same issue affects customer-service analytics, compliance workflows and AI agents operating in rooms where several people can speak. Muse incorporates speaker attribution directly into its autoregressive multimodal architecture. Meta says audio arrives in 80-millisecond chunks, or 12.5 chunks per second, with each transformed into a soft token. At each step, the model decides whether to consume more audio or emit text. Meta calls this mechanism adaptive delay: rather than applying one latency budget to every word, Muse can wait longer when speech is ambiguous and commit earlier when it has enough context. Meta says reinforcement learning combines word-error-rate and delay rewards to train that behavior. Meta&#x27;s technical explanation of Muse details the architecture. ( Meta AI Research ) Speaker attribution and endpointing then become part of the same token sequence. A &lt;|start_of_turn|&gt; token marks a potential new speaker turn, tokens such as &lt;|speaker_A|&gt; identify the speaker, and separate onset and endpoint tokens identify speech boundaries. Meta says it trains ASR, diarization and endpointing together rather than running speaker clustering as an unrelated downstream process. Meta&#x27;s Model API speech-to-text documentation also exposes diarization as a first-class operating mode alongside push-to-talk and endpointing. Speaker labels such as A and B are scoped to a session rather than verified identities, and the API provides turn-level rather than word-level timestamps. 20+ speakers is high, but Speechmatics goes considerably higher Speaker-count comparisons require care because vendors implement diarization differently and do not all publish a maximum. Speechmatics currently makes the strongest explicit real-time capacity claim found in this review. Its real-time STT documentation says speaker diarization is available live, while its real-time FAQ says the system supports 50 speakers by default and can be increased to 100. AWS likewise exceeds Meta&#x27;s stated figure: Amazon Transcribe can differentiate a maximum of 30 unique speakers, and AWS provides explicit instructions for speaker partitioning in a streaming transcription. Soniox supports diarization in both real-time and asynchronous processing, but documents a maximum of 15 speakers per session. AssemblyAI&#x27;s streaming diarization system lets developers set max_speakers between one and 10. Both companies caution that live speaker attribution is more difficult because streaming systems must make decisions with less future audio context than offline models. xAI&#x27;s current Speech-to-Text API also supports speaker diarization in streaming mode, but its documentation reviewed for this story does not publish a maximum diarized-speaker count, so a direct ceiling comparison with Muse is not possible. ( X.ai Docs ) That means it would be inaccurate to describe Muse&#x27;s 20-plus capability as a new global record. The highest explicitly documented real-time number identified in this survey is Speechmatics&#x27; configurable 100-speaker ceiling. Meta also does not demonstrate 20-plus simultaneous participants in its launch material. Its principal live demonstration uses eight speakers, while its long-form recording contains 11 labeled participants. The 20-plus number is a stated model capability rather than the participant count in the public demos. At $0.18 per hour, Muse competes aggressively on price Meta&#x27;s pricing makes the competitive picture more interesting. According to its Muse Voice Transcribe developer page , Muse costs $3 per 1,000 minutes, or $0.18 per hour. Streaming and non-streaming transcription cost the same, and Meta says zero-data-retention processing is priced at parity with standard processing. Billing applies to audio actually processed and is rounded down to whole seconds. Standardizing publicly posted rates to one hour of streaming audio gives the following rough comparison: Streaming speech-to-text service Approx. public cost/hour Real-time diarization Soniox stt-rt-v5 $0.12 Included; up to 15 speakers Meta Muse Voice Transcribe $0.18 Included; 20+ speakers xAI Speech to Text $0.20 Supported; maximum not stated Speechmatics Real-time Standard $0.24 Included; 50 default, configurable to 100 Qwen3 ASR Flash Realtime ~$0.324 international No comparable maximum documented in source reviewed Deepgram Nova-3 Multilingual ~$0.35 base / ~$0.47 with diarization $0.12/hour diarization add-on ElevenLabs Scribe v2 Realtime $0.39 PAYG Not supported in real time AssemblyAI Universal-3.5 Pro Realtime $0.45 base / $0.57 with diarization $0.12/hour add-on; up to 10 speakers Gemini 3.5 Transcribe Live ~$0.54 blended Not supported in live mode Amazon Transcribe Streaming ~$0.60 in AWS&#x27;s N. Virginia streaming example Included; up to 30 speakers OpenAI GPT Live Transcribe $1.02 Diarization not listed as a model capability The comparison is necessarily imperfect. Qwen&#x27;s price varies by deployment geography; its international real-time rate of $0.00009 per second works out to about $0.324 per hour. Google&#x27;s Gemini figure is an estimated blended token cost rather than a flat hourly tariff. AWS prices vary by region and usage tier. ElevenLabs lists $0.39 per hour on its API pricing page but advertises $0.28 per hour or lower on annual Business plans. Deepgram&#x27;s pricing particularly illustrates why feature-level comparisons matter: its current Nova-3 Multilingual streaming rate is about $0.35 per hour, but speaker diarization costs another $0.002 per minute , bringing the comparable total to roughly $0.47 per hour. AssemblyAI similarly lists $0.45 per hour for Universal-3.5 Pro Realtime and another $0.12 per hour for streaming diarization. Cartesia is harder to normalize because Ink-2 is packaged through monthly credit plans rather than a simple metered PAYG hourly rate. Its $5 Pro plan includes roughly nine hours and 16 minutes of Ink-2 transcription, which works out to about $0.54 per transcription hour if every credit is consumed exclusively on STT. That should not be treated as equivalent to a standalone $0.54 hourly API tariff. Even with those caveats, Muse&#x27;s positioning is clear. It is not the absolute cheapest streaming transcription service — Soniox currently publishes a lower equivalent rate — but $0.18 per hour with diarization included puts Meta toward the low end of the market, especially against providers that charge separately for speaker attribution. At 1,000 hours of processed audio, Meta&#x27;s public rate implies roughly $180 in transcription charges. Meta also leads its launch accuracy benchmarks Price matters less if it comes with a large accuracy penalty. Meta&#x27;s benchmark material argues the opposite. On the Artificial Analysis AA-WER Streaming Index supplied with the launch, Muse records a 3.1% final-transcription word error rate, ahead of Cartesia Ink-2 at 3.4%, ElevenLabs Scribe v2 Realtime at 3.6%, Qwen3 ASR Flash Realtime at 3.7%, GPT Live Transcribe and Grok Speech to Text Streaming at 3.9%, and Gemini 3.5 Transcribe Live and AssemblyAI U3.5 Realtime Pro at 4.0%. Meta points out that Muse took the number one spot on third-party independent AI benchmarking firm Artificial Analysis&#x27; streaming speech-to-text evaluation as of September 1. Meta published the following benchmark charts in its launch post . Its diarization result may be even more relevant to the product&#x27;s positioning. Meta reports an average 17.5% diarization error rate across AMI-IHM, AMI-SDM and VoxConverse, lower than the competing systems shown in its chart. Speaker capacity and diarization error rate should not be conflated. A platform capable of representing 100 people is not automatically better at correctly attributing speech than one supporting 20, and Meta&#x27;s benchmark does not test every competitor operating at its advertised maximum speaker count. There are deployment tradeoffs as well. Meta&#x27;s API currently provides turn-level but not word-level timestamps, and it does not expose word-level confidence scores, sound-event detection or emotion detection. The documentation also specifies eight concurrent streams per tenant by default and real-time sessions of up to 60 minutes before an application must reconnect. Still, Muse&#x27;s launch creates an unusually sharp price-performance proposition. Its 20-plus-speaker diarization does not establish a world record, but the record may be the less important metric. For enterprise developers, the larger question is whether a service can preserve speaker attribution, accurate text and usable turn boundaries while a complicated real-world conversation is still unfolding. At $0.18 per hour, with 20-plus-speaker diarization inside the same real-time model that currently leads Meta&#x27;s supplied streaming accuracy benchmarks, Muse Voice Transcribe gives enterprise teams a serious new option for meeting intelligence, live transcription and voice-agent infrastructure — while putting additional pressure on competitors to compete on speaker-aware accuracy and total operating cost, not merely raw speech recognition.",
@@ -4760,60 +4832,6 @@
       "category": "AI",
       "published": "2026-08-19T23:50:00+00:00",
       "sent_at": "2026-08-20T01:00:43.235996+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/19/stripe-didnt-really-buy-openrouter-because-of-the-singularity/",
-      "title": "Stripe didn’t really buy OpenRouter because of the ‘singularity’",
-      "summary": "What does a payments giant want with a startup that routes prompts between different AI models? Stripe says it's because of \"the singularity\" but it's really for a far more real and powerful reason.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-19T23:32:00+00:00",
-      "sent_at": "2026-08-19T23:46:12.048224+00:00"
-    },
-    {
-      "link": "https://github.com/anthropics/claude-code/issues/6235",
-      "title": "Anthropic Refuses to Support Agents.md",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-19T21:19:50+00:00",
-      "sent_at": "2026-08-19T23:19:11.186939+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/19/waymos-cheaper-next-gen-robotaxi-is-now-open-to-all-riders-in-these-three-cities/",
-      "title": "Waymo’s cheaper, next-gen robotaxi is now open to all riders in these three cities",
-      "summary": "The next-generation robotaxi, called the Waymo Ojai, is central to the company's push towards mass scale, and eventually, profitability.",
-      "source": "TechCrunch",
-      "category": "Autonomes Fahren",
-      "published": "2026-08-19T22:25:01+00:00",
-      "sent_at": "2026-08-19T22:50:19.270528+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/19/openai-seeks-to-one-up-anthropic-with-new-customer-privacy-protections/",
-      "title": "OpenAI seeks to one-up Anthropic with new customer privacy protections",
-      "summary": "A competition is developing between OpenAI and Anthropic over who can provide the best privacy protections for enterprise customer data.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-19T22:10:46+00:00",
-      "sent_at": "2026-08-19T22:20:30.173875+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/19/cognition-ceo-denies-report-that-spacex-tried-to-acquire-the-startup/",
-      "title": "Cognition CEO denies report that SpaceX tried to acquire the startup",
-      "summary": "SpaceX was reportedly in talks to buy AI coding startup Cognition. SpaceX has already acquired Cursor as it races to catch up to rivals like OpenAI and Anthropic in enterprise AI.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-19T21:51:23+00:00",
-      "sent_at": "2026-08-19T22:20:30.173875+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/19/travis-kalanick-kicks-off-another-round-of-vc-bashing-1-are-helpful/",
-      "title": "Travis Kalanick kicks off another round of VC bashing: ‘1% are helpful’",
-      "summary": "After raising $1.7 billion for his new robotics company Atoms, Travis Kalanick is introspective about the role VCs have played in his career.",
-      "source": "TechCrunch",
-      "category": "Innovationen",
-      "published": "2026-08-19T21:48:24+00:00",
-      "sent_at": "2026-08-19T21:49:46.852797+00:00"
     }
   ]
 }
