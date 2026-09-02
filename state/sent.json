@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://simonwillison.net/2026/Sep/1/claude-fable-5-1/",
+      "title": "Claude Fable 5.1 made me a nice animated pelican",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-02T01:05:52+00:00",
+      "sent_at": "2026-09-02T05:34:11.496546+00:00"
+    },
+    {
+      "link": "https://www.baseten.co/blog/the-efficient-frontier-of-llm-inference/",
+      "title": "The efficient frontier of LLM inference",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-01T23:48:05+00:00",
+      "sent_at": "2026-09-02T05:34:11.496546+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/01/googles-answer-to-canva-is-an-ai-tool-where-you-prompt-instead-of-design/",
+      "title": "Google’s answer to Canva is an AI tool where you prompt instead of design",
+      "summary": "With Google Pics, Google is pushing deeper into the creative software market dominated by Canva and Adobe, but with a distinctly AI-first approach.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-01T17:35:37+00:00",
+      "sent_at": "2026-09-02T05:34:11.496546+00:00"
+    },
+    {
+      "link": "https://www.norirobotics.com/",
+      "title": "Launch HN: Nori Robotics (YC S26) – A low-cost humanoid robot for development",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Innovationen",
+      "published": "2026-09-01T17:35:10+00:00",
+      "sent_at": "2026-09-02T05:34:11.496546+00:00"
+    },
+    {
+      "link": "https://www.pcgamer.com/gaming-industry/dwarf-fortress-creator-says-the-industrys-in-shambles-over-ai-and-layoff-happy-ceos-everyone-i-know-their-bosses-are-slowly-getting-psychosis/",
+      "title": "Dwarf Fortress' creator says the industry's in shambles over AI",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-01T15:53:42+00:00",
+      "sent_at": "2026-09-02T05:34:11.496546+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/01/air-raises-50m-to-help-companies-vet-the-skills-and-add-ons-ai-agents-use/",
+      "title": "AIR raises $50M to help companies vet the skills and add-ons AI agents use",
+      "summary": "AIR's platform can discover agents running at a company, continuously vets any skills and add-ons they use, and blocks any unwanted behavior.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-01T15:45:51+00:00",
+      "sent_at": "2026-09-02T05:34:11.496546+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/09/01/waymo-public-robotaxi-denver-san-diego-tampa/",
+      "title": "Waymo opens robotaxi rides to the public in 3 new cities, now 14 total",
+      "summary": "Waymo opened its driverless ride-hailing service to the general public in Denver, San Diego, and Tampa on Monday, bringing the Alphabet-owned company to 14 US cities. Tens of thousands of people in each market had already signed up before the doors opened, and Waymo says it will let them in gradually over the coming weeks. more…",
+      "source": "Electrek",
+      "category": "Autonomes Fahren",
+      "published": "2026-09-01T15:22:13+00:00",
+      "sent_at": "2026-09-02T05:34:11.496546+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/01/fambot-introduces-an-ai-chief-of-staff-for-families/",
+      "title": "Fambot introduces an ‘AI chief of staff’ for families",
+      "summary": "Fambot is building an AI “chief of staff” to help families manage the emails, calendars, school updates, sports schedules, and other logistics of raising kids.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-01T15:10:58+00:00",
+      "sent_at": "2026-09-02T05:34:11.496546+00:00"
+    },
+    {
       "link": "https://masteranza.github.io/weedout/",
       "title": "Show HN: Weedout – Safari extension that hides YouTube AI-labeled videos",
       "summary": "",
@@ -4994,15 +5066,6 @@
       "category": "Hardware",
       "published": "2026-08-19T07:11:10+00:00",
       "sent_at": "2026-08-19T07:34:18.215899+00:00"
-    },
-    {
-      "link": "https://venturebeat.com/technology/glm-5-3-hits-the-api-at-1-4-4-4-per-million-tokens",
-      "title": "GLM-5.3 hits the API at $1.4/$4.4 per million tokens",
-      "summary": "After a stunning debut last week with cyber capabilities so advanced they reportedly found a previously undetected vulnerability in Cursor, GLM-5.3, the new frontier open source language model from Chinese startup z.ai, has now hit the application programming interface (API) — allowing developers the ability to build atop it and plug it into their agents and applications. Developers who previously subscribed to a GLM Coding Plan are currently limited to the OpenAI Chat Completions-compatible protocol. Z.ai said it plans to make the model&#x27;s weights openly available, but a precise date and licensing remain to be seen. On the API, the price is unchanged from GLM-5.2: $1.40 per million input tokens and $4.40 per million output tokens . Cached input costs $0.26 per million tokens, while Z.ai currently lists cached-input storage as free for a limited time. That means developers can move to the new generation without taking a higher posted per-token rate from Z.ai, even as the company claims substantially stronger coding and long-horizon agent performance. At those rates, GLM-5.3 sits well below several of the highest-end frontier APIs. Model Input ($/1M) Output ($/1M) Total ($/1M) Source Muse Spark 1.2 Contributor $0.10 $0.20 $0.30 Meta MiMo-V2.5 Flash $0.10 $0.30 $0.40 Xiaomi DeepSeek-V4-Flash — off-peak $0.22 $0.66 $0.88 DeepSeek GPT-5.6 Luna $0.20 $1.20 $1.40 OpenAI MiniMax-M3 $0.30 $1.20 $1.50 MiniMax LongCat-2.0 — limited-time promo $0.30 $1.20 $1.50 LongCat DeepSeek-V4-Flash — peak hours $0.44 $1.32 $1.76 DeepSeek MiMo-V2.5 $0.40 $2.00 $2.40 Xiaomi DeepSeek-V4-Pro — off-peak $0.66 $1.98 $2.64 DeepSeek LongCat-2.0 — standard $0.75 $2.95 $3.70 LongCat MiMo-V2.5 Pro (≤256K) $1.00 $3.00 $4.00 Xiaomi Gemini 3.6 Flash — through Dec. 31, 2026 $0.75 $3.75 $4.50 Google Gemini 3.7 Flash — through Dec. 31, 2026 $0.75 $3.75 $4.50 Google DeepSeek-V4-Pro — peak hours $1.32 $3.96 $5.28 DeepSeek Muse Spark 1.1 / 1.2 $1.25 $4.25 $5.50 Meta GLM-5.3 $1.40 $4.40 $5.80 Z.AI Grok 4.6 — &lt;200K prompt tokens $2.00 $6.00 $8.00 xAI MiMo-V2.5 Pro (&gt;256K) $2.00 $6.00 $8.00 Xiaomi Qwen3.8-Max $2.00 $6.00 $8.00 QwenCloud Gemini 3.6 Flash — starting Jan. 1, 2027 $1.50 $7.50 $9.00 Google Gemini 3.7 Flash — starting Jan. 1, 2027 $1.50 $7.50 $9.00 Google GPT-5.6 Terra $2.00 $12.00 $14.00 OpenAI Grok 4.6 — ≥200K prompt tokens $4.00 $12.00 $16.00 xAI GPT-5.4 $2.50 $15.00 $17.50 OpenAI Kimi K3 $3.00 $15.00 $18.00 Moonshot AI Claude Opus 5 $5.00 $25.00 $30.00 Anthropic Sakana Fugu Ultra (≤272K) $5.00 $30.00 $35.00 Sakana AI GPT-5.6 Sol — Standard mode $5.00 $30.00 $35.00 OpenAI Claude Fable 5 / Claude Mythos 5 $10.00 $50.00 $60.00 Anthropic GPT-5.6 Sol — Fast mode $10.00 $60.00 $70.00 OpenAI Using the simple VentureBeat comparison of one million input tokens plus one million output tokens, GLM-5.3 comes to $5.80, versus $8 for Grok 4.6 at its lower context rate, $18 for Kimi K3, $30 for Claude Opus 5 and $35 for GPT-5.6 Sol . That is not a workload-cost estimate — real bills depend heavily on the input/output mix, caching and token consumption — but it makes the relative API price tier easy to see. GLM-5.3 is not the cheapest capable model available. Google’s current introductory price for Gemini 3.7 Flash is $0.75 per million input tokens and $3.75 per million output tokens through Dec. 31, 2026, while OpenAI’s GPT-5.6 Luna is priced at $0.20 input and $1.20 output. Still, Z.ai’s price puts GLM-5.3 into a notably lower cost band than the premium frontier models it is increasingly benchmarked against. That comparison has become more relevant following the latest independent results. Artificial Analysis gives GLM-5.3 a score of 60 on its Intelligence Index , tying Kimi K3 as the top performing open weights model in the world, and scoring seven points higher than GLM-5.2. I ts analysis also estimates GLM-5.3 at about $0.68 per Intelligence Index task, versus roughly $0.44 for GLM-5.2, despite the identical API token prices. The difference underscores an important caveat in headline API pricing: Artificial Analysis found GLM-5.3 more verbose than its predecessor, so flat per-token rates do not necessarily mean flat costs for a completed workload. For developers, though, the immediate change is straightforward: GLM-5.3 is now callable through Z.ai’s API at the same $1.40/$4.40 per-million-token rate as GLM-5.2, giving teams another relatively low-cost option for testing frontier-class coding and agent workloads.",
-      "source": "VentureBeat",
-      "category": "AI",
-      "published": "2026-08-19T02:00:00+00:00",
-      "sent_at": "2026-08-19T02:37:06.056658+00:00"
     }
   ]
 }
