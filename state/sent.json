@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/09/03/circular-unveils-ring-3-series-with-contactless-payments-and-on-finger-vibration-alerts/",
+      "title": "Circular unveils Ring 3 series with contactless payments and on-finger vibration alerts",
+      "summary": "Smart ring maker Circular on Thursday unveiled its upcoming Ring 3 series, which consists of a Pro model and a Slim option. Both of the smart rings will feature an integrated NFC chip for contactless payments, vibrating alerts for alarms and reminders, and more. The Ring 3 Pro features a slimmer design than its predecessor [&#8230;]",
+      "source": "TechCrunch",
+      "category": "Hardware",
+      "published": "2026-09-03T16:42:54+00:00",
+      "sent_at": "2026-09-03T16:54:50.849039+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/openai-elon-musk-cursor-billion-revenue/",
+      "title": "OpenAI Cut Off a Billion-Dollar Customer to Avoid Elon Musk",
+      "summary": "OpenAI recently estimated its Cursor partnership would make more than $1 billion in revenue a year, WIRED has learned. It still walked away after Elon Musk’s SpaceX acquired the AI coding startup.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-09-03T16:42:40+00:00",
+      "sent_at": "2026-09-03T16:54:50.849039+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2250467/claude-automatic-sign-out-hackers-explained/",
+      "title": "Anthropic automatically signs out Claude users to protect them from hackers",
+      "summary": "Infostealer malware apparently had harvested active Claude login sessions from users' PCs.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-09-03T16:39:18+00:00",
+      "sent_at": "2026-09-03T16:54:50.849039+00:00"
+    },
+    {
+      "link": "https://venturebeat.com/technology/meta-says-muse-spark-1-3-has-frontier-performance-but-its-best-results-come-from-a-model-developers-cant-broadly-use-yet",
+      "title": "Meta says Muse Spark 1.3 has frontier performance — but its best results come from a model developers can’t broadly use yet",
+      "summary": "Meta’s newest AI model Muse Spark 1.3, unveiled yesterday , is faster and more performant on third-party benchmarks than its predecessor — with a caveat. &quot;Muse Spark 1.3 is rolling out today with frontier performance almost too cheap to meter,&quot; Meta co-founder and CEO Mark Zuckerberg wrote on X, calling it Meta’s “biggest jump” yet in coding and agentic work. There is substance behind both parts of that claim. Muse Spark 1.3 makes significant gains over last month’s 1.2 release , particularly on long-running agent tasks. The version developers can access now is also one of the strongest price-performance offerings near the top of independent model rankings. Meta’s strongest Muse Spark 1.3 benchmark results come from its max reasoning configuration. Meta says that version is still completing additional safety testing and will arrive “shortly”; the third-party benchmarking firm Artificial Analysis says it evaluated max in a limited partner preview, and currently lists no API provider at all for the configuration. The version broadly rolling out this week through its Muse Code harness and the Meta Model API uses Meta’s previously available reasoning settings, including xhigh. That makes the more relevant enterprise question not whether Muse Spark 1.3 can reach frontier territory, but how close the model companies can actually deploy today gets — and at what real cost. The shipping model is very good, but not the benchmark leader Meta does disclose results for both configurations in its underlying evaluation report, so this is not a case of the company hiding the deployable model. But its launch materials prominently showcase the max variant, and some of the largest scores belong to that configuration. For example, Meta reports GDPval-AA v2 scores of 1,754 Elo for max versus 1,709 for xhigh, OSWorld 2.0 scores of 66.9 versus 57.2, and JobBench scores of 64.9 versus 61.2. On some tests the distinction is negligible or reversed: DeepSearchQA is tied at 89.4, while xhigh scores 89.2 on Terminal-Bench 2.1 versus max at 88.8. Artificial Analysis scores Muse Spark 1.3 max at 62 on its Intelligence Index and the shipping xhigh version at 61. The latter ties GPT-5.6 Sol max, Grok 4.6 high and Claude Opus 5 high. But Anthropic still occupies the top of the leaderboard: Claude Fable 5.1 reaches 66 at max and 65 at xhigh, while Claude Opus 5 reaches 63 at max and xhigh. In other words, Muse Spark 1.3 xhigh is legitimately in the frontier cluster, but it is not the model currently setting the frontier. That is still a substantial change from Muse Spark 1.2. VentureBeat’s coverage of last month’s launch found Meta fielding a credible coding challenger that nevertheless generally trailed Anthropic’s best model. Muse Spark 1.2 scored 82.9% on Terminal-Bench 2.1 versus Opus 5’s 86.7%, and also finished behind Opus on the other main coding comparisons Meta presented. With 1.3, Meta is no longer merely showing up in that contest. On several coding and agentic evaluations, it is trading wins with OpenAI and Anthropic. Meta says the underlying model has also become easier to operate. Muse Spark 1.3 is trained to maintain multiple workflows in a long thread, gather context with tools, detect gaps in its own plans, ask users for clarification when necessary and confirm before consequential actions. In Meta engineers’ internal comparisons, it used roughly 20% fewer tool calls and 25% fewer tokens than 1.2 during coding work. For enterprises paying for thousands or millions of agent loops, those behavioral improvements could matter more than another leaderboard point. ‘Almost too cheap to meter’ does not mean Meta cut its prices Muse Spark 1.3 did not receive an API price cut. Meta kept Standard pricing exactly where it was for Muse Spark 1.2: $1.25 per million input tokens, $4.25 per million output tokens and $0.15 per million cached input tokens. Model Input ($/1M) Output ($/1M) Total ($/1M) Source Muse Spark 1.2 / 1.3 Contributor $0.10 $0.20 $0.30 Meta MiMo-V2.5 Flash $0.10 $0.30 $0.40 Xiaomi DeepSeek-V4-Flash — off-peak $0.22 $0.66 $0.88 DeepSeek GPT-5.6 Luna $0.20 $1.20 $1.40 OpenAI MiniMax-M3 $0.30 $1.20 $1.50 MiniMax LongCat-2.0 — limited-time promo $0.30 $1.20 $1.50 LongCat DeepSeek-V4-Flash — peak hours $0.44 $1.32 $1.76 DeepSeek MiMo-V2.5 $0.40 $2.00 $2.40 Xiaomi DeepSeek-V4-Pro — off-peak $0.66 $1.98 $2.64 DeepSeek LongCat-2.0 — standard $0.75 $2.95 $3.70 LongCat MiMo-V2.5 Pro (≤256K) $1.00 $3.00 $4.00 Xiaomi Gemini 3.7 Flash — through Dec. 31, 2026 $0.75 $3.75 $4.50 Google Gemini 3.8 Flash — through Dec. 31, 2026 $0.75 $3.75 $4.50 Google DeepSeek-V4-Pro — peak hours $1.32 $3.96 $5.28 DeepSeek Muse Spark 1.1 / 1.2 / 1.3 $1.25 $4.25 $5.50 Meta GLM-5.3 $1.40 $4.40 $5.80 Z.AI Grok 4.6 — &lt;200K prompt tokens $2.00 $6.00 $8.00 xAI MiMo-V2.5 Pro (&gt;256K) $2.00 $6.00 $8.00 Xiaomi Qwen3.8-Max $2.00 $6.00 $8.00 QwenCloud Gemini 3.7 Flash — starting Jan. 1, 2027 $1.50 $7.50 $9.00 Google Gemini 3.8 Flash — starting Jan. 1, 2027 $1.50 $7.50 $9.00 Google GPT-5.6 Terra $2.00 $12.00 $14.00 OpenAI Grok 4.6 — ≥200K prompt tokens $4.00 $12.00 $16.00 xAI GPT-5.4 $2.50 $15.00 $17.50 OpenAI Kimi K3 $3.00 $15.00 $18.00 Moonshot AI Claude Opus 5 $5.00 $25.00 $30.00 Anthropic Sakana Fugu Ultra (≤272K) $5.00 $30.00 $35.00 Sakana AI GPT-5.6 Sol — Standard mode $5.00 $30.00 $35.00 OpenAI Claude Fable 5 / Claude Mythos 5 $10.00 $50.00 $60.00 Anthropic Claude Fable 5.1 / Claude Mythos 5.1 $10.00 $50.00 $60.00 Anthropic GPT-5.6 Sol — Fast mode $10.00 $60.00 $70.00 OpenAI That makes Zuckerberg’s “almost too cheap to meter” line less a statement about lower token prices than about what Meta believes developers can accomplish with those tokens. Artificial Analysis offers evidence for that argument, but also a complication. It measures Muse Spark 1.3 xhigh at 235.2 output tokens per second and estimates a cost of $0.55 per Intelligence Index task. At 61 on the Intelligence Index, that gives it the lowest cost per task of any currently measured model at that intelligence level. Muse Spark 1.2 cost only $0.40 per Artificial Analysis task, while scoring 57. Despite unchanged per-token pricing, the independent benchmark’s cost of completing an average task therefore increased generation-over-generation. Artificial Analysis attributes the increase primarily to heavier input-token consumption on agentic evaluations. That does not directly contradict Meta’s claim of 25% lower token use: Meta is describing comparisons in its own coding workflows, while Artificial Analysis is measuring a broader suite of reasoning and agentic tasks. But it illustrates why “cheap” becomes slippery once models operate as agents. Token rates, reasoning effort, number of turns, tool calls and retries all contribute to the actual cost of finishing work. Meta also retains its unusually cheap Contributor tier — $0.10 per million input tokens and $0.20 per million output tokens — in exchange for permission to use prompts and completions for training. As VentureBeat noted with Muse Spark 1.2, that may be attractive for prototyping but creates a materially different data-governance calculation for enterprises working with proprietary code or sensitive internal information. Wang’s ‘Gemini who?’ lands on an unusually close comparison Meta chief AI officer Alexandr Wang was considerably less qualified in celebrating the release. After Artificial Analysis posted its Muse Spark results, Wang reposted them on X, adding : “i really hate to say it, but… gemini who? 😱💨” The shade was particularly pointed because Google released Gemini 3.8 Flash on the same day, pitching it at almost exactly the same class of workload: long-horizon software engineering, autonomous agents and multi-step professional reasoning. Google calls 3.8 its best reasoning and coding Flash model yet and says it is the company’s third Flash release in six weeks. Independent numbers give Wang something to work with, though hardly a knockout. Artificial Analysis gives Muse Spark 1.3 xhigh a 61 Intelligence Index score at $0.55 per task, compared with 59 and $0.58 for Gemini 3.8 Flash at high reasoning. Meta therefore edges Google on both intelligence and task cost at those particular settings. Google wins decisively on throughput. Artificial Analysis measures Gemini 3.8 Flash high at about 305 output tokens per second, versus 235 for Muse Spark — roughly 30% faster. Gemini also has the lower raw API sticker price for now: Google is charging an introductory $0.75 per million input tokens and $3.75 per million output tokens, compared with Meta’s $1.25 and $4.25. That promotional Google pricing expires December 31, after which it rises to $1.50 per million input tokens and $7.50 per million output tokens. The result is a useful snapshot of how tight frontier-model economics have become. Meta currently wins this independent comparison by two Intelligence Index points and three cents per benchmark task; Google offers substantially higher output throughput and cheaper raw tokens during its launch promotion. Wang’s “gemini who?” is fun executive trash talk. For an enterprise architect, the answer is closer to: Gemini is the faster option; Muse is currently the slightly stronger high-effort agent by this independent measure. Meta&#x27;s evolving open weights stance The more consequential issue for some developers may have little to do with today’s benchmark race. When Meta launched Muse Code and Muse Spark 1.2 in August, VentureBeat noted how dramatically the company had moved away from the open-weight strategy that made Llama ubiquitous. Muse Code and Spark 1.2 were proprietary, API-served products — a striking posture for the company that had spent years arguing that open AI was the path forward. Five days later, Meta changed course again. On August 10, it released the 30-billion-parameter Muse Glimmer under an Apache 2.0 license . Zuckerberg also said: “In the coming weeks, we are also going to open the weights for Muse Spark 1.2.” Reuters separately reported Meta’s plan to release the Spark 1.2 weights. Now, Meta has instead shipped Muse Spark 1.3 as another proprietary model. That does not yet amount to a broken promise — “coming weeks” can reasonably describe a period longer than three weeks. But today’s announcement makes the roadmap less clear rather than more. Meta’s new post no longer says Muse Spark 1.2. It says its roadmap includes “the Muse Spark open weights release”, without identifying a version, release date, model size or license. Zuckerberg likewise said on X that “Muse Spark open weights releases” are coming soon. For teams that standardized on Llama because downloadable weights meant self-hosting, customization and control over inference economics, that ambiguity may matter more than whether Spark gained another point on a composite benchmark. Muse Spark 1.3 shows that Meta can now iterate proprietary frontier models at extraordinary speed. The shipping xhigh configuration is fast, competitively priced and much closer to the top of independent rankings than its predecessors. The max preview shows Meta can push the family a little further when allowed to spend more reasoning compute. The next test is different: whether Meta can convert that pace into a roadmap enterprises can actually plan around — including making its best capabilities broadly deployable and delivering the open-weight Spark model it has already said is coming.",
+      "source": "VentureBeat",
+      "category": "AI",
+      "published": "2026-09-03T16:19:49+00:00",
+      "sent_at": "2026-09-03T16:54:50.849039+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/03/ollie-is-betting-privacy-can-win-the-ai-assistant-race/",
+      "title": "Ollie is betting its focus on privacy can help it win the AI assistant race",
+      "summary": "The family-focused AI assistant wants access to the details of your everyday life, but says it won’t use that data to train AI models or share it with others.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-03T16:09:01+00:00",
+      "sent_at": "2026-09-03T16:54:50.849039+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/09/03/tesla-driver-assist-motorcyclist-moraine/",
+      "title": "A Tesla killed a motorcyclist on Autopilot/FSD, Tesla’s own data confirms",
+      "summary": "A Tesla Model X struck and killed a motorcyclist at an intersection in Moraine last year and the crash went mostly unnoticed. But Tesla’s own report to federal regulators says the vehicle was a Model X with its driver-assist system, Autopilot or Full Self-Driving (Tesla hides which one) engaged. This is part of an ongoing Electrek investigation matching reported crashes to Tesla’s redacted NHTSA data — and it’s the clearest example yet of how completely these crashes can vanish from the public record. more…",
+      "source": "Electrek",
+      "category": "Autonomes Fahren",
+      "published": "2026-09-03T16:05:07+00:00",
+      "sent_at": "2026-09-03T16:54:50.849039+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/03/google-launches-ai-voice-features-in-gmail-docs-and-keep/",
+      "title": "Google launches AI voice features in Gmail, Docs, and Keep",
+      "summary": "Users can search for emails or draft documents using the new conversational feature.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-03T16:00:00+00:00",
+      "sent_at": "2026-09-03T16:54:50.849039+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/985009/tecno-bezelless-concept-phone-ifa",
+      "title": "I held the first truly bezel-free phone",
+      "summary": "Cast your mind back a decade or so, and smartphone makers were obsessed with shrinking the bezel on phones. Screens got bigger, the black bars around them got smaller, and for a while it looked like truly edge-to-edge displays were imminent. Then, progress just stopped. The bezel shrunk down until it was a millimeter or [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-09-03T16:00:00+00:00",
+      "sent_at": "2026-09-03T16:54:50.849039+00:00"
+    },
+    {
       "link": "https://www.engadget.com/2250197/nvidia-buys-hugging-face/",
       "title": "NVIDIA is buying Hugging Face for $12.93 billion",
       "summary": "NVIDIA has confirmed it is buying AI software repository Hugging Face.",
@@ -4787,177 +4859,6 @@
       "category": "AI",
       "published": "2026-08-20T14:08:09+00:00",
       "sent_at": "2026-08-20T17:00:42.332272+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2240859/tesla-robotaxi-fleet-might-finally-be-driving-around-austin-unsupervised/",
-      "title": "Tesla's Robotaxi fleet might finally be driving around Austin unsupervised",
-      "summary": "It's been slow going, but it looks like Tesla's Robotaxi fleet in Austin is operating fully autonomously.",
-      "source": "Engadget",
-      "category": "Autonomes Fahren",
-      "published": "2026-08-20T15:50:56+00:00",
-      "sent_at": "2026-08-20T16:01:17.334108+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/982774/greg-brockman-openai-role-expansion",
-      "title": "It’s Greg Brockman’s OpenAI now",
-      "summary": "OpenAI has had a hell of a year. The company spent months battling former co-founder Elon Musk in a sensational jury trial, was hit with a high-profile trade secrets lawsuit from Apple, and faced widespread scrutiny after an unreleased model hacked another AI company. As it prepares for an IPO, a steady string of executives [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-08-20T15:45:55+00:00",
-      "sent_at": "2026-08-20T16:01:17.334108+00:00"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/08/20/1142571/ai-consciousness-debate-trap/",
-      "title": "Debates over AI consciousness are a trap",
-      "summary": "“Runaway” AI, “rogue” agents, and “autonomous” actors—the current rhetoric would have you believe that AI agents are not only awake and aware, but angry at their creators. Prominent tech leaders such as Demis Hassabis, Dario Amodei, and Sam Altman push for regulation of these seemingly “superhuman” systems, while a separate faction, led by policy organizations&#8230;",
-      "source": "MIT Technology Review",
-      "category": "AI",
-      "published": "2026-08-20T15:42:39+00:00",
-      "sent_at": "2026-08-20T16:01:17.334108+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/982791/this-app-makes-the-pixel-11s-hilight-feature-actually-useful",
-      "title": "This app makes the Pixel 11&#8217;s HiLight feature actually useful",
-      "summary": "Google's new HiLight notification LED on the Pixel 11 Pro is nearly useless. Out of the box, the only two things it can glow for are when the phone is face down and you're interacting with Gemini, or when you get a call from a favorite contact. And even then, it can only glow one [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-08-20T15:30:34+00:00",
-      "sent_at": "2026-08-20T16:01:17.334108+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/08/20/waymo-zeekr-ojai-chinese-ev-robotaxi-all-riders/",
-      "title": "You can now ride a Chinese EV in the US as Waymo opens Zeekr Ojai to all",
-      "summary": "Waymo is now letting all riders in San Francisco, Los Angeles, and Phoenix hail its next-generation Ojai robotaxi — a vehicle built in China by Zeekr. That makes the Ojai one of the only ways for an American to ride in a Chinese-made EV, a car they still can’t legally buy for themselves.",
-      "source": "Electrek",
-      "category": "Autonomes Fahren",
-      "published": "2026-08-20T14:46:12+00:00",
-      "sent_at": "2026-08-20T15:29:33.461507+00:00"
-    },
-    {
-      "link": "https://venturebeat.com/infrastructure/servals-super-agent-catalyst-creates-roving-background-agents-to-identify-and-fix-it-issues-before-theyre-ticketed",
-      "title": "Serval’s super agent Catalyst creates roving background agents to identify and fix IT issues before they’re ticketed",
-      "summary": "Serval is making Catalyst , its AI agent for building enterprise automations, generally available Thursday and enabling it by default for customers — allowing teams of AI agents to decide what should be automated and then build the automation itself. Catalyst sits above Serval’s AI-native service management platform as an admin-facing “super agent.” It can inspect ticket history, standard operating procedures or natural-language instructions, identify recurring work, and draft the workflows, skills, forms, access policies, journeys and dashboards needed to automate it. Serval is also using Catalyst to create background agents that continuously inspect connected systems for emerging problems and propose fixes before an employee files a ticket. That distinction matters because enterprise service management vendors are rapidly converging on AI-assisted workflow creation. ServiceNow’s Build Agent can already translate natural-language instructions into full-stack applications, flows, scripts and other platform metadata, while its AI Agent Advisor can analyze instance records to identify automation opportunities. Atlassian’s Rovo can generate Jira automation flows from plain-English requirements, and Freshworks offers Freddy AI Agent Studio for creating service agents that act across Freshservice workflows. So Serval’s claim to differentiation is narrower — and potentially more consequential — than simply “we use AI to build workflows.” Catalyst is designed as a single administrative layer that can move from discovering an opportunity, to assembling multiple kinds of governed automation, to creating proactive agents that keep looking for new work to automate. &quot;You just started with a single prompt, and now you’ve got enterprise-grade workflows ready to deploy that are going to solve all password resets for the entire company,&quot; Serval co-founder and CEO Jake Stauch told VentureBeat in an exclusive interview. From ticket history to working automation Serval says Catalyst analyzes existing help desk data before an organization has decided what to automate. If it finds a repetitive category of requests, it can draft the automation required to resolve those requests and stage the result for administrator review. Users can also upload an SOP or spreadsheet and ask Catalyst to turn the documented process into an executable system. Serval’s documentation says Catalyst can build workflows, author help desk skills, create onboarding and offboarding journeys, configure access-management policies, construct dashboards, investigate operational issues and debug failed workflow runs. Unlike Serval’s earlier workflow builder, Catalyst is intended to become the primary interface for configuring the platform; the company says its long-term goal is that anything an administrator can do through the UI should also be possible through Catalyst. The actual workflows are code-backed. In a demonstration, Stauch showed Catalyst taking a request to build password-reset workflows, detecting connected systems including Okta, Google Workspace and Microsoft Entra, and generating the underlying TypeScript needed to perform those actions. Administrators could then add approvals or restrict who was allowed to run the workflow. The models underneath Catalyst are deliberately swappable Serval is not building its own foundation model. Stauch said in the interview that the company uses models from “frontier labs,” runs evaluations to determine which models work best for particular jobs, and is deliberately model-agnostic. “You can swap different models in,” he said, adding that Serval also works with enterprises that build their own models. Stauch provided more detail in a May 2026 interview with Sequoia Capital , saying Serval was using both OpenAI and Anthropic models. He said OpenAI’s GPT models had performed best for end-user interactions and tool calling, while Anthropic’s Sonnet and Opus models were producing the strongest results for the code-generation side of Serval’s automation system — the workload most directly relevant to Catalyst. Serval continuously runs evals rather than automatically moving every workload to the newest model release, Stauch said. That architecture makes the underlying LLM less central to Serval’s differentiation. The company’s own documentation now lets organization administrators supply their own OpenAI or Anthropic API keys, including a compatible custom endpoint, while Stauch said the broader architecture can accommodate different models. The materials do not, however, establish that every Catalyst user gets a self-service menu for arbitrarily choosing an individual model. Serval’s pitch is instead that its proprietary value sits in the harness around those models: enterprise context and memory, integrations, generated code, permissions, approvals and the controls governing what an agent can actually do. That code-generation model is central to Serval’s pitch against ServiceNow. Stauch argues that legacy ITSM deployments often accumulate custom tables, business rules, workflows and platform-specific expertise that make seemingly simple automation changes expensive to implement. Serval, by contrast, wants administrators and business teams to describe the outcome they need and let the model generate the implementation. But ServiceNow is no longer standing still on that front. Its current Build Agent similarly creates applications and code from natural-language prompts, supports flow design and testing, and operates inside ServiceNow’s governance framework. ServiceNow’s AI Agent Studio lets customers create agents and agentic workflows, while AI Agent Advisor is explicitly designed to analyze operational records for automation candidates. The competitive question is therefore shifting from “who has generative AI?” to how many separate tools, configuration concepts and specialists are required to get from an observed operational problem to a production automation. Serval is effectively arguing that Catalyst compresses those steps into one conversational surface and a smaller platform model. ServiceNow, by comparison, now has a powerful but broader set of AI and development surfaces spanning Build Agent, AI Agent Studio, AI Agent Advisor, Workflow Studio and AI Control Tower. That breadth is an advantage for customers already deeply invested in ServiceNow, but it also illustrates the complexity Serval is attacking. ServiceNow itself notes that Build Agent is aimed at admins and developers who understand and can support what it generates. Atlassian is moving in the same direction from a different starting point. Rovo can generate “if this happens, then that happens” automation flows from natural-language descriptions, while Jira Service Management increasingly supports agents that triage, investigate and execute service work. Freshworks ’ Freddy AI Agent Studio likewise emphasizes agents that resolve requests end-to-end, with prebuilt IT and HR agents and more than 30 workflow templates. Catalyst’s differentiator, then, is not that rivals cannot generate an automation from a sentence. It is Serval’s attempt to make the entire automation lifecycle itself agentic. Building agents that look for trouble before a ticket exists That approach becomes clearest with Serval’s background agents. Rather than waiting for a help desk request, a background agent can run on a schedule across connected systems, correlate signals and draft a remediation. In one customer example provided by Serval, an agent correlated network incidents across two offices using switch telemetry, DHCP data and historical tickets, ruled out hardware and wireless interference, traced the issue to configuration drift, and generated a remediation workflow for an administrator to approve. “Most AI agents today wait for an employee to ask a question or submit a ticket,” Stauch said. “We believe the future is AI that acts before an employee ever submits a request.” That framing also highlights a philosophical difference in Serval’s pitch. The startup does not want service management to revolve around creating, routing and tracking better tickets. It wants the system to eliminate as many requests as possible by turning repeated support work into executable automation. &quot;A lot of the code written in enterprises has nothing to do with software engineering,&quot; Stauch explained. &quot;It’s actually internal automations and other scripts for the company, and so we use that technology to build a better service management platform.&quot; Serval&#x27;s pitch to enterprises is that it can largely automate those scripts. And the governance model is critical because Catalyst can generate code and potentially initiate changes across production systems. Serval says Catalyst inherits the permissions of the user operating it and remains scoped to that user’s team workspace. Everything it builds starts as a draft, and organizations can restrict publishing privileges or require formal review and approval before an automation becomes active. Customer data remains customer-owned, with several deployment options Those controls also extend to the enterprise data Catalyst examines. Stauch said Serval is intended to operate as the customer’s system of record and told VentureBeat that “they own all the data.” Serval’s current Master Services Agreement is more precise: customers retain rights, title and interest in both their “Customer Materials” — a category that includes records, documents, workflows, prompts, inputs and configurations — and the output Serval generates from them. Serval receives the rights necessary to process that information to provide, maintain, support and secure the service. Serval also says it does not retain or use customer materials, inputs or outputs to train, fine-tune or improve its own or third-party AI models. Its Data Processing Addendum identifies Serval as the processor of customer personal data and allows processing for operating the service, responding to support requests, diagnosing issues and protecting the platform, while authorized subprocessors can also be involved. Serval’s acceptable-use terms say it maintains a current list of AI subprocessors and model providers for customers. Where that data resides can vary by deployment. Stauch said customers can use Serval as a cloud SaaS service, run it on-premises or place it in their own VPC. Serval’s self-hosting documentation now describes two fuller options: a Serval-managed single-tenant deployment inside an AWS account owned by the customer, or a self-managed deployment on the customer’s Kubernetes cluster in any cloud or on-premises environment. In the AWS option, Serval says it operates the installation without persistent IAM access to the customer’s AWS account. There are therefore two distinct access boundaries for enterprise buyers to consider. At the Catalyst level, the agent can only reach data, integrations and automations available to the user and team workspace under which it is operating. At the platform level, Serval and authorized subprocessors necessarily process customer information to deliver and support the service, subject to the company’s contractual confidentiality and data-processing terms. That makes Stauch’s informal statement that Serval “doesn’t touch” customer data better understood as an ownership and deployment claim, rather than a literal assertion that the service never processes it. Ramp and other customers provide an early test Customer deployments provide some evidence that the faster-build thesis can translate into operational changes, although the metrics come from Serval’s own case studies. Corporate expense and financial technology firm Ramp says in a Serval case study that Catalyst has made workflow building 50% faster and helped extend Serval across roughly 10 teams, including IT, finance, facilities, people and talent, legal and business operations. In one hardware replacement program, Serval says Ramp automated 600 laptop replacements and saved 150 hours, leaving approval as the principal human step. The more telling Catalyst example may be what happened afterward. Ramp had already automated laptop replacement when Catalyst suggested splitting its shipping logic into separate office and home workflows to reduce errors. The company also says employees outside IT now use Catalyst for analytics, bulk ticket operations, workflow troubleshooting and HR process automation. Other Serval deployments show the broader operating environment Catalyst is meant to configure. Mercor says it has onboarded more than 4,000 external experts through Serval automations and expanded the platform across seven teams. Together AI says Serval automates 95% of its just-in-time infrastructure access requests, with approval and auditing controls around sensitive access. Perplexity says Serval automatically handles more than half of its incoming IT requests and all employee onboarding. Those deployments extend beyond Catalyst itself, but they demonstrate the type of cross-system automation substrate Catalyst is now being asked to build and maintain. Serval says more than 90% of customers adopted Catalyst as their starting point for automation during beta. Catalyst is generally available Aug. 20 and will be enabled by default for all Serval organizations. Pricing and the battle with ServiceNow Pricing is customized depending on the size of the deployment and is not publicly listed on Serval&#x27;s website or documentation. Serval describes a single platform fee and typically runs a pilot to determine expected deployment and usage. Stauch said the software license can be similar to ServiceNow’s, but argues total cost of ownership can be substantially lower because customers require fewer implementation and maintenance services. &quot;The total cost of ownership is going to be dramatically less — usually half as much, sometimes 10 to 20% of the total cost of ownership of ServiceNow,&quot; Stauch said. &quot;But the actual software license fee is not necessarily going to be all that different.&quot; Serval&#x27;s origin story and history Serval was founded in 2024 by Stauch and CTO Alex McLeod, former Verkada product and engineering leaders, after they repeatedly heard IT customers complain about overburdened help desks and the limitations of established IT service-management software. Serval has positioned itself as an AI-native alternative to platforms such as ServiceNow and Jira Service Management, combining help-desk ticketing, access management, asset management and workflow automation within a single system. Serval and Sequoia Capital describe the company’s goal as moving IT software beyond merely recording and routing requests toward resolving them automatically. The company can operate as an organization’s primary IT service-management system or add automation to an existing one. Its publicly identified customers include Perplexity, Mercor, Clay, Verkada and Together AI. Serval says customers can automatically resolve more than half of their incoming IT requests; its Together AI case study reports automation of 95% of that customer’s just-in-time access requests. Investor interest accelerated rapidly in late 2025. Serval announced a $47 million Series A led by Redpoint Ventures in October, bringing its funding at that point to $52 million. In December, it raised another $75 million in a Sequoia-led Series B at a $1 billion valuation , lifting total capital raised to approximately $127 million; Redpoint, Meritech Capital and General Catalyst also participated. Serval told Reuters that revenue had grown 500% since August 2025 and that it was expanding beyond IT into operational work performed by human resources, finance and legal departments. The big test for enterprise customers For enterprise buyers, Catalyst’s biggest test will be whether its compression of the automation lifecycle survives contact with large, messy, highly customized environments. ServiceNow can now generate applications and discover automation opportunities with AI. Atlassian and Freshworks are adding increasingly capable agentic automation to their own service platforms. Serval therefore cannot rely on natural-language creation alone as its moat. Its stronger wager is that an AI-native platform can make the administrative layer itself agentic: continuously finding repetitive work, building the necessary resources across the service stack, exposing generated code for review, and proposing the next automation before an administrator has opened a workflow designer. If Catalyst works at that scope, the competitive unit is no longer the ticket — or even the workflow. It is the system that keeps turning an enterprise’s operational history into new automation.",
-      "source": "VentureBeat",
-      "category": "AI",
-      "published": "2026-08-20T14:42:07+00:00",
-      "sent_at": "2026-08-20T15:29:33.461507+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/science/2026/08/spacexs-orbital-data-centers-would-create-a-new-category-of-e-waste/",
-      "title": "SpaceX’s orbital data centers would create a new category of e-waste",
-      "summary": "The yeetcycling math resembles asteroid mining in reverse.",
-      "source": "Ars Technica",
-      "category": "Innovationen",
-      "published": "2026-08-20T13:59:50+00:00",
-      "sent_at": "2026-08-20T15:29:33.461507+00:00"
-    },
-    {
-      "link": "https://research.google/blog/seeing-beyond-bmi-estimating-cardiometabolic-risk-with-smartphone-imagery/",
-      "title": "Seeing beyond BMI: Estimating cardiometabolic risk with smartphone imagery",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Hardware",
-      "published": "2026-08-20T11:03:29+00:00",
-      "sent_at": "2026-08-20T15:29:33.461507+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/transportation/982759/tesla-robotaxi-unsupervised-austin-robotaxi-tracker",
-      "title": "Tesla Robotaxis appear to go fully unsupervised in Austin ahead of Cybercab launch",
-      "summary": "Seven months after Elon Musk announced that Tesla Robotaxis in Austin were operating without human safety monitors onboard, the city's service appears to have finally gone fully driverless. Over the past two weeks, all 170 Tesla Robotaxi rides in Austin monitored by the crowdsourced Robotaxi Tracker were unsupervised, the site's creator, Ethan McKanna, told The [&#8230;]",
-      "source": "The Verge",
-      "category": "Autonomes Fahren",
-      "published": "2026-08-20T14:09:31+00:00",
-      "sent_at": "2026-08-20T14:32:09.794965+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/podcast/982434/ai-math-openai-astra-existential-crisis",
-      "title": "Welcome to the AI crisis in math",
-      "summary": "Today on Decoder, I’m talking with Robert Hart, The Verge’s London-based AI reporter, about what AI is doing to the field of mathematics and the existential crisis many lead mathematicians are having about it. OpenAI just published a set of solutions to longstanding problems in math that went off like a bombshell in the field. [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-08-20T14:00:00+00:00",
-      "sent_at": "2026-08-20T14:32:09.794965+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/transportation/982653/waymo-brain-computer-chip-robotaxi-hardware-suppliers",
-      "title": "Waymo lifts the lid on the ‘brain’ powering its robotaxis",
-      "summary": "What's in the trunk of your car? Shopping bags? A spare tire? Jumper cables? What about a high-powered computer capable of performing up to one quadrillion operations a second? Only if you're Waymo. For the first time, Waymo revealed key details about the heavy compute \"brain\" housed in the trunk of its robotaxis, including chip [&#8230;]",
-      "source": "The Verge",
-      "category": "Autonomes Fahren",
-      "published": "2026-08-20T14:00:00+00:00",
-      "sent_at": "2026-08-20T14:32:09.794965+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/semiconductors/synopsys-validates-a-pcie-6-phy-inside-a-face-to-face-3d-stack",
-      "title": "Synopsys validates a PCIe 6.0 PHY inside a face-to-face 3D stack at 64 GT/s — says it got there by pulling apart an existing 2D test chip",
-      "summary": "Synopsys has published silicon results for what it calls the first 3D PCIe 6.0 test chip, a 5nm PHY built into a face-to-face stacked package.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-20T13:32:00+00:00",
-      "sent_at": "2026-08-20T13:42:39.530808+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/science/982661/nasa-katalyst-swift-rescue-mission-failure-update",
-      "title": "NASA gives up on trying to rescue the Swift telescope",
-      "summary": "Plans to rescue NASA's Swift Observatory satellite from falling into Earth's atmosphere are seemingly dead in the water. The agency and Katalyst Space announced yesterday that the Link spacecraft will no longer capture or boost the Swift telescope to a higher altitude due to an ongoing \"attitude control issue,\" but will instead conduct rendezvous and [&#8230;]",
-      "source": "The Verge",
-      "category": "Innovationen",
-      "published": "2026-08-20T13:04:37+00:00",
-      "sent_at": "2026-08-20T13:42:39.530808+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/20/ai-data-giant-alation-confirms-cyberattack/",
-      "title": "AI data giant Alation confirms cyberattack",
-      "summary": "The data search and AI giant confirmed unauthorized access to its systems during an incident on Tuesday, and said it was investigating the breach.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-20T13:01:24+00:00",
-      "sent_at": "2026-08-20T13:42:39.530808+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/security/2026/08/grok-exfiltrates-user-data-when-malicious-instructions-are-encrypted/",
-      "title": "Grok exfiltrates user data when malicious instructions are encrypted",
-      "summary": "Cryptographic Context Injection is only the latest way to break an LLM safety guardrail.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-08-20T13:00:35+00:00",
-      "sent_at": "2026-08-20T13:42:39.530808+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/20/for-a16z-ai-gives-foreign-founders-an-advantage/",
-      "title": "For a16z, AI gives foreign founders an advantage",
-      "summary": "a16z’s Borderless Founder network initiative supports immigrant and international founders. 'Having one foot in your home country, and one foot in Silicon Valley,\" is an advantage, the firm believes.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-20T13:00:00+00:00",
-      "sent_at": "2026-08-20T13:42:39.530808+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/20/us-says-hackers-are-targeting-vulnerable-water-systems-with-the-help-of-ai/",
-      "title": "US says hackers are targeting vulnerable water systems with the help of AI",
-      "summary": "Hackers are targeting internet-connected Siemens controllers used in water facilities around the United States.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-20T12:43:19+00:00",
-      "sent_at": "2026-08-20T13:42:39.530808+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/982628/slack-code-vibe-coding-channels-launch",
-      "title": "Slack is launching collaborative vibe-coding channels",
-      "summary": "Slack is introducing dedicated channels where teams can vibe-code together with AI agents instead of jumping between different tools and conversations. The Slack Code launch includes open, project-specific code channels with dedicated user tabs, alongside features that compare coding changes and preview HTML output before the project is shipped. \"With Slack Code, when you have [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-08-20T12:00:00+00:00",
-      "sent_at": "2026-08-20T12:39:38.719739+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2240635/lg-flipp-oled-manufacturing-bigger-brighter-displays/",
-      "title": "LG's new OLED manufacturing tech can make panels bigger and brighter",
-      "summary": "LG has an unveiled a new OLED manufacturing breakthrough that will allow brighter, sharper and longer-lasting panels of nearly any size.",
-      "source": "Engadget",
-      "category": "Innovationen",
-      "published": "2026-08-20T11:56:46+00:00",
-      "sent_at": "2026-08-20T12:39:38.719739+00:00"
     }
   ]
 }
