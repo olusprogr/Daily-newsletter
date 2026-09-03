@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.engadget.com/2250197/nvidia-buys-hugging-face/",
+      "title": "NVIDIA is buying Hugging Face for $12.93 billion",
+      "summary": "NVIDIA has confirmed it is buying AI software repository Hugging Face.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-09-03T12:18:21+00:00",
+      "sent_at": "2026-09-03T12:35:13.927593+00:00"
+    },
+    {
+      "link": "https://spectrum.ieee.org/industrial-robot-cable-carrier-protection",
+      "title": "Protecting Dynamic Industrial Robot Cable Carriers",
+      "summary": "This article is brought to you by Tsubaki KabelSchlepp . In modern automated manufacturing, six-axis articulated robots perform high-speed, multidirectional maneuvers under demanding operational cycles. However, as robot arms swivel, rotate, and extend, the electrical cables, fiber optics, and pneumatic hoses supplying them endure severe mechanical stress. Torsional twist, rapid acceleration, and repeated contact with machine structures often lead to premature conductor fatigue, insulation breakdown, and costly unplanned production halts. To overcome these multi-axis motion challenges, the Tsubaki KabelSchlepp Robotrax System provides a specialized three-dimensional cable carrier engineered specifically for complex robotic motion. Managing High Tensile Forces With Central Steel Technology Conventional cable carriers often transfer operational movement stress directly onto internal electrical lines and hoses. The Robotrax system changes this dynamic through a central steel cable that runs through the core of every chain link. The Robotrax system’s central steel cable absorbs the primary tensile loads and preserves conductor integrity, dramatically extending cable service life. When robot arms undergo rapid directional shifts and accelerations up to 10 g, this internal steel cable absorbs the primary tensile loads. By isolating electrical and fluid lines from pulling forces, the design preserves conductor integrity and dramatically extends cable service life. Mechanics can easily calibrate and adjust system tension using an integrated clamping piece, ensuring consistent mechanical support throughout long operational cycles. Spherical Link Design and Modular Cable Routing The foundation of the Robotrax system lies in its open, single-piece plastic links featuring spherical snap-on connections on both sides. This geometry allows the carrier to flex smoothly across three axes, providing radial rotation of up to ±450 degrees per meter depending on the model size. To optimize internal organization, carrier links contain up to three distinct chambers. This physical separation prevents signal interference and mechanical abrasion between heavy power lines, sensitive data channels, and fluid hoses. For standard models (R040 through R100), technicians can press cables directly into the carrier without tools, drastically reducing installation and maintenance time. Larger configurations, such as the R140X, incorporate swiveling crossbars with snap locks alongside vertical and horizontal dividers for customized interior partitioning. ​ROBOTRAX System Steel cable for transferring extremely high tensile forces Tension piece for locking the chain links Type with toolless opening swivel crossbars and divider module available Open design – Fast cable laying as the cables are simply pressed in – Easy checking of all cables Special plastic for long service life Protective covers or heat shields made from different materials are available for different environmental conditions Quick-release bracket for fixing and continuation Strain relief with LineFix clamps Protection against hard impacts, excessive abrasion and premature wear as well as limitation of the bending radius through protector Active Retraction and Impact Protection Large robot work envelopes and high-speed motion trajectories can cause loose cable carrier loops to swing and strike the robot body. To eliminate these destructive collisions, Tsubaki KabelSchlepp integrates the Pull Back Unit (PBU). The PBU serves as an active retraction mechanism that maintains optimal tension on the cable carrier throughout the entire motion cycle. By preventing excess slack and eliminating interfering contours, the PBU minimizes collision risks across complex movement paths. The unit requires zero maintenance on its retraction element and offers standard mounting configurations for leading industrial robot platforms, including KUKA, ABB, and FANUC. Tsubaki KabelSchlepp’s Pull Back Unit maintains optimal tension on the cable carrier and minimizes collision risks across complex movement paths. Additionally, external protectors can be retrofitted onto individual chain links. These durable impact shields limit the minimum bending radius to prevent over-flexing while shielding the chain body from severe external abrasion. If wear occurs, technicians simply replace the modular protector rather than the entire cable carrier assembly. Built for Demanding Industrial Environments From automotive welding cells to high-speed machining centers, Robotrax systems adapt to severe working conditions through tailored protective accessories: Heat Shields: Aluminum-coated textile fiber covers protect against radiated heat, hot weld spatter, and flying sparks. Protective Covers: Coated polyester sleeves shield sensitive lines against aggressive cutting fluids, hydraulic oils, paint overspray, and abrasive dust. LineFix Strain Relief: Multi-layer clamping devices anchor cables securely at both ends to prevent axial displacement during intense motion. By combining central load absorption, multi-axis flexibility, and active retraction control, the Robotrax system offers plant engineers and system integrators a reliable path toward maximizing robot uptime and reducing total operational costs.",
+      "source": "IEEE Spectrum",
+      "category": "Innovationen",
+      "published": "2026-09-03T12:18:21+00:00",
+      "sent_at": "2026-09-03T12:35:13.927593+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/cpus/intel-eliminates-fellow-titles-changes-standard-of-technical-leadership-combines-deep-expertise-with-strategic-vision-and-measurable-tactical-progress",
+      "title": "Intel scraps 44-year-old 'Fellow' title for top scientists, changes 'standard of technical leadership' — technical luminaries must now deliver measurable business results, combine deep expertise with strategic vision and 'measurable tactical progress'",
+      "summary": "Intel gets rid of hundreds of vice presidents, replaces 'Fellows' with 'distinguished engineers,' changes 'standards of technical leadership.'",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-03T12:13:44+00:00",
+      "sent_at": "2026-09-03T12:35:13.927593+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/03/amazons-zoox-expands-its-robotaxi-service-to-las-vegas-airport/",
+      "title": "Amazon’s Zoox expands its robotaxi service to Las Vegas airport",
+      "summary": "Zoox is expanding to this critical ride-hailing destination a few weeks after it started charging for robotaxi rides.",
+      "source": "TechCrunch",
+      "category": "Autonomes Fahren",
+      "published": "2026-09-03T12:12:56+00:00",
+      "sent_at": "2026-09-03T12:35:13.927593+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/985474/nvidia-buying-hugging-face-deal",
+      "title": "Nvidia is buying Hugging Face for almost $13 billion",
+      "summary": "Nvidia has agreed to buy Hugging Face for $12.93 billion, bringing one of the most popular hosting platforms for open-source AI models, datasets, and tools under the ownership of the world's biggest AI chipmaker. Hugging Face is an online platform founded in 2016 that gives AI developers a space to share their projects and data [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-03T12:12:06+00:00",
+      "sent_at": "2026-09-03T12:35:13.927593+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/video-games/pc-gaming/rpcs3-emulator-devs-slam-nvidia-dlss-5-as-ai-slop-generator-says-industry-pushing-more-upscalers-and-frame-generation-to-hallucinate-games-and-hide-their-lack-of-optimisation",
+      "title": "RPCS3 emulator devs slam Nvidia DLSS 5 as 'AI-slop generator' — says industry pushing 'more upscalers and frame generation to hallucinate games and hide their lack of optimisation'",
+      "summary": "RPCS3 explains why modern temporal upscalers are difficult to implement in PS3 emulation as modders continue experimenting with the leaked DLSS 5 DLL.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-03T12:10:38+00:00",
+      "sent_at": "2026-09-03T12:35:13.927593+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/laptops/iconic-packard-bell-brand-rises-from-the-ashes-after-13-years-with-the-dotbook-14-at-ifa-colorful-and-affordable-intel-twin-lake-laptop-is-europe-only-for-now",
+      "title": "Iconic Packard Bell brand rises from the ashes after 13 years with the DotBook 14 at IFA — colorful and affordable Intel Twin Lake laptop is Europe-only, for now",
+      "summary": "Packard Bell is back, under the wing of Acer at IFA 2026, with the Taiwanese PC maker’s unveiling of the colorful Dot family, including a laptop, headphones, input peripherals, and more.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-03T12:03:26+00:00",
+      "sent_at": "2026-09-03T12:35:13.927593+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2250009/dji-launches-new-robot-vacuums-with-an-eye-toward-data-privacy/",
+      "title": "DJI launches new robot vacuums with an eye toward data privacy",
+      "summary": "The DJI ROMO 2 lineup also includes LiDAR-enabled mopping arms and improved obstacle avoidance.",
+      "source": "Engadget",
+      "category": "Innovationen",
+      "published": "2026-09-03T12:00:00+00:00",
+      "sent_at": "2026-09-03T12:35:13.927593+00:00"
+    },
+    {
       "link": "https://www.engadget.com/2248998/anker-brings-its-ai-chip-to-the-soundcore-space-2-pro-headphones/",
       "title": "Anker brings its AI chip to the Soundcore Space 2 Pro headphones",
       "summary": "Anker has a bunch of new AI-infused headphones, earbuds and hearing aids on the way.",
@@ -4886,78 +4958,6 @@
       "category": "Innovationen",
       "published": "2026-08-20T11:56:46+00:00",
       "sent_at": "2026-08-20T12:39:38.719739+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/ddr5/get-32gb-of-ram-for-only-usd241-in-this-3-item-gaming-combo-from-newegg-save-usd249-on-this-inclusive-bundle-with-ryzen-7-9800x3d-corsair-vengeance-ram-and-a-gigabyte-x870e-motherboard",
-      "title": "Get 32GB of RAM for only $241 in this 3-item gaming combo from Newegg —save $249 on this inclusive bundle with Ryzen 7 9800X3D, Corsair Vengeance RAM, and a Gigabyte X870E motherboard",
-      "summary": "Newegg's AM5 combo bundles 32GB of Corsair Vengeance DDR5-6000 RAM with a Ryzen 7 9800X3D and Gigabyte X870E board for only $1,009.99. $249 savings puts the RAM at only $241",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-20T11:46:55+00:00",
-      "sent_at": "2026-08-20T11:53:20.040041+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/supercomputers/the-supercomputer-race-no-longer-means-what-it-used-to-as-rankings-lose-relevance-in-the-ai-era-as-privately-held-compute-clusters-are-built-running-hpl-becomes-a-distraction",
-      "title": "The supercomputer race no longer means what it used to, as rankings lose relevance in the AI era — as privately held compute clusters are built, running HPL becomes a distraction",
-      "summary": "We review the current state of high-performance supercomputing, interviewing experts, including the deputy head of high-performance computing at GWDG, to find out exactly where the current race stands.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-08-20T11:40:00+00:00",
-      "sent_at": "2026-08-20T11:53:20.040041+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/gadgets/978782/cat-litterbox-motion-activated-neon-on-air-sign",
-      "title": "I ruined my cats’ toilet time with a motion-activated neon litter box sign",
-      "summary": "My two cats live a refreshingly low-tech lifestyle. They've never experienced a robot litter box, an automated feeder, or a GPS tracker. Noodle and Loaf live blissfully unaware of the technological trappings that surround the rest of my life. Except, that is, for the glowing neon sign that turns on whenever they go to the [&#8230;]",
-      "source": "The Verge",
-      "category": "Innovationen",
-      "published": "2026-08-20T11:30:00+00:00",
-      "sent_at": "2026-08-20T11:53:20.040041+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/semiconductors/smic-is-raising-wafer-prices-into-a-shortage-as-sanctions-wall-off-chinas-ai-demand",
-      "title": "SMIC posts record $3B quarter and hikes wafer prices — US sanctions hand Chinese foundry a captive AI market",
-      "summary": "SMIC posted its first $3 billion quarter earlier this month, with revenue up 36.1% year on year, net profit nearly tripling to $479.2 million.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-08-20T11:20:00+00:00",
-      "sent_at": "2026-08-20T11:53:20.040041+00:00"
-    },
-    {
-      "link": "https://www.wired.com/review/poolease-x1-pool-robot/",
-      "title": "Poolease X1 Pool Robot Review: How Bad Can It Be?",
-      "summary": "The Poolease X1 can collect leaves from the pool floor, but dirt, silt, walls, and steps are all beyond its pay grade.",
-      "source": "Wired",
-      "category": "Innovationen",
-      "published": "2026-08-20T11:02:00+00:00",
-      "sent_at": "2026-08-20T11:53:20.040041+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/laptops/gaming-laptops/get-an-astonishing-oled-5090-gaming-laptop-for-usd3-599-usd800-off-gigabyte-aorus-master-16-features-a-24-core-arrow-lake-cpu-32gb-ram-2tb-ssd",
-      "title": "Get an astonishing OLED 5090 gaming laptop for $3,599, $800 off — Gigabyte Aorus Master 16 features a 24-core Arrow Lake CPU, 32GB RAM, 2TB SSD",
-      "summary": "Get $800 off this RTX 5090 gaming laptop with Intel Core Ultra 9 275HX, 32GB of RAM, and a 2TB SSD.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-20T10:16:16+00:00",
-      "sent_at": "2026-08-20T11:53:20.040041+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/20/binance-now-lets-ai-agents-trade-but-keeping-them-in-check-is-largely-up-to-users/",
-      "title": "Binance now lets AI agents trade, but keeping them in check is largely up to users",
-      "summary": "Binance's Agent OS works with tools including ChatGPT, Claude Code, and Cursor.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-20T09:30:00+00:00",
-      "sent_at": "2026-08-20T10:02:45.596751+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/982609/lg-oled-panel-flipp-display-technology",
-      "title": "LG’s new OLED breakthrough can boost display lifespans",
-      "summary": "LG Display has unveiled a new OLED manufacturing method that reportedly results in panels that are brighter, longer-lasting, more efficient, and theoretically can be almost any size. This new technology is called FLiPP (FMM-Less innovative Pixel Patterning), which LG Display describes as a \"dream next-generation OLED\" patterning method that aims to eliminate some of the [&#8230;]",
-      "source": "The Verge",
-      "category": "Innovationen",
-      "published": "2026-08-20T09:11:26+00:00",
-      "sent_at": "2026-08-20T09:29:57.487484+00:00"
     }
   ]
 }
