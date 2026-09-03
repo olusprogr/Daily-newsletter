@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.engadget.com/2248998/anker-brings-its-ai-chip-to-the-soundcore-space-2-pro-headphones/",
+      "title": "Anker brings its AI chip to the Soundcore Space 2 Pro headphones",
+      "summary": "Anker has a bunch of new AI-infused headphones, earbuds and hearing aids on the way.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-09-03T07:30:00+00:00",
+      "sent_at": "2026-09-03T07:46:04.632848+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2249482/anker-mindbase-is-a-smart-home-hub-nas-and-security-guard/",
+      "title": "Anker's MindBase is a smart home hub, NAS and security guard",
+      "summary": "Anker's MindBase uses AI to run your smart home, and keep it safe.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-09-03T07:30:00+00:00",
+      "sent_at": "2026-09-03T07:46:04.632848+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2249106/anker-eufy-at-ifa-2026-new-security-cameras-plus-a-robot-vacuum-and-a-robot-lawnmower/",
+      "title": "Anker Eufy at IFA 2026: New security cameras, plus a robot vacuum and a robot lawnmower",
+      "summary": "Security was the focus of Anker Eufy at IFA this year.",
+      "source": "Engadget",
+      "category": "Innovationen",
+      "published": "2026-09-03T07:30:00+00:00",
+      "sent_at": "2026-09-03T07:46:04.632848+00:00"
+    },
+    {
+      "link": "https://marius.blog/firefox-155-ai-kill-switch-retest/",
+      "title": "Firefox's AI Switch Is Off. Telemetry Isn't",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-02T18:30:49+00:00",
+      "sent_at": "2026-09-03T07:46:04.632848+00:00"
+    },
+    {
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+      "title": "Gemini 3.8 Flash and 3.8 Flash Cyber",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-02T15:44:06+00:00",
+      "sent_at": "2026-09-03T07:46:04.632848+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/semiconductors/hybrid-bonding-roadmap-examined",
+      "title": "The current state of Hybrid Bonding in 2026 — TSMC sits at 6 microns and the HBM delay that nobody expected",
+      "summary": "Hybrid bonding, the copper-to-copper joining technique that replaces solder microbumps in 3D chip stacks, is in high-volume production on logic and freshly postponed on memory.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-02T15:05:41+00:00",
+      "sent_at": "2026-09-03T07:46:04.632848+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/02/hiddenlayer-nabs-100m-as-enterprises-rush-to-secure-their-ai-deployments/",
+      "title": "HiddenLayer nabs $100M as enterprises rush to secure their AI deployments",
+      "summary": "Security companies are scrambling to build products that can monitor not just agents but also the tools and add-ons they use.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-02T15:01:23+00:00",
+      "sent_at": "2026-09-03T07:46:04.632848+00:00"
+    },
+    {
+      "link": "https://github.com/mlc-ai/web-llm",
+      "title": "WebLLM: high-performance in-browser LLM inference engine",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-02T14:02:35+00:00",
+      "sent_at": "2026-09-03T07:46:04.632848+00:00"
+    },
+    {
       "link": "https://www.wired.com/story/meta-pushes-its-new-ai-agent-on-employees-but-eases-off-on-tokenmaxxing/",
       "title": "Meta Pushes Its New AI Agent on Employees—but Eases Off on Tokenmaxxing",
       "summary": "The company is reducing pressure on workers to use artificial intelligence tools while encouraging them to experiment with Hatch, its most advanced AI project yet.",
@@ -4886,15 +4958,6 @@
       "category": "Innovationen",
       "published": "2026-08-20T09:11:26+00:00",
       "sent_at": "2026-08-20T09:29:57.487484+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/irobot-promo-code/",
-      "title": "iRobot Promo Code: 15% Off",
-      "summary": "Save on iRobot products, including robot vacuums and mops designed to handle pet hair, daily messes, and hands-free cleaning with smart home integration.",
-      "source": "Wired",
-      "category": "Innovationen",
-      "published": "2026-08-20T05:00:00+00:00",
-      "sent_at": "2026-08-20T05:26:03.644442+00:00"
     }
   ]
 }
