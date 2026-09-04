@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/09/04/ai-compute-provider-nscale-is-looking-for-3-5b-in-pre-ipo-financing/",
+      "title": "AI compute provider Nscale is looking for $3.5B in pre-IPO financing",
+      "summary": "Nscale, which recently struck a $45 billion deal with Anthropic, is in talks to raise additional funds in anticipation of an upcoming IPO.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-04T21:12:11+00:00",
+      "sent_at": "2026-09-04T21:13:20.087628+00:00"
+    },
+    {
+      "link": "https://eebench.org/blog/can-ai-design-circuit-boards-yet/",
+      "title": "Can AI design circuit boards yet?",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-04T19:48:29+00:00",
+      "sent_at": "2026-09-04T21:13:20.087628+00:00"
+    },
+    {
+      "link": "https://www.technologyreview.com/2026/09/04/1140872/architecting-memory-and-storage-in-the-ai-era/",
+      "title": "Architecting memory and storage in the AI era",
+      "summary": "The era of AI inference has arrived. Imagine a healthcare system analyzing millions of data points in real time to accelerate life-saving medical research, or an intelligent assistant instantly resolving thousands of complex customer needs at once. These real-world breakthroughs rely on advanced infrastructure acting as the engine of continuous intelligence, powering real-time services while&#8230;",
+      "source": "MIT Technology Review",
+      "category": "AI",
+      "published": "2026-09-04T18:39:19+00:00",
+      "sent_at": "2026-09-04T21:13:20.087628+00:00"
+    },
+    {
+      "link": "https://twitter.com/ggerganov/status/2095897173376618881",
+      "title": "Georgi Gerganov on llama.cpp/ggml future after Nvidia acquisition of HuggingFace",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Hardware",
+      "published": "2026-09-04T17:12:22+00:00",
+      "sent_at": "2026-09-04T21:13:20.087628+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/986867/ifa-2026-smart-home-lights-laptop-robot-vacuum-ai-headphones",
+      "title": "The best tech and gadgets announced at IFA so far",
+      "summary": "The doors to Europe's largest consumer tech show officially opened to the public today following a week of news coming out of IFA 2026 in Berlin, Germany. If you're struggling to keep up with what has been announced, here are some of the best new gadgets and upgrades from the show - including a smartphone [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-09-04T15:41:17+00:00",
+      "sent_at": "2026-09-04T21:13:20.087628+00:00"
+    },
+    {
+      "link": "https://www.nytimes.com/2026/09/04/technology/open-source-ai-anthropic-openai.html",
+      "title": "Corporate America is getting hooked on open-source AI",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-04T15:33:45+00:00",
+      "sent_at": "2026-09-04T21:13:20.087628+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/frontier-ai-faces-pricing-reckoning-as-token-volume-explodes-25-fold-mid-tier-models-deliver-90-percent-of-flagship-capability-at-one-sixth-the-cost",
+      "title": "Frontier AI faces pricing reckoning as token volume explodes 25-fold — mid-tier models deliver 90% of flagship capability at one-sixth the cost",
+      "summary": "As frontier AI developers push for cost savings as much as intelligence enhancements, new models push the boundaries of the pareto frontier, with even small advantages crowning new kings.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-04T15:21:56+00:00",
+      "sent_at": "2026-09-04T21:13:20.087628+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2251091/rogue-openai-agents-took-over-german-coding-forum-in-previously-undisclosed-hijacking/",
+      "title": "Rogue OpenAI agents took over a German coding forum in a previously undisclosed hijacking",
+      "summary": "OpenAI says it's investigating the incident after a group of researchers disclosed their findings.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-09-04T15:02:52+00:00",
+      "sent_at": "2026-09-04T21:13:20.087628+00:00"
+    },
+    {
       "link": "https://www.theverge.com/ai-artificial-intelligence/990197/roland-ai-music-melody-flip",
       "title": "Roland is getting into generative AI music with Melody Flip",
       "summary": "It's not quite the \"push button; get song\" of Suno, but Roland's new Melody Flip tool marks the company's foray into generative AI music. Available as a plug-in for your digital audio workstation (DAW), Melody Flip offers around 250 \"Palettes,\" which are essentially themed collections of musical ideas sorted by genre. You can start from [&#8230;]",
@@ -4796,42 +4868,6 @@
       "category": "AI",
       "published": "2026-08-21T19:51:48+00:00",
       "sent_at": "2026-08-21T21:20:20.783362+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/21/nvidia-just-showed-that-the-harness-not-the-ai-model-is-now-the-real-hero/",
-      "title": "Nvidia just showed that the harness, not the AI model, is now the real hero",
-      "summary": "Nvidia research shows that AI agents can perform well, and not go off the deep end, through fine-tuning, even if the AI model isn't that great at the task.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-21T19:43:39+00:00",
-      "sent_at": "2026-08-21T19:47:13.225709+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2241857/linkedin-says-its-ai-slop-button-is-working/",
-      "title": "LinkedIn says its AI slop button is working",
-      "summary": "LinkedIn says its AI slop button is working.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-08-21T19:11:07+00:00",
-      "sent_at": "2026-08-21T19:22:40.909234+00:00"
-    },
-    {
-      "link": "https://blog.doubleword.ai/what-happens-when-a-gpu-reads-memory",
-      "title": "What happens when a GPU reads memory",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Hardware",
-      "published": "2026-08-21T16:16:42+00:00",
-      "sent_at": "2026-08-21T19:22:40.909234+00:00"
-    },
-    {
-      "link": "https://pointinthecloud.com/2026-08-19-144600.html",
-      "title": "I ran Photoshop on a £0.60 computer chip",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Hardware",
-      "published": "2026-08-21T15:17:47+00:00",
-      "sent_at": "2026-08-21T19:22:40.909234+00:00"
     }
   ]
 }
