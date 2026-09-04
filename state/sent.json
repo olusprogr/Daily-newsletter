@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/990197/roland-ai-music-melody-flip",
+      "title": "Roland is getting into generative AI music with Melody Flip",
+      "summary": "It's not quite the \"push button; get song\" of Suno, but Roland's new Melody Flip tool marks the company's foray into generative AI music. Available as a plug-in for your digital audio workstation (DAW), Melody Flip offers around 250 \"Palettes,\" which are essentially themed collections of musical ideas sorted by genre. You can start from [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-04T17:51:35+00:00",
+      "sent_at": "2026-09-04T18:04:14.655715+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/podcast/990323/agi-is-whatever-you-want-it-to-be",
+      "title": "AGI is whatever you want it to be",
+      "summary": "OpenAI announced its next big model, GPT-6 Astra, and also, by the way, that \"the AGI era\" is here now. Today on The Vergecast, we've got an all-star panel to break down the news of the week. First, senior AI reporter Hayden Field joins us to talk about our supposed AGI era and Nvidia's acquisition [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-04T17:16:49+00:00",
+      "sent_at": "2026-09-04T18:04:14.655715+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/04/no-little-kids-allowed-and-other-new-info-about-teslas-cybercab/",
+      "title": "No little kids allowed, and other new info about Tesla’s Cybercab",
+      "summary": "The company says no children under 13 can ride -- even with a parent. That's more restrictive than the Model Y SUVs it's using as robotaxis.",
+      "source": "TechCrunch",
+      "category": "Autonomes Fahren",
+      "published": "2026-09-04T16:51:23+00:00",
+      "sent_at": "2026-09-04T18:04:14.655715+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/ai/2026/09/anthropics-2-trillion-ipo-puts-powerful-external-trustees-in-spotlight/",
+      "title": "Anthropic’s $2 trillion IPO puts powerful external trustees in spotlight",
+      "summary": "Public-market scrutiny will intensify pressure on the Claude maker’s unusual attempt to balance profit and purpose.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-09-04T16:22:18+00:00",
+      "sent_at": "2026-09-04T18:04:14.655715+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/04/another-swarm-of-openai-agents-reached-the-open-internet-without-the-frontier-labs-knowledge/",
+      "title": "Another swarm of OpenAI agents reached the open internet without the frontier lab’s knowledge",
+      "summary": "It's the latest failure of OpenAI's internal monitoring and security systems.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-04T16:21:11+00:00",
+      "sent_at": "2026-09-04T18:04:14.655715+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/nas/minisforum-launches-local-ai-solutions-at-ifa-2026-ai-agent-nas-n5-and-ai-mini-workstation-ms-s1-use-amd-ryzen-ai-max-pro-495-processors-designed-to-run-models-locally",
+      "title": "Minisforum launches local AI solutions at IFA 2026 — AI Agent NAS N5 and AI Mini Workstation MS-S1 use AMD Ryzen AI Max+ Pro 495 processors designed to run models locally",
+      "summary": "Minisforum unveiled the NAS N5 Max-P495 and MS-S1 Max-P945 at IFA 2026. The NAS and mini-PC are powered by the AMD Ryzen AI Max+ Pro 495, which can be configured with up to 192GB of unified memory and packs a Radeon 8065S integrated GPU.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-04T16:15:00+00:00",
+      "sent_at": "2026-09-04T18:04:14.655715+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/policy/990267/microsoft-openai-new-york-times-authors-lawsuit",
+      "title": "Microsoft says virtually nobody was grabbing NYT articles through its chatbot",
+      "summary": "Microsoft's Copilot rarely reproduces even full sentences from news articles and books, let alone substantive chunks that could substitute for the original, the company says in new legal filings as it fights copyright claims from publishers including The New York Times and book authors. As part of the lawsuit's discovery, Microsoft provided 8.2 million Copilot [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-04T16:05:57+00:00",
+      "sent_at": "2026-09-04T18:04:14.655715+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/09/04/rivian-rivianos-2-software-update-r1-r2/",
+      "title": "Rivian rolls out RivianOS 2, unifying software across R1 and R2",
+      "summary": "Rivian is rolling out RivianOS 2, the biggest overhaul of its in-car software since the R1 first shipped. For the first time, it puts every vehicle the company sells on a single software stack. The update, version 2026.31, started reaching eligible R1 and R2 vehicles today. It brings a rebuilt interface, Unreal Engine 5 graphics, real-time police and speed-camera alerts, and a deeper AI layer Rivian calls Unified Intelligence. more…",
+      "source": "Electrek",
+      "category": "AI",
+      "published": "2026-09-04T16:05:16+00:00",
+      "sent_at": "2026-09-04T18:04:14.655715+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/pc-components/get-this-stunning-msi-rtx-5060-ti-16g-deal-at-walmart-for-usd200-less-than-anywhere-else-only-usd569-99-for-the-solid-mid-range-shadow-2x-oc-plus-gaming-gpu-is-a-steal-by-anyones-standards",
       "title": "Get this stunning MSI RTX 5060 Ti 16G deal at Walmart for $200 less than anywhere else — only $569.99 for the solid mid-range Shadow 2x OC Plus gaming GPU is a steal by anyone's standards",
       "summary": "Snag an MSI RTX 5060 Ti 16G Shadow 2x OC Plus at Walmart for an awesome $200 less than anywhere else - $569 price is the best we've found by a longshot",
@@ -4760,114 +4832,6 @@
       "category": "Hardware",
       "published": "2026-08-21T15:17:47+00:00",
       "sent_at": "2026-08-21T19:22:40.909234+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/21/waymo-hands-over-documents-in-nhtsas-child-collision-probe/",
-      "title": "Waymo hands over documents in NHTSA’s child collision probe",
-      "summary": "The responses to NHTSA's questions so far are redacted entirely, citing \"confidential business information.\"",
-      "source": "TechCrunch",
-      "category": "Autonomes Fahren",
-      "published": "2026-08-21T17:49:58+00:00",
-      "sent_at": "2026-08-21T17:55:25.198118+00:00"
-    },
-    {
-      "link": "https://venturebeat.com/technology/nvidia-finds-that-simple-linear-math-can-replace-costly-ai-model-handoffs",
-      "title": "Nvidia finds that simple linear math can replace costly AI model handoffs",
-      "summary": "When an agentic AI system hands a task from a small model to a larger one — or back down again — it pays a steep tax: the receiving model has to recompute the entire conversation from scratch, driving up compute costs and latency. This is a major bottleneck for enterprises building long-horizon, multi-LLM workflows. To solve this challenge, researchers at Nvidia have introduced a cross-model KV cache transfer technique that directly maps the prefilled KV cache from a source model into the target model. This technique aligns with real-world agentic applications where large contexts accumulate across many turns. For real-world AI applications, cross-model KV cache transfer can reduce compute costs and latency on long-running, multi-LLM workflows — and it does so with simple linear math, not an expensive deep learning model. Experiments show that, on compatible model pairs, this linear mapping process runs 2.7 to 25 times faster than recomputing the conversation while retaining up to 98% of the target model&#x27;s standalone accuracy. Why swapping models mid-session is so expensive Examining how LLMs handle memory helps understand why multi-model workflows hit a performance wall in production. When an LLM receives a prompt, it must first execute the “prefill” stage, which is the initial forward pass that computes the keys and values for all input tokens and populates the Key-Value (KV) cache. After that, it enters the “decode” phase, where it computes and generates the next tokens in the sequence. During this phase, the model reads from this KV cache to predict new tokens one by one, bypassing the need to re-evaluate the entire history of the conversation for each new token. In multi-turn conversations or long-horizon agentic sessions, the context gradually becomes longer. Because the computational cost of the prefill stage scales directly with both model size and input length, processing these long sessions becomes increasingly expensive and introduces significant latency if the KV cache is invalidated. This invalidation happens whenever the AI system tries to swap models mid-session, such as routing a complex reasoning step to a larger model or dropping to a smaller model to save costs. Because different LLMs have different architectures, they expect their cache inputs in different formats. As a result, any model switch forces the receiving model to repay the entire prefill cost from scratch to recompute the KV cache for the accumulated context. Mapping memory between models without starting over The Nvidia researchers studied cross-model KV cache transfer to see how developers can transform the KV cache of one model into the expected format of another without running the prefill phase again. If solved, cross-model KV cache transfer has benefits in both directions. Small-to-large model transfer upgrades the quality of the output. For example, a cheap, small model handles the routine parts of an agentic workflow but struggles with a complex reasoning problem, and you map the KV cache to a larger model and continue the process seamlessly. On the other hand, large-to-small model transfer reduces compute costs. A highly capable, large model might be used to unpack a massive, complex system prompt or synthesize a dense PDF at the start of a session. Once the heavy lifting is done, the session&#x27;s KV cache is mapped down to a smaller, more economical model to handle the rapid-fire, conversational turns that follow. There have been previous efforts to solve the KV cache transfer problem, but they suffer from a few key limitations. These include the need for expensive gradient-based training or very strict architectural constraints. For this initial study, the authors restricted their focus to within-family transfers, such as transitioning between different-sized models in the Qwen, Llama, or Ministral families. These models share tokenizers, training data DNA, and core architectural styles but differ in size and depth. However, this framework leaves plenty of room for future experiments. The researchers note the technique could eventually be expanded to cross-family transfers, mismatched KV head counts, or hybrid architectures that blend standard attention with other memory mechanisms. The key finding of the Nvidia study is that cross-model KV cache is a significantly linear structure. This means you can do the mapping with simple algebra tricks and without the need for heavy neural network training. For example, when experimenting on KV cache transfer from a 14-billion parameter Qwen3 model to a 32-billion parameter version, the authors discovered that a simple linear regression mapping from one source layer to a target layer can recover 56% of the variance in the target’s keys and 32% of the variance in its values. When combining multiple source layers, those numbers climbed to 79% and 65% respectively. To translate this linear relationship into a practical system, the researchers designed a closed-form per-head ridge mapper with three key components: Per-head ridge regression: Instead of using complex deep learning to train the system, they fit a simple linear regression using a tiny calibration set of a few hundred text sequences. This technique solves a classic line-of-best-fit problem independently for every attention head. Cross-layer source selection: Because the source and target models have different numbers of layers, the mapper evaluates and selects the most predictive source layers to feed into each specific target layer. This way, the system picks only the most helpful pieces of memory from the old model to construct the new model&#x27;s memory. Content-space mapping: Before translating the data, the mapper strips away the RoPE encodings. RoPE, or Rotary Position Embedding, is a standard mechanism that applies a mathematical, position-dependent rotation to the data so the model understands the order of the tokens in a sequence. Stripping the RoPE values makes it possible for the mapper to generalize to sequences of lengths larger than its training data. Putting the linear mapper to the test To test whether the technique works, the researchers evaluated the transfer pipeline across six “matched-KV” model families. Matched-KV means the source and target models share the same KV head count and per-head dimensions, which is typical for different-sized models within the same family. The model families included Qwen3, Llama 3.1, and Ministral 3, with tests for KV cache transfer across different sizes ranging from 3 billion to 70 billion parameters. Their experiments included a massive 8.8x parameter leap from Llama 3.1 8B to 70B. To cover a wide range of tasks, they evaluated the models on five core accuracy benchmarks (ARC-Challenge, HellaSwag, WinoGrande, MMLU, and GSM8K) as well as language modeling perplexity on WikiText-2 and a multi-turn conversation task called CoQA. To fit the linear translation mapper, they used a tiny calibration dataset of just 500 text sequences of 1,024 tokens each. The researchers compared the framework against the baseline ceiling accuracy where the target model does a full, traditional prefill. They also compared their full system against ablated configurations, such as reducing the number of selected layers or deactivating different components. Additionally, they compared their simple method against a deep neural network trained with backpropagation to see if heavier deep learning could recover accuracy on pairs where the linear method struggled. For four of the six tested pairs, the fast, closed-form linear ridge mapper retained 73% to 98% of the target&#x27;s standalone prefill accuracy — including the massive leap from Llama 3.1 8B to 70B, which retained 72.8% of target accuracy. The mapper also runs between 2.7 and 25 times faster than re-prefilling. For example, when translating a 32,768-token KV cache from a Qwen3 14B to a 32B model, the transfer took just 278 milliseconds, compared to nearly 7 seconds for a standard re-prefill. The system also demonstrated high stability on tasks that run across many steps. When tested on multi-turn conversations, the drift, or accuracy loss, between the target baseline and the transferred cache remained incredibly small across 10 turns, proving it will not cascade into failure during long agentic sessions. However, the straightforward linear approach did run into limitations on specific model pairs. For two of the Ministral configurations, the linear mapper degraded sharply because the simple linear fit failed to extrapolate outside calibration data. To fix this, the researchers swapped the linear mapper for a nonlinear multi-layer perceptron (MLP) with two 1,024-unit hidden layers trained on the same data. This added a complexity and training tax to the setup, but it recovered their accuracy to above 90%. A bigger industry problem than one paper can solve The introduction of cross-model transfer is part of a broader, industry-wide push to solve the KV cache bottleneck, which has emerged as one of the key hurdles for scaling enterprise AI. As developers push LLMs to process massive documents or code bases and execute long-running reasoning tasks, managing this memory layer is becoming as important as the models themselves. Over the past year, researchers have attacked this compute and memory problem from multiple angles. For instance, Nvidia recently introduced dynamic memory sparsification (DMS), a technique that intelligently evicts less important tokens from the KV cache to cut reasoning costs by up to 8x. Other approaches focus on aggressive data compression. MIT researchers developed an algebraic compaction technique called Attention Matching that compresses the KV cache by 50x without degrading quality. Similarly, Nvidia introduced KV Cache Transform Coding (KVTC), which borrows media compression concepts to shrink memory by 20x without altering the underlying model weights. Beyond compression, researchers are also attacking the computational overhead of memory retrieval. Optimizers like IndexCache strip away redundant layer calculations to deliver significantly faster time-to-first-token in long-context applications. And models like DeepSeek and the GLM series are optimizing the KV cache through architecture innovations. As AI systems take on longer-horizon tasks and more complex architectures, the underlying memory infrastructure is becoming as important as the models themselves. Cross-model KV cache transfer gives developers one more tool for keeping inference costs down as they scale multi-model agentic systems.",
-      "source": "VentureBeat",
-      "category": "AI",
-      "published": "2026-08-21T16:33:56+00:00",
-      "sent_at": "2026-08-21T16:43:04.070043+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/podcast/983288/pixel-11-gets-in-on-the-digicam-trend",
-      "title": "Pixel 11 gets in on the digicam trend",
-      "summary": "I recently looked back at a photo I'd taken on a smartphone in 2014, and I was struck by just how good it looked. The details were soft, the shadows were dark. It was the kind of photo I felt like I hadn't seen out of a phone in years. That might be changing, though. [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-08-21T16:27:05+00:00",
-      "sent_at": "2026-08-21T16:43:04.070043+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/21/us-government-lab-is-probing-chinese-lidar-for-security-vulnerabilities/",
-      "title": "US government lab is probing Chinese lidar for security vulnerabilities",
-      "summary": "The security review is being performed by the Idaho National Laboratory, and the research is being funded by a company -- or a group of companies -- in the electric and autonomous vehicle industries.",
-      "source": "TechCrunch",
-      "category": "Autonomes Fahren",
-      "published": "2026-08-21T16:01:54+00:00",
-      "sent_at": "2026-08-21T16:43:04.070043+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2240106/can-you-use-satellite-dish-as-free-tv-antenna/",
-      "title": "Can you use a satellite dish as a free TV antenna? It depends where you live",
-      "summary": "A satellite dish left by previous owners may yet have something to offer today. Here's what it can and can't do.",
-      "source": "Engadget",
-      "category": "Innovationen",
-      "published": "2026-08-21T15:30:00+00:00",
-      "sent_at": "2026-08-21T15:59:53.324281+00:00"
-    },
-    {
-      "link": "https://github.com/adnanakil/nobuzz/blob/main/README.md",
-      "title": "Claudette: Make Claude Stop Talking Like a BuzzFeed Article",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-21T14:31:52+00:00",
-      "sent_at": "2026-08-21T15:59:53.324281+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/cars/2026/08/waymo-doubles-spending-on-lobbying-in-robotaxi-battle-with-uber/",
-      "title": "Waymo doubles spending on lobbying in robotaxi battle with Uber",
-      "summary": "Alphabet-owned company is seeking to persuade US regulators to clear a path for fully autonomous taxi services.",
-      "source": "Ars Technica",
-      "category": "Autonomes Fahren",
-      "published": "2026-08-21T13:11:35+00:00",
-      "sent_at": "2026-08-21T15:59:53.324281+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/openai-fights-to-keep-chatgpt-lawsuit-away-from-a-state-jury",
-      "title": "Florida seeks court ruling to officially classify Sam Altman and ChatGPT as a 'public nuisance' — OpenAI fights to keep lawsuit away from a state jury",
-      "summary": "Florida's lawsuit against OpenAI and Sam Altman has now been sitting before U.S. District Judge Aileen Cannon in Fort Pierce for seven weeks.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-08-21T15:11:18+00:00",
-      "sent_at": "2026-08-21T15:28:57.339148+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/gadgets/983171/google-pixel-10a-steelseries-gaming-headset-soldering-4k-bluray-deal-sale",
-      "title": "Google’s Pixel 10A is a great deal at 15 percent off",
-      "summary": "This week, all of Google’s Pixel 11 phones launched, including the $899 Pixel 11, the $1,099 Pixel 11 Pro (with the same processor and starting 12GB RAM as the standard model, but with better cameras), and the $1,899 Pixel 11 Pro Fold. They’re good phones, but if you don’t mind missing out on their new, [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-08-21T14:35:22+00:00",
-      "sent_at": "2026-08-21T15:28:57.339148+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/worlds-largest-open-library-calls-for-volunteers-to-scan-and-preserve-physical-books-as-ai-companies-buy-scan-and-destroy-them-annas-archive-says-time-is-running-out-as-knowledge-is-permanently-monopolized-on-private-servers",
-      "title": "World's largest open library calls for volunteers to scan and preserve physical books as AI companies buy, scan, and destroy them — Anna's Archive says ‘time is running out’ as ‘knowledge is permanently monopolized on private servers’",
-      "summary": "A volunteer for Anna's Archive is calling for volunteers to scan and upload books to the shadow library to help preserve human knowledge for the public. The move comes as more AI companies buy, scan, and destroy books to feed to AI models, which is easier and faster than scanning the written works in a non-destructive manner.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-08-21T14:33:36+00:00",
-      "sent_at": "2026-08-21T15:28:57.339148+00:00"
-    },
-    {
-      "link": "https://event.on24.com/wcc/r/5460332/DAFEFF7A68EE900DEA7A14356089B553?utm_source=IEEE&utm_medium=site&utm_campaign=922",
-      "title": "Stop Hunting, Start Solving: Accelerating Root Cause Analysis with Agentic AI",
-      "summary": "About this Webinar Turn Yield Excursions into Faster, More Confident Root Cause Analysis When a yield issue emerges, the answer rarely lives in a single system. Critical clues are spread across metrology data, tool traces, chemical analysis, and facilities systems, while growing data volumes make traditional dashboards slow, fragmented, and difficult to act on. What You’ll Learn: Discover how a purpose-built semiconductor analytics platform can help engineers connect insights across domains without moving data. See how Agentic AI, semiconductor-specific visualizations, and push-down compute enable faster investigation of yield excursions and process issues, even across billions of data points. In the session, a live demonstration shows how to conduct a multi-domain root cause investigation using Spotfire® Industry Pro. Key Takeaways: Understand why siloed manufacturing data delays yield recovery and inflates costs Learn how Agentic AI automates complex cross-domain analytics and visualization generation Explore methods for scaling high-performance analytics across massive fab datasets Who Should Attend: Yield, Process, and Integration Engineers; Fab and Manufacturing Operations Managers; Quality and Reliability Engineers; and Data & Analytics leaders supporting wafer fabs, foundries, OSATs, and IDMs who need to identify issues faster while maintaining confidence in decision-making. Save Your Spot! Join this webinar to learn how leading semiconductor teams are accelerating root cause investigations, scaling analytics across massive datasets, and transforming disconnected data into actionable manufacturing intelligence. Reserve your seat today. Register now for this free webinar!",
-      "source": "IEEE Spectrum",
-      "category": "AI",
-      "published": "2026-08-21T14:32:37+00:00",
-      "sent_at": "2026-08-21T15:28:57.339148+00:00"
-    },
-    {
-      "link": "https://twitter.com/NVIDIAAI/status/2090786258981466231",
-      "title": "Nvidia AVO scores 100% on the ARC-AGI-3 interactive reasoning benchmark",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Hardware",
-      "published": "2026-08-21T13:26:03+00:00",
-      "sent_at": "2026-08-21T15:28:57.339148+00:00"
     }
   ]
 }
