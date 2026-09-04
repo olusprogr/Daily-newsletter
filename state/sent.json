@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.wired.com/story/silicon-valley-is-having-a-hot-girl-renaissance/",
+      "title": "Silicon Valley Is Having a ‘Hot Girl Renaissance’",
+      "summary": "A San Francisco “Hot List” is trying to buck stereotypes about dating in tech circles amid wider debates about the value of being perceived as attractive.",
+      "source": "Wired",
+      "category": "Hardware",
+      "published": "2026-09-04T09:00:00+00:00",
+      "sent_at": "2026-09-04T10:33:34.902325+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2248386/rugged-smartphones-camera-is-a-removable-action-cam-ifa-2026/",
+      "title": "This rugged smartphone's camera is a removable action cam",
+      "summary": "RugOne's newest ruggedized phone has a waterproof action cam that you can remove.",
+      "source": "Engadget",
+      "category": "Hardware",
+      "published": "2026-09-04T07:00:00+00:00",
+      "sent_at": "2026-09-04T10:33:34.902325+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2250874/tesla-offering-cybercab-robotaxi-rides/",
+      "title": "Tesla starts offering Cybercab robotaxi rides",
+      "summary": "Tesla has officially launched the Cybercab, its autonomous vehicle with no steering wheel.",
+      "source": "Engadget",
+      "category": "Autonomes Fahren",
+      "published": "2026-09-04T06:41:33+00:00",
+      "sent_at": "2026-09-04T10:33:34.902325+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/cpus/intels-core-ultra-400-nova-lake-launch-schedule-leaks-out-mass-production-in-q4-first-nova-lake-cpus-in-q1-2027",
+      "title": "Intel's Core Ultra 400 'Nova Lake' launch schedule leaks out — mass production in Q4, first Nova Lake CPUs in Q1 2027",
+      "summary": "Intel's Core Ultra 400-series 'Nova Lake-S' CPUs are on track for mass production next quarter, but they will only launch in Q1 2027 with 28-core models coming first.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-03T15:58:41+00:00",
+      "sent_at": "2026-09-04T10:33:34.902325+00:00"
+    },
+    {
+      "link": "https://www.macrumors.com/2026/09/03/chatgpt-claude-and-grok-are-down/",
+      "title": "ChatGPT, Claude, and Grok Are Down",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-03T15:30:10+00:00",
+      "sent_at": "2026-09-04T10:33:34.902325+00:00"
+    },
+    {
+      "link": "https://news.ycombinator.com/item?id=49551096",
+      "title": "Ask HN: Why were OpenAI, Claude, and Grok simultaneously down?",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-03T15:07:01+00:00",
+      "sent_at": "2026-09-04T10:33:34.902325+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/03/googles-latest-ai-weather-model-gives-you-no-excuse-to-forget-your-umbrella/",
+      "title": "Google’s latest AI weather model gives you no excuse to forget your umbrella",
+      "summary": "WeatherNext 3 is the latest wave of a sea change in meteorology brought out by deep learning techniques. Google says it will start feeding into weather information users see in search, Google Maps, and Gemini.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-03T15:00:00+00:00",
+      "sent_at": "2026-09-04T10:33:34.902325+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/data-centers/almost-70-percent-of-voters-in-missouri-city-recall-council-member-who-said-yes-to-ai-data-center-tax-breaks-councilor-said-disagreement-over-an-issue-shouldnt-be-enough-to-unseat-him",
+      "title": "Almost 70% of voters in Missouri city vote to recall council member who said yes to AI data center tax breaks — councilor said disagreement over an issue shouldn’t be enough to unseat him",
+      "summary": "The people of Independence, Missouri, voted to recall councilor John Perkins after he voted to give a Nebius data center tax breaks amounting to more than $6 billion. Perkins said that a single vote should not be enough grounds to overturn an election from two years ago.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-03T14:52:55+00:00",
+      "sent_at": "2026-09-04T10:33:34.902325+00:00"
+    },
+    {
       "link": "https://electrek.co/2026/09/03/tesla-announces-1-million-unsupervised-miles-driven-by-robotaxi/",
       "title": "Tesla announces Robotaxi has driven 1 million unsupervised miles",
       "summary": "Tesla said today that its Robotaxis have driven a total of 1 million miles without a human driver supervising them. The number is more than double what we heard at the last check-in just six weeks ago, as Tesla finally shifts away from human “safety drivers.” more…",
@@ -4859,69 +4931,6 @@
       "category": "Innovationen",
       "published": "2026-08-21T11:33:00+00:00",
       "sent_at": "2026-08-21T11:53:17.149332+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/laptops/gaming-laptops/save-usd900-on-this-2-in-1-asus-rog-touchscreen-gaming-laptop-with-64gb-ram-the-14-inch-flow-z13-machine-ships-with-a-16-core-amd-strix-halo-cpu-and-a-1tb-ssd-perfect-for-games-and-ai",
-      "title": "Save $900 on this 2-in-1 Asus ROG touchscreen gaming laptop with 64GB RAM — the 14-inch Flow Z13 machine ships with a 16-core AMD Strix Halo CPU and a 1TB SSD, perfect for games and AI",
-      "summary": "Save a huge $900 on this touch screen gaming laptop combo, the Asus ROG Flow Z13, now just $2,099.99.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-08-21T10:23:49+00:00",
-      "sent_at": "2026-08-21T10:25:46.145601+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2241390/openai-chatgpt-imessage-integration/",
-      "title": "ChatGPT on Mac can now read and respond to Apple iMessages",
-      "summary": "OpenAI has rolled out a plugin that allows ChatGPT to control the Apple Messages app.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-08-21T10:09:33+00:00",
-      "sent_at": "2026-08-21T10:25:46.145601+00:00"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/08/21/1142627/when-ai-designs-a-drug-who-gets-the-credit/",
-      "title": "When AI designs a drug, who gets the credit?",
-      "summary": "When the biotech company Insilico Medicine used its computer models to propose a promising drug for pulmonary fibrosis, it enthusiastically claimed in a press release that the molecule had been “discovered by” its generative AI platform. Insilico leads a pack of companies using AI to rapidly come up with drug ideas humans might never think&#8230;",
-      "source": "MIT Technology Review",
-      "category": "AI",
-      "published": "2026-08-21T09:00:00+00:00",
-      "sent_at": "2026-08-21T09:32:43.947577+00:00"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/08/21/1142755/space-mirrors-night-sky/",
-      "title": "This company’s plans to deploy space mirrors could jeopardize the night sky for many",
-      "summary": "A company that plans to beam sunlight from space to Earth on demand might unintentionally brighten the night sky for many more people than intended, according to a new study. Later this year, the US company Reflect Orbital plans to launch a test satellite called Eärendil-1 that will extend an 18-by-18-meter mirror in orbit. The&#8230;",
-      "source": "MIT Technology Review",
-      "category": "Innovationen",
-      "published": "2026-08-21T09:00:00+00:00",
-      "sent_at": "2026-08-21T09:32:43.947577+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2241379/nevada-allows-uber-tesla-waymo-paid-robotaxis/",
-      "title": "Nevada allows Uber, Tesla and Waymo to start paid robotaxi service",
-      "summary": "Nevada's transportation authorities approved the companies' application to charge for robotaxi rides.",
-      "source": "Engadget",
-      "category": "Autonomes Fahren",
-      "published": "2026-08-21T08:47:02+00:00",
-      "sent_at": "2026-08-21T09:32:43.947577+00:00"
-    },
-    {
-      "link": "https://encore.dev/blog/firecracker-apple-silicon",
-      "title": "We Rebuilt the Linux MicroVM Stack on Apple Silicon",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Hardware",
-      "published": "2026-08-21T06:59:40+00:00",
-      "sent_at": "2026-08-21T09:32:43.947577+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2241354/genesis-gv90-neolun-luxury-suv-heated-floors-coach-doors/",
-      "title": "Genesis' GV90 NeoLun is a luxury electric SUV with heated floors and coach doors",
-      "summary": "Genesis' new electric SUV is loaded with innovation, but not in the dash or drivetrain as you might expect.",
-      "source": "Engadget",
-      "category": "Innovationen",
-      "published": "2026-08-21T05:43:35+00:00",
-      "sent_at": "2026-08-21T06:00:05.801042+00:00"
     }
   ]
 }
