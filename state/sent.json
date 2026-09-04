@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/pc-components/get-this-stunning-msi-rtx-5060-ti-16g-deal-at-walmart-for-usd200-less-than-anywhere-else-only-usd569-99-for-the-solid-mid-range-shadow-2x-oc-plus-gaming-gpu-is-a-steal-by-anyones-standards",
+      "title": "Get this stunning MSI RTX 5060 Ti 16G deal at Walmart for $200 less than anywhere else — only $569.99 for the solid mid-range Shadow 2x OC Plus gaming GPU is a steal by anyone's standards",
+      "summary": "Snag an MSI RTX 5060 Ti 16G Shadow 2x OC Plus at Walmart for an awesome $200 less than anywhere else - $569 price is the best we've found by a longshot",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-04T14:38:41+00:00",
+      "sent_at": "2026-09-04T14:46:09.000559+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/04/less-than-24-hours-to-apply-for-your-techcrunch-disrupt-2026-side-event/",
+      "title": "Less than 24 hours to apply for your TechCrunch Disrupt 2026 Side Event",
+      "summary": "Less than 24 hours left to apply to host a Side Event during TechCrunch Disrupt 2026 and make your mark in the Silicon Valley scene. Apply before the application closes tonight at midnight PT.",
+      "source": "TechCrunch",
+      "category": "Hardware",
+      "published": "2026-09-04T14:00:00+00:00",
+      "sent_at": "2026-09-04T14:46:09.000559+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/09/04/tesla-fsd-active-safety-collision-avoidance/",
+      "title": "Tesla Full Self-Driving can now take over manual driving to avoid a collision",
+      "summary": "Tesla is rolling out a new version of its Full Self-Driving (Supervised) software that can take control of your car to avoid a crash, even when you’re driving manually. The automaker announced the feature, part of FSD Supervised v14.3.9, in a post from its AI team early Friday. more…",
+      "source": "Electrek",
+      "category": "AI",
+      "published": "2026-09-04T13:56:18+00:00",
+      "sent_at": "2026-09-04T14:46:09.000559+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/990149/openai-rogue-agents-german-wiki",
+      "title": "Oh good, looks like yet another swarm of rogue AI agents from OpenAI",
+      "summary": "A swarm of rogue AI agents from OpenAI reportedly commandeered a German website and transformed it into a messaging board for other agents, with officials staying quiet about the incident for weeks as the company prepared to launch its most advanced model yet, Astra. The finding adds to intensifying concern surrounding oversight at frontier AI [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-04T13:34:12+00:00",
+      "sent_at": "2026-09-04T14:46:09.000559+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/transportation/990130/tesla-cybercab-nhtsa-investigation-fmvss-certify",
+      "title": "Tesla Cybercab is barely on the road and it’s already under investigation",
+      "summary": "Elon Musk's gilded robot car barely made it on public roads before federal regulators launched an investigation into the vehicle's lack of traditional features - many of which are required by law. The National Highway Traffic Safety Administration said it was opening an audit query (AQ) into the Tesla Cybercab \"to examine the process and [&#8230;]",
+      "source": "The Verge",
+      "category": "Innovationen",
+      "published": "2026-09-04T13:33:38+00:00",
+      "sent_at": "2026-09-04T14:46:09.000559+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/data-centers/denver-data-center-continuously-waters-its-lawn-even-after-city-announced-drought-restrictions-enraging-residents-its-unclear-if-site-is-breaking-the-law-or-using-its-own-recycled-water",
+      "title": "Denver data center continuously waters its lawn even after city announced drought restrictions, enraging residents — it’s unclear if site is breaking the law or using its own recycled water",
+      "summary": "An AI data center is reportedly watering its lawn despite the area suffering from a drought. One resident said that we can't water our lawns until next summer, but you better believe that they are watering their entire green with so many sprinklers.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-04T13:26:18+00:00",
+      "sent_at": "2026-09-04T14:46:09.000559+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/09/04/alliance-for-automotive-innovation-begs-congress-to-stop-automotive-innovation/",
+      "title": "Alliance for Automotive Innovation begs Congress to stop automotive innovation",
+      "summary": "The entire US auto industry is back at it again, lobbying Congress to stifle competition and ensure that Americans remain stuck with overpriced, second-rate, highly-polluting vehicles. more…",
+      "source": "Electrek",
+      "category": "Innovationen",
+      "published": "2026-09-04T13:00:00+00:00",
+      "sent_at": "2026-09-04T14:46:09.000559+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/cpus/amd-unveils-threadripper-halo-station-an-ai-workstation-packing-96-cores-and-dual-liquid-cooled-mi350p-accelerators-the-most-powerful-workstation-in-the-world-can-run-trillion-parameter-models-says-amd",
+      "title": "AMD unveils Threadripper Halo Station, an AI workstation packing 96 cores and dual liquid-cooled MI350P accelerators — 'the most powerful workstation in the world' can run trillion-parameter models, says AMD",
+      "summary": "AMD's Threadripper Halo Station packs a 96-core Zen 5 Threadripper, dual MI350P accelerators with support for four, and 2TB of DDR5.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-04T12:58:37+00:00",
+      "sent_at": "2026-09-04T14:46:09.000559+00:00"
+    },
+    {
       "link": "https://www.wired.com/story/silicon-valley-is-having-a-hot-girl-renaissance/",
       "title": "Silicon Valley Is Having a ‘Hot Girl Renaissance’",
       "summary": "A San Francisco “Hot List” is trying to buck stereotypes about dating in tech circles amid wider debates about the value of being perceived as attractive.",
@@ -4796,141 +4868,6 @@
       "category": "Hardware",
       "published": "2026-08-21T13:26:03+00:00",
       "sent_at": "2026-08-21T15:28:57.339148+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/toms-hardware-innovation-awards-2026-progress-amid-turmoil",
-      "title": "Tom’s Hardware Innovation Awards 2026: Progress amid turmoil",
-      "summary": "The continued industry advancements give us several new picks for our annual Tom's Hardware Innovation Awards: a set of products that set or expand the standard for others.",
-      "source": "Tom's Hardware",
-      "category": "Innovationen",
-      "published": "2026-08-21T14:02:24+00:00",
-      "sent_at": "2026-08-21T14:31:00.033936+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/983181/matti-haapoja-sam-kold-kolder-higgsfield-seedance-backlash",
-      "title": "Major YouTube creators are facing backlash for accepting AI money",
-      "summary": "Over the past few days, a number of prominent filmmaking content creators including Matti Haapoja and Sam \"Kold\" Kolder have posted videos of themselves demonstrating what's possible with AI platform Higgsfield. The videos highlight Higgsfield's recently added Seedance 2.5 functionality and pitch these technologies as the future of video production. In response to these videos, [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-08-21T13:37:52+00:00",
-      "sent_at": "2026-08-21T14:31:00.033936+00:00"
-    },
-    {
-      "link": "https://cymerys.com/w/im-becoming-ai-blind",
-      "title": "I'm Becoming AI-Blind",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-21T11:48:05+00:00",
-      "sent_at": "2026-08-21T14:31:00.033936+00:00"
-    },
-    {
-      "link": "https://www.law.berkeley.edu/academics/registrar/academic-rules/artificial-intelligence-policy/",
-      "title": "Artificial Intelligence Policy",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-21T01:37:27+00:00",
-      "sent_at": "2026-08-21T14:31:00.033936+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/semiconductors/lg-enters-chip-packaging-arena-with-laser-direct-imaging-machine-as-tsmcs-cowos-remains-constrained-maskless-machine-is-designed-to-pattern-fine-interconnects-trading-resolution-for-higher-throughput",
-      "title": "LG enters chip packaging arena with Laser Direct Imaging machine, as TSMC's CoWoS remains constrained — maskless machine is designed to pattern fine interconnects, trading resolution for higher throughput",
-      "summary": "LG rolls-out laser direct imaging lithography machine for chip packaging and high-density PCBs.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-21T13:35:14+00:00",
-      "sent_at": "2026-08-21T13:41:54.317642+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2241179/child-safety-experts-skeptical-of-openai-chatgpt-for-teens/",
-      "title": "Child safety experts are skeptical of OpenAI's ChatGPT for Teens",
-      "summary": "They say the company must prove it can be trusted before products like these get a pass.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-08-21T13:00:00+00:00",
-      "sent_at": "2026-08-21T13:41:54.317642+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/unlock-toms-hardware-premiums-hot-chips-2026-coverage-for-free-sign-up-for-an-account-to-read-technical-breakdowns-from-the-show",
-      "title": "Unlock Tom's Hardware Premium's Hot Chips 2026 coverage for free — sign up for an account to read technical breakdowns from the show",
-      "summary": "For a limited time, you’ll be able to read all of our latest reports from Hot Chips 2026 with a Tom’s Hardware account, no payment required.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-21T13:00:00+00:00",
-      "sent_at": "2026-08-21T13:41:54.317642+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/big-tech/supermicro-fires-several-employees-following-investigation-into-usd2-5-billion-china-ai-chip-smuggling-claims-that-senior-management-had-no-knowledge-of-illicit-transactions",
-      "title": "Supermicro fires several employees following investigation into $2.5 billion China AI chip smuggling — claims that senior management had no knowledge of illicit transactions",
-      "summary": "An independent investigation on Supermicro clears senior management from any wrong-doing and also says that its financial statements were still reliable, despite the alleged diversion of its restricted products. Nevertheless, some of its employees from sales, technical support, and business development departments were fired for failing to 'follow Company policies or the Company’s code of conduct.'",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-08-21T12:20:54+00:00",
-      "sent_at": "2026-08-21T12:38:40.940403+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/software/applications/cpu-z-gets-biggest-update-since-2001-with-v3-100-health-checks-built-in-stress-testing-and-xoc-effective-clock-tracking",
-      "title": "CPU-Z gets biggest update since 2001 with V3 — 100+ health checks, built-in stress testing, and XOC effective clock tracking",
-      "summary": "CPU-Z V3 introduces an overhauled validation system with over 100 detection points, and a new advanced validation feature that will check PC health with a stress test.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-21T12:20:00+00:00",
-      "sent_at": "2026-08-21T12:38:40.940403+00:00"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/08/21/1142762/the-download-space-mirrors-threats-ai-designed-drugs-credit/",
-      "title": "The Download: threats from space mirrors and credit for AI drugs",
-      "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. This company’s plans to deploy space mirrors could jeopardize the night sky for many A company that plans to beam sunlight from space to Earth on demand might unintentionally brighten the&#8230;",
-      "source": "MIT Technology Review",
-      "category": "AI",
-      "published": "2026-08-21T12:10:00+00:00",
-      "sent_at": "2026-08-21T12:38:40.940403+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/gpus/china-approves-first-nvidia-h200-deliveries-to-bytedance-and-tencent-under-case-by-case-import-licenses",
-      "title": "H200 AI GPUs finally reach China under case-by-case import licenses, but it's already too late for Nvidia — homemade chips corner the China market as country seeks semiconductor independence",
-      "summary": "Most of each company's U.S.-licensed allowance, understood to be up to 100,000 units apiece, must stay outside the mainland.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-08-21T11:40:00+00:00",
-      "sent_at": "2026-08-21T12:38:40.940403+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/semiconductors/nvidia-denies-report-it-will-ship-groq-based-lpus-to-china-by-year-end",
-      "title": "Nvidia denies report it will ship Groq-based LPUs to China by year-end — says there is 'no China-specific LPU product in our roadmap'",
-      "summary": "Nvidia has rejected a report published by The Information that it plans to begin small-batch shipments of an LPU tailored for Chinese customers by the end of 2026.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-21T11:39:39+00:00",
-      "sent_at": "2026-08-21T12:38:40.940403+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/tech-policy/2026/08/meta-ai-glasses-may-get-creepier-and-apps-that-detect-them-arent-perfect/",
-      "title": "As demand for Meta AI glasses explodes, it’s harder to avoid creepy recordings",
-      "summary": "Ars looks at Zuckoff, the latest free app detecting Meta AI glasses amid privacy backlash.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-08-21T11:00:53+00:00",
-      "sent_at": "2026-08-21T12:38:40.940403+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/space/2026/08/rocket-report-spacex-makes-a-mark-on-the-moon-ula-names-new-boss/",
-      "title": "Rocket Report: SpaceX makes its mark on the Moon; ULA names new boss",
-      "summary": "Taiwan's effort to develop its own satellite launcher hit a setback this week.",
-      "source": "Ars Technica",
-      "category": "Innovationen",
-      "published": "2026-08-21T11:00:36+00:00",
-      "sent_at": "2026-08-21T12:38:40.940403+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/best-pool-cleaning-robots/",
-      "title": "I Tried the Best Robotic Pool Cleaners of 2026: Beatbot, iGarden, Dreame",
-      "summary": "Pack up your pool cleaning supplies. Let one of these robot buddies maintain your water quality instead",
-      "source": "Wired",
-      "category": "Innovationen",
-      "published": "2026-08-21T11:33:00+00:00",
-      "sent_at": "2026-08-21T11:53:17.149332+00:00"
     }
   ]
 }
