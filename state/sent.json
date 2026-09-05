@@ -1,6 +1,69 @@
 {
   "items": [
     {
+      "link": "https://www.engadget.com/2251521/remote-work-as-a-worm-colorful-platformers-and-other-new-indie-games-worth-checking-out/",
+      "title": "Remote work as a worm, colorful platformers and other new indie games worth checking out",
+      "summary": "Here are the new indie games worth checking out, plus an early look at shipbuilding, I Am Your Beast DLC and a cat trying to stop an AI office takeover.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-09-05T11:30:00+00:00",
+      "sent_at": "2026-09-05T11:36:58.617416+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/990773/openai-german-wiki-incident",
+      "title": "OpenAI admits to German wiki ‘incident’",
+      "summary": "OpenAI says it needs to overhaul how and when it reports instances of AI models attacking real-world targets. The acknowledgement comes as the company manages the fallout from reports that a swarm of its out-of-control agents hijacked a German wiki site. Regarding the \"'wiki incident,' where our agents wrote to several internet sites,\" OpenAI wrote [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-05T11:15:55+00:00",
+      "sent_at": "2026-09-05T11:36:58.617416+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/transportation/989513/road-rage-short-film-robotaxi-autonomous-ai",
+      "title": "Robotaxis enter their villain era",
+      "summary": "It's Bullitt meets Christine meets Waymo. A new short film imagines a San Francisco car chase where the other driver isn't human - and the car may be trying to kill you. That a robotaxi can now be cast as the villain with almost no explanation says something about the present moment. Autonomous cars have [&#8230;]",
+      "source": "The Verge",
+      "category": "Autonomes Fahren",
+      "published": "2026-09-05T11:00:00+00:00",
+      "sent_at": "2026-09-05T11:36:58.617416+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/video-games/pc-gaming/we-tested-dlss-5-in-nba-2k27-with-every-rtx-50-series-gpu-first-official-release-comes-with-a-big-performance-hit-but-almost-every-blackwell-card-can-run-it-at-1080p",
+      "title": "We tested DLSS 5 in NBA 2K27 with every RTX 50-series GPU — first official release comes with a big performance hit, but almost every Blackwell card can run it at 1080p",
+      "summary": "We tested Nvidia's DLSS 5 in NBA 2K27 across every RTX 50-series graphics card at 1080p, 1440p, and 4K to see just how much performance it costs to explore the frontiers of neural rendering.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-05T11:00:00+00:00",
+      "sent_at": "2026-09-05T11:36:58.617416+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/policy/taiwan-cracks-down-on-tech-businesses-with-illegal-chinese-ownership-166-investigations-and-at-least-36-convictions-since-2020",
+      "title": "Taiwan cracks down on tech businesses with illegal Chinese ownership — 166 investigations and at least 36 convictions since 2020",
+      "summary": "Taiwan's top investigative agency has been tracking Chinese businesses operating on the island without proper authority and shutting them down. These companies have been hiring Taiwanese experts to help with their semiconductor research and development.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-05T10:40:00+00:00",
+      "sent_at": "2026-09-05T11:36:58.617416+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/security-news-this-week-openai-agents-hacked-another-website/",
+      "title": "OpenAI Agents Hacked Another Website",
+      "summary": "Plus: Tens of millions of US and Canadian drivers’ licenses go up for sale on the dark web, the US military finally tries to tackle the risk online ad data poses to troops, and more.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-09-05T10:30:00+00:00",
+      "sent_at": "2026-09-05T11:36:58.617416+00:00"
+    },
+    {
+      "link": "https://www.coderabbit.ai/blog/gpt-6-astra-code-review-evaluation",
+      "title": "GPT-6 Astra in code review: Gains, privacy, and cost",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-05T03:38:56+00:00",
+      "sent_at": "2026-09-05T11:36:58.617416+00:00"
+    },
+    {
       "link": "https://collusion.wiki/",
       "title": "Discovery of a new OpenAI agent message board",
       "summary": "",
@@ -4940,51 +5003,6 @@
       "category": "Hardware",
       "published": "2026-08-22T11:30:00+00:00",
       "sent_at": "2026-08-22T11:44:12.630988+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/set-up-a-separate-work-profile-on-your-android-phone/",
-      "title": "Set Up a Separate Work Profile on Your Android Phone",
-      "summary": "It is possible to achieve your desired work-life balance on your smartphone. Just set up separate accounts using this built-in Android feature.",
-      "source": "Wired",
-      "category": "Hardware",
-      "published": "2026-08-22T11:00:00+00:00",
-      "sent_at": "2026-08-22T11:17:32.573129+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/desktops/pc-building/alleged-amazon-cpu-scam-hits-pc-shop-twice-in-three-days-ryzen-5-9600x-orders-arrive-with-empty-retail-boxes",
-      "title": "Back-to-back Amazon CPU scam delivers empty Ryzen 5 9600X boxes in 72 hours — $ 10,000-a-month business customer captures fraud on camera",
-      "summary": "A PC shop that spends over $10,000 a month on Amazon hardware says two AMD Ryzen 5 9600X orders arrived with the CPUs missing.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-22T10:00:00+00:00",
-      "sent_at": "2026-08-22T10:18:35.512238+00:00"
-    },
-    {
-      "link": "https://bastian.rieck.me/blog/2026/unix/",
-      "title": "LLMs are proof that Unix won",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-21T15:59:16+00:00",
-      "sent_at": "2026-08-22T10:18:35.512238+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/nasa-cancels-its-rescue-mission-for-the-aging-swift-telescope/",
-      "title": "NASA Cancels Its Rescue Mission for the Aging Swift Telescope",
-      "summary": "The LINK probe was supposed to use robotic arms to capture Swift and lift it into a safe orbit. Problems with its control system forced NASA to call off the attempt.",
-      "source": "Wired",
-      "category": "Innovationen",
-      "published": "2026-08-22T09:00:00+00:00",
-      "sent_at": "2026-08-22T09:30:49.916268+00:00"
-    },
-    {
-      "link": "https://developers.openai.com/api/docs/models/gpt-5.6-sol",
-      "title": "GPT 5.6 Sol 20% price reduction",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-22T04:33:06+00:00",
-      "sent_at": "2026-08-22T07:28:13.008512+00:00"
     }
   ]
 }
