@@ -1,6 +1,69 @@
 {
   "items": [
     {
+      "link": "https://collusion.wiki/",
+      "title": "Discovery of a new OpenAI agent message board",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-04T11:54:53+00:00",
+      "sent_at": "2026-09-05T07:23:34.757313+00:00"
+    },
+    {
+      "link": "https://www.wired.com/gallery/best-automatic-cat-litter-boxes/",
+      "title": "The Best Automatic Litter Box of 2026: Petkit and Litter-Robot",
+      "summary": "With these high-tech automatic litter boxes, gone are the days of scooping and smells. Welcome to the future.",
+      "source": "Wired",
+      "category": "Innovationen",
+      "published": "2026-09-04T11:08:00+00:00",
+      "sent_at": "2026-09-05T07:23:34.757313+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/gadgets/2026/09/nearly-impossible-how-fairphone-built-the-ethical-repairable-fairphone-gen-6/",
+      "title": "Nearly impossible? How Fairphone built the ethical, repairable Fairphone Gen 6+",
+      "summary": "Fairphone's CTO explains how and why the Dutch company builds a different kind of smartphone.",
+      "source": "Ars Technica",
+      "category": "Hardware",
+      "published": "2026-09-04T11:00:05+00:00",
+      "sent_at": "2026-09-05T07:23:34.757313+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/service-providers/network-providers/over-2-000-subscribers-grab-discounted-starlink-plans-in-tennessee-and-mississippi-spacexai-offers-50-percent-off-for-people-living-near-its-data-centers-and-other-developments",
+      "title": "SpaceXAI offers 50% Starlink discount to placate data center's residential neighbors; 2,000 have signed up — goodwill gesture comes amid vociferous community backlash",
+      "summary": "SpaceXAI Memphis said on its X account that more than 2,000 subscribers from the Memphis and Southaven area have already signed up for the discounted Starlink offer. Elon Musk is giving subscribers living near his data centers up to $65 off on their monthly internet bill.",
+      "source": "Tom's Hardware",
+      "category": "Innovationen",
+      "published": "2026-09-04T11:00:00+00:00",
+      "sent_at": "2026-09-05T07:23:34.757313+00:00"
+    },
+    {
+      "link": "https://www.reuters.com/world/europe/openai-agents-hijacked-german-website-previously-undisclosed-ai-breakout-this-2026-09-04/",
+      "title": "OpenAI agents hijacked German website in previously undisclosed AI breakout",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-04T10:30:57+00:00",
+      "sent_at": "2026-09-05T07:23:34.757313+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/dram/chinas-cmxt-had-an-actual-roadmap-for-its-alleged-industrial-espionage-from-samsung-south-korean-court-says-project-hefei-was-responsible-for-cxmts-current-position-as-major-dram-maker",
+      "title": "Chinese chipmaker CXMT allegedly used a written roadmap to steal Samsung DRAM tech — South Korean court says 'Project Hefei' lifted 620-step recipe to build 10% global market share",
+      "summary": "CXMT's alleged industrial espionage from Samsung had an actual roadmap — South Korean court says Project Hefei was responsible for CXMT's current position as major DRAM maker",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-04T10:30:00+00:00",
+      "sent_at": "2026-09-05T07:23:34.757313+00:00"
+    },
+    {
+      "link": "https://github.com/gioblu/NPC-Forge/blob/main/docs/development.md",
+      "title": "Show HN: TERMy – A fast terminal assistant that does not use LLMs",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-04T09:03:00+00:00",
+      "sent_at": "2026-09-05T07:23:34.757313+00:00"
+    },
+    {
       "link": "https://engineering.atspotify.com/2026/9/portal-by-spotify-cut-my-claude-code-token-usage-by-90",
       "title": "Portal by Spotify cut my Claude Code token usage by 90%",
       "summary": "",
@@ -4922,15 +4985,6 @@
       "category": "AI",
       "published": "2026-08-22T04:33:06+00:00",
       "sent_at": "2026-08-22T07:28:13.008512+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2242070/apple-reportedly-cut-more-than-200-jobs-across-vision-pro-and-siri-software-teams/",
-      "title": "Apple reportedly cut more than 200 jobs across Vision Pro and Siri software teams",
-      "summary": "Apple has laid off employees in its Vision Pro and Siri teams as it shifts focus to smart glasses and next-gen AI tech.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-08-22T03:14:33+00:00",
-      "sent_at": "2026-08-22T03:38:12.830173+00:00"
     }
   ]
 }
