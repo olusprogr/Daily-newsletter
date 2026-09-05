@@ -1,6 +1,33 @@
 {
   "items": [
     {
+      "link": "https://www.engadget.com/2251725/openai-responds-after-report-exposed-another-incident-in-which-its-ai-agents-went-rogue/",
+      "title": "OpenAI responds after report exposed another incident in which its AI agents went rogue",
+      "summary": "Reuters reported earlier this week that the agents hijacked a German wiki forum in an incident OpenAI did not disclose.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-09-05T21:17:18+00:00",
+      "sent_at": "2026-09-05T21:54:18.434602+00:00"
+    },
+    {
+      "link": "https://www.youtube.com/watch?v=Ss1DUqLjecc",
+      "title": "Isar Aerospace launch into orbit [video]",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Innovationen",
+      "published": "2026-09-05T20:25:30+00:00",
+      "sent_at": "2026-09-05T21:54:18.434602+00:00"
+    },
+    {
+      "link": "https://arxiv.org/abs/2609.03344",
+      "title": "LLMs as a Cognitive Virus",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-05T20:02:35+00:00",
+      "sent_at": "2026-09-05T21:54:18.434602+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/09/05/hikers-rescued-after-using-google-gemini-for-planning/",
       "title": "Hikers rescued after using Google Gemini for planning",
       "summary": "The sheriff’s office said the hikers “were advised by Gemini to bring far less food and water than their group required.\"",
@@ -4940,42 +4967,6 @@
       "category": "AI",
       "published": "2026-08-22T21:46:56+00:00",
       "sent_at": "2026-08-22T22:17:17.723882+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2240138/if-waymo-cars-are-level-4-automation-what-is-level-5/",
-      "title": "If Waymo cars are Level 4 automation, what does it take to be a Level 5?",
-      "summary": "We break down the different autonomous driving levels, and why Level 5 is so hard to achieve.",
-      "source": "Engadget",
-      "category": "Autonomes Fahren",
-      "published": "2026-08-22T21:30:00+00:00",
-      "sent_at": "2026-08-22T21:44:56.089445+00:00"
-    },
-    {
-      "link": "https://venturebeat.com/orchestration/enterprises-winning-with-ai-agents-are-limiting-how-much-the-agents-can-do-alone",
-      "title": "Enterprises winning with AI agents are limiting how much the agents can do alone",
-      "summary": "For much of the past two years, the general belief in enterprise AI has been that more autonomy equals better performance. Build agents that can plan, decide, and act across multi-step workflows, and give them as much room to run as possible. That assumption is now being tested at scale, in real production environments — and in a lot of deployments it&#x27;s failing. The companies that end up benefiting from agentic AI won&#x27;t necessarily be the ones that have given their agents the most flexibility. They&#x27;re the ones who create AI agents with specific responsibilities and make sure they operate within clear rules. Two numbers tell you almost everything about where agentic AI stands in mid-2026. By Gartner&#x27;s own forecast, more than 40% of the agentic AI projects running today won&#x27;t survive to see 2028 . Not because the models fall short; because of escalating costs, unclear business value, and inadequate risk controls. McKinsey&#x27;s 2026 AI Trust Maturity Survey fits right alongside that prediction: Agentic AI deployment is accelerating across every industry, but average responsible-AI maturity sits at just 2.3 out of 4. Only about 30% of organizations have reached a maturity level of three or higher in governance and agentic AI controls specifically. Put those two numbers side by side, and the story tells itself. Capability is outrunning control. That shift is changing the competitive framing, too. The 2024-to-2025 race was about who could deploy the most autonomous agent the fastest. The 2026-to-2027 race is a trust race. It&#x27;s not about who can build the most capable agent . It&#x27;s about who can get an agent approved for production by risk, legal, and compliance teams, and keep it approved once it&#x27;s live. This is a different kind of engineering challenge than most enterprises are prepared for. Why full autonomy breaks down in production Gartner lays out the failure pattern as specific and repeatable. Projects launch with ambitious, broadly autonomous workflows. They hit integration complexity within weeks. Then they stall, with no defensible path to production ROI. Part of the problem is vendor noise. Gartner&#x27;s own count puts it starkly: Out of the thousands of products being sold under the &#x27;agentic AI&#x27; label, only around 130 actually have real autonomous capability behind them. The rest are largely automation or chatbots repackaged for the moment. But even genuinely agentic systems run into a structural problem that has nothing to do with hype. Autonomy and accountability move in opposite directions. An agent capable of independently planning and executing a multi-step task is also an agent whose individual decisions get harder to trace after the fact. Let&#x27;s say something breaks a few steps into an autonomous chain. Figuring out why the agent made that decision and who is responsible can be a complicated process, not a simple lookup. In areas like financial reconciliations, compliance processes, manufacturing quality checks, or clinical documentation, this lack of transparency can be the difference between a manageable mistake and a serious regulatory breach. It&#x27;s the reason legal, risk, and compliance teams block agentic projects from reaching production, regardless of how capable the underlying model is. I ntegration complexity keeps showing up as a leading cause of project cancellation. Bolting an autonomous agent onto a legacy workflow takes more than technical connective tissue. The workflow&#x27;s existing decision points, approval chains, and audit trails all need to be rebuilt around a system that can now act without waiting for a human. Enterprises that treat this as a pure integration problem, solvable with more engineering hours, tend to be the ones that stall. This isn&#x27;t a hypothetical risk. McKinsey&#x27;s research shows how exposed most enterprises currently are. Across nearly every category of AI risk, from data privacy to intellectual property exposure, the gap between the risks organizations say they&#x27;re aware of and the risks they&#x27;re actually mitigating remains wide. Awareness has surpassed action. This gap is reflected in the businesses that report it as an obstacle to further scaling of agentic AI. Nearly two-thirds now say security and risk issues are the greatest challenge for them, surpassing regulatory uncertainty and technical barriers. What governed orchestration actually looks like The enterprises that are leading the way are not halting their AI plans . They&#x27;re restructuring how autonomy is being distributed within the system. The four patterns that stand out in organizations that are governance-mature are: Narrow-scope agents over general-purpose ones. Decompose end-to-end workflows into single-responsibility agents with tightly bounded mandates. A smaller scope of work results in a smaller scope of failure, and a smaller scope of failure is much easier to audit. Human checkpoints at decision boundaries, before the outcome, not after it. Review agent decisions before high-stakes actions execute, not after the fact. That means checkpoints before sensitive data moves, a transaction posts, or an external system is triggered. McKinsey&#x27;s framework calls for real-time, data-driven monitoring built into the agent pipeline itself, with humans retaining final accountability specifically for high-stakes decisions. Decision traceability as a design requirement. A full action log and decision lineage should be available on demand for any agent, any decision. It shouldn&#x27;t need to be reconstructed under pressure during an audit. Regulators are pushing the same way. The EU AI Act&#x27;s human oversight requirements for high-risk systems are still coming, even though this year&#x27;s Digital Omnibus agreement pushed the compliance deadline out to December 2027. Enterprises building agent systems now are effectively building toward that requirement, whether or not it&#x27;s technically enforceable yet. Data sovereignty does active governance work, not passive paperwork. Where an agent&#x27;s data sits, and who has access to it, decides how contained a failure can be. On-premise or controlled-environment deployment limit the blast radius of a misbehaving agent and simplifies exactly the kind of audit trail regulators and boards are starting to expect. The risk runs in both directions, of course. Agentic AI is supposed to cut friction. An agent that needs a human to sign off on every minor task hasn&#x27;t cut anything; it&#x27;s just automation wearing a manual process as a costume. That quietly undercuts the whole case for building the agent in the first place. The goal isn&#x27;t maximum control. It&#x27;s calibrated control, concentrated where the cost of an error is actually high. Agent deployment is scaling roughly 8x faster than governance maturity is improving. A practical framework for evaluating your agent stack If enterprise architects are reviewing an existing agent for deployment or are considering deploying an agent, they can begin by asking four questions. 1. Can you reconstruct, six months from now, exactly why a specific agent took a specific action? If the honest answer requires digging through raw logs or guessing, decision lineage isn&#x27;t a design feature of the system. It&#x27;s an afterthought. And it will show up as a gap in the next audit. 2. Does every agent in the stack have one clearly bounded responsibility, or is at least one agent authorized to &quot;figure it out&quot; across a broad task? Broad, open-ended mandates are exactly where compounding errors and untraceable decisions originate. 3. Are human checkpoints placed at defined decision boundaries, or only as a final review after the agent has already acted? A review after the fact catches consequences. A checkpoint before the fact prevents them. 4. If an agent were compromised or malfunctioning right now, how much data and how many downstream systems could it touch before anyone noticed? This is where data sovereignty and access scoping stop being compliance line items and start functioning as containment strategy. These are all questions that don&#x27;t need to slow down the adoption of agentic AI. They need direction on how and where autonomy is of value to their organization and how to open up to exposure. This suggests building the orchestration layer on that separation, rather than adding governance after a production incident forces the question. The real competitive advantage Gartner&#x27;s 40% cancellation forecast isn&#x27;t really a warning about AI capability. It&#x27;s a forecast about organizational discipline. Right now, agentic AI sits at what Gartner defines as the &quot; peak of inflated expectations ,&quot; and there&#x27;s a fairly straightforward explanation. Enterprises spent 2024 and 2025 optimizing almost entirely for autonomy. Now they&#x27;re paying down the governance debt that approach accumulated. The winning position by 2027 won&#x27;t belong to whoever deployed the most autonomous agents fastest. It will belong to whoever built agent systems trustworthy enough that risk, compliance, and legal teams stopped being the bottleneck. The architecture answered their questions before anyone had to ask them. That&#x27;s a different design brief than most agentic AI roadmaps were written against. It&#x27;s about making scoped autonomy, checkpointed decisions, full traceability, and data sovereignty integral to the architecture from the start, not add-ons after a pilot project has been a success. Midhula Mariyam Jeevan is a content writer specializing in AI, enterprise technology, software engineering, and SEO.",
-      "source": "VentureBeat",
-      "category": "AI",
-      "published": "2026-08-22T21:30:00+00:00",
-      "sent_at": "2026-08-22T21:44:56.089445+00:00"
-    },
-    {
-      "link": "https://forum.level1techs.com/t/why-your-local-llm-feels-dumber-than-it-is/253917",
-      "title": "Why your local LLM feels dumber than it is",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-22T18:14:16+00:00",
-      "sent_at": "2026-08-22T21:44:56.089445+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2240136/how-to-limit-instragram-from-using-data-for-ai-ads/",
-      "title": "How to limit Instagram from using your data for AI and ads",
-      "summary": "You can keep Instagram from using your activity outside the app to influence the ads you get.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-08-22T20:30:00+00:00",
-      "sent_at": "2026-08-22T20:47:44.427850+00:00"
     }
   ]
 }
