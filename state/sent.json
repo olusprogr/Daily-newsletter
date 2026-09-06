@@ -1,6 +1,15 @@
 {
   "items": [
     {
+      "link": "https://www.techpolicy.press/americas-two-largest-school-districts-impose-ai-moratoriums/",
+      "title": "America's two largest school districts impose AI moratoriums",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-05T21:43:22+00:00",
+      "sent_at": "2026-09-06T02:50:59.068331+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/09/05/seattle-times-and-newsday-are-the-latest-publications-to-sue-openai-and-microsoft/",
       "title": "Seattle Times and Newsday are the latest publications to sue OpenAI and Microsoft",
       "summary": "Two more news organizations are suing OpenAI and Microsoft over the supposed use of their journalism to train AI.",
@@ -4958,15 +4967,6 @@
       "category": "Hardware",
       "published": "2026-08-23T10:00:00+00:00",
       "sent_at": "2026-08-23T10:19:42.300683+00:00"
-    },
-    {
-      "link": "https://www.primeintellect.ai/research/nanogpt-speedrun",
-      "title": "NanoGPT Speedrun Frontier",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-22T22:14:27+00:00",
-      "sent_at": "2026-08-23T02:42:58.557225+00:00"
     }
   ]
 }
