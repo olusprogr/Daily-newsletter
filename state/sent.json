@@ -1,6 +1,33 @@
 {
   "items": [
     {
+      "link": "https://openai.robocurve.org/gpt-6-astra/",
+      "title": "GPT-6 Astra on robot arms",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-06T01:52:45+00:00",
+      "sent_at": "2026-09-06T07:36:34.078568+00:00"
+    },
+    {
+      "link": "https://github.com/okf-memory/okf-agent-memory",
+      "title": "OKF Agent Memory – Git-native persistent memory for AI coding agents",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-05T22:15:52+00:00",
+      "sent_at": "2026-09-06T07:36:34.078568+00:00"
+    },
+    {
+      "link": "https://www.defensenews.com/industry/techwatch/2026/09/04/space-industry-lacks-workers-needed-to-rebuild-satellites-lost-in-war-report-says/",
+      "title": "Space industry lacks workers needed to rebuild satellites lost in war: report",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Innovationen",
+      "published": "2026-09-05T20:14:25+00:00",
+      "sent_at": "2026-09-06T07:36:34.078568+00:00"
+    },
+    {
       "link": "https://www.techpolicy.press/americas-two-largest-school-districts-impose-ai-moratoriums/",
       "title": "America's two largest school districts impose AI moratoriums",
       "summary": "",
