@@ -1,6 +1,33 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/openai-admits-to-wiki-incident-after-its-agents-were-discovered-using-a-programming-hub-to-communicate-says-more-transparency-is-needed-regarding-misalignments",
+      "title": "OpenAI admits to 'wiki incident' after its agents were discovered using a programming hub to communicate — says more transparency is needed regarding misalignments",
+      "summary": "OpenAI has admitted that its experimental AI agents used an open German programming wiki to communicate.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-06T14:31:54+00:00",
+      "sent_at": "2026-09-06T14:59:38.300427+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/990436/fairphone-6-plus-review",
+      "title": "The Fairphone 6 Plus is the midrange phone we desperately needed",
+      "summary": "The Fairphone 6 Plus feels like an extremely average midrange Android phone and I couldn't be more thrilled. The mission has always been admirable. Fairphone seeks out ethically sourced materials and offers a high degree of repairability for its devices. But the phones themselves required a lot of sacrifices, like putting up with underpowered processors [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-09-06T13:00:00+00:00",
+      "sent_at": "2026-09-06T14:59:38.300427+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2247891/claude-help-manage-emails-risks-involved/",
+      "title": "Claude can help manage your email inbox, but there are some risks involved",
+      "summary": "AI has been known to mess up some pretty basic things, but Claude wants to help you with your emails.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-09-06T12:00:00+00:00",
+      "sent_at": "2026-09-06T14:59:38.300427+00:00"
+    },
+    {
       "link": "https://www.wired.com/story/my-brief-summer-fling-with-siri-ai/",
       "title": "My Brief Summer Fling With Siri AI",
       "summary": "I was initially enamored with the beta version of Apple’s revamped smartphone assistant. As the full release approaches, I’ve forgotten Siri AI even exists.",
@@ -4940,51 +4967,6 @@
       "category": "AI",
       "published": "2026-08-23T15:00:00+00:00",
       "sent_at": "2026-08-23T15:18:15.354514+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/gpus/grab-the-asus-prime-radeon-rx-9070-oc-for-usd629-99-save-usd120-on-this-16gb-gaming-gpu-for-reliable-1440p-and-4k-gaming",
-      "title": "Grab the Asus Prime Radeon RX 9070 OC for $629.99 — save $120 on this 16GB gaming GPU for reliable 1440p and 4K gaming",
-      "summary": "The Asus Prime Radeon RX 9070 OC is available for just $629.99 on Amazon, delivering strong 1440p performance, 16GB of VRAM, a 2,610MHz boost clock, and a triple-fan cooling system at a $120 discount.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-23T14:07:45+00:00",
-      "sent_at": "2026-08-23T14:20:18.764689+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/drones/self-driving-ford-f-250-truck-with-shotgun-equipped-drone-killing-turret-tested-by-us-army-autonomous-system-designed-to-blast-fast-moving-drones-at-between-10-and-100-meters-range",
-      "title": "Self-driving Ford F-250 truck with shotgun-equipped drone-killing turret tested by US Army — autonomous system designed to blast fast-moving drones at between 10 and 100 meters range",
-      "summary": "The US Army tested an autonomous breaching vehicle with an onboard counter-UAS turret during a live-fire exercise at Fort Bragg on August 18.",
-      "source": "Tom's Hardware",
-      "category": "Autonomes Fahren",
-      "published": "2026-08-23T13:19:17+00:00",
-      "sent_at": "2026-08-23T13:28:50.739105+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/dram/nvidia-reportedly-warns-biggest-customers-of-15-percent-price-hikes-on-ai-servers",
-      "title": "Nvidia reportedly warns biggest customers of 15% price hikes on AI servers — memory costs continue to soar",
-      "summary": "The increases will take effect on Grace Blackwell and Vera Rubin systems shipping early next year.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-08-23T13:15:00+00:00",
-      "sent_at": "2026-08-23T13:28:50.739105+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/desktops/nvidias-gb300-powered-dgx-station-desktop-tower-listed-for-nearly-usd100-000-online-enterprise-ai-powerhouse-now-available-to-buy-for-mere-mortals-with-lots-of-cash",
-      "title": "Nvidia’s GB300-powered DGX Station desktop tower listed for nearly $100,000 online — Enterprise AI powerhouse now available to buy for mere mortals with lots of cash",
-      "summary": "Nvidia's most powerful desktop offering, the GB300 DGX Station, is available to buy starting from just $94,930 and you can spec it up to $108,350. It offers 748GB of unified memory shared across the 72-core Grace CPU and Blackwell Ultra GPU, and it can be yours in a pretty standard-looking desktop chassis today.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-08-23T13:00:00+00:00",
-      "sent_at": "2026-08-23T13:28:50.739105+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/robotics/humanoid-robots-shatter-usain-bolts-100m-record-hits-23-8-mph-before-crashing-into-foam-pads-video-shows-tiangong-ultra-logging-9-39-second-sprint-before-colliding-with-padded-wall",
-      "title": "Humanoid robots shatter Usain Bolt's 100m record, hits 23.8 mph before crashing into foam pads — video shows Tiangong Ultra logging 9.39-second sprint before colliding with padded wall",
-      "summary": "Two robots at the 2026 World Humanoid Robot Games in Beijing beat Usain Bolt's 2009 100-meter dash world record. The Tiangong Ultra set a record of 9.39 seconds, while the Honor Lightning achieved a 9.47 record time, breaking the Jamaican runner's 9.58-second record.",
-      "source": "Tom's Hardware",
-      "category": "Innovationen",
-      "published": "2026-08-23T11:45:00+00:00",
-      "sent_at": "2026-08-23T12:31:36.201114+00:00"
     }
   ]
 }
