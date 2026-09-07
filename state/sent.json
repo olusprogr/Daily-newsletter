@@ -1,6 +1,60 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/3d-printing/start-your-3d-printing-journey-for-just-usd169-with-these-elegoo-printers-before-labor-day-ends-lock-in-up-to-35-percent-off-the-easy-to-use-neptune-3-pro-or-go-large-with-the-neptune-4-plus-for-massive-model-printing",
+      "title": "Start your 3D printing journey for just $169 with these Elegoo printers before Labor Day ends — lock in up to 35% off the easy-to-use Neptune 3 Pro or go large with the Neptune 4 Plus for massive model printing",
+      "summary": "Grab a huge discount on two of Elegoo's most popular 3D printers right now, with a price drop of up to 35%. Both the Elegoo Neptune 3 Pro and Neptune 4 Plus offer features that both beginners and enthusiasts will love.",
+      "source": "Tom's Hardware",
+      "category": "Innovationen",
+      "published": "2026-09-07T10:50:54+00:00",
+      "sent_at": "2026-09-07T11:32:28.583743+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/ssds/flea-market-shopper-uncovers-usd1-500-worth-of-samsung-ssds-inside-a-usd30-expansion-card-three-2tb-980-pro-drives-were-hidden-beneath-an-asus-hyper-m-2-heatsink",
+      "title": "Flea market shopper uncovers $1,500 worth of Samsung SSDs inside a $30 expansion card — Three 2TB 980 Pro drives were hidden beneath an Asus Hyper M.2 heatsink",
+      "summary": "An extremely fortunate bargain hunter in Kuwait found three Samsung 980 Pro 2TB SSDs slotted inside a $30 PCIe expansion card. Each of those drives is worth between $400 and $500, so it's clear to say the thrifter struck gold during an AI rush.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-07T10:30:00+00:00",
+      "sent_at": "2026-09-07T11:32:28.583743+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/desktops/gaming-pcs/this-price-hike-busting-rtx-5080-gaming-pc-is-cheaper-than-it-was-in-april-save-usd500-on-a-9800x3d-beast-with-32gb-of-ddr5-2tb-ssd",
+      "title": "This price-hike-busting RTX 5080 gaming PC is cheaper than it was in April — save $500 on a 9800X3D beast with 32GB of DDR5, 2TB SSD",
+      "summary": "Get an RTX 5080 gaming PC with a 9800X3D CPU for less than $3,000.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-07T10:27:52+00:00",
+      "sent_at": "2026-09-07T11:32:28.583743+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/gpus/enthusiast-says-dlss-5-pushed-rtx-5090-past-600w-and-melted-the-16-pin-connector-nvidias-neural-rendering-tech-adds-up-to-50-percent-more-power-draw-in-testing",
+      "title": "Enthusiast says DLSS 5 pushed RTX 5090 past 600W and melted the 16-pin connector — Nvidia's neural rendering tech adds up to 50% more power draw in testing",
+      "summary": "Another RTX 5090 has gone down but this time it has something else to blame other than its own 16-pin connector. The connector is still what melted but potentially because of DLSS 5 pulling way too much power at the back end.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-07T10:00:00+00:00",
+      "sent_at": "2026-09-07T11:32:28.583743+00:00"
+    },
+    {
+      "link": "https://github.com/timgordontg/engrim",
+      "title": "Show HN: Engrim – A universal, local-first SQLite memory engine for AI CLIs",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-07T04:49:36+00:00",
+      "sent_at": "2026-09-07T11:32:28.583743+00:00"
+    },
+    {
+      "link": "https://restofworld.org/2026/ai-training-jobs-expert-replacement/",
+      "title": "I refused to train the AI that could replace me",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-07T04:38:22+00:00",
+      "sent_at": "2026-09-07T11:32:28.583743+00:00"
+    },
+    {
       "link": "https://bcantrill.dtrace.org/2025/12/05/your-intellectual-fly-is-open/",
       "title": "Your intellectual fly is open when you use an LLM to author a post (2025)",
       "summary": "",
@@ -4949,69 +5003,6 @@
       "category": "Hardware",
       "published": "2026-08-24T11:37:53+00:00",
       "sent_at": "2026-08-24T11:53:22.538008+00:00"
-    },
-    {
-      "link": "https://venturebeat.com/infrastructure/ibms-next-gen-mainframe-chip-is-the-first-to-run-arm-and-z-workloads-on-the-same-cores",
-      "title": "IBM’s next-gen mainframe chip is the first to run Arm and Z workloads on the same cores",
-      "summary": "IBM is announcing today at the annual Hot Chips conference what may be the most consequential change to mainframe architecture in decades: a processor whose cores can natively execute both IBM&#x27;s own instruction set and Arm&#x27;s — switching between the two in nanoseconds. The chip, which will power the next generation of IBM Z and LinuxONE systems, is the first dual-architecture mainframe processor ever built. It is designed to let enterprises run the vast and fast-growing ecosystem of Arm-native Linux software — including the AI frameworks that increasingly define modern infrastructure — directly alongside the z/OS transaction-processing workloads that anchor the world&#x27;s banks, insurers, and governments. &quot;As technology enthusiasts on both sides, we&#x27;re really excited about being what I would consider one of the most powerful commercially available processors that&#x27;ll be dual architecture,&quot; Tina Tarquinio, chief product officer for IBM Z and LinuxONE, told VentureBeat in an exclusive interview ahead of the announcement. The announcement marks the first hardware milestone from the strategic collaboration IBM and Arm unveiled in April, and it offers an unusually direct answer to a question that has shadowed the mainframe for years: can the machine that processes most of the world&#x27;s regulated financial transactions remain a first-class citizen in an AI era built largely on other people&#x27;s silicon? How IBM engineered a processor core that speaks two instruction sets The most striking engineering decision is what IBM chose not to do. The company could have bolted a handful of standalone Arm cores onto the side of its processor — a simpler design that other chipmakers have used for heterogeneous computing. Instead, IBM built every core on the chip to be bilingual. &quot;On this chip are 11 cores, and each core can dynamically switch back and forth between Arm software mode and traditional Z software mode ,&quot; Jacobi explained in an exclusive interview with VentureBeat. &quot;That enables us to run the mission-critical enterprise software right next, on the same chip, to the much broader software ecosystem of Arm applications.&quot; The mechanism relies on the open-source KVM hypervisor . Enterprises can run Arm64 Linux virtual machines and Linux on Z virtual machines side by side, and as the hypervisor dispatches each virtual machine onto a physical core, the core flips into the corresponding mode. The performance penalty, Jacobi said, is effectively zero. &quot;That switch takes about the nanosecond scale,&quot; he said. &quot;Because you&#x27;re running for many milliseconds in the virtual image, this switching overhead sort of amortizes to zero — pretty much no impact at all.&quot; Traditional z/OS workloads run in a separate partition on the same chip, outside KVM — meaning a bank&#x27;s core ledger, its fraud models, and a modern Arm-native monitoring stack can all share the same silicon, the same memory fabric, and the same reliability guarantees. Jacobi was candid that IBM debated the easier path and rejected it. &quot;We&#x27;re really not addressing their need if we just have a few, I&#x27;d say, loosely Arm cores in the corner of the chip,&quot; he said. &quot;It really needed to be deeply integrated into the entire system design for it to have the same qualities of service that clients are used to.&quot; The specifications underscore that this is no compromise design. Built on a leading-edge 2-nanometer process node, the chip runs its 11 high-performance cores at a base frequency above 5.7 GHz — extraordinarily fast by industry standards — with on-chip AI inference accelerators for in-transaction fraud detection, a dedicated data processing unit for I/O acceleration, and a large cache architecture. Full systems will scale to hundreds of cores and tens of terabytes of memory. &quot;That&#x27;s really, really fast compared to what you otherwise get in the industry,&quot; Jacobi said. &quot;It&#x27;s just another example of how mainframe technology is not old technology. It&#x27;s very modern, leading-edge technology.&quot; Why the mainframe needed Arm&#x27;s 22 million developers The strategic logic behind the chip is about software, not hardware. IBM&#x27;s s390x architecture runs an enormous share of the world&#x27;s mission-critical transactions, but the broader universe of enterprise software — monitoring tools, security agents, cloud-native middleware, and above all the AI stack of PyTorch, ONNX Runtime, and container workloads — was built for x86 and, increasingly, for Arm. By Arm&#x27;s own estimates, close to half of the compute shipped to major hyperscalers in 2025 was Arm-based, driven by AWS Graviton, Google Axion, and Microsoft&#x27;s Arm silicon. Arm counts more than 22 million developers worldwide. Porting each application to s390x has been a grinding, one-ISV-at-a-time effort, and Tina Tarquinio, chief product officer for IBM Z and LinuxONE, described the calculus bluntly. &quot;No matter how great our ecosystem team is, we would never be able to work with all of them and port them all,&quot; she told VentureBeat. &quot;There&#x27;s a lot of ISVs out there, and so we wanted to make a fundamental, big step-function forward. We took a swing from a technology point of view.&quot; Notably, she said customers weren&#x27;t asking for a dual-architecture chip per se — they were asking for outcomes. &quot;I wouldn&#x27;t say our clients were saying, &#x27;Can you please make me a dual-architecture environment?&#x27; But they were saying, &#x27;Help me get these surround workloads, or different types of workloads, to run in a quicker-to-market fashion.&#x27;&quot; The compatibility promise is ambitious: Arm Linux binaries should run unmodified. &quot;The new Arm capabilities are designed to be 100% binary compatible,&quot; Jacobi said. &quot;Once you have, for example, Red Hat Linux for Arm, and you have applications that run on Red Hat Linux for Arm, they will run on the system without modifications.&quot; Arm defines the instruction set architecture and supplies validation tooling to guarantee that IBM&#x27;s implementation behaves identically to every other Arm chip — while IBM designs and builds the silicon entirely in-house. &quot;Very good partnership. Very solid engineering partnership as well,&quot; Jacobi said of the collaboration. What a next-generation Spyre accelerator means for enterprise AI on the mainframe IBM is also previewing the next generation of its Spyre AI accelerator at Hot Chips , and the pairing is not coincidental. The current architecture already offers two tiers of AI: an on-processor accelerator, introduced with the Telum chip in 2022, that handles ultra-low-latency inference such as fraud scoring inside a payment transaction, and the Spyre accelerator card sitting in the I/O subsystem for heavier models. The new Spyre raises the ceiling considerably. &quot;We&#x27;re also bringing a much higher performance chip that is capable of running large language models for agentic workflows,&quot; Jacobi said — both AI-ops workflows that administer the system itself and business workflows &quot;for things like document understanding and insurance adjudication.&quot; The new accelerator will ship with high-bandwidth memory to feed those models. Here the dual-architecture bet and the AI bet converge. Enterprises want to run inference next to their data; the data lives on the mainframe; and the AI tooling is overwhelmingly Arm-native. Mohamed Awad, Arm&#x27;s executive vice president for cloud AI, framed the announcement in exactly those terms: &quot;As AI scales, more of the computing landscape is converging on Arm. Bringing Arm compute and its software ecosystem to these platforms will extend that momentum into mission-critical enterprise infrastructure to give organizations greater choice in how they deploy AI.&quot; The timing tracks with where enterprise AI actually stands. McKinsey&#x27;s most recent State of AI survey found that while 88% of organizations now use AI in at least one business function, nearly two-thirds have not yet scaled it across the enterprise — and the companies capturing the most value are those redesigning core workflows rather than running detached pilots. For regulated industries whose systems of record sit on IBM Z , running AI where the transactions happen is arguably the most direct route to that kind of integration. When the dual-architecture IBM Z system will ship — and why existing customers shouldn&#x27;t worry Buyers will need patience. The chip will debut in the successor to the z17 , which shipped in the second quarter of 2025, and IBM holds to a roughly three-year product cadence — pointing to a launch around 2028. But Tarquinio insisted the program is well past the concept stage. &quot;It&#x27;s more than being on the drawing board. We&#x27;re full steam ahead on the whole system,&quot; she said, adding that IBM will release more details in the run-up to launch. For IBM&#x27;s installed base, the reflexive question is whether embracing Arm signals a slow sunset for the traditional architecture. Both executives pushed back hard. &quot;This is a big and . It is not an or ,&quot; Tarquinio said. &quot;I have a roadmap that goes out 10 or 15 years of hardware systems. Many of our teams are working on this next system; many are also working on the one after that, and the one after that.&quot; Jacobi cast the move as continuity rather than rupture. &quot;The traditional mainframe that we have today as a z17 system is not just a faster version of what we built 25 years ago,&quot; he said. &quot;We didn&#x27;t have pervasive encryption capabilities. We didn&#x27;t have on-processor AI capabilities. Adding the Arm capability is the next big iteration in this continuous evolution.&quot; The competitive subtext is the cloud. Asked why an enterprise would run Arm workloads on a mainframe instead of a hyperscaler, Tarquinio pointed to the platform&#x27;s availability numbers: &quot;We&#x27;re talking eight nines of availability — that&#x27;s 0.3 seconds of downtime a year. If you&#x27;re running your ledger, if you&#x27;re running your fraud detection, any of these mission-critical apps, you want that.&quot; The pitch, she said, is fit for purpose: match the infrastructure to the SLA, not the fashion. There are real caveats. IBM&#x27;s own press release notes that statements of future direction &quot;represent goals and objectives only.&quot; The Arm support is Linux-only for now, and the hardest engineering — running a foreign instruction set at production performance, with mainframe-grade fault detection and recovery, under real customer workloads — remains to be proven over the next two years. But the ambition is unmistakable. For sixty years, the mainframe has survived every wave of technology that was supposed to kill it — minicomputers, client-server, the cloud — by absorbing what it needed from each. Now IBM is attempting its boldest act of absorption yet: teaching the machine that runs the world&#x27;s money to speak the language of the AI era, fluently and natively, on the same silicon. &quot;Bringing something that&#x27;ll really be first of its kind in production,&quot; Tarquinio said, &quot;showcases again what IBM is capable of from a technology point of view.&quot; The mainframe, it turns out, isn&#x27;t being left behind by the future. It&#x27;s learning to run it.",
-      "source": "VentureBeat",
-      "category": "AI",
-      "published": "2026-08-24T11:00:00+00:00",
-      "sent_at": "2026-08-24T11:23:46.945678+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/kyoto-university-demonstrates-a-sic-transistor-that-runs-at-600c-using-standard-ion-implantation",
-      "title": "Kyoto University builds transistor that survives 600C temperatures, compatible with standard fabs — Standard ion implantation and bottom-gate design fix leakage and voltage drift",
-      "summary": "A research team at Kyoto University has built a silicon carbide transistor that operates at 600°C (873 K) using ion implantation.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-24T10:30:00+00:00",
-      "sent_at": "2026-08-24T10:33:58.799736+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/desktops/gaming-pcs/huge-usd2-200-discount-makes-this-rtx-5090-gaming-pc-cheaper-than-the-gpus-standalone-price-epic-hp-omen-max-45l-rig-ships-with-64gb-ddr5-and-a-2tb-ssd-for-just-usd4-799",
-      "title": "Huge $2,200 discount makes this RTX 5090 gaming PC cheaper than the GPU's standalone price — epic HP Omen Max 45L rig ships with 64GB DDR5 and a 2TB SSD for just $4,799",
-      "summary": "A massive discount means this $4,799 HP Omen Max 45L gaming PC is now cheaper than individually buying the RTX 5090 it uses, thanks to a $2,200 discount.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-24T10:11:23+00:00",
-      "sent_at": "2026-08-24T10:33:58.799736+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2242415/taiwan-reportedly-indicted-nvidia-employees-for-exporting-prohibited-ai-servers-to-china/",
-      "title": "Taiwan reportedly indicted NVIDIA employees for exporting prohibited AI servers to China",
-      "summary": "Even though the US has relaxed its restrictions of AI chip exports to China, illegal exports are apparently still taking place.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-08-24T10:02:03+00:00",
-      "sent_at": "2026-08-24T10:33:58.799736+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/teachers-deepfake-ai-students-content/",
-      "title": "They Dedicated Their Lives to Teaching. Then the Deepfakes Started",
-      "summary": "The deepfake epidemic in schools is affecting more than students. Four teachers tell WIRED about becoming targets of sexualized, AI-generated content—and how difficult it was to find accountability.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-08-24T09:30:00+00:00",
-      "sent_at": "2026-08-24T09:42:18.929265+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/983688/world-humanoid-robot-games-sprint-record-2026",
-      "title": "Humanoid robots smash Usain Bolt&#8217;s 100-meter record",
-      "summary": "The 9.58-second 100-meter dash record set by Usain Bolt in 2009 has been outpaced by Chinese robots participating at the World Humanoid Robot Games in Beijing. In a preliminary heat on Saturday, Tiangong Ultra, made by the Beijing Humanoid Robot Innovation &#8203;Center, ran the distance in 9.39 seconds, followed by the Honor-developed Lightning at 9.47 [&#8230;]",
-      "source": "The Verge",
-      "category": "Innovationen",
-      "published": "2026-08-24T09:10:40+00:00",
-      "sent_at": "2026-08-24T09:42:18.929265+00:00"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/08/24/1141740/kids-machines-language-learning/",
-      "title": "Kids outlearn AI—and we still don’t know why",
-      "summary": "People have been talking to each other for at least 100,000 years, as best we can tell. And in all that time, there has been only one thing in the world that could learn a human language to perfect fluency: a human child.&#160; Now there are two.&#160; Four short years after the release of ChatGPT,&#8230;",
-      "source": "MIT Technology Review",
-      "category": "AI",
-      "published": "2026-08-24T09:00:00+00:00",
-      "sent_at": "2026-08-24T09:42:18.929265+00:00"
     }
   ]
 }
