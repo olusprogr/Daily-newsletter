@@ -1,6 +1,15 @@
 {
   "items": [
     {
+      "link": "https://bcantrill.dtrace.org/2025/12/05/your-intellectual-fly-is-open/",
+      "title": "Your intellectual fly is open when you use an LLM to author a post (2025)",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-06T11:56:43+00:00",
+      "sent_at": "2026-09-07T05:39:35.703298+00:00"
+    },
+    {
       "link": "https://www.theverge.com/ai-artificial-intelligence/990932/seattle-times-newsday-lawsuit-openai-microsoft",
       "title": "Seattle Times and Newsday sue OpenAI and Microsoft for infringement",
       "summary": "The Seattle Times and Newsday are just the latest plaintiffs to take OpenAI to court, alleging copyright infringement. The two outlets say the company used their journalism as training data for its AI models without permission and often reproduces passages from their reporting in response to user queries. This is similar to lawsuits filed by [&#8230;]",
