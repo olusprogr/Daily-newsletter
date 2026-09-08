@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/991727/openai-chatgpt-images-2-5-sketch",
+      "title": "ChatGPT Sketch turns your bad drawings into detailed AI images",
+      "summary": "OpenAI announced ChatGPT Images 2.5 on Tuesday and is adding a new way to tell ChatGPT what you want it to make an image of: by drawing a doodle. With a new feature called Sketch, you can just draw something right inside ChatGPT and then tell ChatGPT how you want it to make an image [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-08T20:16:09+00:00",
+      "sent_at": "2026-09-08T20:42:01.280234+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/meta-releases-muse-a-personal-ai-agent-with-privacy-built-into-it/",
+      "title": "Meta Releases Muse, a Personal AI Agent With Privacy ‘Built Into It’",
+      "summary": "Designed to compete with OpenClaw and Instinct, the company says Muse can do everything from sell your car to book you a plane ticket.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-09-08T20:12:51+00:00",
+      "sent_at": "2026-09-08T20:42:01.280234+00:00"
+    },
+    {
+      "link": "https://ai.meta.com/muse/",
+      "title": "Muse: Meta's personal AI agent, features and capabilities",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-08T19:25:00+00:00",
+      "sent_at": "2026-09-08T20:42:01.280234+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/gadgets/2026/09/top-chipmakers-embrace-asmls-400m-machines-agree-to-crucial-chipmaking-change/",
+      "title": "Top chipmakers embrace ASML’s $400M machines, agree to crucial chipmaking change",
+      "summary": "Chipmaking changes could boost productivity of new ASML machines by 40 percent.",
+      "source": "Ars Technica",
+      "category": "Hardware",
+      "published": "2026-09-08T19:12:53+00:00",
+      "sent_at": "2026-09-08T20:42:01.280234+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/",
+      "title": "Meta debuts its Muse AI agent. Will consumers trust it?",
+      "summary": "Meta's new personal AI agent Muse wants access to users' email, calendars, payments, health services, and more — making the company's biggest consumer AI bet yet a major test of whether people still trust Meta with their data.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-08T19:00:00+00:00",
+      "sent_at": "2026-09-08T20:42:01.280234+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race",
+      "title": "Meta bets on AI agent Muse to catch up in AI race",
+      "summary": "Meta is making another push to bring artificial intelligence to the masses with Muse, a personal assistant it says can put AI in the hands of virtually anyone. The product is the latest step in a multi-billion-dollar strategy overhaul designed to revitalize the company's ailing position in the AI race and help it catch up [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-08T19:00:00+00:00",
+      "sent_at": "2026-09-08T20:42:01.280234+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2253133/meta-reveals-its-ai-agent-that-can-shop-send-emails-and-plan-trips-on-your-behalf/",
+      "title": "Meta reveals its AI agent that can shop, send emails and plan trips on your behalf",
+      "summary": "Muse, Meta's newly revealed AI agent, can perform tasks autonomously, if you trust it to do that.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-09-08T19:00:00+00:00",
+      "sent_at": "2026-09-08T20:42:01.280234+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/tech-policy/2026/09/real-photos-of-young-girls-were-in-nudify-app-ads-on-facebook-instagram/",
+      "title": "“This is the AI men actually use”: Meta ads pushed apps nudifying real teens",
+      "summary": "Meta dragged its feet removing ads that nudify young girls' Instagram pics.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-09-08T18:43:09+00:00",
+      "sent_at": "2026-09-08T20:42:01.280234+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/09/08/openai-fought-dirty-on-career-making-math-problem-says-nyu-mathematician/",
       "title": "OpenAI fought dirty on career-making math problem, says NYU mathematician",
       "summary": "There is a $1 million bounty for the first person providing a solution to the Navier-Stokes existence and smoothness problem.",
@@ -4436,96 +4508,6 @@
       "category": "AI",
       "published": "2026-08-25T15:20:20+00:00",
       "sent_at": "2026-08-25T20:56:30.790845+00:00"
-    },
-    {
-      "link": "https://www.fda.gov/news-events/press-announcements/fda-authorizes-first-wearable-device-continuously-monitors-both-ketone-levels-and-blood-sugar",
-      "title": "FDA authorizes first wearable device that monitors ketone and blood sugar levels",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Innovationen",
-      "published": "2026-08-25T19:07:01+00:00",
-      "sent_at": "2026-08-25T20:28:04.780820+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/25/stability-ai-maker-of-image-generator-stable-diffusion-raises-76-million-in-fresh-funding/",
-      "title": "Stability AI, maker of image generator Stable Diffusion, raises $76 million in fresh funding",
-      "summary": "The company's new fundraising total now stands at $232 million.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-25T19:03:47+00:00",
-      "sent_at": "2026-08-25T19:28:10.452204+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/dram/hot-chips-2026-samsung-makes-lpddr5x-smart-with-logic-unit-in-memory-lpddr5x-pim-is-3-01x-faster-than-lpddr5x-in-ai-inference-with-8x-the-bandwidth",
-      "title": "Hot Chips 2026: Samsung makes LPDDR5X smart with logic unit in memory — LPDDR5X-PIM is 3.01x faster than LPDDR5X in AI inference with 8x the bandwidth",
-      "summary": "Samsung detailed the industry's first LPDDR5X-PIM at Hot Chips 2026, adding logic directly to memory to speed up data-intensive workloads like AI inference.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-08-25T18:31:37+00:00",
-      "sent_at": "2026-08-25T18:41:16.389539+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/25/spacex-will-build-a-second-100b-starbase-spaceport-in-louisiana/",
-      "title": "SpaceX will build a second, $100B ‘Starbase’ spaceport in Louisiana",
-      "summary": "The company says it will start construction in 2027 and that a Starship rocket could take flight as soon as 2029.",
-      "source": "TechCrunch",
-      "category": "Innovationen",
-      "published": "2026-08-25T18:26:55+00:00",
-      "sent_at": "2026-08-25T18:41:16.389539+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/semiconductors/openai-says-its-jalapeno-chip-beats-nvidias-gb300-in-first-published-benchmarks",
-      "title": "OpenAI’s 700W Jalapeño ASIC outpaces 1,400W Nvidia flagship GPU — claims up to 1.9x throughput per kilowatt and 3.6x lower latency, co-developed with Broadcom",
-      "summary": "OpenAI arrived at Hot Chips on Tuesday with benchmarks claiming its first in-house chip beats Nvidia's GB300.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-08-25T18:05:23+00:00",
-      "sent_at": "2026-08-25T18:41:16.389539+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/space/2026/08/spacex-intends-to-invest-up-to-100-billion-in-massive-louisiana-spaceport/",
-      "title": "SpaceX intends to invest up to $100 billion in massive Louisiana spaceport",
-      "summary": "\"This will be a project like no other.\"",
-      "source": "Ars Technica",
-      "category": "Innovationen",
-      "published": "2026-08-25T17:26:15+00:00",
-      "sent_at": "2026-08-25T18:41:16.389539+00:00"
-    },
-    {
-      "link": "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia",
-      "title": "OpenAI Jalapeño: Better than Nvidia Blackwell",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-25T14:06:02+00:00",
-      "sent_at": "2026-08-25T18:41:16.389539+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/25/claude-cowork-finally-remembers-what-you-told-the-app-in-chat/",
-      "title": "Claude Cowork finally remembers what you told the app in chat",
-      "summary": "Anthropic is giving Claude a shared memory across chat and Cowork, so users no longer have to repeatedly brief the AI on projects, preferences, and other context.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-25T17:50:33+00:00",
-      "sent_at": "2026-08-25T17:57:20.082737+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/25/waymo-robotaxis-are-headed-to-munich/",
-      "title": "Waymo robotaxis are headed to Munich",
-      "summary": "Germany's autonomous vehicle regulations have made it a hotspot for autonomous vehicle testing and eventual commercial robotaxi deployment.",
-      "source": "TechCrunch",
-      "category": "Autonomes Fahren",
-      "published": "2026-08-25T17:32:03+00:00",
-      "sent_at": "2026-08-25T17:57:20.082737+00:00"
-    },
-    {
-      "link": "https://www.spacex.com/sites/starbase-la",
-      "title": "SpaceX – Starbase, LA",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Innovationen",
-      "published": "2026-08-25T16:37:52+00:00",
-      "sent_at": "2026-08-25T17:57:20.082737+00:00"
     }
   ]
 }
