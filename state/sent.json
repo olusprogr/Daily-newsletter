@@ -1,6 +1,42 @@
 {
   "items": [
     {
+      "link": "https://electrek.co/2026/09/07/xpeng-iron-humanoid-robot-production-line/",
+      "title": "XPeng starts IRON humanoid robot production as Tesla Optimus stalls",
+      "summary": "XPeng has switched on what it calls the world’s first automated production line for advanced humanoid robots, and its IRON robot walked off that line under its own power. The Chinese automaker says the line runs with more than 80% of its core processes automated. It’s the clearest signal yet that IRON is headed for real manufacturing and not just stage demos. XPeng is targeting mass production by the end of 2026. more…",
+      "source": "Electrek",
+      "category": "Innovationen",
+      "published": "2026-09-08T02:40:34+00:00",
+      "sent_at": "2026-09-08T03:59:23.953757+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/07/eric-wus-newest-company-out-of-stealth-since-may-is-going-after-constructions-labor-crunch/",
+      "title": "Eric Wu’s newest company, out of stealth since May, is going after construction’s labor crunch",
+      "summary": "Eric Wu, who built and ran Opendoor before stepping away in 2022, has had his new company, NavigateAI, out of stealth since May — building AI copilots that give construction workers real-time, hands-free guidance through smartphones and Meta's AI glasses, backed by $25 million from Elad Gil, Khosla Ventures, and Lennar to tackle a labor shortage severe enough that data center projects alone now need 4,000 to 5,000 workers apiece.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-08T02:16:39+00:00",
+      "sent_at": "2026-09-08T03:59:23.953757+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/games/990676/arm-neural-rendering-mali-g2-ultra-xiaomi-xring-o3",
+      "title": "First Xiaomi, then the world: why Arm might give phone gaming a huge graphics boost",
+      "summary": "China is getting first crack at a British technology that might change how mobile games are made and played. Today, the Xiaomi 18 Fold launches in mainland China with an Arm Mali G2-Ultra NX graphics processor inside its custom Xring O3 chip. What's so special about that? After five years of development, Arm now has [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-09-08T02:00:00+00:00",
+      "sent_at": "2026-09-08T03:59:23.953757+00:00"
+    },
+    {
+      "link": "https://www.ft.com/content/b207536e-6def-4080-878f-d0eba61d11e0",
+      "title": "US Republicans revolt against Flock AI surveillance as backlash intensifies",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-07T04:07:07+00:00",
+      "sent_at": "2026-09-08T03:59:23.953757+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/09/07/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/",
       "title": "Opaque recurrence, and other AI terms that you should probably know",
       "summary": "The rise of AI has brought an avalanche of new terms and slang. Here is a glossary with definitions of some of the most important words and phrases you might encounter.",
@@ -4733,87 +4769,6 @@
       "category": "AI",
       "published": "2026-08-25T09:00:00+00:00",
       "sent_at": "2026-08-25T09:31:14.483601+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/24/indias-airbound-bags-37m-to-take-on-trucks-with-rocket-like-drones/",
-      "title": "India’s Airbound bags $37M to take on trucks with rocket-like drones",
-      "summary": "Airbound's ultra-lightweight approach to drone delivery has attracted backing from Greenoaks, DoorDash, and Silicon Valley investor Lachy Groom.",
-      "source": "TechCrunch",
-      "category": "Hardware",
-      "published": "2026-08-25T03:30:00+00:00",
-      "sent_at": "2026-08-25T03:44:17.473765+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/24/situational-awareness-star-ai-hedge-fund-that-nearly-imploded-now-being-probed-by-the-sec/",
-      "title": "Situational Awareness, star AI hedge fund that nearly imploded, now being probed by the SEC",
-      "summary": "The AI hedge fund went from \"the talk of Wall Street\" to \"subject of federal subpoenas\" faster than you can say \"diversify your portfolio.\"",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-25T00:23:12+00:00",
-      "sent_at": "2026-08-25T01:02:35.829989+00:00"
-    },
-    {
-      "link": "https://blog.archive.org/2026/08/16/vintage-artificial-intelligence-before-it-got-awkward/",
-      "title": "Vintage Artificial Intelligence: Before It Got Awkward",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-24T21:01:38+00:00",
-      "sent_at": "2026-08-25T01:02:35.829989+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/ai/2026/08/ai-is-hitting-entry-level-jobs-hardest-stanford-study-finds/",
-      "title": "AI is hitting entry-level jobs hardest, Stanford study finds",
-      "summary": "Young employment in AI-impacted fields down 19% compared to more AI-resistant occupations.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-08-24T21:45:53+00:00",
-      "sent_at": "2026-08-24T22:52:41.767413+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/08/24/tesla-robotaxi-failing-fans-texas/",
-      "title": "Tesla ‘Robotaxi’ sold a 66-minute 2.3-mile ride and left a rider 3 miles from his destination",
-      "summary": "Tesla’s “Robotaxi” service is racking up a wave of terrible rider experiences in Texas — and the complaints are increasingly coming from Tesla’s own fans and ambassadors. A self-described “Tesla Ambassador” says the service quoted him 66 minutes for a 2.3-mile trip and left him to call an Uber, while a four-time Tesla owner has logged a string of missed pickups and drop-offs left blocks — sometimes miles — from the destination.",
-      "source": "Electrek",
-      "category": "Autonomes Fahren",
-      "published": "2026-08-24T21:43:53+00:00",
-      "sent_at": "2026-08-24T22:21:31.276384+00:00"
-    },
-    {
-      "link": "https://github.com/l3a0/claude-plugins",
-      "title": "A Claude Code skill that recovers export-blocked Kindle highlights",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-24T19:32:18+00:00",
-      "sent_at": "2026-08-24T22:21:31.276384+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/24/trump-bought-spacex-shares-two-weeks-after-blockbuster-ipo/",
-      "title": "Trump bought SpaceX shares two weeks after blockbuster IPO",
-      "summary": "The president bought when the stock was in the mid-$150 range. SpaceX finished trading on Monday back at its IPO price of $135.",
-      "source": "TechCrunch",
-      "category": "Innovationen",
-      "published": "2026-08-24T21:24:17+00:00",
-      "sent_at": "2026-08-24T21:34:35.088554+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/cpus/intel-xeon-7-diamond-rapids-comes-with-up-to-256-p-cores-1-28-gb-of-last-level-cache-next-gen-18a-p-cpu-also-brings-avx-10-2-and-uses-ucie-s-instead-of-emib",
-      "title": "Intel Xeon 7 'Diamond Rapids' comes with up to 256 P-cores, 1.28 GB of last-level cache — next-gen 18A-P CPU also brings AVX 10.2 and uses UCIe-S instead of EMIB",
-      "summary": "Intel has pulled back the curtain on its next-gen Diamond Rapids Xeon CPUs, packing up to 256 P-cores and 1.28 TB of last-level cache.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-24T21:07:45+00:00",
-      "sent_at": "2026-08-24T21:34:35.088554+00:00"
-    },
-    {
-      "link": "https://boydkane.com/essays/llms-could-control-their-host-machines-by-exploiting-inference-engines",
-      "title": "LLMs could control their host machines by exploiting inference engines",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-24T19:03:06+00:00",
-      "sent_at": "2026-08-24T21:34:35.088554+00:00"
     }
   ]
 }
