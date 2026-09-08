@@ -1,6 +1,24 @@
 {
   "items": [
     {
+      "link": "https://www.theverge.com/tech/991008/xiaomi-18-fold-hands-on-impressions-specs-wide",
+      "title": "Xiaomi’s wide foldable promises more power than Samsung’s",
+      "summary": "Xiaomi is the latest manufacturer to release a short, wide foldable phone, in the week Apple is expected to do the same. I got to try the 18 Fold behind closed doors at IFA last week, and while it looks and feels similar enough to Samsung's Galaxy Z Fold 8, superior specs make it feel [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-09-08T07:00:00+00:00",
+      "sent_at": "2026-09-08T08:48:04.275609+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/semiconductors/intel-surpasses-one-million-high-na-euv-wafers-processed-outpaces-the-rest-of-the-industry-combined-company-also-trailblazing-giant-6-12-photomasks-to-speed-production-and-lower-costs1",
+      "title": "Intel surpasses one million High-NA EUV wafers processed, outpaces the rest of the industry combined — company also trailblazing giant 6×12 photomasks to speed production and lower costs",
+      "summary": "Intel is leading the semiconductor industry with High-NA fleet and process-maturity milestone as it reaches 1 million wafers processed using High-NA tools, moves forward with 6×12 photomask effort.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-08T06:00:00+00:00",
+      "sent_at": "2026-09-08T08:48:04.275609+00:00"
+    },
+    {
       "link": "https://electrek.co/2026/09/07/xpeng-iron-humanoid-robot-production-line/",
       "title": "XPeng starts IRON humanoid robot production as Tesla Optimus stalls",
       "summary": "XPeng has switched on what it calls the world’s first automated production line for advanced humanoid robots, and its IRON robot walked off that line under its own power. The Chinese automaker says the line runs with more than 80% of its core processes automated. It’s the clearest signal yet that IRON is headed for real manufacturing and not just stage demos. XPeng is targeting mass production by the end of 2026. more…",
