@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://twitter.com/hilbertspaess/status/2097476196791709843#m",
+      "title": "I resigned from Anthropic today",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-09T00:40:40+00:00",
+      "sent_at": "2026-09-09T02:59:39.007799+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2252811/major-changes-coming-apple-homekit-ios-27/",
+      "title": "What are the major changes coming to Apple HomeKit in iOS 27?",
+      "summary": "iOS 27 isn't leaving out HomeKit and the Home app in its list of AI revamps and improvements.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-09-09T00:00:00+00:00",
+      "sent_at": "2026-09-09T02:59:39.007799+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/security/2026/09/microsoft-patches-a-record-972-vulnerabilities-112-of-them-critical/",
+      "title": "Why this month's Microsoft patch release is a doozy",
+      "summary": "Security gnomes are pumping out patches ahead of an expected onslaught of AI-assisted attacks.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-09-08T21:11:46+00:00",
+      "sent_at": "2026-09-09T02:59:39.007799+00:00"
+    },
+    {
+      "link": "https://mathstodon.xyz/@tao/117237320796901560",
+      "title": "Tao: Open math problems being non-renewably mined by AI",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-08T21:00:52+00:00",
+      "sent_at": "2026-09-09T02:59:39.007799+00:00"
+    },
+    {
+      "link": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+      "title": "ChatGPT Images 2.5",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-08T18:37:51+00:00",
+      "sent_at": "2026-09-09T02:59:39.007799+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2253085/nvidias-dlss-5-adds-subtle-details-to-nba-2k27-but-demands-a-lot-more-power/",
+      "title": "NVIDIA's DLSS 5 adds subtle details to NBA 2K27, but demands a lot more power",
+      "summary": "DLSS 5's juice may not be worth the squeeze for launch title NBA 2K27.",
+      "source": "Engadget",
+      "category": "Hardware",
+      "published": "2026-09-08T18:31:54+00:00",
+      "sent_at": "2026-09-09T02:59:39.007799+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2252075/drive-price-rise-driven-by-ai-even-hdd-affected/",
+      "title": "The rise in drive prices is being driven by AI and even HDDs can't hide",
+      "summary": "SSDs are preferable for many reasons, but with storage prices skyrocketing, there are some scenarios where opting for an HDD makes more sense.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-09-08T18:30:00+00:00",
+      "sent_at": "2026-09-09T02:59:39.007799+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/science/2026/09/googles-ai-weather-model-now-uses-more-raw-satellite-data/",
+      "title": "Update to Google’s AI weather model improves forecast accuracy",
+      "summary": "Like traditional weather models, it benefits from an expanded set of inputs.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-09-08T18:00:56+00:00",
+      "sent_at": "2026-09-09T02:59:39.007799+00:00"
+    },
+    {
       "link": "https://www.engadget.com/2251144/spacex-starship-40-recovered-months-travel-back-to-texas/",
       "title": "SpaceX's recovered Starship 40 will take months to get back to Texas",
       "summary": "SpaceX's rocket traveled thousands of miles from Texas to the Indian Ocean for a launch test. For a number of reasons, it'll take a lot longer to return home.",
@@ -4490,24 +4562,6 @@
       "category": "AI",
       "published": "2026-08-25T19:37:39+00:00",
       "sent_at": "2026-08-26T03:50:48.713107+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/25/robotics-startup-generalist-reaches-3b-valuation-sources-say/",
-      "title": "Robotics startup Generalist reaches $3B valuation, sources say",
-      "summary": "The $200 million extension comes just months after the physical AI startup reached a $2 billion valuation.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-26T00:40:59+00:00",
-      "sent_at": "2026-08-26T01:04:15.512095+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/25/openai-loses-a-top-data-center-exec-as-stream-of-high-profile-departures-continues/",
-      "title": "OpenAI loses a top data center exec, as stream of high-profile departures continues",
-      "summary": "Before Malone left, OpenAI had already reshuffled its infrastructure org, shifting his reporting line away from President Greg Brockman and putting Vice President Sachin Katti in charge of the group.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-26T00:06:20+00:00",
-      "sent_at": "2026-08-26T01:04:15.512095+00:00"
     }
   ]
 }
