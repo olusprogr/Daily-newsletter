@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/09/09/openai-adds-a-prominent-ai-doomer-to-its-board-of-directors/",
+      "title": "OpenAI adds a prominent AI doomer to its board of directors",
+      "summary": "Paul Christiano, an influential AI researcher focused on alignment, is joining the OpenAI Foundation as a member of its board.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-09T22:25:22+00:00",
+      "sent_at": "2026-09-09T22:54:51.421637+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/anthropic-researcher-quits-jacob-coxon-ai-fears-humanity/",
+      "title": "The AI Researcher Who Just Quit Anthropic Says It’s ‘Crunch Time for Humanity’",
+      "summary": "Jacob Coxon talks to WIRED about the “mini Manhattan project” inside Anthropic, the problem with alignment, and why AI labs have just a few years left to make their systems safe.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-09-09T22:11:55+00:00",
+      "sent_at": "2026-09-09T22:54:51.421637+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/gadgets/993005/smartphone-price-hikes-apple-iphone-18-pro",
+      "title": "It’s the year of smartphone price hikes",
+      "summary": "Paying more for a new phone seems almost unavoidable after Apple's event today. The new iPhone 18 Pro and Pro Max start at $1,199 and $1,299, respectively - a $100 price hike over their predecessors. You can't dodge the price hike by opting for an older iPhone, either, because Apple raised prices on those by [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-09-09T21:52:43+00:00",
+      "sent_at": "2026-09-09T22:54:51.421637+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
+      "title": "Suno releases its first AI music model made with record industry help",
+      "summary": "Suno's new v6 AI music model is its first made with support from the record industry. Suno's Jack Brody told The Verge that v6 was \"trained from the ground up, with a new set of data that does not include the same data that our previous models were trained on.\" The data includes content licensed [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-09T21:42:19+00:00",
+      "sent_at": "2026-09-09T22:54:51.421637+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2254366/google-ai-mode-can-hold-your-hand-through-fantasy-football-season/",
+      "title": "Google AI Mode can hold your hand through fantasy football season",
+      "summary": "With football season just hours away, Google has turned its AI into a fantasy football coach.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-09-09T21:26:17+00:00",
+      "sent_at": "2026-09-09T22:54:51.421637+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/992953/openai-math-millennium-prize-navier-stokes",
+      "title": "OpenAI’s sly mathematical breakthrough sends a chill through academia",
+      "summary": "OpenAI's announcement Tuesday that it has solved one of mathematics' legendary Millennium Prize problems should have been a moment of triumph. The result is both an undeniable achievement and a striking demonstration of just how rapidly AI is transforming mathematics. But before it was even formally announced, the breakthrough had been complicated by the unusual [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-09T21:16:34+00:00",
+      "sent_at": "2026-09-09T22:54:51.421637+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/san-francisco-orders-meta-to-stop-allowing-ai-child-abuse-ads/",
+      "title": "San Francisco Orders Meta to Stop ‘Allowing’ AI Child Abuse Ads",
+      "summary": "The City Attorney’s Office has asked Meta to explain how the harmful ads repeatedly ran on Facebook and Instagram. The company claims the ads are not under the city’s jurisdiction.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-09-09T21:15:27+00:00",
+      "sent_at": "2026-09-09T22:54:51.421637+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/992919/apple-siri-ai-audio-intelligence-privacy",
+      "title": "Read the Apple document explaining how new listening features still protect your privacy",
+      "summary": "At Wednesday's iPhone Duo launch event, Apple announced a handful of new Siri AI Audio Intelligence features, including Siri Recap, Live Rewind, Sound Recognition, and Music Recognition. Alongside its announcement, Apple released a document laying out how it plans to balance AI \"ambient listening\" and users' privacy. It says the raw audio from the new [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-09T20:44:43+00:00",
+      "sent_at": "2026-09-09T22:54:51.421637+00:00"
+    },
+    {
       "link": "https://arstechnica.com/tech-policy/2026/09/six-chinese-ai-firms-accused-of-aggressively-copying-us-frontier-models/",
       "title": "Six Chinese AI firms accused of aggressively copying US frontier models",
       "summary": "US urges AI firms to ID, then secretly switch, Chinese users to less-capable models.",
@@ -4319,78 +4391,6 @@
       "category": "AI",
       "published": "2026-08-26T21:25:27+00:00",
       "sent_at": "2026-08-27T00:24:43.308613+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2245011/why-mac-mini-m5-pro-more-expensive-than-m6/",
-      "title": "Why is the Mac mini M5 Pro more expensive than the M6?",
-      "summary": "When it comes to Apple Silicon, a higher number doesn't necessarily mean a better chip.",
-      "source": "Engadget",
-      "category": "Hardware",
-      "published": "2026-08-26T20:15:00+00:00",
-      "sent_at": "2026-08-26T20:30:51.820455+00:00"
-    },
-    {
-      "link": "https://venturebeat.com/orchestration/salesforce-just-put-its-entire-crm-inside-claude-and-says-youll-never-need-its-app-again",
-      "title": "Salesforce just put its entire CRM inside Claude — and says you’ll never need its app again",
-      "summary": "Salesforce and Anthropic announced Tuesday a sweeping expansion of their partnership, called Claudeforce , that pushes the world&#x27;s largest customer relationship management platform directly inside Claude — a tacit acknowledgment that the future of enterprise software may not involve enterprise software&#x27;s own screens at all. The centerpiece of the announcement is Salesforce in Claude , a plugin for Anthropic&#x27;s Claude CoWork that ships with 37 pre-built sales skills — covering meeting preparation, deal health reviews, and pipeline analysis — and lets sellers query, update, and act on live CRM data without ever opening Salesforce itself. The product is available to select pilot customers today, with an open beta planned for September and additional skills for other business functions beginning to launch in the third quarter. Marc Benioff, Salesforce&#x27;s chair and CEO, and Dario Amodei, Anthropic&#x27;s CEO, were scheduled to appear on television together Tuesday afternoon, hours before Salesforce reports quarterly earnings — a piece of stagecraft that underscores how central this partnership has become to both companies&#x27; narratives. &quot;We&#x27;re bringing together the world&#x27;s #1 AI and #1 CRM — the best of both worlds,&quot; Benioff said in a statement. &quot;Here, the UI is the AI — allowing you to build custom apps dynamically and answer any enterprise question. Probabilistic intelligence alone doesn&#x27;t run a company, and deterministic systems don&#x27;t reason.&quot; But the more revealing framing came in an exclusive interview with VentureBeat, where Patrick Stokes, Salesforce&#x27;s president of applications and marketing, described the launch in terms that would have been unthinkable for a major SaaS vendor even two years ago. &quot;We think that what this can do is kind of be a version of what Claude Code did for developers,&quot; Stokes said. &quot;We think we&#x27;re about to do the same thing for knowledge workers. This is just a whole new way to work.&quot; How Salesforce turned its headless CRM experiment into a one-click Claude plugin The road to Claudeforce began in March, when Salesforce released Headless 360 at its TDX developer conference — a collection of APIs, MCP servers, and command-line tools that let AI agents call Salesforce data, workflows, and governance rules directly, with no user interface required. &quot;I think we really kind of surprised the world a little bit with our Headless approach,&quot; Stokes told VentureBeat, &quot;basically kind of openly suggesting that these agentic interfaces are a really good way to use Salesforce&#x27;s products, and we don&#x27;t actually mind if you don&#x27;t use Salesforce&#x27;s products exclusively through a user interface designed for a human.&quot; What happened next, according to Stokes, was both validating and messy. Customers rushed to wire Salesforce&#x27;s MCP servers into agentic interfaces — &quot;but really, Claude rose to the top,&quot; he said. The problem was friction. &quot;Every individual user has to know what an MCP server is. Obviously, your average knowledge worker out there is not dealing in MCP servers every day. And you know, even if you can find it, how do you wire it up? And then, how do you make sure that it&#x27;s respecting the permissions of the users?&quot; The answer came from an unexpected source: Anthropic&#x27;s own workforce. &quot;We sat down with Anthropic and we talked about the problem, and they said, &#x27;Hey, this is actually how we&#x27;re using Salesforce. We use Salesforce pretty much exclusively through Claude and a series of skills and MCP servers that we have,&#x27;&quot; Stokes recounted. The two companies decided to productize that internal setup as a CoWork plugin — one that an administrator connects a single time, with authentication and permissions managed centrally, so &quot;all of the difficulty of wiring up every individual user with an MCP server is just magically solved.&quot; Under the hood, the architecture is deliberately simple. When a seller asks Claude to update a deal, Claude first reasons over its available skills — &quot;kind of human-like instructions,&quot; as Stokes described them — to determine whether specific guidance exists for the task. If it finds a match, it reads the instructions and executes against Salesforce&#x27;s MCP server, which inherits the user&#x27;s existing permissions. &quot;If you don&#x27;t own that record, if you don&#x27;t have permission to see that record, the MCP server doesn&#x27;t either, and so you won&#x27;t be able to read or write it,&quot; he said. For enterprise buyers, that may be the announcement&#x27;s most important technical claim: nothing new to stand up, nothing to re-audit, nothing to configure account by account. Why Salesforce says letting sellers live in Claude makes its platform more valuable, not less The strategic tension at the heart of Claudeforce is obvious: if sellers start living in Claude instead of Salesforce, doesn&#x27;t Salesforce become less important over time? Stokes rejected the premise emphatically. &quot;That&#x27;s not what we&#x27;re seeing at all,&quot; he said. &quot;The value of Salesforce is not in our UI itself. It&#x27;s not the application. The value of Salesforce is in the data and the metadata, the years worth of kind of encoded workflows and business practices that have been built up inside of Salesforce. What we&#x27;re doing is we&#x27;re taking that and we&#x27;re exposing it to a new UI.&quot; He offered a concrete example of the productivity math Salesforce is betting on. A seller&#x27;s morning ritual — deciding which opportunities to work — traditionally means opening an opportunities list, clicking into each record, reading activities and meeting histories, and synthesizing everything mentally. &quot;That process of evaluating all of those records and synthesizing it and coming up with a plan is like 10,000 clicks inside of Salesforce,&quot; Stokes said. &quot;Now you just go to Claude and it&#x27;s going to execute all of that for you, and it&#x27;s going to do it in like 30 seconds.&quot; The paradoxical result, he argued: &quot;I&#x27;m actually using Salesforce more than I ever would have before, because the work of clicking around to get what I need is gone.&quot; There is self-interest in that framing. Salesforce charges for this new usage through its headless consumption pricing — &quot;depending on your edition of your user license within Salesforce, you effectively get more incremental access to more and more API calls,&quot; Stokes explained. Customers separately contract with Anthropic for the Claude inference itself. &quot;You can&#x27;t buy this on one piece of paper at the moment,&quot; he acknowledged. That two-invoice structure hints at the deeper industry shift underway: the slow migration of enterprise software economics from seats to consumption. If agents rather than humans become the primary consumers of SaaS functionality, per-user licensing loses coherence — and Salesforce appears to be positioning API consumption as the successor metric before someone else forces the issue. What Claudeforce means for Agentforce and the deepening Salesforce-Anthropic alliance The announcement also raises questions about Agentforce , the agent platform Salesforce has spent roughly two years promoting as its AI centerpiece. Stokes drew a careful taxonomy to distinguish the two. &quot;These are not apples that you can look at as equivalent things,&quot; he said. &quot;Agentforce is really designed for autonomous work or work that touches the end customer. So think about help.salesforce.com — that is an agent implementation specifically designed to interface with the end customer.&quot; Salesforce in Claude, by contrast, &quot;is a knowledge worker agent... specifically designed for sellers, for salespeople, to help them do their day-to-day job without having to do the traditional part of their job, which is click around in user interfaces and try to synthesize data themselves.&quot; The distinction is tidy, but it papers over a real strategic evolution. In October 2025, Reuters and CNBC reported that Salesforce was hedging its model bets, bringing both OpenAI and Anthropic into Agentforce and even putting Agentforce inside ChatGPT. Since then, the relationship with Anthropic has clearly deepened into something closer to a preferred alliance: Bloomberg reported in June that Salesforce&#x27;s investment in Anthropic was valued at roughly $5 billion, and Tuesday&#x27;s release makes Claude the default model across Slack — powering Slackbot , the Claude Tag feature Anthropic previewed in June, and the new Slack Code product. Salesforce says 83% of its workforce now uses Claude-powered Slackbot, saving what it claims is 3.8 million productivity hours annually. For Anthropic, which The Wall Street Journal has reported is bulking up its enterprise partner program amid IPO preparations, the deal delivers something invaluable: distribution into the daily workflow of millions of sellers at companies that already trust Salesforce with their most sensitive commercial data. It also delivers tokens. &quot;Once you start using this, you get very excited and you start to see how it can improve your day,&quot; Stokes said. &quot;And yes, that is going to drive token consumption, which is obviously part of the reason why Anthropic is excited about this as well.&quot; Inside the demo: AI-generated dashboards and the rise of the vibe-coded CRM The most striking moment of VentureBeat&#x27;s briefing came during a live demo from Shannon Mathews, Salesforce&#x27;s VP of product management, who showed a seller asking Claude to &quot;schedule a daily briefing to tell me where should I focus my business.&quot; The system returned a prioritized action plan — flagging, for instance, that six closing opportunities had no next steps (&quot;I&#x27;m sure my leadership is not going to be thrilled about that,&quot; Mathews joked) and surfacing a COO change at a key account pulled from the web. &quot;It really provides a concise call to action of where I should be focusing my time for today and this week,&quot; she said, describing the vision as giving every rep &quot;almost an AI chief revenue officer.&quot; Then came the part that gestures at something genuinely new. Mathews generated a full sales dashboard — a &quot;command center&quot; — that Claude coded on the fly as a local HTML file, styled, at Stokes&#x27;s request, &quot;like Miami Vice, like Tron, just because I thought it was cool.&quot; &quot;This isn&#x27;t like a product that we&#x27;re shipping,&quot; Stokes said. &quot;This is Claude coding this on the fly using Salesforce data... If you think about all these different tools that we have to use — Salesforce, Workday, or whatever — we always have to use the UI that somebody else decides you&#x27;re going to use. Now we&#x27;re just taking Salesforce data and workflows, and CoWork is giving you the ability to make the UI look like whatever you want.&quot; Asked directly whether users can effectively vibe code their own dashboards, complete with actions and tool calls, Stokes leaned in. &quot;This idea that people are going to vibe code their own CRM is probably not going to happen anytime soon. But what we are seeing is that people do want to vibe code their own CRM, and that&#x27;s what we&#x27;ve enabled. We&#x27;ve just said: do it with Salesforce... You&#x27;re vibe coding against trusted, governed Salesforce data.&quot; At a recent internal leadership summit in Hawaii, he said, &quot;every single one&quot; of the sales executives presenting business reviews &quot;showed up with a command center-like view of their business that they built themselves right inside of CoWork.&quot; The bigger bet: why Salesforce is embracing its own disintermediation Strip away the branding and Claudeforce amounts to a wager that Salesforce is better off embracing its own potential disintermediation than resisting it. The history of platform shifts suggests that incumbents who fight new interfaces — rather than racing to own their position within them — tend to lose. Salesforce is betting that its moat was never its Lightning pages; it was 27 years of accumulated data, metadata, workflow logic, and governance that no model can conjure and no startup can quickly replicate. As the companies&#x27; own launch materials put it, a frontier model without that context is &quot;a genius who&#x27;s never seen your deals.&quot; The bet carries real risks. If the interface layer commoditizes, pricing power could migrate toward whoever owns the intelligence — and Anthropic, not Salesforce, owns Claude. The consumption-pricing transition could cannibalize seat revenue faster than API calls replace it. And the broader market remains skittish about exactly this scenario: Reuters reported in February that U.S. software stocks staged a relief rally on an Anthropic announcement, a reminder of how much SaaS valuations now hinge on whether AI labs are perceived as partners or predators. There is also the unglamorous question of whether enterprises will capture the promised value at all. Gartner forecast worldwide end-user spending on generative AI models at $14.2 billion for 2025, yet McKinsey&#x27;s ongoing State of AI research has repeatedly found that while adoption is nearly universal, most organizations still struggle to translate pilots into measurable bottom-line impact. Claudeforce&#x27;s answer — pre-built skills, inherited permissions, one-time setup — is essentially an argument that the ROI gap has been a deployment-friction problem all along. Stokes framed the moment in almost epochal terms. &quot;Salesforce believes that the interface to SaaS is undergoing a pretty significant period of change, and in some cases aggregation,&quot; he said. &quot;We&#x27;ve already seen that AI has changed the way people build software with coding agents, but now we&#x27;re seeing that it&#x27;s fundamentally changing the way that people use software — and that can feel very scary on the surface. But our experience is that they&#x27;re using software way more than they were, because this is unlocking trapped value that is trapped behind a human&#x27;s own ability to click around and synthesize information themselves.&quot; Whether that proves prophetic or self-serving will play out over the coming quarters, as the beta opens in September and the skills expand beyond sales into service, marketing, and commerce. But the symbolism of Tuesday&#x27;s announcement is already unmistakable. Salesforce spent 27 years building the defining user interface of enterprise software — and then spent Tuesday morning telling the world its customers no longer need it. The company that taught business how to click is now betting everything on the idea that nobody wants to.",
-      "source": "VentureBeat",
-      "category": "AI",
-      "published": "2026-08-26T20:00:00+00:00",
-      "sent_at": "2026-08-26T20:30:51.820455+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/26/googles-gemini-has-a-branding-problem-and-so-does-the-rest-of-ai/",
-      "title": "Google’s Gemini has a branding problem, and so does the rest of AI",
-      "summary": "Consumer AI apps need to stop making users learn their product architecture.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-26T19:37:34+00:00",
-      "sent_at": "2026-08-26T20:30:51.820455+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/26/how-do-we-explain-openais-executive-exodus/",
-      "title": "How do we explain OpenAI’s executive exodus?",
-      "summary": "Was Greg Brockman the right executive all along?",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-26T19:34:04+00:00",
-      "sent_at": "2026-08-26T20:30:51.820455+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/openais-hugging-face-hack-debrief-raises-more-questions-than-it-answers/",
-      "title": "OpenAI’s Hugging Face Hack Debrief Raises More Questions Than It Answers",
-      "summary": "The AI giant acknowledges that it could have done far more to prevent its AI agents from going rogue. But it still fails to explain why it didn't see this fiasco coming.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-08-26T19:16:42+00:00",
-      "sent_at": "2026-08-26T20:30:51.820455+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/26/openai-releases-its-official-report-on-the-hugging-face-breach/",
-      "title": "OpenAI releases its official report on the Hugging Face breach",
-      "summary": "The report, which spans several discrete cybersecurity compromises, is the most complete accounting of the incident to date.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-26T19:05:22+00:00",
-      "sent_at": "2026-08-26T20:30:51.820455+00:00"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/08/26/1143013/the-inside-story-on-why-openai-agents-hacked-hugging-face/",
-      "title": "The inside story on why OpenAI agents hacked Hugging Face",
-      "summary": "The models responsible for last month’s agent hack of Hugging Face had been inadvertently trained to cheat and to communicate with each other, according to an OpenAI technical report released today. The hack, which a group of agents undertook to find solutions for a cybersecurity test that they were stuck on, has confirmed some experts’&#8230;",
-      "source": "MIT Technology Review",
-      "category": "AI",
-      "published": "2026-08-26T19:00:00+00:00",
-      "sent_at": "2026-08-26T20:30:51.820455+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/i-could-watch-the-robot-games-forever-ai-lab/",
-      "title": "The Humanoids at China’s Robot Games Were Faster Than Usain Bolt—but I’m More Impressed by Their Tweezer Mastery",
-      "summary": "Beijing’s endlessly delightful Robot Games featured tons of impressive stunts. But the most mind-blowing tricks challenged the humanoid’s brain, not its brawn.",
-      "source": "Wired",
-      "category": "Innovationen",
-      "published": "2026-08-26T18:15:00+00:00",
-      "sent_at": "2026-08-26T20:30:51.820455+00:00"
     }
   ]
 }
