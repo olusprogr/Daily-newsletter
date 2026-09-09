@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.engadget.com/2253951/apples-iphone-18-pro-has-an-a20-pro-chip-and-smaller-dynamic-island/",
+      "title": "Apple's iPhone 18 Pro has an A20 Pro chip and smaller Dynamic Island",
+      "summary": "The new handset now comes in a burgundy colorway.",
+      "source": "Engadget",
+      "category": "Hardware",
+      "published": "2026-09-09T17:16:43+00:00",
+      "sent_at": "2026-09-09T17:31:37.360094+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/986331/apple-iphone-18-pro-max-september-2026-event",
+      "title": "Apple announces the iPhone 18 Pro and 18 Pro Max",
+      "summary": "Apple announced the iPhone 18 Pro and iPhone 18 Pro Max at its event on Wednesday. The 18 Pro and Pro Max come in deep black, silver, \"glacier,\" and burgundy, with color-matched back glass. They also have a new A20 Pro chip and purportedly the longest battery in an iPhone. During Wednesday's presentation, Apple highlighted [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-09-09T17:08:34+00:00",
+      "sent_at": "2026-09-09T17:31:37.360094+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/policy/992359/microsoft-aft-schools-ai-privacy",
+      "title": "Microsoft has new AI privacy rules for schools",
+      "summary": "Microsoft agreed to a set of safety and privacy principles for AI in schools a week after two major school systems announced a ban on student-facing AI. In a new agreement with the American Federation of Teachers (AFT), the second-largest teachers union in the US, and its New York City affiliate the United Federation of [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-09T17:07:48+00:00",
+      "sent_at": "2026-09-09T17:31:37.360094+00:00"
+    },
+    {
+      "link": "https://jeffs.blog/p/defining-ai-psychosis-part-2-prolific",
+      "title": "Defining AI Psychosis. Part 2: \"Prolific AI Psychosis\"",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-09T16:13:11+00:00",
+      "sent_at": "2026-09-09T17:31:37.360094+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/video/superintelligence-is-coming-should-we-let-it/",
+      "title": "Superintelligence is coming. Should we let it?",
+      "summary": "AI companies have been talking about superintelligent AI like&#160;it&#8217;s&#160;inevitable, but recent&#160;safety incidents&#160;like&#160;OpenAI&#8217;s&#160;Hugging Face breach&#160;are&#160;demonstrating&#160;the potential dangers of deploying AI systems that are more capable than&#160;humans.&#160;So&#160;what happens when we&#160;can&#8217;t&#160;reliably control what these systems do?&#160; On this episode of TechCrunch&#8217;s&#160;Equity&#160;podcast, Rebecca Bellan is joined by&#160;Connor Leahy, an AI researcher, entrepreneur, and now the U.S. Executive Director of [&#8230;]",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-09T16:05:35+00:00",
+      "sent_at": "2026-09-09T17:31:37.360094+00:00"
+    },
+    {
+      "link": "https://prospect.org/2026/09/09/anthropic-artificial-intelligence-surveillance-system-monitor-activists/",
+      "title": "Anthropic Is Building a Predictive Surveillance System to Monitor Activists",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-09T16:01:41+00:00",
+      "sent_at": "2026-09-09T17:31:37.360094+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/entertainment/991893/google-search-gets-better-at-live-nfl-football",
+      "title": "Google search embraces live NFL football",
+      "summary": "Google is introducing a new Live Game Feed to keep you updated on NFL games as the regular season kicks off tonight. Look for the red \"Live\" icon and you'll see a recap of the ongoing game, play-by-play updates, top commentary on social, video highlights, and \"AI-powered insights.\" It's available now on mobile in English, [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-09T16:00:00+00:00",
+      "sent_at": "2026-09-09T17:31:37.360094+00:00"
+    },
+    {
+      "link": "https://tech.marksblogg.com/planet-labs-open-satellite-feed.html",
+      "title": "Planet Labs' open satellite feed",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Innovationen",
+      "published": "2026-09-09T15:44:09+00:00",
+      "sent_at": "2026-09-09T17:31:37.360094+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/09/09/instacart-launches-an-ai-grocery-shopping-assistant-called-clementine/",
       "title": "Instacart launches an AI grocery shopping assistant called Clementine",
       "summary": "Instacart is the latest app to bake a conversational AI assistant into its platform.",
@@ -4319,186 +4391,6 @@
       "category": "AI",
       "published": "2026-08-26T15:30:05+00:00",
       "sent_at": "2026-08-26T18:13:40.112730+00:00"
-    },
-    {
-      "link": "https://venturebeat.com/security/the-fix-for-the-ai-agent-that-hijacked-a-companys-dns-it-can-propose-the-change-but-it-cant-approve-it",
-      "title": "The fix for the AI agent that hijacked a company's DNS: it can propose the change, but it can't approve it",
-      "summary": "A security agent read a Cloudflare log, found an attacker’s prompt-injection payload sitting inside it, and rewrote the company’s DNS. The firewall had already blocked that payload, and blocking it is what wrote it into the log. That chain is GhostJacking , which Tenet Security demonstrated on the DEF CON 34 main stage on August 9. A request hits Cloudflare’s managed ruleset, gets blocked, and is stored byte for byte with its poisoned User-Agent header. An AI coding agent reviewing those blocked events reads the attacker&#x27;s text as an instruction — with no way to tell it apart from one the company meant to give it — and acts on it with credentials the company issued months earlier. In Tenet’s benchmark, Claude Code on Sonnet 4.6 followed the planted instruction in nine of 10 attempts under Cloudflare’s recommended configuration. The block rate is not the boundary Nothing malfunctioned. The firewall worked, and every call after it carried a valid credential already issued to the agent. Endpoint detection, the web application firewall and identity management stayed quiet because no rule broke. Tenet found public evidence of the exposed setup at 48 organizations, six confirmed Fortune 500 companies, and SecurityWeek reported the same chain against Datadog and Sentry, where the injection surface is an alert or an error report. No single platform patch removes the architectural risk: an agent that consumes attacker-reachable data and can independently execute high-impact changes. That is why a high prompt-injection block rate cannot serve as a security boundary. OWASP’s co-lead names the fix “The first thing I’d do is put an authorization gate outside the model,” said Steve Wilson, Chief AI and Product Officer at Exabeam and project co-lead for the OWASP Top 10 for LLM Applications, in written responses to VentureBeat. “The agent can propose the exact DNS change, but it cannot grant itself the authority to make it.” The move relocates the decision into code that either passes or fails. A safe change, defined cleanly, clears a deterministic policy check and stays autonomous. Anything ambiguous or high in blast radius routes to a named human who approves the actual change. “The tradeoff is that the agent loses the ability to improvise arbitrary, high-impact infrastructure changes on its own, while retaining autonomous investigation and routine, bounded remediation,” Wilson wrote. On teams that try to solve this inside the prompt, Wilson is blunt. “We have to remember that security rules written inside prompts may shape the model’s behavior, but they are still suggestions to the model, not enforceable security controls,” he wrote. The blocked payload became the instruction GhostJacking needs no compromised admin account and no bypassed firewall. It needs an agent that reads operational data and holds write access to the systems that data describes. Every step in Tenet’s chain is something the agent was already allowed to do, so tools tuned to catch unauthorized actions have nothing to catch. The mechanism is specific. SC Media reported that the agent Tenet drove live at Cloudflare was Cursor, reading through a GraphQL integration and writing through the Cloudflare API, and that pairing closes the chain. Tenet ran the chain against more than one coding agent. Cursor carried the demonstration, and the nine of 10 figure came from separate testing of the same attack against Claude Code. The Cursor agent ingests the poisoned header, patches the DNS A record and adds a CNAME to “resolve” the injected finding, giving the attacker a path to reroute the company’s web and email traffic. One agent’s output became the next agent’s input Events reach Sentry through a public write-only endpoint with no authentication, by design. Tenet used a leaked identifier to post a crafted error report. On an ordinary triage prompt, the coding agent escalated it to Sentry’s own AI, Seer, then trusted the analysis it got back. Seer had already absorbed the attacker’s proposed fix and returned it as its own finding. What reached the coding agent was a recommendation from another AI, and it implemented that recommendation. That walked straight through a control Sentry had already written. Sentry&#x27;s guidance instructs agents reading its event data never to follow directives found there, and the coding agent held to the letter of that rule. It acted on Seer&#x27;s conclusion instead, and that conclusion belonged to the attacker. It was acting on Seer’s conclusion, and that conclusion belonged to the attacker. An authorization boundary that accepts another model’s output inherits every injection that model absorbed, which is why Wilson’s gate belongs between agents too. OWASP moved excessive agency from sixth to third The 2026 OWASP Top 10 for LLM Applications , published August 4, elevated Excessive Agency three places on a ranking blending a 75% practitioner vote with 25% incident data from 6,639 documented cases. It was the largest upward move on the list, driven by real-world incidents clustering in agentic deployments. The fix isn&#x27;t better prompting — it&#x27;s the permission map: which actions are pre-approved, and which need a human. Reading logs, correlating alerts and drafting timelines stay autonomous. A bounded remediation like restarting a named service inside a fixed condition set clears a policy check outside the model. Anything that changes DNS, alters identity privileges, deploys code or reroutes production traffic needs a named human, and letting an agent open new access paths or approve its own proposals defeats the point of the gate. Useful autonomy survives that. What does not survive is the path from an attacker’s text to unreviewed production authority. What the control costs in practice Tenet co-founder and CEO Barak Sternberg told Dark Reading that a request the firewall already blocked was the way in, and that the firewall never went down, it just stopped mattering. His own fix is to split what an agent can read from what it can execute, and he concedes the cost, because an agent that reads alerts but cannot act on them is not the agent anyone deployed. The cheaper first step is an inventory. Every agent that reads outside data and can also write or execute belongs on a risk register, and that register needs no new tooling. Wilson’s design survives that cost because the split it draws is proposal from approval rather than read from write. The agent still reads its alerts, still investigates and still runs bounded work. What it loses is the ability to invent a high-impact change and carry it out on its own authority. Almost nobody has built it. Kayne McGladrey, a senior member of the IEEE, has argued for years that an AI deployment needs a hard governance threshold, a named human holding a kill switch and a way to roll back. Asked whether any Fortune 500 company runs that, he was blunt. “I haven’t seen it done, and no, they haven’t come out and publicly said it,” McGladrey told VentureBeat. His reason is economic. Companies “are accepting the risk, and they’re accepting it either deliberately or unconsciously,” he observed, betting the advantage beats the penalty. “What I think would change behavior in the space is if the penalties and the consequences were to outweigh the advantages.” The gate belongs outside the model for a reason unrelated to malice. “If you get into the inference layer, it won’t tell you it’s cheating, and it will lie about having cheated,” he argued, pointing to findings from the U.K.’s AI Safety Institute among others. A system that cannot reliably report its own shortcuts should not authorize its own. The industry is not positioned to make that split quickly. Ivanti’s 2026 State of Cybersecurity Report found 77% of security professionals at least somewhat comfortable letting AI act without human review, the exact posture Wilson’s gate constrains. CrowdStrike pushed its prompt-injection taxonomy past 200 techniques in July, naming indirect injection through data an agent reads as the critical vector for agents that call tools and run commands. The architect who moved the boundary before the attack had a name Egiziago Cioffi hit a related failure in production months before GhostJacking had a name, with one caveat. Cioffi is CEO of SynSphere Italia, a Microsoft reseller, the architect who built and sold the system rather than a security leader defending one he inherited. His Azure OpenAI assistant over SharePoint scored well on faithfulness and still returned content the asking user could not have opened. “An evaluation set with no identity dimension cannot fail an authorisation bug, however high the faithfulness score,” Cioffi told VentureBeat in written answers. He fixed it with a query-time filter built from the asking user’s group claims, so an unentitled chunk never becomes a candidate and never reaches the model. GhostJacking turns on what the model may do, the half Wilson’s gate is built for. One gap stays open here. No sitting CISO has gone on the record with a change made since August 9 and what it cost in agent capability. Until one does, the cost side rests on the people who specified the control, not anyone defending a production environment with it. What security leaders need to do this week Four questions produce an honest picture faster than any procurement cycle. Which agents read attacker-reachable material, which of those can also change production systems, whose permissions run at retrieval, and which changes a policy engine can approve without a human. Then run the negative test. Plant an adversarial instruction in a log the agent is expected to inspect, and keep the transcript, because that transcript is the difference between claiming a control and showing a test of it. Tenet, which sells runtime protection for AI agents, leads its own defender guidance with denying an agent outbound network access by default, cutting the leg where the poisoned instruction fetches a payload and reroutes traffic. But an agent that investigates without a standing path to the open internet loses a capability few workflows will miss. Enumerate the service principals in the tenant, drop the Microsoft first-party apps that ship pre-provisioned, then filter to those holding a credential or app-role assignment. Every identity on that list needs an owner and an expiry date, because one with both gets reviewed and one with neither never does. For any agent with production authority, write the containment sequence before an incident, not during one. Revoke or rotate its workload credential, disable its write-capable API or tool integration, preserve the execution transcript, then validate and roll back whatever infrastructure it changed. McGladrey’s read on why the work keeps getting deferred is uncomfortable. “I think that there’s a level of tolerance that’s being given right now in AI that is unlike anything else in society,” he said. GhostJacking makes that visible. A blocked payload reaches the agent through the system built to record blocked payloads, and once it arrives the question is no longer whether the model recognizes an attack. It is whether the model holds the authority to turn one into a production change.",
-      "source": "VentureBeat",
-      "category": "AI",
-      "published": "2026-08-26T16:13:50+00:00",
-      "sent_at": "2026-08-26T16:15:01.065162+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/video/whats-driving-swedens-startup-boom-from-lovable-to-legora/",
-      "title": "What’s driving Sweden’s startup boom, from Lovable to Legora",
-      "summary": "Vibe-coding darling&#160;Lovable just raised $400 million at a&#160;$13.3 billion&#160;valuation,&#160;roughly doubling&#160;its worth in eight months. But Lovable&#160;isn’t&#160;the only Stockholm startup putting up&#160;huge numbers&#160;lately — legal AI company&#160;Legora&#160;and health tech startup&#160;Neko Health&#160;are right there with it.&#160; On this episode of TechCrunch’s&#160;Equity&#160;podcast,&#160;Dominic-Madori Davis is joined by&#160;Sophia Bendz, a partner at Cherry Ventures and longtime fixture of Europe’s startup [&#8230;]",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-26T16:00:00+00:00",
-      "sent_at": "2026-08-26T16:15:01.065162+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/26/radar-makes-podcasts-searchable-and-usable-by-ai-agents/",
-      "title": "Radar makes podcasts searchable — and usable by AI agents",
-      "summary": "Particle’s new podcast intelligence platform transcribes and analyzes more than 130,000 podcasts, making their conversations searchable on the web and accessible to AI agents through an API and MCP.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-26T15:47:28+00:00",
-      "sent_at": "2026-08-26T16:15:01.065162+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/26/ex-meta-scientists-want-to-bring-visual-ai-to-the-factory-floor/",
-      "title": "Ex-Meta scientists want to bring visual AI to the factory floor",
-      "summary": "Perceptron offers an AI model that it says can help machines navigate the world while also providing in-depth visual intelligence.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-26T15:00:00+00:00",
-      "sent_at": "2026-08-26T16:15:01.065162+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/data-centers/hot-chips-2026-nvidia-touts-benefits-of-its-dsx-maxlps-site-power-management-approach-tech-allows-for-more-compute-from-fixed-data-center-power-budgets",
-      "title": "Hot Chips 2026: Nvidia touts benefits of its DSX MaxLPS site power management approach — tech allows for more compute from fixed data center power budgets",
-      "summary": "During Nvidia's Hot Chips presentation on the Rubin GPU, the company emphasized power as a hard limit on data center capacity and touted the amount of compute that Vera Rubin NVL72 systems can deliver within an example fixed facility power budget of 100MW.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-26T14:42:10+00:00",
-      "sent_at": "2026-08-26T16:15:01.065162+00:00"
-    },
-    {
-      "link": "https://www.reuters.com/investigations/mark-zuckerberg-had-bold-plan-replace-meta-staff-with-ai-heres-how-it-imploded-2026-08-26/",
-      "title": "Mark Zuckerberg had a bold plan to replace Meta staff with AI",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-26T10:40:58+00:00",
-      "sent_at": "2026-08-26T16:15:01.065162+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/26/bill-gates-wants-to-see-a-robot-tax-and-human-reserved-jobs-to-mitigate-harms-from-ai/",
-      "title": "Bill Gates wants to see a robot tax and ‘Human Reserved’ jobs to mitigate harms from AI",
-      "summary": "Gates is mostly in the Responsible AI camp, but there are a few ideas in here we hadn't heard before.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-26T14:37:01+00:00",
-      "sent_at": "2026-08-26T14:39:57.221769+00:00"
-    },
-    {
-      "link": "https://venturebeat.com/orchestration/orchestration-is-the-new-challenge-for-cx-in-the-age-of-ai-agents",
-      "title": "Orchestration is the new challenge for CX in the age of AI agents",
-      "summary": "Presented by Tata Communications Enterprises are deploying AI agents, voice AI, and automation across messaging, voice, and digital channels faster than the architecture meant to support it. Most of that deployment has involved attaching conversational AI to legacy systems never built for it, says Gaurav Anand, global head of the Customer Interaction Suite at Tata Communications. &quot;In the rush to deploy AI, organizations have largely bolted conversational AI onto legacy systems,&quot; Anand says. &quot;As a result, while many enterprises have adopted digital tools, very few have platforms that are truly integrated, scaled, and capable of seamless orchestration.&quot; That gap creates a heavy cognitive load for human agents who must piece together context across disjointed tools to understand what an AI system has already told a customer. The challenge is not simply access to data, but the absence of a shared enterprise context that connects customer identities, interactions, transactions, policies, journeys, and operational systems into a common understanding. Traditional CX architecture was built for linear, human-driven routing, not for managing real-time data flows between autonomous AI systems, data lakes, and human workers. &quot;Today&#x27;s operational complexity is no longer about adding more intelligence,&quot; he adds. &quot;It is about coordinating the existing intelligence across the enterprise, so the enterprise customer never feels the friction of those internal silos. That requires a shared context layer that allows AI systems, applications, and people to operate from the same understanding of the customer and the business.&quot; Why orchestration is replacing automation as the top CX priority As that coordination problem grows, Anand says the strategic priority inside enterprises is shifting from automation to orchestration. &quot;Automation solves individual tasks, whereas orchestration connects them into end-to-end outcomes,&quot; Anand says. &quot;The next evolution is context-aware orchestration, where AI agents, applications, and human workers operate using a shared understanding of customers, processes, and business intent rather than isolated system records.&quot; As organizations accumulate more bots, agents, and AI tools, managing them grows exponentially more complex. Anand says the competitive advantage now sits less in deploying automation and more in how intelligently systems hand off work, collaborate, and escalate. The trap of bolting AI onto legacy systems Companies that simply place a voice AI agent in front of an existing system are repeating the same old mistake. Instead of improving the experience, they end up recreating the deterministic phone menus AI was supposed to replace. The real benefit of AI is the scale, speed, and orchestration it provides. Anand points to a wave of consolidation across the industry, as established contact center providers acquire AI-native firms to close capability gaps and strengthen their customer experience offerings. The broader industry shift reflects a growing recognition that enterprises need more than channels and automation; they need an intelligence layer capable of orchestrating AI, people, data, and workflows across the business. The goal across industries is to make AI the connective layer between customers, employees, and enterprise systems. To achieve that, organizations increasingly need a common enterprise ontology: a shared business vocabulary that aligns customer data, products, policies, SOPs, transactions, and workflows across otherwise disconnected platforms. Tata Communications’ solution is the Interaction Fabric, an orchestration layer that unifies contact center, messaging, collaboration, AI, and customer data while coordinating AI agents, channels, and enterprise systems in real time. Underpinning that orchestration is a context-driven architecture that continuously connects identities, conversations, transactions, and operational data so interactions retain continuity across channels and touchpoints. That means AI and agents can move across voice, WhatsApp, chat, email, and CRM workflows without losing customer context. Identity, intent, and AI-driven insight flow continuously across channels instead of remaining trapped in disconnected applications. The next phase of orchestration is not simply coordinating tasks across systems, but coordinating them through a shared understanding of the enterprise. Context graphs, built on enterprise ontologies, create that common understanding by connecting customers, interactions, products, policies, decisions, and outcomes across organizational silos. This allows AI agents and human workers to operate from the same source of context, driving more accurate decisions, seamless handoffs, and consistent customer experiences. But synchronizing customer intent, conversation history, enterprise data, and AI decision-making across channels only works without lag. Legacy networks not designed for modern data frequency create what Anand calls data gravity, producing latency and inconsistent journeys as users switch channels. &quot;The underlying network needs to be engineered to be as agile as the AI systems running on top of it,&quot; he explains. &quot;Interactions stay synchronous and technology itself becomes invisible, leaving only an experience that feels effortless.&quot; Making AI a better partner for human agents Effective shared visibility between human agents and AI systems starts with the agent experience rather than any single technology. The most effective implementations allow both the AI and human agent to operate from the same contextual understanding of the customer, ensuring that information gathered in one interaction can inform the next regardless of channel or system. Automated call summaries, real-time sentiment analysis, and AI-powered assistance provide agents with instant, actionable insights and suggested next steps directly within their workflow. That allows AI to handle routine, high-volume tasks such as password resets, delivery tracking, and account updates, while human agents focus on interactions requiring judgment and empathy. &quot;If a customer is facing a sudden crisis like a fraudulent transaction, the AI can instantly block the card, but it cannot provide the emotional comfort and delicate communication needed in that moment of panic,&quot; Anand says. &quot;The answer to the dilemma is intelligent orchestration, rather than a choice between systems.&quot; In practice, AI handles the immediate technical transaction, while real-time sentiment analysis recognizes the customer&#x27;s distress and routes the call to a human expert. The objective is to orchestrate AI and human agents together so efficiency never comes at the cost of brand trust and loyalty. Building a unified CX architecture Moving from fragmented experimentation to coordinated orchestration requires both technical and organizational change, Anand says, beginning with consolidating data and fragmented point solutions onto a unified, cloud-first platform. &quot;IT and CX teams need to work more collaboratively,&quot; he explains, describing that alignment as the second necessary shift, this time at the organizational level. At the architecture level, Anand says communication APIs need to be embedded into the enterprise&#x27;s core so every function operates from the same customer context instead of maintaining its own siloed data. Increasingly, this means moving beyond integration alone toward a contextual architecture where a shared ontology and context graph provide a common understanding across CX, operations, sales, service, and AI systems. The deeper organizational change, he says, is a mindset shift from reactive support toward proactive, predictive, and personalized engagement, which he calls the three Ps. How AI agents will shape the future of CX Customer engagement over the next several years will be defined by real-time intelligence, increasing autonomy, and seamless orchestration across touchpoints, and persistent enterprise context that follows customers, employees, and AI agents wherever interactions occur. Rather than analyzing interactions after the fact, enterprises will increasingly shape conversations in real time. &quot;The future of CX will be defined by simplification, aligning data, infrastructure, and operating models around clear customer outcomes rather than adding more models and tools,&quot; Anand says. &quot;The rise of AI-powered agents and agent-to-agent interactions is a defining trend, with AI systems moving beyond assisting humans to independently managing and resolving interactions, creating a largely invisible layer of engagement that improves speed and efficiency.&quot; Human agents will increasingly work alongside AI, supported by real-time conversational intelligence and next-best-action recommendations to deliver what Anand calls Total Experience: a unified model that brings together customer, employee, and AI-driven experiences. Tata Communications is building toward that future through its Voice AI, AI Workers, and Total Experience Hub solutions. &quot;Ultimately, customer engagement will evolve from being reactive to predictive and increasingly generative,&quot; Anand says. &quot;Enterprises won&#x27;t just be responding to needs, but actively shaping and improving customer journeys in real time.&quot; Sponsored articles are content produced by a company that is either paying for the post or has a business relationship with VentureBeat, and they’re always clearly marked. For more information, contact sales@venturebeat.com .",
-      "source": "VentureBeat",
-      "category": "AI",
-      "published": "2026-08-26T14:30:00+00:00",
-      "sent_at": "2026-08-26T14:39:57.221769+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/26/surprise-z-ai-is-the-ai-lab-behind-the-mysterious-ox-alpha-model/",
-      "title": "Surprise: Z.ai is the AI lab behind the mysterious Ox Alpha model",
-      "summary": "Z.ai confirms it is behind Ox Alpha, the mysterious open AI model topping benchmarks and leaderboards, and its weights are set to be released soon.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-26T14:19:29+00:00",
-      "sent_at": "2026-08-26T14:39:57.221769+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/save-usd260-on-this-high-end-am5-gaming-combo-from-newegg-just-usd1-345-99-buys-a-ryzen-9-9950x3d-32gb-corsair-ddr5-ram-msi-x870e-carbon-wifi-motherboard-along-with-a-free-240mm-aio-and-amd-game-bundle",
-      "title": "Save $260 on this high-end AM5 gaming combo from Newegg — just $1,345.99 buys a Ryzen 9 9950X3D, 32GB Corsair DDR5 RAM, MSI X870E Carbon Wifi motherboard, along with a free 240mm AIO and AMD game bundle",
-      "summary": "Newegg bundles the Ryzen 9 9950X3D, MSI X870E Carbon Wifi, and 32GB Corsair Vengeance DDR5-6000 for only $1,345.99 - a solid $259.99 off, plus a free 240mm AIO and AMD game bundle. A wicked deal for gamers and creators alike",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-26T14:00:00+00:00",
-      "sent_at": "2026-08-26T14:39:57.221769+00:00"
-    },
-    {
-      "link": "https://www.theguardian.com/world/2026/aug/26/fake-thinktank-israel-ai-propaganda",
-      "title": "Fake US thinktank set up and funded by Israel sought to game AI for propaganda",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-26T12:11:19+00:00",
-      "sent_at": "2026-08-26T14:39:57.221769+00:00"
-    },
-    {
-      "link": "https://studyarena.com/blog/chatgpt-vs-claude-vs-gemini-college-essays-2026",
-      "title": "Analyzing student votes across AI models for college essay help",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-26T03:23:50+00:00",
-      "sent_at": "2026-08-26T14:39:57.221769+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/08/26/tesla-denies-china-fsd-data-center-pullout/",
-      "title": "Tesla denies rumors it’s abandoning ‘Full Self-Driving’ push in China",
-      "summary": "Tesla is denying rumors that it has pulled its “Full Self-Driving” team out of China, saying its Shanghai data center is “operating normally” and that it has even reported the claims to police. The denial comes as China remains conspicuously absent from Tesla’s own list of markets where customers can subscribe to FSD because of the regulatory limbo the driver assist system faces.",
-      "source": "Electrek",
-      "category": "Autonomes Fahren",
-      "published": "2026-08-26T13:46:59+00:00",
-      "sent_at": "2026-08-26T13:52:11.331124+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/26/robot-brain-builders-are-pushing-out-of-their-gpt-2-era/",
-      "title": "Robot brain builders are pushing out of their GPT-2 era",
-      "summary": "Robot bodies are waiting for their AI brains to catch up.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-26T13:30:00+00:00",
-      "sent_at": "2026-08-26T13:52:11.331124+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/cpus/fujitsus-monaka-cpu-stacks-its-entire-cache-on-a-separate-5nm-die-and-narrows-to-256-bit-sve2",
-      "title": "Hot Chips 2026: Fujitsu's Monaka CPU stacks its entire cache on a separate 5nm die and narrows to 256-bit SVE2 — 350W and 500W SKUs due in 2027",
-      "summary": "Fujitsu gave us a detailed look at its 144-core Monaka server CPU at Hot Chips 2026 on August 24, confirming for the first time that the Arm chip runs dual 256-bit SVE2 vector units, down from the 512-bit SVE in its A64FX predecessor.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-26T13:30:00+00:00",
-      "sent_at": "2026-08-26T13:52:11.331124+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/laptops/chuwi-unibook-review-a-budget-rival-to-the-macbook-neo-and-dell-xps-13",
-      "title": "Chuwi UniBook Review: A budget rival to the MacBook Neo and Dell XPS 13",
-      "summary": "A budget-friendly ultraportable with premium aspirations, the Chuwi UniBook packs modern Intel hardware, excellent connectivity, and impressive battery life into a sleek metal chassis.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-26T13:05:00+00:00",
-      "sent_at": "2026-08-26T13:52:11.331124+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/26/querystory-wants-you-to-believe-what-ai-is-telling-you/",
-      "title": "QueryStory wants you to believe what AI is telling you",
-      "summary": "The startup came out of stealth with $6 million in seed funding and a plan to use LLMs and cybersecurity know-how to make AI queries coherent.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-26T13:00:00+00:00",
-      "sent_at": "2026-08-26T13:52:11.331124+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/ssds/hot-chips-2026-high-bandwidth-flash-promises-massive-bandwidth-and-capacity-but-its-usability-is-extremely-limited-new-memory-format-strikes-a-balance-between-hbm-and-nand-flash",
-      "title": "Hot Chips 2026: High Bandwidth Flash promises massive bandwidth and capacity, but its usability is extremely limited — new memory format strikes a balance between HBM and NAND flash",
-      "summary": "OXMIQ presented its High Bandwidth Flash (HBF) use-case scenarios at Hot Chips 2026, which dramatically narrow the circumstances under which HBF makes sense.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-26T13:00:00+00:00",
-      "sent_at": "2026-08-26T13:52:11.331124+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/26/arga-is-building-a-better-way-to-train-enterprise-ai-agents/",
-      "title": "Arga Labs is building a better way to train enterprise AI agents",
-      "summary": "Arga has raised $10 million in a seed funding round that was led by General Catalyst, with participation from Box Group, Emergence, Gradient and SV Angel.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-26T12:55:28+00:00",
-      "sent_at": "2026-08-26T13:52:11.331124+00:00"
-    },
-    {
-      "link": "https://www.gatesnotes.com/work/make-ai-work-for-everyone/reader/a-turbulent-ai-era-and-critical-choices-to-make",
-      "title": "Bill Gates: The turbulent AI era is here",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-26T12:47:47+00:00",
-      "sent_at": "2026-08-26T13:52:11.331124+00:00"
     }
   ]
 }
