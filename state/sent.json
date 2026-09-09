@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://arstechnica.com/tech-policy/2026/09/six-chinese-ai-firms-accused-of-aggressively-copying-us-frontier-models/",
+      "title": "Six Chinese AI firms accused of aggressively copying US frontier models",
+      "summary": "US urges AI firms to ID, then secretly switch, Chinese users to less-capable models.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-09-09T20:06:28+00:00",
+      "sent_at": "2026-09-09T20:23:03.771244+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/09/everything-apple-announced-at-its-fall-iphone-event-from-the-foldable-iphone-duo-to-an-always-listening-apple-watch/",
+      "title": "Everything Apple announced at its fall iPhone event, from the foldable iPhone Duo to an always-listening Apple Watch",
+      "summary": "The main event was the tech giant's highly anticipated first foldable phone, the iPhone Duo.",
+      "source": "TechCrunch",
+      "category": "Hardware",
+      "published": "2026-09-09T20:03:43+00:00",
+      "sent_at": "2026-09-09T20:23:03.771244+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/992766/apple-iphone-18-pro-reference-image",
+      "title": "Apple’s new iPhone camera mode promises to prove your photo isn’t AI",
+      "summary": "Apple is launching a new way to prove that the picture you took isn't manipulated by AI. A new feature, called \"Reference Image,\" will arrive with the iPhone 18 Pro lineup later this month and is supposed to use the device's new camera sensor to \"sign every pixel it sees.\" The iPhone 18 Pro and [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-09T19:30:12+00:00",
+      "sent_at": "2026-09-09T20:23:03.771244+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/09/the-hinge-for-apples-new-foldable-phone-was-built-with-ai/",
+      "title": "The hinge for Apple’s new foldable phone was built with AI",
+      "summary": "Apple says it used AI and 3D printing in the manufacturing process for its long-awaited foldable phone.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-09T19:21:48+00:00",
+      "sent_at": "2026-09-09T20:23:03.771244+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2254210/apple-iphone-18-pro-camera-innovations-went-well-beyond-megapixels-and-ai/",
+      "title": "Apple's iPhone 18 Pro camera innovations went well beyond megapixels and AI",
+      "summary": "While the iPhone Duo might make headlines, variable aperture and more control is more important to me than a foldable iPhone.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-09-09T19:14:22+00:00",
+      "sent_at": "2026-09-09T20:23:03.771244+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/uk-lawmakers-are-scrambling-in-response-to-ai-summer-of-chaos/",
+      "title": "UK Lawmakers Are Freaking Out Over AI’s Summer of Chaos",
+      "summary": "As AI agents go rogue and fears of superintelligence grow, politicians are raising the alarm over its potential harm to human existence.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-09-09T19:07:42+00:00",
+      "sent_at": "2026-09-09T20:23:03.771244+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2254167/microsoft-strikes-deal-with-national-teachers-union-to-not-use-school-data-to-train-ai/",
+      "title": "Microsoft strikes deal with national teachers union to not use school data to train AI",
+      "summary": "In the absence of federal protections from AI, unions are stepping up.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-09-09T18:48:31+00:00",
+      "sent_at": "2026-09-09T20:23:03.771244+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/09/harvey-hits-15-5b-valuation-months-after-reaching-11b/",
+      "title": "Harvey hits $15.5B valuation, months after reaching $11B",
+      "summary": "The legal AI startup and VC darling has nearly doubled its valuation in nine months.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-09T18:34:24+00:00",
+      "sent_at": "2026-09-09T20:23:03.771244+00:00"
+    },
+    {
       "link": "https://www.engadget.com/2253951/apples-iphone-18-pro-has-an-a20-pro-chip-and-smaller-dynamic-island/",
       "title": "Apple's iPhone 18 Pro has an A20 Pro chip and smaller Dynamic Island",
       "summary": "The new handset now comes in a burgundy colorway.",
@@ -4319,78 +4391,6 @@
       "category": "Innovationen",
       "published": "2026-08-26T18:15:00+00:00",
       "sent_at": "2026-08-26T20:30:51.820455+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2244816/meta-reportedly-abandoned-an-ai-focused-restructuring-plan/",
-      "title": "Meta reportedly abandoned an AI-focused restructuring plan that would have laid off thousands",
-      "summary": "The problem with Meta's AI restructuring plan is the AI wasn't good enough.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-08-26T17:36:41+00:00",
-      "sent_at": "2026-08-26T18:13:40.112730+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2244799/google-gemini-latest-transcription-model-can-turn-ramblings-into-structured-text/",
-      "title": "Google says its latest Gemini transcription model can turn your ramblings into structured text",
-      "summary": "Google says Gemini 3.5 Transcribe will soon let you use speech-to-text in any web field in Chrome.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-08-26T17:25:36+00:00",
-      "sent_at": "2026-08-26T18:13:40.112730+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/candidates-are-signing-a-pact-promising-action-on-data-centers-and-ai-safety/",
-      "title": "Candidates Are Signing a Pact Promising Action on Data Centers and AI Safety",
-      "summary": "More than 15 politicians from across the country have signed on to the AI Pact, vowing to regulate data centers and AI. “We’ve got to get this right,” says Senate candidate Dan Osborn of Nebraska.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-08-26T17:13:37+00:00",
-      "sent_at": "2026-08-26T18:13:40.112730+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/985186/google-gemini-3-5-transcribe-audio-ai",
-      "title": "Google’s new AI transcription edits out your &#8216;ums&#8217; and &#8216;ahs&#8217;",
-      "summary": "Google has updated Gemini Audio with new transcription capabilities that automatically detect specialized jargon and more than 85 languages. Gemini 3.5 Transcribe is a new addition to the Gemini family that follows the launch of 3.5 Live Translate, and comes as we're still waiting for Google to release the Gemini 3.5 Pro model that it [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-08-26T17:00:00+00:00",
-      "sent_at": "2026-08-26T18:13:40.112730+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/08/26/tesla-owners-filming-breaking-law-fsd/",
-      "title": "Tesla owners are now filming themselves breaking the law on FSD — and posting it for clout",
-      "summary": "Tesla owners used to hide the fact that they were abusing Full Self-Driving. Now they film it, add a caption, and post it for the algorithm. Sleeping at highway speed, gaming with a controller, watching live TV, answering emails on a laptop — a whole genre of “look what my Tesla lets me get away with” content has taken over Instagram, TikTok, and X, and almost every clip in it shows a driver doing something that is flatly illegal in the country where it was filmed.",
-      "source": "Electrek",
-      "category": "Autonomes Fahren",
-      "published": "2026-08-26T16:45:08+00:00",
-      "sent_at": "2026-08-26T18:13:40.112730+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/semiconductors/nvidia-presents-groq-3-lpx-architecture-and-unveils-its-first-third-party-inference-benchmark",
-      "title": "Hot Chips 2026: Nvidia presents Groq 3 LPX architecture and unveils its first third-party inference benchmark — LP30-based rack already in production, company says",
-      "summary": "Igor Arsovski, now Nvidia's VP of hardware, presented the Groq 3 LPX rack's architecture and published the first third-party benchmark of the hardware.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-26T16:23:37+00:00",
-      "sent_at": "2026-08-26T18:13:40.112730+00:00"
-    },
-    {
-      "link": "https://www.gatesnotes.com/a-turbulent-ai-era-and-critical-choices-to-make",
-      "title": "The turbulent AI era is here",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-26T15:55:15+00:00",
-      "sent_at": "2026-08-26T18:13:40.112730+00:00"
-    },
-    {
-      "link": "https://www.ssp.sh/brain/using-obsidian-with-ai/",
-      "title": "It’s so hard to finish an idea that is not yours and is just suggested by AI",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-26T15:30:05+00:00",
-      "sent_at": "2026-08-26T18:13:40.112730+00:00"
     }
   ]
 }
