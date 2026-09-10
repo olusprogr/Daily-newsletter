@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.engadget.com/2255473/anthropic-caught-scientists-using-claude-to-further-biological-weapon-research/",
+      "title": "Anthropic caught scientists using Claude to further biological weapon research",
+      "summary": "Anthropic produced an extensive collection of case studies covering the ways its current AI models have been misused.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-09-10T21:04:54+00:00",
+      "sent_at": "2026-09-10T21:22:58.229584+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/",
+      "title": "OpenAI puts Pro subscriptions on hold due to Astra demand",
+      "summary": "The company said Pro subscriptions put the most strain on its systems, so it's pausing sign-ups while adding more capacity.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-10T20:59:51+00:00",
+      "sent_at": "2026-09-10T21:22:58.229584+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/10/anthropic-details-distillation-campaigns-from-alibaba-moonshot-ai-and-deepseek/",
+      "title": "Anthropic details distillation campaigns from Alibaba, Moonshot AI, and DeepSeek",
+      "summary": "A new report released Thursday by Anthropic alleges persistent distillation attacks by China-based AI companies, which have escalated in recent months as competition in the space has intensified.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-10T20:57:30+00:00",
+      "sent_at": "2026-09-10T21:22:58.229584+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/10/furos-founders-left-silicon-valley-and-its-paying-off/",
+      "title": "Furo’s founders left Silicon Valley — and it’s paying off",
+      "summary": "The three 28-year-old founders behind energy startup Furo moved from Silicon Valley and back to Germany, and yet secured $4 million in funding from mostly U.S. backers.",
+      "source": "TechCrunch",
+      "category": "Hardware",
+      "published": "2026-09-10T20:48:00+00:00",
+      "sent_at": "2026-09-10T21:22:58.229584+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/uncanny-valley-podcast-is-ai-actually-going-to-kill-us-all/",
+      "title": "Is AI Actually Going to Kill Us All?",
+      "summary": "This week on “Uncanny Valley,” we dig into a former Anthropic researcher’s AI doomsday warning, the latest upgrades from Apple’s event, and the census report that claimed Trump won the 2020 election.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-09-10T20:30:37+00:00",
+      "sent_at": "2026-09-10T21:22:58.229584+00:00"
+    },
+    {
+      "link": "https://spectrum.ieee.org/codeveloper-of-ethernet-predecessor-dies",
+      "title": "Codeveloper of Ethernet Predecessor Dies at 91",
+      "summary": "Franklin “Frank” Kuo Codeveloper of ALOHAnet Fellow, 91; died 14 April Kuo helped develop ALOHAnet , a pioneering computer system at the University of Hawaii at Mānoa , in Honolulu. The system went online in 1971 and represented the first public demonstration of a wireless packet data network . It was an inspiration for Robert Metcalfe ’s development of Ethernet a couple of years later. In 2020 ALOHAnet was designated as an IEEE Milestone . Kuo earned bachelor’s, master’s, and doctoral degrees in electrical engineering from the University of Illinois , Urbana-Champaign. After earning his Ph.D. in 1960, he joined Bell Labs in Murray Hill, N.J. , where he conducted research in computer communications. After six years at the company, Kuo left to become a professor of electrical engineering at the University of Hawaii. From 1968 to 1971 he and one of his colleagues, IEEE Life Fellow Norman Abramson , developed ALOHAnet. The network connected computers on Hawaiian islands using ultrahigh-frequency radio, transmitting information over radio waves instead of cables. ALOHAnet became the foundation for modern networks. Kuo pioneered the concept of a random-access protocol, or sharing a single channel without central coordination—which led to the packet-switching principles that underpin modern Wi-Fi and mobile networks. Kuo authored or coauthored several books including Computer Communication Networks . Published in 1972, it was one of the earliest textbooks on the subject. He served as director of the university’s Cosine committee , a project funded by the U.S. National Science Foundation to develop computer engineering courses. He took a sabbatical from 1975 to 1977 to work at the U.S. Pentagon as director of information systems in the defense secretary’s office . He oversaw computer communications applications used in command, control, and intelligence programs. During the 1980s and ’90s, he helped develop China’s Internet. In 1982 he joined SRI International (formerly the Stanford Research Institute), in Menlo Park, Calif., as a researcher. He also was a consulting professor in Stanford ’s electrical engineering department and taught computer networking at Shanghai Jiao Tong University . As a UNESCO lecturer in Beijing in 1994, he helped Peking University , Tsinghua University , and the Chinese Academy of Sciences connect to the Internet. He also worked with Tsinghua University to develop CERNET , the country’s first nationwide education and research computer network , which was managed by the Chinese Ministry of Education . For his work, he received an honorary degree from Shanghai Jiao Tong University. In the mid-1990s, Kuo helped found General Wireless Communications, a developer of mobile phone messaging services and games that was renamed Mtone Wireless. Muhammad Rezaul Karim Bell Labs researcher Life senior member, 86; died 18 May Karim was a distinguished member of the technical staff at Bell Labs in Murray Hill, N.J. His work was instrumental in the development of modern cellular communications technology. He joined Bell Labs in 1972 and worked in its mobile telecommunications laboratory as part of the team tasked with creating one of the earliest cellular networks. In 1975 Illinois Bell Telephone petitioned the U.S. Federal Communications Commission to develop and test a cellular system. The FCC, which now regulates radio, TV, telephone, Internet, satellite, and wireless services, authorized the project in March 1977. Karim and his team helped develop key elements of the technology, including the Bell Labs logic that controlled the cellular system, turning the concept into a working one. They also built radio receivers, transmitters, control systems, and cell-site equipment used in the first trial of the cellular system. The following year, Bell Labs and Illinois Bell deployed the Advanced Mobile Phone Service system across Chicago, with its switching office located in Oak Park, Ill. The initial test used approximately 100 mobile phones to work through hardware, software, and system-design problems. A subsequent test in 1979 involved 2,500 mobile users, providing a demonstration of the cellular technology in practice. The trials in Illinois helped establish the technical foundation for the commercial cellular networks that followed. Later in his career, Karim worked on the asynchronous transfer mode (ATM) technique, a high-speed networking technology crucial to the transition from traditional telephone networks to broadband and digital ones. In 2000 he published ATM Networks: Application, Systems, and Design , a textbook that served as a guide for designing and implementing ATM-based services. Karim received a bachelor’s degree in electrical engineering from the Bangladesh University of Engineering and Technology , in Dhaka. He then earned a master’s degree in EE from the University of Manchester , England, and a Ph.D. in EE from Stevens Institute of Technology , in Hoboken, N.J. Harry Bostic Former IEEE Region 4 director Life senior member, 86; died 18 March Bostic was an active IEEE volunteer who served as the 1998–1999 director of IEEE Region 4 . In 2007 he received a lifetime achievement award from the IEEE Central Indiana Section for “outstanding commitment and dedicated service as regional advisor to the volunteers and members of Region 4 and the Institute.” He was an engineer for 30 years at U.S. Navy’s avionics facility , a research, development, and manufacturing concern in Indianapolis. He worked on flight control, navigation, and weapons systems there. (The facility closed in 1996.) Edwin C. Jones Jr. Professor Life Fellow, 91; died 10 March Jones was widely recognized for his contributions to engineering education, curriculum development, and accreditation through decades of service to IEEE, ABET , and the American Society for Engineering Education . He earned a bachelor’s degree in electrical engineering in 1955 from West Virginia University in Morgantown. The following year he earned a diploma of membership (equivalent to a master’s degree) from Imperial College , London. He went on to serve in the U.S. Army Signal Corps for two years. After his service ended, he studied engineering education at the University of Illinois, Urbana-Champaign , earning a Ph.D. in 1961. Jones then joined the university’s faculty. The following year, he left Illinois to join Iowa State University , in Ames, as an assistant professor. He was promoted to professor in 1995. Two years later he became associate chair of the electrical and computer engineering department and served in that position until 2001, when he retired and was named professor emeritus. In recognition of his commitment to students, Iowa State established a scholarship in his honor. In 2006 he accepted a part-time position as an adjunct professor in Minnesota at the University of St. Thomas , in St. Paul. He advised graduate students and helped develop the university’s systems engineering program. An active IEEE volunteer, he served as 1975–1976 president of the IEEE Education Society . He was a member of the IEEE Educational Activities Board , helping strengthen the relationship among engineering education, professional practice, and accreditation organizations. He received an IEEE Centennial Medal in 1984 and the EAB Meritorious Achievement Award in Accreditation Activities in 1986. The IEEE Education Society later named its Meritorious Service Award in his honor. Jones was elected a Fellow of ABET in 1986. During his years of service as a program evaluator and leader, he helped advance the quality of engineering education and accreditation programs. ABET recognized him with its Grinter Distinguished Service Award , its highest honor. Alexander Robert Spitzer Clinical neurology researcher Life senior member, 70; died 27 February Spitzer was a neurologist for 40 years at the Wayne State University School of Medicine , in Detroit, where he also was a director of the electromyography laboratory at Harper University Hospital . The lab studied patients’ brain and spinal cord activity in response to sensory stimuli. The evaluations assessed nerve pathway integrity to help diagnose multiple sclerosis, spinal cord injuries, and other conditions. After earning his medical degree from the Einstein College of Medicine , in New York City, Spitzer completed a fellowship at the U.S. National Institutes of Health , in Bethesda, Md. He then joined Wayne State as a clinical neurology researcher. His pioneering research in applying neural network analysis to electromyography and clinical neurophysiology resulted in peer-reviewed publications, grants, and several U.S. patents. He mentored generations of neurologists in electrodiagnostic medicine, a medical specialty that uses nerve-conduction and electromyography tests to evaluate and diagnose muscle and nerve disorders. In 2020 he founded Mackinac Neurology , a telemedicine-based practice that treated pa­tients virtually during the COVID-19 pandemic. A longtime IEEE volunteer, he held numerous roles on the IEEE Regional Activities Board, now known as the Member and Geographic Activities Board . He was a member of the IEEE Ethics and Member Conduct and Nominations and Appointments committees, as well as the IEEE Educational Activities and IEEE-USA boards. He served as 1977–1979 director of the IEEE Central Indiana Section . Donald Leo Dietmeyer Professor Life Fellow, 93; died 13 February Dietmeyer was a professor of electrical and computer engineering for 40 years at the University of Wisconsin-Madison . He developed a lifelong interest in radio and electronics at high school in Wausau, Wisc., and earned a Ph.D. in electrical engineering in 1959 from the University of Wisconsin. He’d joined the university’s electrical engineering faculty as a professor in 1958 while pursuing his doctorate. Dietmeyer’s research focused on computer-aided design in the areas of switching theory, hardware description languages, and the decomposition of Boolean functions . His research contributed to the development of automation tools for integrated circuit design. He worked with Jim Duley, a former student, to pioneer the use of the digital system design language . He wrote the textbook Logic Design of Digital Systems , published in 1978. In the early 1980s, Dietmeyer worked with researchers to develop ConLan, a language-construction method that combined hardware description languages in one underlying framework. He served as associate dean of the University of Wisconsin’s electrical and computer engineering department from 1983 to 1995. In 1998 he retired and was named professor emeritus.",
+      "source": "IEEE Spectrum",
+      "category": "AI",
+      "published": "2026-09-10T20:00:04+00:00",
+      "sent_at": "2026-09-10T21:22:58.229584+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/10/metas-ai-agent-muse-is-now-the-no-2-app-in-the-us/",
+      "title": "Meta’s AI agent Muse is now the No. 2 app in the US",
+      "summary": "Meta's newest app Muse is off to a slower start than the company's other apps, like Meta AI or Threads.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-10T19:50:04+00:00",
+      "sent_at": "2026-09-10T21:22:58.229584+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/policy/993308/computer-science-ai-education-coding-kids",
+      "title": "Schools are catching on to Big Tech’s playbook",
+      "summary": "It's the hot new thing in tech, and it's where all the jobs are. Students who don't learn to use it fall behind. And to help them catch up in time, its creators are graciously providing the resources and curriculum for learning it, often pro bono. That's the narrative AI companies are pitching schools on [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-10T19:44:20+00:00",
+      "sent_at": "2026-09-10T21:22:58.229584+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/pc-components/cpus/amd-releases-new-ryzen-5-5500f-and-ryzen-5-7500-to-save-budget-pc-building-new-budget-zen-3-and-zen-4-cpus-to-soften-the-blow-from-high-ram-prices",
       "title": "AMD releases new Ryzen 5 5500F and Ryzen 5 7500 to save budget PC building — new budget Zen 3 and Zen 4 CPUs to soften the blow from high RAM prices",
       "summary": "AMD has officially launched the Ryzen 5 5500F and Ryzen 5 7500 processors with six Zen 4 and Zen 3 cores, respectively.",
