@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.wired.com/story/openai-wants-to-know-if-an-ai-industry-slowdown-would-even-be-legal/",
+      "title": "OpenAI Wants to Know if an AI Industry Slowdown Would Even Be Legal",
+      "summary": "AI leaders worry antitrust law could stand in the way of what they view as an increasingly urgent push to coordinate a slowdown in AI development.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-09-10T23:28:42+00:00",
+      "sent_at": "2026-09-10T23:41:38.594294+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2255569/ca-governor-signs-landmark-laws-on-youth-use-of-social-media-and-ai-chatbots/",
+      "title": "CA governor signs 'landmark' laws on youth use of social media and AI chatbots",
+      "summary": "They're aimed at protecting minors, but the rules are not universally supported.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-09-10T22:45:45+00:00",
+      "sent_at": "2026-09-10T23:41:38.594294+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/10/jensen-huang-explains-why-nvidia-will-grow-an-astounding-70-next-year/",
+      "title": "Jensen Huang explains why Nvidia will grow an astounding 70% next year",
+      "summary": "Nvidia has its finger in every pie, and sees another year of plenty in its future, Jensen Huang says. But, he insists, its deals are not circular.",
+      "source": "TechCrunch",
+      "category": "Hardware",
+      "published": "2026-09-10T21:51:59+00:00",
+      "sent_at": "2026-09-10T23:41:38.594294+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/989853/slackforce-surfaces-launch",
+      "title": "Slack can now vibe-code interactive charts and reports inside chats",
+      "summary": "A new feature coming to Slack will allow you to build interactive reports, polls, dashboards, presentations, microsites, and other tools directly inside a chat. With Slackforce Surfaces, you can describe to Slackbot what you need, and it will use AI to gather information from relevant conversations and connected apps, like Google Drive or Salesforce, to [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-10T21:25:21+00:00",
+      "sent_at": "2026-09-10T23:41:38.594294+00:00"
+    },
+    {
+      "link": "https://www.johndcook.com/blog/2026/09/09/formal-method-revolution/",
+      "title": "OpenAI’s Navier-Stokes release included a Lean 4 formal proof",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-10T21:22:59+00:00",
+      "sent_at": "2026-09-10T23:41:38.594294+00:00"
+    },
+    {
+      "link": "https://developers.openai.com/api/docs/guides/agents-api/overview",
+      "title": "OpenAI Agents API",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-10T19:43:22+00:00",
+      "sent_at": "2026-09-10T23:41:38.594294+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/09/10/tesla-driver-assist-i35-guardrail-pattonsburg/",
+      "title": "Tesla Autopilot was on in I-35 crash that killed its driver",
+      "summary": "A 2024 Tesla Model Y ran off Interstate 35 in rural Missouri, struck a guardrail, and killed its driver, a 64-year-old woman from Raymore. Troopers reported a single-vehicle wreck and said the car “went off the road.” What they didn’t say, and likely didn’t know, is that Tesla’s own report to federal regulators says the car’s driver-assist system was engaged. This is part of an ongoing Electrek investigation matching reported crashes to Tesla’s redacted NHTSA data. more…",
+      "source": "Electrek",
+      "category": "Autonomes Fahren",
+      "published": "2026-09-10T19:18:47+00:00",
+      "sent_at": "2026-09-10T23:41:38.594294+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2255197/a-native-gemini-app-is-finally-available-for-windows-pcs/",
+      "title": "A native Gemini app is finally available for Windows PCs",
+      "summary": "There's a keyboard shortcut to open it up, just like the Mac version.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-09-10T18:30:00+00:00",
+      "sent_at": "2026-09-10T23:41:38.594294+00:00"
+    },
+    {
       "link": "https://www.engadget.com/2255473/anthropic-caught-scientists-using-claude-to-further-biological-weapon-research/",
       "title": "Anthropic caught scientists using Claude to further biological weapon research",
       "summary": "Anthropic produced an extensive collection of case studies covering the ways its current AI models have been misused.",
