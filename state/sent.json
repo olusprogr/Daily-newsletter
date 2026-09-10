@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/pc-components/cpus/amd-releases-new-ryzen-5-5500f-and-ryzen-5-7500-to-save-budget-pc-building-new-budget-zen-3-and-zen-4-cpus-to-soften-the-blow-from-high-ram-prices",
+      "title": "AMD releases new Ryzen 5 5500F and Ryzen 5 7500 to save budget PC building — new budget Zen 3 and Zen 4 CPUs to soften the blow from high RAM prices",
+      "summary": "AMD has officially launched the Ryzen 5 5500F and Ryzen 5 7500 processors with six Zen 4 and Zen 3 cores, respectively.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-10T17:54:53+00:00",
+      "sent_at": "2026-09-10T18:04:15.490161+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/10/anthropic-reveals-rogue-ai-agents-hate-captchas-just-like-you/",
+      "title": "Anthropic reveals rogue AI agents hate CAPTCHAs, just like you",
+      "summary": "Come inside the mind of a bot trying to convince the internet it's human.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-10T17:54:44+00:00",
+      "sent_at": "2026-09-10T18:04:15.490161+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/10/indias-pocket-fm-doubles-revenue-run-rate-to-500m-as-ai-powers-93-of-audio-content/",
+      "title": "India’s Pocket FM doubles revenue run rate to $500M as AI powers 93% of audio content",
+      "summary": "Pocket FM uses AI to produce 99% of its new content, helping make content production about 80 times cheaper.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-10T17:45:00+00:00",
+      "sent_at": "2026-09-10T18:04:15.490161+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2255044/universal-music-group-is-collaborating-with-elevenlabs-on-a-new-ai-powered-creation-platform/",
+      "title": "Universal Music Group is collaborating with ElevenLabs on a new AI-powered creation platform",
+      "summary": "The unnamed software will be built around licensed music from UMG artists who want to participate.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-09-10T17:01:52+00:00",
+      "sent_at": "2026-09-10T18:04:15.490161+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/cpus/apples-new-a20-pro-smartphone-chip-around-25-percent-faster-than-its-predecessor-in-leaked-benchmark-the-2nm-cpu-in-the-iphone-duo-and-18-pro-hits-nearly-5-ghz-clocks",
+      "title": "Apple’s new A20 Pro smartphone chip around 25% faster than its predecessor in leaked benchmark — the 2nm CPU in the iPhone Duo and 18 Pro hits nearly 5 GHz clocks",
+      "summary": "The first Apple A20 Geekbench 6 benchmark results are starting to pop up online and the single-core score is very impressive.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-10T16:04:10+00:00",
+      "sent_at": "2026-09-10T18:04:15.490161+00:00"
+    },
+    {
+      "link": "https://www.wired.com/gallery/best-robot-lawn-mowers/",
+      "title": "Best Robot Lawn Mowers (2026): 12+ Models Tested Over 3 Years",
+      "summary": "Smart mowers are an expensive alternative to old-fashioned yard work, but they’re finally good enough to consider if you’d rather sip an iced tea and watch a robot tame your lawn.",
+      "source": "Wired",
+      "category": "Innovationen",
+      "published": "2026-09-10T16:04:02+00:00",
+      "sent_at": "2026-09-10T18:04:15.490161+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/09/10/congressman-dot-tesla-fsd-sleeping-drivers/",
+      "title": "Congressman presses DOT on Tesla FSD after 43 sleeping-driver videos",
+      "summary": "A US congressman is demanding the Department of Transportation explain what it’s doing about Tesla’s Autopilot and Full Self-Driving after an NBC News investigation surfaced dozens of videos of drivers apparently asleep at the wheel. Rep. Raja Krishnamoorthi gave Transportation Secretary Sean Duffy until September 30 to answer five questions about the systems, which Tesla itself says “require active driver supervision and are not autonomous driving systems.” more…",
+      "source": "Electrek",
+      "category": "Autonomes Fahren",
+      "published": "2026-09-10T15:48:13+00:00",
+      "sent_at": "2026-09-10T18:04:15.490161+00:00"
+    },
+    {
+      "link": "https://costsofwar.watson.brown.edu/paper/how-big-tech-and-silicon-valley-are-transforming-military-industrial-complex",
+      "title": "Silicon Valley Is Transforming the Military-Industrial Complex",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Hardware",
+      "published": "2026-09-10T15:47:50+00:00",
+      "sent_at": "2026-09-10T18:04:15.490161+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/09/10/maven-robotics-wants-to-steal-your-robot-deployment-deal/",
       "title": "Maven Robotics wants to steal your robot deployment deal",
       "summary": "Maven Robotics emerged from stealth today with a $100 million Series A and active deployments.",
