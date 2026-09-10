@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.wired.com/story/clearview-ai-is-testing-an-ai-tool-that-lets-cops-instantly-unearth-your-online-activity/",
+      "title": "Clearview AI Is Testing an AI Tool That Would Let Cops Unearth Your Life Online",
+      "summary": "InquiryIQ, a previously unreported prototype, tested a model from xAI, maker of Grok, to surface associates, social accounts, and other information about people identified through Clearview.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-09-10T10:00:00+00:00",
+      "sent_at": "2026-09-10T10:34:21.098403+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/satellite-falling-out-of-space-embarks-on-final-mission/",
+      "title": "A Satellite Falling Out of Orbit Embarks on Its Final Mission",
+      "summary": "Before reentering our atmosphere, the telescopes onboard NASA’s Neil Gehrels Swift Observatory have been restarted to take their last observations.",
+      "source": "Wired",
+      "category": "Innovationen",
+      "published": "2026-09-10T09:15:00+00:00",
+      "sent_at": "2026-09-10T10:34:21.098403+00:00"
+    },
+    {
+      "link": "https://www.technologyreview.com/2026/09/10/1141421/healthcare-ais-next-test-is-integration/",
+      "title": "Healthcare AI’s next test is integration",
+      "summary": "The entrance of major AI companies into healthcare is a meaningful and welcome development, accelerating the technical foundation available to the industry. Their models are increasingly capable of processing long clinical records, interpreting complex terminology, comparing documentation against evidence and generating coherent summaries from large volumes of information. For clinicians, operators, and administrative teams who&#8230;",
+      "source": "MIT Technology Review",
+      "category": "AI",
+      "published": "2026-09-10T08:58:01+00:00",
+      "sent_at": "2026-09-10T10:34:21.098403+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/transportation/992443/volvo-xc40-phev-specs-price-gemini",
+      "title": "Volvo XC40 PHEV is back with a new look, better sensors, and Gemini AI",
+      "summary": "It's been about three years since Volvo discontinued its plug-in hybrid XC40. The mild hybrid version remains on sale in the US and elsewhere, alongside the electric EX40. Today, Volvo announced it was bringing back the PHEV version and giving it a major facelift. When it arrives at dealerships early next year, the new XC40 [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-10T07:00:00+00:00",
+      "sent_at": "2026-09-10T10:34:21.098403+00:00"
+    },
+    {
+      "link": "https://mastodon.social/@tristanbuckmaster/117237555794407063",
+      "title": "OpenAI have no mathematicians capable of understanding what they put out",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-10T05:01:50+00:00",
+      "sent_at": "2026-09-10T10:34:21.098403+00:00"
+    },
+    {
+      "link": "https://hugovergnes.github.io/little-lm-3-8b/",
+      "title": "Training a 3.8B LLM to 0.384 CORE for $998",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-10T02:04:11+00:00",
+      "sent_at": "2026-09-10T10:34:21.098403+00:00"
+    },
+    {
+      "link": "https://slimemoldtimemold.com/2026/08/05/a-stupid-idea-for-ai-alignment-we-came-up-with-by-looking-at-the-list-of-specification-gaming-behaviours/",
+      "title": "A Stupid Idea for AI Alignment We Came with by Looking at Specification Gaming",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-10T01:59:51+00:00",
+      "sent_at": "2026-09-10T10:34:21.098403+00:00"
+    },
+    {
+      "link": "https://read.misalignedmag.com/is-openai-taking-everyone-for-fools-2481fa851544",
+      "title": "Is OpenAI Taking Everyone for Fools?",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-09T17:09:51+00:00",
+      "sent_at": "2026-09-10T10:34:21.098403+00:00"
+    },
+    {
       "link": "https://twitter.com/ValerioCapraro/status/2097791836269977996",
       "title": "OpenAI might have stolen another major proof",
       "summary": "",
@@ -4391,78 +4463,6 @@
       "category": "Hardware",
       "published": "2026-08-27T19:59:00+00:00",
       "sent_at": "2026-08-28T02:01:31.494336+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/data-centers/polls-show-us-data-center-resistance-is-due-to-concerns-over-object-level-local-environmental-impact-beliefs-and-political-affiliation-had-minimal-impact-on-ai-data-center-views",
-      "title": "Polls reveal local utility hikes and noise drive US data center protests, not anti-AI sentiment— beliefs and political affiliation had minimal impact on AI data center views",
-      "summary": "Data centers are facing bipartisan resistance from across the nation, but what's the reason behind this? The answer seems to be deceptively simple.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-08-27T10:00:00+00:00",
-      "sent_at": "2026-08-27T10:05:55.561421+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/big-tech/nvidia-revenue-tops-usd96-billion-as-memory-commitments-soar-to-usd160-billion-ceo-jensen-huang-says-ai-has-reached-its-inflection-point",
-      "title": "Nvidia revenue tops $96 billion as memory commitments soar to $160 billion — CEO Jensen Huang says AI 'has reached its inflection point'",
-      "summary": "Nvidia's Q2 FY2027 revenue tops $96 billion as the company commits to buy up to $160 billion worth of memory, increasing its total commitments to $279 billion ahead of a major demand bump.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-08-27T09:13:54+00:00",
-      "sent_at": "2026-08-27T10:05:55.561421+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/26/nvidia-closes-in-on-hugging-face-acquisition/",
-      "title": "Nvidia closes in on Hugging Face acquisition",
-      "summary": "Nvidia has reportedly agreed to buy Hugging Face, the popular open-source AI hub, for $12.9 billion in a move that would let Nvidia both protect its chip empire and jump back into the cloud business.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-27T06:32:51+00:00",
-      "sent_at": "2026-08-27T10:05:55.561421+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/uk-data-centers-logjam-ofgem-regulations/",
-      "title": "The UK Power Grid Has a Phantom Data Center Problem",
-      "summary": "The UK’s energy regulator is using a variety of tricks to keep speculative data center projects from plugging into the power grid. The country’s AI ambitions hang in the balance.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-08-27T06:00:00+00:00",
-      "sent_at": "2026-08-27T10:05:55.561421+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/litter-robot-promo-code/",
-      "title": "Litter-Robot Promo Codes: Up to $150 Off",
-      "summary": "Get the latest Litter-Robot Discounts on Litter-Robot self-cleaning litter boxes, accessories, and more.",
-      "source": "Wired",
-      "category": "Innovationen",
-      "published": "2026-08-27T05:00:00+00:00",
-      "sent_at": "2026-08-27T10:05:55.561421+00:00"
-    },
-    {
-      "link": "https://github.com/SenteLabsAI/OpenExecutive",
-      "title": "CEO fired developers to make room for AI. Developers create open source AI CEO",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-27T01:46:22+00:00",
-      "sent_at": "2026-08-27T10:05:55.561421+00:00"
-    },
-    {
-      "link": "https://www.businessinsider.com/nvidia-in-talks-to-buy-hugging-face-13-billion-dollars-2026-8",
-      "title": "Nvidia agrees to acquire Hugging Face for $13B",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Hardware",
-      "published": "2026-08-27T01:12:55+00:00",
-      "sent_at": "2026-08-27T10:05:55.561421+00:00"
-    },
-    {
-      "link": "https://venturebeat.com/orchestration/glm-5-3-flash-will-likely-handle-45-of-your-ai-workloads",
-      "title": "GLM-5.3-Flash will likely handle 45% of your AI workloads",
-      "summary": "A week ago, a mystery model called Ox Alpha showed up on OpenRouter — one more entrant among more than 400 models, with roughly 10 new ones launching every week. What made it stand out wasn&#x27;t just the free price tag; it was quietly good. Hobbyists and indie developers noticed fast, pushing several trillion tokens through it daily, with community estimates for the week ranging from single digits to over 20 trillion. AI enthusiasts spent the next six days doing forensics and speculating who could have built it, and who could have the infrastructure to serve that many tokens for free. First the guess was a U.S. lab: the long-awaited Gemini, or Anthropic shipping a good-enough middle tier, or Elon sitting on so much capacity he dropped Ox Alpha (note the naming). People ran tokenizer traces and networking analysis. A real Sherlock Holmes mystery week. On August 26, Z.ai put its name on it . Ox Alpha was GLM-5.3-Flash. They&#x27;d been running it on public traffic on purpose, but the real surprise was not how good the model was (it&#x27;s really good). It was served entirely on Chinese chips and infrastructure. List price is 15 cents / 50 cents per million tokens. OpenRouter&#x27;s launch promo is 50% off that, 7.5 cents / 25 cents, through September 9. The weights are open (MIT), and inference is hosted by Z.ai as well as GMI Cloud, Cloudflare, and other US-based inference providers. Artificial Analysis put the model on their intelligence-versus-cost chart the same day. GLM-5.3-Flash lands at 57 on the index for about nine cents a task. A US mid-tier like GPT-5.6 Sol (max) sits around 59 at 67 cents, meaning for two points of intelligence you are paying about 7.4x more. Take it further and Grok 4.6 is at 61 at 94 cents a task, or about 10x for a four-point gain. At this point the token economics heavily influences the consumption calculus. At the top end the curve has flattened. If we take this open-weight bait, what happens to the heavy infrastructure circular investments we made that never accounted for a strong Chinese inference contender? American enterprises are already feeling the cost pressure. Take Uber. CTO Praveen Neppalli Naga told The Information in April he was going &quot;back to the drawing board because the budget I thought I would need is blown away already&quot;: the company&#x27;s full-year 2026 coding budget gone in four months, with Naga personally burning $1,200 in a single two-hour demo. By June, Uber had put a $1,500-per-person-per-tool cap in place. The tools were useful — but usefulness and value aren&#x27;t the same thing. Uber&#x27;s COO, Andrew Macdonald, still couldn&#x27;t draw a line from those dashboards to &quot;25% more useful consumer features.&quot; McKinsey&#x27;s 2026 State of AI survey says 80% of people say they&#x27;re faster, 37% of companies see some EBIT, and 32% skipped at least one software purchase because they could build that feature in-house with coding agents. Organizations want to cut the bill. They cannot afford to abandon AI. The task now is to optimize usage across the org. We cannot avoid Chinese model makers like Zhipu, Qwen, DeepSeek, and the rest. Time and again they have brought their own ingenuity to challenge SOTA labs and cut costs. On OpenRouter, Chinese models passed US token share in early June, and the top of that board is still mostly Chinese labs. The indie developer world already looks like GLM Flash, DeepSeek Flash, MiniMax, Kimi, and sometimes Grok or Claude if they already paid for a heavy subscription. If you are already subscribed to Grok or OpenAI through your company, that is now a sunk cost. Finance will start asking whether those seats still make sense if pay-as-you-go gets this cheap. So what choices remain? Consider your coding and agentic work in three buckets, split by share of tasks and tokens run through each tier — not dollars, since GLM-5.3-Flash&#x27;s much lower per-token price means an even dollar split would already send most of your volume there. At the very top you have Fable and Opus. If you need to analyze a complex strategy or write a detailed execution plan, the extra points of intelligence matter and you should spend top dollar, but only for those rare tasks you cannot skimp on — probably 5% of the task volume. The mid tier is Kimi K3, Gemini 3.7 Flash, GPT-5.6 Sol, and Grok 4.6, all sitting around 60 on the intelligence index. Kimi is a heavy hitter for coding and a fan favorite; then Grok 4.6 is a close second, though its smaller context window holds it back. Put about 50% of the volume here. For the last 45%, strongly consider GLM-5.3-Flash as the volume workhorse. Your harness, your mix (coding vs content vs marketing), and your evals will draw your own frontier. Chinese open-weight models will save you money — and they need to be in your cost calculus. September is shaping up to be a deluge of new models — Google, xAI, Anthropic, OpenAI, and DeepSeek all have releases expected. The Pareto frontier might move again. But the direction is set: more intelligence for less money. Labs that can&#x27;t get their serving costs down will lose the volume — and with it, the audience that volume creates. Before September, some homework: Count your tokens . Can you attribute spend to a top-line metric like customer or revenue growth? If not, at least development velocity or productivity? Without clear goals, it is going to be hard to defend the spend. Build your AI budget again . Org by org, what is planned AI spend? Can those leaders come up with a proposal and defend it? Define your model strategy by team. Write the three tiers. High for irreversible decisions and strategies. Mid for the paid seat and everyday coding. Low (GLM-5.3-Flash) for volume. Next month the models get cheaper again. Your teams get hungrier. The companies that come out of this will place their bets intentionally, and they won&#x27;t let those agents think on Opus or Fable unless the task is really worth it. Parvez Syed Mohamed is a product executive who has built API integration and agent platforms at Salesforce (MuleSoft), Oracle and at AgentPaaS.ai . He works on production agentic systems. Some of his thoughts on building software with Agents is here: https://github.com/parvezsyed Welcome to the VentureBeat community! Our guest posting program is where technical experts share insights and provide neutral, non-vested deep dives on AI, data infrastructure, cybersecurity and other cutting-edge technologies shaping the future of enterprise. Read more from our guest post program — and check out our guidelines if you’re interested in contributing an article of your own!",
-      "source": "VentureBeat",
-      "category": "AI",
-      "published": "2026-08-27T00:42:20+00:00",
-      "sent_at": "2026-08-27T10:05:55.561421+00:00"
     }
   ]
 }
