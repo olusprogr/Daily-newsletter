@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://system76.com/workstations/thelio-mira-ai",
+      "title": "Thelio Mira AI Linux Workstation: 192 GB GPU Memory",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-10T23:10:06+00:00",
+      "sent_at": "2026-09-11T02:56:02.364520+00:00"
+    },
+    {
+      "link": "https://www.nytimes.com/2026/09/10/us/politics/anthropic-ai-biological-weapons.html",
+      "title": "Anthropic says it blocked possible efforts to build biological weapons",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-10T17:04:34+00:00",
+      "sent_at": "2026-09-11T02:56:02.364520+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/993465/universal-music-elevenlabs-ai",
+      "title": "Universal Music is launching an AI music platform with ElevenLabs",
+      "summary": "Universal Music Group is launching a new AI-powered platform that will allow users to draw from its catalog of licensed music to create song remixes, mashups, and new takes on tracks, according to an announcement on Thursday. The record label is developing the platform through a multiyear licensing agreement with ElevenLabs, a company that specializes [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-10T15:38:19+00:00",
+      "sent_at": "2026-09-11T02:56:02.364520+00:00"
+    },
+    {
+      "link": "https://cognition.com/blog/swe-2",
+      "title": "Cognition launches new SWE-2 model, Rivaling Fable 5.1 and GPT-Astra",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-10T15:29:47+00:00",
+      "sent_at": "2026-09-11T02:56:02.364520+00:00"
+    },
+    {
+      "link": "https://spinoff.nasa.gov/Manipulating_Satellite_Photos_Now_Reveals_Ancient_Images",
+      "title": "Technique for Manipulating Satellite Photos Now Reveals Ancient Images (2025)",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Innovationen",
+      "published": "2026-09-10T15:29:30+00:00",
+      "sent_at": "2026-09-11T02:56:02.364520+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/gadgets/988579/apple-watch-series-12-5g-ultra-4-preorder-buy",
+      "title": "Where to preorder the new Apple Watch Series 12 and Ultra 4",
+      "summary": "The iPhone Duo was the unequivocal star of Apple's \"Surprise and shine\" event, but not for people who were mostly paying attention for news on wearables. Thankfully, Apple had a lot to share about its new Apple Watch Series 12 and Ultra 4. There's no update to the SE model for 2026, which isn't necessarily [&#8230;]",
+      "source": "The Verge",
+      "category": "Innovationen",
+      "published": "2026-09-10T15:00:00+00:00",
+      "sent_at": "2026-09-11T02:56:02.364520+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/993391/meta-muse-ai-hands-on",
+      "title": "Meta’s Muse AI works and creeps me out",
+      "summary": "Meta has launched its new Muse assistant, marking the company's first real foray into AI-powered productivity tools. The company says its AI agent can \"take the busywork off your plate\" by helping you with online shopping, emails, trip-planning, and more. I decided to try out the new tool and see how well it performed - [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-10T15:00:00+00:00",
+      "sent_at": "2026-09-11T02:56:02.364520+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2254767/the-iphone-duo-might-just-live-up-to-the-hype/",
+      "title": "The iPhone Duo just might live up to the hype",
+      "summary": "Despite all the build-up and all the scrutiny, Apple's first foldable phone looks solid.",
+      "source": "Engadget",
+      "category": "Hardware",
+      "published": "2026-09-10T14:53:27+00:00",
+      "sent_at": "2026-09-11T02:56:02.364520+00:00"
+    },
+    {
       "link": "https://www.wired.com/story/openai-wants-to-know-if-an-ai-industry-slowdown-would-even-be-legal/",
       "title": "OpenAI Wants to Know if an AI Industry Slowdown Would Even Be Legal",
       "summary": "AI leaders worry antitrust law could stand in the way of what they view as an increasingly urgent push to coordinate a slowdown in AI development.",
@@ -4679,78 +4751,6 @@
       "category": "AI",
       "published": "2026-08-28T11:07:22+00:00",
       "sent_at": "2026-08-28T14:52:20.340767+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/27/anthropic-and-openai-are-joining-the-ai-stage-at-techcrunch-disrupt-2026/",
-      "title": "Anthropic and OpenAI are joining the AI stage at TechCrunch Disrupt 2026",
-      "summary": "At TechCrunch Disrupt 2026, the AI Stage is back to dig into the single hottest topic in the community for the past few years, presented by Google for Startups.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-27T23:16:45+00:00",
-      "sent_at": "2026-08-28T02:01:31.494336+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/ai/2026/08/anthropics-new-hardware-standard-lets-ai-agents-control-the-physical-world/",
-      "title": "Anthropic's new hardware standard lets AI agents control the physical world",
-      "summary": "Standardized driver interface aims to let devices talk to AI and each other.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-08-27T22:15:43+00:00",
-      "sent_at": "2026-08-28T02:01:31.494336+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/985851/meta-privacy-loophole-fix-marketing-campaign",
-      "title": "Meta addresses ‘pervert glasses’ reputation with a privacy fix and a new marketing campaign",
-      "summary": "Meta is updating its AI-powered smart glasses to close a loophole that allowed wearers to keep recording after covering the front-facing LED. Alex Himel, Meta's vice president of augmented reality, writes in a post on Threads that \"the camera will now stop working if the light is covered during a recording.\" The company's line of [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-08-27T21:37:45+00:00",
-      "sent_at": "2026-08-28T02:01:31.494336+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2245979/james-pond-creator-is-not-happy-with-the-series-allegedly-ai-generated-legacy-collection/",
-      "title": "James Pond's creator is not happy with the series' allegedly AI-generated legacy collection",
-      "summary": "The developers don't have \"a scrap of respect\" for the series, according to Chris Sorrell.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-08-27T21:14:32+00:00",
-      "sent_at": "2026-08-28T02:01:31.494336+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/ai-agents-hacking-systems-could-push-the-us-and-china-to-cooperate/",
-      "title": "AI Agents Are Hacking Systems. Could That Push the US and China to Cooperate?",
-      "summary": "This week on “Uncanny Valley,” senior writer Will Knight talks his recent visit to China and the future of AI collaboration.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-08-27T21:08:34+00:00",
-      "sent_at": "2026-08-28T02:01:31.494336+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2245969/openai-google-and-dozens-of-other-companies-publish-open-letter-calling-for-collective-action-on-cyber-defense/",
-      "title": "OpenAI, Google and dozens of other companies publish open letter calling for collective action on cyber defense",
-      "summary": "Dozens of companies came together to publish an open letter titled \"A call for collective action on cyber defense.\"",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-08-27T21:06:30+00:00",
-      "sent_at": "2026-08-28T02:01:31.494336+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/tech-policy/2026/08/elon-musks-xai-used-child-porn-to-train-grok-models-lawsuit-says/",
-      "title": "Elon Musk’s xAI used child porn to train Grok models, lawsuit says",
-      "summary": "xAI accused of training Grok on real and AI-generated child pornography.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-08-27T20:52:31+00:00",
-      "sent_at": "2026-08-28T02:01:31.494336+00:00"
-    },
-    {
-      "link": "https://www.bloodinthemachine.com/p/with-the-backlash-to-data-centers",
-      "title": "Silicon Valley is in denial in face of widespread backlash",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Hardware",
-      "published": "2026-08-27T19:59:00+00:00",
-      "sent_at": "2026-08-28T02:01:31.494336+00:00"
     }
   ]
 }
