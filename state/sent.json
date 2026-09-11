@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.technologyreview.com/2026/09/11/1143879/the-download-biotech-future-cheaper-cleaner-steel/",
+      "title": "The Download: biotech’s future and cheaper, cleaner steel",
+      "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Meet the under-35s shaping the future of biotech Every year, MIT Technology Review puts together our 35 Innovators Under 35, a list of some of the brightest and best young minds&#8230;",
+      "source": "MIT Technology Review",
+      "category": "Innovationen",
+      "published": "2026-09-11T12:10:00+00:00",
+      "sent_at": "2026-09-11T12:35:38.583927+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/science/993522/water-chip-semiconductor-manufacturing-colorado-river",
+      "title": "Arizona’s lifeline for chip manufacturing is drying up",
+      "summary": "Arizona, an epicenter for the bipartisan push to revive American chip manufacturing, is about to lose more than a quarter of the water it typically pulls each year from the Colorado River. The 1,400-mile waterway is a crucial lifeline for the region and other western states. A recent federal decision on how to manage its [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-09-11T12:00:00+00:00",
+      "sent_at": "2026-09-11T12:35:38.583927+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/video-games/retro-gaming/neogeo-aes-console-remake-delayed-for-nearly-a-year-decision-driven-by-ram-shortage-and-unexpected-popularity",
+      "title": "Hardware-accurate NeoGeo AES+ delayed to late 2027 due to memory shortage — decision driven by surging demand and AI-driven RAM crunch",
+      "summary": "NeoGeo AES+ console remake delayed for nearly a year — decision driven by RAM shortage and unexpected popularity",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-11T11:30:00+00:00",
+      "sent_at": "2026-09-11T12:35:38.583927+00:00"
+    },
+    {
+      "link": "https://www.researchagenda.news/articles/the-waymo-effect.html",
+      "title": "The Waymo effect: how AI is quietly making research less collaborative",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-11T11:17:50+00:00",
+      "sent_at": "2026-09-11T12:35:38.583927+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/gpus/desktop-graphics-card-shipments-hit-four-year-high-of-12-5-million-despite-increasing-prices-nvidia-takes-90-percent-share-as-gamers-rush-to-beat-looming-price-spikes",
+      "title": "Desktop graphics card shipments hit four-year high of 12.5 million despite increasing prices — Nvidia takes 90% share as gamers rush to beat looming price spikes",
+      "summary": "Shipments of desktop add-in-boards in Q2 were the highest since Q1 2022 despite rising prices and dropping sales of desktop PCs, according to new numbers from Jon Peddie Research.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-11T11:00:00+00:00",
+      "sent_at": "2026-09-11T12:35:38.583927+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/laptops/gaming-laptops/snag-a-huge-usd1-000-saving-on-this-rtx-5090-oled-gaming-laptop-from-hp-now-usd3-699-16-inch-hyperx-rig-delivers-1600p-gaming-with-ultra-fast-240hz-refresh-rate-coupled-with-32gb-ddr5-ram-and-a-2tb-ssd",
+      "title": "Snag a huge $1,000 saving on this RTX 5090 OLED gaming laptop from HP, now $3,699 — 16-inch HyperX rig delivers 1600p gaming with ultra-fast 240Hz refresh rate, coupled with 32GB DDR5 RAM and a 2TB SSD",
+      "summary": "The HyperX Omen Max 16, featuring the powerful Nvidia GeForce RTX 5090 GPU, is down to $3,699.99 right now, saving you $1,000.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-11T10:50:59+00:00",
+      "sent_at": "2026-09-11T12:35:38.583927+00:00"
+    },
+    {
+      "link": "https://support.claude.com/en/articles/15171100-age-assurance-on-claude",
+      "title": "Claude is no longer available for minors",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-11T10:48:00+00:00",
+      "sent_at": "2026-09-11T12:35:38.583927+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-says-claude-thwarted-bioweapon-research-from-state-sponsored-actors-covert-accounts-used-u-s-proxies-to-attempt-to-engineer-deadlier-viruses-tried-to-evade-identification-and-regional-blocks",
+      "title": "Anthropic says Claude thwarted bioweapon research from state-sponsored actors — covert accounts used U.S. proxies to attempt to engineer deadlier viruses, tried to evade identification and regional blocks",
+      "summary": "Anthropic claims Claude refused instructions to potentially develop biological weapons — alleged state-linked accounts tried to evade identification and regional blocks",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-11T10:00:00+00:00",
+      "sent_at": "2026-09-11T12:35:38.583927+00:00"
+    },
+    {
       "link": "https://www.interconnects.ai/p/one-resignation-turned-the-embers",
       "title": "One resignation turned the embers of AI fear into a wildfire",
       "summary": "",
