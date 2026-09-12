@@ -1,6 +1,60 @@
 {
   "items": [
     {
+      "link": "https://www.bbc.com/news/articles/c14dpgm0rg4o",
+      "title": "Anthropic boss Dario Amodei calls for AI development to slow down",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-12T16:56:52+00:00",
+      "sent_at": "2026-09-12T18:56:15.258403+00:00"
+    },
+    {
+      "link": "https://www.righto.com/2026/09/8087-microcode-reverse-engineering-fscale.html",
+      "title": "Microcode in Intel's 8087 floating-point chip: the scale instruction",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Hardware",
+      "published": "2026-09-12T15:49:52+00:00",
+      "sent_at": "2026-09-12T18:56:15.258403+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/gpus/we-tested-dlss-multi-frame-generation-on-rtx-40-series-gpus-new-mod-brings-rtx-50-series-exclusive-feature-to-older-cards-and-it-really-works",
+      "title": "We tested unofficial DLSS Multi Frame Generation support on RTX 40-series GPUs — new mod brings RTX 50-series exclusive feature to older cards, and it really works",
+      "summary": "We tested DLSS Multi Frame Generation on RTX 40-series GPUs.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-12T14:08:19+00:00",
+      "sent_at": "2026-09-12T18:56:15.258403+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2256577/how-to-get-started-with-meta-s-new-ai-agent-muse/",
+      "title": "How to get started with Meta's new AI agent, Muse",
+      "summary": "After a few days of testing Meta's AI agent Muse. I can confirm that there is very little learning curve to get started.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-09-12T14:00:00+00:00",
+      "sent_at": "2026-09-12T18:56:15.258403+00:00"
+    },
+    {
+      "link": "https://pluralistic.net/2026/09/12/god-in-the-box/",
+      "title": "LLMs are real, AI is fake",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-12T13:47:28+00:00",
+      "sent_at": "2026-09-12T18:56:15.258403+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/mathematician-steven-strogatz-grapples-with-ai-recent-breakthroughs/",
+      "title": "‘I’m Really Terrified’: A Mathematician Grapples With AI’s Recent Breakthroughs",
+      "summary": "Steven Strogatz coauthored a book about how math is moving beyond human understanding. He spoke with WIRED about the seismic impact artificial intelligence has had on his life’s work.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-09-12T10:00:00+00:00",
+      "sent_at": "2026-09-12T18:56:15.258403+00:00"
+    },
+    {
       "link": "https://www.engadget.com/2256718/anthropics-ceo-proposes-a-three-step-plan-to-curb-ai-development/",
       "title": "Anthropic's CEO proposes a three-step plan to curb AI development",
       "summary": "Dario Amodei said that \"we owe it to humanity to try.\"",
@@ -5066,51 +5120,6 @@
       "category": "AI",
       "published": "2026-08-29T17:19:47+00:00",
       "sent_at": "2026-08-29T19:38:37.602991+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2246969/openai-pull-its-models-from-cursor-due-to-spacexai-acquisition/",
-      "title": "OpenAI will pull its models from Cursor due to SpaceXAI acquisition",
-      "summary": "OpenAI is planning to cut off Cursor's access to its models on November 12, 2026.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-08-29T14:58:40+00:00",
-      "sent_at": "2026-08-29T16:57:58.982775+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/drones/startup-raises-usd7-million-to-build-backpack-portable-8-8-ounce-drone-interceptors-mara-claims-20x-cost-advantage-over-other-interceptors-priced-one-for-one-against-attack-drones",
-      "title": "Startup raises $7 million to build backpack-portable 8.8-ounce drone interceptors — Mara claims 20x cost advantage over other interceptors, priced one-for-one against attack drones",
-      "summary": "San Francisco defense startup Mara has secured $7 million in a pre-seed round to produce what it calls Spike, a portable counter-drone system housed inside a backpack.",
-      "source": "Tom's Hardware",
-      "category": "Innovationen",
-      "published": "2026-08-29T14:16:20+00:00",
-      "sent_at": "2026-08-29T16:57:58.982775+00:00"
-    },
-    {
-      "link": "https://lwn.net/Articles/1091231/",
-      "title": "Debian votes to allow \"responsible use of generative AI\"",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-29T14:02:10+00:00",
-      "sent_at": "2026-08-29T16:57:58.982775+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/08/29/robot-delivery-dog-dumps-hot-steaming-packages-on-your-doorstep-video/",
-      "title": "Robot delivery dog dumps hot steaming packages on your doorstep [video]",
-      "summary": "The new R-dog delivery robot hopes to replace your local gig-workers with a friendly face, red cap, approachable design, and even furry tail – all cute and adorable, until it poops your package onto your porch. Oh, and it runs ads the entire time.",
-      "source": "Electrek",
-      "category": "Innovationen",
-      "published": "2026-08-29T13:19:10+00:00",
-      "sent_at": "2026-08-29T16:57:58.982775+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/29/nvidias-ai-advantage-is-moving-beyond-the-gpu/",
-      "title": "Nvidia’s AI advantage is moving beyond the GPU",
-      "summary": "The new generation of data center systems is increasing efficiency with smarter traffic control instead of just more processor cycles.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-29T13:00:00+00:00",
-      "sent_at": "2026-08-29T16:57:58.982775+00:00"
     }
   ]
 }
