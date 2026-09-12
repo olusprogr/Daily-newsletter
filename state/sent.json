@@ -1,6 +1,33 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/09/12/openais-sam-altman-says-it-would-be-ill-advised-to-go-public-in-2026/",
+      "title": "OpenAI’s Sam Altman says it would be ‘ill-advised’ to go public in 2026",
+      "summary": "While OpenAI has filed confidentially for an IPO, the company will not be going public this year, according to CEO Sam Altman.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-12T20:19:16+00:00",
+      "sent_at": "2026-09-12T21:14:18.746229+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2256741/openai-agents-hacked-rubygems/",
+      "title": "OpenAI agents hacked a software service before the Hugging Face incident",
+      "summary": "The agents OpenAI was testing attacked a software service called RubyGems in May, months before the attacks on Hugging Face.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-09-12T19:53:01+00:00",
+      "sent_at": "2026-09-12T21:14:18.746229+00:00"
+    },
+    {
+      "link": "https://www.bloomberg.com/news/articles/2026-09-12/anthropic-ceo-says-it-s-time-to-slow-pace-of-improving-ai-models",
+      "title": "Anthropic CEO Says It's Time to Slow AI Model Advances",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-12T18:07:07+00:00",
+      "sent_at": "2026-09-12T21:14:18.746229+00:00"
+    },
+    {
       "link": "https://www.bbc.com/news/articles/c14dpgm0rg4o",
       "title": "Anthropic boss Dario Amodei calls for AI development to slow down",
       "summary": "",
@@ -5057,69 +5084,6 @@
       "category": "AI",
       "published": "2026-08-29T16:16:32+00:00",
       "sent_at": "2026-08-29T22:19:10.737870+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2246997/sony-warner-sue-anthropic-for-blatant-violation-of-copyright-law/",
-      "title": "Sony and Warner sue Anthropic for 'blatant violation' of copyright law",
-      "summary": "The two music publishing groups claim thousands of instances of copyright infringement.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-08-29T18:52:22+00:00",
-      "sent_at": "2026-08-29T19:38:37.602991+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/29/sony-music-warner-sue-anthropic-alleging-a-brazen-campaign-of-intellectual-property-theft/",
-      "title": "Sony Music, Warner sue Anthropic, alleging a “brazen campaign” of intellectual property theft",
-      "summary": "This latest lawsuit is particularly broad and homes in on accusations of illegal piracy.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-29T18:41:59+00:00",
-      "sent_at": "2026-08-29T19:38:37.602991+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/986438/sony-music-warner-chappell-anthropic-lawsuit-copyright",
-      "title": "Sony Music and Warner Chappell are suing Anthropic",
-      "summary": "Sony Music and Warner Chappell have filed suit against Anthropic in the US District Court for the Northern District of California seeking damages for \"tens of thousands\" copyrighted works. The companies are asking for up to $150,000 per work, plus up to $25,000 for each instance when identifiable copyright data was stripped. In total, the [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-08-29T18:19:53+00:00",
-      "sent_at": "2026-08-29T19:38:37.602991+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/29/at-techbbq-europes-ai-conversations-kept-coming-back-to-whos-actually-in-control/",
-      "title": "At TechBBQ, Europe’s AI conversations kept coming back to: Who’s actually in control?",
-      "summary": "Investors, founders, and operators from across Europe arrived for the annual Nordic TechBBQ conference to talk about how humans can have agency over AI.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-29T17:51:10+00:00",
-      "sent_at": "2026-08-29T19:38:37.602991+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/29/were-not-doing-30-bets-a-year-vijay-pande-on-betting-small-after-running-4-billion-at-a16z/",
-      "title": "“We’re not doing 30 bets a year”: Vijay Pande on betting small after running $4 billion at a16z",
-      "summary": "Vijay Pande — who left a16z's roughly $4 billion biotech practice last year to start the much smaller, AI-native VZVC — talks about why biology is finally shifting from a \"discovery\" science to an \"engineering\" one, why clinical trials are still brutally expensive, and why he thinks open, shared datasets (not walled-off ones) are what will actually let AI transform medicine.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-29T17:36:47+00:00",
-      "sent_at": "2026-08-29T19:38:37.602991+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2242759/tpu-vs-gpu-difference-between-processsors/",
-      "title": "What's the difference between TPU vs. GPU?",
-      "summary": "Google's Pixel 11 phone uses a Tensor G6 processor with a powerful TPU. How is it different from a GPU, and what does that mean in real-world use?",
-      "source": "Engadget",
-      "category": "Hardware",
-      "published": "2026-08-29T17:30:00+00:00",
-      "sent_at": "2026-08-29T19:38:37.602991+00:00"
-    },
-    {
-      "link": "https://newsletter.eng-leadership.com/p/good-culture-is-the-biggest-productivity",
-      "title": "Good Culture Is the Biggest Productivity Hack, Not AI",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-29T17:19:47+00:00",
-      "sent_at": "2026-08-29T19:38:37.602991+00:00"
     }
   ]
 }
