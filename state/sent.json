@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://arstechnica.com/space/2026/09/some-satellite-companies-still-have-an-appetite-for-boutique-launch-services/",
+      "title": "Some satellite companies still have an appetite for boutique launch services",
+      "summary": "\"Dedicated launch is pretty essential for us for most of our missions.\"",
+      "source": "Ars Technica",
+      "category": "Innovationen",
+      "published": "2026-09-11T23:34:45+00:00",
+      "sent_at": "2026-09-12T00:53:37.063803+00:00"
+    },
+    {
+      "link": "https://www.rubyhack.ai/",
+      "title": "OpenAI agents carried out an undisclosed attack on RubyGems",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-11T23:17:42+00:00",
+      "sent_at": "2026-09-12T00:53:37.063803+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/11/mecka-ai-nears-500m-valuation-in-sequoia-led-deal-amid-rush-for-robot-training-data/",
+      "title": "Mecka AI nears $500M valuation in Sequoia-led deal amid rush for robot training data",
+      "summary": "The round for the two-year-old startup is coming together months after Mecka announced its Series A.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-11T22:58:17+00:00",
+      "sent_at": "2026-09-12T00:53:37.063803+00:00"
+    },
+    {
+      "link": "https://dayzlegame.com/blog/google-ads-bot-farm/",
+      "title": "I spent $220 on Google app ads and 60% of the installs were robots",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Innovationen",
+      "published": "2026-09-11T18:24:55+00:00",
+      "sent_at": "2026-09-12T00:53:37.063803+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/gadgets/2026/09/oracle-promises-2-gw-of-renewables-to-match-stargate-data-center-emissions/",
+      "title": "Oracle tries to appease Stargate data center opponents with renewables push",
+      "summary": "Renewables pledge won’t change the Oracle and OpenAI data center’s use of gas.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-09-11T18:22:22+00:00",
+      "sent_at": "2026-09-12T00:53:37.063803+00:00"
+    },
+    {
+      "link": "https://github.com/kennethwolters/litelm",
+      "title": "Litelm: LiteLLM Without the Bloat",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-11T18:10:20+00:00",
+      "sent_at": "2026-09-12T00:53:37.063803+00:00"
+    },
+    {
+      "link": "https://www.unslop.news/",
+      "title": "Show HN: Hacker News, Without AI",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-11T16:08:50+00:00",
+      "sent_at": "2026-09-12T00:53:37.063803+00:00"
+    },
+    {
+      "link": "https://news.ycombinator.com/item?id=49657850",
+      "title": "Ask HN: Can we please limit the AI news flood?",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-11T13:11:04+00:00",
+      "sent_at": "2026-09-12T00:53:37.063803+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too/",
       "title": "Y Combinator’s Garry Tan wants U.S. open-weight AI labs to ‘distill’ frontier models, too",
       "summary": "Tan argues that frontier models themselves trained on public human knowledge so access to capable AI should be \"a form of public good.\"",
@@ -4967,78 +5039,6 @@
       "category": "Innovationen",
       "published": "2026-08-28T18:00:00+00:00",
       "sent_at": "2026-08-29T05:33:46.086264+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/28/chinese-automakers-are-following-teslas-bet-that-robots-are-the-next-big-profit-machine/",
-      "title": "Chinese automakers are following Tesla’s bet that robots are the next big profit machine",
-      "summary": "Technical progress has encouraged a new batch of companies to jump in on the promise of profits from humanoid robots. And they're all Chinese automakers.",
-      "source": "TechCrunch",
-      "category": "Innovationen",
-      "published": "2026-08-28T23:24:27+00:00",
-      "sent_at": "2026-08-28T23:51:29.525422+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/986364/google-search-ai-overviews-auto-expand",
-      "title": "Google further buries search results under AI mode",
-      "summary": "Google is now automatically expanding its AI search summaries at the top of the results page for some searches, as reported by Search Engine Roundtable. The change, when it kicks in, pushes the typical list of links from a search much farther down Google's results page; instead of seeing part of an AI Overview with [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-08-28T22:48:11+00:00",
-      "sent_at": "2026-08-28T23:51:29.525422+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/nvidia-ceo-jensen-huang-took-a-call-from-donald-trump-in-the-middle-of-an-all-hands/",
-      "title": "Nvidia CEO Jensen Huang Took a Call From Donald Trump in the Middle of an All-Hands",
-      "summary": "The unexpected interruption came hours before the president wrote a congratulatory post on Truth Social about the company’s most recent earnings report.",
-      "source": "Wired",
-      "category": "Hardware",
-      "published": "2026-08-28T22:29:13+00:00",
-      "sent_at": "2026-08-28T23:51:29.525422+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/28/neocloud-lambda-secures-1b-in-debt-to-buy-more-chips/",
-      "title": "Neocloud Lambda secures $1B in debt to buy more chips",
-      "summary": "Neocloud Lambda has raised $1B in private debt to buy Nvidia AI chips and lease them to Microsoft. It's the latest in a string of loans, underscoring the high cost of the AI boom.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-28T20:24:11+00:00",
-      "sent_at": "2026-08-28T23:51:29.525422+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/28/an-anthropic-researcher-just-gave-us-a-peek-at-self-improving-ai/",
-      "title": "An Anthropic researcher just gave us a peek at self-improving AI",
-      "summary": "Given 10 benchmarks for specific misaligned behaviors, the automated systems were able to improve performance on every single one without degrading overall performance.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-28T19:30:38+00:00",
-      "sent_at": "2026-08-28T23:51:29.525422+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2246658/early-leak-of-nvidia-dlss5-has-an-uncanny-valley-problem/",
-      "title": "Early leak of NVIDIA's DLSS 5 has an uncanny valley problem",
-      "summary": "People are grafting a pre-release version of DLSS 5 onto their favorite games with unspectacular results.",
-      "source": "Engadget",
-      "category": "Hardware",
-      "published": "2026-08-28T19:20:33+00:00",
-      "sent_at": "2026-08-28T23:51:29.525422+00:00"
-    },
-    {
-      "link": "https://handbook.sutro.sh",
-      "title": "The Analytical AI Handbook",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-28T19:01:47+00:00",
-      "sent_at": "2026-08-28T23:51:29.525422+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/28/open-weight-ai-companies-are-the-valleys-hottest-acquisition-targets/",
-      "title": "Open-weight AI companies are the Valley’s hottest acquisition targets",
-      "summary": "There's a lot of capital pouring into the business of giving models away.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-28T18:19:40+00:00",
-      "sent_at": "2026-08-28T23:51:29.525422+00:00"
     }
   ]
 }
