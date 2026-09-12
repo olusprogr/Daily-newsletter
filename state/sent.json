@@ -1,6 +1,60 @@
 {
   "items": [
     {
+      "link": "https://arstechnica.com/ai/2026/09/claude-users-found-ways-around-safeguards-for-bioweapons-research/",
+      "title": "Claude users found ways around safeguards for bioweapons research",
+      "summary": "Some dangerous biology looks much like legitimate research, complicating AI safeguards.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-09-11T13:02:35+00:00",
+      "sent_at": "2026-09-12T05:23:11.548479+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/laptops/at-ifa-2026-computing-chased-the-high-and-low-ends-ai-and-budget-focused-machines-left-little-for-the-rest-of-us",
+      "title": "At IFA 2026, computing chased the high and low ends — AI and budget-focused machines left little for the rest of us",
+      "summary": "At IFA 2026, a bifurcated computing landscape widened as more companies chased Apple's MacBook Neo while also keeping one foot firmly planted in the AI space.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-11T12:44:08+00:00",
+      "sent_at": "2026-09-12T05:23:11.548479+00:00"
+    },
+    {
+      "link": "https://twitter.com/DavidAgranovich/status/2098168522862215449",
+      "title": "Moonshot serves Claude instead of Kimi and collects exchanges for model training",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-11T11:36:24+00:00",
+      "sent_at": "2026-09-12T05:23:11.548479+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/why-so-many-ai-researchers-think-the-machines-could-kill-everyone/",
+      "title": "Why So Many AI Researchers Think the Machines Could Kill Everyone",
+      "summary": "A combination of rapid advances, recursive self-improvement, and agentic swarms are genuinely “spooking people” inside big labs.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-09-11T09:00:00+00:00",
+      "sent_at": "2026-09-12T05:23:11.548479+00:00"
+    },
+    {
+      "link": "https://www.wired.com/review/samsung-galaxy-s26-fe/",
+      "title": "Samsung Galaxy S26 FE Review: Same as Before, but for More Money",
+      "summary": "Samsung is resting on its laurels with the midrange S26 FE, with an unwelcome price bump and only a new processor to show for it.",
+      "source": "Wired",
+      "category": "Hardware",
+      "published": "2026-09-11T09:00:00+00:00",
+      "sent_at": "2026-09-12T05:23:11.548479+00:00"
+    },
+    {
+      "link": "https://www.technologyreview.com/2026/09/11/1143834/meet-the-under-35s-shaping-the-future-of-biotech/",
+      "title": "Meet the under-35s shaping the future of biotech",
+      "summary": "Every year, MIT Technology Review puts together a list of some of the brightest and best young minds working across science and technology. Our 35 Innovators Under 35 are the ones to watch—people whose research and technical work stands to shape the future of their fields. This year, the list includes nine people who are&#8230;",
+      "source": "MIT Technology Review",
+      "category": "Innovationen",
+      "published": "2026-09-11T09:00:00+00:00",
+      "sent_at": "2026-09-12T05:23:11.548479+00:00"
+    },
+    {
       "link": "https://arstechnica.com/space/2026/09/some-satellite-companies-still-have-an-appetite-for-boutique-launch-services/",
       "title": "Some satellite companies still have an appetite for boutique launch services",
       "summary": "\"Dedicated launch is pretty essential for us for most of our missions.\"",
