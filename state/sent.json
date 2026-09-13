@@ -1,6 +1,24 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/pc-components/build-a-high-end-amd-gaming-pc-for-less-ryzen-7-9800x3d-bundle-includes-an-x870e-motherboard-32gb-ddr5-aio-cooler-and-a-game-for-usd1-109-99",
+      "title": "Build a high-end AMD gaming PC for less — Ryzen 7 9800X3D bundle includes an X870E motherboard, 32GB DDR5, AIO cooler and a game for $1,109.99",
+      "summary": "The bundle pairs one of the best gaming CPUs available with a premium X870E motherboard and 32GB of DDR5-6000 memory, while also throwing in a 240mm AIO cooler and a free copy of Onimusha: Way of the Sword.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-13T00:42:50+00:00",
+      "sent_at": "2026-09-13T03:04:16.116233+00:00"
+    },
+    {
+      "link": "https://xeiaso.net/notes/2026/everyone-slowdown-but-me/",
+      "title": "Everyone should slow down AI development except for me",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-13T00:30:44+00:00",
+      "sent_at": "2026-09-13T03:04:16.116233+00:00"
+    },
+    {
       "link": "https://www.theverge.com/ai-artificial-intelligence/994383/openais-rogue-ai-rubygems-hack",
       "title": "OpenAI’s rogue AI tried to hack another company in May",
       "summary": "In May, hundreds of malicious and spam packages were uploaded to RubyGems, causing a serious disruption for the host. Now independent researchers have said that a swarm of OpenAI agents were responsible for the attack. Not only that, but the AI tried to steal users' API keys. At the time, RubyGems described it as a [&#8230;]",
