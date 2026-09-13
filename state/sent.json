@@ -1,6 +1,24 @@
 {
   "items": [
     {
+      "link": "https://yoshuabengio.org/en/publication/why-are-ai-agents-lying-cheating-and-coordinating",
+      "title": "Why are AI agents lying, cheating and coordinating?",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-13T01:22:31+00:00",
+      "sent_at": "2026-09-13T08:49:13.176455+00:00"
+    },
+    {
+      "link": "https://agentsdock.net/",
+      "title": "AgentsDock: An IDE designed for agentic AI research",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-12T23:45:58+00:00",
+      "sent_at": "2026-09-13T08:49:13.176455+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/pc-components/build-a-high-end-amd-gaming-pc-for-less-ryzen-7-9800x3d-bundle-includes-an-x870e-motherboard-32gb-ddr5-aio-cooler-and-a-game-for-usd1-109-99",
       "title": "Build a high-end AMD gaming PC for less — Ryzen 7 9800X3D bundle includes an X870E motherboard, 32GB DDR5, AIO cooler and a game for $1,109.99",
       "summary": "The bundle pairs one of the best gaming CPUs available with a premium X870E motherboard and 32GB of DDR5-6000 memory, while also throwing in a 240mm AIO cooler and a free copy of Onimusha: Way of the Sword.",
