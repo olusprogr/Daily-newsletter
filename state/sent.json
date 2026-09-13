@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-ceo-warns-of-ai-driven-botnet-swarm-taking-over-the-entire-internet-in-6-12-months-such-a-swarm-could-be-capable-of-taking-over-the-entire-internet-with-a-persistent-botnet",
+      "title": "Anthropic CEO warns of AI-driven botnet 'swarm' taking over the entire internet — 'In 6–12 months such a swarm could be capable of taking over the entire internet with a persistent botnet'",
+      "summary": "As an Ex-Anthropic warns AI will get self-sufficient and kill our posterity.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-13T13:36:35+00:00",
+      "sent_at": "2026-09-13T13:38:52.055253+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2252829/never-use-harsh-cleaning-products-clean-smartphone/",
+      "title": "Never use harsh cleaning products to clean your smartphone — do this instead",
+      "summary": "Your phone is a magnet for germs, but there are gentle ways to clean it.",
+      "source": "Engadget",
+      "category": "Hardware",
+      "published": "2026-09-13T13:30:00+00:00",
+      "sent_at": "2026-09-13T13:38:52.055253+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/intel-revives-one-mono-font-after-brief-retirement-typeface-built-to-fight-coder-eyestrain-gets-reprieve-from-open-source-purge",
+      "title": "Intel revives One Mono font after brief retirement during open-source purge — typeface built to fight coder eyestrain gets reprieve",
+      "summary": "Intel’s decision to archive its developer-focused One Mono font lasted only two days, with the company now restoring the open-source project despite its relatively limited development activity.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-13T13:00:00+00:00",
+      "sent_at": "2026-09-13T13:38:52.055253+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/column/994172/your-car-is-selling-your-data",
+      "title": "Your car is selling your data",
+      "summary": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on cars, data privacy, and autonomous vehicles, follow Andrew J. Hawkins. The Stepback arrives in our subscribers' inboxes at 8AM ET. Opt in for The Stepback here. How it started Earlier this year, the Federal Trade Commission [&#8230;]",
+      "source": "The Verge",
+      "category": "Autonomes Fahren",
+      "published": "2026-09-13T12:00:00+00:00",
+      "sent_at": "2026-09-13T13:38:52.055253+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/chinese-military-researchers-and-tech-giants-caught-using-claude-us-frontier-model-coded-16-air-defense-suppression-tools-targeting-taiwan-drafted-anti-torpedo-specs-and-fed-151-million-training-queries-to-alibaba",
+      "title": "Chinese military researchers and tech giants caught using Claude — US frontier model coded 16 air-defense suppression tools targeting Taiwan, drafted anti-torpedo specs, and fed 151 million training queries to Alibaba",
+      "summary": "Anthropic accuses China-linked actors of using its Claude models of weapon development, intelligence activities, distilling AI models.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-13T12:00:00+00:00",
+      "sent_at": "2026-09-13T13:38:52.055253+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/cryptomining/mexican-cartel-crypto-farm-seized-in-mountain-raid-300-gpus-satellite-links-and-industrial-transformers-tapped-hydroelectric-power",
+      "title": "Mexican cartel's crypto farm seized in mountain raid — 300 GPUs, satellite links, and industrial transformers tapped hydroelectric power",
+      "summary": "There is increasing evidence that Mexican drug cartels are diversifying into cryptocurrency mining and are using crypto platforms to launder their ill-gotten gains.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-13T11:30:00+00:00",
+      "sent_at": "2026-09-13T13:38:52.055253+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/drones/waymo-robotaxi-calls-cops-on-riders-handling-loaded-ar-style-ghost-gun-waymo-alerted-san-francisco-police-then-juvenile-riders-were-stopped-and-arrested",
+      "title": "Waymo robotaxi calls cops on riders handling loaded AR-style ghost gun — Waymo alerted San Francisco police, then juvenile riders were stopped and arrested",
+      "summary": "Following a tip-off from robotaxi firm Waymo, San Francisco police conducted a 'high-risk vehicle stop' and arrested two juveniles for illegal possession of a firearm.",
+      "source": "Tom's Hardware",
+      "category": "Autonomes Fahren",
+      "published": "2026-09-13T11:16:11+00:00",
+      "sent_at": "2026-09-13T13:38:52.055253+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/software/programming/playable-tomb-raider-runs-on-a-humble-1-watt-chip-usd25-board-with-dual-core-400-mhz-esp32-p4-mcu-scales-openlara-up-to-1-024-x-600-playable-pixels",
+      "title": "Playable Tomb Raider runs on a humble 1-watt chip — $25 board with dual-core 400 MHz ESP32-P4 MCU scales OpenLara up to 1,024 x 600 playable pixels",
+      "summary": "A retro video gaming devotee has showcased Lara Croft adventuring in and among ancient tombs on a humble ESP32-P4 microcontroller.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-13T11:00:00+00:00",
+      "sent_at": "2026-09-13T13:38:52.055253+00:00"
+    },
+    {
       "link": "https://yoshuabengio.org/en/publication/why-are-ai-agents-lying-cheating-and-coordinating",
       "title": "Why are AI agents lying, cheating and coordinating?",
       "summary": "",
@@ -5048,78 +5120,6 @@
       "category": "AI",
       "published": "2026-08-30T12:31:05+00:00",
       "sent_at": "2026-08-30T17:53:15.805570+00:00"
-    },
-    {
-      "link": "https://github.com/anthropics/claude-code/issues/66504",
-      "title": "Claude Session URL appended to commit messages and PR descriptions by default",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-30T12:50:54+00:00",
-      "sent_at": "2026-08-30T13:31:07.021983+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/986167/china-humanoid-robot-games-race",
-      "title": "China’s robots race ahead",
-      "summary": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on falling robots and the US-China AI race, follow Robert Hart. The Stepback arrives in our subscribers' inboxes on Sunday at 8AM ET. Opt in for The Stepback here. How it started I've admitted my fondness for [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-08-30T12:00:00+00:00",
-      "sent_at": "2026-08-30T13:31:07.021983+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/dram/chinas-top-dram-maker-cxmt-sues-pentagon-over-its-blacklisting-argues-chips-are-standard-civilian-jedec-spec-not-defense-hardware",
-      "title": "China's top DRAM maker CXMT sues Pentagon over its blacklisting — argues chips are standard civilian JEDEC spec, not defense hardware",
-      "summary": "Chinese DRAM maker CXMT wants the US Department of Defense to remove it from the list of companies linked to the Chinese military.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-30T11:30:00+00:00",
-      "sent_at": "2026-08-30T13:31:07.021983+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/power-supplies/corsair-rm1000e-2026-thermalprotect-power-supply-review",
-      "title": "Corsair RM1000e (2026) ThermalProtect power supply review: Temperature-sensing 12V-2x6 cable shuts the GPU down before a connector can melt",
-      "summary": "Corsair's mainstream RMe series returns for 2026 with Platinum-class efficiency, a 500W fanless window, and a temperature-sensing 12V-2x6 cable that shuts the GPU down before a connector can melt.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-30T11:05:00+00:00",
-      "sent_at": "2026-08-30T13:31:07.021983+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/ai/2026/08/inside-metas-push-to-put-robots-to-work-in-data-centers/",
-      "title": "Inside Meta’s push to put robots to work in data centers",
-      "summary": "The company is testing robots on tasks that can performed by technicians.",
-      "source": "Ars Technica",
-      "category": "Innovationen",
-      "published": "2026-08-30T11:03:47+00:00",
-      "sent_at": "2026-08-30T13:31:07.021983+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/laptops/gaming-laptops/poor-liquid-metal-application-almost-destroys-asus-zephyrus-m16-laptop-eats-through-the-processor-lid-paste-replacement-triples-framerates-drops-temps-and-eliminates-hard-crashes",
-      "title": "Poor liquid metal application almost destroys Asus Zephyrus M16 laptop, eats through the processor lid — paste replacement triples framerates, drops temps, and eliminates hard crashes",
-      "summary": "A user on Reddit shared their story about how the factory-applied liquid metal on their Asus Zephyrus M16 gaming laptop corroded the heatsink and lid of their CPU. It got so bad that the corrosion was about to eat away and seep onto the silicon itself, but thankfully a simple re-paste job averted catastrophe.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-30T11:00:00+00:00",
-      "sent_at": "2026-08-30T13:31:07.021983+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/why-the-hottest-new-wearables-want-to-be-ignored/",
-      "title": "Why the Hottest New Wearables Want to Be Ignored",
-      "summary": "Burnt out on wrist buzzes and notification overload? A new crop of minimalist wearables promises to collect your health data without demanding your attention.",
-      "source": "Wired",
-      "category": "Innovationen",
-      "published": "2026-08-30T10:30:00+00:00",
-      "sent_at": "2026-08-30T13:31:07.021983+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/gpus/modders-solder-power-cables-directly-to-rtx-5090-pcb-to-eliminate-notorious-melting-16-pin-connector-bare-board-galax-hof-card-pulls-600w-under-chiller-cooling",
-      "title": "Modders solder power cables directly to RTX 5090 PCB to eliminate notorious melting 16-pin connector — bare-board Galax HOF card pulls 600W under chiller cooling",
-      "summary": "TecLab, a Brazilian YouTuber, has just shown the most dangerous method of bypassing the 16-pin connector on an RTX 5090 — by soldering wires directly to the card's PCB. In an attempt to save the GPU from melting, they've created perhaps an even bigger fire hazard.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-30T10:30:00+00:00",
-      "sent_at": "2026-08-30T13:31:07.021983+00:00"
     }
   ]
 }
