@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/09/13/obama-urges-democrats-to-have-a-clear-plan-for-ai-safeguards/",
+      "title": "Obama urges Democrats to have a ‘clear plan’ for AI safeguards",
+      "summary": "Obama recently said that Democrats need to make artificial intelligence one of their “central agendas” and “have a very clear plan” to address concerns around the technology’s economic impact and safety.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-13T16:30:00+00:00",
+      "sent_at": "2026-09-13T17:14:24.085666+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/13/techcrunch-mobility-lyft-has-entered-the-robotaxi-chat/",
+      "title": "TechCrunch Mobility: Lyft has entered the robotaxi chat",
+      "summary": "Welcome back to TechCrunch Mobility, your hub for the future of transportation, and now, more than ever, the role AI is playing in it.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-13T16:04:00+00:00",
+      "sent_at": "2026-09-13T17:14:24.085666+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/transportation/994405/waymo-pulls-over-calls-cops-on-riders-with-a-ghost-gun",
+      "title": "Waymo pulls over, calls cops on riders with a ghost gun",
+      "summary": "Two people were arrested in San Fransico while riding around in a Waymo robotaxi after the cab pulled over and called the cops on them. The riders were juveniles in possession of a loaded AR-style ghost gun and were taken to a juvenile hall. While the police report did not specify who was operating the [&#8230;]",
+      "source": "The Verge",
+      "category": "Autonomes Fahren",
+      "published": "2026-09-13T14:28:12+00:00",
+      "sent_at": "2026-09-13T17:14:24.085666+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/cpus/amds-best-gaming-cpu-drops-below-launch-price-and-includes-free-240mm-aio-cooler-and-onimusha-way-of-the-sword-grab-the-ryzen-7-9850x3d-for-usd484",
+      "title": "AMD’s best gaming CPU drops below launch price and includes free 240mm AIO cooler and Onimusha: Way of the Sword — grab the Ryzen 7 9850X3D for $484",
+      "summary": "The Ryzen 7 9850X3D may only be a modest step up from the 9800X3D, but it still leads our gaming benchmarks and now comes with a couple of useful extras at a lower-than-launch price.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-13T14:28:06+00:00",
+      "sent_at": "2026-09-13T17:14:24.085666+00:00"
+    },
+    {
+      "link": "https://github.com/Speedstu/CUDA-for-AMD-Windows",
+      "title": "CUDA for AMD on Windows",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Hardware",
+      "published": "2026-09-13T14:25:13+00:00",
+      "sent_at": "2026-09-13T17:14:24.085666+00:00"
+    },
+    {
+      "link": "https://clashreport.com/world/articles/houthis-used-claude-code-to-develop-missile-guidance-software-anthropic-s52mnx4pwpo",
+      "title": "Houthis Used Claude Code to Develop Missile Guidance Software: Anthropic",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-13T14:15:40+00:00",
+      "sent_at": "2026-09-13T17:14:24.085666+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/sanders-proposes-20-year-prison-sentence-for-ai-devs-who-plow-ahead-with-artificial-superintelligence-plans-penalty-on-par-with-illegally-developing-rogue-nuclear-weapons",
+      "title": "Bernie Sanders proposes 20 year prison sentence for AI devs who plow ahead with Artificial Superintelligence plans — penalty on par with illegally developing rogue nuclear weapons",
+      "summary": "Senators Bernie Sanders and Greg Cezar have announced their Ban Artificial Superintelligence Act which threatens 20-year prison sentences for rule breakers.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-13T14:10:00+00:00",
+      "sent_at": "2026-09-13T17:14:24.085666+00:00"
+    },
+    {
+      "link": "https://invezz.com/news/2026/09/11/nvidia-says-every-1-it-invests-brings-back-100-so-why-does-the-stock-keep-falling/",
+      "title": "Nvidia dismisses \"circular financing\", says every $1 it invests brings back $100",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Hardware",
+      "published": "2026-09-13T10:29:18+00:00",
+      "sent_at": "2026-09-13T17:14:24.085666+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-ceo-warns-of-ai-driven-botnet-swarm-taking-over-the-entire-internet-in-6-12-months-such-a-swarm-could-be-capable-of-taking-over-the-entire-internet-with-a-persistent-botnet",
       "title": "Anthropic CEO warns of AI-driven botnet 'swarm' taking over the entire internet — 'In 6–12 months such a swarm could be capable of taking over the entire internet with a persistent botnet'",
       "summary": "As an Ex-Anthropic warns AI will get self-sufficient and kill our posterity.",
