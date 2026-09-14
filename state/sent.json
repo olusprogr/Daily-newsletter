@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/09/14/openai-buys-smartphone-camera-maker-glass-imaging-for-300-million-report-says/",
+      "title": "OpenAI buys smartphone camera maker Glass Imaging for $300 million, report says",
+      "summary": "Glass Imaging was founded by a pair of former Apple engineers who previously led the team that developed Apple's Portrait Mode.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-14T20:44:14+00:00",
+      "sent_at": "2026-09-14T21:26:52.581982+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/14/ai-infrastructure-company-cornelis-raises-205m-to-chip-away-at-nvidias-dominance/",
+      "title": "AI infrastructure company Cornelis raises $205M to chip away at Nvidia’s dominance",
+      "summary": "The company also announced a product called Active Compute Fabric, a network technology that targets the fact that much GPU time is wasted waiting for data to arrive.",
+      "source": "TechCrunch",
+      "category": "Hardware",
+      "published": "2026-09-14T20:07:37+00:00",
+      "sent_at": "2026-09-14T21:26:52.581982+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/995079/president-donald-trump-calls-nvidia-ceo-jensen-huang-all-in-summit",
+      "title": "Jensen Huang puts Trump on speakerphone onstage to announce robots won’t take over the world",
+      "summary": "Nvidia CEO Jensen Huang took a call from President Trump on Monday while onstage at the All-In Podcast's All-In Summit. It's not the first time Huang has taken a call from the president during work, but this time he put Trump on speakerphone before a big crowd. During the call, the president launched into his [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-09-14T20:03:37+00:00",
+      "sent_at": "2026-09-14T21:26:52.581982+00:00"
+    },
+    {
+      "link": "https://entelligence.ai/blogs/gpt-5.6-luna-vs-gpt-6-astra-is-a-1.20-model-good-enough-for-code-review",
+      "title": "GPT-5.6 Luna vs. GPT-6 Astra: Is a $1.20 Model Good Enough for Code Review?",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-14T19:56:20+00:00",
+      "sent_at": "2026-09-14T21:26:52.581982+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/tech-policy/2026/09/musk-drops-apple-from-antitrust-suit-but-keeps-gunning-for-openai/",
+      "title": "OpenAI stuck fighting Musk antitrust suit after Apple finds a way out",
+      "summary": "Musk stops attacking Apple over ChatGPT integration but not OpenAI.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-09-14T19:45:13+00:00",
+      "sent_at": "2026-09-14T21:26:52.581982+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/ai/2026/09/founders-cost-cutting-obsession-drove-unitree-lead-in-cheap-humanoid-robots/",
+      "title": "Founder’s cost-cutting obsession drove Unitree lead in cheap humanoid robots",
+      "summary": "Wang Xingxing micromanaged Unitree to success—will his leadership style scale?",
+      "source": "Ars Technica",
+      "category": "Innovationen",
+      "published": "2026-09-14T19:38:46+00:00",
+      "sent_at": "2026-09-14T21:26:52.581982+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/apple/2026/09/apple-releases-ios-27-macos-golden-gate-27-with-siri-ai-and-liquid-glass-refinements/",
+      "title": "Apple releases iOS 27, macOS Golden Gate 27 with Siri AI and Liquid Glass refinements",
+      "summary": "This is also the last version of macOS to support Rosetta for Intel apps.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-09-14T19:28:42+00:00",
+      "sent_at": "2026-09-14T21:26:52.581982+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-says-ai-can-boost-u-s-gdp-by-32-percent-up-to-usd44-4-trillion-in-four-years-economics-model-predicts-that-displaced-employees-may-have-to-switch-to-jobs-like-electrician-and-nurse",
+      "title": "Anthropic says AI can boost U.S. GDP by 32%, up to $44.4 trillion in four years — economics model predicts that displaced employees 'may have to switch to jobs like electrician and nurse'",
+      "summary": "Anthropic has published a paper wherein it envisions a future for the economy where AI is deeply ingrained. In the most extreme scenarios, U.S. GDP is up, but unemployment simmers as others are put out of work.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-14T18:50:36+00:00",
+      "sent_at": "2026-09-14T21:26:52.581982+00:00"
+    },
+    {
       "link": "https://electrek.co/2026/09/14/tesla-cybercab-70-minute-austin-detour/",
       "title": "Tesla Cybercab turns 10-minute Austin trip into 70-minute detour",
       "summary": "A Tesla Cybercab rider in Austin says a 10-minute trip turned into a 70-minute ordeal after the driverless taxi took a long detour across the city. The reason is a limitation Tesla still hasn’t solved. Its robotaxis can’t drive on highways, so a quick hop that a human would take up the freeway becomes a winding surface-street tour. more…",
@@ -5210,78 +5282,6 @@
       "category": "AI",
       "published": "2026-08-31T18:12:20+00:00",
       "sent_at": "2026-08-31T22:25:05.256316+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/ram/g-skill-drops-new-amd-expo-ull-ram-for-ryzen-cpus-flare-x5x-brings-new-ull-optimized-subtimings-but-pricing-remains-a-mystery",
-      "title": "G.Skill drops new AMD EXPO ULL RAM for Ryzen CPUs — Flare X5X brings new ULL optimized subtimings, but pricing remains a mystery",
-      "summary": "G.Skill launches new Flare X5X DDR5 memory kits with AMD EXPO ULL technology for Ryzen processors.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-31T17:28:43+00:00",
-      "sent_at": "2026-08-31T17:51:30.588806+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/data-centers/trump-says-communities-that-reject-data-centers-want-to-end-up-being-backwards-and-poor-president-claims-china-could-not-be-happier-with-ai-data-center-backlash-in-the-us",
-      "title": "Trump says communities that reject data centers 'want to end up being backwards and poor' — President claims China 'could not be happier' with AI data center backlash in the US",
-      "summary": "President Donald Trump claims that communities rejecting AI data center constructions \"want to end up being backwards and poor.\"",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-08-31T17:05:57+00:00",
-      "sent_at": "2026-08-31T17:51:30.588806+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/08/31/tesla-fsd-can-soon-avoid-potholes-says-elon-musk-who-said-exactly-that-in-2019/",
-      "title": "Tesla FSD can soon avoid potholes, says Elon Musk who said exactly that in 2019",
-      "summary": "The ability to avoid potholes while on FSD is “coming soon,” according to an update posted by Tesla CEO Elon Musk over the weekend. It would be great news for Tesla drivers, if we hadn’t heard that exact same thing before. more…",
-      "source": "Electrek",
-      "category": "Autonomes Fahren",
-      "published": "2026-08-31T16:53:40+00:00",
-      "sent_at": "2026-08-31T17:51:30.588806+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/31/three-year-old-ai-media-search-startup-clipto-hits-a-250m-valuation/",
-      "title": "Clipto uses AI to search terabytes of video and is now valued at $250M",
-      "summary": "The three-year-old startup says it reached $15 million in ARR and profitability before raising its latest $15 million round.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-31T16:00:00+00:00",
-      "sent_at": "2026-08-31T17:51:30.588806+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/manufacturing/motorless-solid-state-cooler-uses-heat-to-cool-itself-could-recycle-processor-heat-into-cooling-shape-memory-alloy-films-could-turn-data-center-exhaust-into-refrigeration",
-      "title": "Motorless solid-state cooler uses heat to cool itself; could recycle processor heat into cooling — shape-memory alloy films could turn data center exhaust into refrigeration",
-      "summary": "German and Japanese researchers demonstrate a heat-driven elastocaloric cooler that uses shape-memory alloys to turn waste heat into cooling.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-31T15:40:00+00:00",
-      "sent_at": "2026-08-31T17:51:30.588806+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/986789/linux-debian-generative-ai-policy",
-      "title": "Debian won&#8217;t ban AI code from its Linux distribution",
-      "summary": "Debian voted to allow developers to use AI tools in their contributions to the Linux distribution's \"development, maintenance, [and] documentation.\" The new policy on AI acknowledges that \"responsible\" use of AI can improve developers' productivity, and goes on to say, \"generative AI is neither exempt from nor subject to special rules beyond the standards already [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-08-31T15:34:58+00:00",
-      "sent_at": "2026-08-31T17:51:30.588806+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/save-usd240-on-a-four-item-gaming-build-combo-from-newegg-usd1-113-buys-a-ryzen-7-9800x3d-32gb-of-corsair-ddr5-ram-a-gigabyte-x870e-motherboard-plus-a-free-240mm-aio-and-amd-game-bundle",
-      "title": "Save $240 on a four-item gaming build combo from Newegg – $1,113 buys a Ryzen 7 9800X3D, 32GB of Corsair DDR5 RAM, a Gigabyte X870E Motherboard, plus a free 240mm AIO and AMD game bundle",
-      "summary": "This Newegg 3-item bundle pairs the fast, gaming-focused Ryzen 7 9800X3D with 32GB of Corsair Vengeance DDR5-6000 RAM and a Gigabyte X870E Aorus Pro board for only $1,113.99. That's a $240 savings, plus two freebies, making this one of the better combo deals available right now.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-08-31T15:26:42+00:00",
-      "sent_at": "2026-08-31T17:51:30.588806+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/31/how-ai-could-make-it-harder-for-governments-to-use-hacking-tools/",
-      "title": "How AI could make it harder for governments to use hacking tools",
-      "summary": "AI is proving effective at finding and exploiting vulnerabilities. Some say this will make it harder for governments to use hacking tools and spyware and could reignite calls to backdoor devices.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-31T15:19:32+00:00",
-      "sent_at": "2026-08-31T17:51:30.588806+00:00"
     }
   ]
 }
