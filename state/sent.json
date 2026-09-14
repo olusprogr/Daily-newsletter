@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://electrek.co/2026/09/14/tesla-cybercab-70-minute-austin-detour/",
+      "title": "Tesla Cybercab turns 10-minute Austin trip into 70-minute detour",
+      "summary": "A Tesla Cybercab rider in Austin says a 10-minute trip turned into a 70-minute ordeal after the driverless taxi took a long detour across the city. The reason is a limitation Tesla still hasn’t solved. Its robotaxis can’t drive on highways, so a quick hop that a human would take up the freeway becomes a winding surface-street tour. more…",
+      "source": "Electrek",
+      "category": "Autonomes Fahren",
+      "published": "2026-09-14T17:14:07+00:00",
+      "sent_at": "2026-09-14T17:39:12.254893+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2257834/siri-ai-is-here-as-apple-releases-ios-27-macos-golden-gate-and-other-major-os-updates/",
+      "title": "Siri AI is here as Apple releases iOS 27, macOS Golden Gate and other major OS updates",
+      "summary": "The kinks are still being worked out for users in the EU and China though.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-09-14T17:13:09+00:00",
+      "sent_at": "2026-09-14T17:39:12.254893+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/994818/apple-macos-27-golden-gate-available-now",
+      "title": "macOS 27 is available now",
+      "summary": "Apple released macOS 27 Golden Gate on Monday, which brings the new Siri AI assistant, Liquid Glass improvements, improved performance, and more. The update is compatible with all Macs with Apple Silicon, but not Intel Macs - Apple released its final big update for Intel-based Macs last year with macOS Tahoe. Siri AI is arguably [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-14T17:10:13+00:00",
+      "sent_at": "2026-09-14T17:39:12.254893+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/14/macos-27-new-siri-takes-on-ai-productivity-apps/",
+      "title": "macOS 27: new Siri takes on AI productivity apps",
+      "summary": "The two most noticeable things about macOS 27 Golden Gate are the newly updated Siri AI and the design changes that make windows and icons more consistent.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-14T17:10:09+00:00",
+      "sent_at": "2026-09-14T17:39:12.254893+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/news/994756/apple-ios-27-launch-iphone-siri-ai-update",
+      "title": "Apple releases iOS 27 with Siri AI overhaul",
+      "summary": "Apple is now rolling out its iOS 27 update to compatible devices today, alongside the watchOS 27, iPadOS 27, and visionOS 27 updates. Siri AI is the headline feature across all four updates, the delayed AI-powered overhaul of the Siri assistant. Siri AI is available as a beta today for English-only devices, and Apple says [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-14T17:08:49+00:00",
+      "sent_at": "2026-09-14T17:39:12.254893+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/994267/steam-frame-review",
+      "title": "The Steam Frame is made for irresponsible hardware nerds like me",
+      "summary": "For nearly three weeks, I've been testing the limits of Valve's Steam Frame, the company's new wearable PC. At first glance, it's easy to write it off as a pricey headset that missed the VR craze. At $1,059 with 256GB of storage or $1,299 for 1TB, it costs two to three times as much as [&#8230;]",
+      "source": "The Verge",
+      "category": "Innovationen",
+      "published": "2026-09-14T17:00:00+00:00",
+      "sent_at": "2026-09-14T17:39:12.254893+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/14/microsofts-new-ai-code-of-conduct-tells-models-not-to-hack-systems-or-trick-humans/",
+      "title": "Microsoft’s new AI ‘code of conduct’ tells models not to hack systems or trick humans",
+      "summary": "The code of conduct lays out general principles that Microsoft AI models should uphold — supporting humans rather than replacing them, for instance, and accelerating human flourishing — as well as specific safety constraints meant to implement those principles.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-14T16:27:53+00:00",
+      "sent_at": "2026-09-14T17:39:12.254893+00:00"
+    },
+    {
+      "link": "https://erkansaka.net/2026/09/10/ai-doom-rhetoric-safety-hype/",
+      "title": "For AI leaders Doom is a form of hype",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-14T16:15:05+00:00",
+      "sent_at": "2026-09-14T17:39:12.254893+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/pc-components/save-usd1-289-when-you-build-an-extreme-pc-with-these-top-tier-components-combo-deal-features-amds-ryzen-9-9950x3d2-processor-along-with-an-8tb-9100-pro-ssd-msi-x870e-motherboard-and-32gb-of-ddr5-6000-memory",
       "title": "Save $1,289 when you build an extreme PC with these top-tier components — combo deal features AMD's Ryzen 9 9950X3D2 processor along with an 8TB 9100 Pro SSD, MSI X870E motherboard, and 32GB of DDR5-6000 memory",
       "summary": "Save $1,289 on Newegg's epic component bundle, which features AMD's top processor, a massive 8TB Samsung 9100 Pro SSD, and 32GB of DDR5 memory",
