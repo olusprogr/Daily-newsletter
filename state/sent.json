@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/995186/is-big-techs-ai-slowdown-a-safety-pact-or-a-cartel",
+      "title": "Is Big Tech’s AI slowdown a safety pact or a cartel?",
+      "summary": "When OpenAI CEO Sam Altman, Anthropic CEO Dario Amodei, Google DeepMind cofounder Demis Hassabis, and SpaceX head Elon Musk loosely agreed over the weekend to slow down AI development, skeptics spotted an ulterior motive immediately. The AI titans had declared that their aim was to \"pace the frontier,\" signing on at least partially to a [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-14T22:59:41+00:00",
+      "sent_at": "2026-09-15T00:15:25.516663+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/994949/apple-intelligence-apple-home-icloud-plus-cost-subscription",
+      "title": "Apple Home’s new security camera features cost as much as $60 a month",
+      "summary": "With the public release of iOS 27 and tvOS 27, Apple Home is getting an injection of Apple Intelligence - but you'll have to pay more for it. Apple Intelligence for Home brings AI-powered video summaries to HomeKit Secure Video, so you can get short text descriptions of who and what compatible security cameras saw, [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-14T22:28:52+00:00",
+      "sent_at": "2026-09-15T00:15:25.516663+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/14/nvidia-ceo-jensen-huang-tells-trump-were-not-going-to-let-an-ai-slowdown-happen/",
+      "title": "Nvidia CEO Jensen Huang tells Trump ‘we’re not going to let [an AI slowdown] happen’",
+      "summary": "Though Elon Musk and Sam Altman have supported Dario Amodei's calls to slow the pace of AI development, Jensen Huang seems to feel differently.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-14T21:51:02+00:00",
+      "sent_at": "2026-09-15T00:15:25.516663+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2258386/doom-the-dark-ages-has-been-permanently-discounted-to-50-dollars/",
+      "title": "Doom: The Dark Ages has been permanently discounted to $50",
+      "summary": "The latest Doom installment just got a good bit cheaper.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-09-14T21:48:09+00:00",
+      "sent_at": "2026-09-15T00:15:25.516663+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/995141/ai-executives-politicians-safety-regulation-anthropic-dario-amodei",
+      "title": "What execs and politicians are saying about slowing down AI development",
+      "summary": "Dario Amodei kicked off a flood of statements over the past few days about AI safety by publishing a long essay titled \"We Must Pace the Frontier\" detailing why AI development should be slowed down. Other AI leaders and politicians are speaking out in favor of or opposing his points, and we've compiled some of [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-14T21:21:42+00:00",
+      "sent_at": "2026-09-15T00:15:25.516663+00:00"
+    },
+    {
+      "link": "https://www.effort.news/irregular",
+      "title": "A single firm is behind OpenAI, Anthropic, and Meta hacking scandals",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-14T21:15:01+00:00",
+      "sent_at": "2026-09-15T00:15:25.516663+00:00"
+    },
+    {
+      "link": "https://neomacs.org/",
+      "title": "NEO Emacs – GPU-Accelerated Emacs Powered by Rust",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Hardware",
+      "published": "2026-09-14T19:42:22+00:00",
+      "sent_at": "2026-09-15T00:15:25.516663+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2253054/use-gemini-help-you-organize-files-google-drive/",
+      "title": "You can use Gemini to help you organize your files on Google Drive",
+      "summary": "If your Google Drive has become a mess of files, folders and photos, Gemini can lend a hand by suggesting new ways to properly put them back in order.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-09-14T18:30:00+00:00",
+      "sent_at": "2026-09-15T00:15:25.516663+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/09/14/openai-buys-smartphone-camera-maker-glass-imaging-for-300-million-report-says/",
       "title": "OpenAI buys smartphone camera maker Glass Imaging for $300 million, report says",
       "summary": "Glass Imaging was founded by a pair of former Apple engineers who previously led the team that developed Apple's Portrait Mode.",
@@ -5210,78 +5282,6 @@
       "category": "AI",
       "published": "2026-08-31T15:15:25+00:00",
       "sent_at": "2026-09-01T01:37:14.619593+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/31/a-group-funded-by-andreessen-horowitz-and-brockman-plan-data-center-ads-to-sway-midterms/",
-      "title": "A group funded by Andreessen, Horowitz, and Brockman plans data center ads to sway midterms",
-      "summary": "Build American AI plans to lobby voters in select states about the virtues of data centers by spending millions of dollars on ads.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-31T22:14:05+00:00",
-      "sent_at": "2026-08-31T22:25:05.256316+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/08/31/tesla-driver-assist-stopped-freeway-mesa/",
-      "title": "A second Tesla driver died stopped on a freeway with Autopilot/Self-Driving on",
-      "summary": "Weeks after a Tesla Model 3 sat stopped in a live Florida interstate lane and its driver was killed, it happened again — a 2020 Model 3, stopped dead on a Phoenix-area freeway at 3 a.m., rear-ended by a pickup, its driver dead at the scene. And as in the Florida case that we revealed today, no one investigating knew what Tesla’s own data shows: the car’s driver-assist system was engaged. This is part of an ongoing Electrek series matching previously reported Tesla crashes to the company’s own redacted NHTSA data. more…",
-      "source": "Electrek",
-      "category": "Autonomes Fahren",
-      "published": "2026-08-31T20:40:21+00:00",
-      "sent_at": "2026-08-31T22:25:05.256316+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/31/the-pentagon-now-has-its-own-version-of-chatgpt-and-grok/",
-      "title": "The Pentagon now has its own version of ChatGPT and Grok",
-      "summary": "Versions of OpenAI's ChatGPT and SpaceXAI's Grok will join Google's Gemini on the Pentagon's central portal for AI tools.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-31T20:13:45+00:00",
-      "sent_at": "2026-08-31T22:25:05.256316+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/31/instagram-puts-new-limits-on-undisclosed-ai-profiles/",
-      "title": "Instagram puts new limits on undisclosed AI profiles",
-      "summary": "As frustration over AI influencers has been growing, Instagram is limiting the reach of undisclosed AI profiles.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-31T19:16:59+00:00",
-      "sent_at": "2026-08-31T22:25:05.256316+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/08/31/tesla-driver-assist-model-3-stopped-i4-fatal/",
-      "title": "Tesla driver who died when his car stopped on highway was using FSD/Autopilot",
-      "summary": "A 43-year-old man died when his Tesla Model 3, stopped in a live lane of Interstate 4, was rear-ended by a semi. Florida troopers said they couldn’t explain why the car was stopped in the middle of the highway. Tesla’s own data can explain it, the car’s driver-assist system was engaged, but the company has sealed it. This is part of an ongoing Electrek series where we match unexplained fatal crashes with Tesla’s own redacted data on ADAS crashes. more…",
-      "source": "Electrek",
-      "category": "Autonomes Fahren",
-      "published": "2026-08-31T18:54:43+00:00",
-      "sent_at": "2026-08-31T22:25:05.256316+00:00"
-    },
-    {
-      "link": "https://venturebeat.com/orchestration/software-engineers-new-job-isnt-writing-code-its-designing-the-boundaries-ai-agents-cant-break",
-      "title": "Software engineers' new job isn't writing code — it's designing the boundaries AI agents can't break",
-      "summary": "If you look at the commit histories of modern data platforms, something profound has shifted over the last two years. The friction of writing syntax has collapsed. With Cursor, Claude Code, and agentic workflows now living inside our Docker containers and IDEs, generating the first implementation of a distributed streaming pipeline or a complex API integration is no longer the central bottleneck. Agents can navigate repositories, write test coverage, inspect stack traces, and propose refactors. Describe a Kafka-to-Iceberg sink mapping in plain English, and an agent can produce a credible starting point before the engineer has opened every relevant file. That changes the question for software engineers. If the agent is becoming the primary author of local system logic, what exactly is left for the engineer to do? Are we headed toward an industry of reviewers rubber-stamping an endless stream of plausible pull requests? Or has the work shifted away from constructing logic and toward something more abstract? To answer that, it helps to borrow a lens from thermodynamics, which gives us a language for directed work, feedback, loss, and the boundaries that keep a complex system coherent. The agent as a heat engine When we strip away the anthropomorphic illusion of AI, what remains is a computational engine. It takes direction and turns it into action. An LLM sitting in a data center has immense capacity, but it does no useful work until it is given intent. A prompt, a business requirement, a system instruction, or a failing test gives the agent a direction. It turns that direction into code, tool calls, queries, tests, and changes to a running system. Every engine has losses. Every agent loop does, too. Anyone who has left an agent running against a difficult repository has seen this. It starts with a clear task. Then it follows a stale assumption, fixes a symptom rather than a cause, treats an old migration as current behavior, and begins to accumulate its own history. A few tool calls later, the context contains enough plausible but conflicting detail that the next step is less certain than the first. Call this operational entropy: the buildup of stale assumptions, branching context, and unresolved dependencies inside a loop that is still trying to move forward. A human interruption helps because it introduces new information. So does a failing test, a precise data contract, a deterministic tool, or an evaluation that tells the agent exactly what it got wrong. Without that signal, an agent can keep generating output while drifting further from a correct outcome. Agents clearly generate motion. The real question is whether the system around them turns that motion into useful work. The infinite monkey and the accelerating search space The infinite monkey theorem gives us a useful picture of what follows: repeated attempts, finite constraints, and feedback. The theorem says that a monkey hitting keys at random for an infinite amount of time will almost surely type the complete works of Shakespeare. Modern agents are much smarter monkeys. They have compilers, tools, repositories, test suites, and feedback loops. Their work is not random — the feedback steers the next attempt — but the dynamic is familiar: propose, execute, observe, correct, and try again. In a bounded task, that loop is remarkably effective. Give an agent a known input schema, a known target schema, a small codebase, and tests that catch the relevant failures. It can inspect the code, make a change, run the tests, absorb the result, and try again. The definition of done is visible. The search space is narrow. The loop has a chance to converge. But enterprise systems rarely offer that kind of stillness. A real-time pricing engine may depend on mutable operational state, third-party APIs, late-arriving events, regional policy, and business rules that exist partly in code and partly in someone’s head. A data lakehouse can be physically consistent and semantically wrong. A pipeline can pass its tests and still produce numbers that finance does not recognize. The environment is changing while the monkey is typing. The three-body problem of enterprise logic This is why the three-body problem is such a useful image for enterprise software. With two bodies — a planet and a star — you can predict the motion with a clean mathematical description. Add a third body and the problem becomes much harder to solve. There is no general closed-form solution, and some configurations exhibit chaotic behavior. Small changes in one place can produce very different trajectories elsewhere. Modern data platforms have the same shape. Clickstream data changes with product behavior. Operational databases mutate under customer activity. APIs impose rate limits and change versions. Schemas evolve. Security policies shift. Legacy systems carry rules that no one has written down because they have been buried in exception handling for years. Each system exerts pressure on the others. A change in one place alters the meaning or behavior of another. What begins as a local feature request starts to pull on the entire system. Consider a hypothetical: an agent is asked to add a customer_tier field to a revenue model. It finds a field called status in the operational database, maps it into the transformation, and passes the existing type and nullability tests. The code is clean. The pipeline is green. The answer is still wrong. A semantic data contract says that customer_tier is derived from trailing twelve-month spend, has an assigned business owner, and cannot be populated from account status. The contract rejects the change before it reaches the dashboard. The engineer&#x27;s contribution wasn&#x27;t the transformation — it was the boundary that made the agent&#x27;s mistake visible, specific, and recoverable. The new mandate: Designing equilibrium The software engineer’s job is no longer to write every piece of micro-logic. Agents will increasingly do that work, often faster. The new mandate — designing equilibrium — is to create the conditions in which generated logic can be trusted. When a business requirement changes faster than an agent can absorb feedback, the engineer has to build containment fields. Strict semantic layers, immutable event logs, data contracts, idempotent APIs, and deterministic state machines are not just good platform hygiene. They reduce the number of assumptions an agent has to make at once. They turn a coupled problem into a bounded domain with clear inputs, explicit rules, and reliable feedback. Once that domain exists, the agent becomes genuinely powerful. It can write the transformation, execute the tests, repair the failures, and ship the change without needing to infer the unwritten history behind every table and service. The value of software engineering doesn&#x27;t disappear as code generation gets cheaper — it becomes more visible, which is the shift that actually matters. Autonomous systems will increasingly generate software. But the contracts, feedback loops, and boundaries that determine whether that software succeeds or spirals into chaos will still be designed by software engineers. Ananth Packkildurai is a data engineering leader, writer, and author of Data Engineering Weekly, sharing insights on modern data platforms, large-scale pipelines, and AI-driven architectures.",
-      "source": "VentureBeat",
-      "category": "AI",
-      "published": "2026-08-31T18:52:19+00:00",
-      "sent_at": "2026-08-31T22:25:05.256316+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/31/harvard-law-dropout-raises-6m-for-blue-voice-to-build-a-harvey-for-police-officers/",
-      "title": "Harvard Law dropout raises $6M for Blue Voice to build a ‘Harvey for police officers’",
-      "summary": "Blue Voice is trained on department-specific laws, local ordinances, protocols, and guidelines that general-purpose AI tools can't access on the public internet.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-31T18:35:11+00:00",
-      "sent_at": "2026-08-31T22:25:05.256316+00:00"
-    },
-    {
-      "link": "http://muratbuffalo.blogspot.com/2026/08/the-safest-job-from-ai-may-be-writing.html",
-      "title": "The safest job from AI may be writing",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-31T18:12:20+00:00",
-      "sent_at": "2026-08-31T22:25:05.256316+00:00"
     }
   ]
 }
