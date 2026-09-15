@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://sunkcost.ai/",
+      "title": "Show HN: Sunk Cost – How long until a local LLM rig pays for itself?",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-15T01:37:43+00:00",
+      "sent_at": "2026-09-15T05:47:10.448579+00:00"
+    },
+    {
+      "link": "https://www.theregister.com/ai-and-ml/2026/09/14/ex-ftc-boss-khan-urges-uncle-sam-to-break-out-the-handcuffs-for-ai-ceos-citing-1934-precedent/5296325",
+      "title": "Ex-FTC boss Khan: break out the handcuffs for AI CEOs, citing 1934 precedent",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-15T00:40:14+00:00",
+      "sent_at": "2026-09-15T05:47:10.448579+00:00"
+    },
+    {
+      "link": "https://explorator.dev/addiction/",
+      "title": "I'm not addicted to the internet or my smartphone. I'm addicted to information",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Hardware",
+      "published": "2026-09-14T23:52:14+00:00",
+      "sent_at": "2026-09-15T05:47:10.448579+00:00"
+    },
+    {
+      "link": "https://twitter.com/kevinnbass/status/2099626156660043891",
+      "title": "Anthropic is in regulatory-capture financial loop",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-14T23:23:46+00:00",
+      "sent_at": "2026-09-15T05:47:10.448579+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2258035/pre-orders-for-the-android-based-googlebook-laptops-open-on-september-21/",
+      "title": "Pre-orders for the Android-based Googlebook laptops open on September 21",
+      "summary": "Gemini Intelligence is at the heart of the operating system powering Google's upcoming laptops.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-09-14T18:28:54+00:00",
+      "sent_at": "2026-09-15T05:47:10.448579+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2257970/waymo-robotaxis-are-now-available-in-las-vegas/",
+      "title": "Waymo's robotaxis are now available in Las Vegas",
+      "summary": "Waymo's fully autonomous rides will initially serve those around the city's main strip.",
+      "source": "Engadget",
+      "category": "Autonomes Fahren",
+      "published": "2026-09-14T17:59:37+00:00",
+      "sent_at": "2026-09-15T05:47:10.448579+00:00"
+    },
+    {
+      "link": "https://www.technologyreview.com/2026/09/14/1144048/the-ai-industry-has-taken-a-doomer-turn-what-now/",
+      "title": "The AI industry has taken a doomer turn. What now?",
+      "summary": "This story appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. This weekend, Dario Amodei, CEO of Anthropic, posted an essay calling for a brake on the pace of development of LLMs. Amodei cites the looming dangers he sees from the technology, from its&#8230;",
+      "source": "MIT Technology Review",
+      "category": "AI",
+      "published": "2026-09-14T17:54:22+00:00",
+      "sent_at": "2026-09-15T05:47:10.448579+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2257929/elon-musk-x-corp-and-spacexai-just-moved-to-dismiss-their-lawsuit-against-apple/",
+      "title": "Elon Musk's X Corp and SpaceXAI just moved to dismiss their lawsuit against Apple",
+      "summary": "A lawsuit from last year accused the iPhone-maker of suppressing apps like Grok on the App Store.",
+      "source": "Engadget",
+      "category": "Innovationen",
+      "published": "2026-09-14T17:49:07+00:00",
+      "sent_at": "2026-09-15T05:47:10.448579+00:00"
+    },
+    {
       "link": "https://www.theverge.com/ai-artificial-intelligence/995186/is-big-techs-ai-slowdown-a-safety-pact-or-a-cartel",
       "title": "Is Big Tech’s AI slowdown a safety pact or a cartel?",
       "summary": "When OpenAI CEO Sam Altman, Anthropic CEO Dario Amodei, Google DeepMind cofounder Demis Hassabis, and SpaceX head Elon Musk loosely agreed over the weekend to slow down AI development, skeptics spotted an ulterior motive immediately. The AI titans had declared that their aim was to \"pace the frontier,\" signing on at least partially to a [&#8230;]",
@@ -5210,78 +5282,6 @@
       "category": "AI",
       "published": "2026-08-31T14:00:00+00:00",
       "sent_at": "2026-09-01T07:13:37.232808+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/31/apple-shares-shocking-evidence-against-former-employee-accused-of-stealing-company-data-for-openai/",
-      "title": "Apple shares ‘shocking evidence’ against former employee accused of stealing company data for OpenAI",
-      "summary": "Apple says it has evidence that a former employee destroyed evidence of data theft after learning he was under investigation.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-01T00:13:00+00:00",
-      "sent_at": "2026-09-01T01:37:14.619593+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2246412/starlink-mini-x-comes-with-extra-router-do-you-need-it/",
-      "title": "The Starlink Mini X kit comes with an extra router, but do you really need it?",
-      "summary": "Starlink's extra router can be useful, but getting your main satellite dish positioned properly is more important.",
-      "source": "Engadget",
-      "category": "Innovationen",
-      "published": "2026-08-31T23:00:00+00:00",
-      "sent_at": "2026-09-01T01:37:14.619593+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2248199/apple-adds-more-allegations-to-its-trade-secrets-lawsuit-against-openai/",
-      "title": "Apple adds more allegations to its trade secrets lawsuit against OpenAI",
-      "summary": "It claims a laptop proves that a former employee accessed and used proprietary files for the AI company.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-08-31T22:34:52+00:00",
-      "sent_at": "2026-09-01T01:37:14.619593+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/tech-policy/2026/08/zlibrary-my-beloved-anthropic-staff-chats-extolling-piracy-cited-in-sony-suit/",
-      "title": "“Zlibrary my beloved”: Anthropic staff chats extolling piracy cited in Sony suit",
-      "summary": "Lawsuit: Anthropic’s torrenting totally screwed songwriters as AI songs top charts.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-08-31T18:10:45+00:00",
-      "sent_at": "2026-09-01T01:37:14.619593+00:00"
-    },
-    {
-      "link": "https://spectrum.ieee.org/ruchira-shree-ham-radio",
-      "title": "This Teen Helped Native American Students Earn Ham Radio Licenses",
-      "summary": "For many high school students, summer vacation is a time to unplug. For Ruchira Shree, a rising sophomore at West Windsor–Plainsboro High School South , in New Jersey, the break allows her to ramp up her extracurricular pursuits. Much of her time is spent assisting with IEEE Princeton Central Jersey Section activities. She got involved with the PCJS because of her mother, IEEE Senior Member Shubha Bommalingaiahnapallya , who is the section’s vice chair. Bommalingaiahnapallya is a principal engineer at Intel . “I started going to the IEEE meetings when I was little,” Shree says. “I used to go with my mom and just sit in the back of the room.” This summer she says she’s focusing on improving her mathematics skills by attending the Program in Algorithmic and Combinatorial Thinking summer course on math and computer science. She wants to qualify for the American Invitational Mathematics Examination , an event for the top American Mathematics Competitions scorers. She earned a place on the AMC 8 honor roll—a recognition awarded to the top 1 percent of participants in the national competition—when she was in seventh grade. Shree’s IEEE involvement and her advanced math skills caught the attention of an internship recruiter for the Alliance for Indigenous Math Circles , a group dedicated to expanding STEM opportunities for Native American students. The AIMC organizes and sponsors weeklong overnight camps. Interns assist with activities and teach some of the sessions. Shree met a recruiter at one of the section’s events, and she interned at one of the camps last year. The IEEE-math camp connection Shree’s involvement with the PCJS evolved naturally as she got older, she says, along the way preparing name badges and tackling similar assignments. She met Francis O’Connell , an IEEE life senior member and founder of FXO , in Plainsboro, N.J. O’Connell is the treasurer of the IEEE Integrated STEM in Education Conference (ISEC). He has been a mentor to Shree for the past two years, he says. At last year’s ISEC, she assisted at the registration desk and met Harini Frederickson, an AIMC intern recruiter for New Jersey. Frederickson invited Shree, along with nine other students, to volunteer at an upcoming camp being held in Santa Fe, N.M. “Ruchira is a real go-getter,” Frederickson says. “When she has an idea, she follows through and doesn’t get easily discouraged.” The AIMC was created to address an important need, says math teacher Donna Fernandez , codirector of the organization. U.S. Indigenous students have the lowest rate of pursuing STEM studies across all demographics, according to the U.S. National Science Foundation. Systemic barriers such as a lack of role models in STEM fields, socioeconomic inequities, and Eurocentric teaching frameworks are some of the reasons, Rechel Shrisunder and Dwight Figueiredo wrote in a chapter of Minorities: New Challenges and Horizons , a book edited by John R. Hermann . Indigenous people have a long tradition of mathematics, Fernandez says. She cites the Navajo code talkers from World War II as examples. The Navajo, along with 14 other Indigenous tribes, used their native languages to code and transmit critical messages for the U.S. military during the war. There was a student at camp whose grandfather was a code talker, Shree says. Navajo people also use math to build hogans : conical dwellings that require precise calculations to construct. Native communities have used math when building the structures for centuries, Fernandez says. Fernandez believes typical classroom math curricula overlook the importance of mathematics in Indigenous cultures. Combining STEM activities with cultural elements helps Indigenous students better understand their ancestors’ role as mathematicians, she says. That, in turn, helps the students see themselves in those careers, she adds. The AIMC was built upon a program already in place: the Navajo Nation Math Circles , founded in 2012 by three university professors. Their goal was to provide the Navajo Nation’s students with tools to overcome barriers to STEM education. To expand the math circle program, the AIMC was added to reach Indigenous students in the Four Corners area of Arizona, Colorado, New Mexico, and Utah. Since 2017, the organization has run two camps every year at the Navajo Preparatory School in Farmington, N.M. In 2025 one camp was moved to the Santa Fe Indian School . During each weeklong event, students and interns work in math circles. It’s a cooperative way to solve problems creatively, organizers say. Students collaborate on STEM-focused projects and learn from Indigenous STEM professionals. Interns also get the opportunity to experience an off-site cultural event. The camps are free for students, thanks to sponsorships and donations. Teachers and interns cover their own travel expenses. Shree secured a US $1,500 sponsorship grant through the PCJS. Building relationships through STEM activities Relationships are an influential part of the week, Fernandez says: “One of the best things we see at the camp is that students return the following year and ask, ‘Is so-and-so intern coming back this year?’ They remember the relationships they developed, especially the cultural exchanges they had. “Those exchanges go both ways, benefiting the interns too.” Students spend mornings at camp working in math circles, then gather for a wrangle, during which each team defends its math circle answer and challenges other teams’ solutions. Shree and the other interns are on hand to answer questions and observe the teams as they work through the math circle problems. “Math problems typically have very binary answers,” she says. “But in math circles, you focus more on talking through your answers to open-ended questions and learning from each other.” Students spend afternoons working on projects. In one, the students used household items to create a replica of the Batmobile , Shree says. The car was required to be self-propelled without an engine. Balloons were a popular alternative. Another activity focused on the Indigenous tradition of basket weaving. Students learned the cultural meaning behind traditional designs while understanding how geometry concepts influenced the finished product. These Native American middle school students work on solving a mathematical pattern-matching game, one of the activities held at the summer camp. Ruchira Shree Role models inspire students “Because there’s a lack of Indigenous STEM role models, many Native American students don’t see themselves in mathematics or science,” Shree says. To bridge that gap, Fernandez ensures Indigenous role models are part of the camp. Some of the people who spoke with students during Shree’s internship were Jessica Benally , a Ph.D. student in the learning sciences and human development program at the University of California, Berkeley , and engineers from the New Mexico Mathematics, Engineering, and Science Achievement program, which supports underrepresented preuniversity students. “I believe the students were very inspired,” Shree says, “because they could see how they themselves could pursue STEM careers. They had people to look up to in the field who had come from backgrounds just like theirs.” Interns in action The interns’ primary responsibility was leading a two-hour, after-dinner Radio Weaves session. They taught students about a popular communication technology that doesn’t require the Internet or cell towers. Ham radio , also known as amateur radio , is a communication method that uses designated frequencies. In the United States, anyone can listen to amateur radio transmissions; to legally transmit on the frequencies, though, a user needs a Federal Communications Commission license. The Radio Weaves project is designed to prepare students to pass the FCC technician license exam . To make that happen, the interns customized Gimkit , a learning game, loading it with radio-specific content that mirrored topics that could appear on the test. Each intern worked with two or three students to complete the Gimkit materials. Frederickson, who was on hand for the camp, says the aim was to send students home with something tangible that demonstrated their STEM accomplishments. Nearly all the students passed the exam on the first try, she says, and she worked with those who didn’t to retake the test. All the students ultimately received their license, she says. Inspiration comes in several forms The interns took an afternoon off to attend a Pueblo Feast Day , a celebration filled with music and dance that culminated in visits with nearby families, with whom they shared dinner. “The tradition is very generous and community-based,” Shree says. “It represents that every home in the village will welcome any guest to have a meal.” The feast was the highlight of Shree’s week, she says: “I got to really experience Native American culture firsthand.” The students inspired her, she says. “Seeing the joy on their faces when they passed the technician exam or when they got a math problem correct showed me how much joy they find in learning,” she says. “It made me realize that I want to help provide more opportunities for them to learn and challenge themselves.” “Because there’s a lack of Indigenous STEM role models, many Native American students don’t see themselves in mathematics or science.” —Ruchira Shree That realization spurred her idea for a new initiative. After she returned home, she founded Rukie Cookie to create “safe, inclusive, and inspiring spaces where youths explore STEAM [and] build curiosity, strategic thinking, and innovation—empowering them to become confident leaders and active contributors to a more just and equitable society,” according to the project’s website. Baking is one of Shree’s hobbies, and she sees it as a way to fulfill a financial need she observed at camp. “I noticed that at lunch breaks, they [camp students] used to play chess on the side, but they couldn’t actually participate in tournaments because that requires a U.S. Chess Federation (USCF) membership fee, which they couldn’t afford,” she says. Shree bakes cookies and sells them at PCJS events. Proceeds go toward youth chess classes and USCF memberships for children in underrepresented communities. She has raised enough money to sponsor six USCF memberships, five of whom are camp attendees, she says. “I hope that the students I have gotten a membership for will continue growing their passion for chess,” she says, “but also that it will encourage them to challenge themselves with difficult problems.” What’s next? Shree planned to attend an AIMC camp this year, she says, but it was canceled due to resourcing issues. She says she intends to return next year with goals of adding a formal chess component to the schedule and continuing to help more students overcome financial hurdles to join the USCF. She’s also writing a novel about Alzheimer’s disease and identity loss, and she’s conducting independent research on cognitive decline at the New Jersey Institute of Technology . Watching her great-grandmother struggle with the condition sparked her interest in the subject, she says. She is confident STEM will be part of her future, she says. Math and cognitive science are areas of interest she plans to study, but she’s still undecided about a major. Her interest in Alzheimer’s research and a desire to apply AI to health care will influence her decision, she says. She adds that she plans to join IEEE once she’s eligible.",
-      "source": "IEEE Spectrum",
-      "category": "AI",
-      "published": "2026-08-31T18:00:01+00:00",
-      "sent_at": "2026-09-01T01:37:14.619593+00:00"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/08/31/1143180/hugging-face-hack-could-indicate-cultural-issues-at-openai/",
-      "title": "The Hugging Face hack could indicate cultural issues at OpenAI",
-      "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. By now you’ve probably heard about last month’s major AI security incident, in which OpenAI agents escaped their sandbox and hacked into the AI platform Hugging Face while trying to cheat on&#8230;",
-      "source": "MIT Technology Review",
-      "category": "AI",
-      "published": "2026-08-31T18:00:00+00:00",
-      "sent_at": "2026-09-01T01:37:14.619593+00:00"
-    },
-    {
-      "link": "https://usealmanac.com/",
-      "title": "Launch HN: Almanac (YC S26) – AI that knows your company",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-08-31T15:34:34+00:00",
-      "sent_at": "2026-09-01T01:37:14.619593+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/08/31/nvidias-3-5b-mediatek-bet-reveals-its-plan-for-tackling-big-techs-ai-chip-buildout/",
-      "title": "Nvidia’s $3.5B MediaTek bet reveals its plan for tackling Big Tech’s AI chip buildout",
-      "summary": "Nvidia invests $3.5 billion into Taiwanese chipmaker MediaTek. The deal shows how Nvidia plans to stay essential to AI infrastructure as Big Tech begins to build its own AI chips.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-08-31T15:15:25+00:00",
-      "sent_at": "2026-09-01T01:37:14.619593+00:00"
     }
   ]
 }
