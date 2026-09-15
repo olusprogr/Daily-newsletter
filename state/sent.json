@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/09/15/openai-anthropic-google-have-been-in-talks-on-ai-safety-for-weeks/",
+      "title": "OpenAI, Anthropic, Google have been in talks on AI safety for weeks",
+      "summary": "OpenAI confirms weeks of AI safety talks with Anthropic and Google DeepMind, as Trump's team dismisses safety concerns and pushes to keep pace with China.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-15T15:47:03+00:00",
+      "sent_at": "2026-09-15T16:12:59.443845+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2255845/delivery-robots-biggest-issues/",
+      "title": "The biggest issues with delivery robots are exactly what you'd think",
+      "summary": "Too often, delivery robots just don't understand the rules of the road (or sidewalk).",
+      "source": "Engadget",
+      "category": "Innovationen",
+      "published": "2026-09-15T15:30:00+00:00",
+      "sent_at": "2026-09-15T16:12:59.443845+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/desktops/gaming-pcs/asus-ludicrous-20th-anniversary-bundle-is-now-the-cheapest-way-to-buy-an-rtx-5090-nvidias-flagship-gpu-stock-is-so-limited-that-this-usd10-850-bundle-with-a-3000w-psu-x870e-board-and-open-frame-case-is-actually-cheaper-than-some-scalper-listings",
+      "title": "Asus' ludicrous 20th anniversary bundle is now the cheapest way to buy an RTX 5090 — Nvidia's flagship GPU stock is so limited that this $10,850 bundle with a 3000W PSU, X870E board, and open-frame case is actually cheaper than some scalper listings",
+      "summary": "This ultra-premium Asus ROG Edition 20th Anniversary Combo set at Newegg is super expensive at $10,849.96, but ironically, it's the 'cheapest' way to pick up an RTX 5090 right now.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-15T15:13:16+00:00",
+      "sent_at": "2026-09-15T16:12:59.443845+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/995453/meta-one-subscriptions-ai",
+      "title": "Meta&#8217;s new One subscriptions put a price on social media and AI",
+      "summary": "Shortly after launching its new do-everything AI assistant Muse, Meta's launching subscription bundles that pair its standalone app subscriptions with extra AI usage. Some of the new Meta One bundles were in testing earlier this year, but are now available globally starting today, with several tiers for individual users, creators, and businesses. Meta says the [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-15T15:00:00+00:00",
+      "sent_at": "2026-09-15T16:12:59.443845+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/15/former-tiktok-execs-built-an-app-that-uses-ai-to-teach-you-how-to-pose-for-a-photo/",
+      "title": "Former TikTok execs built an app that uses AI to teach you how to pose for a photo",
+      "summary": "Essentially a camera app, Superpose analyzes selfies or photos and generates four potential poses using AI.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-15T14:42:37+00:00",
+      "sent_at": "2026-09-15T16:12:59.443845+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/15/discover-how-to-take-your-startup-from-prototype-to-production-at-techcrunch-disrupt-2026/",
+      "title": "Discover how to take your startup from prototype to production at TechCrunch Disrupt 2026",
+      "summary": "Learn how to scale your startup breakthrough from prototype to production at TechCrunch Disrupt 2026 with scaling leaders, Adrian Macneil (Foxglove), John Mackey (MBRYONICS), and Boris Sofman (Bedrock Robotics). Register before September 25 to save up to $200 on your pass.",
+      "source": "TechCrunch",
+      "category": "Innovationen",
+      "published": "2026-09-15T14:30:00+00:00",
+      "sent_at": "2026-09-15T16:12:59.443845+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/cpus/intel-reportedly-cans-12xe-option-for-nova-lake-s-desktop-gaming-apu-design-said-to-resurface-with-razor-lake",
+      "title": "Intel reportedly cans 12Xe option for Nova Lake-S desktop — gaming APU design said to resurface with Razor Lake",
+      "summary": "Following rumors of a Nova Lake desktop SKU with 12 Xe3P cores, tipster Jaykihn suggests that Intel has canned the design and moved the target to next-gen Razor Lake instead.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-15T14:17:06+00:00",
+      "sent_at": "2026-09-15T16:12:59.443845+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/09/15/tesla-four-fatal-driver-assist-crashes-july-2026/",
+      "title": "Tesla’s record month: 4 fatal Autopilot and Full Self-Driving crashes",
+      "summary": "July 2026 was the worst month on record for Tesla driver-assist crashes. Tesla reported 236 of them to federal regulators, the most it has ever filed in a single month. Four of those crashes killed someone. In every one, Tesla’s own data says Autopilot or “Full Self-Driving” was engaged, and in every one, the public was never told the system was involved. This is the latest from our ongoing investigation matching Tesla’s redacted NHTSA reports to real, named crashes. more…",
+      "source": "Electrek",
+      "category": "Autonomes Fahren",
+      "published": "2026-09-15T14:05:06+00:00",
+      "sent_at": "2026-09-15T16:12:59.443845+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/desktops/gaming-pcs/grab-a-usd560-saving-on-this-1440p-ready-gaming-pc-with-a-9800x3d-and-rtx-5060-ti-16gb-now-usd1-859-all-white-cyberpowerpc-desktop-ships-with-one-of-amds-best-x3d-chips-along-with-32gb-ddr5-and-a-2tb-ssd",
       "title": "Grab a $560 saving on this 1440p-ready gaming PC with a 9800X3D and RTX 5060 Ti 16GB, now $1,859 — all-white CyberPowerPC desktop ships with one of AMD's best X3D chips, along with 32GB DDR5 and a 2TB SSD",
       "summary": "Save nearly $600 on this CyberPowerPC gaming PC with a 9800X3D, RTX 5060 Ti 16GB, 32GB DDR5, and a 2TB SSD.",
@@ -5210,78 +5282,6 @@
       "category": "AI",
       "published": "2026-09-01T15:57:23+00:00",
       "sent_at": "2026-09-01T17:34:52.843344+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/986236/smartphones-september-ifa-apple-iphone-oppo-vivo-xiaomi",
-      "title": "Get ready for a really busy month of smartphones",
-      "summary": "We're not even half a day into September, and two new smartphones have already launched: the Poco F9 Pro and F9 Ultra. We're expecting more this week, as the IFA trade show kicks off in Berlin, before we get new iPhones a week after that. And that's only the beginning of what promises to be [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-09-01T13:00:00+00:00",
-      "sent_at": "2026-09-01T13:03:45.254092+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/986378/nvidia-dlss-5-launch-nba-2k27",
-      "title": "Nvidia&#8217;s controversial DLSS 5 arrives September 3rd and requires serious GPU horsepower",
-      "summary": "Nvidia is officially launching DLSS 5 this week, following a divisive announcement in March where we likened the AI upscaling tech to a \"real-time generative AI filter for video games\" and \"motion smoothing for video games, but worse.\" DLSS 5 will officially be available on RTX 50-series desktop and laptop GPUs and through GeForce Now [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-01T13:00:00+00:00",
-      "sent_at": "2026-09-01T13:03:45.254092+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/games/986980/nvidias-dlss-5-explained",
-      "title": "Nvidia’s DLSS 5, explained",
-      "summary": "Nvidia knows that DLSS 5 left a bad first impression. In March, many gamers took one look at Resident Evil Requiem protagonist Grace Ashcroft's DLSS 5-ified face and declared it AI slop. So this week, the company's re-introducing its controversial \"neural rendering\" with firm messaging about how it \"preserves artistic intent,\" \"respects the rendered frame,\" [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-01T13:00:00+00:00",
-      "sent_at": "2026-09-01T13:03:45.254092+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2248399/nvidia-dlss-5-launches-nba-2k27-september-3/",
-      "title": "NVIDIA's DLSS 5 launches with NBA 2K27 on September 3, but there's little reason for excitement",
-      "summary": "NVIDIA's controversial DLSS 5 finally arrives this week, but there's little reason to celebrate it.",
-      "source": "Engadget",
-      "category": "Hardware",
-      "published": "2026-09-01T13:00:00+00:00",
-      "sent_at": "2026-09-01T13:03:45.254092+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2243520/poco-f9-ultra-is-a-midrange-phone-with-a-flagship-processor-and-185hz-display/",
-      "title": "Poco's F9 Ultra is a midrange phone with a flagship processor and a 185Hz display",
-      "summary": "Poco's newest smartphone isn't headed to the US, but you might want it to.",
-      "source": "Engadget",
-      "category": "Hardware",
-      "published": "2026-09-01T12:45:00+00:00",
-      "sent_at": "2026-09-01T13:03:45.254092+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/09/01/tesla-autopilot-fsd-crashes-hidden-data/",
-      "title": "Tracking the fatal Tesla Autopilot and FSD crashes hidden in its data",
-      "summary": "Tesla reports its Autopilot and “Full Self-Driving” crashes to the federal government, as it’s required to — and then blacks out almost everything in those reports, so the public never learns what happened in those crashes. Tesla always end up blaming the driver. We’re matching those redacted reports, one by one, to real fatal crashes that were covered in the news as ordinary accidents. This is a running investigation, and we’ll add each crash we confirm to this page. You can view this as an investigative hub keeping track of our ongoing investigation. more…",
-      "source": "Electrek",
-      "category": "Autonomes Fahren",
-      "published": "2026-09-01T12:40:56+00:00",
-      "sent_at": "2026-09-01T13:03:45.254092+00:00"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/09/01/1143199/the-download-engineered-microbes-openai-safety-culture/",
-      "title": "The Download: engineered microbes for crops, and OpenAI’s culture problem",
-      "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. How engineered microbes could help feed the world’s crops Fertilizer is crucial for the global food supply, but making it uses a lot of energy and produces a lot of emissions.&#8230;",
-      "source": "MIT Technology Review",
-      "category": "AI",
-      "published": "2026-09-01T12:10:00+00:00",
-      "sent_at": "2026-09-01T13:03:45.254092+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/gpus/nvidias-top-end-rtx-5090-gaming-gpu-now-costs-at-least-usd5-000-blackwell-cards-continue-to-endure-drastic-price-hikes",
-      "title": "Nvidia's top-end RTX 5090 gaming GPU now costs at least $5,000 — Blackwell cards continue to endure drastic price hikes",
-      "summary": "The entire PC hardware industry is in shambles when it comes to consumer products, and GPUs are one of the most affected components. Everything from budget options to high-end models is now significantly more expensive than what it could be had for a year ago.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-01T12:04:18+00:00",
-      "sent_at": "2026-09-01T13:03:45.254092+00:00"
     }
   ]
 }
