@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/pc-components/ram/ai-induced-memory-shortage-is-changing-how-devices-are-built-fairphone-says-memory-now-60-percent-of-materials-cost-smaller-laptop-and-phone-makers-are-redesigning-products-and-have-to-test-for-fake-chips",
+      "title": "AI-induced Memory shortage is changing how devices are built, Fairphone says memory now 60% of materials cost — smaller laptop and phone makers are redesigning products and have to test for fake chips",
+      "summary": "For smaller device manufacturers, rising memory prices are only part of the problem as limited availability forces companies to rethink everything from motherboard designs to procurement strategies.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-16T12:15:42+00:00",
+      "sent_at": "2026-09-16T13:06:07.832892+00:00"
+    },
+    {
+      "link": "https://www.technologyreview.com/2026/09/16/1144205/the-download-ai-trillion-dollar-build-openai-biological-data/",
+      "title": "The Download: AI’s trillion-dollar gamble and OpenAI’s biology data bid",
+      "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. What’s at stake in AI’s trillion-dollar gamble When Jessica Wachter, a finance professor at the University of Pennsylvania, wanted to assess AI’s impact on the economy over the next few years,&#8230;",
+      "source": "MIT Technology Review",
+      "category": "AI",
+      "published": "2026-09-16T12:10:00+00:00",
+      "sent_at": "2026-09-16T13:06:07.832892+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/policy/995534/a-brief-history-of-ai-executives-calling-for-regulation",
+      "title": "A brief history of AI executives calling for regulation",
+      "summary": "Over the past few days, a lot of people who stand to make a lot of money from AI all publicly agreed that it's time to make everyone slow down before we lose control - including OpenAI CEO Sam Altman, Anthropic CEO Dario Amodei, Google DeepMind cofounder Demis Hassabis, Microsoft CEO Satya Nadella, and X [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-16T12:00:00+00:00",
+      "sent_at": "2026-09-16T13:06:07.832892+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/policy/chinese-state-media-counters-dario-amodeis-call-to-put-brakes-on-ai-development-paper-says-move-is-a-response-to-chinese-competition",
+      "title": "Chinese state media counters Anthropic's call to put brakes on AI development — paper says move is ‘a response to Chinese competition’",
+      "summary": "State media outlet China Daily posits that Anthropic's Dario Amodei made the call to limit frontier AI development because Chinese AI models are catching up with American AI labs.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-16T12:00:00+00:00",
+      "sent_at": "2026-09-16T13:06:07.832892+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/semiconductors/jensen-huang-thinks-china-will-develop-its-own-advanced-lithography-systems-by-2030-nvidia-ceo-says-achievement-of-that-capability-is-just-a-matter-of-time",
+      "title": "Jensen Huang thinks China will develop its own advanced lithography chipmaking tools by 2030 — Nvidia CEO says achievement of that capability 'is just a matter of time'",
+      "summary": "Nvidia CEO thinks that in light of his view of a three- to four-year timeline for Chinese development of advanced semi tooling, the country is \"already there.\"",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-16T11:30:00+00:00",
+      "sent_at": "2026-09-16T13:06:07.832892+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/semiconductors/sk-hynix-reportedly-discussing-us-memory-chip-manufacturing-with-intel-options-include-leasing-ohio-plant-or-forming-joint-venture-with-other-ai-hyperscalers",
+      "title": "SK hynix reportedly discussing US memory chip manufacturing with Intel — options include leasing Ohio plant or forming joint venture with other AI hyperscalers",
+      "summary": "Sources say SK hynix and Intel are in talks to start HBM manufacturing in the United States. Both companies refused to confirm the rumors, though, as SK hynix could potentially be put in a precarious position as trade talks between Seoul and Washington continue.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-16T11:20:00+00:00",
+      "sent_at": "2026-09-16T13:06:07.832892+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/defeated-gpt-6-astra-model-spent-several-hours-just-farming-potatoes-after-being-blown-up-by-a-creeper-in-minecraft-openai-offering-gets-further-than-any-other-ai-system-in-141-hour-test",
+      "title": "'Defeated' GPT-6 Astra model spent several hours just farming potatoes after being blown up by a Creeper in Minecraft — OpenAI offering gets further than any other AI system in 141-hour test",
+      "summary": "OpenAI's GPT-6 Astra spent hours just farming potatoes after dying and losing all of its gear during a Minecraft test.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-16T11:15:00+00:00",
+      "sent_at": "2026-09-16T13:06:07.832892+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/gpus/nvidia-reportedly-denies-rtx-5090-warranty-over-faded-serial-number-usd6-500-gpu-blemish-not-an-isolated-incident-according-to-customers",
+      "title": "Nvidia reportedly denies RTX 5090 warranty over faded serial number — $6,500 GPU blemish not an isolated incident, according to customers",
+      "summary": "Redditor reported that Nvidia allegedly rejected their warranty claims for GeForce RTX 5090 Founders Edition graphics cards because the serial number on the bracket was unreadable.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-16T10:45:00+00:00",
+      "sent_at": "2026-09-16T13:06:07.832892+00:00"
+    },
+    {
       "link": "https://blog.cloudflare.com/accountable-mixed-use-ai-crawlers/",
       "title": "Stay discoverable in search while disallowing AI training",
       "summary": "",
@@ -5138,78 +5210,6 @@
       "category": "AI",
       "published": "2026-09-02T13:43:14+00:00",
       "sent_at": "2026-09-02T14:57:03.945559+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/researchers-easily-trick-fortune-500-companies-ai-agents-into-running-arbitrary-code-supply-chain-attack-via-llms-txt-guidance-file-illustrates-how-data-has-become-code",
-      "title": "Researchers easily trick Fortune-500 companies' AI agents into running arbitrary code — supply-chain attack via llms.txt guidance file illustrates how data has become code",
-      "summary": "Researchers easily trick Fortune-500 companies' AI agents into running arbitrary code. This supply-chain attack, done via using data in public llms.txt guidance files, illustrates the dangers of data becoming code.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-02T10:20:00+00:00",
-      "sent_at": "2026-09-02T10:35:53.303866+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/semiconductors/chinas-euv-technology-at-a-similar-stage-to-asml-in-2004-analyst-claims-beijings-semiconductor-industry-remains-well-behind-western-rivals",
-      "title": "China's EUV technology 'at a similar stage to ASML in 2004,' analyst claims — Beijing's semiconductor industry remains well behind Western rivals",
-      "summary": "Despite rumors, there is no evidence that Chinese makers of lithography tools can produce immersion lithography scanners in quantity.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-02T10:15:00+00:00",
-      "sent_at": "2026-09-02T10:35:53.303866+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/pangram-has-emerged-as-the-gold-standard-of-ai-detection/",
-      "title": "Pangram Has Emerged as the Gold Standard of AI Detection. Should You Trust It?",
-      "summary": "Meet the AI police who can make or break careers—in publishing and beyond.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-09-02T10:00:00+00:00",
-      "sent_at": "2026-09-02T10:35:53.303866+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/space/russian-starlink-rival-flounders-after-entire-batch-of-satellites-fails-to-reach-operational-altitude-many-of-the-16-launched-hit-less-than-half-their-870km-target-and-two-are-already-falling-back-to-earth",
-      "title": "Russian Starlink rival flounders after entire batch of satellites fails to reach operational altitude — many of the 16 launched hit less than half their 870km target, and two are already falling back to Earth",
-      "summary": "The entire second batch of Russian Rassvet satellites have failed to reach their target operational altitudes, according to reports.",
-      "source": "Tom's Hardware",
-      "category": "Innovationen",
-      "published": "2026-09-02T10:00:00+00:00",
-      "sent_at": "2026-09-02T10:35:53.303866+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2248794/acer-shows-off-its-ai-desktop-future-with-the-rtx-spark-design/",
-      "title": "Acer shows off its AI desktop future with the RTX Spark design",
-      "summary": "It's a showcase of NVIDIA's latest chip tech.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-02T09:30:00+00:00",
-      "sent_at": "2026-09-02T10:35:53.303866+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/video-games/handheld-gaming/acers-wild-project-dualplay-mini-is-a-foldable-handheld-that-doubles-as-a-netbook-concept-shown-alongside-predator-atlas-7-handheld-sporting-intels-arc-g-series-chip",
-      "title": "Acer’s wild Project DualPlay Mini is a foldable handheld that doubles as a netbook — concept shown alongside Predator Atlas 7 handheld sporting Intel’s Arc G-series chip",
-      "summary": "Using the recent Predator Atlas 8 as a blueprint, Acer revealed the smaller Atlas 7 alongside a unique concept called Project DualPlay Mini at IFA 2026.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-02T09:30:00+00:00",
-      "sent_at": "2026-09-02T10:35:53.303866+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/developer-uses-claude-code-to-debloat-android-smart-tv-for-unbelievable-performance-upgrade-tv-now-smoother-than-it-was-new-as-autonomous-agent-deactivates-apps-shortens-animations-all-without-root-access",
-      "title": "Developer uses Claude Code to debloat Android smart TV for 'unbelievable' performance upgrade — TV now smoother than it was new as autonomous agent deactivates apps, shortens animations, all without root access",
-      "summary": "A developer revitalized his smart TV performance by using Claude Code to debloat it.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-02T09:00:00+00:00",
-      "sent_at": "2026-09-02T10:35:53.303866+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/987582/irobot-roomba-max-875-sealforce-robot-vacuum-announced",
-      "title": "This new Roomba seals itself to your carpet",
-      "summary": "iRobot has announced a new flagship robot vacuum, which it will showcase at IFA in Berlin this week, the company's first big tech trade show in years. The Roomba maker will be exhibiting under its new owner, Picea Robotics, the contract manufacturer that purchased the once-troubled American robotics company out of bankruptcy in January. The [&#8230;]",
-      "source": "The Verge",
-      "category": "Innovationen",
-      "published": "2026-09-02T06:00:00+00:00",
-      "sent_at": "2026-09-02T10:35:53.303866+00:00"
     }
   ]
 }
