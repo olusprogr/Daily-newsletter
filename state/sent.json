@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://blog.cloudflare.com/accountable-mixed-use-ai-crawlers/",
+      "title": "Stay discoverable in search while disallowing AI training",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-16T02:25:18+00:00",
+      "sent_at": "2026-09-16T07:11:41.513918+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/995826/boox-palma-3-e-ink-reader-pocket-smartphone-android-16",
+      "title": "The Boox Palma 3 gets stylus support and a sleek redesign",
+      "summary": "Nearly two years after the last update to Boox's smartphone-sized black-and-white e-reader, the company announced the Palma 3 with a sleek redesign, new functionality, and a handful of other small updates that may justify its significant price bump depending on how you plan to use it. While the Palma 2 launched in 2024 for $279.99, [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-09-16T02:00:00+00:00",
+      "sent_at": "2026-09-16T07:11:41.513918+00:00"
+    },
+    {
+      "link": "https://mnoukhov.github.io/posts/ngu/",
+      "title": "Learning to solve hard problems in RL for LLMs by never giving up",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-15T19:07:38+00:00",
+      "sent_at": "2026-09-16T07:11:41.513918+00:00"
+    },
+    {
+      "link": "https://www.formas.ai/cartesian",
+      "title": "Cartesian – AI 3D Modeling for Design",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-15T15:26:45+00:00",
+      "sent_at": "2026-09-16T07:11:41.513918+00:00"
+    },
+    {
+      "link": "https://github.com/pizza-bot-app/pizza-bot",
+      "title": "Show HN: Pizza Bot – An inbox for AI agents that work in the background",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-15T15:20:26+00:00",
+      "sent_at": "2026-09-16T07:11:41.513918+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/data-centers/us-ai-data-centers-projected-to-become-the-fifth-largest-natural-gas-consumer-in-the-world-by-2035-consumption-to-grow-by-15-billion-cubic-feet-per-day-as-demand-for-compute-increases",
+      "title": "US AI data centers projected to become the fifth-largest natural gas consumer in the world by 2035 — consumption to grow by 15 billion cubic feet per day as demand for compute increases",
+      "summary": "Data centers in the U.S. are projected to use up more natural gas than most of the rest of the world to generate the electricity they need. Estimates suggest that 15 billion cubic feet per day are needed to keep data centers running by 2035.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-15T13:57:36+00:00",
+      "sent_at": "2026-09-16T07:11:41.513918+00:00"
+    },
+    {
+      "link": "https://www.bbc.com/news/articles/cqgk5e2j0gg8o",
+      "title": "AI 'kill switch' may need to be mandatory, Anthropic co-founder tells BBC",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-15T13:41:28+00:00",
+      "sent_at": "2026-09-16T07:11:41.513918+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/09/15/stark-turns-its-80-hp-electric-supermoto-into-a-titanium-loaded-blacked-out-beast/",
+      "title": "Stark turns its 80 hp electric supermoto into a titanium-loaded blacked-out beast",
+      "summary": "Stark Future has already turned its ridiculously powerful electric dirt bike into a street-going supermoto – upon which I recently got to cruise the streets and cities around Barcelona (more on that experience coming soon). But now the company is taking that concept in an even darker direction with the new Stark VARG SM Sköll, a limited-edition, nearly completely blacked-out version of the 80 hp electric supermoto. more…",
+      "source": "Electrek",
+      "category": "Autonomes Fahren",
+      "published": "2026-09-15T13:33:09+00:00",
+      "sent_at": "2026-09-16T07:11:41.513918+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/09/15/we-dont-need-ai-regulation-leave-safety-to-us-nvidias-jensen-huang-says/",
       "title": "We don’t need AI regulation — leave safety to us, Nvidia’s Jensen Huang says",
       "summary": "AI isn't some new form of \"alien mind,\" according to Jensen Huang. It's just hardware and software, so safety can be engineered by each AI product maker.",
@@ -5138,78 +5210,6 @@
       "category": "Innovationen",
       "published": "2026-09-02T06:00:00+00:00",
       "sent_at": "2026-09-02T10:35:53.303866+00:00"
-    },
-    {
-      "link": "https://simonwillison.net/2026/Sep/1/claude-fable-5-1/",
-      "title": "Claude Fable 5.1 made me a nice animated pelican",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-02T01:05:52+00:00",
-      "sent_at": "2026-09-02T05:34:11.496546+00:00"
-    },
-    {
-      "link": "https://www.baseten.co/blog/the-efficient-frontier-of-llm-inference/",
-      "title": "The efficient frontier of LLM inference",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-01T23:48:05+00:00",
-      "sent_at": "2026-09-02T05:34:11.496546+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/01/googles-answer-to-canva-is-an-ai-tool-where-you-prompt-instead-of-design/",
-      "title": "Google’s answer to Canva is an AI tool where you prompt instead of design",
-      "summary": "With Google Pics, Google is pushing deeper into the creative software market dominated by Canva and Adobe, but with a distinctly AI-first approach.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-01T17:35:37+00:00",
-      "sent_at": "2026-09-02T05:34:11.496546+00:00"
-    },
-    {
-      "link": "https://www.norirobotics.com/",
-      "title": "Launch HN: Nori Robotics (YC S26) – A low-cost humanoid robot for development",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Innovationen",
-      "published": "2026-09-01T17:35:10+00:00",
-      "sent_at": "2026-09-02T05:34:11.496546+00:00"
-    },
-    {
-      "link": "https://www.pcgamer.com/gaming-industry/dwarf-fortress-creator-says-the-industrys-in-shambles-over-ai-and-layoff-happy-ceos-everyone-i-know-their-bosses-are-slowly-getting-psychosis/",
-      "title": "Dwarf Fortress' creator says the industry's in shambles over AI",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-01T15:53:42+00:00",
-      "sent_at": "2026-09-02T05:34:11.496546+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/01/air-raises-50m-to-help-companies-vet-the-skills-and-add-ons-ai-agents-use/",
-      "title": "AIR raises $50M to help companies vet the skills and add-ons AI agents use",
-      "summary": "AIR's platform can discover agents running at a company, continuously vets any skills and add-ons they use, and blocks any unwanted behavior.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-01T15:45:51+00:00",
-      "sent_at": "2026-09-02T05:34:11.496546+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/09/01/waymo-public-robotaxi-denver-san-diego-tampa/",
-      "title": "Waymo opens robotaxi rides to the public in 3 new cities, now 14 total",
-      "summary": "Waymo opened its driverless ride-hailing service to the general public in Denver, San Diego, and Tampa on Monday, bringing the Alphabet-owned company to 14 US cities. Tens of thousands of people in each market had already signed up before the doors opened, and Waymo says it will let them in gradually over the coming weeks. more…",
-      "source": "Electrek",
-      "category": "Autonomes Fahren",
-      "published": "2026-09-01T15:22:13+00:00",
-      "sent_at": "2026-09-02T05:34:11.496546+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/01/fambot-introduces-an-ai-chief-of-staff-for-families/",
-      "title": "Fambot introduces an ‘AI chief of staff’ for families",
-      "summary": "Fambot is building an AI “chief of staff” to help families manage the emails, calendars, school updates, sports schedules, and other logistics of raising kids.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-01T15:10:58+00:00",
-      "sent_at": "2026-09-02T05:34:11.496546+00:00"
     }
   ]
 }
