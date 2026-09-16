@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.theverge.com/tech/996321/apple-servers-ai-nvidia",
+      "title": "Apple might make servers again to cash in on the AI rush",
+      "summary": "According to The Information, Apple is planning to get back into the server game and might just pair up with Nvidia to make it happen. Apple retired its Xserve line in 2011 and has largely left enterprise machines to other manufacturers since. But the growing demand for compute power as the AI industry continues to [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-16T17:20:29+00:00",
+      "sent_at": "2026-09-16T17:56:50.818690+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/16/your-ai-agents-can-now-control-your-google-home-devices/",
+      "title": "Your AI agents can now control your Google Home devices",
+      "summary": "Google is launching early access to a new MCP server for Google Home, allowing AI agents like Claude, ChatGPT, and others to control connected devices, review camera summaries, and access smart home activity using natural language.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-16T17:00:00+00:00",
+      "sent_at": "2026-09-16T17:56:50.818690+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/996310/google-home-mcp-integration-agentic-ai-smart-home-price-release-date",
+      "title": "Google will now let any AI agent run your smart home",
+      "summary": "Google is opening up its smart home to AI agents, letting tools like Claude and Open Claw access and control your connected devices and analyze your home's data using the standardized Model Context Protocol. Google Home MCP is a new integration that lets third-party AI agents control and monitor your smart home and act on [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-16T17:00:00+00:00",
+      "sent_at": "2026-09-16T17:56:50.818690+00:00"
+    },
+    {
+      "link": "https://spectrum.ieee.org/physical-ai-robot-cybersecurity-vicone",
+      "title": "Rethinking Robot Safety in the Age of AI",
+      "summary": "This article is brought to you by VicOne . Robot safety has traditionally asked: Can a machine remain safe when something goes wrong? Physical AI raises a harder question: Can a machine remain safe when an attacker changes what it sees, decides, or does even when nothing appears to have failed? As AI and robotics continue to advance at an unprecedented pace, modern robots perceive through multimodal sensors, interpret context using AI models, and translate those interpretations into physical action. As they move into dynamic environments, their safety increasingly depends on the integrity of the data guiding their decisions. That dependence creates risks that conventional safety assessments may not fully capture. Recent research has demonstrated that manipulating what a robot sees, hears, or interprets can influence its behavior without requiring direct control. Such manipulation can occur anywhere across its complex sensing and decision-making system — a layered attack surface encompassing training pipelines, system infrastructure, and runtime perception. Layer One: Corrupting intelligence at its source In 2017, BadNets demonstrated that a model could behave normally under most conditions, yet fail in the presence of a specific hidden trigger. In one example, a subtle pattern caused a stop sign to be misclassified as a speed limit sign without affecting the model’s behavior on other inputs. What began as a classification vulnerability has since evolved into action manipulation. At NeurIPS 2025, researchers introduced BadVLA a backdoor attack targeting Vision-Language-Action (VLA) models that allow robots to see, interpret instructions, and produce coordinated physical movement. Rather than altering a single label, the attack caused conditional deviations in the robot’s action trajectory when a trigger was present. Without the trigger, the model largely preserved normal task performance, while the backdoor remained effective under task transfers and model fine-tuning. A related study in 2025, GoBA , showed that ordinary objects such as a coffee mug could serve as a reliable trigger. The researchers reported a 97 percent attack success rate without degrading performance on clean inputs. A critical safety question today is whether Physical AI models remain within their task and safety boundaries under adversarial conditions. These studies expose a blind spot in model validation: A model may pass testing yet produce corrupted behavior when a hidden trigger appears in operation. So a critical safety question today is whether Physical AI models remain within their task and safety boundaries under adversarial conditions. Simulation tools such as NVIDIA Isaac Sim, when paired with VicOne Radeis , can test the effects of manipulated inputs before deployment. VicOne LAB R7 demonstrates Radeis, a Physical AI safety validator for NVIDIA Isaac Sim that tests how adversarial visual inputs affect robot behavior before deployment. VicOne Layer Two: System vulnerabilities as gateways to AI control Even a securely trained model can be subverted if the surrounding system stack is vulnerable. In September 2025, researchers disclosed UniPwn , a Bluetooth exploit chain affecting quadruped and humanoid robots from a major manufacturer. Hardcoded cryptographic keys allowed traffic decryption, authentication checks were bypassed, and command injection enabled root-level execution. The exploit is also described as “wormable.” A compromised robot could scan nearby units and potentially affect an entire fleet. VicOne Lab R7’s demo shows how chaining three wireless exploits can trigger uncontrolled robot behavior within 60 seconds, resulting in operational disruption. VicOne Middleware creates another exposure point. Vulnerabilities in ROS 2 and DDS-based systems can enable arbitrary code execution or abuse unauthenticated topics to deliver malicious commands. With sufficient access, an attacker could override motor commands or replace AI model weights without directly attacking the model architecture. In this case, the components may still function as designed. What has changed is the trustworthiness of the commands flowing through the system. Vulnerability management can help teams identify known risks before deployment, while continuous monitoring can surface emerging threats. Layer Three: Manipulating perception and reasoning at runtime At runtime, manipulating inputs that shape perception or reasoning may require neither firmware modification nor a network breach. In 2024, RoboPAIR demonstrated how carefully structured prompts could redirect LLM-controlled robots into unsafe trajectories. BadRobot exposed a deeper architectural weakness: in several cases, a robot verbally refused a dangerous command while its motion controller executed the action anyway. Vision-based manipulation is equally powerful. VLAttack showed that an adversarial patch within the camera’s view could reduce a VLA model’s task success rate to zero. FreezeVLA showed that a single adversarial image could freeze a robot’s decision-making loop, making it unresponsive to subsequent instructions. Runtime assurance must therefore look beyond whether individual components remain available and assess whether cyber events are beginning to affect physical behavior. In each case, the camera may still work, the model may still run, and the controller may still respond. Yet the resulting behavior can be unsafe because the robot is acting on manipulated perception or reasoning. Runtime assurance must therefore look beyond whether individual components remain available and assess whether cyber events are beginning to affect physical behavior. Security event correlation, behavioral-impact assessment, and policy-bounded response supported by edge AI, can help contain the affected path without unnecessarily stopping the entire robot fleet. From point-in-time safety to lifecycle assurance The risks across these three layers reveal the missing layer in robot safety assurance: cybersecurity. Functional safety addresses failures and unexpected operating conditions; cybersecurity extends that assurance to deliberate manipulation, including attacks that may leave the underlying system apparently functional. This requires assurance across the robot’s lifecycle. During design, teams need to understand which cyber risks could invalidate assumptions behind intended behavior. Before deployment, they should test whether realistic attacks can cause a robot to deviate from its task or safety boundaries. In operation, monitoring should identify whether cyber events are beginning to affect behavior, contain the affected path, and preserve safe operation where possible. VicOne’s lifecycle approach combines AI model and vulnerability scanning, simulation-based validation, and continuous monitoring to help secure robots from development through operation. VicOne While cybersecurity does not replace functional safety, it helps ensure that Physical AI remains within acceptable boundaries even when what it sees, decides, or does is under attack. For a deeper look at the cybersecurity risks and defense strategies shaping autonomous robotics, download our whitepaper “ Securing the Rise of AI Robots: Cyber Risks, Real-World Threats, and Defense Strategies .”",
+      "source": "IEEE Spectrum",
+      "category": "AI",
+      "published": "2026-09-16T16:51:02+00:00",
+      "sent_at": "2026-09-16T17:56:50.818690+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/16/anthropic-merges-claude-chat-and-cowork-in-one-interface/",
+      "title": "Anthropic merges Claude chat and Cowork in one interface",
+      "summary": "Anthropic is initially releasing these features to Pro and Max plan subscribers.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-16T16:30:00+00:00",
+      "sent_at": "2026-09-16T17:56:50.818690+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/996234/anthropic-one-claude-cowork-docs-slides",
+      "title": "Claude comes for Gemini with its own take on Docs and Slides",
+      "summary": "Claude is getting a pair of new tools today: Docs and Slides. They'll let you create documents and presentations through Claude chats, which you can export, edit, and share with other users. As part of the announcement, Anthropic is also simplifying how Claude chats work, merging regular chats and Cowork into \"one Claude,\" with all [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-16T16:30:00+00:00",
+      "sent_at": "2026-09-16T17:56:50.818690+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2259938/anthropics-claude-can-now-create-editable-documents-for-you-cowork-chat-together/",
+      "title": "Anthropic's Claude can now create editable documents for you",
+      "summary": "Anthropic is adding the ability to create docs, slideshow and access Cowork capabilities inside chat. It will roll out to Pro and Max subscribers first.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-09-16T16:30:00+00:00",
+      "sent_at": "2026-09-16T17:56:50.818690+00:00"
+    },
+    {
+      "link": "https://claude.com/blog/cowork-is-now-claude",
+      "title": "Claude Cowork and chat are now one Claude",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-16T16:26:25+00:00",
+      "sent_at": "2026-09-16T17:56:50.818690+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/pc-components/ram/ai-induced-memory-shortage-is-changing-how-devices-are-built-fairphone-says-memory-now-60-percent-of-materials-cost-smaller-laptop-and-phone-makers-are-redesigning-products-and-have-to-test-for-fake-chips",
       "title": "AI-induced Memory shortage is changing how devices are built, Fairphone says memory now 60% of materials cost — smaller laptop and phone makers are redesigning products and have to test for fake chips",
       "summary": "For smaller device manufacturers, rising memory prices are only part of the problem as limited availability forces companies to rethink everything from motherboard designs to procurement strategies.",
@@ -5138,78 +5210,6 @@
       "category": "AI",
       "published": "2026-09-02T16:54:23+00:00",
       "sent_at": "2026-09-02T18:28:21.043632+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/02/psa-amazons-shopping-ai-can-now-tell-you-if-that-message-is-a-scam/",
-      "title": "PSA: Amazon’s shopping AI can now tell you if that message is a scam",
-      "summary": "Amazon is adding a scam-detection feature to Alexa for Shopping that can verify whether suspicious emails, texts, and other messages actually came from the retailer.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-02T14:56:34+00:00",
-      "sent_at": "2026-09-02T14:57:03.945559+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/data-centers/gopro-to-expand-into-ai-data-centers-after-usd285-million-merger-with-optical-photonics-company-move-to-solve-camera-makers-financial-woes-move-manufacturing-back-into-the-us",
-      "title": "GoPro to expand into AI data centers after $285 million merger with optical-photonics company — move to solve camera maker’s financial woes, move manufacturing back into the US",
-      "summary": "GoPro is merging with optical-photonics company Starman Optical in a deal worth at least $285 million. This move will wipe out the company's $92 million outstanding debt, let it start manufacturing its cameras in the U.S., and expand its portfolio to include optical transceivers for AI data centers.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-02T14:43:10+00:00",
-      "sent_at": "2026-09-02T14:57:03.945559+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/dram/samsung-teases-new-hbm5-with-twice-the-performance-of-hbm4e-ambitious-data-transfer-rates-could-hint-at-4-096-bit-interface",
-      "title": "Samsung teases new HBM5 with twice the performance of HBM4E —ambitious data transfer rates could hint at 4,096-bit interface",
-      "summary": "Samsung expects HBM5 to deliver 4 TB/s of bandwidth per stack by late 2020s, which will enable AI accelerators with aggregated memory bandwidth of around 100 TB/s.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-02T14:38:20+00:00",
-      "sent_at": "2026-09-02T14:57:03.945559+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/988261/openai-tumbler-ridge-shooting-lawsuit-aiding-abetting",
-      "title": "OpenAI accused of ‘aiding and abetting’ Tumbler Ridge mass shooting in dozens of new lawsuits",
-      "summary": "OpenAI and its CEO Sam Altman are facing 30 new lawsuits that accuse them of providing \"substantial assistance and encouragement\" to the suspect in Canada's Tumbler Ridge school shooting, as reported earlier by TechCrunch. The new wave of lawsuits was filed in a California federal court on Wednesday by the students, teachers, and the principal [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-02T14:35:03+00:00",
-      "sent_at": "2026-09-02T14:57:03.945559+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/policy/988228/nyc-ai-restrictions-in-schools-chatbot-ban",
-      "title": "NYC bans AI use for students until they reach high school",
-      "summary": "New York City mayor Zohran Mamdani has announced a new policy today that will ban younger schoolchildren from using AI in classrooms. The one-year moratorium, effective in the 2026-2027 school year, will impact about 600,000 public school students in 2-K through eighth grade and is being introduced alongside additional limits on digital devices and a [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-02T14:30:00+00:00",
-      "sent_at": "2026-09-02T14:57:03.945559+00:00"
-    },
-    {
-      "link": "https://venturebeat.com/orchestration/forward-deployed-engineering-is-how-enterprise-ai-learns",
-      "title": "Forward-deployed engineering is how enterprise AI learns",
-      "summary": "Presented by Zeta Every forward-deployed engineering (FDE) pitch sounds identical for the first ten minutes: an engineer embedded on-site, a workflow encoded within weeks, a demo that finally works on the customer&#x27;s real data. What differs is what happens in the following months, and most vendors will not tell you until you ask directly. FDE has become one of enterprise AI’s most consequential operating models. Vendors are building entire go-to-market motions around engineers who embed with customers, wire products into operating environments, and make the demo real. Investors often read FDE headcount as a growth signal and buyers read it as a promise of speed. Neither tells you whether the work is becoming a product advantage or simply accumulating as delivery labor. The test is simple: after an FDE engagement, does the next customer start with more product and fewer unknowns — or just a new services team? FDE is not one thing. At its weakest, it papers over a product that cannot yet stand on its own, translating by hand what the software should eventually understand. At its strongest, it is a disciplined product-learning function: it finds the edge cases of an AI-native architecture and turns them into reusable capability. The org chart looks the same, but the economics and trajectory do not. FDE is valuable because it creates automation that powers a system of intelligence. A system of intelligence is more than software that executes workflows. It captures enterprise context, incorporates what it learns from every deployment, and improves the quality of future decisions. Forward-deployed engineers are how that context enters the system in the first place. The engineers are the context layer Model choice still matters in some domains. But in many enterprise workflows, the bigger constraint is not the model, it is what the enterprise knows about itself including business rules, exceptions, workflow logic, and definitions that took a decade of operating history to settle. Access to data is not the same as understanding the business. In one large telecommunications deployment, an initial definition of a “high-intent” customer did not survive contact with the operating systems. The model’s signal said one thing while the retention team’s actual save-desk criteria said another. Those criteria were built from years of which offers actually worked, on which tenure bands, in which regions. No schema documented that logic; it lived in the judgment of people who’d been doing the job for a decade. An engineer had to sit with them, extract the knowledge, and encode it before the intelligence layer we were building could be trusted to trigger an action instead of just a score. Once that logic was encoded into the intelligence layer, new acquisition and retention use cases could move from idea to execution in days rather than months. Rather than rebuilding the integration each time, teams were adding decisions to a shared foundation. That kind of work produces more than an answer for one customer. Properly captured, it can become a semantic mapping, a policy module, a workflow template, a connector, or an evaluation that guards the decision in future deployments. The FDE is the context layer delivered first as a person, who then translates and delivers it as product. Sandbox, mud, and what happens to the learning The useful question in a diligence call or renewal conversation is not whether a vendor has FDEs. It&#x27;s whether an engineer touching your environment is playing in a sandbox of tools, or trying to dig you out of the mud. In the sandbox, FDEs use a general-purpose engine in specific, gnarly environments. Their job is to find where the engine needs a new part, install it, and feed the learning back so that part can ship again. In the mud, the engineer manually constructs a missing capability one customer at a time, and there is no engine underneath waiting to receive the part; instead, it’s another custom build. Do not mistake these for a clean binary, though. Most companies live somewhere in the middle: reusable playbooks and connectors for the common cases, bespoke judgment for everything else. From the outside, sandbox, mud, and the middle can all look identical: a smart engineer, on-site, writing code against your data. The tell is what happens to what they learn. Either the next deployment begins with fewer unknowns, less custom code, and better tests, or it begins from zero with a prettier deck. The strategic version of FDE treats every engagement as a disciplined learning loop. It starts with observing the exception in the field, codifying it into a reusable artifact, validating it with an evaluation and security review, releasing it into the product, then measuring whether the next deployment actually got easier. That last step is where most companies quietly fail. Not every field discovery belongs in the core product. Some customer logic is proprietary, temporary, or too idiosyncratic to generalize. Good teams know the difference between three things that get lumped together under “FDE”: product intelligence that compounds across every customer, configurable customer logic that&#x27;s reusable for one account but shouldn&#x27;t ship broadly, and one-off services work that is exactly what it looks like. Customization is expected. The failure lies in not labeling which bucket the work is in, or in losing the learning from the parts that can compound. This is the difference between a company that gets better at deploying and a product that gets better at understanding. The former can build a capable services business; its advantage lies in execution and relationships. The latter builds compounding product capability that persists after the engineer leaves. The best FDE organization changes shape The uncomfortable conclusion for teams building FDE functions is that human translation should shrink per unit of value delivered, even as absolute headcount grows. A fast-growing company may keep adding FDEs while still making each deployment materially lighter because more of the required logic already exists in the product. Each deployment should require less custom engineering than the last, with engineers spending more time extending reusable capabilities than rebuilding the same integrations, workflows, and decision logic. Track four things: engineers per live workflow engineering hours per deployment time-to-value by vertical and the share of implementation work that gets reused rather than rebuilt. Track one more that matters just as much and gets watched far less: the productization lag, the time between a field discovery, and a tested capability available to the next customer. Over time, that lag should fall, custom engineering should decline, and reuse should increase. If none of these are improving, the organization is delivering, without learning whatever the headcount chart says. FDE is scaffolding only when it stays outside the building. The goal isn&#x27;t to eliminate the people doing the work; it&#x27;s to ensure more of what they learn becomes load-bearing product capability. Three questions that get past the pitch 1. How is FDE priced? Pricing is a signal rather than a verdict. A separate professional-services line may reflect honest transparency, bundled FDE may be a loss leader paid for by utilization. The more useful question is whether the contract, renewal, and margin story make clear which work is repeatable productization and which is bespoke delivery. 2. Where does field learning go? Don&#x27;t infer this from résumés alone. Ask who owns the handoff from FDE to product, what artifacts are produced, and how quickly they become tested, supported capabilities. The organizational interface is what reveals whether learning compounds, not the job title. 3. What got faster on the last repeat deployment? Ask for a specific vertical and a specific delta such as fewer engineering hours, fewer weeks to value, fewer custom integrations, or a higher reuse rate. A credible vendor can name what changed and how it was measured. General claims about “learnings” and “playbooks” are not enough. Enterprise AI creates lasting advantage when every deployment leaves behind more than a satisfied customer. It leaves behind a deeper understanding of how enterprises operate. The goal isn’t simply to deploy AI. It’s to build a system of intelligence that captures enterprise context, converts customer learnings into reusable capability, and compounds over time. Neej Gore is Chief Data Officer at Zeta. Sponsored articles are content produced by a company that is either paying for the post or has a business relationship with VentureBeat, and they’re always clearly marked. For more information, contact sales@venturebeat.com .",
-      "source": "VentureBeat",
-      "category": "AI",
-      "published": "2026-09-02T14:00:00+00:00",
-      "sent_at": "2026-09-02T14:57:03.945559+00:00"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/09/02/1142879/facilitating-ai-integration-with-simplicity-at-scale/",
-      "title": "Facilitating AI integration with simplicity at scale",
-      "summary": "As companies scale, the technology supporting operations can become a liability just as quickly as it becomes an asset. Disconnected systems, site-specific tools, spreadsheets, and manual workarounds can create data silos that make it harder to spot problems early, coordinate responses, and make decisions with confidence. For Jabil, a global manufacturing company with more than&#8230;",
-      "source": "MIT Technology Review",
-      "category": "AI",
-      "published": "2026-09-02T14:00:00+00:00",
-      "sent_at": "2026-09-02T14:57:03.945559+00:00"
-    },
-    {
-      "link": "https://aisle.com/blog/aisle-discovered-six-curl-cves-after-openai-and-anthropic-found-zero",
-      "title": "Six curl CVEs after OpenAI and Anthropic came back with zero",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-02T13:43:14+00:00",
-      "sent_at": "2026-09-02T14:57:03.945559+00:00"
     }
   ]
 }
