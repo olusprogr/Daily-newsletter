@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/09/15/we-dont-need-ai-regulation-leave-safety-to-us-nvidias-jensen-huang-says/",
+      "title": "We don’t need AI regulation — leave safety to us, Nvidia’s Jensen Huang says",
+      "summary": "AI isn't some new form of \"alien mind,\" according to Jensen Huang. It's just hardware and software, so safety can be engineered by each AI product maker.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-16T00:20:39+00:00",
+      "sent_at": "2026-09-16T01:03:59.355175+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/995917/data-center-nyt-midterm-poll-september",
+      "title": "AI and data centers are incredibly unpopular in every poll",
+      "summary": "Poll data released Tuesday by the New York Times and Siena University confirms what we've already been seeing, and what politicians are responding to - AI and data centers are incredibly unpopular. Asked if they support or oppose the construction of data centers to power AI tech, 61 percent of the 1,503 likely voters surveyed [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-15T23:34:25+00:00",
+      "sent_at": "2026-09-16T01:03:59.355175+00:00"
+    },
+    {
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/",
+      "title": "Gemini 3.8 Live and 3.8 Live Extended Thinking",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-15T17:38:18+00:00",
+      "sent_at": "2026-09-16T01:03:59.355175+00:00"
+    },
+    {
+      "link": "https://dank.systems/posts/2026-09-15-ai-bear.html",
+      "title": "Why I'm still bearish on LLMs after Navier-Stokes",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-15T17:37:12+00:00",
+      "sent_at": "2026-09-16T01:03:59.355175+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-leaders-clash-over-safety-fears-after-anthropic-whistleblower-says-ai-could-kill-us-all-by-2030-openai-anthropic-and-xai-figureheads-call-for-external-governance-while-jensen-huang-says-worries-are-made-up",
+      "title": "AI leaders clash over safety fears after Anthropic whistleblower says AI could 'kill us all' by 2030 — OpenAI, Anthropic and xAI figureheads call for external governance, while Jensen Huang says worries are 'made up'",
+      "summary": "The CEOs of OpenAI and Anthropic, as well as other industry leaders, are calling for a general slowdown in AI development over safety fears. On the flip side, Chinese authorities, the U.S. President, and CEO of Nvidia have dismissed their concerns as fearmongering.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-15T17:19:36+00:00",
+      "sent_at": "2026-09-16T01:03:59.355175+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/15/meta-expands-subscription-push-with-new-ai-focused-plans/",
+      "title": "Meta expands subscription push with new AI-focused plans",
+      "summary": "Meta One bundles expanded access to the company’s AI tools with premium features across Facebook, Instagram, and WhatsApp.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-15T17:05:24+00:00",
+      "sent_at": "2026-09-16T01:03:59.355175+00:00"
+    },
+    {
+      "link": "https://www.404media.co/theres-a-100-chance-ai-agents-are-already-ruining-the-internet/",
+      "title": "There's a 100% Chance AI Agents Are Ruining the Internet",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-15T16:38:45+00:00",
+      "sent_at": "2026-09-16T01:03:59.355175+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2255893/older-macbook-still-worth-buying-2026/",
+      "title": "Are older MacBooks still worth buying in 2026?",
+      "summary": "You'll probably want to avoid Intel-powered MacBooks, but Apple Silicon models are solid.",
+      "source": "Engadget",
+      "category": "Hardware",
+      "published": "2026-09-15T16:30:00+00:00",
+      "sent_at": "2026-09-16T01:03:59.355175+00:00"
+    },
+    {
       "link": "https://www.engadget.com/2259695/microsoft-will-hold-a-windows-event-on-october-7/",
       "title": "Microsoft will hold a Windows and Surface event on October 7",
       "summary": "The event is focused on \"Windows, NVIDIA RTX Spark, Surface, and the broader PC ecosystem,\" with Satya Nadella and Jensen Huang among the speakers.",
@@ -5138,150 +5210,6 @@
       "category": "AI",
       "published": "2026-09-01T15:10:58+00:00",
       "sent_at": "2026-09-02T05:34:11.496546+00:00"
-    },
-    {
-      "link": "https://masteranza.github.io/weedout/",
-      "title": "Show HN: Weedout – Safari extension that hides YouTube AI-labeled videos",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-01T22:06:57+00:00",
-      "sent_at": "2026-09-02T00:58:10.989841+00:00"
-    },
-    {
-      "link": "https://9to5mac.com/2026/08/31/apple-openai-forensic-macbook-evidence/",
-      "title": "Apple reveals 'shocking evidence' from ex-employee's MacBook in OpenAI suit",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-01T20:19:11+00:00",
-      "sent_at": "2026-09-02T00:58:10.989841+00:00"
-    },
-    {
-      "link": "https://simonwillison.net/2026/Sep/1/codex-libreoffice/",
-      "title": "The ChatGPT/Codex app bundles a full copy of LibreOffice",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-01T20:07:57+00:00",
-      "sent_at": "2026-09-02T00:58:10.989841+00:00"
-    },
-    {
-      "link": "https://danluu.com/zitron/",
-      "title": "How accurate have Ed Zitron's AI skeptic predictions been?",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-01T18:35:15+00:00",
-      "sent_at": "2026-09-02T00:58:10.989841+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/987575/apple-openai-destroying-evidence-trade-secrets-lawsuit",
-      "title": "Apple accuses OpenAI of destroying evidence",
-      "summary": "Apple is pushing for \"expedited discovery\" in its legal battle against OpenAI over concerns the company is actively destroying evidence, as reported earlier by Bloomberg. In a filing on Monday, Apple alleges OpenAI only just handed over a MacBook used by a former employee at the center of the lawsuit, which contained discussions about \"destroying [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-01T18:19:26+00:00",
-      "sent_at": "2026-09-02T00:58:10.989841+00:00"
-    },
-    {
-      "link": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
-      "title": "Claude Fable 5.1 and Claude Mythos 5.1",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-01T18:01:24+00:00",
-      "sent_at": "2026-09-02T00:58:10.989841+00:00"
-    },
-    {
-      "link": "https://spectrum.ieee.org/president-ieee-note-september-2026",
-      "title": "IEEE President’s Note: Technology for Social Good",
-      "summary": "Across IEEE, our strength lies not only in the excellence of our individual communities but also in our ability to bring them together around shared problems that demand interdisciplinary solutions. Our mission as a public charity—to advance technology for the benefit of humanity—is becoming an increasingly powerful differentiator. It is more than a statement of principle; it is a strategic advantage. When engineers and technologists serve with purpose and lead with heart, they strengthen the future of our profession and demonstrate why IEEE is uniquely positioned to lead at the intersection of technology and societal impact. IEEE Humanitarian Technologies is a consortium of programs and initiatives—supported by a global network of volunteers and technical professionals—working together to apply technology to solve the world’s most pressing problems. These include Empower a Billion Lives , EPICSinIEEE , MOVE , IEEE REACH , IEEE SIGHT , IEEE Smart Village , and IEEE Tech4Good . These programs embody our mission in action. They are not simply charitable activities ; they are strategic assets that help IEEE lead globally, innovate boldly, and remain essential to technical professionals at every stage of their careers. While deeply human in purpose, humanitarian technologies are fundamentally engineering challenges, demanding the full depth of engineering rigor and realized through disciplined, deeply technical work. Cultivating Technical Leaders IEEE Humanitarian Technologies sits at the intersection of engineering excellence, societal need, and global opportunity. Its programs allow our members to show the world that engineering and technology are forces for good, capable of addressing urgent challenges with precision, creativity, and compassion. These programs do more than inspire; they strengthen the technical ecosystem that underpins IEEE’s leadership. Bringing together experts from power and energy, communications, computing, robotics, biomedical engineering, and many other domains to address real-world problems, these interdisciplinary intersections are where breakthroughs emerge. When engineers and technologists collaborate with the right humanitarian frameworks across sectors and cultures, they illuminate new constraints, design pathways, and opportunities that traditional project environments rarely reveal. This is how humanitarian technologies help shape the future of engineering itself. These efforts also illustrate a broader opportunity for IEEE. By identifying critical challenges that can be addressed only through collaboration across disciplines, IEEE can mobilize the power of its global community toward solving problems around the world. In doing so, we strengthen both our impact on society and the value we provide to members, partners, and future generations. These programs also build the leadership capacity our profession needs. Engineers working in humanitarian contexts learn to navigate ambiguity, engage diverse stakeholders, manage constraints, and design for environments where failure has real human consequences. They develop systems thinking, ethical reasoning, and cross‑cultural fluency—competencies increasingly essential in a world where technology and society are deeply intertwined. They also learn to transition from R&amp;D to implementation by engineering the support, manufacturing, and delivery systems that make solutions viable in specific countries, all while balancing competing requirements. In doing so, humanitarian programs equip professionals with the capabilities that define modern technical practice. Humanitarian technologies also help prepare the future technical workforce. Students and young professionals increasingly seek meaningful, high‑impact work. By engaging in purpose‑driven projects, they can discover their own capacity to grow, strengthen their technical skills, and become the leaders and problem‑solvers who will guide our profession forward. Purpose Inspires Engagement Our members feel this deeply. Engagement research shows that members increasingly cited “giving back to my profession and the world community” as a reason for joining the organization and renewing their membership. Those with higher membership grades identify “participation in humanitarian technology efforts” as one of the most satisfying experiences IEEE offers. These are not just data points; they are also signals of what our community values and what it expects IEEE to champion. Younger generations amplify this even more. Millennials view IEEE through a global lens, prioritizing “humanitarian impact” and “large-scale collaboration.” One millennial member shared that teaching robotics to children in under-resourced communities transformed them into a deeply engaged member. Gen Z members emphasize inclusivity, environmental responsibility, and purpose-driven engineering, recommending that IEEE offer humanitarian-based challenges and competitions to increase engagement. These findings reveal something powerful: Humanitarian programs are not only meaningful; they also are magnetic. They attract younger engineers, keep them engaged, and help them build a professional identity rooted in purpose and impact. They also create loyalty and develop the leadership pipeline IEEE needs for the decades ahead. These programs also strengthen our brand. Members across segments describe IEEE as an organization that works hard to make real changes in the world. That perception is not just flattering, it is strategic. It positions IEEE as a global leader in responsible innovation that can be trusted to guide technology for the public good, catalyzing innovation that benefits society at scale. As we look ahead, IEEE has an opportunity to become the world’s leading convening force for developing interdisciplinary technology solutions to solve humanity’s most important challenges. Our future relevance will be defined not only by the technologies we advance but also by the problems we choose to help solve. Read more powerful stories about how technology is improving lives across global initiatives in the 2025 IEEE Social Impact Report at ieee.org/advancing-technology/building-better-world/social-impact-report . —MARY ELLEN RANDALL IEEE president and CEO Please share your thoughts with me: president@ieee.org .",
-      "source": "IEEE Spectrum",
-      "category": "Innovationen",
-      "published": "2026-09-01T18:00:04+00:00",
-      "sent_at": "2026-09-02T00:58:10.989841+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2247151/new-android-find-hub-feature-will-help-you-remember-where-you-put-important-things/",
-      "title": "A new Android Find Hub feature will help you remember where you put important things",
-      "summary": "Google also announced a new visual assistant for Gemini Live and Keep integration with Messages.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-01T18:00:00+00:00",
-      "sent_at": "2026-09-02T00:58:10.989841+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/987429/google-needs-hollywood-more-than-the-studios-need-ai",
-      "title": "Google needs Hollywood more than the studios need AI",
-      "summary": "Google has reportedly been reaching out to a number of Hollywood's biggest studios, hoping to strike licensing agreements that would allow it to train its AI models on copyrighted material in exchange for massive piles of cash. In theory, these deals would be a win-win: a huge financial boon to the studios that would also [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-01T22:50:29+00:00",
-      "sent_at": "2026-09-01T22:59:35.959021+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/01/afterquery-reportedly-becomes-y-combinators-fastest-ever-unicorn-now-valued-at-3-2b/",
-      "title": "AfterQuery reportedly becomes Y Combinator’s fastest-ever unicorn, now valued at $3.2B",
-      "summary": "AI model-training startup AfterQuery has reportedly raised a round that valued it at $3.2 billion, just five months after announcing its $30 million Series A at a $300 million valuation in April.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-01T22:08:24+00:00",
-      "sent_at": "2026-09-01T22:59:35.959021+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/987830/anthropic-claude-fable-mythos-5-1",
-      "title": "Anthropic launches Claude Fable 5.1 and says it&#8217;s up to 45 percent cheaper for agentic work",
-      "summary": "Anthropic says its newest AI models, Fable 5.1 and Mythos 5.1, address criticisms from customers about price, data retention, and overzealous safeguards. The company claims Claude Fable 5.1 offers stronger performance than Fable 5, but costs around 25 percent less typically and up to 45 percent less for complex agentic tasks, thanks to reduced pricing [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-01T22:01:36+00:00",
-      "sent_at": "2026-09-01T22:59:35.959021+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2249112/meta-new-ai-transcription-model-can-distinguist-between-multiple-speakers-and-languages-in-real-time/",
-      "title": "Meta's new AI transcription model can distinguish between multiple speakers and languages in real-time",
-      "summary": "The latest release from Meta Superintelligence Lab is a powerful transcription model.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-01T21:56:29+00:00",
-      "sent_at": "2026-09-01T22:59:35.959021+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/01/open-ais-astra-model-is-on-the-way-and-very-good-at-breaking-into-computer-systems/",
-      "title": "Open AI’s Astra model is on the way — and very good at breaking into computer systems",
-      "summary": "OpenAI previewed the precautions it is taking as it prepares to release Astra, its newest, cyber-critical LLM.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-01T21:06:24+00:00",
-      "sent_at": "2026-09-01T22:59:35.959021+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/gadgets/987670/lenovo-yoga-7i-2in1-deal-sale",
-      "title": "Lenovo&#8217;s 2-in-1 Yoga 7i is a great Labor Day deal at $750",
-      "summary": "Best Buy is celebrating Labor Day all week long with big deals, including a deep discount on the Lenovo Yoga 7i 2-in-1, taking its original $1,1199.99 price down to $749.99. It’s a capable configuration for the price, with a Core 7 Ultra 256V processor, 16GB of LPDDR5X memory, and a 512GB SSD. The IPS touchscreen [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-09-01T20:54:08+00:00",
-      "sent_at": "2026-09-01T22:59:35.959021+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/01/googles-android-update-tackles-motion-sickness-accessibility-and-more/",
-      "title": "Google’s Android update tackles motion sickness, accessibility, and more",
-      "summary": "While some of the features see Google playing catch-up to Apple, which already offers similar features for iPhone users, others specifically leverage Gemini to provide various improvements.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-01T20:53:05+00:00",
-      "sent_at": "2026-09-01T22:59:35.959021+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/987695/openai-astra-unreleased-model-cybersecurity-delay",
-      "title": "OpenAI delayed its new model’s development after the Hugging Face hack",
-      "summary": "After an unreleased OpenAI model wreaked enough havoc to make international headlines, OpenAI delayed the development of a different unreleased model suite, Astra, in order to shore up its safety work, the company wrote Tuesday in a blog post. In July, an unreleased OpenAI model broke out of its restricted environment, finagled its way into [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-01T20:45:49+00:00",
-      "sent_at": "2026-09-01T22:59:35.959021+00:00"
     }
   ]
 }
