@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/09/17/huawei-plans-q1-2027-launch-of-new-ai-chip-as-it-takes-on-nvidia/",
+      "title": "Huawei plans Q1 2027 launch of new AI chip as it takes on Nvidia",
+      "summary": "Huawei is accelerating the launch of its next-generation Ascend 960DT AI chip as it pushes to compete with Nvidia and close China’s AI computing gap with the U.S.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-17T14:06:14+00:00",
+      "sent_at": "2026-09-17T14:40:16.297843+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/podcast/996412/microsoft-ai-ceo-mustafa-suleyman-regulation-safety-anthropic-claude",
+      "title": "Microsoft AI CEO says AI threats are real, and Anthropic is making it worse",
+      "summary": "Today, I’m talking with Mustafa Suleyman, the CEO of Microsoft AI. As you’re no doubt aware, the biggest story in tech right now is the spiraling debate about AI safety and regulation.&#160; It should come as no surprise that Mustafa has strong opinions on how AI should be built and regulated. Microsoft just published a [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-17T14:00:00+00:00",
+      "sent_at": "2026-09-17T14:40:16.297843+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/996775/ai-is-feared-globally-as-the-destroyer-of-jobs",
+      "title": "AI is feared globally as the destroyer of jobs",
+      "summary": "Pew Research has published a new global survey that sheds light on how people view AI, including its impact on jobs, life in general, and income inequality. The survey questioned 42,151 people across 37 countries from February 8th to May 13th - well ahead of recent apocalyptic warnings. A majority sees AI as a threat [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-17T14:00:00+00:00",
+      "sent_at": "2026-09-17T14:40:16.297843+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/996860/lunacy-audio-nova-ai-music-plugin-vst",
+      "title": "Lunacy Audio Nova is a place to build and sell your own AI-powered music plugins",
+      "summary": "Lunacy, purveyor of fine VST plugins like Cube, a synth that you control by moving a ball around a 3D space, has just launched Nova, a platform where creators can build custom music tools using AI and sell them to others. At first, there will be a handful of instruments available, built either by Lunacy [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-17T14:00:00+00:00",
+      "sent_at": "2026-09-17T14:40:16.297843+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/17/rival-ai-agents-instinct-and-metas-muse-both-add-the-ability-to-make-calls/",
+      "title": "Rival AI agents, Instinct and Meta’s Muse, both add the ability to make calls",
+      "summary": "People can use these assistants to make restaurant reservations and cancel subscriptions.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-17T13:46:16+00:00",
+      "sent_at": "2026-09-17T14:40:16.297843+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/17/google-nvidia-and-anthropic-want-emerald-ai-to-find-space-on-the-grid-for-more-data-centers/",
+      "title": "Google, Nvidia, and Anthropic want Emerald AI to find space on the grid for more data centers",
+      "summary": "A new coalition that includes Google, Nvidia, Anthropic, and Emerald AI wants to find 100 GW of grid capacity for new data centers.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-17T13:38:33+00:00",
+      "sent_at": "2026-09-17T14:40:16.297843+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/17/lucid-motors-has-a-potential-robotaxi-partner-for-europe/",
+      "title": "Lucid Motors has a potential robotaxi partner for Europe",
+      "summary": "The company is partnering with mobility platform Bolt -- but no vehicle orders have been placed just yet.",
+      "source": "TechCrunch",
+      "category": "Autonomes Fahren",
+      "published": "2026-09-17T13:26:32+00:00",
+      "sent_at": "2026-09-17T14:40:16.297843+00:00"
+    },
+    {
+      "link": "https://www.petervijeh.com/projects/reddit-ner",
+      "title": "I had Gemini train its own replacement for $9",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-17T13:17:16+00:00",
+      "sent_at": "2026-09-17T14:40:16.297843+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/09/16/iceland-based-treble-raises-18-million-for-its-voice-simulation-platform/",
       "title": "Iceland-based Treble raises $18 million for its voice simulation platform",
       "summary": "Treble's voice simulation platform is used by voice AI model developers, AI wearable, and robotics companies",
@@ -5066,78 +5138,6 @@
       "category": "Hardware",
       "published": "2026-09-03T16:00:00+00:00",
       "sent_at": "2026-09-03T16:54:50.849039+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2250197/nvidia-buys-hugging-face/",
-      "title": "NVIDIA is buying Hugging Face for $12.93 billion",
-      "summary": "NVIDIA has confirmed it is buying AI software repository Hugging Face.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-03T12:18:21+00:00",
-      "sent_at": "2026-09-03T12:35:13.927593+00:00"
-    },
-    {
-      "link": "https://spectrum.ieee.org/industrial-robot-cable-carrier-protection",
-      "title": "Protecting Dynamic Industrial Robot Cable Carriers",
-      "summary": "This article is brought to you by Tsubaki KabelSchlepp . In modern automated manufacturing, six-axis articulated robots perform high-speed, multidirectional maneuvers under demanding operational cycles. However, as robot arms swivel, rotate, and extend, the electrical cables, fiber optics, and pneumatic hoses supplying them endure severe mechanical stress. Torsional twist, rapid acceleration, and repeated contact with machine structures often lead to premature conductor fatigue, insulation breakdown, and costly unplanned production halts. To overcome these multi-axis motion challenges, the Tsubaki KabelSchlepp Robotrax System provides a specialized three-dimensional cable carrier engineered specifically for complex robotic motion. Managing High Tensile Forces With Central Steel Technology Conventional cable carriers often transfer operational movement stress directly onto internal electrical lines and hoses. The Robotrax system changes this dynamic through a central steel cable that runs through the core of every chain link. The Robotrax system’s central steel cable absorbs the primary tensile loads and preserves conductor integrity, dramatically extending cable service life. When robot arms undergo rapid directional shifts and accelerations up to 10 g, this internal steel cable absorbs the primary tensile loads. By isolating electrical and fluid lines from pulling forces, the design preserves conductor integrity and dramatically extends cable service life. Mechanics can easily calibrate and adjust system tension using an integrated clamping piece, ensuring consistent mechanical support throughout long operational cycles. Spherical Link Design and Modular Cable Routing The foundation of the Robotrax system lies in its open, single-piece plastic links featuring spherical snap-on connections on both sides. This geometry allows the carrier to flex smoothly across three axes, providing radial rotation of up to ±450 degrees per meter depending on the model size. To optimize internal organization, carrier links contain up to three distinct chambers. This physical separation prevents signal interference and mechanical abrasion between heavy power lines, sensitive data channels, and fluid hoses. For standard models (R040 through R100), technicians can press cables directly into the carrier without tools, drastically reducing installation and maintenance time. Larger configurations, such as the R140X, incorporate swiveling crossbars with snap locks alongside vertical and horizontal dividers for customized interior partitioning. ​ROBOTRAX System Steel cable for transferring extremely high tensile forces Tension piece for locking the chain links Type with toolless opening swivel crossbars and divider module available Open design – Fast cable laying as the cables are simply pressed in – Easy checking of all cables Special plastic for long service life Protective covers or heat shields made from different materials are available for different environmental conditions Quick-release bracket for fixing and continuation Strain relief with LineFix clamps Protection against hard impacts, excessive abrasion and premature wear as well as limitation of the bending radius through protector Active Retraction and Impact Protection Large robot work envelopes and high-speed motion trajectories can cause loose cable carrier loops to swing and strike the robot body. To eliminate these destructive collisions, Tsubaki KabelSchlepp integrates the Pull Back Unit (PBU). The PBU serves as an active retraction mechanism that maintains optimal tension on the cable carrier throughout the entire motion cycle. By preventing excess slack and eliminating interfering contours, the PBU minimizes collision risks across complex movement paths. The unit requires zero maintenance on its retraction element and offers standard mounting configurations for leading industrial robot platforms, including KUKA, ABB, and FANUC. Tsubaki KabelSchlepp’s Pull Back Unit maintains optimal tension on the cable carrier and minimizes collision risks across complex movement paths. Additionally, external protectors can be retrofitted onto individual chain links. These durable impact shields limit the minimum bending radius to prevent over-flexing while shielding the chain body from severe external abrasion. If wear occurs, technicians simply replace the modular protector rather than the entire cable carrier assembly. Built for Demanding Industrial Environments From automotive welding cells to high-speed machining centers, Robotrax systems adapt to severe working conditions through tailored protective accessories: Heat Shields: Aluminum-coated textile fiber covers protect against radiated heat, hot weld spatter, and flying sparks. Protective Covers: Coated polyester sleeves shield sensitive lines against aggressive cutting fluids, hydraulic oils, paint overspray, and abrasive dust. LineFix Strain Relief: Multi-layer clamping devices anchor cables securely at both ends to prevent axial displacement during intense motion. By combining central load absorption, multi-axis flexibility, and active retraction control, the Robotrax system offers plant engineers and system integrators a reliable path toward maximizing robot uptime and reducing total operational costs.",
-      "source": "IEEE Spectrum",
-      "category": "Innovationen",
-      "published": "2026-09-03T12:18:21+00:00",
-      "sent_at": "2026-09-03T12:35:13.927593+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/cpus/intel-eliminates-fellow-titles-changes-standard-of-technical-leadership-combines-deep-expertise-with-strategic-vision-and-measurable-tactical-progress",
-      "title": "Intel scraps 44-year-old 'Fellow' title for top scientists, changes 'standard of technical leadership' — technical luminaries must now deliver measurable business results, combine deep expertise with strategic vision and 'measurable tactical progress'",
-      "summary": "Intel gets rid of hundreds of vice presidents, replaces 'Fellows' with 'distinguished engineers,' changes 'standards of technical leadership.'",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-03T12:13:44+00:00",
-      "sent_at": "2026-09-03T12:35:13.927593+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/03/amazons-zoox-expands-its-robotaxi-service-to-las-vegas-airport/",
-      "title": "Amazon’s Zoox expands its robotaxi service to Las Vegas airport",
-      "summary": "Zoox is expanding to this critical ride-hailing destination a few weeks after it started charging for robotaxi rides.",
-      "source": "TechCrunch",
-      "category": "Autonomes Fahren",
-      "published": "2026-09-03T12:12:56+00:00",
-      "sent_at": "2026-09-03T12:35:13.927593+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/985474/nvidia-buying-hugging-face-deal",
-      "title": "Nvidia is buying Hugging Face for almost $13 billion",
-      "summary": "Nvidia has agreed to buy Hugging Face for $12.93 billion, bringing one of the most popular hosting platforms for open-source AI models, datasets, and tools under the ownership of the world's biggest AI chipmaker. Hugging Face is an online platform founded in 2016 that gives AI developers a space to share their projects and data [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-03T12:12:06+00:00",
-      "sent_at": "2026-09-03T12:35:13.927593+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/video-games/pc-gaming/rpcs3-emulator-devs-slam-nvidia-dlss-5-as-ai-slop-generator-says-industry-pushing-more-upscalers-and-frame-generation-to-hallucinate-games-and-hide-their-lack-of-optimisation",
-      "title": "RPCS3 emulator devs slam Nvidia DLSS 5 as 'AI-slop generator' — says industry pushing 'more upscalers and frame generation to hallucinate games and hide their lack of optimisation'",
-      "summary": "RPCS3 explains why modern temporal upscalers are difficult to implement in PS3 emulation as modders continue experimenting with the leaked DLSS 5 DLL.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-03T12:10:38+00:00",
-      "sent_at": "2026-09-03T12:35:13.927593+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/laptops/iconic-packard-bell-brand-rises-from-the-ashes-after-13-years-with-the-dotbook-14-at-ifa-colorful-and-affordable-intel-twin-lake-laptop-is-europe-only-for-now",
-      "title": "Iconic Packard Bell brand rises from the ashes after 13 years with the DotBook 14 at IFA — colorful and affordable Intel Twin Lake laptop is Europe-only, for now",
-      "summary": "Packard Bell is back, under the wing of Acer at IFA 2026, with the Taiwanese PC maker’s unveiling of the colorful Dot family, including a laptop, headphones, input peripherals, and more.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-03T12:03:26+00:00",
-      "sent_at": "2026-09-03T12:35:13.927593+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2250009/dji-launches-new-robot-vacuums-with-an-eye-toward-data-privacy/",
-      "title": "DJI launches new robot vacuums with an eye toward data privacy",
-      "summary": "The DJI ROMO 2 lineup also includes LiDAR-enabled mopping arms and improved obstacle avoidance.",
-      "source": "Engadget",
-      "category": "Innovationen",
-      "published": "2026-09-03T12:00:00+00:00",
-      "sent_at": "2026-09-03T12:35:13.927593+00:00"
     }
   ]
 }
