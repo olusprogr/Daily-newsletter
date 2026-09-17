@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.nytimes.com/2026/09/16/technology/openai-model-safety-guardrails.html",
+      "title": "OpenAI Discloses Six New Incidents of ‘Concerning’ A.I. Behavior",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-17T01:02:13+00:00",
+      "sent_at": "2026-09-17T03:20:56.433910+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/16/musks-long-time-backer-is-giving-spacex-stock-to-its-investors/",
+      "title": "Musk’s long-time backer is giving SpaceX stock to its investors",
+      "summary": "Valor Equity Partners is handing out stock to its LPs instead of cash returns.",
+      "source": "TechCrunch",
+      "category": "Innovationen",
+      "published": "2026-09-16T23:50:07+00:00",
+      "sent_at": "2026-09-17T03:20:56.433910+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/16/al-gore-has-a-surprisingly-calm-take-on-the-ai-data-center-backlash/",
+      "title": "Al Gore says the real AI risk isn’t data centers — it’s what industry leaders are warning about",
+      "summary": "In an interview with TechCrunch, Al Gore suggested he isn't losing sleep over AI data center emissions — he's more worried about the AI industry's own warnings about where the technology is headed.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-16T23:43:09+00:00",
+      "sent_at": "2026-09-17T03:20:56.433910+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/dyson-robot-vacuum-nurovi-line/",
+      "title": "Meet Dyson's New Robot Vacuum Line: The Dyson Nurovi Line (2026)",
+      "summary": "The Nurovi line includes three lidar-powered robovacs. But to get the model I’m most intrigued by, you’ll need a Costco membership.",
+      "source": "Wired",
+      "category": "Innovationen",
+      "published": "2026-09-16T23:42:55+00:00",
+      "sent_at": "2026-09-17T03:20:56.433910+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/996078/snap-specs-intelligence-ai-agent-ios-mac",
+      "title": "Snap is launching a new Specs AI tool, and it’s coming to iOS and Mac",
+      "summary": "Snap is introducing \"Specs Intelligence,\" a new AI assistant that can connect other digital accounts to help you with things like work tasks and keeping track of travel information. It seems similar to AI assistants like Meta's Muse and Gemini's Spark, though Snap is pitching Specs Intelligence as an \"anticipatory AI service\" that \"helps you [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-16T23:40:00+00:00",
+      "sent_at": "2026-09-17T03:20:56.433910+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/what-snap-expensive-specs-can-actually-do/",
+      "title": "Here’s What Snap’s Expensive Specs Can Actually Do",
+      "summary": "Snap thinks its chunky, pricey smart glasses are the future of human computing, powered by a new AI app and features that do everything from translating languages to improving your golf swing.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-09-16T23:40:00+00:00",
+      "sent_at": "2026-09-17T03:20:56.433910+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2260736/snap-introduces-a-standalone-ai-assistant-specs-intelligence/",
+      "title": "Snap introduces a standalone AI assistant, Specs Intelligence",
+      "summary": "The new assistant works with the company's new AR glasses, but will also have its own mobile and desktop apps.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-09-16T23:40:00+00:00",
+      "sent_at": "2026-09-17T03:20:56.433910+00:00"
+    },
+    {
+      "link": "https://openspec.dev/",
+      "title": "OpenSpec – A lightweight and configurable AI spec framework",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-16T23:06:39+00:00",
+      "sent_at": "2026-09-17T03:20:56.433910+00:00"
+    },
+    {
       "link": "https://www.engadget.com/2259628/japan-ambulance-humanoid-robot-on-site-repairs/",
       "title": "Japanese company develops a humanoid robot 'ambulance' for on-the-spot repairs",
       "summary": "It turns out that breaking down at work isn't a uniquely human experience.",
@@ -5066,150 +5138,6 @@
       "category": "AI",
       "published": "2026-09-02T14:02:35+00:00",
       "sent_at": "2026-09-03T07:46:04.632848+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/meta-pushes-its-new-ai-agent-on-employees-but-eases-off-on-tokenmaxxing/",
-      "title": "Meta Pushes Its New AI Agent on Employees—but Eases Off on Tokenmaxxing",
-      "summary": "The company is reducing pressure on workers to use artificial intelligence tools while encouraging them to experiment with Hatch, its most advanced AI project yet.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-09-03T01:32:02+00:00",
-      "sent_at": "2026-09-03T02:51:47.181184+00:00"
-    },
-    {
-      "link": "https://venturebeat.com/security/googles-gemini-3-8-flash-is-built-for-agents-while-its-cyber-twin-hunts-vulnerabilities",
-      "title": "Google’s Gemini 3.8 Flash is built for agents, while its Cyber twin hunts vulnerabilities",
-      "summary": "Google keeps cranking out Flash models: the company on Wednesday announced two versions of a new 3.8 Flash . The variants include a standard Flash, a “workhorse” model for agentic tasks, software development, and multi-step reasoning, and Flash Cyber optimized for vulnerability detection and mitigation. Google CEO Sundar Pichai said in an X post that 3.8 Flash delivers “significant leaps” from 3.7 Flash across software engineering, agentic tasks, and multi-step reasoning. For instance, it outperformed many large frontier models on the DeepSWE coding benchmark, at far lower cost. Meanwhile, Flash Cyber is the company’s “most capable” cybersecurity model, Pichai said; it also matches frontier-level performance when it comes to discovering vulnerabilities and patching them at scale. The model achieved 86.2% on the CyberGym cybersecurity benchmark and 47.2% on CWE-Bench, which evaluates AI patching abilities. In an internal Google benchmark, the model achieved a more than 70% success rate discovering vulnerabilities across 20 programming languages, Pichai said. 3.8 is Google’s third Flash release in six weeks and comes quickly on the heels of version 3.7. 3.8 working &quot;harder&quot; with &quot;greater diligence&quot; 3.8 Flash is available now in Gemini Enterprise; devs can try it out in the Gemini API via Google AI Studio, Google Antigravity, Android Studio, or generate UIs in Stitch. It is priced at $0.75 per million input tokens and $3.75 per million output tokens — the same introductory pricing as Gemini 3.7 Flash — and users can customize and adjust model effort levels based on their needs around quality, cost, and latency. For instance, when compute efficiency is a priority, they can adjust to lower token overhead, or simply continue working with 3.7 Flash, which is “fully supported for efficiency-first workloads,” Google senior product director Tulsee Doshi and Gemini security lead Raluca Ada Popa wrote in a blog post . “3.8 Flash works harder,” exhibiting “greater diligence” with complex tasks like executing extra reasoning steps, although at times it may use more tokens to maximize performance, Doshi and Popa note. The model has a 1M-token input window and a 64K-token output limit, and can ingest text as well as images, audio, video, and PDF files. 3.8 Flash was evaluated across numerous benchmarks testing coding, multimodal capabilities, computer use, long-context and knowledge work, and scientific reasoning. Google says it also does well in specialized knowledge domains requiring more in-depth analysis and reporting. For instance, the model outperformed its predecessor and other frontier models on benchmarks like Vals Finance Agent V2 for finance, and Harvey&#x27;s Legal Agent Benchmark for law; it also scored 54.9% on Humanity’s Last Exam (HLE)-Verified, reflecting its ability to take on multi-step reasoning tasks across subjects like math, science, and humanities. In one example shared by Google, Gemini 3.8 Flash built a game with a simple prompt using looping techniques in Google’s Antigravity platform. The game uses puzzles, storytelling that changes based on the environment, and images and textures from Nano Banana to create a 3D experience (in this case a wizard navigating a castle). In other instances, the model created a fully-functional DOS version of Google Maps featuring interactive locations, directions, and street views; a 3D visualizer that automatically decomposed devices into layers for inspection with a slider capability; and a topographic map of famous geographical sites based on real datasets from the U.S. Geological Survey, complete with real-time cross-sections, 2D projections, and scientific explanations. According to Arena.ai, 3.8 Flash landed at No. 14 in Agent Arena , ranking above DeepSeek-V4-Pro, and showed a significant jump over Gemini 3.7 Flash (which sits all the way down at No. 32). It debuted at No. 7 in Text Arena, ahead of Claude Opus 5 and Gemini 3.7 Flash. It improved over 3.7 Flash in several areas: multi-turn requests, writing, literature, and language, longer queries, hard prompts, coding, instruction following, software and IT services, and business, management and financial ops. Flash Cyber is already securing Google&#x27;s code Flash Cyber is initially being rolled out to “trusted defenders” through Google’s Fairwind Program , which prioritizes government authorities, critical-infrastructure operators, and other partners looking for advanced cyber defense capabilities. Organizations can apply for access. Google says the model version has undergone “rigorous training” in the cybersecurity domain and represents a “significant leap in prompt injection robustness.” It is particularly adept at autonomous vulnerability discovery — at least, based on internal Gemini benchmarks — and automated patching. It is also very good at coding, Popa said in a video. The goal was to equip defenders with expert-level capabilities to give them a leg up over threat actors (whether malicious, fellow AI agents, or human hackers). “We have invested in vulnerability fixing from the start, and prioritized it over offensive capabilities like exploitation,” Doshi and Popa explain. The model ships a more permissive set of mitigations for cybersecurity safeguards — which is why, for now, it is only being shared with limited partners — and safeguards against misuse in cyber offense and areas like chemical, biological, radiological, and nuclear (CBRN). Google is already using 3.8 Flash Cyber to secure its own code; it produced 2.6 times more correct patches in Chrome vulnerabilities versus much larger commercial models. Wiz — which Google acquired earlier this year at a historic $32 billion — reported that 3.8 Flash Cyber had 7.5% to 9.7% higher recall of real-world vulnerabilities on an internal penetration testing benchmark at 2.3 to 5.2 times lower cost than leading frontier models. Similarly, Google’s Cloud Vulnerability Research found a critical foundational vulnerability in less than 2 hours with 3.8 Flash Cyber. Typically, that research and discovery would take months, Google claims. AI agents are “incredibly skilled” at finding and exploiting vulnerabilities, Popa said. Scanning large codebases with big AI models is expensive, and defenders are overwhelmed. “In cybersecurity, attackers need only find one significant flaw over millions of lines of code. Defenders have to remove every one of those flaws to be able to defend against attackers.” Doug Turner, engineering director for Chrome, described a “vulnerability apocalypse” in recent months due to generative AI. “Simply overnight, we saw a hockey stick increase in the number of software vulnerabilities reported through our vulnerability research program,” he said in a video. One interesting vulnerability 3.8 Flash Cyber discovered had been in Chromium and Chrome for 13 years, he explained. It was a “very subtle bug” that dozens, if not hundreds, of engineers looked at but never flagged. “Gemini 3.8 Flash Cyber is going to allow us to create better suggested fixes so that developers’ lives can get a lot easier.”",
-      "source": "VentureBeat",
-      "category": "AI",
-      "published": "2026-09-03T00:02:18+00:00",
-      "sent_at": "2026-09-03T02:51:47.181184+00:00"
-    },
-    {
-      "link": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/#core-takeaways-about-this-incident",
-      "title": "METR Report on OpenAI / Hugging Face Hacking Incident",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-02T23:08:47+00:00",
-      "sent_at": "2026-09-03T02:51:47.181184+00:00"
-    },
-    {
-      "link": "https://secondthoughts.ai/p/14-reasons-robotics-is-hard",
-      "title": "Reasons robotics is hard",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Innovationen",
-      "published": "2026-09-02T22:02:30+00:00",
-      "sent_at": "2026-09-03T02:51:47.181184+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/988344/trump-administration-new-york-times-openai-lawsuit",
-      "title": "The Trump administration is supporting OpenAI in the NYT copyright lawsuit",
-      "summary": "The Trump administration has intervened in The New York Times' copyright lawsuit against OpenAI, making an argument in favor of the AI lab. The landmark lawsuit, filed in December 2023, alleging that OpenAI unlawfully trained its AI systems on articles from The New York Times and seeks to recoup \"billions of dollars\" in damages from [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-02T16:12:25+00:00",
-      "sent_at": "2026-09-03T02:51:47.181184+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/02/indias-richest-man-now-wants-to-turn-aging-computers-into-ai-ready-pcs/",
-      "title": "India’s richest man now wants to turn aging computers into AI-ready PCs",
-      "summary": "Jio is betting it can turn an aging computer into an AI-ready PC for as little as about $11 for two months.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-02T16:01:48+00:00",
-      "sent_at": "2026-09-03T02:51:47.181184+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/bot-vs-bot-job-interview-ai/",
-      "title": "The Logical End Point of AI Job Interviews Is Two Bots Talking to Each Other",
-      "summary": "Christopher was sick of being ghosted by AI recruiters. So he unleashed ChatGPT on his robot interviewer.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-09-02T15:51:46+00:00",
-      "sent_at": "2026-09-03T02:51:47.181184+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/988355/mrbeast-google-partnership-gemini-fitbit",
-      "title": "Google is sending MrBeast into the wilderness, armed with AI",
-      "summary": "MrBeast will feature Gemini, Google Health, and the Fitbit Air in upcoming videos as part of a multi-year partnership with Google. The deal will kick off with a video featuring Jimmy \"MrBeast\" Donaldson turning to Gemini for wilderness survival advice: First up on September 5 is a new MrBeast video following Jimmy and his crew [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-02T15:47:03+00:00",
-      "sent_at": "2026-09-03T02:51:47.181184+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/news/988415/uber-wayve-robotaxi-london-launch",
-      "title": "Uber beats Waymo as first to launch robotaxis in London",
-      "summary": "Uber beat out Waymo in launching a commercial robotaxi service in London, the city's first. The vehicles use autonomous driving tech developed by Wayve, a UK-based startup, and will initially feature safety drivers behind the wheel. The launch is a milestone for Uber, which has been plotting a UK launch with Wayve for several years. [&#8230;]",
-      "source": "The Verge",
-      "category": "Autonomes Fahren",
-      "published": "2026-09-02T23:00:00+00:00",
-      "sent_at": "2026-09-02T23:50:50.328761+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2248610/uber-launches-first-robotaxis-in-london-with-human-supervisors/",
-      "title": "Uber launches first robotaxis in London (with human supervisors)",
-      "summary": "Uber launches first robotaxis in London (with human supervisors).",
-      "source": "Engadget",
-      "category": "Autonomes Fahren",
-      "published": "2026-09-02T23:00:00+00:00",
-      "sent_at": "2026-09-02T23:50:50.328761+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/02/palo-alto-networks-paid-500m-for-thrive-backed-console-sources-say/",
-      "title": "Palo Alto Networks paid $500M for Thrive-backed Console, sources say",
-      "summary": "The acquisition also leaves Sequoia-backed Serval as the de facto startup leader in AI IT service automation, industry watchers believe.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-02T22:44:56+00:00",
-      "sent_at": "2026-09-02T23:50:50.328761+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/02/techcrunch-disrupt-2026s-new-real-world-ai-stage-features-nvidia-robots-and-extinct-animals/",
-      "title": "TechCrunch Disrupt 2026’s new Real World AI Stage features Nvidia, robots, and extinct animals",
-      "summary": "On our new Real World AI stage, we’ll be focusing on the intersection between the digital and physical, and all the ways we’ll continue to see a blending of the two.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-02T22:24:09+00:00",
-      "sent_at": "2026-09-02T23:50:50.328761+00:00"
-    },
-    {
-      "link": "https://www.nytimes.com/2026/09/01/nyregion/ai-ban-schools-nyc.html",
-      "title": "Mamdani Bans AI in NYC Schools",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-02T20:57:04+00:00",
-      "sent_at": "2026-09-02T23:50:50.328761+00:00"
-    },
-    {
-      "link": "https://ploum.net/2026-09-02-i_dont_have_a_smartphone.html",
-      "title": "I Don't Have a Smartphone",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Hardware",
-      "published": "2026-09-02T17:51:29+00:00",
-      "sent_at": "2026-09-02T23:50:50.328761+00:00"
-    },
-    {
-      "link": "https://quesma.com/blog/mushroom-llm-vision/",
-      "title": "Mushroom hunting with LLMs: what can go wrong?",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-02T16:58:34+00:00",
-      "sent_at": "2026-09-02T23:50:50.328761+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/988334/openai-astra-ai-monitoring-safety",
-      "title": "Researchers fear safety disaster ahead of OpenAI&#8217;s Astra release",
-      "summary": "OpenAI is on the cusp of releasing its most powerful AI model yet, Astra, following weeks of delays to shore up safety protocols after its agents attacked real targets during testing. As details about the model trickle out, researchers are warning it \"may be the single worst development for AI security/safety to date.\" Shortly after [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-02T16:40:50+00:00",
-      "sent_at": "2026-09-02T23:50:50.328761+00:00"
     }
   ]
 }
