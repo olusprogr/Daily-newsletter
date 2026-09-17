@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/09/16/iceland-based-treble-raises-18-million-for-its-voice-simulation-platform/",
+      "title": "Iceland-based Treble raises $18 million for its voice simulation platform",
+      "summary": "Treble's voice simulation platform is used by voice AI model developers, AI wearable, and robotics companies",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-17T05:00:00+00:00",
+      "sent_at": "2026-09-17T09:11:26.216707+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/16/your-startups-next-teammate-might-be-an-ai-agent-gusto-insight-partners-and-leland-explain-what-that-changes-at-techcrunch-disrupt-2026/",
+      "title": "Your startup’s next teammate might be an AI agent: Gusto, Insight Partners, and Leland explain what that changes at TechCrunch Disrupt 2026",
+      "summary": "This session will explore how early-stage companies are building teams where humans and AI agents work alongside each other — and how founders can do that without sacrificing speed, accountability, or culture. Learn more at TechCrunch Disrupt 2026. Register before September 25 to save up to $200.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-17T03:30:00+00:00",
+      "sent_at": "2026-09-17T09:11:26.216707+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/ai/2026/09/apple-reportedly-building-server-packed-with-m-series-ultra-chips-for-ai/",
+      "title": "Apple reportedly building server packed with M-series Ultra chips for AI",
+      "summary": "Planned 2029 debut could make this Apple’s first enterprise server in decades.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-09-16T22:02:46+00:00",
+      "sent_at": "2026-09-17T09:11:26.216707+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/overclocking/developer-vibe-codes-a-tool-to-let-nvidia-rtx-50-series-laptop-owners-crank-up-their-power-limits-can-juice-rtx-5090-mobile-gpu-to-225w",
+      "title": "Developer vibe codes a tool to let Nvidia RTX 50-series laptop owners crank up their power limits — can juice RTX 5090 mobile GPU to 225W",
+      "summary": "A developer has created a fully vibe-coded tool that seems to work to allow some GeForce RTX 50-series laptops to crank their power limits by as much as 28%.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-16T15:19:42+00:00",
+      "sent_at": "2026-09-17T09:11:26.216707+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/semiconductors/piecemakers-bets-edge-ai-devices-will-diverge-from-reliance-on-hbm-custom-designed-memory-fuses-dram-stack-directly-to-the-processor-using-hybrid-bonding",
+      "title": "Piecemakers bets edge AI devices will diverge from reliance on HBM — custom-designed memory fuses DRAM stack directly to the processor using hybrid bonding",
+      "summary": "Nanya-backed DRAM designer PieceMakers began trading in Taipei on Sept. 16 on a bet that AI inference memory won’t be HBM.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-16T14:36:48+00:00",
+      "sent_at": "2026-09-17T09:11:26.216707+00:00"
+    },
+    {
+      "link": "https://institute.deepmind.com/",
+      "title": "The DeepMind Institute",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-16T14:32:11+00:00",
+      "sent_at": "2026-09-17T09:11:26.216707+00:00"
+    },
+    {
+      "link": "https://frvr.com/blog/news/ps5-linux-lead-quits-as-open-source-projects-have-become-a-bunch-of-noobs-using-llms-that-they-dont-even-understand/",
+      "title": "PS5 Linux lead quits: \"a bunch of noobs using LLMs\" that \"they don't understand\"",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-16T14:30:36+00:00",
+      "sent_at": "2026-09-17T09:11:26.216707+00:00"
+    },
+    {
+      "link": "https://openai.com/index/reimagining-advertising-with-ai/",
+      "title": "OpenAI expands ChatGPT ads with Sponsored Agents",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-16T13:51:15+00:00",
+      "sent_at": "2026-09-17T09:11:26.216707+00:00"
+    },
+    {
       "link": "https://www.nytimes.com/2026/09/16/technology/openai-model-safety-guardrails.html",
       "title": "OpenAI Discloses Six New Incidents of ‘Concerning’ A.I. Behavior",
       "summary": "",
@@ -5066,78 +5138,6 @@
       "category": "Innovationen",
       "published": "2026-09-03T12:00:00+00:00",
       "sent_at": "2026-09-03T12:35:13.927593+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2248998/anker-brings-its-ai-chip-to-the-soundcore-space-2-pro-headphones/",
-      "title": "Anker brings its AI chip to the Soundcore Space 2 Pro headphones",
-      "summary": "Anker has a bunch of new AI-infused headphones, earbuds and hearing aids on the way.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-03T07:30:00+00:00",
-      "sent_at": "2026-09-03T07:46:04.632848+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2249482/anker-mindbase-is-a-smart-home-hub-nas-and-security-guard/",
-      "title": "Anker's MindBase is a smart home hub, NAS and security guard",
-      "summary": "Anker's MindBase uses AI to run your smart home, and keep it safe.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-03T07:30:00+00:00",
-      "sent_at": "2026-09-03T07:46:04.632848+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2249106/anker-eufy-at-ifa-2026-new-security-cameras-plus-a-robot-vacuum-and-a-robot-lawnmower/",
-      "title": "Anker Eufy at IFA 2026: New security cameras, plus a robot vacuum and a robot lawnmower",
-      "summary": "Security was the focus of Anker Eufy at IFA this year.",
-      "source": "Engadget",
-      "category": "Innovationen",
-      "published": "2026-09-03T07:30:00+00:00",
-      "sent_at": "2026-09-03T07:46:04.632848+00:00"
-    },
-    {
-      "link": "https://marius.blog/firefox-155-ai-kill-switch-retest/",
-      "title": "Firefox's AI Switch Is Off. Telemetry Isn't",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-02T18:30:49+00:00",
-      "sent_at": "2026-09-03T07:46:04.632848+00:00"
-    },
-    {
-      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
-      "title": "Gemini 3.8 Flash and 3.8 Flash Cyber",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-02T15:44:06+00:00",
-      "sent_at": "2026-09-03T07:46:04.632848+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/semiconductors/hybrid-bonding-roadmap-examined",
-      "title": "The current state of Hybrid Bonding in 2026 — TSMC sits at 6 microns and the HBM delay that nobody expected",
-      "summary": "Hybrid bonding, the copper-to-copper joining technique that replaces solder microbumps in 3D chip stacks, is in high-volume production on logic and freshly postponed on memory.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-02T15:05:41+00:00",
-      "sent_at": "2026-09-03T07:46:04.632848+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/02/hiddenlayer-nabs-100m-as-enterprises-rush-to-secure-their-ai-deployments/",
-      "title": "HiddenLayer nabs $100M as enterprises rush to secure their AI deployments",
-      "summary": "Security companies are scrambling to build products that can monitor not just agents but also the tools and add-ons they use.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-02T15:01:23+00:00",
-      "sent_at": "2026-09-03T07:46:04.632848+00:00"
-    },
-    {
-      "link": "https://github.com/mlc-ai/web-llm",
-      "title": "WebLLM: high-performance in-browser LLM inference engine",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-02T14:02:35+00:00",
-      "sent_at": "2026-09-03T07:46:04.632848+00:00"
     }
   ]
 }
