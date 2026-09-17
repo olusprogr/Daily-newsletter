@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/09/17/google-deepmind-launches-institute-to-widen-the-agi-debate/",
+      "title": "Google DeepMind launches institute to widen the AGI debate",
+      "summary": "Google DeepMind just launched an institute to hash out the big AGI questions in public",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-17T23:21:17+00:00",
+      "sent_at": "2026-09-17T23:54:03.540688+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/17/amazon-owned-zooxs-100-robotaxi-limit-in-nevada-is-about-to-disappear/",
+      "title": "Amazon-owned Zoox’s 100-robotaxi limit in Nevada is about to disappear",
+      "summary": "An updated permit shows the 100-cap will expire later this month just as competition in Las Vegas heats up.",
+      "source": "TechCrunch",
+      "category": "Autonomes Fahren",
+      "published": "2026-09-17T23:08:24+00:00",
+      "sent_at": "2026-09-17T23:54:03.540688+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2261924/google-cc-is-an-ai-agent-for-families-and-groups/",
+      "title": "Google's revamped CC is an AI agent for families and groups",
+      "summary": "CC gives an AI agent its own Google account in your family or group and sends all members a daily briefing.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-09-17T22:55:08+00:00",
+      "sent_at": "2026-09-17T23:54:03.540688+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/17/prismml-hopes-its-tiny-llm-could-change-how-we-all-use-ai/",
+      "title": "PrismML hopes its tiny LLM will change how we all use AI",
+      "summary": "If AI lab PrismML isn't on your radar yet, it should be.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-17T22:34:09+00:00",
+      "sent_at": "2026-09-17T23:54:03.540688+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2261909/anthropic-says-claude-leads-26-percent-of-its-ai-research-and-development/",
+      "title": "Anthropic says Claude 'leads' 26 percent of its AI R&D work",
+      "summary": "The company shared the stat alongside three measurements that help communicate the pace of AI development.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-09-17T22:30:01+00:00",
+      "sent_at": "2026-09-17T23:54:03.540688+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/uncanny-valley-podcast-heres-what-the-ai-apocalypse-could-look-like/",
+      "title": "Here’s What the AI Apocalypse Could Look Like",
+      "summary": "This week on “Uncanny Valley,” we discuss three possible AI doomsday scenarios, AI safety, and the unexpected bipartisan alliance forming against AI.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-09-17T22:20:21+00:00",
+      "sent_at": "2026-09-17T23:54:03.540688+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/17/the-faas-plan-to-fix-air-traffic-875-million-worth-of-ai/",
+      "title": "The FAA’s plan to fix air traffic? $875M worth of AI",
+      "summary": "A new AI-based software program is being launched to help air traffic controllers better navigate their jobs as the crossing guards of America's skies.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-17T22:14:59+00:00",
+      "sent_at": "2026-09-17T23:54:03.540688+00:00"
+    },
+    {
+      "link": "https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm/",
+      "title": "How to Write with an LLM",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-17T21:48:38+00:00",
+      "sent_at": "2026-09-17T23:54:03.540688+00:00"
+    },
+    {
       "link": "https://bend-lang.com/",
       "title": "Bend – A language that blocks AI mistakes via proof and runs on GPUs",
       "summary": "",
@@ -5066,78 +5138,6 @@
       "category": "AI",
       "published": "2026-09-03T16:00:00+00:00",
       "sent_at": "2026-09-04T00:44:19.648023+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2250749/ugreen-smart-home-ecosystem-built-around-local-ai-hubs/",
-      "title": "Ugreen's new smart home ecosystem is built around local AI hubs",
-      "summary": "Ugreen has three new hubs that run your smart home with local AI rather than the cloud. The top model runs on Nvidia's Jetson Thor platform and costs $20,000.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-03T22:00:00+00:00",
-      "sent_at": "2026-09-03T22:15:09.732117+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/nobody-is-saying-why-openai-and-anthropic-had-outages-today/",
-      "title": "Nobody Is Saying Why OpenAI and Anthropic Had Outages Today",
-      "summary": "ChatGPT, Claude, and Grok all suffered outages at nearly the exact same time for reasons that remain murky.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-09-03T21:56:21+00:00",
-      "sent_at": "2026-09-03T22:15:09.732117+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2250789/spacexai-apologizes-for-outage-that-affected-grok-and-other-compute-partners/",
-      "title": "SpaceXAI apologizes for outage that affected Grok and other 'compute partners'",
-      "summary": "Several AI companies experienced issues at around the same time.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-03T21:52:34+00:00",
-      "sent_at": "2026-09-03T22:15:09.732117+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/prediction-market-betting-is-getting-people-banned-and-arrested/",
-      "title": "Prediction Market Betting Is Getting People Banned and Arrested",
-      "summary": "This week on Uncanny Valley, we dig into the latest prediction market buzz, Flock’s AI-powered police search tool, and how tech bros don’t know how to talk about “rouge” AI agents",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-09-03T21:48:24+00:00",
-      "sent_at": "2026-09-03T22:15:09.732117+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/03/startup-arr-is-less-secure-than-ever-new-research-shows/",
-      "title": "Startup ARR is less secure than ever, new research shows",
-      "summary": "The AI era has completely broken enterprise buying patterns, and startups haven't yet figured out how to navigate.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-03T20:59:23+00:00",
-      "sent_at": "2026-09-03T22:15:09.732117+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2250687/googles-new-ai-weather-model-uses-live-satellite-data-for-higher-resolution-forecasts/",
-      "title": "Google's new AI weather model uses live satellite data for higher-resolution forecasts",
-      "summary": "WeatherNext 3 is also supposed to be much better at predicting precipitation.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-03T19:56:03+00:00",
-      "sent_at": "2026-09-03T22:15:09.732117+00:00"
-    },
-    {
-      "link": "https://arcprize.org/blog/astra",
-      "title": "OpenAI's GPT-6 Astra on ARC-AGI-3",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-03T19:45:00+00:00",
-      "sent_at": "2026-09-03T22:15:09.732117+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/ai/2026/09/four-major-ai-models-suffer-rare-overlapping-downtime/",
-      "title": "Four major AI models suffer rare overlapping downtime",
-      "summary": "Service interruptions hit ChatGPT, Claude, Grok, and Gemini practically simultaneously.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-09-03T18:10:19+00:00",
-      "sent_at": "2026-09-03T22:15:09.732117+00:00"
     }
   ]
 }
