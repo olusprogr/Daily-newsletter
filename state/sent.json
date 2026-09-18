@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-developer-vibe-codes-dlss-5-onto-intel-arc-140t-integrated-graphics-run-neural-rendering-in-360p-at-10-frames-per-second",
+      "title": "AI developer vibe codes DLSS 5 onto Intel CPU's integrated graphics —Intel Arc 140T runs neural rendering in 360p at 10 frames per second",
+      "summary": "Using AI tools, a new developer has managed to get DLSS 5 neural rendering running on Intel Lunar Lake's integrated Arc graphics, albeit with abysmal performance.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-18T13:15:00+00:00",
+      "sent_at": "2026-09-18T13:22:43.569151+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/video-games/pc-gaming/control-resonant-pc-performance-tested-28-gpus-take-us-back-to-the-oldest-house-and-a-warped-manhattan-cityscape",
+      "title": "Control Resonant PC performance tested: 28 GPUs take us back to the Oldest House and a warped Manhattan cityscape",
+      "summary": "Control Resonant's warped Manhattan cityscape pushes graphics cards to the max thanks to path-traced lighting effects and full support for Nvidia's DLSS 4.5 technologies. We put it to the test to see how it performs on 28 graphics cards from Nvidia, AMD, and Intel.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-18T13:01:36+00:00",
+      "sent_at": "2026-09-18T13:22:43.569151+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/microsoft-director-called-ai-scraping-the-largest-theft-of-labor-in-human-history-while-openai-head-brands-chatgpt-an-existential-threat-to-publishers-revelations-come-from-legal-briefs-filed-in-nyt-lawsuit",
+      "title": "Microsoft director called AI scraping ‘the largest theft of labor in human history,’ while OpenAI head brands ChatGPT an ‘existential threat’ to publishers — revelations come from legal briefs filed in NYT lawsuit",
+      "summary": "The NYT filed a legal brief revealing potentially damaging statements from Microsoft and OpenAI regarding the copyright infringement case it brought against the two companies. The publication is now seeking a summary judgment from the court, almost three years since it started the case.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-18T12:49:14+00:00",
+      "sent_at": "2026-09-18T13:22:43.569151+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2262087/anthropic-has-set-up-a-bio-research-lab-for-physical-experiments/",
+      "title": "Anthropic has set up a bio research lab for physical experiments",
+      "summary": "Anthropic now has its own bio research lab in San Francisco.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-09-18T12:21:57+00:00",
+      "sent_at": "2026-09-18T13:22:43.569151+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/us-frontier-ai-companies-warn-authorities-over-sophisticated-distillation-attacks-china-warns-of-countermeasures-if-america-tries-to-constrain-domestic-ai-models",
+      "title": "US frontier AI companies warn authorities over sophisticated distillation attacks — China warns of 'countermeasures' if America tries to constrain domestic AI models",
+      "summary": "U.S. AI companies and the government are increasingly concerned about the effectiveness of international competition using distillation attacks to glean valuable data from frontier models to train cheaper, faster alternatives overseas.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-18T12:20:00+00:00",
+      "sent_at": "2026-09-18T13:22:43.569151+00:00"
+    },
+    {
+      "link": "https://www.technologyreview.com/2026/09/18/1142577/the-download-ai-extinction-threat-bioweapons/",
+      "title": "The Download: AI’s extinction risk and bioweapons threat",
+      "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Could AI really kill us all? Your questions, answered On Wednesday, MIT Technology Review hosted a live Roundtables event that asked the question many seem to be asking right now: could&#8230;",
+      "source": "MIT Technology Review",
+      "category": "AI",
+      "published": "2026-09-18T12:10:00+00:00",
+      "sent_at": "2026-09-18T13:22:43.569151+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/gpus/modder-gets-nvidias-dlss-5-working-in-a-web-browser-using-webgpu-147mb-browser-port-runs-on-non-nvidia-gpus-and-macos-but-takes-two-seconds-per-render",
+      "title": "Modder gets Nvidia's DLSS 5 working in a web browser using WebGPU — 147MB browser port runs on non-Nvidia GPUs and macOS but takes two seconds per render",
+      "summary": "A developer's live WebGPU demo runs Nvidia's DLSS 5 neural rendering in a web browser, but also apparently runs on macOS.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-18T12:00:00+00:00",
+      "sent_at": "2026-09-18T13:22:43.569151+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/semiconductors/us-chip-manufacturers-are-in-dire-need-of-engineers-and-technicians-experts-suggest-a-shortage-of-up-to-157-000-semiconductor-workers-by-2030",
+      "title": "US chip fabs face massive 157,000 worker shortfall, mere 3% of US engineering grads enter chipmaking — despite six-figure salaries, US chip manufacturers are in dire need of engineers and technicians",
+      "summary": "As many semiconductor fabs and facilities go online in the 2030s and beyond, a global consulting firm said that these sites will need thousands of engineers and technicians that the U.S. will be hard-pressed to fill.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-18T11:30:00+00:00",
+      "sent_at": "2026-09-18T13:22:43.569151+00:00"
+    },
+    {
       "link": "https://www.engadget.com/2262023/waymo-is-expanding-to-singapore/",
       "title": "Waymo is expanding to Singapore",
       "summary": "Waymo has announced its next international location: Singapore.",
@@ -5066,78 +5138,6 @@
       "category": "AI",
       "published": "2026-09-04T12:58:37+00:00",
       "sent_at": "2026-09-04T14:46:09.000559+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/silicon-valley-is-having-a-hot-girl-renaissance/",
-      "title": "Silicon Valley Is Having a ‘Hot Girl Renaissance’",
-      "summary": "A San Francisco “Hot List” is trying to buck stereotypes about dating in tech circles amid wider debates about the value of being perceived as attractive.",
-      "source": "Wired",
-      "category": "Hardware",
-      "published": "2026-09-04T09:00:00+00:00",
-      "sent_at": "2026-09-04T10:33:34.902325+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2248386/rugged-smartphones-camera-is-a-removable-action-cam-ifa-2026/",
-      "title": "This rugged smartphone's camera is a removable action cam",
-      "summary": "RugOne's newest ruggedized phone has a waterproof action cam that you can remove.",
-      "source": "Engadget",
-      "category": "Hardware",
-      "published": "2026-09-04T07:00:00+00:00",
-      "sent_at": "2026-09-04T10:33:34.902325+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2250874/tesla-offering-cybercab-robotaxi-rides/",
-      "title": "Tesla starts offering Cybercab robotaxi rides",
-      "summary": "Tesla has officially launched the Cybercab, its autonomous vehicle with no steering wheel.",
-      "source": "Engadget",
-      "category": "Autonomes Fahren",
-      "published": "2026-09-04T06:41:33+00:00",
-      "sent_at": "2026-09-04T10:33:34.902325+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/cpus/intels-core-ultra-400-nova-lake-launch-schedule-leaks-out-mass-production-in-q4-first-nova-lake-cpus-in-q1-2027",
-      "title": "Intel's Core Ultra 400 'Nova Lake' launch schedule leaks out — mass production in Q4, first Nova Lake CPUs in Q1 2027",
-      "summary": "Intel's Core Ultra 400-series 'Nova Lake-S' CPUs are on track for mass production next quarter, but they will only launch in Q1 2027 with 28-core models coming first.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-03T15:58:41+00:00",
-      "sent_at": "2026-09-04T10:33:34.902325+00:00"
-    },
-    {
-      "link": "https://www.macrumors.com/2026/09/03/chatgpt-claude-and-grok-are-down/",
-      "title": "ChatGPT, Claude, and Grok Are Down",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-03T15:30:10+00:00",
-      "sent_at": "2026-09-04T10:33:34.902325+00:00"
-    },
-    {
-      "link": "https://news.ycombinator.com/item?id=49551096",
-      "title": "Ask HN: Why were OpenAI, Claude, and Grok simultaneously down?",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-03T15:07:01+00:00",
-      "sent_at": "2026-09-04T10:33:34.902325+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/03/googles-latest-ai-weather-model-gives-you-no-excuse-to-forget-your-umbrella/",
-      "title": "Google’s latest AI weather model gives you no excuse to forget your umbrella",
-      "summary": "WeatherNext 3 is the latest wave of a sea change in meteorology brought out by deep learning techniques. Google says it will start feeding into weather information users see in search, Google Maps, and Gemini.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-03T15:00:00+00:00",
-      "sent_at": "2026-09-04T10:33:34.902325+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/data-centers/almost-70-percent-of-voters-in-missouri-city-recall-council-member-who-said-yes-to-ai-data-center-tax-breaks-councilor-said-disagreement-over-an-issue-shouldnt-be-enough-to-unseat-him",
-      "title": "Almost 70% of voters in Missouri city vote to recall council member who said yes to AI data center tax breaks — councilor said disagreement over an issue shouldn’t be enough to unseat him",
-      "summary": "The people of Independence, Missouri, voted to recall councilor John Perkins after he voted to give a Nebius data center tax breaks amounting to more than $6 billion. Perkins said that a single vote should not be enough grounds to overturn an election from two years ago.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-03T14:52:55+00:00",
-      "sent_at": "2026-09-04T10:33:34.902325+00:00"
     }
   ]
 }
