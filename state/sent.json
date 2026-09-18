@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/video/dario-amodei-and-other-ai-leaders-want-to-pace-the-frontier-buthow/",
+      "title": "Dario Amodei and other AI leaders want to ‘Pace the Frontier’ but…how?",
+      "summary": "A week after an Anthropic researcher&#8217;s doomsday warning rattled the AI world, the company&#8217;s CEO Dario Amodei has&#160;outlined his plan to “pace the frontier”&#160;of AI development. The proposal leans on independent safety evaluators and coordination between AI labs in democratic countries, and&#160;it&#8217;s&#160;already picked up some&#160;industry support, along with some pointed&#160;pushback from Nvidia&#8217;s Jensen Huang.&#160; Watch [&#8230;]",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-18T17:09:56+00:00",
+      "sent_at": "2026-09-18T17:28:38.114911+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/policy/997516/california-governor-newsom-ai-kill-switch",
+      "title": "Gavin Newsom is pushing for an AI kill switch",
+      "summary": "California Gov. Gavin Newsom (D) is positioning the state to take the lead on AI oversight, including the potential to mandate a \"kill switch\" for frontier models, with a new executive order issued Friday. Newsom's order directs the state to convene a group of experts that will deliver recommendations within two months on how to [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-18T17:04:51+00:00",
+      "sent_at": "2026-09-18T17:28:38.114911+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/997358/what-hollywood-thinks-about-existential-ai-warnings",
+      "title": "What Hollywood thinks about existential AI warnings",
+      "summary": "As the tech sector sounds alarms about AI's potential to destroy humanity, entertainment labor groups are urging the public to stay focused on what's already happening. The Verge reached out to Disney, Netflix, Amazon, Lionsgate, and other studios who have started using AI, as well film startups focused on bringing generative AI into the mainstream [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-18T16:35:19+00:00",
+      "sent_at": "2026-09-18T17:28:38.114911+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/18/family-offices-are-clamoring-for-ai-investments/",
+      "title": "Family offices are clamoring for AI investments",
+      "summary": "Whether it's a permanent shift or part of a familiar cycle is worth asking, though.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-18T16:00:00+00:00",
+      "sent_at": "2026-09-18T17:28:38.114911+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/09/18/xpeng-license-self-driving-tech-automakers-tesla-fsd/",
+      "title": "XPeng shops its self-driving tech to automakers — Tesla found no takers",
+      "summary": "XPeng is trying to turn its self-driving and smart-cockpit systems into a licensing business, courting automakers, suppliers, and software firms well beyond its existing Volkswagen deal, according to a Reuters report. It’s the exact playbook Tesla has been pitching for years with “Full Self-Driving.” The difference is that XPeng is finding interest. more…",
+      "source": "Electrek",
+      "category": "Autonomes Fahren",
+      "published": "2026-09-18T15:43:15+00:00",
+      "sent_at": "2026-09-18T17:28:38.114911+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/997444/openai-hack-claude-heif-heist",
+      "title": "Security researchers used Claude to help them hack into OpenAI",
+      "summary": "A team of three independent security researchers at Hacktron says it took less than 72 hours for them to hack into OpenAI employee accounts using Anthropic's Claude Opus 4.8 and 5, The Wall Street Journal reports. They were able to access OpenAI's GitHub repository, called \"Monorepo,\" which reportedly contains \"OpenAI's algorithmic secrets,\" according to The [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-18T15:30:16+00:00",
+      "sent_at": "2026-09-18T17:28:38.114911+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/18/open-or-closed-ai-nvidias-nader-khalil-and-sydney-sykes-take-on-one-of-the-decisions-shaping-next-gen-startups-at-techcrunch-disrupt-2026/",
+      "title": "Open or closed AI? Nvidia’s Nader Khalil and Sydney Sykes take on one of the decisions shaping next-gen startups at TechCrunch Disrupt 2026",
+      "summary": "Nvidia's Nader Khalil and Sydney Sykes discuss one of the decisions shaping next-gen startups on the Builders Stage at TechCrunch Disrupt 2026.",
+      "source": "TechCrunch",
+      "category": "Hardware",
+      "published": "2026-09-18T15:30:00+00:00",
+      "sent_at": "2026-09-18T17:28:38.114911+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/18/metas-muse-hits-mac-letting-the-ai-take-actions-on-your-computer/",
+      "title": "Meta’s Muse hits Mac, letting the AI take actions on your computer",
+      "summary": "Muse is now available on the Mac, where it can work with your files and apps to take action on your behalf.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-18T15:22:48+00:00",
+      "sent_at": "2026-09-18T17:28:38.114911+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-developer-vibe-codes-dlss-5-onto-intel-arc-140t-integrated-graphics-run-neural-rendering-in-360p-at-10-frames-per-second",
       "title": "AI developer vibe codes DLSS 5 onto Intel CPU's integrated graphics —Intel Arc 140T runs neural rendering in 360p at 10 frames per second",
       "summary": "Using AI tools, a new developer has managed to get DLSS 5 neural rendering running on Intel Lunar Lake's integrated Arc graphics, albeit with abysmal performance.",
@@ -5066,78 +5138,6 @@
       "category": "AI",
       "published": "2026-09-04T16:05:16+00:00",
       "sent_at": "2026-09-04T18:04:14.655715+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/get-this-stunning-msi-rtx-5060-ti-16g-deal-at-walmart-for-usd200-less-than-anywhere-else-only-usd569-99-for-the-solid-mid-range-shadow-2x-oc-plus-gaming-gpu-is-a-steal-by-anyones-standards",
-      "title": "Get this stunning MSI RTX 5060 Ti 16G deal at Walmart for $200 less than anywhere else — only $569.99 for the solid mid-range Shadow 2x OC Plus gaming GPU is a steal by anyone's standards",
-      "summary": "Snag an MSI RTX 5060 Ti 16G Shadow 2x OC Plus at Walmart for an awesome $200 less than anywhere else - $569 price is the best we've found by a longshot",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-04T14:38:41+00:00",
-      "sent_at": "2026-09-04T14:46:09.000559+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/04/less-than-24-hours-to-apply-for-your-techcrunch-disrupt-2026-side-event/",
-      "title": "Less than 24 hours to apply for your TechCrunch Disrupt 2026 Side Event",
-      "summary": "Less than 24 hours left to apply to host a Side Event during TechCrunch Disrupt 2026 and make your mark in the Silicon Valley scene. Apply before the application closes tonight at midnight PT.",
-      "source": "TechCrunch",
-      "category": "Hardware",
-      "published": "2026-09-04T14:00:00+00:00",
-      "sent_at": "2026-09-04T14:46:09.000559+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/09/04/tesla-fsd-active-safety-collision-avoidance/",
-      "title": "Tesla Full Self-Driving can now take over manual driving to avoid a collision",
-      "summary": "Tesla is rolling out a new version of its Full Self-Driving (Supervised) software that can take control of your car to avoid a crash, even when you’re driving manually. The automaker announced the feature, part of FSD Supervised v14.3.9, in a post from its AI team early Friday. more…",
-      "source": "Electrek",
-      "category": "AI",
-      "published": "2026-09-04T13:56:18+00:00",
-      "sent_at": "2026-09-04T14:46:09.000559+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/990149/openai-rogue-agents-german-wiki",
-      "title": "Oh good, looks like yet another swarm of rogue AI agents from OpenAI",
-      "summary": "A swarm of rogue AI agents from OpenAI reportedly commandeered a German website and transformed it into a messaging board for other agents, with officials staying quiet about the incident for weeks as the company prepared to launch its most advanced model yet, Astra. The finding adds to intensifying concern surrounding oversight at frontier AI [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-04T13:34:12+00:00",
-      "sent_at": "2026-09-04T14:46:09.000559+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/transportation/990130/tesla-cybercab-nhtsa-investigation-fmvss-certify",
-      "title": "Tesla Cybercab is barely on the road and it’s already under investigation",
-      "summary": "Elon Musk's gilded robot car barely made it on public roads before federal regulators launched an investigation into the vehicle's lack of traditional features - many of which are required by law. The National Highway Traffic Safety Administration said it was opening an audit query (AQ) into the Tesla Cybercab \"to examine the process and [&#8230;]",
-      "source": "The Verge",
-      "category": "Innovationen",
-      "published": "2026-09-04T13:33:38+00:00",
-      "sent_at": "2026-09-04T14:46:09.000559+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/data-centers/denver-data-center-continuously-waters-its-lawn-even-after-city-announced-drought-restrictions-enraging-residents-its-unclear-if-site-is-breaking-the-law-or-using-its-own-recycled-water",
-      "title": "Denver data center continuously waters its lawn even after city announced drought restrictions, enraging residents — it’s unclear if site is breaking the law or using its own recycled water",
-      "summary": "An AI data center is reportedly watering its lawn despite the area suffering from a drought. One resident said that we can't water our lawns until next summer, but you better believe that they are watering their entire green with so many sprinklers.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-04T13:26:18+00:00",
-      "sent_at": "2026-09-04T14:46:09.000559+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/09/04/alliance-for-automotive-innovation-begs-congress-to-stop-automotive-innovation/",
-      "title": "Alliance for Automotive Innovation begs Congress to stop automotive innovation",
-      "summary": "The entire US auto industry is back at it again, lobbying Congress to stifle competition and ensure that Americans remain stuck with overpriced, second-rate, highly-polluting vehicles. more…",
-      "source": "Electrek",
-      "category": "Innovationen",
-      "published": "2026-09-04T13:00:00+00:00",
-      "sent_at": "2026-09-04T14:46:09.000559+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/cpus/amd-unveils-threadripper-halo-station-an-ai-workstation-packing-96-cores-and-dual-liquid-cooled-mi350p-accelerators-the-most-powerful-workstation-in-the-world-can-run-trillion-parameter-models-says-amd",
-      "title": "AMD unveils Threadripper Halo Station, an AI workstation packing 96 cores and dual liquid-cooled MI350P accelerators — 'the most powerful workstation in the world' can run trillion-parameter models, says AMD",
-      "summary": "AMD's Threadripper Halo Station packs a 96-core Zen 5 Threadripper, dual MI350P accelerators with support for four, and 2TB of DDR5.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-04T12:58:37+00:00",
-      "sent_at": "2026-09-04T14:46:09.000559+00:00"
     }
   ]
 }
