@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.engadget.com/2262023/waymo-is-expanding-to-singapore/",
+      "title": "Waymo is expanding to Singapore",
+      "summary": "Waymo has announced its next international location: Singapore.",
+      "source": "Engadget",
+      "category": "Autonomes Fahren",
+      "published": "2026-09-18T08:18:12+00:00",
+      "sent_at": "2026-09-18T08:44:12.729523+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/irobot-promo-code/",
+      "title": "iRobot Promo Code: 15% Off",
+      "summary": "Save on iRobot products, including robot vacuums and mops designed to handle pet hair, daily messes, and hands-free cleaning with smart home integration.",
+      "source": "Wired",
+      "category": "Innovationen",
+      "published": "2026-09-18T05:00:00+00:00",
+      "sent_at": "2026-09-18T08:44:12.729523+00:00"
+    },
+    {
+      "link": "https://waymo.com/waymo-in-singapore/",
+      "title": "Waymo in Singapore",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Autonomes Fahren",
+      "published": "2026-09-18T03:49:24+00:00",
+      "sent_at": "2026-09-18T08:44:12.729523+00:00"
+    },
+    {
+      "link": "https://www.hacktron.ai/blog/hacking-openai",
+      "title": "A heap overflow and SSO misconfiguration to compromise OpenAI internal repos",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-18T02:47:24+00:00",
+      "sent_at": "2026-09-18T08:44:12.729523+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/ai/2026/09/nato-backed-startup-adapts-ai-for-autonomous-drone-recon-and-attack-missions/",
+      "title": "Small AI models let drones autonomously identify and attack battlefield targets",
+      "summary": "Scaleout deploys decentralized AI-driven learning to military bases and drones.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-09-17T22:12:58+00:00",
+      "sent_at": "2026-09-18T08:44:12.729523+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/google/2026/09/google-announces-new-experimental-cc-ai-agent-for-families/",
+      "title": "Google announces new experimental \"CC\" AI agent for families",
+      "summary": "Multiple family members can share data to help the agent make plans and complete tasks.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-09-17T20:24:34+00:00",
+      "sent_at": "2026-09-18T08:44:12.729523+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/tech-policy/2026/09/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history/",
+      "title": "Microsoft exec called AI scraping the “largest theft of labor in human history”",
+      "summary": "Microsoft, OpenAI emails reveal fear of AI “doom loop” killing news orgs.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-09-17T20:10:41+00:00",
+      "sent_at": "2026-09-18T08:44:12.729523+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/security/2026/09/ai-text-watermarking-can-make-models-more-vulnerable-to-adversarial-prompts/",
+      "title": "LLMs respond differently to harmful prompts when AI watermarking is used",
+      "summary": "SynthID can cause models to follow harmful instructions they would otherwise refuse.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-09-17T18:33:13+00:00",
+      "sent_at": "2026-09-18T08:44:12.729523+00:00"
+    },
+    {
       "link": "https://www.theverge.com/transportation/997091/waymo-singapore-robotaxi-launch-2027",
       "title": "Waymo says Singapore will be its next international robotaxi city",
       "summary": "Waymo says it will launch a robotaxi service in Singapore in 2028, as the Alphabet-owned company continues to eye overseas markets for expansion. Waymo's vehicles will begin arriving in Singapore in \"the coming months,\" the company says, in preparation of mapping and autonomous testing with human safety drivers behind the wheel in 2027. Waymo says [&#8230;]",
@@ -5066,78 +5138,6 @@
       "category": "AI",
       "published": "2026-09-03T14:52:55+00:00",
       "sent_at": "2026-09-04T10:33:34.902325+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/09/03/tesla-announces-1-million-unsupervised-miles-driven-by-robotaxi/",
-      "title": "Tesla announces Robotaxi has driven 1 million unsupervised miles",
-      "summary": "Tesla said today that its Robotaxis have driven a total of 1 million miles without a human driver supervising them. The number is more than double what we heard at the last check-in just six weeks ago, as Tesla finally shifts away from human “safety drivers.” more…",
-      "source": "Electrek",
-      "category": "Autonomes Fahren",
-      "published": "2026-09-04T05:04:32+00:00",
-      "sent_at": "2026-09-04T05:28:20.399230+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/03/the-sameness-problem-behind-those-unappetizing-ai-generated-menus/",
-      "title": "The sameness problem behind those unappetizing AI-generated menus",
-      "summary": "While restaurant owners might look to generative AI as a shortcut to sprucing up their menu, customers can viscerally sense that something is wrong with the food.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-04T04:21:03+00:00",
-      "sent_at": "2026-09-04T05:28:20.399230+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/games/989978/nvidia-dlss-5-rtx-40",
-      "title": "Nvidia will officially bring DLSS 5 to older GPUs — but won’t give gamers full control",
-      "summary": "Officially, Nvidia's controversial DLSS 5 AI rendering was supposed to launch this evening with only a single game, only on Nvidia's latest RTX 50 GPUs, and with developers in full control of their artistic vision. But unofficially, modders have already ported a leaked version of DLSS 5 to run on just about anything while cranking [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-04T01:49:25+00:00",
-      "sent_at": "2026-09-04T05:28:20.399230+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/09/03/tesla-opens-search-for-cybercab-fleet-sales-but-fsd-owners-are-still-left-out/",
-      "title": "Tesla opens search for Cybercab fleet sales, but FSD owners are still left out",
-      "summary": "Tesla has started distributing a “Robotaxi interest form,” collecting interest from fleet buyers who would want to build a Robotaxi network or provide related infrastructure services. It’s the first step in allowing non-Tesla entities to make money off of Tesla’s FSD driver-assist software… but the owners who were promised they could make passive income with their cars are still out of luck. more…",
-      "source": "Electrek",
-      "category": "Autonomes Fahren",
-      "published": "2026-09-04T01:05:58+00:00",
-      "sent_at": "2026-09-04T05:28:20.399230+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/laptops/nvidias-rtx-spark-n1x-launches-in-october-for-laptops-and-desktops-18-or-20-cpu-cores-paired-with-5-120-or-6-144-cuda-cores-up-to-128gb-of-unified-memory",
-      "title": "Nvidia's RTX Spark N1X launches in October for laptops and desktops — 18 or 20 CPU cores, paired with 5,120 or6,144 CUDA cores, up to 128GB of unified memory",
-      "summary": "Systems with Nvidia's RTX Spark N1X chips will launch in October in mini PCs and laptops, with the chips coming in two configurations.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-03T16:00:00+00:00",
-      "sent_at": "2026-09-04T05:28:20.399230+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/nvidia-pair-utility-joins-every-gpu-in-your-home-into-a-cluster-for-agentic-ai-tasks-tool-uses-spare-cycles-to-keep-agent-swarms-from-hammering-one-gpu",
-      "title": "Nvidia PAIR utility joins every GPU in your home into a cluster for agentic AI tasks — tool uses spare cycles to keep agent swarms from hammering one GPU",
-      "summary": "Nvidia's Personal AI Router (PAIR) clustering utility lets agentic AI workloads take advantage of every spare GPU cycle on a home network, potentially making for faster execution and more private inference.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-03T16:00:00+00:00",
-      "sent_at": "2026-09-04T05:28:20.399230+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/laptops/lenovo-thinkcentre-x-ultra-packs-gorgon-halo-amd-ryzen-ai-max-pro-495-shows-up-in-mini-workstation",
-      "title": "Lenovo ThinkCentre X Ultra packs Gorgon Halo — AMD Ryzen AI Max+ Pro 495 shows up in mini workstation",
-      "summary": "AMD's Gorgon Halo chips are breaking cover. Ahead of IFA, Lenovo showed off the THinkCentre X Ultra with an AMD Ryzen AI Max+ Pro 495.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-03T16:00:00+00:00",
-      "sent_at": "2026-09-04T05:28:20.399230+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/laptops/lenovos-ideapad-vibe-laptops-stand-out-with-seven-colors-and-swappable-keycaps-14-15-inch-models-with-snapdragon-x-and-amd-ai-400-cpus-to-start-at-usd699",
-      "title": "Lenovo’s IdeaPad Vibe laptops stand out with seven colors and swappable keycaps – 14,15-inch models with Snapdragon X and AMD AI 400 CPUs to start at $699",
-      "summary": "Lenovo’s latest IdeaPad laptops are all about colorful vibes. The Vibe lineup will come in seven hues, with swappable keyboard keycaps so you can match the chassis or go for a pop of contrast. The 14- and 15-inch laptops will land later this year, starting at $699.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-03T16:00:00+00:00",
-      "sent_at": "2026-09-04T05:28:20.399230+00:00"
     }
   ]
 }
