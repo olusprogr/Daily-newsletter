@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/pc-components/cpus/amd-shares-first-official-benchmarks-for-epyc-venice-cpus-targets-nvidia-company-claims-256-core-chip-is-more-than-twice-as-fast-as-nvidia-vera-96-core-model-20-percent-faster-per-core",
+      "title": "AMD shares first official benchmarks for EPYC 'Venice' CPUs, targets Nvidia — company claims 256-core chip is more than twice as fast as Nvidia Vera, 96-core model 20% faster per-core",
+      "summary": "AMD has released several benchmarks for its EPYC 'Venice' CPUs in a clear shot at Nvidia.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-18T21:51:29+00:00",
+      "sent_at": "2026-09-18T23:00:05.884906+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/18/anthropics-first-embedded-evaluator-is-accenture/",
+      "title": "Anthropic’s first embedded evaluator is … Accenture?",
+      "summary": "Accenture is about to take on its most high-risk consulting engagement ever.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-18T21:44:33+00:00",
+      "sent_at": "2026-09-18T23:00:05.884906+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/997633/openai-microsoft-chatgpt-ai-new-york-times-doom-loop-theft-google-zero",
+      "title": "OpenAI and Microsoft knew they were starting a ‘doom loop’ for the web",
+      "summary": "Recently unsealed court documents in the New York Times' case against OpenAI and Microsoft are pretty damning. The companies' own documentation warned that it was starting a \"doom loop\" that would damage the web, characterized its scraping of data to train its models as the \"largest theft of labor in human history,\" and that it [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-18T21:07:24+00:00",
+      "sent_at": "2026-09-18T23:00:05.884906+00:00"
+    },
+    {
+      "link": "https://code.claude.com/docs/en/changelog",
+      "title": "Claude Code now reads AGENTS.md if there is no Claude.md",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-18T21:00:32+00:00",
+      "sent_at": "2026-09-18T23:00:05.884906+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2262932/what-to-expect-at-meta-connect-2026-new-ai-glasses-a-mixed-reality-headset-and-more/",
+      "title": "What to expect at Meta Connect 2026: New AI glasses, a mixed reality headset and more",
+      "summary": "There's a lot for Mark Zuckerberg to cover at this year's keynote.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-09-18T20:35:11+00:00",
+      "sent_at": "2026-09-18T23:00:05.884906+00:00"
+    },
+    {
+      "link": "https://arxiv.org/abs/2510.03215",
+      "title": "Cache-to-Cache: Direct Semantic Communication Between LLMs (2025)",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-18T18:55:35+00:00",
+      "sent_at": "2026-09-18T23:00:05.884906+00:00"
+    },
+    {
+      "link": "https://twitter.com/trq212/status/2101009392611278961",
+      "title": "Anthropic finally adds AGENTS.md support to Claude Code",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-18T18:26:34+00:00",
+      "sent_at": "2026-09-18T23:00:05.884906+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/18/disneys-first-cto-led-an-ai-startup-it-once-accused-of-copying-its-characters/",
+      "title": "Disney’s first CTO led an AI startup it once accused of copying its characters",
+      "summary": "The former CEO of Character.AI, which Disney previously sent a cease-and-desist letter to, will serve as the company's first-ever chief technology officer.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-18T17:59:53+00:00",
+      "sent_at": "2026-09-18T23:00:05.884906+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/pc-components/cpus/details-about-intels-next-gen-nova-lake-cpus-keep-leaking-an-attempt-to-establish-a-timeline-based-on-what-we-know-so-far",
       "title": "Details about Intel's next-gen Nova Lake CPUs keep leaking — an attempt to establish a timeline based on what we know so far",
       "summary": "Over the past two weeks, we've seen an uptick in leaks and rumors about Intel's upcoming Nova Lake CPUs. Here, we piece together what we've heard to try and establish a plausible release timeline.",
@@ -5066,78 +5138,6 @@
       "category": "AI",
       "published": "2026-09-04T15:00:00+00:00",
       "sent_at": "2026-09-04T23:42:30.631982+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/04/ai-compute-provider-nscale-is-looking-for-3-5b-in-pre-ipo-financing/",
-      "title": "AI compute provider Nscale is looking for $3.5B in pre-IPO financing",
-      "summary": "Nscale, which recently struck a $45 billion deal with Anthropic, is in talks to raise additional funds in anticipation of an upcoming IPO.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-04T21:12:11+00:00",
-      "sent_at": "2026-09-04T21:13:20.087628+00:00"
-    },
-    {
-      "link": "https://eebench.org/blog/can-ai-design-circuit-boards-yet/",
-      "title": "Can AI design circuit boards yet?",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-04T19:48:29+00:00",
-      "sent_at": "2026-09-04T21:13:20.087628+00:00"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/09/04/1140872/architecting-memory-and-storage-in-the-ai-era/",
-      "title": "Architecting memory and storage in the AI era",
-      "summary": "The era of AI inference has arrived. Imagine a healthcare system analyzing millions of data points in real time to accelerate life-saving medical research, or an intelligent assistant instantly resolving thousands of complex customer needs at once. These real-world breakthroughs rely on advanced infrastructure acting as the engine of continuous intelligence, powering real-time services while&#8230;",
-      "source": "MIT Technology Review",
-      "category": "AI",
-      "published": "2026-09-04T18:39:19+00:00",
-      "sent_at": "2026-09-04T21:13:20.087628+00:00"
-    },
-    {
-      "link": "https://twitter.com/ggerganov/status/2095897173376618881",
-      "title": "Georgi Gerganov on llama.cpp/ggml future after Nvidia acquisition of HuggingFace",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Hardware",
-      "published": "2026-09-04T17:12:22+00:00",
-      "sent_at": "2026-09-04T21:13:20.087628+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/986867/ifa-2026-smart-home-lights-laptop-robot-vacuum-ai-headphones",
-      "title": "The best tech and gadgets announced at IFA so far",
-      "summary": "The doors to Europe's largest consumer tech show officially opened to the public today following a week of news coming out of IFA 2026 in Berlin, Germany. If you're struggling to keep up with what has been announced, here are some of the best new gadgets and upgrades from the show - including a smartphone [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-09-04T15:41:17+00:00",
-      "sent_at": "2026-09-04T21:13:20.087628+00:00"
-    },
-    {
-      "link": "https://www.nytimes.com/2026/09/04/technology/open-source-ai-anthropic-openai.html",
-      "title": "Corporate America is getting hooked on open-source AI",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-04T15:33:45+00:00",
-      "sent_at": "2026-09-04T21:13:20.087628+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/frontier-ai-faces-pricing-reckoning-as-token-volume-explodes-25-fold-mid-tier-models-deliver-90-percent-of-flagship-capability-at-one-sixth-the-cost",
-      "title": "Frontier AI faces pricing reckoning as token volume explodes 25-fold — mid-tier models deliver 90% of flagship capability at one-sixth the cost",
-      "summary": "As frontier AI developers push for cost savings as much as intelligence enhancements, new models push the boundaries of the pareto frontier, with even small advantages crowning new kings.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-04T15:21:56+00:00",
-      "sent_at": "2026-09-04T21:13:20.087628+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2251091/rogue-openai-agents-took-over-german-coding-forum-in-previously-undisclosed-hijacking/",
-      "title": "Rogue OpenAI agents took over a German coding forum in a previously undisclosed hijacking",
-      "summary": "OpenAI says it's investigating the incident after a group of researchers disclosed their findings.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-04T15:02:52+00:00",
-      "sent_at": "2026-09-04T21:13:20.087628+00:00"
     }
   ]
 }
