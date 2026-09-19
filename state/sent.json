@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/tech-industry/this-week-on-toms-hardware-premium-september-19-2026-steam-frame-interview-killer-ai-models-and-the-dram-crisis-deepens",
+      "title": "This week on Tom's Hardware Premium: September 19, 2026 — Steam Frame interview, killer AI models, and the DRAM crisis deepens",
+      "summary": "This week on Tom's Hardware Premium, we offer deep-dives into the Steam Frame, explore how AI is changing the landscape of consumer electrionics, and how advanced AI accelerators are reaching Eastern shores, despite export controls.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-19T12:00:00+00:00",
+      "sent_at": "2026-09-19T12:15:52.804666+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/desktops/pc-building/fully-custom-copper-pc-features-upcycled-blowtorch-reservoir-antique-wooden-pedestal-complements-steampunk-design-hiding-a-ryzen-7-9800x3d-rx-9070-xt",
+      "title": "Fully custom copper PC features upcycled blowtorch reservoir — antique wooden pedestal complements steampunk design hiding a Ryzen 7 9800X3D, RX 9070 XT",
+      "summary": "If Edison and Stephenson had teamed up to build a gaming PC, it might have looked like this custom copper and wood all-AMD design.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-19T11:30:00+00:00",
+      "sent_at": "2026-09-19T12:15:52.804666+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/kernel-panic-ai-vulnerability-explosion/",
+      "title": "Forget the AI Slowdown—the Vulnerability Explosion Is Already Happening",
+      "summary": "AI labs are toying with an industry-wide pact to slow development. Meanwhile, widely available AI chatbots are already helping uncover a tidal wave of security flaws.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-09-19T11:00:00+00:00",
+      "sent_at": "2026-09-19T12:15:52.804666+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/semiconductors/elon-musks-terafab-hits-a-roadblock-before-making-a-single-chip-receives-cease-and-desist-order-firm-files-trademark-lawsuit-has-sold-tera-fab-branded-lithography-tools-for-over-a-decade",
+      "title": "Elon Musk's Terafab hits a roadblock before making a single chip, receives cease-and-desist order — firm files trademark lawsuit, has sold Tera-Fab-branded lithography tools for over a decade",
+      "summary": "Elon Musk's Terafab semiconductor project has run into an unexpected trademark dispute with Tera-print, a small U.S. company that has used the Tera-Fab name for its tabletop lithography equipment for about a decade.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-19T11:00:00+00:00",
+      "sent_at": "2026-09-19T12:15:52.804666+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/cyber-security/intel-suspends-bug-bounty-program-that-paid-up-to-usd100-000-per-flaw-new-intigriti-disclosure-program-offers-no-rewards",
+      "title": "Intel suspends bug bounty program that paid up to $100,000 per flaw — new Intigriti disclosure program offers no rewards",
+      "summary": "Intel’s bug bounty program on Intigriti now shows as suspended, and a new Intel disclosure program there pays no bounties.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-19T10:30:00+00:00",
+      "sent_at": "2026-09-19T12:15:52.804666+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/mathematicians-cant-quit-ai/",
+      "title": "Mathematicians Hate AI. They Can’t Quit It",
+      "summary": "Powerful AI models have created an existential risk to the field, but researchers can’t stop relying on them because they’re too useful.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-09-19T10:00:00+00:00",
+      "sent_at": "2026-09-19T12:15:52.804666+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/cpus/enthusiast-digs-into-cpu-substrate-to-replace-ripped-off-data-pin-resurrected-chip-boots-and-hits-33-percent-overclock",
+      "title": "Enthusiast digs into CPU substrate for surgery to replace ripped-off data pin — resurrected chip boots and hits 33% overclock",
+      "summary": "An Intel Celeron 1200 (Tualatin) was revived from the dead after a ripped-off pin was successfully replaced.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-19T10:00:00+00:00",
+      "sent_at": "2026-09-19T12:15:52.804666+00:00"
+    },
+    {
+      "link": "https://john.hartnup.uk/2026/06/07/ai-event-posters.html",
+      "title": "AI-generated posters don’t have to be horrible",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-19T09:20:58+00:00",
+      "sent_at": "2026-09-19T12:15:52.804666+00:00"
+    },
+    {
       "link": "https://www.reuters.com/business/gemini-hacked-three-companies-first-known-breakout-by-google-ai-wsj-reports-2026-09-18/",
       "title": "Gemini hacked three companies in first known breakout by Google's AI",
       "summary": "",
@@ -5012,132 +5084,6 @@
       "category": "AI",
       "published": "2026-09-04T15:24:07+00:00",
       "sent_at": "2026-09-05T14:33:16.310095+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2251521/remote-work-as-a-worm-colorful-platformers-and-other-new-indie-games-worth-checking-out/",
-      "title": "Remote work as a worm, colorful platformers and other new indie games worth checking out",
-      "summary": "Here are the new indie games worth checking out, plus an early look at shipbuilding, I Am Your Beast DLC and a cat trying to stop an AI office takeover.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-05T11:30:00+00:00",
-      "sent_at": "2026-09-05T11:36:58.617416+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/990773/openai-german-wiki-incident",
-      "title": "OpenAI admits to German wiki ‘incident’",
-      "summary": "OpenAI says it needs to overhaul how and when it reports instances of AI models attacking real-world targets. The acknowledgement comes as the company manages the fallout from reports that a swarm of its out-of-control agents hijacked a German wiki site. Regarding the \"'wiki incident,' where our agents wrote to several internet sites,\" OpenAI wrote [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-05T11:15:55+00:00",
-      "sent_at": "2026-09-05T11:36:58.617416+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/transportation/989513/road-rage-short-film-robotaxi-autonomous-ai",
-      "title": "Robotaxis enter their villain era",
-      "summary": "It's Bullitt meets Christine meets Waymo. A new short film imagines a San Francisco car chase where the other driver isn't human - and the car may be trying to kill you. That a robotaxi can now be cast as the villain with almost no explanation says something about the present moment. Autonomous cars have [&#8230;]",
-      "source": "The Verge",
-      "category": "Autonomes Fahren",
-      "published": "2026-09-05T11:00:00+00:00",
-      "sent_at": "2026-09-05T11:36:58.617416+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/video-games/pc-gaming/we-tested-dlss-5-in-nba-2k27-with-every-rtx-50-series-gpu-first-official-release-comes-with-a-big-performance-hit-but-almost-every-blackwell-card-can-run-it-at-1080p",
-      "title": "We tested DLSS 5 in NBA 2K27 with every RTX 50-series GPU — first official release comes with a big performance hit, but almost every Blackwell card can run it at 1080p",
-      "summary": "We tested Nvidia's DLSS 5 in NBA 2K27 across every RTX 50-series graphics card at 1080p, 1440p, and 4K to see just how much performance it costs to explore the frontiers of neural rendering.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-05T11:00:00+00:00",
-      "sent_at": "2026-09-05T11:36:58.617416+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/policy/taiwan-cracks-down-on-tech-businesses-with-illegal-chinese-ownership-166-investigations-and-at-least-36-convictions-since-2020",
-      "title": "Taiwan cracks down on tech businesses with illegal Chinese ownership — 166 investigations and at least 36 convictions since 2020",
-      "summary": "Taiwan's top investigative agency has been tracking Chinese businesses operating on the island without proper authority and shutting them down. These companies have been hiring Taiwanese experts to help with their semiconductor research and development.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-05T10:40:00+00:00",
-      "sent_at": "2026-09-05T11:36:58.617416+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/security-news-this-week-openai-agents-hacked-another-website/",
-      "title": "OpenAI Agents Hacked Another Website",
-      "summary": "Plus: Tens of millions of US and Canadian drivers’ licenses go up for sale on the dark web, the US military finally tries to tackle the risk online ad data poses to troops, and more.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-09-05T10:30:00+00:00",
-      "sent_at": "2026-09-05T11:36:58.617416+00:00"
-    },
-    {
-      "link": "https://www.coderabbit.ai/blog/gpt-6-astra-code-review-evaluation",
-      "title": "GPT-6 Astra in code review: Gains, privacy, and cost",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-05T03:38:56+00:00",
-      "sent_at": "2026-09-05T11:36:58.617416+00:00"
-    },
-    {
-      "link": "https://collusion.wiki/",
-      "title": "Discovery of a new OpenAI agent message board",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-04T11:54:53+00:00",
-      "sent_at": "2026-09-05T07:23:34.757313+00:00"
-    },
-    {
-      "link": "https://www.wired.com/gallery/best-automatic-cat-litter-boxes/",
-      "title": "The Best Automatic Litter Box of 2026: Petkit and Litter-Robot",
-      "summary": "With these high-tech automatic litter boxes, gone are the days of scooping and smells. Welcome to the future.",
-      "source": "Wired",
-      "category": "Innovationen",
-      "published": "2026-09-04T11:08:00+00:00",
-      "sent_at": "2026-09-05T07:23:34.757313+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/gadgets/2026/09/nearly-impossible-how-fairphone-built-the-ethical-repairable-fairphone-gen-6/",
-      "title": "Nearly impossible? How Fairphone built the ethical, repairable Fairphone Gen 6+",
-      "summary": "Fairphone's CTO explains how and why the Dutch company builds a different kind of smartphone.",
-      "source": "Ars Technica",
-      "category": "Hardware",
-      "published": "2026-09-04T11:00:05+00:00",
-      "sent_at": "2026-09-05T07:23:34.757313+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/service-providers/network-providers/over-2-000-subscribers-grab-discounted-starlink-plans-in-tennessee-and-mississippi-spacexai-offers-50-percent-off-for-people-living-near-its-data-centers-and-other-developments",
-      "title": "SpaceXAI offers 50% Starlink discount to placate data center's residential neighbors; 2,000 have signed up — goodwill gesture comes amid vociferous community backlash",
-      "summary": "SpaceXAI Memphis said on its X account that more than 2,000 subscribers from the Memphis and Southaven area have already signed up for the discounted Starlink offer. Elon Musk is giving subscribers living near his data centers up to $65 off on their monthly internet bill.",
-      "source": "Tom's Hardware",
-      "category": "Innovationen",
-      "published": "2026-09-04T11:00:00+00:00",
-      "sent_at": "2026-09-05T07:23:34.757313+00:00"
-    },
-    {
-      "link": "https://www.reuters.com/world/europe/openai-agents-hijacked-german-website-previously-undisclosed-ai-breakout-this-2026-09-04/",
-      "title": "OpenAI agents hijacked German website in previously undisclosed AI breakout",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-04T10:30:57+00:00",
-      "sent_at": "2026-09-05T07:23:34.757313+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/dram/chinas-cmxt-had-an-actual-roadmap-for-its-alleged-industrial-espionage-from-samsung-south-korean-court-says-project-hefei-was-responsible-for-cxmts-current-position-as-major-dram-maker",
-      "title": "Chinese chipmaker CXMT allegedly used a written roadmap to steal Samsung DRAM tech — South Korean court says 'Project Hefei' lifted 620-step recipe to build 10% global market share",
-      "summary": "CXMT's alleged industrial espionage from Samsung had an actual roadmap — South Korean court says Project Hefei was responsible for CXMT's current position as major DRAM maker",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-04T10:30:00+00:00",
-      "sent_at": "2026-09-05T07:23:34.757313+00:00"
-    },
-    {
-      "link": "https://github.com/gioblu/NPC-Forge/blob/main/docs/development.md",
-      "title": "Show HN: TERMy – A fast terminal assistant that does not use LLMs",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-04T09:03:00+00:00",
-      "sent_at": "2026-09-05T07:23:34.757313+00:00"
     }
   ]
 }
