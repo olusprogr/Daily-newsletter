@@ -1,6 +1,60 @@
 {
   "items": [
     {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/997833/meta-muse-creepy",
+      "title": "Meta’s Muse is creepy, but maybe not for the reasons you think",
+      "summary": "Meta's Muse is apparently an effective AI assistant, but one that's a little creepy. Part of that is because of its new Mac app, which can access Messages, Calendar, and Notes. But for all its smarts, Muse doesn't actually know how to describe itself. Jason Aten, a contributing editor at Inc Magazine, posted on Threads [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-19T20:44:40+00:00",
+      "sent_at": "2026-09-19T22:05:50.873406+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/19/trump-suggests-rebranding-ai-with-a-new-name-says-hes-also-creating-an-ai-force/",
+      "title": "Trump says it’s time to rebrand AI with a new name — and he’s also creating an AI Force",
+      "summary": "Trump claimed, without evidence, that the AI backlash is a Democratic hoax.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-19T19:57:47+00:00",
+      "sent_at": "2026-09-19T22:05:50.873406+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2263238/spacex-targets-september-28-for-the-starships-first-orbital-flight/",
+      "title": "SpaceX targets September 28 for Starship's first orbital flight",
+      "summary": "For Starship's 14th test flight, it will orbit our planet multiple times for 10 hours.",
+      "source": "Engadget",
+      "category": "Innovationen",
+      "published": "2026-09-19T19:45:00+00:00",
+      "sent_at": "2026-09-19T22:05:50.873406+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2263237/now-trump-says-hes-creating-an-ai-force/",
+      "title": "Now Trump says he's creating an AI Force",
+      "summary": "The president said he will soon announce an \"AI czar\" to run this newly made-up agency.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-09-19T19:22:20+00:00",
+      "sent_at": "2026-09-19T22:05:50.873406+00:00"
+    },
+    {
+      "link": "https://browser.geekbench.com/v7/cpu/389219",
+      "title": "Apple M6 Pro Achieves the Highest Single-Core CPU Score in Geekbench 7",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Hardware",
+      "published": "2026-09-19T06:19:24+00:00",
+      "sent_at": "2026-09-19T22:05:50.873406+00:00"
+    },
+    {
+      "link": "https://newsroom.usra.edu/usra-contributes-planetary-science-expertise-to-nasa-ibm-lunar-foundation-model/",
+      "title": "NASA-IBM Lunar Foundation open-Source Geospatial AI Model",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-19T04:44:35+00:00",
+      "sent_at": "2026-09-19T22:05:50.873406+00:00"
+    },
+    {
       "link": "https://www.engadget.com/2263235/anthropic-picks-accenture-for-third-party-ai-safety-evaluations/",
       "title": "Anthropic picks Accenture for third-party AI safety evaluations",
       "summary": "This move represents the first step in the CEO's plan to slow down AI development.",
@@ -5093,78 +5147,6 @@
       "category": "AI",
       "published": "2026-09-05T22:49:55+00:00",
       "sent_at": "2026-09-05T23:32:44.797644+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2251725/openai-responds-after-report-exposed-another-incident-in-which-its-ai-agents-went-rogue/",
-      "title": "OpenAI responds after report exposed another incident in which its AI agents went rogue",
-      "summary": "Reuters reported earlier this week that the agents hijacked a German wiki forum in an incident OpenAI did not disclose.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-05T21:17:18+00:00",
-      "sent_at": "2026-09-05T21:54:18.434602+00:00"
-    },
-    {
-      "link": "https://www.youtube.com/watch?v=Ss1DUqLjecc",
-      "title": "Isar Aerospace launch into orbit [video]",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Innovationen",
-      "published": "2026-09-05T20:25:30+00:00",
-      "sent_at": "2026-09-05T21:54:18.434602+00:00"
-    },
-    {
-      "link": "https://arxiv.org/abs/2609.03344",
-      "title": "LLMs as a Cognitive Virus",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-05T20:02:35+00:00",
-      "sent_at": "2026-09-05T21:54:18.434602+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/05/hikers-rescued-after-using-google-gemini-for-planning/",
-      "title": "Hikers rescued after using Google Gemini for planning",
-      "summary": "The sheriff’s office said the hikers “were advised by Gemini to bring far less food and water than their group required.\"",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-05T19:35:24+00:00",
-      "sent_at": "2026-09-05T19:54:19.846444+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/save-nearly-50-percent-on-this-awesome-16-inch-oled-laptop-with-a-ryzen-ai-5-430-cpu-and-16gb-ram-hps-macbook-neo-beating-omnibook-x-flip-is-down-to-just-usd699",
-      "title": "Save nearly 50% on this awesome 16-inch OLED laptop with a Ryzen AI 5 430 CPU & 16GB RAM — HP's MacBook Neo-beating OmniBook X Flip is down to just $699",
-      "summary": "If you're looking for a capable machine for everyday tasks and media consumption without breaking the bank, there isn't a better deal out there than this one.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-05T18:51:54+00:00",
-      "sent_at": "2026-09-05T19:54:19.846444+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/05/openai-confirms-wiki-incident-says-its-working-on-a-framework-for-more-disclosure/",
-      "title": "OpenAI confirms ‘wiki incident,’ says it’s ‘working on a framework’ for more disclosure",
-      "summary": "OpenAI acknowledged its role in a recently reported incident where AI agents took over a German wiki forum.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-05T18:05:27+00:00",
-      "sent_at": "2026-09-05T19:54:19.846444+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2251707/seattle-times-newsday-sue-openai-microsoft-for-copyright-infringement/",
-      "title": "Two more news organizations sue OpenAI and Microsoft for copyright infringement",
-      "summary": "The Seattle Times and Newsday accused the two AI giants of using their content without permission.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-05T17:46:29+00:00",
-      "sent_at": "2026-09-05T19:54:19.846444+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/software/windows/stripped-down-windows-11-for-ai-developers-demands-64gb-ram-and-insane-250-gb-s-bandwidth-project-zenith-will-debut-on-amds-flagship-ryzen-ai-halo-platform",
-      "title": "Stripped-down Windows 11 for AI developers demands 64GB RAM and insane 250 GB/s bandwidth — Project Zenith will debut on AMD's flagship Ryzen AI Halo platform",
-      "summary": "Project Zenith is a version of Windows 11 that lets developers work right out of the box. It comes pre-installed with developer tools like Visual Studio Code, GitHub Copilot, and WSL 2+ Ubuntu, among others, and includes features that make developing and running AI agents more secure.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-05T17:18:57+00:00",
-      "sent_at": "2026-09-05T19:54:19.846444+00:00"
     }
   ]
 }
