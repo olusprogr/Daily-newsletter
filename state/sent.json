@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.reuters.com/business/gemini-hacked-three-companies-first-known-breakout-by-google-ai-wsj-reports-2026-09-18/",
+      "title": "Gemini hacked three companies in first known breakout by Google's AI",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-19T01:40:35+00:00",
+      "sent_at": "2026-09-19T07:00:17.067835+00:00"
+    },
+    {
+      "link": "https://www.scmp.com/tech/big-tech/article/3368055/alibaba-open-sources-medical-ai-model-can-detect-cancer-and-nearly-150-conditions",
+      "title": "Alibaba open-sources AI model that can detect cancer and nearly 150 conditions",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-18T23:54:42+00:00",
+      "sent_at": "2026-09-19T07:00:17.067835+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/18/googles-new-cc-is-an-ai-agent-that-helps-families-run-their-households/",
+      "title": "Google’s new ‘CC’ is an AI agent that helps families run their households",
+      "summary": "Google is refocusing its CC AI agent on household coordination, letting families share emails, schedules, and tasks so the AI can manage calendars, fill out forms, make shopping lists, plan meals, and more.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-18T17:33:50+00:00",
+      "sent_at": "2026-09-19T07:00:17.067835+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/tech-policy/2026/09/us-government-website-used-chinese-model-the-fbi-called-malicious/",
+      "title": "US government website used Chinese model the FBI called \"malicious\"",
+      "summary": "The Federal Register website briefly used an open source Chinese AI search tool.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-09-18T17:28:50+00:00",
+      "sent_at": "2026-09-19T07:00:17.067835+00:00"
+    },
+    {
+      "link": "https://www.cnn.com/2026/09/18/politics/us-military-ai-false-intelligence-china-ship",
+      "title": "US Military had close call after using AI for hallucinated intelligence report",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-18T17:28:01+00:00",
+      "sent_at": "2026-09-19T07:00:17.067835+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/data-centers/house-passes-act-to-make-ai-data-centers-pay-for-grid-upgrades-to-minimize-impact-on-residents-measure-directs-states-to-consider-adoption-of-federal-standard-within-two-years-of-passing",
+      "title": "House passes act to make AI data centers pay for grid upgrades to minimize impact on residents — measure directs states to consider adoption of federal standard within two years of passing",
+      "summary": "This Ratepayer Protection Act will make data centers pay for grid upgrades made in their name. However, it still has to go through the senate and the White House, before being considered by individual state regulators for adoption.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-18T15:20:43+00:00",
+      "sent_at": "2026-09-19T07:00:17.067835+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/ai-pacs-have-dumped-nearly-1-million-into-an-obscure-senate-race/",
+      "title": "AI PACs Have Dumped Nearly $1 Million Into an Obscure Senate Race",
+      "summary": "The reliably Republican South Dakota senate seat has an incumbent on the ballot. But PACs associated with AI labs and investors have already spent more money on the race than actual residents have.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-09-18T15:00:08+00:00",
+      "sent_at": "2026-09-19T07:00:17.067835+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/if-the-ai-industry-followed-its-own-research-it-might-have-paused-already/",
+      "title": "If the AI Industry Followed Its Own Research, It Might Have Paused Already",
+      "summary": "Anthropic’s CEO says that safety hinges on understanding how AI “thinks.” So far the evidence is disturbing.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-09-18T15:00:00+00:00",
+      "sent_at": "2026-09-19T07:00:17.067835+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/09/18/tilly-norwoods-press-tour-is-going-about-as-well-as-youd-expect-for-an-ai/",
       "title": "Tilly Norwood’s press tour is going about as well as you’d expect for an AI",
       "summary": "In one particularly odd interview, Norwood seems to malfunction and begin speaking Chinese.",
@@ -5066,78 +5138,6 @@
       "category": "AI",
       "published": "2026-09-04T09:03:00+00:00",
       "sent_at": "2026-09-05T07:23:34.757313+00:00"
-    },
-    {
-      "link": "https://engineering.atspotify.com/2026/9/portal-by-spotify-cut-my-claude-code-token-usage-by-90",
-      "title": "Portal by Spotify cut my Claude Code token usage by 90%",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-04T23:38:50+00:00",
-      "sent_at": "2026-09-05T02:52:33.935543+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/video-games/pc-gaming/nvidia-app-update-fails-to-block-unofficial-dlss-multi-frame-generation-on-rtx-40-series-modders-restore-support-across-multiple-games-within-hours",
-      "title": "Nvidia app update fails to block unofficial DLSS multi-frame generation mod on RTX 40 series gaming GPUs — modders restore support across multiple games within hours",
-      "summary": "When NVIDIA launched the GeForce RTX 50 series, a major part of the hype surrounding the new GPU family was its support for DLSS Multi-Frame Generation. This feature was officially locked to the new RTX 50 \"Blackwell\" GPUs, but modders have been working on unlocking it for RTX 40-series cards for a while now.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-04T14:56:38+00:00",
-      "sent_at": "2026-09-05T02:52:33.935543+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/gadgets/989407/alienware-gaming-laptop-capsule-dishwasher-samsung-oled-deal-sale",
-      "title": "Alienware’s refurbished 16 Aurora is almost $200 off at Woot",
-      "summary": "Gaming laptop deals aren’t what they used to be (stares daggers at RAMageddon), which is why I consider Woot’s deal on a refurbished Alienware 16 Aurora gaming laptop with Nvidia’s RTX 5050 a pretty good deal at $927 for new Woot customers (with code WOOTALIEN used at checkout). It costs $1,029 for returning Woot shoppers, [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-09-04T14:55:40+00:00",
-      "sent_at": "2026-09-05T02:52:33.935543+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/04/googles-gemini-spark-can-now-manage-your-google-photos-library/",
-      "title": "Google’s Gemini Spark can now manage your Google Photos library",
-      "summary": "Gemini Spark can edit and curate photo albums, create shared collections, turn photos into calendar events, and handle other Google Photos tasks for AI Pro and Ultra subscribers.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-04T14:47:11+00:00",
-      "sent_at": "2026-09-05T02:52:33.935543+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/gpus/discrete-graphics-card-sales-hit-four-year-record-despite-high-prices-shipments-reach-13-24-million-units-as-market-defies-pc-slump",
-      "title": "Discrete graphics card sales hit four-year record despite soaring memory prices — AMD gains market share as notebook graphics carry the market",
-      "summary": "Shipments of standalone graphics processors for PCs grow sequentially and year-over-year amid shortage of components and increased prices.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-04T12:45:23+00:00",
-      "sent_at": "2026-09-05T02:52:33.935543+00:00"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/09/04/1143457/the-download-ukraine-selling-drone-data-ai-reshaping-language/",
-      "title": "The Download: selling battlefield drone data and AI reshaping language",
-      "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Data from drones in Ukraine is fueling a new Wild West marketplace —Cory Alpert, a researcher at the University of Melbourne studying AI&#8217;s impact on democracy, who previously served in the&#8230;",
-      "source": "MIT Technology Review",
-      "category": "AI",
-      "published": "2026-09-04T12:10:00+00:00",
-      "sent_at": "2026-09-05T02:52:33.935543+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2246397/how-to-edit-claude-memory/",
-      "title": "How to edit Claude's memory",
-      "summary": "Claude has the ability to use past chats with you as context for current and future prompts, so it's important that they are accurate.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-04T12:00:00+00:00",
-      "sent_at": "2026-09-05T02:52:33.935543+00:00"
-    },
-    {
-      "link": "https://productrise.app/blog/google-ai-mode-prefers-more-expensive-products",
-      "title": "Google AI Mode shows same products 21.6% more expensive than traditional search",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-04T11:59:15+00:00",
-      "sent_at": "2026-09-05T02:52:33.935543+00:00"
     }
   ]
 }
