@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/997795/google-gemini-rogue-ai-hack",
+      "title": "Gemini went rogue, hacked three companies, and Google hid it",
+      "summary": "In May, Gemini broke containment and hacked three different companies, but Google didn't disclose the incident until the Wall Street Journal approached the company. The hacks happened during a test of the model's cybersecurity capabilities run by third-party Irregular, which was also involved in similar incidents involving Meta and OpenAI. According to WSJ, Google didn't [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-19T15:25:03+00:00",
+      "sent_at": "2026-09-19T16:12:58.033411+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/chatgpt-6-astra-cracks-108-year-old-unsolved-wwi-german-code-for-the-first-time-radio-message-sharing-enemy-movement-intelligence-had-evaded-decoding-1918-crimean-fleet-warning-verified-against-hms-canterbury-logs",
+      "title": "ChatGPT-6 Astra cracks 108-year-old unsolved WWI German code for the first time — radio message sharing enemy movement intelligence had evaded decoding, 1918 Crimean fleet warning verified against HMS Canterbury logs",
+      "summary": "108 years after it was originally transmitted, an encrypted World War I German radio message has apparently been deciphered for the first time.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-19T15:02:02+00:00",
+      "sent_at": "2026-09-19T16:12:58.033411+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/19/petlibros-new-ai-powered-feeder-is-a-game-changer-for-multi-cat-homes/",
+      "title": "Petlibro’s new AI-powered feeder is a game changer for multi-cat homes",
+      "summary": "Petlibro's new Granary 2 smart feeders use a built-in scale and (on pricier models) an AI camera to track exactly how much your cat is eating and when — though the fanciest health-monitoring features will cost you an extra subscription.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-19T15:00:00+00:00",
+      "sent_at": "2026-09-19T16:12:58.033411+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/19/ai-safety-conversations-have-gotten-unbelievable/",
+      "title": "AI safety conversations have gotten unbelievable",
+      "summary": "This week two conversations about AI safety went viral that demonstrate just how hard it is to discern AI fact from fiction.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-19T15:00:00+00:00",
+      "sent_at": "2026-09-19T16:12:58.033411+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/entertainment/996855/anamanaguchi-anyway-yeah-i-guess-interview-music",
+      "title": "Anamanaguchi has ‘too goddamn many’ browser tabs open right now",
+      "summary": "Anamanaguchi, the band consisting of Peter Berkman, James DeVito, Luke Silas, and Ary Warnaar, are most known for their chiptune music. Like me, you might have first heard them in game soundtracks like 2010's Scott Pilgrim vs. the World: The Game or know of their collaboration with Hatsune Miku (which even made its way into [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-09-19T15:00:00+00:00",
+      "sent_at": "2026-09-19T16:12:58.033411+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/gadgets/997467/hyte-x50-pc-case-deal-sale",
+      "title": "The colorful, unique Hyte X50 PC case is $50 off",
+      "summary": "The Hyte X50 is a PC case that really stands out from the typical black box design, and it’s $50 off at the company’s site until September 21st, 2026, bringing the price down to $99.99. This attractive case supports motherboards from ITX all the way up to the E-ATX form factors, and GPUs that are [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-09-19T15:00:00+00:00",
+      "sent_at": "2026-09-19T16:12:58.033411+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/podcast/997382/openai-microsoft-anthropic-elon-musk-cartel-ai-competition",
+      "title": "Does AI need an antitrust exemption so it doesn&#8217;t kill everyone????",
+      "summary": "Today on Decoder, we’ve got the first of a two-part series on the future of business, and I&#8217;m talking with Jonathan Kanter, the former antitrust chief for the US Department of Justice in the Biden administration. These days, he’s both a professor of law at WashU and professor of technology policy at Carnegie Mellon. The [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-19T14:00:00+00:00",
+      "sent_at": "2026-09-19T16:12:58.033411+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2263198/google-gemini-escaped-testing-environment-hacked-three-companies/",
+      "title": "Google Gemini also escaped its testing environment and hacked three companies",
+      "summary": "Google's AI model hacked real companies during testing due to a misconfiguration by its testing partner, as well.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-09-19T13:05:53+00:00",
+      "sent_at": "2026-09-19T16:12:58.033411+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/tech-industry/this-week-on-toms-hardware-premium-september-19-2026-steam-frame-interview-killer-ai-models-and-the-dram-crisis-deepens",
       "title": "This week on Tom's Hardware Premium: September 19, 2026 — Steam Frame interview, killer AI models, and the DRAM crisis deepens",
       "summary": "This week on Tom's Hardware Premium, we offer deep-dives into the Steam Frame, explore how AI is changing the landscape of consumer electrionics, and how advanced AI accelerators are reaching Eastern shores, despite export controls.",
@@ -5048,42 +5120,6 @@
       "category": "Hardware",
       "published": "2026-09-05T13:36:38+00:00",
       "sent_at": "2026-09-05T17:07:43.691289+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/cpus/amd-reportedly-prepping-ryzen-5-7500-non-f-cpu-with-integrated-graphics-at-double-the-price-six-core-zen-4-chip-rumored-to-share-identical-specs-with-its-f-moniker-cousin",
-      "title": "AMD reportedly prepping Ryzen 5 7500 (non-F) CPU with integrated graphics at double the price — Six-core Zen 4 chip rumored to share identical specs with its F-moniker cousin",
-      "summary": "A new report suggests AMD is preparing a non-F version of the Ryzen 5 7500F with integrated graphics. It would cost 230 Euros, or $267, which would put it above even the 7600X3D in terms of pricing, despite sharing identical specs with the 7500F.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-05T13:09:23+00:00",
-      "sent_at": "2026-09-05T14:33:16.310095+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2249734/apple-products-being-discontinued-left-behind-2026/",
-      "title": "10 products Apple is leaving behind in 2026",
-      "summary": "As Apple continues to upgrade its operating system and line of smartphones, smartwatches, displays, and computers, it's leaving plenty behind in 2026.",
-      "source": "Engadget",
-      "category": "Hardware",
-      "published": "2026-09-05T12:15:00+00:00",
-      "sent_at": "2026-09-05T14:33:16.310095+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/gpus/modder-gets-nvidias-dlss-5-working-on-amds-rdna-4-gpus-rx-9070-xt-only-manages-30-fps-at-1080p-right-now-but-5070-ti-level-performance-is-the-eventual-goal",
-      "title": "Modder gets Nvidia's DLSS 5 working on AMD's RDNA 4 GPUs — RX 9070 XT only manages 30 FPS at 1080p right now, but 5070 Ti-level performance is the eventual goal",
-      "summary": "If you have an RX 9000 series GPU, you can try out DLSS 5 on your PC right now and absolutely destroy the stable performance you were getting before.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-05T12:00:00+00:00",
-      "sent_at": "2026-09-05T14:33:16.310095+00:00"
-    },
-    {
-      "link": "https://garymarcus.substack.com/p/pause-openai-now",
-      "title": "Pause OpenAI Now",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-04T15:24:07+00:00",
-      "sent_at": "2026-09-05T14:33:16.310095+00:00"
     }
   ]
 }
