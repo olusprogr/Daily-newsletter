@@ -1,6 +1,15 @@
 {
   "items": [
     {
+      "link": "https://slop-sense.labtoagi.com/games/is-this-image-ai/",
+      "title": "Can you tell which images are AI-generated?",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-19T23:02:34+00:00",
+      "sent_at": "2026-09-20T05:41:10.818761+00:00"
+    },
+    {
       "link": "https://www.engadget.com/2258772/robot-vacuum-downsides/",
       "title": "What are the downsides of robot vacuums?",
       "summary": "Robot vacuums save a lot of time and effort with their ability to clean autonomously. However, there are a number of reasons why they might not work for you.",
@@ -5147,15 +5156,6 @@
       "category": "Innovationen",
       "published": "2026-09-05T20:14:25+00:00",
       "sent_at": "2026-09-06T07:36:34.078568+00:00"
-    },
-    {
-      "link": "https://www.techpolicy.press/americas-two-largest-school-districts-impose-ai-moratoriums/",
-      "title": "America's two largest school districts impose AI moratoriums",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-05T21:43:22+00:00",
-      "sent_at": "2026-09-06T02:50:59.068331+00:00"
     }
   ]
 }
