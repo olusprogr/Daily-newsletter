@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/09/20/techcrunch-mobility-how-do-we-know-when-an-av-is-safe-enough/",
+      "title": "TechCrunch Mobility: How do we know when an AV is safe enough?",
+      "summary": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, the role AI is playing in it. To get this in your inbox, sign up here for free — just click TechCrunch Mobility!",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-20T16:02:00+00:00",
+      "sent_at": "2026-09-20T17:55:26.992367+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/997867/trump-ai-force-ai-czar",
+      "title": "Trump now says he wants to form an ‘AI Force’",
+      "summary": "The president posted on Truth Social that he wanted to appoint an \"AI czar\" to lead a new \"AI force.\" He made the announcement amid growing calls from across the political spectrum and even within the industry to pump the brakes on AI development. He posted that his administration \"will not in any way hinder [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-20T15:39:22+00:00",
+      "sent_at": "2026-09-20T17:55:26.992367+00:00"
+    },
+    {
+      "link": "https://www.buchodi.com/chatgpt-now-knows-what-you-do-on-other-websites-via-ad-collector/",
+      "title": "ChatGPT now knows what you do on other websites via ad collector",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-20T15:18:44+00:00",
+      "sent_at": "2026-09-20T17:55:26.992367+00:00"
+    },
+    {
+      "link": "https://pirateface.co/",
+      "title": "Pirate Face Rescues LLM Models from Deletion",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-20T15:16:07+00:00",
+      "sent_at": "2026-09-20T17:55:26.992367+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/big-tech/anthropic-openai-spacexai-and-google-face-antitrust-lawsuit-for-agreeing-to-slow-ai-development-plaintiffs-say-plan-has-been-in-motion-for-months-before-calls-agreement-self-serving",
+      "title": "Anthropic, OpenAI, SpaceXAI, and Google face antitrust lawsuit for agreeing to slow AI development — plaintiffs say plan has been in motion for months before, calls agreement ‘self-serving’",
+      "summary": "A proposed class action lawsuit has been lodged against the four big AI tech companies after they agreed to slow AI development for safety reasons. The lead counsel on the lawsuit says that 'AI will quickly spin out of control and could kill us all if we allow AI safety and protocol ... to be controlled by private self-serving agreements between the world's most powerful 'for profit' technology companies.'",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-20T14:48:57+00:00",
+      "sent_at": "2026-09-20T17:55:26.992367+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/drones/autonomous-strike-drone-uses-nvidia-jetson-orin-nano-to-independently-pick-and-bomb-targets-swedish-startups-attack-drones-run-small-ai-model-require-no-human-input-and-zero-external-comms",
+      "title": "Autonomous NATO strike drone uses Nvidia Jetson Orin Nano to independently pick and bomb targets — Swedish startup's attack drones run small AI model, require no human input and zero external comms",
+      "summary": "Drones built with small, non-frontier computer-vision models autonomously identified and attacked targets in a recent demo.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-20T11:20:00+00:00",
+      "sent_at": "2026-09-20T17:55:26.992367+00:00"
+    },
+    {
+      "link": "https://sagivo.com/blog/im-tired-of-the-ai-tone",
+      "title": "I'm Tired of the AI Tone",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-20T11:18:26+00:00",
+      "sent_at": "2026-09-20T17:55:26.992367+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/jensen-huang-says-there-is-0-percent-chance-ai-destroys-the-world-by-2030-we-should-go-as-fast-as-we-can-irrespective-of-anyone-else-dismisses-anthropic-doom-warnings-and-rejects-new-regulations",
+      "title": "Jensen Huang says there is '0% chance' AI destroys the world by 2030 — 'We should go as fast as we can, irrespective of anyone else,' dismisses Anthropic doom warnings and rejects new regulations",
+      "summary": "Chief executive of Nvidia claims that fears that AI will destroy humanity in the coming years are unsubstantiated as safety mechanisms can preserve that.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-20T10:55:00+00:00",
+      "sent_at": "2026-09-20T17:55:26.992367+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/pc-components/gpus/the-pc-gaming-ray-tracing-obsession-began-with-the-first-rtx-20-graphics-cards-released-on-this-day-in-2018-the-geforce-rtx-2080-and-2080-ti-led-the-charge-but-games-were-thin-on-the-ground",
       "title": "The PC gaming ray tracing obsession began with the first RTX 20 graphics cards released on this day in 2018 — the GeForce RTX 2080 and 2080 Ti led the charge, but games were thin on the ground",
       "summary": "Nvidia’s Turing GPU became available to enthusiasts for the first time on this day eight years ago.",
@@ -5156,78 +5228,6 @@
       "category": "AI",
       "published": "2026-09-06T15:08:44+00:00",
       "sent_at": "2026-09-06T19:58:48.844625+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/06/travis-kalanicks-atoms-might-be-getting-into-the-robotaxi-business/",
-      "title": "Travis Kalanick’s Atoms might be getting into the robotaxi business",
-      "summary": "The Uber founder has said that Atoms will allow him to complete \"unfinished business.\"",
-      "source": "TechCrunch",
-      "category": "Autonomes Fahren",
-      "published": "2026-09-06T16:45:00+00:00",
-      "sent_at": "2026-09-06T17:35:25.213477+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/06/techcrunch-mobility-tesla-cybercab-hits-the-road-and-a-snag/",
-      "title": "TechCrunch Mobility: Tesla Cybercab hits the road — and a snag",
-      "summary": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, the role AI is playing in it.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-06T16:08:00+00:00",
-      "sent_at": "2026-09-06T17:35:25.213477+00:00"
-    },
-    {
-      "link": "https://beza1e1.tuxen.de/ai_feelings.html",
-      "title": "How I feel about AI",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-06T15:00:19+00:00",
-      "sent_at": "2026-09-06T17:35:25.213477+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/gpus/single-slot-low-profile-75w-rtx-3060-with-no-power-connectors-disappoints-in-tests-gpu-runs-entirely-off-the-pcie-slot-but-offers-severely-crippled-performance-and-frightening-thermals",
-      "title": "Single-slot low-profile 75W RTX 3060 with no power connectors disappoints in tests — GPU runs entirely off the PCIe slot, but offers severely crippled performance and frightening thermals",
-      "summary": "If you want to cut your 12GB RTX 3060's performance in half while worsening its thermals, this might be the perfect product for you.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-06T14:58:29+00:00",
-      "sent_at": "2026-09-06T17:35:25.213477+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2246419/foldable-phones-still-need-to-fix-biggest-problem-wobble/",
-      "title": "Foldable phones still need to fix this problem",
-      "summary": "Samsung's Z Fold series has improved the foldable phone form factor over time, but there remains an issue that the rumored iPhone Ultra may not remedy.",
-      "source": "Engadget",
-      "category": "Hardware",
-      "published": "2026-09-06T14:00:00+00:00",
-      "sent_at": "2026-09-06T17:35:25.213477+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/openai-admits-to-wiki-incident-after-its-agents-were-discovered-using-a-programming-hub-to-communicate-says-more-transparency-is-needed-regarding-misalignments",
-      "title": "OpenAI admits to 'wiki incident' after its agents were discovered using a programming hub to communicate — says more transparency is needed regarding misalignments",
-      "summary": "OpenAI has admitted that its experimental AI agents used an open German programming wiki to communicate.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-06T14:31:54+00:00",
-      "sent_at": "2026-09-06T14:59:38.300427+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/990436/fairphone-6-plus-review",
-      "title": "The Fairphone 6 Plus is the midrange phone we desperately needed",
-      "summary": "The Fairphone 6 Plus feels like an extremely average midrange Android phone and I couldn't be more thrilled. The mission has always been admirable. Fairphone seeks out ethically sourced materials and offers a high degree of repairability for its devices. But the phones themselves required a lot of sacrifices, like putting up with underpowered processors [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-09-06T13:00:00+00:00",
-      "sent_at": "2026-09-06T14:59:38.300427+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2247891/claude-help-manage-emails-risks-involved/",
-      "title": "Claude can help manage your email inbox, but there are some risks involved",
-      "summary": "AI has been known to mess up some pretty basic things, but Claude wants to help you with your emails.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-06T12:00:00+00:00",
-      "sent_at": "2026-09-06T14:59:38.300427+00:00"
     }
   ]
 }
