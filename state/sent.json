@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/998453/california-ai-data-center-bills",
+      "title": "California tightens rules on AI data center energy and water use",
+      "summary": "California Gov. Gavin Newsom has signed seven bills designed to prevent AI data centers from passing utility costs onto residents, as reported earlier by the Los Angeles Times. The package of laws requires the California Public Utilities Commission to introduce a new rate classification for data centers, while forcing them to pay for upgrades to [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-21T20:29:45+00:00",
+      "sent_at": "2026-09-21T22:25:10.176145+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/21/openai-forms-math-advisory-group-as-its-ai-resolves-more-than-100-open-problems/",
+      "title": "OpenAI forms math advisory group as its AI resolves more than 100 open problems",
+      "summary": "The group won't be given leeway to slow down or redirect OpenAI's ongoing mathematical research.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-21T20:15:58+00:00",
+      "sent_at": "2026-09-21T22:25:10.176145+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/21/metas-muse-is-outpacing-chatgpts-early-mobile-launch/",
+      "title": "Meta’s Muse is outpacing ChatGPT’s early mobile launch",
+      "summary": "Meta’s new AI agent Muse has racked up more downloads and daily active users in the U.S. and Canada than ChatGPT did over the same period after its mobile debut, according to new estimates from Appfigures.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-21T19:19:21+00:00",
+      "sent_at": "2026-09-21T22:25:10.176145+00:00"
+    },
+    {
+      "link": "https://terrytao.wordpress.com/2026/09/21/advisory-group-on-mathematics-and-artificial-intelligence/",
+      "title": "The Advisory Group on Mathematics and Artificial Intelligence",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-21T19:17:42+00:00",
+      "sent_at": "2026-09-21T22:25:10.176145+00:00"
+    },
+    {
+      "link": "https://timdettmers.com/2026/09/21/dlab-open-source-week/",
+      "title": "Frontier AI on Your Own Hardware",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-21T18:53:01+00:00",
+      "sent_at": "2026-09-21T22:25:10.176145+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/ai-tariffs-rare-minerals-what-to-expect-from-trumps-upcoming-summit-with-xi-jinping/",
+      "title": "AI, Tariffs, Rare Minerals: What to Expect From Trump’s Upcoming Summit With Xi Jinping",
+      "summary": "Washington and Beijing have grown ever more linked in the AI boom, making hardware exports and technological restrictions hefty bargaining chips in negotiations.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-09-21T18:33:02+00:00",
+      "sent_at": "2026-09-21T22:25:10.176145+00:00"
+    },
+    {
+      "link": "https://openai.com/index/advisory-group-on-mathematics-and-ai/",
+      "title": "Advisory Group on Mathematics and Artificial Intelligence",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-21T17:27:49+00:00",
+      "sent_at": "2026-09-21T22:25:10.176145+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/amd-beats-intel-to-the-trillion-dollar-club-as-stock-price-soars-firm-joins-nvidia-broadcom-and-sk-hynix-for-companies-worth-over-usd1-trillion",
+      "title": "AMD beats Intel to the trillion-dollar club as stock price soars — firm joins Nvidia, Broadcom, and SK hynix for companies worth over $1 trillion",
+      "summary": "AMD has crossed the $1 trillion market cap mark, joining an exclusive list of less than two dozen companies around the world.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-21T15:42:55+00:00",
+      "sent_at": "2026-09-21T22:25:10.176145+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/09/21/metas-ai-agent-has-been-blocked-from-using-amazon-com/",
       "title": "Meta’s AI agent has been blocked from using Amazon.com",
       "summary": "Muse isn't welcome as a shopper anymore.",
@@ -5219,69 +5291,6 @@
       "category": "AI",
       "published": "2026-09-07T04:07:07+00:00",
       "sent_at": "2026-09-08T03:59:23.953757+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/07/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/",
-      "title": "Opaque recurrence, and other AI terms that you should probably know",
-      "summary": "The rise of AI has brought an avalanche of new terms and slang. Here is a glossary with definitions of some of the most important words and phrases you might encounter.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-07T19:24:00+00:00",
-      "sent_at": "2026-09-07T21:05:34.677852+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/09/07/tesla-driver-assist-stop-sign-buena-vista/",
-      "title": "A Tesla ran a stop sign and killed a man, record confirms Full Self-Driving/Autopilot was on",
-      "summary": "A Tesla Model 3 ran a stop sign in Buena Vista Township, New Jersey, and hit a Honda Civic turning left through the intersection. The Civic’s driver, 82-year-old Stephen Field, was killed. Police reported it as a car that failed to stop. What no one reported is that Tesla’s own data says the car’s driver-assist system was engaged. This is part of an ongoing Electrek investigation matching reported crashes to Tesla’s redacted NHTSA data. more…",
-      "source": "Electrek",
-      "category": "Autonomes Fahren",
-      "published": "2026-09-07T18:41:15+00:00",
-      "sent_at": "2026-09-07T21:05:34.677852+00:00"
-    },
-    {
-      "link": "https://news.ycombinator.com/item?id=49600233",
-      "title": "Tell HN: OpenAI brings back 5 hour limit for plus and business standard users",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-07T16:40:32+00:00",
-      "sent_at": "2026-09-07T21:05:34.677852+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/features/2026/09/the-ai-data-center-boom-is-causing-new-accountability-problems/",
-      "title": "The complex corporate web behind a $3.2 billion AI data center",
-      "summary": "When multiple companies are behind one project, who bears responsibility for problems?",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-09-07T11:00:03+00:00",
-      "sent_at": "2026-09-07T21:05:34.677852+00:00"
-    },
-    {
-      "link": "https://www.economist.com/finance-and-economics/2026/09/04/the-jobs-apocalypse-is-postponed-an-ai-jobs-boom-is-here",
-      "title": "Initial effects of AI technology on employment look positive",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-07T10:38:32+00:00",
-      "sent_at": "2026-09-07T21:05:34.677852+00:00"
-    },
-    {
-      "link": "https://vllm.ai/blog/2026-08-23-speculative-decoding-amd-gpus",
-      "title": "Speculative Decoding in vLLM on AMD GPUs",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-07T09:26:41+00:00",
-      "sent_at": "2026-09-07T21:05:34.677852+00:00"
-    },
-    {
-      "link": "https://github.com/trailofbits/coop",
-      "title": "Coop – Isolated VM Environments for Running Claude Code and Codex",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-07T04:18:28+00:00",
-      "sent_at": "2026-09-07T21:05:34.677852+00:00"
     }
   ]
 }
