@@ -1,6 +1,15 @@
 {
   "items": [
     {
+      "link": "https://tinybrains.dev",
+      "title": "Show HN: A competition for small neural networks that play strategy games",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-20T14:59:10+00:00",
+      "sent_at": "2026-09-21T05:52:49.206103+00:00"
+    },
+    {
       "link": "https://www.engadget.com/2260401/major-chatbot-apps-work-with-carplay/",
       "title": "Which major chatbot apps work with CarPlay?",
       "summary": "If you aren't happy with Siri while driving, several other chatbot apps are compatible with CarPlay now.",
@@ -5255,15 +5264,6 @@
       "category": "AI",
       "published": "2026-09-07T04:38:22+00:00",
       "sent_at": "2026-09-07T11:32:28.583743+00:00"
-    },
-    {
-      "link": "https://bcantrill.dtrace.org/2025/12/05/your-intellectual-fly-is-open/",
-      "title": "Your intellectual fly is open when you use an LLM to author a post (2025)",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-06T11:56:43+00:00",
-      "sent_at": "2026-09-07T05:39:35.703298+00:00"
     }
   ]
 }
