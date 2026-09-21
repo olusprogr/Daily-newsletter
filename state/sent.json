@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.engadget.com/2263659/amazon-bars-metas-muse-ai-from-shopping-on-its-site/",
+      "title": "Amazon bars Meta's Muse AI from shopping on its site",
+      "summary": "Amazon claims Meta's Muse is a safety risk and bars the AI agent from shopping on its website.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-09-21T11:38:42+00:00",
+      "sent_at": "2026-09-21T11:57:25.257904+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/improve-your-gaming-experience-with-this-27-inch-asrock-fhd-180hz-gaming-monitor-thats-at-an-all-time-low-of-just-usd96-quality-ips-panel-with-amd-freesync-hdr400-and-1ms-response-time-is-40-percent-off",
+      "title": "Improve your gaming experience with this 27-inch ASRock FHD 180Hz gaming monitor that’s at an all-time low of just $96 — quality IPS panel with AMD Freesync, HDR400, and 1ms response time is 40% off",
+      "summary": "Jump into high-refresh-rate gaming without breaking the bank: ASRock’s 27-inch 1080p 180Hz IPS gaming monitor is just $96, a whopping 40% off and at an all-time low",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-21T11:01:52+00:00",
+      "sent_at": "2026-09-21T11:57:25.257904+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/us-and-china-discuss-alerting-each-other-to-ai-national-security-threats/",
+      "title": "US and China Discuss Alerting Each Other to AI National Security Threats",
+      "summary": "Officials discussed setting up a mechanism for the two countries to notify each other of AI incidents which could threaten national security.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-09-21T10:34:43+00:00",
+      "sent_at": "2026-09-21T11:57:25.257904+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-controlled-robot-arms-attempted-harmful-tasks-97-percent-of-the-time-experiments-included-stabbing-a-baby-doll-mixing-chemicals-openai-and-anthropic-models-try-mixing-bleach-and-stabbing-dolls-without-jailbreaks",
+      "title": "AI-controlled robot arms attempted harmful tasks 97% of the time; experiments included stabbing a baby doll, mixing chemicals — OpenAI and Anthropic models try mixing bleach and stabbing dolls without jailbreaks",
+      "summary": "“Frontier robot policies,” the policies for models turning what a robot sees into what it does, “reliably carry out harmful instructions,” according to a Sept. 18 report by Robocurve.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-21T10:30:00+00:00",
+      "sent_at": "2026-09-21T11:57:25.257904+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/998090/un-ai-panel-hugging-face-hack-precautionary-principle",
+      "title": "UN says AI safeguards can’t wait for certainty",
+      "summary": "Governments need to rein in increasingly capable AI agents before their risks are fully understood, a United Nations scientific panel warned in the global organization's first major assessment of OpenAI's hack of Hugging Face earlier this year. The report cements AI's place on the global diplomatic agenda this week as leaders gather in New York [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-21T10:18:06+00:00",
+      "sent_at": "2026-09-21T11:57:25.257904+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/searching-for-powerful-women-silicon-valley/",
+      "title": "The Search for Silicon Valley’s Most Powerful Woman",
+      "summary": "Women hold some of the most consequential jobs in tech, but they’re still not cult figures. WIRED investigates why.",
+      "source": "Wired",
+      "category": "Hardware",
+      "published": "2026-09-21T10:00:00+00:00",
+      "sent_at": "2026-09-21T11:57:25.257904+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/wired-women-editors-letter/",
+      "title": "Women Still Face Too Much Bullshit—in Silicon Valley and Beyond",
+      "summary": "WIRED dedicating an entire issue to women in 2026 might seem regressive, or obvious, or even unnecessary. We disagree.",
+      "source": "Wired",
+      "category": "Hardware",
+      "published": "2026-09-21T10:00:00+00:00",
+      "sent_at": "2026-09-21T11:57:25.257904+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/gpus/nvidias-next-gen-rtx-60-gpus-might-not-be-released-until-2028-prominent-leaker-claims-gaming-takes-a-back-seat-as-company-focuses-on-delivering-data-center-products",
+      "title": "Nvidia's next-gen RTX 60 GPUs might not be released until 2028, prominent leaker claims — gaming takes a back seat as company focuses on delivering data center products",
+      "summary": "Leaker Kopite7kimi claims that Nvidia's next-gen RTX 60 series may not be released until 2028, meaning that consumers will have to wait three years between GPU generations",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-21T09:52:19+00:00",
+      "sent_at": "2026-09-21T11:57:25.257904+00:00"
+    },
+    {
       "link": "https://tinybrains.dev",
       "title": "Show HN: A competition for small neural networks that play strategy games",
       "summary": "",
@@ -5210,60 +5282,6 @@
       "category": "Hardware",
       "published": "2026-09-07T11:46:37+00:00",
       "sent_at": "2026-09-07T17:12:35.860730+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/3d-printing/start-your-3d-printing-journey-for-just-usd169-with-these-elegoo-printers-before-labor-day-ends-lock-in-up-to-35-percent-off-the-easy-to-use-neptune-3-pro-or-go-large-with-the-neptune-4-plus-for-massive-model-printing",
-      "title": "Start your 3D printing journey for just $169 with these Elegoo printers before Labor Day ends — lock in up to 35% off the easy-to-use Neptune 3 Pro or go large with the Neptune 4 Plus for massive model printing",
-      "summary": "Grab a huge discount on two of Elegoo's most popular 3D printers right now, with a price drop of up to 35%. Both the Elegoo Neptune 3 Pro and Neptune 4 Plus offer features that both beginners and enthusiasts will love.",
-      "source": "Tom's Hardware",
-      "category": "Innovationen",
-      "published": "2026-09-07T10:50:54+00:00",
-      "sent_at": "2026-09-07T11:32:28.583743+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/ssds/flea-market-shopper-uncovers-usd1-500-worth-of-samsung-ssds-inside-a-usd30-expansion-card-three-2tb-980-pro-drives-were-hidden-beneath-an-asus-hyper-m-2-heatsink",
-      "title": "Flea market shopper uncovers $1,500 worth of Samsung SSDs inside a $30 expansion card — Three 2TB 980 Pro drives were hidden beneath an Asus Hyper M.2 heatsink",
-      "summary": "An extremely fortunate bargain hunter in Kuwait found three Samsung 980 Pro 2TB SSDs slotted inside a $30 PCIe expansion card. Each of those drives is worth between $400 and $500, so it's clear to say the thrifter struck gold during an AI rush.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-07T10:30:00+00:00",
-      "sent_at": "2026-09-07T11:32:28.583743+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/desktops/gaming-pcs/this-price-hike-busting-rtx-5080-gaming-pc-is-cheaper-than-it-was-in-april-save-usd500-on-a-9800x3d-beast-with-32gb-of-ddr5-2tb-ssd",
-      "title": "This price-hike-busting RTX 5080 gaming PC is cheaper than it was in April — save $500 on a 9800X3D beast with 32GB of DDR5, 2TB SSD",
-      "summary": "Get an RTX 5080 gaming PC with a 9800X3D CPU for less than $3,000.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-07T10:27:52+00:00",
-      "sent_at": "2026-09-07T11:32:28.583743+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/gpus/enthusiast-says-dlss-5-pushed-rtx-5090-past-600w-and-melted-the-16-pin-connector-nvidias-neural-rendering-tech-adds-up-to-50-percent-more-power-draw-in-testing",
-      "title": "Enthusiast says DLSS 5 pushed RTX 5090 past 600W and melted the 16-pin connector — Nvidia's neural rendering tech adds up to 50% more power draw in testing",
-      "summary": "Another RTX 5090 has gone down but this time it has something else to blame other than its own 16-pin connector. The connector is still what melted but potentially because of DLSS 5 pulling way too much power at the back end.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-07T10:00:00+00:00",
-      "sent_at": "2026-09-07T11:32:28.583743+00:00"
-    },
-    {
-      "link": "https://github.com/timgordontg/engrim",
-      "title": "Show HN: Engrim – A universal, local-first SQLite memory engine for AI CLIs",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-07T04:49:36+00:00",
-      "sent_at": "2026-09-07T11:32:28.583743+00:00"
-    },
-    {
-      "link": "https://restofworld.org/2026/ai-training-jobs-expert-replacement/",
-      "title": "I refused to train the AI that could replace me",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-07T04:38:22+00:00",
-      "sent_at": "2026-09-07T11:32:28.583743+00:00"
     }
   ]
 }
