@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/09/21/morphotonics-raises-e40m-as-it-tk-tk-tk-t/",
+      "title": "Morphotonics raises €40M to expand its display tech into data centers",
+      "summary": "Deeptech company Morphotonics raises €40M from investors including 3M Ventures, Innovation Industries, BOM, and Invest-NL.",
+      "source": "TechCrunch",
+      "category": "Innovationen",
+      "published": "2026-09-22T06:00:00+00:00",
+      "sent_at": "2026-09-22T07:16:05.841868+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/meta-quest-promo-code/",
+      "title": "Meta Quest Promo Codes and Coupons for September 2026",
+      "summary": "Experience cutting-edge VR and save up to 20% with coupons for the latest games, Meta Quest 3, Ray-Ban AI glasses, and more deals.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-09-22T05:00:00+00:00",
+      "sent_at": "2026-09-22T07:16:05.841868+00:00"
+    },
+    {
+      "link": "https://variety.com/2026/film/news/robin-williams-daughter-ai-videos-1236871568/",
+      "title": "Robin Williams' Daughter to Fans Creating AI Videos: 'Have Some Shame'",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-22T01:24:49+00:00",
+      "sent_at": "2026-09-22T07:16:05.841868+00:00"
+    },
+    {
+      "link": "https://status.claude.com/incidents/7g1qpkyz5gxh",
+      "title": "Claude Status – Elevated errors for multiple models",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-22T01:05:19+00:00",
+      "sent_at": "2026-09-22T07:16:05.841868+00:00"
+    },
+    {
+      "link": "https://robocurve.org/roboharm/",
+      "title": "Roboharm: Do frontier robot policies refuse unsafe instructions?",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Innovationen",
+      "published": "2026-09-21T18:58:26+00:00",
+      "sent_at": "2026-09-22T07:16:05.841868+00:00"
+    },
+    {
+      "link": "https://matthewbutterick.com/chron/drop-dead.html",
+      "title": "Big AI to humanity: drop dead",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-21T17:23:19+00:00",
+      "sent_at": "2026-09-22T07:16:05.841868+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/gpus/new-rtx-5070-autumn-limited-edition-gaming-gpu-doubles-as-an-air-freshener-with-built-in-e-sports-aromatherapy-ax-gamings-white-and-purple-card-also-features-an-anime-character-and-floral-graphics",
+      "title": "New RTX 5070 Autumn Limited Edition gaming GPU doubles as an air freshener with built-in 'e-sports aromatherapy' — AX Gaming's white and purple card also features an anime character and floral graphics",
+      "summary": "AX Gaming has revealed its latest seasonal anime-themed limited edition graphics card which, this time, is designed to please your nose as much as your eyes.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-21T14:00:00+00:00",
+      "sent_at": "2026-09-22T07:16:05.841868+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/998191/apple-siri-ai-iphone-16-class-action-lawsuit-settlement",
+      "title": "iPhone owners can now submit claims in Apple’s $250 million Siri AI settlement",
+      "summary": "Apple is paying $250 million to settle claims that it failed to deliver an AI-upgraded Siri - and now, eligible iPhone owners can submit a claim for a payout. If you live in the US and purchased an iPhone 15 Pro, iPhone 15 Pro Max, or any iPhone 16 model between June 10th, 2024, and [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-21T13:36:52+00:00",
+      "sent_at": "2026-09-22T07:16:05.841868+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/09/21/the-man-who-built-apples-stores-doesnt-buy-silicon-valleys-bet-on-ai-shopping/",
       "title": "The man who built Apple’s stores doesn’t buy Silicon Valley’s bet on AI shopping",
       "summary": "Apple Store architect Ron Johnson says Apple's secret sauce has always been its people.",
@@ -5327,42 +5399,6 @@
       "category": "Hardware",
       "published": "2026-09-08T06:00:00+00:00",
       "sent_at": "2026-09-08T08:48:04.275609+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/09/07/xpeng-iron-humanoid-robot-production-line/",
-      "title": "XPeng starts IRON humanoid robot production as Tesla Optimus stalls",
-      "summary": "XPeng has switched on what it calls the world’s first automated production line for advanced humanoid robots, and its IRON robot walked off that line under its own power. The Chinese automaker says the line runs with more than 80% of its core processes automated. It’s the clearest signal yet that IRON is headed for real manufacturing and not just stage demos. XPeng is targeting mass production by the end of 2026. more…",
-      "source": "Electrek",
-      "category": "Innovationen",
-      "published": "2026-09-08T02:40:34+00:00",
-      "sent_at": "2026-09-08T03:59:23.953757+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/07/eric-wus-newest-company-out-of-stealth-since-may-is-going-after-constructions-labor-crunch/",
-      "title": "Eric Wu’s newest company, out of stealth since May, is going after construction’s labor crunch",
-      "summary": "Eric Wu, who built and ran Opendoor before stepping away in 2022, has had his new company, NavigateAI, out of stealth since May — building AI copilots that give construction workers real-time, hands-free guidance through smartphones and Meta's AI glasses, backed by $25 million from Elad Gil, Khosla Ventures, and Lennar to tackle a labor shortage severe enough that data center projects alone now need 4,000 to 5,000 workers apiece.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-08T02:16:39+00:00",
-      "sent_at": "2026-09-08T03:59:23.953757+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/games/990676/arm-neural-rendering-mali-g2-ultra-xiaomi-xring-o3",
-      "title": "First Xiaomi, then the world: why Arm might give phone gaming a huge graphics boost",
-      "summary": "China is getting first crack at a British technology that might change how mobile games are made and played. Today, the Xiaomi 18 Fold launches in mainland China with an Arm Mali G2-Ultra NX graphics processor inside its custom Xring O3 chip. What's so special about that? After five years of development, Arm now has [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-09-08T02:00:00+00:00",
-      "sent_at": "2026-09-08T03:59:23.953757+00:00"
-    },
-    {
-      "link": "https://www.ft.com/content/b207536e-6def-4080-878f-d0eba61d11e0",
-      "title": "US Republicans revolt against Flock AI surveillance as backlash intensifies",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-07T04:07:07+00:00",
-      "sent_at": "2026-09-08T03:59:23.953757+00:00"
     }
   ]
 }
