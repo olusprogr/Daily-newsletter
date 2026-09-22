@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/09/22/techcrunch-founder-summits-agenda-revealed-unlock-fundraising-hiring-and-ai-insights-in-boston-on-november-4/",
+      "title": "TechCrunch Founder Summit’s agenda revealed: Unlock fundraising, hiring, and AI insights in Boston on November 4",
+      "summary": "Founders shouldn't have to learn the hardest lessons the hardest way. TechCrunch Founder Summit is designed to make the challenges of starting a company easier and the highs that much greater.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-22T23:21:49+00:00",
+      "sent_at": "2026-09-22T23:28:19.301427+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/22/snorkel-ai-triples-valuation-to-3-5b-as-demand-for-ai-training-data-booms/",
+      "title": "Snorkel AI triples valuation to $3.5B as demand for AI training data booms",
+      "summary": "The seven-year-old startup has raised a $350 million Series E to fuel its data-as-a-service approach.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-22T21:56:43+00:00",
+      "sent_at": "2026-09-22T23:28:19.301427+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/ai/2026/09/new-anthropic-openai-models-make-same-promise-a-little-more-for-a-lot-less-money/",
+      "title": "New Anthropic, OpenAI models make same promise: A little more for a lot less money",
+      "summary": "The frontier AI model race has entered its comparison shopping phase.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-09-22T21:25:18+00:00",
+      "sent_at": "2026-09-22T23:28:19.301427+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/999094/rabbit-ai-agent-os3",
+      "title": "Rabbit’s new AI agent doesn’t need an R1 to run",
+      "summary": "Rabbit, the company behind the underwhelming R1 device, is rolling out a standalone AI agent that you don't need its hardware to use, as reported earlier by Wired. The startup says its new OS3 \"agentic operating system\" runs in the cloud but operates locally across Windows, Mac, and Linux devices. According to Rabbit, you can [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-22T20:52:40+00:00",
+      "sent_at": "2026-09-22T23:28:19.301427+00:00"
+    },
+    {
+      "link": "https://www.assbench.com/",
+      "title": "LLM Ass Bench",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-22T20:34:19+00:00",
+      "sent_at": "2026-09-22T23:28:19.301427+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/security/2026/09/microsoft-disrupts-ai-assisted-platform-that-compromised-12000/",
+      "title": "Microsoft disrupts AI-assisted platform that compromised 12,000 accounts",
+      "summary": "EvilTokens provided an end-to-end platform that makes mass compromises faster and easier.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-09-22T19:45:47+00:00",
+      "sent_at": "2026-09-22T23:28:19.301427+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/22/meta-admits-muses-likeness-to-openclaw-isnt-a-coincidence/",
+      "title": "Meta admits Muse’s likeness to OpenClaw isn’t a coincidence",
+      "summary": "Meta says Muse was built from scratch, but acknowledges the AI assistant was \"heavily inspired\" by OpenClaw — down to some of its workspace filenames and content.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-22T19:09:11+00:00",
+      "sent_at": "2026-09-22T23:28:19.301427+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/gadgets/2026/09/adobe-premiere-finally-brings-powerful-video-editing-to-android-and-its-free/",
+      "title": "Adobe Premiere finally brings powerful video editing to Android, and it's free",
+      "summary": "You don't even need a Creative Cloud login to edit clips, but AI features cost extra.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-09-22T19:08:58+00:00",
+      "sent_at": "2026-09-22T23:28:19.301427+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/09/22/qualcomm-launches-two-new-smartphone-chips-with-emphasis-on-ai/",
       "title": "Qualcomm launches two new smartphone chips with emphasis on AI",
       "summary": "Qualcomm said that its new top chip can run 30B mixture-of-expert model locally.",
@@ -5309,78 +5381,6 @@
       "category": "AI",
       "published": "2026-09-08T18:00:56+00:00",
       "sent_at": "2026-09-09T02:59:39.007799+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2251144/spacex-starship-40-recovered-months-travel-back-to-texas/",
-      "title": "SpaceX's recovered Starship 40 will take months to get back to Texas",
-      "summary": "SpaceX's rocket traveled thousands of miles from Texas to the Indian Ocean for a launch test. For a number of reasons, it'll take a lot longer to return home.",
-      "source": "Engadget",
-      "category": "Innovationen",
-      "published": "2026-09-08T22:30:00+00:00",
-      "sent_at": "2026-09-08T23:10:39.720768+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2253393/whats-going-on-with-openai-and-the-navier-stokes-controversy/",
-      "title": "What's going on with OpenAI and the Navier-Stokes controversy?",
-      "summary": "Artificial intelligence has solved a major mathematics problem, but credit for the accomplishment is murky.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-08T22:11:24+00:00",
-      "sent_at": "2026-09-08T23:10:39.720768+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2252838/how-to-use-ios-27-ai-clean-up-tool-iphone-photos/",
-      "title": "How to use the AI Clean Up tool in iOS 27 to remove unwanted objects in iPhone Photos",
-      "summary": "Clean Up has been a handy tool for removing unwanted elements from photos since iOS 18, but iOS 27 upgrades it even further.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-08T22:00:00+00:00",
-      "sent_at": "2026-09-08T23:10:39.720768+00:00"
-    },
-    {
-      "link": "https://openreview.net/challenge?redirect=%2Fforum%3Fid%3Dpc7fqaOcAH",
-      "title": "Large Language Models Develop Novel Social Biases Through Adaptive Exploration",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-08T21:47:38+00:00",
-      "sent_at": "2026-09-08T23:10:39.720768+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/08/hackers-are-stealing-claude-tokens-from-subscribers/",
-      "title": "Hackers are stealing Claude tokens from subscribers",
-      "summary": "Last month, a Claude user noticed his account was consuming tokens even though he wasn't working. Anthropic has since warned users about hackers.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-08T21:10:27+00:00",
-      "sent_at": "2026-09-08T23:10:39.720768+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/08/cognition-hits-48b-valuation-signaling-investors-believe-ai-coding-is-far-from-a-winner-take-all-market/",
-      "title": "Cognition hits $48B valuation, signaling investors believe AI coding is far from a winner-take-all market",
-      "summary": "Cognition's valuation multiple is higher than Cursor's was before selling to SpaceX.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-08T21:04:06+00:00",
-      "sent_at": "2026-09-08T23:10:39.720768+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/991710/openai-navier-stokes-solution",
-      "title": "Drama swirls around OpenAI’s legendary mathematical milestone",
-      "summary": "OpenAI says it found a solution to a major math problem that has remained unsolved for around 90 years, as reported earlier by The New York Times and Wired. In a blog post on Tuesday, OpenAI announced that it discovered a solution to the Navier-Stokes problem - which relates to the flow of liquid and [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-08T20:53:52+00:00",
-      "sent_at": "2026-09-08T23:10:39.720768+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/08/the-exploration-company-nabs-450-million-to-challenge-spacex/",
-      "title": "The Exploration Company nabs $450 million to challenge SpaceX",
-      "summary": "The Exploration Company (TEC) has raised $450 million to build reusable spacecraft, in what it describes as “the largest-ever Series C by a European space company.”",
-      "source": "TechCrunch",
-      "category": "Innovationen",
-      "published": "2026-09-08T20:47:34+00:00",
-      "sent_at": "2026-09-08T23:10:39.720768+00:00"
     }
   ]
 }
