@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/09/22/qualcomm-launches-two-new-smartphone-chips-with-emphasis-on-ai/",
+      "title": "Qualcomm launches two new smartphone chips with emphasis on AI",
+      "summary": "Qualcomm said that its new top chip can run 30B mixture-of-expert model locally.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-22T20:00:00+00:00",
+      "sent_at": "2026-09-22T20:51:55.570166+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/gadgets/998842/qualcomm-snapdragon-8-elite-extreme-gen-6",
+      "title": "Qualcomm’s Snapdragon 8 Elite Gen 6 comes in an Extreme version too",
+      "summary": "Qualcomm has announced the Snapdragon 8 Elite Gen 6, this year joined by the 8 Elite Extreme Gen 6 too. The company describes both new phone chips as flagships, and the spec differences are relatively minor, mostly limited to improved AI processing, video capture, and gaming performance on the Extreme model. Both Gen 6 chips [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-22T20:00:00+00:00",
+      "sent_at": "2026-09-22T20:51:55.570166+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/998844/motorola-signature-27-specs-snapdragon-8-elite-extreme-gen-6",
+      "title": "Motorola’s wild-looking Signature 27 runs Qualcomm’s new Extreme chipset",
+      "summary": "Motorola is the first company to announce a phone running Qualcomm's top-end Snapdragon 8 Elite Extreme Gen 6 chip. The Signature 27 looks set to be Motorola's most advanced flagship in some years, though we're still waiting for the full specs, price, and release date. Any prospective buyers will first have to get over the [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-09-22T20:00:00+00:00",
+      "sent_at": "2026-09-22T20:51:55.570166+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2265564/motorolas-new-signature-27-is-among-the-first-smartphone-to-use-the-snapdragon-8-elite-extreme-gen-6-processor/",
+      "title": "Motorola's new Signature 27 is among the first smartphone to use the Snapdragon 8 Elite Extreme Gen 6 processor",
+      "summary": "Not bad for a quick refresh.",
+      "source": "Engadget",
+      "category": "Hardware",
+      "published": "2026-09-22T20:00:00+00:00",
+      "sent_at": "2026-09-22T20:51:55.570166+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2265628/qualcomm-is-making-not-one-but-two-versions-of-its-flagship-snapdragon-8-elite-gen-6-chip/",
+      "title": "Qualcomm is making not one but two versions of its flagship Snapdragon 8 Elite Gen 6 chip",
+      "summary": "That video capture is nothing to sneeze at.",
+      "source": "Engadget",
+      "category": "Hardware",
+      "published": "2026-09-22T20:00:00+00:00",
+      "sent_at": "2026-09-22T20:51:55.570166+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/gadgets/998932/googlebook-preorder-pixel-buds-2a-deal-sale",
+      "title": "Score free Pixel Buds 2A when you preorder a Googlebook at Best Buy",
+      "summary": "The Android-powered Googlebooks are coming soon, with familiar brands and specs that rival Windows Copilot machines. For anyone eager to get their hands on any the new laptops, there’s a preorder perk you may want to know about lasting until October 25th, 2026. When you add a Googlebook to your cart at Best Buy, a [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-22T19:28:55+00:00",
+      "sent_at": "2026-09-22T20:51:55.570166+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/tech-policy/2026/09/lawsuit-demands-openai-pay-for-new-school-after-chatgpt-used-in-shooting/",
+      "title": "Lawsuit demands OpenAI pay for new school after ChatGPT used in shooting",
+      "summary": "British Columbia sues OpenAI, demands Tumbler Ridge shooter’s ChatGPT logs.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-09-22T19:28:23+00:00",
+      "sent_at": "2026-09-22T20:51:55.570166+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2265801/anthropic-and-openai-announce-more-powerful-and-cheaper-ai-models/",
+      "title": "Anthropic and OpenAI announce more powerful (and cheaper) AI models",
+      "summary": "I thought we were supposed to be slowing down the frontier.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-09-22T19:11:11+00:00",
+      "sent_at": "2026-09-22T20:51:55.570166+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/09/22/waymos-latest-expansion-strategy-teenagers/",
       "title": "Waymo’s latest expansion strategy: teenagers",
       "summary": "Waymo is opening its robotaxi service to teenagers aged 13 to 17 in Nashville, its second city the offer rides to minors.",
@@ -5309,78 +5381,6 @@
       "category": "Innovationen",
       "published": "2026-09-08T20:47:34+00:00",
       "sent_at": "2026-09-08T23:10:39.720768+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/991727/openai-chatgpt-images-2-5-sketch",
-      "title": "ChatGPT Sketch turns your bad drawings into detailed AI images",
-      "summary": "OpenAI announced ChatGPT Images 2.5 on Tuesday and is adding a new way to tell ChatGPT what you want it to make an image of: by drawing a doodle. With a new feature called Sketch, you can just draw something right inside ChatGPT and then tell ChatGPT how you want it to make an image [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-08T20:16:09+00:00",
-      "sent_at": "2026-09-08T20:42:01.280234+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/meta-releases-muse-a-personal-ai-agent-with-privacy-built-into-it/",
-      "title": "Meta Releases Muse, a Personal AI Agent With Privacy ‘Built Into It’",
-      "summary": "Designed to compete with OpenClaw and Instinct, the company says Muse can do everything from sell your car to book you a plane ticket.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-09-08T20:12:51+00:00",
-      "sent_at": "2026-09-08T20:42:01.280234+00:00"
-    },
-    {
-      "link": "https://ai.meta.com/muse/",
-      "title": "Muse: Meta's personal AI agent, features and capabilities",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-08T19:25:00+00:00",
-      "sent_at": "2026-09-08T20:42:01.280234+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/gadgets/2026/09/top-chipmakers-embrace-asmls-400m-machines-agree-to-crucial-chipmaking-change/",
-      "title": "Top chipmakers embrace ASML’s $400M machines, agree to crucial chipmaking change",
-      "summary": "Chipmaking changes could boost productivity of new ASML machines by 40 percent.",
-      "source": "Ars Technica",
-      "category": "Hardware",
-      "published": "2026-09-08T19:12:53+00:00",
-      "sent_at": "2026-09-08T20:42:01.280234+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/",
-      "title": "Meta debuts its Muse AI agent. Will consumers trust it?",
-      "summary": "Meta's new personal AI agent Muse wants access to users' email, calendars, payments, health services, and more — making the company's biggest consumer AI bet yet a major test of whether people still trust Meta with their data.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-08T19:00:00+00:00",
-      "sent_at": "2026-09-08T20:42:01.280234+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race",
-      "title": "Meta bets on AI agent Muse to catch up in AI race",
-      "summary": "Meta is making another push to bring artificial intelligence to the masses with Muse, a personal assistant it says can put AI in the hands of virtually anyone. The product is the latest step in a multi-billion-dollar strategy overhaul designed to revitalize the company's ailing position in the AI race and help it catch up [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-08T19:00:00+00:00",
-      "sent_at": "2026-09-08T20:42:01.280234+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2253133/meta-reveals-its-ai-agent-that-can-shop-send-emails-and-plan-trips-on-your-behalf/",
-      "title": "Meta reveals its AI agent that can shop, send emails and plan trips on your behalf",
-      "summary": "Muse, Meta's newly revealed AI agent, can perform tasks autonomously, if you trust it to do that.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-08T19:00:00+00:00",
-      "sent_at": "2026-09-08T20:42:01.280234+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/tech-policy/2026/09/real-photos-of-young-girls-were-in-nudify-app-ads-on-facebook-instagram/",
-      "title": "“This is the AI men actually use”: Meta ads pushed apps nudifying real teens",
-      "summary": "Meta dragged its feet removing ads that nudify young girls' Instagram pics.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-09-08T18:43:09+00:00",
-      "sent_at": "2026-09-08T20:42:01.280234+00:00"
     }
   ]
 }
