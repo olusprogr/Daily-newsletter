@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/09/21/the-man-who-built-apples-stores-doesnt-buy-silicon-valleys-bet-on-ai-shopping/",
+      "title": "The man who built Apple’s stores doesn’t buy Silicon Valley’s bet on AI shopping",
+      "summary": "Apple Store architect Ron Johnson says Apple's secret sauce has always been its people.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-21T23:44:28+00:00",
+      "sent_at": "2026-09-22T01:25:03.691852+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day/",
+      "title": "Muse, Meta's extraordinarily privileged AI assistant, has a serious 0-day",
+      "summary": "A simple ClickFix attack is only one way to completely hijack the new agent.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-09-21T22:24:38+00:00",
+      "sent_at": "2026-09-22T01:25:03.691852+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/ai/2026/09/trump-rejects-ai-slowdown-calls-launches-ai-force-instead/",
+      "title": "Trump rejects AI slowdown calls, launches \"AI Force\" instead",
+      "summary": "The president offered few details on what his proposed new AI Force would do.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-09-21T15:37:56+00:00",
+      "sent_at": "2026-09-22T01:25:03.691852+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/cpus/amd-ryzen-5-5500f-and-7500-show-up-at-retail-with-pricing-above-msrp-budget-cpus-are-usd20-more-expensive-than-list-price-even-from-first-party-sellers",
+      "title": "AMD Ryzen 5 5500F and 7500 show up at retail with pricing above MSRP — budget CPUs are $20 more expensive than list price, even from first-party sellers",
+      "summary": "Nearly two weeks after they were announced, AMD's Ryzen 5 5500F and 7500 (non-F) are available for sale, though prices are slightly above MSRP.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-21T14:45:00+00:00",
+      "sent_at": "2026-09-22T01:25:03.691852+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/21/googles-899-googlebook-is-a-bet-that-youll-buy-a-new-laptop-for-gemini/",
+      "title": "Google’s $899 Googlebook is a bet that you’ll buy a new laptop for Gemini",
+      "summary": "Google’s AI-native Googlebook ties Gemini to the cursor, dictation, widgets, and other parts of the desktop experience.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-21T14:39:22+00:00",
+      "sent_at": "2026-09-22T01:25:03.691852+00:00"
+    },
+    {
+      "link": "https://pluralistic.net/2026/09/21/sunsetting/",
+      "title": "The Claude Delusion",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-21T14:30:24+00:00",
+      "sent_at": "2026-09-22T01:25:03.691852+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/huawei-shelves-global-ai-chip-rollout-as-chinas-own-demand-outstrips-supply-15-488-chip-atlas-clusters-leverage-optical-networking-to-counter-nvidia-scales-to-120-eflops",
+      "title": "Huawei shelves global AI chip rollout as China's own demand outstrips supply — 15,488-chip Atlas clusters leverage optical networking to counter Nvidia, scales to 120 EFLOPS",
+      "summary": "Huawei says it will not offer its latest AI hardware outside of China citing lack of capacity to serve domestic demand.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-21T14:30:00+00:00",
+      "sent_at": "2026-09-22T01:25:03.691852+00:00"
+    },
+    {
+      "link": "https://www.reddit.com/r/MacOSBeta/comments/1vlnf13/workaround_to_avoid_downloading_ai_models_and/",
+      "title": "macOS 27: Workaround to avoid downloading AI models and save storage",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-21T14:10:49+00:00",
+      "sent_at": "2026-09-22T01:25:03.691852+00:00"
+    },
+    {
       "link": "https://www.theverge.com/ai-artificial-intelligence/998453/california-ai-data-center-bills",
       "title": "California tightens rules on AI data center energy and water use",
       "summary": "California Gov. Gavin Newsom has signed seven bills designed to prevent AI data centers from passing utility costs onto residents, as reported earlier by the Los Angeles Times. The package of laws requires the California Public Utilities Commission to introduce a new rate classification for data centers, while forcing them to pay for upgrades to [&#8230;]",
