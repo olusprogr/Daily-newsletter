@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/09/22/waymos-latest-expansion-strategy-teenagers/",
+      "title": "Waymo’s latest expansion strategy: teenagers",
+      "summary": "Waymo is opening its robotaxi service to teenagers aged 13 to 17 in Nashville, its second city the offer rides to minors.",
+      "source": "TechCrunch",
+      "category": "Autonomes Fahren",
+      "published": "2026-09-22T17:36:06+00:00",
+      "sent_at": "2026-09-22T17:55:08.417976+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/ai/2026/09/toyota-claims-plan-for-400000-factory-robots-wont-replace-human-workers/",
+      "title": "Toyota orders workers to train humanoid robots but says humans won't be replaced",
+      "summary": "Toyota's push comes as automakers race to develop and deploy humanoid robots.",
+      "source": "Ars Technica",
+      "category": "Innovationen",
+      "published": "2026-09-22T17:06:16+00:00",
+      "sent_at": "2026-09-22T17:55:08.417976+00:00"
+    },
+    {
+      "link": "https://artificialanalysis.ai/models/claude-opus-5-5",
+      "title": "Claude Opus 5.5 Intelligence, Performance and Price Analysis (Max)",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-22T16:51:31+00:00",
+      "sent_at": "2026-09-22T17:55:08.417976+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/998813/andreessen-horowitz-ai-academy",
+      "title": "Andreessen Horowitz is launching an ‘academy’ with no homework and partnerships with Palantir, Google, and Meta",
+      "summary": "Venture capital firm Andreessen Horowitz (a16z) is creating an \"academy\" positioned as a pipeline for young people to build or join a Silicon Valley startup. The \"Horowitz Andreessen Academy\" will launch with 10 partners, including Anduril, Anthropic, Coinbase, Google, Meta, NVIDIA, OpenAI, Palantir, Replit, and Stripe, along with $42 million in funding led by a16z. [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-22T16:34:08+00:00",
+      "sent_at": "2026-09-22T17:55:08.417976+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/22/anthropic-releases-opus-5-5-with-lower-prices-and-fable-level-performance/",
+      "title": "Anthropic releases Opus 5.5 with lower prices and Fable-level performance",
+      "summary": "Anthropic called it \"the strongest-performing model we've tested to date.\"",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-22T16:30:07+00:00",
+      "sent_at": "2026-09-22T17:55:08.417976+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/998868/anthropic-claude-opus-5-5-cybersecurity",
+      "title": "Anthropic launches Claude Opus 5.5 with stricter safeguards for cybersecurity",
+      "summary": "Anthropic says its new Claude Opus 5.5 model comes with stronger safeguards in the wake of recent rogue AI hacking incidents. In an announcement on Tuesday, Anthropic says Opus 5.5 comes with improvements to certain risky behaviors, including attempts to escape the company's testing sandbox. It's the first model released by Anthropic after CEO Dario [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-22T16:30:00+00:00",
+      "sent_at": "2026-09-22T17:55:08.417976+00:00"
+    },
+    {
+      "link": "https://www.anthropic.com/claude-opus-5-5",
+      "title": "Claude Opus 5.5",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-22T16:29:05+00:00",
+      "sent_at": "2026-09-22T17:55:08.417976+00:00"
+    },
+    {
+      "link": "https://allpoetry.com/16-bit-Intel-8088-chip",
+      "title": "16-bit Intel 8088 chip",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Hardware",
+      "published": "2026-09-22T16:11:34+00:00",
+      "sent_at": "2026-09-22T17:55:08.417976+00:00"
+    },
+    {
       "link": "https://electrek.co/2026/09/22/honda-just-unveiled-an-electric-mountain-bike-and-it-looks-serious/",
       "title": "Honda just unveiled an electric mountain bike, and it looks serious",
       "summary": "Honda is best known for motorcycles, cars, generators, lawnmowers, robots, jets… basically anything with a motor attached to it. But now the Japanese giant appears ready to add another two-wheeler to that list: an electric mountain bike. more…",
@@ -5309,150 +5381,6 @@
       "category": "AI",
       "published": "2026-09-08T18:43:09+00:00",
       "sent_at": "2026-09-08T20:42:01.280234+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/08/openai-fought-dirty-on-career-making-math-problem-says-nyu-mathematician/",
-      "title": "OpenAI fought dirty on career-making math problem, says NYU mathematician",
-      "summary": "There is a $1 million bounty for the first person providing a solution to the Navier-Stokes existence and smoothness problem.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-08T17:32:15+00:00",
-      "sent_at": "2026-09-08T17:44:54.723279+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2252927/dbrand-already-has-iphone-ultra-cases-spoiling-apples-surprise/",
-      "title": "Dbrand already has iPhone Ultra cases, spoiling Apple's surprise",
-      "summary": "Dbrand is getting the jump on the worst-kept secret in the smartphone world.",
-      "source": "Engadget",
-      "category": "Hardware",
-      "published": "2026-09-08T17:30:00+00:00",
-      "sent_at": "2026-09-08T17:44:54.723279+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/990313/anthropic-class-action-lawsuit-pricing-subscription-plans",
-      "title": "A new class action lawsuit questions whether Anthropic broke the law by misleading power users",
-      "summary": "Anthropic says power users are key to its business - it's prioritized them even when it means cutting off other popular applications, like OpenClaw. But some of these same customers say Anthropic misled them into believing they'd get more out of a top-tier pricing subscription than they did. In an expanded class-action lawsuit filed today, [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-08T17:27:31+00:00",
-      "sent_at": "2026-09-08T17:44:54.723279+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2251592/threads-is-overhauling-its-in-app-analytics-with-more-details-except-for-link-clicks/",
-      "title": "Threads is overhauling its in-app analytics with more details, except for link clicks",
-      "summary": "The insights section of the Threads app now surfaces AI summaries and contextual info about post performance.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-08T17:00:00+00:00",
-      "sent_at": "2026-09-08T17:44:54.723279+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/openai-navier-stokes-math-discovery-academics/",
-      "title": "OpenAI Just Claimed a Huge Math Discovery. Some Academics Are Crying Foul",
-      "summary": "A landmark announcement by the frontier AI lab has been overshadowed by accusations of impropriety.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-09-08T16:42:05+00:00",
-      "sent_at": "2026-09-08T17:44:54.723279+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/08/google-cloud-races-to-catch-up-in-the-ai-deployment-wars-with-accenture-deal/",
-      "title": "Google Cloud races to catch up in the AI deployment wars with Accenture deal",
-      "summary": "Google Cloud expands its enterprise AI push with Accenture, betting on forward-deployed engineers to drive adoption and overcome deployment bottlenecks.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-08T16:20:31+00:00",
-      "sent_at": "2026-09-08T17:44:54.723279+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/08/chrome-is-now-shipping-updates-every-2-weeks-as-ai-changes-the-security-landscape/",
-      "title": "Chrome is now shipping updates every 2 weeks as AI changes the security landscape",
-      "summary": "Google is speeding up Chrome’s release schedule to ship security patches and new features faster.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-08T15:04:09+00:00",
-      "sent_at": "2026-09-08T17:44:54.723279+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/gadgets/991261/jbl-soundbar-detachable-speakers-final-fantasy-deal-sale",
-      "title": "JBL’s soundbar with detachable rear speakers is over $300 off",
-      "summary": "A lot of people are split between getting a nice all-in-one soundbar or spending more for an option that includes rear satellites for immersive surround sound. JBL’s Bar 700 Mark 2 system is one of the most unique options available, shipping with two modular speakers that charge when docked to the soundbar. When detached, the [&#8230;]",
-      "source": "The Verge",
-      "category": "Innovationen",
-      "published": "2026-09-08T15:03:07+00:00",
-      "sent_at": "2026-09-08T17:44:54.723279+00:00"
-    },
-    {
-      "link": "https://spectrum.ieee.org/rivian-self-driving",
-      "title": "Rivian’s Gambit for Full Autonomy",
-      "summary": "I’m sitting in a Rivian R1S SUV as it drives itself down the leafy streets of Palo Alto, Calif. , through areas crowded with touchstones of tech history. At one point I pass the landmark HP Garage , the one-car workshop where Hewlett-Packard, and, arguably, Silicon Valley, was founded in 1939. I skirt Stanford University, where a team led by computer science professor Sebastian Thrun won a US $2 million DARPA Grand Challenge in 2005. The team’s Volkswagen SUV, named Stanley, became the world’s first vehicle to navigate a grueling 212-kilometer Mojave Desert course with no human intervention. The Rivian I’m in might look like any other electric SUV in this affluent town, with its concentration of tech bros, venture capital, and startups. But inside this boxy EV is something special: an Autonomy+ system that will allow owners to enter an address, sit back, and let the vehicle drive to any mapped destination in the U.S. and Canada. This point-to-point system is one of the most advanced semiautonomous-driving systems coming to market. It is also a precursor of the company’s bid to make self-driving cars a reality, for robotaxis and—eventually—for everyday car buyers. After years of incremental advances and frustrating setbacks, self-driving has been swept up in the great AI resurgence, and is now a top priority for investors and global automakers , who envision vast new streams of profits. So here I am, 21 years after that DARPA challenge, riding shotgun in Stanley’s vastly more advanced descendant. Rivian’s Autonomy+ is intended to operate seamlessly on suburban streets like these, sensing and responding to traffic lights, crosswalks, and stop signs. That point-to-point system is set to debut on Rivian’s all-new R2 SUV by roughly the end of this year, and via over-the-air updates for its newest R1S and R1T models. Rivian says it will charge $49.99 a month, or $2,500 up front, versus Tesla’s $99 per month for its rival system, which is somewhat misleadingly called Full Self-Driving (Supervised), or FSD. Mercedes , meanwhile, plans to charge $3,950 for a three-year subscription for the forthcoming MB.Drive Assist Pro on its CLA-Class EV; that system still requires at least one hand on the steering wheel. Video released by Rivian shows the company’s R1 SUV being driven on a variety of urban and rural roads, according to the company. Rivian plans to introduce this self-driving system to compete with Tesla’s offering before the end of 2026. Rivian Impressive as it is, Autonomy+ is only a Level 2+ system in the classification system established by the Society of Automotive Engineers. Level 2+ means that a human driver must be ready to retake control at any moment. Rivian, along with a horde of deep-pocketed rivals, is aggressively working toward more impressive (and potentially lucrative) levels of autonomy. At Level 3, drivers could “check out” behind the wheel for limited periods, to scroll through emails or watch a movie—but not to sleep. The big race right now is to deliver Level 4 autonomy : A car you could (in theory) dispatch to pick up a pizza, and have it carted home on the heated, unoccupied driver’s seat—or in which you could spend the ride lounging alone in the back seat, enjoying a private slice while reading a newspaper. At Rivian’s software lab in Palo Alto, Calif., a technician evaluated code for the company’s self-driving system. Jason Henry/Bloomberg/Getty Images Robotaxis currently roaming the U.S., China, and the Middle East have proved that driverless, Level 4 autonomy is possible. These cars operate in relatively tiny numbers in a couple of dozen cities , and within the specific constraints of commercial services. Now Rivian and its many rivals—including Tesla, Toyota , Mercedes, Volkswagen , and China’s BYD are racing to bring that level of self-guided mobility to the masses. Rivian’s strategy combines a suite of cameras, radar, and lidar; a custom set of silicon chips, developed in-house, to process sensor data; and an AI autonomy model running on those chips. With $1.25 billion in backing from Uber, Rivian plans to graduate to a fleet of self-driving, Level 4 robotaxis starting in 2028. Those taxis, in turn, will be the literal training wheels for extending Level 4 ability to consumer vehicles. Meanwhile, millions of connected cars, as they cruise every nook and cranny of the globe, are already sending data to train automakers’ systems. The race is on to funnel those data through fast-improving AI models with “end to end” capability: an AI architecture, powered by deep learning, that processes raw sensor data directly into physical vehicle commands. So equipped, engineers anticipate they’ll be able to solve the tricky edge cases—tangled urban streets, unique geographies, swarms of pedestrians, inclement weather—that skeptics once deemed intractable. Rivian’s Plan for Level 4 Self-Driving Despite the company’s high media profile, including a spotlight on RJ Scaringe, its MIT-doctorate founder and chief executive, Rivian holds a relatively tiny slice of the U.S. passenger-vehicle market. It sold just 42,000 vehicles last year across its three models, the adventure-minded R1S SUV and R1T pickup, and the Electric Delivery Van. Tesla sold about 1.6 million units. Toyota, the world’s largest automaker, sold more than 11 million. The first generation of the Rivian Autonomy Processor, an AI processing chip developed in-house, was tested at Rivian’s Palo Alto, Calif., lab in December, 2025. Jason Henry/Bloomberg/Getty Images Rivian’s underdog strategy is to leverage software and tech to make itself a serious player. Volkswagen, among the world’s largest automakers, saw enough value there to invest up to $5.8 billion in a joint venture called Rivian and Volkswagen Group Technologies. The joint venture gives Rivian crucial capital for development. It gives Volkswagen access to Rivian’s electrical architecture and to the software for the R2, new-generation Rivian SUV that went on sale in June. Unlike traditional lidar units, which protrude like a layer cake from the roof of a vehicle, Rivian’s unit on the new R2 SUV is housed in a small, sleek enclosure where the windshield meets the roof. Rivian (2);Jason Henry/Bloomberg/Getty Images “Rivian developed an architecture so important that VW is spending billions to buy it, as opposed to trying to re-create it themselves,” says Bryan Reimer , a research scientist in MIT’s Center for Transportation and Logistics . But the joint venture doesn’t give VW access to Rivian’s autonomous tech. In March, that R2 architecture underpinned Rivian’s $1.25 billion deal to supply Uber with up to 50,000 robotaxis. The companies plan to initially deploy 10,000 taxis, beginning in San Francisco and Miami in 2028, before expanding across 25 cities in the U.S., Canada, and Europe. Rivian’s vulnerabilities include struggles with reliability, along with expensive body repair costs that the company says it strove to reduce for its new R2. As impressive as Rivian’s in-house tech may appear, the company has miles to go to catch up with Tesla, which recently announced it has 1.1 million active users of its FSD system. Toyota is also jumping into the game; its Woven by Toyota subsidiary has partnered with the Alphabet-owned Waymo to develop an autonomy platform for robotaxis and consumer cars. The lidar unit on a Waymo robotaxi protrudes noticeably from the roof of the vehicle. Andrej Sokolow/picture alliance/Getty Images Until recently, most observers would have gone all-in on Tesla as the winner of the autonomous race. Elon Musk’s company has begun operating a small test fleet of Model Y robotaxis in three Texas cities and in Florida. Tesla has also begun producing a dedicated autonomous vehicle, the Cybercab robotaxi . But in April, Musk pushed back his timeline for Level 4 autonomy for general consumers: “I’m just guessing here, but probably in the fourth quarter” of 2026, he said . It was the latest in a series of deflating walkbacks from the man who once promised 1 million robotaxis on the road by 2020. Scaringe, during an unveiling of his company’s make-or-break R2 SUV at a Utah state park, says that showroom Rivians will start adopting some of its robotaxis’ Level 4 capabilities no later than 2030, perhaps beginning with self-parking functions. How Self-Driving Systems Are Learning From Humans Like most autonomous cars, Rivian’s system fuses data from multiple sensors to create a robust picture of a fast-moving environment and its obstacles. Data is fed to a neural network—what Rivian refers to as its “ Large Driving Model ,” or LDM—that churns through hundreds of trillions of operations per second to interpret and fuse data from cameras, radar, and lidar. That network is end to end , meaning that it processes multiple streams of raw sensor data (such as camera pixels) and outputs driving controls (for steering, braking, and acceleration) through a single data pipeline. More traditional systems coded distinct steps for data collection, feature extraction, prediction, and decision-making. That proprietary AI driver identifies features in images and point clouds, groups them into objects, and tracks them across frames, time-stamped to the millisecond to account for differing frame rates. The AI thus builds confidence over time, acting on object detections that persist across several frames, rather than, say, slamming the brakes due to a camera blip on a single frame. The virtual driver can then navigate safely even when sensors disagree, by favoring the persistent data. The output— commands for electric motors and other systems—is backed by redundant hardware for by-wire systems such as steering and brakes. During my demo of Rivian’s point-to-point Autonomy+ system, a company test driver sits behind the wheel. Nick Nguyen, the engineer who directs Rivian’s products and programs related to autonomy, watches from the back seat. Compared to, say, a large language model that writes news or fiction, Nguyen says, an autonomous-driving AI is easier to evaluate, so there’s little room for error. “We want cliché. We want boring. Just safe, repeatable driving,” he says. The Rivian R2 is a mid-size SUV with self-driving and off-road capabilities. It competes with the more urban-oriented Tesla Y. Rivian From my brief drive, I’d say suburban boredom is achieved in this Rivian R1S. Unlike some modes of Tesla’s Full Self-Driving (Supervised), Rivian’s system drives like a soccer dad, obeying speed limits to the digit, stopping gracefully at traffic lights, and easing over speed bumps like a driver delivering antiques. For robotaxi companies in the U.S. and China, these types of ho-hum trips are boosting optimism and investment to dizzying heights. Waymo claims 92 percent fewer fatal or serious-injury accidents than human drivers, based on 170 million miles of autonomous ride data. But the real challenge is how well the higher levels of autonomy will work when they reach consumer cars [see Sidebar, “ The Growing Proof That Autonomous Cars Save Lives ”] . Rivian’s core LDM currently ingests cloud data from up to 125,000 cars for analysis and validation, which then fine-tunes the model through simulations. Onboard computing is smart enough to trigger recording only for unusual scenarios. Owners have to agree explicitly to data collection beforehand. Updated LDMs will be beamed back to customer cars via monthly over-the-air updates, part of that self-reinforcing data flywheel. As is true for some of its rivals, Rivian no longer needs to equip its vehicles with an onboard high-definition map or even a cellular link as a backup to pinpoint the car for navigational purposes. That strategic shift reduces data demands, and ensures steady driving in urban canyons or tunnels with no connections. Instead, the Rivian recognizes and responds to its surroundings through recognition and repetition, just as a human would do (and also just as Tesla’s FSD does): interpreting street signs, following lane markers, being alert to hazards. The Rivian R2 features 11 high-definition cameras and five radars. It will integrate a lidar unit early next year to lay the groundwork for future autonomy. That miniaturized lidar will integrate smoothly into the R2’s existing roofline, an improvement over the bulky, drag-producing units seen on Waymo Jaguars, and older partially autonomous models. Vidya Rajagopalan , Rivian’s senior vice-president of electrical engineering hardware, says lidar costs have fallen from above $10,000 to a few hundred dollars in under a decade. Vidya Rajagopalan, Rivian’s senior vice president of electrical engineering hardware, holds a RAP1 AI processor chip. Jason Henry/Bloomberg/Getty Images A mix of sensors plays up the strengths and diminishes the weaknesses of each, Rajagopalan says. Cameras capture color and texture and can distinguish between objects, but they struggle in darkness and low-contrast lighting. Lidar is unaffected by darkness or blinding sunlight, and senses shapes in three dimensions. This inherent 3D capability makes lidar more reliable for slowing or halting a car for random objects—“a tire in the road, or maybe a large dinosaur,” Nguyen quips. Multiple cameras can further contribute 3D data, after a short delay for processing. Sensors with 360-degree vision can outperform human senses in key situations. Radar and lidar can spot nighttime pedestrians or animals hundreds of meters down the road, something no human can do. But lidar can be thrown off by dust, fog, and snow. Radar can “see” through rain or snow, but with relatively low spatial resolution. Why Rivian Ditched Nvidia To handle the flood of sensor data, Rivian has taken on an ambitious challenge: designing its own custom autonomy chip in-house. The Rivian Autonomy Processor (RAP1) is a 5-nanometer processor that can execute 800 trillion operations per second (TOPS), three times as fast as the Nvidia Jetson Orin chip used in its earlier models. The chip will be built to Rivian’s specs by Taiwan Semiconductor Manufacturing Co. , which also makes custom chips for Tesla. Rivian’s autonomy module contains two Rivian Autonomy Processors, each capable of 800 trillion operations per second. Rivian Nvidia’s latest automotive system-on-a-chip, the Drive AGX Thor processor, is being adopted by the likes of BTD, Hyundai, Lucid, Mercedes, Nissan, Volvo, and Xiaomi , along with the Aurora and Waabi autonomous-trucking companies. On paper, a single AGX Thor chip is slightly faster in terms of TOPS, at 1,000 trillion operations per second. But Rivian combines a pair of chips in each autonomy module, giving it 1,600 TOPS and execution rates around 5 billion pixels of data per second, versus 3.5 billion for Nvidia’s Thor. Rajagopalan says developing the chip and AI software simultaneously shaved a critical full year from development. Experts say it’s the kind of fast-to-market speed that China has mastered and that legacy automakers are struggling to match. The in-house design allows Rivian to custom-tailor its software to the chip, and vice versa. Nvidia’s general-purpose chip, designed to satisfy multiple customers with various needs, must devote computing power to onboard infotainment, displays, or other systems. Rivian’s chip is designed to run autonomy and nothing but. During my visit to Rivian’s Silicon Valley campus, Rivian engineers Prasun Raha and Mukund Chavan tutored me on the rapid pace of the company’s autonomy evolution. A cluttered wallboard displays a first-gen architecture that Rivian debuted just five years ago. The initial R1S SUV and R1T pickup used nearly a score of electronic control units (ECUs), the “black boxes” that traditionally control vehicle functions. For its latest R1 models, Rivian reduced the ECU count to seven. The zonal architecture organizes nearly every vehicle function into three zones, hugely consolidating the electronics and simplifying manufacturing. Rivian also leaned into an autonomy trend called “early fusion”: mixing raw, time-and-space-aligned sensor data into a shared view before the neural network acts upon it. In late fusion, each sensor performs solo recognition before it’s combined into a single picture. The self-driving revolution will really begin when the technology migrates from controlled taxi fleets to consumer cars, giving owners back the precious time they waste on commuting. Early fusion preserves the richest sensor data for maximum accuracy in self-driving. But it demands the enormous computing power the RAP1 can deliver. Raha says the approach helps the multimodal system degrade gracefully and continue to operate with certainty even if, say, a camera’s lens gets covered with mud. Together, these elements make up Rivian’s third-generation autonomy platform . Displayed on a test bench, a new Autonomy Compute Module pairs two RAP1 supercomputing chips. The module is eight times as powerful as before but 60 percent smaller, according to the company. Raha says the system was designed expressly to expand Rivians to Level 4 autonomy from today’s Level 2+. RivLink, the automaker’s interconnect technology, can bridge multiple RAP modules to scale processing power. “It lets us build this extensible system, with perhaps two more chips for Level 3 or four for Level 4, depending on how the model scales,” Raha says. Rivian’s Road Map to Full Autonomy Rivian’s next planned milestone toward self-driving will be Level 3 autonomy—a hands-off and eyes-off system, but for highways only. (Remember, Tesla’s current FSD is technically a Level 2 system: hands off but not eyes off.) On the freeway, Nguyen points out, drivers would be spared the drudgery of dealing with stop-and-go traffic, allowing them to boost productivity or just goof off. Some autonomy critics are leery of Level 3, envisioning a limbo zone in which drivers are lulled into a false sense of security when a car drives for long stretches with no human attention required. Ford and GM are among the automakers pivoting toward limited eyes-off functions. Rivian’s senior vice-president of autonomy, James Philbin, sees Level 3 as an inevitable stepping-stone to Level 4. The company expects it will initially be limited to highways, not the cut-and-thrust of city traffic. If a driver fails to respond to alerts, the system will slow the vehicle, pull off on a shoulder, or call 911. Rivian has not announced a timeline for this Level 3 system. Navigating a Tricky Liability Shift on the Way to Immense Profits Ready or not, these much more autonomous systems are coming, a natural evolution of today’s semiautonomous helpers. In developed markets, adoption of showroom cars with partial-to-full automation is projected to jump from 8 percent in 2024 to 28 percent by 2030, according to Morgan Stanley . “One in four cars sold globally may be equipped with smart-driving technology in five years, versus one in eight cars now,” wrote Tim Hsiao , a Morgan Stanley analyst, in a note posted on the company’s website . Combining cameras, lidar, and radar gives a self-driving car a better view of people and objects in front of it, according to Rivian. The company expects to release a self-driving system before the end of 2026 that will compete with Tesla’s, which uses cameras alone. Rivian MIT’s Reimer believes the self-driving revolution will really begin when the technology migrates from controlled taxi fleets to consumer cars, giving owners back the precious time they waste on commuting. If owners could truly send their autonomous car to safely chauffeur children, keep aged parents mobile, or run errands—while owners keep working or playing—the automakers who first help make that happen will enjoy a massive competitive edge, he says. As automakers struggle to convert buyers to subscription models, self-driving appears to be the one advance for which consumers might actually pay plenty. But the greatest impediment to that revolution has little to do with technology. Public skepticism over self-driving is rampant; and the fate of fully autonomous testing in New York City is uncertain . Even going from Level 2 to Level 3 might shift legal liability for accidents in some cases to automakers from drivers, but with Tesla still fighting lawsuits over its rudimentary Autopilot systems, those questions aren’t anywhere near settled. Experts worry that self-driving cars may become as politicized as EVs. Labor unions are pushing back, fearing job losses from taxis to trucking. A crazy quilt of state or local regulations has failed to create coherent industry guidelines. Publicized failures—even ones that don’t result in injuries, such as Waymos driving onto a flooded street or impeding emergency workers—give the industry a black eye. Companies like Tesla and even Waymo, Reimer says, have too often relied on an arrogant “Trust me” approach, resisting regulation and oversight. Nevertheless, the momentum toward real, Level 4, eyes-off, autonomy has reached a point from which there’ll be no backing off. The rest of the journey will depend as much on social and regulatory issues as technical ones, and so Reimer has a bit of advice. “Do it right, and share all your data,” he says. “Earn the right to scale…. It’s about establishing trust, and developing a framework in which we truly believe these systems can operate as a trusted part of our transportation network.”",
-      "source": "IEEE Spectrum",
-      "category": "AI",
-      "published": "2026-09-08T13:00:04+00:00",
-      "sent_at": "2026-09-08T13:18:47.794139+00:00"
-    },
-    {
-      "link": "https://spectrum.ieee.org/are-self-driving-cars-safe",
-      "title": "The Growing Proof That Autonomous Cars Save Lives",
-      "summary": "Plenty of people remain spooked by autonomous vehicles, or AVs. Some experts and policymakers have cautioned that AVs won’t necessarily make roads safer. When it comes to partial or full autonomy, the picture isn’t entirely clear, in part because there aren’t enough self-driving cars to make meaningful apples-to-apples comparisons. Yet mounting research suggests that self-driving cars crash significantly less often than people, and with far fewer injuries. Evidence also shows the building blocks of autonomy, including advanced driver assistance systems, or ADAS—which are already mandated on every new car—are also reducing occupant and pedestrian injuries and deaths, along with insurance claims. On the ADAS front, the Insurance Institute for Highway Safety found that automatic emergency braking (AEB) systems that recognize people in front of the car cut pedestrian crashes by 27 percent. A separate IIHS study found that automated braking greatly reduced rear-end crashes, by 50 percent, and their injuries by 56 percent. The Highway Loss Data Institute found that cars with AEB alone showed a 13 percent drop in property-damage claims. Cars that bundled ADAS features , including automatic braking for pedestrians, adaptive cruise control, and lane-departure warnings, saw claims reductions up to 39 percent. Move to Level 4 autonomy, and Waymo says its robotaxis have now given 20 million paid rides over 220 million miles , the equivalent of 250 lifetimes of driving. In March, Waymo’s independent study showed 92 percent fewer fatal or serious-injury crashes, a 13-fold reduction versus human drivers in comparable city environments. That included 92 percent fewer pedestrian injuries, 83 percent fewer crashes with airbag deployments, and 82 percent fewer crashes with any injuries whatsoever. That included a 96 percent reduction in injury-causing crashes at intersections, among the deadliest environments for any automobile. How Does Limited Fair-Weather Data Compare to Traditional Crash Statistics? A key question is whether Waymo’s robotaxis, currently limited to fair-weather operation in a handful of cities in the U.S., are directly comparable to humans driving a wider variety of roads in much more variable conditions. The IIHS is looking to dig deeper by cleaning up often-incomplete data. Researchers estimate roughly half of human crashes go unreported , and up to one-third of injury accidents, because drivers hope to avoid insurance price hikes. That potentially skews safety numbers in favor of human drivers. And while Waymo leads the industry in transparency, and robotaxi operators are required to report even the tiniest scrape to the National Highway Traffic Safety Administration (NHTSA), not every company voluntarily reports their total miles driven . Related: Rivian’s Gambit for Full Autonomy The IIHS’s latest July study flatly stated that automated cars crash less often than people. But it also sought clarity by creating a more-reliable category of “police-reportable crashes.” It then compared crash rates of human-driven cars against Waymo taxis in San Francisco, Phoenix, Los Angeles, and Austin. Waymo’s Jaguar I-Pace taxis traveled about 50 million driverless miles over the study period, versus 222 billion human miles in the same cities. In a potential boost for public trust, the study generally supported Waymo’s own findings. Waymo taxis were involved in 68 percent fewer crashes overall than human drivers: 76 percent lower in Phoenix, 71 percent in LA, and 35 percent in San Francisco. A 4 percent higher Waymo rate in Austin may reflect an extremely small sample size. Significantly, Waymo’s injury crashes were still 81 percent lower on a per-mile basis. The industry and its supporters continue to press the safety advantages of autonomous vehicles that never get drunk, drowsy, or distracted. Yet for this fledgling AV industry, there are still no national performance or safety standards. A crazy quilt of state or local regulations can allow or prohibit their deployment. That balkanized approach makes it harder to compare crash rates, according to the IIHS, which is calling for better federal reporting standards. A posting on the IIHS website quotes the institute’s director of statistical services, Eric Teoh: “Those are encouraging signs for the future of driverless vehicles.” Teoh, who was also the lead author of the institute’s study, added that “Now we need to get the data-collection system right, so that we can ensure that level of safety continues as these technologies become more prevalent.” Amazon’s Zoox Gets an Exemption for its Robotaxis On July 30, in a move seen as fast-tracking the tech’s deployment, NHTSA granted Zoox , a subsidiary of Amazon, the first-ever exemption from certain motor-vehicle safety standards. That will allow commercial operation of Zoox ’s toaster-shaped robotaxis, which have no steering wheel or pedals aboard. The agency determined that Zoox’s purpose-built robotaxi “would provide an equivalent level of safety” as a compliant vehicle, thereby satisfying the standard for an exemption. On that final day of the SAE’s Automated Transportation Symposium , NHTSA also announced a partnership with SAE Industry Technologies to develop the nation’s first performance and competency standards for AVs, via a three-year, $5 million “A2SCEND” consortium. Some doctors and health professionals are arguing that policymakers need to stop viewing self-driving cars as a tech moonshot but rather as a critical public-health intervention. Jonathan Slotkin, a neurosurgeon, makes a powerful case f or the medical and societal benefits of AVs. Researchers at the Johns Hopkins Bloomberg School of Public Health say that highlighting the social value of AVs is critical to driving public trust and adoption. Consider that roughly 40,000 people in the U.S., including more than 7,000 pedestrians, are killed each year in roadway accidents. About 1.16 million people die in roadway crashes around the world, making them the leading cause of death for children and young adults between the ages of 5 and 29. Cutting that by even 50 percent—let alone the 90 percent reductions suggested by some studies—would save 580,000 lives a year. That social and economic gain would dwarf that of seat-belt adoption or anti–drunk driving campaigns.",
-      "source": "IEEE Spectrum",
-      "category": "Autonomes Fahren",
-      "published": "2026-09-08T12:59:04+00:00",
-      "sent_at": "2026-09-08T13:18:47.794139+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2252521/us-regulator-approves-1-9-billion-loan-to-spin-up-iowas-dead-nuclear-reactor-for-google/",
-      "title": "US regulator approves $1.9 billion loan to spin up Iowa's dead nuclear reactor for Google",
-      "summary": "Google is a step closer to getting access to nuclear power for its AI data centers.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-08T12:58:06+00:00",
-      "sent_at": "2026-09-08T13:18:47.794139+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2250108/how-to-update-gpu-drivers-windows-11/",
-      "title": "How to update your GPU drivers in Windows 11",
-      "summary": "New game releases often require driver updates to yield the best performance on your Windows PC. But knowing where to get them can often be confusing.",
-      "source": "Engadget",
-      "category": "Hardware",
-      "published": "2026-09-08T12:30:00+00:00",
-      "sent_at": "2026-09-08T13:18:47.794139+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/meta-failed-to-catch-hundreds-of-ai-child-abuse-ads-some-included-images-of-real-kids/",
-      "title": "Meta Failed to Catch Hundreds of AI Child Abuse Ads. Some Included Images of Real Kids",
-      "summary": "Images of real children—including a member of a European royal family—were used to create some of the 350 ads containing child sexual abuse. Lawmakers say they plan to investigate.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-09-08T12:00:00+00:00",
-      "sent_at": "2026-09-08T13:18:47.794139+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/gpus/all-in-one-dlss-unlocked-mod-brings-dlss-5-and-multi-frame-gen-to-rtx-20-30-and-40-series-hybrid-tool-taps-amd-fsr-3-1-to-boost-frame-rates-up-to-6x",
-      "title": "All-in-one 'DLSS Unlocked' mod brings DLSS 5 and multi-frame gen to RTX 20, 30, and 40 series — hybrid tool taps AMD FSR 3.1 to boost frame rates up to 6X",
-      "summary": "Performance for the mod remains untested but just the sheer utility of DLSS Unlocked easily puts it at the top of the RTX GPUs mod list. It combines OptiScaler_DLSSNR with DLSS Enabled to bring neural rendering and multi-frame gen to all RTX GPUs.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-08T12:00:00+00:00",
-      "sent_at": "2026-09-08T13:18:47.794139+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/quantum-computing/nec-has-quietly-quit-quantum-computing-hardware-development-report-claims-company-says-it-will-continue-to-evaluate-practical-applications-and-industrialization-of-quantum-technologies",
-      "title": "NEC has quietly quit quantum computing hardware development, report claims — company says it will continue to evaluate practical applications and industrialization of quantum technologies",
-      "summary": "NEC reportedly quits development of quantum computers, but plans to explore practical applications for such systems.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-08T11:45:00+00:00",
-      "sent_at": "2026-09-08T13:18:47.794139+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/video-games/retro-gaming/vintage-emulator-studio-recreates-44-legendary-synths-down-to-the-chip-level-free-mame-powered-component-level-emulation-should-offer-exceedingly-accurate-sound",
-      "title": "Vintage Emulator Studio recreates 44 legendary synths down to the chip level — free MAME-powered component-level emulation should offer exceedingly accurate sound",
-      "summary": "Vintage Emulator Studio brings iconic vintage synths and samplers to life — MAME-powered component-level emulation should offer exceedingly accurate sound",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-08T11:40:00+00:00",
-      "sent_at": "2026-09-08T13:18:47.794139+00:00"
     }
   ]
 }
