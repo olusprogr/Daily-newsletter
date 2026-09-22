@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://electrek.co/2026/09/22/honda-just-unveiled-an-electric-mountain-bike-and-it-looks-serious/",
+      "title": "Honda just unveiled an electric mountain bike, and it looks serious",
+      "summary": "Honda is best known for motorcycles, cars, generators, lawnmowers, robots, jets… basically anything with a motor attached to it. But now the Japanese giant appears ready to add another two-wheeler to that list: an electric mountain bike. more…",
+      "source": "Electrek",
+      "category": "Innovationen",
+      "published": "2026-09-22T13:02:13+00:00",
+      "sent_at": "2026-09-22T13:03:54.262508+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/22/bill-gates-breakthrough-energy-bets-these-21-startups-will-shape-energys-future/",
+      "title": "Bill Gates’ Breakthrough Energy bets these 21 startups will shape energy’s future",
+      "summary": "To the investors at Bill Gates's Breakthrough Energy, the coming wave of electrification will make data center energy demands look quaint by comparison. Here's how they're preparing.",
+      "source": "TechCrunch",
+      "category": "Innovationen",
+      "published": "2026-09-22T13:00:00+00:00",
+      "sent_at": "2026-09-22T13:03:54.262508+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/22/everyone-can-find-a-reason-to-dislike-data-center-construction/",
+      "title": "Everyone can find a reason to dislike data center construction",
+      "summary": "Inside two years of fraught AI data center debates in Pennsylvania.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-22T13:00:00+00:00",
+      "sent_at": "2026-09-22T13:03:54.262508+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/transportation/998184/waymo-public-transportation-discount-subway-bus-visa",
+      "title": "Waymo is offering transit discounts again, this time with Visa",
+      "summary": "Waymo has made several attempts over the years at offering transit discounts to its customers in the hopes of getting them to more frequently use the company's robotaxis to connect with a train or a bus. The Alphabet-owned company announced the latest effort today, teaming up with Visa to offer a discount on robotaxi rides [&#8230;]",
+      "source": "The Verge",
+      "category": "Autonomes Fahren",
+      "published": "2026-09-22T13:00:00+00:00",
+      "sent_at": "2026-09-22T13:03:54.262508+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/22/nscales-ipo-will-test-wall-streets-appetite-for-concentrated-ai-bets-once-again/",
+      "title": "Nscale’s IPO will test Wall Street’s appetite for concentrated AI bets once again",
+      "summary": "The British AI data center developer depends on tech giants Microsoft and Anthropic for most of its revenue.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-22T12:23:05+00:00",
+      "sent_at": "2026-09-22T13:03:54.262508+00:00"
+    },
+    {
+      "link": "https://spectrum.ieee.org/fanless-liquid-cooled-ai-servers-coolit",
+      "title": "The Future Is Fanless: 100% Heat Capture for Liquid Cooled AI Servers",
+      "summary": "This article is brought to you by CoolIT . Beyond 250 kW a server rack can no longer be cooled by a hybrid approach of liquid and air. At this density a 70/30 liquid-air split leaves 75 kW of air load. The air cooling system needed to move it brings cost and complexity few operators will accept. The answer is near-total heat capture. Liquid takes effectively all the heat, air falls below 1 percent of the load, allowing the server to run fanless. CoolIT builds these loops today from modular coldplate blocks proven across six generations of fanless designs. Processor thermal design power (TDP) keeps climbing generation over generation. This rising heat load is now cascading into the memory, networking, storage, and power components that once ran comfortably on air. The heat escaped the chip For years the story stayed simple. Cool the processor and let air handle the rest. That balance has shifted. As TDP climbs, heat spreads outward from the processor and cascades into the components around it. Memory, networking, storage, and power now run hot enough to demand liquid of their own. Engineers designing the next generation of AI servers face a board where heat capture rises with every launch. Beyond 250 kW per rack, air cooling becomes the bottleneck. Near-total liquid heat capture enables fanless AI server designs built for the next generation of computing. New parts, new rules Unlike processors, which are cooled as flat rectangular packages, these peripherals come in a wide range of shapes, sizes, and mounting requirements, each with its own thermal limits. Some run cooler than the processor case temperature, others run hotter, which leaves them sensitive to a design tuned only for CPUs and GPUs. Operators need purpose-built solutions here, matched to the part rather than stretched across the board. CoolIT engineers meet this with a deep toolkit. Conductive plates, vapor chambers, heat pipes, and thermal transfer plates move heat from components closer to the liquid path. Riding coldplates enable pluggable components. Each solution stays true to the component it serves. CoolIT Customer Showcase: How GWDG Cools HPC & AI Systems with CoolIT’s Direct Liquid Cooling CoolIT One loop, one server Cooling the parts is one challenge. Uniting them is the real work. Full heat capture means folding every one of these solutions into a single server loop that distributes coolant effectively and remains easy to install. Connection reliability, coolant routing, and the time it takes to assemble the loop at rack integration determine whether a design thrives in production or stalls on the bench. CoolIT builds these loops from proven modular blocks, so operators gain performance and deployment speed within the same solution. Density forces the decision Rack power continues to climb toward 1 MW, and the case for liquid grows stronger at every step. A 70/30 split of liquid to air holds comfortably at lower density. Past roughly 250 kW it stops working. The 30 percent left to air becomes a 75 kW load inside a single rack, and moving that much heat demands a parallel air system whose cost and footprint few operators will accept. Adding density only widens the gap. As rack power continues to climb toward 1 MW, CoolIT’s modeling places full heat capture as the standard server design for flagship rack-scale products through 2028. The simpler, more efficient answer is to capture the heat in liquid and drop air to less than 1 percent of the total load. True 100 percent remains almost impossible to reach in the strictest sense, so the honest and achievable target is near-total capture. That distinction matters to engineers who value precision, and the direction stays clear either way. Full heat capture moves from a premium option to a mainstream requirement as density rises, and CoolIT’s modeling places it as the standard server design for flagship rack-scale products through 2028. CoolIT delivers it CoolIT scales heat capture all the way to 100 percent using modular coldplate building blocks proven across six generations of fanless server designs. Engineering teams are already working on designs for the maximum density racks coming next. As the cascade spreads and racks grow denser, near-total heat capture becomes the design that keeps AI running . Talk to CoolIT about building a server loop engineered for total heat capture.",
+      "source": "IEEE Spectrum",
+      "category": "AI",
+      "published": "2026-09-22T12:22:50+00:00",
+      "sent_at": "2026-09-22T13:03:54.262508+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/us-and-china-propose-hotline-to-de-escalate-ai-threats-ahead-of-washington-summit-comms-channel-between-both-nations-to-be-left-open-in-case-of-national-security-threats-posed-by-autonomous-artificial-intelligence",
+      "title": "US and China propose hotline to de-escalate AI threats ahead of Washington summit",
+      "summary": "The U.S. and China have proposed implementing AI red lines that will not be crossed, as well as a hotline between the two countries to provide rapid communication and opportunities for joint responses to rogue AI actions.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-22T12:13:41+00:00",
+      "sent_at": "2026-09-22T13:03:54.262508+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/998272/peloton-tread-flex-fitness-treadmills",
+      "title": "Peloton is back with a ‘cheaper’ folding treadmill",
+      "summary": "Last year, Peloton did a sweeping refresh of its hardware that added cameras, fans, and AI-powered software called Peloton IQ. This year, it's zeroing in on its treadmill lineup - refreshing its two existing Treads and adding the new, more affordable Tread Flex into the fold. At a New York City launch event, Peloton chief [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-22T12:10:08+00:00",
+      "sent_at": "2026-09-22T13:03:54.262508+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/09/21/morphotonics-raises-e40m-as-it-tk-tk-tk-t/",
       "title": "Morphotonics raises €40M to expand its display tech into data centers",
       "summary": "Deeptech company Morphotonics raises €40M from investors including 3M Ventures, Innovation Industries, BOM, and Invest-NL.",
@@ -5381,24 +5453,6 @@
       "category": "Hardware",
       "published": "2026-09-08T11:40:00+00:00",
       "sent_at": "2026-09-08T13:18:47.794139+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/991008/xiaomi-18-fold-hands-on-impressions-specs-wide",
-      "title": "Xiaomi’s wide foldable promises more power than Samsung’s",
-      "summary": "Xiaomi is the latest manufacturer to release a short, wide foldable phone, in the week Apple is expected to do the same. I got to try the 18 Fold behind closed doors at IFA last week, and while it looks and feels similar enough to Samsung's Galaxy Z Fold 8, superior specs make it feel [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-09-08T07:00:00+00:00",
-      "sent_at": "2026-09-08T08:48:04.275609+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/semiconductors/intel-surpasses-one-million-high-na-euv-wafers-processed-outpaces-the-rest-of-the-industry-combined-company-also-trailblazing-giant-6-12-photomasks-to-speed-production-and-lower-costs1",
-      "title": "Intel surpasses one million High-NA EUV wafers processed, outpaces the rest of the industry combined — company also trailblazing giant 6×12 photomasks to speed production and lower costs",
-      "summary": "Intel is leading the semiconductor industry with High-NA fleet and process-maturity milestone as it reaches 1 million wafers processed using High-NA tools, moves forward with 6×12 photomask effort.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-08T06:00:00+00:00",
-      "sent_at": "2026-09-08T08:48:04.275609+00:00"
     }
   ]
 }
