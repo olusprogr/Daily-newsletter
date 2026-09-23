@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.smh.com.au/politics/federal/openai-breaches-medicare-albanese-reveals-20260924-p6100u.html",
+      "title": "OpenAI breaches Medicare, Albanese reveals",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-23T21:01:48+00:00",
+      "sent_at": "2026-09-23T22:01:58.517908+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/a-us-china-ai-hotline-wont-be-ready-for-a-while/",
+      "title": "A US-China AI Hotline Won't Be Ready For a While",
+      "summary": "As the US and China race to become the dominant power in the AI industry, the countries also appear to be figuring out ways to communicate on national security issues.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-09-23T21:00:00+00:00",
+      "sent_at": "2026-09-23T22:01:58.517908+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/23/vc-firm-bessemer-now-has-another-5-75b-to-invest-in-what-else-ai/",
+      "title": "VC firm Bessemer now has another $5.75B to invest in (what else?) AI",
+      "summary": "The VC firm says that AI-native companies are growing faster than any technology, ever.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-23T20:35:17+00:00",
+      "sent_at": "2026-09-23T22:01:58.517908+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/news/999195/microsoft-surface-pro-12-inch-surface-laptop-13-inch-qualcomm-x2-plus",
+      "title": "Microsoft refreshes its smaller Surface Pro and Laptop with Qualcomm’s X2 Plus",
+      "summary": "Microsoft is refreshing its Surface Pro 12-inch and Surface Laptop 13-inch devices with Qualcomm's latest Snapdragon X2 Plus chips. The smaller Surface devices retain the same design and hardware features from last year, with faster and more capable chips inside and higher price tags (thanks RAMageddon!). While the 12-inch Surface Pro started at $799.99 last [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-09-23T20:30:00+00:00",
+      "sent_at": "2026-09-23T22:01:58.517908+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/news/999211/microsoft-surface-mouse-haptic-feedback",
+      "title": "Microsoft’s new Surface Mouse has haptic feedback and a customizable action button",
+      "summary": "Microsoft is launching a second generation of its Surface Mouse next month that includes haptic feedback support. The Surface Mouse also has a customizable action button for the first time, which is primarily designed for quick access to Copilot (of course), but can be configured to work with other shortcuts from the Surface app. \"Its [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-23T20:30:00+00:00",
+      "sent_at": "2026-09-23T22:01:58.517908+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2266680/microsofts-new-surface-pro-12-and-surface-laptop-13-feature-snapdragon-x2-plus-chips/",
+      "title": "Microsoft's new Surface Pro 12 and Surface Laptop 13 feature Snapdragon X2 Plus chips",
+      "summary": "Microsoft's smaller Surface Pro 12 and Surface Laptop 13 are getting a much-needed chip upgrade.",
+      "source": "Engadget",
+      "category": "Hardware",
+      "published": "2026-09-23T20:30:00+00:00",
+      "sent_at": "2026-09-23T22:01:58.517908+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tablets/microsoft-surface/microsoft-brings-snapdragon-x2-plus-to-13-inch-surface-laptop-12-inch-surface-pro-low-end-systems-finally-get-upgrades",
+      "title": "Microsoft brings Snapdragon X2 Plus to 13-inch Surface Laptop, 12-inch Surface Pro",
+      "summary": "Microsoft's lowest-end systems are getting upgrades to Qualcomm's latest Snapdragon X2 Plus processors.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-23T20:30:00+00:00",
+      "sent_at": "2026-09-23T22:01:58.517908+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/gadgets/2026/09/youtube-promises-custom-feeds-and-a-lot-more-ai-later-this-year/",
+      "title": "YouTube promises custom feeds and a lot more AI later this year",
+      "summary": "YouTube's next year could change the content you see with a big focus on AI and livestreams.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-09-23T19:35:53+00:00",
+      "sent_at": "2026-09-23T22:01:58.517908+00:00"
+    },
+    {
       "link": "https://www.theverge.com/policy/999412/data-center-water-electricity-disclosure-bills",
       "title": "Data centers are black boxes, but California wants to change that",
       "summary": "California Gov. Gavin Newsom signed a slate of bills on Monday that could finally give communities better data - and more say - on how data centers impact their electricity bills and water supply. As data centers invade a growing number of communities across the US, they've triggered protests over how the infrastructure underpinning AI [&#8230;]",
@@ -5237,78 +5309,6 @@
       "category": "AI",
       "published": "2026-09-09T20:44:43+00:00",
       "sent_at": "2026-09-09T22:54:51.421637+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/tech-policy/2026/09/six-chinese-ai-firms-accused-of-aggressively-copying-us-frontier-models/",
-      "title": "Six Chinese AI firms accused of aggressively copying US frontier models",
-      "summary": "US urges AI firms to ID, then secretly switch, Chinese users to less-capable models.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-09-09T20:06:28+00:00",
-      "sent_at": "2026-09-09T20:23:03.771244+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/09/everything-apple-announced-at-its-fall-iphone-event-from-the-foldable-iphone-duo-to-an-always-listening-apple-watch/",
-      "title": "Everything Apple announced at its fall iPhone event, from the foldable iPhone Duo to an always-listening Apple Watch",
-      "summary": "The main event was the tech giant's highly anticipated first foldable phone, the iPhone Duo.",
-      "source": "TechCrunch",
-      "category": "Hardware",
-      "published": "2026-09-09T20:03:43+00:00",
-      "sent_at": "2026-09-09T20:23:03.771244+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/992766/apple-iphone-18-pro-reference-image",
-      "title": "Apple’s new iPhone camera mode promises to prove your photo isn’t AI",
-      "summary": "Apple is launching a new way to prove that the picture you took isn't manipulated by AI. A new feature, called \"Reference Image,\" will arrive with the iPhone 18 Pro lineup later this month and is supposed to use the device's new camera sensor to \"sign every pixel it sees.\" The iPhone 18 Pro and [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-09T19:30:12+00:00",
-      "sent_at": "2026-09-09T20:23:03.771244+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/09/the-hinge-for-apples-new-foldable-phone-was-built-with-ai/",
-      "title": "The hinge for Apple’s new foldable phone was built with AI",
-      "summary": "Apple says it used AI and 3D printing in the manufacturing process for its long-awaited foldable phone.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-09T19:21:48+00:00",
-      "sent_at": "2026-09-09T20:23:03.771244+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2254210/apple-iphone-18-pro-camera-innovations-went-well-beyond-megapixels-and-ai/",
-      "title": "Apple's iPhone 18 Pro camera innovations went well beyond megapixels and AI",
-      "summary": "While the iPhone Duo might make headlines, variable aperture and more control is more important to me than a foldable iPhone.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-09T19:14:22+00:00",
-      "sent_at": "2026-09-09T20:23:03.771244+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/uk-lawmakers-are-scrambling-in-response-to-ai-summer-of-chaos/",
-      "title": "UK Lawmakers Are Freaking Out Over AI’s Summer of Chaos",
-      "summary": "As AI agents go rogue and fears of superintelligence grow, politicians are raising the alarm over its potential harm to human existence.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-09-09T19:07:42+00:00",
-      "sent_at": "2026-09-09T20:23:03.771244+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2254167/microsoft-strikes-deal-with-national-teachers-union-to-not-use-school-data-to-train-ai/",
-      "title": "Microsoft strikes deal with national teachers union to not use school data to train AI",
-      "summary": "In the absence of federal protections from AI, unions are stepping up.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-09T18:48:31+00:00",
-      "sent_at": "2026-09-09T20:23:03.771244+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/09/harvey-hits-15-5b-valuation-months-after-reaching-11b/",
-      "title": "Harvey hits $15.5B valuation, months after reaching $11B",
-      "summary": "The legal AI startup and VC darling has nearly doubled its valuation in nine months.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-09T18:34:24+00:00",
-      "sent_at": "2026-09-09T20:23:03.771244+00:00"
     }
   ]
 }
