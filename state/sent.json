@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/09/23/youtube-releases-new-ai-features-for-creators-within-its-studio-app/",
+      "title": "YouTube releases new AI features for creators within its Studio app",
+      "summary": "YouTube is adding new features to generate ideas and monitor the performance of thumbnails.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-23T14:30:00+00:00",
+      "sent_at": "2026-09-23T14:39:14.546300+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/23/youtube-adds-new-creator-tools-like-video-a-b-testing-dynamic-thumbnails-and-live-dubbing/",
+      "title": "YouTube adds new creator tools like video A/B testing, dynamic thumbnails, and live dubbing",
+      "summary": "Many of these tools hinge on using generative AI to try out a variety of different tactics on a video to find what works best.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-23T14:30:00+00:00",
+      "sent_at": "2026-09-23T14:39:14.546300+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/23/youtube-will-let-you-build-your-own-algorithm-with-ai/",
+      "title": "YouTube will let you build your own algorithm with AI",
+      "summary": "ouTube’s new custom feeds let users describe the videos they want to see in their own words, then use Gemini to build a personalized feed around the request.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-23T14:30:00+00:00",
+      "sent_at": "2026-09-23T14:39:14.546300+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/23/youtube-doubles-down-on-video-shopping-with-ai-powered-ask-youtube-feature/",
+      "title": "YouTube doubles down on video shopping with AI-powered ‘Ask YouTube’ feature",
+      "summary": "YouTube's AI feature can now help you compare products as you shop.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-23T14:30:00+00:00",
+      "sent_at": "2026-09-23T14:39:14.546300+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/999140/made-on-youtube-creator-tools-ai-thumbnails-tests",
+      "title": "YouTube is building AI creator tools that do almost everything for them",
+      "summary": "Part of the job of a content creator is to figure out how to get their work in front of the most people. Cracking - or fighting - the algorithm has historically been a frustration for creators, but YouTube is increasingly simply telling creators what they should do. At the annual creator-focused Made on YouTube [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-23T14:30:00+00:00",
+      "sent_at": "2026-09-23T14:39:14.546300+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/23/pitpros-first-tire-changing-robot-goes-live-in-canada/",
+      "title": "PitPro’s first tire-changing robot goes live in Canada",
+      "summary": "The startup says its automated system can change four tires in under 15 minutes.",
+      "source": "TechCrunch",
+      "category": "Innovationen",
+      "published": "2026-09-23T13:00:00+00:00",
+      "sent_at": "2026-09-23T14:39:14.546300+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/metas-muse-ai-agent-zero-day/",
+      "title": "Meta’s Muse AI Assistant Rolled Out With a Serious Security Flaw",
+      "summary": "Meta says it issued a fix for the Muse zero-day vulnerability that would have let attackers do “whatever” they wanted on a victim’s Mac, highlighting the inherent dangers of AI helpers.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-09-23T12:54:58+00:00",
+      "sent_at": "2026-09-23T14:39:14.546300+00:00"
+    },
+    {
+      "link": "https://www.businessinsider.com/inside-open-ai-influencer-marketing-strategy-chatgpt-ads-sponsorships-instagram-2026-9",
+      "title": "OpenAI is enlisting an influencer army to make it look 'good for the world'",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-23T12:32:00+00:00",
+      "sent_at": "2026-09-23T14:39:14.546300+00:00"
+    },
+    {
       "link": "https://www.theverge.com/ai-artificial-intelligence/999167/openai-elite-mathematicians-panel",
       "title": "OpenAI wants to consult elite mathematicians about how to not fumble again",
       "summary": "After turning a string of spectacular mathematical results into a reputational crisis, OpenAI is consulting human mathematicians to help it figure out a less disastrous path forward. On Monday, the company announced a new independent panel of mathematicians tasked with advising it and other AI companies on their interactions with mathematical research and the wider [&#8230;]",
@@ -5237,150 +5309,6 @@
       "category": "Innovationen",
       "published": "2026-09-09T15:44:09+00:00",
       "sent_at": "2026-09-09T17:31:37.360094+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/09/instacart-launches-an-ai-grocery-shopping-assistant-called-clementine/",
-      "title": "Instacart launches an AI grocery shopping assistant called Clementine",
-      "summary": "Instacart is the latest app to bake a conversational AI assistant into its platform.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-09T13:00:00+00:00",
-      "sent_at": "2026-09-09T13:22:08.103180+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/09/sequoia-doubles-down-on-cymphony-as-ai-agents-create-new-enterprise-security-risks/",
-      "title": "Sequoia doubles down on Cymphony as AI agents create new enterprise security risks",
-      "summary": "Cymphony was valued at more than $100 million in a $25 million Series A co-led by Sequoia and SMBC Fin Atlas Beyond Fund.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-09T13:00:00+00:00",
-      "sent_at": "2026-09-09T13:22:08.103180+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/991809/amazon-prime-video-ai-lip-sync-dubbing",
-      "title": "Amazon Prime Video’s new AI tech matches lips to dubbed audio",
-      "summary": "Amazon's Prime Video is launching a new AI-powered feature that lines up an actor's mouth with \"human-dubbed\" audio. The feature is only available with the English dub of the German series Maxton Hall for now, but Prime Video plans to expand it to \"additional titles\" in the future. In its announcement, Prime Video says it [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-09T13:00:00+00:00",
-      "sent_at": "2026-09-09T13:22:08.103180+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/a-new-dollar400-million-startup-wants-to-fix-the-ai-memory-bottleneck/",
-      "title": "A Stealth Startup Thinks It Just Hacked the Memory Shortage",
-      "summary": "Kepler Computing claims a new approach to chip design—and a proprietary material—can help end the supply bottlenecks that have sent memory prices surging.",
-      "source": "Wired",
-      "category": "Hardware",
-      "published": "2026-09-09T13:00:00+00:00",
-      "sent_at": "2026-09-09T13:22:08.103180+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2253622/instacart-ai-assistant-called-clementine/",
-      "title": "Instacart now has its own AI assistant called Clementine",
-      "summary": "Instacart launches its own AI assistant that can make it easier to decide what to buy.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-09T13:00:00+00:00",
-      "sent_at": "2026-09-09T13:22:08.103180+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/09/besxar-is-strapping-advanced-chip-fabs-onto-spacexs-falcon-9-rockets/",
-      "title": "Besxar is building an orbital semiconductor factory, one SpaceX rocket at a time",
-      "summary": "If you want to manufacture in space—and bring the products back again—there&#8217;s a limited set of options: Wait to go to the International Space Station, or partner with a handful of start-ups launching spacecraft that spend time in orbit before they return to Earth. But the vehicle that goes to space and comes back to [&#8230;]",
-      "source": "TechCrunch",
-      "category": "Hardware",
-      "published": "2026-09-09T12:30:00+00:00",
-      "sent_at": "2026-09-09T13:22:08.103180+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/openais-breakthrough-solution-for-the-elusive-navier-stokes-problem-overshadowed-by-plagiarism-controversy-researcher-says-openai-scraped-codex-session-and-issued-career-threats",
-      "title": "OpenAI's breakthrough solution for the elusive Navier-Stokes problem overshadowed by plagiarism controversy — researcher says OpenAI scraped Codex session and issued career threats",
-      "summary": "OpenAI announced that a team using one of its internal frontier models has solved the Navier-Stokes problem. However, the announcement has been mired in controversy.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-09T12:30:00+00:00",
-      "sent_at": "2026-09-09T13:22:08.103180+00:00"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/09/09/1143767/the-download-openai-math-future-battery-record/",
-      "title": "The Download: OpenAI’s turning point for math and a battery record",
-      "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. What OpenAI’s latest controversy tells us about the future of math OpenAI says its agents have solved one of the most important open problems in mathematics. Under normal circumstances, that would&#8230;",
-      "source": "MIT Technology Review",
-      "category": "AI",
-      "published": "2026-09-09T12:10:00+00:00",
-      "sent_at": "2026-09-09T13:22:08.103180+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/08/google-deepmind-alumni-are-building-tools-to-accelerate-fusion-power-for-the-grid/",
-      "title": "Google DeepMind alumni are building tools to accelerate fusion power for the grid",
-      "summary": "Fusionality is developing control systems and simulation environments to help fusion power startups move faster.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-09T06:00:00+00:00",
-      "sent_at": "2026-09-09T08:03:46.550127+00:00"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/09/08/1143747/what-openais-latest-controversy-tells-us-about-the-future-of-math/",
-      "title": "What OpenAI’s latest controversy tells us about the future of math",
-      "summary": "OpenAI’s latest mathematical milestone has quickly become mired in controversy. Today, the company announced that its agents have solved one of the Millennium Prize Problems, some of the most important open problems in mathematics. Under normal circumstances, that solution would be a huge feather in OpenAI’s cap. But the announcement has been overshadowed by accusations&#8230;",
-      "source": "MIT Technology Review",
-      "category": "AI",
-      "published": "2026-09-09T03:10:08+00:00",
-      "sent_at": "2026-09-09T08:03:46.550127+00:00"
-    },
-    {
-      "link": "https://twitter.com/hilbertspaess/status/2097476196791709843",
-      "title": "AI Responsibility – OpenAI and Anthropic",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-09T01:32:49+00:00",
-      "sent_at": "2026-09-09T08:03:46.550127+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/09/08/bluetti-6th-anniversary-power-station-sale-roborock-rockmow-x115h-4wd-robot-mower-more/",
-      "title": "Bluetti exclusive 6th Anniversary power station sale from $799, roborock RockMow X115H 4WD robot mower $799 off, more",
-      "summary": "We’ve got a nice mix of continuing Labor Day deals mixed with some new sales events for today’s Green Deals – plus, we’ve updated our one-stop-shop Labor Day Green Deals hub that contains all the ongoing holiday savings. Headlining today is the recently launched Bluetti 6th Anniversary Power Week Sale with up to 33% power station discounts, member-only promotions, and our exclusive bonus savings code, with options like the 3,014Wh Elite 300 Portable Power Station with an Alternator &amp; Solar Dual Charger 2 down at $1,388 , among others. There’s also roborock’s RockMow X115H 4WD Robot Lawn Mower at a new $1,500 low , a spotlight on Aventon’s soon-to-end Aventure M Mid-Drive All-Terrain Smart e-bike deal to $2,699 , the 2-in-1 Greenworks 40V Pole Saw and Hedge Trimmer Attachment kit at a $160 2026 low , and more. Plus, there’s some hangover deals from yesterday down at the bottom of the page, like the ongoing Hiboy Labor Day EV Sale offers , and others. Head below for other New Green Deals we’ve found today and, of course, Electrek ’s best EV buying and leasing deals . Also, check out the new Electrek Tesla Shop for the best deals on Tesla accessories . more…",
-      "source": "Electrek",
-      "category": "Innovationen",
-      "published": "2026-09-08T18:00:00+00:00",
-      "sent_at": "2026-09-09T08:03:46.550127+00:00"
-    },
-    {
-      "link": "https://ishamf.dev/p/llm-attention-visualizer/",
-      "title": "Show HN: LLM Attention Visualization",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-08T16:59:41+00:00",
-      "sent_at": "2026-09-09T08:03:46.550127+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/09/08/tesla-cybercab-hidden-virtual-joystick-manual-driving/",
-      "title": "Tesla Cybercab has a hidden virtual joystick to drive it manually",
-      "summary": "A Tesla Cybercab rider found something in the robotaxi: a manual driving mode. When he got in, the touchscreen was showing a virtual joystick to drive the car by hand. Tesla built the Cybercab with no steering wheel and no pedals. But it apparently still has a way to drive it manually, and you do it by dragging a finger across a screen. more…",
-      "source": "Electrek",
-      "category": "Autonomes Fahren",
-      "published": "2026-09-08T14:48:24+00:00",
-      "sent_at": "2026-09-09T08:03:46.550127+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/cpus/intel-reportedly-set-to-hike-cpu-prices-by-10-percent-ahead-of-major-annual-product-launch-in-march-2027-report-says-amd-will-follow-up-between-june-and-july",
-      "title": "Intel reportedly set to hike CPU prices by 10% ahead of 'major annual product' launch in March 2027 — report says AMD will follow up between June and July",
-      "summary": "Intel is reportedly set to raise CPU prices by 10%, following two other price increases, as it prepares for a major product launch in March 2027.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-08T14:18:42+00:00",
-      "sent_at": "2026-09-09T08:03:46.550127+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/08/mistral-raises-e3b-as-sovereign-ai-becomes-big-business/",
-      "title": "Mistral raises €3B as sovereign AI becomes big business",
-      "summary": "The French AI lab has raised €3 billion at a €21 billion valuation in a Series D round led by Samsung, Scaleup Europe, and PSG Equity.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-08T14:17:48+00:00",
-      "sent_at": "2026-09-09T08:03:46.550127+00:00"
     }
   ]
 }
