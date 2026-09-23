@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.theverge.com/policy/999412/data-center-water-electricity-disclosure-bills",
+      "title": "Data centers are black boxes, but California wants to change that",
+      "summary": "California Gov. Gavin Newsom signed a slate of bills on Monday that could finally give communities better data - and more say - on how data centers impact their electricity bills and water supply. As data centers invade a growing number of communities across the US, they've triggered protests over how the infrastructure underpinning AI [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-23T18:22:57+00:00",
+      "sent_at": "2026-09-23T18:49:00.507010+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/popes-ai-advisor-warns-of-cartel-behavior-big-labs/",
+      "title": "The Pope’s AI Guy Is Worried About ‘Cartel’ Behavior Among Big Labs",
+      "summary": "Paolo Benanti tells WIRED that hysteria over whether godlike AI could destroy humanity is distracting from the need for public debate about how to govern the technology.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-09-23T18:03:00+00:00",
+      "sent_at": "2026-09-23T18:49:00.507010+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/999470/anthropic-biolab-claude-crispr",
+      "title": "Anthropic&#8217;s biolab made a discovery it&#8217;s comparing to Crispr",
+      "summary": "Anthropic says its AI Claude has \"autonomously discovered\" a new enzyme system similar to machinery behind the powerful gene-editing tool Crispr. It's the first result from Anthropic's newly-launched wet lab and an early test of Claude's usefulness for science as the company prepares to go public. The company says Claude found the enzyme system after [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-23T18:00:00+00:00",
+      "sent_at": "2026-09-23T18:49:00.507010+00:00"
+    },
+    {
+      "link": "https://www.bbc.com/news/articles/c32l8y8kygdvo",
+      "title": "UK military jamming other nations' satellites to defend itself, BBC told",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Innovationen",
+      "published": "2026-09-23T17:45:30+00:00",
+      "sent_at": "2026-09-23T18:49:00.507010+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/video/the-old-cybersecurity-model-is-breaking/",
+      "title": "The old cybersecurity model is breaking",
+      "summary": "As concern over AI safety and rogue agents continue to make headlines, it’s no surprise that cybersecurity stocks are rising, or that investors are pouring massive amounts of capital into startups trying to build the next generation of security for an AI-native world.&#160;We’re&#160;even seeing companies like&#160;Instinct&#160;and&#160;Simile&#160;bring in nine-figure checks and valuations that&#160;wouldn&#8217;t&#160;have made sense a [&#8230;]",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-23T17:44:02+00:00",
+      "sent_at": "2026-09-23T18:49:00.507010+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/23/zoox-grounds-atlanta-test-fleet-after-workers-report-toxic-gas-exposure-symptoms/",
+      "title": "Zoox grounds Atlanta test fleet after workers report toxic gas exposure symptoms",
+      "summary": "The repeated incidents led one worker to file a complaint with the Occupational Safety and Health Administration, which opened an inquiry and told Zoox to investigate the exposures.",
+      "source": "TechCrunch",
+      "category": "Autonomes Fahren",
+      "published": "2026-09-23T17:28:38+00:00",
+      "sent_at": "2026-09-23T18:49:00.507010+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/23/chatgpt-mobile-app-gets-voice-based-agentic-features/",
+      "title": "ChatGPT mobile app gets voice-based agentic features",
+      "summary": "Pro and Plus users will be able to use the Work tab on their phones to complete agentic tasks.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-23T17:00:00+00:00",
+      "sent_at": "2026-09-23T18:49:00.507010+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/23/even-americans-who-use-ai-every-day-are-worried-about-it/",
+      "title": "Even Americans who use AI every day are worried about it",
+      "summary": "The report suggests that greater exposure will not resolve the unease around the technology, nor reduce public support for AI regulation.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-23T16:49:58+00:00",
+      "sent_at": "2026-09-23T18:49:00.507010+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/09/23/youtube-releases-new-ai-features-for-creators-within-its-studio-app/",
       "title": "YouTube releases new AI features for creators within its Studio app",
       "summary": "YouTube is adding new features to generate ideas and monitor the performance of thumbnails.",
@@ -5237,78 +5309,6 @@
       "category": "AI",
       "published": "2026-09-09T18:34:24+00:00",
       "sent_at": "2026-09-09T20:23:03.771244+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2253951/apples-iphone-18-pro-has-an-a20-pro-chip-and-smaller-dynamic-island/",
-      "title": "Apple's iPhone 18 Pro has an A20 Pro chip and smaller Dynamic Island",
-      "summary": "The new handset now comes in a burgundy colorway.",
-      "source": "Engadget",
-      "category": "Hardware",
-      "published": "2026-09-09T17:16:43+00:00",
-      "sent_at": "2026-09-09T17:31:37.360094+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/986331/apple-iphone-18-pro-max-september-2026-event",
-      "title": "Apple announces the iPhone 18 Pro and 18 Pro Max",
-      "summary": "Apple announced the iPhone 18 Pro and iPhone 18 Pro Max at its event on Wednesday. The 18 Pro and Pro Max come in deep black, silver, \"glacier,\" and burgundy, with color-matched back glass. They also have a new A20 Pro chip and purportedly the longest battery in an iPhone. During Wednesday's presentation, Apple highlighted [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-09-09T17:08:34+00:00",
-      "sent_at": "2026-09-09T17:31:37.360094+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/policy/992359/microsoft-aft-schools-ai-privacy",
-      "title": "Microsoft has new AI privacy rules for schools",
-      "summary": "Microsoft agreed to a set of safety and privacy principles for AI in schools a week after two major school systems announced a ban on student-facing AI. In a new agreement with the American Federation of Teachers (AFT), the second-largest teachers union in the US, and its New York City affiliate the United Federation of [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-09T17:07:48+00:00",
-      "sent_at": "2026-09-09T17:31:37.360094+00:00"
-    },
-    {
-      "link": "https://jeffs.blog/p/defining-ai-psychosis-part-2-prolific",
-      "title": "Defining AI Psychosis. Part 2: \"Prolific AI Psychosis\"",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-09T16:13:11+00:00",
-      "sent_at": "2026-09-09T17:31:37.360094+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/video/superintelligence-is-coming-should-we-let-it/",
-      "title": "Superintelligence is coming. Should we let it?",
-      "summary": "AI companies have been talking about superintelligent AI like&#160;it&#8217;s&#160;inevitable, but recent&#160;safety incidents&#160;like&#160;OpenAI&#8217;s&#160;Hugging Face breach&#160;are&#160;demonstrating&#160;the potential dangers of deploying AI systems that are more capable than&#160;humans.&#160;So&#160;what happens when we&#160;can&#8217;t&#160;reliably control what these systems do?&#160; On this episode of TechCrunch&#8217;s&#160;Equity&#160;podcast, Rebecca Bellan is joined by&#160;Connor Leahy, an AI researcher, entrepreneur, and now the U.S. Executive Director of [&#8230;]",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-09T16:05:35+00:00",
-      "sent_at": "2026-09-09T17:31:37.360094+00:00"
-    },
-    {
-      "link": "https://prospect.org/2026/09/09/anthropic-artificial-intelligence-surveillance-system-monitor-activists/",
-      "title": "Anthropic Is Building a Predictive Surveillance System to Monitor Activists",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-09T16:01:41+00:00",
-      "sent_at": "2026-09-09T17:31:37.360094+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/entertainment/991893/google-search-gets-better-at-live-nfl-football",
-      "title": "Google search embraces live NFL football",
-      "summary": "Google is introducing a new Live Game Feed to keep you updated on NFL games as the regular season kicks off tonight. Look for the red \"Live\" icon and you'll see a recap of the ongoing game, play-by-play updates, top commentary on social, video highlights, and \"AI-powered insights.\" It's available now on mobile in English, [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-09T16:00:00+00:00",
-      "sent_at": "2026-09-09T17:31:37.360094+00:00"
-    },
-    {
-      "link": "https://tech.marksblogg.com/planet-labs-open-satellite-feed.html",
-      "title": "Planet Labs' open satellite feed",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Innovationen",
-      "published": "2026-09-09T15:44:09+00:00",
-      "sent_at": "2026-09-09T17:31:37.360094+00:00"
     }
   ]
 }
