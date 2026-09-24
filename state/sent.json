@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/09/23/meta-made-a-tamagotchi-like-wearable-for-its-muse-ai-agent/",
+      "title": "Meta made a Tamagotchi-like wearable for its Muse AI agent",
+      "summary": "The tiny hardware device creates another mobile home for its AI agent Muse.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-24T00:46:17+00:00",
+      "sent_at": "2026-09-24T01:02:48.297060+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/999750/muse-charm-meta-ai-hardware",
+      "title": "Meta is making a standalone Muse AI gadget",
+      "summary": "Meta is building a dedicated hardware device for its new Muse AI agent. The product, called Muse Charm, was briefly shown off by Meta CEO Mark Zuckerberg at the end of tonight's Meta Connect presentation. It looks almost like a chunky smart watch without the strap - just a big screen, plus a little lanyard [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-24T00:15:20+00:00",
+      "sent_at": "2026-09-24T01:02:48.297060+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2267227/meta-will-stop-training-its-ai-on-visual-data-from-its-smart-glasses-if-you-opt-out/",
+      "title": "Meta will stop training its AI on 'visual data' from its smart glasses — if you opt out",
+      "summary": "Somewhere, a contractor just breathed a sigh of relief.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-09-24T00:00:44+00:00",
+      "sent_at": "2026-09-24T01:02:48.297060+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/999593/meta-connect-2026-everything-announced",
+      "title": "Meta Connect 2026: The 7 biggest announcements",
+      "summary": "Meta announced a slate of new wearables during its annual Meta Connect showcase on Wednesday. The star of the event was the new Meta VR Glasses, which pack virtual reality tech into a lightweight smart glasses-style frame with a tethered puck. Meta also announced new pairs of screen-free smart glasses, along with some new AI [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-24T00:00:33+00:00",
+      "sent_at": "2026-09-24T01:02:48.297060+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/23/meta-introduces-camera-free-ai-glasses/",
+      "title": "Meta introduces camera-free AI glasses",
+      "summary": "Meta says the camera-free glasses will be lighter and have up to 12 hours battery life.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-23T23:39:44+00:00",
+      "sent_at": "2026-09-24T01:02:48.297060+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/999281/ray-ban-meta-audio-glasses-meta-connect-2026",
+      "title": "Meta ditches the camera on its newest smart glasses",
+      "summary": "Walking around Meta Connect 2026, everyone's sporting smart glasses in all sorts of shapes, colors, and sizes. It's a marked difference here, a tech bubble where \"pervert glasses\" are not a concern. Outside Connect, the public backlash against wearable surveillance tech - a catchall term that encompasses not just smart glasses, but also smartwatches and [&#8230;]",
+      "source": "The Verge",
+      "category": "Innovationen",
+      "published": "2026-09-23T23:37:17+00:00",
+      "sent_at": "2026-09-24T01:02:48.297060+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/23/vogue-sent-robots-down-the-runway-at-vogue-world-and-people-were-not-impressed/",
+      "title": "Vogue sent robots down the runway at Vogue World, and people were not impressed",
+      "summary": "Nothing says Italian craftsmanship like a Chinese robot doing a lasso to \"L'Amour Toujours.\"",
+      "source": "TechCrunch",
+      "category": "Innovationen",
+      "published": "2026-09-23T23:33:22+00:00",
+      "sent_at": "2026-09-24T01:02:48.297060+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2267210/meta-muse-ai-agent-smart-glasses/",
+      "title": "Meta's Muse AI agent is coming to its AI glasses",
+      "summary": "Have your virtual assistant book a flight while you're jogging.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-09-23T23:28:12+00:00",
+      "sent_at": "2026-09-24T01:02:48.297060+00:00"
+    },
+    {
       "link": "https://www.smh.com.au/politics/federal/openai-breaches-medicare-albanese-reveals-20260924-p6100u.html",
       "title": "OpenAI breaches Medicare, Albanese reveals",
       "summary": "",
@@ -5165,150 +5237,6 @@
       "category": "AI",
       "published": "2026-09-09T17:13:52+00:00",
       "sent_at": "2026-09-10T05:34:25.124764+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2254419/muse-the-band-lost-its-social-media-handles-to-muse-meta-s-new-ai-agent/",
-      "title": "Muse, the band, lost its social media handles to Muse, Meta's new AI agent",
-      "summary": "The exact circumstances surrounding the changes aren't clear, but Meta execs have accidentally tagged the band instead of their AI agent.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-09T22:52:49+00:00",
-      "sent_at": "2026-09-10T00:49:20.824460+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/information-technology/2026/09/4-groups-caught-using-the-same-chrome-and-windows-exploit-kit/",
-      "title": "4 groups caught using the same Chrome and Windows exploit kit",
-      "summary": "A patch gap and the hastened pace of AI-based vulnerability discovery are likely contributors.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-09-09T20:55:02+00:00",
-      "sent_at": "2026-09-10T00:49:20.824460+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/09/apple-watchs-new-ai-features-are-normalizing-the-idea-that-technology-is-always-listening/",
-      "title": "Apple Watch’s new AI features are normalizing the idea that technology is always listening",
-      "summary": "Apple says its new watches won’t save raw audio, but features that can transcribe recent speech and summarize ambient conversations raise new questions about consent, privacy, and how people behave when they know they could always be recorded.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-09T20:24:48+00:00",
-      "sent_at": "2026-09-10T00:49:20.824460+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/i-used-ai-to-hack-my-home-network/",
-      "title": "I Let an AI Agent Hack All My Gadgets—and I’d Do It Again",
-      "summary": "After I removed the safety guardrails from a powerful open-source model, it found vulnerabilities in my household devices and hacked into a PC. But it also told me how to make everything a lot more secure.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-09-09T18:30:00+00:00",
-      "sent_at": "2026-09-10T00:49:20.824460+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/09/apple-unveils-watch-series-12-and-watch-ultra-4-with-an-ai-upgrade-that-can-recap-your-day/",
-      "title": "Apple unveils Watch Series 12 and Watch Ultra 4 with an AI upgrade that can recap your day",
-      "summary": "Most notably, Apple is taking aim at the growing wave of AI wearables with new \"Audio Intelligence\" features that let you rewind moments and remember details from daily conversations.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-09T18:08:46+00:00",
-      "sent_at": "2026-09-10T00:49:20.824460+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/09/apple-has-a-new-way-prove-your-iphone-photos-arent-ai-slop/",
-      "title": "Apple has a new way to prove your iPhone photos aren’t AI slop",
-      "summary": "Apple introduced Apple Reference Image to help users determine whether photos have been edited, including alterations made by AI.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-09T18:08:35+00:00",
-      "sent_at": "2026-09-10T00:49:20.824460+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2254027/apple-iphone-duo-announced-specs-price/",
-      "title": "Apple announces the iPhone Duo, the company's first foldable phone",
-      "summary": "After years of rumors, we've entered a new era of the iPhone.",
-      "source": "Engadget",
-      "category": "Hardware",
-      "published": "2026-09-09T17:55:57+00:00",
-      "sent_at": "2026-09-10T00:49:20.824460+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/apple-watch-series-12-apple-watch-ultra-4/",
-      "title": "Apple Watch Series 12 and Apple Watch Ultra 4: Ceramic, Specs, Release Date",
-      "summary": "Apple’s latest smartwatches—the Apple Watch Series 12 and Ultra 4—get a faster chip, expanded health tracking, and new Siri capabilities. Plus, the ceramic finish is back.",
-      "source": "Wired",
-      "category": "Hardware",
-      "published": "2026-09-09T17:43:38+00:00",
-      "sent_at": "2026-09-10T00:49:20.824460+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/09/openai-adds-a-prominent-ai-doomer-to-its-board-of-directors/",
-      "title": "OpenAI adds a prominent AI doomer to its board of directors",
-      "summary": "Paul Christiano, an influential AI researcher focused on alignment, is joining the OpenAI Foundation as a member of its board.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-09T22:25:22+00:00",
-      "sent_at": "2026-09-09T22:54:51.421637+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/anthropic-researcher-quits-jacob-coxon-ai-fears-humanity/",
-      "title": "The AI Researcher Who Just Quit Anthropic Says It’s ‘Crunch Time for Humanity’",
-      "summary": "Jacob Coxon talks to WIRED about the “mini Manhattan project” inside Anthropic, the problem with alignment, and why AI labs have just a few years left to make their systems safe.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-09-09T22:11:55+00:00",
-      "sent_at": "2026-09-09T22:54:51.421637+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/gadgets/993005/smartphone-price-hikes-apple-iphone-18-pro",
-      "title": "It’s the year of smartphone price hikes",
-      "summary": "Paying more for a new phone seems almost unavoidable after Apple's event today. The new iPhone 18 Pro and Pro Max start at $1,199 and $1,299, respectively - a $100 price hike over their predecessors. You can't dodge the price hike by opting for an older iPhone, either, because Apple raised prices on those by [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-09-09T21:52:43+00:00",
-      "sent_at": "2026-09-09T22:54:51.421637+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
-      "title": "Suno releases its first AI music model made with record industry help",
-      "summary": "Suno's new v6 AI music model is its first made with support from the record industry. Suno's Jack Brody told The Verge that v6 was \"trained from the ground up, with a new set of data that does not include the same data that our previous models were trained on.\" The data includes content licensed [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-09T21:42:19+00:00",
-      "sent_at": "2026-09-09T22:54:51.421637+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2254366/google-ai-mode-can-hold-your-hand-through-fantasy-football-season/",
-      "title": "Google AI Mode can hold your hand through fantasy football season",
-      "summary": "With football season just hours away, Google has turned its AI into a fantasy football coach.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-09T21:26:17+00:00",
-      "sent_at": "2026-09-09T22:54:51.421637+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/992953/openai-math-millennium-prize-navier-stokes",
-      "title": "OpenAI’s sly mathematical breakthrough sends a chill through academia",
-      "summary": "OpenAI's announcement Tuesday that it has solved one of mathematics' legendary Millennium Prize problems should have been a moment of triumph. The result is both an undeniable achievement and a striking demonstration of just how rapidly AI is transforming mathematics. But before it was even formally announced, the breakthrough had been complicated by the unusual [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-09T21:16:34+00:00",
-      "sent_at": "2026-09-09T22:54:51.421637+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/san-francisco-orders-meta-to-stop-allowing-ai-child-abuse-ads/",
-      "title": "San Francisco Orders Meta to Stop ‘Allowing’ AI Child Abuse Ads",
-      "summary": "The City Attorney’s Office has asked Meta to explain how the harmful ads repeatedly ran on Facebook and Instagram. The company claims the ads are not under the city’s jurisdiction.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-09-09T21:15:27+00:00",
-      "sent_at": "2026-09-09T22:54:51.421637+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/992919/apple-siri-ai-audio-intelligence-privacy",
-      "title": "Read the Apple document explaining how new listening features still protect your privacy",
-      "summary": "At Wednesday's iPhone Duo launch event, Apple announced a handful of new Siri AI Audio Intelligence features, including Siri Recap, Live Rewind, Sound Recognition, and Music Recognition. Alongside its announcement, Apple released a document laying out how it plans to balance AI \"ambient listening\" and users' privacy. It says the raw audio from the new [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-09T20:44:43+00:00",
-      "sent_at": "2026-09-09T22:54:51.421637+00:00"
     }
   ]
 }
