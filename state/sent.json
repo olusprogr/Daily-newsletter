@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/tech-industry/leading-semiconductor-analyst-accuses-amd-of-treason-over-restricted-chips-availability-in-china-amd-blames-diversion-of-export-controlled-rfsoc-usd36-000-radar-silicon-allegedly-quoted-at-usd1-000-for-crowdfunding-project",
+      "title": "Leading semiconductor analyst says AMD should be investigated for 'treason' over availability of restricted chips in China, AMD blames diversion of export-controlled RFSoC",
+      "summary": "Top semiconductor analysis firm accuses AMD of treason, AMD says it could have been 'diversion' of an export-controlled adaptable radio platform.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-24T13:00:44+00:00",
+      "sent_at": "2026-09-24T13:10:25.492241+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/09/24/waymo-says-it-has-stopped-841-injuries-in-271-million-autonomous-miles/",
+      "title": "Waymo says it has stopped 841 injuries in 271 million autonomous miles",
+      "summary": "Waymo has released new crash data which claims not only an 82% reduction in crashes, but for the first time says the number of injuries that have been avoided by its robotaxi operation. more…",
+      "source": "Electrek",
+      "category": "Autonomes Fahren",
+      "published": "2026-09-24T13:00:00+00:00",
+      "sent_at": "2026-09-24T13:10:25.492241+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/air-cooling/deepcool-ak620-and-ak400-g2-review",
+      "title": "GMKtec Evo-X3 review: Strix Halo in a brand new suit",
+      "summary": "GMKtec has radically remodeled its AMD Strix Halo flagship AI mini PC. The statuesque redesign looks more premium and stays cool and quiet, but the Evo-X3 is around twice the price of the Evo-X2, with the same chip, which we reviewed back in February.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-24T13:00:00+00:00",
+      "sent_at": "2026-09-24T13:10:25.492241+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/24/australia-to-investigate-if-openai-hack-of-government-health-website-broke-the-law/",
+      "title": "Australia to investigate if OpenAI hack of government health website broke the law",
+      "summary": "The incident is the first known breach to affect a government agency, and Australia's prime minister has vowed to hold OpenAI accountable.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-24T12:54:19+00:00",
+      "sent_at": "2026-09-24T13:10:25.492241+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/save-usd149-on-this-3-item-gaming-combo-from-newegg-usd1-050-buys-a-ryzen-7-9800x3d-32gb-of-corsair-ddr5-ram-asus-tuf-gaming-x870e-plus-motherboard-and-a-free-240mm-aio-and-amd-game-bundle",
+      "title": "Save $149 on this 3-item gaming combo from Newegg",
+      "summary": "Fight back against the RAMpocolypse with this 3-item Newegg combo that features the Ryzen 7 9800X3D, 32GB Corsair Vengeance RAM, and Asus TUF X870E motherboard for only $1,050, a $149 savings",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-24T12:45:00+00:00",
+      "sent_at": "2026-09-24T13:10:25.492241+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/ram/micron-discontinues-2gb-gddr7-chips-for-gaming-gpus-as-it-pivots-toward-higher-density-memory-for-ai-chipmaker-reportedly-pivots-to-high-margin-3gb-silicon-for-ai-gpus",
+      "title": "Micron discontinues 2GB GDDR7 chips for gaming GPUs as it pivots toward higher-density memory for AI",
+      "summary": "Micron is reportedly ending production of its 2GB GDDR7 chips, shifting attention toward higher-density 3GB parts used in more lucrative professional and AI-focused GPUs.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-24T12:30:00+00:00",
+      "sent_at": "2026-09-24T13:10:25.492241+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/semiconductors/asml-says-its-sells-absolutely-nothing-in-europe-calls-on-eu-to-help-create-demand",
+      "title": "ASML says it sold 'absolutely nothing' in Europe in 2026",
+      "summary": "ASML calls EU authorities to help create demand for European chips as Europe's share in its revenue drops to 0% in 2026.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-24T12:10:00+00:00",
+      "sent_at": "2026-09-24T13:10:25.492241+00:00"
+    },
+    {
+      "link": "https://www.technologyreview.com/2026/09/24/1145064/the-download-bid-scrap-virtual-wall-ai-climate-week/",
+      "title": "The Download: a bid to scrap the virtual wall and AI hits Climate Week",
+      "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. A congressional representative just proposed killing America’s border tower program Delia Ramirez, a Democratic US representative from Illinois, has announced plans to introduce legislation to terminate the surveillance tower program along&#8230;",
+      "source": "MIT Technology Review",
+      "category": "AI",
+      "published": "2026-09-24T12:10:00+00:00",
+      "sent_at": "2026-09-24T13:10:25.492241+00:00"
+    },
+    {
       "link": "https://www.wired.com/story/vitamix-promo-code/",
       "title": "Vitamix Promo Codes and Deals: $25 Off + Free Shipping",
       "summary": "Score discounts on blenders, food processors, immersion blenders, and more with our selection of Vitamix coupons and deals.",
@@ -5165,78 +5237,6 @@
       "category": "AI",
       "published": "2026-09-10T12:40:00+00:00",
       "sent_at": "2026-09-10T14:47:50.453328+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/clearview-ai-is-testing-an-ai-tool-that-lets-cops-instantly-unearth-your-online-activity/",
-      "title": "Clearview AI Is Testing an AI Tool That Would Let Cops Unearth Your Life Online",
-      "summary": "InquiryIQ, a previously unreported prototype, tested a model from xAI, maker of Grok, to surface associates, social accounts, and other information about people identified through Clearview.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-09-10T10:00:00+00:00",
-      "sent_at": "2026-09-10T10:34:21.098403+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/satellite-falling-out-of-space-embarks-on-final-mission/",
-      "title": "A Satellite Falling Out of Orbit Embarks on Its Final Mission",
-      "summary": "Before reentering our atmosphere, the telescopes onboard NASA’s Neil Gehrels Swift Observatory have been restarted to take their last observations.",
-      "source": "Wired",
-      "category": "Innovationen",
-      "published": "2026-09-10T09:15:00+00:00",
-      "sent_at": "2026-09-10T10:34:21.098403+00:00"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/09/10/1141421/healthcare-ais-next-test-is-integration/",
-      "title": "Healthcare AI’s next test is integration",
-      "summary": "The entrance of major AI companies into healthcare is a meaningful and welcome development, accelerating the technical foundation available to the industry. Their models are increasingly capable of processing long clinical records, interpreting complex terminology, comparing documentation against evidence and generating coherent summaries from large volumes of information. For clinicians, operators, and administrative teams who&#8230;",
-      "source": "MIT Technology Review",
-      "category": "AI",
-      "published": "2026-09-10T08:58:01+00:00",
-      "sent_at": "2026-09-10T10:34:21.098403+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/transportation/992443/volvo-xc40-phev-specs-price-gemini",
-      "title": "Volvo XC40 PHEV is back with a new look, better sensors, and Gemini AI",
-      "summary": "It's been about three years since Volvo discontinued its plug-in hybrid XC40. The mild hybrid version remains on sale in the US and elsewhere, alongside the electric EX40. Today, Volvo announced it was bringing back the PHEV version and giving it a major facelift. When it arrives at dealerships early next year, the new XC40 [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-10T07:00:00+00:00",
-      "sent_at": "2026-09-10T10:34:21.098403+00:00"
-    },
-    {
-      "link": "https://mastodon.social/@tristanbuckmaster/117237555794407063",
-      "title": "OpenAI have no mathematicians capable of understanding what they put out",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-10T05:01:50+00:00",
-      "sent_at": "2026-09-10T10:34:21.098403+00:00"
-    },
-    {
-      "link": "https://hugovergnes.github.io/little-lm-3-8b/",
-      "title": "Training a 3.8B LLM to 0.384 CORE for $998",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-10T02:04:11+00:00",
-      "sent_at": "2026-09-10T10:34:21.098403+00:00"
-    },
-    {
-      "link": "https://slimemoldtimemold.com/2026/08/05/a-stupid-idea-for-ai-alignment-we-came-up-with-by-looking-at-the-list-of-specification-gaming-behaviours/",
-      "title": "A Stupid Idea for AI Alignment We Came with by Looking at Specification Gaming",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-10T01:59:51+00:00",
-      "sent_at": "2026-09-10T10:34:21.098403+00:00"
-    },
-    {
-      "link": "https://read.misalignedmag.com/is-openai-taking-everyone-for-fools-2481fa851544",
-      "title": "Is OpenAI Taking Everyone for Fools?",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-09T17:09:51+00:00",
-      "sent_at": "2026-09-10T10:34:21.098403+00:00"
     }
   ]
 }
