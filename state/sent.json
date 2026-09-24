@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/09/24/nexterity-wants-to-automate-the-hard-dangerous-part-of-pipefitting/",
+      "title": "Nexterity wants to automate the hard, dangerous part of pipefitting",
+      "summary": "The startup's robot can tighten or loosen four bolts at a time, and it fits in a Pelican case.",
+      "source": "TechCrunch",
+      "category": "Innovationen",
+      "published": "2026-09-24T20:45:00+00:00",
+      "sent_at": "2026-09-24T21:56:51.617983+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/australian-pm-says-openai-took-84-days-to-email-agency-after-agent-hacked-its-national-health-care-portal-incident-is-believed-to-be-the-first-known-case-of-ai-breaching-a-government-site",
+      "title": "OpenAI agent got into Australia's Medicare stats portal with 84-day notification delay",
+      "summary": "Australia says an OpenAI agent got past blocks on a Medicare statistics portal in June. OpenAI's notification arrived in September.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-24T20:34:31+00:00",
+      "sent_at": "2026-09-24T21:56:51.617983+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1000328/google-gemini-ai-live-avatar-face",
+      "title": "Gemini 3.8 Live with Live Avatar gives Google&#8217;s AI a face",
+      "summary": "Google's new Gemini 3.8 Live update lets users have conversations with the model while watching an animated AI persona respond in real time. The \"Live Avatar\" will lip-sync and show different facial expressions during conversations, but it's currently only available to Gemini Enterprise customers. As noted by Google, Live Avatar can transition between the 97 [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-24T19:59:26+00:00",
+      "sent_at": "2026-09-24T21:56:51.617983+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/09/24/tesla-fsd-belgium-test-speeding-30-kmh-eu-vote/",
+      "title": "Tesla ‘FSD’ sped in 55% of Brussels 30 km/h zones ahead of EU vote",
+      "summary": "Tesla’s “Full Self-Driving (Supervised)” broke the speed limit in 55% of the 30 km/h segments a Belgian road safety group tested in Brussels, averaging 44 km/h where the legal limit is 30 km/h. The results land less than two weeks before EU member states vote on approving FSD across the whole bloc. And speeding is exactly the issue Sweden and France have already flagged. more…",
+      "source": "Electrek",
+      "category": "Autonomes Fahren",
+      "published": "2026-09-24T19:50:49+00:00",
+      "sent_at": "2026-09-24T21:56:51.617983+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/i-finally-found-an-ai-agent-worth-the-risk/",
+      "title": "I Think I Found an AI Agent Worth the Risk",
+      "summary": "Instinct saved me $550, booked my restaurant reservations, and warned me about a phishing scam. It also wasted $64 and might be a security nightmare.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-09-24T19:36:35+00:00",
+      "sent_at": "2026-09-24T21:56:51.617983+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2268183/new-york-times-cooking-is-coming-to-metas-ai-and-display-glasses/",
+      "title": "New York Times Cooking is coming to Meta's AI and display glasses",
+      "summary": "The app is getting a \"hands-free\" mode that can narrate recipe steps.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-09-24T19:24:34+00:00",
+      "sent_at": "2026-09-24T21:56:51.617983+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/24/prismml-brings-its-tiny-llms-to-qualcomm-powered-smart-glasses/",
+      "title": "PrismML brings its tiny LLMs to Qualcomm-powered smart glasses",
+      "summary": "Prism's larger goal is open-weight AI that runs on devices and makes better use of the computing power they already have.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-24T19:00:42+00:00",
+      "sent_at": "2026-09-24T21:56:51.617983+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/24/meet-feather-the-startup-building-the-android-of-robotics-for-developers/",
+      "title": "Meet Feather, the startup building the ‘Android of robotics’ for developers",
+      "summary": "Feather is betting on a customizable, $30,000 platform built for software developers.",
+      "source": "TechCrunch",
+      "category": "Innovationen",
+      "published": "2026-09-24T18:52:38+00:00",
+      "sent_at": "2026-09-24T21:56:51.617983+00:00"
+    },
+    {
       "link": "https://spectrum.ieee.org/epics-in-ieee-portable-educational",
       "title": "Mexican EPICS in IEEE Team Builds Portable Educational Platform",
       "summary": "In Guadalajara, Mexico, many high schools have motivated teachers and talented students with an interest in science, technology, engineering, and mathematics, but they lack access to advanced tools such as robotics laboratories. The resources shortfall limits the students’ opportunities for hands-on learning on cutting-edge applications. A team from ITESO, Universidad Jesuita de Guadalajara , is working to change that. Through the EPICS in IEEE initiative, a multidisciplinary group of 15 engineering students, faculty advisors, and IEEE Guadalajara Section volunteers developed RoboMeshA. The portable, self-contained educational platform brings robotics and AI experiences into classrooms. EPICS is administered by IEEE Educational Activities and funded by the IEEE Robotics and Automation Society . A mobile laboratory Rather than requiring a school to build a dedicated computer lab or install complex software, RoboMeshA operates as an all-in-one mobile learning network. “RoboMeshA brings robotics and AI to students who don’t have access to specialized facilities or preinstalled software,” says team member Fernando Vidal Luna, an IEEE student member and a mechatronics engineering major at ITESO. Students connect directly to the platform from a user-friendly web browser. They can interact with the robot manually or use its control modes to watch it move and detect and avoid obstacles. “The project combines mechanical design, embedded systems, control engineering, computer vision, and AI into a single robotic system that functions as a mobile learning laboratory,” says faculty advisor Jorge A. Lizarraga . The team says young students are interested in technology, programming, and robotics but don’t have an opportunity to work with systems that combine mechanics, electronics, software, and control. “RoboMeshA allows students to see how all these disciplines work together in a tangible and understandable way,” says team member José S. González, who also is studying mechatronics engineering. The team has built two units and is developing a modular coupling framework to expand the system’s capabilities for research and classroom demonstrations. The structured system design approach connects independent software components while minimizing internal dependencies, enabling four RobotMeshA robots to operate together. Overcoming design challenges The team faced significant hurdles while designing the project. “One key challenge involved the robot’s structural design,” Luna says. “It wasn’t only about making a chassis where all the components fit and the design had sufficient stability, rigidity, and weight distribution. It was also about ensuring that the electronics were protected while still being accessible for maintenance, testing, and modifications.” “It was also challenging to design a platform that could be used by students with different levels of experience,” González adds. “When students realize the technology they develop can inspire others and improve lives, engineering becomes far more meaningful.” —Luis Fernando Luque-Vega The team partnered with the CETI Colomos and Prepa ITESO high schools to validate the platform in classroom settings. “We wanted the first interactions with the robot to be simple and intuitive,” González says, “such that students could simply power the robot, connect to its network, and begin interacting with it, rather than having to deal with software installation, extensive configuration, or troubleshooting.” Engineering with social impact Many of the students who participated were from ITESO’s applied professional projects program. The experience offered them practical training in project management, system integration, and user-centered design. The team also presented a research paper and a project poster in May at the Engineering Congress of the Jesuit University System . “Seeing a design move from a digital model to a physical system was invaluable,” González says. “Working with students from different backgrounds taught us to listen to end users and design for their actual needs.” Project lead Luis Fernando Luque-Vega , an IEEE member, says he’d like the venture to serve as a blueprint for engineering education. “I hope RoboMeshA is adopted by schools, universities, and IEEE student branches across Mexico and internationally as a model for integrating technical innovation with community engagement,” Luque-Vega says. By pairing engineering talent with community service, initiatives such as EPICS in IEEE demonstrate how targeted support can turn academic concepts into real-world solutions. “When students realize the technology they develop can inspire others and improve lives, engineering becomes far more meaningful,” Luque-Vega says. For more information on service-learning opportunities, visit the EPICS website .",
@@ -5093,78 +5165,6 @@
       "category": "AI",
       "published": "2026-09-10T18:30:00+00:00",
       "sent_at": "2026-09-10T23:41:38.594294+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2255473/anthropic-caught-scientists-using-claude-to-further-biological-weapon-research/",
-      "title": "Anthropic caught scientists using Claude to further biological weapon research",
-      "summary": "Anthropic produced an extensive collection of case studies covering the ways its current AI models have been misused.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-10T21:04:54+00:00",
-      "sent_at": "2026-09-10T21:22:58.229584+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/",
-      "title": "OpenAI puts Pro subscriptions on hold due to Astra demand",
-      "summary": "The company said Pro subscriptions put the most strain on its systems, so it's pausing sign-ups while adding more capacity.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-10T20:59:51+00:00",
-      "sent_at": "2026-09-10T21:22:58.229584+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/10/anthropic-details-distillation-campaigns-from-alibaba-moonshot-ai-and-deepseek/",
-      "title": "Anthropic details distillation campaigns from Alibaba, Moonshot AI, and DeepSeek",
-      "summary": "A new report released Thursday by Anthropic alleges persistent distillation attacks by China-based AI companies, which have escalated in recent months as competition in the space has intensified.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-10T20:57:30+00:00",
-      "sent_at": "2026-09-10T21:22:58.229584+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/10/furos-founders-left-silicon-valley-and-its-paying-off/",
-      "title": "Furo’s founders left Silicon Valley — and it’s paying off",
-      "summary": "The three 28-year-old founders behind energy startup Furo moved from Silicon Valley and back to Germany, and yet secured $4 million in funding from mostly U.S. backers.",
-      "source": "TechCrunch",
-      "category": "Hardware",
-      "published": "2026-09-10T20:48:00+00:00",
-      "sent_at": "2026-09-10T21:22:58.229584+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/uncanny-valley-podcast-is-ai-actually-going-to-kill-us-all/",
-      "title": "Is AI Actually Going to Kill Us All?",
-      "summary": "This week on “Uncanny Valley,” we dig into a former Anthropic researcher’s AI doomsday warning, the latest upgrades from Apple’s event, and the census report that claimed Trump won the 2020 election.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-09-10T20:30:37+00:00",
-      "sent_at": "2026-09-10T21:22:58.229584+00:00"
-    },
-    {
-      "link": "https://spectrum.ieee.org/codeveloper-of-ethernet-predecessor-dies",
-      "title": "Codeveloper of Ethernet Predecessor Dies at 91",
-      "summary": "Franklin “Frank” Kuo Codeveloper of ALOHAnet Fellow, 91; died 14 April Kuo helped develop ALOHAnet , a pioneering computer system at the University of Hawaii at Mānoa , in Honolulu. The system went online in 1971 and represented the first public demonstration of a wireless packet data network . It was an inspiration for Robert Metcalfe ’s development of Ethernet a couple of years later. In 2020 ALOHAnet was designated as an IEEE Milestone . Kuo earned bachelor’s, master’s, and doctoral degrees in electrical engineering from the University of Illinois , Urbana-Champaign. After earning his Ph.D. in 1960, he joined Bell Labs in Murray Hill, N.J. , where he conducted research in computer communications. After six years at the company, Kuo left to become a professor of electrical engineering at the University of Hawaii. From 1968 to 1971 he and one of his colleagues, IEEE Life Fellow Norman Abramson , developed ALOHAnet. The network connected computers on Hawaiian islands using ultrahigh-frequency radio, transmitting information over radio waves instead of cables. ALOHAnet became the foundation for modern networks. Kuo pioneered the concept of a random-access protocol, or sharing a single channel without central coordination—which led to the packet-switching principles that underpin modern Wi-Fi and mobile networks. Kuo authored or coauthored several books including Computer Communication Networks . Published in 1972, it was one of the earliest textbooks on the subject. He served as director of the university’s Cosine committee , a project funded by the U.S. National Science Foundation to develop computer engineering courses. He took a sabbatical from 1975 to 1977 to work at the U.S. Pentagon as director of information systems in the defense secretary’s office . He oversaw computer communications applications used in command, control, and intelligence programs. During the 1980s and ’90s, he helped develop China’s Internet. In 1982 he joined SRI International (formerly the Stanford Research Institute), in Menlo Park, Calif., as a researcher. He also was a consulting professor in Stanford ’s electrical engineering department and taught computer networking at Shanghai Jiao Tong University . As a UNESCO lecturer in Beijing in 1994, he helped Peking University , Tsinghua University , and the Chinese Academy of Sciences connect to the Internet. He also worked with Tsinghua University to develop CERNET , the country’s first nationwide education and research computer network , which was managed by the Chinese Ministry of Education . For his work, he received an honorary degree from Shanghai Jiao Tong University. In the mid-1990s, Kuo helped found General Wireless Communications, a developer of mobile phone messaging services and games that was renamed Mtone Wireless. Muhammad Rezaul Karim Bell Labs researcher Life senior member, 86; died 18 May Karim was a distinguished member of the technical staff at Bell Labs in Murray Hill, N.J. His work was instrumental in the development of modern cellular communications technology. He joined Bell Labs in 1972 and worked in its mobile telecommunications laboratory as part of the team tasked with creating one of the earliest cellular networks. In 1975 Illinois Bell Telephone petitioned the U.S. Federal Communications Commission to develop and test a cellular system. The FCC, which now regulates radio, TV, telephone, Internet, satellite, and wireless services, authorized the project in March 1977. Karim and his team helped develop key elements of the technology, including the Bell Labs logic that controlled the cellular system, turning the concept into a working one. They also built radio receivers, transmitters, control systems, and cell-site equipment used in the first trial of the cellular system. The following year, Bell Labs and Illinois Bell deployed the Advanced Mobile Phone Service system across Chicago, with its switching office located in Oak Park, Ill. The initial test used approximately 100 mobile phones to work through hardware, software, and system-design problems. A subsequent test in 1979 involved 2,500 mobile users, providing a demonstration of the cellular technology in practice. The trials in Illinois helped establish the technical foundation for the commercial cellular networks that followed. Later in his career, Karim worked on the asynchronous transfer mode (ATM) technique, a high-speed networking technology crucial to the transition from traditional telephone networks to broadband and digital ones. In 2000 he published ATM Networks: Application, Systems, and Design , a textbook that served as a guide for designing and implementing ATM-based services. Karim received a bachelor’s degree in electrical engineering from the Bangladesh University of Engineering and Technology , in Dhaka. He then earned a master’s degree in EE from the University of Manchester , England, and a Ph.D. in EE from Stevens Institute of Technology , in Hoboken, N.J. Harry Bostic Former IEEE Region 4 director Life senior member, 86; died 18 March Bostic was an active IEEE volunteer who served as the 1998–1999 director of IEEE Region 4 . In 2007 he received a lifetime achievement award from the IEEE Central Indiana Section for “outstanding commitment and dedicated service as regional advisor to the volunteers and members of Region 4 and the Institute.” He was an engineer for 30 years at U.S. Navy’s avionics facility , a research, development, and manufacturing concern in Indianapolis. He worked on flight control, navigation, and weapons systems there. (The facility closed in 1996.) Edwin C. Jones Jr. Professor Life Fellow, 91; died 10 March Jones was widely recognized for his contributions to engineering education, curriculum development, and accreditation through decades of service to IEEE, ABET , and the American Society for Engineering Education . He earned a bachelor’s degree in electrical engineering in 1955 from West Virginia University in Morgantown. The following year he earned a diploma of membership (equivalent to a master’s degree) from Imperial College , London. He went on to serve in the U.S. Army Signal Corps for two years. After his service ended, he studied engineering education at the University of Illinois, Urbana-Champaign , earning a Ph.D. in 1961. Jones then joined the university’s faculty. The following year, he left Illinois to join Iowa State University , in Ames, as an assistant professor. He was promoted to professor in 1995. Two years later he became associate chair of the electrical and computer engineering department and served in that position until 2001, when he retired and was named professor emeritus. In recognition of his commitment to students, Iowa State established a scholarship in his honor. In 2006 he accepted a part-time position as an adjunct professor in Minnesota at the University of St. Thomas , in St. Paul. He advised graduate students and helped develop the university’s systems engineering program. An active IEEE volunteer, he served as 1975–1976 president of the IEEE Education Society . He was a member of the IEEE Educational Activities Board , helping strengthen the relationship among engineering education, professional practice, and accreditation organizations. He received an IEEE Centennial Medal in 1984 and the EAB Meritorious Achievement Award in Accreditation Activities in 1986. The IEEE Education Society later named its Meritorious Service Award in his honor. Jones was elected a Fellow of ABET in 1986. During his years of service as a program evaluator and leader, he helped advance the quality of engineering education and accreditation programs. ABET recognized him with its Grinter Distinguished Service Award , its highest honor. Alexander Robert Spitzer Clinical neurology researcher Life senior member, 70; died 27 February Spitzer was a neurologist for 40 years at the Wayne State University School of Medicine , in Detroit, where he also was a director of the electromyography laboratory at Harper University Hospital . The lab studied patients’ brain and spinal cord activity in response to sensory stimuli. The evaluations assessed nerve pathway integrity to help diagnose multiple sclerosis, spinal cord injuries, and other conditions. After earning his medical degree from the Einstein College of Medicine , in New York City, Spitzer completed a fellowship at the U.S. National Institutes of Health , in Bethesda, Md. He then joined Wayne State as a clinical neurology researcher. His pioneering research in applying neural network analysis to electromyography and clinical neurophysiology resulted in peer-reviewed publications, grants, and several U.S. patents. He mentored generations of neurologists in electrodiagnostic medicine, a medical specialty that uses nerve-conduction and electromyography tests to evaluate and diagnose muscle and nerve disorders. In 2020 he founded Mackinac Neurology , a telemedicine-based practice that treated pa­tients virtually during the COVID-19 pandemic. A longtime IEEE volunteer, he held numerous roles on the IEEE Regional Activities Board, now known as the Member and Geographic Activities Board . He was a member of the IEEE Ethics and Member Conduct and Nominations and Appointments committees, as well as the IEEE Educational Activities and IEEE-USA boards. He served as 1977–1979 director of the IEEE Central Indiana Section . Donald Leo Dietmeyer Professor Life Fellow, 93; died 13 February Dietmeyer was a professor of electrical and computer engineering for 40 years at the University of Wisconsin-Madison . He developed a lifelong interest in radio and electronics at high school in Wausau, Wisc., and earned a Ph.D. in electrical engineering in 1959 from the University of Wisconsin. He’d joined the university’s electrical engineering faculty as a professor in 1958 while pursuing his doctorate. Dietmeyer’s research focused on computer-aided design in the areas of switching theory, hardware description languages, and the decomposition of Boolean functions . His research contributed to the development of automation tools for integrated circuit design. He worked with Jim Duley, a former student, to pioneer the use of the digital system design language . He wrote the textbook Logic Design of Digital Systems , published in 1978. In the early 1980s, Dietmeyer worked with researchers to develop ConLan, a language-construction method that combined hardware description languages in one underlying framework. He served as associate dean of the University of Wisconsin’s electrical and computer engineering department from 1983 to 1995. In 1998 he retired and was named professor emeritus.",
-      "source": "IEEE Spectrum",
-      "category": "AI",
-      "published": "2026-09-10T20:00:04+00:00",
-      "sent_at": "2026-09-10T21:22:58.229584+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/10/metas-ai-agent-muse-is-now-the-no-2-app-in-the-us/",
-      "title": "Meta’s AI agent Muse is now the No. 2 app in the US",
-      "summary": "Meta's newest app Muse is off to a slower start than the company's other apps, like Meta AI or Threads.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-10T19:50:04+00:00",
-      "sent_at": "2026-09-10T21:22:58.229584+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/policy/993308/computer-science-ai-education-coding-kids",
-      "title": "Schools are catching on to Big Tech’s playbook",
-      "summary": "It's the hot new thing in tech, and it's where all the jobs are. Students who don't learn to use it fall behind. And to help them catch up in time, its creators are graciously providing the resources and curriculum for learning it, often pro bono. That's the narrative AI companies are pitching schools on [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-10T19:44:20+00:00",
-      "sent_at": "2026-09-10T21:22:58.229584+00:00"
     }
   ]
 }
