@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://arstechnica.com/apple/2026/09/review-the-iphone-18-pro-is-apples-coolest-smartphone-but-only-literally/",
+      "title": "Review: The iPhone 18 Pro is Apple's coolest smartphone (but only literally)",
+      "summary": "Better thermals and battery life make this iterative update nicer to use.",
+      "source": "Ars Technica",
+      "category": "Hardware",
+      "published": "2026-09-25T19:34:42+00:00",
+      "sent_at": "2026-09-25T20:14:09.778759+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/25/anthropic-to-pay-akamai-11-6-billion-over-seven-years-in-cloud-deal/",
+      "title": "Anthropic to pay Akamai $11.6 billion over seven years in cloud deal",
+      "summary": "Anthropic has committed $11.6 billion over seven years to Akamai's cloud infrastructure, a bet on CPUs that could grow to about $20 billion, and in an unusual arrangement, Akamai is giving Anthropic a potential stake of up to 5% of its stock that grows as Anthropic spends more.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-25T19:13:38+00:00",
+      "sent_at": "2026-09-25T20:14:09.778759+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/25/ahead-of-u-s-ipo-british-ai-neocloud-nscale-secures-3-36b-in-convertible-finacing/",
+      "title": "Ahead of US IPO, British AI neocloud Nscale secures $3.36B in convertible financing",
+      "summary": "The funding, which comes from Third Point, Nvidia, and others, will fuel the company's massive AI data center buildout.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-25T18:33:59+00:00",
+      "sent_at": "2026-09-25T20:14:09.778759+00:00"
+    },
+    {
+      "link": "https://mouse.dev/blog/muse-special/",
+      "title": "Meta's Muse appears to use an OpenAI model labeled muse-special",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-25T18:18:06+00:00",
+      "sent_at": "2026-09-25T20:14:09.778759+00:00"
+    },
+    {
+      "link": "https://www.anthropic.com/research/yes-claude-can-do-nine-loops",
+      "title": "Yes, Claude can do nine loops",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-25T18:11:48+00:00",
+      "sent_at": "2026-09-25T20:14:09.778759+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/09/25/bluetti-early-prime-day-sale-2765wh-apex-300-2048wh-3584wh-jackery-stations-more/",
+      "title": "Bluetti Early Prime Day drops 2,765Wh Apex 300 to $1,424, exclusive $600 savings on 2,048Wh + 3,584Wh Jackery stations, more",
+      "summary": "We’re closing out this week with a bunch of Prime Day deals, starting at Bluetti’s recently launched Early Prime Day Sale with FREE gifts and our exclusive bonus savings code, offering deals like the 2,765Wh Apex 300 Portable Power Station down at $1,424 . Speaking of power stations, we also secured two exclusive deals on Jackery’s 3,584Wh HomePower 3600 Plus Power Station to $1,299 , while the 2,048Wh HomePower 2000 Plus V2 Power Station is down at $799 , undercutting the brand’s current sale by hundreds. We also have roborock’s RockMow X115H and X130H Robot Lawn Mowers at new lows starting from $1,400 , and one-day-only deals on the Anker eufy SoloCam S220 2-Cam Kit with HomeBase 3, as well as Greenworks’ 60V 16-inch Attachment Capable String Trimmer . Don’t forget about all the hangover deals from this week that can be found down at the bottom of the page, like the yesterday’s Anker eufy Early Prime Day Sale lineup of security and cleaning deals, the EcoFlow weekend EcoCredits flash sale , and more. Head below for other New Green Deals we’ve found today and, of course, Electrek ’s best EV buying and leasing deals . Also, check out the new Electrek Tesla Shop for the best deals on Tesla accessories . more…",
+      "source": "Electrek",
+      "category": "Innovationen",
+      "published": "2026-09-25T18:00:00+00:00",
+      "sent_at": "2026-09-25T20:14:09.778759+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/gadgets/2026/09/microsoft-stops-insisting-you-need-a-copilot-pc/",
+      "title": "Microsoft stops insisting you need a \"Copilot+ PC\"",
+      "summary": "Microsoft's new Surface laptops forgo Copilot+ PC branding.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-09-25T17:57:37+00:00",
+      "sent_at": "2026-09-25T20:14:09.778759+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/09/25/eu-delays-tesla-fsd-vote-december-tcmv-agenda/",
+      "title": "EU delays Tesla ‘Full Self-Driving’ vote to December at the earliest",
+      "summary": "The EU won’t vote on Tesla’s “Full Self-Driving (Supervised)” on October 6. The draft agenda for the Technical Committee on Motor Vehicles (TCMV) meeting lists only a 25-minute “continuation of discussions” on the Dutch request to extend its FSD approval EU-wide. The committee doesn’t meet again until December, so that’s now the earliest a Tesla FSD EU vote can happen. And Tesla had been pointing to October 6. more…",
+      "source": "Electrek",
+      "category": "Autonomes Fahren",
+      "published": "2026-09-25T17:31:36+00:00",
+      "sent_at": "2026-09-25T20:14:09.778759+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/09/25/meta-is-putting-its-muscle-behind-muse-as-the-ai-app-takes-off/",
       "title": "Meta is putting its muscle behind Muse as the AI app takes off",
       "summary": "Muse is topping the app store charts and adding users at a rapid clip, while Meta ramps up the personal AI agents's promotion across its own apps and beyond.",
@@ -4949,150 +5021,6 @@
       "category": "AI",
       "published": "2026-09-11T19:34:09+00:00",
       "sent_at": "2026-09-11T22:14:07.804689+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/11/roblox-is-making-it-easier-to-build-games-with-ai-and-play-them-outside-roblox/",
-      "title": "Roblox is making it easier to build games with AI — and play them outside Roblox",
-      "summary": "At its annual Roblox Developer Conference (RDC), the company announced several new features, including new game-creation tools, expanded NPC capabilities, and the ability to make games available across platforms, including the web.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-11T19:00:00+00:00",
-      "sent_at": "2026-09-11T19:27:00.402592+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/meta-sued-over-training-data-for-its-ai-and-face-recognition-systems/",
-      "title": "Meta Sued Over Training Data for Its AI and Face-Recognition Systems",
-      "summary": "The proposed class action alleges Meta illegally harvested people’s Facebook and Instagram photos to train its AI image-generation models and to build its unreleased “NameTag” face recognition feature.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-09-11T18:59:25+00:00",
-      "sent_at": "2026-09-11T19:27:00.402592+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/09/11/musk-promotes-tesla-fsd-misuse-98-year-old/",
-      "title": "Musk promotes blatant Tesla FSD misuse as crash lawyers rejoice",
-      "summary": "Elon Musk is once again promoting the misuse of Tesla’s “Full Self-Driving” (FSD), this time by amplifying a video of a 98-year-old man who openly admits he has stopped watching the road. The clip is charming. It’s also a textbook example of the exact driver behavior Tesla’s lawyers are fighting in a growing pile of crash lawsuits. more…",
-      "source": "Electrek",
-      "category": "Autonomes Fahren",
-      "published": "2026-09-11T18:19:50+00:00",
-      "sent_at": "2026-09-11T19:27:00.402592+00:00"
-    },
-    {
-      "link": "https://www.economist.com/science-and-technology/2026/09/11/top-mathematicians-are-outraged-by-openais-methods",
-      "title": "Top mathematicians are outraged by OpenAI's methods",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-11T18:07:08+00:00",
-      "sent_at": "2026-09-11T19:27:00.402592+00:00"
-    },
-    {
-      "link": "https://mathandai.org/",
-      "title": "A misalignment of AI in mathematics",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-11T17:45:12+00:00",
-      "sent_at": "2026-09-11T19:27:00.402592+00:00"
-    },
-    {
-      "link": "https://terrytao.wordpress.com/2026/09/11/a-severe-misalignment-of-ai-in-mathematics/",
-      "title": "A Misalignment of AI in Mathematics",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-11T17:30:26+00:00",
-      "sent_at": "2026-09-11T19:27:00.402592+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/09/11/tesla-cybercab-steering-wheel-assembly-first-look/",
-      "title": "First look at Tesla Cybercab’s steering: a Cybertruck wheel bolted on",
-      "summary": "A pre-production Tesla Cybercab was spotted parked on a street in Berkeley, California, and it gives us the clearest look yet at how Tesla puts a steering wheel into a car it designed to have none. The photos, shared with Electrek by reader Adam Machacek, show a Cybertruck steering wheel mounted on an exposed steering column that has been bolted into the two-seat robotaxi. more…",
-      "source": "Electrek",
-      "category": "Autonomes Fahren",
-      "published": "2026-09-11T17:24:39+00:00",
-      "sent_at": "2026-09-11T19:27:00.402592+00:00"
-    },
-    {
-      "link": "https://artificialworlds.net/blog/2026/09/11/feeling-sad-about-ai/",
-      "title": "Feeling Sad about AI",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-11T16:50:51+00:00",
-      "sent_at": "2026-09-11T19:27:00.402592+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/11/nscale-adds-former-openai-exec-fidji-simo-to-its-board-ahead-of-potential-ipo/",
-      "title": "Nscale adds former OpenAI exec Fidji Simo to its board ahead of potential IPO",
-      "summary": "The No. 2 exec at OpenAI also led Instacart through its IPO in 2023.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-11T16:46:25+00:00",
-      "sent_at": "2026-09-11T16:53:53.471023+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/gpus/china-modified-nvidia-rtx-5090-with-massive-96gb-of-memory-appears-on-alibaba-for-less-than-usd4-000-3x-more-vram-at-65-percent-the-cost-of-the-original",
-      "title": "China-modified Nvidia RTX 5090 with massive 96GB of memory appears on Alibaba for less than $4,000 — 3x more VRAM at 65% the cost of the original",
-      "summary": "An alleged Nvidia GeForce RTX 5090 96GB with 96GB of modded VRAM surfaces on Alibaba for $3888.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-11T16:32:36+00:00",
-      "sent_at": "2026-09-11T16:53:53.471023+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity",
-      "title": "Anthropic spent this week in hot water over cybersecurity",
-      "summary": "After admitting earlier this year that its AI models had hacked other companies' systems on a handful of occasions, Anthropic released a new report on Wednesday detailing the attacks. It reveals a string of incidents displaying what Anthropic deems its models' single-minded \"recklessness\" - and will likely fuel already raging concerns about cybersecurity and AI. [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-11T16:09:14+00:00",
-      "sent_at": "2026-09-11T16:53:53.471023+00:00"
-    },
-    {
-      "link": "https://sprinklz.io/public/pdwt4dve5uai",
-      "title": "Hacker News with reduced priority for AI driven content",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-11T15:52:49+00:00",
-      "sent_at": "2026-09-11T16:53:53.471023+00:00"
-    },
-    {
-      "link": "https://hcker.news/?ai=exclude",
-      "title": "Show HN: Hacker News, without AI",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-11T15:01:19+00:00",
-      "sent_at": "2026-09-11T16:53:53.471023+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/one-of-ais-fiercest-critics-says-all-the-doom-talk-is-meant-to-distract-us/",
-      "title": "One of AI’s Fiercest Critics Says All the Doom Talk Is ‘Meant to Distract Us’",
-      "summary": "Timnit Gebru argues that AI companies are stoking fears of extinction to avoid discussing actual harms, like autonomous weapons.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-09-11T15:00:00+00:00",
-      "sent_at": "2026-09-11T16:53:53.471023+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/993974/meta-ai-prompt-invasive-suggestions",
-      "title": "Meta says it&#8217;s changing AI suggestions after posing invasive personal questions",
-      "summary": "Meta says it's making changes to the prompts suggested by its AI chatbot after a viral video showed it digging for personal information about a woman's young daughters, as reported earlier by Futurism. In a statement to The Verge, Meta spokesperson Dina El-Kassaby says the company \"missed the mark,\" adding that \"the feature never should [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-11T14:25:21+00:00",
-      "sent_at": "2026-09-11T16:53:53.471023+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/entertainment/993875/tiff-2026-the-only-living-pickpocket-in-new-york",
-      "title": "New York City’s last pickpocket doesn’t need a smartphone",
-      "summary": "Hello once again from Toronto, where for a week every year I watch far too many movies and tell you all about them. The festival, better known as TIFF, is always a great preview of the months ahead in film, with a nice mix of mainstream fare, awards contenders, indie surprises, and genre flicks destined [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-09-11T14:15:00+00:00",
-      "sent_at": "2026-09-11T16:53:53.471023+00:00"
     }
   ]
 }
