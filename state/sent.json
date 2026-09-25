@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/09/25/crusoe-abandons-1-25b-plan-to-use-boom-turbines-at-ai-data-centers/",
+      "title": "Crusoe abandons $1.25B plan to use Boom turbines at AI data centers",
+      "summary": "Boom Supersonic CEO Blake Scholl said its new stationary power plants were no longer in Crusoe's near-term plans.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-25T23:11:10+00:00",
+      "sent_at": "2026-09-25T23:47:37.771968+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/25/unsecured-openai-agents-posted-53-user-images-on-the-internet-without-the-labs-knowledge/",
+      "title": "Unsecured OpenAI agents posted 53 user images on the internet without the lab’s knowledge",
+      "summary": "AI agents operating in OpenAI's research environment posted user images on public image-hosting sites without the lab's knowledge.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-25T22:20:47+00:00",
+      "sent_at": "2026-09-25T23:47:37.771968+00:00"
+    },
+    {
+      "link": "https://swarmtraces.org/",
+      "title": "Revealing the details of how OpenAI agents hacked Hugging Face",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-25T21:09:27+00:00",
+      "sent_at": "2026-09-25T23:47:37.771968+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2269454/how-to-stop-meta-training-its-ai-models-on-your-smart-glasses-visual-data/",
+      "title": "How to stop Meta training its AI models on your smart glasses' visual data",
+      "summary": "The setting affects whether workers can review photos and videos from your glasses.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-09-25T20:35:15+00:00",
+      "sent_at": "2026-09-25T23:47:37.771968+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/thieves-stole-nvidia-trailers-they-got-20-tons-of-sand/",
+      "title": "Thieves Stole ‘Nvidia’ Trailers. They Got 20 Tons of Sand",
+      "summary": "They wanted the silicon. They got the sand.",
+      "source": "Wired",
+      "category": "Hardware",
+      "published": "2026-09-25T20:30:40+00:00",
+      "sent_at": "2026-09-25T23:47:37.771968+00:00"
+    },
+    {
+      "link": "https://www.theregister.com/science/2026/09/25/astronomer-watches-starlink-satellites-sinking-to-build-a-planetary-barometer/5299036",
+      "title": "Astronomer watches Starlink satellites sinking to build a 'planetary barometer'",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Innovationen",
+      "published": "2026-09-25T18:29:49+00:00",
+      "sent_at": "2026-09-25T23:47:37.771968+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/25/the-aeropod-automates-soil-aeration-without-robotics-see-it-at-techcrunch-disrupt/",
+      "title": "The Aeropod automates soil aeration without robotics — see it at TechCrunch Disrupt",
+      "summary": "Muju Earth Technologies has developed a deceptively simply pod that can save farmers money while improving crop yields.",
+      "source": "TechCrunch",
+      "category": "Innovationen",
+      "published": "2026-09-25T17:30:00+00:00",
+      "sent_at": "2026-09-25T23:47:37.771968+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/25/some-supabase-customers-are-publicly-exposing-reams-of-peoples-data-to-the-web/",
+      "title": "Some Supabase customers are publicly exposing reams of people’s data to the web",
+      "summary": "The findings highlight how AI-generated and vibe-coded apps can spill and expose users' data when not configured or secured properly.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-25T17:29:46+00:00",
+      "sent_at": "2026-09-25T23:47:37.771968+00:00"
+    },
+    {
       "link": "https://arstechnica.com/apple/2026/09/review-the-iphone-18-pro-is-apples-coolest-smartphone-but-only-literally/",
       "title": "Review: The iPhone 18 Pro is Apple's coolest smartphone (but only literally)",
       "summary": "Better thermals and battery life make this iterative update nicer to use.",
@@ -4949,78 +5021,6 @@
       "category": "AI",
       "published": "2026-09-11T13:11:04+00:00",
       "sent_at": "2026-09-12T00:53:37.063803+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too/",
-      "title": "Y Combinator’s Garry Tan wants U.S. open-weight AI labs to ‘distill’ frontier models, too",
-      "summary": "Tan argues that frontier models themselves trained on public human knowledge so access to capable AI should be \"a form of public good.\"",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-11T20:59:47+00:00",
-      "sent_at": "2026-09-11T22:14:07.804689+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating/",
-      "title": "OpenAI’s feud with mathematicians is only escalating",
-      "summary": "Twenty-five leading mathematicians signed an open letter arguing that AI labs are threatening their intellectual work.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-11T20:57:36+00:00",
-      "sent_at": "2026-09-11T22:14:07.804689+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/994207/chatgpt-new-mexico-lawyer-fined-murder-appeal",
-      "title": "Lawyer fined $5K over AI-hallucinated witnesses in a murder case",
-      "summary": "New Mexico's Supreme Court is punishing a lawyer for including AI-fabricated witnesses and fake police testimony in an appeal for his client's murder conviction, according to a report from Reuters. In a filing on Wednesday, the court fined Stephen Aarons $5,000 and held him in contempt for failing to \"verify the factual claims and legal [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-11T20:44:02+00:00",
-      "sent_at": "2026-09-11T22:14:07.804689+00:00"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/09/11/1143936/roundtables-will-ai-really-kill-us-all/",
-      "title": "Roundtables: AI’s apocalypse crisis",
-      "summary": "Employees at the world&#8217;s leading AI labs are saying there&#8217;s a real possibility that advanced AI could destroy humanity. Are they right? Or is this more scaremongering and hype? Join MIT Technology Review executive editor Niall Firth for a conversation with senior AI editor Will Douglas Heaven and AI reporter Grace Huckins unpacking AI extinction&#8230;",
-      "source": "MIT Technology Review",
-      "category": "AI",
-      "published": "2026-09-11T20:05:06+00:00",
-      "sent_at": "2026-09-11T22:14:07.804689+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2256453/lenovo-googlebook-15-seems-decidedly-premium-based-on-a-new-leak/",
-      "title": "Lenovo's Googlebook 15 seems decidedly premium based on a new leak",
-      "summary": "The Lenovo Googlebook 15 will reportedly have a high-resolution, high-refresh rate display and an Intel Core Ultra 5 chip.",
-      "source": "Engadget",
-      "category": "Hardware",
-      "published": "2026-09-11T20:01:58+00:00",
-      "sent_at": "2026-09-11T22:14:07.804689+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/09/11/one-panel-per-minute-solar-recycling-is-going-big-in-texas/",
-      "title": "One panel per minute: Solar recycling is going big in Texas",
-      "summary": "Old solar panels contain valuable silver, copper, silicon, aluminum, and glass. A new Texas solar recycling plant aims to recover nearly all of it without sending partially processed materials overseas. more…",
-      "source": "Electrek",
-      "category": "Hardware",
-      "published": "2026-09-11T19:43:52+00:00",
-      "sent_at": "2026-09-11T22:14:07.804689+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/11/kimi-maker-moonshot-ai-targets-2-billion-in-annual-revenue/",
-      "title": "Kimi-maker Moonshot AI targets $2B in annual revenue",
-      "summary": "While K3's usage figures have declined slightly in recent months, OpenRouter data currently shows as many as 300 billion tokens being generated each day by K3 models on the system.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-11T19:35:54+00:00",
-      "sent_at": "2026-09-11T22:14:07.804689+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/tech-policy/2026/09/chatgpt-using-lawyer-punished-for-citing-fake-testimony-from-made-up-witnesses/",
-      "title": "ChatGPT-using lawyer punished for citing fake testimony from made-up witnesses",
-      "summary": "\"I didn't know that AI could hallucinate facts,\" New Mexico defense lawyer says.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-09-11T19:34:09+00:00",
-      "sent_at": "2026-09-11T22:14:07.804689+00:00"
     }
   ]
 }
