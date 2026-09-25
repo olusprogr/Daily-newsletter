@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/tech-industry/data-centers/new-jersey-fines-data-center-for-using-unpermitted-power-generators-microsoft-linked-site-also-in-trouble-with-community-for-noise-pollution-other-issues",
+      "title": "New Jersey hits Microsoft-linked AI data center with record fine for 62 unpermitted power generators, issues 45-day shutdown deadline",
+      "summary": "The DataOne data center is facing a record fine of $1.07 million for operating portable turbine generators without permission. Residents say that the penalty is a drop in the bucket for these big tech companies.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-25T11:00:00+00:00",
+      "sent_at": "2026-09-25T11:06:16.417910+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2268587/google-video-avatars-gemini-3-8-live-agent/",
+      "title": "Google adds creepy avatars to Gemini 3.8 live's agents",
+      "summary": "Google has introduced Gemini 3.8 live avatars designed for customer service and other tasks.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-09-25T10:53:55+00:00",
+      "sent_at": "2026-09-25T11:06:16.417910+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/desktops/gaming-pcs/grab-this-4k-ready-rtx-5070-ti-gaming-pc-from-hp-for-under-usd1-900-right-now-powerful-omen-35l-machine-is-a-serious-bargain-with-a-20-core-intel-cpu-32gb-ddr5-ram-and-a-1tb-ssd",
+      "title": "Grab this 4K-ready RTX 5070 Ti gaming PC from HP for under $1,900 right now",
+      "summary": "This epic HP Omen 45L gaming rig is one of the cheapest RTX 5070 Ti PC you can buy right now, fitted with a Intel Core i7-14700F, 32GB of DDR RAM, and a 1TB SSD for just $1,899.99.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-25T10:51:36+00:00",
+      "sent_at": "2026-09-25T11:06:16.417910+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/gpus/nvidia-dlss-5-upscales-frame-rates-and-flame-temps-on-16-pin-power-connector-ai-gaming-tech-pushes-connector-to-uncomfortable-thermal-and-power-limits",
+      "title": "Nvidia DLSS 5 power draw hits 647W as power connector runs hotter than the GPU die, upscales frame rates and flame temps on 16-pin",
+      "summary": "QuasarZone tests show the 16-pin power connector on a GeForce RTX 5090 reaches temperatures above 90 degrees Celsius at peak power consumption near 650W.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-25T10:30:00+00:00",
+      "sent_at": "2026-09-25T11:06:16.417910+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/paulina-borsook-profile/",
+      "title": "Who Killed Paulina Borsook’s Career?",
+      "summary": "A quarter-century ago, Borsook published a wildly prophetic, penetrating book about Silicon Valley called Cyberselfish. Then she disappeared.",
+      "source": "Wired",
+      "category": "Hardware",
+      "published": "2026-09-25T10:00:00+00:00",
+      "sent_at": "2026-09-25T11:06:16.417910+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/data-centers/google-is-blasting-an-experimental-ai-data-center-into-orbit-first-satellite-will-feature-just-four-tensor-processing-units",
+      "title": "Google's orbital AI data center test packs four TPUs and 1,000W of solar power",
+      "summary": "Google will launch an experimental satellite into orbit on October 1, taking four tensor processing units with it.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-25T10:00:00+00:00",
+      "sent_at": "2026-09-25T11:06:16.417910+00:00"
+    },
+    {
+      "link": "https://www.technologyreview.com/2026/09/25/1145144/pentagon-ai-lie-detector/",
+      "title": "The Pentagon wants $30 million to build an AI-powered lie detector",
+      "summary": "The US government wants to spend $30.3 million over the next five years on an improved form of lie detector, according to a Department of Defense budget request. The program, called “Polygraph+” or “Polygraph Next”, will focus on scoring algorithms that use artificial intelligence and machine learning and on a technique called “standoff sensing”, which&#8230;",
+      "source": "MIT Technology Review",
+      "category": "AI",
+      "published": "2026-09-25T09:16:25+00:00",
+      "sent_at": "2026-09-25T11:06:16.417910+00:00"
+    },
+    {
+      "link": "https://www.technologyreview.com/2026/09/25/1145083/young-organs-may-not-be-a-fountain-of-youth-for-recipients/",
+      "title": "Young organs may not be a fountain of youth for recipients",
+      "summary": "Around this time last year I was attending an aging conference in Manchester, listening to a talk about fly aging, when my phone started pinging. News outlets were reporting that a hot mic had caught Russia’s and China’s leaders discussing the possibility of living forever. “With the developments of biotechnology, human organs can be continuously&#8230;",
+      "source": "MIT Technology Review",
+      "category": "Innovationen",
+      "published": "2026-09-25T09:00:00+00:00",
+      "sent_at": "2026-09-25T11:06:16.417910+00:00"
+    },
+    {
       "link": "https://www.theverge.com/tech/1000443/qualcomms-new-elite-sound-chip-might-finally-deliver-the-wi-fi-earbud-dream",
       "title": "Qualcomm’s new ‘Elite’ sound chip might finally deliver the Wi-Fi earbud dream",
       "summary": "What if your wireless earbuds - or audio glasses - could stream high-quality lossless audio that doesn't cut out when you leave your phone on the bedside charger or buried in the couch? Qualcomm's new Snapdragon Sound Elite Gen 2 is its first to integrate \"micro-power Wi-Fi 6E\" right into the chip, so they can [&#8230;]",
@@ -5021,150 +5093,6 @@
       "category": "AI",
       "published": "2026-09-11T10:00:00+00:00",
       "sent_at": "2026-09-11T12:35:38.583927+00:00"
-    },
-    {
-      "link": "https://www.interconnects.ai/p/one-resignation-turned-the-embers",
-      "title": "One resignation turned the embers of AI fear into a wildfire",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-10T16:09:43+00:00",
-      "sent_at": "2026-09-11T07:49:11.389247+00:00"
-    },
-    {
-      "link": "https://www.marketingdive.com/news/amazon-pilots-ad-services-in-chatgpt-what-marketers-need-to-know/829945/",
-      "title": "Amazon pilots ad services in ChatGPT",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-10T14:13:09+00:00",
-      "sent_at": "2026-09-11T07:49:11.389247+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/semiconductors/chinese-quartz-approved-for-semiconductor-equipment-and-dram-manufacturing-but-it-still-cant-break-americas-monopoly-china-secures-domestic-supply-for-chipmaking-components-but-spruce-pine-still-holds-the-crucible-monopoly",
-      "title": "Chinese quartz approved for semiconductor equipment and DRAM manufacturing, but it still can't break America's monopoly — China secures domestic supply for chipmaking components, but Spruce Pine still holds the crucible monopoly",
-      "summary": "Pacific Quartz gets its high-purity quartz qualified for semiconductor equipment and DRAM manufacturing.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-10T12:20:00+00:00",
-      "sent_at": "2026-09-11T07:49:11.389247+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2254569/nasa-ibm-ai-model-moon/",
-      "title": "NASA and IBM made an AI model for exploring the Moon",
-      "summary": "NASA and IBM's latest collaboration is an AI model of the moon made for the Artemis era.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-10T12:00:00+00:00",
-      "sent_at": "2026-09-11T07:49:11.389247+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/semiconductors/the-state-of-abf-substrates-in-data-center-silicon-in-2026-solving-the-supply-crunch-and-material-wall-beneath-every-ai-accelerator",
-      "title": "The state of ABF substrates in data center silicon in 2026 — solving the supply crunch and material wall beneath every AI accelerator",
-      "summary": "ABF substrates underpin today’s most advanced AI chips, but soaring demand and expanding accelerator packages are creating new supply and technical bottlenecks that the industry is currently racing to resolve",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-10T12:00:00+00:00",
-      "sent_at": "2026-09-11T07:49:11.389247+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/semiconductors/tsmc-samsung-and-intel-shore-up-support-with-asml-to-deploy-larger-high-na-euv-photomasks-6-12-inch-photomask-transition-may-take-years-despite-unified-effort",
-      "title": "TSMC, Samsung, and Intel shore up support with ASML to deploy larger High-NA EUV photomasks — 6×12-inch photomask transition may take years despite unified effort",
-      "summary": "ASML, Intel, Samsung, and TSMC back development of 6×12-inch to build large processors using High-NA EUV lithography systems without stitching.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-10T11:20:00+00:00",
-      "sent_at": "2026-09-11T07:49:11.389247+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/993263/where-does-openai-get-mathematics-training-data",
-      "title": "Mathematicians want proof OpenAI didn't use their work",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-10T11:18:58+00:00",
-      "sent_at": "2026-09-11T07:49:11.389247+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/software/windows/developer-uses-claude-to-vibe-code-a-windows-3-1-shell-in-an-hour-reanimated-12mb-retro-launcher-runs-on-both-windows-11-and-apple-silicon",
-      "title": "Developer uses Claude to vibe code a Windows 3.1 shell in an hour — reanimated 12MB retro launcher runs on both Windows 11 and Apple Silicon",
-      "summary": "There’s a new vibe-coded clone of the Windows 3.1 Program Manager that runs on modern Windows 11 or macOS systems.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-10T11:00:00+00:00",
-      "sent_at": "2026-09-11T07:49:11.389247+00:00"
-    },
-    {
-      "link": "https://system76.com/workstations/thelio-mira-ai",
-      "title": "Thelio Mira AI Linux Workstation: 192 GB GPU Memory",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-10T23:10:06+00:00",
-      "sent_at": "2026-09-11T02:56:02.364520+00:00"
-    },
-    {
-      "link": "https://www.nytimes.com/2026/09/10/us/politics/anthropic-ai-biological-weapons.html",
-      "title": "Anthropic says it blocked possible efforts to build biological weapons",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-10T17:04:34+00:00",
-      "sent_at": "2026-09-11T02:56:02.364520+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/993465/universal-music-elevenlabs-ai",
-      "title": "Universal Music is launching an AI music platform with ElevenLabs",
-      "summary": "Universal Music Group is launching a new AI-powered platform that will allow users to draw from its catalog of licensed music to create song remixes, mashups, and new takes on tracks, according to an announcement on Thursday. The record label is developing the platform through a multiyear licensing agreement with ElevenLabs, a company that specializes [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-10T15:38:19+00:00",
-      "sent_at": "2026-09-11T02:56:02.364520+00:00"
-    },
-    {
-      "link": "https://cognition.com/blog/swe-2",
-      "title": "Cognition launches new SWE-2 model, Rivaling Fable 5.1 and GPT-Astra",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-10T15:29:47+00:00",
-      "sent_at": "2026-09-11T02:56:02.364520+00:00"
-    },
-    {
-      "link": "https://spinoff.nasa.gov/Manipulating_Satellite_Photos_Now_Reveals_Ancient_Images",
-      "title": "Technique for Manipulating Satellite Photos Now Reveals Ancient Images (2025)",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Innovationen",
-      "published": "2026-09-10T15:29:30+00:00",
-      "sent_at": "2026-09-11T02:56:02.364520+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/gadgets/988579/apple-watch-series-12-5g-ultra-4-preorder-buy",
-      "title": "Where to preorder the new Apple Watch Series 12 and Ultra 4",
-      "summary": "The iPhone Duo was the unequivocal star of Apple's \"Surprise and shine\" event, but not for people who were mostly paying attention for news on wearables. Thankfully, Apple had a lot to share about its new Apple Watch Series 12 and Ultra 4. There's no update to the SE model for 2026, which isn't necessarily [&#8230;]",
-      "source": "The Verge",
-      "category": "Innovationen",
-      "published": "2026-09-10T15:00:00+00:00",
-      "sent_at": "2026-09-11T02:56:02.364520+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/993391/meta-muse-ai-hands-on",
-      "title": "Meta’s Muse AI works and creeps me out",
-      "summary": "Meta has launched its new Muse assistant, marking the company's first real foray into AI-powered productivity tools. The company says its AI agent can \"take the busywork off your plate\" by helping you with online shopping, emails, trip-planning, and more. I decided to try out the new tool and see how well it performed - [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-10T15:00:00+00:00",
-      "sent_at": "2026-09-11T02:56:02.364520+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2254767/the-iphone-duo-might-just-live-up-to-the-hype/",
-      "title": "The iPhone Duo just might live up to the hype",
-      "summary": "Despite all the build-up and all the scrutiny, Apple's first foldable phone looks solid.",
-      "source": "Engadget",
-      "category": "Hardware",
-      "published": "2026-09-10T14:53:27+00:00",
-      "sent_at": "2026-09-11T02:56:02.364520+00:00"
     }
   ]
 }
