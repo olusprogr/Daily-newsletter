@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.theverge.com/tech/1000443/qualcomms-new-elite-sound-chip-might-finally-deliver-the-wi-fi-earbud-dream",
+      "title": "Qualcomm’s new ‘Elite’ sound chip might finally deliver the Wi-Fi earbud dream",
+      "summary": "What if your wireless earbuds - or audio glasses - could stream high-quality lossless audio that doesn't cut out when you leave your phone on the bedside charger or buried in the couch? Qualcomm's new Snapdragon Sound Elite Gen 2 is its first to integrate \"micro-power Wi-Fi 6E\" right into the chip, so they can [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-09-24T23:42:39+00:00",
+      "sent_at": "2026-09-25T00:19:07.003016+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/24/waymo-is-scaling-fast-heres-what-the-fleet-data-shows/",
+      "title": "Waymo is scaling fast. Here’s what the fleet data shows.",
+      "summary": "In the past month, Waymo has expanded its fleet in Texas by 49%. There are other hotspots as well.",
+      "source": "TechCrunch",
+      "category": "Autonomes Fahren",
+      "published": "2026-09-24T23:24:33+00:00",
+      "sent_at": "2026-09-25T00:19:07.003016+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2268392/ray-ban-meta-gen-3-vs-gen-2-ai-glasses-comparison/",
+      "title": "Ray-Ban Meta Gen 3 vs. Ray-Ban Meta Gen 2: How these AI glasses compare",
+      "summary": "Meta's newest smart glasses are an iterative, expensive update.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-09-24T21:56:17+00:00",
+      "sent_at": "2026-09-25T00:19:07.003016+00:00"
+    },
+    {
+      "link": "https://resobscura.substack.com/p/ai-labs-need-to-start-funding-historical",
+      "title": "Using LLMs to trace alchemical knowledge and decode 17th century letters",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-24T19:14:27+00:00",
+      "sent_at": "2026-09-25T00:19:07.003016+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/gadgets/2026/09/robots-make-combat-airdrops-clear-mines-as-ukraine-defeats-russian-pincer/",
+      "title": "Robots make combat airdrops, clear mines as Ukraine defeats Russian pincer",
+      "summary": "Ukraine’s Operation Vivaldi has erased Russian gains with the help of robots.",
+      "source": "Ars Technica",
+      "category": "Innovationen",
+      "published": "2026-09-24T18:39:47+00:00",
+      "sent_at": "2026-09-25T00:19:07.003016+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/gadgets/1000122/cyberpowerpc-gaming-prebuilt-rtx-5070-core-i7-asrock-oled-monitor-deal-sale",
+      "title": "Sadly, this $1,549 RTX 5070-equipped gaming PC is a very good deal",
+      "summary": "While PC component prices remain high, you can save a good bit of money on a system by purchasing a prebuilt desktop. Walmart has a well-equipped CyberPowerPC gaming PC on sale for $1,549, almost $600 off its original price of $2,139. It’s powered by an Intel Core i7-14700KF processor, and paired with 32GB of 6000MHz [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-09-24T18:19:23+00:00",
+      "sent_at": "2026-09-25T00:19:07.003016+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1000140/jensen-huang-nvidia-ai-energy-climate-change-supervillain",
+      "title": "Jensen Huang talks about AI and climate change like a supervillain",
+      "summary": "As Jensen Huang puts it, AI can help fight climate change - but only if it inflicts \"an enormous amount of pain and suffering\" first. The Nvidia CEO discussed the future of energy and AI's impact on our planet in the latest episode of The Ezra Klein Show. But his comments boil down to the [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-24T18:04:44+00:00",
+      "sent_at": "2026-09-25T00:19:07.003016+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/games/999972/meta-horizon-create-studio-ai-games",
+      "title": "Meta is going to let you build games with AI right on your phone",
+      "summary": "Meta has a new plan to get people to make games for its Horizon social platform. The company today announced two new development tools that will let you create games with AI prompts: Horizon Create, a mobile app, and Horizon Studio, a browser app that offers more granular controls. The apps will be available in [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-24T17:52:29+00:00",
+      "sent_at": "2026-09-25T00:19:07.003016+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/09/24/nexterity-wants-to-automate-the-hard-dangerous-part-of-pipefitting/",
       "title": "Nexterity wants to automate the hard, dangerous part of pipefitting",
       "summary": "The startup's robot can tighten or loosen four bolts at a time, and it fits in a Pelican case.",
@@ -5093,78 +5165,6 @@
       "category": "Hardware",
       "published": "2026-09-10T14:53:27+00:00",
       "sent_at": "2026-09-11T02:56:02.364520+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/openai-wants-to-know-if-an-ai-industry-slowdown-would-even-be-legal/",
-      "title": "OpenAI Wants to Know if an AI Industry Slowdown Would Even Be Legal",
-      "summary": "AI leaders worry antitrust law could stand in the way of what they view as an increasingly urgent push to coordinate a slowdown in AI development.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-09-10T23:28:42+00:00",
-      "sent_at": "2026-09-10T23:41:38.594294+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2255569/ca-governor-signs-landmark-laws-on-youth-use-of-social-media-and-ai-chatbots/",
-      "title": "CA governor signs 'landmark' laws on youth use of social media and AI chatbots",
-      "summary": "They're aimed at protecting minors, but the rules are not universally supported.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-10T22:45:45+00:00",
-      "sent_at": "2026-09-10T23:41:38.594294+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/10/jensen-huang-explains-why-nvidia-will-grow-an-astounding-70-next-year/",
-      "title": "Jensen Huang explains why Nvidia will grow an astounding 70% next year",
-      "summary": "Nvidia has its finger in every pie, and sees another year of plenty in its future, Jensen Huang says. But, he insists, its deals are not circular.",
-      "source": "TechCrunch",
-      "category": "Hardware",
-      "published": "2026-09-10T21:51:59+00:00",
-      "sent_at": "2026-09-10T23:41:38.594294+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/989853/slackforce-surfaces-launch",
-      "title": "Slack can now vibe-code interactive charts and reports inside chats",
-      "summary": "A new feature coming to Slack will allow you to build interactive reports, polls, dashboards, presentations, microsites, and other tools directly inside a chat. With Slackforce Surfaces, you can describe to Slackbot what you need, and it will use AI to gather information from relevant conversations and connected apps, like Google Drive or Salesforce, to [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-10T21:25:21+00:00",
-      "sent_at": "2026-09-10T23:41:38.594294+00:00"
-    },
-    {
-      "link": "https://www.johndcook.com/blog/2026/09/09/formal-method-revolution/",
-      "title": "OpenAI’s Navier-Stokes release included a Lean 4 formal proof",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-10T21:22:59+00:00",
-      "sent_at": "2026-09-10T23:41:38.594294+00:00"
-    },
-    {
-      "link": "https://developers.openai.com/api/docs/guides/agents-api/overview",
-      "title": "OpenAI Agents API",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-10T19:43:22+00:00",
-      "sent_at": "2026-09-10T23:41:38.594294+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/09/10/tesla-driver-assist-i35-guardrail-pattonsburg/",
-      "title": "Tesla Autopilot was on in I-35 crash that killed its driver",
-      "summary": "A 2024 Tesla Model Y ran off Interstate 35 in rural Missouri, struck a guardrail, and killed its driver, a 64-year-old woman from Raymore. Troopers reported a single-vehicle wreck and said the car “went off the road.” What they didn’t say, and likely didn’t know, is that Tesla’s own report to federal regulators says the car’s driver-assist system was engaged. This is part of an ongoing Electrek investigation matching reported crashes to Tesla’s redacted NHTSA data. more…",
-      "source": "Electrek",
-      "category": "Autonomes Fahren",
-      "published": "2026-09-10T19:18:47+00:00",
-      "sent_at": "2026-09-10T23:41:38.594294+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2255197/a-native-gemini-app-is-finally-available-for-windows-pcs/",
-      "title": "A native Gemini app is finally available for Windows PCs",
-      "summary": "There's a keyboard shortcut to open it up, just like the Mac version.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-10T18:30:00+00:00",
-      "sent_at": "2026-09-10T23:41:38.594294+00:00"
     }
   ]
 }
