@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "http://allanrbo.blogspot.com/2026/09/a-jev-like-wrapper-for-llms-including.html",
+      "title": "A single function Jev-like wrapper for LLMs, including vision models",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-26T04:20:58+00:00",
+      "sent_at": "2026-09-26T09:04:46.156593+00:00"
+    },
+    {
+      "link": "https://www.nytimes.com/2026/09/25/technology/openais-ai-us-government-websites.html",
+      "title": "OpenAI’s Systems Went Rogue and Meddled With U.S. Government Websites",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-25T23:22:18+00:00",
+      "sent_at": "2026-09-26T09:04:46.156593+00:00"
+    },
+    {
+      "link": "https://www.reuters.com/business/ftc-chair-pushes-back-treating-ai-agents-independent-actors-2026-09-25/",
+      "title": "FTC chair suggests AI developers should be liable for conduct of agents",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-25T22:49:41+00:00",
+      "sent_at": "2026-09-26T09:04:46.156593+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/video/will-metas-ai-tamagotchi-bet-isworking/",
+      "title": "Meta’s AI Tamagotchi bet is…working?",
+      "summary": "When AI leaders at OpenAI and Anthropic started talking about “pacing the frontier,”&#160;maybe someone&#160;should have asked: what pace?&#160;Now&#160;it’s&#160;turned into model drop week for both companies as&#160;Anthropic rolled out Opus 5.5, followed by&#160;OpenAI’s GPT-6 model updates&#160;just&#160;90 minutes&#160;later.&#160;But the company that stole the spotlight was Meta, whose&#160;personal AI agent Muse&#160;is&#160;reportedly&#160;outpacing&#160;ChatGPT’s early numbers and is headed for&#160;smart glasses&#160;and [&#8230;]",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-25T16:00:00+00:00",
+      "sent_at": "2026-09-26T09:04:46.156593+00:00"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html",
+      "title": "U.S. appeals court upholds designation of Anthropic as supply chain risk",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-25T15:29:25+00:00",
+      "sent_at": "2026-09-26T09:04:46.156593+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/war-bros-didnt-always-rule-silicon-valley/",
+      "title": "War Bros Didn’t Always Rule Silicon Valley",
+      "summary": "Some say that tech was always about the money and the military. Don’t buy that argument.",
+      "source": "Wired",
+      "category": "Hardware",
+      "published": "2026-09-25T15:00:00+00:00",
+      "sent_at": "2026-09-26T09:04:46.156593+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/cpus/meta-muse-runs-agents-on-amd-epyc-turin-hosts-with-two-cores-and-8gb-of-memory-ai-agent-can-pass-terminal-commands-to-ubuntu-host-system",
+      "title": "Meta Muse runs agents on AMD EPYC Turin hosts with two cores and 8GB of memory",
+      "summary": "Meta's new Muse AI agent is powered by AMD EPYC Turin hosts, with each user getting a private sandbox with two vCPUs and 8GB of memory.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-25T14:56:36+00:00",
+      "sent_at": "2026-09-26T09:04:46.156593+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/09/25/tesla-optimus-production-ramp-hands-ai-generalization-problems/",
+      "title": "Tesla ramps Optimus to hundreds a week, but the robots can’t generalize",
+      "summary": "Tesla is now building several hundred Optimus humanoid robots per week at Fremont, roughly 10 times its Q2 output, according to a new report. But the robots coming off the line still can’t handle generalized tasks – limiting their usefulness. The report also describes fragile hands, misaligned parts on the assembly line, and suppliers that can’t hold quality at volume. Those are the two problems that decide whether humanoid robots make money: generalization and reliability. more…",
+      "source": "Electrek",
+      "category": "Innovationen",
+      "published": "2026-09-25T14:45:34+00:00",
+      "sent_at": "2026-09-26T09:04:46.156593+00:00"
+    },
+    {
       "link": "https://arstechnica.com/tech-policy/2026/09/court-rules-trump-can-blacklist-anthropic-for-refusing-to-enable-claude-features/",
       "title": "Court rules Trump can blacklist Anthropic for refusing to enable Claude features",
       "summary": "\"Overly constrained AI models\" could cause military operations to fail, judges say.",
@@ -4967,60 +5039,6 @@
       "category": "AI",
       "published": "2026-09-11T22:44:03+00:00",
       "sent_at": "2026-09-12T10:03:20.961458+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/ai/2026/09/claude-users-found-ways-around-safeguards-for-bioweapons-research/",
-      "title": "Claude users found ways around safeguards for bioweapons research",
-      "summary": "Some dangerous biology looks much like legitimate research, complicating AI safeguards.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-09-11T13:02:35+00:00",
-      "sent_at": "2026-09-12T05:23:11.548479+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/laptops/at-ifa-2026-computing-chased-the-high-and-low-ends-ai-and-budget-focused-machines-left-little-for-the-rest-of-us",
-      "title": "At IFA 2026, computing chased the high and low ends — AI and budget-focused machines left little for the rest of us",
-      "summary": "At IFA 2026, a bifurcated computing landscape widened as more companies chased Apple's MacBook Neo while also keeping one foot firmly planted in the AI space.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-11T12:44:08+00:00",
-      "sent_at": "2026-09-12T05:23:11.548479+00:00"
-    },
-    {
-      "link": "https://twitter.com/DavidAgranovich/status/2098168522862215449",
-      "title": "Moonshot serves Claude instead of Kimi and collects exchanges for model training",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-11T11:36:24+00:00",
-      "sent_at": "2026-09-12T05:23:11.548479+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/why-so-many-ai-researchers-think-the-machines-could-kill-everyone/",
-      "title": "Why So Many AI Researchers Think the Machines Could Kill Everyone",
-      "summary": "A combination of rapid advances, recursive self-improvement, and agentic swarms are genuinely “spooking people” inside big labs.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-09-11T09:00:00+00:00",
-      "sent_at": "2026-09-12T05:23:11.548479+00:00"
-    },
-    {
-      "link": "https://www.wired.com/review/samsung-galaxy-s26-fe/",
-      "title": "Samsung Galaxy S26 FE Review: Same as Before, but for More Money",
-      "summary": "Samsung is resting on its laurels with the midrange S26 FE, with an unwelcome price bump and only a new processor to show for it.",
-      "source": "Wired",
-      "category": "Hardware",
-      "published": "2026-09-11T09:00:00+00:00",
-      "sent_at": "2026-09-12T05:23:11.548479+00:00"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/09/11/1143834/meet-the-under-35s-shaping-the-future-of-biotech/",
-      "title": "Meet the under-35s shaping the future of biotech",
-      "summary": "Every year, MIT Technology Review puts together a list of some of the brightest and best young minds working across science and technology. Our 35 Innovators Under 35 are the ones to watch—people whose research and technical work stands to shape the future of their fields. This year, the list includes nine people who are&#8230;",
-      "source": "MIT Technology Review",
-      "category": "Innovationen",
-      "published": "2026-09-11T09:00:00+00:00",
-      "sent_at": "2026-09-12T05:23:11.548479+00:00"
     }
   ]
 }
