@@ -1,6 +1,51 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/09/26/insurers-claim-ai-is-already-increasing-healthcare-costs/",
+      "title": "Insurers claim AI is already increasing healthcare costs",
+      "summary": "Blue Cross Blue Shield says hospital use of AI tools led to an additional $942M in healthcare spending over a two-year period.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-26T21:02:06+00:00",
+      "sent_at": "2026-09-26T21:48:15.986007+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2269877/this-external-gpu-uses-wi-fi-to-transform-any-device-into-a-gaming-rig/",
+      "title": "This external GPU uses Wi-Fi to transform any device into a gaming rig",
+      "summary": "The WiCi One is available for preorders starting at $1,999.",
+      "source": "Engadget",
+      "category": "Hardware",
+      "published": "2026-09-26T19:45:00+00:00",
+      "sent_at": "2026-09-26T21:48:15.986007+00:00"
+    },
+    {
+      "link": "https://github.com/eval-exec/neomacs",
+      "title": "Neomacs: GPU rendered Rust hard fork of Emacs",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Hardware",
+      "published": "2026-09-26T16:03:13+00:00",
+      "sent_at": "2026-09-26T21:48:15.986007+00:00"
+    },
+    {
+      "link": "https://www.bbc.com/news/articles/cw62jje658dlo",
+      "title": "OpenAI bots meddled with multiple US Government agency sites",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-26T14:03:54+00:00",
+      "sent_at": "2026-09-26T21:48:15.986007+00:00"
+    },
+    {
+      "link": "https://discourse.haskell.org/t/how-to-keep-enjoying-programming-in-a-world-of-llms/14705",
+      "title": "How to keep enjoying programming in a world of LLMs",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-26T09:41:58+00:00",
+      "sent_at": "2026-09-26T21:48:15.986007+00:00"
+    },
+    {
       "link": "https://www.theverge.com/ai-artificial-intelligence/1001049/openai-training-pause",
       "title": "OpenAI pauses training of its ‘most capable models’",
       "summary": "As reports of OpenAI's models breaking containment, hacking sites, and generally getting out of control pile up, the company has made the decision to pause training of its most powerful models. The decision was made after a model being tested within a sandbox exploited a loophole to gain internet access. The incident happened on September [&#8230;]",
@@ -4940,87 +4985,6 @@
       "category": "AI",
       "published": "2026-09-12T20:00:00+00:00",
       "sent_at": "2026-09-12T23:42:59.497342+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/12/openais-sam-altman-says-it-would-be-ill-advised-to-go-public-in-2026/",
-      "title": "OpenAI’s Sam Altman says it would be ‘ill-advised’ to go public in 2026",
-      "summary": "While OpenAI has filed confidentially for an IPO, the company will not be going public this year, according to CEO Sam Altman.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-12T20:19:16+00:00",
-      "sent_at": "2026-09-12T21:14:18.746229+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2256741/openai-agents-hacked-rubygems/",
-      "title": "OpenAI agents hacked a software service before the Hugging Face incident",
-      "summary": "The agents OpenAI was testing attacked a software service called RubyGems in May, months before the attacks on Hugging Face.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-12T19:53:01+00:00",
-      "sent_at": "2026-09-12T21:14:18.746229+00:00"
-    },
-    {
-      "link": "https://www.bloomberg.com/news/articles/2026-09-12/anthropic-ceo-says-it-s-time-to-slow-pace-of-improving-ai-models",
-      "title": "Anthropic CEO Says It's Time to Slow AI Model Advances",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-12T18:07:07+00:00",
-      "sent_at": "2026-09-12T21:14:18.746229+00:00"
-    },
-    {
-      "link": "https://www.bbc.com/news/articles/c14dpgm0rg4o",
-      "title": "Anthropic boss Dario Amodei calls for AI development to slow down",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-12T16:56:52+00:00",
-      "sent_at": "2026-09-12T18:56:15.258403+00:00"
-    },
-    {
-      "link": "https://www.righto.com/2026/09/8087-microcode-reverse-engineering-fscale.html",
-      "title": "Microcode in Intel's 8087 floating-point chip: the scale instruction",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Hardware",
-      "published": "2026-09-12T15:49:52+00:00",
-      "sent_at": "2026-09-12T18:56:15.258403+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/gpus/we-tested-dlss-multi-frame-generation-on-rtx-40-series-gpus-new-mod-brings-rtx-50-series-exclusive-feature-to-older-cards-and-it-really-works",
-      "title": "We tested unofficial DLSS Multi Frame Generation support on RTX 40-series GPUs — new mod brings RTX 50-series exclusive feature to older cards, and it really works",
-      "summary": "We tested DLSS Multi Frame Generation on RTX 40-series GPUs.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-12T14:08:19+00:00",
-      "sent_at": "2026-09-12T18:56:15.258403+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2256577/how-to-get-started-with-meta-s-new-ai-agent-muse/",
-      "title": "How to get started with Meta's new AI agent, Muse",
-      "summary": "After a few days of testing Meta's AI agent Muse. I can confirm that there is very little learning curve to get started.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-12T14:00:00+00:00",
-      "sent_at": "2026-09-12T18:56:15.258403+00:00"
-    },
-    {
-      "link": "https://pluralistic.net/2026/09/12/god-in-the-box/",
-      "title": "LLMs are real, AI is fake",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-12T13:47:28+00:00",
-      "sent_at": "2026-09-12T18:56:15.258403+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/mathematician-steven-strogatz-grapples-with-ai-recent-breakthroughs/",
-      "title": "‘I’m Really Terrified’: A Mathematician Grapples With AI’s Recent Breakthroughs",
-      "summary": "Steven Strogatz coauthored a book about how math is moving beyond human understanding. He spoke with WIRED about the seismic impact artificial intelligence has had on his life’s work.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-09-12T10:00:00+00:00",
-      "sent_at": "2026-09-12T18:56:15.258403+00:00"
     }
   ]
 }
