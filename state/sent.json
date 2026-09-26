@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/09/26/i-created-an-interactive-digital-avatar-of-myself-and-you-can-talk-to-it/",
+      "title": "I created an interactive digital avatar of myself — and you can talk to it",
+      "summary": "After obtaining an interactive avatar and training it to discuss venture fraud, I have mixed feelings about making AI clones of ourselves.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-26T14:00:00+00:00",
+      "sent_at": "2026-09-26T14:04:20.868323+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/video-games/pc-gaming/an-nvidia-chatbot-could-one-day-help-developers-better-optimize-their-games-patent-filing-show-requests-can-be-made-in-plain-english",
+      "title": "Nvidia patents AI chatbot to streamline PC game optimization",
+      "summary": "An Nvidia patent suggests the company could push developers to use a new chatbot as a way to get guidance on how to optimize their new games before release.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-26T13:00:00+00:00",
+      "sent_at": "2026-09-26T14:04:20.868323+00:00"
+    },
+    {
+      "link": "https://www.lemonde.fr/en/economy/article/2026/09/24/arthur-mensch-ceo-of-french-start-up-mistral-ai-ai-is-software-it-can-be-controlled_6757890_19.html",
+      "title": "CEO of Mistral: AI is software. It can be controlled",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-26T12:52:04+00:00",
+      "sent_at": "2026-09-26T14:04:20.868323+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/gpus/nvidias-rtx-mega-geometry-2-0-streams-ray-tracing-geometry-into-vram-on-demand-nanite-inspired-design-drops-detail-instead-of-dropping-out",
+      "title": "Nvidia’s RTX Mega Geometry 2.0 streams ray-tracing geometry into VRAM on demand",
+      "summary": "Nvidia’s RTX Mega Geometry 2.0 SDK arrives alongside RTX Kit 2026.3 with on-demand ray-tracing geometry streaming.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-26T12:30:00+00:00",
+      "sent_at": "2026-09-26T14:04:20.868323+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/kernel-panic-old-timey-credit-card-scams/",
+      "title": "Old-School Credit Card Scams Are Far From Dead",
+      "summary": "In an era of increasingly sophisticated AI-fueled scams, a retro threat may be lurking in your mailbox.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-09-26T12:00:00+00:00",
+      "sent_at": "2026-09-26T14:04:20.868323+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2269776/openai-agents-targeted-us-government-websites/",
+      "title": "OpenAI's agents targeted and infiltrated US government websites",
+      "summary": "OpenAI's agents targeted websites operated by the Commerce Department, the Securities and Exchange Commission and the Department of Education during testing.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-09-26T11:58:20+00:00",
+      "sent_at": "2026-09-26T14:04:20.868323+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/meta-muse-is-adults-only-why-does-it-look-like-a-cute-kids-toy/",
+      "title": "Meta’s Muse Is Adults-Only. Why Does It Look Like a Kids’ Toy?",
+      "summary": "Meta says Muse is just for adults, though its cuddly, Labubu-like mascot—and upcoming Tamagotchi-style AI device—may be disarming for users of all ages.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-09-26T10:30:00+00:00",
+      "sent_at": "2026-09-26T14:04:20.868323+00:00"
+    },
+    {
+      "link": "https://blog.bustikiller.com/2026/09/25/one-month-without-ai.html",
+      "title": "One Month Without AI",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-26T10:08:21+00:00",
+      "sent_at": "2026-09-26T14:04:20.868323+00:00"
+    },
+    {
       "link": "http://allanrbo.blogspot.com/2026/09/a-jev-like-wrapper-for-llms-including.html",
       "title": "A single function Jev-like wrapper for LLMs, including vision models",
       "summary": "",
@@ -4949,96 +5021,6 @@
       "category": "Hardware",
       "published": "2026-09-12T14:09:29+00:00",
       "sent_at": "2026-09-12T16:43:51.585351+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/gadgets/988337/iphone-18-pro-max-preorder-buy",
-      "title": "Where to preorder the iPhone 18 Pro and Pro Max",
-      "summary": "The iPhone 18 Pro and 18 Pro Max are almost here. Announced at Apple's September 2026 \"Sunrise and shine\" event alongside the iPhone Duo and other new gear, the two upgraded phones feature the faster A20 Pro processor with more GPU power as well as more neural cores for AI-related tasks, plus some welcome improvements [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-12T12:00:00+00:00",
-      "sent_at": "2026-09-12T13:51:42.483292+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/this-week-on-toms-hardware-premium-september-12-2026-benchmarking-qwen-3-8-the-splintered-compute-economy-and-ai-breakthroughs",
-      "title": "This week on Tom's Hardware Premium: September 12, 2026 — Benchmarking Qwen 3.8, the splintered compute economy and AI breakthroughs",
-      "summary": "This week on Tom's Hardware Premium, we benchmarked Qwen 3.8 on a slew of different hardware, ruminated on the state of modern computing after returning from IFA 2026, and broke down everything",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-12T12:00:00+00:00",
-      "sent_at": "2026-09-12T13:51:42.483292+00:00"
-    },
-    {
-      "link": "https://tedium.co/2026/09/11/ilands-agents-email-spam-kaixin-tang/",
-      "title": "The Worst Spam Emails: Inside iLands' AI Agent Hustle",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-12T11:13:38+00:00",
-      "sent_at": "2026-09-12T13:51:42.483292+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/gadgets/2026/09/i-spent-4000-on-a-robot-dog-from-china/",
-      "title": "I spent $4,000 on a robot dog from China",
-      "summary": "Unitree might be the world’s most important robotics company.",
-      "source": "Ars Technica",
-      "category": "Innovationen",
-      "published": "2026-09-12T11:00:53+00:00",
-      "sent_at": "2026-09-12T13:51:42.483292+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/994255/openai-millennium-prize-problem-tristan-buckmaster-competition",
-      "title": "OpenAI just wants to win",
-      "summary": "OpenAI has spent the last few years planting flags across the increasingly difficult terrain in mathematics. This week, it claimed one of its biggest prizes yet: a solution to a legendary Millennium Prize problem. In normal circumstances, this would have been celebrated as a historic achievement. Instead, many mathematicians have watched OpenAI's relentless advance with [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-12T11:00:00+00:00",
-      "sent_at": "2026-09-12T13:51:42.483292+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/gpus/lucky-pc-scavenger-discovers-12-rtx-3070-gpus-from-the-crypto-mining-era-cards-survived-years-of-basement-storage-with-only-minor-signs-of-wear",
-      "title": "Lucky PC scavenger discovers 12 RTX 3070 GPUs from the crypto mining era — cards survived years of basement storage with only minor signs of wear",
-      "summary": "What looked like a couple of forgotten mining rigs turned out to be a surprisingly valuable haul, with 12 RTX 3070 graphics cards potentially still ready for gaming duty.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-12T11:00:00+00:00",
-      "sent_at": "2026-09-12T13:51:42.483292+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/cpus/apples-a20-pro-shatters-geekbench-7-single-core-record-2nm-chip-beats-desktop-intel-core-i9-and-amd-ryzen-9-by-up-to-32-percent",
-      "title": "Apple's A20 Pro shatters Geekbench 7 single-core record — 2nm chip beats desktop Intel Core i9 and AMD Ryzen 9 by up to 32%",
-      "summary": "Apple's A20 Pro smartphone SoC outperforms all smartphone processors by a wide margin and manages to leave behind latest laptop processors.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-12T10:48:32+00:00",
-      "sent_at": "2026-09-12T13:51:42.483292+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/security-news-this-week-from-hacks-to-bioweapons-claude-misuse-is-now-everywhere/",
-      "title": "From Hacks to Bioweapons, Claude Misuse Is Now Everywhere",
-      "summary": "Plus: The US disrupts the internet’s biggest black market, a Conti ransomware hacker gets prison time, Meta fails to stop AI-generated videos of child abuse.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-09-12T10:30:00+00:00",
-      "sent_at": "2026-09-12T13:51:42.483292+00:00"
-    },
-    {
-      "link": "https://twitter.com/venturetwins/status/2098456905526211026",
-      "title": "Bernie's AI bill proposes to sentence AI developers to 20 years in prison",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-12T00:24:36+00:00",
-      "sent_at": "2026-09-12T10:03:20.961458+00:00"
-    },
-    {
-      "link": "https://www.washingtonpost.com/technology/2026/09/11/rebels-used-anthropics-ai-bot-develop-guided-weapons-report-says/",
-      "title": "Houthis used Anthropic to develop guided weapons",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-11T22:44:03+00:00",
-      "sent_at": "2026-09-12T10:03:20.961458+00:00"
     }
   ]
 }
