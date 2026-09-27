@@ -1,6 +1,69 @@
 {
   "items": [
     {
+      "link": "https://www.theverge.com/podcast/1000517/why-olpcs-100-laptop-never-stood-a-chance",
+      "title": "Why OLPC’s $100 laptop never stood a chance",
+      "summary": "The idea was big, exciting, and inspiring: What if we could get every kid in the world access to a computer? For a bunch of thinkers and executives in Silicon Valley, it felt like the way to fix everything. But the One Laptop Per Child initiative, and the XO-1 laptop designed to be given away, [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-09-27T12:25:00+00:00",
+      "sent_at": "2026-09-27T12:43:19.233810+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/software/linux/linux-enthusiasts-see-10-second-kernel-compilation-times-on-the-horizon-ai-assisted-patches-cut-build-times-by-nearly-a-third-without-a-ramdisk",
+      "title": "Linux enthusiasts see 10-second kernel compilation times on the horizon",
+      "summary": "It won’t be long until Linux enthusiasts will be able to complete a clean kernel build in under 10 seconds thanks to advances in PC hardware and the AI-assisted optimization of compilers.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-27T12:20:00+00:00",
+      "sent_at": "2026-09-27T12:43:19.233810+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/developer-says-jev-decision-model-beat-pokemon-red-in-under-a-week-non-llm-engine-succeeds-where-traditional-chatbots-stalled-for-months-but-claude-opus-5-coached-the-model-through-its-dead-ends",
+      "title": "Developer says AI decision model Jev beat Pokémon Red in under a week",
+      "summary": "TypeSafe AI's Jev beat Pokémon Red in under a week, eventually reaching the Hall of Fame.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-27T11:30:00+00:00",
+      "sent_at": "2026-09-27T12:43:19.233810+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/u-s-and-uk-navies-successfully-launch-3-700-pound-submarine-sinking-torpedo-from-robotic-drone-submarine-in-historic-first-project-broadsword-proves-weapon-interchangeability-in-just-seven-months",
+      "title": "U.S. and UK navies successfully launch 3,700-pound submarine-sinking torpedo from robotic drone submarine in historic first",
+      "summary": "The U.S. Navy and Royal Navy have successfully launched a 3,700-pound Mk 48 heavyweight torpedo from Britain’s uncrewed XV Excalibur submarine, marking the first time the weapon has been fired from an autonomous underwater vehicle",
+      "source": "Tom's Hardware",
+      "category": "Innovationen",
+      "published": "2026-09-27T10:30:00+00:00",
+      "sent_at": "2026-09-27T12:43:19.233810+00:00"
+    },
+    {
+      "link": "https://arxiv.org/abs/2609.25021",
+      "title": "\"As a Language Model\": Chat Template Switches LLM Self-Referential Voice",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-27T10:26:25+00:00",
+      "sent_at": "2026-09-27T12:43:19.233810+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/taiwans-chip-talisman-snack-faces-production-halt-after-94-percent-strike-vote-workers-demand-share-of-usd176-million-factory-sale-to-ase",
+      "title": "Taiwan's chip talisman snack faces production halt after 94% strike vote",
+      "summary": "Taiwan's tech talisman snack production could be halted as the Guai Guai company faces strike action.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-27T09:30:00+00:00",
+      "sent_at": "2026-09-27T12:43:19.233810+00:00"
+    },
+    {
+      "link": "https://authorsguild.org/news/ag-v-openai-top-execs-knew-mass-book-piracy-was-illegal/",
+      "title": "OpenAI Feared \"Optics\" of what might appear on Hacker News",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-27T06:19:33+00:00",
+      "sent_at": "2026-09-27T12:43:19.233810+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/09/26/google-tests-buying-from-walmart-owned-flipkart-through-gemini-and-ai-mode-in-india/",
       "title": "Google tests buying from Walmart-owned Flipkart through Gemini and AI Mode in India",
       "summary": "The limited test covers select products and users, with a broader rollout planned for later in October.",
@@ -4967,24 +5030,6 @@
       "category": "Hardware",
       "published": "2026-09-13T11:00:00+00:00",
       "sent_at": "2026-09-13T13:38:52.055253+00:00"
-    },
-    {
-      "link": "https://yoshuabengio.org/en/publication/why-are-ai-agents-lying-cheating-and-coordinating",
-      "title": "Why are AI agents lying, cheating and coordinating?",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-13T01:22:31+00:00",
-      "sent_at": "2026-09-13T08:49:13.176455+00:00"
-    },
-    {
-      "link": "https://agentsdock.net/",
-      "title": "AgentsDock: An IDE designed for agentic AI research",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-12T23:45:58+00:00",
-      "sent_at": "2026-09-13T08:49:13.176455+00:00"
     }
   ]
 }
