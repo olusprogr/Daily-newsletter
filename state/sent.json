@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://spectrum.ieee.org/ieee-stem-books-tweens-tryengineering",
+      "title": "A New IEEE STEM Book Series for Tweens from TryEngineering",
+      "summary": "IEEE TryEngineering is dedicated to inspiring intellectual curiosity in children. The technologies shaping our world, including in the realms of artificial intelligence, electric vehicles, and ocean exploration, are evolving rapidly. Helping young learners understand the concepts is essential to preparing the next generation of problem-solvers, creators, and engineers. TryEngineering has introduced a STEM book series for youngsters ages 8 to 12 through the Lerner Publishing Group . The series, Tomorrow’s Technology With TryEngineering, Powered by IEEE, makes complex topics more approachable and engaging, with each book combining age-appropriate explanations, real-world examples, and design challenges that encourage curiosity and critical thinking. The series is based on ebooks and videos available at tryengineering.org . For the series, TryEngineering partnered with several other IEEE groups including the Communications , Computer , and Oceanic Engineering societies and the Transportation Electrification Council . Whether used in the classroom, a library, or at home, the books can help pupils connect STEM concepts to the technologies they encounter every day, including computers and smartphones. Six topics in the collection Here are the books in the new collection: Artificial Intelligence: The Future of Smart Technology explores the systems behind streaming services, search engines, and health care. Readers learn how AI works while exploring ethical concerns such as bias, deepfakes, hallucinations, and privacy. Pupils can better understand one of the most influential technologies of our time as it evolves. Communication Technology: From Morse Code to Smartphones teaches readers about smoke signals, semaphore towers, telephones, and wireless networks. The pupils can gain an understanding of how engineers are changing communications technology through innovations such as 6G and space-based networks. The book highlights career opportunities in the aerospace and telecommunications fields. Electric Vehicles: Powering the Future of Transportation covers how e-cars , e-bikes , e-scooters, and electrified trains are transforming the way people travel. Readers can discover how hybrid and fully electric vehicles operate and how the batteries that power them work. They also can learn about the roles engineers play in developing smarter transit systems. Ocean Engineering: Protecting Our Ocean Environments highlights the vital ecosystem role played by the world’s oceans , which require careful stewardship. play in our ecosystem. Readers can learn how engineers study the underwater world using submersibles and floats , how they address pollution , and how they protect marine environments. Semiconductors: The Building Blocks of Modern Electronics focuses on the technology behind nearly every electronic tool we use. Microchips power smartphones, computers, and countless other products, all thanks to semiconductors . Readers can learn about insulators and conductors, how microchips are manufactured, and why semiconductor engineering is a fertile field for innovation. Signal Power: The Hidden Waves Behind Modern Tech explores how engineers analyze and manipulate signals to make technologies work more effectively. Whether it is a phone call reaching the correct person despite background noise or a medical device monitoring a patient, signal processing plays crucial roles in modern life. The book introduces different wave types, the signal processing workflow, and careers in the field. The book series can help children understand the technologies shaping the world around them while encouraging them to think like engineers and innovators. By connecting STEM concepts to real-world applications, the series can make learning more meaningful and engaging. The Tomorrow’s Technology With TryEngineering series is available through Amazon , Bookshop , and Lerner . More about the collection may be found here .",
+      "source": "IEEE Spectrum",
+      "category": "AI",
+      "published": "2026-09-28T18:00:03+00:00",
+      "sent_at": "2026-09-28T18:25:16.953042+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/28/anthropic-releases-sonnet-5-5-which-it-calls-a-significantly-cheaper-faster-work-partner/",
+      "title": "Anthropic releases Sonnet 5.5, which it calls a significantly cheaper, faster work partner",
+      "summary": "Anthropic has released the newest version of its mid-range model, boasting faster response times and less token burn.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-28T18:00:00+00:00",
+      "sent_at": "2026-09-28T18:25:16.953042+00:00"
+    },
+    {
+      "link": "https://www.anthropic.com/claude-sonnet-5-5",
+      "title": "Claude Sonnet 5.5",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-28T17:58:11+00:00",
+      "sent_at": "2026-09-28T18:25:16.953042+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/28/google-is-killing-off-geminis-gems-in-favor-of-skills/",
+      "title": "Google is killing off Gemini’s Gems in favor of ‘skills’",
+      "summary": "As all-in-one AI agents like Meta's Muse and Instinct take off, Google is opting to end a feature which built task-specific agents.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-28T17:29:50+00:00",
+      "sent_at": "2026-09-28T18:25:16.953042+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/desktops/mini-pcs/early-amd-gorgon-halo-ai-mini-pc-packs-192gb-ram-for-an-eye-watering-usd7-099-super-early-bird-deal-cuts-down-price-of-gmktec-evo-x5-with-ryzen-ai-max-pro-495-by-usd425",
+      "title": "Early AMD 'Gorgon Halo' AI mini-PC packs 192GB RAM for an eye-watering $7,099",
+      "summary": "GMKtec launches the Evo-X5 Pro, an agentic mini-PC with AMD's Ryzen AI Max+ Pro 495, 192GB of RAM, and a price tag up to $7,099.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-28T17:20:00+00:00",
+      "sent_at": "2026-09-28T18:25:16.953042+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2270992/spacexs-latest-starship-mission-reached-low-earth-orbit/",
+      "title": "SpaceX's latest Starship mission reached low-Earth orbit",
+      "summary": "...with some small hiccups along the way.",
+      "source": "Engadget",
+      "category": "Innovationen",
+      "published": "2026-09-28T17:14:21+00:00",
+      "sent_at": "2026-09-28T18:25:16.953042+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2270988/florida-ag-requests-emergency-order-to-stop-openai-model-development/",
+      "title": "Florida AG requests emergency order to stop OpenAI model development",
+      "summary": "This follows a lawsuit from this summer where ChatGPT was allegedly connected to a mass shooting.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-09-28T17:11:33+00:00",
+      "sent_at": "2026-09-28T18:25:16.953042+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/28/openai-still-doesnt-seem-to-have-a-handle-on-all-of-its-rogue-ai-activity/",
+      "title": "OpenAI still doesn’t seem to have a handle on all of its rogue AI activity",
+      "summary": "On Friday, OpenAI published a new site devoted to “misalignment reports” and the breadth of the incidents is alarming.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-28T17:09:02+00:00",
+      "sent_at": "2026-09-28T18:25:16.953042+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/pc-components/ddr5/g-skill-wins-pc-enthusiast-as-customer-for-life-by-simply-honoring-its-warranty-replacement-policy-enthusiast-gets-new-module-for-kit-that-cost-usd150-but-now-sells-for-usd1-200",
       "title": "G.Skill wins PC enthusiast as 'customer for life' by simply honoring its warranty replacement policy",
       "summary": "A PC RAM maker has honored its guarantee promises despite the memory kit in question’s price rising eightfold since it was bought. That's today's AI-pocalypse news.",
@@ -4940,150 +5012,6 @@
       "category": "AI",
       "published": "2026-09-14T18:50:36+00:00",
       "sent_at": "2026-09-14T21:26:52.581982+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/09/14/tesla-cybercab-70-minute-austin-detour/",
-      "title": "Tesla Cybercab turns 10-minute Austin trip into 70-minute detour",
-      "summary": "A Tesla Cybercab rider in Austin says a 10-minute trip turned into a 70-minute ordeal after the driverless taxi took a long detour across the city. The reason is a limitation Tesla still hasn’t solved. Its robotaxis can’t drive on highways, so a quick hop that a human would take up the freeway becomes a winding surface-street tour. more…",
-      "source": "Electrek",
-      "category": "Autonomes Fahren",
-      "published": "2026-09-14T17:14:07+00:00",
-      "sent_at": "2026-09-14T17:39:12.254893+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2257834/siri-ai-is-here-as-apple-releases-ios-27-macos-golden-gate-and-other-major-os-updates/",
-      "title": "Siri AI is here as Apple releases iOS 27, macOS Golden Gate and other major OS updates",
-      "summary": "The kinks are still being worked out for users in the EU and China though.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-14T17:13:09+00:00",
-      "sent_at": "2026-09-14T17:39:12.254893+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/994818/apple-macos-27-golden-gate-available-now",
-      "title": "macOS 27 is available now",
-      "summary": "Apple released macOS 27 Golden Gate on Monday, which brings the new Siri AI assistant, Liquid Glass improvements, improved performance, and more. The update is compatible with all Macs with Apple Silicon, but not Intel Macs - Apple released its final big update for Intel-based Macs last year with macOS Tahoe. Siri AI is arguably [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-14T17:10:13+00:00",
-      "sent_at": "2026-09-14T17:39:12.254893+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/14/macos-27-new-siri-takes-on-ai-productivity-apps/",
-      "title": "macOS 27: new Siri takes on AI productivity apps",
-      "summary": "The two most noticeable things about macOS 27 Golden Gate are the newly updated Siri AI and the design changes that make windows and icons more consistent.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-14T17:10:09+00:00",
-      "sent_at": "2026-09-14T17:39:12.254893+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/news/994756/apple-ios-27-launch-iphone-siri-ai-update",
-      "title": "Apple releases iOS 27 with Siri AI overhaul",
-      "summary": "Apple is now rolling out its iOS 27 update to compatible devices today, alongside the watchOS 27, iPadOS 27, and visionOS 27 updates. Siri AI is the headline feature across all four updates, the delayed AI-powered overhaul of the Siri assistant. Siri AI is available as a beta today for English-only devices, and Apple says [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-14T17:08:49+00:00",
-      "sent_at": "2026-09-14T17:39:12.254893+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/994267/steam-frame-review",
-      "title": "The Steam Frame is made for irresponsible hardware nerds like me",
-      "summary": "For nearly three weeks, I've been testing the limits of Valve's Steam Frame, the company's new wearable PC. At first glance, it's easy to write it off as a pricey headset that missed the VR craze. At $1,059 with 256GB of storage or $1,299 for 1TB, it costs two to three times as much as [&#8230;]",
-      "source": "The Verge",
-      "category": "Innovationen",
-      "published": "2026-09-14T17:00:00+00:00",
-      "sent_at": "2026-09-14T17:39:12.254893+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/14/microsofts-new-ai-code-of-conduct-tells-models-not-to-hack-systems-or-trick-humans/",
-      "title": "Microsoft’s new AI ‘code of conduct’ tells models not to hack systems or trick humans",
-      "summary": "The code of conduct lays out general principles that Microsoft AI models should uphold — supporting humans rather than replacing them, for instance, and accelerating human flourishing — as well as specific safety constraints meant to implement those principles.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-14T16:27:53+00:00",
-      "sent_at": "2026-09-14T17:39:12.254893+00:00"
-    },
-    {
-      "link": "https://erkansaka.net/2026/09/10/ai-doom-rhetoric-safety-hype/",
-      "title": "For AI leaders Doom is a form of hype",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-14T16:15:05+00:00",
-      "sent_at": "2026-09-14T17:39:12.254893+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/save-usd1-289-when-you-build-an-extreme-pc-with-these-top-tier-components-combo-deal-features-amds-ryzen-9-9950x3d2-processor-along-with-an-8tb-9100-pro-ssd-msi-x870e-motherboard-and-32gb-of-ddr5-6000-memory",
-      "title": "Save $1,289 when you build an extreme PC with these top-tier components — combo deal features AMD's Ryzen 9 9950X3D2 processor along with an 8TB 9100 Pro SSD, MSI X870E motherboard, and 32GB of DDR5-6000 memory",
-      "summary": "Save $1,289 on Newegg's epic component bundle, which features AMD's top processor, a massive 8TB Samsung 9100 Pro SSD, and 32GB of DDR5 memory",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-14T11:10:03+00:00",
-      "sent_at": "2026-09-14T11:44:58.550003+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/policy/994414/cities-ditching-flock-cameras-controversy",
-      "title": "What happens after a town de-Flocks",
-      "summary": "From Florida to Washington state, local governments across the country are canceling their contracts with Flock, the company behind the controversial AI-enabled license plate readers, in response to public outcry. But ending the contracts doesn't necessarily mean the cameras will come down immediately - or that the information they've gathered will be deleted anytime soon. [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-14T11:00:00+00:00",
-      "sent_at": "2026-09-14T11:44:58.550003+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/ai-leaders-are-calling-for-a-slowdown-trumps-team-says-its-on-them/",
-      "title": "AI Leaders Are Calling for a Slowdown. Trump’s Team Says It’s on Them",
-      "summary": "Sam Altman and Elon Musk this weekend backed a call for restraint, after Dario Amodei called on Washington to slow AI development. Donald Trump, meanwhile, wants the US to maintain its lead over China.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-09-14T11:00:00+00:00",
-      "sent_at": "2026-09-14T11:44:58.550003+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/russian-freelancers-use-claude-to-program-autonomous-combat-drone-swarm-ai-enabled-target-selection-and-detonation-without-a-human-in-the-loop",
-      "title": "Russian freelancers use Claude to program autonomous combat drone swarm — AI-enabled target selection and detonation without a human in the loop",
-      "summary": "Russia turned Claude into a tool for weapons development, espionage, and propaganda, Anthropic's new threat report claims.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-14T11:00:00+00:00",
-      "sent_at": "2026-09-14T11:44:58.550003+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/data-centers/maryland-data-center-developers-offer-residents-biggest-ever-us-community-benefits-package-as-big-tech-seeks-to-quell-fears-usd110-million-deal-includes-usd30-million-elementary-school-water-reclamation-system-and-more",
-      "title": "Maryland data center developers offer residents biggest-ever US community benefits package as big tech seeks to quell fears — $110 million deal includes $30 million elementary school, water reclamation system, and more",
-      "summary": "A new report claims AI data center builders are getting more savvy about offering communities tangible benefits to get their projects approved.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-14T10:32:00+00:00",
-      "sent_at": "2026-09-14T11:44:58.550003+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/desktops/pc-building/dumpster-diver-builds-home-lab-proxmox-server-from-weekly-landfill-runs-for-ssds-hdds-gpus-and-even-ram-weekly-e-waste-raids-net-multi-drive-proxmox-server-and-asus-rog-laptop",
-      "title": "Dumpster diver builds home lab Proxmox server from weekly landfill runs for SSDs, HDDs, GPUs, and even RAM — weekly e-waste raids net multi-drive Proxmox server and Asus ROG laptop",
-      "summary": "A tech enthusiast says that they managed to put together a home lab-worthy Proxmox server using PC parts scavenged from the nearby county landfill.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-14T10:00:00+00:00",
-      "sent_at": "2026-09-14T11:44:58.550003+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/chatbot-generated-fiction-i-like-my-big-rat-wife/",
-      "title": "‘I Like My Big Rat Wife’: Meet the People Using Chatbots to Write Custom Fiction",
-      "summary": "While the publishing industry frets over how authors are using AI, many readers are taking things into their own hands.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-09-14T09:00:00+00:00",
-      "sent_at": "2026-09-14T11:44:58.550003+00:00"
-    },
-    {
-      "link": "https://github.com/anuj0456/OpenArch",
-      "title": "OpenArch – PyTorch implementations of modern LLM architectures",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-14T07:55:19+00:00",
-      "sent_at": "2026-09-14T11:44:58.550003+00:00"
     }
   ]
 }
