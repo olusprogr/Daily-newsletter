@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/pc-components/ddr5/g-skill-wins-pc-enthusiast-as-customer-for-life-by-simply-honoring-its-warranty-replacement-policy-enthusiast-gets-new-module-for-kit-that-cost-usd150-but-now-sells-for-usd1-200",
+      "title": "G.Skill wins PC enthusiast as 'customer for life' by simply honoring its warranty replacement policy",
+      "summary": "A PC RAM maker has honored its guarantee promises despite the memory kit in question’s price rising eightfold since it was bought. That's today's AI-pocalypse news.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-28T10:30:00+00:00",
+      "sent_at": "2026-09-28T10:31:45.192073+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/ai-agents-are-about-to-flood-the-workforce-no-ones-ready-for-it/",
+      "title": "AI Agents Are About to Flood the Workforce. No One’s Ready for It",
+      "summary": "Your next coworker might well be an AI agent—and will require a whole new model of workplace interactions.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-09-28T10:00:00+00:00",
+      "sent_at": "2026-09-28T10:31:45.192073+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/solving-maths-greatest-problems-was-an-art-form-until-ai/",
+      "title": "Solving Math’s Greatest Problems Was an Art Form. Then Came AI",
+      "summary": "Mathematics has been one of humanity’s most creative endeavors, akin to painting and poetry. Now, mathematicians are trying to save it from the brute force of AI.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-09-28T09:30:00+00:00",
+      "sent_at": "2026-09-28T10:31:45.192073+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/desktops/gaming-pcs/save-usd300-on-this-1440p-ready-gaming-pc-with-an-rtx-5060-ti-16gb-now-usd1-399-99-newegg-deal-on-abs-cyclone-aqua-rig-nets-you-a-20-core-intel-cpu-along-with-16gb-of-ddr5-and-a-1tb-ssd",
+      "title": "Save $300 on this 1440p-ready gaming PC with an RTX 5060 Ti 16GB, now $1,399.99",
+      "summary": "This ABS Cyclone Aqua gaming PC, featuring an RTX 5060 Ti 16GB, Intel Core i7-14700F, 16GB DDR5, and a 1TB SSD has a $300 discount, now $1,399.99.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-09-28T09:15:46+00:00",
+      "sent_at": "2026-09-28T10:31:45.192073+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/the-next-evolution-of-ai-is-learning-from-your-dodgy-gaming-skills/",
+      "title": "The Next Evolution of AI Is Learning From Your Dodgy Gaming Skills",
+      "summary": "A British startup is shaping video game inputs into training data for AI models that can navigate the physical world.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-09-28T09:00:00+00:00",
+      "sent_at": "2026-09-28T10:31:45.192073+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/nvidias-answer-to-rogue-agents-is-an-open-source-ai-security-system/",
+      "title": "Nvidia’s Answer to Rogue Agents Is an Open-Source AI Security System",
+      "summary": "In the wake of a series of high-profile AI safety incidents, Nvidia is introducing a new software tool that helps keep agents from escaping containment.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-09-28T09:00:00+00:00",
+      "sent_at": "2026-09-28T10:31:45.192073+00:00"
+    },
+    {
+      "link": "https://www.technologyreview.com/2026/09/28/1145197/whos-liable-when-ai-agents-go-rogue/",
+      "title": "Who’s liable when AI agents go rogue?",
+      "summary": "MIT Technology Review Explains: Let our writers untangle the complex, messy world of technology to help you understand what’s coming next. You can read more from the series here. Over the past few months, a cascade of cyberattacks by AI agents has stunned the world. In July, OpenAI disclosed that a swarm of its agents&#8230;",
+      "source": "MIT Technology Review",
+      "category": "AI",
+      "published": "2026-09-28T08:06:22+00:00",
+      "sent_at": "2026-09-28T10:31:45.192073+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1001219/honor-magic-9-pro-max-arri-cameras-snapdragon-battery-design-china",
+      "title": "Honor’s Magic 9 Pro Max has a big camera and a bigger battery",
+      "summary": "Honor launches its new Magic 9 flagship phones in China today, and the 9 Pro Max features a design revamp, a capable camera, and a colossal battery. This is Honor's first flagship launch - Robot Phone aside - since it announced its collaboration with camera company Arri. The initial impact is twofold. The new camera [&#8230;]",
+      "source": "The Verge",
+      "category": "Innovationen",
+      "published": "2026-09-28T08:00:36+00:00",
+      "sent_at": "2026-09-28T10:31:45.192073+00:00"
+    },
+    {
       "link": "https://colo.to/nvidia-stock-narrative.html",
       "title": "Owed a billion dollars in Nvidia stock",
       "summary": "",
@@ -5012,15 +5084,6 @@
       "category": "AI",
       "published": "2026-09-14T07:55:19+00:00",
       "sent_at": "2026-09-14T11:44:58.550003+00:00"
-    },
-    {
-      "link": "https://www.interconnects.ai/p/open-source-ai-reading-list",
-      "title": "Open-Source AI and Open Models Reading List",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-14T00:22:51+00:00",
-      "sent_at": "2026-09-14T05:45:48.104856+00:00"
     }
   ]
 }
