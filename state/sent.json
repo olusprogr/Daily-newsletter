@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1002238/openai-google-anthropic-ai-researchers-safety-interviews",
+      "title": "AI researchers put out videos saying superintelligence is ‘exactly as dangerous as it sounds’",
+      "summary": "\"The chance of human extinction is about a coin flip, in my view,\" Geoffrey Irving, a former OpenAI and Google DeepMind employee, said in a new interview. It's one of a dozen interviews with AI researchers, including current and former employees at OpenAI, Google, and Anthropic. Palisade Research, which says it's a non-profit studying AIs' [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-29T17:35:03+00:00",
+      "sent_at": "2026-09-29T17:35:39.286327+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/29/ai-powered-app-maker-wabi-pivots-to-a-messaging-experience/",
+      "title": "AI-powered app maker Wabi pivots to a messaging experience",
+      "summary": "Wabi is repositioning its prompt-based app builder as a personal AI agent that can create interfaces on demand, combining chat, apps and ongoing tasks.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-29T17:20:00+00:00",
+      "sent_at": "2026-09-29T17:35:39.286327+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/29/openai-launches-dots-its-bubbly-agentic-avatar/",
+      "title": "OpenAI launches Dots, its bubbly agentic avatar",
+      "summary": "Dots are meant to operate independent of any specific hardware or interface, pursuing user-defined goals continuously in the background with minimal oversight.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-29T17:17:15+00:00",
+      "sent_at": "2026-09-29T17:35:39.286327+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/29/openai-gives-codex-reusable-cloud-environments-that-work-across-devices/",
+      "title": "OpenAI gives Codex reusable cloud environments that work across devices",
+      "summary": "OpenAI is expanding Codex with reusable cloud development environments, a revamped CLI with voice controls, new code review tools and a security-focused product for scanning repositories and preparing fixes.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-29T17:15:00+00:00",
+      "sent_at": "2026-09-29T17:35:39.286327+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/29/openai-launches-gpt-6-1-sol-says-it-nearly-matches-gpt-6-astra-and-costs-less/",
+      "title": "OpenAI launches GPT-6.1 Sol, says it nearly matches GPT-6 Astra and costs less",
+      "summary": "OpenAI says GPT-6.1 Sol delivers significant improvements over GPT-6 Sol across complex professional tasks, including code writing and debugging, document understanding, and executing multi-step business workflows.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-29T17:15:00+00:00",
+      "sent_at": "2026-09-29T17:35:39.286327+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/29/openai-expands-chatgpts-plugins-with-app-like-interfaces-and-automations/",
+      "title": "OpenAI expands ChatGPT’s plugins with app-like interfaces and automations",
+      "summary": "OpenAI is expanding ChatGPT plugins with dedicated sidebar homes, interactive panels, file viewers, improved discovery, and support for automations.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-29T17:15:00+00:00",
+      "sent_at": "2026-09-29T17:35:39.286327+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1002033/openai-dots-launch-muse-competitor",
+      "title": "OpenAI launches Dots, its Muse competitor",
+      "summary": "OpenAI is responding to Meta's buzzy Muse AI with agentic helpers of its own: Dots. During its DevDay keynote on Tuesday, OpenAI announced that Dots will serve as always-on AI assistants that can \"do nearly anything\" across connected apps in the background while learning your preferences over time. The company's capable GPT-6 Astra model powers [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-29T17:15:00+00:00",
+      "sent_at": "2026-09-29T17:35:39.286327+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/openai-dots-always-on-ai-agents-that-proactively-help/",
+      "title": "OpenAI’s Dots Are Always-On AI Agents—and Its Answer to Meta’s Muse",
+      "summary": "These cute agents are designed to connect to your apps and tackle multistep tasks.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-09-29T17:15:00+00:00",
+      "sent_at": "2026-09-29T17:35:39.286327+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/pc-components/cpus/intel-patent-outlines-embedding-microleds-directly-into-cpu-package-to-light-up-wording-or-work-as-an-extra-asethic-component-microled-is-embedded-with-die-in-glass-substrate",
       "title": "Intel patent outlines embedding MicroLEDs directly into CPU package to light up wording or work as an 'extra asethic component'",
       "summary": "A recently published Intel patent reveals a system for embedding MicroLEDs directly into a CPU for diagnostic or aesthetic purposes.",
@@ -4868,78 +4940,6 @@
       "category": "AI",
       "published": "2026-09-15T17:42:59+00:00",
       "sent_at": "2026-09-15T19:58:41.169877+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/15/openai-anthropic-google-have-been-in-talks-on-ai-safety-for-weeks/",
-      "title": "OpenAI, Anthropic, Google have been in talks on AI safety for weeks",
-      "summary": "OpenAI confirms weeks of AI safety talks with Anthropic and Google DeepMind, as Trump's team dismisses safety concerns and pushes to keep pace with China.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-15T15:47:03+00:00",
-      "sent_at": "2026-09-15T16:12:59.443845+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2255845/delivery-robots-biggest-issues/",
-      "title": "The biggest issues with delivery robots are exactly what you'd think",
-      "summary": "Too often, delivery robots just don't understand the rules of the road (or sidewalk).",
-      "source": "Engadget",
-      "category": "Innovationen",
-      "published": "2026-09-15T15:30:00+00:00",
-      "sent_at": "2026-09-15T16:12:59.443845+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/desktops/gaming-pcs/asus-ludicrous-20th-anniversary-bundle-is-now-the-cheapest-way-to-buy-an-rtx-5090-nvidias-flagship-gpu-stock-is-so-limited-that-this-usd10-850-bundle-with-a-3000w-psu-x870e-board-and-open-frame-case-is-actually-cheaper-than-some-scalper-listings",
-      "title": "Asus' ludicrous 20th anniversary bundle is now the cheapest way to buy an RTX 5090 — Nvidia's flagship GPU stock is so limited that this $10,850 bundle with a 3000W PSU, X870E board, and open-frame case is actually cheaper than some scalper listings",
-      "summary": "This ultra-premium Asus ROG Edition 20th Anniversary Combo set at Newegg is super expensive at $10,849.96, but ironically, it's the 'cheapest' way to pick up an RTX 5090 right now.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-15T15:13:16+00:00",
-      "sent_at": "2026-09-15T16:12:59.443845+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/995453/meta-one-subscriptions-ai",
-      "title": "Meta&#8217;s new One subscriptions put a price on social media and AI",
-      "summary": "Shortly after launching its new do-everything AI assistant Muse, Meta's launching subscription bundles that pair its standalone app subscriptions with extra AI usage. Some of the new Meta One bundles were in testing earlier this year, but are now available globally starting today, with several tiers for individual users, creators, and businesses. Meta says the [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-15T15:00:00+00:00",
-      "sent_at": "2026-09-15T16:12:59.443845+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/15/former-tiktok-execs-built-an-app-that-uses-ai-to-teach-you-how-to-pose-for-a-photo/",
-      "title": "Former TikTok execs built an app that uses AI to teach you how to pose for a photo",
-      "summary": "Essentially a camera app, Superpose analyzes selfies or photos and generates four potential poses using AI.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-15T14:42:37+00:00",
-      "sent_at": "2026-09-15T16:12:59.443845+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/15/discover-how-to-take-your-startup-from-prototype-to-production-at-techcrunch-disrupt-2026/",
-      "title": "Discover how to take your startup from prototype to production at TechCrunch Disrupt 2026",
-      "summary": "Learn how to scale your startup breakthrough from prototype to production at TechCrunch Disrupt 2026 with scaling leaders, Adrian Macneil (Foxglove), John Mackey (MBRYONICS), and Boris Sofman (Bedrock Robotics). Register before September 25 to save up to $200 on your pass.",
-      "source": "TechCrunch",
-      "category": "Innovationen",
-      "published": "2026-09-15T14:30:00+00:00",
-      "sent_at": "2026-09-15T16:12:59.443845+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/cpus/intel-reportedly-cans-12xe-option-for-nova-lake-s-desktop-gaming-apu-design-said-to-resurface-with-razor-lake",
-      "title": "Intel reportedly cans 12Xe option for Nova Lake-S desktop — gaming APU design said to resurface with Razor Lake",
-      "summary": "Following rumors of a Nova Lake desktop SKU with 12 Xe3P cores, tipster Jaykihn suggests that Intel has canned the design and moved the target to next-gen Razor Lake instead.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-15T14:17:06+00:00",
-      "sent_at": "2026-09-15T16:12:59.443845+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/09/15/tesla-four-fatal-driver-assist-crashes-july-2026/",
-      "title": "Tesla’s record month: 4 fatal Autopilot and Full Self-Driving crashes",
-      "summary": "July 2026 was the worst month on record for Tesla driver-assist crashes. Tesla reported 236 of them to federal regulators, the most it has ever filed in a single month. Four of those crashes killed someone. In every one, Tesla’s own data says Autopilot or “Full Self-Driving” was engaged, and in every one, the public was never told the system was involved. This is the latest from our ongoing investigation matching Tesla’s redacted NHTSA reports to real, named crashes. more…",
-      "source": "Electrek",
-      "category": "Autonomes Fahren",
-      "published": "2026-09-15T14:05:06+00:00",
-      "sent_at": "2026-09-15T16:12:59.443845+00:00"
     }
   ]
 }
