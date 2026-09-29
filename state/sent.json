@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.nytimes.com/2026/09/28/technology/openai-astra-safety.html",
+      "title": "OpenAI Says It Will Not Release Newest A.I. Model Over Safety Concerns",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-29T00:34:27+00:00",
+      "sent_at": "2026-09-29T04:08:30.765728+00:00"
+    },
+    {
+      "link": "https://www.reuters.com/business/finance/anthropics-ipo-prospectus-shows-sweeping-ai-vision-surging-costs-2026-09-28/",
+      "title": "Anthropic's IPO prospectus shows AI vision, surging costs",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-28T23:40:59+00:00",
+      "sent_at": "2026-09-29T04:08:30.765728+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/28/amd-will-acquire-fei-fei-lis-world-labs-for-8-2-billion/",
+      "title": "AMD will acquire Fei-Fei Li’s World Labs for $8.2 billion",
+      "summary": "The acquisition will see World Labs founder Fei-Fei Li join AMD as executive vice president and chief scientist.",
+      "source": "TechCrunch",
+      "category": "Hardware",
+      "published": "2026-09-28T20:39:33+00:00",
+      "sent_at": "2026-09-29T04:08:30.765728+00:00"
+    },
+    {
+      "link": "https://www.worldlabs.ai/blog/amd-announcement",
+      "title": "World Labs Is Joining AMD",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Hardware",
+      "published": "2026-09-28T20:18:05+00:00",
+      "sent_at": "2026-09-29T04:08:30.765728+00:00"
+    },
+    {
+      "link": "https://calnewport.com/its-time-to-investigate-the-ai-labs/",
+      "title": "It's Time to Investigate the AI Labs",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-28T19:53:35+00:00",
+      "sent_at": "2026-09-29T04:08:30.765728+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/28/shopify-opens-checkout-to-browser-based-ai-agents/",
+      "title": "Shopify opens checkout to browser-based AI agents",
+      "summary": "Shopify is expanding WebMCP support to checkout, allowing browser-based AI agents to update order details and complete purchases with a buyer’s authorization.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-28T19:33:57+00:00",
+      "sent_at": "2026-09-29T04:08:30.765728+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/28/tesla-delays-roadster-2-event-again-due-to-bad-weather/",
+      "title": "Tesla delays Roadster 2 event again due to bad weather",
+      "summary": "Tesla says the event \"can only be held outdoors,\" as it's expected to show the car flying in some form using SpaceX thrusters.",
+      "source": "TechCrunch",
+      "category": "Innovationen",
+      "published": "2026-09-28T19:27:27+00:00",
+      "sent_at": "2026-09-29T04:08:30.765728+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/28/the-ai-boom-took-over-climate-week-and-not-everyone-is-happy-about-it/",
+      "title": "The AI boom took over Climate Week and not everyone is happy about it",
+      "summary": "Just like the rest of the U.S., data centers and AI are dividing climate tech founders and investors.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-28T19:21:59+00:00",
+      "sent_at": "2026-09-29T04:08:30.765728+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/09/28/openai-reportedly-ditches-model-over-safety-concerns/",
       "title": "OpenAI reportedly ditches model over safety concerns",
       "summary": "A top executive at the AI lab told the Wall Street Journal that the model in question had displayed a poor aptitude for following orders.",
@@ -4940,78 +5012,6 @@
       "category": "Innovationen",
       "published": "2026-09-14T17:49:07+00:00",
       "sent_at": "2026-09-15T05:47:10.448579+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/995186/is-big-techs-ai-slowdown-a-safety-pact-or-a-cartel",
-      "title": "Is Big Tech’s AI slowdown a safety pact or a cartel?",
-      "summary": "When OpenAI CEO Sam Altman, Anthropic CEO Dario Amodei, Google DeepMind cofounder Demis Hassabis, and SpaceX head Elon Musk loosely agreed over the weekend to slow down AI development, skeptics spotted an ulterior motive immediately. The AI titans had declared that their aim was to \"pace the frontier,\" signing on at least partially to a [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-14T22:59:41+00:00",
-      "sent_at": "2026-09-15T00:15:25.516663+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/994949/apple-intelligence-apple-home-icloud-plus-cost-subscription",
-      "title": "Apple Home’s new security camera features cost as much as $60 a month",
-      "summary": "With the public release of iOS 27 and tvOS 27, Apple Home is getting an injection of Apple Intelligence - but you'll have to pay more for it. Apple Intelligence for Home brings AI-powered video summaries to HomeKit Secure Video, so you can get short text descriptions of who and what compatible security cameras saw, [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-14T22:28:52+00:00",
-      "sent_at": "2026-09-15T00:15:25.516663+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/14/nvidia-ceo-jensen-huang-tells-trump-were-not-going-to-let-an-ai-slowdown-happen/",
-      "title": "Nvidia CEO Jensen Huang tells Trump ‘we’re not going to let [an AI slowdown] happen’",
-      "summary": "Though Elon Musk and Sam Altman have supported Dario Amodei's calls to slow the pace of AI development, Jensen Huang seems to feel differently.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-14T21:51:02+00:00",
-      "sent_at": "2026-09-15T00:15:25.516663+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2258386/doom-the-dark-ages-has-been-permanently-discounted-to-50-dollars/",
-      "title": "Doom: The Dark Ages has been permanently discounted to $50",
-      "summary": "The latest Doom installment just got a good bit cheaper.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-14T21:48:09+00:00",
-      "sent_at": "2026-09-15T00:15:25.516663+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/995141/ai-executives-politicians-safety-regulation-anthropic-dario-amodei",
-      "title": "What execs and politicians are saying about slowing down AI development",
-      "summary": "Dario Amodei kicked off a flood of statements over the past few days about AI safety by publishing a long essay titled \"We Must Pace the Frontier\" detailing why AI development should be slowed down. Other AI leaders and politicians are speaking out in favor of or opposing his points, and we've compiled some of [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-14T21:21:42+00:00",
-      "sent_at": "2026-09-15T00:15:25.516663+00:00"
-    },
-    {
-      "link": "https://www.effort.news/irregular",
-      "title": "A single firm is behind OpenAI, Anthropic, and Meta hacking scandals",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-14T21:15:01+00:00",
-      "sent_at": "2026-09-15T00:15:25.516663+00:00"
-    },
-    {
-      "link": "https://neomacs.org/",
-      "title": "NEO Emacs – GPU-Accelerated Emacs Powered by Rust",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Hardware",
-      "published": "2026-09-14T19:42:22+00:00",
-      "sent_at": "2026-09-15T00:15:25.516663+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2253054/use-gemini-help-you-organize-files-google-drive/",
-      "title": "You can use Gemini to help you organize your files on Google Drive",
-      "summary": "If your Google Drive has become a mess of files, folders and photos, Gemini can lend a hand by suggesting new ways to properly put them back in order.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-14T18:30:00+00:00",
-      "sent_at": "2026-09-15T00:15:25.516663+00:00"
     }
   ]
 }
