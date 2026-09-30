@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://agmai.org/general-sep29/",
+      "title": "Responsible Release of AI-Generated Mathematics",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-30T02:36:12+00:00",
+      "sent_at": "2026-09-30T07:56:19.382522+00:00"
+    },
+    {
+      "link": "https://en.wikipedia.org/wiki/Ballmer_Peak",
+      "title": "Ballmer Peak",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-30T02:35:58+00:00",
+      "sent_at": "2026-09-30T07:56:19.382522+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/space/2026/09/nasa-has-a-dragon-dilemma-and-there-appear-to-be-no-good-answers/",
+      "title": "NASA has a Dragon dilemma, and there appear to be no good answers",
+      "summary": "So is SpaceX just being selfish or what?",
+      "source": "Ars Technica",
+      "category": "Innovationen",
+      "published": "2026-09-29T18:34:00+00:00",
+      "sent_at": "2026-09-30T07:56:19.382522+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2270766/gemini-find-hub-locate-important-documents/",
+      "title": "Gemini and Find Hub can help you locate your important documents — here's how",
+      "summary": "You can use Find Hub and Gemini to keep track of your documents without the need for a compatible tag.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-09-29T18:30:00+00:00",
+      "sent_at": "2026-09-30T07:56:19.382522+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/ai/2026/09/heres-what-actually-happened-in-openais-australian-govt-server-hack/",
+      "title": "Here's what actually happened in OpenAI's Australian gov't server hack",
+      "summary": "Without a \"full set of safeguards,\" agent accessed \"system information and source code.\"",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-09-29T18:11:09+00:00",
+      "sent_at": "2026-09-30T07:56:19.382522+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/anthropic-says-it-discovered-a-crispr-like-system-now-what/",
+      "title": "Anthropic Says It Discovered a Crispr-Like System. Now What?",
+      "summary": "“The experiments are still in the queue. The PR is already live,” says one expert.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-09-29T18:03:01+00:00",
+      "sent_at": "2026-09-30T07:56:19.382522+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/09/29/mango-14kwh-power-e-catl-station-bundle-segway-navimow-robot-mower-tapo-more/",
+      "title": "Mango 14kWh 240V Power E CATL station bundle down at $4,199 2026 low, Segway Navimow robot mower $669, Tapo, more",
+      "summary": "As Amazon’s early fall Prime Day deals are in full swing, we have a bunch of Amazon deals being led by the Mango Prime Fall Sale with up to 72% discounts on its Power E bundles, like the 14kWh setup with 2x Power E CATL stations, 2x batteries, and an mSocket Pro at its $4,199 2026 low . Right behind that is Segway’s Navimow i105N Robot Lawn Mower at its $669 annual low , as well as a roundup of Tapo security devices starting from $32 , like the C660 4K Wireless Outdoor Solar Security Camera at its $107 low . There’s also a solar bundle for Jackery’s 1,070Wh Explorer 1000 V2 power station, and a bunch more early Prime Day deals waiting for you below. You can find the hangover deals from yesterday down at the bottom of the page, like the massive Anker SOLIX Early Prime Day Sale lineup, Lectric’s 3-day Tailgating e-bike flash sale lineup, and more. Head below for other New Green Deals we’ve found today and, of course, Electrek ’s best EV buying and leasing deals . Also, check out the new Electrek Tesla Shop for the best deals on Tesla accessories . more…",
+      "source": "Electrek",
+      "category": "Innovationen",
+      "published": "2026-09-29T18:00:00+00:00",
+      "sent_at": "2026-09-30T07:56:19.382522+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/29/openai-takes-on-microsoft-with-the-launch-of-what-feels-a-whole-lot-like-chatgpts-own-office-suite/",
+      "title": "OpenAI takes on Microsoft with the launch of what feels a whole lot like ChatGPT’s own office suite",
+      "summary": "OpenAI's newly announced suite of office features puts it into more direct competition with more traditional software companies.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-29T17:45:51+00:00",
+      "sent_at": "2026-09-30T07:56:19.382522+00:00"
+    },
+    {
       "link": "https://www.theverge.com/ai-artificial-intelligence/1002505/sam-altman-openai-ipo-devday-ai-safety",
       "title": "Sam Altman says OpenAI won’t go public until its models are safe",
       "summary": "For months, people have wondered when OpenAI will go public. CEO Sam Altman says it won't happen until the company can make better promises about model safety, with no firm timeline in sight. \"We intend to continue with AI progress … but as the models have had this surge forward in capability, and we see [&#8230;]",
@@ -4796,150 +4868,6 @@
       "category": "Hardware",
       "published": "2026-09-16T10:45:00+00:00",
       "sent_at": "2026-09-16T13:06:07.832892+00:00"
-    },
-    {
-      "link": "https://blog.cloudflare.com/accountable-mixed-use-ai-crawlers/",
-      "title": "Stay discoverable in search while disallowing AI training",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-16T02:25:18+00:00",
-      "sent_at": "2026-09-16T07:11:41.513918+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/995826/boox-palma-3-e-ink-reader-pocket-smartphone-android-16",
-      "title": "The Boox Palma 3 gets stylus support and a sleek redesign",
-      "summary": "Nearly two years after the last update to Boox's smartphone-sized black-and-white e-reader, the company announced the Palma 3 with a sleek redesign, new functionality, and a handful of other small updates that may justify its significant price bump depending on how you plan to use it. While the Palma 2 launched in 2024 for $279.99, [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-09-16T02:00:00+00:00",
-      "sent_at": "2026-09-16T07:11:41.513918+00:00"
-    },
-    {
-      "link": "https://mnoukhov.github.io/posts/ngu/",
-      "title": "Learning to solve hard problems in RL for LLMs by never giving up",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-15T19:07:38+00:00",
-      "sent_at": "2026-09-16T07:11:41.513918+00:00"
-    },
-    {
-      "link": "https://www.formas.ai/cartesian",
-      "title": "Cartesian – AI 3D Modeling for Design",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-15T15:26:45+00:00",
-      "sent_at": "2026-09-16T07:11:41.513918+00:00"
-    },
-    {
-      "link": "https://github.com/pizza-bot-app/pizza-bot",
-      "title": "Show HN: Pizza Bot – An inbox for AI agents that work in the background",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-15T15:20:26+00:00",
-      "sent_at": "2026-09-16T07:11:41.513918+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/data-centers/us-ai-data-centers-projected-to-become-the-fifth-largest-natural-gas-consumer-in-the-world-by-2035-consumption-to-grow-by-15-billion-cubic-feet-per-day-as-demand-for-compute-increases",
-      "title": "US AI data centers projected to become the fifth-largest natural gas consumer in the world by 2035 — consumption to grow by 15 billion cubic feet per day as demand for compute increases",
-      "summary": "Data centers in the U.S. are projected to use up more natural gas than most of the rest of the world to generate the electricity they need. Estimates suggest that 15 billion cubic feet per day are needed to keep data centers running by 2035.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-15T13:57:36+00:00",
-      "sent_at": "2026-09-16T07:11:41.513918+00:00"
-    },
-    {
-      "link": "https://www.bbc.com/news/articles/cqgk5e2j0gg8o",
-      "title": "AI 'kill switch' may need to be mandatory, Anthropic co-founder tells BBC",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-15T13:41:28+00:00",
-      "sent_at": "2026-09-16T07:11:41.513918+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/09/15/stark-turns-its-80-hp-electric-supermoto-into-a-titanium-loaded-blacked-out-beast/",
-      "title": "Stark turns its 80 hp electric supermoto into a titanium-loaded blacked-out beast",
-      "summary": "Stark Future has already turned its ridiculously powerful electric dirt bike into a street-going supermoto – upon which I recently got to cruise the streets and cities around Barcelona (more on that experience coming soon). But now the company is taking that concept in an even darker direction with the new Stark VARG SM Sköll, a limited-edition, nearly completely blacked-out version of the 80 hp electric supermoto. more…",
-      "source": "Electrek",
-      "category": "Autonomes Fahren",
-      "published": "2026-09-15T13:33:09+00:00",
-      "sent_at": "2026-09-16T07:11:41.513918+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/15/we-dont-need-ai-regulation-leave-safety-to-us-nvidias-jensen-huang-says/",
-      "title": "We don’t need AI regulation — leave safety to us, Nvidia’s Jensen Huang says",
-      "summary": "AI isn't some new form of \"alien mind,\" according to Jensen Huang. It's just hardware and software, so safety can be engineered by each AI product maker.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-16T00:20:39+00:00",
-      "sent_at": "2026-09-16T01:03:59.355175+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/995917/data-center-nyt-midterm-poll-september",
-      "title": "AI and data centers are incredibly unpopular in every poll",
-      "summary": "Poll data released Tuesday by the New York Times and Siena University confirms what we've already been seeing, and what politicians are responding to - AI and data centers are incredibly unpopular. Asked if they support or oppose the construction of data centers to power AI tech, 61 percent of the 1,503 likely voters surveyed [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-15T23:34:25+00:00",
-      "sent_at": "2026-09-16T01:03:59.355175+00:00"
-    },
-    {
-      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/",
-      "title": "Gemini 3.8 Live and 3.8 Live Extended Thinking",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-15T17:38:18+00:00",
-      "sent_at": "2026-09-16T01:03:59.355175+00:00"
-    },
-    {
-      "link": "https://dank.systems/posts/2026-09-15-ai-bear.html",
-      "title": "Why I'm still bearish on LLMs after Navier-Stokes",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-15T17:37:12+00:00",
-      "sent_at": "2026-09-16T01:03:59.355175+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-leaders-clash-over-safety-fears-after-anthropic-whistleblower-says-ai-could-kill-us-all-by-2030-openai-anthropic-and-xai-figureheads-call-for-external-governance-while-jensen-huang-says-worries-are-made-up",
-      "title": "AI leaders clash over safety fears after Anthropic whistleblower says AI could 'kill us all' by 2030 — OpenAI, Anthropic and xAI figureheads call for external governance, while Jensen Huang says worries are 'made up'",
-      "summary": "The CEOs of OpenAI and Anthropic, as well as other industry leaders, are calling for a general slowdown in AI development over safety fears. On the flip side, Chinese authorities, the U.S. President, and CEO of Nvidia have dismissed their concerns as fearmongering.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-15T17:19:36+00:00",
-      "sent_at": "2026-09-16T01:03:59.355175+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/15/meta-expands-subscription-push-with-new-ai-focused-plans/",
-      "title": "Meta expands subscription push with new AI-focused plans",
-      "summary": "Meta One bundles expanded access to the company’s AI tools with premium features across Facebook, Instagram, and WhatsApp.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-15T17:05:24+00:00",
-      "sent_at": "2026-09-16T01:03:59.355175+00:00"
-    },
-    {
-      "link": "https://www.404media.co/theres-a-100-chance-ai-agents-are-already-ruining-the-internet/",
-      "title": "There's a 100% Chance AI Agents Are Ruining the Internet",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-15T16:38:45+00:00",
-      "sent_at": "2026-09-16T01:03:59.355175+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2255893/older-macbook-still-worth-buying-2026/",
-      "title": "Are older MacBooks still worth buying in 2026?",
-      "summary": "You'll probably want to avoid Intel-powered MacBooks, but Apple Silicon models are solid.",
-      "source": "Engadget",
-      "category": "Hardware",
-      "published": "2026-09-15T16:30:00+00:00",
-      "sent_at": "2026-09-16T01:03:59.355175+00:00"
     }
   ]
 }
