@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/09/30/instagram-rolls-out-an-ai-video-editor-for-creators/",
+      "title": "Instagram rolls out an AI video editor for creators",
+      "summary": "This conversational AI assistant is intended to provide personalized feedback to creators, rather than generic advice.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-30T14:30:00+00:00",
+      "sent_at": "2026-09-30T14:39:21.787789+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/30/cerebras-systems-andrew-feldman-on-whether-ai-can-keep-scaling-at-techcrunch-disrupt-2026/",
+      "title": "Cerebras Systems’ Andrew Feldman on whether AI can keep scaling at TechCrunch Disrupt 2026",
+      "summary": "At TechCrunch Disrupt 2026, Cerebras Systems CEO and co-founder Andrew Feldman will explore the growing demand for compute, energy, and infrastructure, how Cerebras is approaching those constraints differently, and what comes next if today’s AI hardware reaches its limits.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-30T14:30:00+00:00",
+      "sent_at": "2026-09-30T14:39:21.787789+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1002402/instagram-ai-edits-assistant-creators-analytics-youtube",
+      "title": "Instagram is adding an AI ‘assistant’ to tell you how to post",
+      "summary": "Instagram is the latest social media platform to add built-in AI-powered features that will give users feedback on their posts. The company announced Wednesday that its standalone Edits app will now include an AI \"creative assistant\" that pulls in data from a user's Instagram account and offers suggestions on what to change. Using the new [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-30T14:30:00+00:00",
+      "sent_at": "2026-09-30T14:39:21.787789+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/biotech-founder-cathy-tie-moral-case-gene-editing-human-embryos/",
+      "title": "A Biotech Founder Makes the Moral Case for Gene-Editing Human Embryos",
+      "summary": "The practice of editing the genes of embryos remains highly controversial and risky, but Origin Genomics founder Cathy Tie argues its a “moral imperative” to address hereditary diseases.",
+      "source": "Wired",
+      "category": "Innovationen",
+      "published": "2026-09-30T14:30:00+00:00",
+      "sent_at": "2026-09-30T14:39:21.787789+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2273111/meta-introduces-a-new-ai-assistant-for-its-instagram-creators/",
+      "title": "Meta introduces a new AI assistant for its Instagram creators",
+      "summary": "The Edits assistant offers personalized guidance based on your audience and best-performing content.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-09-30T14:30:00+00:00",
+      "sent_at": "2026-09-30T14:39:21.787789+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/30/restate-lands-20m-as-the-need-for-durable-infrastructure-increases-with-ai-agents/",
+      "title": "Restate lands $20M as the need for durable infrastructure increases with AI agents",
+      "summary": "Founded by Apache Flink veterans, the startup is taking on workflow heavyweight Temporal.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-30T14:27:11+00:00",
+      "sent_at": "2026-09-30T14:39:21.787789+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/09/30/kidz-ai-tesla-robotaxi-fleet-zombie-company-bitcoin-treasury/",
+      "title": "Tesla Robotaxi fleets are the new crypto treasury for zombie companies",
+      "summary": "A Nasdaq-listed company worth about $2.4 million says it wants to buy 500 Tesla Robotaxis. KIDZ AI, formerly an online coding school for kids, announced today that it sent Tesla a “procurement inquiry” for the vehicles and plans an “Autonomous Fleet Operations Strategy.” If the name doesn’t ring a bell, the playbook should. Tesla’s Robotaxi is turning into what bitcoin treasuries were for failing micro-caps in 2025: a buzzword you bolt onto a dying business to get the stock moving. more…",
+      "source": "Electrek",
+      "category": "Autonomes Fahren",
+      "published": "2026-09-30T14:02:17+00:00",
+      "sent_at": "2026-09-30T14:39:21.787789+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/metas-muse-ai-agent-accused-of-accessing-sensitive-user-data-on-iphone-and-mac-without-permission-agent-shocks-reporter-by-referring-to-confidential-messages-it-wasnt-granted-access-to",
+      "title": "Meta's Muse AI agent accused of ignoring user permissions and accessing forbidden personal user data",
+      "summary": "Meta's Muse AI agent has been accused of ignoring user permissions and accessing forbidden personal user data on an iPhone and Mac, including iMessages.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-30T14:00:00+00:00",
+      "sent_at": "2026-09-30T14:39:21.787789+00:00"
+    },
+    {
       "link": "https://agmai.org/general-sep29/",
       "title": "Responsible Release of AI-Generated Mathematics",
       "summary": "",
@@ -4796,78 +4868,6 @@
       "category": "AI",
       "published": "2026-09-16T16:26:25+00:00",
       "sent_at": "2026-09-16T17:56:50.818690+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/ram/ai-induced-memory-shortage-is-changing-how-devices-are-built-fairphone-says-memory-now-60-percent-of-materials-cost-smaller-laptop-and-phone-makers-are-redesigning-products-and-have-to-test-for-fake-chips",
-      "title": "AI-induced Memory shortage is changing how devices are built, Fairphone says memory now 60% of materials cost — smaller laptop and phone makers are redesigning products and have to test for fake chips",
-      "summary": "For smaller device manufacturers, rising memory prices are only part of the problem as limited availability forces companies to rethink everything from motherboard designs to procurement strategies.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-16T12:15:42+00:00",
-      "sent_at": "2026-09-16T13:06:07.832892+00:00"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/09/16/1144205/the-download-ai-trillion-dollar-build-openai-biological-data/",
-      "title": "The Download: AI’s trillion-dollar gamble and OpenAI’s biology data bid",
-      "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. What’s at stake in AI’s trillion-dollar gamble When Jessica Wachter, a finance professor at the University of Pennsylvania, wanted to assess AI’s impact on the economy over the next few years,&#8230;",
-      "source": "MIT Technology Review",
-      "category": "AI",
-      "published": "2026-09-16T12:10:00+00:00",
-      "sent_at": "2026-09-16T13:06:07.832892+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/policy/995534/a-brief-history-of-ai-executives-calling-for-regulation",
-      "title": "A brief history of AI executives calling for regulation",
-      "summary": "Over the past few days, a lot of people who stand to make a lot of money from AI all publicly agreed that it's time to make everyone slow down before we lose control - including OpenAI CEO Sam Altman, Anthropic CEO Dario Amodei, Google DeepMind cofounder Demis Hassabis, Microsoft CEO Satya Nadella, and X [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-16T12:00:00+00:00",
-      "sent_at": "2026-09-16T13:06:07.832892+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/policy/chinese-state-media-counters-dario-amodeis-call-to-put-brakes-on-ai-development-paper-says-move-is-a-response-to-chinese-competition",
-      "title": "Chinese state media counters Anthropic's call to put brakes on AI development — paper says move is ‘a response to Chinese competition’",
-      "summary": "State media outlet China Daily posits that Anthropic's Dario Amodei made the call to limit frontier AI development because Chinese AI models are catching up with American AI labs.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-16T12:00:00+00:00",
-      "sent_at": "2026-09-16T13:06:07.832892+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/semiconductors/jensen-huang-thinks-china-will-develop-its-own-advanced-lithography-systems-by-2030-nvidia-ceo-says-achievement-of-that-capability-is-just-a-matter-of-time",
-      "title": "Jensen Huang thinks China will develop its own advanced lithography chipmaking tools by 2030 — Nvidia CEO says achievement of that capability 'is just a matter of time'",
-      "summary": "Nvidia CEO thinks that in light of his view of a three- to four-year timeline for Chinese development of advanced semi tooling, the country is \"already there.\"",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-16T11:30:00+00:00",
-      "sent_at": "2026-09-16T13:06:07.832892+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/semiconductors/sk-hynix-reportedly-discussing-us-memory-chip-manufacturing-with-intel-options-include-leasing-ohio-plant-or-forming-joint-venture-with-other-ai-hyperscalers",
-      "title": "SK hynix reportedly discussing US memory chip manufacturing with Intel — options include leasing Ohio plant or forming joint venture with other AI hyperscalers",
-      "summary": "Sources say SK hynix and Intel are in talks to start HBM manufacturing in the United States. Both companies refused to confirm the rumors, though, as SK hynix could potentially be put in a precarious position as trade talks between Seoul and Washington continue.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-16T11:20:00+00:00",
-      "sent_at": "2026-09-16T13:06:07.832892+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/defeated-gpt-6-astra-model-spent-several-hours-just-farming-potatoes-after-being-blown-up-by-a-creeper-in-minecraft-openai-offering-gets-further-than-any-other-ai-system-in-141-hour-test",
-      "title": "'Defeated' GPT-6 Astra model spent several hours just farming potatoes after being blown up by a Creeper in Minecraft — OpenAI offering gets further than any other AI system in 141-hour test",
-      "summary": "OpenAI's GPT-6 Astra spent hours just farming potatoes after dying and losing all of its gear during a Minecraft test.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-16T11:15:00+00:00",
-      "sent_at": "2026-09-16T13:06:07.832892+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/gpus/nvidia-reportedly-denies-rtx-5090-warranty-over-faded-serial-number-usd6-500-gpu-blemish-not-an-isolated-incident-according-to-customers",
-      "title": "Nvidia reportedly denies RTX 5090 warranty over faded serial number — $6,500 GPU blemish not an isolated incident, according to customers",
-      "summary": "Redditor reported that Nvidia allegedly rejected their warranty claims for GeForce RTX 5090 Founders Edition graphics cards because the serial number on the bracket was unreadable.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-16T10:45:00+00:00",
-      "sent_at": "2026-09-16T13:06:07.832892+00:00"
     }
   ]
 }
