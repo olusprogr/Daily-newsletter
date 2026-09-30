@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1002505/sam-altman-openai-ipo-devday-ai-safety",
+      "title": "Sam Altman says OpenAI won’t go public until its models are safe",
+      "summary": "For months, people have wondered when OpenAI will go public. CEO Sam Altman says it won't happen until the company can make better promises about model safety, with no firm timeline in sight. \"We intend to continue with AI progress … but as the models have had this surge forward in capability, and we see [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-30T00:19:13+00:00",
+      "sent_at": "2026-09-30T01:02:23.543542+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2271692/ai-industry-want-use-models-legal-battle-law-assistance/",
+      "title": "The AI industry wants models to assist in legal battles, but will they help?",
+      "summary": "After lawyers were fined for submitting AI filings packed with fictitious case law, AI companies are releasing new tools to ensure that doesn't happen again.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-09-29T23:30:00+00:00",
+      "sent_at": "2026-09-30T01:02:23.543542+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/policy/1002468/trump-ai-superintelligence-executive-order-ai",
+      "title": "Trump orders US government to call AI ‘Super Intelligence’",
+      "summary": "The US executive branch is no longer acknowledging the existence of \"artificial intelligence.\" Going forward, official policy websites, policy documents, and press releases will refer only to \"Super Intelligence,\" thanks to a new executive order signed by President Donald Trump. \"The word super is the best word of all, and it's the simplest,\" Trump said [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-29T22:25:45+00:00",
+      "sent_at": "2026-09-30T01:02:23.543542+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/29/the-internet-is-convinced-elon-musks-xai-trolled-openais-dots-launch/",
+      "title": "The internet is convinced Elon Musk’s xAI trolled OpenAI’s ‘Dots’ launch",
+      "summary": "Before OpenAI launched its new AI agent, Dots, on Tuesday, Elon Musk's xAI had already acquired the domain name \"dot.com,\" which now redirects to the Grok chatbot download page.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-29T22:20:59+00:00",
+      "sent_at": "2026-09-30T01:02:23.543542+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/ai/2026/09/what-iceberg-bay-area-artists-target-openai-with-titanic-themed-protest-art/",
+      "title": "Protests against OpenAI get increasingly creative",
+      "summary": "New sculpture depicts AI leaders escaping a sinking ship.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-09-29T21:52:58+00:00",
+      "sent_at": "2026-09-30T01:02:23.543542+00:00"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/09/29/inside-mcdonalds-push-ai-price-big-mac.html",
+      "title": "McDonald's push to have AI price your Big Mac",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-09-29T19:58:50+00:00",
+      "sent_at": "2026-09-30T01:02:23.543542+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/29/openai-reportedly-in-talks-to-raise-30b-round-at-1-4t-valuation/",
+      "title": "OpenAI reportedly in talks to raise $30B round at $1.4T valuation",
+      "summary": "The new round is anticipated to be the company's last before its delayed 2027 public debut.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-29T19:52:37+00:00",
+      "sent_at": "2026-09-30T01:02:23.543542+00:00"
+    },
+    {
+      "link": "https://space.bl2.net/",
+      "title": "Show HN: Real-time Solar System with 526k asteroids and all tracked satellites",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Innovationen",
+      "published": "2026-09-29T19:08:01+00:00",
+      "sent_at": "2026-09-30T01:02:23.543542+00:00"
+    },
+    {
       "link": "https://www.theverge.com/tech/1002448/elon-musk-grokipedia-ai-updating-again",
       "title": "Elon Musk&#8217;s AI-powered Grokipedia is updating again",
       "summary": "Grokipedia, the AI-powered online encyclopedia from SpaceXAI, appears to be updating articles once again after a months-long pause. In August, Lawfare reported that articles on Grokipedia hadn't reviewed edits since April, but the platform's live updates site is now showing various recent changes to pages - though as I write this, many are just a [&#8230;]",
@@ -4868,78 +4940,6 @@
       "category": "Hardware",
       "published": "2026-09-15T16:30:00+00:00",
       "sent_at": "2026-09-16T01:03:59.355175+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2259695/microsoft-will-hold-a-windows-event-on-october-7/",
-      "title": "Microsoft will hold a Windows and Surface event on October 7",
-      "summary": "The event is focused on \"Windows, NVIDIA RTX Spark, Surface, and the broader PC ecosystem,\" with Satya Nadella and Jensen Huang among the speakers.",
-      "source": "Engadget",
-      "category": "Hardware",
-      "published": "2026-09-15T22:18:07+00:00",
-      "sent_at": "2026-09-15T22:48:28.433896+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/15/the-ai-data-center-boom-is-colliding-with-cities-scarred-by-big-industry/",
-      "title": "The AI data center boom is colliding with cities scarred by big industry",
-      "summary": "National outcry against data center construction has spread to Philadelphia, where officials suggested possible construction in a neighborhood already impacted by a now-defunct oil refinery.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-15T21:47:38+00:00",
-      "sent_at": "2026-09-15T22:48:28.433896+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/news/994714/microsoft-windows-surface-event-october-7-san-francisco",
-      "title": "Microsoft announces Windows and Surface event for October 7th",
-      "summary": "It's been more than two years since the last major Windows event, so Microsoft is heading to San Francisco next month to outline the future of Windows and Surface devices. At an event on October 7th, the company says it will host a \"conversation on how local AI will shape the next chapter of the [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-15T20:36:59+00:00",
-      "sent_at": "2026-09-15T22:48:28.433896+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/policy/995704/peter-gray-restoring-childhood-jonathan-haidt",
-      "title": "What if social media isn’t hurting kids?",
-      "summary": "Two years ago, social psychologist Jonathan Haidt released his New York Times bestseller The Anxious Generation. The book posits that the rise of social media and smartphone use is largely to blame for the prominent decline in teen mental health since 2010. It quickly became a central rallying cry of the social media backlash. Haidt [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-09-15T20:13:30+00:00",
-      "sent_at": "2026-09-15T22:48:28.433896+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/15/meta-now-lets-ai-agents-handle-the-boring-parts-of-whatsapp-business-setup/",
-      "title": "Meta now lets AI agents handle the boring parts of WhatsApp Business setup",
-      "summary": "A new WhatsApp Business MCP server lets developers use AI coding agents like Claude, Cursor, Codex, and ChatGPT to handle setup, messaging templates, testing, and troubleshooting.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-15T20:12:53+00:00",
-      "sent_at": "2026-09-15T22:48:28.433896+00:00"
-    },
-    {
-      "link": "https://codyho.dev/blog/gpu-driver/",
-      "title": "Building a Linux GPU Driver for the M4 Mac Mini in One Month",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Hardware",
-      "published": "2026-09-15T19:30:03+00:00",
-      "sent_at": "2026-09-15T22:48:28.433896+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/space/2026/09/spacex-sets-launch-date-for-first-starship-orbital-flight/",
-      "title": "SpaceX declares Starship ready for orbit, sets launch date next week",
-      "summary": "Reaching orbit would mark a significant milestone.",
-      "source": "Ars Technica",
-      "category": "Innovationen",
-      "published": "2026-09-15T18:48:08+00:00",
-      "sent_at": "2026-09-15T22:48:28.433896+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/ai/2026/09/agilitys-new-humanoid-robot-will-stop-squat-to-avoid-harming-human-coworkers/",
-      "title": "Agility’s new humanoid robot will stop, squat to avoid harming human coworkers",
-      "summary": "Robots can start working outside physical cages and without safety barriers.",
-      "source": "Ars Technica",
-      "category": "Innovationen",
-      "published": "2026-09-15T18:33:02+00:00",
-      "sent_at": "2026-09-15T22:48:28.433896+00:00"
     }
   ]
 }
