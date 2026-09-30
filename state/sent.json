@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.wired.com/story/ai-agents-dots-devday-muse-battling-it-out/",
+      "title": "The Battle to Be Your Personal AI Agent Is Here",
+      "summary": "OpenAI's Dots and Meta's Muse are vying to be your AI agent of choice. I've tried both—and I suspect you will too.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-09-30T19:30:00+00:00",
+      "sent_at": "2026-09-30T19:48:10.071726+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/30/openais-jev-clone-could-help-the-frontier-lab-stop-its-swarming-agents/",
+      "title": "OpenAI’s Jev clone could help the frontier lab stop its swarming agents",
+      "summary": "OpenAI's \"Decisions API\" is a Jev clone that confirms the importance of fast, cheap intelligence.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-30T19:00:57+00:00",
+      "sent_at": "2026-09-30T19:48:10.071726+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/you-dont-need-ai-to-be-concerned-about-bioweapons-development-but-it-helps/",
+      "title": "There Are Plenty of Reasons to Be Concerned About Bioweapons Development—Even Without AI",
+      "summary": "In her new book on biological warfare, Annie Jacobsen didn’t even discuss AI because scientists can already warp Mother Nature to create extinction-level events.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-09-30T19:00:00+00:00",
+      "sent_at": "2026-09-30T19:48:10.071726+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/tech-policy/2026/09/lawsuit-demands-openai-halt-unsafe-development-that-caused-hugging-face-hack/",
+      "title": "Lawsuit demands OpenAI halt unsafe development that caused Hugging Face hack",
+      "summary": "OpenAI makes others suffer \"the harms of its unsafe decision-making,\" nonprofit says.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-09-30T18:25:04+00:00",
+      "sent_at": "2026-09-30T19:48:10.071726+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1002779/openai-dots-meta-muse-ai-agents-hardware-devices",
+      "title": "The AI Tamagotchis are coming",
+      "summary": "While AI has made plenty of inroads on people's phones and computers, it's largely failed in dedicated devices. But over the next year, two major AI companies, Meta and OpenAI, will attempt to change that. And they're apparently betting on a similar path: testing appetite for physical hardware with their cutesy software agents. \"Hardware is [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-09-30T18:07:38+00:00",
+      "sent_at": "2026-09-30T19:48:10.071726+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/geekbench-7-results-suggest-openais-dots-agent-runs-on-nine-core-amd-epyc-vms-with-nearly-10gb-of-memory-newest-runs-score-about-six-times-meta-muse-in-multi-core",
+      "title": "Geekbench 7 results suggest OpenAI's dots run on nine-core AMD EPYC VMs",
+      "summary": "Post-launch Geekbench 7 runs show Debian Linux instead of the leak's Ubuntu.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-09-30T18:00:39+00:00",
+      "sent_at": "2026-09-30T19:48:10.071726+00:00"
+    },
+    {
+      "link": "https://spectrum.ieee.org/ieee-technical-field-awards-2027",
+      "title": "IEEE Celebrates Innovators Shaping the Future",
+      "summary": "Every year, IEEE recognizes individual researchers, innovators, and collaborative teams whose technical achievements and leadership have made a lasting impact on technology, engineering, and society worldwide with its Technical Field Awards . The honorees are selected by the IEEE Awards Board based on their extraordinary technical achievements, societal impact, and leadership in specialized engineering disciplines and are approved by the IEEE Board of Directors . “The 2027 IEEE Technical Field Award recipients embody the relentless spirit of innovation and ingenuity that defines our global community,” said Mary Ellen Randall , 2026 IEEE president and CEO in a news release . “Across microelectronics, artificial intelligence, medical robotics, wireless networks, energy conversion, and technical education, their groundbreaking accomplishments continue to push the boundaries of science and solve critical challenges for the benefit of humanity.” IEEE Technical Field Award recipients IEEE Biomedical Engineering Award Sponsors: IEEE Engineering in Medicine and Biology , IEEE Circuits and Systems , and IEEE Signal Processing societies IEEE Life Fellow Kullervo Hynynen Sunnybrook Research Institute in Toronto, and the University of Toronto “For pioneering contributions to the development, advancement, and clinical translation of therapeutic ultrasound.” IEEE Cledo Brunetti Award Sponsor: The Brunetti Bequest IEEE Member Edward Charles Gage IEEE Fellow Ganping Ju IEEE Fellow Jan-Ulrich Thiele Seagate Technology in Cupertino, Calif. “For contributions to heat-assisted magnetic technology powering ultra-high-capacity hard disk drives and enabling greater storage of digital information.” IEEE Roger W. Brockett Control Systems Award Sponsors: IEEE Control Systems Society and Friends and Family of Roger W. Brockett IEEE Life Fellow Arjan van der Schaft Bernoulli Institute at the University of Groningen in the Netherlands (Retired) “For contributions to robust and geometric approaches to nonlinear control, hybrid systems, and the control of physical systems.” IEEE Electromagnetics Award Sponsors: IEEE Antennas and Propagation , IEEE Electromagnetic Compatibility , IEEE Geoscience and Remote Sensing , and IEEE Microwave Theory and Technology societies IEEE Fellow Zoya Popović University of Colorado Boulder “For contributions to microwave and millimeter-wave circuit designs, including power amplifiers, power-combining, and wireless power systems.” IEEE James L. Flanagan Speech and Audio Processing Award Sponsor: Mitsubishi Electric Research Laboratories (MERL) IEEE Life Fellow Chin-Hui Lee Georgia Tech “For contributions to and leadership in technologies that enable automatic speech and speaker recognition, including innovations in adaptive learning and discriminative training.” IEEE Fourier Award for Signal Processing Sponsor: Mitsubishi Electric Research Laboratories (MERL) IEEE Fellow Nicholas Dimitrios Sidiropoulos University of Virginia in Charlottesville “For contributions to signal processing methods for analyzing complex data and identifying patterns in multiple dimensions.” IEEE Andrew S. Grove Award Sponsor: IEEE Electron Devices Society IEEE Fellow John Robert Brews University of Arizona in Tucson (Retired) “For foundational contributions to the physics and technology underlying MOS devices and circuits.” IEEE Masaru Ibuka Consumer Technology Award Sponsor: Sony Group Corporation IEEE Honorary Member Mike Lazaridis Quantum Valley Investments in Waterloo, Ont., Canada “For transformative contributions to mobile communication through visionary leadership that reshaped global consumer technology.” IEEE Internet Award Sponsor: Google LLC IEEE Fellow Matthew Roughan Adelaide University in Australia “For foundational contributions to analyzing Internet traffic and network structures, enabling better network management and understanding.” IEEE Richard Harold Kaufmann Award Sponsor: IEEE Industry Applications Society IEEE Fellow Akshay Kumar Rathore National University of Singapore “For developing innovative current-fed and multilevel power electronics converters.” IEEE Joseph F. Keithley Award in Instrumentation and Measurement Sponsors: Tektronix Inc. and the IEEE Instrumentation and Measurement Society IEEE Life Fellow Pasquale Daponte University of Sannio in Benevento, Italy “For contributions to the measurement and standardization of analog-to-digital and digital-to-analog converters.” IEEE Gustav Robert Kirchhoff Award Sponsor: IEEE Circuits and Systems Society IEEE Life Fellow Janusz Rajski Siemens Digital Industries Software in Wilsonville, Ore. “For contributions to testing digital integrated circuits at the silicon level.” IEEE Leon K. Kirchmayer Graduate Teaching Award Sponsor: The IEEE Leon K. Kirchmayer Memorial Fund IEEE Life Fellow Rama Chellappa Johns Hopkins University in Baltimore “For contributions to multi-disciplinary graduate education and mentoring of doctoral students in image processing, computer vision, and pattern recognition.” IEEE Koji Kobayashi Computers and Communications Award Sponsor: NEC Corporation IEEE Member Amin Vahdat Google in Mountain View, Calif. “For developing network systems that scale data centers to support modern cloud computing and machine learning.” IEEE Arun N. Netravali Video Analytics, Technology, and Systems Award Sponsor: Nokia Bell Labs IEEE Life Member Jens-Rainer Ohm RWTH Aachen University in Germany (Professor Emeritus) IEEE Life Fellow Gary J. Sullivan Dolby Laboratories in San Francisco IEEE Member Benjamin Bross Fraunhofer Institute for Telecommunications Heinrich-Hertz-Institut in Berlin “For leadership in and contributions to developing the High Efficiency Video Coding (HEVC) international standard, which improves the efficiency of digital video compression.” IEEE William E. Newell Power Electronics Award Sponsor: IEEE Power Electronics Society IEEE Fellow Paolo Mattavelli University of Padova in Padua, Italy “For contributions to advanced modeling and control of power electronics converters.” IEEE Donald O. Pederson Award in Solid-State Circuits Sponsor: IEEE Solid-State Circuits Society IEEE Life Fellow Wanda Kay Gass Texas Instruments in Bellevue, Wash. (Retired) “For pioneering contributions to programmable digital signal processing systems through innovations in circuit design, system architecture, and silicon compilers.” IEEE Frederik Philips Award Sponsor: The IEEE Frederik Philips Award Fund Recipient: IEEE Member Ann B. Kelleher Intel in Portland, Ore. (Retired) “For leading the historic advancement of CMOS process technology, culminating in the first node with backside power delivery.” IEEE Photonics Award Sponsor: IEEE Photonics Society IEEE Life Fellow Martin David Dawson University of Strathclyde in Glasgow “For contributions to microstructured and wide-bandgap semiconductor optoelectronics and for leadership in technological innovation.” IEEE Robotics and Automation Award Sponsor: IEEE Robotics and Automation Society IEEE Life Fellow Russell H. Taylor Johns Hopkins University in Baltimore “For contributions to, leadership in, and the clinical translation of surgical and medical robotics.” IEEE Frank Rosenblatt Award Sponsor: IEEE Computational Intelligence Society IEEE Life Fellow Shun-ichi Amari Teikyo University in Tokyo “For foundational contributions to neural network theory and information geometry.” IEEE Marie Sklodowska-Curie Award Sponsor: IEEE Nuclear and Plasma Sciences Society Victor Malka Weizmann Institute of Science in Rehovot, Israel “For leadership in the development of laser-driven particle sources and advancing the technology toward practical applications.” IEEE Innovation in Societal Infrastructure Award Sponsors: Hitachi , Ltd. and the IEEE Computer Society IEEE Fellow Jaideep Vaidya Rutgers University in New Brunswick, N.J. IEEE Senior Member Lucila Ohno-Machado Yale School of Medicine IEEE Senior Member Xiaoqian Jiang The University of Texas Health Science Center at Houston “For leadership in designing and deploying privacy-preserving distributed clinical research infrastructures that enable secure, large-scale collaboration using health data.” IEEE Charles Proteus Steinmetz Award Sponsor: IEEE Standards Association IEEE Life Fellow Mehmet Ulema Manhattan University in New York City (Professor Emeritus) “For leadership in the development and standardization of architecture, management, and protocols used in wireless communications and data networks.” IEEE Eric E. Sumner Award Sponsor: Nokia Bell Labs IEEE Fellow Gerhard Fettweis Technische Universität Dresden Barkhausen Institut in Germany “For contributions to physical-layer communication technology that have had an impact on the global wireless industry.” IEEE Nikola Tesla Award Sponsors: Wolong Electric Group Co. Ltd. and the IEEE Industry Applications and IEEE Power & Energy societies IEEE Life Fellow Pragasen Pillay Concordia University in Montreal “For contributions to the modeling, design, and application of electric machines in industrial, transportation, and renewable energy applications.” IEEE Kiyo Tomiyasu Award Sponsors: The late Dr. Kiyo Tomiyasu and the IEEE Geoscience and Remote Sensing and the IEEE Microwave Theory and Technology societies IEEE Fellow Yun Raymond Fu Northeastern University in Boston “For contributions to computer vision and augmented human-machine interaction.” IEEE Transportation Technologies Award Sponsors: IEEE Industry Applications, IEEE Industrial Electronics , IEEE Intelligent Transportation Systems , IEEE Microwave Theory and Technology , IEEE Power Electronics , IEEE Power & Energy , and IEEE Vehicular Technology societies IEEE Fellow Chunting Chris Mi San Diego State University “For contributions to advancing electric and hybrid electric vehicle technologies.” IEEE Rao R. Tummala Electronics Packaging Award Sponsors: IEEE Electronics Packaging Society and Friends of Rao R. Tummala IEEE Fellow Ravi Mahajan Intel in Chandler, Ariz. “For contributions to the development of technology that connects multiple chips within advanced electronic packages.” IEEE Undergraduate Teaching Award Sponsor: IEEE Education Society IEEE Fellow Rhonda Rene Franklin University of Minnesota in Minneapolis “For leadership in advancing inclusive workforce development initiatives that create clear and accessible career pathways via undergraduate engineering education.” IEEE Lotfi A. Zadeh Award for Emerging Technologies Sponsor: IEEE Systems, Man, and Cybernetics Society IEEE Life Fellow Peng Shi Adelaide University in Australia “For contributions to artificial intelligence-based methods for robust control and filtering in complex systems.” Nominate a colleague Nominations are now open for the 2028 Technical Field Awards. The deadline to submit a nomination is 15 January. For more information on the awards, please visit the IEEE Awards webpage .",
+      "source": "IEEE Spectrum",
+      "category": "AI",
+      "published": "2026-09-30T18:00:02+00:00",
+      "sent_at": "2026-09-30T19:48:10.071726+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/30/reddit-is-killing-rss-feeds-ending-public-api-access-because-of-ai-bots/",
+      "title": "Reddit is killing RSS feeds and ending public API access because of AI bots",
+      "summary": "Reddit is ending support for RSS feeds, as the company continues tightening access to its trove of user-generated content.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-09-30T17:45:00+00:00",
+      "sent_at": "2026-09-30T19:48:10.071726+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/09/30/instagram-rolls-out-an-ai-video-editor-for-creators/",
       "title": "Instagram rolls out an AI video editor for creators",
       "summary": "This conversational AI assistant is intended to provide personalized feedback to creators, rather than generic advice.",
@@ -4796,78 +4868,6 @@
       "category": "Autonomes Fahren",
       "published": "2026-09-16T15:27:13+00:00",
       "sent_at": "2026-09-16T20:59:14.971157+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/996321/apple-servers-ai-nvidia",
-      "title": "Apple might make servers again to cash in on the AI rush",
-      "summary": "According to The Information, Apple is planning to get back into the server game and might just pair up with Nvidia to make it happen. Apple retired its Xserve line in 2011 and has largely left enterprise machines to other manufacturers since. But the growing demand for compute power as the AI industry continues to [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-16T17:20:29+00:00",
-      "sent_at": "2026-09-16T17:56:50.818690+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/16/your-ai-agents-can-now-control-your-google-home-devices/",
-      "title": "Your AI agents can now control your Google Home devices",
-      "summary": "Google is launching early access to a new MCP server for Google Home, allowing AI agents like Claude, ChatGPT, and others to control connected devices, review camera summaries, and access smart home activity using natural language.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-16T17:00:00+00:00",
-      "sent_at": "2026-09-16T17:56:50.818690+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/996310/google-home-mcp-integration-agentic-ai-smart-home-price-release-date",
-      "title": "Google will now let any AI agent run your smart home",
-      "summary": "Google is opening up its smart home to AI agents, letting tools like Claude and Open Claw access and control your connected devices and analyze your home's data using the standardized Model Context Protocol. Google Home MCP is a new integration that lets third-party AI agents control and monitor your smart home and act on [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-16T17:00:00+00:00",
-      "sent_at": "2026-09-16T17:56:50.818690+00:00"
-    },
-    {
-      "link": "https://spectrum.ieee.org/physical-ai-robot-cybersecurity-vicone",
-      "title": "Rethinking Robot Safety in the Age of AI",
-      "summary": "This article is brought to you by VicOne . Robot safety has traditionally asked: Can a machine remain safe when something goes wrong? Physical AI raises a harder question: Can a machine remain safe when an attacker changes what it sees, decides, or does even when nothing appears to have failed? As AI and robotics continue to advance at an unprecedented pace, modern robots perceive through multimodal sensors, interpret context using AI models, and translate those interpretations into physical action. As they move into dynamic environments, their safety increasingly depends on the integrity of the data guiding their decisions. That dependence creates risks that conventional safety assessments may not fully capture. Recent research has demonstrated that manipulating what a robot sees, hears, or interprets can influence its behavior without requiring direct control. Such manipulation can occur anywhere across its complex sensing and decision-making system — a layered attack surface encompassing training pipelines, system infrastructure, and runtime perception. Layer One: Corrupting intelligence at its source In 2017, BadNets demonstrated that a model could behave normally under most conditions, yet fail in the presence of a specific hidden trigger. In one example, a subtle pattern caused a stop sign to be misclassified as a speed limit sign without affecting the model’s behavior on other inputs. What began as a classification vulnerability has since evolved into action manipulation. At NeurIPS 2025, researchers introduced BadVLA a backdoor attack targeting Vision-Language-Action (VLA) models that allow robots to see, interpret instructions, and produce coordinated physical movement. Rather than altering a single label, the attack caused conditional deviations in the robot’s action trajectory when a trigger was present. Without the trigger, the model largely preserved normal task performance, while the backdoor remained effective under task transfers and model fine-tuning. A related study in 2025, GoBA , showed that ordinary objects such as a coffee mug could serve as a reliable trigger. The researchers reported a 97 percent attack success rate without degrading performance on clean inputs. A critical safety question today is whether Physical AI models remain within their task and safety boundaries under adversarial conditions. These studies expose a blind spot in model validation: A model may pass testing yet produce corrupted behavior when a hidden trigger appears in operation. So a critical safety question today is whether Physical AI models remain within their task and safety boundaries under adversarial conditions. Simulation tools such as NVIDIA Isaac Sim, when paired with VicOne Radeis , can test the effects of manipulated inputs before deployment. VicOne LAB R7 demonstrates Radeis, a Physical AI safety validator for NVIDIA Isaac Sim that tests how adversarial visual inputs affect robot behavior before deployment. VicOne Layer Two: System vulnerabilities as gateways to AI control Even a securely trained model can be subverted if the surrounding system stack is vulnerable. In September 2025, researchers disclosed UniPwn , a Bluetooth exploit chain affecting quadruped and humanoid robots from a major manufacturer. Hardcoded cryptographic keys allowed traffic decryption, authentication checks were bypassed, and command injection enabled root-level execution. The exploit is also described as “wormable.” A compromised robot could scan nearby units and potentially affect an entire fleet. VicOne Lab R7’s demo shows how chaining three wireless exploits can trigger uncontrolled robot behavior within 60 seconds, resulting in operational disruption. VicOne Middleware creates another exposure point. Vulnerabilities in ROS 2 and DDS-based systems can enable arbitrary code execution or abuse unauthenticated topics to deliver malicious commands. With sufficient access, an attacker could override motor commands or replace AI model weights without directly attacking the model architecture. In this case, the components may still function as designed. What has changed is the trustworthiness of the commands flowing through the system. Vulnerability management can help teams identify known risks before deployment, while continuous monitoring can surface emerging threats. Layer Three: Manipulating perception and reasoning at runtime At runtime, manipulating inputs that shape perception or reasoning may require neither firmware modification nor a network breach. In 2024, RoboPAIR demonstrated how carefully structured prompts could redirect LLM-controlled robots into unsafe trajectories. BadRobot exposed a deeper architectural weakness: in several cases, a robot verbally refused a dangerous command while its motion controller executed the action anyway. Vision-based manipulation is equally powerful. VLAttack showed that an adversarial patch within the camera’s view could reduce a VLA model’s task success rate to zero. FreezeVLA showed that a single adversarial image could freeze a robot’s decision-making loop, making it unresponsive to subsequent instructions. Runtime assurance must therefore look beyond whether individual components remain available and assess whether cyber events are beginning to affect physical behavior. In each case, the camera may still work, the model may still run, and the controller may still respond. Yet the resulting behavior can be unsafe because the robot is acting on manipulated perception or reasoning. Runtime assurance must therefore look beyond whether individual components remain available and assess whether cyber events are beginning to affect physical behavior. Security event correlation, behavioral-impact assessment, and policy-bounded response supported by edge AI, can help contain the affected path without unnecessarily stopping the entire robot fleet. From point-in-time safety to lifecycle assurance The risks across these three layers reveal the missing layer in robot safety assurance: cybersecurity. Functional safety addresses failures and unexpected operating conditions; cybersecurity extends that assurance to deliberate manipulation, including attacks that may leave the underlying system apparently functional. This requires assurance across the robot’s lifecycle. During design, teams need to understand which cyber risks could invalidate assumptions behind intended behavior. Before deployment, they should test whether realistic attacks can cause a robot to deviate from its task or safety boundaries. In operation, monitoring should identify whether cyber events are beginning to affect behavior, contain the affected path, and preserve safe operation where possible. VicOne’s lifecycle approach combines AI model and vulnerability scanning, simulation-based validation, and continuous monitoring to help secure robots from development through operation. VicOne While cybersecurity does not replace functional safety, it helps ensure that Physical AI remains within acceptable boundaries even when what it sees, decides, or does is under attack. For a deeper look at the cybersecurity risks and defense strategies shaping autonomous robotics, download our whitepaper “ Securing the Rise of AI Robots: Cyber Risks, Real-World Threats, and Defense Strategies .”",
-      "source": "IEEE Spectrum",
-      "category": "AI",
-      "published": "2026-09-16T16:51:02+00:00",
-      "sent_at": "2026-09-16T17:56:50.818690+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/16/anthropic-merges-claude-chat-and-cowork-in-one-interface/",
-      "title": "Anthropic merges Claude chat and Cowork in one interface",
-      "summary": "Anthropic is initially releasing these features to Pro and Max plan subscribers.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-16T16:30:00+00:00",
-      "sent_at": "2026-09-16T17:56:50.818690+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/996234/anthropic-one-claude-cowork-docs-slides",
-      "title": "Claude comes for Gemini with its own take on Docs and Slides",
-      "summary": "Claude is getting a pair of new tools today: Docs and Slides. They'll let you create documents and presentations through Claude chats, which you can export, edit, and share with other users. As part of the announcement, Anthropic is also simplifying how Claude chats work, merging regular chats and Cowork into \"one Claude,\" with all [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-16T16:30:00+00:00",
-      "sent_at": "2026-09-16T17:56:50.818690+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2259938/anthropics-claude-can-now-create-editable-documents-for-you-cowork-chat-together/",
-      "title": "Anthropic's Claude can now create editable documents for you",
-      "summary": "Anthropic is adding the ability to create docs, slideshow and access Cowork capabilities inside chat. It will roll out to Pro and Max subscribers first.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-16T16:30:00+00:00",
-      "sent_at": "2026-09-16T17:56:50.818690+00:00"
-    },
-    {
-      "link": "https://claude.com/blog/cowork-is-now-claude",
-      "title": "Claude Cowork and chat are now one Claude",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-16T16:26:25+00:00",
-      "sent_at": "2026-09-16T17:56:50.818690+00:00"
     }
   ]
 }
