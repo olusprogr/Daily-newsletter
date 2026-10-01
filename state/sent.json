@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/10/01/opus-5-5-loves-to-tell-you-this-matters-and-other-ai-writing-tells/",
+      "title": "Opus 5.5 loves to tell you ‘this matters’ (and other AI writing tells)",
+      "summary": "Opus 5.5’s biggest tell is the word “dependable,” which pops up 23 times more often than in human samples.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-01T17:50:19+00:00",
+      "sent_at": "2026-10-01T17:59:05.043077+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1003589/google-ai-overviews-chegg-penske-lawsuits-dismissed",
+      "title": "Judge dismisses antitrust lawsuits over Google’s AI Overviews",
+      "summary": "A federal judge has dismissed a pair of antitrust lawsuits filed by Chegg and Rolling Stone parent company Penske Media Corporation, which accused Google of driving away web traffic with its AI-powered search features, as reported earlier by Reuters. US District Judge Amit Mehta takes Google's side in a ruling on Wednesday, writing that PMC [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-01T17:12:21+00:00",
+      "sent_at": "2026-10-01T17:59:05.043077+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2274744/sony-brings-ai-upscaling-to-the-base-ps5/",
+      "title": "Sony brings AI upscaling to the base PS5",
+      "summary": "Marvel's Wolverine and Ghost of Yōtei are the first games to support Quick Spectral Super Resolution.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-01T17:00:21+00:00",
+      "sent_at": "2026-10-01T17:59:05.043077+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/games/1003549/sony-ps5-quick-spectral-super-resolution-qssr",
+      "title": "Sony brings AI graphics upscaling to the regular PS5",
+      "summary": "Sony is launching a new AI upscaling technology specifically for the regular PS5. The new tech, called Quick Spectral Super Resolution (QSSR), is a \"new performance tier of AI upscaling\" that's a result of Sony's Project Amethyst work with AMD, according to a blog post. Sony says that PlayStation Spectral Super Resolution (PSSR), which is [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-01T16:53:39+00:00",
+      "sent_at": "2026-10-01T17:59:05.043077+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/01/shopify-debuts-canvas-a-way-to-build-online-stores-by-chatting-with-ai/",
+      "title": "Shopify debuts Canvas, a way to build online stores by chatting with AI",
+      "summary": "Shopify’s new Canvas site builder lets merchants create and customize their online stores by chatting with its AI agent Sidekick, while watching the changes happen in real time.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-01T16:44:35+00:00",
+      "sent_at": "2026-10-01T17:59:05.043077+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/01/california-governor-vetoes-bill-banning-use-of-pervert-glasses-to-secretly-record-people/",
+      "title": "California governor vetoes bill banning use of ‘pervert glasses’ to secretly record people",
+      "summary": "The California state bill would have penalized people who secretly recorded people in public with wearables equipped with cameras and microphones.",
+      "source": "TechCrunch",
+      "category": "Innovationen",
+      "published": "2026-10-01T16:35:25+00:00",
+      "sent_at": "2026-10-01T17:59:05.043077+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/science/2026/10/ai-finally-beat-the-best-stratego-player-in-history-and-did-it-on-a-budget/",
+      "title": "With most information hidden, the game Stratego",
+      "summary": "Adding in a second neural network that guesses the identity of hidden pieces was key.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-10-01T16:28:04+00:00",
+      "sent_at": "2026-10-01T17:59:05.043077+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2274668/audible-thinks-you-want-to-have-an-ai-generated-conversation-with-draculas-beleaguered-servant/",
+      "title": "Audible thinks you want to have an AI-generated conversation with Dracula's beleaguered servant",
+      "summary": "The platform is rolling out \"Interactive Stories\" starting with Bram Stoker's classic.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-01T16:21:54+00:00",
+      "sent_at": "2026-10-01T17:59:05.043077+00:00"
+    },
+    {
       "link": "https://www.technologyreview.com/2026/10/01/1145588/ai-mind-reading-reconstructs-what-youre-looking-at/",
       "title": "An AI “mind-reading” tool can reconstruct what you’re looking at based on a brain scan",
       "summary": "A new AI tool can guess what you’re looking at just by analyzing your brain scans—and recreate that image with remarkable precision. It can go the other way too, and predict a person’s brain activity based on what they’re looking at.&#160; In the image above, for example, the left-hand image of each pair is what&#8230;",
@@ -4724,78 +4796,6 @@
       "category": "AI",
       "published": "2026-09-17T15:40:17+00:00",
       "sent_at": "2026-09-17T18:48:19.224606+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/17/huawei-plans-q1-2027-launch-of-new-ai-chip-as-it-takes-on-nvidia/",
-      "title": "Huawei plans Q1 2027 launch of new AI chip as it takes on Nvidia",
-      "summary": "Huawei is accelerating the launch of its next-generation Ascend 960DT AI chip as it pushes to compete with Nvidia and close China’s AI computing gap with the U.S.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-17T14:06:14+00:00",
-      "sent_at": "2026-09-17T14:40:16.297843+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/podcast/996412/microsoft-ai-ceo-mustafa-suleyman-regulation-safety-anthropic-claude",
-      "title": "Microsoft AI CEO says AI threats are real, and Anthropic is making it worse",
-      "summary": "Today, I’m talking with Mustafa Suleyman, the CEO of Microsoft AI. As you’re no doubt aware, the biggest story in tech right now is the spiraling debate about AI safety and regulation.&#160; It should come as no surprise that Mustafa has strong opinions on how AI should be built and regulated. Microsoft just published a [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-17T14:00:00+00:00",
-      "sent_at": "2026-09-17T14:40:16.297843+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/996775/ai-is-feared-globally-as-the-destroyer-of-jobs",
-      "title": "AI is feared globally as the destroyer of jobs",
-      "summary": "Pew Research has published a new global survey that sheds light on how people view AI, including its impact on jobs, life in general, and income inequality. The survey questioned 42,151 people across 37 countries from February 8th to May 13th - well ahead of recent apocalyptic warnings. A majority sees AI as a threat [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-17T14:00:00+00:00",
-      "sent_at": "2026-09-17T14:40:16.297843+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/996860/lunacy-audio-nova-ai-music-plugin-vst",
-      "title": "Lunacy Audio Nova is a place to build and sell your own AI-powered music plugins",
-      "summary": "Lunacy, purveyor of fine VST plugins like Cube, a synth that you control by moving a ball around a 3D space, has just launched Nova, a platform where creators can build custom music tools using AI and sell them to others. At first, there will be a handful of instruments available, built either by Lunacy [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-17T14:00:00+00:00",
-      "sent_at": "2026-09-17T14:40:16.297843+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/17/rival-ai-agents-instinct-and-metas-muse-both-add-the-ability-to-make-calls/",
-      "title": "Rival AI agents, Instinct and Meta’s Muse, both add the ability to make calls",
-      "summary": "People can use these assistants to make restaurant reservations and cancel subscriptions.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-17T13:46:16+00:00",
-      "sent_at": "2026-09-17T14:40:16.297843+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/17/google-nvidia-and-anthropic-want-emerald-ai-to-find-space-on-the-grid-for-more-data-centers/",
-      "title": "Google, Nvidia, and Anthropic want Emerald AI to find space on the grid for more data centers",
-      "summary": "A new coalition that includes Google, Nvidia, Anthropic, and Emerald AI wants to find 100 GW of grid capacity for new data centers.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-17T13:38:33+00:00",
-      "sent_at": "2026-09-17T14:40:16.297843+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/17/lucid-motors-has-a-potential-robotaxi-partner-for-europe/",
-      "title": "Lucid Motors has a potential robotaxi partner for Europe",
-      "summary": "The company is partnering with mobility platform Bolt -- but no vehicle orders have been placed just yet.",
-      "source": "TechCrunch",
-      "category": "Autonomes Fahren",
-      "published": "2026-09-17T13:26:32+00:00",
-      "sent_at": "2026-09-17T14:40:16.297843+00:00"
-    },
-    {
-      "link": "https://www.petervijeh.com/projects/reddit-ner",
-      "title": "I had Gemini train its own replacement for $9",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-17T13:17:16+00:00",
-      "sent_at": "2026-09-17T14:40:16.297843+00:00"
     }
   ]
 }
