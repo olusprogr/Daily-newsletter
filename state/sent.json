@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.theverge.com/games/1003593/steam-deck-2-is-amd-gainsborough-the-chip-valves-been-waiting-for",
+      "title": "Steam Deck 2: Is AMD Gainsborough the chip Valve’s been waiting for?",
+      "summary": "The Steam Deck is four and a half years old, and handheld gamers are eagerly awaiting a Steam Deck 2 - but Valve has consistently said it needs a new chip with a \"generational leap\" in performance and efficiency before building the sequel. There's some reason to believe that chip has now broken cover: AMD [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-10-01T18:52:58+00:00",
+      "sent_at": "2026-10-02T08:21:14.427913+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/01/openai-cuts-ties-with-three-safety-researchers-wsj-reports/",
+      "title": "OpenAI cuts ties with 3 safety researchers, WSJ reports",
+      "summary": "OpenAI has parted ways with three safety researchers after an internal investigation found they mishandled sensitive company information, report says.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-01T18:14:42+00:00",
+      "sent_at": "2026-10-02T08:21:14.427913+00:00"
+    },
+    {
+      "link": "https://stoppels.ch/goalposts/",
+      "title": "Vote on which of Hacker News' challenges for AI have been met",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-01T17:32:43+00:00",
+      "sent_at": "2026-10-02T08:21:14.427913+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1003365/microsoft-copilot-os-for-work-notepad",
+      "title": "Inside Microsoft’s big Copilot rethink",
+      "summary": "Last week, Microsoft CEO Satya Nadella hosted an intimate, invite-only event for leaders from some of its key enterprise customers. Instead of a flashy media event, Nadella outlined the future of Copilot directly to the customers Microsoft really cares about, pitching its latest rethink of the AI assistant as the \"OS for work.\" Microsoft is [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-01T16:00:00+00:00",
+      "sent_at": "2026-10-02T08:21:14.427913+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/desktops/mini-pcs/first-intel-panther-lake-mini-pc-cooled-with-solid-state-airjet-tech-operates-at-less-than-21-dba-aaeon-claims-its-fanless-up-xtreme-ptl-edge-air-is-also-slimmer-lighter-than-actively-cooled-rivals",
+      "title": "First Intel Panther Lake mini PC cooled with solid-state AirJet tech operates at less than 21 dBA",
+      "summary": "Aaeon's UP Xtreme PTL Edge Air is the first Panther Lake mini PC we've seen with AirJet technology for ultra-low-noise active cooling.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-10-01T15:27:09+00:00",
+      "sent_at": "2026-10-02T08:21:14.427913+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/01/brian-chesky-interview-ai-agents-need-their-own-operating-system/",
+      "title": "Brian Chesky interview: AI agents need their own operating system",
+      "summary": "Brian Chesky on making Airbnb agent-friendly, the state of consumer AI, and why the world needs an AI-native operating system.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-01T15:12:00+00:00",
+      "sent_at": "2026-10-02T08:21:14.427913+00:00"
+    },
+    {
+      "link": "https://openid.net/wp-content/uploads/2025/10/Identity-Management-for-Agentic-AI.pdf",
+      "title": "Identity Management for Agentic AI [pdf] (2025)",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-01T15:11:10+00:00",
+      "sent_at": "2026-10-02T08:21:14.427913+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2274521/japanese-court-rules-human-voices-are-protected-in-landmark-ai-case/",
+      "title": "Japanese court rules human voices are protected in landmark AI case",
+      "summary": "Humans vs AI: It's time to d-d-d-d-duel.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-01T14:58:44+00:00",
+      "sent_at": "2026-10-02T08:21:14.427913+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/10/01/robotaxi-operators-will-face-fines-for-blocking-first-responders/",
       "title": "Robotaxi operators will face fines for blocking first responders",
       "summary": "A new California law places new rules on autonomous vehicles operators",
@@ -4652,78 +4724,6 @@
       "category": "AI",
       "published": "2026-09-17T18:33:13+00:00",
       "sent_at": "2026-09-18T08:44:12.729523+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/transportation/997091/waymo-singapore-robotaxi-launch-2027",
-      "title": "Waymo says Singapore will be its next international robotaxi city",
-      "summary": "Waymo says it will launch a robotaxi service in Singapore in 2028, as the Alphabet-owned company continues to eye overseas markets for expansion. Waymo's vehicles will begin arriving in Singapore in \"the coming months,\" the company says, in preparation of mapping and autonomous testing with human safety drivers behind the wheel in 2027. Waymo says [&#8230;]",
-      "source": "The Verge",
-      "category": "Autonomes Fahren",
-      "published": "2026-09-18T02:00:00+00:00",
-      "sent_at": "2026-09-18T03:07:02.193875+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/997134/anthropic-claude-code-projects",
-      "title": "Claude Code relaunches Projects to manage multiple AI agents in the cloud",
-      "summary": "The revamped projects feature in Claude Code allows users to run multiple agents under the same roof, with a shared memory, goals, and library of files and artifacts. Similar to Grok Bot and other tools that manage groups of AI agents, each project has \"threads\" running different tasks in parallel, with a \"coordinator\" directing everything: [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-17T18:58:05+00:00",
-      "sent_at": "2026-09-18T03:07:02.193875+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/are-rogue-ai-agents-really-just-a-cybersecurity-problem/",
-      "title": "The AI Slowdown Debate Crashed Salesforce’s Party",
-      "summary": "The Dreamforce conference became an unlikely battleground for the CEOs of OpenAI, Anthropic, and Nvidia to debate whether AI development should slow down.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-09-17T18:42:25+00:00",
-      "sent_at": "2026-09-18T03:07:02.193875+00:00"
-    },
-    {
-      "link": "https://blog.detail.dev/posts/towards-self-driving-codebases/",
-      "title": "Towards Self-Driving Codebases",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Autonomes Fahren",
-      "published": "2026-09-17T16:58:31+00:00",
-      "sent_at": "2026-09-18T03:07:02.193875+00:00"
-    },
-    {
-      "link": "https://arxiv.org/abs/2609.18842",
-      "title": "Infinite-Parameter LLMs: Generating and Adapting Weights from Live Data",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-17T16:55:14+00:00",
-      "sent_at": "2026-09-18T03:07:02.193875+00:00"
-    },
-    {
-      "link": "https://news.ycombinator.com/item?id=49743049",
-      "title": "Launch HN: Skillsync (YC W26) – AI chat sessions made portable across agents",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-17T16:22:15+00:00",
-      "sent_at": "2026-09-18T03:07:02.193875+00:00"
-    },
-    {
-      "link": "https://www.economist.com/science-and-technology/2026/09/16/artificial-intelligence-now-beats-some-of-the-best-human-forecasters",
-      "title": "Artificial intelligence now beats some of the best human forecasters",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-17T15:13:30+00:00",
-      "sent_at": "2026-09-18T03:07:02.193875+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/transportation/996863/robotaxi-waymo-police-privacy-surveillance",
-      "title": "Your robotaxi might be a narc",
-      "summary": "In early September, two teenagers got into a Waymo, but then ended up in the back of a police car. The robotaxi company said it detected \"a violation of our terms of service involving a firearm,\" pulled the car over, and alerted emergency services, according to the Los Angeles Times. Police arrested the passengers after [&#8230;]",
-      "source": "The Verge",
-      "category": "Autonomes Fahren",
-      "published": "2026-09-17T15:00:00+00:00",
-      "sent_at": "2026-09-18T03:07:02.193875+00:00"
     }
   ]
 }
