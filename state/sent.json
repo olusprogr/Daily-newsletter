@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents",
+      "title": "Apple will limit Mac disk access as AI agents ‘substantially’ increase risk",
+      "summary": "Apple will add new limits for \"full disk access\" on Mac in response to risks posed by AI agents, as reported earlier by TechCrunch. In an update on Friday, Apple says it's rolling out new controls to \"ensure that users who genuinely wish to grant an app this extraordinary level of access can only do [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-02T20:08:40+00:00",
+      "sent_at": "2026-10-02T20:19:57.026770+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2276186/apple-sounds-the-alarm-on-ai-agents-and-full-disk-access/",
+      "title": "Apple sounds the alarm on AI agents and 'Full Disk Access'",
+      "summary": "There's an increasingly high cost to convenience.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-02T19:22:06+00:00",
+      "sent_at": "2026-10-02T20:19:57.026770+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-access-controls-due-to-new-risks-from-ai-agents/",
+      "title": "Apple says it’s tightening macOS ‘Full Disk Access’ controls due to new risks from AI agents",
+      "summary": "Apple says it will add new controls around macOS’s Full Disk Access permission, warning that increasingly capable AI agents make broad access to users’ files, messages, mail, and browsing history riskier.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-02T18:11:27+00:00",
+      "sent_at": "2026-10-02T20:19:57.026770+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1004096/openai-chatgpt-dots-hands-on-agent",
+      "title": "OpenAI’s Dot agent is enterprise software that can also order your dinner",
+      "summary": "It's a tale as old as last week: OpenAI's new agent platform, called Dots, is full of cute little guys who can do your bidding. But unlike the ultra-approachable Meta Muse, Dots feel very much like using workplace software that happens to be able to order you a burrito - emphasis on work. OpenAI announced [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-02T18:00:00+00:00",
+      "sent_at": "2026-10-02T20:19:57.026770+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/video/its-not-ai-anymore-its-super-intelligence-according-to-the-white-house/",
+      "title": "It’s not AI anymore, it’s ‘super intelligence’ (according to the White House)",
+      "summary": "This week, the White House got&#160;nearly every&#160;major tech CEO in one room — Zuckerberg, Bezos, Musk, and Anthropic’s Dario Amodei among them —&#160;to sign an AI safety pledge&#160;that President&#160;Donald&#160;Trump called “morally binding.”&#160;Trump&#160;also&#160;signed an&#160;executive order&#160;officially rebranding AI as “super intelligence,” and meanwhile,&#160;Meta and OpenAI are putting&#160;friendlier faces on their AI products, even as the biggest money [&#8230;]",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-02T17:48:16+00:00",
+      "sent_at": "2026-10-02T20:19:57.026770+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/02/circuit-breaker-labs-hopes-to-make-ai-safer-for-your-kids-and-you/",
+      "title": "Circuit Breaker Labs hopes to make AI safer for your kids (and you)",
+      "summary": "With all the talk about how AI might one day kill us all, it's easy to forget that AI has already harmed some people psychologically. Circuit Breaker Labs has created \"crash-test dummies\" to solve that.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-02T17:00:00+00:00",
+      "sent_at": "2026-10-02T20:19:57.026770+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/trillium-labs-wants-to-do-high-risk-ai-research-in-the-open/",
+      "title": "These AI Experts Want to Do High-Stakes Research Out in the Open",
+      "summary": "Many frontier labs keep their risky research locked away. Trillium Labs wants to show off its work when it comes to self-improvement and model behavior.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-10-02T16:00:00+00:00",
+      "sent_at": "2026-10-02T20:19:57.026770+00:00"
+    },
+    {
+      "link": "https://www.technologyreview.com/2026/10/02/1143774/redefining-enterprise-intelligence-with-autonomous-ai/",
+      "title": "Redefining enterprise intelligence with autonomous AI",
+      "summary": "Enterprise AI is no longer a future ambition. It is in full operational flight. Model capabilities are advancing faster than most organizations can absorb, while the cost of performance continues to fall. Globally, AI investment is set to reach $2.5 trillion in 2026, up 44% from the previous year. For many enterprises, this investment has&#8230;",
+      "source": "MIT Technology Review",
+      "category": "AI",
+      "published": "2026-10-02T15:49:04+00:00",
+      "sent_at": "2026-10-02T20:19:57.026770+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/10/02/techcrunch-disrupt-2026-blackstones-jas-khaira-on-building-the-next-generation-of-ai-giants/",
       "title": "TechCrunch Disrupt 2026: Blackstone’s Jas Khaira on building the next generation of AI giants",
       "summary": "Blackstone's Jas Khaira will take the Builders Stage at TechCrunch Disrupt 2026 on building next-gen AI. Register for your pass and get 50% off a second.",
@@ -4580,78 +4652,6 @@
       "category": "Innovationen",
       "published": "2026-09-18T18:00:00+00:00",
       "sent_at": "2026-09-18T20:22:54.435152+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/video/dario-amodei-and-other-ai-leaders-want-to-pace-the-frontier-buthow/",
-      "title": "Dario Amodei and other AI leaders want to ‘Pace the Frontier’ but…how?",
-      "summary": "A week after an Anthropic researcher&#8217;s doomsday warning rattled the AI world, the company&#8217;s CEO Dario Amodei has&#160;outlined his plan to “pace the frontier”&#160;of AI development. The proposal leans on independent safety evaluators and coordination between AI labs in democratic countries, and&#160;it&#8217;s&#160;already picked up some&#160;industry support, along with some pointed&#160;pushback from Nvidia&#8217;s Jensen Huang.&#160; Watch [&#8230;]",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-18T17:09:56+00:00",
-      "sent_at": "2026-09-18T17:28:38.114911+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/policy/997516/california-governor-newsom-ai-kill-switch",
-      "title": "Gavin Newsom is pushing for an AI kill switch",
-      "summary": "California Gov. Gavin Newsom (D) is positioning the state to take the lead on AI oversight, including the potential to mandate a \"kill switch\" for frontier models, with a new executive order issued Friday. Newsom's order directs the state to convene a group of experts that will deliver recommendations within two months on how to [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-18T17:04:51+00:00",
-      "sent_at": "2026-09-18T17:28:38.114911+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/997358/what-hollywood-thinks-about-existential-ai-warnings",
-      "title": "What Hollywood thinks about existential AI warnings",
-      "summary": "As the tech sector sounds alarms about AI's potential to destroy humanity, entertainment labor groups are urging the public to stay focused on what's already happening. The Verge reached out to Disney, Netflix, Amazon, Lionsgate, and other studios who have started using AI, as well film startups focused on bringing generative AI into the mainstream [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-18T16:35:19+00:00",
-      "sent_at": "2026-09-18T17:28:38.114911+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/18/family-offices-are-clamoring-for-ai-investments/",
-      "title": "Family offices are clamoring for AI investments",
-      "summary": "Whether it's a permanent shift or part of a familiar cycle is worth asking, though.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-18T16:00:00+00:00",
-      "sent_at": "2026-09-18T17:28:38.114911+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/09/18/xpeng-license-self-driving-tech-automakers-tesla-fsd/",
-      "title": "XPeng shops its self-driving tech to automakers — Tesla found no takers",
-      "summary": "XPeng is trying to turn its self-driving and smart-cockpit systems into a licensing business, courting automakers, suppliers, and software firms well beyond its existing Volkswagen deal, according to a Reuters report. It’s the exact playbook Tesla has been pitching for years with “Full Self-Driving.” The difference is that XPeng is finding interest. more…",
-      "source": "Electrek",
-      "category": "Autonomes Fahren",
-      "published": "2026-09-18T15:43:15+00:00",
-      "sent_at": "2026-09-18T17:28:38.114911+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/997444/openai-hack-claude-heif-heist",
-      "title": "Security researchers used Claude to help them hack into OpenAI",
-      "summary": "A team of three independent security researchers at Hacktron says it took less than 72 hours for them to hack into OpenAI employee accounts using Anthropic's Claude Opus 4.8 and 5, The Wall Street Journal reports. They were able to access OpenAI's GitHub repository, called \"Monorepo,\" which reportedly contains \"OpenAI's algorithmic secrets,\" according to The [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-18T15:30:16+00:00",
-      "sent_at": "2026-09-18T17:28:38.114911+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/18/open-or-closed-ai-nvidias-nader-khalil-and-sydney-sykes-take-on-one-of-the-decisions-shaping-next-gen-startups-at-techcrunch-disrupt-2026/",
-      "title": "Open or closed AI? Nvidia’s Nader Khalil and Sydney Sykes take on one of the decisions shaping next-gen startups at TechCrunch Disrupt 2026",
-      "summary": "Nvidia's Nader Khalil and Sydney Sykes discuss one of the decisions shaping next-gen startups on the Builders Stage at TechCrunch Disrupt 2026.",
-      "source": "TechCrunch",
-      "category": "Hardware",
-      "published": "2026-09-18T15:30:00+00:00",
-      "sent_at": "2026-09-18T17:28:38.114911+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/18/metas-muse-hits-mac-letting-the-ai-take-actions-on-your-computer/",
-      "title": "Meta’s Muse hits Mac, letting the AI take actions on your computer",
-      "summary": "Muse is now available on the Mac, where it can work with your files and apps to take action on your behalf.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-18T15:22:48+00:00",
-      "sent_at": "2026-09-18T17:28:38.114911+00:00"
     }
   ]
 }
