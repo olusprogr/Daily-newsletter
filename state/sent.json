@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/10/02/techcrunch-disrupt-2026-blackstones-jas-khaira-on-building-the-next-generation-of-ai-giants/",
+      "title": "TechCrunch Disrupt 2026: Blackstone’s Jas Khaira on building the next generation of AI giants",
+      "summary": "Blackstone's Jas Khaira will take the Builders Stage at TechCrunch Disrupt 2026 on building next-gen AI. Register for your pass and get 50% off a second.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-02T15:00:00+00:00",
+      "sent_at": "2026-10-02T15:21:35.948131+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/trumps-crazy-ai-rebrand-was-a-loyalty-test-for-tech-execs-and-it-worked/",
+      "title": "Trump’s Crazy AI Rebrand Was a Loyalty Test for Tech Execs—and It Worked",
+      "summary": "For years these billionaires gushed obsessively about AI. But they meekly went along when Trump cancelled the term.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-10-02T15:00:00+00:00",
+      "sent_at": "2026-10-02T15:21:35.948131+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/california-tech-ceo-arrested-faces-up-to-20-years-in-prison-for-smuggling-usd300-million-in-nvidia-ai-servers-to-china-federal-prosecutors-say-chips-were-routed-through-malaysia-and-singapore-using-false-paperwork",
+      "title": "California tech CEO arrested, faces up to 20 years in prison for smuggling $300 million in Nvidia AI servers to China",
+      "summary": "U.S. authorities have arrested a California man accused of smuggling more than $300 million worth of export-controlled Nvidia-powered servers to China through Malaysia and Singapore, allegedly using false paperwork to conceal their final destination",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-10-02T14:53:41+00:00",
+      "sent_at": "2026-10-02T15:21:35.948131+00:00"
+    },
+    {
+      "link": "https://www.reuters.com/business/retail-consumer/amazon-seeks-offload-8-billion-nvidia-chips-investors-ft-reports-2026-10-02/",
+      "title": "Amazon seeks to offload $8B of Nvidia chips to investors",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Hardware",
+      "published": "2026-10-02T14:30:32+00:00",
+      "sent_at": "2026-10-02T15:21:35.948131+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/02/techcrunch-disrupt-2026-clays-kareem-amin-on-the-rise-of-the-gtm-engineer/",
+      "title": "TechCrunch Disrupt 2026: Clay’s Kareem Amin on the rise of the GTM engineer",
+      "summary": "Clay Co-founder and CEO Kareem Amin joins the AI Stage to discuss the rise of GTM engineer at TechCrunch Disrupt 2026. Register for your ticket and get a second pass at 50% off.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-02T14:30:00+00:00",
+      "sent_at": "2026-10-02T15:21:35.948131+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/video-games/console-gaming/sony-brings-ai-powered-upscaling-to-the-standard-ps5-new-qssr-technology-to-deliver-a-taste-of-the-ps5-pro-experience-streamlined-neural-network-tech-built-with-amd",
+      "title": "Sony brings AI-powered upscaling to the standard PS5",
+      "summary": "The base PS5 is getting an optimized version of Sony's AI-powered upscaling technology, offering developers a new way to improve image quality and stability without demanding more powerful hardware.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-10-02T14:10:00+00:00",
+      "sent_at": "2026-10-02T15:21:35.948131+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2275633/nvidias-smuggling-problem-is-getting-worse/",
+      "title": "NVIDIA's smuggling problem is getting worse",
+      "summary": "US officials have reportedly highlighted gaps in NVIDIA's due diligence over smuggling.",
+      "source": "Engadget",
+      "category": "Hardware",
+      "published": "2026-10-02T14:02:14+00:00",
+      "sent_at": "2026-10-02T15:21:35.948131+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/amazon-and-synopsys-ink-multi-year-billion-dollar-deal-in-multi-year-ip-agreement-to-accelerate-ai-chip-design-efforts-synopsys-to-adopt-amazon-bedrock-to-deploy-ai-agents-harnessing-aws-compute-and-storage-capabilities",
+      "title": "Amazon and Synopsys ink multi-year billion-dollar deal in multi-year IP agreement to accelerate AI chip design efforts",
+      "summary": "Amazon and chip design tool maker Synopsys have inked a multi-year partnership worth over a billion dollars. As part of the arrangement, Amazon will license Synopsys' chip designs and its design tools to create and optimize new AI chips. Synopsys will adopt Amazon Bedrock to build and deploy AI agents, and adopt AWS computing and storage services, while optimizing its own tools for Amazon hardware.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-10-02T13:50:00+00:00",
+      "sent_at": "2026-10-02T15:21:35.948131+00:00"
+    },
+    {
       "link": "https://www.theverge.com/games/1003593/steam-deck-2-is-amd-gainsborough-the-chip-valves-been-waiting-for",
       "title": "Steam Deck 2: Is AMD Gainsborough the chip Valve’s been waiting for?",
       "summary": "The Steam Deck is four and a half years old, and handheld gamers are eagerly awaiting a Steam Deck 2 - but Valve has consistently said it needs a new chip with a \"generational leap\" in performance and efficiency before building the sequel. There's some reason to believe that chip has now broken cover: AMD [&#8230;]",
@@ -4580,150 +4652,6 @@
       "category": "AI",
       "published": "2026-09-18T15:22:48+00:00",
       "sent_at": "2026-09-18T17:28:38.114911+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-developer-vibe-codes-dlss-5-onto-intel-arc-140t-integrated-graphics-run-neural-rendering-in-360p-at-10-frames-per-second",
-      "title": "AI developer vibe codes DLSS 5 onto Intel CPU's integrated graphics —Intel Arc 140T runs neural rendering in 360p at 10 frames per second",
-      "summary": "Using AI tools, a new developer has managed to get DLSS 5 neural rendering running on Intel Lunar Lake's integrated Arc graphics, albeit with abysmal performance.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-18T13:15:00+00:00",
-      "sent_at": "2026-09-18T13:22:43.569151+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/video-games/pc-gaming/control-resonant-pc-performance-tested-28-gpus-take-us-back-to-the-oldest-house-and-a-warped-manhattan-cityscape",
-      "title": "Control Resonant PC performance tested: 28 GPUs take us back to the Oldest House and a warped Manhattan cityscape",
-      "summary": "Control Resonant's warped Manhattan cityscape pushes graphics cards to the max thanks to path-traced lighting effects and full support for Nvidia's DLSS 4.5 technologies. We put it to the test to see how it performs on 28 graphics cards from Nvidia, AMD, and Intel.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-18T13:01:36+00:00",
-      "sent_at": "2026-09-18T13:22:43.569151+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/microsoft-director-called-ai-scraping-the-largest-theft-of-labor-in-human-history-while-openai-head-brands-chatgpt-an-existential-threat-to-publishers-revelations-come-from-legal-briefs-filed-in-nyt-lawsuit",
-      "title": "Microsoft director called AI scraping ‘the largest theft of labor in human history,’ while OpenAI head brands ChatGPT an ‘existential threat’ to publishers — revelations come from legal briefs filed in NYT lawsuit",
-      "summary": "The NYT filed a legal brief revealing potentially damaging statements from Microsoft and OpenAI regarding the copyright infringement case it brought against the two companies. The publication is now seeking a summary judgment from the court, almost three years since it started the case.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-18T12:49:14+00:00",
-      "sent_at": "2026-09-18T13:22:43.569151+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2262087/anthropic-has-set-up-a-bio-research-lab-for-physical-experiments/",
-      "title": "Anthropic has set up a bio research lab for physical experiments",
-      "summary": "Anthropic now has its own bio research lab in San Francisco.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-18T12:21:57+00:00",
-      "sent_at": "2026-09-18T13:22:43.569151+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/us-frontier-ai-companies-warn-authorities-over-sophisticated-distillation-attacks-china-warns-of-countermeasures-if-america-tries-to-constrain-domestic-ai-models",
-      "title": "US frontier AI companies warn authorities over sophisticated distillation attacks — China warns of 'countermeasures' if America tries to constrain domestic AI models",
-      "summary": "U.S. AI companies and the government are increasingly concerned about the effectiveness of international competition using distillation attacks to glean valuable data from frontier models to train cheaper, faster alternatives overseas.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-18T12:20:00+00:00",
-      "sent_at": "2026-09-18T13:22:43.569151+00:00"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/09/18/1142577/the-download-ai-extinction-threat-bioweapons/",
-      "title": "The Download: AI’s extinction risk and bioweapons threat",
-      "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Could AI really kill us all? Your questions, answered On Wednesday, MIT Technology Review hosted a live Roundtables event that asked the question many seem to be asking right now: could&#8230;",
-      "source": "MIT Technology Review",
-      "category": "AI",
-      "published": "2026-09-18T12:10:00+00:00",
-      "sent_at": "2026-09-18T13:22:43.569151+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/gpus/modder-gets-nvidias-dlss-5-working-in-a-web-browser-using-webgpu-147mb-browser-port-runs-on-non-nvidia-gpus-and-macos-but-takes-two-seconds-per-render",
-      "title": "Modder gets Nvidia's DLSS 5 working in a web browser using WebGPU — 147MB browser port runs on non-Nvidia GPUs and macOS but takes two seconds per render",
-      "summary": "A developer's live WebGPU demo runs Nvidia's DLSS 5 neural rendering in a web browser, but also apparently runs on macOS.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-18T12:00:00+00:00",
-      "sent_at": "2026-09-18T13:22:43.569151+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/semiconductors/us-chip-manufacturers-are-in-dire-need-of-engineers-and-technicians-experts-suggest-a-shortage-of-up-to-157-000-semiconductor-workers-by-2030",
-      "title": "US chip fabs face massive 157,000 worker shortfall, mere 3% of US engineering grads enter chipmaking — despite six-figure salaries, US chip manufacturers are in dire need of engineers and technicians",
-      "summary": "As many semiconductor fabs and facilities go online in the 2030s and beyond, a global consulting firm said that these sites will need thousands of engineers and technicians that the U.S. will be hard-pressed to fill.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-18T11:30:00+00:00",
-      "sent_at": "2026-09-18T13:22:43.569151+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2262023/waymo-is-expanding-to-singapore/",
-      "title": "Waymo is expanding to Singapore",
-      "summary": "Waymo has announced its next international location: Singapore.",
-      "source": "Engadget",
-      "category": "Autonomes Fahren",
-      "published": "2026-09-18T08:18:12+00:00",
-      "sent_at": "2026-09-18T08:44:12.729523+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/irobot-promo-code/",
-      "title": "iRobot Promo Code: 15% Off",
-      "summary": "Save on iRobot products, including robot vacuums and mops designed to handle pet hair, daily messes, and hands-free cleaning with smart home integration.",
-      "source": "Wired",
-      "category": "Innovationen",
-      "published": "2026-09-18T05:00:00+00:00",
-      "sent_at": "2026-09-18T08:44:12.729523+00:00"
-    },
-    {
-      "link": "https://waymo.com/waymo-in-singapore/",
-      "title": "Waymo in Singapore",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Autonomes Fahren",
-      "published": "2026-09-18T03:49:24+00:00",
-      "sent_at": "2026-09-18T08:44:12.729523+00:00"
-    },
-    {
-      "link": "https://www.hacktron.ai/blog/hacking-openai",
-      "title": "A heap overflow and SSO misconfiguration to compromise OpenAI internal repos",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-18T02:47:24+00:00",
-      "sent_at": "2026-09-18T08:44:12.729523+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/ai/2026/09/nato-backed-startup-adapts-ai-for-autonomous-drone-recon-and-attack-missions/",
-      "title": "Small AI models let drones autonomously identify and attack battlefield targets",
-      "summary": "Scaleout deploys decentralized AI-driven learning to military bases and drones.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-09-17T22:12:58+00:00",
-      "sent_at": "2026-09-18T08:44:12.729523+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/google/2026/09/google-announces-new-experimental-cc-ai-agent-for-families/",
-      "title": "Google announces new experimental \"CC\" AI agent for families",
-      "summary": "Multiple family members can share data to help the agent make plans and complete tasks.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-09-17T20:24:34+00:00",
-      "sent_at": "2026-09-18T08:44:12.729523+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/tech-policy/2026/09/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history/",
-      "title": "Microsoft exec called AI scraping the “largest theft of labor in human history”",
-      "summary": "Microsoft, OpenAI emails reveal fear of AI “doom loop” killing news orgs.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-09-17T20:10:41+00:00",
-      "sent_at": "2026-09-18T08:44:12.729523+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/security/2026/09/ai-text-watermarking-can-make-models-more-vulnerable-to-adversarial-prompts/",
-      "title": "LLMs respond differently to harmful prompts when AI watermarking is used",
-      "summary": "SynthID can cause models to follow harmful instructions they would otherwise refuse.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-09-17T18:33:13+00:00",
-      "sent_at": "2026-09-18T08:44:12.729523+00:00"
     }
   ]
 }
