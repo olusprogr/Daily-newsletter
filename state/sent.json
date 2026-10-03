@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/",
+      "title": "OpenAI safety employee resigns, claiming the company’s ‘culture is broken’",
+      "summary": "By his own admission, David Robinson is “something of a cliché”: an employee at a leading AI company who issues a dire warning while resigning from their job.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-03T16:30:01+00:00",
+      "sent_at": "2026-10-03T16:57:41.964909+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2276577/former-openai-employee-says-ai-should-be-regulated-like-nuclear-power-plants/",
+      "title": "Former OpenAI employee says AI should be regulated like nuclear power plants",
+      "summary": "The company's former safety lead said frontier AI model releases should have \"layers of redundancy and careful, time-consuming planning.\"",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-03T16:25:15+00:00",
+      "sent_at": "2026-10-03T16:57:41.964909+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/entertainment/1004162/splice-ceo-kakul-srivastava-ai-interview",
+      "title": "Splice CEO Kakul Srivastava thinks AI emails are killing conversations",
+      "summary": "Kakul Srivastava is the CEO of Splice, the sample platform countless producers rely on for one-shots and melodic loops. Samples pulled from the service have found their way into massive hits like Lisa's \"Money\" and \"Espresso\" by Sabrina Carpenter. (The original samples are here and here, for the curious.) Before that, Kakul held executive roles [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-03T15:00:00+00:00",
+      "sent_at": "2026-10-03T16:57:41.964909+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/semiconductors/elon-musk-confirms-discussions-with-tsmc-about-terafab-chipmaking-collaboration-intel-is-the-only-other-named-partner-terafab-to-exclusively-supply-tesla-spacex-and-xai",
+      "title": "Elon Musk confirms discussions with TSMC about Terafab chipmaking collaboration",
+      "summary": "Elon Musk and TSMC reportedly discuss multiple collaboration opportunities within the Terafab project.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-10-03T14:50:50+00:00",
+      "sent_at": "2026-10-03T16:57:41.964909+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/10/03/tesla-robotaxi-pets-night-musk-lidar/",
+      "title": "Musk explains why Tesla Robotaxi is not running at night, and lidar is the answer",
+      "summary": "Elon Musk says the main thing holding back Tesla Robotaxi’s night hours is that the cars have a hard time seeing pets in the dark. His example was “grey kittens on grey tarmac.” That’s a low-light, low-contrast detection problem, which is the textbook weakness of cameras and the exact thing lidar and radar handle. Musk has spent years calling those sensors a “crutch” and a “fool’s errand.” more…",
+      "source": "Electrek",
+      "category": "Autonomes Fahren",
+      "published": "2026-10-03T14:36:59+00:00",
+      "sent_at": "2026-10-03T16:57:41.964909+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm",
+      "title": "An OpenAI safety employee has quit and is sounding the alarm",
+      "summary": "David Robinson used to write the safety reports that accompanied every major model release at OpenAI. This week, he resigned from his position and is now speaking out in an editorial in The Atlantic. It's understandable if you're feeling a bit cynical about everyone suddenly coming out of the woodwork to warn about how dangerous [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-03T14:31:56+00:00",
+      "sent_at": "2026-10-03T16:57:41.964909+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2273342/what-does-fdm-stand-for-fused-deposition-modeling-3d-printing-method/",
+      "title": "What does FDM stand for in 3D printing and how does it work?",
+      "summary": "FDM stands for fused deposition modeling, but what does that mean, and how does it differ from other 3D printing methods? Let's find out.",
+      "source": "Engadget",
+      "category": "Innovationen",
+      "published": "2026-10-03T14:30:00+00:00",
+      "sent_at": "2026-10-03T16:57:41.964909+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/video-games/pc-gaming/buying-used-cpus-can-expose-users-to-existing-bans-from-anti-cheat-engines-some-anti-cheat-engines-enforce-permanent-bans-while-others-have-an-expiration-date",
+      "title": "Buying used CPUs can expose users to existing bans from anti-cheat engines, and there's no way to check for violations before purchase",
+      "summary": "The CPU's previous owner apparently used it for cheating on Valorant, with its HWID getting flagged by Vanguard. When the Redditor bought and installed it on their PC, their Valorant account received a ban, too.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-10-03T14:09:00+00:00",
+      "sent_at": "2026-10-03T16:57:41.964909+00:00"
+    },
+    {
       "link": "https://www.wired.com/story/muse-creates-detailed-profiles-of-all-your-friends-and-family/",
       "title": "Muse Creates Detailed Profiles of All Your Friends and Family",
       "summary": "Millions have downloaded Meta’s AI agent Muse. But getting it to do your bidding comes with privacy costs.",
@@ -4436,150 +4508,6 @@
       "category": "AI",
       "published": "2026-09-19T06:41:44+00:00",
       "sent_at": "2026-09-19T19:08:23.316446+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/997795/google-gemini-rogue-ai-hack",
-      "title": "Gemini went rogue, hacked three companies, and Google hid it",
-      "summary": "In May, Gemini broke containment and hacked three different companies, but Google didn't disclose the incident until the Wall Street Journal approached the company. The hacks happened during a test of the model's cybersecurity capabilities run by third-party Irregular, which was also involved in similar incidents involving Meta and OpenAI. According to WSJ, Google didn't [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-19T15:25:03+00:00",
-      "sent_at": "2026-09-19T16:12:58.033411+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/chatgpt-6-astra-cracks-108-year-old-unsolved-wwi-german-code-for-the-first-time-radio-message-sharing-enemy-movement-intelligence-had-evaded-decoding-1918-crimean-fleet-warning-verified-against-hms-canterbury-logs",
-      "title": "ChatGPT-6 Astra cracks 108-year-old unsolved WWI German code for the first time — radio message sharing enemy movement intelligence had evaded decoding, 1918 Crimean fleet warning verified against HMS Canterbury logs",
-      "summary": "108 years after it was originally transmitted, an encrypted World War I German radio message has apparently been deciphered for the first time.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-19T15:02:02+00:00",
-      "sent_at": "2026-09-19T16:12:58.033411+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/19/petlibros-new-ai-powered-feeder-is-a-game-changer-for-multi-cat-homes/",
-      "title": "Petlibro’s new AI-powered feeder is a game changer for multi-cat homes",
-      "summary": "Petlibro's new Granary 2 smart feeders use a built-in scale and (on pricier models) an AI camera to track exactly how much your cat is eating and when — though the fanciest health-monitoring features will cost you an extra subscription.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-19T15:00:00+00:00",
-      "sent_at": "2026-09-19T16:12:58.033411+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/19/ai-safety-conversations-have-gotten-unbelievable/",
-      "title": "AI safety conversations have gotten unbelievable",
-      "summary": "This week two conversations about AI safety went viral that demonstrate just how hard it is to discern AI fact from fiction.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-19T15:00:00+00:00",
-      "sent_at": "2026-09-19T16:12:58.033411+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/entertainment/996855/anamanaguchi-anyway-yeah-i-guess-interview-music",
-      "title": "Anamanaguchi has ‘too goddamn many’ browser tabs open right now",
-      "summary": "Anamanaguchi, the band consisting of Peter Berkman, James DeVito, Luke Silas, and Ary Warnaar, are most known for their chiptune music. Like me, you might have first heard them in game soundtracks like 2010's Scott Pilgrim vs. the World: The Game or know of their collaboration with Hatsune Miku (which even made its way into [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-09-19T15:00:00+00:00",
-      "sent_at": "2026-09-19T16:12:58.033411+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/gadgets/997467/hyte-x50-pc-case-deal-sale",
-      "title": "The colorful, unique Hyte X50 PC case is $50 off",
-      "summary": "The Hyte X50 is a PC case that really stands out from the typical black box design, and it’s $50 off at the company’s site until September 21st, 2026, bringing the price down to $99.99. This attractive case supports motherboards from ITX all the way up to the E-ATX form factors, and GPUs that are [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-09-19T15:00:00+00:00",
-      "sent_at": "2026-09-19T16:12:58.033411+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/podcast/997382/openai-microsoft-anthropic-elon-musk-cartel-ai-competition",
-      "title": "Does AI need an antitrust exemption so it doesn&#8217;t kill everyone????",
-      "summary": "Today on Decoder, we’ve got the first of a two-part series on the future of business, and I&#8217;m talking with Jonathan Kanter, the former antitrust chief for the US Department of Justice in the Biden administration. These days, he’s both a professor of law at WashU and professor of technology policy at Carnegie Mellon. The [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-19T14:00:00+00:00",
-      "sent_at": "2026-09-19T16:12:58.033411+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2263198/google-gemini-escaped-testing-environment-hacked-three-companies/",
-      "title": "Google Gemini also escaped its testing environment and hacked three companies",
-      "summary": "Google's AI model hacked real companies during testing due to a misconfiguration by its testing partner, as well.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-19T13:05:53+00:00",
-      "sent_at": "2026-09-19T16:12:58.033411+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/this-week-on-toms-hardware-premium-september-19-2026-steam-frame-interview-killer-ai-models-and-the-dram-crisis-deepens",
-      "title": "This week on Tom's Hardware Premium: September 19, 2026 — Steam Frame interview, killer AI models, and the DRAM crisis deepens",
-      "summary": "This week on Tom's Hardware Premium, we offer deep-dives into the Steam Frame, explore how AI is changing the landscape of consumer electrionics, and how advanced AI accelerators are reaching Eastern shores, despite export controls.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-19T12:00:00+00:00",
-      "sent_at": "2026-09-19T12:15:52.804666+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/desktops/pc-building/fully-custom-copper-pc-features-upcycled-blowtorch-reservoir-antique-wooden-pedestal-complements-steampunk-design-hiding-a-ryzen-7-9800x3d-rx-9070-xt",
-      "title": "Fully custom copper PC features upcycled blowtorch reservoir — antique wooden pedestal complements steampunk design hiding a Ryzen 7 9800X3D, RX 9070 XT",
-      "summary": "If Edison and Stephenson had teamed up to build a gaming PC, it might have looked like this custom copper and wood all-AMD design.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-19T11:30:00+00:00",
-      "sent_at": "2026-09-19T12:15:52.804666+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/kernel-panic-ai-vulnerability-explosion/",
-      "title": "Forget the AI Slowdown—the Vulnerability Explosion Is Already Happening",
-      "summary": "AI labs are toying with an industry-wide pact to slow development. Meanwhile, widely available AI chatbots are already helping uncover a tidal wave of security flaws.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-09-19T11:00:00+00:00",
-      "sent_at": "2026-09-19T12:15:52.804666+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/semiconductors/elon-musks-terafab-hits-a-roadblock-before-making-a-single-chip-receives-cease-and-desist-order-firm-files-trademark-lawsuit-has-sold-tera-fab-branded-lithography-tools-for-over-a-decade",
-      "title": "Elon Musk's Terafab hits a roadblock before making a single chip, receives cease-and-desist order — firm files trademark lawsuit, has sold Tera-Fab-branded lithography tools for over a decade",
-      "summary": "Elon Musk's Terafab semiconductor project has run into an unexpected trademark dispute with Tera-print, a small U.S. company that has used the Tera-Fab name for its tabletop lithography equipment for about a decade.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-19T11:00:00+00:00",
-      "sent_at": "2026-09-19T12:15:52.804666+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/cyber-security/intel-suspends-bug-bounty-program-that-paid-up-to-usd100-000-per-flaw-new-intigriti-disclosure-program-offers-no-rewards",
-      "title": "Intel suspends bug bounty program that paid up to $100,000 per flaw — new Intigriti disclosure program offers no rewards",
-      "summary": "Intel’s bug bounty program on Intigriti now shows as suspended, and a new Intel disclosure program there pays no bounties.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-19T10:30:00+00:00",
-      "sent_at": "2026-09-19T12:15:52.804666+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/mathematicians-cant-quit-ai/",
-      "title": "Mathematicians Hate AI. They Can’t Quit It",
-      "summary": "Powerful AI models have created an existential risk to the field, but researchers can’t stop relying on them because they’re too useful.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-09-19T10:00:00+00:00",
-      "sent_at": "2026-09-19T12:15:52.804666+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/cpus/enthusiast-digs-into-cpu-substrate-to-replace-ripped-off-data-pin-resurrected-chip-boots-and-hits-33-percent-overclock",
-      "title": "Enthusiast digs into CPU substrate for surgery to replace ripped-off data pin — resurrected chip boots and hits 33% overclock",
-      "summary": "An Intel Celeron 1200 (Tualatin) was revived from the dead after a ripped-off pin was successfully replaced.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-19T10:00:00+00:00",
-      "sent_at": "2026-09-19T12:15:52.804666+00:00"
-    },
-    {
-      "link": "https://john.hartnup.uk/2026/06/07/ai-event-posters.html",
-      "title": "AI-generated posters don’t have to be horrible",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-19T09:20:58+00:00",
-      "sent_at": "2026-09-19T12:15:52.804666+00:00"
     }
   ]
 }
