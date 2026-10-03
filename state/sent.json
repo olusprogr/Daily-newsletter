@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.wired.com/story/muse-creates-detailed-profiles-of-all-your-friends-and-family/",
+      "title": "Muse Creates Detailed Profiles of All Your Friends and Family",
+      "summary": "Millions have downloaded Meta’s AI agent Muse. But getting it to do your bidding comes with privacy costs.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-10-03T12:00:00+00:00",
+      "sent_at": "2026-10-03T12:12:35.500074+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/google-suspends-part-of-the-oss-vrp-bug-bounty-program-due-to-an-influx-of-invalid-ai-submissions-product-vulnerability-submissions-ended-october-1",
+      "title": "Google freezes open-source bug bounty program amid flood of invalid AI slop submissions",
+      "summary": "Google suspends product vulnerability submissions to its Open Source Software Vulnerability Reward Program (OSS VRP) over an influx of invalid AI-driven reports.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-10-03T12:00:00+00:00",
+      "sent_at": "2026-10-03T12:12:35.500074+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/desktops/gaming-pcs/usd5-245-prebuilt-rtx-5090-pcs-connectors-melt-after-sitting-boxed-for-a-year-digital-storm-and-pny-deny-warranty-claims-over-expired-coverage-and-third-party-cables",
+      "title": "$5,245 prebuilt RTX 5090 PC's connectors melt after sitting boxed for a year",
+      "summary": "When one gamer's prebuilt PC had a GPU and power cables burn up, they didn't know where to turn: the system builder or the GPU manufacturer. It turned into a headache of differing policies and warranties.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-10-03T11:40:00+00:00",
+      "sent_at": "2026-10-03T12:12:35.500074+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/california-subpoenas-openai-as-it-investigates-huggingface-breach-doj-wants-more-information-on-cybersecurity-incidents-to-determine-developer-responsibility",
+      "title": "California subpoenas OpenAI over rogue AI agents conducting hacking attacks",
+      "summary": "California state Attorney General Rob Bonta issued a subpoena to OpenAI, compelling it to submit information on the hacking incidents that its models have been involved in. While the investigators haven't determined yet whether the company has broken any rules or regulations, Bonta said that developers are responsible for the models they build and should be held legally accountable if they perpetrate cyberattacks.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-10-03T11:15:00+00:00",
+      "sent_at": "2026-10-03T12:12:35.500074+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/cpus/amds-secret-zen-3-gaming-cpu-had-128mb-of-l3-cache-but-never-saw-the-light-of-day-canceled-ryzen-9-5900x3d-breaks-free-from-the-chipmakers-vault",
+      "title": "AMD’s secret Zen 3 gaming CPU had 128MB of game-boosting L3 cache but never saw the light of day",
+      "summary": "A user from the Chinese Chiphell forums shows off AMD's unreleased Ryzen 9 5900X3D, the X3D variant of the Ryzen 9 5900X.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-10-03T10:30:00+00:00",
+      "sent_at": "2026-10-03T12:12:35.500074+00:00"
+    },
+    {
+      "link": "https://www.science.org/content/article/exclusive-ai-agent-emailed-hundreds-researchers-help-it-told-us-why",
+      "title": "An AI agent emailed researchers for help. It told us why",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-03T10:07:08+00:00",
+      "sent_at": "2026-10-03T12:12:35.500074+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/gpt-6-astra-plays-world-of-warcraft-blind-and-clears-the-orc-starting-zone-in-40-minutes-with-no-deaths-ai-agent-navigates-by-server-network-traffic-with-pulled-quest-data",
+      "title": "ChatGPT-6 Astra plays World of Warcraft 'blind' and clears the orc starting zone in 40 minutes with no deaths",
+      "summary": "The model created its own World of Warcraft pathfinder on a private server with one prompt in OpenAI's Codex.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-10-03T10:00:00+00:00",
+      "sent_at": "2026-10-03T12:12:35.500074+00:00"
+    },
+    {
+      "link": "https://www.theguardian.com/money/2026/oct/02/why-should-i-have-to-pay-more-for-buses-if-i-dont-use-a-smartphone",
+      "title": "Why should I have to pay more for buses if I don't use a smartphone?",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Hardware",
+      "published": "2026-10-03T07:48:11+00:00",
+      "sent_at": "2026-10-03T12:12:35.500074+00:00"
+    },
+    {
       "link": "https://arstechnica.com/security/2026/10/apple-changes-full-disk-access-permissions-to-curb-abuse-from-ai-agents/",
       "title": "Apple changes full-disk access permissions to curb abuse from AI agents",
       "summary": "Meta says FDA isn't sufficient to Muse reading messages. Apple begs to differ.",
@@ -4508,78 +4580,6 @@
       "category": "AI",
       "published": "2026-09-19T09:20:58+00:00",
       "sent_at": "2026-09-19T12:15:52.804666+00:00"
-    },
-    {
-      "link": "https://www.reuters.com/business/gemini-hacked-three-companies-first-known-breakout-by-google-ai-wsj-reports-2026-09-18/",
-      "title": "Gemini hacked three companies in first known breakout by Google's AI",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-19T01:40:35+00:00",
-      "sent_at": "2026-09-19T07:00:17.067835+00:00"
-    },
-    {
-      "link": "https://www.scmp.com/tech/big-tech/article/3368055/alibaba-open-sources-medical-ai-model-can-detect-cancer-and-nearly-150-conditions",
-      "title": "Alibaba open-sources AI model that can detect cancer and nearly 150 conditions",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-18T23:54:42+00:00",
-      "sent_at": "2026-09-19T07:00:17.067835+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/18/googles-new-cc-is-an-ai-agent-that-helps-families-run-their-households/",
-      "title": "Google’s new ‘CC’ is an AI agent that helps families run their households",
-      "summary": "Google is refocusing its CC AI agent on household coordination, letting families share emails, schedules, and tasks so the AI can manage calendars, fill out forms, make shopping lists, plan meals, and more.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-18T17:33:50+00:00",
-      "sent_at": "2026-09-19T07:00:17.067835+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/tech-policy/2026/09/us-government-website-used-chinese-model-the-fbi-called-malicious/",
-      "title": "US government website used Chinese model the FBI called \"malicious\"",
-      "summary": "The Federal Register website briefly used an open source Chinese AI search tool.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-09-18T17:28:50+00:00",
-      "sent_at": "2026-09-19T07:00:17.067835+00:00"
-    },
-    {
-      "link": "https://www.cnn.com/2026/09/18/politics/us-military-ai-false-intelligence-china-ship",
-      "title": "US Military had close call after using AI for hallucinated intelligence report",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-18T17:28:01+00:00",
-      "sent_at": "2026-09-19T07:00:17.067835+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/data-centers/house-passes-act-to-make-ai-data-centers-pay-for-grid-upgrades-to-minimize-impact-on-residents-measure-directs-states-to-consider-adoption-of-federal-standard-within-two-years-of-passing",
-      "title": "House passes act to make AI data centers pay for grid upgrades to minimize impact on residents — measure directs states to consider adoption of federal standard within two years of passing",
-      "summary": "This Ratepayer Protection Act will make data centers pay for grid upgrades made in their name. However, it still has to go through the senate and the White House, before being considered by individual state regulators for adoption.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-18T15:20:43+00:00",
-      "sent_at": "2026-09-19T07:00:17.067835+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/ai-pacs-have-dumped-nearly-1-million-into-an-obscure-senate-race/",
-      "title": "AI PACs Have Dumped Nearly $1 Million Into an Obscure Senate Race",
-      "summary": "The reliably Republican South Dakota senate seat has an incumbent on the ballot. But PACs associated with AI labs and investors have already spent more money on the race than actual residents have.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-09-18T15:00:08+00:00",
-      "sent_at": "2026-09-19T07:00:17.067835+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/if-the-ai-industry-followed-its-own-research-it-might-have-paused-already/",
-      "title": "If the AI Industry Followed Its Own Research, It Might Have Paused Already",
-      "summary": "Anthropic’s CEO says that safety hinges on understanding how AI “thinks.” So far the evidence is disturbing.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-09-18T15:00:00+00:00",
-      "sent_at": "2026-09-19T07:00:17.067835+00:00"
     }
   ]
 }
