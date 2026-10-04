@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/pc-components/gpus/modder-fixes-melting-rtx-5090-power-connectors-with-custom-distributor-dual-8-pin-mod-peaks-at-just-40c-during-a-48-hour-550w-stress-test",
+      "title": "Modder 'fixes' melting RTX 5090 power connectors with custom distributor",
+      "summary": "Reddit user u/DallasGrave shared a fix for his RTX 5090, one of the best graphics cards, whose 12VHPWR connector was overheating, along with an image of a module screwed onto the back of his GPU.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-10-04T14:50:00+00:00",
+      "sent_at": "2026-10-04T15:07:48.402906+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/robotics/robotics-startup-has-real-human-vs-robot-cage-match-california-responds-with-cease-and-desist-order-regulator-threatens-misdemeanor-charges-after-youtuber-fights-three-robotic-humanoids",
+      "title": "Robotics startup has real human vs. robot cage match, California responds with cease-and-desist order",
+      "summary": "The California State Athletic Commission intervened when it saw a human facing off with a humanoid robot inside the fighting ring.",
+      "source": "Tom's Hardware",
+      "category": "Innovationen",
+      "published": "2026-10-04T14:36:25+00:00",
+      "sent_at": "2026-10-04T15:07:48.402906+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/gpu-drivers/modder-brings-nvidia-pascal-gpu-support-to-windows-xp-32-bit-modded-drivers-unlock-better-displayport-and-hdmi-support-for-modern-monitors",
+      "title": "Modder brings Nvidia Pascal GPU support to Windows XP 32-bit",
+      "summary": "Retro techie retrofits Nvidia Windows XP 32-bit drivers with Pascal card support and improved DisplayPort and HDMI support for contemporary displays",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-10-04T14:25:00+00:00",
+      "sent_at": "2026-10-04T15:07:48.402906+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/10/04/autonomous-orange-ymx-adds-outrider-self-driving-tech-to-its-electric-yard-trucks/",
+      "title": "Autonomous Orange: YMX adds Outrider self-driving tech to its electric yard trucks",
+      "summary": "The logistics experts at 3PL provider YMX know a thing or three about running an efficient fleet, but even they are feeling the nationwide shortage of qualified yard operators. To help keep the goods moving and the wheels turning, the company is turning to self-driving, zero-emission yard trucks at customer sites as part of a new pilot with AI startup Outrider. more…",
+      "source": "Electrek",
+      "category": "AI",
+      "published": "2026-10-04T13:48:54+00:00",
+      "sent_at": "2026-10-04T15:07:48.402906+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/robotics/ai-robot-company-decommissioned-its-robots-terminator-style-in-a-75-ton-vat-of-molten-steel-arnold-schwarzenegger-suggested-melting-them-one-robot-held-up-a-thumbs-up-sign-as-it-sank-into-molten-metal",
+      "title": "AI robot company decommissioned its robots ‘Terminator-style’ in a 75-ton vat of molten steel",
+      "summary": "AI Robotics company Figure found a creative way of decommissioning its old F.02 fleet without having to allocate resources for difficult and time-consuming disassembly.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-10-04T13:20:00+00:00",
+      "sent_at": "2026-10-04T15:07:48.402906+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2273797/what-is-infill-3d-printing/",
+      "title": "What is infill in 3D printing and is it necessary?",
+      "summary": "The infill settings you use for your 3D prints can make or break them - literally. Let's talk about what infill does and how you should use it.",
+      "source": "Engadget",
+      "category": "Innovationen",
+      "published": "2026-10-04T13:15:00+00:00",
+      "sent_at": "2026-10-04T15:07:48.402906+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/chatgpt-6-astra-cracks-217-year-old-napoleonic-code-in-just-six-hours-single-prompt-ai-run-solves-24-rows-of-custom-symbols-from-a-single-image-reveals-lost-troop-orders",
+      "title": "ChatGPT-6 Astra cracks 217-year-old Napoleonic code in just six hours",
+      "summary": "An AI engineer used GPT-6 Astra to reveal the contents of a cipher that hadn’t been read since the Napoleonic Wars. The task was initiated with a single image and prompt, and took just six hours from start to finish.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-10-04T13:08:46+00:00",
+      "sent_at": "2026-10-04T15:07:48.402906+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/gadgets/1000832/macbook-air-m5-amazon-prime-big-deal-sale",
+      "title": "The MacBook Air M5 is $200 off for the first time in months",
+      "summary": "Amazon’s October Prime Day has effectively chopped off Apple’s June price increases. Usually $1,299, the 13-inch MacBook Air with the M5 chip and 512GB of storage is on sale for $1,099 at Amazon. That’s a more palatable price for a machine that’s significantly faster than Apple’s $699 MacBook Neo. The 15-inch version, also with 512GB [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-10-04T12:34:01+00:00",
+      "sent_at": "2026-10-04T15:07:48.402906+00:00"
+    },
+    {
       "link": "https://www.nytimes.com/2026/09/29/us/anthropic-claude-morals-ai.html",
       "title": "Religious scholars met with Anthropic",
       "summary": "",
@@ -4454,123 +4526,6 @@
       "category": "AI",
       "published": "2026-09-20T10:55:00+00:00",
       "sent_at": "2026-09-20T17:55:26.992367+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/gpus/the-pc-gaming-ray-tracing-obsession-began-with-the-first-rtx-20-graphics-cards-released-on-this-day-in-2018-the-geforce-rtx-2080-and-2080-ti-led-the-charge-but-games-were-thin-on-the-ground",
-      "title": "The PC gaming ray tracing obsession began with the first RTX 20 graphics cards released on this day in 2018 — the GeForce RTX 2080 and 2080 Ti led the charge, but games were thin on the ground",
-      "summary": "Nvidia’s Turing GPU became available to enthusiasts for the first time on this day eight years ago.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-20T14:05:31+00:00",
-      "sent_at": "2026-09-20T14:28:16.700516+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/video-games/microsoft-patents-system-to-freeze-games-and-inject-ads-during-downtimes-watching-commercials-earns-ad-free-playtime-credits",
-      "title": "Microsoft patents system to freeze games and inject ads during downtimes — watching commercials earns ad-free playtime credits",
-      "summary": "This patent uses the game engine and machine learning to determine the best time to serve an ad.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-20T13:00:00+00:00",
-      "sent_at": "2026-09-20T14:28:16.700516+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/entertainment/997853/a24-scp-movie-creative-commons-license",
-      "title": "A24’s reputation is on the line with the SCP Foundation movie",
-      "summary": "After the success of Backrooms, it looks like A24 is trying to cash in on yet another internet horror craze with a new installment in the V/H/S horror anthology series set in the SCP Foundation universe. But as soon as it was announced, the backlash started, and V/H/S: SCP already appears to be on shaky [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-20T12:45:48+00:00",
-      "sent_at": "2026-09-20T14:28:16.700516+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/air-cooling/noctua-fans-prevent-the-caim1-anti-ai-4k-camera-from-throttling-unusual-cameras-processor-gets-toasty-as-it-records-while-performing-cryptographic-calculations",
-      "title": "Noctua fans prevent the CAIM1 ‘Anti-AI’ 4K camera from throttling — unusual camera’s processor gets toasty as it records while performing cryptographic calculations",
-      "summary": "A premium PC DIY fan brand has announced that one of its prized spinners is being used in an 'Anti-AI' 4K camera to prevent throttling.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-20T12:20:57+00:00",
-      "sent_at": "2026-09-20T14:28:16.700516+00:00"
-    },
-    {
-      "link": "https://softwarecrisis.dev/letters/llmentalist/",
-      "title": "Chat-based Large Language Models replicate the mechanisms of a psychic's con",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-20T12:20:13+00:00",
-      "sent_at": "2026-09-20T14:28:16.700516+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/science/997834/ai-cyberattack-energy-critical-infrastructure",
-      "title": "Humans, not rogue AI, are still the biggest cybersecurity risk to energy systems",
-      "summary": "Before recent high-profile hacks raised the specter of AI possibly \"killing all humans,\" our energy systems were already disturbingly vulnerable to cyberattack - and the risk is growing. \"We were always prey. We were just kind of surviving at the appetite of our predators,\" Joshua Corman, executive in residence for public safety and resilience at [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-20T12:00:00+00:00",
-      "sent_at": "2026-09-20T14:28:16.700516+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/kash-patel-says-that-ai-use-at-the-fbi-has-increased-by-605-percent-since-he-became-director-claims-that-every-major-tech-player-is-embedded-in-the-agency",
-      "title": "Kash Patel says that AI use at the FBI has 'increased by 605%' since he became director — claims that every major tech player is 'embedded' in the agency",
-      "summary": "FBI Director Kash Patel stated in an interview that he's responsible for a \"605% increase\" in the bureau's usage of AI. The problem is that it's hard to pin down what the figure refers to.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-20T11:45:00+00:00",
-      "sent_at": "2026-09-20T14:28:16.700516+00:00"
-    },
-    {
-      "link": "https://www.i-kh.net/p/if-ai-coding-is-lowering-your-code",
-      "title": "If AI coding is lowering your code quality, you're not managing quality right",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-20T11:37:10+00:00",
-      "sent_at": "2026-09-20T14:28:16.700516+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/metas-muse-is-better-at-surveilling-than-helping-me/",
-      "title": "Meta's Muse Is Better at Surveilling Than Helping Me",
-      "summary": "The Muse app continues Meta’s trend of opting users into data collection for AI training. It also nudges you to share your bank account, email, and passport information.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-09-20T10:30:00+00:00",
-      "sent_at": "2026-09-20T10:35:37.817549+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/meet-the-academics-trying-to-stop-you-from-having-sex-in-robotaxis/",
-      "title": "Meet the Academics Trying to Stop You From Having Sex in Robotaxis",
-      "summary": "“You know ‘Bang Bus’? We don’t want that.”",
-      "source": "Wired",
-      "category": "Autonomes Fahren",
-      "published": "2026-09-20T10:00:00+00:00",
-      "sent_at": "2026-09-20T10:35:37.817549+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/cryptomining/googles-simulated-fruit-fly-brain-mines-bitcoin-in-web-browser-proof-of-concept-futurebit-says-real-organic-neuron-miner-could-have-10x-the-efficiency-of-the-best-silicon-3nm-asics",
-      "title": "Google's simulated fruit fly brain 'mines Bitcoin' in web browser proof of concept — FutureBit says real organic neuron miner could have '10x the efficiency of the best silicon 3nm ASICs'",
-      "summary": "A project claimed to represent 'the first organic neuron Bitcoin miner based on the fly brain' has gone live.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-20T09:40:00+00:00",
-      "sent_at": "2026-09-20T10:35:37.817549+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/how-to-use-memory-in-chatgpt/",
-      "title": "What ChatGPT Thinks It Knows About You Is Affecting Its Answers. Here’s How to Change That",
-      "summary": "Understanding how ChatGPT’s latest memory upgrade works will help you get even more out of OpenAI’s productivity tool.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-09-20T09:30:00+00:00",
-      "sent_at": "2026-09-20T10:35:37.817549+00:00"
-    },
-    {
-      "link": "https://medium.com/@istokovicsgyorgy79/google-ai-studio-fakes-data-deletion-vrp-auto-banned-me-in-60s-for-reporting-it-ea68e06f9bc2",
-      "title": "Google AI Studio fakes data deletion. VRP auto-banned me in 60s for reporting it",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-20T04:39:12+00:00",
-      "sent_at": "2026-09-20T10:35:37.817549+00:00"
     }
   ]
 }
