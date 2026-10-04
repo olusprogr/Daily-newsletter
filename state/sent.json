@@ -1,6 +1,60 @@
 {
   "items": [
     {
+      "link": "https://www.theguardian.com/technology/2026/oct/03/openai-safety-leader-quits-warning-ai-companys-culture-is-broken",
+      "title": "OpenAI safety leader quits, warning AI company's culture is 'broken'",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-03T22:18:13+00:00",
+      "sent_at": "2026-10-04T02:22:34.165810+00:00"
+    },
+    {
+      "link": "https://www.phoronix.com/news/XDC-2026-Valve-Timur-AMDGPU",
+      "title": "The work by Valve's Timur Kristóf on improving old AMD GPUs on Linux",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Hardware",
+      "published": "2026-10-03T19:14:48+00:00",
+      "sent_at": "2026-10-04T02:22:34.165810+00:00"
+    },
+    {
+      "link": "https://fortune.com/2026/10/01/ai-godfather-yann-lecun-has-zero-concerns-about-human-extinction-says-anthropic-ceo-dario-amodei-is-deuded/",
+      "title": "LeCun has \"zero concerns\" about AI wiping out humanity, recent \"rogue\" incidents",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-03T17:44:29+00:00",
+      "sent_at": "2026-10-04T02:22:34.165810+00:00"
+    },
+    {
+      "link": "https://tej.as/blog/aleph-alpha-kolibri",
+      "title": "Aleph Alpha Kolibri: How the sovereign German LLM works",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-03T10:43:51+00:00",
+      "sent_at": "2026-10-04T02:22:34.165810+00:00"
+    },
+    {
+      "link": "https://www.reddit.com/r/GeminiAI/comments/1wwalmc/wtf_google_getting_rid_of_free_gemini_flash_and/",
+      "title": "Gemini ending free use of Flash and Pro models",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-03T09:13:19+00:00",
+      "sent_at": "2026-10-04T02:22:34.165810+00:00"
+    },
+    {
+      "link": "https://casp.ac/reports/intelligence-explosion",
+      "title": "Understanding Frontier Artificial Intelligence",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-03T07:06:02+00:00",
+      "sent_at": "2026-10-04T02:22:34.165810+00:00"
+    },
+    {
       "link": "https://www.telegraph.co.uk/business/2026/10/02/anthropic-lobbied-pope-to-argue-ai-conscious-being/",
       "title": "Anthropic tried to persuade Pope that AI could be conscious being",
       "summary": "",
@@ -4508,24 +4562,6 @@
       "category": "AI",
       "published": "2026-09-19T23:02:34+00:00",
       "sent_at": "2026-09-20T05:41:10.818761+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2258772/robot-vacuum-downsides/",
-      "title": "What are the downsides of robot vacuums?",
-      "summary": "Robot vacuums save a lot of time and effort with their ability to clean autonomously. However, there are a number of reasons why they might not work for you.",
-      "source": "Engadget",
-      "category": "Innovationen",
-      "published": "2026-09-19T22:00:00+00:00",
-      "sent_at": "2026-09-20T00:37:20.274910+00:00"
-    },
-    {
-      "link": "https://apnews.com/article/antitrust-lawsuit-ai-slowdown-anthropic-openai-spacexai-google-960af4308161eaf4ed13c383b0ce1c1b",
-      "title": "Lawsuit says Anthropic, OpenAI and others made illegal agreement on AI slowdown",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-19T18:36:44+00:00",
-      "sent_at": "2026-09-20T00:37:20.274910+00:00"
     }
   ]
 }
