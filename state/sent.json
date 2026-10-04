@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.engadget.com/2276762/trump-announces-an-ai-czar-for-his-newly-created-super-intelligence-force/",
+      "title": "Trump announces an AI czar for his newly created 'Super Intelligence Force'",
+      "summary": "That's really what it's called and there's actually someone in charge of it.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-04T16:29:26+00:00",
+      "sent_at": "2026-10-04T19:08:20.081907+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1004549/well-if-ai-said-it-it-must-be-true",
+      "title": "NJ’s former Lt Gov is using AI to say he’s innocent of sexual harassment",
+      "summary": "New Jersey's lieutenant governor Dale Caldwell was forced to resign on September 25th after an investigation found he had sexually harassed a staffer and repeatedly violated ethics rules. The now-former Lt. governor has been making the media rounds trying to clear his name. But he took a particularly odd tactic during an interview on NJ [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-04T16:16:04+00:00",
+      "sent_at": "2026-10-04T19:08:20.081907+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2274326/how-to-disable-restrict-iphone-apple-intelligence-features/",
+      "title": "How to disable or restrict your iPhone's Apple Intelligence features",
+      "summary": "You have a lot of control over AI on your iPhone.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-04T16:15:00+00:00",
+      "sent_at": "2026-10-04T19:08:20.081907+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/04/techcrunch-mobility-reining-in-robotaxis/",
+      "title": "TechCrunch Mobility: Reining in robotaxis",
+      "summary": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, the role AI is playing in it.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-04T16:05:00+00:00",
+      "sent_at": "2026-10-04T19:08:20.081907+00:00"
+    },
+    {
+      "link": "https://automatictransmission.khoury.northeastern.edu/",
+      "title": "Car is a smartphone on wheels. Here's who's listening",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Hardware",
+      "published": "2026-10-04T15:43:14+00:00",
+      "sent_at": "2026-10-04T19:08:20.081907+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1004543/openai-gpt-cheat-starcraft",
+      "title": "An AI couldn’t beat humans at StarCraft, so it decided to cheat",
+      "summary": "StarSkirmish pits AI-made StarCraft-playing bots against one another, as well as against human-made bots. OpenAI's GPT-6 Astra and Claude Opus 5.5 were essentially tied as the best-performing AI-made bots, but they couldn't top Stardust, the top-rated human-made bot. On Friday, GPT was facing off against Claude and the human-created bot Pluto, but according to Kotaku, [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-04T15:21:59+00:00",
+      "sent_at": "2026-10-04T19:08:20.081907+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/04/trump-unveils-his-new-super-intelligence-force/",
+      "title": "Trump unveils his new Super Intelligence Force",
+      "summary": "This new task force is Trump's latest response to the debate over AI safety.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-04T15:15:10+00:00",
+      "sent_at": "2026-10-04T19:08:20.081907+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-torture-chamber-triggers-massive-backlash-for-putting-chatbots-in-simulated-pain-critics-issue-death-threats-while-anthropomorphizing-text-predictors-demand-github-remove-the-repository-over-unethical-treatment",
+      "title": "'AI Torture Chamber' triggers massive backlash for putting chatbots in simulated pain",
+      "summary": "AI \"torture chamber\" draws vast online criticism, and a corresponding amount of ridicule — tech newbies and AI evangelists go nuts anthropomorphizing an LLM",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-10-04T12:05:00+00:00",
+      "sent_at": "2026-10-04T19:08:20.081907+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/pc-components/gpus/modder-fixes-melting-rtx-5090-power-connectors-with-custom-distributor-dual-8-pin-mod-peaks-at-just-40c-during-a-48-hour-550w-stress-test",
       "title": "Modder 'fixes' melting RTX 5090 power connectors with custom distributor",
       "summary": "Reddit user u/DallasGrave shared a fix for his RTX 5090, one of the best graphics cards, whose 12VHPWR connector was overheating, along with an image of a module screwed onto the back of his GPU.",
@@ -4454,78 +4526,6 @@
       "category": "Hardware",
       "published": "2026-09-20T07:50:58+00:00",
       "sent_at": "2026-09-20T20:19:35.083482+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/20/techcrunch-mobility-how-do-we-know-when-an-av-is-safe-enough/",
-      "title": "TechCrunch Mobility: How do we know when an AV is safe enough?",
-      "summary": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, the role AI is playing in it. To get this in your inbox, sign up here for free — just click TechCrunch Mobility!",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-20T16:02:00+00:00",
-      "sent_at": "2026-09-20T17:55:26.992367+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/997867/trump-ai-force-ai-czar",
-      "title": "Trump now says he wants to form an ‘AI Force’",
-      "summary": "The president posted on Truth Social that he wanted to appoint an \"AI czar\" to lead a new \"AI force.\" He made the announcement amid growing calls from across the political spectrum and even within the industry to pump the brakes on AI development. He posted that his administration \"will not in any way hinder [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-20T15:39:22+00:00",
-      "sent_at": "2026-09-20T17:55:26.992367+00:00"
-    },
-    {
-      "link": "https://www.buchodi.com/chatgpt-now-knows-what-you-do-on-other-websites-via-ad-collector/",
-      "title": "ChatGPT now knows what you do on other websites via ad collector",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-20T15:18:44+00:00",
-      "sent_at": "2026-09-20T17:55:26.992367+00:00"
-    },
-    {
-      "link": "https://pirateface.co/",
-      "title": "Pirate Face Rescues LLM Models from Deletion",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-20T15:16:07+00:00",
-      "sent_at": "2026-09-20T17:55:26.992367+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/big-tech/anthropic-openai-spacexai-and-google-face-antitrust-lawsuit-for-agreeing-to-slow-ai-development-plaintiffs-say-plan-has-been-in-motion-for-months-before-calls-agreement-self-serving",
-      "title": "Anthropic, OpenAI, SpaceXAI, and Google face antitrust lawsuit for agreeing to slow AI development — plaintiffs say plan has been in motion for months before, calls agreement ‘self-serving’",
-      "summary": "A proposed class action lawsuit has been lodged against the four big AI tech companies after they agreed to slow AI development for safety reasons. The lead counsel on the lawsuit says that 'AI will quickly spin out of control and could kill us all if we allow AI safety and protocol ... to be controlled by private self-serving agreements between the world's most powerful 'for profit' technology companies.'",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-20T14:48:57+00:00",
-      "sent_at": "2026-09-20T17:55:26.992367+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/drones/autonomous-strike-drone-uses-nvidia-jetson-orin-nano-to-independently-pick-and-bomb-targets-swedish-startups-attack-drones-run-small-ai-model-require-no-human-input-and-zero-external-comms",
-      "title": "Autonomous NATO strike drone uses Nvidia Jetson Orin Nano to independently pick and bomb targets — Swedish startup's attack drones run small AI model, require no human input and zero external comms",
-      "summary": "Drones built with small, non-frontier computer-vision models autonomously identified and attacked targets in a recent demo.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-20T11:20:00+00:00",
-      "sent_at": "2026-09-20T17:55:26.992367+00:00"
-    },
-    {
-      "link": "https://sagivo.com/blog/im-tired-of-the-ai-tone",
-      "title": "I'm Tired of the AI Tone",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-20T11:18:26+00:00",
-      "sent_at": "2026-09-20T17:55:26.992367+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/jensen-huang-says-there-is-0-percent-chance-ai-destroys-the-world-by-2030-we-should-go-as-fast-as-we-can-irrespective-of-anyone-else-dismisses-anthropic-doom-warnings-and-rejects-new-regulations",
-      "title": "Jensen Huang says there is '0% chance' AI destroys the world by 2030 — 'We should go as fast as we can, irrespective of anyone else,' dismisses Anthropic doom warnings and rejects new regulations",
-      "summary": "Chief executive of Nvidia claims that fears that AI will destroy humanity in the coming years are unsubstantiated as safety mechanisms can preserve that.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-20T10:55:00+00:00",
-      "sent_at": "2026-09-20T17:55:26.992367+00:00"
     }
   ]
 }
