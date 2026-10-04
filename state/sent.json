@@ -1,6 +1,24 @@
 {
   "items": [
     {
+      "link": "https://www.nytimes.com/2026/09/29/us/anthropic-claude-morals-ai.html",
+      "title": "Religious scholars met with Anthropic",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-04T02:34:22+00:00",
+      "sent_at": "2026-10-04T09:18:54.124573+00:00"
+    },
+    {
+      "link": "https://www.theatlantic.com/technology/2026/10/openai-safety-team-resignation/688881/?gift=v5U_UzUTothfWXsPxtvNVAh7esWToMRD6XnbXmc5WgA",
+      "title": "I quit OpenAI because its culture is broken",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-03T13:46:34+00:00",
+      "sent_at": "2026-10-04T09:18:54.124573+00:00"
+    },
+    {
       "link": "https://www.theguardian.com/technology/2026/oct/03/openai-safety-leader-quits-warning-ai-companys-culture-is-broken",
       "title": "OpenAI safety leader quits, warning AI company's culture is 'broken'",
       "summary": "",
@@ -4553,15 +4571,6 @@
       "category": "AI",
       "published": "2026-09-20T04:39:12+00:00",
       "sent_at": "2026-09-20T10:35:37.817549+00:00"
-    },
-    {
-      "link": "https://slop-sense.labtoagi.com/games/is-this-image-ai/",
-      "title": "Can you tell which images are AI-generated?",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-19T23:02:34+00:00",
-      "sent_at": "2026-09-20T05:41:10.818761+00:00"
     }
   ]
 }
