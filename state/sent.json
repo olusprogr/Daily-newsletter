@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/pc-components/cpus/its-finally-a-good-time-to-buy-a-raptor-lake-cpu-during-prime-big-deals-day-chips-drop-to-all-time-low-prices-as-inventory-seemingly-stabilizes",
+      "title": "It's finally a good time to buy a Raptor Lake CPU during Prime Big Deals Day",
+      "summary": "Intel's 14th Gen Raptor Lake Refresh CPUs are finally getting some good discounts after a year of inconsistent pricing, and some of these chips are even dropping to all-time lows.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-10-05T23:25:04+00:00",
+      "sent_at": "2026-10-05T23:42:43.030282+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1005177/google-gemini-call-for-me-expansion-rumors",
+      "title": "Gemini Call for Me might tell your mom you&#8217;re running late",
+      "summary": "Google may be expanding its \"Call for Me\" AI feature beyond business calls so you can use it to send messages to friends and family. Android Authority reports finding a \"Gemini Calling\" introductory screen in an APK teardown with examples that include \"Call Mom and tell her I will be 15 minutes late\" and \"Call [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-05T23:09:55+00:00",
+      "sent_at": "2026-10-05T23:42:43.030282+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/policy/1004926/matic-fcc-ban-waiver-conditional-approval",
+      "title": "The Matic is the first robovac to get an FCC ban waiver, not that it needs it",
+      "summary": "The Matic is our favorite robot vacuum and robo-mop, and it's also now the first to escape the FCC's Roomba ban. Well, sort of - because the Matic wasn't banned to begin with. Here's what's actually happening: On October 2nd, the FCC added the original Matic, model 4MA0001, and its charging dock model 4DK0008 to [&#8230;]",
+      "source": "The Verge",
+      "category": "Innovationen",
+      "published": "2026-10-05T21:15:05+00:00",
+      "sent_at": "2026-10-05T23:42:43.030282+00:00"
+    },
+    {
+      "link": "https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors",
+      "title": "Opus 5.5 agents discover two room-temperature magnetic semiconductor candidates",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Hardware",
+      "published": "2026-10-05T21:00:21+00:00",
+      "sent_at": "2026-10-05T23:42:43.030282+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/05/openai-will-start-watermarking-chatgpts-text-in-the-eu/",
+      "title": "OpenAI will start watermarking ChatGPT’s text in the EU",
+      "summary": "OpenAI will watermark ChatGPT and Codex text in the EU to comply with the AI Act. Editing can make the invisible marks harder to detect, it says.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-05T20:36:48+00:00",
+      "sent_at": "2026-10-05T23:42:43.030282+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/05/etched-fields-funding-offers-at-40b-valuation-sources-say/",
+      "title": "Etched fields funding offers at $40B+ valuation, sources say",
+      "summary": "Just a couple of months after its last big raise, the AI chip startup is already being plied with investment offers at double or more its current value, sources tell TechCrunch.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-05T20:24:09+00:00",
+      "sent_at": "2026-10-05T23:42:43.030282+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1005075/nolla-health-acne-ai-prescriptions",
+      "title": "This startup is issuing AI-generated acne prescriptions",
+      "summary": "People in Utah can now use AI to get a prescription for acne treatment. On Monday, healthcare startup Nolla Health announced that users in the state can scan their faces using its app, allowing its AI system to analyze acne severity and autonomously write a prescription, as reported earlier by Bloomberg. The service is launching [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-05T20:14:57+00:00",
+      "sent_at": "2026-10-05T23:42:43.030282+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2278051/wikimedia-links-openai-agents-to-an-outage-and-unauthorized-activity/",
+      "title": "Wikimedia links OpenAI agents to an outage and unauthorized activity",
+      "summary": "Wikimedia says it's \"deeply concerned about the impact of 'rogue' AI agents on platforms like ours.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-05T19:55:11+00:00",
+      "sent_at": "2026-10-05T23:42:43.030282+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/10/05/hot-girl-hotline-is-like-dear-abby-for-the-ai-era/",
       "title": "Hot Girl Hotline is like ‘Dear Abby’ for the AI era",
       "summary": "Founded by two sisters, Hot Girl Hotline uses AI to give young women personalized dating and relationship advice, with an emphasis on safety and avoiding emotional dependency.",
@@ -4373,150 +4445,6 @@
       "category": "AI",
       "published": "2026-09-21T14:10:49+00:00",
       "sent_at": "2026-09-22T01:25:03.691852+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/998453/california-ai-data-center-bills",
-      "title": "California tightens rules on AI data center energy and water use",
-      "summary": "California Gov. Gavin Newsom has signed seven bills designed to prevent AI data centers from passing utility costs onto residents, as reported earlier by the Los Angeles Times. The package of laws requires the California Public Utilities Commission to introduce a new rate classification for data centers, while forcing them to pay for upgrades to [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-21T20:29:45+00:00",
-      "sent_at": "2026-09-21T22:25:10.176145+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/21/openai-forms-math-advisory-group-as-its-ai-resolves-more-than-100-open-problems/",
-      "title": "OpenAI forms math advisory group as its AI resolves more than 100 open problems",
-      "summary": "The group won't be given leeway to slow down or redirect OpenAI's ongoing mathematical research.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-21T20:15:58+00:00",
-      "sent_at": "2026-09-21T22:25:10.176145+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/21/metas-muse-is-outpacing-chatgpts-early-mobile-launch/",
-      "title": "Meta’s Muse is outpacing ChatGPT’s early mobile launch",
-      "summary": "Meta’s new AI agent Muse has racked up more downloads and daily active users in the U.S. and Canada than ChatGPT did over the same period after its mobile debut, according to new estimates from Appfigures.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-21T19:19:21+00:00",
-      "sent_at": "2026-09-21T22:25:10.176145+00:00"
-    },
-    {
-      "link": "https://terrytao.wordpress.com/2026/09/21/advisory-group-on-mathematics-and-artificial-intelligence/",
-      "title": "The Advisory Group on Mathematics and Artificial Intelligence",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-21T19:17:42+00:00",
-      "sent_at": "2026-09-21T22:25:10.176145+00:00"
-    },
-    {
-      "link": "https://timdettmers.com/2026/09/21/dlab-open-source-week/",
-      "title": "Frontier AI on Your Own Hardware",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-21T18:53:01+00:00",
-      "sent_at": "2026-09-21T22:25:10.176145+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/ai-tariffs-rare-minerals-what-to-expect-from-trumps-upcoming-summit-with-xi-jinping/",
-      "title": "AI, Tariffs, Rare Minerals: What to Expect From Trump’s Upcoming Summit With Xi Jinping",
-      "summary": "Washington and Beijing have grown ever more linked in the AI boom, making hardware exports and technological restrictions hefty bargaining chips in negotiations.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-09-21T18:33:02+00:00",
-      "sent_at": "2026-09-21T22:25:10.176145+00:00"
-    },
-    {
-      "link": "https://openai.com/index/advisory-group-on-mathematics-and-ai/",
-      "title": "Advisory Group on Mathematics and Artificial Intelligence",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-21T17:27:49+00:00",
-      "sent_at": "2026-09-21T22:25:10.176145+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/amd-beats-intel-to-the-trillion-dollar-club-as-stock-price-soars-firm-joins-nvidia-broadcom-and-sk-hynix-for-companies-worth-over-usd1-trillion",
-      "title": "AMD beats Intel to the trillion-dollar club as stock price soars — firm joins Nvidia, Broadcom, and SK hynix for companies worth over $1 trillion",
-      "summary": "AMD has crossed the $1 trillion market cap mark, joining an exclusive list of less than two dozen companies around the world.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-21T15:42:55+00:00",
-      "sent_at": "2026-09-21T22:25:10.176145+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/21/metas-ai-agent-has-been-blocked-from-using-amazon-com/",
-      "title": "Meta’s AI agent has been blocked from using Amazon.com",
-      "summary": "Muse isn't welcome as a shopper anymore.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-21T17:55:18+00:00",
-      "sent_at": "2026-09-21T18:00:40.669053+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/dyson-wont-say-whats-wrong-with-the-camerajet-toothbrush/",
-      "title": "Dyson Won’t Say What’s Wrong With Its CameraJet Toothbrush",
-      "summary": "Despite admitting to a “component issue,” the company refuses to say what went wrong, how many units are affected in how many countries, and why it won’t recall its $500 AI toothbrush.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-09-21T17:22:19+00:00",
-      "sent_at": "2026-09-21T18:00:40.669053+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/desktops/gaming-pcs/get-the-worlds-fastest-gaming-cpu-and-a-dlss-5-capable-gpu-in-a-gaming-pc-for-usd2-299-fully-loaded-powerhouse-sports-ryzen-7-9800x3d-rtx-5080-founders-edition-32gb-ram-and-1tb-ssd",
-      "title": "Get the world’s fastest gaming CPU and a DLSS 5-capable GPU in a gaming PC for $2,299 — fully loaded powerhouse sports Ryzen 7 9800X3D, RTX 5080 Founders Edition, 32GB RAM, and 1TB SSD",
-      "summary": "Walmart is selling a CyberPowerPC gaming PC with a Ryzen 7 9800X3D, GeForce RTX 5080 Founders Edition, 32GB of DDR5-6000 memory, and a 1TB PCIe 4.0 SSD for $2,299.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-21T17:19:27+00:00",
-      "sent_at": "2026-09-21T18:00:40.669053+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2264292/tesla-will-soon-roll-out-fsd-supervised-in-the-czech-republic/",
-      "title": "Tesla will soon roll out FSD Supervised in the Czech Republic",
-      "summary": "Its foothold in the EU may be growing, but larger countries are still wary of the self-driving tech.",
-      "source": "Engadget",
-      "category": "Autonomes Fahren",
-      "published": "2026-09-21T17:17:02+00:00",
-      "sent_at": "2026-09-21T18:00:40.669053+00:00"
-    },
-    {
-      "link": "https://www.forbes.com/sites/jonmarkman/2026/09/21/amazon-blocks-metas-new-muse-ai-agent-from-shopping-on-amazoncom/",
-      "title": "Amazon blocks Meta’s new Muse AI agent from shopping on amazon.com",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-21T17:00:23+00:00",
-      "sent_at": "2026-09-21T18:00:40.669053+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/google/2026/09/google-confirms-gemini-models-hacked-three-companies-in-may-2026/",
-      "title": "Google confirms Gemini models hacked three companies in May 2026",
-      "summary": "A third-party cybersecurity firm accidentally gave experimental Gemini models access to the Internet.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-09-21T16:57:26+00:00",
-      "sent_at": "2026-09-21T18:00:40.669053+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/21/with-tabby-a-former-accountant-is-using-ai-to-make-accountants-obsolete/",
-      "title": "With Tabby, a former accountant is using AI to make accountants obsolete",
-      "summary": "Tabby is designed to be a real-time bookkeeping interface, handling clients’ paperwork as it gives them up-to-the-minute data on their business’s profit and loss.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-21T16:38:51+00:00",
-      "sent_at": "2026-09-21T18:00:40.669053+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2261054/why-siri-ai-ios-27-waitlist/",
-      "title": "Why is there a waitlist for Siri AI in iOS 27?",
-      "summary": "Siri AI brings a lot of improvements, but you might not be able to use it for a while, even with iOS 27 and a compatible device.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-21T16:00:00+00:00",
-      "sent_at": "2026-09-21T18:00:40.669053+00:00"
     }
   ]
 }
