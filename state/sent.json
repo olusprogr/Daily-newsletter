@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/tech-industry/semiconductors/qualcomm-will-pay-huawei-to-license-its-patents-for-the-first-time-in-historic-turnaround-reversal-in-a-5g-and-ai-cross-licensing-deal-comes-25-years-after-huawei-first-paid-qualcomm",
+      "title": "Qualcomm will pay Huawei to license its patents for the first time in historic turnaround",
+      "summary": "Huawei and Qualcomm sign a multi-year patent cross-license covering 5G and AI, with Qualcomm buying some Huawei US patents.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-10-06T11:30:00+00:00",
+      "sent_at": "2026-10-06T11:46:15.483794+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2278504/google-removes-free-access-gemini-flash-pro-october-9/",
+      "title": "Google removes free access to Gemini Flash and Pro on October 9",
+      "summary": "Free Gemini users are losing access to Google's Flash and Pro AI models.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-06T11:22:53+00:00",
+      "sent_at": "2026-10-06T11:46:15.483794+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/openai-and-synopsys-partner-to-build-gpt-synopsys-for-autonomous-chip-design-specialized-ai-model-will-operate-eda-tools-allowing-engineers-to-deliver-more-sophisticated-chips-faster",
+      "title": "OpenAI and Synopsys partner to build \"GPT-Synopsys\" for autonomous chip design",
+      "summary": "OpenAI and Synopsys are developing GPT-Synopsys, a specialized semiconductor-design model that will directly operate Synopsys EDA tools",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-10-06T11:00:00+00:00",
+      "sent_at": "2026-10-06T11:46:15.483794+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/the-big-interview-podcast-kevin-roose/",
+      "title": "Kevin Roose Didn’t Use AI to Write His Book About AI",
+      "summary": "The author of The AGI Chronicles says his book “was written by a very tired, overworked, under-slept human being.”",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-10-06T10:30:00+00:00",
+      "sent_at": "2026-10-06T11:46:15.483794+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/elon-musk-pledges-spacexsi-rebrand-after-trumps-executive-order-to-use-super-intelligence-moniker-president-trump-has-signed-the-executive-order-to-replace-artificial-intelligence",
+      "title": "Elon Musk pledges SpaceXSI rebrand after Trump's executive order to use 'Super Intelligence' moniker",
+      "summary": "Elon Musk says he plans to rename SpaceXAI as SpaceXSI to reflect the new \"Super Intelligence\" moniker adopted in President Trump's executive order",
+      "source": "Tom's Hardware",
+      "category": "Innovationen",
+      "published": "2026-10-06T10:30:00+00:00",
+      "sent_at": "2026-10-06T11:46:15.483794+00:00"
+    },
+    {
+      "link": "https://spectrum.ieee.org/ieee-day",
+      "title": "Happy IEEE Day!",
+      "summary": "Happy IEEE Day 2026! IEEE Day is an annual event that celebrates the first time in history when engineers worldwide gathered to share their technical ideas in 1884. One of the IEEE Day’s objectives is to show the ways IEEE members, in local communities, join together to collaborate on ideas that leverage technology for a better tomorrow. IEEE Day 2026 - October 6, 2026. Stay tuned as we continue this journey of innovation, connection, and global celebration. IEEE Celebrate IEEE Day with colleagues from IEEE Sections, Student Branches, Affinity groups, and Society Chapters. Events happen both virtually and in person all around the world. IEEE Day 2026 Events Explore IEEE Day 2026 events taking place around the world from 4 - 17 October 2026. The event listing is dynamically updated as new events are registered. View events → Compete in contests and win prizes! Have some fun and compete in the photo and video contests. Get your phone and camera ready when you attend one of the events. This year we will have both Photo and Video Contests. You can submit your entries in technovation, raise your flag, and social categories. View contests → Special Offers & Activities Check out our special offers and activities for IEEE members and future members. And share these with your friends and colleagues. View offers →",
+      "source": "IEEE Spectrum",
+      "category": "Innovationen",
+      "published": "2026-10-06T09:21:18+00:00",
+      "sent_at": "2026-10-06T11:46:15.483794+00:00"
+    },
+    {
+      "link": "https://newsletter.semianalysis.com/p/anthropic-subscriptions-offer-5x",
+      "title": "Anthropic Subscriptions Offer 5x+ More Value Than OpenAI",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-06T07:29:50+00:00",
+      "sent_at": "2026-10-06T11:46:15.483794+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/litter-robot-promo-code/",
+      "title": "Litter-Robot Promo Codes: Up to $150 Off",
+      "summary": "Get the latest Litter-Robot Discounts on Litter-Robot self-cleaning litter boxes, accessories, and more.",
+      "source": "Wired",
+      "category": "Innovationen",
+      "published": "2026-10-06T05:00:00+00:00",
+      "sent_at": "2026-10-06T11:46:15.483794+00:00"
+    },
+    {
       "link": "https://www.engadget.com/2276483/common-mistakes-avoid-using-foldable-phones/",
       "title": "Common mistakes you should avoid when using foldable phones",
       "summary": "Foldable phones have unique durability concerns thanks to their moving parts and internal screens.",
@@ -4373,78 +4445,6 @@
       "category": "AI",
       "published": "2026-09-22T12:10:08+00:00",
       "sent_at": "2026-09-22T13:03:54.262508+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/21/morphotonics-raises-e40m-as-it-tk-tk-tk-t/",
-      "title": "Morphotonics raises €40M to expand its display tech into data centers",
-      "summary": "Deeptech company Morphotonics raises €40M from investors including 3M Ventures, Innovation Industries, BOM, and Invest-NL.",
-      "source": "TechCrunch",
-      "category": "Innovationen",
-      "published": "2026-09-22T06:00:00+00:00",
-      "sent_at": "2026-09-22T07:16:05.841868+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/meta-quest-promo-code/",
-      "title": "Meta Quest Promo Codes and Coupons for September 2026",
-      "summary": "Experience cutting-edge VR and save up to 20% with coupons for the latest games, Meta Quest 3, Ray-Ban AI glasses, and more deals.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-09-22T05:00:00+00:00",
-      "sent_at": "2026-09-22T07:16:05.841868+00:00"
-    },
-    {
-      "link": "https://variety.com/2026/film/news/robin-williams-daughter-ai-videos-1236871568/",
-      "title": "Robin Williams' Daughter to Fans Creating AI Videos: 'Have Some Shame'",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-22T01:24:49+00:00",
-      "sent_at": "2026-09-22T07:16:05.841868+00:00"
-    },
-    {
-      "link": "https://status.claude.com/incidents/7g1qpkyz5gxh",
-      "title": "Claude Status – Elevated errors for multiple models",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-22T01:05:19+00:00",
-      "sent_at": "2026-09-22T07:16:05.841868+00:00"
-    },
-    {
-      "link": "https://robocurve.org/roboharm/",
-      "title": "Roboharm: Do frontier robot policies refuse unsafe instructions?",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Innovationen",
-      "published": "2026-09-21T18:58:26+00:00",
-      "sent_at": "2026-09-22T07:16:05.841868+00:00"
-    },
-    {
-      "link": "https://matthewbutterick.com/chron/drop-dead.html",
-      "title": "Big AI to humanity: drop dead",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-21T17:23:19+00:00",
-      "sent_at": "2026-09-22T07:16:05.841868+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/gpus/new-rtx-5070-autumn-limited-edition-gaming-gpu-doubles-as-an-air-freshener-with-built-in-e-sports-aromatherapy-ax-gamings-white-and-purple-card-also-features-an-anime-character-and-floral-graphics",
-      "title": "New RTX 5070 Autumn Limited Edition gaming GPU doubles as an air freshener with built-in 'e-sports aromatherapy' — AX Gaming's white and purple card also features an anime character and floral graphics",
-      "summary": "AX Gaming has revealed its latest seasonal anime-themed limited edition graphics card which, this time, is designed to please your nose as much as your eyes.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-21T14:00:00+00:00",
-      "sent_at": "2026-09-22T07:16:05.841868+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/998191/apple-siri-ai-iphone-16-class-action-lawsuit-settlement",
-      "title": "iPhone owners can now submit claims in Apple’s $250 million Siri AI settlement",
-      "summary": "Apple is paying $250 million to settle claims that it failed to deliver an AI-upgraded Siri - and now, eligible iPhone owners can submit a claim for a payout. If you live in the US and purchased an iPhone 15 Pro, iPhone 15 Pro Max, or any iPhone 16 model between June 10th, 2024, and [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-21T13:36:52+00:00",
-      "sent_at": "2026-09-22T07:16:05.841868+00:00"
     }
   ]
 }
