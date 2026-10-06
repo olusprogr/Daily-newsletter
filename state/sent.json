@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.theverge.com/gadgets/1006059/robot-vacuum-mop-roborock-qrevo-prime-day-deal-sale",
+      "title": "The best robot vacuum and mop deals during October Prime Day",
+      "summary": "Spending too much time constantly sweeping and mopping? If you have the money to delegate those chores to a robot cleaner, you could save a lot of personal time. Thankfully, it’s cheaper than usual to buy a robot vacuum / mop hybrid during Amazon’s Prime Big Deal Days, and some of our favorite models are [&#8230;]",
+      "source": "The Verge",
+      "category": "Innovationen",
+      "published": "2026-10-06T22:00:00+00:00",
+      "sent_at": "2026-10-06T22:18:24.088779+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/10/06/fall-prime-day-2026-deals-ebike-power-stations-electric-tools/",
+      "title": "Fall Prime Day 2026 Green Deals: EVs, power stations, electric tools, smart devices, and much more",
+      "summary": "Amazon’s Prime Big Deal Days are finally here, and we’ve already been reveling the last week in all the early savings, but things are ramping up even further for the rest of this week. You’ll find a massive collection of deals across all our favorite Green Deal brands – both at Amazon and from direct websites – giving you a great chance at savings on EVs, power stations, electric tools, robots, and much more. It’s all been rounded up together and curated for you below, giving you a one-stop shopping hub for all your needs. Head on down and keep checking back throughout the week as we update this hub. more…",
+      "source": "Electrek",
+      "category": "Innovationen",
+      "published": "2026-10-06T21:42:16+00:00",
+      "sent_at": "2026-10-06T22:18:24.088779+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/ai/2026/10/openai-will-watermark-chatgpt-outputs-by-default-but-only-in-the-eu/",
+      "title": "OpenAI will watermark ChatGPT outputs by default—but only in the EU",
+      "summary": "Like other solutions, it is not especially reliable, and it's easy to circumvent.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-10-06T20:50:32+00:00",
+      "sent_at": "2026-10-06T22:18:24.088779+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/06/silicon-valleys-ai-wunderkind-launches-underdog-the-most-private-instinct-muse-competitor-yet/",
+      "title": "Silicon Valley’s AI wunderkind launches Underdog, the most private Instinct/Muse competitor yet",
+      "summary": "Sigil Wen, backed by a Silicon Valley who's who, has built an on-device AI assistant that promises to be free, fully private, and capable for everyday tasks.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-06T20:47:01+00:00",
+      "sent_at": "2026-10-06T22:18:24.088779+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/06/how-ai-decision-models-could-change-content-moderation/",
+      "title": "How AI decision models could change content moderation",
+      "summary": "On Tuesday, Musubi announced a lightweight decision model made for real-time moderation called PolicyLM-1.7B, released with open weights.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-06T20:35:20+00:00",
+      "sent_at": "2026-10-06T22:18:24.088779+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/prime-day-vacuum-deals-10-06-2026/",
+      "title": "Best Amazon Prime Day Vacuum Deals: Dyson, Shark, and Robot Vacuums (2026)",
+      "summary": "I’ve compared cordless sticks, watched robot vacuums chase stains, and cleaned plenty of car crumbs. These discounts get my recommendation.",
+      "source": "Wired",
+      "category": "Innovationen",
+      "published": "2026-10-06T20:06:46+00:00",
+      "sent_at": "2026-10-06T22:18:24.088779+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/06/ai-computing-startup-lambda-to-raise-4b-ahead-of-planned-ipo/",
+      "title": "AI computing startup Lambda to raise $4B ahead of planned IPO",
+      "summary": "Nvidia-backed Lambda is raising up to $4 billion at a $14.5 billion pre-money valuation ahead of a planned 2027 IPO, led by Coatue and Blackstone.",
+      "source": "TechCrunch",
+      "category": "Hardware",
+      "published": "2026-10-06T20:00:30+00:00",
+      "sent_at": "2026-10-06T22:18:24.088779+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/06/the-next-hurdle-for-ai-agents-getting-websites-to-let-them-in/",
+      "title": "The next hurdle for AI agents: getting websites to let them in",
+      "summary": "Personal AI agents promise to shop, book flights, and make reservations for you. But deliberate blocks and anti-bot defenses are getting in the way, leaving consumers caught in the middle. A new standard aims to help.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-06T19:56:50+00:00",
+      "sent_at": "2026-10-06T22:18:24.088779+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/peripherals/docking-stations-hubs/mac-mini-docks-add-more-ports-and-storage-get-more-out-of-your-headless-server-ai-machine-or-apple-workstation",
       "title": "Mac Mini docks add more ports and storage — get more out of your headless server, AI machine, or Apple workstation",
       "summary": "Mac Mini docks add more ports and allow for further internal storage. Many of them are molded to fit directly beneath Apple's popular mini PC.",
@@ -4301,150 +4373,6 @@
       "category": "AI",
       "published": "2026-09-22T19:08:58+00:00",
       "sent_at": "2026-09-22T23:28:19.301427+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/22/qualcomm-launches-two-new-smartphone-chips-with-emphasis-on-ai/",
-      "title": "Qualcomm launches two new smartphone chips with emphasis on AI",
-      "summary": "Qualcomm said that its new top chip can run 30B mixture-of-expert model locally.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-22T20:00:00+00:00",
-      "sent_at": "2026-09-22T20:51:55.570166+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/gadgets/998842/qualcomm-snapdragon-8-elite-extreme-gen-6",
-      "title": "Qualcomm’s Snapdragon 8 Elite Gen 6 comes in an Extreme version too",
-      "summary": "Qualcomm has announced the Snapdragon 8 Elite Gen 6, this year joined by the 8 Elite Extreme Gen 6 too. The company describes both new phone chips as flagships, and the spec differences are relatively minor, mostly limited to improved AI processing, video capture, and gaming performance on the Extreme model. Both Gen 6 chips [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-22T20:00:00+00:00",
-      "sent_at": "2026-09-22T20:51:55.570166+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/998844/motorola-signature-27-specs-snapdragon-8-elite-extreme-gen-6",
-      "title": "Motorola’s wild-looking Signature 27 runs Qualcomm’s new Extreme chipset",
-      "summary": "Motorola is the first company to announce a phone running Qualcomm's top-end Snapdragon 8 Elite Extreme Gen 6 chip. The Signature 27 looks set to be Motorola's most advanced flagship in some years, though we're still waiting for the full specs, price, and release date. Any prospective buyers will first have to get over the [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-09-22T20:00:00+00:00",
-      "sent_at": "2026-09-22T20:51:55.570166+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2265564/motorolas-new-signature-27-is-among-the-first-smartphone-to-use-the-snapdragon-8-elite-extreme-gen-6-processor/",
-      "title": "Motorola's new Signature 27 is among the first smartphone to use the Snapdragon 8 Elite Extreme Gen 6 processor",
-      "summary": "Not bad for a quick refresh.",
-      "source": "Engadget",
-      "category": "Hardware",
-      "published": "2026-09-22T20:00:00+00:00",
-      "sent_at": "2026-09-22T20:51:55.570166+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2265628/qualcomm-is-making-not-one-but-two-versions-of-its-flagship-snapdragon-8-elite-gen-6-chip/",
-      "title": "Qualcomm is making not one but two versions of its flagship Snapdragon 8 Elite Gen 6 chip",
-      "summary": "That video capture is nothing to sneeze at.",
-      "source": "Engadget",
-      "category": "Hardware",
-      "published": "2026-09-22T20:00:00+00:00",
-      "sent_at": "2026-09-22T20:51:55.570166+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/gadgets/998932/googlebook-preorder-pixel-buds-2a-deal-sale",
-      "title": "Score free Pixel Buds 2A when you preorder a Googlebook at Best Buy",
-      "summary": "The Android-powered Googlebooks are coming soon, with familiar brands and specs that rival Windows Copilot machines. For anyone eager to get their hands on any the new laptops, there’s a preorder perk you may want to know about lasting until October 25th, 2026. When you add a Googlebook to your cart at Best Buy, a [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-22T19:28:55+00:00",
-      "sent_at": "2026-09-22T20:51:55.570166+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/tech-policy/2026/09/lawsuit-demands-openai-pay-for-new-school-after-chatgpt-used-in-shooting/",
-      "title": "Lawsuit demands OpenAI pay for new school after ChatGPT used in shooting",
-      "summary": "British Columbia sues OpenAI, demands Tumbler Ridge shooter’s ChatGPT logs.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-09-22T19:28:23+00:00",
-      "sent_at": "2026-09-22T20:51:55.570166+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2265801/anthropic-and-openai-announce-more-powerful-and-cheaper-ai-models/",
-      "title": "Anthropic and OpenAI announce more powerful (and cheaper) AI models",
-      "summary": "I thought we were supposed to be slowing down the frontier.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-22T19:11:11+00:00",
-      "sent_at": "2026-09-22T20:51:55.570166+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/22/waymos-latest-expansion-strategy-teenagers/",
-      "title": "Waymo’s latest expansion strategy: teenagers",
-      "summary": "Waymo is opening its robotaxi service to teenagers aged 13 to 17 in Nashville, its second city the offer rides to minors.",
-      "source": "TechCrunch",
-      "category": "Autonomes Fahren",
-      "published": "2026-09-22T17:36:06+00:00",
-      "sent_at": "2026-09-22T17:55:08.417976+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/ai/2026/09/toyota-claims-plan-for-400000-factory-robots-wont-replace-human-workers/",
-      "title": "Toyota orders workers to train humanoid robots but says humans won't be replaced",
-      "summary": "Toyota's push comes as automakers race to develop and deploy humanoid robots.",
-      "source": "Ars Technica",
-      "category": "Innovationen",
-      "published": "2026-09-22T17:06:16+00:00",
-      "sent_at": "2026-09-22T17:55:08.417976+00:00"
-    },
-    {
-      "link": "https://artificialanalysis.ai/models/claude-opus-5-5",
-      "title": "Claude Opus 5.5 Intelligence, Performance and Price Analysis (Max)",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-22T16:51:31+00:00",
-      "sent_at": "2026-09-22T17:55:08.417976+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/998813/andreessen-horowitz-ai-academy",
-      "title": "Andreessen Horowitz is launching an ‘academy’ with no homework and partnerships with Palantir, Google, and Meta",
-      "summary": "Venture capital firm Andreessen Horowitz (a16z) is creating an \"academy\" positioned as a pipeline for young people to build or join a Silicon Valley startup. The \"Horowitz Andreessen Academy\" will launch with 10 partners, including Anduril, Anthropic, Coinbase, Google, Meta, NVIDIA, OpenAI, Palantir, Replit, and Stripe, along with $42 million in funding led by a16z. [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-22T16:34:08+00:00",
-      "sent_at": "2026-09-22T17:55:08.417976+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/22/anthropic-releases-opus-5-5-with-lower-prices-and-fable-level-performance/",
-      "title": "Anthropic releases Opus 5.5 with lower prices and Fable-level performance",
-      "summary": "Anthropic called it \"the strongest-performing model we've tested to date.\"",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-22T16:30:07+00:00",
-      "sent_at": "2026-09-22T17:55:08.417976+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/998868/anthropic-claude-opus-5-5-cybersecurity",
-      "title": "Anthropic launches Claude Opus 5.5 with stricter safeguards for cybersecurity",
-      "summary": "Anthropic says its new Claude Opus 5.5 model comes with stronger safeguards in the wake of recent rogue AI hacking incidents. In an announcement on Tuesday, Anthropic says Opus 5.5 comes with improvements to certain risky behaviors, including attempts to escape the company's testing sandbox. It's the first model released by Anthropic after CEO Dario [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-22T16:30:00+00:00",
-      "sent_at": "2026-09-22T17:55:08.417976+00:00"
-    },
-    {
-      "link": "https://www.anthropic.com/claude-opus-5-5",
-      "title": "Claude Opus 5.5",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-22T16:29:05+00:00",
-      "sent_at": "2026-09-22T17:55:08.417976+00:00"
-    },
-    {
-      "link": "https://allpoetry.com/16-bit-Intel-8088-chip",
-      "title": "16-bit Intel 8088 chip",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Hardware",
-      "published": "2026-09-22T16:11:34+00:00",
-      "sent_at": "2026-09-22T17:55:08.417976+00:00"
     }
   ]
 }
