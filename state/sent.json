@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/desktops/gaming-pcs/get-usd500-off-this-sweet-ryzen-7-7800x3d-and-rtx-5070-powered-gaming-pc-at-just-usd1799-32gb-of-ddr5-6000-comes-standard-too-at-a-22-percent-discount",
+      "title": "Get 22% off this sweet Ryzen 7 7800X3D and RTX 5070-powered gaming PC at just $1799",
+      "summary": "Get $500 off this prebuilt gaming PC with a sweet Ryzen 7 7800X3D CPU, a powerful RTX 5070 graphics card, and 32GB of memory at just $1799.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-10-07T00:42:54+00:00",
+      "sent_at": "2026-10-07T02:03:52.218207+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1005004/openai-math-release-github",
+      "title": "OpenAI drops another batch of mathematical breakthroughs",
+      "summary": "OpenAI has revealed solutions to a number of long-standing mathematics problems produced by an unreleased frontier model in a batch of 722 manuscripts, covering 372 result families that group related papers. It extends a run of breakthroughs that have both impressed and unsettled parts of the mathematical community while raising questions about research ethics and [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-06T23:26:38+00:00",
+      "sent_at": "2026-10-07T02:03:52.218207+00:00"
+    },
+    {
+      "link": "https://github.com/openai/math",
+      "title": "Mathematical manuscripts and supporting proof artifacts produced by OpenAI",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-06T22:22:48+00:00",
+      "sent_at": "2026-10-07T02:03:52.218207+00:00"
+    },
+    {
+      "link": "https://openai.com/index/sharing-ai-progress-in-mathematics/",
+      "title": "Sharing AI progress in mathematics",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-06T22:17:21+00:00",
+      "sent_at": "2026-10-07T02:03:52.218207+00:00"
+    },
+    {
+      "link": "https://penguin-mail.com/",
+      "title": "Penguin Mail – open-source Rust email client for Linux with AI",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-06T21:59:43+00:00",
+      "sent_at": "2026-10-07T02:03:52.218207+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/desktops/gaming-pcs/hp-takes-usd2200-off-a-ryzen-7-9800x3d-and-rtx-5080-prebuilt-at-usd2-799-sale-slashes-44-percent-off-an-omen-system-thats-ready-to-game-however-you-want",
+      "title": "HP takes $2200 off a Ryzen 7 9800X3D and RTX 5080 prebuilt at $2,799",
+      "summary": "HP is selling its Omen 35L with an Nvidia RTX 5080 and Ryzen 7 9800X3D for $2,799, or $2200 off. This system has 32GB of RAM and a 2TB SSD for strong supporting performance, too.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-10-06T18:47:37+00:00",
+      "sent_at": "2026-10-07T02:03:52.218207+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/artificial-roasts-ais-creators-and-sends-a-dark-warning-about-its-dangers/",
+      "title": "‘Artificial’ Roasts AI’s Creators—and Sends a Dark Warning About Its Dangers",
+      "summary": "From their dorky parties to their weird walks, the movie holds OpenAI CEO Sam Altman and other stakeholders with contempt, while demonstrating their recklessness.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-10-06T18:45:39+00:00",
+      "sent_at": "2026-10-07T02:03:52.218207+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/06/hark-releases-an-ai-personal-assistant-with-a-focus-on-privacy/",
+      "title": "Hark releases an AI personal assistant with a focus on privacy",
+      "summary": "The AI lab's personal assistant is an operating system from the future designed to compete with Muse, Dots, and Instinct.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-06T18:22:45+00:00",
+      "sent_at": "2026-10-07T02:03:52.218207+00:00"
+    },
+    {
       "link": "https://www.theverge.com/gadgets/1006059/robot-vacuum-mop-roborock-qrevo-prime-day-deal-sale",
       "title": "The best robot vacuum and mop deals during October Prime Day",
       "summary": "Spending too much time constantly sweeping and mopping? If you have the money to delegate those chores to a robot cleaner, you could save a lot of personal time. Thankfully, it’s cheaper than usual to buy a robot vacuum / mop hybrid during Amazon’s Prime Big Deal Days, and some of our favorite models are [&#8230;]",
@@ -4301,78 +4373,6 @@
       "category": "Innovationen",
       "published": "2026-09-22T15:26:43+00:00",
       "sent_at": "2026-09-23T03:14:02.486903+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/22/techcrunch-founder-summits-agenda-revealed-unlock-fundraising-hiring-and-ai-insights-in-boston-on-november-4/",
-      "title": "TechCrunch Founder Summit’s agenda revealed: Unlock fundraising, hiring, and AI insights in Boston on November 4",
-      "summary": "Founders shouldn't have to learn the hardest lessons the hardest way. TechCrunch Founder Summit is designed to make the challenges of starting a company easier and the highs that much greater.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-22T23:21:49+00:00",
-      "sent_at": "2026-09-22T23:28:19.301427+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/22/snorkel-ai-triples-valuation-to-3-5b-as-demand-for-ai-training-data-booms/",
-      "title": "Snorkel AI triples valuation to $3.5B as demand for AI training data booms",
-      "summary": "The seven-year-old startup has raised a $350 million Series E to fuel its data-as-a-service approach.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-22T21:56:43+00:00",
-      "sent_at": "2026-09-22T23:28:19.301427+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/ai/2026/09/new-anthropic-openai-models-make-same-promise-a-little-more-for-a-lot-less-money/",
-      "title": "New Anthropic, OpenAI models make same promise: A little more for a lot less money",
-      "summary": "The frontier AI model race has entered its comparison shopping phase.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-09-22T21:25:18+00:00",
-      "sent_at": "2026-09-22T23:28:19.301427+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/999094/rabbit-ai-agent-os3",
-      "title": "Rabbit’s new AI agent doesn’t need an R1 to run",
-      "summary": "Rabbit, the company behind the underwhelming R1 device, is rolling out a standalone AI agent that you don't need its hardware to use, as reported earlier by Wired. The startup says its new OS3 \"agentic operating system\" runs in the cloud but operates locally across Windows, Mac, and Linux devices. According to Rabbit, you can [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-22T20:52:40+00:00",
-      "sent_at": "2026-09-22T23:28:19.301427+00:00"
-    },
-    {
-      "link": "https://www.assbench.com/",
-      "title": "LLM Ass Bench",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-22T20:34:19+00:00",
-      "sent_at": "2026-09-22T23:28:19.301427+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/security/2026/09/microsoft-disrupts-ai-assisted-platform-that-compromised-12000/",
-      "title": "Microsoft disrupts AI-assisted platform that compromised 12,000 accounts",
-      "summary": "EvilTokens provided an end-to-end platform that makes mass compromises faster and easier.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-09-22T19:45:47+00:00",
-      "sent_at": "2026-09-22T23:28:19.301427+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/22/meta-admits-muses-likeness-to-openclaw-isnt-a-coincidence/",
-      "title": "Meta admits Muse’s likeness to OpenClaw isn’t a coincidence",
-      "summary": "Meta says Muse was built from scratch, but acknowledges the AI assistant was \"heavily inspired\" by OpenClaw — down to some of its workspace filenames and content.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-22T19:09:11+00:00",
-      "sent_at": "2026-09-22T23:28:19.301427+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/gadgets/2026/09/adobe-premiere-finally-brings-powerful-video-editing-to-android-and-its-free/",
-      "title": "Adobe Premiere finally brings powerful video editing to Android, and it's free",
-      "summary": "You don't even need a Creative Cloud login to edit clips, but AI features cost extra.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-09-22T19:08:58+00:00",
-      "sent_at": "2026-09-22T23:28:19.301427+00:00"
     }
   ]
 }
