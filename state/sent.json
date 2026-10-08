@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1008100/anthropic-new-usage-policy-abuse-claude",
+      "title": "Anthropic bans ‘abusive or cruel behavior’ towards Claude",
+      "summary": "Anthropic is making changes to its usage policy for the first time in over a year to reflect new and high-risk cases of misuse - including election interference, weapons development, surveillance, and health and financial uses. But one of the most significant changes prohibits \"sustained and needless abusive or cruel behavior\" toward Claude. Last August, [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-08T17:00:00+00:00",
+      "sent_at": "2026-10-08T17:15:02.163887+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/08/a-startup-founder-who-served-time-in-prison-is-looking-to-court-an-untapped-market-ex-cons/",
+      "title": "A startup founder who served time in prison is looking to court an untapped market: ex-cons",
+      "summary": "Richard Bronson, a former Stratton Oakmont partner who served time in federal prison for securities violations, has launched Commissary Club, a startup that uses AI to help people leaving prison find jobs, housing, community and even dates.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-08T16:45:00+00:00",
+      "sent_at": "2026-10-08T17:15:02.163887+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/semiconductors/department-of-war-dishes-out-usd1-5-billion-loan-commitment-to-boost-semiconductor-supply-chain-wolfspeed-to-focus-on-national-security-applications-as-part-of-30-year-agreement",
+      "title": "Department of War dishes out $1.5 billion loan commitment to boost semiconductor supply chain",
+      "summary": "Wolfspeed has secured a conditional $1.5 billion, 30-year loan commitment from the U.S. Department of War to expand GaN epitaxy and radiation-hardened SiC and GaN technologies for U.S. national security applications",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-10-08T16:24:54+00:00",
+      "sent_at": "2026-10-08T17:15:02.163887+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/08/naturas-smart-ring-puts-ai-agents-on-your-finger/",
+      "title": "Natura’s $99 smart ring puts AI agents on your finger",
+      "summary": "Natura’s $99 Interface smart ring lets you summon AI agents with the press of a finger to complete tasks, capture thoughts, and control devices — while doubling as a health tracker.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-08T16:00:00+00:00",
+      "sent_at": "2026-10-08T17:15:02.163887+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/08/goodfire-says-its-new-inside-out-monitors-catch-rogue-ai-agents-at-a-fraction-of-the-cost/",
+      "title": "Goodfire says its new ‘inside-out’ monitors catch rogue AI agents at a fraction of the cost",
+      "summary": "Goodfire just launched what it says is a cheaper way to keep AI agents in check: Instead of paying a second AI to read everything an agent does, its monitors peek inside the model while it works and only call in backup when something looks fishy.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-08T16:00:00+00:00",
+      "sent_at": "2026-10-08T17:15:02.163887+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/data-centers/finland-orders-google-to-stop-work-on-two-ai-data-centers-over-alleged-deforestation-company-admits-it-has-fallen-short-of-our-own-high-standards-in-this-instance",
+      "title": "Finland orders Google to stop work on two AI data centers over alleged deforestation",
+      "summary": "Finnish authorities say they cannot conduct a proper environmental assessment after the site has already been changed.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-10-08T15:52:45+00:00",
+      "sent_at": "2026-10-08T17:15:02.163887+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/08/us-bars-microsoft-adobe-and-major-it-firms-from-green-card-program-for-skilled-foreign-workers/",
+      "title": "US bars Microsoft, Adobe, and major IT firms from green card program for skilled foreign workers",
+      "summary": "The other firms being suspended from the program include Capgemini, Cognizant, HCL, Infosys, Tata, and Wipro.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-08T15:42:26+00:00",
+      "sent_at": "2026-10-08T17:15:02.163887+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1007985/google-ai-notetaking-app-transcribe-offline",
+      "title": "Google’s AI note-taking app transcribes your meetings completely offline",
+      "summary": "Google has released an experimental note-taking app that can transcribe meetings and audio files entirely offline, as reported earlier by TechCrunch. The app, called Google AI Edge Foresight, is free to use and runs on macOS using the company's on-device EmbeddingGemma 2 model. Similar to AI note-taking apps like Granola and Wispr Flow, Foresight summarizes [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-08T15:27:30+00:00",
+      "sent_at": "2026-10-08T17:15:02.163887+00:00"
+    },
+    {
       "link": "https://www.wired.com/story/best-cheap-phones/",
       "title": "7 Best Cheap Phones (2026), Tested and Reviewed",
       "summary": "There’s little reason to pay top dollar for a smartphone. These iPhones and Android devices—ranging from $100 to $800—stood up to WIRED’s testing.",
@@ -4229,78 +4301,6 @@
       "category": "AI",
       "published": "2026-09-24T17:00:00+00:00",
       "sent_at": "2026-09-24T18:09:33.898965+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/leading-semiconductor-analyst-accuses-amd-of-treason-over-restricted-chips-availability-in-china-amd-blames-diversion-of-export-controlled-rfsoc-usd36-000-radar-silicon-allegedly-quoted-at-usd1-000-for-crowdfunding-project",
-      "title": "Leading semiconductor analyst says AMD should be investigated for 'treason' over availability of restricted chips in China, AMD blames diversion of export-controlled RFSoC",
-      "summary": "Top semiconductor analysis firm accuses AMD of treason, AMD says it could have been 'diversion' of an export-controlled adaptable radio platform.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-24T13:00:44+00:00",
-      "sent_at": "2026-09-24T13:10:25.492241+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/09/24/waymo-says-it-has-stopped-841-injuries-in-271-million-autonomous-miles/",
-      "title": "Waymo says it has stopped 841 injuries in 271 million autonomous miles",
-      "summary": "Waymo has released new crash data which claims not only an 82% reduction in crashes, but for the first time says the number of injuries that have been avoided by its robotaxi operation. more…",
-      "source": "Electrek",
-      "category": "Autonomes Fahren",
-      "published": "2026-09-24T13:00:00+00:00",
-      "sent_at": "2026-09-24T13:10:25.492241+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/air-cooling/deepcool-ak620-and-ak400-g2-review",
-      "title": "GMKtec Evo-X3 review: Strix Halo in a brand new suit",
-      "summary": "GMKtec has radically remodeled its AMD Strix Halo flagship AI mini PC. The statuesque redesign looks more premium and stays cool and quiet, but the Evo-X3 is around twice the price of the Evo-X2, with the same chip, which we reviewed back in February.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-24T13:00:00+00:00",
-      "sent_at": "2026-09-24T13:10:25.492241+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/24/australia-to-investigate-if-openai-hack-of-government-health-website-broke-the-law/",
-      "title": "Australia to investigate if OpenAI hack of government health website broke the law",
-      "summary": "The incident is the first known breach to affect a government agency, and Australia's prime minister has vowed to hold OpenAI accountable.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-24T12:54:19+00:00",
-      "sent_at": "2026-09-24T13:10:25.492241+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/save-usd149-on-this-3-item-gaming-combo-from-newegg-usd1-050-buys-a-ryzen-7-9800x3d-32gb-of-corsair-ddr5-ram-asus-tuf-gaming-x870e-plus-motherboard-and-a-free-240mm-aio-and-amd-game-bundle",
-      "title": "Save $149 on this 3-item gaming combo from Newegg",
-      "summary": "Fight back against the RAMpocolypse with this 3-item Newegg combo that features the Ryzen 7 9800X3D, 32GB Corsair Vengeance RAM, and Asus TUF X870E motherboard for only $1,050, a $149 savings",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-24T12:45:00+00:00",
-      "sent_at": "2026-09-24T13:10:25.492241+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/ram/micron-discontinues-2gb-gddr7-chips-for-gaming-gpus-as-it-pivots-toward-higher-density-memory-for-ai-chipmaker-reportedly-pivots-to-high-margin-3gb-silicon-for-ai-gpus",
-      "title": "Micron discontinues 2GB GDDR7 chips for gaming GPUs as it pivots toward higher-density memory for AI",
-      "summary": "Micron is reportedly ending production of its 2GB GDDR7 chips, shifting attention toward higher-density 3GB parts used in more lucrative professional and AI-focused GPUs.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-24T12:30:00+00:00",
-      "sent_at": "2026-09-24T13:10:25.492241+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/semiconductors/asml-says-its-sells-absolutely-nothing-in-europe-calls-on-eu-to-help-create-demand",
-      "title": "ASML says it sold 'absolutely nothing' in Europe in 2026",
-      "summary": "ASML calls EU authorities to help create demand for European chips as Europe's share in its revenue drops to 0% in 2026.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-24T12:10:00+00:00",
-      "sent_at": "2026-09-24T13:10:25.492241+00:00"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/09/24/1145064/the-download-bid-scrap-virtual-wall-ai-climate-week/",
-      "title": "The Download: a bid to scrap the virtual wall and AI hits Climate Week",
-      "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. A congressional representative just proposed killing America’s border tower program Delia Ramirez, a Democratic US representative from Illinois, has announced plans to introduce legislation to terminate the surveillance tower program along&#8230;",
-      "source": "MIT Technology Review",
-      "category": "AI",
-      "published": "2026-09-24T12:10:00+00:00",
-      "sent_at": "2026-09-24T13:10:25.492241+00:00"
     }
   ]
 }
