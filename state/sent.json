@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://arstechnica.com/gadgets/2026/10/microsoft-event-debuts-new-ai-friendly-hardware-and-windows-changes/",
+      "title": "Microsoft event debuts new AI-friendly hardware and Windows changes",
+      "summary": "Get ready for more AI in your Windows and more AI on the desktop.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-10-08T00:00:24+00:00",
+      "sent_at": "2026-10-08T02:29:14.298474+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/07/robot-data-startup-mecka-ai-nabs-60m-from-sequoia/",
+      "title": "Robot data startup Mecka AI nabs $60M from Sequoia",
+      "summary": "Mecka AI collects and analyzes human motion data to train humanoid robots and other kinds of robots. The startup pays people to record everyday tasks.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-07T23:36:57+00:00",
+      "sent_at": "2026-10-08T02:29:14.298474+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/07/while-vcs-crowd-into-san-francisco-endeavor-catalyst-raises-320m-for-founders-elsewhere/",
+      "title": "While VCs crowd into San Francisco, Endeavor Catalyst raises $320M for founders ‘elsewhere’",
+      "summary": "Endeavor Catalyst just raised $320 million to keep backing founders outside Silicon Valley. Half the profits go back to the nonprofit that finds them.",
+      "source": "TechCrunch",
+      "category": "Hardware",
+      "published": "2026-10-07T22:59:16+00:00",
+      "sent_at": "2026-10-08T02:29:14.298474+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/laptops/pre-orders-are-live-on-nvidia-rtx-spark-devices-secure-the-surface-laptop-ultra-or-other-rtx-spark-laptop-starting-at-usd2-599-pricing-and-availability-revealed-on-several-models",
+      "title": "Pre-orders are live on Nvidia RTX Spark devices, secure the Surface Laptop Ultra or other RTX Spark laptops here — starting at $2,599",
+      "summary": "Pre-orders are live on Nvidia RTX Spark laptops, including the Microsoft Surface Laptop Ultra and devices from HP, Lenovo, Asus, and Dell.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-10-07T22:52:39+00:00",
+      "sent_at": "2026-10-08T02:29:14.298474+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/ai/2026/10/software-is-over-bold-ai-developer-takes-aim-at-adobe-with-open-source-clones/",
+      "title": "“Software is over”: Bold AI developer takes aim at Adobe with open source clones",
+      "summary": "Opus-built Creative Cloud alternatives are ambitious, free, and nowhere near finished.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-10-07T21:56:42+00:00",
+      "sent_at": "2026-10-08T02:29:14.298474+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/ai-is-driving-cars-now-oh-boy/",
+      "title": "These Researchers Made AI Drive a Toyota Corolla to Get In-N-Out",
+      "summary": "Three engineers put GPT, Claude, and Grok in charge of a real car. Only one of them was successful.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-10-07T18:45:00+00:00",
+      "sent_at": "2026-10-08T02:29:14.298474+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2280417/surface-laptop-ultra-hands-on-a-beautiful-beast-powered-by-nvidias-rtx-spark/",
+      "title": "Surface Laptop Ultra hands-on: A beautiful beast powered by NVIDIA's RTX Spark",
+      "summary": "Yes, it's just a premium laptop. But it sure looks pretty.",
+      "source": "Engadget",
+      "category": "Hardware",
+      "published": "2026-10-07T18:43:19+00:00",
+      "sent_at": "2026-10-08T02:29:14.298474+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1007147/microsoft-surface-laptop-ultra-windows-event-everything-announced",
+      "title": "Everything announced at Microsoft&#8217;s Surface Laptop Ultra event",
+      "summary": "Microsoft just wrapped up a big Windows and Surface-focused keynote in San Francisco. The biggest announcement was arguably the release details about the Surface Laptop Ultra, its new laptop that&#8217;s powered by Nvidia&#8217;s RTX Spark Arm-based chip. The machine will start at $2,599 for a configuration with an 8-core CPU, 24GB of RAM, and 512GB [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-10-07T18:42:22+00:00",
+      "sent_at": "2026-10-08T02:29:14.298474+00:00"
+    },
+    {
       "link": "https://www.wired.com/story/prime-day-vacuum-deals-10-07-2026/",
       "title": "Best Prime Day Vacuum Deals: Save Big On a Dyson (2026)",
       "summary": "I’ve compared cordless sticks, watched robot vacuums chase stains, and cleaned plenty of car crumbs. These discounts get my recommendation.",
@@ -4229,78 +4301,6 @@
       "category": "AI",
       "published": "2026-09-23T22:17:39+00:00",
       "sent_at": "2026-09-24T07:09:16.808455+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/23/meta-made-a-tamagotchi-like-wearable-for-its-muse-ai-agent/",
-      "title": "Meta made a Tamagotchi-like wearable for its Muse AI agent",
-      "summary": "The tiny hardware device creates another mobile home for its AI agent Muse.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-24T00:46:17+00:00",
-      "sent_at": "2026-09-24T01:02:48.297060+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/999750/muse-charm-meta-ai-hardware",
-      "title": "Meta is making a standalone Muse AI gadget",
-      "summary": "Meta is building a dedicated hardware device for its new Muse AI agent. The product, called Muse Charm, was briefly shown off by Meta CEO Mark Zuckerberg at the end of tonight's Meta Connect presentation. It looks almost like a chunky smart watch without the strap - just a big screen, plus a little lanyard [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-24T00:15:20+00:00",
-      "sent_at": "2026-09-24T01:02:48.297060+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2267227/meta-will-stop-training-its-ai-on-visual-data-from-its-smart-glasses-if-you-opt-out/",
-      "title": "Meta will stop training its AI on 'visual data' from its smart glasses — if you opt out",
-      "summary": "Somewhere, a contractor just breathed a sigh of relief.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-24T00:00:44+00:00",
-      "sent_at": "2026-09-24T01:02:48.297060+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/999593/meta-connect-2026-everything-announced",
-      "title": "Meta Connect 2026: The 7 biggest announcements",
-      "summary": "Meta announced a slate of new wearables during its annual Meta Connect showcase on Wednesday. The star of the event was the new Meta VR Glasses, which pack virtual reality tech into a lightweight smart glasses-style frame with a tethered puck. Meta also announced new pairs of screen-free smart glasses, along with some new AI [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-24T00:00:33+00:00",
-      "sent_at": "2026-09-24T01:02:48.297060+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/23/meta-introduces-camera-free-ai-glasses/",
-      "title": "Meta introduces camera-free AI glasses",
-      "summary": "Meta says the camera-free glasses will be lighter and have up to 12 hours battery life.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-23T23:39:44+00:00",
-      "sent_at": "2026-09-24T01:02:48.297060+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/999281/ray-ban-meta-audio-glasses-meta-connect-2026",
-      "title": "Meta ditches the camera on its newest smart glasses",
-      "summary": "Walking around Meta Connect 2026, everyone's sporting smart glasses in all sorts of shapes, colors, and sizes. It's a marked difference here, a tech bubble where \"pervert glasses\" are not a concern. Outside Connect, the public backlash against wearable surveillance tech - a catchall term that encompasses not just smart glasses, but also smartwatches and [&#8230;]",
-      "source": "The Verge",
-      "category": "Innovationen",
-      "published": "2026-09-23T23:37:17+00:00",
-      "sent_at": "2026-09-24T01:02:48.297060+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/23/vogue-sent-robots-down-the-runway-at-vogue-world-and-people-were-not-impressed/",
-      "title": "Vogue sent robots down the runway at Vogue World, and people were not impressed",
-      "summary": "Nothing says Italian craftsmanship like a Chinese robot doing a lasso to \"L'Amour Toujours.\"",
-      "source": "TechCrunch",
-      "category": "Innovationen",
-      "published": "2026-09-23T23:33:22+00:00",
-      "sent_at": "2026-09-24T01:02:48.297060+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2267210/meta-muse-ai-agent-smart-glasses/",
-      "title": "Meta's Muse AI agent is coming to its AI glasses",
-      "summary": "Have your virtual assistant book a flight while you're jogging.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-23T23:28:12+00:00",
-      "sent_at": "2026-09-24T01:02:48.297060+00:00"
     }
   ]
 }
