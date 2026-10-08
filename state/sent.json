@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner",
+      "title": "Anthropic launches free AI security scans for open-source projects",
+      "summary": "Anthropic's offering to help open-source projects track down security vulnerabilities with a new service called OSS Scanner. It says open-source projects that opt-in will get \"thorough, periodic security scans by our strongest models at no cost.\" That could mean open-source projects get alerted about possible security issues sooner, but the trade-off is that OSS Scanner's [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-08T21:53:51+00:00",
+      "sent_at": "2026-10-08T22:51:38.927483+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/science/1008467/spacex-announces-plan-to-become-a-major-mobile-carrier",
+      "title": "SpaceX announces plan to become a ‘major mobile carrier’",
+      "summary": "SpaceX has acquired a portfolio of low-band spectrum licenses - a move the company says \"will pave the way\" for its Starlink Mobile service to become a \"major\" US carrier. When the Federal Communications Commission signs off on the deal, SpaceX says it will deploy its new architecture that combines its satellite-to-mobile constellation with a [&#8230;]",
+      "source": "The Verge",
+      "category": "Innovationen",
+      "published": "2026-10-08T21:23:31+00:00",
+      "sent_at": "2026-10-08T22:51:38.927483+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2281765/anthropic-bans-sustained-and-needless-abusive-or-cruel-behavior-toward-its-ai-models/",
+      "title": "Anthropic bans 'sustained and needless abusive or cruel behavior' toward its AI models",
+      "summary": "The company is also tightening its election policy ahead of the midterms.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-08T21:17:24+00:00",
+      "sent_at": "2026-10-08T22:51:38.927483+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/games/1008353/amd-will-bring-fsr-4-to-handhelds-by-the-end-of-2026",
+      "title": "AMD will bring FSR 4 to handhelds by the end of 2026",
+      "summary": "It's already possible to get AMD's framerate-enhancing FSR 4 boost on handhelds as old as the Steam Deck - but in June, AMD reserved the right to disappoint handheld gamers by not officially bringing FSR 4 to older handhelds. Now, AMD consumer chip boss Jack Huynh says he will bring the tech to some handhelds [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-10-08T21:01:18+00:00",
+      "sent_at": "2026-10-08T22:51:38.927483+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2281719/child-safety-group-calls-chatgpt-for-teens-an-unacceptable-risk/",
+      "title": "Child safety group calls ChatGPT for Teens an unacceptable risk",
+      "summary": "After extensive testing, Common Sense Media found the chatbot failed in five key areas.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-08T20:36:46+00:00",
+      "sent_at": "2026-10-08T22:51:38.927483+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1008401/california-shut-down-rek-fighting-robot-company-human",
+      "title": "California is trying to shut down robot vs. human cage matches",
+      "summary": "The California State Athletic Commission sent a cease-and-desist letter to a startup that hosted a match between a human and a robot last month, as reported by The New York Times. The fight, which took place on September 18th, pitted a human, Frankie LaPenna, against a humanoid robot owned by a tech startup, Rek, that [&#8230;]",
+      "source": "The Verge",
+      "category": "Innovationen",
+      "published": "2026-10-08T20:06:56+00:00",
+      "sent_at": "2026-10-08T22:51:38.927483+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/",
+      "title": "Fired OpenAI safety researchers dispute misconduct claims, warn of chilling effect",
+      "summary": "Three fired OpenAI safety researchers dispute allegations of mishandling sensitive information, warning in an open letter that their dismissals are creating a chilling effect on the company’s AI safety culture.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-08T20:04:26+00:00",
+      "sent_at": "2026-10-08T22:51:38.927483+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/she-designed-metas-new-ai-logo-then-came-the-hate/",
+      "title": "She Designed Meta’s New AI Logo. Then Came the Hate",
+      "summary": "Jessica Hische knew working for Meta might upset some people. But she didn’t anticipate just how angry they would get.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-10-08T19:30:00+00:00",
+      "sent_at": "2026-10-08T22:51:38.927483+00:00"
+    },
+    {
       "link": "https://www.theverge.com/ai-artificial-intelligence/1008100/anthropic-new-usage-policy-abuse-claude",
       "title": "Anthropic bans ‘abusive or cruel behavior’ towards Claude",
       "summary": "Anthropic is making changes to its usage policy for the first time in over a year to reflect new and high-risk cases of misuse - including election interference, weapons development, surveillance, and health and financial uses. But one of the most significant changes prohibits \"sustained and needless abusive or cruel behavior\" toward Claude. Last August, [&#8230;]",
@@ -4157,150 +4229,6 @@
       "category": "AI",
       "published": "2026-09-24T17:52:29+00:00",
       "sent_at": "2026-09-25T00:19:07.003016+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/24/nexterity-wants-to-automate-the-hard-dangerous-part-of-pipefitting/",
-      "title": "Nexterity wants to automate the hard, dangerous part of pipefitting",
-      "summary": "The startup's robot can tighten or loosen four bolts at a time, and it fits in a Pelican case.",
-      "source": "TechCrunch",
-      "category": "Innovationen",
-      "published": "2026-09-24T20:45:00+00:00",
-      "sent_at": "2026-09-24T21:56:51.617983+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/australian-pm-says-openai-took-84-days-to-email-agency-after-agent-hacked-its-national-health-care-portal-incident-is-believed-to-be-the-first-known-case-of-ai-breaching-a-government-site",
-      "title": "OpenAI agent got into Australia's Medicare stats portal with 84-day notification delay",
-      "summary": "Australia says an OpenAI agent got past blocks on a Medicare statistics portal in June. OpenAI's notification arrived in September.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-24T20:34:31+00:00",
-      "sent_at": "2026-09-24T21:56:51.617983+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1000328/google-gemini-ai-live-avatar-face",
-      "title": "Gemini 3.8 Live with Live Avatar gives Google&#8217;s AI a face",
-      "summary": "Google's new Gemini 3.8 Live update lets users have conversations with the model while watching an animated AI persona respond in real time. The \"Live Avatar\" will lip-sync and show different facial expressions during conversations, but it's currently only available to Gemini Enterprise customers. As noted by Google, Live Avatar can transition between the 97 [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-24T19:59:26+00:00",
-      "sent_at": "2026-09-24T21:56:51.617983+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/09/24/tesla-fsd-belgium-test-speeding-30-kmh-eu-vote/",
-      "title": "Tesla ‘FSD’ sped in 55% of Brussels 30 km/h zones ahead of EU vote",
-      "summary": "Tesla’s “Full Self-Driving (Supervised)” broke the speed limit in 55% of the 30 km/h segments a Belgian road safety group tested in Brussels, averaging 44 km/h where the legal limit is 30 km/h. The results land less than two weeks before EU member states vote on approving FSD across the whole bloc. And speeding is exactly the issue Sweden and France have already flagged. more…",
-      "source": "Electrek",
-      "category": "Autonomes Fahren",
-      "published": "2026-09-24T19:50:49+00:00",
-      "sent_at": "2026-09-24T21:56:51.617983+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/i-finally-found-an-ai-agent-worth-the-risk/",
-      "title": "I Think I Found an AI Agent Worth the Risk",
-      "summary": "Instinct saved me $550, booked my restaurant reservations, and warned me about a phishing scam. It also wasted $64 and might be a security nightmare.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-09-24T19:36:35+00:00",
-      "sent_at": "2026-09-24T21:56:51.617983+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2268183/new-york-times-cooking-is-coming-to-metas-ai-and-display-glasses/",
-      "title": "New York Times Cooking is coming to Meta's AI and display glasses",
-      "summary": "The app is getting a \"hands-free\" mode that can narrate recipe steps.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-24T19:24:34+00:00",
-      "sent_at": "2026-09-24T21:56:51.617983+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/24/prismml-brings-its-tiny-llms-to-qualcomm-powered-smart-glasses/",
-      "title": "PrismML brings its tiny LLMs to Qualcomm-powered smart glasses",
-      "summary": "Prism's larger goal is open-weight AI that runs on devices and makes better use of the computing power they already have.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-24T19:00:42+00:00",
-      "sent_at": "2026-09-24T21:56:51.617983+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/24/meet-feather-the-startup-building-the-android-of-robotics-for-developers/",
-      "title": "Meet Feather, the startup building the ‘Android of robotics’ for developers",
-      "summary": "Feather is betting on a customizable, $30,000 platform built for software developers.",
-      "source": "TechCrunch",
-      "category": "Innovationen",
-      "published": "2026-09-24T18:52:38+00:00",
-      "sent_at": "2026-09-24T21:56:51.617983+00:00"
-    },
-    {
-      "link": "https://spectrum.ieee.org/epics-in-ieee-portable-educational",
-      "title": "Mexican EPICS in IEEE Team Builds Portable Educational Platform",
-      "summary": "In Guadalajara, Mexico, many high schools have motivated teachers and talented students with an interest in science, technology, engineering, and mathematics, but they lack access to advanced tools such as robotics laboratories. The resources shortfall limits the students’ opportunities for hands-on learning on cutting-edge applications. A team from ITESO, Universidad Jesuita de Guadalajara , is working to change that. Through the EPICS in IEEE initiative, a multidisciplinary group of 15 engineering students, faculty advisors, and IEEE Guadalajara Section volunteers developed RoboMeshA. The portable, self-contained educational platform brings robotics and AI experiences into classrooms. EPICS is administered by IEEE Educational Activities and funded by the IEEE Robotics and Automation Society . A mobile laboratory Rather than requiring a school to build a dedicated computer lab or install complex software, RoboMeshA operates as an all-in-one mobile learning network. “RoboMeshA brings robotics and AI to students who don’t have access to specialized facilities or preinstalled software,” says team member Fernando Vidal Luna, an IEEE student member and a mechatronics engineering major at ITESO. Students connect directly to the platform from a user-friendly web browser. They can interact with the robot manually or use its control modes to watch it move and detect and avoid obstacles. “The project combines mechanical design, embedded systems, control engineering, computer vision, and AI into a single robotic system that functions as a mobile learning laboratory,” says faculty advisor Jorge A. Lizarraga . The team says young students are interested in technology, programming, and robotics but don’t have an opportunity to work with systems that combine mechanics, electronics, software, and control. “RoboMeshA allows students to see how all these disciplines work together in a tangible and understandable way,” says team member José S. González, who also is studying mechatronics engineering. The team has built two units and is developing a modular coupling framework to expand the system’s capabilities for research and classroom demonstrations. The structured system design approach connects independent software components while minimizing internal dependencies, enabling four RobotMeshA robots to operate together. Overcoming design challenges The team faced significant hurdles while designing the project. “One key challenge involved the robot’s structural design,” Luna says. “It wasn’t only about making a chassis where all the components fit and the design had sufficient stability, rigidity, and weight distribution. It was also about ensuring that the electronics were protected while still being accessible for maintenance, testing, and modifications.” “It was also challenging to design a platform that could be used by students with different levels of experience,” González adds. “When students realize the technology they develop can inspire others and improve lives, engineering becomes far more meaningful.” —Luis Fernando Luque-Vega The team partnered with the CETI Colomos and Prepa ITESO high schools to validate the platform in classroom settings. “We wanted the first interactions with the robot to be simple and intuitive,” González says, “such that students could simply power the robot, connect to its network, and begin interacting with it, rather than having to deal with software installation, extensive configuration, or troubleshooting.” Engineering with social impact Many of the students who participated were from ITESO’s applied professional projects program. The experience offered them practical training in project management, system integration, and user-centered design. The team also presented a research paper and a project poster in May at the Engineering Congress of the Jesuit University System . “Seeing a design move from a digital model to a physical system was invaluable,” González says. “Working with students from different backgrounds taught us to listen to end users and design for their actual needs.” Project lead Luis Fernando Luque-Vega , an IEEE member, says he’d like the venture to serve as a blueprint for engineering education. “I hope RoboMeshA is adopted by schools, universities, and IEEE student branches across Mexico and internationally as a model for integrating technical innovation with community engagement,” Luque-Vega says. By pairing engineering talent with community service, initiatives such as EPICS in IEEE demonstrate how targeted support can turn academic concepts into real-world solutions. “When students realize the technology they develop can inspire others and improve lives, engineering becomes far more meaningful,” Luque-Vega says. For more information on service-learning opportunities, visit the EPICS website .",
-      "source": "IEEE Spectrum",
-      "category": "AI",
-      "published": "2026-09-24T18:00:04+00:00",
-      "sent_at": "2026-09-24T18:09:33.898965+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2267975/google-is-sending-a-teensy-tiny-ai-data-center-to-space/",
-      "title": "Google is sending a teensy-tiny AI data center to space",
-      "summary": "It's an experiment to see how the chips hold up in the harsh vacuum of the cosmos.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-24T17:45:37+00:00",
-      "sent_at": "2026-09-24T18:09:33.898965+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/24/metas-muse-charm-looks-like-a-tamagotchi-but-its-tapping-into-a-much-newer-trend/",
-      "title": "Meta’s Muse Charm looks like a Tamagotchi, but it’s tapping into a much newer trend",
-      "summary": "Meta’s new AI gadget may look like a Tamagotchi, but its dangling form factor taps into a much broader Gen Z trend around bag charms, retro tech, and turning gadgets into fashion accessories.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-24T17:39:24+00:00",
-      "sent_at": "2026-09-24T18:09:33.898965+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/report/1000180/muse-openclaw-instinct-lookalike",
-      "title": "Muse sure looks a lot like OpenClaw",
-      "summary": "We seem to be entering into an AI agent renaissance. Meta's new consumer-facing AI agent, Muse, topped the App Store charts soon after its release and has 600,000 daily active users in the US, by an Apptopia estimate. And AI agent platform Instinct, whose eponymous creator is fundraising at a $2.5 billion valuation, has been [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-24T17:10:38+00:00",
-      "sent_at": "2026-09-24T18:09:33.898965+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/24/google-photos-clueless-inspired-virtual-closet-is-now-available-on-android-and-ios/",
-      "title": "Google Photos ‘Clueless’-inspired virtual closet is now available on Android and iOS",
-      "summary": "The AI-powered feature builds a virtual wardrobe from your photos, and is now broadly available after first rolling out to Android users in June.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-24T17:00:00+00:00",
-      "sent_at": "2026-09-24T18:09:33.898965+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/999901/google-chrome-tab-memory-gemini-updates",
-      "title": "Now Google Chrome shares tabs to new devices that save where you were",
-      "summary": "Google is rolling out some new Chrome browser features that are designed to make it easier to research and study complicated topics. The cross-device tab switching feature is getting a memory upgrade, alongside new capabilities for Gemini in Chrome that can analyze more types of media and generate interactive study quizzes. Chrome has an existing [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-24T17:00:00+00:00",
-      "sent_at": "2026-09-24T18:09:33.898965+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/column/999999/optimizer-meta-muse-ai-cute",
-      "title": "It’s sinister that Meta’s Muse AI mascot is so cute",
-      "summary": "This is Optimizer, a weekly newsletter sent from Verge senior reviewer Victoria Song that dissects and discusses the latest gizmos and potions that swear they're going to change your life. Opt in for Optimizer here. Last night, I asked Blorbo - what I named my Muse AI agent - to help me set some health [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-24T17:00:00+00:00",
-      "sent_at": "2026-09-24T18:09:33.898965+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2267415/google-photos-update-redact-tool/",
-      "title": "Google Photos' new Redact tool will make it easy to hide sensitive information",
-      "summary": "Google Photos' new AI-powered features include the Redact tool, which can quickly blur parts of an image.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-24T17:00:00+00:00",
-      "sent_at": "2026-09-24T18:09:33.898965+00:00"
     }
   ]
 }
