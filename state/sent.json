@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.engadget.com/2282431/intel-is-reportedly-launching-new-cpus-on-old-sockets-that-support-ddr4-memory/",
+      "title": "Intel is reportedly launching new CPUs on old sockets that support DDR4 memory",
+      "summary": "If you guessed the RAMpocalypse is involved...",
+      "source": "Engadget",
+      "category": "Hardware",
+      "published": "2026-10-09T17:01:36+00:00",
+      "sent_at": "2026-10-09T17:17:34.775527+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/",
+      "title": "Amazon and others are done keeping data center deals secret. Is it enough to build trust?",
+      "summary": "Amazon says it will&#160;stop using NDAs&#160;when negotiating data center deals with local governments, following&#160;a&#160;similar move from Microsoft&#160;earlier this year. Secrecy has fueled community backlash against AI infrastructure, with opposition leading to&#160;hundreds of&#160;proposed and enacted moratoriums from New York to San Francisco. Meanwhile, a wave of startups is betting that consumers will hand AI agents access [&#8230;]",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-09T16:56:42+00:00",
+      "sent_at": "2026-10-09T17:17:34.775527+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/09/danu-robotics-fight-to-build-a-better-recycling-robot/",
+      "title": "Danu Robotics’ fight to build a better recycling robot",
+      "summary": "For six years, Danu founder Amy Ma has been working on a better way to sort recyclable waste.",
+      "source": "TechCrunch",
+      "category": "Innovationen",
+      "published": "2026-10-09T16:45:00+00:00",
+      "sent_at": "2026-10-09T17:17:34.775527+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/09/we-cant-help-treating-ai-like-its-human-but-should-we/",
+      "title": "We can’t help treating AI like it’s human. But should we?",
+      "summary": "\"When we are drawn into even the most primitive exchanges with a relational artifact, we believe it cares for us,\" Dr. Sherry Turkle writes. \"And we are wired to care for it in return.\"",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-09T16:40:14+00:00",
+      "sent_at": "2026-10-09T17:17:34.775527+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/09/tesla-renames-full-self-driving-to-tesla-assisted-driving-in-europe/",
+      "title": "Tesla renames ‘Full Self-Driving’ to ‘Tesla Assisted Driving’ in Europe",
+      "summary": "The name change is enough for Germany's transport minister to start advocating for Europe-wide adoption of the driver assistance software.",
+      "source": "TechCrunch",
+      "category": "Autonomes Fahren",
+      "published": "2026-10-09T16:07:26+00:00",
+      "sent_at": "2026-10-09T17:17:34.775527+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/09/remember-orkut-its-founder-wants-to-bring-it-back/",
+      "title": "Remember Orkut? Its founder wants to bring it back",
+      "summary": "Orkut's founder is now taking aim at algorithms and AI-generated content.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-09T15:56:15+00:00",
+      "sent_at": "2026-10-09T17:17:34.775527+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/09/a16zs-olivia-moore-on-the-state-of-consumer-ai/",
+      "title": "a16z’s Olivia Moore on the state of consumer AI",
+      "summary": "Moore sees a huge opportunity in consumer AI, particularly if the industry can tap into revenue streams beyond just subscriptions and API charges.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-09T15:43:33+00:00",
+      "sent_at": "2026-10-09T17:17:34.775527+00:00"
+    },
+    {
+      "link": "https://bsky.app/profile/opinionhaver.bsky.social/post/3mxfo2mdjqs2z",
+      "title": "The super intelligence shit is a humiliation ritual for OpenAI",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-09T15:18:59+00:00",
+      "sent_at": "2026-10-09T17:17:34.775527+00:00"
+    },
+    {
       "link": "https://www.theverge.com/ai-artificial-intelligence/1008604/openai-defends-decision-fire-safety-researchers",
       "title": "OpenAI doubles down on decision to fire three AI safety researchers",
       "summary": "OpenAI is standing firm on its decision to fire three safety researchers after an investigation found they committed \"a significant breach of trust.\" In a post on X on Friday, the company said Jasmine Wang, Tomek Korbak and Mikita &#8288;Balesni were dismissed for violating \"clear policies on handling sensitive information.\" It insisted the decision was [&#8230;]",
@@ -4157,150 +4229,6 @@
       "category": "Autonomes Fahren",
       "published": "2026-09-25T17:31:36+00:00",
       "sent_at": "2026-09-25T20:14:09.778759+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/25/meta-is-putting-its-muscle-behind-muse-as-the-ai-app-takes-off/",
-      "title": "Meta is putting its muscle behind Muse as the AI app takes off",
-      "summary": "Muse is topping the app store charts and adding users at a rapid clip, while Meta ramps up the personal AI agents's promotion across its own apps and beyond.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-25T16:16:52+00:00",
-      "sent_at": "2026-09-25T16:29:34.303005+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/25/for-months-openais-agent-swarms-have-been-attacking-online-databases-to-find-obscure-facts/",
-      "title": "For months, OpenAI’s agent swarms have been attacking online databases to find obscure facts",
-      "summary": "The latest unauthorized agent swarms were discovered by researchers.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-25T15:48:14+00:00",
-      "sent_at": "2026-09-25T16:29:34.303005+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/25/anthropics-founders-seek-voting-control-ahead-of-ipo/",
-      "title": "Anthropic’s founders seek voting control ahead of IPO",
-      "summary": "Anthropic is asking its shareholders to approve a structure that would give its seven co-founders a combined 50.1% of the vote on most corporate matters.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-25T15:40:03+00:00",
-      "sent_at": "2026-09-25T16:29:34.303005+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/data-centers/elon-musks-spacexai-to-add-another-660-000-ai-gpus-this-year-nearing-a-total-of-1-44-million-in-operation-firm-is-building-1-2-gigawatt-power-plant-to-bring-systems-fully-online",
-      "title": "Elon Musk's SpaceXAI to add another 660,000 AI GPUs this year, nearing a total of 1.44 million in operation",
-      "summary": "Elon Musk says that the Colossus 2 will receive 220,000 GB300 GPUs by next week, with another two tranches of the same amount expected to arrive later this year. This will put the site at over a million AI GPUs, finally hitting the goal the billionaire set two years ago.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-25T15:40:00+00:00",
-      "sent_at": "2026-09-25T16:29:34.303005+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1000644/irregular-rogue-ai-cyberattacks-hacking-openai-meta-anthropic-google",
-      "title": "One company is at the center of a wave of rogue AI attacks",
-      "summary": "In July, OpenAI revealed that its AI agents had attacked Hugging Face without permission, sparking widespread concerns about AI safety. Since then, a string of similar incidents involving agents from Meta, Anthropic, Google, and other companies has fueled further fears about rogue AI. As disclosures implicating numerous AI models trickled out over the past few [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-25T15:39:48+00:00",
-      "sent_at": "2026-09-25T16:29:34.303005+00:00"
-    },
-    {
-      "link": "https://www.washingtonsun.com/technology/classified-estimates-nsa-paying-billions-to-test-ai-models",
-      "title": "Classified Estimates Show the NSA Is Paying Billions to Test AI Models",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-25T15:27:35+00:00",
-      "sent_at": "2026-09-25T16:29:34.303005+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/photonics/tower-semiconductor-to-invest-usd4-billion-in-japanese-ops-to-set-up-massive-optical-connectivity-hub-dual-track-expansion-aims-to-increase-output-by-40-times-by-2029",
-      "title": "Tower Semiconductor to invest $4 billion in Japanese ops to set up massive optical connectivity hub",
-      "summary": "Tower's new optical connectivity hub in Japan will increase its output by 40 times in 2029 compared to 2025 level.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-25T15:00:22+00:00",
-      "sent_at": "2026-09-25T16:29:34.303005+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/25/techcrunch-disrupt-2026-ricursive-intelligences-anna-goldie-and-azalia-mirhoseini-on-when-ai-starts-designing-its-own-hardware/",
-      "title": "TechCrunch Disrupt 2026: Ricursive Intelligence’s Anna Goldie and Azalia Mirhoseini on when AI starts designing its own hardware",
-      "summary": "At TechCrunch Disrupt 2026, Ricursive Intelligence co-founders Anna Goldie and Azalia Mirhoseini will take the Disrupt Stage to discuss closing the loop between AI and chip development Save up to $200 on your pass before today ends.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-25T15:00:00+00:00",
-      "sent_at": "2026-09-25T16:29:34.303005+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/data-centers/new-jersey-fines-data-center-for-using-unpermitted-power-generators-microsoft-linked-site-also-in-trouble-with-community-for-noise-pollution-other-issues",
-      "title": "New Jersey hits Microsoft-linked AI data center with record fine for 62 unpermitted power generators, issues 45-day shutdown deadline",
-      "summary": "The DataOne data center is facing a record fine of $1.07 million for operating portable turbine generators without permission. Residents say that the penalty is a drop in the bucket for these big tech companies.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-25T11:00:00+00:00",
-      "sent_at": "2026-09-25T11:06:16.417910+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2268587/google-video-avatars-gemini-3-8-live-agent/",
-      "title": "Google adds creepy avatars to Gemini 3.8 live's agents",
-      "summary": "Google has introduced Gemini 3.8 live avatars designed for customer service and other tasks.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-25T10:53:55+00:00",
-      "sent_at": "2026-09-25T11:06:16.417910+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/desktops/gaming-pcs/grab-this-4k-ready-rtx-5070-ti-gaming-pc-from-hp-for-under-usd1-900-right-now-powerful-omen-35l-machine-is-a-serious-bargain-with-a-20-core-intel-cpu-32gb-ddr5-ram-and-a-1tb-ssd",
-      "title": "Grab this 4K-ready RTX 5070 Ti gaming PC from HP for under $1,900 right now",
-      "summary": "This epic HP Omen 45L gaming rig is one of the cheapest RTX 5070 Ti PC you can buy right now, fitted with a Intel Core i7-14700F, 32GB of DDR RAM, and a 1TB SSD for just $1,899.99.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-25T10:51:36+00:00",
-      "sent_at": "2026-09-25T11:06:16.417910+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/gpus/nvidia-dlss-5-upscales-frame-rates-and-flame-temps-on-16-pin-power-connector-ai-gaming-tech-pushes-connector-to-uncomfortable-thermal-and-power-limits",
-      "title": "Nvidia DLSS 5 power draw hits 647W as power connector runs hotter than the GPU die, upscales frame rates and flame temps on 16-pin",
-      "summary": "QuasarZone tests show the 16-pin power connector on a GeForce RTX 5090 reaches temperatures above 90 degrees Celsius at peak power consumption near 650W.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-25T10:30:00+00:00",
-      "sent_at": "2026-09-25T11:06:16.417910+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/paulina-borsook-profile/",
-      "title": "Who Killed Paulina Borsook’s Career?",
-      "summary": "A quarter-century ago, Borsook published a wildly prophetic, penetrating book about Silicon Valley called Cyberselfish. Then she disappeared.",
-      "source": "Wired",
-      "category": "Hardware",
-      "published": "2026-09-25T10:00:00+00:00",
-      "sent_at": "2026-09-25T11:06:16.417910+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/data-centers/google-is-blasting-an-experimental-ai-data-center-into-orbit-first-satellite-will-feature-just-four-tensor-processing-units",
-      "title": "Google's orbital AI data center test packs four TPUs and 1,000W of solar power",
-      "summary": "Google will launch an experimental satellite into orbit on October 1, taking four tensor processing units with it.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-25T10:00:00+00:00",
-      "sent_at": "2026-09-25T11:06:16.417910+00:00"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/09/25/1145144/pentagon-ai-lie-detector/",
-      "title": "The Pentagon wants $30 million to build an AI-powered lie detector",
-      "summary": "The US government wants to spend $30.3 million over the next five years on an improved form of lie detector, according to a Department of Defense budget request. The program, called “Polygraph+” or “Polygraph Next”, will focus on scoring algorithms that use artificial intelligence and machine learning and on a technique called “standoff sensing”, which&#8230;",
-      "source": "MIT Technology Review",
-      "category": "AI",
-      "published": "2026-09-25T09:16:25+00:00",
-      "sent_at": "2026-09-25T11:06:16.417910+00:00"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/09/25/1145083/young-organs-may-not-be-a-fountain-of-youth-for-recipients/",
-      "title": "Young organs may not be a fountain of youth for recipients",
-      "summary": "Around this time last year I was attending an aging conference in Manchester, listening to a talk about fly aging, when my phone started pinging. News outlets were reporting that a hot mic had caught Russia’s and China’s leaders discussing the possibility of living forever. “With the developments of biotechnology, human organs can be continuously&#8230;",
-      "source": "MIT Technology Review",
-      "category": "Innovationen",
-      "published": "2026-09-25T09:00:00+00:00",
-      "sent_at": "2026-09-25T11:06:16.417910+00:00"
     }
   ]
 }
