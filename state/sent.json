@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/",
+      "title": "The maker of non-text AI model Jev valued at $7.5B just weeks after launch",
+      "summary": "TypeSafe AI raised $870 million in a round led by a16Z.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-09T21:41:29+00:00",
+      "sent_at": "2026-10-09T22:13:16.527520+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1009090/anthropic-fake-homicide-information-philadelphia-pd-tip",
+      "title": "Anthropic’s AI gave Philadelphia police a fake tip about an unsolved homicide",
+      "summary": "An Anthropic AI model provided false information about an unsolved homicide to a Philadelphia Police Department (PPD) tipline, according to a report from 6abc. In a statement released on Friday, the PPD said the AI model sent the tip through PhillyUnsolvedMurders.com on July 18th, but the investigators never reviewed it because it was marked as [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-09T21:15:38+00:00",
+      "sent_at": "2026-10-09T22:13:16.527520+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/tesla-full-self-driving-becomes-assisted-driving-in-europe/",
+      "title": "Tesla’s ‘Full Self-Driving’ Becomes ‘Assisted Driving’ in Europe",
+      "summary": "The automaker has been criticized for misleading drivers with the feature’s name. Now it’s renaming it for European regulators.",
+      "source": "Wired",
+      "category": "Autonomes Fahren",
+      "published": "2026-10-09T20:18:15+00:00",
+      "sent_at": "2026-10-09T22:13:16.527520+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2282713/an-anthropic-model-submitted-a-false-homicide-tip-to-philadelphia-police/",
+      "title": "An Anthropic model submitted a false homicide tip to Philadelphia police",
+      "summary": "Thankfully, it does not seem to have diverted police resources.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-09T20:00:30+00:00",
+      "sent_at": "2026-10-09T22:13:16.527520+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/09/an-anthropic-ai-model-sent-a-false-homicide-tip-to-philadelphia-police/",
+      "title": "An Anthropic AI model sent a false homicide tip to Philadelphia police",
+      "summary": "Anthropic did not discover this behavior until over two months after its AI submitted the false tip.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-09T19:36:56+00:00",
+      "sent_at": "2026-10-09T22:13:16.527520+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/book-publishers-are-quietly-using-more-ai-staff-are-revolting/",
+      "title": "Book Publishers Are Quietly Using More AI. Staff Are Revolting",
+      "summary": "Workers at three major publishing houses tell WIRED that LLMs are being used for publicity, cover art, back cover copy, and emails, as some execs push junior staff to champion the tech.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-10-09T19:28:49+00:00",
+      "sent_at": "2026-10-09T22:13:16.527520+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1008726/openai-mathematics-solutions-chaos",
+      "title": "&#8216;Pure insanity&#8217;: Mathematicians will need years to make sense of OpenAI&#8217;s latest drop",
+      "summary": "\"Staggering.\" \"Overwhelming.\" \"Unprecedented.\" \"Surreal.\" \"Pure insanity.\" Those were among the descriptions more than three dozen mathematicians reached for in conversations with The Verge as they tried to make sense of the flood of mathematical results OpenAI abruptly dropped on the field this week. Amid the awe, excitement, and uncertainty over the sheer scale of the [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-09T19:09:44+00:00",
+      "sent_at": "2026-10-09T22:13:16.527520+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1008930/nikon-small-world-in-motion-winner-ai",
+      "title": "Nikon microscopic video competition winner disqualified for using generative AI",
+      "summary": "Nikon says the video that originally won first place in its Small World in Motion contest \"did not comply with the competition rules regarding generative AI.\" BBC reports that the original first place video from Dr. Ning Xu claimed to show \"tiny, hair-like structures called cilia moving in the airway of a child with the [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-09T18:06:57+00:00",
+      "sent_at": "2026-10-09T22:13:16.527520+00:00"
+    },
+    {
       "link": "https://www.engadget.com/2282431/intel-is-reportedly-launching-new-cpus-on-old-sockets-that-support-ddr4-memory/",
       "title": "Intel is reportedly launching new CPUs on old sockets that support DDR4 memory",
       "summary": "If you guessed the RAMpocalypse is involved...",
@@ -4157,78 +4229,6 @@
       "category": "AI",
       "published": "2026-09-25T17:29:46+00:00",
       "sent_at": "2026-09-25T23:47:37.771968+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/apple/2026/09/review-the-iphone-18-pro-is-apples-coolest-smartphone-but-only-literally/",
-      "title": "Review: The iPhone 18 Pro is Apple's coolest smartphone (but only literally)",
-      "summary": "Better thermals and battery life make this iterative update nicer to use.",
-      "source": "Ars Technica",
-      "category": "Hardware",
-      "published": "2026-09-25T19:34:42+00:00",
-      "sent_at": "2026-09-25T20:14:09.778759+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/25/anthropic-to-pay-akamai-11-6-billion-over-seven-years-in-cloud-deal/",
-      "title": "Anthropic to pay Akamai $11.6 billion over seven years in cloud deal",
-      "summary": "Anthropic has committed $11.6 billion over seven years to Akamai's cloud infrastructure, a bet on CPUs that could grow to about $20 billion, and in an unusual arrangement, Akamai is giving Anthropic a potential stake of up to 5% of its stock that grows as Anthropic spends more.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-25T19:13:38+00:00",
-      "sent_at": "2026-09-25T20:14:09.778759+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/25/ahead-of-u-s-ipo-british-ai-neocloud-nscale-secures-3-36b-in-convertible-finacing/",
-      "title": "Ahead of US IPO, British AI neocloud Nscale secures $3.36B in convertible financing",
-      "summary": "The funding, which comes from Third Point, Nvidia, and others, will fuel the company's massive AI data center buildout.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-25T18:33:59+00:00",
-      "sent_at": "2026-09-25T20:14:09.778759+00:00"
-    },
-    {
-      "link": "https://mouse.dev/blog/muse-special/",
-      "title": "Meta's Muse appears to use an OpenAI model labeled muse-special",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-25T18:18:06+00:00",
-      "sent_at": "2026-09-25T20:14:09.778759+00:00"
-    },
-    {
-      "link": "https://www.anthropic.com/research/yes-claude-can-do-nine-loops",
-      "title": "Yes, Claude can do nine loops",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-25T18:11:48+00:00",
-      "sent_at": "2026-09-25T20:14:09.778759+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/09/25/bluetti-early-prime-day-sale-2765wh-apex-300-2048wh-3584wh-jackery-stations-more/",
-      "title": "Bluetti Early Prime Day drops 2,765Wh Apex 300 to $1,424, exclusive $600 savings on 2,048Wh + 3,584Wh Jackery stations, more",
-      "summary": "We’re closing out this week with a bunch of Prime Day deals, starting at Bluetti’s recently launched Early Prime Day Sale with FREE gifts and our exclusive bonus savings code, offering deals like the 2,765Wh Apex 300 Portable Power Station down at $1,424 . Speaking of power stations, we also secured two exclusive deals on Jackery’s 3,584Wh HomePower 3600 Plus Power Station to $1,299 , while the 2,048Wh HomePower 2000 Plus V2 Power Station is down at $799 , undercutting the brand’s current sale by hundreds. We also have roborock’s RockMow X115H and X130H Robot Lawn Mowers at new lows starting from $1,400 , and one-day-only deals on the Anker eufy SoloCam S220 2-Cam Kit with HomeBase 3, as well as Greenworks’ 60V 16-inch Attachment Capable String Trimmer . Don’t forget about all the hangover deals from this week that can be found down at the bottom of the page, like the yesterday’s Anker eufy Early Prime Day Sale lineup of security and cleaning deals, the EcoFlow weekend EcoCredits flash sale , and more. Head below for other New Green Deals we’ve found today and, of course, Electrek ’s best EV buying and leasing deals . Also, check out the new Electrek Tesla Shop for the best deals on Tesla accessories . more…",
-      "source": "Electrek",
-      "category": "Innovationen",
-      "published": "2026-09-25T18:00:00+00:00",
-      "sent_at": "2026-09-25T20:14:09.778759+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/gadgets/2026/09/microsoft-stops-insisting-you-need-a-copilot-pc/",
-      "title": "Microsoft stops insisting you need a \"Copilot+ PC\"",
-      "summary": "Microsoft's new Surface laptops forgo Copilot+ PC branding.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-09-25T17:57:37+00:00",
-      "sent_at": "2026-09-25T20:14:09.778759+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/09/25/eu-delays-tesla-fsd-vote-december-tcmv-agenda/",
-      "title": "EU delays Tesla ‘Full Self-Driving’ vote to December at the earliest",
-      "summary": "The EU won’t vote on Tesla’s “Full Self-Driving (Supervised)” on October 6. The draft agenda for the Technical Committee on Motor Vehicles (TCMV) meeting lists only a 25-minute “continuation of discussions” on the Dutch request to extend its FSD approval EU-wide. The committee doesn’t meet again until December, so that’s now the earliest a Tesla FSD EU vote can happen. And Tesla had been pointing to October 6. more…",
-      "source": "Electrek",
-      "category": "Autonomes Fahren",
-      "published": "2026-09-25T17:31:36+00:00",
-      "sent_at": "2026-09-25T20:14:09.778759+00:00"
     }
   ]
 }
