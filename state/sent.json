@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.technologyreview.com/2026/10/08/1146224/roundtables-a-conversation-with-the-creator-of-ai-designed-viruses/",
+      "title": "Roundtables: A Conversation With the Creator of AI-Designed Viruses",
+      "summary": "Friday, October 16, 2026 Can AI design new life forms? In 2025, Stanford University PhD student Samuel King came up with a preliminary answer when he used a generative AI model to propose genetic blueprints for microscopic viruses. It isn’t yet an example of AI-generated life, but that could be next. Join senior AI reporter&#8230;",
+      "source": "MIT Technology Review",
+      "category": "AI",
+      "published": "2026-10-09T00:08:24+00:00",
+      "sent_at": "2026-10-09T02:45:28.197144+00:00"
+    },
+    {
+      "link": "https://karagila.org/2026/openai-pp/",
+      "title": "OpenAI, the Partition Principle, and Mathematics",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-08T23:29:43+00:00",
+      "sent_at": "2026-10-09T02:45:28.197144+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/space/2026/10/spacex-calls-for-better-coordination-in-orbit-after-near-misses-with-starlink/",
+      "title": "SpaceX calls for better coordination in orbit after near-misses with Starlink",
+      "summary": "\"These led to conjunctions of tens of meters to hundreds of meters. Way too close to comfort.\"",
+      "source": "Ars Technica",
+      "category": "Innovationen",
+      "published": "2026-10-08T21:37:32+00:00",
+      "sent_at": "2026-10-09T02:45:28.197144+00:00"
+    },
+    {
+      "link": "https://github.com/thesnarkitecht/rembrandt",
+      "title": "Show HN: Free open source Adobe Lightroom alternative, completely local with AI",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-08T21:00:55+00:00",
+      "sent_at": "2026-10-09T02:45:28.197144+00:00"
+    },
+    {
+      "link": "https://biohub.org/news/virtual-biology-initiative-expansion/",
+      "title": "AI-ready biological data: $1.8B global commitment",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-08T20:46:25+00:00",
+      "sent_at": "2026-10-09T02:45:28.197144+00:00"
+    },
+    {
+      "link": "https://cointelegraph.com/news/justin-drake-urges-crypto-bunker-mode-as-ai-could-break-wallet-security-within-months",
+      "title": "Vitalik Buterin backs crypto ‘bunker mode’ amid rapid AI math advances",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-08T19:17:51+00:00",
+      "sent_at": "2026-10-09T02:45:28.197144+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2281591/google-is-doing-away-with-safety-signal-on-pixel-watch/",
+      "title": "Google is doing away with Safety Signal on Pixel Watch",
+      "summary": "Access to the emergency feature for LTE-connected wearables will end by December.",
+      "source": "Engadget",
+      "category": "Innovationen",
+      "published": "2026-10-08T19:16:12+00:00",
+      "sent_at": "2026-10-09T02:45:28.197144+00:00"
+    },
+    {
+      "link": "https://www.youtube.com/watch?v=3TNpOD6bov8",
+      "title": "LGTM (Looks Good to Me) – Claude Opus 5.5 Music Video",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-08T18:55:18+00:00",
+      "sent_at": "2026-10-09T02:45:28.197144+00:00"
+    },
+    {
       "link": "https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner",
       "title": "Anthropic launches free AI security scans for open-source projects",
       "summary": "Anthropic's offering to help open-source projects track down security vulnerabilities with a new service called OSS Scanner. It says open-source projects that opt-in will get \"thorough, periodic security scans by our strongest models at no cost.\" That could mean open-source projects get alerted about possible security issues sooner, but the trade-off is that OSS Scanner's [&#8230;]",
@@ -4157,78 +4229,6 @@
       "category": "Innovationen",
       "published": "2026-09-25T09:00:00+00:00",
       "sent_at": "2026-09-25T11:06:16.417910+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1000443/qualcomms-new-elite-sound-chip-might-finally-deliver-the-wi-fi-earbud-dream",
-      "title": "Qualcomm’s new ‘Elite’ sound chip might finally deliver the Wi-Fi earbud dream",
-      "summary": "What if your wireless earbuds - or audio glasses - could stream high-quality lossless audio that doesn't cut out when you leave your phone on the bedside charger or buried in the couch? Qualcomm's new Snapdragon Sound Elite Gen 2 is its first to integrate \"micro-power Wi-Fi 6E\" right into the chip, so they can [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-09-24T23:42:39+00:00",
-      "sent_at": "2026-09-25T00:19:07.003016+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/24/waymo-is-scaling-fast-heres-what-the-fleet-data-shows/",
-      "title": "Waymo is scaling fast. Here’s what the fleet data shows.",
-      "summary": "In the past month, Waymo has expanded its fleet in Texas by 49%. There are other hotspots as well.",
-      "source": "TechCrunch",
-      "category": "Autonomes Fahren",
-      "published": "2026-09-24T23:24:33+00:00",
-      "sent_at": "2026-09-25T00:19:07.003016+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2268392/ray-ban-meta-gen-3-vs-gen-2-ai-glasses-comparison/",
-      "title": "Ray-Ban Meta Gen 3 vs. Ray-Ban Meta Gen 2: How these AI glasses compare",
-      "summary": "Meta's newest smart glasses are an iterative, expensive update.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-24T21:56:17+00:00",
-      "sent_at": "2026-09-25T00:19:07.003016+00:00"
-    },
-    {
-      "link": "https://resobscura.substack.com/p/ai-labs-need-to-start-funding-historical",
-      "title": "Using LLMs to trace alchemical knowledge and decode 17th century letters",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-24T19:14:27+00:00",
-      "sent_at": "2026-09-25T00:19:07.003016+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/gadgets/2026/09/robots-make-combat-airdrops-clear-mines-as-ukraine-defeats-russian-pincer/",
-      "title": "Robots make combat airdrops, clear mines as Ukraine defeats Russian pincer",
-      "summary": "Ukraine’s Operation Vivaldi has erased Russian gains with the help of robots.",
-      "source": "Ars Technica",
-      "category": "Innovationen",
-      "published": "2026-09-24T18:39:47+00:00",
-      "sent_at": "2026-09-25T00:19:07.003016+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/gadgets/1000122/cyberpowerpc-gaming-prebuilt-rtx-5070-core-i7-asrock-oled-monitor-deal-sale",
-      "title": "Sadly, this $1,549 RTX 5070-equipped gaming PC is a very good deal",
-      "summary": "While PC component prices remain high, you can save a good bit of money on a system by purchasing a prebuilt desktop. Walmart has a well-equipped CyberPowerPC gaming PC on sale for $1,549, almost $600 off its original price of $2,139. It’s powered by an Intel Core i7-14700KF processor, and paired with 32GB of 6000MHz [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-09-24T18:19:23+00:00",
-      "sent_at": "2026-09-25T00:19:07.003016+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1000140/jensen-huang-nvidia-ai-energy-climate-change-supervillain",
-      "title": "Jensen Huang talks about AI and climate change like a supervillain",
-      "summary": "As Jensen Huang puts it, AI can help fight climate change - but only if it inflicts \"an enormous amount of pain and suffering\" first. The Nvidia CEO discussed the future of energy and AI's impact on our planet in the latest episode of The Ezra Klein Show. But his comments boil down to the [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-24T18:04:44+00:00",
-      "sent_at": "2026-09-25T00:19:07.003016+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/games/999972/meta-horizon-create-studio-ai-games",
-      "title": "Meta is going to let you build games with AI right on your phone",
-      "summary": "Meta has a new plan to get people to make games for its Horizon social platform. The company today announced two new development tools that will let you create games with AI prompts: Horizon Create, a mobile app, and Horizon Studio, a browser app that offers more granular controls. The apps will be available in [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-24T17:52:29+00:00",
-      "sent_at": "2026-09-25T00:19:07.003016+00:00"
     }
   ]
 }
