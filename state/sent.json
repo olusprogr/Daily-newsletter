@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/super-micro-smuggling-co-conspirator-pleads-guilty-to-sending-ai-chips-to-china-broker-admits-breaking-export-control-rules-as-company-co-founder-denies-charges",
+      "title": "Super Micro smuggling co-conspirator pleads guilty to sending AI chips to China",
+      "summary": "Ting-Wei \"Willy\" Sun, one of the three people charged of smuggling Super Micro servers with advanced Nvidia AI chips to China, has pleaded guilty, with sentencing set for September of next year.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-10-10T15:35:00+00:00",
+      "sent_at": "2026-10-10T15:41:04.379955+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2279277/how-xiaomi-oppo-other-non-us-brands-challenging-iphone-duo/",
+      "title": "How Xiaomi, Oppo and other non-US brands are challenging the iPhone Duo",
+      "summary": "Apple's foldable phone has everyone talking, but competitors have their own offerings in different ways.",
+      "source": "Engadget",
+      "category": "Hardware",
+      "published": "2026-10-10T15:30:00+00:00",
+      "sent_at": "2026-10-10T15:41:04.379955+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/video-games/playstation/ps5-hack-delivers-native-ps2-disc-support-and-4k-upscaling-where-sony-refused-to-after-ps2-breakthrough-homebrew-dev-confirms-ps3-disc-support-is-next-for-ps5",
+      "title": "PS5 hack delivers native PS2 disc support and 4K upscaling where Sony refused to — after PS2 breakthrough, homebrew dev confirms PS3 disc support is next for PS5",
+      "summary": "Modder Sword has released PS5SX2 for the PlayStation 5, allowing gamers to play discs from previous PlayStation 2 games.",
+      "source": "Tom's Hardware",
+      "category": "Innovationen",
+      "published": "2026-10-10T15:17:15+00:00",
+      "sent_at": "2026-10-10T15:41:04.379955+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/this-week-on-toms-hardware-premium-october-10-2026-tencent-grabs-bargain-chips-qualcomm-huawei-ip-deal-groq-lawsuit-and-more",
+      "title": "This week on Tom's Hardware Premium: October 10, 2026",
+      "summary": "This week on Tom's Hardware Premium, we covered how the AI buildout is affecting the industry supporting it across all axioms, including in law, chip design, manufacturing, and finance.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-10-10T15:00:00+00:00",
+      "sent_at": "2026-10-10T15:41:04.379955+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1009286/anthropic-is-cutting-off-its-internal-evaluations-from-the-internet",
+      "title": "Anthropic is cutting off its internal evaluations from the internet",
+      "summary": "After a recent spate of high-profile incidents in which AI agents escaped containment, Anthropic is cutting off internet access for all internal evaluations. In a report Friday, the company detailed \"unintended model actions,\" including submitting a false tip regarding an unsolved murder, that led to the decision. Although the impact of these behaviors was minimal [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-10T14:41:16+00:00",
+      "sent_at": "2026-10-10T15:41:04.379955+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/data-centers/senate-investigation-says-that-some-ai-data-center-claims-are-misleading-senators-question-number-of-permanent-jobs-projects-bring-to-communities-but-companies-refuse-to-divulge-data",
+      "title": "Senate investigation says that some AI data center claims are misleading",
+      "summary": "A Senate investigation on AI data centers question that costs and benefits that AI hyperscalers show when they apply for permits to put up their developments. The report says that these claims are misleading and that they don't show the real impact of these sites on the local economy.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-10-10T14:40:00+00:00",
+      "sent_at": "2026-10-10T15:41:04.379955+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/10/all-the-ai-agents-that-can-live-in-your-text-messages/",
+      "title": "Here are the top AI agents that can live in your text messages",
+      "summary": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-10T14:00:00+00:00",
+      "sent_at": "2026-10-10T15:41:04.379955+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2278858/how-to-take-care-of-foldable-phone-hinges/",
+      "title": "How to take care of your foldable phone's hinge",
+      "summary": "Foldable phones require a little more care than standard ones, but the hinge will do its job as long as you don't make that difficult.",
+      "source": "Engadget",
+      "category": "Hardware",
+      "published": "2026-10-10T13:45:00+00:00",
+      "sent_at": "2026-10-10T15:41:04.379955+00:00"
+    },
+    {
       "link": "https://www.theverge.com/gadgets/1007674/smart-bird-feeders-attact-pests-too",
       "title": "My brief romance with an AI bird feeder",
       "summary": "It started off promising enough. Dozens of tiny, colorful birds were drawn to my garden just a few weeks after I mounted a $350 $269 Kiwibit Bird Feeder 2 Pro. \"Looks like Great Tit!\" read the first AI-driven alert sent to my phone. \"Looks like Eurasian Blue Tit!\" read another. I chuckled, still waiting for [&#8230;]",
@@ -4085,78 +4157,6 @@
       "category": "AI",
       "published": "2026-09-26T09:55:38+00:00",
       "sent_at": "2026-09-26T18:17:56.869086+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/26/i-created-an-interactive-digital-avatar-of-myself-and-you-can-talk-to-it/",
-      "title": "I created an interactive digital avatar of myself — and you can talk to it",
-      "summary": "After obtaining an interactive avatar and training it to discuss venture fraud, I have mixed feelings about making AI clones of ourselves.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-26T14:00:00+00:00",
-      "sent_at": "2026-09-26T14:04:20.868323+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/video-games/pc-gaming/an-nvidia-chatbot-could-one-day-help-developers-better-optimize-their-games-patent-filing-show-requests-can-be-made-in-plain-english",
-      "title": "Nvidia patents AI chatbot to streamline PC game optimization",
-      "summary": "An Nvidia patent suggests the company could push developers to use a new chatbot as a way to get guidance on how to optimize their new games before release.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-26T13:00:00+00:00",
-      "sent_at": "2026-09-26T14:04:20.868323+00:00"
-    },
-    {
-      "link": "https://www.lemonde.fr/en/economy/article/2026/09/24/arthur-mensch-ceo-of-french-start-up-mistral-ai-ai-is-software-it-can-be-controlled_6757890_19.html",
-      "title": "CEO of Mistral: AI is software. It can be controlled",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-26T12:52:04+00:00",
-      "sent_at": "2026-09-26T14:04:20.868323+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/gpus/nvidias-rtx-mega-geometry-2-0-streams-ray-tracing-geometry-into-vram-on-demand-nanite-inspired-design-drops-detail-instead-of-dropping-out",
-      "title": "Nvidia’s RTX Mega Geometry 2.0 streams ray-tracing geometry into VRAM on demand",
-      "summary": "Nvidia’s RTX Mega Geometry 2.0 SDK arrives alongside RTX Kit 2026.3 with on-demand ray-tracing geometry streaming.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-26T12:30:00+00:00",
-      "sent_at": "2026-09-26T14:04:20.868323+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/kernel-panic-old-timey-credit-card-scams/",
-      "title": "Old-School Credit Card Scams Are Far From Dead",
-      "summary": "In an era of increasingly sophisticated AI-fueled scams, a retro threat may be lurking in your mailbox.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-09-26T12:00:00+00:00",
-      "sent_at": "2026-09-26T14:04:20.868323+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2269776/openai-agents-targeted-us-government-websites/",
-      "title": "OpenAI's agents targeted and infiltrated US government websites",
-      "summary": "OpenAI's agents targeted websites operated by the Commerce Department, the Securities and Exchange Commission and the Department of Education during testing.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-26T11:58:20+00:00",
-      "sent_at": "2026-09-26T14:04:20.868323+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/meta-muse-is-adults-only-why-does-it-look-like-a-cute-kids-toy/",
-      "title": "Meta’s Muse Is Adults-Only. Why Does It Look Like a Kids’ Toy?",
-      "summary": "Meta says Muse is just for adults, though its cuddly, Labubu-like mascot—and upcoming Tamagotchi-style AI device—may be disarming for users of all ages.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-09-26T10:30:00+00:00",
-      "sent_at": "2026-09-26T14:04:20.868323+00:00"
-    },
-    {
-      "link": "https://blog.bustikiller.com/2026/09/25/one-month-without-ai.html",
-      "title": "One Month Without AI",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-26T10:08:21+00:00",
-      "sent_at": "2026-09-26T14:04:20.868323+00:00"
     }
   ]
 }
