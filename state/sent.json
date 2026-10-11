@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.engadget.com/2281077/apple-home-ai-summaries-security-camera-prices/",
+      "title": "Apple Home's new AI summaries for security cameras cost more than you'd think",
+      "summary": "If you have a lot of cameras in your home, get ready to pay for more expensive iCloud+ plans.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-11T16:15:00+00:00",
+      "sent_at": "2026-10-11T16:32:21.181360+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/11/techcrunch-mobility-a-roadblock-clears-for-self-driving-trucks/",
+      "title": "TechCrunch Mobility: A roadblock clears for self-driving trucks",
+      "summary": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, the role AI is playing in it.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-11T16:02:00+00:00",
+      "sent_at": "2026-10-11T16:32:21.181360+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/gpus/modder-discovers-that-putting-a-gpu-in-the-wrong-place-can-deliver-a-19-degree-cooler-hotspot-breaking-convention-can-produce-great-results-despite-decades-of-pc-diy-evolution",
+      "title": "Modder discovers that putting a GPU in the 'wrong place' can deliver a 19 degree cooler hotspot",
+      "summary": "In PC DIY it might still be worth challenging convention, as TrashBench shows with his GPU hotspot getting up to 19C cooler.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-10-11T14:23:20+00:00",
+      "sent_at": "2026-10-11T16:32:21.181360+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/11/these-execs-think-voice-ai-hasnt-reached-its-chatgpt-moment-yet/",
+      "title": "These execs think voice AI hasn’t reached its ChatGPT moment yet",
+      "summary": "Voice AI's often misses important points for its context layer, and causes the whole pipeline to break",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-11T14:00:00+00:00",
+      "sent_at": "2026-10-11T16:32:21.181360+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2280537/why-overclocking-cpu-mostly-outdated/",
+      "title": "Why CPU overclocking is mostly now a thing of the past",
+      "summary": "The performance gains you get with modern chips aren't as noteworthy as they used to be.",
+      "source": "Engadget",
+      "category": "Hardware",
+      "published": "2026-10-11T12:45:00+00:00",
+      "sent_at": "2026-10-11T16:32:21.181360+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/cyber-security/cryptomining-malware-used-poetry-to-infect-more-than-3-400-servers-researchers-say-four-words-in-the-poellm-verse-changed-11-times-point-the-botnet-to-new-servers",
+      "title": "Cryptomining malware used poetry to infect more than 3,400 servers, researchers say",
+      "summary": "Lumen's Black Lotus Labs says PoeLLM malware has hit more than 3,400 servers, most of them exposed AI tools like LiteLLM and Ollama.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-10-11T11:45:00+00:00",
+      "sent_at": "2026-10-11T16:32:21.181360+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/i-made-terrible-games-with-googles-ai-playground/",
+      "title": "I Made Terrible Games With Google’s AI Playground",
+      "summary": "A long day’s haul in the video game slop mines.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-10-11T11:30:00+00:00",
+      "sent_at": "2026-10-11T16:32:21.181360+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1008484/learning-local-ai-hermes-qwen-model-mac-studio-testing-diary-progress",
+      "title": "Learning to use local AI is exciting, overwhelming, and frustrating",
+      "summary": "I'm embarking on a journey I've so far been hesitant to go on: actually using AI on the regular. Giving my most personal data to cloud services has been a major hold up for me, but it's increasingly possible to run powerful models locally to see what they're capable of. Is this tech so useful [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-11T11:00:00+00:00",
+      "sent_at": "2026-10-11T16:32:21.181360+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/tech-industry/supercomputers/working-cray-1-supercomputer-replica-packs-30-vintage-mac-minis-and-1-5-tflops-passively-cooled-tribute-is-9-375x-faster-than-the-1976-supercomputer",
       "title": "Working Cray-1 supercomputer replica packs 30 vintage Mac Minis and 1.5 TFLOPS",
       "summary": "Legendary 1975 supercomputer gets a modernized replica with old Mac Minis, showcasing decades of innovation.",
@@ -4139,69 +4211,6 @@
       "category": "AI",
       "published": "2026-09-27T15:45:00+00:00",
       "sent_at": "2026-09-27T17:27:59.004720+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/podcast/1000517/why-olpcs-100-laptop-never-stood-a-chance",
-      "title": "Why OLPC’s $100 laptop never stood a chance",
-      "summary": "The idea was big, exciting, and inspiring: What if we could get every kid in the world access to a computer? For a bunch of thinkers and executives in Silicon Valley, it felt like the way to fix everything. But the One Laptop Per Child initiative, and the XO-1 laptop designed to be given away, [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-09-27T12:25:00+00:00",
-      "sent_at": "2026-09-27T12:43:19.233810+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/software/linux/linux-enthusiasts-see-10-second-kernel-compilation-times-on-the-horizon-ai-assisted-patches-cut-build-times-by-nearly-a-third-without-a-ramdisk",
-      "title": "Linux enthusiasts see 10-second kernel compilation times on the horizon",
-      "summary": "It won’t be long until Linux enthusiasts will be able to complete a clean kernel build in under 10 seconds thanks to advances in PC hardware and the AI-assisted optimization of compilers.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-27T12:20:00+00:00",
-      "sent_at": "2026-09-27T12:43:19.233810+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/developer-says-jev-decision-model-beat-pokemon-red-in-under-a-week-non-llm-engine-succeeds-where-traditional-chatbots-stalled-for-months-but-claude-opus-5-coached-the-model-through-its-dead-ends",
-      "title": "Developer says AI decision model Jev beat Pokémon Red in under a week",
-      "summary": "TypeSafe AI's Jev beat Pokémon Red in under a week, eventually reaching the Hall of Fame.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-27T11:30:00+00:00",
-      "sent_at": "2026-09-27T12:43:19.233810+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/u-s-and-uk-navies-successfully-launch-3-700-pound-submarine-sinking-torpedo-from-robotic-drone-submarine-in-historic-first-project-broadsword-proves-weapon-interchangeability-in-just-seven-months",
-      "title": "U.S. and UK navies successfully launch 3,700-pound submarine-sinking torpedo from robotic drone submarine in historic first",
-      "summary": "The U.S. Navy and Royal Navy have successfully launched a 3,700-pound Mk 48 heavyweight torpedo from Britain’s uncrewed XV Excalibur submarine, marking the first time the weapon has been fired from an autonomous underwater vehicle",
-      "source": "Tom's Hardware",
-      "category": "Innovationen",
-      "published": "2026-09-27T10:30:00+00:00",
-      "sent_at": "2026-09-27T12:43:19.233810+00:00"
-    },
-    {
-      "link": "https://arxiv.org/abs/2609.25021",
-      "title": "\"As a Language Model\": Chat Template Switches LLM Self-Referential Voice",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-27T10:26:25+00:00",
-      "sent_at": "2026-09-27T12:43:19.233810+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/taiwans-chip-talisman-snack-faces-production-halt-after-94-percent-strike-vote-workers-demand-share-of-usd176-million-factory-sale-to-ase",
-      "title": "Taiwan's chip talisman snack faces production halt after 94% strike vote",
-      "summary": "Taiwan's tech talisman snack production could be halted as the Guai Guai company faces strike action.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-27T09:30:00+00:00",
-      "sent_at": "2026-09-27T12:43:19.233810+00:00"
-    },
-    {
-      "link": "https://authorsguild.org/news/ag-v-openai-top-execs-knew-mass-book-piracy-was-illegal/",
-      "title": "OpenAI Feared \"Optics\" of what might appear on Hacker News",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-27T06:19:33+00:00",
-      "sent_at": "2026-09-27T12:43:19.233810+00:00"
     }
   ]
 }
