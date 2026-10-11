@@ -1,6 +1,15 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/tech-industry/supercomputers/working-cray-1-supercomputer-replica-packs-30-vintage-mac-minis-and-1-5-tflops-passively-cooled-tribute-is-9-375x-faster-than-the-1976-supercomputer",
+      "title": "Working Cray-1 supercomputer replica packs 30 vintage Mac Minis and 1.5 TFLOPS",
+      "summary": "Legendary 1975 supercomputer gets a modernized replica with old Mac Minis, showcasing decades of innovation.",
+      "source": "Tom's Hardware",
+      "category": "Innovationen",
+      "published": "2026-10-11T10:20:00+00:00",
+      "sent_at": "2026-10-11T10:35:18.533990+00:00"
+    },
+    {
       "link": "https://momo5502.com/posts/2026-10-09-game-decompilation/",
       "title": "500B Tokens Later: Letting AI Agents Decompile a First-Person Shooter",
       "summary": "",
@@ -4193,42 +4202,6 @@
       "category": "AI",
       "published": "2026-09-27T06:19:33+00:00",
       "sent_at": "2026-09-27T12:43:19.233810+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/26/google-tests-buying-from-walmart-owned-flipkart-through-gemini-and-ai-mode-in-india/",
-      "title": "Google tests buying from Walmart-owned Flipkart through Gemini and AI Mode in India",
-      "summary": "The limited test covers select products and users, with a broader rollout planned for later in October.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-27T01:30:00+00:00",
-      "sent_at": "2026-09-27T06:10:43.459964+00:00"
-    },
-    {
-      "link": "https://swarmcha.se/posts/openai-unctad",
-      "title": "OpenAI agents tried to bruteforce a UN website's API fields",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-27T01:08:07+00:00",
-      "sent_at": "2026-09-27T06:10:43.459964+00:00"
-    },
-    {
-      "link": "https://openai.com/index/introducing-openai/",
-      "title": "OpenAI (2015)",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-27T00:44:48+00:00",
-      "sent_at": "2026-09-27T06:10:43.459964+00:00"
-    },
-    {
-      "link": "https://www.righto.com/2026/09/8087-tangent-cordic.html",
-      "title": "Reverse-engineering the Intel 8087's tangent algorithm: more than CORDIC",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Hardware",
-      "published": "2026-09-26T17:26:54+00:00",
-      "sent_at": "2026-09-27T06:10:43.459964+00:00"
     }
   ]
 }
