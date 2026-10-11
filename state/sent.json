@@ -1,6 +1,42 @@
 {
   "items": [
     {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1009406/silicon-valley-is-falling-in-line-with-trumps-attempt-to-rename-ai",
+      "title": "Silicon Valley is falling in line with Trump’s attempt to rename AI",
+      "summary": "When President Donald Trump announced his plans to rebrand artificial intelligence as \"super intelligence,\" you'd be forgiven for being skeptical that it would catch on. While most of the broader population is sticking with AI, some of Silicon Valley's most powerful are falling in line and trying to give Trump the great AI rebrand he [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-11T18:33:56+00:00",
+      "sent_at": "2026-10-11T20:47:01.739453+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/11/can-the-ai-industry-persuade-data-center-opponents-by-getting-rid-of-ndas/",
+      "title": "Can the AI industry persuade data center opponents by getting rid of NDAs?",
+      "summary": "On Equity, we debate the impact of data center moratoriums and whether the AI industry has a communication problem.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-11T16:52:33+00:00",
+      "sent_at": "2026-10-11T20:47:01.739453+00:00"
+    },
+    {
+      "link": "https://www.latimes.com/entertainment-arts/business/story/2026-10-10/nicolas-cage-says-he-wont-work-with-amazon-again-over-ai-dispute",
+      "title": "Nicolas Cage says he won't work with Amazon again over AI dispute",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-11T11:03:21+00:00",
+      "sent_at": "2026-10-11T20:47:01.739453+00:00"
+    },
+    {
+      "link": "https://vcresearch.berkeley.edu/news/using-ai-just-10-minutes-erodes-your-ability-persist-hard-things",
+      "title": "Using AI for Just 10 Minutes Erodes Your Ability to Persist at Hard Things",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-11T10:47:21+00:00",
+      "sent_at": "2026-10-11T20:47:01.739453+00:00"
+    },
+    {
       "link": "https://www.engadget.com/2281077/apple-home-ai-summaries-security-camera-prices/",
       "title": "Apple Home's new AI summaries for security cameras cost more than you'd think",
       "summary": "If you have a lot of cameras in your home, get ready to pay for more expensive iCloud+ plans.",
@@ -4139,78 +4175,6 @@
       "category": "AI",
       "published": "2026-09-27T17:32:02+00:00",
       "sent_at": "2026-09-27T20:51:08.449840+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1001178/openai-agents-bruteforce-un-website",
-      "title": "OpenAI agents tried to ‘bruteforce’ a UN website",
-      "summary": "Security researcher Rowan Howard-Jones says that OpenAI agents scanned the UN Conference on Trade and Development's (UNCTAD) statistics site over 16,000 times between April and June. While the incident doesn't quite rise to the level of the Hugging Face hack, or the recent attacks on US government sites, it's yet another concerning example of AI [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-27T17:21:07+00:00",
-      "sent_at": "2026-09-27T17:27:59.004720+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2267585/why-iphone-duo-benefitcial-for-samsung-galaxy-fold-8/",
-      "title": "Why the iPhone Duo could be beneficial for Samsung's Galaxy Z Fold 8",
-      "summary": "Apple's iPhone Duo is far from the first foldable phone, but it could upset the foldable market in all-new ways.",
-      "source": "Engadget",
-      "category": "Hardware",
-      "published": "2026-09-27T16:45:00+00:00",
-      "sent_at": "2026-09-27T17:27:59.004720+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/09/27/mazda-adds-lidar-to-cx-6e-rolls-out-self-driving-tech-in-china/",
-      "title": "Mazda adds LiDAR to CX-6e, rolls out “self driving” tech in China",
-      "summary": "Mazda’s CX-6e just got a major tech update in the form of a new LiDAR suite that makes the sporty electric SUV capable of delivering “advanced L2” autonomy, navigation on autopilot (NOA), and automated parking. more…",
-      "source": "Electrek",
-      "category": "Autonomes Fahren",
-      "published": "2026-09-27T16:40:43+00:00",
-      "sent_at": "2026-09-27T17:27:59.004720+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/27/anthropics-dario-amodei-gets-the-snl-treatment/",
-      "title": "Anthropic’s Dario Amodei gets the SNL treatment",
-      "summary": "\"AI is the devil and I its maker.\"",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-27T16:30:00+00:00",
-      "sent_at": "2026-09-27T17:27:59.004720+00:00"
-    },
-    {
-      "link": "https://eoinhiggins.substack.com/p/there-are-no-rogue-ai-agents",
-      "title": "There are no \"rogue\" AI agents",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-27T16:19:46+00:00",
-      "sent_at": "2026-09-27T17:27:59.004720+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/09/27/charge-up-your-christmas-tree-with-this-hallmark-keepsake-daytona-scat-pack/",
-      "title": "Charge up your Christmas tree with this Hallmark Keepsake Daytona Scat Pack",
-      "summary": "The all-electric Dodge Charger Daytona may not have been a stunning sales success with either EV fans or the Mopar faithful, but that didn’t change the fact that it’s one of the most competent straight-line performance cars ever built – and now, Hallmark is making it easier than ever to park one under a Christmas tree. more…",
-      "source": "Electrek",
-      "category": "AI",
-      "published": "2026-09-27T16:09:19+00:00",
-      "sent_at": "2026-09-27T17:27:59.004720+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/27/techcrunch-mobility-av-companies-pick-their-lanes/",
-      "title": "TechCrunch Mobility: AV companies pick their lanes",
-      "summary": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, the role AI is playing in it.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-27T16:02:00+00:00",
-      "sent_at": "2026-09-27T17:27:59.004720+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2267524/how-to-use-spotify-running-mode-ios-android-guide/",
-      "title": "How to use Spotify's Running Mode on iOS and Android",
-      "summary": "Maximize your stride with Spotify's AI-powered running features.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-27T15:45:00+00:00",
-      "sent_at": "2026-09-27T17:27:59.004720+00:00"
     }
   ]
 }
