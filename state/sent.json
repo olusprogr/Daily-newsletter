@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/jev-like-decision-models-are-flooding-the-ai-market-after-researcher-claims-typesafe-copied-their-research-microsoft-openai-among-companies-releasing-lightweight-system-one-ai-models",
+      "title": "Jev-like decision models are flooding the AI market, after researcher claims TypeSafe copied their research",
+      "summary": "Jev and the flood of AI decision models — TypeSafe allegedly copied researcher's architecture but got copied itself",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-10-12T16:00:00+00:00",
+      "sent_at": "2026-10-12T16:32:23.283595+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/12/honeyjar-offers-ai-tools-to-improve-pr-and-comms-at-every-company/",
+      "title": "Honeyjar offers AI tools to improve PR and comms at every company",
+      "summary": "Could AI actually make PR better?",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-12T15:45:00+00:00",
+      "sent_at": "2026-10-12T16:32:23.283595+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/12/microsoft-president-says-uk-is-best-placed-to-drive-ai-regulation/",
+      "title": "Microsoft president says UK is best placed to drive AI regulation",
+      "summary": "Microsoft President Brad Smith calls for urgent AI regulation, saying milk and washing machines have more oversight than AI companies.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-12T15:31:19+00:00",
+      "sent_at": "2026-10-12T16:32:23.283595+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/gpus/meet-the-modders-porting-ringfenced-dlss-features-to-older-gpus-how-dlss-5-and-multi-frame-generation-were-unlocked-for-older-architectures",
+      "title": "Meet the modders porting ringfenced DLSS features to older GPUs",
+      "summary": "DLSS Multi-Frame Generation and DLSS 5 Neural Rendering can now run on hardware never intended for it, at least according to Nvidia. Now, two of the modders foundational to the release of these community advancements speak out.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-10-12T15:30:00+00:00",
+      "sent_at": "2026-10-12T16:32:23.283595+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/12/this-ai-startup-says-it-can-generate-permit-ready-blueprints-in-minutes/",
+      "title": "This AI startup says it can generate permit-ready blueprints in minutes",
+      "summary": "Blueprints AI, a bootstrapped startup based in Santa Monica, developed software that produces code-compliant construction blueprints from a photo, PDF, or sketch.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-12T15:27:59+00:00",
+      "sent_at": "2026-10-12T16:32:23.283595+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/12/fitbit-edge-is-googles-middle-ground-between-fitbit-air-and-pixel-watch/",
+      "title": "Fitbit Edge is Google’s middle ground between Fitbit Air and Pixel Watch",
+      "summary": "Google’s newest wearable costs $179.99 and has a sleek feel like the Fitbit Air but with an OLED display.",
+      "source": "TechCrunch",
+      "category": "Innovationen",
+      "published": "2026-10-12T15:11:19+00:00",
+      "sent_at": "2026-10-12T16:32:23.283595+00:00"
+    },
+    {
+      "link": "https://mortoray.com/why-arent-ai-companies-being-charged-for-hacking/",
+      "title": "Why aren't AI companies being charged for hacking?",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-12T14:52:37+00:00",
+      "sent_at": "2026-10-12T16:32:23.283595+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/video-games/console-gaming/xbox-cloud-gaming-is-now-available-on-jailbroken-ps5s-allows-upscaling-to-4k-using-the-ps5-gpu",
+      "title": "Developer uses Claude to enable Xbox Cloud Gaming on jailbroken PS5s",
+      "summary": "RafaelNGP released a native Xbox Game Pass app allowing Xbox Cloud Gaming on the PS5, with support for 4 controllers and 4K upscaling on the PS5 GPU.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-10-12T14:46:57+00:00",
+      "sent_at": "2026-10-12T16:32:23.283595+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/10/11/the-founders-guide-to-techcrunch-disrupt-2026-everything-you-need-to-know/",
       "title": "The founder’s guide to TechCrunch Disrupt 2026: Everything you need to know",
       "summary": "TechCrunch Disrupt 2026 is built around one question: How do you build an enduring company in the AI era? Our programming and speaker lineup reflect that.",
@@ -4004,78 +4076,6 @@
       "category": "AI",
       "published": "2026-09-28T17:09:02+00:00",
       "sent_at": "2026-09-28T18:25:16.953042+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/ddr5/g-skill-wins-pc-enthusiast-as-customer-for-life-by-simply-honoring-its-warranty-replacement-policy-enthusiast-gets-new-module-for-kit-that-cost-usd150-but-now-sells-for-usd1-200",
-      "title": "G.Skill wins PC enthusiast as 'customer for life' by simply honoring its warranty replacement policy",
-      "summary": "A PC RAM maker has honored its guarantee promises despite the memory kit in question’s price rising eightfold since it was bought. That's today's AI-pocalypse news.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-28T10:30:00+00:00",
-      "sent_at": "2026-09-28T10:31:45.192073+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/ai-agents-are-about-to-flood-the-workforce-no-ones-ready-for-it/",
-      "title": "AI Agents Are About to Flood the Workforce. No One’s Ready for It",
-      "summary": "Your next coworker might well be an AI agent—and will require a whole new model of workplace interactions.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-09-28T10:00:00+00:00",
-      "sent_at": "2026-09-28T10:31:45.192073+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/solving-maths-greatest-problems-was-an-art-form-until-ai/",
-      "title": "Solving Math’s Greatest Problems Was an Art Form. Then Came AI",
-      "summary": "Mathematics has been one of humanity’s most creative endeavors, akin to painting and poetry. Now, mathematicians are trying to save it from the brute force of AI.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-09-28T09:30:00+00:00",
-      "sent_at": "2026-09-28T10:31:45.192073+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/desktops/gaming-pcs/save-usd300-on-this-1440p-ready-gaming-pc-with-an-rtx-5060-ti-16gb-now-usd1-399-99-newegg-deal-on-abs-cyclone-aqua-rig-nets-you-a-20-core-intel-cpu-along-with-16gb-of-ddr5-and-a-1tb-ssd",
-      "title": "Save $300 on this 1440p-ready gaming PC with an RTX 5060 Ti 16GB, now $1,399.99",
-      "summary": "This ABS Cyclone Aqua gaming PC, featuring an RTX 5060 Ti 16GB, Intel Core i7-14700F, 16GB DDR5, and a 1TB SSD has a $300 discount, now $1,399.99.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-28T09:15:46+00:00",
-      "sent_at": "2026-09-28T10:31:45.192073+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/the-next-evolution-of-ai-is-learning-from-your-dodgy-gaming-skills/",
-      "title": "The Next Evolution of AI Is Learning From Your Dodgy Gaming Skills",
-      "summary": "A British startup is shaping video game inputs into training data for AI models that can navigate the physical world.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-09-28T09:00:00+00:00",
-      "sent_at": "2026-09-28T10:31:45.192073+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/nvidias-answer-to-rogue-agents-is-an-open-source-ai-security-system/",
-      "title": "Nvidia’s Answer to Rogue Agents Is an Open-Source AI Security System",
-      "summary": "In the wake of a series of high-profile AI safety incidents, Nvidia is introducing a new software tool that helps keep agents from escaping containment.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-09-28T09:00:00+00:00",
-      "sent_at": "2026-09-28T10:31:45.192073+00:00"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/09/28/1145197/whos-liable-when-ai-agents-go-rogue/",
-      "title": "Who’s liable when AI agents go rogue?",
-      "summary": "MIT Technology Review Explains: Let our writers untangle the complex, messy world of technology to help you understand what’s coming next. You can read more from the series here. Over the past few months, a cascade of cyberattacks by AI agents has stunned the world. In July, OpenAI disclosed that a swarm of its agents&#8230;",
-      "source": "MIT Technology Review",
-      "category": "AI",
-      "published": "2026-09-28T08:06:22+00:00",
-      "sent_at": "2026-09-28T10:31:45.192073+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1001219/honor-magic-9-pro-max-arri-cameras-snapdragon-battery-design-china",
-      "title": "Honor’s Magic 9 Pro Max has a big camera and a bigger battery",
-      "summary": "Honor launches its new Magic 9 flagship phones in China today, and the 9 Pro Max features a design revamp, a capable camera, and a colossal battery. This is Honor's first flagship launch - Robot Phone aside - since it announced its collaboration with camera company Arri. The initial impact is twofold. The new camera [&#8230;]",
-      "source": "The Verge",
-      "category": "Innovationen",
-      "published": "2026-09-28T08:00:36+00:00",
-      "sent_at": "2026-09-28T10:31:45.192073+00:00"
     }
   ]
 }
