@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/10/13/apple-launches-a-new-apple-tv-4k-with-siri-ai-and-remote-free-commands/",
+      "title": "Apple launches a new Apple TV 4K with Siri AI and remote-free voice commands",
+      "summary": "The new Apple TV 4K costs $299, comes with Siri AI, and will be available on November 13.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-13T13:16:11+00:00",
+      "sent_at": "2026-10-13T13:31:52.395711+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/13/amex-introduces-a-framework-to-prevent-ai-agents-from-making-unauthorized-purchases/",
+      "title": "Amex introduces a framework to prevent AI agents from making unauthorized purchases",
+      "summary": "American Express is introducing a new framework designed to ensure AI agents only make purchases their users have authorized, potentially preventing costly mistakes and disputes as AI-powered shopping grows.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-13T13:00:00+00:00",
+      "sent_at": "2026-10-13T13:31:52.395711+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1009663/apple-tv-4k-siri-ai-microphones-4th-gen-announced",
+      "title": "The new Apple TV 4K has built-in microphones so you can talk to Siri AI",
+      "summary": "Apple is introducing a refreshed Apple TV 4K today with a pair of interesting new hardware features: far-field microphones to talk to Siri hands-free and Find My built into the remote. The fourth-gen Apple TV 4K, announced at Apple's Welcome Home event in New York City, is the first model to support the Siri AI [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-13T13:00:00+00:00",
+      "sent_at": "2026-10-13T13:31:52.395711+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1009672/homepod-mini-2-announced-apple-siri-ai",
+      "title": "Apple announces the HomePod Mini 2, but it isn&#8217;t ready for Siri AI at launch",
+      "summary": "Apple is announcing the long-awaited HomePod Mini 2 with a new chip that can power Siri AI - but support for those new AI features won't be available at launch. The speaker is also getting a new sound glow feature that syncs its LED lights with a song's album art, and it can now be [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-13T13:00:00+00:00",
+      "sent_at": "2026-10-13T13:31:52.395711+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2285033/apple-homepod-mini-2-launch-siri-ai-later/",
+      "title": "Apple updates the HomePod mini with more audio features and new colors",
+      "summary": "The new model arrives on October 30, but its Siri AI features are coming later.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-13T13:00:00+00:00",
+      "sent_at": "2026-10-13T13:31:52.395711+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2285043/new-apple-tv-4k-with-siri-ai/",
+      "title": "Apple refreshes the Apple TV 4K for Siri AI",
+      "summary": "New microphones, a new remote and the new Siri AI are on the company's streaming box.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-13T13:00:00+00:00",
+      "sent_at": "2026-10-13T13:31:52.395711+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2285072/apple-launch-homeview-smart-display-siri-ai/",
+      "title": "Apple unveils HomeView, the company's smart display built for Siri AI",
+      "summary": "Two versions will be available in November for $299.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-13T13:00:00+00:00",
+      "sent_at": "2026-10-13T13:31:52.395711+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/gpus/nvidia-doubles-dlss-5-performance-reduces-4k-vram-usage-by-20-percent-with-latest-model-october-update-cuts-footprint-by-24-percent-to-roughly-118-million-parameters",
+      "title": "Nvidia doubles DLSS 5 performance, reduces 4K VRAM usage by 20% with latest model",
+      "summary": "Nvidia has announced that DLSS 5 is now two times faster while using less VRAM.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-10-13T12:47:41+00:00",
+      "sent_at": "2026-10-13T13:31:52.395711+00:00"
+    },
+    {
       "link": "https://www.argmin.net/p/faster-fourier-transforms",
       "title": "A look at OpenAI’s math that’s claimed computes faster Fourier transforms",
       "summary": "",
@@ -3932,78 +4004,6 @@
       "category": "AI",
       "published": "2026-09-29T17:15:00+00:00",
       "sent_at": "2026-09-29T17:35:39.286327+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/cpus/intel-patent-outlines-embedding-microleds-directly-into-cpu-package-to-light-up-wording-or-work-as-an-extra-asethic-component-microled-is-embedded-with-die-in-glass-substrate",
-      "title": "Intel patent outlines embedding MicroLEDs directly into CPU package to light up wording or work as an 'extra asethic component'",
-      "summary": "A recently published Intel patent reveals a system for embedding MicroLEDs directly into a CPU for diagnostic or aesthetic purposes.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-29T10:50:00+00:00",
-      "sent_at": "2026-09-29T11:04:26.611867+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/best-smartwatch/",
-      "title": "7 Best Smartwatch Models: Apple, Google, Garmin (2026)",
-      "summary": "These WIRED-tested wearables reduce your reliance on a phone while keeping you connected.",
-      "source": "Wired",
-      "category": "Innovationen",
-      "published": "2026-09-29T10:39:00+00:00",
-      "sent_at": "2026-09-29T11:04:26.611867+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/openai-delays-release-of-latest-model-over-safety-concerns/",
-      "title": "OpenAI Delays Release of Latest Model Over Safety Concerns",
-      "summary": "The company said its latest Astra model would undergo more work to meet safety standards, and issued an apology for the way it handled the hacking of an Australian government website.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-09-29T10:36:22+00:00",
-      "sent_at": "2026-09-29T11:04:26.611867+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/the-big-interview-podcast-timnit-gebru/",
-      "title": "Timnit Gebru Believes There Is No ‘Existential Threat’ From AI",
-      "summary": "One of AI’s fiercest critics believes the doom talk is about founders making money, not saving humanity.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-09-29T10:30:00+00:00",
-      "sent_at": "2026-09-29T11:04:26.611867+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/photonics/intel-patent-embeds-microleds-in-chip-packaging-technology-may-enable-embedded-optical-interconnects-through-tgvs",
-      "title": "Intel patent embeds MicroLEDs in chip packaging — technology may enable embedded optical interconnects through TGVs",
-      "summary": "Intel has showcased a patent it filed in 2022 to embed MicroLEDs inside chip packaging. The company suggests this could be used for diagnostic testing, customized lighting on chip surfaces, but perhaps more importantly, an alternative integration for co-packaged optics",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-29T10:30:00+00:00",
-      "sent_at": "2026-09-29T11:04:26.611867+00:00"
-    },
-    {
-      "link": "https://event.on24.com/wcc/r/5507421/A45CEFBA43BC7B2A43F265520AFDBA32",
-      "title": "Unveiling IC-STAR: Full-Flow Autonomy from Digital to Analog",
-      "summary": "Learn how engineers can shift from manually managing tools and handoffs to defining objectives and supervising AI-driven execution across the silicon development lifecycle. Key Takeaways Explore four critical technologies enabling silicon design autonomy Understand how autonomous AI accelerates complex engineering workflows See real-world impact across semiconductor design and verification Gain practical insights from Ambiq’s deployment of autonomous AI in production Register now for this free webinar!",
-      "source": "IEEE Spectrum",
-      "category": "AI",
-      "published": "2026-09-29T10:00:06+00:00",
-      "sent_at": "2026-09-29T11:04:26.611867+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/transportation/1001463/car-data-privacy-northeastern-study-honda-gm-ford",
-      "title": "Your car’s data privacy problems are worse than you think",
-      "summary": "You hear it all the time: Modern cars are basically smartphones on wheels. And just like the phone in your pocket, the car in your driveway collects vast amounts of data - tracking where you drive, how fast you accelerate, how hard you brake, how aggressively you turn, and much more. The legality of this [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-09-29T10:00:00+00:00",
-      "sent_at": "2026-09-29T11:04:26.611867+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/big-tech/early-nvidia-advisor-says-hes-owed-usd1-billion-in-stock-due-to-vesting-error-1993-stock-options-amount-to-around-4-5-million-shares-after-splits",
-      "title": "Early Nvidia advisor says he's owed $1 billion in stock due to a 1993 vesting error, but Nvidia rejected settlement",
-      "summary": "Former Nvidia advisor Eric Gullichsen says a 1993 stock option grant leaves him owed about $1 billion in stock.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-09-29T10:00:00+00:00",
-      "sent_at": "2026-09-29T11:04:26.611867+00:00"
     }
   ]
 }
