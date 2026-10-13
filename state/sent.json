@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.argmin.net/p/faster-fourier-transforms",
+      "title": "A look at OpenAI’s math that’s claimed computes faster Fourier transforms",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-13T02:46:43+00:00",
+      "sent_at": "2026-10-13T05:24:10.973175+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2281650/how-to-boost-gpu-performance-without-buying-new/",
+      "title": "How to boost your GPU performance without buying a new one",
+      "summary": "With an older GPU, you'll need to go without some of the fancy features, but you can still enjoy high frame rates with the right changes.",
+      "source": "Engadget",
+      "category": "Hardware",
+      "published": "2026-10-12T23:30:00+00:00",
+      "sent_at": "2026-10-13T05:24:10.973175+00:00"
+    },
+    {
+      "link": "https://nirajrajgor.com/blog/kindle-photo-frame-with-ai",
+      "title": "I turned my unused Kindle into a photo frame with GPT-6 Astra",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-12T23:07:25+00:00",
+      "sent_at": "2026-10-13T05:24:10.973175+00:00"
+    },
+    {
+      "link": "https://github.com/prabanta-dev/janas",
+      "title": "Janas: Run LLMs larger than RAM by streaming experts from SSD",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-12T22:05:43+00:00",
+      "sent_at": "2026-10-13T05:24:10.973175+00:00"
+    },
+    {
+      "link": "https://www.intel.com/content/www/us/en/products/details/discrete-gpus/data-center-gpu/d-series.html",
+      "title": "Intel D270 GPU AI Accelerator–Up to 480 GB LPDDR5X",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-12T21:35:35+00:00",
+      "sent_at": "2026-10-13T05:24:10.973175+00:00"
+    },
+    {
+      "link": "https://micahflee.com/just-say-no-to-openai-and-anthropic/",
+      "title": "Just say no to OpenAI and Anthropic",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-12T18:17:29+00:00",
+      "sent_at": "2026-10-13T05:24:10.973175+00:00"
+    },
+    {
+      "link": "https://spectrum.ieee.org/anthropic-engineer-ai-agent",
+      "title": "Meet the Anthropic Engineer Keeping Its AI Agent Trustworthy",
+      "summary": "If you’ve ever wondered how Claude and similar AI agents can answer complex questions in seconds and where they get the information, you’re not alone. Gurmeet Saran works to find that answer every day as an engineer at Anthropic in San Francisco, the AI research company behind Claude. The IEEE senior member is developing an infrastructure to understand the mechanics behind the chatbot’s behavior and to ensure its underlying architecture produces reliable outputs. Gurmeet Saran Employer Anthropic in San Francisco Title Member of technical staff Member grade IEEE senior member Alma maters University of Kalyani, in India; Birla Institute of Technology and Science, in Pilani, India “My job is to make sure the data is accurate, structured, and trustworthy, and that private data stays private,” he says. “As I learned earlier in my career, privacy can’t be a layer you bolt on—it has to be part of the architecture from the start.” If you can’t trust the logic, he adds, you can’t make reliable claims about the behavior, and that has real safety implications. Safety is a priority for Anthropic, he says. According to Claude’s mission statement , the company wants the AI agent to be “genuinely helpful to the people it works with or on behalf of, as well as to society, while avoiding actions that are unsafe, unethical, or deceptive.” Crucial to the mission is ensuring that researchers can observe and understand how AI models behave, a challenge that is especially acute for large language models , Saran says. “We have decent tools to monitor databases and web services,” he says, “but for LLMs, we’re still figuring it out.” Solving data quality problems at Yahoo, Intuit, and Meta Saran’s interest in computing systems dates back to his childhood in Kolkata, where he logged as much time as he could in the school computer lab. “I remember the first time I used one of the computers,” he says. “What struck me was that you could write instructions, and the machine would follow them exactly. No ambiguity. “That felt magical to me.” After graduating from high school in 1999, he stayed in India to pursue advanced degrees. He earned a bachelor’s degree in electronics and telecommunication engineering in 2004 at the University of Kalyani . In 2010, he earned a master’s degree in software engineering from the Birla Institute of Technology and Science in Pilani. While a graduate student, he began his career in 2007 at Yahoo as a technical lead of the data team in Bengaluru, India. While there, he encountered the project that shaped his career trajectory: working on web analytics and business intelligence reporting solutions. “We kept running into a frustrating problem,” he recalls. “Different teams would calculate the same website metric—something like daily active site users—using slightly different logic, and end up with conflicting answers. It sounds like a small issue, but when leadership is making decisions about resource allocation and product development using that data, not knowing which number is correct becomes a problem.” The team built a central data repository with defined metrics, essentially serving as a single source of truth. Saran created a model that defined what “daily active site users” means, breaking down which events counted, how to handle edge cases (or when standard code fails), and more. With the new model, data teams across the company could rely on a standard method to determine the number of daily active users for the projects and sites they were responsible for and obtain comparable results using the same logic. From there, Saran and his team built Yahoo! Digits , an internal web analytics tool used for all the company’s products. Saran left Yahoo in 2010 to join Intuit as a staff engineer in Mountain View, Calif. He helped build the analytics infrastructure that unified data across the company’s products, including TurboTax and QuickBooks accounting software. During his tenure, Intuit developed a feature that detected fraudulent tax filings in real time. It required Saran and other engineers to build a system to protect taxpayer data while adhering to strict U.S. Internal Revenue Service policies. “IEEE operates in a lot of countries where engineers don’t have easy pathways into the global professional community. That kind of connection matters as AI development spreads beyond a handful of organizations.” “This taught me that privacy and governance can’t be layers you bolt onto software after the fact,” he says. “They have to be part of the architecture from the start.” Saran joined Meta (known as Facebook at the time) in 2016 as a lead software engineer in Menlo Park, Calif. The company was facing controversy over its video metrics: Meta publicly acknowledged an error that caused it to overstate the number of views for posted videos . “This wasn’t a coding bug; it was an architectural problem,” Saran says. He built a system that worked similarly to what he had developed at Intuit, whereby one single truth was defined to govern all video view metrics across the site. That system, Metric360 , eventually became part of the site’s architecture. By the time he left Meta in 2021, he says, Metric360 was being used across the company to calculate video metrics. He left the company to become a principal software engineer at Wealthfront , a financial services company in Palo Alto, Calif. He helped build the company’s data infrastructure. Building trustworthy AI systems at Anthropic Saran joined Anthropic in 2025 as a member of the technical staff. To describe the implications of his work, he uses a medical analogy: “Imagine a doctor is monitoring a patient’s vital signs and making treatment decisions based on those numbers. What if one or a few of the medical devices used were slightly miscalibrated? Even if most readings are fine, it’s a serious problem because the difficult decisions happen in the margins. “It’s the same with AI systems. My job is essentially to make sure the instruments are giving accurate readings—that the data means what it says it means.” His job comes with high stakes and complex problems to solve. “ AI agents are especially tricky to observe,” he says. “When a system is taking sequences of actions [generating conversational responses with different users], you need a way to capture what it did, what information it was working from, and whether outcomes matched what the end user expected. And you have to do all of that without exposing anyone’s private information—the systems are designed to recognize sensitive data and keep it protected as it flows through. It’s a much more demanding observability problem than anything I’ve worked on before.” Solving for system reliability while AI is still in its early days of adoption is both Saran’s passion and the problem that keeps him up at night, he says. “I think making AI systems genuinely auditable and transparent is one of the more important engineering problems of the next decade,” he says, “and it doesn’t get talked about as much as model capabilities do.” IEEE can play a role in shaping AI development Saran joined IEEE in March 2025. “After more than 20 years of building data infrastructure across organizations like Yahoo, Intuit, Meta, and Wealthfront,” he says, “I wanted to contribute back to the technical community through peer review, publishing, and engaging with the broader engineering research ecosystem.” He says he believes IEEE can play an essential role in shaping the future of AI through its standards work . “We have standards for everything, from building codes to software testing,” he says. “AI infrastructure needs something similar, and IEEE has the credibility and the reach to do that.” Another problem that IEEE can solve for, he says, is access: “IEEE operates in a lot of countries where engineers don’t have easy pathways into the global professional community. That kind of connection matters, especially as AI development spreads beyond a handful of organizations in a few cities.”",
+      "source": "IEEE Spectrum",
+      "category": "AI",
+      "published": "2026-10-12T18:00:02+00:00",
+      "sent_at": "2026-10-13T05:24:10.973175+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/12/windborne-wins-a-hefty-us-air-force-contract-for-its-balloon-data/",
+      "title": "WindBorne wins a hefty US Air Force contract for its balloon data",
+      "summary": "A Silicon Valley startup that uses weather balloons and AI to predict the weather won a U.S. military contract worth almost $50 million.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-12T17:19:14+00:00",
+      "sent_at": "2026-10-13T05:24:10.973175+00:00"
+    },
+    {
       "link": "https://www.engadget.com/2281539/how-to-use-google-gemini-automate-tasks/",
       "title": "How to use Google Gemini to automate tasks",
       "summary": "Spark is Google's AI tool that can perform tasks on your behalf.",
@@ -3932,150 +4004,6 @@
       "category": "Hardware",
       "published": "2026-09-29T10:00:00+00:00",
       "sent_at": "2026-09-29T11:04:26.611867+00:00"
-    },
-    {
-      "link": "https://www.nytimes.com/2026/09/28/technology/openai-astra-safety.html",
-      "title": "OpenAI Says It Will Not Release Newest A.I. Model Over Safety Concerns",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-29T00:34:27+00:00",
-      "sent_at": "2026-09-29T04:08:30.765728+00:00"
-    },
-    {
-      "link": "https://www.reuters.com/business/finance/anthropics-ipo-prospectus-shows-sweeping-ai-vision-surging-costs-2026-09-28/",
-      "title": "Anthropic's IPO prospectus shows AI vision, surging costs",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-28T23:40:59+00:00",
-      "sent_at": "2026-09-29T04:08:30.765728+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/28/amd-will-acquire-fei-fei-lis-world-labs-for-8-2-billion/",
-      "title": "AMD will acquire Fei-Fei Li’s World Labs for $8.2 billion",
-      "summary": "The acquisition will see World Labs founder Fei-Fei Li join AMD as executive vice president and chief scientist.",
-      "source": "TechCrunch",
-      "category": "Hardware",
-      "published": "2026-09-28T20:39:33+00:00",
-      "sent_at": "2026-09-29T04:08:30.765728+00:00"
-    },
-    {
-      "link": "https://www.worldlabs.ai/blog/amd-announcement",
-      "title": "World Labs Is Joining AMD",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Hardware",
-      "published": "2026-09-28T20:18:05+00:00",
-      "sent_at": "2026-09-29T04:08:30.765728+00:00"
-    },
-    {
-      "link": "https://calnewport.com/its-time-to-investigate-the-ai-labs/",
-      "title": "It's Time to Investigate the AI Labs",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-28T19:53:35+00:00",
-      "sent_at": "2026-09-29T04:08:30.765728+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/28/shopify-opens-checkout-to-browser-based-ai-agents/",
-      "title": "Shopify opens checkout to browser-based AI agents",
-      "summary": "Shopify is expanding WebMCP support to checkout, allowing browser-based AI agents to update order details and complete purchases with a buyer’s authorization.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-28T19:33:57+00:00",
-      "sent_at": "2026-09-29T04:08:30.765728+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/28/tesla-delays-roadster-2-event-again-due-to-bad-weather/",
-      "title": "Tesla delays Roadster 2 event again due to bad weather",
-      "summary": "Tesla says the event \"can only be held outdoors,\" as it's expected to show the car flying in some form using SpaceX thrusters.",
-      "source": "TechCrunch",
-      "category": "Innovationen",
-      "published": "2026-09-28T19:27:27+00:00",
-      "sent_at": "2026-09-29T04:08:30.765728+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/28/the-ai-boom-took-over-climate-week-and-not-everyone-is-happy-about-it/",
-      "title": "The AI boom took over Climate Week and not everyone is happy about it",
-      "summary": "Just like the rest of the U.S., data centers and AI are dividing climate tech founders and investors.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-28T19:21:59+00:00",
-      "sent_at": "2026-09-29T04:08:30.765728+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/28/openai-reportedly-ditches-model-over-safety-concerns/",
-      "title": "OpenAI reportedly ditches model over safety concerns",
-      "summary": "A top executive at the AI lab told the Wall Street Journal that the model in question had displayed a poor aptitude for following orders.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-28T23:39:20+00:00",
-      "sent_at": "2026-09-28T23:40:55.740691+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/28/aurora-cfo-says-30000-driverless-trucks-by-2030-isnt-as-far-fetched-as-it-sounds/",
-      "title": "Aurora CFO says 30,000 driverless trucks by 2030 isn’t as far-fetched as it sounds",
-      "summary": "Self-driving truck company Aurora laid out an audacious plan for 2030. Its CFO says its targets aren't aspirational.",
-      "source": "TechCrunch",
-      "category": "Autonomes Fahren",
-      "published": "2026-09-28T22:58:35+00:00",
-      "sent_at": "2026-09-28T23:40:55.740691+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/tech-policy/2026/09/nvidia-may-sell-more-chips-in-china-as-jensen-huangs-influence-over-trump-grows/",
-      "title": "Experts worry about Nvidia's AI chip sales in China and influence over Trump",
-      "summary": "China is reportedly mulling letting ByteDance, Alibaba buy banned Nvidia chips.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-09-28T21:49:10+00:00",
-      "sent_at": "2026-09-28T23:40:55.740691+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1001749/amd-world-labs-ai-acquisition-deal",
-      "title": "AMD is acquiring AI company World Labs in a deal worth more than $8 billion",
-      "summary": "AMD announced today that it's acquiring World Labs, an AI research lab co-founded by the prominent researcher Dr. Fei-Fei Li, in an all-stock deal worth approximately $8.2 billion. World Labs launched in 2024 and was valued at $1 billion in a matter of months. The startup launched its first commercial product, a world generation model [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-28T21:31:35+00:00",
-      "sent_at": "2026-09-28T23:40:55.740691+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/28/source-inference-provider-modal-labs-closing-in-on-750m-round-at-15-75b-valuation/",
-      "title": "Source: Inference provider Modal Labs closing in on $750M round at $15.75B valuation",
-      "summary": "The new financing is expected to more than triples the AI infrastructure startup's valuation from just four months ago.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-28T21:29:18+00:00",
-      "sent_at": "2026-09-28T23:40:55.740691+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/space/2026/09/starships-first-orbital-launch-gives-lift-to-spacexs-next-gen-starlinks/",
-      "title": "SpaceX's Starship goes orbital, deploying first next-gen Starlinks",
-      "summary": "Starship had already flown 99 percent of the way to low-Earth orbit. Monday's flight added the last bit.",
-      "source": "Ars Technica",
-      "category": "Innovationen",
-      "published": "2026-09-28T21:26:19+00:00",
-      "sent_at": "2026-09-28T23:40:55.740691+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/ai/2026/09/florida-asks-court-to-put-the-brakes-on-openais-frontier-ai-development/",
-      "title": "Florida invokes extinction fears in legal bid to halt OpenAI development",
-      "summary": "State says LLMs threaten civilization as \"the greatest public nuisance ever created.\"",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-09-28T20:49:39+00:00",
-      "sent_at": "2026-09-28T23:40:55.740691+00:00"
-    },
-    {
-      "link": "https://www.lesswrong.com/posts/Nm4ewbYovtjq69dvH/pacing-the-frontier-is-not-the-actual-goal-for-ai-labs",
-      "title": "Pacing the Frontier is not the actual goal for AI labs",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-28T20:47:26+00:00",
-      "sent_at": "2026-09-28T23:40:55.740691+00:00"
     }
   ]
 }
