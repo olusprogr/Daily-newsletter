@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.wired.com/story/an-openai-employee-allegedly-used-a-chatbot-to-help-plant-a-recording-device-at-the-office/",
+      "title": "An OpenAI Employee Allegedly Used a Chatbot to Help Plant a Recording Device at the Office",
+      "summary": "Chatbot prompts reveal the engineer’s alleged efforts to set up a covert listening device days before one was found in a meeting room used by high-level executives.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-10-13T23:17:59+00:00",
+      "sent_at": "2026-10-14T00:07:48.648538+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/13/science-corporation-implants-its-vision-restoring-chip-in-its-first-stargardt-disease-patient/",
+      "title": "Science Corporation implants its vision-restoring chip in its first Stargardt disease patient",
+      "summary": "Max Hodak, the former president and co-founder of Neuralink, detailed on stage at TechCrunch Disrupt how his company's work with PRIMA is part of its path toward a novel brain-computer interface (BCI).",
+      "source": "TechCrunch",
+      "category": "Hardware",
+      "published": "2026-10-13T23:13:31+00:00",
+      "sent_at": "2026-10-14T00:07:48.648538+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/13/cerebras-ceo-says-were-nearing-a-future-where-everyone-has-a-personal-ai-assistant-at-home/",
+      "title": "Cerebras CEO says we’re nearing a future where everyone has a personal AI assistant at home",
+      "summary": "Cerebras CEO Andrew Feldman predicts a future where personal AI assistants become as commonplace as household appliances, running partly on local devices and partly in the cloud.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-13T23:05:34+00:00",
+      "sent_at": "2026-10-14T00:07:48.648538+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/13/industrial-next-wants-factory-robots-to-switch-tasks-in-minutes-not-weeks/",
+      "title": "Industrial Next wants factory robots to switch tasks in minutes, not weeks",
+      "summary": "Industrial Next helps manufacturers automate complex, delicate tasks that have traditionally required human labor.",
+      "source": "TechCrunch",
+      "category": "Innovationen",
+      "published": "2026-10-13T23:00:00+00:00",
+      "sent_at": "2026-10-14T00:07:48.648538+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2286141/apple-tv-4k-2022-vs-2026-whats-new-worth-100-price-increase/",
+      "title": "Apple TV 4K 2022 vs. 2026: What's new and is it worth the $100 jump?",
+      "summary": "The 2026 model is faster and can hear you from afar, but the 2022 box gets Siri AI as well.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-13T23:00:00+00:00",
+      "sent_at": "2026-10-14T00:07:48.648538+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/health/2026/10/martin-shkreli-livestreamed-himself-violating-lifetime-pharma-ban-ftc-says/",
+      "title": "Martin Shkreli livestreamed himself violating lifetime pharma ban, FTC says",
+      "summary": "\"I can always find a couple of biotech stocks to smoke,\" Shkreli said in a livestream.",
+      "source": "Ars Technica",
+      "category": "Innovationen",
+      "published": "2026-10-13T22:48:12+00:00",
+      "sent_at": "2026-10-14T00:07:48.648538+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/13/cerebras-ceo-pushes-back-on-ai-doomsday-warnings/",
+      "title": "Cerebras CEO pushes back on AI doomsday warnings",
+      "summary": "Cerebras CEO Andrew Feldman has a message for AI leaders spreading doomsday warnings: Maybe stop talking? At TechCrunch Disrupt, he argued that the industry's focus on AI's risks is drowning out its potential benefits.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-13T22:36:59+00:00",
+      "sent_at": "2026-10-14T00:07:48.648538+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2282226/clever-ways-gemini-automate-everyday-tasks/",
+      "title": "5 clever ways Gemini can automate everyday tasks",
+      "summary": "If you're not using some of these skills, you're missing out on a chance to streamline your days, keep up to date and more.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-13T22:00:00+00:00",
+      "sent_at": "2026-10-14T00:07:48.648538+00:00"
+    },
+    {
       "link": "https://www.theverge.com/news/1010365/shopify-opens-its-catalog-up-to-more-ai-agents",
       "title": "Shopify opens its catalog up to more AI agents",
       "summary": "More AI agents will soon be able to browse and purchase from Shopify listings, marking an expansion of the company's agentic commerce ambitions. Shopify announced Tuesday it will let shoppers configure their AI agents to purchase products on their behalf, giving more agents access to over a billion listings in Shopify's catalog. (The catalog consists [&#8230;]",
@@ -3932,78 +4004,6 @@
       "category": "Innovationen",
       "published": "2026-09-29T19:08:01+00:00",
       "sent_at": "2026-09-30T01:02:23.543542+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1002448/elon-musk-grokipedia-ai-updating-again",
-      "title": "Elon Musk&#8217;s AI-powered Grokipedia is updating again",
-      "summary": "Grokipedia, the AI-powered online encyclopedia from SpaceXAI, appears to be updating articles once again after a months-long pause. In August, Lawfare reported that articles on Grokipedia hadn't reviewed edits since April, but the platform's live updates site is now showing various recent changes to pages - though as I write this, many are just a [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-29T21:49:09+00:00",
-      "sent_at": "2026-09-29T21:50:17.283417+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/ai/2026/09/amd-acquires-world-labs-ai-pioneer-fei-fei-lis-world-models-startup/",
-      "title": "AMD acquires World Labs AI startup, upping the ante against Nvidia",
-      "summary": "The deal, which is expected to close by year's end, is worth $8.2 billion.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-09-29T21:14:49+00:00",
-      "sent_at": "2026-09-29T21:50:17.283417+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/29/openais-latest-features-take-direct-aim-at-the-app-store-model/",
-      "title": "OpenAI’s latest features take direct aim at the app store model",
-      "summary": "OpenAI is building out the pieces of an alternative to the traditional app store model, turning ChatGPT into a place where software can be discovered and used by people and AI agents alike.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-29T20:15:47+00:00",
-      "sent_at": "2026-09-29T21:50:17.283417+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/29/openai-repotedly-in-talks-to-raise-30b-round-at-1-4t-valuation/",
-      "title": "OpenAI repotedly in talks to raise $30B round at $1.4T valuation",
-      "summary": "The new round is anticipated to be the company's last before its delayed 2027 public debut.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-29T19:52:37+00:00",
-      "sent_at": "2026-09-29T21:50:17.283417+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/09/29/lucid-air-ux-3-0-update-950-hardware-upgrade/",
-      "title": "Lucid brings Gravity’s UX to the Air, but older owners must pay $950",
-      "summary": "Lucid Air owners are finally getting the Gravity’s interface. Lucid started pushing Air UX 3.0 today as part of software version 2.11.0, its biggest Air software overhaul in years. Owners of 2025 and newer Airs get it for free over the air. But if you bought a 2022, 2023, or some 2024 Air, you’ll first need a $950 infotainment processor upgrade at a Lucid service center. more…",
-      "source": "Electrek",
-      "category": "Hardware",
-      "published": "2026-09-29T19:21:59+00:00",
-      "sent_at": "2026-09-29T21:50:17.283417+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/openai-sued-over-the-hugging-face-hack/",
-      "title": "OpenAI Gets Sued Over the Hugging Face Hack",
-      "summary": "A nonprofit in California is doing what Hugging Face has not—attempting to hold OpenAI legally accountable for the actions of its agents.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-09-29T19:05:00+00:00",
-      "sent_at": "2026-09-29T21:50:17.283417+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2272424/america-gov-is-us-government-ai-chatbot/",
-      "title": "There's now an official US government AI chatbot",
-      "summary": "The administration wants America.gov to be the main portal for federal services.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-29T18:43:58+00:00",
-      "sent_at": "2026-09-29T21:50:17.283417+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/29/heres-why-openai-is-absent-from-nvidias-industry-wide-effort-to-end-rogue-ai-agents/",
-      "title": "Here’s why OpenAI is absent from Nvidia’s industry-wide effort to end rogue AI agents",
-      "summary": "OpenAI isn't a public supporter of Nvidia's Open Agent Safety Platform, but it is privately working with Nvidia, TechCrunch has learned.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-29T18:35:00+00:00",
-      "sent_at": "2026-09-29T21:50:17.283417+00:00"
     }
   ]
 }
