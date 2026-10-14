@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.theverge.com/science/1011127/ai-weather-forecast-microsoft",
+      "title": "Microsoft has a new machine learning tool to improve weather forecasts",
+      "summary": "Old-school physics-based weather forecasting and even new AI models typically become less reliable beyond two weeks, a problem Microsoft claims to have solved using machine learning. Researchers with the company say they've found a new, cost-effective way to make more accurate weather forecasts two to six weeks in advance - allowing farmers and emergency responders [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-14T16:05:21+00:00",
+      "sent_at": "2026-10-14T16:29:50.140647+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1009086/square-kiosk",
+      "title": "Square’s new kiosk lets you talk to AI for help with your order",
+      "summary": "Square is launching new hardware: a big kiosk for ordering things that has a touchscreen and lets you talk to an AI. It's called the Square Kiosk. Square says the Kiosk, which has a large pill shape, has an \"agentic, conversational voice layer\" that \"fully understands a seller's menu and listens and responds in real [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-14T16:00:00+00:00",
+      "sent_at": "2026-10-14T16:29:50.140647+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1010928/android-scam-protection-enhanced-protection-google-messages",
+      "title": "Android is using AI to suss out scammers in Google Messages",
+      "summary": "Android is introducing new scam defense features that aim to make it easier for users to evade mobile fraud, including bolstered protection in Google Messages and additional safeguarding tools. Building on the Scam Detection feature in Google Messages, a new \"enhanced protection\" setting will be rolling out in the coming weeks that taps into cloud-based [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-14T16:00:00+00:00",
+      "sent_at": "2026-10-14T16:29:50.140647+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2286355/android-will-use-gemini-to-warn-you-about-scammy-messages/",
+      "title": "Android will use Gemini to warn you about scammy messages",
+      "summary": "Google will tell if you a scammer is trying to message you and will protect your banking details from prying eyes while sharing your screen.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-14T16:00:00+00:00",
+      "sent_at": "2026-10-14T16:29:50.140647+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2286617/alibaba-ai-models-cleared-for-use-in-apple-intelligence-in-china-just-in-time-for-the-iphone-duo-launch/",
+      "title": "Alibaba AI models cleared for use in Apple Intelligence in China just in time for the iPhone Duo launch",
+      "summary": "Apple's integrated AI system is still yet to be rolled out in mainland China, despite launching nearly two years ago.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-14T15:36:33+00:00",
+      "sent_at": "2026-10-14T16:29:50.140647+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1011108/anthropic-self-replicating-ai-smart-devices-risk",
+      "title": "Anthropic’s self-replicating AI warning is alarming deja vu",
+      "summary": "Are legions of smart devices - fridges, ovens, vacuum cleaners, lawnmowers, security cameras, and TVs - conspiring to take over the internet? No. But they could soon be unwitting hosts to self-replicating AI models that spread from device to device and prove remarkably difficult to contain. Welcome to the unsettling world of AI worms, where, [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-14T15:19:02+00:00",
+      "sent_at": "2026-10-14T16:29:50.140647+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/14/deezer-will-soon-let-you-filter-out-ai-generated-music/",
+      "title": "Deezer will soon let you filter out AI-generated music",
+      "summary": "Deezer said that the new toggle will be rolled out by the end of the year.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-14T15:16:04+00:00",
+      "sent_at": "2026-10-14T16:29:50.140647+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/14/zenzap-raises-44m-for-its-ai-chat-app-that-aims-to-replace-whatsapp-in-the-workplace/",
+      "title": "Zenzap raises $44M for its AI chat app that aims to replace WhatsApp in the workplace",
+      "summary": "Zenzap is used by organizations including Starbucks and Taco Bell.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-14T15:08:00+00:00",
+      "sent_at": "2026-10-14T16:29:50.140647+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/10/14/scimplify-raises-25m-to-challenge-chinas-grip-on-critical-materials-with-ai/",
       "title": "Scimplify raises $25M to challenge China’s grip on critical materials with AI",
       "summary": "Scimplify's annualized revenue run rate has tripled to $200 million as it eyes U.S. expansion.",
@@ -3932,78 +4004,6 @@
       "category": "AI",
       "published": "2026-09-30T17:45:00+00:00",
       "sent_at": "2026-09-30T19:48:10.071726+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/30/instagram-rolls-out-an-ai-video-editor-for-creators/",
-      "title": "Instagram rolls out an AI video editor for creators",
-      "summary": "This conversational AI assistant is intended to provide personalized feedback to creators, rather than generic advice.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-30T14:30:00+00:00",
-      "sent_at": "2026-09-30T14:39:21.787789+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/30/cerebras-systems-andrew-feldman-on-whether-ai-can-keep-scaling-at-techcrunch-disrupt-2026/",
-      "title": "Cerebras Systems’ Andrew Feldman on whether AI can keep scaling at TechCrunch Disrupt 2026",
-      "summary": "At TechCrunch Disrupt 2026, Cerebras Systems CEO and co-founder Andrew Feldman will explore the growing demand for compute, energy, and infrastructure, how Cerebras is approaching those constraints differently, and what comes next if today’s AI hardware reaches its limits.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-30T14:30:00+00:00",
-      "sent_at": "2026-09-30T14:39:21.787789+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1002402/instagram-ai-edits-assistant-creators-analytics-youtube",
-      "title": "Instagram is adding an AI ‘assistant’ to tell you how to post",
-      "summary": "Instagram is the latest social media platform to add built-in AI-powered features that will give users feedback on their posts. The company announced Wednesday that its standalone Edits app will now include an AI \"creative assistant\" that pulls in data from a user's Instagram account and offers suggestions on what to change. Using the new [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-09-30T14:30:00+00:00",
-      "sent_at": "2026-09-30T14:39:21.787789+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/biotech-founder-cathy-tie-moral-case-gene-editing-human-embryos/",
-      "title": "A Biotech Founder Makes the Moral Case for Gene-Editing Human Embryos",
-      "summary": "The practice of editing the genes of embryos remains highly controversial and risky, but Origin Genomics founder Cathy Tie argues its a “moral imperative” to address hereditary diseases.",
-      "source": "Wired",
-      "category": "Innovationen",
-      "published": "2026-09-30T14:30:00+00:00",
-      "sent_at": "2026-09-30T14:39:21.787789+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2273111/meta-introduces-a-new-ai-assistant-for-its-instagram-creators/",
-      "title": "Meta introduces a new AI assistant for its Instagram creators",
-      "summary": "The Edits assistant offers personalized guidance based on your audience and best-performing content.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-09-30T14:30:00+00:00",
-      "sent_at": "2026-09-30T14:39:21.787789+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/30/restate-lands-20m-as-the-need-for-durable-infrastructure-increases-with-ai-agents/",
-      "title": "Restate lands $20M as the need for durable infrastructure increases with AI agents",
-      "summary": "Founded by Apache Flink veterans, the startup is taking on workflow heavyweight Temporal.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-09-30T14:27:11+00:00",
-      "sent_at": "2026-09-30T14:39:21.787789+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/09/30/kidz-ai-tesla-robotaxi-fleet-zombie-company-bitcoin-treasury/",
-      "title": "Tesla Robotaxi fleets are the new crypto treasury for zombie companies",
-      "summary": "A Nasdaq-listed company worth about $2.4 million says it wants to buy 500 Tesla Robotaxis. KIDZ AI, formerly an online coding school for kids, announced today that it sent Tesla a “procurement inquiry” for the vehicles and plans an “Autonomous Fleet Operations Strategy.” If the name doesn’t ring a bell, the playbook should. Tesla’s Robotaxi is turning into what bitcoin treasuries were for failing micro-caps in 2025: a buzzword you bolt onto a dying business to get the stock moving. more…",
-      "source": "Electrek",
-      "category": "Autonomes Fahren",
-      "published": "2026-09-30T14:02:17+00:00",
-      "sent_at": "2026-09-30T14:39:21.787789+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/metas-muse-ai-agent-accused-of-accessing-sensitive-user-data-on-iphone-and-mac-without-permission-agent-shocks-reporter-by-referring-to-confidential-messages-it-wasnt-granted-access-to",
-      "title": "Meta's Muse AI agent accused of ignoring user permissions and accessing forbidden personal user data",
-      "summary": "Meta's Muse AI agent has been accused of ignoring user permissions and accessing forbidden personal user data on an iPhone and Mac, including iMessages.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-30T14:00:00+00:00",
-      "sent_at": "2026-09-30T14:39:21.787789+00:00"
     }
   ]
 }
