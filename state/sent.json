@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.theverge.com/tech/1011797/google-ai-universal-cart-shopping-tool-launch",
+      "title": "Google launches its &#8216;universal&#8217; online shopping cart ahead of the holidays",
+      "summary": "Google's intelligent AI shopping cart is finally here, and just in time to tempt users into Black Friday and seasonal holiday spending. The Universal Cart tool Google previewed at its I/O event in May is now rolling out in the US across the Gemini app and Google Search, with the aim of making it easier [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-15T13:00:00+00:00",
+      "sent_at": "2026-10-15T13:55:34.648303+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2287239/nvidia-rtx-spark-good-for-windows-even-if-you-do-not-need-local-ai/",
+      "title": "NVIDIA's RTX Spark is good for Windows, even if you don't need local AI",
+      "summary": "NVIDIA's RTX Spark is meant for AI fiends, but it could end up helping Windows PCs in general",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-15T13:00:00+00:00",
+      "sent_at": "2026-10-15T13:55:34.648303+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/laptops/we-test-the-rtx-spark-superchip-in-microsofts-surface-laptop-ultra-nvidias-windows-on-arm-platform-impresses-in-local-ai-but-gaming-isnt-its-strong-suit",
+      "title": "We tested the RTX Spark Superchip in Microsoft's Surface Laptop Ultra",
+      "summary": "We've tested Nvidia's RTX Spark against the latest and greatest from Apple and AMD to see how Nvidia's efforts to transform the PC for the agentic AI era stack up.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-10-15T12:00:21+00:00",
+      "sent_at": "2026-10-15T13:55:34.648303+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/15/amazons-bee-launches-two-new-personal-ai-devices-starting-at-75/",
+      "title": "Amazon’s Bee launches two new personal AI devices, starting at $75",
+      "summary": "Amazon-owned Bee has launched its first new AI devices since its acquisition, including an updated wearable and a credit-card-sized recorder that attaches to smartphones. The devices can summarize conversations, create to-do lists, and integrate with Alexa and Amazon shopping, with prices starting at $74.99.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-15T12:00:00+00:00",
+      "sent_at": "2026-10-15T13:55:34.648303+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1011475/amazon-bee-frontier-eclipse-price-specs",
+      "title": "Amazon’s always-listening Bee wearable can now help you buy stuff",
+      "summary": "Last year, Amazon bought Bee, a relatively unknown startup with a $50 always-listening AI wearable that summarized every conversation you had. Today, the e-commerce giant is announcing two new Bee devices - and a new subscription to go with them. First is the $74.99 Bee Frontier, an updated version of the original Bee device. And [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-15T12:00:00+00:00",
+      "sent_at": "2026-10-15T13:55:34.648303+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2287245/bee-frontier-bee-eclipse-bee-pro-launch/",
+      "title": "Bee unveils two AI note-taking devices, its first new products since being acquired by Amazon",
+      "summary": "The Eclipse and Frontier are cheap and colorful, but you'll need a Pro subscription to make the most of them.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-15T12:00:00+00:00",
+      "sent_at": "2026-10-15T13:55:34.648303+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2287388/adobe-rebuilt-photoshop-and-premiere-for-nvidia-rtx-spark/",
+      "title": "Adobe rebuilt Photoshop and Premiere for NVIDIA's RTX Spark platform",
+      "summary": "Adobe has 'rearchitected' Photoshop, Premiere and Substance 3D to work faster on computers powered by NVIDIA's RTX Spark AI superchip.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-15T12:00:00+00:00",
+      "sent_at": "2026-10-15T13:55:34.648303+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/semiconductors/asml-struggling-to-keep-up-with-demand-for-chipmaking-equipment-as-ai-spending-continues-to-boom-chipmakers-are-already-looking-to-place-orders-for-2029-and-2030-output-ceo-says-demand-could-surpass-capacity-despite-massive-expansion-plans",
+      "title": "ASML struggling to keep up with demand for chipmaking equipment as AI spending continues to boom",
+      "summary": "ASML says customers are already placing orders for advanced chipmaking tools years in advance, with AI-driven semiconductor demand remaining strong enough to strain capacity despite planned expansions",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-10-15T11:30:00+00:00",
+      "sent_at": "2026-10-15T13:55:34.648303+00:00"
+    },
+    {
       "link": "https://arstechnica.com/tech-policy/2026/10/fbi-arrests-openai-engineer-suspected-of-planting-bug-in-conference-room/",
       "title": "Recording device hidden in toilet paper found in top-secret OpenAI meeting room",
       "summary": "OpenAI engineer faces 5 years and $250K fine as FBI lobs foreign spy charges.",
@@ -4004,78 +4076,6 @@
       "category": "AI",
       "published": "2026-10-01T16:21:54+00:00",
       "sent_at": "2026-10-01T17:59:05.043077+00:00"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/10/01/1145588/ai-mind-reading-reconstructs-what-youre-looking-at/",
-      "title": "An AI “mind-reading” tool can reconstruct what you’re looking at based on a brain scan",
-      "summary": "A new AI tool can guess what you’re looking at just by analyzing your brain scans—and recreate that image with remarkable precision. It can go the other way too, and predict a person’s brain activity based on what they’re looking at.&#160; In the image above, for example, the left-hand image of each pair is what&#8230;",
-      "source": "MIT Technology Review",
-      "category": "AI",
-      "published": "2026-10-01T10:32:24+00:00",
-      "sent_at": "2026-10-01T11:20:19.548498+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/madison-square-gardens-james-dolan-is-spending-big-on-new-yorks-governor-race/",
-      "title": "Madison Square Garden’s James Dolan Is Spending Big on New York’s Governor Race",
-      "summary": "James Dolan has put surveillance at the center of his sports and entertainment empire. Now he’s getting involved in GOP politics by backing a candidate who supports Flock, ICE, and AI data centers.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-10-01T10:30:00+00:00",
-      "sent_at": "2026-10-01T11:20:19.548498+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/firm-rents-four-nvidia-h200s-to-test-80x-cheaper-deepseek-claim-usd13-200-monthly-gpu-rental-doubles-claude-bill-while-security-flaws-keep-code-offline",
-      "title": "Firm rents four Nvidia H200s to test '80x cheaper' DeepSeek claim",
-      "summary": "A call center consultancy rented four Nvidia H200s to run DeepSeek V4.1 Flash for Claude Code and found DeepSeek's API cheaper.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-01T10:30:00+00:00",
-      "sent_at": "2026-10-01T11:20:19.548498+00:00"
-    },
-    {
-      "link": "https://www.wired.com/review/apple-mac-studio-m5-ultra-2026/",
-      "title": "Apple Mac Studio (M5 Ultra) Review: Unlimited Power",
-      "summary": "The Mac Studio can run frontier-level AI language models locally. It’s only a preview of what’s to come.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-10-01T10:00:00+00:00",
-      "sent_at": "2026-10-01T11:20:19.548498+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2274263/google-gemini-4-model-argon/",
-      "title": "Google's first Gemini 4 model is 'Argon'",
-      "summary": "Google trained Gemini 4 Argon to be highly capable in knowledge work, cybersecurity defense and creative writing.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-01T09:26:30+00:00",
-      "sent_at": "2026-10-01T11:20:19.548498+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2274224/california-law-bans-companies-from-relying-on-ai-to-fire-workers/",
-      "title": "California's new law bans companies from relying on AI to fire workers",
-      "summary": "California enacts new laws aimed at companies using AI to initiate job cuts or monitor employees.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-01T07:36:44+00:00",
-      "sent_at": "2026-10-01T11:20:19.548498+00:00"
-    },
-    {
-      "link": "https://ohhfishal.net/Posts/claude",
-      "title": "Claude Says",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-09-30T17:32:06+00:00",
-      "sent_at": "2026-10-01T11:20:19.548498+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/policy/top-ai-tech-executives-promise-to-self-police-ai-development-nvidia-anthropic-openai-and-more-pledge-ai-labs-will-take-steps-to-build-a-positive-future",
-      "title": "Top AI tech executives promise to ‘self-police’ AI development",
-      "summary": "The heads of the biggest AI labs — Google, Anthropic, Meta, OpenAI, SpaceXAI, and Nvidia — went to Washington and signed the 'Joint Commitment on Frontier Responsibilities,' promising to develop their own models safely. Trump says that it's the best way to move forward with AI as it balances progress with safety.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-09-30T17:27:37+00:00",
-      "sent_at": "2026-10-01T11:20:19.548498+00:00"
     }
   ]
 }
