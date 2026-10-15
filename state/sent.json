@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/10/14/ricursive-intelligence-is-betting-on-ai-designed-chips-to-help-solve-the-compute-crisis/",
+      "title": "Ricursive Intelligence is betting on AI-designed chips to help solve the compute crisis",
+      "summary": "The founders detailed how their startup is developing AI that can design chips, learn from each iteration, and improve subsequent designs, all with the goal of automating and accelerating the chip design process.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-15T01:01:32+00:00",
+      "sent_at": "2026-10-15T03:07:23.556139+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/14/gudea-leverages-ai-to-help-organizations-prevent-social-media-crises-before-they-erupt/",
+      "title": "Gudea leverages AI to help organizations prevent social media crises before they erupt",
+      "summary": "Every day, conversations unfold across social media and websites around the world. A seemingly insignificant post—whether it involves AI-generated misinformation, hate speech, or a damaging rumor—can quickly snowball into a much larger public controversy. Gudea, a company that tracks how stories and rumors spread online that describes itself as the “storm tracker for the internet,” [&#8230;]",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-15T00:00:00+00:00",
+      "sent_at": "2026-10-15T03:07:23.556139+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/science/2026/10/researchers-use-ai-to-design-proteins-that-cut-up-other-proteins/",
+      "title": "Researchers use AI to design proteins that cut up other proteins",
+      "summary": "AI design tools make proteins that break bonds that are stable for hundreds of years.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-10-14T17:10:15+00:00",
+      "sent_at": "2026-10-15T03:07:23.556139+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2286764/youtube-music-adds-new-labels-for-ai-generated-content/",
+      "title": "YouTube Music adds new labels for AI-generated content",
+      "summary": "Now please let us hide all of it.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-14T17:01:12+00:00",
+      "sent_at": "2026-10-15T03:07:23.556139+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/14/mosqitter-is-turning-its-mosquito-traps-into-an-ai-powered-surveillance-network/",
+      "title": "Mosqitter is turning its mosquito traps into an AI-powered surveillance network",
+      "summary": "Mosqitter is turning its mosquito-trapping hardware into an AI-powered surveillance network designed to identify species, monitor populations, and provide earlier warnings of mosquito-borne disease risks.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-14T17:00:00+00:00",
+      "sent_at": "2026-10-15T03:07:23.556139+00:00"
+    },
+    {
+      "link": "https://lwn.net/Articles/1100449/",
+      "title": "Linus Torvalds's first LLM-assisted patch series",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-14T16:55:07+00:00",
+      "sent_at": "2026-10-15T03:07:23.556139+00:00"
+    },
+    {
+      "link": "https://theconsensus.dev/blog/2026/10/14/has-ai-tells.html?focus=1",
+      "title": "Has AI tells",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-14T16:52:42+00:00",
+      "sent_at": "2026-10-15T03:07:23.556139+00:00"
+    },
+    {
+      "link": "https://www.extremetech.com/cars/teslas-robotaxis-blow-through-school-zones-nhtsa-petition-alleges",
+      "title": "Tesla's Robotaxis Blow Through School Zones, NHTSA Petition Alleges",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Autonomes Fahren",
+      "published": "2026-10-14T16:45:19+00:00",
+      "sent_at": "2026-10-15T03:07:23.556139+00:00"
+    },
+    {
       "link": "https://www.theverge.com/news/1011654/mckinsey-ai-client-interview",
       "title": "McKinsey is making job applicants spar with a fake AI client",
       "summary": "Consulting firm McKinsey &#38; Company is going to ask some entry-level candidates to have a 10-minute conversation with an AI simulation of a client as part of the interview process, according to The Wall Street Journal. The AI simulation \"aims to reflect 80% of the scenarios McKinsey consultants might encounter in their day-to-day work,\" the [&#8230;]",
