@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/pc-components/ssds/sk-hynix-reportedly-playing-hardball-with-trump-admin-over-3d-nand-fab-company-demands-increased-chipmaking-equipment-exports-to-china-in-exchange-for-us-fab",
+      "title": "SK hynix reportedly playing hardball with Trump admin over 3D NAND fab — company demands increased chipmaking equipment exports to China in exchange for US fab",
+      "summary": "SK hynix reportedly conditions building new Solidigm 3D NAND fab in the U.S. to equipment exports to the Solidigm fab in Dalian, China.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-10-15T17:40:09+00:00",
+      "sent_at": "2026-10-15T18:00:52.618992+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/15/volvo-makes-a-bigger-bet-on-nvidia/",
+      "title": "Volvo makes a bigger bet on Nvidia",
+      "summary": "Volvo is leveling up its automated driving system through an expansion of its nearly decade-long partnership with Nvidia that will extend beyond its battery electric vehicles.",
+      "source": "TechCrunch",
+      "category": "Hardware",
+      "published": "2026-10-15T17:34:40+00:00",
+      "sent_at": "2026-10-15T18:00:52.618992+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/transportation/1011653/volvo-nvidia-autonomous-driving-level-2-hands-free-urban",
+      "title": "Volvo will use Nvidia’s tech for hands-free, point-to-point driving",
+      "summary": "Volvo plans to launch hands-free, point-to-point driving by 2030, powered by Nvidia's latest AI technology. The Chinese-owned, Swedish-designed automaker said Thursday it would use Nvidia's autonomous driving stack to power a new partially automated driving system similar to Tesla's Full Self-Driving (Supervised). Volvo says the new point-to-point system will be Level 2++, meaning it can [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-15T17:30:00+00:00",
+      "sent_at": "2026-10-15T18:00:52.618992+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1012206/google-ai-mode-overview-inline-links",
+      "title": "Google is making inline links more prominent in AI responses",
+      "summary": "Google is updating its AI search results to make inline links appear \"higher up in responses more frequently,\" according to a blog post. The company's search results from AI Overviews and AI Mode give you answers in a customized view instead of the traditional list of links, but there are concerns that the format reduces [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-15T17:22:15+00:00",
+      "sent_at": "2026-10-15T18:00:52.618992+00:00"
+    },
+    {
+      "link": "https://sunshowers.io/posts/anthropic-mononoke-2/",
+      "title": "More on Anthropic's Scion ripping off Mononoke",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-15T17:05:19+00:00",
+      "sent_at": "2026-10-15T18:00:52.618992+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2287833/meta-built-a-huge-open-weight-ai-model-for-macs-but-youll-need-1tb-of-ram-to-run-it/",
+      "title": "Meta built a huge open-weight AI model for Macs, but you'll need 1TB of RAM to run it",
+      "summary": "Muse Spark Open is \"the most capable US open-weight model to date,\" the company says.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-15T17:02:48+00:00",
+      "sent_at": "2026-10-15T18:00:52.618992+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/15/sk-hynix-bargains-for-chip-equipment-exports-to-its-china-facility-in-return-for-building-a-factory-in-us/",
+      "title": "SK Hynix bargains for chip equipment exports to its China facility in return for building a factory in US",
+      "summary": "SK Hynix’s Solidigm is reportedly seeking U.S. approval to send more chipmaking equipment to China as it weighs building a new NAND chip factory in America.",
+      "source": "TechCrunch",
+      "category": "Hardware",
+      "published": "2026-10-15T16:45:37+00:00",
+      "sent_at": "2026-10-15T18:00:52.618992+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/10/15/tesla-remote-operators-crashing-robotaxis/",
+      "title": "Tesla remote operators keep crashing its ‘Robotaxis,’ data shows",
+      "summary": "Tesla’s latest crash reports to federal regulators add two more “Robotaxi” crashes where a remote operator, not the car’s autonomous system, was driving when it hit something. That brings it to five in the data now. And every remote takeover that has shown up in a Tesla crash report has ended in a collision. more…",
+      "source": "Electrek",
+      "category": "Autonomes Fahren",
+      "published": "2026-10-15T16:39:08+00:00",
+      "sent_at": "2026-10-15T18:00:52.618992+00:00"
+    },
+    {
       "link": "https://www.theverge.com/tech/1011797/google-ai-universal-cart-shopping-tool-launch",
       "title": "Google launches its &#8216;universal&#8217; online shopping cart ahead of the holidays",
       "summary": "Google's intelligent AI shopping cart is finally here, and just in time to tempt users into Black Friday and seasonal holiday spending. The Universal Cart tool Google previewed at its I/O event in May is now rolling out in the US across the Gemini app and Google Search, with the aim of making it easier [&#8230;]",
@@ -4004,78 +4076,6 @@
       "category": "AI",
       "published": "2026-10-01T19:47:51+00:00",
       "sent_at": "2026-10-01T22:34:17.513393+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/01/opus-5-5-loves-to-tell-you-this-matters-and-other-ai-writing-tells/",
-      "title": "Opus 5.5 loves to tell you ‘this matters’ (and other AI writing tells)",
-      "summary": "Opus 5.5’s biggest tell is the word “dependable,” which pops up 23 times more often than in human samples.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-01T17:50:19+00:00",
-      "sent_at": "2026-10-01T17:59:05.043077+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1003589/google-ai-overviews-chegg-penske-lawsuits-dismissed",
-      "title": "Judge dismisses antitrust lawsuits over Google’s AI Overviews",
-      "summary": "A federal judge has dismissed a pair of antitrust lawsuits filed by Chegg and Rolling Stone parent company Penske Media Corporation, which accused Google of driving away web traffic with its AI-powered search features, as reported earlier by Reuters. US District Judge Amit Mehta takes Google's side in a ruling on Wednesday, writing that PMC [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-01T17:12:21+00:00",
-      "sent_at": "2026-10-01T17:59:05.043077+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2274744/sony-brings-ai-upscaling-to-the-base-ps5/",
-      "title": "Sony brings AI upscaling to the base PS5",
-      "summary": "Marvel's Wolverine and Ghost of Yōtei are the first games to support Quick Spectral Super Resolution.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-01T17:00:21+00:00",
-      "sent_at": "2026-10-01T17:59:05.043077+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/games/1003549/sony-ps5-quick-spectral-super-resolution-qssr",
-      "title": "Sony brings AI graphics upscaling to the regular PS5",
-      "summary": "Sony is launching a new AI upscaling technology specifically for the regular PS5. The new tech, called Quick Spectral Super Resolution (QSSR), is a \"new performance tier of AI upscaling\" that's a result of Sony's Project Amethyst work with AMD, according to a blog post. Sony says that PlayStation Spectral Super Resolution (PSSR), which is [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-01T16:53:39+00:00",
-      "sent_at": "2026-10-01T17:59:05.043077+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/01/shopify-debuts-canvas-a-way-to-build-online-stores-by-chatting-with-ai/",
-      "title": "Shopify debuts Canvas, a way to build online stores by chatting with AI",
-      "summary": "Shopify’s new Canvas site builder lets merchants create and customize their online stores by chatting with its AI agent Sidekick, while watching the changes happen in real time.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-01T16:44:35+00:00",
-      "sent_at": "2026-10-01T17:59:05.043077+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/01/california-governor-vetoes-bill-banning-use-of-pervert-glasses-to-secretly-record-people/",
-      "title": "California governor vetoes bill banning use of ‘pervert glasses’ to secretly record people",
-      "summary": "The California state bill would have penalized people who secretly recorded people in public with wearables equipped with cameras and microphones.",
-      "source": "TechCrunch",
-      "category": "Innovationen",
-      "published": "2026-10-01T16:35:25+00:00",
-      "sent_at": "2026-10-01T17:59:05.043077+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/science/2026/10/ai-finally-beat-the-best-stratego-player-in-history-and-did-it-on-a-budget/",
-      "title": "With most information hidden, the game Stratego",
-      "summary": "Adding in a second neural network that guesses the identity of hidden pieces was key.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-10-01T16:28:04+00:00",
-      "sent_at": "2026-10-01T17:59:05.043077+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2274668/audible-thinks-you-want-to-have-an-ai-generated-conversation-with-draculas-beleaguered-servant/",
-      "title": "Audible thinks you want to have an AI-generated conversation with Dracula's beleaguered servant",
-      "summary": "The platform is rolling out \"Interactive Stories\" starting with Bram Stoker's classic.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-01T16:21:54+00:00",
-      "sent_at": "2026-10-01T17:59:05.043077+00:00"
     }
   ]
 }
