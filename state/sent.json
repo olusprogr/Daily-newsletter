@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/software/linux/linus-torvalds-posts-his-first-llm-assisted-patch-to-the-linux-kernel-after-issuing-clear-pro-ai-directives-the-bossman-makes-use-of-ai-tooling-himself",
+      "title": "Linus Torvalds posts his first AI-assisted patch to the Linux kernel, synthetic test clocks 23x performance leap",
+      "summary": "Linus Torvalds posts his first LLM-assisted patch to the Linux kernel — after issuing clear pro-AI directives, the bossman makes use of AI tooling himself",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-10-16T10:30:00+00:00",
+      "sent_at": "2026-10-16T10:39:59.242975+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2288580/open-ai-updates-chatgpt-extension-for-chrome/",
+      "title": "ChatGPT can now look at your Chrome tabs to do tasks for you",
+      "summary": "The ChatGPT browser extension lets you compare information from your open tabs.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-16T10:06:15+00:00",
+      "sent_at": "2026-10-16T10:39:59.242975+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/desktops/gaming-pcs/newegg-has-slashed-usd260-off-this-all-amd-4k-gaming-pc-9800x3d-and-radeon-rx-9070-xt-combo-comes-with-32gb-of-ddr5-and-a-2tb-ssd",
+      "title": "Newegg has slashed $260 off this all-AMD 4K gaming PC — 9800X3D and Radeon RX 9070 XT combo comes with 32GB of DDR5 and a 2TB SSD",
+      "summary": "Save $260 on an all-AMD gaming PC with 9800X3D and Radeon RX 9070 XT.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-10-16T10:03:21+00:00",
+      "sent_at": "2026-10-16T10:39:59.242975+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/video-games/playstation/jailbroken-ps5s-can-now-run-local-ai-models-at-over-100-tokens-per-second-fork-of-ps5lm-goes-native-and-accesses-gpu-and-more-ram",
+      "title": "Jailbroken PS5s can now run local AI models at over 100+ tokens per second",
+      "summary": "PS5LM gets a fork, allowing it to run natively and use the GPU and more RAM to run larger LLMs, even running Qwen3.8-27B at 20 tokens per second.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-10-16T10:00:00+00:00",
+      "sent_at": "2026-10-16T10:39:59.242975+00:00"
+    },
+    {
+      "link": "https://www.technologyreview.com/2026/10/16/1146766/pet-biotech-longevity-cloning-cryonics/",
+      "title": "Can’t bear to say goodbye to your pet? Biotech’s got you covered.",
+      "summary": "I don’t remember much about Peppy, my first and only pet cat. I can conjure the sensation of stroking her while she purred, recall how she used to get stuck in trees (just like in cartoons!), and chuckle about the time she pooed in my baby sister’s cot. That’s about it. What I do vividly&#8230;",
+      "source": "MIT Technology Review",
+      "category": "Innovationen",
+      "published": "2026-10-16T09:00:00+00:00",
+      "sent_at": "2026-10-16T10:39:59.242975+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2288545/gmail-live-ai-search-feature-arrives-for-google-ai-subscribers/",
+      "title": "Gmail's Live AI search feature arrives for Google AI subscribers",
+      "summary": "Gmail's search can be frustrating and basic, but Google is finally smartening it up for AI plan subscribers.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-16T08:31:48+00:00",
+      "sent_at": "2026-10-16T10:39:59.242975+00:00"
+    },
+    {
+      "link": "https://microsoft.ai/news/frontier-pre-training-at-microsoft-ai/",
+      "title": "Frontier Pre-Training at Microsoft AI",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-15T16:12:13+00:00",
+      "sent_at": "2026-10-16T10:39:59.242975+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",
+      "title": "Ramp reaches $60B valuation as it pushes deeper into AI",
+      "summary": "The funding comes as Ramp's annualized revenue crosses $2B, and its customer count reaches 85,000.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-15T14:47:09+00:00",
+      "sent_at": "2026-10-16T10:39:59.242975+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/10/15/even-benchmark-thinks-ai-is-eroding-the-venture-pact-against-backing-rivals/",
       "title": "Even Benchmark thinks AI is eroding the venture pact against backing rivals",
       "summary": "Benchmark says the Valley’s rule against backing rivals is getting harder to keep.",
@@ -4076,78 +4148,6 @@
       "category": "AI",
       "published": "2026-10-02T13:50:00+00:00",
       "sent_at": "2026-10-02T15:21:35.948131+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/games/1003593/steam-deck-2-is-amd-gainsborough-the-chip-valves-been-waiting-for",
-      "title": "Steam Deck 2: Is AMD Gainsborough the chip Valve’s been waiting for?",
-      "summary": "The Steam Deck is four and a half years old, and handheld gamers are eagerly awaiting a Steam Deck 2 - but Valve has consistently said it needs a new chip with a \"generational leap\" in performance and efficiency before building the sequel. There's some reason to believe that chip has now broken cover: AMD [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-10-01T18:52:58+00:00",
-      "sent_at": "2026-10-02T08:21:14.427913+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/01/openai-cuts-ties-with-three-safety-researchers-wsj-reports/",
-      "title": "OpenAI cuts ties with 3 safety researchers, WSJ reports",
-      "summary": "OpenAI has parted ways with three safety researchers after an internal investigation found they mishandled sensitive company information, report says.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-01T18:14:42+00:00",
-      "sent_at": "2026-10-02T08:21:14.427913+00:00"
-    },
-    {
-      "link": "https://stoppels.ch/goalposts/",
-      "title": "Vote on which of Hacker News' challenges for AI have been met",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-01T17:32:43+00:00",
-      "sent_at": "2026-10-02T08:21:14.427913+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1003365/microsoft-copilot-os-for-work-notepad",
-      "title": "Inside Microsoft’s big Copilot rethink",
-      "summary": "Last week, Microsoft CEO Satya Nadella hosted an intimate, invite-only event for leaders from some of its key enterprise customers. Instead of a flashy media event, Nadella outlined the future of Copilot directly to the customers Microsoft really cares about, pitching its latest rethink of the AI assistant as the \"OS for work.\" Microsoft is [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-01T16:00:00+00:00",
-      "sent_at": "2026-10-02T08:21:14.427913+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/desktops/mini-pcs/first-intel-panther-lake-mini-pc-cooled-with-solid-state-airjet-tech-operates-at-less-than-21-dba-aaeon-claims-its-fanless-up-xtreme-ptl-edge-air-is-also-slimmer-lighter-than-actively-cooled-rivals",
-      "title": "First Intel Panther Lake mini PC cooled with solid-state AirJet tech operates at less than 21 dBA",
-      "summary": "Aaeon's UP Xtreme PTL Edge Air is the first Panther Lake mini PC we've seen with AirJet technology for ultra-low-noise active cooling.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-10-01T15:27:09+00:00",
-      "sent_at": "2026-10-02T08:21:14.427913+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/01/brian-chesky-interview-ai-agents-need-their-own-operating-system/",
-      "title": "Brian Chesky interview: AI agents need their own operating system",
-      "summary": "Brian Chesky on making Airbnb agent-friendly, the state of consumer AI, and why the world needs an AI-native operating system.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-01T15:12:00+00:00",
-      "sent_at": "2026-10-02T08:21:14.427913+00:00"
-    },
-    {
-      "link": "https://openid.net/wp-content/uploads/2025/10/Identity-Management-for-Agentic-AI.pdf",
-      "title": "Identity Management for Agentic AI [pdf] (2025)",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-01T15:11:10+00:00",
-      "sent_at": "2026-10-02T08:21:14.427913+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2274521/japanese-court-rules-human-voices-are-protected-in-landmark-ai-case/",
-      "title": "Japanese court rules human voices are protected in landmark AI case",
-      "summary": "Humans vs AI: It's time to d-d-d-d-duel.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-01T14:58:44+00:00",
-      "sent_at": "2026-10-02T08:21:14.427913+00:00"
     }
   ]
 }
