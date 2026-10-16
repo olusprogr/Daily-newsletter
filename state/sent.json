@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/",
+      "title": "Replit is no longer working with Anthropic, CEO says",
+      "summary": "Masad said the decision was made for a number of different reasons, including cost. Replit announced a partnership with OpenAI in August, but there was never any indication that it was no longer with Anthropic.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-16T21:22:28+00:00",
+      "sent_at": "2026-10-16T22:29:32.784935+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/transportation/1013280/tesla-chp-fsd-crash",
+      "title": "Tesla driver says he was asleep and using FSD when he crashed into highway patrol cars",
+      "summary": "After this horrific crash involving a Tesla driver who said he was asleep and using the driver assist mode, the California Highway Patrol warns that \"Despite its name, full self-driving is not fully autonomous. Technology does not relieve drivers of their responsibility to safely operate their vehicles.\" Video released by CHP shows the Tesla speeding [&#8230;]",
+      "source": "The Verge",
+      "category": "Autonomes Fahren",
+      "published": "2026-10-16T20:49:04+00:00",
+      "sent_at": "2026-10-16T22:29:32.784935+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/tech-policy/2026/10/thegentlemanpervert-producing-ai-csam-is-a-nj-prosecutor-say-cops/",
+      "title": "“thegentlemanpervert” producing AI CSAM is a NJ prosecutor, say cops",
+      "summary": "Discord user flagged AI CSAM, triggering arrest of New Jersey deputy AG.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-10-16T20:20:07+00:00",
+      "sent_at": "2026-10-16T22:29:32.784935+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/katie-zacharia-was-linked-to-an-ai-rare-earths-startup-its-even-weirder-than-it-sounds/",
+      "title": "Katie Zacharia Was Linked to an AI Rare-Earths Startup. It’s Even Weirder Than It Sounds",
+      "summary": "The short-lived White House press secretary was listed as an adviser to a Kristi Noem–linked company that aims to use AI for mining. Both the company and she say she never worked there.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-10-16T20:05:08+00:00",
+      "sent_at": "2026-10-16T22:29:32.784935+00:00"
+    },
+    {
+      "link": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+      "title": "How the Claude Code team does code review",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-16T19:04:47+00:00",
+      "sent_at": "2026-10-16T22:29:32.784935+00:00"
+    },
+    {
+      "link": "https://www.anthropic.com/research/designing-efficient-quantum-circuits",
+      "title": "Designing more efficient quantum circuits with Claude",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-16T18:00:18+00:00",
+      "sent_at": "2026-10-16T22:29:32.784935+00:00"
+    },
+    {
+      "link": "https://www.technologyreview.com/2026/10/16/1146224/roundtables-a-conversation-with-the-creator-of-ai-designed-viruses/",
+      "title": "Roundtables: A Conversation With the Creator of AI-Designed Viruses",
+      "summary": "Listen to the session or watch below Can AI design new life forms? In 2025, Stanford University PhD student Samuel King came up with a preliminary answer when he used a generative AI model to propose genetic blueprints for microscopic viruses. It isn’t yet an example of AI-generated life, but that could be next. Watch&#8230;",
+      "source": "MIT Technology Review",
+      "category": "AI",
+      "published": "2026-10-16T18:00:00+00:00",
+      "sent_at": "2026-10-16T22:29:32.784935+00:00"
+    },
+    {
+      "link": "https://news.ycombinator.com/item?id=50121562",
+      "title": "Anthropic Console overcharged my card 100x due to internationalization input bug",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-16T17:31:42+00:00",
+      "sent_at": "2026-10-16T22:29:32.784935+00:00"
+    },
+    {
       "link": "https://www.anthropic.com/research/ecdsa-curve-origins",
       "title": "Claude reveals ECDSA curve origins",
       "summary": "",
@@ -4148,78 +4220,6 @@
       "category": "Hardware",
       "published": "2026-10-02T15:34:13+00:00",
       "sent_at": "2026-10-03T00:08:37.435461+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents",
-      "title": "Apple will limit Mac disk access as AI agents ‘substantially’ increase risk",
-      "summary": "Apple will add new limits for \"full disk access\" on Mac in response to risks posed by AI agents, as reported earlier by TechCrunch. In an update on Friday, Apple says it's rolling out new controls to \"ensure that users who genuinely wish to grant an app this extraordinary level of access can only do [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-02T20:08:40+00:00",
-      "sent_at": "2026-10-02T20:19:57.026770+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2276186/apple-sounds-the-alarm-on-ai-agents-and-full-disk-access/",
-      "title": "Apple sounds the alarm on AI agents and 'Full Disk Access'",
-      "summary": "There's an increasingly high cost to convenience.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-02T19:22:06+00:00",
-      "sent_at": "2026-10-02T20:19:57.026770+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-access-controls-due-to-new-risks-from-ai-agents/",
-      "title": "Apple says it’s tightening macOS ‘Full Disk Access’ controls due to new risks from AI agents",
-      "summary": "Apple says it will add new controls around macOS’s Full Disk Access permission, warning that increasingly capable AI agents make broad access to users’ files, messages, mail, and browsing history riskier.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-02T18:11:27+00:00",
-      "sent_at": "2026-10-02T20:19:57.026770+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1004096/openai-chatgpt-dots-hands-on-agent",
-      "title": "OpenAI’s Dot agent is enterprise software that can also order your dinner",
-      "summary": "It's a tale as old as last week: OpenAI's new agent platform, called Dots, is full of cute little guys who can do your bidding. But unlike the ultra-approachable Meta Muse, Dots feel very much like using workplace software that happens to be able to order you a burrito - emphasis on work. OpenAI announced [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-02T18:00:00+00:00",
-      "sent_at": "2026-10-02T20:19:57.026770+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/video/its-not-ai-anymore-its-super-intelligence-according-to-the-white-house/",
-      "title": "It’s not AI anymore, it’s ‘super intelligence’ (according to the White House)",
-      "summary": "This week, the White House got&#160;nearly every&#160;major tech CEO in one room — Zuckerberg, Bezos, Musk, and Anthropic’s Dario Amodei among them —&#160;to sign an AI safety pledge&#160;that President&#160;Donald&#160;Trump called “morally binding.”&#160;Trump&#160;also&#160;signed an&#160;executive order&#160;officially rebranding AI as “super intelligence,” and meanwhile,&#160;Meta and OpenAI are putting&#160;friendlier faces on their AI products, even as the biggest money [&#8230;]",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-02T17:48:16+00:00",
-      "sent_at": "2026-10-02T20:19:57.026770+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/02/circuit-breaker-labs-hopes-to-make-ai-safer-for-your-kids-and-you/",
-      "title": "Circuit Breaker Labs hopes to make AI safer for your kids (and you)",
-      "summary": "With all the talk about how AI might one day kill us all, it's easy to forget that AI has already harmed some people psychologically. Circuit Breaker Labs has created \"crash-test dummies\" to solve that.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-02T17:00:00+00:00",
-      "sent_at": "2026-10-02T20:19:57.026770+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/trillium-labs-wants-to-do-high-risk-ai-research-in-the-open/",
-      "title": "These AI Experts Want to Do High-Stakes Research Out in the Open",
-      "summary": "Many frontier labs keep their risky research locked away. Trillium Labs wants to show off its work when it comes to self-improvement and model behavior.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-10-02T16:00:00+00:00",
-      "sent_at": "2026-10-02T20:19:57.026770+00:00"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/10/02/1143774/redefining-enterprise-intelligence-with-autonomous-ai/",
-      "title": "Redefining enterprise intelligence with autonomous AI",
-      "summary": "Enterprise AI is no longer a future ambition. It is in full operational flight. Model capabilities are advancing faster than most organizations can absorb, while the cost of performance continues to fall. Globally, AI investment is set to reach $2.5 trillion in 2026, up 44% from the previous year. For many enterprises, this investment has&#8230;",
-      "source": "MIT Technology Review",
-      "category": "AI",
-      "published": "2026-10-02T15:49:04+00:00",
-      "sent_at": "2026-10-02T20:19:57.026770+00:00"
     }
   ]
 }
