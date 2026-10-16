@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs",
+      "title": "ChatGPT can peek at your Chrome tabs now",
+      "summary": "OpenAI's ChatGPT Atlas browser is gone, but now ChatGPT's Google Chrome extension is getting some upgrades that allow it to use the browser tabs you already have open. With the extension installed, OpenAI says ChatGPT can now view your browser tabs when you tag Chrome in ChatGPT's web or desktop app, posting a demo video [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-15T22:43:23+00:00",
+      "sent_at": "2026-10-16T00:04:16.169661+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/15/bluesky-expands-its-ai-powered-attie-app-to-let-anyone-build-websites-games-and-more/",
+      "title": "Bluesky expands its AI-powered Attie app to let anyone build websites, games, and more",
+      "summary": "Bluesky is bringing “social vibe coding” to its experimental Attie platform, allowing users to create interactive experiences like games, quizzes, and websites that can tap into the social network's audience.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-15T18:56:46+00:00",
+      "sent_at": "2026-10-16T00:04:16.169661+00:00"
+    },
+    {
+      "link": "https://www.currentaffairs.org/news/why-were-banning-ai",
+      "title": "Why We're Banning AI",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-15T18:32:29+00:00",
+      "sent_at": "2026-10-16T00:04:16.169661+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/news/1012293/meta-apple-muse-spark-open-ai-model-mlx",
+      "title": "Meta and Apple team up to make Muse AI models run better on Macs",
+      "summary": "Meta announced the Muse Spark Open AI model today, claiming that it's the \"most capable US open-weight model to date.\" But the company also says that it's the \"the first model in its class\" that can \"run on your desktop using two Apple M5 Ultra Mac Studios with the latest MLX framework.\" Meta and Apple, [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-15T18:15:36+00:00",
+      "sent_at": "2026-10-16T00:04:16.169661+00:00"
+    },
+    {
+      "link": "https://www.reuters.com/business/finance/market-selloff-rising-rates-test-ai-data-centre-deal-boom-2026-10-15/",
+      "title": "Market selloff, rising rates test AI data centre deal boom",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-15T16:17:40+00:00",
+      "sent_at": "2026-10-16T00:04:16.169661+00:00"
+    },
+    {
+      "link": "https://already-clean.goodfire.com/",
+      "title": "Neural networks are clean",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-15T16:04:01+00:00",
+      "sent_at": "2026-10-16T00:04:16.169661+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/10/15/byds-electric-luxury-gt-major-update-europe-2027/",
+      "title": "BYD’s electric luxury GT will get a major update for Europe in 2027",
+      "summary": "BYD used the Denza Z9 GT to showcase its latest breakthrough technology, including its 5-minute Flash Charging. Next year, the luxury GT will get another major update in Europe. more…",
+      "source": "Electrek",
+      "category": "Innovationen",
+      "published": "2026-10-15T15:58:09+00:00",
+      "sent_at": "2026-10-16T00:04:16.169661+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says/",
+      "title": "Report: FTC probes Anthropic, OpenAI after Trump dismissed AI fears as “hoax”",
+      "summary": "FTC may fine AI firms on par with companies that delay data breach reports.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-10-15T15:43:24+00:00",
+      "sent_at": "2026-10-16T00:04:16.169661+00:00"
+    },
+    {
       "link": "https://www.theverge.com/entertainment/1012438/hollywood-tech-backlash-you-can-see-everything-musk-the-social-reckoning-artificial",
       "title": "The tech backlash is now in theaters",
       "summary": "Though movies about disruptive tech founders are nothing new, 2026 has been unusually stacked with features that take a much more critical look at how Silicon Valley is reshaping our reality. Aaron Sorkin's The Social Reckoning frames Mark Zuckerberg as a robotic villain whose ambitions are destabilizing society. Nathan Fielder and Lance Oppenheim's You Can [&#8230;]",
@@ -4076,78 +4148,6 @@
       "category": "Hardware",
       "published": "2026-10-01T19:18:03+00:00",
       "sent_at": "2026-10-02T01:59:16.865849+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2275295/chatgpt-can-now-help-you-virtually-try-on-clothes/",
-      "title": "ChatGPT can now help you virtually try on clothes",
-      "summary": "Images are generated with OpenAI's latest model and you can save clothes you like for later.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-01T22:27:39+00:00",
-      "sent_at": "2026-10-01T22:34:17.513393+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/whatever-ai-safety-looks-like-its-not-this/",
-      "title": "Whatever AI Safety Is, It’s Not This",
-      "summary": "Asking AI companies to self-regulate is a great way to pretend like you’ve accomplished something.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-10-01T22:10:42+00:00",
-      "sent_at": "2026-10-01T22:34:17.513393+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2275278/openai-fires-three-employees-who-allegedly-shared-info-with-an-external-ai-safety-group/",
-      "title": "OpenAI fires three employees who allegedly shared info with an external AI safety group",
-      "summary": "You can't make this stuff up.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-01T22:05:43+00:00",
-      "sent_at": "2026-10-01T22:34:17.513393+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/01/musks-ai-chatbot-grok-reportedly-encouraged-trump-to-capture-venezuelas-president/",
-      "title": "Musk’s AI chatbot Grok reportedly encouraged Trump to capture Venezuela’s president",
-      "summary": "President Trump reportedly asked for Grok's opinion before invading Venezuela and capturing Nicolás Maduro.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-01T21:08:11+00:00",
-      "sent_at": "2026-10-01T22:34:17.513393+00:00"
-    },
-    {
-      "link": "https://automatictransmission.khoury.northeastern.edu/index.html",
-      "title": "Car Is a Smartphone on Wheels. Here's Who's Listening",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Hardware",
-      "published": "2026-10-01T20:23:27+00:00",
-      "sent_at": "2026-10-01T22:34:17.513393+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/google/2026/10/antitrust-lawsuits-targeting-google-ai-search-dismissed-by-federal-judge/",
-      "title": "Judge dismisses Chegg and Penske antitrust lawsuits targeting Google AI search",
-      "summary": "The court acknowledges AI search comes with consequences, but it's not an antitrust issue.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-10-01T20:11:55+00:00",
-      "sent_at": "2026-10-01T22:34:17.513393+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/uncanny-valley-podcast-trumps-pinky-swear-ai-safety-accord-an-ai-agent-worth-the-risk/",
-      "title": "Trump’s ‘Morally Binding’ AI ‘Accord,’ the Rise of AI Agents, and Extremists on the Ballot",
-      "summary": "This week on “Uncanny Valley,” we discuss the voluntary AI safety agreement tech executives signed, AI agents for normies, and extremist candidates running for office in the US midterms.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-10-01T19:58:31+00:00",
-      "sent_at": "2026-10-01T22:34:17.513393+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1003756/google-gemini-live-guided-vision",
-      "title": "Google’s new Guided Vision feature can help you read the fine print",
-      "summary": "Guided Vision is launching in Gemini Live on compatible Android devices today to use AI to give real-time audio descriptions of anything you point your phone's camera at. By sharing your camera in Gemini Live, you can have Google's AI help with things like reading small text, describing your surroundings, finding or identifying objects around [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-01T19:47:51+00:00",
-      "sent_at": "2026-10-01T22:34:17.513393+00:00"
     }
   ]
 }
