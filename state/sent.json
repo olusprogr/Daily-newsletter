@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.anthropic.com/research/ecdsa-curve-origins",
+      "title": "Claude reveals ECDSA curve origins",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-16T18:55:59+00:00",
+      "sent_at": "2026-10-16T19:16:48.500594+00:00"
+    },
+    {
+      "link": "https://www.ft.com/content/5a310aee-f555-4266-874c-b1b4db20186d",
+      "title": "Anthropic assigned highest junk credit rating in June",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-16T18:11:42+00:00",
+      "sent_at": "2026-10-16T19:16:48.500594+00:00"
+    },
+    {
+      "link": "https://spectrum.ieee.org/ieee-smart-cities-new-services",
+      "title": "IEEE Offers More Services to Cities That Want to Be Smarter",
+      "summary": "More and more city governments are using advanced technologies to improve livability for their residents. Municipalities use data from smartphones and sensors for traffic enforcement, traffic control, and waste management. They also have implemented artificial intelligence and deep learning programs. Dubai , Paris , and Coral Gables , Fla., are among the cities that have invested heavily in programs to become smarter. But along with the conveniences that come with a smart city transition, there have been challenges including safety and privacy issues and eroding relationships between residents and city officials. Although many initiatives have delivered real innovations, not all have been successful. Inefficient global coordination has hindered projects with unclear standards, socioeconomic differences, and a lack of worldwide governance, leading to a disconnect between the technologies and the ability to adapt to them. Citizens’ trust in the technologies suffers because of privacy breaches, personal data leaks, and other issues. Finding solutions Smart city projects are complex and expensive endeavors that involve politicians, citizens, technocrats, and engineers. Successful projects require citizens to be fully engaged and to have strong collaborations with the participants, especially engineers, as engineering is the cornerstone . Collaboration with universities, research institutions, and technology experts can bridge knowledge gaps on the behavior of complex socio-technical systems. What’s missing, though, is a global platform where those involved can discuss their experiences. To help solve those and other challenges, the IEEE Smart Cities Technical Community (formerly the IEEE Smart Cities Initiative ) was launched in 2013 by IEEE Future Directions , which incubates emerging technologies and new applications of current ones. The technical community provides city leaders and others with credible, unbiased information and educational content developed by IEEE experts. Since then, IEEE Smart Cities has launched services including its flagship International Smart Cities Conference , a media center with educational and technical resources, and a contest to recognize the best smart project completed by city officials. The platforms bring together practicing engineers, academic researchers, policymakers, and city leaders to collaborate and exchange ideas and experiences about moving toward a smart-city model. Better serving humanity In 2021 the IEEE Power & Energy Society began managing the Smart Cities program, which is supported by the IEEE Communications , Industry Applications , and Intelligent Transportation Systems societies and other IEEE entities. Thanks to volunteers’ dedication and determination, IEEE Smart Cities launched several services. But the initiative’s structure limited the development of long-term projects and the creation of new activities. To address the situation, the IEEE Technical Activities Board (TAB) created the second-generation technical community ad hoc committee , also in 2021. It was a pilot program whereby IEEE Smart Cities formed a board of governors to oversee the community’s operations and leadership, and created a policies and procedures manual. In November 2025 IEEE Smart Cities became a TAB technical community . IEEE Smart Cities now Today more than 7,000 volunteers collaborate on various aspects of the community within at least one of the following technical tracks: Smart grid. Smart water management. Green electronics for smart cities. Smart governance and planning. Hydrogen for smart cities. Smart and sustainable campus. Security for smart cities. Smart lighting for cities. Smart mobility for cities. Artificial intelligence for cities. New webinar series, workshops, conferences, educational resources, and other offerings are being created. Two events were launched recently: the IEEE European Technology and Engineering Management Summit , held in May 2025 in Belgium, with the next one planned for 2027; and the IEEE Sustainable Smart Lighting World Conference , scheduled for 2 to 6 December in Athens. The Smart Cities Ambassadors program aims to raise the technical community’s visibility outside IEEE by holding roundtables and other events at non-IEEE functions. IEEE Smart Cities volunteers are working on launching journals. In addition, standards are being developed in collaboration with the IEEE Standards Association , societies, and councils. The program is collaborating with the Open and Agile Smart Cities and Communities network, the Instituto de Competitividad e Innovación para el Desarrollo y Transferencia de Tecnología, and the International Project Management Association . All of those actions have the ultimate objective of boosting IEEE Smart Cities’ growth and sustainability, as well as strengthening the leadership and educational offerings to technical community volunteers. If you would like to volunteer, visit the Smart Cities website .",
+      "source": "IEEE Spectrum",
+      "category": "AI",
+      "published": "2026-10-16T18:00:03+00:00",
+      "sent_at": "2026-10-16T19:16:48.500594+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/",
+      "title": "India becomes the latest country to report rogue AI agent activity",
+      "summary": "The agents got in through credentials and connection settings left exposed in app configurations, public code repositories, and overly permissive cloud roles.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-16T17:52:24+00:00",
+      "sent_at": "2026-10-16T19:16:48.500594+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/10/16/tesla-fsd-crash-chp-patrol-car-driver-asleep-fairfield/",
+      "title": "Tesla driver says he was asleep on FSD when he hit CHP car, 2 officers hurt",
+      "summary": "Two California Highway Patrol officers are recovering from serious injuries after a Tesla drove into their patrol car at a crash scene on Interstate 80 in Fairfield. The 22-year-old driver told investigators he was asleep with Tesla’s “Full Self-Driving” engaged. CHP released dashcam video of the impact on Thursday. It’s the latest Tesla to plow into an emergency scene, a failure federal regulators started investigating five years ago. more…",
+      "source": "Electrek",
+      "category": "Autonomes Fahren",
+      "published": "2026-10-16T17:14:43+00:00",
+      "sent_at": "2026-10-16T19:16:48.500594+00:00"
+    },
+    {
+      "link": "https://www.mercor.com/research/labor-index/benchmark-map/",
+      "title": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-16T17:08:38+00:00",
+      "sent_at": "2026-10-16T19:16:48.500594+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/desktops/gaming-pcs/this-could-be-your-last-chance-to-grab-an-rtx-5090-how-to-secure-nvidias-top-rtx-gpu-as-rumors-of-discontinuation-swirl",
+      "title": "This could be your last chance to grab an RTX 5090",
+      "summary": "With no new Nvidia 5090 GPU replacement anticipated before at least 2028, this could well be your last opportunity to get your hands on a very powerful GPU for gaming.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-10-16T17:04:44+00:00",
+      "sent_at": "2026-10-16T19:16:48.500594+00:00"
+    },
+    {
+      "link": "https://spectrum.ieee.org/electric-truck-battery-design-simulation",
+      "title": "Simulation App Speeds Up Electric Truck Battery Design",
+      "summary": "This article is brought to you by COMSOL . These days, no one blinks an eye at two-day, one-day, and even same-day package deliveries. Despite the plethora of localized fulfillment and distributi on centers that have cropped up to meet the demand, delivery trucks still need to make considerably long drives, often over highways. To reduce fuel and maintenance costs as well as carbon emissions, companies are investing in electric trucks for their delivery fleets. While turning to electric trucks is a promising solution, the battery packs incorporated into these automotive designs often fall short in the lifetime needed to make long-distance highway travel feasible. To help overcome the issue of battery lifetime, a consortium of universities and industry partners incorporated multiscale simulation and a custom simulation app into the battery manufacturing process. The organizations involved in this project were Aurobay, Resolvent, the European Commission, the Technical University of Denmark (DTU), Vinnova (the Swedish Agency for Innovation Systems), Innovation Fund Denmark, and Volvo Group Trucks Operations. The simulation app, built by Resolvent, a Denmark-based engineering consultancy that specializes in green energy, enables the R&amp;D department at Volvo to easily test battery lifetime performance. Laser Who? The Multiscale Simulation of Laser Welding for Optimal Battery Pack Manufacturing project — referred to as “LaserBATMAN” — was initiated in May 2022 and wrapped up in May 2025 (Ref. 1). Although BATMAN here refers to battery manufacturing and not the famous masked superhero, the goals for the project also strove for greatness. The LaserBATMAN project aimed to optimize two key performance metrics for battery packs: robustness and lifetime (Ref. 1). One element of the battery manufacturing process that affects both of these metrics is the laser welding used in component joining processes (for example, to connect battery cells in a pack via a busbar). If done correctly, laser welding can positively impact battery life, but if done incorrectly, laser welding can increase the risk of battery degradation. Computational modeling can be used to analyze and predict the effects of welding and joining processes at different stages of the manufacturing process. Martin Refslund Nielsen, former chief commercial officer and partner at Resolvent, explained that for this type of multiphysics and multiscale problem, “COMSOL Multiphysics is just the right tool.” R&amp;D Workflow for Multiscale Model and App The Resolvent team used the COMSOL Multiphysics software to study how laser welding affects the electrochemistry and degradation of battery cells. At least, that’s how the project started. “Ambitions grew,” Nielsen said, explaining that the team ended up modeling the performance of the entire battery, from cell to pack level, and even “turned [the model] into a design tool in the end”, in reference to the app. After training the deep neural network of the battery model, the team built a custom simulation app to efficiently optimize busbar tabs in the configuration of a battery pack. First, the team built an electrochemical model of a battery cell by inputting the formulas for the relevant chemical reaction kinetics (Figure 2). The resulting cell-layer model was then fed input data, and the output data was used to train a deep neural network (DNN). With this reduced-order model, the team was able to quickly gain insight into cell behavior. After training the DNN of the battery model, the team built a custom simulation app to efficiently optimize busbar tabs in the configuration of a battery pack. Figure 2: The Resolvent battery model. COMSOL A “Tool Within a Tool” for Busbar Weld Design The different features of the simulation app, as described by Nielsen, include its options to input dimensions for the pack geometry (Figure 3), the number of cells, and operating conditions such as ambient temperature and charge–discharge current profiles. The app also makes it possible to apply a simple charging current and load customized cycles. Users are then able to see how the battery performs with each set of specific inputs. Figure 3. The battery pack model developed by Resolvent. COMSOL Another important aspect of Resolvent’s app is the Busbar Weld Design Tool button, which Nielsen described as “a tool within a tool.” This button can be used to efficiently calculate busbar weld performance after a number of cycles . After clicking the button, a window opens with options for setting different parameters, including the shape of the weld, busbar thickness, and penetration depth of the laser (Figure 4). “[This button] is interesting from a robust design perspective,” said Nielsen. Users can apply a variant to the input parameters to see what happens in production if the weld does not reach far enough into the busbar. Figure 4. Resolvent’s simulation app, showing how certain parameters can be customized. The model shows how the busbar weld is affected by a cooling airflow. COMSOL “We certainly get deep technical insight here, and we can dimension the design in the sweet spot. Deep technical insight is also key to optimizing product performance,” Nielsen said. For example, if the results suggest better cooling, the team could potentially reduce the design by two battery cells and retain the same performance, easily quantifying the tradeoff between cooling and setup. Predicting Pack Performance The app’s user interface also includes a Compute Battery button, which can be used to see the temperature of the weld in a given state, the state of charge, and the solid–electrolyte interface (SEI) layer thickness (Figure 5). The results can help the engineering team further determine if there is room for optimization in the design. For instance, a user can apply a cooling flow in the app and see if turbulence or standing air occurs. As explained by Nielsen, simulation apps offer more consistent analysis and reporting, and the intuitiveness of custom apps makes it easier to share knowledge. “We are in a much better place to optimize performance and increase robustness,” said Nielsen. Figure 5. Temperature in the given state (left), state of charge (middle), and SEI layer thickness (right) in the battery pack. COMSOL The custom simulation app developed by the LaserBATMAN consortium can be used to help produce more robust battery designs with ranges that can support highway travel over longer distances with fewer failures — all while promoting the use of green energy. A heroic project indeed. References “LaserBATMAN,” University of Skovde, accessed 08/21/2025, https://www.his.se/en/research/virtual-engineering/virtual-manufacturing-processes/LaserBatman/ . R. Nielsen, “Keynote: Optimizing Lifetime and Robustness of Electric Truck Batteries with Simulation Apps,” COMSOL Conference 2024 Florence, October 2024.",
+      "source": "IEEE Spectrum",
+      "category": "AI",
+      "published": "2026-10-16T16:49:18+00:00",
+      "sent_at": "2026-10-16T19:16:48.500594+00:00"
+    },
+    {
       "link": "https://www.wired.com/story/maybe-chatbots-shouldnt-get-to-say-i-or-me/",
       "title": "Maybe Chatbots Shouldn’t Get to Say ‘I’ or ‘Me’",
       "summary": "MIT professor Sherry Turkle warns that people have become dangerously enmeshed with chatbots.",
@@ -4148,78 +4220,6 @@
       "category": "AI",
       "published": "2026-10-02T15:49:04+00:00",
       "sent_at": "2026-10-02T20:19:57.026770+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/02/techcrunch-disrupt-2026-blackstones-jas-khaira-on-building-the-next-generation-of-ai-giants/",
-      "title": "TechCrunch Disrupt 2026: Blackstone’s Jas Khaira on building the next generation of AI giants",
-      "summary": "Blackstone's Jas Khaira will take the Builders Stage at TechCrunch Disrupt 2026 on building next-gen AI. Register for your pass and get 50% off a second.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-02T15:00:00+00:00",
-      "sent_at": "2026-10-02T15:21:35.948131+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/trumps-crazy-ai-rebrand-was-a-loyalty-test-for-tech-execs-and-it-worked/",
-      "title": "Trump’s Crazy AI Rebrand Was a Loyalty Test for Tech Execs—and It Worked",
-      "summary": "For years these billionaires gushed obsessively about AI. But they meekly went along when Trump cancelled the term.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-10-02T15:00:00+00:00",
-      "sent_at": "2026-10-02T15:21:35.948131+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/california-tech-ceo-arrested-faces-up-to-20-years-in-prison-for-smuggling-usd300-million-in-nvidia-ai-servers-to-china-federal-prosecutors-say-chips-were-routed-through-malaysia-and-singapore-using-false-paperwork",
-      "title": "California tech CEO arrested, faces up to 20 years in prison for smuggling $300 million in Nvidia AI servers to China",
-      "summary": "U.S. authorities have arrested a California man accused of smuggling more than $300 million worth of export-controlled Nvidia-powered servers to China through Malaysia and Singapore, allegedly using false paperwork to conceal their final destination",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-02T14:53:41+00:00",
-      "sent_at": "2026-10-02T15:21:35.948131+00:00"
-    },
-    {
-      "link": "https://www.reuters.com/business/retail-consumer/amazon-seeks-offload-8-billion-nvidia-chips-investors-ft-reports-2026-10-02/",
-      "title": "Amazon seeks to offload $8B of Nvidia chips to investors",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Hardware",
-      "published": "2026-10-02T14:30:32+00:00",
-      "sent_at": "2026-10-02T15:21:35.948131+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/02/techcrunch-disrupt-2026-clays-kareem-amin-on-the-rise-of-the-gtm-engineer/",
-      "title": "TechCrunch Disrupt 2026: Clay’s Kareem Amin on the rise of the GTM engineer",
-      "summary": "Clay Co-founder and CEO Kareem Amin joins the AI Stage to discuss the rise of GTM engineer at TechCrunch Disrupt 2026. Register for your ticket and get a second pass at 50% off.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-02T14:30:00+00:00",
-      "sent_at": "2026-10-02T15:21:35.948131+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/video-games/console-gaming/sony-brings-ai-powered-upscaling-to-the-standard-ps5-new-qssr-technology-to-deliver-a-taste-of-the-ps5-pro-experience-streamlined-neural-network-tech-built-with-amd",
-      "title": "Sony brings AI-powered upscaling to the standard PS5",
-      "summary": "The base PS5 is getting an optimized version of Sony's AI-powered upscaling technology, offering developers a new way to improve image quality and stability without demanding more powerful hardware.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-02T14:10:00+00:00",
-      "sent_at": "2026-10-02T15:21:35.948131+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2275633/nvidias-smuggling-problem-is-getting-worse/",
-      "title": "NVIDIA's smuggling problem is getting worse",
-      "summary": "US officials have reportedly highlighted gaps in NVIDIA's due diligence over smuggling.",
-      "source": "Engadget",
-      "category": "Hardware",
-      "published": "2026-10-02T14:02:14+00:00",
-      "sent_at": "2026-10-02T15:21:35.948131+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/amazon-and-synopsys-ink-multi-year-billion-dollar-deal-in-multi-year-ip-agreement-to-accelerate-ai-chip-design-efforts-synopsys-to-adopt-amazon-bedrock-to-deploy-ai-agents-harnessing-aws-compute-and-storage-capabilities",
-      "title": "Amazon and Synopsys ink multi-year billion-dollar deal in multi-year IP agreement to accelerate AI chip design efforts",
-      "summary": "Amazon and chip design tool maker Synopsys have inked a multi-year partnership worth over a billion dollars. As part of the arrangement, Amazon will license Synopsys' chip designs and its design tools to create and optimize new AI chips. Synopsys will adopt Amazon Bedrock to build and deploy AI agents, and adopt AWS computing and storage services, while optimizing its own tools for Amazon hardware.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-02T13:50:00+00:00",
-      "sent_at": "2026-10-02T15:21:35.948131+00:00"
     }
   ]
 }
