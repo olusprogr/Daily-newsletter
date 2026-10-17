@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/3d-printing/us-army-to-use-3d-printed-rocket-motors-for-low-cost-cruise-missiles-additive-manufacturing-company-secures-deal-to-build-rocket-engines-for-the-arsenal-of-freedom",
+      "title": "US Army to use 3D-printed rocket motors for low-cost cruise missiles",
+      "summary": "X-Bow Systems has been tapped to 3D-print rocket motors for the U.S. Army's low-cost cruise missiles.",
+      "source": "Tom's Hardware",
+      "category": "Autonomes Fahren",
+      "published": "2026-10-17T10:30:00+00:00",
+      "sent_at": "2026-10-17T11:20:38.429660+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/why-ai-isnt-ready-to-tackle-our-convoluted-genomes/",
+      "title": "Why AI Isn’t Ready to Tackle Our Convoluted Genomes",
+      "summary": "The DNA inside our cells isn’t just a series of instructions, but something far more dynamic. Like scientists, AI models don't yet have the data to properly decode it.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-10-17T09:00:00+00:00",
+      "sent_at": "2026-10-17T11:20:38.429660+00:00"
+    },
+    {
+      "link": "https://llmspeed.dev/",
+      "title": "Show HN: Llmspeed – feel how fast a local LLM runs before you buy the hardware",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-17T04:36:53+00:00",
+      "sent_at": "2026-10-17T11:20:38.429660+00:00"
+    },
+    {
+      "link": "https://adepts.of0x.cc/eufy-homestation2-firmware/",
+      "title": "A story of WiFi secrets, UART lockdowns and a damaged flash memory chip",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Hardware",
+      "published": "2026-10-16T15:38:28+00:00",
+      "sent_at": "2026-10-17T11:20:38.429660+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/16/replits-ceo-says-the-future-of-work-is-the-self-driving-company/",
+      "title": "Replit’s CEO says the future of work is the ‘self-driving company’",
+      "summary": "Replit CEO Amjad Masad envisions a future of “self-driving companies,” where AI agents handle day-to-day tasks and people focus on higher-level decisions.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-16T12:55:09+00:00",
+      "sent_at": "2026-10-17T11:20:38.429660+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2288645/an-openai-test-agent-stole-test-ethereum-to-finish-a-coding-task/",
+      "title": "An OpenAI research agent 'stole' test Ethereum to finish a coding task",
+      "summary": "An OpenAI research model hit a nebulous milestone today by pilfering test Ethereum tokens.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-16T12:50:24+00:00",
+      "sent_at": "2026-10-17T11:20:38.429660+00:00"
+    },
+    {
+      "link": "https://www.techpowerup.com/353776/qualcomm-legally-proves-arm-breached-its-license-wins-usd-2",
+      "title": "Qualcomm Legally Proves Arm Breached Its License, Wins $2",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Hardware",
+      "published": "2026-10-16T12:16:42+00:00",
+      "sent_at": "2026-10-17T11:20:38.429660+00:00"
+    },
+    {
+      "link": "https://www.equator.org/articles/arundhati-roy-artificial-intelligence",
+      "title": "Artificial intelligence is capitalism's final destination",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-16T12:08:40+00:00",
+      "sent_at": "2026-10-17T11:20:38.429660+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/laptops/nvidia-rtx-spark-devices-are-now-officially-on-sale-secure-the-surface-laptop-ultra-or-other-rtx-spark-laptops-here-starting-at-usd2-599-where-to-buy-pricing-and-availability-revealed-on-several-models",
       "title": "Nvidia RTX Spark devices are now officially on sale, secure the Surface Laptop Ultra or other RTX Spark laptops here",
       "summary": "Orders are live on Nvidia RTX Spark laptops, including the Microsoft Surface Laptop Ultra and devices from HP, Lenovo, Asus, and Dell.",
