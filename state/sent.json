@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/laptops/nvidia-rtx-spark-devices-are-now-officially-on-sale-secure-the-surface-laptop-ultra-or-other-rtx-spark-laptops-here-starting-at-usd2-599-where-to-buy-pricing-and-availability-revealed-on-several-models",
+      "title": "Nvidia RTX Spark devices are now officially on sale, secure the Surface Laptop Ultra or other RTX Spark laptops here",
+      "summary": "Orders are live on Nvidia RTX Spark laptops, including the Microsoft Surface Laptop Ultra and devices from HP, Lenovo, Asus, and Dell.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-10-16T15:38:45+00:00",
+      "sent_at": "2026-10-17T06:32:10.495578+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/16/jev-is-vercels-fastest-adopted-ai-model-ever/",
+      "title": "Jev is Vercel’s fastest-adopted AI model ever",
+      "summary": "The data comes from Vercel's AI gateway, a unified API service similar to OpenRouter.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-16T15:33:49+00:00",
+      "sent_at": "2026-10-17T06:32:10.495578+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1012901/analogue-retro-console-supern-nt-plus-nintendo-sega-genesis-mega-plus",
+      "title": "Analogue is re-releasing its SNES and Genesis consoles with some nice upgrades",
+      "summary": "Analogue announced new versions of its Super Nt and Mega Sg retro consoles today with a \"reworked industrial design\" and built-in wireless connectivity for controllers and accessories. Like the original versions, the new Super Nt Plus and Mega Sg Plus are able to play Nintendo and Sega Genesis cartridges using an FPGA processor that perfectly [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-10-16T15:08:38+00:00",
+      "sent_at": "2026-10-17T06:32:10.495578+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1012748/nvidia-rtx-spark-windows-arm-laptops-asus-hp-lenovo-impressions",
+      "title": "A week with RTX Spark: everything we’ve learned using Nvidia’s new laptops",
+      "summary": "Nvidia's RTX Spark N1X processor is finally here, and we've been collectively testing a small fortune's worth of powerful laptops sporting this new \"superchip.\" RTX Spark is designed to be a high-performing Arm-based SoC for laptops and small desktop computers, rivaling the best from Apple, Intel, AMD, and Qualcomm. It has loads of cores, Nvidia [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-10-16T15:00:00+00:00",
+      "sent_at": "2026-10-17T06:32:10.495578+00:00"
+    },
+    {
+      "link": "https://rstation.ai/",
+      "title": "Show HN: rStation – A shared research lab for your AI agents",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-16T14:35:43+00:00",
+      "sent_at": "2026-10-17T06:32:10.495578+00:00"
+    },
+    {
+      "link": "https://starskirmish.com/bench/v0-2/",
+      "title": "Show HN: Gemini 4 Argon plays StarCraft",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-16T14:18:44+00:00",
+      "sent_at": "2026-10-17T06:32:10.495578+00:00"
+    },
+    {
+      "link": "https://onlinelibrary.wiley.com/doi/epdf/10.1002/aaai.70113",
+      "title": "How to make System 1 LLMs show System 2 competencies?",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-16T14:16:34+00:00",
+      "sent_at": "2026-10-17T06:32:10.495578+00:00"
+    },
+    {
+      "link": "https://www.youtube.com/watch?v=eqOfmtTJD1A",
+      "title": "Tesla unveils 'flying' Roadster with SpaceX thrusters [video]",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Innovationen",
+      "published": "2026-10-16T14:12:15+00:00",
+      "sent_at": "2026-10-17T06:32:10.495578+00:00"
+    },
+    {
       "link": "https://www.theverge.com/tech/1013314/apple-app-store-nudify-ai-apps-harassment",
       "title": "Apple&#8217;s updated App Store rules go after &#8216;nudify&#8217; AI apps",
       "summary": "Apple's App Store rules now more explicitly ban so-called \"nudify\" apps that generate intimate images of people without their consent using AI tools. The rule changes follow significant criticism toward Apple after X users used Grok earlier this year to make nonconsensual, sexualized deepfakes, including minors. Apple didn't pull X or Grok from the App [&#8230;]",
@@ -4148,78 +4220,6 @@
       "category": "Hardware",
       "published": "2026-10-03T07:48:11+00:00",
       "sent_at": "2026-10-03T12:12:35.500074+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/security/2026/10/apple-changes-full-disk-access-permissions-to-curb-abuse-from-ai-agents/",
-      "title": "Apple changes full-disk access permissions to curb abuse from AI agents",
-      "summary": "Meta says FDA isn't sufficient to Muse reading messages. Apple begs to differ.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-10-02T23:03:16+00:00",
-      "sent_at": "2026-10-03T06:00:59.181188+00:00"
-    },
-    {
-      "link": "https://www.youtube.com/watch?v=xc2FTBGRSJo",
-      "title": "What if we stopped using GPUs? [video]",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Hardware",
-      "published": "2026-10-02T18:09:38+00:00",
-      "sent_at": "2026-10-03T06:00:59.181188+00:00"
-    },
-    {
-      "link": "https://www.theregister.com/on-prem/2026/10/02/power-approval-set-to-delay-oracles-wisconsin-ai-datacenter/5300832",
-      "title": "Power approval set to delay Oracle's Wisconsin AI datacenter",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-02T15:24:54+00:00",
-      "sent_at": "2026-10-03T06:00:59.181188+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2275148/dont-let-the-adorable-ai-agents-fool-you/",
-      "title": "Don't let the adorable AI agents fool you",
-      "summary": "Just because they look harmless doesn't mean you should be irresponsible with your data.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-02T15:00:00+00:00",
-      "sent_at": "2026-10-03T06:00:59.181188+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/gadgets/2026/10/the-7-year-old-nvidia-shield-tv-is-now-100-more-expensive-thanks-to-ai/",
-      "title": "The 7-year-old Nvidia Shield TV is now $100 more expensive due to AI",
-      "summary": "Initially launched in 2019, the Nvidia Shield TV Pro now retails for $299.99.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-10-02T14:52:16+00:00",
-      "sent_at": "2026-10-03T06:00:59.181188+00:00"
-    },
-    {
-      "link": "https://yuka.dev/blog-2026-10-02-linux-m4.html",
-      "title": "The Forgetful CPU (Linux on M4)",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Hardware",
-      "published": "2026-10-02T14:22:12+00:00",
-      "sent_at": "2026-10-03T06:00:59.181188+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/space/2026/10/rocket-report-spacex-completes-launch-triple-header-rocket-lab-nets-big-contract/",
-      "title": "Rocket Report: SpaceX completes launch triple-header; Rocket Lab nets big contract",
-      "summary": "Blue Origin seeks FAA approval for up to 50 New Glenn launches and 50 booster landings per year.",
-      "source": "Ars Technica",
-      "category": "Innovationen",
-      "published": "2026-10-02T13:54:34+00:00",
-      "sent_at": "2026-10-03T06:00:59.181188+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2275621/apple-is-reportedly-building-a-smart-home-camera-that-wont-record-video-footage-of-you-or-anyone-else/",
-      "title": "Apple is reportedly building a smart home camera that won't record video footage of you or anyone else",
-      "summary": "The device will apparently use AI to analyze activity in your home without actually filming it.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-02T13:44:31+00:00",
-      "sent_at": "2026-10-03T06:00:59.181188+00:00"
     }
   ]
 }
