@@ -1,6 +1,51 @@
 {
   "items": [
     {
+      "link": "https://www.opendemocracy.net/amazon-ai-surveillance-monitor-union-activity-uk-warehouses-birmingham-coventry-atlas-sutton-coldfield/",
+      "title": "Amazon uses union-busting AI surveillance to monitor union risk in UK warehouses",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-17T16:04:23+00:00",
+      "sent_at": "2026-10-17T17:45:24.656860+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/gpus/quad-8-pin-mod-protects-the-usd8-500-rtx-5090-you-cant-replace-from-melting-modders-custom-power-solution-claims-to-fix-nvidia-16-pin-gpu-meltdowns",
+      "title": "Quad 8-pin mod protects the $8,500 RTX 5090 you can’t replace from melting",
+      "summary": "Redditor showcases a new quad 8-pin power-conversion kit for the 16-pin power connector on Nvidia GeForce RTX graphics cards.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-10-17T15:20:00+00:00",
+      "sent_at": "2026-10-17T17:45:24.656860+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/peripherals/controllers-gamepads/moza-ay210-force-feedback-base-and-mfy-yoke-review",
+      "title": "MOZA AY210 Force Feedback Base and MFY Yoke review: Taking flight sim immersion to the next level",
+      "summary": "The MOZA AY210 Force Feedback Base and MFY Yoke Bundle brings force feedback and autopilot following to the world of desktop flight simulators.",
+      "source": "Tom's Hardware",
+      "category": "Autonomes Fahren",
+      "published": "2026-10-17T15:00:00+00:00",
+      "sent_at": "2026-10-17T17:45:24.656860+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/openai-agent-took-eth-from-another-account-without-authorization-justified-stealing-in-its-chain-of-thought",
+      "title": "Crafty OpenAI agent willingly stole crypto from an account it didn't own to complete a task during test",
+      "summary": "GPT5.6-Sol didn't have funds to deploy smart contracts, so it looked for exposed accounts with enough money to pay for the gas fees.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-10-17T12:00:00+00:00",
+      "sent_at": "2026-10-17T17:45:24.656860+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/video-games/retro-gaming/game-decompilation-tracker-decomp-dev-shuts-its-public-leaderboard-saying-ai-has-broken-the-community-its-creator-blames-forks-that-use-ai-to-finish-other-teams-projects-and-races-to-ship-rough-pc-ports",
+      "title": "Game decompilation hub freezes leaderboard after AI turns progress into a hollow numbers game amid explosion of 'AI slop'",
+      "summary": "decomp.dev has closed its public index of game decompilation projects, saying AI-driven forks and ports broke the community.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-10-17T11:30:00+00:00",
+      "sent_at": "2026-10-17T17:45:24.656860+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/pc-components/gpus/nvidia-reportedly-insists-the-rtx-5090-isnt-dead-despite-severe-shortages-and-removed-listings-at-multiple-retailers-flagship-gpu-is-missing-from-nvidias-store-and-commands-usd8-500-on-amazon",
       "title": "Nvidia reportedly insists the RTX 5090 isn't dead despite severe shortages and removed listings at multiple retailers",
       "summary": "Nvidia states that RTX 5090 isn't discontinued, only that supply is constrained — and yet the card is effectively gone from storefronts",
@@ -4220,78 +4265,6 @@
       "category": "AI",
       "published": "2026-10-03T14:00:00+00:00",
       "sent_at": "2026-10-03T19:42:59.894152+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/",
-      "title": "OpenAI safety employee resigns, claiming the company’s ‘culture is broken’",
-      "summary": "By his own admission, David Robinson is “something of a cliché”: an employee at a leading AI company who issues a dire warning while resigning from their job.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-03T16:30:01+00:00",
-      "sent_at": "2026-10-03T16:57:41.964909+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2276577/former-openai-employee-says-ai-should-be-regulated-like-nuclear-power-plants/",
-      "title": "Former OpenAI employee says AI should be regulated like nuclear power plants",
-      "summary": "The company's former safety lead said frontier AI model releases should have \"layers of redundancy and careful, time-consuming planning.\"",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-03T16:25:15+00:00",
-      "sent_at": "2026-10-03T16:57:41.964909+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/entertainment/1004162/splice-ceo-kakul-srivastava-ai-interview",
-      "title": "Splice CEO Kakul Srivastava thinks AI emails are killing conversations",
-      "summary": "Kakul Srivastava is the CEO of Splice, the sample platform countless producers rely on for one-shots and melodic loops. Samples pulled from the service have found their way into massive hits like Lisa's \"Money\" and \"Espresso\" by Sabrina Carpenter. (The original samples are here and here, for the curious.) Before that, Kakul held executive roles [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-03T15:00:00+00:00",
-      "sent_at": "2026-10-03T16:57:41.964909+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/semiconductors/elon-musk-confirms-discussions-with-tsmc-about-terafab-chipmaking-collaboration-intel-is-the-only-other-named-partner-terafab-to-exclusively-supply-tesla-spacex-and-xai",
-      "title": "Elon Musk confirms discussions with TSMC about Terafab chipmaking collaboration",
-      "summary": "Elon Musk and TSMC reportedly discuss multiple collaboration opportunities within the Terafab project.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-10-03T14:50:50+00:00",
-      "sent_at": "2026-10-03T16:57:41.964909+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/10/03/tesla-robotaxi-pets-night-musk-lidar/",
-      "title": "Musk explains why Tesla Robotaxi is not running at night, and lidar is the answer",
-      "summary": "Elon Musk says the main thing holding back Tesla Robotaxi’s night hours is that the cars have a hard time seeing pets in the dark. His example was “grey kittens on grey tarmac.” That’s a low-light, low-contrast detection problem, which is the textbook weakness of cameras and the exact thing lidar and radar handle. Musk has spent years calling those sensors a “crutch” and a “fool’s errand.” more…",
-      "source": "Electrek",
-      "category": "Autonomes Fahren",
-      "published": "2026-10-03T14:36:59+00:00",
-      "sent_at": "2026-10-03T16:57:41.964909+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm",
-      "title": "An OpenAI safety employee has quit and is sounding the alarm",
-      "summary": "David Robinson used to write the safety reports that accompanied every major model release at OpenAI. This week, he resigned from his position and is now speaking out in an editorial in The Atlantic. It's understandable if you're feeling a bit cynical about everyone suddenly coming out of the woodwork to warn about how dangerous [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-03T14:31:56+00:00",
-      "sent_at": "2026-10-03T16:57:41.964909+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2273342/what-does-fdm-stand-for-fused-deposition-modeling-3d-printing-method/",
-      "title": "What does FDM stand for in 3D printing and how does it work?",
-      "summary": "FDM stands for fused deposition modeling, but what does that mean, and how does it differ from other 3D printing methods? Let's find out.",
-      "source": "Engadget",
-      "category": "Innovationen",
-      "published": "2026-10-03T14:30:00+00:00",
-      "sent_at": "2026-10-03T16:57:41.964909+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/video-games/pc-gaming/buying-used-cpus-can-expose-users-to-existing-bans-from-anti-cheat-engines-some-anti-cheat-engines-enforce-permanent-bans-while-others-have-an-expiration-date",
-      "title": "Buying used CPUs can expose users to existing bans from anti-cheat engines, and there's no way to check for violations before purchase",
-      "summary": "The CPU's previous owner apparently used it for cheating on Valorant, with its HWID getting flagged by Vanguard. When the Redditor bought and installed it on their PC, their Valorant account received a ban, too.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-10-03T14:09:00+00:00",
-      "sent_at": "2026-10-03T16:57:41.964909+00:00"
     }
   ]
 }
