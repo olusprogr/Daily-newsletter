@@ -1,6 +1,24 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
+      "title": "Replit is no longer working with Anthropic, CEO says",
+      "summary": "Over the weekend, Masad clarified that OpenAI would replace Anthropic as its default model provider. Claude will still be available to customers on the platform.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-17T18:48:08+00:00",
+      "sent_at": "2026-10-17T20:04:38.035797+00:00"
+    },
+    {
+      "link": "https://fortune.com/2026/10/16/openai-discloses-four-more-rogue-incidents-involving-financial-medical-and-government-data/",
+      "title": "OpenAI discloses four more rogue incidents",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-17T16:31:12+00:00",
+      "sent_at": "2026-10-17T20:04:38.035797+00:00"
+    },
+    {
       "link": "https://www.opendemocracy.net/amazon-ai-surveillance-monitor-union-activity-uk-warehouses-birmingham-coventry-atlas-sutton-coldfield/",
       "title": "Amazon uses union-busting AI surveillance to monitor union risk in UK warehouses",
       "summary": "",
@@ -4193,78 +4211,6 @@
       "category": "Autonomes Fahren",
       "published": "2026-10-03T13:19:19+00:00",
       "sent_at": "2026-10-03T22:39:13.191040+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/10/03/hasta-la-vista-baby-figure-f-02-humanoid-robots-decommissioned-t2-style/",
-      "title": "Hasta la vista, baby – Figure F.02 humanoid robots decommissioned, T2-style",
-      "summary": "Decommissioning humanoid robots that are packed with proprietary tech is a tricky thing – you want to make sure none of the expensive raw material goes to waste, but you also need to make sure no one else gets a hold of your tech. The solution? Have your robots hurl themselves into a vat of molten steel, Terminator 2-style. more…",
-      "source": "Electrek",
-      "category": "Innovationen",
-      "published": "2026-10-03T19:31:13+00:00",
-      "sent_at": "2026-10-03T19:42:59.894152+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2273462/how-to-check-cpu-temperature/",
-      "title": "How to check the temperature of your PC's CPU",
-      "summary": "There's some solid free software that can help you keep tabs on your computer's health.",
-      "source": "Engadget",
-      "category": "Hardware",
-      "published": "2026-10-03T18:45:00+00:00",
-      "sent_at": "2026-10-03T19:42:59.894152+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2276597/capcom-plans-to-use-ai-to-speed-up-the-game-development-process/",
-      "title": "Capcom plans to use AI to speed up the game development process",
-      "summary": "The company previously said it won't use AI-generated content in its games.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-03T18:27:15+00:00",
-      "sent_at": "2026-10-03T19:42:59.894152+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/7-year-old-tv-now-100-dollars-more-expensive-thank-ai/",
-      "title": "The Nvidia Shield TV Is 7 Years Old. It Just Got a $100 Price Hike",
-      "summary": "The price of anything with memory is skyrocketing thanks to AI. Aging streaming devices are no exception.",
-      "source": "Wired",
-      "category": "Hardware",
-      "published": "2026-10-03T18:00:00+00:00",
-      "sent_at": "2026-10-03T19:42:59.894152+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2273354/playstation-2-security-chip-reverse-engineered/",
-      "title": "The original PlayStation 2 security chip has been reverse engineered",
-      "summary": "A long‑hidden PS2 security component has finally been decoded, revealing surprising design choices and opening the door to fresh hardware insights.",
-      "source": "Engadget",
-      "category": "Hardware",
-      "published": "2026-10-03T18:00:00+00:00",
-      "sent_at": "2026-10-03T19:42:59.894152+00:00"
-    },
-    {
-      "link": "https://www.neowin.net/news/system76-bans-ai-generated-code-across-many-of-its-cosmic-codebases/",
-      "title": "Pop!_OS bans AI-generated code from much of its codebase",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-03T17:57:03+00:00",
-      "sent_at": "2026-10-03T19:42:59.894152+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/service-providers/streaming/7-year-old-nvidia-shield-tv-pro-gets-shocking-50-percent-price-hike-driven-by-ai-memory-shortage-chipmaker-axes-entry-level-shield-tv-as-component-prices-soar",
-      "title": "7-year-old Nvidia Shield TV Pro gets shocking 50% price hike driven by AI memory shortage",
-      "summary": "The Shield TV Pro remains one of Nvidia’s longest-running consumer devices, but its $299.99 price tag now makes the streaming box considerably more expensive than when it launched.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-03T16:59:51+00:00",
-      "sent_at": "2026-10-03T19:42:59.894152+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/03/all-the-ai-agents-that-can-live-in-your-text-messages/",
-      "title": "All the AI agents that can live in your text messages",
-      "summary": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-03T14:00:00+00:00",
-      "sent_at": "2026-10-03T19:42:59.894152+00:00"
     }
   ]
 }
