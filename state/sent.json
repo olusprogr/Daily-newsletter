@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.engadget.com/2286478/limit-frames-per-second-gaming-when-makes-sense/",
+      "title": "Should you limit your FPS in games? Here's when it makes sense",
+      "summary": "While it's natural to want to get as many fps from your rig as possible, there are reasons to limit frame output from your GPU.",
+      "source": "Engadget",
+      "category": "Hardware",
+      "published": "2026-10-18T16:45:00+00:00",
+      "sent_at": "2026-10-18T17:48:25.758134+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
+      "title": "Disney agrees to hire the majority of Character.AI’s workforce",
+      "summary": "After chatbot startup Character.AI filed for bankruptcy earlier this week, many of its employees will have the opportunity to take jobs at Disney. Character.AI’s former CEO Karandeep Anand recently became the entertainment giant’s first CTO, and the startup previously said that Disney had agreed to acquire some of its assets for $20 million. A legal [&#8230;]",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-18T16:30:00+00:00",
+      "sent_at": "2026-10-18T17:48:25.758134+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/",
+      "title": "Anthropic gives outside AI watchdog “employee-like” access",
+      "summary": "The outside watchdog can publish its findings without Anthropic's approval.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-10-18T16:25:19+00:00",
+      "sent_at": "2026-10-18T17:48:25.758134+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/18/techcrunch-mobility-rivians-next-act/",
+      "title": "TechCrunch Mobility: Rivian’s next act",
+      "summary": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, the role AI is playing in it.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-18T16:05:00+00:00",
+      "sent_at": "2026-10-18T17:48:25.758134+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/gpus/amd-cards-now-run-all-dlss-features-thanks-to-one-developers-project-plans-to-match-native-nvidia-gpu-performance",
+      "title": "Modder brings full Nvidia DLSS 5 suite to three generations of AMD gaming GPUs",
+      "summary": "Radeon GPUs get the full DLSS experience as solo project ports all the DLSS features for RDNA2-4 GPUs.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-10-18T16:03:01+00:00",
+      "sent_at": "2026-10-18T17:48:25.758134+00:00"
+    },
+    {
+      "link": "https://www.vals.ai/blogs/impossible-refund",
+      "title": "How Far Will AI Assistants Go for a Refund They Can't Get?",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-18T12:22:58+00:00",
+      "sent_at": "2026-10-18T17:48:25.758134+00:00"
+    },
+    {
+      "link": "https://www.anthropic.com/research/employment-at-anthropic",
+      "title": "How employment is changing at Anthropic",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-18T10:49:26+00:00",
+      "sent_at": "2026-10-18T17:48:25.758134+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/onlyfans-creators-are-pissed-that-meta-lets-muse-talk-dirty/",
+      "title": "OnlyFans Creators Are Pissed That Meta Lets Muse Talk Dirty",
+      "summary": "Adult performers are questioning why Meta allows its AI agent to sext while restricting their social media accounts.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-10-18T10:30:00+00:00",
+      "sent_at": "2026-10-18T17:48:25.758134+00:00"
+    },
+    {
       "link": "https://electrek.co/2026/10/18/e-quipment-highlight-leapting-launches-electric-autonomous-forklift/",
       "title": "E-quipment highlight: LEAPTING launches electric autonomous forklift",
       "summary": "Chinese PV and solar equipment brand LEAPTING has taken the wraps off its new, battery-powered Auto-Navigation Forklift Robot (AFR) designed to speed up the installation of large, utility-scale solar power projects . more…",
@@ -4103,78 +4175,6 @@
       "category": "AI",
       "published": "2026-10-04T12:05:00+00:00",
       "sent_at": "2026-10-04T19:08:20.081907+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/gpus/modder-fixes-melting-rtx-5090-power-connectors-with-custom-distributor-dual-8-pin-mod-peaks-at-just-40c-during-a-48-hour-550w-stress-test",
-      "title": "Modder 'fixes' melting RTX 5090 power connectors with custom distributor",
-      "summary": "Reddit user u/DallasGrave shared a fix for his RTX 5090, one of the best graphics cards, whose 12VHPWR connector was overheating, along with an image of a module screwed onto the back of his GPU.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-10-04T14:50:00+00:00",
-      "sent_at": "2026-10-04T15:07:48.402906+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/robotics/robotics-startup-has-real-human-vs-robot-cage-match-california-responds-with-cease-and-desist-order-regulator-threatens-misdemeanor-charges-after-youtuber-fights-three-robotic-humanoids",
-      "title": "Robotics startup has real human vs. robot cage match, California responds with cease-and-desist order",
-      "summary": "The California State Athletic Commission intervened when it saw a human facing off with a humanoid robot inside the fighting ring.",
-      "source": "Tom's Hardware",
-      "category": "Innovationen",
-      "published": "2026-10-04T14:36:25+00:00",
-      "sent_at": "2026-10-04T15:07:48.402906+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/gpu-drivers/modder-brings-nvidia-pascal-gpu-support-to-windows-xp-32-bit-modded-drivers-unlock-better-displayport-and-hdmi-support-for-modern-monitors",
-      "title": "Modder brings Nvidia Pascal GPU support to Windows XP 32-bit",
-      "summary": "Retro techie retrofits Nvidia Windows XP 32-bit drivers with Pascal card support and improved DisplayPort and HDMI support for contemporary displays",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-10-04T14:25:00+00:00",
-      "sent_at": "2026-10-04T15:07:48.402906+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/10/04/autonomous-orange-ymx-adds-outrider-self-driving-tech-to-its-electric-yard-trucks/",
-      "title": "Autonomous Orange: YMX adds Outrider self-driving tech to its electric yard trucks",
-      "summary": "The logistics experts at 3PL provider YMX know a thing or three about running an efficient fleet, but even they are feeling the nationwide shortage of qualified yard operators. To help keep the goods moving and the wheels turning, the company is turning to self-driving, zero-emission yard trucks at customer sites as part of a new pilot with AI startup Outrider. more…",
-      "source": "Electrek",
-      "category": "AI",
-      "published": "2026-10-04T13:48:54+00:00",
-      "sent_at": "2026-10-04T15:07:48.402906+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/robotics/ai-robot-company-decommissioned-its-robots-terminator-style-in-a-75-ton-vat-of-molten-steel-arnold-schwarzenegger-suggested-melting-them-one-robot-held-up-a-thumbs-up-sign-as-it-sank-into-molten-metal",
-      "title": "AI robot company decommissioned its robots ‘Terminator-style’ in a 75-ton vat of molten steel",
-      "summary": "AI Robotics company Figure found a creative way of decommissioning its old F.02 fleet without having to allocate resources for difficult and time-consuming disassembly.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-04T13:20:00+00:00",
-      "sent_at": "2026-10-04T15:07:48.402906+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2273797/what-is-infill-3d-printing/",
-      "title": "What is infill in 3D printing and is it necessary?",
-      "summary": "The infill settings you use for your 3D prints can make or break them - literally. Let's talk about what infill does and how you should use it.",
-      "source": "Engadget",
-      "category": "Innovationen",
-      "published": "2026-10-04T13:15:00+00:00",
-      "sent_at": "2026-10-04T15:07:48.402906+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/chatgpt-6-astra-cracks-217-year-old-napoleonic-code-in-just-six-hours-single-prompt-ai-run-solves-24-rows-of-custom-symbols-from-a-single-image-reveals-lost-troop-orders",
-      "title": "ChatGPT-6 Astra cracks 217-year-old Napoleonic code in just six hours",
-      "summary": "An AI engineer used GPT-6 Astra to reveal the contents of a cipher that hadn’t been read since the Napoleonic Wars. The task was initiated with a single image and prompt, and took just six hours from start to finish.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-04T13:08:46+00:00",
-      "sent_at": "2026-10-04T15:07:48.402906+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/gadgets/1000832/macbook-air-m5-amazon-prime-big-deal-sale",
-      "title": "The MacBook Air M5 is $200 off for the first time in months",
-      "summary": "Amazon’s October Prime Day has effectively chopped off Apple’s June price increases. Usually $1,299, the 13-inch MacBook Air with the M5 chip and 512GB of storage is on sale for $1,099 at Amazon. That’s a more palatable price for a machine that’s significantly faster than Apple’s $699 MacBook Neo. The 15-inch version, also with 512GB [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-10-04T12:34:01+00:00",
-      "sent_at": "2026-10-04T15:07:48.402906+00:00"
     }
   ]
 }
