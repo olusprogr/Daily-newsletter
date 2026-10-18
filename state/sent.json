@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://electrek.co/2026/10/18/e-quipment-highlight-leapting-launches-electric-autonomous-forklift/",
+      "title": "E-quipment highlight: LEAPTING launches electric autonomous forklift",
+      "summary": "Chinese PV and solar equipment brand LEAPTING has taken the wraps off its new, battery-powered Auto-Navigation Forklift Robot (AFR) designed to speed up the installation of large, utility-scale solar power projects . more…",
+      "source": "Electrek",
+      "category": "Innovationen",
+      "published": "2026-10-18T13:38:45+00:00",
+      "sent_at": "2026-10-18T14:17:27.023186+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/gpus/nvidia-rtx-5090-shipment-worth-usd470-000-goes-missing-in-brazilian-airport-two-pallets-disappear-distributor-seeks-explanations-but-met-with-zero-answers",
+      "title": "Nvidia RTX 5090 shipment worth $470,000 goes missing in Brazilian airport",
+      "summary": "Brazilian electronics and IT distributor Oderço claims that two pallets of Zotac RTX 5090 GPUs have arrived at the airport but has since completely disappeared.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-10-18T13:24:23+00:00",
+      "sent_at": "2026-10-18T14:17:27.023186+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/video-games/pc-gaming/chip-fab-engineering-game-goes-viral-in-taiwan-realistic-and-stressful-simulation-is-basically-a-horror-game-say-some-players",
+      "title": "Chip fab engineering game goes viral in Taiwan",
+      "summary": "A new 3D web game where you live 'A Day in the Life of a Semiconductor Wafer Factory Worker' has gone viral in Taiwan, where it was developed.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-10-18T12:50:33+00:00",
+      "sent_at": "2026-10-18T14:17:27.023186+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/gpus/modders-used-the-official-dlss-5-release-on-unsupported-games-and-are-seeing-up-to-90-percent-better-performance-than-the-leaked-dlss-5-nvidia-says-new-nr-model-uses-20-percent-less-vram-and-processes-neural-workloads-up-to-2x-faster",
+      "title": "Official DLSS 5 running on unsupported games delivers up to 90% better performance than the leaked version",
+      "summary": "Nvidia's latest DLSS Neural Renderer, extracted from NBA 2K27 (again), is being tested on unsupported games and shows up to a 90% performance gain over the previous NR model.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-10-18T12:45:00+00:00",
+      "sent_at": "2026-10-18T14:17:27.023186+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/virtual-reality/mit-engineers-build-soft-3d-shape-sensing-skin-for-gaming-and-vr-tracks-3d-movement-and-touch-with-sub-half-centimeter-error",
+      "title": "MIT engineers build soft 3D shape-sensing skin for gaming and VR",
+      "summary": "MIT engineers embedded soft optical fibers in a silicone sheet that reconstructs its own 3D shape, aimed at gaming, VR, and physical therapy.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-10-18T12:25:00+00:00",
+      "sent_at": "2026-10-18T14:17:27.023186+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/transportation/1013220/robotaxi-self-driving-car-laws",
+      "title": "Cities want to put the boot on robotaxis",
+      "summary": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on autonomous vehicles, policy, and road rules, follow Andrew J. Hawkins. The Stepback arrives in our subscribers' inboxes at 8AM ET. Opt in for The Stepback here. How it started The first state to pass a law [&#8230;]",
+      "source": "The Verge",
+      "category": "Autonomes Fahren",
+      "published": "2026-10-18T12:00:00+00:00",
+      "sent_at": "2026-10-18T14:17:27.023186+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model",
+      "title": "Anthropic’s proposed AI safety bill only kicks in if 50 deaths or $1 billion in damages are on the line",
+      "summary": "Anthropic's proposal requires evaluators to report any imminent risk to the Department of Commerce within 72 hours, after which the Department must present the evidence to a federal judge and await an order.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-10-18T11:25:00+00:00",
+      "sent_at": "2026-10-18T14:17:27.023186+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/researchers-train-ai-to-detect-concealed-handguns-using-wi-fi-signals-open-source-wifirenet-achieves-precision-detection-on-older-802-11a-standard-by-analyzing-how-weapons-distort-wireless-signals",
+      "title": "Researchers train AI to detect concealed handguns using Wi-Fi signals",
+      "summary": "Researchers have developed WiFireNet, an AI system that detects concealed handguns from Wi-Fi channel-state information, achieving 72.5% average precision in controlled indoor tests without cameras or metal detectors.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-10-18T11:00:00+00:00",
+      "sent_at": "2026-10-18T14:17:27.023186+00:00"
+    },
+    {
       "link": "https://www.engadget.com/2285040/openai-humanoid-robot-sam-altman-statement-real-challenge/",
       "title": "OpenAI is building a humanoid robot, but the body isn't the real challenge",
       "summary": "OpenAI CEO Sam Altman wants a humanoid that can operate in a world designed for people, though the CEO says a robot 'brain' is a much bigger challenge.",
@@ -4103,78 +4175,6 @@
       "category": "Hardware",
       "published": "2026-10-04T12:34:01+00:00",
       "sent_at": "2026-10-04T15:07:48.402906+00:00"
-    },
-    {
-      "link": "https://www.nytimes.com/2026/09/29/us/anthropic-claude-morals-ai.html",
-      "title": "Religious scholars met with Anthropic",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-04T02:34:22+00:00",
-      "sent_at": "2026-10-04T09:18:54.124573+00:00"
-    },
-    {
-      "link": "https://www.theatlantic.com/technology/2026/10/openai-safety-team-resignation/688881/?gift=v5U_UzUTothfWXsPxtvNVAh7esWToMRD6XnbXmc5WgA",
-      "title": "I quit OpenAI because its culture is broken",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-03T13:46:34+00:00",
-      "sent_at": "2026-10-04T09:18:54.124573+00:00"
-    },
-    {
-      "link": "https://www.theguardian.com/technology/2026/oct/03/openai-safety-leader-quits-warning-ai-companys-culture-is-broken",
-      "title": "OpenAI safety leader quits, warning AI company's culture is 'broken'",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-03T22:18:13+00:00",
-      "sent_at": "2026-10-04T02:22:34.165810+00:00"
-    },
-    {
-      "link": "https://www.phoronix.com/news/XDC-2026-Valve-Timur-AMDGPU",
-      "title": "The work by Valve's Timur Kristóf on improving old AMD GPUs on Linux",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Hardware",
-      "published": "2026-10-03T19:14:48+00:00",
-      "sent_at": "2026-10-04T02:22:34.165810+00:00"
-    },
-    {
-      "link": "https://fortune.com/2026/10/01/ai-godfather-yann-lecun-has-zero-concerns-about-human-extinction-says-anthropic-ceo-dario-amodei-is-deuded/",
-      "title": "LeCun has \"zero concerns\" about AI wiping out humanity, recent \"rogue\" incidents",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-03T17:44:29+00:00",
-      "sent_at": "2026-10-04T02:22:34.165810+00:00"
-    },
-    {
-      "link": "https://tej.as/blog/aleph-alpha-kolibri",
-      "title": "Aleph Alpha Kolibri: How the sovereign German LLM works",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-03T10:43:51+00:00",
-      "sent_at": "2026-10-04T02:22:34.165810+00:00"
-    },
-    {
-      "link": "https://www.reddit.com/r/GeminiAI/comments/1wwalmc/wtf_google_getting_rid_of_free_gemini_flash_and/",
-      "title": "Gemini ending free use of Flash and Pro models",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-03T09:13:19+00:00",
-      "sent_at": "2026-10-04T02:22:34.165810+00:00"
-    },
-    {
-      "link": "https://casp.ac/reports/intelligence-explosion",
-      "title": "Understanding Frontier Artificial Intelligence",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-03T07:06:02+00:00",
-      "sent_at": "2026-10-04T02:22:34.165810+00:00"
     }
   ]
 }
