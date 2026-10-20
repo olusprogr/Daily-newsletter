@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.theverge.com/tech/1014627/meta-muse-ai-sharing-ai-chats",
+      "title": "Meta pauses Muse sharing after researchers find AI chats on the web",
+      "summary": "Meta says it paused a Muse feature that lets you share conversations with the AI assistant after researchers found the URLs publicly available on the web, as reported by Ars Technica. In a report published this week, researchers at the security firm Claroc say they found more than 6,800 Muse links through public DNS records. [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-20T18:07:34+00:00",
+      "sent_at": "2026-10-20T18:19:13.152197+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/20/eric-schmidt-reportedly-owns-about-half-as-much-of-anthropic-as-ceo-dario-amodei/",
+      "title": "Eric Schmidt reportedly owns about half as much of Anthropic as CEO Dario Amodei",
+      "summary": "The former Google CEO owns about 1% stake in the leading AI lab, Bloomberg reported.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-20T17:55:12+00:00",
+      "sent_at": "2026-10-20T18:19:13.152197+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1014533/tuesday-labs-voxel-series-1-home-robot-reservation",
+      "title": "The $20,000 Voxel bot will help you find misplaced things around your home",
+      "summary": "Tuesday Labs, a New York City-based robotics lab and design studio, has opened reservations for Voxel, its new bi-pedal robot designed to learn and take over routine tasks throughout your home. Similar to other robots like Weave Robotics' Issac 1 that are designed for household chores beyond mopping or vacuuming floors, Voxel features a pair [&#8230;]",
+      "source": "The Verge",
+      "category": "Innovationen",
+      "published": "2026-10-20T17:49:55+00:00",
+      "sent_at": "2026-10-20T18:19:13.152197+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/gpu-drivers/amds-fsr-4-1-now-works-on-radeon-rx-6000-gpus-xbox-series-x-and-s-and-ryzen-ai-max-ai-9-and-z2-socs-new-release-brings-cutting-edge-tech-to-older-hardware-with-a-small-performance-cost",
+      "title": "AMD's FSR 4.1 now works on Radeon RX 6000 cards, Xbox Series X and S, and Ryzen AI Max, AI 9, and Z2 SoCs",
+      "summary": "AMD has released a version of its cutting-edge FSR 4.1 upscaler that now works on Radeon RX 6000 GPUs, Xbox Series X and Series S consoles, and Ryzen AI Max, AI 9, and Z2 chips.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-10-20T17:47:35+00:00",
+      "sent_at": "2026-10-20T18:19:13.152197+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/french-government-calls-emergency-meetings-with-platforms-over-protests/",
+      "title": "French Government Calls Emergency Meetings With Platforms Over Protests",
+      "summary": "TikTok and other sites were told to curb protest footage and AI-altered images, while online retailers like Vinted and eBay reportedly signed an agreement stop looted goods from flooding resale sites.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-10-20T17:41:58+00:00",
+      "sent_at": "2026-10-20T18:19:13.152197+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/20/metas-muse-hits-10m-u-s-downloads-in-40-days-a-milestone-reached-by-only-11-other-apps/",
+      "title": "Meta’s Muse hits 10M U.S. downloads in 40 days, a milestone reached by only 11 other apps",
+      "summary": "Meta's AI companion Muse has surpassed 10 million U.S. downloads in its first 40 days, joining an exclusive group of apps that includes Threads. New data also shows Muse is retaining users at higher rates than its AI rivals.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-20T17:12:48+00:00",
+      "sent_at": "2026-10-20T18:19:13.152197+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2291954/spotify-is-dancing-around-its-ai-slop-and-spam-problem/",
+      "title": "Spotify is dancing around its AI 'slop and spam' problem",
+      "summary": "The company said it removed 50 million such tracks from recommendations, but hasn't necessarily wiped them entirely.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-20T17:11:26+00:00",
+      "sent_at": "2026-10-20T18:19:13.152197+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/news/1014455/amd-fsr-4-1-xbox-consoles-handhelds-laptops",
+      "title": "AMD is bringing FSR 4.1 to Xbox consoles and handhelds",
+      "summary": "AMD has just revealed that it's bringing its latest upscaling technology, FSR 4.1, to the Xbox Series S and X consoles, as well as laptops, 6000-series GPUs, and handhelds like the Xbox Ally X devices. FSR 4.1 will start appearing for Radeon RX 6000-series GPUs today, as well as Ryzen AI Max 300 and 400 [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-20T16:21:18+00:00",
+      "sent_at": "2026-10-20T18:19:13.152197+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/10/20/spacex-alums-aviation-startup-lands-115m-topping-1b-valuation/",
       "title": "SpaceX alum’s aviation startup lands $115M, topping $1B valuation",
       "summary": "Reliable Robotics extended its Series D round with $115 million in equity and $25 million in debt.",
@@ -4148,78 +4220,6 @@
       "category": "AI",
       "published": "2026-10-06T19:56:50+00:00",
       "sent_at": "2026-10-06T22:18:24.088779+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/peripherals/docking-stations-hubs/mac-mini-docks-add-more-ports-and-storage-get-more-out-of-your-headless-server-ai-machine-or-apple-workstation",
-      "title": "Mac Mini docks add more ports and storage — get more out of your headless server, AI machine, or Apple workstation",
-      "summary": "Mac Mini docks add more ports and allow for further internal storage. Many of them are molded to fit directly beneath Apple's popular mini PC.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-06T17:50:00+00:00",
-      "sent_at": "2026-10-06T17:53:59.563941+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/10/06/prime-day-1-green-deals-anker-solix-ecoflow-power-stations-segway-e-scooters-engwe-more/",
-      "title": "Prime Day-1 Green Deals: Increased savings on Anker SOLIX and EcoFlow power stations, Segway e-scooters up to 37% off, ENGWE, more",
-      "summary": "It’s the very first day of Amazon’s Prime Big Deal Days event, and we’ve got a jam-packed edition of Green Deals for you, with the many other deals we couldn’t fit here collected into our Fall Prime Day Green Deals hub here . To start, we’re getting some increased savings from Anker’s SOLIX Fall Prime Day Sale , with options like the 3,840Wh F3800 Portable Power Station down at an exclusive $1,710 , among many others. Likewise, there’s EcoFlow’s Prime Big Deal Days Sale with major savings, including the 3,072Wh DELTA 3 Ultra Plus Power Station down at $1,438 . From there, we have Segway’s e-scooter deals with up to 37% savings starting from $142 , as well as ENGWE’s electric dirt bikes and e-bikes at up to 43% off starting from $599 . There’s also the roundups of EGO Power+ tools, Greenworks tools, Segway’s Navimow i2 series robot lawn mowers at their best prices to date, and so much more waiting for you down below. You can also find yesterday’s hangover deals at the bottom of the page, like the Prime Sales from Velotric and Lectric , or Segway’s e-bikes with up to $2,200 savings, the exclusive Anker eufy security deals , and more. Head below for other New Green Deals we’ve found today and, of course, Electrek ’s best EV buying and leasing deals . Also, check out the new Electrek Tesla Shop for the best deals on Tesla accessories . more…",
-      "source": "Electrek",
-      "category": "Innovationen",
-      "published": "2026-10-06T17:48:22+00:00",
-      "sent_at": "2026-10-06T17:53:59.563941+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/openai-is-pissing-off-a-bunch-of-mathematicians-again/",
-      "title": "OpenAI Is Pissing Off a Bunch of Mathematicians—Again",
-      "summary": "“There’s a perception of mobster behavior” from leading AI companies, one mathematician tells WIRED as OpenAI prepares to release more than 100 new solutions to unsolved problems.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-10-06T17:28:33+00:00",
-      "sent_at": "2026-10-06T17:53:59.563941+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/06/mirror-particle-is-building-a-world-model-of-human-behavior/",
-      "title": "Mirror Particle is building a ‘world model’ of human behavior",
-      "summary": "Mirror Particle will launch at TechCrunch Disrupt's Startup Battlefield 200 with a world model built from scratch to predict human behavior, arguing that LLM role-play falls short for market research and brand strategy.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-06T16:35:00+00:00",
-      "sent_at": "2026-10-06T17:53:59.563941+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/column/1005697/we-cant-just-change-the-definition-of-recording",
-      "title": "We can’t just change the definition of ‘recording’",
-      "summary": "With AI hardware, tech companies are pushing the definition of what does and doesn't constitute a recording. For most of gadget history, it'd be reasonable to assume that a device with a microphone or camera is either recording you or it isn't; it's either on or off, without much gray area. Microphones capture sound. Cameras [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-06T16:29:44+00:00",
-      "sent_at": "2026-10-06T17:53:59.563941+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/06/furientis-lands-25m-from-benchmark-to-mass-produce-low-cost-missile-interceptors/",
-      "title": "Furientis lands $25M from Benchmark to mass-produce low-cost missile interceptors",
-      "summary": "The storied Silicon Valley firm makes its first pure defense investment.",
-      "source": "TechCrunch",
-      "category": "Hardware",
-      "published": "2026-10-06T16:29:12+00:00",
-      "sent_at": "2026-10-06T17:53:59.563941+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/06/learn-all-about-scaling-fundraising-founder-how-tos-and-more-at-techcrunch-founder-summit-november-4/",
-      "title": "Learn all about scaling, fundraising, founder how-tos, and more at TechCrunch Founder Summit, November 4",
-      "summary": "There isn’t a single manual to read or prompt to give an LLM that can equip you with the skills and knowledge to build a company. But on November 4, TechCrunch Founder Summit gives founders the next-best thing: A packed day at Boston's SoWa Power Station, where investors and operators share how they've navigated crucial decisions.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-06T16:18:45+00:00",
-      "sent_at": "2026-10-06T17:53:59.563941+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/06/anthropic-gives-startups-a-free-year-of-enterprise-service-and-1000-in-token-credits/",
-      "title": "Anthropic is giving startups a free year of Claude Team and $1,000 in credits",
-      "summary": "\"We created this program because we believe the benefits of AI will reach most people through the companies that build on top of models, rather than through the models alone.\"",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-06T16:00:00+00:00",
-      "sent_at": "2026-10-06T17:53:59.563941+00:00"
     }
   ]
 }
