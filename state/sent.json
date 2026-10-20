@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.theverge.com/science/1014984/spacex-tesla-merger-elon-musk-special-committees",
+      "title": "Tesla and SpaceX are discussing a possible merger, Musk says",
+      "summary": "Tesla and SpaceX have formed special committees to discuss a possible merger, Elon Musk said during the latter's third quarter earnings call Tuesday. Musk, who serves as CEO of both companies, said the special committees have not reached agreement on the terms of any transaction - and that there's no guarantee that they will. That [&#8230;]",
+      "source": "The Verge",
+      "category": "Innovationen",
+      "published": "2026-10-20T21:30:24+00:00",
+      "sent_at": "2026-10-20T22:04:33.843287+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/20/anthropics-cloud-partnerships-are-getting-messy/",
+      "title": "Anthropic’s cloud partnerships are getting messy",
+      "summary": "Anthropic is reportedly struggling to secure enough compute from cloud providers that increasingly view it as a competitor, even as its infrastructure spending balloons ahead of a planned November IPO.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-20T21:25:22+00:00",
+      "sent_at": "2026-10-20T22:04:33.843287+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2292365/chatgpt-now-lets-you-lock-sensitive-chats-behind-a-pin/",
+      "title": "ChatGPT now lets you lock sensitive chats behind a PIN",
+      "summary": "OpenAI has introduced a new \"locked chats\" feature to protect users' more sensitive conversations with ChatGPT.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-20T21:05:00+00:00",
+      "sent_at": "2026-10-20T22:04:33.843287+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/science/1014913/spacex-will-try-catching-starship-and-its-booster-for-first-time-musk-says",
+      "title": "SpaceX will try catching Starship and its booster for first time, Musk says",
+      "summary": "SpaceX CEO Elon Musk said the company would attempt to catch Starship and its booster next month, with the goal of recovering the entire orbital launch system for the first time. If successful, Musk said, the attempt would mark the first time in history an orbital launch vehicle has been fully recovered. \"This is a [&#8230;]",
+      "source": "The Verge",
+      "category": "Innovationen",
+      "published": "2026-10-20T21:02:53+00:00",
+      "sent_at": "2026-10-20T22:04:33.843287+00:00"
+    },
+    {
+      "link": "https://www.technologyreview.com/2026/10/20/1145282/robotic-therapy-for-stroke-patients/",
+      "title": "Robotic therapy for stroke patients",
+      "summary": "Strokes leave 5 million people with long-term impairments each year, and a growing shortage of physical therapists makes it hard for them to get the care they need. A new approach tries to solve that problem by combining artificial intelligence and human therapy.&#160; Johannes Lachner, a former MIT postdoc who is now an assistant professor&#8230;",
+      "source": "MIT Technology Review",
+      "category": "AI",
+      "published": "2026-10-20T21:00:00+00:00",
+      "sent_at": "2026-10-20T22:04:33.843287+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2292346/judge-tosses-sexual-abuse-lawsuit-from-sam-altmans-sister/",
+      "title": "Judge tosses sexual abuse lawsuit from Sam Altman's sister",
+      "summary": "A lawsuit brought by the OpenAI CEO's sister was dismissed after Anne Altman refused a medical exam.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-20T20:53:25+00:00",
+      "sent_at": "2026-10-20T22:04:33.843287+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/20/spacexs-ai-business-is-beating-expectations/",
+      "title": "SpaceX’s AI business is beating expectations",
+      "summary": "SpaceX hit profitably in the third-quarter, with net income of $4.4 billion. AI was the engine.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-20T20:40:41+00:00",
+      "sent_at": "2026-10-20T22:04:33.843287+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/20/openai-acquires-startup-orchestra-bio%e2%81%a0-to-beef-up-its-biotech-business/",
+      "title": "OpenAI acquires startup Orchestra Bio⁠ to beef up its biotech business",
+      "summary": "OpenAI says it's adding Orchestra's team and technology to work on Rosalind, its AI model for life sciences research, and to its related Rosalind Workbench tool, a harness that aims to help researchers plan experiments and analyze results.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-20T20:35:10+00:00",
+      "sent_at": "2026-10-20T22:04:33.843287+00:00"
+    },
+    {
       "link": "https://www.theverge.com/tech/1014627/meta-muse-ai-sharing-ai-chats",
       "title": "Meta pauses Muse sharing after researchers find AI chats on the web",
       "summary": "Meta says it paused a Muse feature that lets you share conversations with the AI assistant after researchers found the URLs publicly available on the web, as reported by Ars Technica. In a report published this week, researchers at the security firm Claroc say they found more than 6,800 Muse links through public DNS records. [&#8230;]",
