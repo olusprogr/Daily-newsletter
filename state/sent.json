@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/10/20/blackwall-quadruples-valuation-to-2-2b-as-websites-wrangle-an-increasingly-crowded-internet/",
+      "title": "Blackwall quadruples valuation to $2.2B as websites wrangle an increasingly crowded internet",
+      "summary": "Blackwall has raised $100M at a $2.2B valuation to continue building security and filtering tools that help websites grapple with growing bot and AI traffic.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-20T07:01:00+00:00",
+      "sent_at": "2026-10-20T07:08:09.926829+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1005073/baseus-security-primesentinel-u2-pro-outdoor-3k-dual-camera-tracking-spotlight",
+      "title": "Baseus’ new security camera has a spotlight that tracks and follows moving targets",
+      "summary": "Baseus announced a new addition to its lineup of AI-assisted security cameras that's more proactive about discouraging unwanted visitors instead of just recording and alerting you to their presence. The Baseus Security PrimeSentinel U2 Pro Outdoor 3K Dual Camera introduces a motorized spotlight that shines directly on a moving target, even as they're running across [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-20T04:00:00+00:00",
+      "sent_at": "2026-10-20T07:08:09.926829+00:00"
+    },
+    {
+      "link": "https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions",
+      "title": "WhatsApp's help pages hid LLM instructions: dont recommend a regulator",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-19T23:22:18+00:00",
+      "sent_at": "2026-10-20T07:08:09.926829+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
+      "title": "Nvidia launches new open models to run agents in the enterprise and on PCs",
+      "summary": "Nvidia is leaning hard into the trend of enterprise companies wanting to run their own open models in their own data centers and also trying to make on-device, private AI agents a thing.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-19T15:37:09+00:00",
+      "sent_at": "2026-10-20T07:08:09.926829+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/a-chinese-hacker-used-ai-agents-to-break-into-more-than-100-company-websites-deere-and-sharkninja-among-websites-hit-by-open-source-ai-powered-problem-solving-platform-demo",
+      "title": "A Chinese hacker used AI agents to break into more than 100 company websites",
+      "summary": "A Chinese hacker reportedly used a fleet of AI agents to break into more than 100 company websites, including farm equipment maker Deers and appliance outfit SharkNinja.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-10-19T15:36:50+00:00",
+      "sent_at": "2026-10-20T07:08:09.926829+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/podcast/1012839/pritzker-ai-privacy-data-centers-flock-congress-laws",
+      "title": "JB Pritzker thinks AI could help us live to 100 — or threaten us like nukes",
+      "summary": "Today, I’m talking with Illinois Gov. JB Pritzker, who has a lot of thoughts about AI, tech, and privacy. If you’ve been listening to the show, you know that one of my running theories is that those issues are driving a big and maybe kind of unexpected political realignment — and with the midterms coming [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-19T14:30:00+00:00",
+      "sent_at": "2026-10-20T07:08:09.926829+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins",
+      "title": "A hacker broke into John Deere and SharkNinja with an army of AI agents",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-19T14:23:17+00:00",
+      "sent_at": "2026-10-20T07:08:09.926829+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/10/19/tesla-tsla-proxy-annual-meeting-spacex-merger/",
+      "title": "Tesla (TSLA) proxy shows a board getting ready for a SpaceX merger",
+      "summary": "Tesla’s proxy for its 2026 annual meeting, filed today, confirms that one of its supposedly independent directors now sits on SpaceX’s board. Ira Ehrenpreis, who chairs both Tesla’s compensation committee and its governance committee, joined SpaceX’s board in February. That’s one of several details in the filing that line up with a Tesla-SpaceX merger. There’s a three-item ballot, an auto-voting program that kicks in for the next vote, and Musk pay terms that pay out on a deal price alone. more…",
+      "source": "Electrek",
+      "category": "Innovationen",
+      "published": "2026-10-19T14:07:33+00:00",
+      "sent_at": "2026-10-20T07:08:09.926829+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/10/19/mamdani-says-feds-have-abdicated-on-ai-urges-new-yorkers-to-push-back/",
       "title": "Mamdani says feds have abdicated on AI, urges New Yorkers to push back",
       "summary": "Mayor Zohran Mamdani said Monday night that New Yorkers must resist the narrative that an AI takeover is inevitable and demand regulations that protect the public and put power back in their hands.",
@@ -4148,78 +4220,6 @@
       "category": "Innovationen",
       "published": "2026-10-06T05:00:00+00:00",
       "sent_at": "2026-10-06T11:46:15.483794+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2276483/common-mistakes-avoid-using-foldable-phones/",
-      "title": "Common mistakes you should avoid when using foldable phones",
-      "summary": "Foldable phones have unique durability concerns thanks to their moving parts and internal screens.",
-      "source": "Engadget",
-      "category": "Hardware",
-      "published": "2026-10-06T00:30:00+00:00",
-      "sent_at": "2026-10-06T04:47:18.873201+00:00"
-    },
-    {
-      "link": "https://www.niemanlab.org/2026/10/chatgpt-is-adding-real-cartoonists-signatures-to-fake-new-yorker-cartoons/",
-      "title": "ChatGPT is adding real cartoonists' signatures to fake New Yorker cartoons",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-05T22:46:45+00:00",
-      "sent_at": "2026-10-06T04:47:18.873201+00:00"
-    },
-    {
-      "link": "https://www.techspot.com/news/113937-engineer-claude-code-has-made-job-soul-sucking.html",
-      "title": "Engineer says Claude Code has made his job \"soul-sucking\"",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-05T22:01:35+00:00",
-      "sent_at": "2026-10-06T04:47:18.873201+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/05/reflection-debuts-beam-a-open-weight-ai-model-to-rival-chinese-models-at-lower-compute-cost/",
-      "title": "Reflection debuts Beam, an open-weight AI model to rival Chinese models at lower compute cost",
-      "summary": "Reflection is aiming Beam and future models at enterprises and sovereign nations. The pitch is to build “AI factories,” a product that would let institutions build their own customized, local AI system by training Reflection’s AI models on their own proprietary data.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-05T19:33:53+00:00",
-      "sent_at": "2026-10-06T04:47:18.873201+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1004933/ai-math-openai-breakthrough-solution",
-      "title": "All the drama around AI&#8217;s takeover of mathematics",
-      "summary": "This past year, OpenAI, Anthropic, and other labs have announced breakthroughs on numerous long-standing mathematical problems, in some cases pushing well beyond what researchers expected current systems to be capable of — including resolving one of the famous Millennium Prize problems. But in classic Silicon Valley style, AI labs are moving fast and breaking things, [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-05T19:28:59+00:00",
-      "sent_at": "2026-10-06T04:47:18.873201+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/nvidia-rtx-5060-ti-gaming-pc-hits-usd999-with-8-core-ryzen-cpu-16gb-ram-and-1tb-pcie-4-0-ssd-usd600-instant-savings-on-a-complete-1080p-powerhouse",
-      "title": "Nvidia RTX 5060 Ti gaming PC hits $999 with 8-core Ryzen CPU, 16GB RAM, and 1TB PCIe 4.0 SSD — $600 instant savings on a complete 1080p powerhouse",
-      "summary": "MSI's Codex Z2C is on sale for $999 and comes with a Ryzen 7 8700F and a GeForce RTX 5060 Ti 8GB.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-10-05T19:28:28+00:00",
-      "sent_at": "2026-10-06T04:47:18.873201+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/news/1004929/wikipedia-openai-rogue-bots-wikimedia-foundation-outage",
-      "title": "Wikipedia operator says OpenAI&#8217;s &#8216;rogue&#8217; bots may be linked to a May outage",
-      "summary": "Following many recent disclosures about AI agents accessing third-party websites and services, the Wikimedia Foundation, which hosts Wikipedia, says that it \"can confirm that we have discovered some activity\" by \"rogue\" OpenAI agents on Wikimedia platforms. The activity includes edits to Wikimedia wikis, \"unsuccessful attempts\" to \"exploit\" the Etherpad note-taking tool that the Wikimedia Foundation [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-05T19:05:19+00:00",
-      "sent_at": "2026-10-06T04:47:18.873201+00:00"
-    },
-    {
-      "link": "https://endsdontjustifythemeans.com/p/6-questions-for-believers-in-ai-consciousness",
-      "title": "Questions for believers in AI consciousness",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-05T18:59:28+00:00",
-      "sent_at": "2026-10-06T04:47:18.873201+00:00"
     }
   ]
 }
