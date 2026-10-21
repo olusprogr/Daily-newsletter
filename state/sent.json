@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://electrek.co/2026/10/20/tesla-and-spacex-take-first-step-towards-merger-would-dilute-all-shareholders/",
+      "title": "Tesla and SpaceX take first step towards merger, would dilute all shareholders",
+      "summary": "Tesla and SpaceX have both formed special committees within their corporate boards to explore the possibility of merging the two companies according to Elon Musk, who is CEO of both companies. The merger could have big consequences not just for Tesla and SpaceX shareholders, but could dilute the retirement savings of everyone with exposure to major stock indices. more…",
+      "source": "Electrek",
+      "category": "Innovationen",
+      "published": "2026-10-21T03:14:40+00:00",
+      "sent_at": "2026-10-21T07:01:17.220364+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/tech-policy/2026/10/meta-drops-the-word-train-from-its-commercial-tos-after-ai-backlash/",
+      "title": "Meta drops the word \"train\" from its commercial TOS after AI backlash",
+      "summary": "Meta changes AI scraping policy but won’t add language respecting robots.txt.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-10-20T20:07:58+00:00",
+      "sent_at": "2026-10-21T07:01:17.220364+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2292281/meta-suspends-muse-chats-sharing-feature-after-it-left-private-details-exposed/",
+      "title": "Meta suspends Muse chats sharing feature after it left private details exposed",
+      "summary": "Researchers accessed 6,800 shared conversations with the AI agent, including internal company documents.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-20T20:00:43+00:00",
+      "sent_at": "2026-10-21T07:01:17.220364+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/google/2026/10/geminis-personal-intelligence-is-coming-to-cars/",
+      "title": "Gemini's Personal Intelligence is coming to cars",
+      "summary": "It's probably time to audit your Gemini settings.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-10-20T20:00:33+00:00",
+      "sent_at": "2026-10-21T07:01:17.220364+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/20/google-is-bringing-a-more-personal-version-of-its-gemini-ai-assistant-to-your-car/",
+      "title": "Google is bringing a more personal version of its Gemini AI assistant to your car",
+      "summary": "Google is bringing Gemini's Personal Intelligence feature to cars, allowing its AI assistant to draw on information from Gmail, Calendar, Maps, YouTube, and other Google services to deliver more personalized responses while driving.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-20T20:00:00+00:00",
+      "sent_at": "2026-10-21T07:01:17.220364+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2292027/google-brings-gemini-personal-intelligence-to-android-auto/",
+      "title": "Google brings Gemini Personal Intelligence to Android Auto",
+      "summary": "In the coming months, the feature will also roll out to cars with Google built-in.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-20T20:00:00+00:00",
+      "sent_at": "2026-10-21T07:01:17.220364+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/gadgets/2026/10/openbsd-8-0-lands-with-intel-arc-graphics-support/",
+      "title": "OpenBSD 8.0 arrives with security record still intact",
+      "summary": "OpenBSD 8.0 lands with Intel Arc support, ARM64 hibernation, and 64-vCPU guests",
+      "source": "Ars Technica",
+      "category": "Hardware",
+      "published": "2026-10-20T19:57:18+00:00",
+      "sent_at": "2026-10-21T07:01:17.220364+00:00"
+    },
+    {
+      "link": "https://www.bolkunov.com/p/on-ai-writing",
+      "title": "On AI writing",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-20T19:55:11+00:00",
+      "sent_at": "2026-10-21T07:01:17.220364+00:00"
+    },
+    {
       "link": "https://www.theverge.com/ai-artificial-intelligence/1014976/sam-altman-ann-altman-lawsuit-dismissed",
       "title": "Judge dismisses Sam Altman’s sister’s sexual abuse lawsuit",
       "summary": "On Tuesday, US District Judge Zachary Bluestone dismissed the lawsuit Ann Altman filed last year alleging that her brother, OpenAI CEO Sam Altman, had sexually abused her throughout her childhood. As reported earlier by The Guardian, the judge wrote that over the past year, Ann had failed to appear for an independent medical examination or [&#8230;]",
@@ -4220,78 +4292,6 @@
       "category": "AI",
       "published": "2026-10-06T16:23:25+00:00",
       "sent_at": "2026-10-07T09:46:12.556077+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/desktops/gaming-pcs/get-usd500-off-this-sweet-ryzen-7-7800x3d-and-rtx-5070-powered-gaming-pc-at-just-usd1799-32gb-of-ddr5-6000-comes-standard-too-at-a-22-percent-discount",
-      "title": "Get 22% off this sweet Ryzen 7 7800X3D and RTX 5070-powered gaming PC at just $1799",
-      "summary": "Get $500 off this prebuilt gaming PC with a sweet Ryzen 7 7800X3D CPU, a powerful RTX 5070 graphics card, and 32GB of memory at just $1799.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-10-07T00:42:54+00:00",
-      "sent_at": "2026-10-07T02:03:52.218207+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1005004/openai-math-release-github",
-      "title": "OpenAI drops another batch of mathematical breakthroughs",
-      "summary": "OpenAI has revealed solutions to a number of long-standing mathematics problems produced by an unreleased frontier model in a batch of 722 manuscripts, covering 372 result families that group related papers. It extends a run of breakthroughs that have both impressed and unsettled parts of the mathematical community while raising questions about research ethics and [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-06T23:26:38+00:00",
-      "sent_at": "2026-10-07T02:03:52.218207+00:00"
-    },
-    {
-      "link": "https://github.com/openai/math",
-      "title": "Mathematical manuscripts and supporting proof artifacts produced by OpenAI",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-06T22:22:48+00:00",
-      "sent_at": "2026-10-07T02:03:52.218207+00:00"
-    },
-    {
-      "link": "https://openai.com/index/sharing-ai-progress-in-mathematics/",
-      "title": "Sharing AI progress in mathematics",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-06T22:17:21+00:00",
-      "sent_at": "2026-10-07T02:03:52.218207+00:00"
-    },
-    {
-      "link": "https://penguin-mail.com/",
-      "title": "Penguin Mail – open-source Rust email client for Linux with AI",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-06T21:59:43+00:00",
-      "sent_at": "2026-10-07T02:03:52.218207+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/desktops/gaming-pcs/hp-takes-usd2200-off-a-ryzen-7-9800x3d-and-rtx-5080-prebuilt-at-usd2-799-sale-slashes-44-percent-off-an-omen-system-thats-ready-to-game-however-you-want",
-      "title": "HP takes $2200 off a Ryzen 7 9800X3D and RTX 5080 prebuilt at $2,799",
-      "summary": "HP is selling its Omen 35L with an Nvidia RTX 5080 and Ryzen 7 9800X3D for $2,799, or $2200 off. This system has 32GB of RAM and a 2TB SSD for strong supporting performance, too.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-10-06T18:47:37+00:00",
-      "sent_at": "2026-10-07T02:03:52.218207+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/artificial-roasts-ais-creators-and-sends-a-dark-warning-about-its-dangers/",
-      "title": "‘Artificial’ Roasts AI’s Creators—and Sends a Dark Warning About Its Dangers",
-      "summary": "From their dorky parties to their weird walks, the movie holds OpenAI CEO Sam Altman and other stakeholders with contempt, while demonstrating their recklessness.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-10-06T18:45:39+00:00",
-      "sent_at": "2026-10-07T02:03:52.218207+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/06/hark-releases-an-ai-personal-assistant-with-a-focus-on-privacy/",
-      "title": "Hark releases an AI personal assistant with a focus on privacy",
-      "summary": "The AI lab's personal assistant is an operating system from the future designed to compete with Muse, Dots, and Instinct.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-06T18:22:45+00:00",
-      "sent_at": "2026-10-07T02:03:52.218207+00:00"
     }
   ]
 }
