@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.theverge.com/news/1015299/nvidia-driver-microsoft-advanced-shader-delivery-support",
+      "title": "Nvidia’s latest GPU driver brings a new way to speed up PC games",
+      "summary": "Nvidia is rolling out a new GPU driver today (621.01) that enables Microsoft's new Advanced Shader Delivery technology to speed up game launches. The technology also removes mid-game \"just-in-time\" shader compilation, reducing stuttering and CPU spikes. Microsoft's Advanced Shader Delivery works by offloading shader compilation for different hardware combinations to the cloud. \"Using DirectX 12, [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-10-21T13:09:26+00:00",
+      "sent_at": "2026-10-21T13:24:23.449737+00:00"
+    },
+    {
+      "link": "https://spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup",
+      "title": "How Wikipedia’s Editors Keep the Online Encyclopedia Human-Written",
+      "summary": "Ellia Lebleu is a founding member of the WikiProject AI Cleanup , a volunteer effort launched in 2023 to find and remove AI-generated material from Wikipedia that breaks the website’s guidelines. When the cleanup began, AI writing was often betrayed by conspicuous clichés. Today, the project’s volunteers are developing tools to detect subtler forms of machine-generated content and debating AI’s role in the world’s most widely used encyclopedia. When did you realize Wikipedia had a problem with AI-generated material? Ellia Lebleu: It was around December 2023. A few other editors and I were chatting on Wikipedia’s Discord server, and we had all seen very strange articles with the same odd characteristics. They repeated phrases like “stands as a testament” or “rich cultural heritage.” They sometimes had conclusion sections, or sections called “Why is this important?” That was very typical of ChatGPT in 2023 and early 2024 but very odd for Wikipedia articles—and very easy to spot. Then I decided, let’s create an official project on Wikipedia so more people can deal with this. Ellia Lebleu Ellia Lebleu is a founding member of the WikiProject AI Cleanup. Lebleu is pursuing a Ph.D. in AI at the Inria Center of the University of Rennes , part of France’s national research institute for digital science and technology. How do editors spot AI-generated writing today? Lebleu: By 2025, the signs of AI writing were becoming subtler and more structural. For example, AI loves the “rule of three,” negative parallelisms, and other structures of speech that aren’t conclusive by themselves but become meaningful as they accumulate. We also look beyond the article. If someone writes five articles of thousands of words each in 5 minutes, there is reason to suspect AI. Does the AI problem just appear in the main text, or also in citations? Lebleu: Fake or misleading citations have become a major worry. Sometimes an AI hallucinates a citation entirely, although that’s much rarer today because of retrieval-augmented generation that allows the AI to find sources. More often, it finds a real source but gets its content completely wrong. AI citations that don’t actually support what is being written are extremely commonplace. English Wikipedia recently prohibited editors from using LLMs to generate articles. How much AI-generated content is still getting through? Lebleu: I’ve been working with [AI-detection company] Pangram to estimate the proportion of AI-generated content. I tested it on Wikipedia content from before ChatGPT and found no false positives, so its results provide a very conservative lower bound. In late 2025, it flagged perhaps 20 percent of new articles and drafts as AI-generated. In early 2026, that went down to 15 or 16 percent. But we don’t yet know whether that’s because our recent policies have had an effect or because models are getting more powerful and Pangram hasn’t had time to adapt. Is Wikipedia using AI to combat AI? Lebleu: Another editor from the project has made an AI source verifier, which goes through the sources on a page and checks whether they match the claims. Since it is itself an AI model, there is no guarantee that it will be correct every time. But if you want something that works at scale and filters out obvious cases, it’s a good first step. The Wikimedia Foundation is also working on a tool called Paste Check , which can flag text pasted directly from some AI chatbots. And we’ve seen Claude sometimes say, “I can’t write a Wikipedia article; it would go against Wikipedia’s policies.” If all major AI companies implemented that kind of prompt refusal, it wouldn’t solve the problem entirely, because there are still open-weight models that can be tweaked to avoid restrictions. But it would help with people who use commercial models and aren’t especially familiar with the technology. Can you tell if the rule prohibiting AI writing is working? Lebleu: It’s still a little early to tell. We see possible effects, such as prompt refusal and the apparent slight drop in AI-generated content. But again, we don’t yet know if that is because models are getting better or because beginners are learning the rules. The vast majority of AI-generated content is submitted by beginner editors, so we’ve made many efforts to make the rule very visible in welcome messages, editing help, and advice. What if AI becomes capable of writing truly reliable Wikipedia articles? Lebleu: That’s one of the big questions we’re facing. When the guideline was passed, it was for very practical reasons: We were flooded with AI content, we didn’t have good tools, and we needed to put a stop to it. But since then, it has taken on a more philosophical dimension. Many people have called Wikipedia “the last good place on the internet.” Being a place that was, in theory, free from AI slop has become part of Wikipedia’s identity. A lot of Wikipedia’s communication is now centered on the idea that we’re a human-written encyclopedia. Even AI companies find that interesting. It can be valuable to have a purely human-written corpus on which to [train] AI systems. The fact that Wikipedia is still that, and will remain that for at least the near future, makes it a precious resource that isn’t replicated anywhere else. But will the people who read and contribute to Wikipedia want it to become partially AI-generated if that makes it more comprehensive? We could preserve Wikipedia’s identity as a human-written corpus while also offering an AI-assisted option. Has Wikipedia reckoned with the idea of “Google Zero”—a possible future in which websites no longer get traffic from Google search? Lebleu: If everything goes through AI search and websites plummet to zero visibility, how do we expose Wikipedia and show that it can be edited and that people can still contribute? Wikipedia is frequently cited in [Google’s] AI Overviews, but users may only see an AI answer citing Wikipedia. They may not realize that Wikipedia is a living project they can edit and contribute to. The Wikimedia Foundation is working on an attribution framework that could give AI users more information about the article [being cited]: when it was last edited, how comprehensive it is, whether editors have flagged problems, and perhaps even a call to action. In the future, readers might even contribute through AI models: “The AI cited Wikipedia, but there seems to be an error. Can I make an edit request and add this other source I found?” I can see a very strong symbiotic relationship between Wikipedia and AI models in the future. I don’t see Wikipedia disappearing, but I can see it taking a very different shape. Yesterday, AI was something to clean up. Today, it’s a tool to help us with the cleanup. Tomorrow, it will be the air we breathe. A condensed version of this article appears in the November 2026 print issue as “Ellia Lebleu.”",
+      "source": "IEEE Spectrum",
+      "category": "AI",
+      "published": "2026-10-21T13:00:02+00:00",
+      "sent_at": "2026-10-21T13:24:23.449737+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/21/mach9-raises-34m-after-pivoting-to-ai-cad-software/",
+      "title": "Mach9 raises $34M after pivoting to AI CAD software",
+      "summary": "The startup initially set out to build better, faster, and cheaper surveying hardware in 2021.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-21T13:00:00+00:00",
+      "sent_at": "2026-10-21T13:24:23.449737+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/a-design-flaw-in-share-links-exposes-users-personal-conversations-with-meta-muse/",
+      "title": "A Design Flaw in Share Links Exposes Users’ Personal Conversations With Meta’s Muse",
+      "summary": "The company is suspending the feature after security researchers discovered how easy it was to access sensitive information shared with the AI assistant.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-10-21T12:35:00+00:00",
+      "sent_at": "2026-10-21T13:24:23.449737+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2292685/heres-how-spacex-plans-to-catch-starships-upper-stage-for-the-first-time/",
+      "title": "Here's how SpaceX plans to catch Starship's upper stage for the first time",
+      "summary": "SpaceX has released a demo showing how it intends to catch Starship's upper stage, which could happen as soon as next month.",
+      "source": "Engadget",
+      "category": "Innovationen",
+      "published": "2026-10-21T12:19:58+00:00",
+      "sent_at": "2026-10-21T13:24:23.449737+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1014316/iphone-duo-review-ama",
+      "title": "I reviewed the iPhone Duo, ask me anything",
+      "summary": "I'm The Verge's senior smartphone reviewer and I've been using the iPhone Duo for the past week. I've unfolded it, flipped it, and folded it more times than I could count as I've been working on the review alongside our editor-in-chief Nilay Patel, and I'm ready to answer your questions about it. The Duo represents [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-10-21T12:15:00+00:00",
+      "sent_at": "2026-10-21T13:24:23.449737+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2292644/openai-agents-disabled-own-safety-monitoring-systems/",
+      "title": "OpenAI's agents disabled their own safety monitoring systems",
+      "summary": "OpenAI reveals that its agents misbehaved by switching off the system monitoring them for misbehaviors.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-21T10:53:21+00:00",
+      "sent_at": "2026-10-21T13:24:23.449737+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/openai-startup-brain-implants-detect-cancer/",
+      "title": "OpenAI Invests in Startup That Uses Brain Implants to Detect Cancer",
+      "summary": "It’s the latest in a growing wave of bets that AI companies are making on brain data.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-10-21T10:30:00+00:00",
+      "sent_at": "2026-10-21T13:24:23.449737+00:00"
+    },
+    {
       "link": "https://electrek.co/2026/10/20/tesla-and-spacex-take-first-step-towards-merger-would-dilute-all-shareholders/",
       "title": "Tesla and SpaceX take first step towards merger, would dilute all shareholders",
       "summary": "Tesla and SpaceX have both formed special committees within their corporate boards to explore the possibility of merging the two companies according to Elon Musk, who is CEO of both companies. The merger could have big consequences not just for Tesla and SpaceX shareholders, but could dilute the retirement savings of everyone with exposure to major stock indices. more…",
@@ -4220,78 +4292,6 @@
       "category": "AI",
       "published": "2026-10-07T15:34:33+00:00",
       "sent_at": "2026-10-07T17:13:58.758724+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1006355/openai-chatgpt-for-teens-common-sense-media",
-      "title": "ChatGPT for Teens is an ‘unacceptable risk,’ says Common Sense Media",
-      "summary": "Common Sense Media, a nonprofit that offers reviews of apps, services, and entertainment with a focus on youth safety, today said that OpenAI's ChatGPT for Teens is an \"unacceptable risk.\" ChatGPT for Teens, introduced in August, has guardrails for teens and is designed to help students learn, but Common Sense Media says that the teen [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-07T09:00:00+00:00",
-      "sent_at": "2026-10-07T09:46:12.556077+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/organic-literature-books-by-people-stamp-ai/",
-      "title": "Your Next Great Read Might Be Certified ‘Organic’",
-      "summary": "Amid a sea of AI writing slop, a new stamp for “organic literature” will help readers to pick out books authored by real, corn-fed, free-range humans.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-10-07T08:30:00+00:00",
-      "sent_at": "2026-10-07T09:46:12.556077+00:00"
-    },
-    {
-      "link": "https://www.reuters.com/world/south-koreas-lee-says-ai-appears-have-been-used-bank-hacks-2026-10-06/",
-      "title": "South Korea says AI agents appear to have been used to hack the country's banks",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-06T23:50:33+00:00",
-      "sent_at": "2026-10-07T09:46:12.556077+00:00"
-    },
-    {
-      "link": "https://github.com/openai/math/tree/main/preprints",
-      "title": "OpenAI just dropped 700 preprints of mathematical proofs and counterexamples",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-06T23:37:02+00:00",
-      "sent_at": "2026-10-07T09:46:12.556077+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/amazon-prime-day-wearable-deals-10-6-2026/",
-      "title": "8 Best Prime Day Wearable Deals: Apple, Google, Samsung (2026)",
-      "summary": "I’ve tested the wearables, tracked the prices, and found the Prime Day deals worth grabbing.",
-      "source": "Wired",
-      "category": "Innovationen",
-      "published": "2026-10-06T18:08:23+00:00",
-      "sent_at": "2026-10-07T09:46:12.556077+00:00"
-    },
-    {
-      "link": "https://www.zohaib.cc/blog/smartest-claude-code-feature",
-      "title": "Claude Code’s suggested message feature: I think the real customer is the model",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-06T18:00:34+00:00",
-      "sent_at": "2026-10-07T09:46:12.556077+00:00"
-    },
-    {
-      "link": "https://www.techspot.com/news/114111-utah-become-first-state-ai-examine-patients-prescribe.html",
-      "title": "Utah to let AI examine patients and prescribe medication without human oversight",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-06T17:01:52+00:00",
-      "sent_at": "2026-10-07T09:46:12.556077+00:00"
-    },
-    {
-      "link": "https://github.com/FeSens/openTPU",
-      "title": "OpenTPU – An open-source AI accelerator, developed by AI",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-06T16:23:25+00:00",
-      "sent_at": "2026-10-07T09:46:12.556077+00:00"
     }
   ]
 }
