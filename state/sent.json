@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://spectrum.ieee.org/engineers-lobbying-congress",
+      "title": "Why Engineers Should Brave Capitol Hill",
+      "summary": "When San Antonio–based software engineer Nikhil Jathar first went to Washington, D.C., to advocate for federal support for technology education and research funding, he was in awe of the opportunity. It was spring of 2025, not long after Jathar settled in the United States from India, when he got an invitation to join the annual Congressional Visits Day organized by IEEE-USA . “My first reaction was, ‘Wow, I get to visit Congress,’ ” says Jathar, CTO of AvanSaber , a business software company he cofounded in 2014. At the time, he did not have a specific lobbying position on behalf of the company. But he was intrigued by the invitation—which goes out to all U.S. IEEE members—and as he read more about congressional visits, his motivation deepened. He realized: “I need to try this. I want to see where it goes.” What’s Your Ask? Congressional staffers expect clarity from advocates. Be clear on what you plan to ask for when you arrive. Here are some common options: Cosponsor (or oppose) an existing bill or amendment. Preserve, remove, or modify legislative text in a bill under consideration. Add language to an appropriations bill or committee report. Ask a federal agency a specific oversight question. Request a briefing, hearing, Government Accountability Office review, or stakeholder roundtable. Encourage an agency to clarify a technical rule. Congressional staffers say they welcome the knowledge and perspective that engineers like Jathar and other visitors from beyond Washington, D.C., provide. It’s also important for those visitors to be clear on what they are advocating for. One staffer for the House Committee on Science, Space, and Technology , who agreed to speak anonymously due to the office’s media policy, says, “Ideas for new policies come from multiple places. It could begin at the [legislator] or staff level, an ask from a constituent, or needs from industry. It’s up to us to figure out what would do the most good,” the staffer said. “For instance, if you leave it to the lobbyists, they’re understandably going to do what’s in their clients’ interests.” For engineers in the United States, speaking with elected representatives is an effective way to shape key policies, but it takes some preparation and the right approach, as Jathar learned over the course of two visits. Mapping Your Way Into Washington Congress’s job is to act on behalf of the people, and it has rules for how people can lobby it. It distinguishes between broader advocacy—conversations between constituents and U.S. representatives—and professional lobbying, which involves paid professionals and is governed by the Lobbying Disclosure Act. Many professional groups like IEEE also organize congressional visits for their members. Those visits can be subject to lobbying rules, so the organizers told Jathar that: “You are representing the organization, not your own views.” He would need to stick to the talking points IEEE-USA had prepared for all its participants, regardless of their specialty, to promote across several congressional offices. On Jathar’s first visit, those organizational talking points included advocating for funding smart grids, authorizing Department of Energy research , and investing in STEM education . That represents one of the trade-offs of access in Washington. IEEE-USA’s priorities didn’t all overlap directly with Jathar’s work, but they were broad enablers of science and technology and, he says, “STEM education funding is close to my heart.” Anyone can approach their representatives in Washington with their personal priorities, Jathar notes, but given how pressed for time congressional staff are, they are more likely to prioritize a meeting that represents the views of as many of their constituents as possible. “I could have gone outside the IEEE structure,” Jathar says, but congressional staff “are more likely to listen if you are part of a much bigger organization.” For Jathar’s first congressional visit , organizers assigned him to call on the offices of several representatives from both political parties based on where he lives: Representatives Greg Casar (D-Texas), Lloyd Doggett (D-Texas), and Barry Moore (R-Ala.). “Meeting a staffer or a senior member from their office is good. They tend to relate to these issues more than a representative, because a representative has 10 different high-level things they have to worry about whereas the staffer can be more focused on the policy details,” Jathar says. A typical visit like this may last anywhere from 15 minutes to an hour , so Jathar kept his talking points simple and short. “First and foremost you’re gonna get a very small window,” he says, “Make sure you’ve got everything ready to present in bullet points and not a lot of jargon. You can always bring that out later if they ask more questions.” Simple visual aids, in the form of one-page handouts, may be helpful for communicating numeric or technical information, too. “If you leave it to the lobbyists, they’re understandably going to do what’s in their clients’ interests.” –Staffer for the House Committee on Science, Space, and Technology The House Science Committee staffer agrees: “I prefer meetings where people know what they want and know what we’re doing in Congress.” In addition to having a clear request, the staffer says engineers and other advocates should keep track of where Congress is in its cycle: Is it appropriations season, and when is the next budget being set? How far along is a given piece of legislation in the process, and what is realistic to change at that point? During Jathar’s 2025 visit to one Capitol Hill office, he learned firsthand the importance of preparation. For one of the three representatives he visited, staff politely pointed out that the legislator they worked for was not on the committee with jurisdiction over the IEEE-USA talking point they were discussing. “They explained that there are only certain things [the legislator] can do on that issue and that there are other people we need to talk to, to achieve more,” Jathar recalls. Shortcuts to Influence Earlier this year, Jathar decided to go back to Capitol Hill with his newfound knowledge, again within the framework of an IEEE-USA visit. This time he was able to provide something else legislative staff want from engineers: authoritative technical knowledge. “When I introduced myself as a software developer to one staffer, his first question was, ‘Do you think AI will replace coders?’ ” Jathar says. The conversation went back and forth, with the staffer asking Jathar and his other engineering companions questions. Jathar went on to explain that his company developed an open-source business-management software it calls ERPClaw , designed to be used with AI agents such as OpenClaw. That led naturally to discussing the role of open source in AI , which plays a role in one of IEEE-USA’s proposals for democratizing AI . This time Jathar was able to align his organization’s advocacy with his expertise and the staffer’s areas of interest. It’s too soon to know what legislative impact that advocacy might have, but it’s the sort of informed, relevant proposal that legislative staff seek out. “The people who build trust have more cachet with congressional staff because they’ve asked for something that’s reasonably thought out,” the House Science Committee staffer says. In turn, congressional staffers can advocate better within their offices for policies brought to them by people they trust. And talking about the issues you care the most about can deepen that trust. The House Science Committee staffer once visited Congress as an advocate before switching to the other side of the table. On that visit, as on Jathar’s, the professional society organizing the visit provided a pitch. “I was making a pitch that was given to me without a lot of personal buy-in,” the staffer says. Instead, “you should feel emotionally connected to any issue you’re advocating for.” Jathar’s support for the open-source movement is like that. Open source gives smaller companies a foundation they can adapt and build upon, while allowing other developers to extend that work. “We can progress a lot faster,” Jathar says. “I’m not doing it only because it’s good for my business, but because I feel it’s good for any technological advancement.”",
+      "source": "IEEE Spectrum",
+      "category": "AI",
+      "published": "2026-10-22T13:00:02+00:00",
+      "sent_at": "2026-10-22T13:25:21.989938+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1016399/1password-ai-agent-password-sign-in",
+      "title": "1Password lets AI agents use your passwords without seeing them",
+      "summary": "1Password is introducing a new feature that allows AI agents to sign into your accounts without actually seeing or handling your passwords. The aptly named 1Password for Agents doesn't give bots free reign to access all of your connected accounts - you'll still need to grant approval for sign-in requests - but should make it [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-22T13:00:00+00:00",
+      "sent_at": "2026-10-22T13:25:21.989938+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/meet-mori-a-cute-robot-mushroom-that-doesnt-really-say-or-do-anything/",
+      "title": "Meet Mori, a Cute Robot Mushroom That Doesn’t Really Say (or Do) Anything",
+      "summary": "Step one in convincing people to live with robots with cameras on their faces? Disguise them as cute home decor.",
+      "source": "Wired",
+      "category": "Innovationen",
+      "published": "2026-10-22T13:00:00+00:00",
+      "sent_at": "2026-10-22T13:25:21.989938+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2293844/1password-opens-up-ai-agents-muse-dots-grok/",
+      "title": "1Password will let you hand your data security over to your preferred AI agent",
+      "summary": "If you're willing to let AI book or buy things on your behalf, 1Password just made that easier.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-22T13:00:00+00:00",
+      "sent_at": "2026-10-22T13:25:21.989938+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1016492/tesla-optimus-robots-production-musk-q3-earnings",
+      "title": "Just because Tesla’s Optimus is in production doesn’t mean it’s actually ready",
+      "summary": "On Tesla's earnings call Wednesday, CEO Elon Musk announced that the company had begun early production of its humanoid robot on its high-volume line in Fremont, California. Then he laid out what still needs work: the robot's hands, its safety, reliability, and durability, and the artificial intelligence needed to make it a productive tool. \"There's [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-22T12:53:27+00:00",
+      "sent_at": "2026-10-22T13:25:21.989938+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/cpus/amd-ryzen-5-5500f-review",
+      "title": "AMD Ryzen 5 5500F review: Vermeer rides again for budget gaming PCs",
+      "summary": "After years with the Cezanne-based 5500, AMD has finally updated its $100 CPU to the 5500F in the Vermeer family, adding a 200 MHz boost in clock speed and a PCIe 4.0 upgrade.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-10-22T12:40:00+00:00",
+      "sent_at": "2026-10-22T13:25:21.989938+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/report/1015811/ai-shopping-agents-blocked-amazon-the-realreal-target-meta-muse",
+      "title": "AI agents are ready to shop. Some retailers are wary.",
+      "summary": "Using an AI agent to shop for you is a strange experience. Tech companies have marketed them as personal assistants - the democratizing of labor that ordinarily would only be available to the rich and powerful. In practice, at least for buying things, it's more like sending an anxious and apologetic teenager out to the [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-22T12:30:00+00:00",
+      "sent_at": "2026-10-22T13:25:21.989938+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1016443/anthropic-claude-citrini-vibecoding-scorpion-antivenom",
+      "title": "Claude did not invent scorpion antivenom",
+      "summary": "An investment research firm wanted to prove AI could revolutionize drug development. So they teamed up with Anthropic to see whether an unreleased version of Claude could make scorpion antivenom. It couldn't. It came up with some promising starting points, but nothing close to an actual drug, experts tell The Verge. Citrini Research, the firm [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-22T12:21:07+00:00",
+      "sent_at": "2026-10-22T13:25:21.989938+00:00"
+    },
+    {
       "link": "https://arstechnica.com/culture/2026/10/the-new-human-crafted-apple-music-brand-matters-in-an-ai-world/",
       "title": "The new human-crafted Apple Music brand matters in an AI world",
       "summary": "Opinion: In a world of AI slop, showing the human hands making things helps.",
@@ -4292,78 +4364,6 @@
       "category": "AI",
       "published": "2026-10-08T15:27:30+00:00",
       "sent_at": "2026-10-08T17:15:02.163887+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/best-cheap-phones/",
-      "title": "7 Best Cheap Phones (2026), Tested and Reviewed",
-      "summary": "There’s little reason to pay top dollar for a smartphone. These iPhones and Android devices—ranging from $100 to $800—stood up to WIRED’s testing.",
-      "source": "Wired",
-      "category": "Hardware",
-      "published": "2026-10-08T09:00:00+00:00",
-      "sent_at": "2026-10-08T09:57:02.767672+00:00"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/10/08/1145923/ai-breakthroughs-in-robotics-wont-change-your-life-any-time-soon/",
-      "title": "AI breakthroughs in robotics won’t change your life any time soon",
-      "summary": "The story is a collaboration between MIT Technology Review and Aventine, a non-profit research foundation that creates and supports content about how technology and science are changing the way we live. A robot shaped like a human—white with a black head and torso—has been popping up on video feeds. Perhaps you’ve seen it dance or&#8230;",
-      "source": "MIT Technology Review",
-      "category": "Innovationen",
-      "published": "2026-10-08T09:00:00+00:00",
-      "sent_at": "2026-10-08T09:57:02.767672+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2280879/gpt-6-coming-all-tiers-chatgpt/",
-      "title": "GPT-6 is coming to all tiers of ChatGPT",
-      "summary": "OpenAI is rolling out GPT-6 to ChatGPT, and it will come with the capability to build more visual responses.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-08T08:45:16+00:00",
-      "sent_at": "2026-10-08T09:57:02.767672+00:00"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/10/08/1144020/building-a-safer-path-to-autonomous-industrial-ai/",
-      "title": "Building a safer path to autonomous industrial AI",
-      "summary": "Industrial AI is entering a new phase. After decades of predictive analytics and other specialized applications, advances in foundation models, physical AI, and agentic AI are making it possible to automate more complex tasks across industrial environments. But unlike AI that operates purely in the digital world, industrial AI can interact directly with physical systems,&#8230;",
-      "source": "MIT Technology Review",
-      "category": "AI",
-      "published": "2026-10-08T08:17:32+00:00",
-      "sent_at": "2026-10-08T09:57:02.767672+00:00"
-    },
-    {
-      "link": "https://twitter.com/danintheory/status/2108065033070789090",
-      "title": "OpenAI withdraws three mathematical results",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-08T07:05:40+00:00",
-      "sent_at": "2026-10-08T09:57:02.767672+00:00"
-    },
-    {
-      "link": "https://github.com/pingdotgg/ts-rust",
-      "title": "Port of the TypeScript compiler, checker and lsp to Rust, by LLM",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-08T00:46:00+00:00",
-      "sent_at": "2026-10-08T09:57:02.767672+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/07/metas-muse-launches-on-ipad-just-a-month-after-its-mobile-debut/",
-      "title": "Meta’s Muse launches on iPad just a month after its mobile debut",
-      "summary": "Meta’s AI agent Muse is now available on iPad, just a month after its mobile debut, as the company rapidly expands the assistant’s reach and integrations.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-07T18:30:57+00:00",
-      "sent_at": "2026-10-08T09:57:02.767672+00:00"
-    },
-    {
-      "link": "https://www.xda-developers.com/im-not-paying-20-for-chatgpt-claude-or-gemini-because-a-free-local-llm-does-everything-i-need/",
-      "title": "I'm not paying $20 for ChatGPT or Claude because a free local LLM does",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-07T18:19:03+00:00",
-      "sent_at": "2026-10-08T09:57:02.767672+00:00"
     }
   ]
 }
