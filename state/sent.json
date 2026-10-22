@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
+      "title": "Canva’s first AI image model plans designs before generating them",
+      "summary": "Canva is diving even deeper into AI with the launch of an image generation model that competes directly with those from OpenAI, Microsoft, and Google. The model, called Canva Craft, uses a two-stage architecture that allows it to plan a design before generating an image, allowing for \"greater precision, consistency and control,\" according to an [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-22T21:51:25+00:00",
+      "sent_at": "2026-10-22T22:04:05.349025+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/gadgets/1017144/global-pc-shipments-dropped-q3-2026-ram",
+      "title": "PC shipments dropped over 20 percent in Q3 due to RAM price hikes",
+      "summary": "Demand for new PCs took a hit after months of price hikes, with Counterpoint Research reporting global PC shipments fell 21 percent year-over-year in Q3 2026. That's in line with earlier reports from IDC and Omdia. It's not just PCs, either - that same quarter, smartphone shipments also hit a 14-year low. Counterpoint linked the [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-10-22T21:30:39+00:00",
+      "sent_at": "2026-10-22T22:04:05.349025+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/10/22/tesla-skipped-hw3-shareholder-question-earnings-call/",
+      "title": "Tesla skipped the most important shareholder question on its earnings call",
+      "summary": "Tesla skipped one of its top shareholder questions on its Q3 2026 earnings call: when Hardware 3 owners will find out if they get a free computer upgrade for the unsupervised “Full Self-Driving” they paid for. The question ranked fifth by shares on Say. Tesla read and answered questions ranked below it. It went past this one without a word. more…",
+      "source": "Electrek",
+      "category": "Autonomes Fahren",
+      "published": "2026-10-22T21:23:05+00:00",
+      "sent_at": "2026-10-22T22:04:05.349025+00:00"
+    },
+    {
+      "link": "https://www.technologyreview.com/2026/10/22/1146109/designing-an-ai-serving-harness-built-to-last/",
+      "title": "Designing an AI serving harness built to last",
+      "summary": "The next competitive advantage in enterprise AI has less to do with which model you choose than with what you build around it. That’s an important shift. For the past several years, much of the AI conversation has centered on model capability: bigger models, better reasoning, larger context windows, higher benchmark scores. Those advances have&#8230;",
+      "source": "MIT Technology Review",
+      "category": "AI",
+      "published": "2026-10-22T21:17:29+00:00",
+      "sent_at": "2026-10-22T22:04:05.349025+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1016506/fall-2026-earnings-watch",
+      "title": "Fall 2026 earnings watch",
+      "summary": "Every company is suddenly an AI company. Compute is an asset. Cars are flying. We’ve been promised robots — again. It’s time again to dig through earnings reports, listen to investor calls, and call out the latest wins and losses from around the tech sector and what it means for where the companies go next.",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-22T21:15:16+00:00",
+      "sent_at": "2026-10-22T22:04:05.349025+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/22/rivian-buys-world-model-startup-to-accelerate-self-driving-ambitions/",
+      "title": "Rivian buys world model startup to accelerate self-driving ambitions",
+      "summary": "Third Dimension's technology uses AI to match the physical world, which when combined with Rivian's reams of data could turn into a valuable simulator.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-22T21:05:05+00:00",
+      "sent_at": "2026-10-22T22:04:05.349025+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2294854/a-new-subscription-service-promises-an-evolving-collection-of-bold-and-bizarre-indie-games/",
+      "title": "A new subscription service promises an evolving collection of 'bold and bizarre' indie games",
+      "summary": "Publisher Pantaloon says the Playbill won't feature games that use generative AI in any way.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-22T20:57:17+00:00",
+      "sent_at": "2026-10-22T22:04:05.349025+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1017082/meta-terms-update-ai-training-concerns",
+      "title": "Meta&#8217;s AI could still scrape news sites, legal experts say",
+      "summary": "Meta has tweaked its business terms to remove language suggesting that it could freely train its AI models on news sites, like The Verge - but legal experts say these changes aren't enough to address their concerns. \"This does nothing to restrict the 'associated with your products or services' [language] that would let Meta scrape [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-22T20:32:05+00:00",
+      "sent_at": "2026-10-22T22:04:05.349025+00:00"
+    },
+    {
       "link": "https://www.theverge.com/tech/1016905/meta-earnings-fall-2026-muse-network",
       "title": "In Meta’s version of the future, I’ll have my Muse call your Muse",
       "summary": "Mark Zuckerberg is barrelling toward a future in which an autonomous network of AI agents will run our lives - shopping for us, working for us, talking to other people's AI agents for us. Are humans ready for this very specific and unrelenting vision of a life in which we communicate primarily through bot proxies? [&#8230;]",
