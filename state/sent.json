@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.theverge.com/transportation/1016118/tesla-robotaxi-customer-owned-vehicle-fleet-network-q3-2026-earnings",
+      "title": "Tesla says customers can add their own vehicles to the robotaxi fleet next year — will it happen?",
+      "summary": "For years, Elon Musk has been making big promises to Tesla owners about unsupervised autonomous driving and the ability to add their own vehicles to the company's robotaxi fleet. During today's third-quarter earnings call, the company finally gave itself a deadline. According to Tesla VP for Autonomous Driving Ashok Elluswamy, Tesla owners will be able [&#8230;]",
+      "source": "The Verge",
+      "category": "Autonomes Fahren",
+      "published": "2026-10-21T23:36:31+00:00",
+      "sent_at": "2026-10-22T01:11:26.973229+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/21/blackstones-jas-khaira-says-fears-over-ai-buildout-debt-are-overblown/",
+      "title": "Blackstone’s Jas Khaira says fears over AI-buildout debt are overblown",
+      "summary": "Blackstone’s AI head on why the PE giant isn't panicked by market jitters.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-21T22:51:22+00:00",
+      "sent_at": "2026-10-22T01:11:26.973229+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/21/meta-wants-to-pay-for-its-broad-ai-buildout-with-a-newly-created-class-of-stock/",
+      "title": "Meta wants to pay for its broad AI buildout with a newly created class of stock",
+      "summary": "The social media giant is planning a new stock strategy to help power its broad investments in AI models and services.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-21T22:45:34+00:00",
+      "sent_at": "2026-10-22T01:11:26.973229+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/mark-zuckerberg-agrees-to-stay-in-california-despite-billionaires-tax-ballot-measure/",
+      "title": "Mark Zuckerberg Agrees to Stay in California Despite Billionaires’ Tax Ballot Measure",
+      "summary": "Meta’s board feared that its CEO’s departure could disrupt the company’s AI ambitions. A new stock agreement gives him financial incentives to stay put.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-10-21T22:39:50+00:00",
+      "sent_at": "2026-10-22T01:11:26.973229+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1015958/data-center-pollution-rising-report",
+      "title": "Data centers could erase decades of air quality gains",
+      "summary": "A rush of new data centers could bring air pollution roaring back to levels not seen since the 2000s in Texas, which has become ground zero for the physical infrastructure behind generative AI. New and proposed data centers are demanding a tremendous amount of electricity. How developers and utilities meet that demand - with gas [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-21T22:33:44+00:00",
+      "sent_at": "2026-10-22T01:11:26.973229+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/10/21/tesla-wants-to-sell-you-a-useless-car-with-no-steering-wheel-this-year/",
+      "title": "Tesla wants to sell you a useless car with no steering wheel this year",
+      "summary": "Tesla said today it will sell Cybercab to consumers by the end of this year, raising questions of what end users would do with a vehicle with no steering wheel and no self-driving software. more…",
+      "source": "Electrek",
+      "category": "Autonomes Fahren",
+      "published": "2026-10-21T22:32:50+00:00",
+      "sent_at": "2026-10-22T01:11:26.973229+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/10/21/tesla-unsupervised-fsd-q2-2027-robotaxi-fleet/",
+      "title": "Tesla pushes unsupervised FSD to Q2 2027, and only inside Robotaxi zones",
+      "summary": "Tesla now says unsupervised “Full Self-Driving” in customer-owned cars will arrive in Q2 2027. It’s the latest date on a promise Elon Musk has been making to FSD buyers for the better part of a decade. But there’s a catch. On Tesla’s Q3 2026 earnings call today, AI chief Ashok Elluswamy described it as owners adding their own vehicles to Tesla’s managed Robotaxi fleet, not owners getting a car that drives them anywhere they want to go. more…",
+      "source": "Electrek",
+      "category": "AI",
+      "published": "2026-10-21T22:18:57+00:00",
+      "sent_at": "2026-10-22T01:11:26.973229+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/21/gm-is-betting-compute-and-ai-will-help-it-compete-with-chinese-automakers/",
+      "title": "GM is betting compute and AI will help it compete with Chinese automakers",
+      "summary": "To compete with Tesla, Rivian, and a host of Chinese automakers, GM’s fourth-gen EV platform will roll out a new central computer and electrical architecture that will debut in 2028 in the Cadillac Escalade IQ.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-21T19:52:20+00:00",
+      "sent_at": "2026-10-22T01:11:26.973229+00:00"
+    },
+    {
       "link": "https://www.theverge.com/tech/1015799/meta-shares-class-ai-q3-2026-earnings",
       "title": "Meta to create a new class of shares to fund AI push",
       "summary": "Meta says it's issuing a new class of shares to fund its AI initiatives. As part of its third-quarter earnings report released on Wednesday, the company says the non-voting stock will also go toward potential acquisitions and employee compensation, with trading beginning in 2027. \"The scale of investment required to compete, sustain growth, expand infrastructure, [&#8230;]",
@@ -4292,78 +4364,6 @@
       "category": "Hardware",
       "published": "2026-10-07T18:42:22+00:00",
       "sent_at": "2026-10-08T02:29:14.298474+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/prime-day-vacuum-deals-10-07-2026/",
-      "title": "Best Prime Day Vacuum Deals: Save Big On a Dyson (2026)",
-      "summary": "I’ve compared cordless sticks, watched robot vacuums chase stains, and cleaned plenty of car crumbs. These discounts get my recommendation.",
-      "source": "Wired",
-      "category": "Innovationen",
-      "published": "2026-10-07T21:08:31+00:00",
-      "sent_at": "2026-10-07T22:40:28.758440+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/",
-      "title": "Nous Research confirms it hit $1.5B valuation, launches AI agents for business users",
-      "summary": "The developer of Hermes Agent raised a $90 million Series B.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-07T20:48:45+00:00",
-      "sent_at": "2026-10-07T22:40:28.758440+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/07/microsoft-releases-new-nvidia-chip-ai-pcs-with-revamped-windows-11/",
-      "title": "Microsoft releases new Nvidia-chip AI PCs with revamped Windows 11",
-      "summary": "Microsoft revealed the specs and price for its Surface Laptop Ultra, AI PCs that run on Nvidia chips that are designed to run AI models and agents.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-07T20:22:37+00:00",
-      "sent_at": "2026-10-07T22:40:28.758440+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/save-40-percent-on-hotos-cordless-rotary-toolkit-now-just-usd29-99-great-for-3d-printing-and-other-diy-tasks-get-a-powerful-25-000-rpm-motor-2-000-mah-battery-and-35-accessories-on-the-cheap",
-      "title": "Save 40% on Hoto’s cordless rotary toolkit, now just $29.99 — great for 3D printing and other DIY tasks",
-      "summary": "Designed for detailed DIY work, sanding, polishing, cutting, and 3D printing, Hoto’s cordless rotary toolkit combines a 25,000 RPM motor with 35 accessories and a built-in LED ring light.",
-      "source": "Tom's Hardware",
-      "category": "Innovationen",
-      "published": "2026-10-07T20:10:00+00:00",
-      "sent_at": "2026-10-07T22:40:28.758440+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/shark-prime-day-vacuum-deals-10-07-2026/",
-      "title": "Best Shark Prime Day Vacuum Deals (2026)",
-      "summary": "Save on two Shark models I recommend after testing, including my favorite robot vacuum and a powerful cordless stick.",
-      "source": "Wired",
-      "category": "Innovationen",
-      "published": "2026-10-07T19:46:11+00:00",
-      "sent_at": "2026-10-07T22:40:28.758440+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1007276/openai-chatgpt-intelligent-ui-gpt-6",
-      "title": "ChatGPT&#8217;s &#8216;Intelligent UI&#8217; update fills its responses with pictures, charts, and buttons",
-      "summary": "OpenAI is launching a new Intelligent UI feature in ChatGPT that allows the chatbot to answer your questions with interactive visuals. The update, which is rolling out to all users alongside GPT-6, gives ChatGPT the ability to combine a text response with diagrams, charts, forms, tappable buttons, and more. In a blog post explaining the [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-07T19:10:42+00:00",
-      "sent_at": "2026-10-07T22:40:28.758440+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/gadgets/1007040/nvidias-powerful-rtx-spark-laptops-can-cost-up-to-7000",
-      "title": "The first Nvidia RTX Spark laptops cost up to $7,000",
-      "summary": "The first array of laptops powered by Nvidia's new RTX Spark chip are designed to compete with high-end MacBook Pros - and they've got some high-end prices to match. The flagship Surface Laptop Ultra and RTX Spark laptops from Dell, Lenovo, MSI, HP, and Asus start as low as $2,599 for configurations with an 18-core [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-10-07T19:05:52+00:00",
-      "sent_at": "2026-10-07T22:40:28.758440+00:00"
-    },
-    {
-      "link": "https://www.rswebsols.com/news/meta-and-microsoft-take-steps-to-reduce-employee-usage-of-claude-ai/",
-      "title": "Meta and Microsoft take steps to reduce employee usage of Claude AI",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-07T18:49:40+00:00",
-      "sent_at": "2026-10-07T22:40:28.758440+00:00"
     }
   ]
 }
