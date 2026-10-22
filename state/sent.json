@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.theverge.com/tech/1016905/meta-earnings-fall-2026-muse-network",
+      "title": "In Meta’s version of the future, I’ll have my Muse call your Muse",
+      "summary": "Mark Zuckerberg is barrelling toward a future in which an autonomous network of AI agents will run our lives - shopping for us, working for us, talking to other people's AI agents for us. Are humans ready for this very specific and unrelenting vision of a life in which we communicate primarily through bot proxies? [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-22T18:15:00+00:00",
+      "sent_at": "2026-10-22T18:15:44.169869+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/transportation/1016928/tesla-fsd-pedestrian-fatal-accident-california",
+      "title": "Tesla driver using Full Self-Driving struck and killed a man crossing I-80",
+      "summary": "A 71-year-old man was fatally hit by a Tesla operating in Full Self-Driving (FSD) mode while crossing I-80 in Vallejo, CA around 2:30 AM on Thursday, reports the San Francisco Chronicle. The California Highway Patrol's statement to media outlets says it reviewed video of the accident from the Tesla's dashcam, which \"showed the Tesla's brakes [&#8230;]",
+      "source": "The Verge",
+      "category": "Autonomes Fahren",
+      "published": "2026-10-22T18:07:02+00:00",
+      "sent_at": "2026-10-22T18:15:44.169869+00:00"
+    },
+    {
+      "link": "https://spectrum.ieee.org/engineering-jobs-that-ai-cant-replace",
+      "title": "Why AI Can’t Replace Engineering Teams",
+      "summary": "This article is crossposted from IEEE Spectrum ’s careers newsletter. Sign up now to get insider tips, expert advice, and practical strategies, written i n partnership with tech career development company Parsity and delivered to your inbox for free! If you’re an engineer, you may feel like your skills aren’t commanding the premium they once did. Many engineers have faced layoffs or restructuring. But even for those of us who still have jobs, something corrosive is happening. You may have heard some version of this: “ChatGPT answered that in five seconds. Why can’t you?” Or, “I made this app in a weekend. Why is our team taking so long?” I worked on a team where leadership said things like this directly to engineers. This was in 2024 and 2025, when the AI craze was in full swing and Claude and ChatGPT adoption was rising . Demo-Driven Development Generative AI (and the marketing behind it) gives people the illusion that the work is simpler than it is. A working demo hides complexity, and once someone has a website that works, they may decide they no longer need engineers, or start to distrust the ones they do have. Some CEOs want to believe they can replace an engineering team with a few sexy prompts. Many companies also want them to believe this. That website works great in the demo —under specific conditions and without users with thumbs for fingers. Then it has to plug into a system with millions of lines of old code, satisfy legal requirements, meet accessibility standards, and be delivered in a complex deployment process. Thinking that writing code was the only bottleneck for deploying new software is like the Titanic seeing the tip of the iceberg and assuming there was nothing underneath it. What you can do about it Engineers have a unique position in the AI space, because you have the capacity to understand how these models work much better than the average person. Use this to your advantage. Learn how AI models work . If you can’t already explain that LLMs are probabilistic, what tokens are, or why training data matters, spend a weekend fixing that. You don’t need to become a full-blown AI researcher. A few fundamentals will put you ahead of most people making the AI decisions. Teach upward. Turn that knowledge into teaching moments for the people who lead you. Explain the limits of these tools, and why a demo and a production system are different animals. It keeps people from truly believing that a notebook full of prompts can replace an engineering team. Consider the criticism of today’s processes. Some of what we do has been treated as ceremony for too long. Be willing to say, “you know what, maybe you’re right, this process is too slow for the speed we can work at now.” Conceding that earns you the credibility to defend the steps that matter. I still believe that speed at the cost of everything else is harmful—but that’s a topic for another time. Find your voice. Engineers at the forefront of AI adoption need to push back and explain why we do things the way we do. Nobody else in the room is going to do it for us. Don’t chase (too many) shiny objects Your goal, in my opinion, is to save your organization from buying into the hype so much that they chase the wrong thing. Our job, before and after AI, is building safe and useful products for human beings, and engineers are still best suited for that. —Brian We Need to Embed Ethics Into Our Engineering Courses The need to educate engineering students about ethics and social responsibility is widely recognized, but today’s curricula often miss the mark. Three professors propose a new approach: adding ethics training directly to core technical coursework. Read more here . The U.S. Just Bet $1 Billion on Quantum Chip Manufacturing Looking for a career in quantum computing hardware? An IBM spin-off called Anderon could receive up to $1 billion in funding from the U.S. CHIPS and Science Act for its quantum foundry, established earlier this year. Could Anderon do for quantum hardware what TSMC did for conventional chips? Read more here . Meet the Anthropic Engineer Keeping Its AI Agent Trustworthy When Gurmeet Saran joined Anthropic’s technical staff in 2025, he entered a role focused on a key question: How do you know whether you can trust a chatbot like Claude? Learn more about Saran’s path and his work at the AI company. Read more here .",
+      "source": "IEEE Spectrum",
+      "category": "AI",
+      "published": "2026-10-22T18:02:20+00:00",
+      "sent_at": "2026-10-22T18:15:44.169869+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2294523/unauthorized-ai-agents-are-reportedly-already-accessing-us-bank-accounts/",
+      "title": "Unauthorized AI agents are reportedly already accessing US bank accounts",
+      "summary": "Sources at several banks have indicated that they have been taking actions independent of user instructions.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-22T18:02:04+00:00",
+      "sent_at": "2026-10-22T18:15:44.169869+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1016690/suleyman-microsoft-diagnostic-orchestrator-science-medical-superintelligence",
+      "title": "Microsoft says its AI tool is better than doctors at diagnosing conditions",
+      "summary": "For years, AI leaders have touted healthcare as one of the clearest examples of where their technology will improve lives. Now \"it is finally here,\" Microsoft AI CEO Mustafa Suleyman tells The Verge. The company claims to have developed an AI-powered tool it says can diagnose conditions up to four times more accurately than human [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-22T18:00:00+00:00",
+      "sent_at": "2026-10-22T18:15:44.169869+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/games/1016862/nintendo-switch-2-jailbreak-ai",
+      "title": "Someone hacked the Switch 2 by using an old game and AI",
+      "summary": "The Nintendo Switch 2 has apparently been jailbroken, and a modder has already shown the console running a custom version of Mario Kart World featuring new playable characters like Cinnamoroll, the red Angry Bird, Peter Griffin, and Steve from Minecraft. OpenAI's Codex helped make this \"ns2jb\" jailbreak, according to Sammy Hajhamid, aka \"pepsipu.\" It's a [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-22T17:21:31+00:00",
+      "sent_at": "2026-10-22T18:15:44.169869+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1016832/arc-browser-shutting-down",
+      "title": "Arc browser is shutting down",
+      "summary": "The Browser Company plans to \"sunset\" its Arc browser on December 22nd, according to a post on the Arc website. The company moved on to developing its AI-focused Dia browser last year, but it had continued to maintain Arc. Now, the innovative browser will be going away for good. The shutdown is happening in a [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-22T17:03:37+00:00",
+      "sent_at": "2026-10-22T18:15:44.169869+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/22/chinese-hackers-spied-on-thousands-of-companies-after-breaching-it-giant-connectwise/",
+      "title": "Chinese hackers spied on thousands of companies after breaching IT giant ConnectWise",
+      "summary": "Microsoft points the blame for ConnectWise's breach at a China-aligned hacker, which relied on AI agents to rapidly hack into thousands of its customers.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-22T16:47:17+00:00",
+      "sent_at": "2026-10-22T18:15:44.169869+00:00"
+    },
+    {
       "link": "https://spectrum.ieee.org/engineers-lobbying-congress",
       "title": "Why Engineers Should Brave Capitol Hill",
       "summary": "When San Antonio–based software engineer Nikhil Jathar first went to Washington, D.C., to advocate for federal support for technology education and research funding, he was in awe of the opportunity. It was spring of 2025, not long after Jathar settled in the United States from India, when he got an invitation to join the annual Congressional Visits Day organized by IEEE-USA . “My first reaction was, ‘Wow, I get to visit Congress,’ ” says Jathar, CTO of AvanSaber , a business software company he cofounded in 2014. At the time, he did not have a specific lobbying position on behalf of the company. But he was intrigued by the invitation—which goes out to all U.S. IEEE members—and as he read more about congressional visits, his motivation deepened. He realized: “I need to try this. I want to see where it goes.” What’s Your Ask? Congressional staffers expect clarity from advocates. Be clear on what you plan to ask for when you arrive. Here are some common options: Cosponsor (or oppose) an existing bill or amendment. Preserve, remove, or modify legislative text in a bill under consideration. Add language to an appropriations bill or committee report. Ask a federal agency a specific oversight question. Request a briefing, hearing, Government Accountability Office review, or stakeholder roundtable. Encourage an agency to clarify a technical rule. Congressional staffers say they welcome the knowledge and perspective that engineers like Jathar and other visitors from beyond Washington, D.C., provide. It’s also important for those visitors to be clear on what they are advocating for. One staffer for the House Committee on Science, Space, and Technology , who agreed to speak anonymously due to the office’s media policy, says, “Ideas for new policies come from multiple places. It could begin at the [legislator] or staff level, an ask from a constituent, or needs from industry. It’s up to us to figure out what would do the most good,” the staffer said. “For instance, if you leave it to the lobbyists, they’re understandably going to do what’s in their clients’ interests.” For engineers in the United States, speaking with elected representatives is an effective way to shape key policies, but it takes some preparation and the right approach, as Jathar learned over the course of two visits. Mapping Your Way Into Washington Congress’s job is to act on behalf of the people, and it has rules for how people can lobby it. It distinguishes between broader advocacy—conversations between constituents and U.S. representatives—and professional lobbying, which involves paid professionals and is governed by the Lobbying Disclosure Act. Many professional groups like IEEE also organize congressional visits for their members. Those visits can be subject to lobbying rules, so the organizers told Jathar that: “You are representing the organization, not your own views.” He would need to stick to the talking points IEEE-USA had prepared for all its participants, regardless of their specialty, to promote across several congressional offices. On Jathar’s first visit, those organizational talking points included advocating for funding smart grids, authorizing Department of Energy research , and investing in STEM education . That represents one of the trade-offs of access in Washington. IEEE-USA’s priorities didn’t all overlap directly with Jathar’s work, but they were broad enablers of science and technology and, he says, “STEM education funding is close to my heart.” Anyone can approach their representatives in Washington with their personal priorities, Jathar notes, but given how pressed for time congressional staff are, they are more likely to prioritize a meeting that represents the views of as many of their constituents as possible. “I could have gone outside the IEEE structure,” Jathar says, but congressional staff “are more likely to listen if you are part of a much bigger organization.” For Jathar’s first congressional visit , organizers assigned him to call on the offices of several representatives from both political parties based on where he lives: Representatives Greg Casar (D-Texas), Lloyd Doggett (D-Texas), and Barry Moore (R-Ala.). “Meeting a staffer or a senior member from their office is good. They tend to relate to these issues more than a representative, because a representative has 10 different high-level things they have to worry about whereas the staffer can be more focused on the policy details,” Jathar says. A typical visit like this may last anywhere from 15 minutes to an hour , so Jathar kept his talking points simple and short. “First and foremost you’re gonna get a very small window,” he says, “Make sure you’ve got everything ready to present in bullet points and not a lot of jargon. You can always bring that out later if they ask more questions.” Simple visual aids, in the form of one-page handouts, may be helpful for communicating numeric or technical information, too. “If you leave it to the lobbyists, they’re understandably going to do what’s in their clients’ interests.” –Staffer for the House Committee on Science, Space, and Technology The House Science Committee staffer agrees: “I prefer meetings where people know what they want and know what we’re doing in Congress.” In addition to having a clear request, the staffer says engineers and other advocates should keep track of where Congress is in its cycle: Is it appropriations season, and when is the next budget being set? How far along is a given piece of legislation in the process, and what is realistic to change at that point? During Jathar’s 2025 visit to one Capitol Hill office, he learned firsthand the importance of preparation. For one of the three representatives he visited, staff politely pointed out that the legislator they worked for was not on the committee with jurisdiction over the IEEE-USA talking point they were discussing. “They explained that there are only certain things [the legislator] can do on that issue and that there are other people we need to talk to, to achieve more,” Jathar recalls. Shortcuts to Influence Earlier this year, Jathar decided to go back to Capitol Hill with his newfound knowledge, again within the framework of an IEEE-USA visit. This time he was able to provide something else legislative staff want from engineers: authoritative technical knowledge. “When I introduced myself as a software developer to one staffer, his first question was, ‘Do you think AI will replace coders?’ ” Jathar says. The conversation went back and forth, with the staffer asking Jathar and his other engineering companions questions. Jathar went on to explain that his company developed an open-source business-management software it calls ERPClaw , designed to be used with AI agents such as OpenClaw. That led naturally to discussing the role of open source in AI , which plays a role in one of IEEE-USA’s proposals for democratizing AI . This time Jathar was able to align his organization’s advocacy with his expertise and the staffer’s areas of interest. It’s too soon to know what legislative impact that advocacy might have, but it’s the sort of informed, relevant proposal that legislative staff seek out. “The people who build trust have more cachet with congressional staff because they’ve asked for something that’s reasonably thought out,” the House Science Committee staffer says. In turn, congressional staffers can advocate better within their offices for policies brought to them by people they trust. And talking about the issues you care the most about can deepen that trust. The House Science Committee staffer once visited Congress as an advocate before switching to the other side of the table. On that visit, as on Jathar’s, the professional society organizing the visit provided a pitch. “I was making a pitch that was given to me without a lot of personal buy-in,” the staffer says. Instead, “you should feel emotionally connected to any issue you’re advocating for.” Jathar’s support for the open-source movement is like that. Open source gives smaller companies a foundation they can adapt and build upon, while allowing other developers to extend that work. “We can progress a lot faster,” Jathar says. “I’m not doing it only because it’s good for my business, but because I feel it’s good for any technological advancement.”",
@@ -4292,78 +4364,6 @@
       "category": "AI",
       "published": "2026-10-08T19:30:00+00:00",
       "sent_at": "2026-10-08T22:51:38.927483+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1008100/anthropic-new-usage-policy-abuse-claude",
-      "title": "Anthropic bans ‘abusive or cruel behavior’ towards Claude",
-      "summary": "Anthropic is making changes to its usage policy for the first time in over a year to reflect new and high-risk cases of misuse - including election interference, weapons development, surveillance, and health and financial uses. But one of the most significant changes prohibits \"sustained and needless abusive or cruel behavior\" toward Claude. Last August, [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-08T17:00:00+00:00",
-      "sent_at": "2026-10-08T17:15:02.163887+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/08/a-startup-founder-who-served-time-in-prison-is-looking-to-court-an-untapped-market-ex-cons/",
-      "title": "A startup founder who served time in prison is looking to court an untapped market: ex-cons",
-      "summary": "Richard Bronson, a former Stratton Oakmont partner who served time in federal prison for securities violations, has launched Commissary Club, a startup that uses AI to help people leaving prison find jobs, housing, community and even dates.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-08T16:45:00+00:00",
-      "sent_at": "2026-10-08T17:15:02.163887+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/semiconductors/department-of-war-dishes-out-usd1-5-billion-loan-commitment-to-boost-semiconductor-supply-chain-wolfspeed-to-focus-on-national-security-applications-as-part-of-30-year-agreement",
-      "title": "Department of War dishes out $1.5 billion loan commitment to boost semiconductor supply chain",
-      "summary": "Wolfspeed has secured a conditional $1.5 billion, 30-year loan commitment from the U.S. Department of War to expand GaN epitaxy and radiation-hardened SiC and GaN technologies for U.S. national security applications",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-10-08T16:24:54+00:00",
-      "sent_at": "2026-10-08T17:15:02.163887+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/08/naturas-smart-ring-puts-ai-agents-on-your-finger/",
-      "title": "Natura’s $99 smart ring puts AI agents on your finger",
-      "summary": "Natura’s $99 Interface smart ring lets you summon AI agents with the press of a finger to complete tasks, capture thoughts, and control devices — while doubling as a health tracker.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-08T16:00:00+00:00",
-      "sent_at": "2026-10-08T17:15:02.163887+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/08/goodfire-says-its-new-inside-out-monitors-catch-rogue-ai-agents-at-a-fraction-of-the-cost/",
-      "title": "Goodfire says its new ‘inside-out’ monitors catch rogue AI agents at a fraction of the cost",
-      "summary": "Goodfire just launched what it says is a cheaper way to keep AI agents in check: Instead of paying a second AI to read everything an agent does, its monitors peek inside the model while it works and only call in backup when something looks fishy.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-08T16:00:00+00:00",
-      "sent_at": "2026-10-08T17:15:02.163887+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/data-centers/finland-orders-google-to-stop-work-on-two-ai-data-centers-over-alleged-deforestation-company-admits-it-has-fallen-short-of-our-own-high-standards-in-this-instance",
-      "title": "Finland orders Google to stop work on two AI data centers over alleged deforestation",
-      "summary": "Finnish authorities say they cannot conduct a proper environmental assessment after the site has already been changed.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-08T15:52:45+00:00",
-      "sent_at": "2026-10-08T17:15:02.163887+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/08/us-bars-microsoft-adobe-and-major-it-firms-from-green-card-program-for-skilled-foreign-workers/",
-      "title": "US bars Microsoft, Adobe, and major IT firms from green card program for skilled foreign workers",
-      "summary": "The other firms being suspended from the program include Capgemini, Cognizant, HCL, Infosys, Tata, and Wipro.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-08T15:42:26+00:00",
-      "sent_at": "2026-10-08T17:15:02.163887+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1007985/google-ai-notetaking-app-transcribe-offline",
-      "title": "Google’s AI note-taking app transcribes your meetings completely offline",
-      "summary": "Google has released an experimental note-taking app that can transcribe meetings and audio files entirely offline, as reported earlier by TechCrunch. The app, called Google AI Edge Foresight, is free to use and runs on macOS using the company's on-device EmbeddingGemma 2 model. Similar to AI note-taking apps like Granola and Wispr Flow, Foresight summarizes [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-08T15:27:30+00:00",
-      "sent_at": "2026-10-08T17:15:02.163887+00:00"
     }
   ]
 }
