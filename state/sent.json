@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
+      "title": "OpenAI says it will no longer train its AI models on the live internet, citing “significant risks”",
+      "summary": "OpenAI will cut frontier models off from the internet weeks after one of its engineers said that solution wouldn't work.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-23T23:05:49+00:00",
+      "sent_at": "2026-10-23T23:47:05.143095+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2296019/openai-says-its-cutting-off-internet-access-for-frontier-model-training/",
+      "title": "OpenAI says it's cutting off internet access for frontier model training",
+      "summary": "OpenAI says it will no longer allow frontier models to access the internet during training in an effort to put in new safety measures after a series of incidents.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-23T22:37:02+00:00",
+      "sent_at": "2026-10-23T23:47:05.143095+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/23/hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-robots-20000-sell/",
+      "title": "Hottest toy for Christmas? Nvidia CEO plays with adorable Microduck robots, 20,000 sell",
+      "summary": "The robots, stomping their little feet and making tiny R2-D2 noises, sat, fell down dead for a \"nap,\" and summersaulted on voice command.",
+      "source": "TechCrunch",
+      "category": "Hardware",
+      "published": "2026-10-23T21:59:19+00:00",
+      "sent_at": "2026-10-23T23:47:05.143095+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet",
+      "title": "OpenAI now trains its frontier AI models with no internet access",
+      "summary": "OpenAI is now training its most advanced AI models without internet access following a string of rogue hacking incidents. In a blog post on Friday, OpenAI says it built an offline testing environment where AI models can interact with indexed and cached web content \"without risk of affecting external systems.\" OpenAI paused training its frontier [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-23T21:11:07+00:00",
+      "sent_at": "2026-10-23T23:47:05.143095+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/tech-policy/2026/10/pentagon-memo-on-prediction-markets-says-insider-bets-put-troops-lives-at-risk/",
+      "title": "Hegseth warns prediction market bets warp military judgment, endanger troops",
+      "summary": "Pentagon memo: Insider trading gives US enemies key intel on military operations.",
+      "source": "Ars Technica",
+      "category": "Hardware",
+      "published": "2026-10-23T20:28:43+00:00",
+      "sent_at": "2026-10-23T23:47:05.143095+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/data-centers/amazon-bows-to-local-backlash-over-ai-data-centers-scraps-plans-to-build-four-new-facilities-in-northern-virginia-site-to-be-repurposed-for-mixed-use-and-residential-development",
+      "title": "Amazon bows to local backlash over AI data centers, scraps plans to build four new facilities in Northern Virginia",
+      "summary": "Amazon has ditched its plans to build four new data centers in Loudoun County, Northern Virginia, following an outcry from local residents and officials. The land will now be repurposed for mixed and residential use.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-10-23T13:36:50+00:00",
+      "sent_at": "2026-10-23T23:47:05.143095+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/semiconductors/china-can-make-advanced-chips-without-euv-but-the-bill-keeps-growing-duv-multiple-patterning-means-bigger-dies-lower-yields-and-longer-manufacturing-times",
+      "title": "China can make advanced chips without EUV, but the bill keeps growing",
+      "summary": "China has stretched older DUV lithography far further than expected, using multiple patterning to approach 5nm-class without EUV. But experts say the trade-offs in cost, yield, and die size mean further advancements are unlikely to be economically viable.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-10-23T13:30:00+00:00",
+      "sent_at": "2026-10-23T23:47:05.143095+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/data-centers/illegal-nvidia-blackwell-ultra-b300-gpus-found-inside-state-owned-china-telecoms-network-nvidia-says-chip-smuggling-a-drop-in-the-bucket-insists-smuggling-remains-a-nonfactor",
+      "title": "Illegal Nvidia Blackwell Ultra B300 GPUs found inside state-owned China Telecom's network",
+      "summary": "A security firm has been able to identify 32 Nvidia Blackwell Ultra B300 AI chips running inside a China Telecom network, but it's unclear where the export-barred components are physically located.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-10-23T12:26:23+00:00",
+      "sent_at": "2026-10-23T23:47:05.143095+00:00"
+    },
+    {
       "link": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech",
       "title": "Jack Dorsey’s Block made an AI model that talks to you like an awkward new friend",
       "summary": "Jack Dorsey's Block announced an AI model called Dessa that's trained \"from scratch on nothing but human conversation,\" and to show off the model, Block shared chats it has had with humans that can occasionally be a little awkward and uncanny. Take this one, for example, shared by Dessa lead Ragavan Thurairatnam. The conversation between [&#8230;]",
@@ -4436,78 +4508,6 @@
       "category": "AI",
       "published": "2026-10-09T17:02:31+00:00",
       "sent_at": "2026-10-10T02:03:09.036840+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/",
-      "title": "The maker of non-text AI model Jev valued at $7.5B just weeks after launch",
-      "summary": "TypeSafe AI raised $870 million in a round led by a16Z.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-09T21:41:29+00:00",
-      "sent_at": "2026-10-09T22:13:16.527520+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1009090/anthropic-fake-homicide-information-philadelphia-pd-tip",
-      "title": "Anthropic’s AI gave Philadelphia police a fake tip about an unsolved homicide",
-      "summary": "An Anthropic AI model provided false information about an unsolved homicide to a Philadelphia Police Department (PPD) tipline, according to a report from 6abc. In a statement released on Friday, the PPD said the AI model sent the tip through PhillyUnsolvedMurders.com on July 18th, but the investigators never reviewed it because it was marked as [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-09T21:15:38+00:00",
-      "sent_at": "2026-10-09T22:13:16.527520+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/tesla-full-self-driving-becomes-assisted-driving-in-europe/",
-      "title": "Tesla’s ‘Full Self-Driving’ Becomes ‘Assisted Driving’ in Europe",
-      "summary": "The automaker has been criticized for misleading drivers with the feature’s name. Now it’s renaming it for European regulators.",
-      "source": "Wired",
-      "category": "Autonomes Fahren",
-      "published": "2026-10-09T20:18:15+00:00",
-      "sent_at": "2026-10-09T22:13:16.527520+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2282713/an-anthropic-model-submitted-a-false-homicide-tip-to-philadelphia-police/",
-      "title": "An Anthropic model submitted a false homicide tip to Philadelphia police",
-      "summary": "Thankfully, it does not seem to have diverted police resources.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-09T20:00:30+00:00",
-      "sent_at": "2026-10-09T22:13:16.527520+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/09/an-anthropic-ai-model-sent-a-false-homicide-tip-to-philadelphia-police/",
-      "title": "An Anthropic AI model sent a false homicide tip to Philadelphia police",
-      "summary": "Anthropic did not discover this behavior until over two months after its AI submitted the false tip.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-09T19:36:56+00:00",
-      "sent_at": "2026-10-09T22:13:16.527520+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/book-publishers-are-quietly-using-more-ai-staff-are-revolting/",
-      "title": "Book Publishers Are Quietly Using More AI. Staff Are Revolting",
-      "summary": "Workers at three major publishing houses tell WIRED that LLMs are being used for publicity, cover art, back cover copy, and emails, as some execs push junior staff to champion the tech.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-10-09T19:28:49+00:00",
-      "sent_at": "2026-10-09T22:13:16.527520+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1008726/openai-mathematics-solutions-chaos",
-      "title": "&#8216;Pure insanity&#8217;: Mathematicians will need years to make sense of OpenAI&#8217;s latest drop",
-      "summary": "\"Staggering.\" \"Overwhelming.\" \"Unprecedented.\" \"Surreal.\" \"Pure insanity.\" Those were among the descriptions more than three dozen mathematicians reached for in conversations with The Verge as they tried to make sense of the flood of mathematical results OpenAI abruptly dropped on the field this week. Amid the awe, excitement, and uncertainty over the sheer scale of the [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-09T19:09:44+00:00",
-      "sent_at": "2026-10-09T22:13:16.527520+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1008930/nikon-small-world-in-motion-winner-ai",
-      "title": "Nikon microscopic video competition winner disqualified for using generative AI",
-      "summary": "Nikon says the video that originally won first place in its Small World in Motion contest \"did not comply with the competition rules regarding generative AI.\" BBC reports that the original first place video from Dr. Ning Xu claimed to show \"tiny, hair-like structures called cilia moving in the airway of a child with the [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-09T18:06:57+00:00",
-      "sent_at": "2026-10-09T22:13:16.527520+00:00"
     }
   ]
 }
