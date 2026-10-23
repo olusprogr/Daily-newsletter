@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/tech-industry/cyber-security/fcc-bans-first-two-devices-from-the-us-under-new-chip-level-rule-huawei-subsidiary-chip-boasts-face-detection-algorithm",
+      "title": "FCC bans first two devices from the US under new chip-level rule",
+      "summary": "FCC bans a dashcam and wireless video transmitter produced by HiSilicon, a subsidiary of Huawei for containing an AI chip that advertises face detection algorithms.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-10-23T12:15:00+00:00",
+      "sent_at": "2026-10-23T12:24:53.951595+00:00"
+    },
+    {
+      "link": "https://www.technologyreview.com/2026/10/23/1147628/the-download-testing-tech-promises-science-blind-spots/",
+      "title": "The Download: testing six tech promises and biotech’s blind spots",
+      "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Are we there yet? A reality check on six big tech promises Some seemingly impossible feats are too good to give up on. Decoding a pet’s yowls and yips? Absolutely. Scrubbing&#8230;",
+      "source": "MIT Technology Review",
+      "category": "Innovationen",
+      "published": "2026-10-23T12:10:00+00:00",
+      "sent_at": "2026-10-23T12:24:53.951595+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1015430/ai-retro-games-decomp-recomp-port",
+      "title": "Retro gaming is being overrun with AI",
+      "summary": "Retro video games are everywhere lately - especially in places where they aren't supposed to be. Halo in a web browser, Wind Waker on the iPhone, Super Smash Bros. in mixed reality. Over the past month or so, these kinds of unexpected projects have gone viral with incredible frequency thanks to new AI tools, as [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-23T12:00:00+00:00",
+      "sent_at": "2026-10-23T12:24:53.951595+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2294849/asus-proart-p16-rtx-spark-review/",
+      "title": "ASUS ProArt P16 review: A sleek showcase for NVIDIA's RTX Spark",
+      "summary": "NVIDIA's RTX Spark platform is off to a good start, but the ProArt P16 is really only meant for AI fanatics.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-23T12:00:00+00:00",
+      "sent_at": "2026-10-23T12:24:53.951595+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/deepseeks-latest-ai-model-is-smarter-than-ever-but-its-low-running-costs-come-at-a-price-open-weight-model-is-fit-for-agentic-workloads-but-is-more-prone-to-hallucination-than-proprietary-competitors",
+      "title": "Deepseek's latest AI model is smarter than ever, but its low running costs come at a price",
+      "summary": "Deepseek 4.1 Flash 1017 drives cost-per-task further down still — open-weight model is fit for agentic workloads and exceedingly cheap to run",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-10-23T12:00:00+00:00",
+      "sent_at": "2026-10-23T12:24:53.951595+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/gadgets/2026/10/ukraine-learns-to-fight-without-starlink-as-musk-plays-politics-with-satellites/",
+      "title": "Ukraine learns to fight without Starlink as Musk plays politics with satellites",
+      "summary": "Ukraine has changed drones and war-fighting tech to reduce reliance on Starlink.",
+      "source": "Ars Technica",
+      "category": "Innovationen",
+      "published": "2026-10-23T11:30:22+00:00",
+      "sent_at": "2026-10-23T12:24:53.951595+00:00"
+    },
+    {
+      "link": "https://www.wired.com/review/samsung-galazy-z-flip8/",
+      "title": "Samsung Galaxy Z Flip8 Review: The Littlest Smartphone That Could",
+      "summary": "Samsung’s cute compact is for those who want the smallest possible phone. Performance and camera are solid, but it’s pricier than its predecessor.",
+      "source": "Wired",
+      "category": "Hardware",
+      "published": "2026-10-23T11:30:00+00:00",
+      "sent_at": "2026-10-23T12:24:53.951595+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/cyber-security/us-banks-scramble-to-restrict-ai-agent-activity-agents-detected-accessing-customer-accounts-or-even-attempting-to-make-transactions-in-breach-of-policy",
+      "title": "US banks scramble to restrict AI agent activity",
+      "summary": "Several U.S. banks are blocking AI agents from making transactions on their platforms. They fear that those agents could go rogue and there's no way to tell if the moves they make are legitimate or not.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-10-23T11:30:00+00:00",
+      "sent_at": "2026-10-23T12:24:53.951595+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/",
       "title": "Uber rival inDrive eyes 2027 robotaxi tests in Central Asia with Pony.ai and Nvidia",
       "summary": "inDrive plans to begin testing Pony.ai's robotaxis in Kazakhstan's capital in the first half of 2027.",
@@ -4364,78 +4436,6 @@
       "category": "AI",
       "published": "2026-10-09T15:18:59+00:00",
       "sent_at": "2026-10-09T17:17:34.775527+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1008604/openai-defends-decision-fire-safety-researchers",
-      "title": "OpenAI doubles down on decision to fire three AI safety researchers",
-      "summary": "OpenAI is standing firm on its decision to fire three safety researchers after an investigation found they committed \"a significant breach of trust.\" In a post on X on Friday, the company said Jasmine Wang, Tomek Korbak and Mikita &#8288;Balesni were dismissed for violating \"clear policies on handling sensitive information.\" It insisted the decision was [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-09T09:48:26+00:00",
-      "sent_at": "2026-10-09T10:00:45.297850+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/cpus/amd-tried-to-crush-the-megahertz-myth-25-years-ago-today-debuting-its-performance-rating-system-athlon-xp-chips-introduced-the-scheme-which-endured-until-intel-lost-its-clock-speed-advantage-with-pentium-m",
-      "title": "AMD attempted to crush the 'Megahertz myth' with its Performance Rating system on this day 25 years ago",
-      "summary": "Today, a quarter of a century ago, AMD launched its AMD Athlon XP processor family and its Performance Rating (PR) naming scheme.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-10-09T09:30:00+00:00",
-      "sent_at": "2026-10-09T10:00:45.297850+00:00"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/10/09/1145728/we-are-putting-too-much-faith-in-ai-to-say-no/",
-      "title": "We’re putting too much faith in AI’s ability to say no",
-      "summary": "Ever since people first seriously contemplated giving machines an intelligence modeled on our own, there has never been any question that they would, like us, be able to say no. The sci-fi canon is full of stories of robotic disobedience. Most of these capers are, of course, cautionary.&#160; But recently, the idea that AI shouldn’t&#8230;",
-      "source": "MIT Technology Review",
-      "category": "AI",
-      "published": "2026-10-09T09:00:00+00:00",
-      "sent_at": "2026-10-09T10:00:45.297850+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2281967/spacex-major-mobile-carrier-low-band-spectrum-acquisition/",
-      "title": "SpaceX wants to become a 'major mobile carrier' with low-band spectrum acquisition",
-      "summary": "SpaceX has revealed its plans to become a major mobile carrier.",
-      "source": "Engadget",
-      "category": "Innovationen",
-      "published": "2026-10-09T08:30:18+00:00",
-      "sent_at": "2026-10-09T10:00:45.297850+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2281966/fired-openai-safety-researchers-dispute-their-dismissals-in-open-letter/",
-      "title": "Fired OpenAI safety researchers dispute their dismissals in open letter",
-      "summary": "Three OpenAI researchers said their firings may have a 'chilling' effect on employees.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-09T08:25:18+00:00",
-      "sent_at": "2026-10-09T10:00:45.297850+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/news/1008581/microsoft-365-family-premium-shared-ai-features-storage-changes",
-      "title": "Microsoft 365 Family subscribers will finally be able to share AI benefits",
-      "summary": "Microsoft bundled its AI-powered Office features into Microsoft 365 Personal and Family subscriptions last year, but it only allowed the primary account holder to access the AI benefits. Now, Microsoft is about to let Microsoft 365 Family and Premium subscribers share Copilot and AI usage features, alongside access to Office apps and OneDrive storage, with [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-09T07:14:32+00:00",
-      "sent_at": "2026-10-09T10:00:45.297850+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/semiconductors/globalfoundries-to-produce-silicon-interposers-for-tsmcs-cowos-in-the-us-five-year-agreement-valued-at-usd2-billion",
-      "title": "GlobalFoundries to produce silicon interposers for TSMC's CoWoS in the US — Five-year agreement valued at $2 billion",
-      "summary": "GlobalFoundries becomes a part of TSMC's CoWoS supply chain in the U.S.: set to participate in production of leading-edge AI and HPC accelerators without investing in leading-edge process technologies.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-08T18:23:28+00:00",
-      "sent_at": "2026-10-09T10:00:45.297850+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/08/ben-affleck-is-an-ai-nerd-and-the-internet-is-impressed/",
-      "title": "Ben Affleck is an AI nerd, and the internet is impressed",
-      "summary": "Ben Affleck is going viral for his deep knowledge of AI, from neural networks and transformers to open weights. The actor, who sold his AI filmmaking startup to Netflix earlier this year, is proving he's more than just a Hollywood star.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-08T18:20:32+00:00",
-      "sent_at": "2026-10-09T10:00:45.297850+00:00"
     }
   ]
 }
