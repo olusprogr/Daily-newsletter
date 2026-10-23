@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/",
+      "title": "Left alone with nothing to do, AI agents started playing",
+      "summary": "MIT researchers marooned 13 AIs on a virtual island, and they responded by inventing games, mourning a lost ring and, eventually, getting better at their jobs.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-23T00:45:37+00:00",
+      "sent_at": "2026-10-23T01:11:10.375908+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/10/22/tesla-q4-numbers-more-product-delays-and-some-real-ev-charging-innovation/",
+      "title": "Tesla Q4 numbers, more product delays, and some REAL EV charging innovation",
+      "summary": "On today’s numerically-infused episode of Quick Charge , we take a look at all the latest product and delivery delays from Tesla’s Q3 earnings call before changing lanes and recapping some of the biggest developments in the world of EV charging innovation. more…",
+      "source": "Electrek",
+      "category": "Innovationen",
+      "published": "2026-10-23T00:11:04+00:00",
+      "sent_at": "2026-10-23T01:11:10.375908+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1017261/etsy-ai-rules-policies-restrictions-listing",
+      "title": "Etsy is cracking down on AI slop listings",
+      "summary": "Etsy is announcing stricter rules about how AI can be used in listings to reduce the volume of AI slop on the platform. In a post, the company says that \"many active buyers say they can't tell which items involve AI-generated content\" and that sellers are \"concerned about your work appearing alongside items that use [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-23T00:09:58+00:00",
+      "sent_at": "2026-10-23T01:11:10.375908+00:00"
+    },
+    {
+      "link": "https://www.anthropic.com/research/formal-verification",
+      "title": "LLMs are making formal software verification feasible at a much larger scale",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-22T22:54:43+00:00",
+      "sent_at": "2026-10-23T01:11:10.375908+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/",
+      "title": "OpenAI working on new $30B raise at $1.25T valuation ahead of IPO",
+      "summary": "Should OpenAI command an over $1 trillion valuation with this round, it would break records as the most highly valued private company ever.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-22T22:08:24+00:00",
+      "sent_at": "2026-10-23T01:11:10.375908+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/tech-policy/2026/10/comcast-loses-more-customers-claims-other-isps-cheap-prices-are-irrational/",
+      "title": "Comcast loses more customers, claims other ISPs' cheap prices are \"irrational\"",
+      "summary": "Comcast plans job cuts and more AI agents for its shrinking cable customer base.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-10-22T21:07:09+00:00",
+      "sent_at": "2026-10-23T01:11:10.375908+00:00"
+    },
+    {
+      "link": "https://news.ycombinator.com/item?id=50200997",
+      "title": "Ask HN: If the models are so good, why doesn't OpenAI just start 100 companies?",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-22T21:03:55+00:00",
+      "sent_at": "2026-10-23T01:11:10.375908+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/policy/1017016/fcc-block-foreign-surveillance-chips-hivision-huawei-loophole",
+      "title": "The FCC is beginning to block gadgets with ‘foreign surveillance chips’",
+      "summary": "On October 13th, Brendan Carr's FCC gave itself a new power - it can block gadgets for containing any computer chip made by any company on its list of potential threats to national security. Today, it's exercising that power for the first time, blocking two gadgets because they contain \"foreign surveillance chips,\" the FCC claims. [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-10-22T20:23:48+00:00",
+      "sent_at": "2026-10-23T01:11:10.375908+00:00"
+    },
+    {
       "link": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
       "title": "Canva’s first AI image model plans designs before generating them",
       "summary": "Canva is diving even deeper into AI with the launch of an image generation model that competes directly with those from OpenAI, Microsoft, and Google. The model, called Canva Craft, uses a two-stage architecture that allows it to plan a design before generating an image, allowing for \"greater precision, consistency and control,\" according to an [&#8230;]",
@@ -4364,78 +4436,6 @@
       "category": "AI",
       "published": "2026-10-08T18:55:18+00:00",
       "sent_at": "2026-10-09T02:45:28.197144+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner",
-      "title": "Anthropic launches free AI security scans for open-source projects",
-      "summary": "Anthropic's offering to help open-source projects track down security vulnerabilities with a new service called OSS Scanner. It says open-source projects that opt-in will get \"thorough, periodic security scans by our strongest models at no cost.\" That could mean open-source projects get alerted about possible security issues sooner, but the trade-off is that OSS Scanner's [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-08T21:53:51+00:00",
-      "sent_at": "2026-10-08T22:51:38.927483+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/science/1008467/spacex-announces-plan-to-become-a-major-mobile-carrier",
-      "title": "SpaceX announces plan to become a ‘major mobile carrier’",
-      "summary": "SpaceX has acquired a portfolio of low-band spectrum licenses - a move the company says \"will pave the way\" for its Starlink Mobile service to become a \"major\" US carrier. When the Federal Communications Commission signs off on the deal, SpaceX says it will deploy its new architecture that combines its satellite-to-mobile constellation with a [&#8230;]",
-      "source": "The Verge",
-      "category": "Innovationen",
-      "published": "2026-10-08T21:23:31+00:00",
-      "sent_at": "2026-10-08T22:51:38.927483+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2281765/anthropic-bans-sustained-and-needless-abusive-or-cruel-behavior-toward-its-ai-models/",
-      "title": "Anthropic bans 'sustained and needless abusive or cruel behavior' toward its AI models",
-      "summary": "The company is also tightening its election policy ahead of the midterms.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-08T21:17:24+00:00",
-      "sent_at": "2026-10-08T22:51:38.927483+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/games/1008353/amd-will-bring-fsr-4-to-handhelds-by-the-end-of-2026",
-      "title": "AMD will bring FSR 4 to handhelds by the end of 2026",
-      "summary": "It's already possible to get AMD's framerate-enhancing FSR 4 boost on handhelds as old as the Steam Deck - but in June, AMD reserved the right to disappoint handheld gamers by not officially bringing FSR 4 to older handhelds. Now, AMD consumer chip boss Jack Huynh says he will bring the tech to some handhelds [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-10-08T21:01:18+00:00",
-      "sent_at": "2026-10-08T22:51:38.927483+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2281719/child-safety-group-calls-chatgpt-for-teens-an-unacceptable-risk/",
-      "title": "Child safety group calls ChatGPT for Teens an unacceptable risk",
-      "summary": "After extensive testing, Common Sense Media found the chatbot failed in five key areas.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-08T20:36:46+00:00",
-      "sent_at": "2026-10-08T22:51:38.927483+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1008401/california-shut-down-rek-fighting-robot-company-human",
-      "title": "California is trying to shut down robot vs. human cage matches",
-      "summary": "The California State Athletic Commission sent a cease-and-desist letter to a startup that hosted a match between a human and a robot last month, as reported by The New York Times. The fight, which took place on September 18th, pitted a human, Frankie LaPenna, against a humanoid robot owned by a tech startup, Rek, that [&#8230;]",
-      "source": "The Verge",
-      "category": "Innovationen",
-      "published": "2026-10-08T20:06:56+00:00",
-      "sent_at": "2026-10-08T22:51:38.927483+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/",
-      "title": "Fired OpenAI safety researchers dispute misconduct claims, warn of chilling effect",
-      "summary": "Three fired OpenAI safety researchers dispute allegations of mishandling sensitive information, warning in an open letter that their dismissals are creating a chilling effect on the company’s AI safety culture.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-08T20:04:26+00:00",
-      "sent_at": "2026-10-08T22:51:38.927483+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/she-designed-metas-new-ai-logo-then-came-the-hate/",
-      "title": "She Designed Meta’s New AI Logo. Then Came the Hate",
-      "summary": "Jessica Hische knew working for Meta might upset some people. But she didn’t anticipate just how angry they would get.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-10-08T19:30:00+00:00",
-      "sent_at": "2026-10-08T22:51:38.927483+00:00"
     }
   ]
 }
