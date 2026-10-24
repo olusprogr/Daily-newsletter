@@ -1,6 +1,33 @@
 {
   "items": [
     {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1018205/blue-planet-iii-authentic-organic-ai",
+      "title": "Blue Planet III is keeping the rough edges in the age of AI",
+      "summary": "BBC's Blue Planet III is looking to prove its authenticity by leaving in the less-than-perfect shots. Previous incarnations of the nature series were defined by their gorgeous, crystal-clear footage that seemed almost too good to be real. But one dead giveaway of AI is when things look too polished and seamless. To counter that, Blue [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-24T21:29:12+00:00",
+      "sent_at": "2026-10-24T22:52:17.506431+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/24/starlink-seems-to-be-working-normally-again-in-ukraine/",
+      "title": "Starlink seems to be working normally again in Ukraine",
+      "summary": "Elon Musk reportedly ordered SpaceX to throttle Ukraine's Starlink access.",
+      "source": "TechCrunch",
+      "category": "Innovationen",
+      "published": "2026-10-24T20:46:34+00:00",
+      "sent_at": "2026-10-24T22:52:17.506431+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/24/will-ai-expose-the-rickety-infrastructure-of-the-internet/",
+      "title": "Will AI expose the rickety infrastructure of the internet?",
+      "summary": "The moment you realize the internet is \"held together by glue and dreams.\"",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-24T20:15:33+00:00",
+      "sent_at": "2026-10-24T22:52:17.506431+00:00"
+    },
+    {
       "link": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
       "title": "No Signs of AI Payoff Outside the Tech Sector",
       "summary": "",
