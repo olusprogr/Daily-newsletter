@@ -1,6 +1,42 @@
 {
   "items": [
     {
+      "link": "https://www.reddit.com/r/antiai/comments/1xdv3e5/hacker_reverse_engineers_his_samsung_tv_and_finds/",
+      "title": "Hacker reverses Samsung TV, finds on-board AI listening OpenAI account suspended",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-24T05:49:57+00:00",
+      "sent_at": "2026-10-24T08:36:57.546045+00:00"
+    },
+    {
+      "link": "https://www.sciencedaily.com/releases/2026/10/261018084421.htm",
+      "title": "Alzheimer's breakthrough: 2 hrs of sleep restored without clearing brain plaques",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Innovationen",
+      "published": "2026-10-24T01:53:10+00:00",
+      "sent_at": "2026-10-24T08:36:57.546045+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/the-original-apple-ipod-debuted-25-years-ago-today-steve-jobs-usd399-device-fit-1-000-songs-into-a-package-the-size-of-a-deck-of-cards-with-5-gigabytes-of-storage",
+      "title": "The original Apple iPod debuted 25 years ago today",
+      "summary": "On this day in 2001, Apple CEO Steve Jobs unveiled the original iPod. He began the presentation by teasing 'a breakthrough digital device that’s not a Mac.'",
+      "source": "Tom's Hardware",
+      "category": "Innovationen",
+      "published": "2026-10-23T09:20:00+00:00",
+      "sent_at": "2026-10-24T08:36:57.546045+00:00"
+    },
+    {
+      "link": "https://www.technologyreview.com/2026/10/23/1147610/biotech-you-can-see-everything-theranos-holmes/",
+      "title": "In the biotech world, you can’t see everything",
+      "summary": "Earlier this week, I attended a screening of You Can See Everything, the buzzy new documentary about the disgraced former biotech CEO Elizabeth Holmes.&#160; I went in not really knowing what to expect. I’d avoided spoilers (and won’t be giving anything away here, either!). I was wondering what new information this film could reveal, given&#8230;",
+      "source": "MIT Technology Review",
+      "category": "Innovationen",
+      "published": "2026-10-23T09:00:00+00:00",
+      "sent_at": "2026-10-24T08:36:57.546045+00:00"
+    },
+    {
       "link": "https://gizmodo.com/microsoft-says-its-new-ai-is-more-than-twice-as-good-at-diagnosing-diseases-as-doctors-2000829562",
       "title": "New AI Is More Than Twice as Good at Diagnosing Diseases as Doctors",
       "summary": "",
