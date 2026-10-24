@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.engadget.com/2296211/the-uk-is-investing-134-million-into-an-ai-biosecurity-lab/",
+      "title": "The UK is investing $134 million into an AI Biosecurity Lab",
+      "summary": "The UK has established the AI Biosecurity Lab, which will help it detect biological threats and develop vaccines with AI.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-24T16:11:53+00:00",
+      "sent_at": "2026-10-24T17:11:18.953250+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/",
+      "title": "Forced to pick, Grok’s AI model chooses Republicans. OpenAI’s picks Democrats.",
+      "summary": "A new study found Grok's AI overwhelmingly recommends Republican candidates while OpenAI's GPT favors Democrats, with the two AI models disagreeing in more than 90% of nearly 500 election races.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-24T15:00:00+00:00",
+      "sent_at": "2026-10-24T17:11:18.953250+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/24/the-boox-palma-2-pro-finally-got-me-to-stop-reading-on-my-phone/",
+      "title": "The Boox Palma 2 Pro finally got me to stop reading on my phone",
+      "summary": "The $400 Boox Palma 2 Pro is a smartphone-sized e-reader designed for people who want to read books, articles, and documents on a small E Ink display.",
+      "source": "TechCrunch",
+      "category": "Hardware",
+      "published": "2026-10-24T14:15:00+00:00",
+      "sent_at": "2026-10-24T17:11:18.953250+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/24/all-the-ai-agents-that-can-live-in-your-text-messages/",
+      "title": "Here are the top AI agents that can live in your text messages",
+      "summary": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-24T14:00:00+00:00",
+      "sent_at": "2026-10-24T17:11:18.953250+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/report/1018131/apple-macbook-touchscreen-stylus-pencil-lenovo-laptop-analysis",
+      "title": "I hope Apple’s touchscreen MacBook takes some lessons from this Lenovo laptop",
+      "summary": "It looks like the long-rumored touchscreen MacBook might actually get announced next week, and after using the Lenovo Yoga 9n for our testing of Nvidia's RTX Spark platform, it got me thinking: this is a lot of what I want from a touchscreen MacBook. Like the Apple silicon in modern MacBook Pros, RTX Spark is [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-10-24T14:00:00+00:00",
+      "sent_at": "2026-10-24T17:11:18.953250+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2290733/macbook-neo-a18-pro-chip-performance/",
+      "title": "The MacBook Neo uses an iPhone chip, and it's just good enough",
+      "summary": "The MacBook Neo had to make some compromises to meet its price point. And as long as you're aware of them, it offers a solid value.",
+      "source": "Engadget",
+      "category": "Hardware",
+      "published": "2026-10-24T14:00:00+00:00",
+      "sent_at": "2026-10-24T17:11:18.953250+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/laptops/gaming-laptops/save-up-to-usd800-on-acers-ultra-slim-rtx-5070-ti-gaming-laptop-pay-usd2225-for-the-16gb-ram-model-or-upgrade-to-32gb-for-usd2400",
+      "title": "Save up to $800 on Acer’s ultra-slim RTX 5070 Ti gaming laptop — pay $2225 for the 16GB RAM model or upgrade to 32GB for $2400",
+      "summary": "The Acer Predator Helios Neo 16S AI combines a 240 Hz QHD+ OLED display with Intel’s 24-core Core Ultra 9 processor and Nvidia RTX 5070 Ti graphics, and Best Buy is offering discounts of up to $800.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-10-24T13:58:40+00:00",
+      "sent_at": "2026-10-24T17:11:18.953250+00:00"
+    },
+    {
+      "link": "https://torrentfreak.com/ai-assisted-paper-on-z-library-cites-a-torrentfreak-article-that-doesnt-exist/",
+      "title": "AI-Assisted Paper on Z-Library Cites a TorrentFreak Article That Doesn't Exist",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-24T11:18:54+00:00",
+      "sent_at": "2026-10-24T17:11:18.953250+00:00"
+    },
+    {
       "link": "https://electrek.co/2026/10/24/nhtsa-proposes-cyan-lights-for-robotaxis-following-mercedes-china/",
       "title": "NHTSA proposes cyan lights for robotaxis, following Mercedes/China",
       "summary": "The NHTSA has proposed using cyan-colored lights to identify vehicles operating autonomously, along with other additions to get ready for autonomous vehicles. more…",
@@ -4454,78 +4526,6 @@
       "category": "Hardware",
       "published": "2026-10-10T13:30:00+00:00",
       "sent_at": "2026-10-10T19:43:29.560346+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/super-micro-smuggling-co-conspirator-pleads-guilty-to-sending-ai-chips-to-china-broker-admits-breaking-export-control-rules-as-company-co-founder-denies-charges",
-      "title": "Super Micro smuggling co-conspirator pleads guilty to sending AI chips to China",
-      "summary": "Ting-Wei \"Willy\" Sun, one of the three people charged of smuggling Super Micro servers with advanced Nvidia AI chips to China, has pleaded guilty, with sentencing set for September of next year.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-10T15:35:00+00:00",
-      "sent_at": "2026-10-10T15:41:04.379955+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2279277/how-xiaomi-oppo-other-non-us-brands-challenging-iphone-duo/",
-      "title": "How Xiaomi, Oppo and other non-US brands are challenging the iPhone Duo",
-      "summary": "Apple's foldable phone has everyone talking, but competitors have their own offerings in different ways.",
-      "source": "Engadget",
-      "category": "Hardware",
-      "published": "2026-10-10T15:30:00+00:00",
-      "sent_at": "2026-10-10T15:41:04.379955+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/video-games/playstation/ps5-hack-delivers-native-ps2-disc-support-and-4k-upscaling-where-sony-refused-to-after-ps2-breakthrough-homebrew-dev-confirms-ps3-disc-support-is-next-for-ps5",
-      "title": "PS5 hack delivers native PS2 disc support and 4K upscaling where Sony refused to — after PS2 breakthrough, homebrew dev confirms PS3 disc support is next for PS5",
-      "summary": "Modder Sword has released PS5SX2 for the PlayStation 5, allowing gamers to play discs from previous PlayStation 2 games.",
-      "source": "Tom's Hardware",
-      "category": "Innovationen",
-      "published": "2026-10-10T15:17:15+00:00",
-      "sent_at": "2026-10-10T15:41:04.379955+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/this-week-on-toms-hardware-premium-october-10-2026-tencent-grabs-bargain-chips-qualcomm-huawei-ip-deal-groq-lawsuit-and-more",
-      "title": "This week on Tom's Hardware Premium: October 10, 2026",
-      "summary": "This week on Tom's Hardware Premium, we covered how the AI buildout is affecting the industry supporting it across all axioms, including in law, chip design, manufacturing, and finance.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-10T15:00:00+00:00",
-      "sent_at": "2026-10-10T15:41:04.379955+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1009286/anthropic-is-cutting-off-its-internal-evaluations-from-the-internet",
-      "title": "Anthropic is cutting off its internal evaluations from the internet",
-      "summary": "After a recent spate of high-profile incidents in which AI agents escaped containment, Anthropic is cutting off internet access for all internal evaluations. In a report Friday, the company detailed \"unintended model actions,\" including submitting a false tip regarding an unsolved murder, that led to the decision. Although the impact of these behaviors was minimal [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-10T14:41:16+00:00",
-      "sent_at": "2026-10-10T15:41:04.379955+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/data-centers/senate-investigation-says-that-some-ai-data-center-claims-are-misleading-senators-question-number-of-permanent-jobs-projects-bring-to-communities-but-companies-refuse-to-divulge-data",
-      "title": "Senate investigation says that some AI data center claims are misleading",
-      "summary": "A Senate investigation on AI data centers question that costs and benefits that AI hyperscalers show when they apply for permits to put up their developments. The report says that these claims are misleading and that they don't show the real impact of these sites on the local economy.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-10T14:40:00+00:00",
-      "sent_at": "2026-10-10T15:41:04.379955+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/10/all-the-ai-agents-that-can-live-in-your-text-messages/",
-      "title": "Here are the top AI agents that can live in your text messages",
-      "summary": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-10T14:00:00+00:00",
-      "sent_at": "2026-10-10T15:41:04.379955+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2278858/how-to-take-care-of-foldable-phone-hinges/",
-      "title": "How to take care of your foldable phone's hinge",
-      "summary": "Foldable phones require a little more care than standard ones, but the hinge will do its job as long as you don't make that difficult.",
-      "source": "Engadget",
-      "category": "Hardware",
-      "published": "2026-10-10T13:45:00+00:00",
-      "sent_at": "2026-10-10T15:41:04.379955+00:00"
     }
   ]
 }
