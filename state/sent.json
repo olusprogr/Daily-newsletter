@@ -1,6 +1,24 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/tech-industry/data-centers/nvidia-eyes-converting-old-nuclear-plants-into-massive-ai-data-centers-reusing-shut-down-german-energy-sites-could-reduce-the-cost-and-timeline-of-building-from-scratch",
+      "title": "Nvidia eyes converting old nuclear plants into massive AI data centers",
+      "summary": "Nvidia and PreussenElektra are studying whether decommissioned sites of German nuclear power plants can be repurposed as AI data centers, potentially cutting development time by reusing existing grid connections, land, and industrial infrastructure.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-10-25T10:30:00+00:00",
+      "sent_at": "2026-10-25T10:40:55.600748+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/cyber-security/hacker-finds-own-samsung-tv-collecting-scary-amounts-of-user-information-and-gets-banned-by-openai-for-cyber-abuse-tv-runs-an-ai-model-that-collects-audio-screenshots-and-plenty-of-other-user-data-for-ad-targeting",
+      "title": "Cybersecurity bounty hunter says Samsung TVs use AI to record audio and screenshots for ads",
+      "summary": "A hacker reverse-engineered his own Samsung TV and found alarming spying activity, including code that used connected devices' microphones to listen to users.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-10-25T10:00:00+00:00",
+      "sent_at": "2026-10-25T10:40:55.600748+00:00"
+    },
+    {
       "link": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
       "title": "Cerebras Deploys Trillion-Parameter AI Models",
       "summary": "",
@@ -4409,15 +4427,6 @@
       "category": "AI",
       "published": "2026-10-11T11:00:00+00:00",
       "sent_at": "2026-10-11T16:32:21.181360+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/supercomputers/working-cray-1-supercomputer-replica-packs-30-vintage-mac-minis-and-1-5-tflops-passively-cooled-tribute-is-9-375x-faster-than-the-1976-supercomputer",
-      "title": "Working Cray-1 supercomputer replica packs 30 vintage Mac Minis and 1.5 TFLOPS",
-      "summary": "Legendary 1975 supercomputer gets a modernized replica with old Mac Minis, showcasing decades of innovation.",
-      "source": "Tom's Hardware",
-      "category": "Innovationen",
-      "published": "2026-10-11T10:20:00+00:00",
-      "sent_at": "2026-10-11T10:35:18.533990+00:00"
     }
   ]
 }
