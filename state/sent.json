@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://lynchlab.net/llm-skin-cancer",
+      "title": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-25T17:15:38+00:00",
+      "sent_at": "2026-10-25T18:06:15.371315+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
+      "title": "AI delivers ‘zero financial payoff’ to most companies, Apollo economist says",
+      "summary": "\"Despite massive investments and widespread hype around artificial intelligence, the technology has delivered zero financial payoff to corporate America outside of tech.\"",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-25T16:57:32+00:00",
+      "sent_at": "2026-10-25T18:06:15.371315+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/25/techcrunch-mobility-blue-green-is-the-color-of-autonomy/",
+      "title": "TechCrunch Mobility: Blue-green is the color of autonomy",
+      "summary": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, the role AI is playing in it.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-25T16:05:00+00:00",
+      "sent_at": "2026-10-25T18:06:15.371315+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/big-tech-is-cashing-in-on-ai-while-the-rest-of-corporate-america-sees-no-financial-returns-report-outlines-how-rising-token-costs-threaten-to-squeeze-corporate-profit-margins",
+      "title": "Big Tech is cashing in on AI while the rest of corporate America sees no financial returns",
+      "summary": "Revenue per employee at the Magnificent Seven has outpaced the S&amp;P 493, and a new comparison highlights the growing divide in fortunes between America’s largest technology companies and the rest of the S&amp;P 500.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-10-25T15:25:40+00:00",
+      "sent_at": "2026-10-25T18:06:15.371315+00:00"
+    },
+    {
+      "link": "https://www.reddit.com/r/opensource/comments/1xelcuf/your_tokens_arent_valuable_no_more_ai",
+      "title": "R/open source bans all solo projects and projects using LLMs",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-25T14:05:03+00:00",
+      "sent_at": "2026-10-25T18:06:15.371315+00:00"
+    },
+    {
+      "link": "https://twitter.com/boneGPT/status/2114035719853265264",
+      "title": "Imagine an AI future where being banned means you are now economically useless",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-25T12:47:20+00:00",
+      "sent_at": "2026-10-25T18:06:15.371315+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/cpus/amd-ceo-lisa-su-proposed-bringing-back-the-ryzen-7-5800x3d-set-plan-in-motion-before-ddr5-shortages-am4-cpu-considered-a-final-gift-to-loyal-fans-of-the-decade-old-socket",
+      "title": "AMD CEO Lisa Su proposed bringing back the Ryzen 7 5800X3D, set plan in motion before DDR5 shortages",
+      "summary": "AMD Director Travis Kirsch confirmed the rationale for relaunching the first X3D chip and explained why the company no longer offers many Ryzen 3 SKUs.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-10-25T11:00:00+00:00",
+      "sent_at": "2026-10-25T18:06:15.371315+00:00"
+    },
+    {
+      "link": "https://www.techspot.com/news/114171-nikon-photography-contest-winner-loses-title-after-scientists.html",
+      "title": "Nikon photography contest winner loses title after scientists spot signs of AI",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-25T09:51:17+00:00",
+      "sent_at": "2026-10-25T18:06:15.371315+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/10/25/the-hottest-ai-wearables-and-gadgets-you-should-know-about/",
       "title": "The hottest AI wearables and gadgets you should know about",
       "summary": "We compiled a list of all the hottest AI wearables, including Muse Charm, Bee, Friend, Plaud, and more.",
@@ -4427,78 +4499,6 @@
       "category": "AI",
       "published": "2026-10-11T10:47:21+00:00",
       "sent_at": "2026-10-11T20:47:01.739453+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2281077/apple-home-ai-summaries-security-camera-prices/",
-      "title": "Apple Home's new AI summaries for security cameras cost more than you'd think",
-      "summary": "If you have a lot of cameras in your home, get ready to pay for more expensive iCloud+ plans.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-11T16:15:00+00:00",
-      "sent_at": "2026-10-11T16:32:21.181360+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/11/techcrunch-mobility-a-roadblock-clears-for-self-driving-trucks/",
-      "title": "TechCrunch Mobility: A roadblock clears for self-driving trucks",
-      "summary": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, the role AI is playing in it.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-11T16:02:00+00:00",
-      "sent_at": "2026-10-11T16:32:21.181360+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/gpus/modder-discovers-that-putting-a-gpu-in-the-wrong-place-can-deliver-a-19-degree-cooler-hotspot-breaking-convention-can-produce-great-results-despite-decades-of-pc-diy-evolution",
-      "title": "Modder discovers that putting a GPU in the 'wrong place' can deliver a 19 degree cooler hotspot",
-      "summary": "In PC DIY it might still be worth challenging convention, as TrashBench shows with his GPU hotspot getting up to 19C cooler.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-10-11T14:23:20+00:00",
-      "sent_at": "2026-10-11T16:32:21.181360+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/11/these-execs-think-voice-ai-hasnt-reached-its-chatgpt-moment-yet/",
-      "title": "These execs think voice AI hasn’t reached its ChatGPT moment yet",
-      "summary": "Voice AI's often misses important points for its context layer, and causes the whole pipeline to break",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-11T14:00:00+00:00",
-      "sent_at": "2026-10-11T16:32:21.181360+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2280537/why-overclocking-cpu-mostly-outdated/",
-      "title": "Why CPU overclocking is mostly now a thing of the past",
-      "summary": "The performance gains you get with modern chips aren't as noteworthy as they used to be.",
-      "source": "Engadget",
-      "category": "Hardware",
-      "published": "2026-10-11T12:45:00+00:00",
-      "sent_at": "2026-10-11T16:32:21.181360+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/cyber-security/cryptomining-malware-used-poetry-to-infect-more-than-3-400-servers-researchers-say-four-words-in-the-poellm-verse-changed-11-times-point-the-botnet-to-new-servers",
-      "title": "Cryptomining malware used poetry to infect more than 3,400 servers, researchers say",
-      "summary": "Lumen's Black Lotus Labs says PoeLLM malware has hit more than 3,400 servers, most of them exposed AI tools like LiteLLM and Ollama.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-11T11:45:00+00:00",
-      "sent_at": "2026-10-11T16:32:21.181360+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/i-made-terrible-games-with-googles-ai-playground/",
-      "title": "I Made Terrible Games With Google’s AI Playground",
-      "summary": "A long day’s haul in the video game slop mines.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-10-11T11:30:00+00:00",
-      "sent_at": "2026-10-11T16:32:21.181360+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1008484/learning-local-ai-hermes-qwen-model-mac-studio-testing-diary-progress",
-      "title": "Learning to use local AI is exciting, overwhelming, and frustrating",
-      "summary": "I'm embarking on a journey I've so far been hesitant to go on: actually using AI on the regular. Giving my most personal data to cloud services has been a major hold up for me, but it's increasingly possible to run powerful models locally to see what they're capable of. Is this tech so useful [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-11T11:00:00+00:00",
-      "sent_at": "2026-10-11T16:32:21.181360+00:00"
     }
   ]
 }
