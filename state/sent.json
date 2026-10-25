@@ -1,6 +1,24 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/",
+      "title": "Grok releases the first seven minutes of its AI-generated ‘Odyssey’",
+      "summary": "The footage looks okay, as long as you're not seeking artistry, inspiration, or human interest.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-25T21:31:16+00:00",
+      "sent_at": "2026-10-25T23:46:52.197295+00:00"
+    },
+    {
+      "link": "https://minimaxir.com/2026/10/cheap-llms/",
+      "title": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-25T21:11:31+00:00",
+      "sent_at": "2026-10-25T23:46:52.197295+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/10/25/cyberselfish-author-takes-aim-at-techno-libertarianism-as-her-book-returns-from-the-dead/",
       "title": "‘Cyberselfish’ author takes aim at Silicon Valley libertarians as her book returns from the dead",
       "summary": "\"That's a 12-year-old view of the world.\"",
