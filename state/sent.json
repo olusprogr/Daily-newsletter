@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://electrek.co/2026/10/26/tesla-us-built-model-3-canada-return-584-km/",
+      "title": "Tesla appears to be preparing to sell US-built Model 3s in Canada again",
+      "summary": "Tesla Canada has updated the Model 3 Premium Rear-Wheel Drive on its website with 584 km of range and a 0-100 km/h time of 5.2 seconds. Those are the exact specs of the Fremont-built Long Range RWD that Tesla sold in Canada two years ago. The Shanghai-built version, the $39,490 CAD car Canadians haven’t been able to order since early October, is rated at 463 km and 6.2 seconds. The new numbers point to a different car from a different factory. more…",
+      "source": "Electrek",
+      "category": "AI",
+      "published": "2026-10-26T21:18:39+00:00",
+      "sent_at": "2026-10-26T21:19:32.767660+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2297577/apple-adds-more-siri-ai-tools-in-27-2-system-updates-out-today/",
+      "title": "Apple adds more Siri AI tools in its 27.2 system updates, out today",
+      "summary": "Apple has rolled out software updates for all its platforms today.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-26T19:47:56+00:00",
+      "sent_at": "2026-10-26T21:19:32.767660+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/26/uh-oh-it-sounds-like-the-iphone-duo-keeps-cracking-and-users-arent-happy-about-it/",
+      "title": "Uh-oh, it sounds like the iPhone Duo keeps cracking and users aren’t happy about it",
+      "summary": "A small number of early adopters of the much-hyped new foldable phone from Apple have complained of screens cracking.",
+      "source": "TechCrunch",
+      "category": "Hardware",
+      "published": "2026-10-26T19:22:40+00:00",
+      "sent_at": "2026-10-26T21:19:32.767660+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/ai/2026/10/boston-dynamics-employees-want-to-block-sale-of-robot-dogs-to-ice/",
+      "title": "Boston Dynamics employees want to block sale of robot dogs to ICE",
+      "summary": "US robotics company stands by ICE deal as more than 300 employees warn of risk.",
+      "source": "Ars Technica",
+      "category": "Innovationen",
+      "published": "2026-10-26T18:50:41+00:00",
+      "sent_at": "2026-10-26T21:19:32.767660+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/cpus/intel-quietly-confirms-raptor-lake-next-cpus-through-internal-driver-publication-lga-1700-chips-also-appear-in-shipping-manifests-dating-back-to-august",
+      "title": "Intel quietly confirms Raptor Lake Next CPUs through internal driver publication",
+      "summary": "An internal driver and a shipping manifest reveal that Intel's desktop Raptor Lake Next parts may be on the way right now.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-10-26T18:50:28+00:00",
+      "sent_at": "2026-10-26T21:19:32.767660+00:00"
+    },
+    {
+      "link": "https://openai.com/index/introducing-gpt-6-1-terra/",
+      "title": "GPT-6.1 Terra",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-26T18:01:17+00:00",
+      "sent_at": "2026-10-26T21:19:32.767660+00:00"
+    },
+    {
+      "link": "https://spectrum.ieee.org/ieee-xplore-digital-library-ai",
+      "title": "IEEE Xplore Digital Library Adds AI Assistant",
+      "summary": "IEEE recently released the IEEE Xplore AI Research Suite , built on the full text of millions of peer-reviewed publications in the IEEE Xplore Digital Library . The library offers full-text access to IEEE standards , journals, magazines, conference proceedings, and more. Researchers who use the AI suite to search the digital library receive answers grounded in verified scientific results, ensuring a high level of accuracy and trust. The suite is available as an optional subscription upgrade to all IEEE Xplore Digital Library institutional subscribers. Powered by a proprietary AI system optimized for STEM literature, the suite introduces powerful, intelligent features within the digital library. The suite enables users to seamlessly search and discover articles to accelerate their comprehension of complex technical papers. The system surfaces deep insights, replacing the typical keyword queries with natural, conversational research workflows. As AI tools become more common in conducting research, IEEE collaborated to build the suite around a simple principle: Answers should be trustworthy, not just fast, says W. Clem Karl , vice president, IEEE Publication Services and Products . “AI can be a highly effective and beneficial tool that can help researchers accelerate discovery, enhance decision-making, and surface new connections,” Karl says. “However, many AI engines present a great risk of hallucinating answers or introducing bias into otherwise credible research. With this in mind, IEEE has taken a responsible approach in our AI strategy by developing concrete safeguards to ensure our solution is rigorously grounded in scientific evidence that users can trust. “As stewards of the scholarly record , we held the new AI engine to the same standards as the peer-reviewed research we publish: A researcher shouldn’t have to trust an answer; they should be able to verify the work behind it.” Collaboration with the scientific community The IEEE Xplore AI Research Suite was developed in close collaboration with global scientific and library communities. The development process began with research into user needs and the challenges associated with existing AI research assistants. More than 3,000 testers—including engineers, scientists, and library information professionals—provided feedback to refine the AI engine and support research workflows. Capabilities include: Semantic AI search. Users can input free-form, natural-language queries or paste long blocks of text to locate similar research and identify novel solutions. Time-saving summaries. The platform generates immediate, accurate AI overviews of search results and provides in-context definitions of technical terms so that users can grasp new concepts faster and accelerate their research. Built on trusted content. The suite is the only AI research assistant that uses both the full text and metadata of IEEE’s peer-reviewed journal articles and conference papers to optimize the accuracy and relevance of the results. Comprehensive coverage. A variety of STEM metadata is available from journal articles and conference papers that have been curated to include scholarly articles without the typical noise found in other tools. Source links and verifiable results. The AI-generated overviews include reference links to source documents, allowing users to verify information and cross-reference findings. Reducing hallucinations To mitigate the risk of AI hallucinations, the search-retrieval process is limited to querying the millions of IEEE peer-reviewed full-text documents, alongside an expertly curated dataset of STEM metadata. If the AI tool is unable to find relevant scientific content within the defined dataset, it is designed to inform the user rather than generate fabricated answers. “IEEE is committed to providing the technical community with a highly precise and reliable research experience,” says Steven Heffner , IEEE’s chief publication officer and managing director of IEEE Publications. “The IEEE Xplore AI Research Suite offers something unique in that it is the only AI research assistant that leverages both the full-text and metadata of IEEE’s peer-reviewed content, rather than abstracts alone. “The difference is significant: Our internal testing showed a threefold increase in result quality and accuracy across every key metric. These results underscore how critical full-text grounding is for technical research.” For more information about features and coverage, or to request a demo for your organization, visit the IEEE Xplore AI Research Suite website .",
+      "source": "IEEE Spectrum",
+      "category": "AI",
+      "published": "2026-10-26T18:00:03+00:00",
+      "sent_at": "2026-10-26T21:19:32.767660+00:00"
+    },
+    {
+      "link": "https://www.technologyreview.com/2026/10/26/1147672/will-the-real-anthropic-please-stand-up/",
+      "title": "Will the real Anthropic please stand up",
+      "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. After weeks of frenzied speculation, Anthropic has filed its IPO prospectus. The 335-page document (100 pages or so are focused on risks) lays out the company’s unique view of the technology it&#8230;",
+      "source": "MIT Technology Review",
+      "category": "AI",
+      "published": "2026-10-26T17:45:43+00:00",
+      "sent_at": "2026-10-26T21:19:32.767660+00:00"
+    },
+    {
       "link": "https://electrek.co/2026/10/26/tesla-turo-full-self-driving-test-drives/",
       "title": "Tesla turns to car rental platform Turo for Full Self-Driving test drives",
       "summary": "Turo will soon let US renters search specifically for Teslas with “Full Self-Driving” (Supervised) turned on, using a direct integration with Tesla to verify each car’s FSD status. The feature goes live on October 28. For Tesla, it’s a new way to put FSD in front of people who don’t own a Tesla, and a new source of the FSD subscriptions that now count toward Elon Musk’s pay package. more…",
@@ -4481,78 +4553,6 @@
       "category": "AI",
       "published": "2026-10-12T18:21:36+00:00",
       "sent_at": "2026-10-12T23:28:24.957699+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/jev-like-decision-models-are-flooding-the-ai-market-after-researcher-claims-typesafe-copied-their-research-microsoft-openai-among-companies-releasing-lightweight-system-one-ai-models",
-      "title": "Jev-like decision models are flooding the AI market, after researcher claims TypeSafe copied their research",
-      "summary": "Jev and the flood of AI decision models — TypeSafe allegedly copied researcher's architecture but got copied itself",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-12T16:00:00+00:00",
-      "sent_at": "2026-10-12T16:32:23.283595+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/12/honeyjar-offers-ai-tools-to-improve-pr-and-comms-at-every-company/",
-      "title": "Honeyjar offers AI tools to improve PR and comms at every company",
-      "summary": "Could AI actually make PR better?",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-12T15:45:00+00:00",
-      "sent_at": "2026-10-12T16:32:23.283595+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/12/microsoft-president-says-uk-is-best-placed-to-drive-ai-regulation/",
-      "title": "Microsoft president says UK is best placed to drive AI regulation",
-      "summary": "Microsoft President Brad Smith calls for urgent AI regulation, saying milk and washing machines have more oversight than AI companies.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-12T15:31:19+00:00",
-      "sent_at": "2026-10-12T16:32:23.283595+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/gpus/meet-the-modders-porting-ringfenced-dlss-features-to-older-gpus-how-dlss-5-and-multi-frame-generation-were-unlocked-for-older-architectures",
-      "title": "Meet the modders porting ringfenced DLSS features to older GPUs",
-      "summary": "DLSS Multi-Frame Generation and DLSS 5 Neural Rendering can now run on hardware never intended for it, at least according to Nvidia. Now, two of the modders foundational to the release of these community advancements speak out.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-10-12T15:30:00+00:00",
-      "sent_at": "2026-10-12T16:32:23.283595+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/12/this-ai-startup-says-it-can-generate-permit-ready-blueprints-in-minutes/",
-      "title": "This AI startup says it can generate permit-ready blueprints in minutes",
-      "summary": "Blueprints AI, a bootstrapped startup based in Santa Monica, developed software that produces code-compliant construction blueprints from a photo, PDF, or sketch.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-12T15:27:59+00:00",
-      "sent_at": "2026-10-12T16:32:23.283595+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/12/fitbit-edge-is-googles-middle-ground-between-fitbit-air-and-pixel-watch/",
-      "title": "Fitbit Edge is Google’s middle ground between Fitbit Air and Pixel Watch",
-      "summary": "Google’s newest wearable costs $179.99 and has a sleek feel like the Fitbit Air but with an OLED display.",
-      "source": "TechCrunch",
-      "category": "Innovationen",
-      "published": "2026-10-12T15:11:19+00:00",
-      "sent_at": "2026-10-12T16:32:23.283595+00:00"
-    },
-    {
-      "link": "https://mortoray.com/why-arent-ai-companies-being-charged-for-hacking/",
-      "title": "Why aren't AI companies being charged for hacking?",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-12T14:52:37+00:00",
-      "sent_at": "2026-10-12T16:32:23.283595+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/video-games/console-gaming/xbox-cloud-gaming-is-now-available-on-jailbroken-ps5s-allows-upscaling-to-4k-using-the-ps5-gpu",
-      "title": "Developer uses Claude to enable Xbox Cloud Gaming on jailbroken PS5s",
-      "summary": "RafaelNGP released a native Xbox Game Pass app allowing Xbox Cloud Gaming on the PS5, with support for 4 controllers and 4K upscaling on the PS5 GPU.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-12T14:46:57+00:00",
-      "sent_at": "2026-10-12T16:32:23.283595+00:00"
     }
   ]
 }
