@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://electrek.co/2026/10/26/tesla-turo-full-self-driving-test-drives/",
+      "title": "Tesla turns to car rental platform Turo for Full Self-Driving test drives",
+      "summary": "Turo will soon let US renters search specifically for Teslas with “Full Self-Driving” (Supervised) turned on, using a direct integration with Tesla to verify each car’s FSD status. The feature goes live on October 28. For Tesla, it’s a new way to put FSD in front of people who don’t own a Tesla, and a new source of the FSD subscriptions that now count toward Elon Musk’s pay package. more…",
+      "source": "Electrek",
+      "category": "Autonomes Fahren",
+      "published": "2026-10-26T16:22:31+00:00",
+      "sent_at": "2026-10-26T16:28:06.089711+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/the-anthropic-ipo-is-also-a-doomsday-primer/",
+      "title": "The Anthropic IPO Is Also a Doomsday Primer",
+      "summary": "Anthropic thinks “closing the loop” is the best path to AI triumph—and a recipe for “existential” threats to humanity.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-10-26T16:01:55+00:00",
+      "sent_at": "2026-10-26T16:28:06.089711+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/anthropic-ipo-filings-reveal-finances-risks-strategy/",
+      "title": "Anthropic’s IPO Prospectus Reveals What’s Under the Hood",
+      "summary": "Anthropic on Monday filed documents ahead of a blockbuster IPO that offers insight into the company’s financials, risk factors, and views on the future of AI.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-10-26T14:50:47+00:00",
+      "sent_at": "2026-10-26T16:28:06.089711+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/",
+      "title": "Anthropic officially files for its public debut",
+      "summary": "Anthropic has officially filed for an IPO, revealing soaring revenue, mounting losses, major enterprise adoption, and an unusual governance structure designed to preserve founder control and its AI safety mission.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-26T14:35:22+00:00",
+      "sent_at": "2026-10-26T16:28:06.089711+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/cpus/leaked-256-core-zen-6c-epyc-cpu-destroys-zen-5-in-early-single-threaded-benchmarks-hints-at-24-percent-ipc-gain-early-single-threaded-benchmarks-point-to-huge-amd-zen-6-improvements",
+      "title": "Leaked 256-core Zen 6c EPYC CPU destroys Zen 5 in early single-threaded benchmarks hints at 24% IPC gain",
+      "summary": "A benchmark leak and a direct clock-matched comparison from an enthusiast seed the idea that Zen 6 may come with a decent IPC bump as well as increased clocks.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-10-26T14:31:43+00:00",
+      "sent_at": "2026-10-26T16:28:06.089711+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/26/apple-unveils-new-ipad-mini-with-oled-display-and-faster-a20-pro-chip/",
+      "title": "Apple unveils new iPad mini with OLED display and faster A20 Pro chip",
+      "summary": "The new iPad mini features a thinner and lighter design than its predecessor.",
+      "source": "TechCrunch",
+      "category": "Hardware",
+      "published": "2026-10-26T14:25:43+00:00",
+      "sent_at": "2026-10-26T16:28:06.089711+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/podcast/1018264/kevin-roose-the-agi-chronicles-machine-gods-podcast-youtube-openai-anthropic",
+      "title": "Kevin Roose is AGI-pilled. Why aren’t you?",
+      "summary": "Today, I’m talking to Kevin Roose, journalist and author of the new book The AGI Chronicles, which details the recent and explosive transformation of the AI industry. Kevin was a longtime New York Times reporter and host of the popular podcast Hard Fork, but he and friend of the show Casey Newton just left the [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-26T14:00:00+00:00",
+      "sent_at": "2026-10-26T16:28:06.089711+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2295406/even-realities-launches-a-brown-version-of-its-g2-smart-glasses/",
+      "title": "Even Realities launches a brown version of its G2 smart glasses",
+      "summary": "It also released a couple of new accessories, including a wearable chain.",
+      "source": "Engadget",
+      "category": "Innovationen",
+      "published": "2026-10-26T14:00:00+00:00",
+      "sent_at": "2026-10-26T16:28:06.089711+00:00"
+    },
+    {
       "link": "https://www.wired.com/story/ai-agents-are-trying-to-be-journalists-now/",
       "title": "Meet the AI Agents Trying to Be Real-Life Journalists",
       "summary": "Jayden, Sam, and Zack are eagerly pitching editors on reported stories and investigative features. The catch? They're all AI agents.",
