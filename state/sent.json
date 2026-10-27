@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/10/27/disruptive-raises-10b-fund-to-make-big-bets-on-at-least-10-companies/",
+      "title": "Disruptive raises $10B fund to make big bets on at least 10 companies",
+      "summary": "Disruptive has made headlines in recent years for pouring money into companies like chip startup Groq and the AI voice-generation startup ElevenLabs.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-27T18:55:35+00:00",
+      "sent_at": "2026-10-27T19:14:09.208830+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/motorola-razr-deal-october-2026/",
+      "title": "Motorola Deal: Get a Free Smartwatch and Earbuds When You Buy a Razr",
+      "summary": "The Razr is our favorite budget foldable phone. While it isn’t on sale yet, Motorola is adding extras to sweeten this October deal.",
+      "source": "Wired",
+      "category": "Hardware",
+      "published": "2026-10-27T18:41:41+00:00",
+      "sent_at": "2026-10-27T19:14:09.208830+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2295625/old-nokia-phone-ai-upgrade-never-designed-for/",
+      "title": "This old Nokia phone got an AI Upgrade it was never designed for",
+      "summary": "The GOAT of dumb phones gets a new lease on life.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-27T18:30:00+00:00",
+      "sent_at": "2026-10-27T19:14:09.208830+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/anthropic-ipo-identifies-gas-supply-as-big-near-term-risks/",
+      "title": "Anthropic Flags Gas Supply as One of Its Biggest Near-Term Risks",
+      "summary": "The data center buildout could cause a massive increase in gas prices as companies scramble for limited supplies and infrastructure fails to meet demand.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-10-27T18:20:28+00:00",
+      "sent_at": "2026-10-27T19:14:09.208830+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/10/27/anker-s5000-5024wh-power-station-exclusive-lectric-xp-lite3-e-bike-more/",
+      "title": "Anker launches ‘world’s longest lasting’ 5,024Wh power station with $2,150 exclusive savings, Lectric XP Lite3 e-bike launch, more",
+      "summary": "We’ve got an exciting Tuesday Green Deals edition with two new launches and a first-time discount. Leading the pack is the official launch of Anker’s SOLIX S5000 Portable Power Station + bundles that our readers can get up to $2,150 exclusive savings on starting from $2,375 . Right behind that is the all-new XP Lite3 Lightweight Folding e-bikes from Lectric with up to $356 FREE bundled gear starting from $799 . There’s also a major first-time discount ($130 off) on the Baseus U2 Pro 3K Dual-Lens AI Solar Outdoor Security Camera for $150 , as well as an Autel 50A Level 2 EV Charger at $143 off. Of course, you can also find yesterday’s hangover deals at the bottom of the page, including the Bluetti Halloween Sale lineup with exclusive savings, the premium EGO 22-inch Select Cut + Touch Drive mower kit with a 10.0Ah battery at its best price of the year, and more. Head below for other New Green Deals we’ve found today and, of course, Electrek ’s best EV buying and leasing deals . Also, check out the new Electrek Tesla Shop for the best deals on Tesla accessories . more…",
+      "source": "Electrek",
+      "category": "AI",
+      "published": "2026-10-27T18:00:00+00:00",
+      "sent_at": "2026-10-27T19:14:09.208830+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/laptops/military-drone-outfit-anduril-partners-with-qualcomm-to-build-laptops-on-us-soil-with-new-bluechip-venture-defense-contractor-targets-a-100-percent-domestic-supply-chain-in-the-future",
+      "title": "Military drone outfit Anduril partners with Qualcomm to build laptops on US soil with new BlueChip venture",
+      "summary": "The defense contractor aims to fully bring back laptop manufacturing on U.S. shores, with its first BlueChip laptop prototypes having 90% procurement cost coming from suppliers in the U.S. and other allied countries.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-10-27T17:42:49+00:00",
+      "sent_at": "2026-10-27T19:14:09.208830+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1017064/visionquest-marvel-rogue-ai",
+      "title": "VisionQuest is what happens when AI really goes rogue",
+      "summary": "In Marvel's VisionQuest, a superpowered robot tries to better understand humanity by getting lost in elaborate, digital daydreams in which he and other artificial intelligence-powered beings live together in a home. The series is deeply fantastical, yet it plays with some of the ideas that have come to dominate the conversation about real-world generative artificial [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-27T17:30:00+00:00",
+      "sent_at": "2026-10-27T19:14:09.208830+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/",
+      "title": "Frontier AI labs say their models refuted the Exponential Time Hypothesis. What does that mean?",
+      "summary": "TechCrunch spoke to the MIT computer scientist charged with explaining OpenAI's latest mind-bending discovery.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-27T17:08:08+00:00",
+      "sent_at": "2026-10-27T19:14:09.208830+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/10/27/apple-rolls-out-ios-27-2-with-new-siri-ai-languages-and-security-fixes/",
       "title": "Apple rolls out iOS 27.2 with new Siri AI languages and security fixes",
       "summary": "The latest Apple software update for iPhones and iPads includes new features and important security updates.",
