@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/10/27/apple-rolls-out-ios-27-2-with-new-siri-ai-languages-and-security-fixes/",
+      "title": "Apple rolls out iOS 27.2 with new Siri AI languages and security fixes",
+      "summary": "The latest Apple software update for iPhones and iPads includes new features and important security updates.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-27T13:54:51+00:00",
+      "sent_at": "2026-10-27T13:56:11.547580+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1019373/apple-pages-keynote-numbers-ai-chatbot-update",
+      "title": "Apple is adding an AI chatbot to Pages, Keynote, and Numbers",
+      "summary": "Apple is bringing an AI assistant to its suite of productivity apps, including Keynote, Pages, and Numbers. The assistant, which is built on AI models from Apple and OpenAI, can understand a document's context to perform tasks like designing, animating, and refining slides in Keynote. In Pages, Apple says the AI assistant can draft, restructure, [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-27T13:50:51+00:00",
+      "sent_at": "2026-10-27T13:56:11.547580+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/laptops/gaming-laptops/walmart-slashes-usd750-off-this-msi-gaming-laptop-16-inch-crosshair-sports-an-rtx-5060-gpu-and-a-fast-240hz-qhd-display",
+      "title": "Walmart slashes $750 off this MSI gaming laptop — 16-inch Crosshair sports an RTX 5060 GPU and a fast 240Hz QHD display",
+      "summary": "A massive $750 discount at Walmart brings the price of MSI's Crosshair gaming laptop crashing down. RTX 5060 graphics and a bright 240Hz IPS display are just two of the standout features of this laptop.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-10-27T13:47:15+00:00",
+      "sent_at": "2026-10-27T13:56:11.547580+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2295698/book-vs-clamshell-foldable-phones-which-better/",
+      "title": "Book vs clamshell foldable phones: which is better for your everyday needs?",
+      "summary": "There are pros and cons to each style of foldable.",
+      "source": "Engadget",
+      "category": "Hardware",
+      "published": "2026-10-27T13:45:00+00:00",
+      "sent_at": "2026-10-27T13:56:11.547580+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/laptops/macbooks/apple-adds-m6-to-14-inch-macbook-pro-and-imac-starts-at-usd1-999",
+      "title": "Apple adds M6 to 14-inch MacBook Pro and iMac",
+      "summary": "Apple updated its 14-inch MacBook Pro and iMac lineup with the M6 chip.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-10-27T13:28:23+00:00",
+      "sent_at": "2026-10-27T13:56:11.547580+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2298132/apples-imac-with-m6-arrives-promising-a-huge-leap-in-ai-performance/",
+      "title": "Apple's iMac with M6 arrives promising a 'huge leap' in AI performance",
+      "summary": "It offers more cores and more performance per core than the iMac M5.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-27T13:25:44+00:00",
+      "sent_at": "2026-10-27T13:56:11.547580+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2298120/apple-has-updated-the-14-inch-macbook-pro-with-an-m6-chip/",
+      "title": "Apple has updated the 14-inch MacBook Pro with an M6 chip",
+      "summary": "Sadly, the 16-inch MBP is still stuck with older M5 silicon.",
+      "source": "Engadget",
+      "category": "Hardware",
+      "published": "2026-10-27T13:23:27+00:00",
+      "sent_at": "2026-10-27T13:56:11.547580+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1018467/apple-imac-m6-chip-announced-price-release",
+      "title": "Apple refreshes the iMac with M6 chips",
+      "summary": "Apple is updating the iMac with M6 chips. The new iMac generation was introduced today, ahead of Apple's \"Pro and Tell\" event that's scheduled to take place on Wednesday, giving Apple's all-in-one desktop computer a performance boost via the same chipset it launched with the Mac Mini in August. Prices start from $1,499, and the [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-10-27T13:05:26+00:00",
+      "sent_at": "2026-10-27T13:56:11.547580+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/10/26/how-openai-turned-its-coding-tools-into-dots-an-always-on-personal-assistant/",
       "title": "How OpenAI turned its coding tools into dots, an always-on personal assistant",
       "summary": "Alexander Embiricos, the OpenAI executive responsible for dots, never wants to have a meeting with someone else's AI agent.",
@@ -4481,78 +4553,6 @@
       "category": "Innovationen",
       "published": "2026-10-13T18:30:00+00:00",
       "sent_at": "2026-10-13T20:04:19.450623+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/13/apple-launches-a-new-apple-tv-4k-with-siri-ai-and-remote-free-commands/",
-      "title": "Apple launches a new Apple TV 4K with Siri AI and remote-free voice commands",
-      "summary": "The new Apple TV 4K costs $299, comes with Siri AI, and will be available on November 13.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-13T13:16:11+00:00",
-      "sent_at": "2026-10-13T13:31:52.395711+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/13/amex-introduces-a-framework-to-prevent-ai-agents-from-making-unauthorized-purchases/",
-      "title": "Amex introduces a framework to prevent AI agents from making unauthorized purchases",
-      "summary": "American Express is introducing a new framework designed to ensure AI agents only make purchases their users have authorized, potentially preventing costly mistakes and disputes as AI-powered shopping grows.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-13T13:00:00+00:00",
-      "sent_at": "2026-10-13T13:31:52.395711+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1009663/apple-tv-4k-siri-ai-microphones-4th-gen-announced",
-      "title": "The new Apple TV 4K has built-in microphones so you can talk to Siri AI",
-      "summary": "Apple is introducing a refreshed Apple TV 4K today with a pair of interesting new hardware features: far-field microphones to talk to Siri hands-free and Find My built into the remote. The fourth-gen Apple TV 4K, announced at Apple's Welcome Home event in New York City, is the first model to support the Siri AI [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-13T13:00:00+00:00",
-      "sent_at": "2026-10-13T13:31:52.395711+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1009672/homepod-mini-2-announced-apple-siri-ai",
-      "title": "Apple announces the HomePod Mini 2, but it isn&#8217;t ready for Siri AI at launch",
-      "summary": "Apple is announcing the long-awaited HomePod Mini 2 with a new chip that can power Siri AI - but support for those new AI features won't be available at launch. The speaker is also getting a new sound glow feature that syncs its LED lights with a song's album art, and it can now be [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-13T13:00:00+00:00",
-      "sent_at": "2026-10-13T13:31:52.395711+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2285033/apple-homepod-mini-2-launch-siri-ai-later/",
-      "title": "Apple updates the HomePod mini with more audio features and new colors",
-      "summary": "The new model arrives on October 30, but its Siri AI features are coming later.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-13T13:00:00+00:00",
-      "sent_at": "2026-10-13T13:31:52.395711+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2285043/new-apple-tv-4k-with-siri-ai/",
-      "title": "Apple refreshes the Apple TV 4K for Siri AI",
-      "summary": "New microphones, a new remote and the new Siri AI are on the company's streaming box.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-13T13:00:00+00:00",
-      "sent_at": "2026-10-13T13:31:52.395711+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2285072/apple-launch-homeview-smart-display-siri-ai/",
-      "title": "Apple unveils HomeView, the company's smart display built for Siri AI",
-      "summary": "Two versions will be available in November for $299.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-13T13:00:00+00:00",
-      "sent_at": "2026-10-13T13:31:52.395711+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/gpus/nvidia-doubles-dlss-5-performance-reduces-4k-vram-usage-by-20-percent-with-latest-model-october-update-cuts-footprint-by-24-percent-to-roughly-118-million-parameters",
-      "title": "Nvidia doubles DLSS 5 performance, reduces 4K VRAM usage by 20% with latest model",
-      "summary": "Nvidia has announced that DLSS 5 is now two times faster while using less VRAM.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-10-13T12:47:41+00:00",
-      "sent_at": "2026-10-13T13:31:52.395711+00:00"
     }
   ]
 }
