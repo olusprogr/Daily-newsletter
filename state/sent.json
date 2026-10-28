@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/10/27/vcs-will-make-billions-on-anthropics-ipo-but-amazon-is-set-to-make-much-much-more/",
+      "title": "VCs will make billions on Anthropic’s IPO, but Amazon is set to make much (much) more",
+      "summary": "Massive note conversions reveal the true extent of Amazon's ownership in Anthropic.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-28T01:15:28+00:00",
+      "sent_at": "2026-10-28T03:54:50.795970+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/27/parents-sue-openai-alleging-gpt-4o-coached-their-daughter-off-seizure-medication/",
+      "title": "Parents sue OpenAI, alleging GPT-4o coached their daughter off seizure medication",
+      "summary": "A family is suing OpenAI, saying ChatGPT coached their daughter to quietly taper off her seizure medication and keep it from her doctors before she died in February.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-27T23:34:27+00:00",
+      "sent_at": "2026-10-28T03:54:50.795970+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/ai/2026/10/anthropic-ipo-warns-its-ai-could-blackmail-people-become-sentient-end-humanity/",
+      "title": "Anthropic IPO warns its AI could blackmail people, become sentient, end humanity",
+      "summary": "Seven potential AI nightmares pulled from Anthropic's 93-page \"Risk Factor\" tome.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-10-27T21:31:14+00:00",
+      "sent_at": "2026-10-28T03:54:50.795970+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2299043/iphone-18e-reportedly-comes-with-2nm-a20-chip-and-60hz-screen/",
+      "title": "iPhone 18e reportedly comes with 2nm A20 chip and 60Hz screen",
+      "summary": "The leaks suggest the front camera could also see a boost.",
+      "source": "Engadget",
+      "category": "Hardware",
+      "published": "2026-10-27T21:26:20+00:00",
+      "sent_at": "2026-10-28T03:54:50.795970+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2299026/chatgpt-can-work-with-your-icloud-mail-and-calendar-thanks-to-new-plugin-support/",
+      "title": "ChatGPT can work with your iCloud Mail and Calendar thanks to new plugin support",
+      "summary": "You can use the AI assistant to update calendar events and search your inbox, among other things.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-27T21:13:59+00:00",
+      "sent_at": "2026-10-28T03:54:50.795970+00:00"
+    },
+    {
+      "link": "https://www.anthropic.com/research/early-progress-drug-development",
+      "title": "Early progress on accelerating drug development with Claude",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-27T20:50:42+00:00",
+      "sent_at": "2026-10-28T03:54:50.795970+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1019921/openai-breakthrough-math-computer-science-physics",
+      "title": "Researchers are getting tired of OpenAI gatekeeping its breakthroughs",
+      "summary": "On Monday, OpenAI announced impressive breakthroughs in mathematics, computer science, and physics, along with what the company says is an evolving approach to communicating its findings. But despite its apparent course correction, researchers who spoke to The Verge are growing increasingly tired of the company's antics. It has been a turbulent few months between OpenAI [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-27T20:48:58+00:00",
+      "sent_at": "2026-10-28T03:54:50.795970+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/fields-medal-winning-uc-berkeley-professor-ends-graded-homework-due-to-ai-cheating-says-in-person-exams-are-the-only-solution-left-to-widespread-ai-use",
+      "title": "Fields Medal-winning UC Berkeley professor ends graded homework due to AI cheating",
+      "summary": "Award-winning mathematician Richard Brocherds says that it's a waste of time and money to grade AI answers, so he now only uses in-person exams to see how well his students are doing in his classes.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-10-27T20:09:05+00:00",
+      "sent_at": "2026-10-28T03:54:50.795970+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/10/27/the-data-center-boom-has-an-upside-innovation-for-the-us-grid/",
       "title": "The data center boom has an upside: innovation for the US grid",
       "summary": "As the AI boom stresses the existing power grid, all sorts of new opportunities for grid modernization are also emerging as a result, industry insiders say.",
@@ -4553,78 +4625,6 @@
       "category": "AI",
       "published": "2026-10-13T20:23:55+00:00",
       "sent_at": "2026-10-14T05:46:58.677211+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/an-openai-employee-allegedly-used-a-chatbot-to-help-plant-a-recording-device-at-the-office/",
-      "title": "An OpenAI Employee Allegedly Used a Chatbot to Help Plant a Recording Device at the Office",
-      "summary": "Chatbot prompts reveal the engineer’s alleged efforts to set up a covert listening device days before one was found in a meeting room used by high-level executives.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-10-13T23:17:59+00:00",
-      "sent_at": "2026-10-14T00:07:48.648538+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/13/science-corporation-implants-its-vision-restoring-chip-in-its-first-stargardt-disease-patient/",
-      "title": "Science Corporation implants its vision-restoring chip in its first Stargardt disease patient",
-      "summary": "Max Hodak, the former president and co-founder of Neuralink, detailed on stage at TechCrunch Disrupt how his company's work with PRIMA is part of its path toward a novel brain-computer interface (BCI).",
-      "source": "TechCrunch",
-      "category": "Hardware",
-      "published": "2026-10-13T23:13:31+00:00",
-      "sent_at": "2026-10-14T00:07:48.648538+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/13/cerebras-ceo-says-were-nearing-a-future-where-everyone-has-a-personal-ai-assistant-at-home/",
-      "title": "Cerebras CEO says we’re nearing a future where everyone has a personal AI assistant at home",
-      "summary": "Cerebras CEO Andrew Feldman predicts a future where personal AI assistants become as commonplace as household appliances, running partly on local devices and partly in the cloud.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-13T23:05:34+00:00",
-      "sent_at": "2026-10-14T00:07:48.648538+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/13/industrial-next-wants-factory-robots-to-switch-tasks-in-minutes-not-weeks/",
-      "title": "Industrial Next wants factory robots to switch tasks in minutes, not weeks",
-      "summary": "Industrial Next helps manufacturers automate complex, delicate tasks that have traditionally required human labor.",
-      "source": "TechCrunch",
-      "category": "Innovationen",
-      "published": "2026-10-13T23:00:00+00:00",
-      "sent_at": "2026-10-14T00:07:48.648538+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2286141/apple-tv-4k-2022-vs-2026-whats-new-worth-100-price-increase/",
-      "title": "Apple TV 4K 2022 vs. 2026: What's new and is it worth the $100 jump?",
-      "summary": "The 2026 model is faster and can hear you from afar, but the 2022 box gets Siri AI as well.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-13T23:00:00+00:00",
-      "sent_at": "2026-10-14T00:07:48.648538+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/health/2026/10/martin-shkreli-livestreamed-himself-violating-lifetime-pharma-ban-ftc-says/",
-      "title": "Martin Shkreli livestreamed himself violating lifetime pharma ban, FTC says",
-      "summary": "\"I can always find a couple of biotech stocks to smoke,\" Shkreli said in a livestream.",
-      "source": "Ars Technica",
-      "category": "Innovationen",
-      "published": "2026-10-13T22:48:12+00:00",
-      "sent_at": "2026-10-14T00:07:48.648538+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/13/cerebras-ceo-pushes-back-on-ai-doomsday-warnings/",
-      "title": "Cerebras CEO pushes back on AI doomsday warnings",
-      "summary": "Cerebras CEO Andrew Feldman has a message for AI leaders spreading doomsday warnings: Maybe stop talking? At TechCrunch Disrupt, he argued that the industry's focus on AI's risks is drowning out its potential benefits.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-13T22:36:59+00:00",
-      "sent_at": "2026-10-14T00:07:48.648538+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2282226/clever-ways-gemini-automate-everyday-tasks/",
-      "title": "5 clever ways Gemini can automate everyday tasks",
-      "summary": "If you're not using some of these skills, you're missing out on a chance to streamline your days, keep up to date and more.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-13T22:00:00+00:00",
-      "sent_at": "2026-10-14T00:07:48.648538+00:00"
     }
   ]
 }
