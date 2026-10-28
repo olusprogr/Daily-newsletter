@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/10/28/microsoft-hits-10-quarters-of-record-breaking-revenue-in-a-row/",
+      "title": "Microsoft hits 10 quarters of record- breaking revenue in a row",
+      "summary": "Whatever the future of AI might be, the current situation is still very good for Microsoft. The tech giant reported yet another record for quarterly revenue on Wednesday: $92.3 billion, a 19% increase over the year-ago quarter.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-28T21:25:30+00:00",
+      "sent_at": "2026-10-28T21:33:59.494823+00:00"
+    },
+    {
+      "link": "https://www.technologyreview.com/2026/10/28/1147709/creating-ai-value-with-enterprise-context/",
+      "title": "Creating AI value with enterprise context",
+      "summary": "Across a business, any number of AI platforms, systems, and tools may be at work simultaneously—for example, AI-powered customer platforms, conversational assistants, and workflow and process automation tools. Each one is sophisticated, advanced, and quick to respond. But, when set to work, the outcomes and actions that emerge may be wrong, confused, or lacking a&#8230;",
+      "source": "MIT Technology Review",
+      "category": "AI",
+      "published": "2026-10-28T20:32:02+00:00",
+      "sent_at": "2026-10-28T21:33:59.494823+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1020811/alphabet-google-earnings-q3-2026",
+      "title": "Google says its investments in AI are driving more searches",
+      "summary": "Google parent company Alphabet says that its AI investments are leading to a big growth in searches year-over-year, as noted in its Q3 2026 earnings today. \"Our AI investments are driving overall Search query growth, including commercial queries,\" CEO Sundar Pichai says in a statement. \"In fact, our year-over-year query growth rate is the highest [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-28T20:22:26+00:00",
+      "sent_at": "2026-10-28T21:33:59.494823+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier",
+      "title": "Google launches Gemini 4 Carbon with a ‘significant leap’ in cybersecurity",
+      "summary": "Google has released its latest frontier model, Gemini 4 Carbon, offering \"significant gains\" in coding, agentic tasks, and cybersecurity. In an announcement on Wednesday, Google highlights Carbon's top spot on the Artificial Analysis Intelligence Index (v5.0) benchmark, with Claude Opus 5.5 and GPT-6 Astra trailing behind. The new Gemini 4 Carbon model offers improvements over [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-28T20:03:00+00:00",
+      "sent_at": "2026-10-28T21:33:59.494823+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/massive-leak-exposes-41000-homeland-security-workers-including-undercover-ice-agents/",
+      "title": "Massive Leak Exposes 41,000 Homeland Security Workers—Including Undercover ICE Agents",
+      "summary": "The leaked records include the locations of ICE and CBP facilities, workers’ cell phone numbers, and the members of groups tied to wiretap programs, Palantir software, and xAI’s Grok chatbot.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-10-28T20:00:00+00:00",
+      "sent_at": "2026-10-28T21:33:59.494823+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/28/anthropic-just-launched-tools-to-show-companies-what-their-ai-spending-is-buying/",
+      "title": "Anthropic just launched tools to show companies what their AI spending is buying",
+      "summary": "The frontier lab is lifting the curtain on how users spend money on its models ahead of a planned IPO.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-28T19:19:58+00:00",
+      "sent_at": "2026-10-28T21:33:59.494823+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2300235/openai-now-lets-you-text-your-dot-agent/",
+      "title": "OpenAI now lets you text your Dot agent",
+      "summary": "The feature works with both iMessage and RCS messaging.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-28T19:15:00+00:00",
+      "sent_at": "2026-10-28T21:33:59.494823+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/ai/2026/10/google-announces-gemini-4-carbon-its-latest-frontier-ai-model-that-you-cant-use/",
+      "title": "Google announces Gemini 4 Carbon, its latest frontier AI model that you can't use",
+      "summary": "Gemini 4 Carbon is essentially a slightly better version of Argon.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-10-28T18:47:27+00:00",
+      "sent_at": "2026-10-28T21:33:59.494823+00:00"
+    },
+    {
       "link": "https://www.theverge.com/tech/1019809/apple-touchscreen-macbook-pro-la-keynote-event-live-blog",
       "title": "Touchscreen MacBook live blog: On the ground at Apple’s launch event",
       "summary": "Apple has already had a busy week. On Monday, it announced a new iPad Mini with an upgraded OLED display, and on Tuesday, we got M6 chip upgrades for the MacBook Pro and iMac. The Macs are the definition of iterative updates - they're quiet refreshes that look just like their direct predecessors. But today [&#8230;]",
@@ -4481,78 +4553,6 @@
       "category": "AI",
       "published": "2026-10-14T17:45:23+00:00",
       "sent_at": "2026-10-14T23:39:39.840237+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2287042/fitbit-edge-vs-air-differences-compared/",
-      "title": "Fitbit Edge vs Fitbit Air: The differences beyond a screen",
-      "summary": "Google's latest wearable seems like a Fitbit Air with a screen, but the two actually have less in common than you might think.",
-      "source": "Engadget",
-      "category": "Innovationen",
-      "published": "2026-10-14T20:13:18+00:00",
-      "sent_at": "2026-10-14T20:26:02.748484+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1011311/the-ai-race-is-back-on",
-      "title": "The AI race is back on",
-      "summary": "Last week, Anthropic and OpenAI looked like they had the AI race to themselves, pulling ahead with increasingly powerful models that left their rivals in the dust. Google seemed hopelessly far behind, while Meta, despite spending billions to revive its floundering AI ambitions, had yet to establish itself as a serious contender. Even the latest [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-14T19:06:03+00:00",
-      "sent_at": "2026-10-14T20:26:02.748484+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2286898/deezer-will-let-listeners-completely-filter-out-ai-music/",
-      "title": "Deezer will let listeners completely filter out AI music",
-      "summary": "Good riddance.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-14T18:45:06+00:00",
-      "sent_at": "2026-10-14T20:26:02.748484+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1011324/apple-tv-4k-missed-features",
-      "title": "As a TV enthusiast, I was hoping for more from the Apple TV 4K",
-      "summary": "It's been four long years since the last Apple TV 4K was released, and in that time there have been lots of hopes and dreams for features in whatever comes next. A new chip, 4K/120Hz support, audio passthrough, a remote locator, better home control integration - the 2022 Apple TV 4K is a great box, [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-10-14T18:38:59+00:00",
-      "sent_at": "2026-10-14T20:26:02.748484+00:00"
-    },
-    {
-      "link": "https://startupfortune.com/banks-are-now-trying-to-offload-the-ai-data-center-debt-they-just-underwrote/",
-      "title": "Banks are now trying to offload the AI data center debt they just underwrote",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-14T18:32:52+00:00",
-      "sent_at": "2026-10-14T20:26:02.748484+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/14/youtube-music-launches-new-labels-as-ai-generated-music-floods-streaming-platforms/",
-      "title": "YouTube Music launches new labels as AI-generated music floods streaming platforms",
-      "summary": "The label will appear on the player page and include songs entirely generated by AI or partially, such as involved in composition and vocals.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-14T18:23:46+00:00",
-      "sent_at": "2026-10-14T20:26:02.748484+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1011369/youtube-music-ai-label",
-      "title": "YouTube sticks new labels on AI-generated songs",
-      "summary": "YouTube is adding a \"Made with AI\" label to tracks that were \"altered or fully generated\" using AI, with a similar approach to its existing process for applying AI labels to videos. It doesn't sound like this will apply to any and all use of AI tools in making music, but according to YouTube, it [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-14T18:22:56+00:00",
-      "sent_at": "2026-10-14T20:26:02.748484+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/ai-is-coming-for-science-next-watch-out/",
-      "title": "AI Came for Math. Now It’s Chasing the Rest of Science",
-      "summary": "AI may soon be the default way to solve theoretical problems in economics, high-energy physics, and other fields, MIT researchers tell WIRED.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-10-14T18:15:00+00:00",
-      "sent_at": "2026-10-14T20:26:02.748484+00:00"
     }
   ]
 }
