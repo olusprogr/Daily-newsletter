@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.wired.com/story/macmillan-staff-say-the-publisher-threw-a-party-for-a-workplace-ai-assistant-that-was-later-killed/",
+      "title": "Macmillan Staff Say the Publisher Threw a Party for a Workplace AI Assistant That Was Later Killed",
+      "summary": "Workers tell WIRED that NOA—or “No Ordinary Assistant”—was unhelpful. Bestselling authors also say AI is ruining their relationships with Big Five publishers.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-10-28T10:15:00+00:00",
+      "sent_at": "2026-10-28T10:20:14.980196+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/robotics/japan-experiments-with-autonomous-ai-chainsaw-wielding-robots-video-shows-rail-truck-mounted-metal-humanoid-cutting-down-tree-branches",
+      "title": "Japan experiments with autonomous AI chainsaw-wielding robots",
+      "summary": "A scary-looking humanoid robot with a chainsaw arm was shown in action on Japanese TV news trimming tree branches that had begun encroaching on railway lines.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-10-28T09:40:00+00:00",
+      "sent_at": "2026-10-28T10:20:14.980196+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2299227/meta-tamagotchi-like-ai-digital-pet-app-waddle-world/",
+      "title": "Meta's Waddle World is a Tamagotchi-like AI pet app",
+      "summary": "Meta describes Waddle World as a 'daily journal disguised as a pet.'",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-28T08:40:19+00:00",
+      "sent_at": "2026-10-28T10:20:14.980196+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/ai-emergency-alerts-coming-humans-not-ready/",
+      "title": "AI Emergency Alerts Are Coming. Humans Might Not Be Ready",
+      "summary": "Human beings struggle with emergency communication. Chatbots can help—if people take them seriously.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-10-28T08:30:00+00:00",
+      "sent_at": "2026-10-28T10:20:14.980196+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/geoffrey-vos-uk-judge-ai-legal-profession-challenges/",
+      "title": "Should AI Decide Your Court Case? This Judge Says Yes",
+      "summary": "One of England’s top judges, Geoffrey Vos, believes that AI could adjudicate plenty of civil cases. The question, he says, is where the line should be drawn.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-10-28T06:00:00+00:00",
+      "sent_at": "2026-10-28T10:20:14.980196+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/10/27/waymo-expansion-250-square-miles-five-cities/",
+      "title": "Waymo adds nearly 250 square miles of robotaxi coverage in 5 cities",
+      "summary": "Waymo is growing its driverless service area by nearly 250 square miles over the next week, spread across Los Angeles, Nashville, Orlando, San Diego, and the San Francisco Bay Area. That’s about as big as Tesla’s entire Houston Robotaxi geofence after this week’s expansion, and Waymo is adding it in cities where it already runs with nobody in the driver’s seat. more…",
+      "source": "Electrek",
+      "category": "Autonomes Fahren",
+      "published": "2026-10-27T19:55:12+00:00",
+      "sent_at": "2026-10-28T10:20:14.980196+00:00"
+    },
+    {
+      "link": "https://www.brangus.io/survival-llm",
+      "title": "Survival LLM: AI assistant and emergency library that runs on your own computer",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-27T19:55:06+00:00",
+      "sent_at": "2026-10-28T10:20:14.980196+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/anthropic-says-it-will-revolutionize-biology-some-day/",
+      "title": "Anthropic Says It Will Revolutionize Biology—Some Day",
+      "summary": "In breathless press releases and posts, the company has touted its models’ ability to deliver scientific breakthroughs. But its IPO filing taps the brakes on just how fast its AI will lead to big discoveries.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-10-27T19:39:04+00:00",
+      "sent_at": "2026-10-28T10:20:14.980196+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/10/27/vcs-will-make-billions-on-anthropics-ipo-but-amazon-is-set-to-make-much-much-more/",
       "title": "VCs will make billions on Anthropic’s IPO, but Amazon is set to make much (much) more",
       "summary": "Massive note conversions reveal the true extent of Amazon's ownership in Anthropic.",
@@ -4553,78 +4625,6 @@
       "category": "AI",
       "published": "2026-10-14T05:53:36+00:00",
       "sent_at": "2026-10-14T11:08:55.387297+00:00"
-    },
-    {
-      "link": "https://blumify.io/people",
-      "title": "I built a tool to track what AI leaders say and how their views change on video",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-14T01:09:13+00:00",
-      "sent_at": "2026-10-14T05:46:58.677211+00:00"
-    },
-    {
-      "link": "https://pulseos.finance",
-      "title": "Show HN: Pulse Local, a Mac budgeting app whose AI models run on your machine",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-13T23:13:23+00:00",
-      "sent_at": "2026-10-14T05:46:58.677211+00:00"
-    },
-    {
-      "link": "https://www.pi.website/blog/api-beta",
-      "title": "Physical Intelligence API Beta: Frontier Models for Every Robot",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Innovationen",
-      "published": "2026-10-13T21:55:25+00:00",
-      "sent_at": "2026-10-14T05:46:58.677211+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2286084/openai-says-it-found-a-sophisticated-recording-device-hidden-in-its-offices/",
-      "title": "OpenAI says it found a 'sophisticated recording device' hidden in its offices",
-      "summary": "The company asked its AI models to figure out what the device was.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-13T21:34:17+00:00",
-      "sent_at": "2026-10-14T05:46:58.677211+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/13/fbi-arrests-openai-employee-accused-of-planting-hidden-recording-device-in-conference-room/",
-      "title": "FBI arrests OpenAI employee accused of planting hidden recording device in conference room",
-      "summary": "It's not clear exactly for what purpose the recording device was used, but FBI director Kash Patel said the scheme was to \"capture sensitive communications about the company’s super intelligence technology.\"",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-13T20:59:11+00:00",
-      "sent_at": "2026-10-14T05:46:58.677211+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1010642/openai-employee-arrested-recording-device",
-      "title": "OpenAI employee arrested for allegedly planting a bug in a conference room",
-      "summary": "An OpenAI engineer was arrested after the company said it discovered a \"sophisticated recording device\" hidden in one of its offices. The employee was identified as Abdulrahman Alfozan, a 35-year-old Saudi national. Alfozan is charged with using or endeavoring to use a device to intercept oral communications, according to a press release from the Department [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-13T20:45:25+00:00",
-      "sent_at": "2026-10-14T05:46:58.677211+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/13/judge-orders-openai-to-turn-over-hiring-records-in-apple-trade-secrets-case/",
-      "title": "Judge orders OpenAI to turn over hiring records in Apple trade secrets case",
-      "summary": "A federal judge ruled that Apple can access OpenAI's interview materials involving former Apple employees, as well as private messages and testimony from key figures in the case.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-13T20:36:44+00:00",
-      "sent_at": "2026-10-14T05:46:58.677211+00:00"
-    },
-    {
-      "link": "https://sfstandard.com/2026/10/13/openai-engineer-arrested-alleged-bugging-executive-conference-room/",
-      "title": "OpenAI engineer arrested in bugging of executive conference room",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-13T20:23:55+00:00",
-      "sent_at": "2026-10-14T05:46:58.677211+00:00"
     }
   ]
 }
