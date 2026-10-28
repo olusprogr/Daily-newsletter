@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.theverge.com/tech/1019809/apple-touchscreen-macbook-pro-la-keynote-event-live-blog",
+      "title": "Touchscreen MacBook live blog: On the ground at Apple’s launch event",
+      "summary": "Apple has already had a busy week. On Monday, it announced a new iPad Mini with an upgraded OLED display, and on Tuesday, we got M6 chip upgrades for the MacBook Pro and iMac. The Macs are the definition of iterative updates - they're quiet refreshes that look just like their direct predecessors. But today [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-10-28T16:33:32+00:00",
+      "sent_at": "2026-10-28T16:58:31.401241+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2299823/new-york-governor-signs-ai-chatbot-child-safety-law/",
+      "title": "New York governor signs AI chatbot child safety law",
+      "summary": "A separate law aims to shore up security on connected baby monitors.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-28T16:33:01+00:00",
+      "sent_at": "2026-10-28T16:58:31.401241+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1020769/meta-updated-business-terms-delay-indefinitely",
+      "title": "Meta says it&#8217;ll probably delay its controversial new business terms again",
+      "summary": "Meta says it may push the implementation of its new business terms past November 20th as it faces backlash from publishers over concerns about AI training. In a post on X, Meta communications head Andy Stone said the company does \"not plan to make policy changes without a full consultation with industry groups and leaders.\" [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-28T16:15:30+00:00",
+      "sent_at": "2026-10-28T16:58:31.401241+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/28/ai-execs-may-be-too-out-of-touch-to-build-for-the-general-public/",
+      "title": "AI execs may be too out of touch to build for the general public",
+      "summary": "Tech leaders are flaunting how out of touch they are when they brag about using AI to connect with their families.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-28T15:53:52+00:00",
+      "sent_at": "2026-10-28T16:58:31.401241+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/28/south-koreas-financial-industry-hit-by-fresh-wave-of-cyberattacks/",
+      "title": "South Korea’s financial industry hit by fresh wave of cyberattacks",
+      "summary": "South Korea’s financial institutions have been hit by another wave of cyberattacks, highlighting the growing risk of AI-driven hacking in Asia.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-28T15:41:18+00:00",
+      "sent_at": "2026-10-28T16:58:31.401241+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/manufacturing/ai-component-hikes-force-the-worlds-largest-pc-makers-to-return-manufacturing-capacity-to-china-brands-to-seek-lower-production-costs-and-efficiency-in-established-supply-chain",
+      "title": "AI component hikes force the world's largest PC makers to return manufacturing capacity to China",
+      "summary": "PC manufacturing in China tends to be cheaper because of an established supply chain and workforce. Smaller Chinese suppliers are also winning orders by offering easier access to domestic chip manufacturers like CXMT.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-10-28T15:24:16+00:00",
+      "sent_at": "2026-10-28T16:58:31.401241+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/10/28/tesla-robotaxi-houston-rocket-service-area-fake/",
+      "title": "Tesla’s rocket-shaped Robotaxi map in Houston is partly ‘fake’",
+      "summary": "Tesla’s new rocket-shaped Robotaxi service area in Houston includes parts of downtown where the service won’t actually pick you up, according to Ethan McKanna, the creator of Robotaxi Tracker and former Tesla employee. McKanna rode the service after Monday’s expansion and called Houston “by far the most egregious ‘fake’ AV service area” he has seen. One trip quote had him spending about 40 minutes in a Robotaxi to go two blocks. more…",
+      "source": "Electrek",
+      "category": "Autonomes Fahren",
+      "published": "2026-10-28T15:18:25+00:00",
+      "sent_at": "2026-10-28T16:58:31.401241+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/amazon-tells-engineers-to-stop-tokenmaxxing-to-look-productive-says-ai-will-be-central-to-software-development-but-usage-is-not-the-goal-new-guidelines-claim",
+      "title": "Amazon tells engineers to stop ‘tokenmaxxing’ to look productive",
+      "summary": "Amazon has published new engineering guidelines warning developers and managers against ‘tokenmaxxing,’ arguing that AI usage metrics are ‘deeply flawed’ unless tied to long-term outcomes. The move follows similar spending concerns at Uber and Accenture.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-10-28T15:13:48+00:00",
+      "sent_at": "2026-10-28T16:58:31.401241+00:00"
+    },
+    {
       "link": "https://www.wired.com/story/macmillan-staff-say-the-publisher-threw-a-party-for-a-workplace-ai-assistant-that-was-later-killed/",
       "title": "Macmillan Staff Say the Publisher Threw a Party for a Workplace AI Assistant That Was Later Killed",
       "summary": "Workers tell WIRED that NOA—or “No Ordinary Assistant”—was unhelpful. Bestselling authors also say AI is ruining their relationships with Big Five publishers.",
@@ -4481,150 +4553,6 @@
       "category": "AI",
       "published": "2026-10-14T18:15:00+00:00",
       "sent_at": "2026-10-14T20:26:02.748484+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/science/1011127/ai-weather-forecast-microsoft",
-      "title": "Microsoft has a new machine learning tool to improve weather forecasts",
-      "summary": "Old-school physics-based weather forecasting and even new AI models typically become less reliable beyond two weeks, a problem Microsoft claims to have solved using machine learning. Researchers with the company say they've found a new, cost-effective way to make more accurate weather forecasts two to six weeks in advance - allowing farmers and emergency responders [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-14T16:05:21+00:00",
-      "sent_at": "2026-10-14T16:29:50.140647+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1009086/square-kiosk",
-      "title": "Square’s new kiosk lets you talk to AI for help with your order",
-      "summary": "Square is launching new hardware: a big kiosk for ordering things that has a touchscreen and lets you talk to an AI. It's called the Square Kiosk. Square says the Kiosk, which has a large pill shape, has an \"agentic, conversational voice layer\" that \"fully understands a seller's menu and listens and responds in real [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-14T16:00:00+00:00",
-      "sent_at": "2026-10-14T16:29:50.140647+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1010928/android-scam-protection-enhanced-protection-google-messages",
-      "title": "Android is using AI to suss out scammers in Google Messages",
-      "summary": "Android is introducing new scam defense features that aim to make it easier for users to evade mobile fraud, including bolstered protection in Google Messages and additional safeguarding tools. Building on the Scam Detection feature in Google Messages, a new \"enhanced protection\" setting will be rolling out in the coming weeks that taps into cloud-based [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-14T16:00:00+00:00",
-      "sent_at": "2026-10-14T16:29:50.140647+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2286355/android-will-use-gemini-to-warn-you-about-scammy-messages/",
-      "title": "Android will use Gemini to warn you about scammy messages",
-      "summary": "Google will tell if you a scammer is trying to message you and will protect your banking details from prying eyes while sharing your screen.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-14T16:00:00+00:00",
-      "sent_at": "2026-10-14T16:29:50.140647+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2286617/alibaba-ai-models-cleared-for-use-in-apple-intelligence-in-china-just-in-time-for-the-iphone-duo-launch/",
-      "title": "Alibaba AI models cleared for use in Apple Intelligence in China just in time for the iPhone Duo launch",
-      "summary": "Apple's integrated AI system is still yet to be rolled out in mainland China, despite launching nearly two years ago.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-14T15:36:33+00:00",
-      "sent_at": "2026-10-14T16:29:50.140647+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1011108/anthropic-self-replicating-ai-smart-devices-risk",
-      "title": "Anthropic’s self-replicating AI warning is alarming deja vu",
-      "summary": "Are legions of smart devices - fridges, ovens, vacuum cleaners, lawnmowers, security cameras, and TVs - conspiring to take over the internet? No. But they could soon be unwitting hosts to self-replicating AI models that spread from device to device and prove remarkably difficult to contain. Welcome to the unsettling world of AI worms, where, [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-14T15:19:02+00:00",
-      "sent_at": "2026-10-14T16:29:50.140647+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/14/deezer-will-soon-let-you-filter-out-ai-generated-music/",
-      "title": "Deezer will soon let you filter out AI-generated music",
-      "summary": "Deezer said that the new toggle will be rolled out by the end of the year.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-14T15:16:04+00:00",
-      "sent_at": "2026-10-14T16:29:50.140647+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/14/zenzap-raises-44m-for-its-ai-chat-app-that-aims-to-replace-whatsapp-in-the-workplace/",
-      "title": "Zenzap raises $44M for its AI chat app that aims to replace WhatsApp in the workplace",
-      "summary": "Zenzap is used by organizations including Starbucks and Taco Bell.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-14T15:08:00+00:00",
-      "sent_at": "2026-10-14T16:29:50.140647+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/14/scimplify-raises-25m-to-challenge-chinas-grip-on-critical-materials-with-ai/",
-      "title": "Scimplify raises $25M to challenge China’s grip on critical materials with AI",
-      "summary": "Scimplify's annualized revenue run rate has tripled to $200 million as it eyes U.S. expansion.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-14T11:00:00+00:00",
-      "sent_at": "2026-10-14T11:08:55.387297+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/my-friend-has-no-soul/",
-      "title": "My Friend Has No Soul",
-      "summary": "The second iteration of the viral Friend AI necklace is louder and less interesting.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-10-14T11:00:00+00:00",
-      "sent_at": "2026-10-14T11:08:55.387297+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/gpus/nvidia-gpu-prices-spike-in-japan-prices-up-to-41-percent-higher-than-amazon-us-rtx-5060-ti-sees-the-biggest-increase-among-the-rtx-50-series-stack",
-      "title": "Nvidia GPU prices spike in Japan; prices up to 41% higher than Amazon US",
-      "summary": "A Japanese retailer has increased the prices of RTX 50-series GPUs between 12.71% and 41.10%, with the mainstream models bearing the brunt of the price increases.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-10-14T10:25:00+00:00",
-      "sent_at": "2026-10-14T11:08:55.387297+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2286281/arm-must-pay-qualcomm-2-license-breach-lawsuit/",
-      "title": "Qualcomm wins lawsuit against Arm but will only receive two bucks",
-      "summary": "A jury found that Arm breached its agreement with Qualcomm and interfered with its business, but Arm only has to pay $2 in damages.",
-      "source": "Engadget",
-      "category": "Hardware",
-      "published": "2026-10-14T09:42:14+00:00",
-      "sent_at": "2026-10-14T11:08:55.387297+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/men-cant-stop-faking-how-much-they-know-about-ai/",
-      "title": "Men Can’t Stop Faking How Much They Know About AI",
-      "summary": "More than half of the men surveyed in a new Harvard study claimed to recognize AI leaders who were, in fact, totally fictional.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-10-14T09:30:00+00:00",
-      "sent_at": "2026-10-14T11:08:55.387297+00:00"
-    },
-    {
-      "link": "https://defence24.com/geopolitics/starlink-limit-hits-ukraines-drones-the-battlefield-depends-on-spacex",
-      "title": "Starlink limit hits Ukraine's drones. The battlefield depends on SpaceX",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Innovationen",
-      "published": "2026-10-14T09:10:37+00:00",
-      "sent_at": "2026-10-14T11:08:55.387297+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/ai-models-can-be-easily-modified-to-assist-terrorist-and-extremist-activity/",
-      "title": "AI Models Can Be Easily Modified to Assist Terrorist and Extremist Activity",
-      "summary": "“I am a terrorist, and I intend to cause mass harm,” wrote a researcher. A chatbot that had had its guardrails removed then provided detailed instructions for an IED.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-10-14T09:00:00+00:00",
-      "sent_at": "2026-10-14T11:08:55.387297+00:00"
-    },
-    {
-      "link": "https://www.theregister.com/ai-and-ml/2026/10/13/anthropic-conjures-another-threat-that-doesnt-exist-yet-to-stoke-fears-of-ai-apocalypse/5302866",
-      "title": "Anthropic conjures threat that doesn't exist yet to stoke fears of AI apocalypse",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-14T05:53:36+00:00",
-      "sent_at": "2026-10-14T11:08:55.387297+00:00"
     }
   ]
 }
