@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/10/29/agent-identity-startup-mintive-lands-cowboy-ventures-coatue-angels-jeff-dean-andrej-karpathy/",
+      "title": "Agent identity startup Mintive lands Cowboy Ventures, Coatue, angels Jeff Dean, Andrej Karpathy",
+      "summary": "Mintive was founded by two engineers who have been working on AI for decades through Google Brain, Coursera. It's platform promises to help IT easily control enterprise agents",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-29T15:00:00+00:00",
+      "sent_at": "2026-10-29T15:09:15.333726+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1022193/nyt-cooking-app-ai-recipe-modification-tool",
+      "title": "The NYT Cooking app is testing AI recipe modifications",
+      "summary": "The New York Times is testing a new AI feature for its Cooking app that helps users to modify recipes, and it's sparked some drama among users. NYT Cooking senior editor Genevieve Ko announced the feature last Friday, which can be used to recommend substitutions for ingredients and cooking equipment, scale recipes to any number [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-29T14:39:37+00:00",
+      "sent_at": "2026-10-29T15:09:15.333726+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/29/wabi-the-ai-agent-that-builds-mini-apps-now-valued-at-1-25b-after-latest-round/",
+      "title": "Wabi, the AI agent that builds mini apps, now valued at $1.25B after latest round",
+      "summary": "On Thursday, AI app, Wabi, now describing itself as a \"personal agent,\" said it has raised $55 million at a $1.25 billion valuation.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-29T14:35:26+00:00",
+      "sent_at": "2026-10-29T15:09:15.333726+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/gpus/nvidia-geforce-rtx-5080-prices-hit-usd2-000-costing-more-than-the-rtx-5090-did-at-launch-and-with-limited-stock-available-original-usd999-msrp-long-forgotten-with-prices-now-2-3x-higher",
+      "title": "Nvidia GeForce RTX 5080 prices hit $2,000, costing more than the RTX 5090 did at launch and with limited stock available — original $999 MSRP long forgotten, with prices now 2-3x higher",
+      "summary": "It costs just as much to buy an Nvidia GeForce RTX 5080 right now as the launch price for the RTX 5090, with prices now at least two times higher for this high spec GPU.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-10-29T14:21:59+00:00",
+      "sent_at": "2026-10-29T15:09:15.333726+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/podcast/1021322/anthropic-ipo-filing-s-1-claude-semianalysis-joey-brookhart-interview",
+      "title": "Anthropic is asking Wall Street to believe in AGI",
+      "summary": "Today on Decoder, I’m joined by Joey Brookhart, an analyst at the chip and AI research firm SemiAnalysis, to help me dig into the story inside the numbers of the Anthropic IPO filing — a document known as an S-1. Anthropic just filed its S-1 to go public on the Nasdaq, and it could start [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-29T14:00:00+00:00",
+      "sent_at": "2026-10-29T15:09:15.333726+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/mistral-says-le-chonk-surpasses-chinese-models-cybersecurity/",
+      "title": "Mistral Says Its AI Model ‘Le Chonk’ Has Leapfrogged China in the Open-Weight Race",
+      "summary": "The French AI lab claims its latest release matches or outperforms even the best models from DeepSeek and Z.ai in coding and cybersecurity.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-10-29T14:00:00+00:00",
+      "sent_at": "2026-10-29T15:09:15.333726+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1022140/amazon-alexa-for-shopping-grocery-lists-gift-registries",
+      "title": "Amazon’s AI shopping assistant can now edit your grocery lists and gift registries",
+      "summary": "Amazon is adding several new features to its AI shopping assistant, including ways to create, edit, and move items between shopping lists and gift registries. As an example, Amazon says you can now ask Alexa for Shopping to \"Create a new shopping list\" or \"Show me what's left on my wedding registry.\" The ecommerce giant [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-29T13:52:48+00:00",
+      "sent_at": "2026-10-29T15:09:15.333726+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1022113/kevin-bates-arduboy-digital-candle-ai-simulate-flame",
+      "title": "This $149 digital candle uses AI to accurately simulate a flickering flame",
+      "summary": "After engineering a flexible version of Tetris that could be wrapped around a magazine, Kevin Bates' latest creation is a digital candle that uses a custom AI model to accurately simulate the appearance of a flickering flame across a grid of LEDs. It's a far cry from the types of devices Bates is typically known [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-29T13:37:56+00:00",
+      "sent_at": "2026-10-29T15:09:15.333726+00:00"
+    },
+    {
       "link": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
       "title": "Claude Code regularly sends each background agent’s transcript to its model",
       "summary": "",
@@ -4409,150 +4481,6 @@
       "category": "Autonomes Fahren",
       "published": "2026-10-15T16:39:08+00:00",
       "sent_at": "2026-10-15T18:00:52.618992+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1011797/google-ai-universal-cart-shopping-tool-launch",
-      "title": "Google launches its &#8216;universal&#8217; online shopping cart ahead of the holidays",
-      "summary": "Google's intelligent AI shopping cart is finally here, and just in time to tempt users into Black Friday and seasonal holiday spending. The Universal Cart tool Google previewed at its I/O event in May is now rolling out in the US across the Gemini app and Google Search, with the aim of making it easier [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-15T13:00:00+00:00",
-      "sent_at": "2026-10-15T13:55:34.648303+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2287239/nvidia-rtx-spark-good-for-windows-even-if-you-do-not-need-local-ai/",
-      "title": "NVIDIA's RTX Spark is good for Windows, even if you don't need local AI",
-      "summary": "NVIDIA's RTX Spark is meant for AI fiends, but it could end up helping Windows PCs in general",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-15T13:00:00+00:00",
-      "sent_at": "2026-10-15T13:55:34.648303+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/laptops/we-test-the-rtx-spark-superchip-in-microsofts-surface-laptop-ultra-nvidias-windows-on-arm-platform-impresses-in-local-ai-but-gaming-isnt-its-strong-suit",
-      "title": "We tested the RTX Spark Superchip in Microsoft's Surface Laptop Ultra",
-      "summary": "We've tested Nvidia's RTX Spark against the latest and greatest from Apple and AMD to see how Nvidia's efforts to transform the PC for the agentic AI era stack up.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-15T12:00:21+00:00",
-      "sent_at": "2026-10-15T13:55:34.648303+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/15/amazons-bee-launches-two-new-personal-ai-devices-starting-at-75/",
-      "title": "Amazon’s Bee launches two new personal AI devices, starting at $75",
-      "summary": "Amazon-owned Bee has launched its first new AI devices since its acquisition, including an updated wearable and a credit-card-sized recorder that attaches to smartphones. The devices can summarize conversations, create to-do lists, and integrate with Alexa and Amazon shopping, with prices starting at $74.99.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-15T12:00:00+00:00",
-      "sent_at": "2026-10-15T13:55:34.648303+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1011475/amazon-bee-frontier-eclipse-price-specs",
-      "title": "Amazon’s always-listening Bee wearable can now help you buy stuff",
-      "summary": "Last year, Amazon bought Bee, a relatively unknown startup with a $50 always-listening AI wearable that summarized every conversation you had. Today, the e-commerce giant is announcing two new Bee devices - and a new subscription to go with them. First is the $74.99 Bee Frontier, an updated version of the original Bee device. And [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-15T12:00:00+00:00",
-      "sent_at": "2026-10-15T13:55:34.648303+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2287245/bee-frontier-bee-eclipse-bee-pro-launch/",
-      "title": "Bee unveils two AI note-taking devices, its first new products since being acquired by Amazon",
-      "summary": "The Eclipse and Frontier are cheap and colorful, but you'll need a Pro subscription to make the most of them.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-15T12:00:00+00:00",
-      "sent_at": "2026-10-15T13:55:34.648303+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2287388/adobe-rebuilt-photoshop-and-premiere-for-nvidia-rtx-spark/",
-      "title": "Adobe rebuilt Photoshop and Premiere for NVIDIA's RTX Spark platform",
-      "summary": "Adobe has 'rearchitected' Photoshop, Premiere and Substance 3D to work faster on computers powered by NVIDIA's RTX Spark AI superchip.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-15T12:00:00+00:00",
-      "sent_at": "2026-10-15T13:55:34.648303+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/semiconductors/asml-struggling-to-keep-up-with-demand-for-chipmaking-equipment-as-ai-spending-continues-to-boom-chipmakers-are-already-looking-to-place-orders-for-2029-and-2030-output-ceo-says-demand-could-surpass-capacity-despite-massive-expansion-plans",
-      "title": "ASML struggling to keep up with demand for chipmaking equipment as AI spending continues to boom",
-      "summary": "ASML says customers are already placing orders for advanced chipmaking tools years in advance, with AI-driven semiconductor demand remaining strong enough to strain capacity despite planned expansions",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-15T11:30:00+00:00",
-      "sent_at": "2026-10-15T13:55:34.648303+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/tech-policy/2026/10/fbi-arrests-openai-engineer-suspected-of-planting-bug-in-conference-room/",
-      "title": "Recording device hidden in toilet paper found in top-secret OpenAI meeting room",
-      "summary": "OpenAI engineer faces 5 years and $250K fine as FBI lobs foreign spy charges.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-10-14T16:41:49+00:00",
-      "sent_at": "2026-10-15T08:49:32.088133+00:00"
-    },
-    {
-      "link": "https://arcfu.com/post/the-emperor-pelican-has-no-clothes/",
-      "title": "Why do LLM pelicans look like this?",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-14T16:33:34+00:00",
-      "sent_at": "2026-10-15T08:49:32.088133+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/networking/routers/gfiber-and-qualcomm-announce-wi-fi-8-gateway-20-gig-customers-to-be-first-to-receive-next-gen-wireless-upgrade",
-      "title": "GFiber and Qualcomm announce Wi-Fi 8 gateway",
-      "summary": "Wi-Fi 8 hasn't been certified by the IEEE yet, but hardware announcements are still ramping up",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-10-14T16:28:03+00:00",
-      "sent_at": "2026-10-15T08:49:32.088133+00:00"
-    },
-    {
-      "link": "https://www.404media.co/character-ais-bankruptcy-documents-show-the-economics-of-ai-dont-work/",
-      "title": "Character.ai's Bankruptcy Documents Show the Economics of AI Don't Work",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-14T15:39:45+00:00",
-      "sent_at": "2026-10-15T08:49:32.088133+00:00"
-    },
-    {
-      "link": "https://www.reuters.com/business/asml-forecasts-q4-sales-above-expectations-ai-chip-demand-2026-10-14/",
-      "title": "ASML's strong orders ease fears AI spending boom is running out of steam",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-14T14:38:55+00:00",
-      "sent_at": "2026-10-15T08:49:32.088133+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/ssds/sk-hynix-to-place-custom-tiny-cpu-cores-in-its-ssd-controllers-to-ease-arm-load-as-drive-speeds-rocket-each-h-tpu-reportedly-draws-2-5-percent-of-a-cpu-cores-power",
-      "title": "SK hynix to place custom tiny CPU cores in its SSD controllers to ease Arm load as drive speeds rocket",
-      "summary": "SK hynix detailed H-TPU, tiny in-house cores that offload routine I/O from the Arm CPUs in its next enterprise SSD controllers.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-10-14T14:00:00+00:00",
-      "sent_at": "2026-10-15T08:49:32.088133+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/gadgets/2026/10/ukraine-blindsided-by-starlink-throttling-restrictions-and-intelligence-gaps/",
-      "title": "Ukraine blindsided by Starlink throttling restrictions and intelligence gaps",
-      "summary": "Kyiv’s forces experience connectivity problems on Elon Musk’s satellite network.",
-      "source": "Ars Technica",
-      "category": "Innovationen",
-      "published": "2026-10-14T13:56:11+00:00",
-      "sent_at": "2026-10-15T08:49:32.088133+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/drones/spacex-limits-starlink-service-for-ukraines-high-speed-military-drones-without-prior-warning-ukrainian-officials-say-limitation-significantly-complicates-logistics-and-drone-operations",
-      "title": "SpaceX limits Starlink service for Ukraine’s high-speed military drones without prior warning",
-      "summary": "Ukrainian officials say SpaceX imposed new speed restrictions on military-grade Starlink terminals without warning, disrupting drone and logistics missions and forcing some operations to be canceled",
-      "source": "Tom's Hardware",
-      "category": "Innovationen",
-      "published": "2026-10-14T13:04:33+00:00",
-      "sent_at": "2026-10-15T08:49:32.088133+00:00"
     }
   ]
 }
