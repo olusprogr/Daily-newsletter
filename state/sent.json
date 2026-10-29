@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1021644/adam-mosseri-instagram-ai-negativity",
+      "title": "Adam Mosseri says negativity around AI is ‘going to get worse’",
+      "summary": "Asked about AI and the trend of college students booing tech CEOs at graduation ceremonies, Instagram head Adam Mosseri acknowledged in an interview that a lot of people really don't like AI, and it's not just young people and creatives. Appearing on the Colin and Samir podcast to talk about the launch of widescreen and [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-28T23:05:39+00:00",
+      "sent_at": "2026-10-29T01:31:22.200789+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/",
+      "title": "Google expands AI Search ads globally as core ad growth slows",
+      "summary": "The announcement came alongside parent company Alphabet's third-quarter earnings report, which saw revenue grow 25% year over year to $127.6 billion.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-28T21:48:37+00:00",
+      "sent_at": "2026-10-29T01:31:22.200789+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai/",
+      "title": "Microsoft recorded $10 billion in revenue from OpenAI",
+      "summary": "Microsoft said it made $10 billion in revenue from commercial arrangements with OpenAI, including revenue-sharing payments, in the quarter ending September 30. It underscores the still-enormous financial dependency of the partnership.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-28T21:34:30+00:00",
+      "sent_at": "2026-10-29T01:31:22.200789+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/i-put-ai-agents-in-charge-of-a-fantasy-team/",
+      "title": "I Put a Bunch of AI Agents in Charge of a Fantasy Soccer Team. They’re Not Better Than Humans—Yet",
+      "summary": "To experiment with AI’s predictive skills, I let Codex loose on a fantasy team. It tried to bench Erling Haaland at first, but it soon learned the error of its ways.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-10-28T18:30:00+00:00",
+      "sent_at": "2026-10-29T01:31:22.200789+00:00"
+    },
+    {
+      "link": "https://spectrum.ieee.org/systems-thinking-vital-in-ai",
+      "title": "Systems Thinking Is Vital in the Age of AI",
+      "summary": "Modern engineering projects increasingly combine human judgment with machine capability. An engineer can define a problem, then ask an artificial intelligence tool to search relevant research and technical standards, generate design options, test them in simulation, and compare the results. The engineer can then bring the results to specialists who understand the parts AI cannot judge on its own, such as whether a design can be built safely, whether it makes sense in a particular setting, or how it might affect its users. The final decision about whether and how to move forward remains a human responsibility. AI can help engineers do early project steps that once required several people with different technical skills. The engineer’s role is therefore expanding from performing each technical step to deciding how people, machines, and specialists’ knowledge should work together on the project. The problem, not the title Engineering has always been divided into disciplines, and for good reasons. Electrical, mechanical, civil, software, and other engineering fields require deep knowledge that takes years to develop. AI does not replace that need. It simply changes how easily engineers can explore the parts of a problem that sit outside their own specialty. Consider a software engineer working on a medical device . AI can help the engineer review relevant biomedical research, understand unfamiliar terms, analyze data, and build an early model. That does not make the engineer a physician or biomedical expert. It allows the engineer to ask better questions before working with the experts. The same is true in energy , transportation, manufacturing, and many other fields. A problem might begin as a software issue and then quickly involve hardware, safety measures, economics, human behavior, and regulations. Engineers do not need to master every field; they need to recognize which expertise the problem requires and bring the right people and tools together. The importance of systems thinking Systems thinking thus becomes especially important. It requires looking at the whole problem: understanding how its parts affect one another, identifying constraints and failure points, and making trade-offs. AI adds a new element to the process. Engineers must decide not only how the technical parts fit together but also what work to give to AI, what a person must check, when a specialist should make a decision, and when the problem needs to be redefined. An engineer’s value is not in knowing everything. It is in knowing how to frame the problem, how to ask the right questions, how to test the answers, and when another expert must lead the project. This aspect is crucial because technical challenges in engineering are seldom static. As new insights emerge, objectives might shift, unseen limitations can surface, and the initial premise might prove flawed. Rather than rigidly following the starting specifications, an effective engineer adapts and refines the scope as a deeper understanding of the system develops. Thus, engineering extends beyond mastering technical concepts; it is an adaptable, structured approach to navigating evolving challenges. New evidence can change the goal, reveal a hidden constraint, or show that the original hypothesis was wrong. Effective engineers go beyond merely acting on the initial problem statement. They update it as the system becomes better understood. In that sense, engineering is not only a body of technical knowledge, it is also a disciplined way of thinking about a project. Human judgment is important AI can produce convincing answers even when its assumptions are weak. It can generate code that works in one test but fails in another. It can summarize research without understanding which evidence is strongest, or optimize a design for the wrong goal. Such limits make human expertise more important, not less. Machines are useful where speed, scale, search, pattern recognition, and data generation matter. People are essential where context, values, responsibility, and judgment matter. The challenge is to decide where each belongs. An AI system might generate several designs for a medical sensor, for example, and predict how each will perform. An engineer can test the predictions and reject designs that violate technical requirements. A clinician can determine whether the sensor can be realistically used. Patients and practitioners might reveal problems that neither the engineer nor the developer considered. The final solution emerges from combining the perspectives. The engineer is still a builder and specialist but increasingly also a coordinator of knowledge. An engineer’s value is not in knowing everything. It is in knowing how to frame the problem, how to ask the right questions, how to test the answers, and when another expert must lead the project. IEEE’s vital role The broader form of engineering creates an important role for IEEE. Its societies already bring together expertise in various technologies, engineering education , technical standards , and other fields. That makes IEEE well placed to help engineers work across specialties without weakening the value of specialization. IEEE could create more communities organized around problems that require expertise from several fields. Examples include trustworthy clinical AI , resilient infrastructure, energy reliability, scientific discovery, and safe autonomous systems. An engineer could begin in a home discipline and then work with specialists from other IEEE communities as a project requires. IEEE also can help set practical standards for human-machine collaboration. Engineers will need clear guidance on when AI-generated work must be checked, how uncertainty should be documented, when a specialist must make a decision, and who is responsible when a system uses both human judgment and machine output. Those questions are becoming part of everyday engineering. They should not be left to each company or project manager to answer independently. A professional organization can provide common expectations that follow engineers as they move between jobs, industries, and technical fields. A larger definition of the engineer AI does not make engineering disciplines less important; it makes the connections between them easier to use. Deep expertise gives engineers the foundation to judge what is sound. Systems thinking helps them understand how different parts of a problem fit together. AI can extend engineers’ ability to explore, test, and communicate across fields. Human judgment gives the work direction and responsibility. An engineer is not defined only by a job title or a fixed set of tasks. An engineer is someone trained to understand complex systems, define and redefine problems, bring together the knowledge and tools needed to solve them, test whether solutions work, and take responsibility for the outcome. That is what it means to be an “unbound” engineer. The boundaries between specialties become easier to cross, and machines might take on more of the technical work, but the core of engineering remains human: deciding what problem is worth solving, what evidence is good enough, how the pieces fit together, and what to do when the answer is uncertain.",
+      "source": "IEEE Spectrum",
+      "category": "AI",
+      "published": "2026-10-28T18:00:02+00:00",
+      "sent_at": "2026-10-29T01:31:22.200789+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/ai/2026/10/google-ai-gets-cagey-when-asked-who-won-the-2020-elections/",
+      "title": "Google AI gets cagey when asked who won the 2020 elections",
+      "summary": "But the AI responses get more forthright when asked outside the US.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-10-28T17:46:32+00:00",
+      "sent_at": "2026-10-29T01:31:22.200789+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/policy/malaysia-seizes-usd12-million-worth-of-advanced-ai-chips-hidden-inside-30-servers-customs-says-suspected-smuggling-network-used-the-country-as-a-transit-hub",
+      "title": "Malaysia seizes $12 million worth of advanced AI chips hidden inside 30 servers",
+      "summary": "Malaysian customs seized 30 servers containing more than $12 million worth of advanced AI chips at Kuala Lumpur International Airport, as authorities investigate a suspected smuggling network linked to multiple previous seizures.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-10-28T17:02:14+00:00",
+      "sent_at": "2026-10-29T01:31:22.200789+00:00"
+    },
+    {
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+      "title": "Gemini 4 Carbon",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-28T17:01:23+00:00",
+      "sent_at": "2026-10-29T01:31:22.200789+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/10/28/microsoft-hits-10-quarters-of-record-breaking-revenue-in-a-row/",
       "title": "Microsoft hits 10 quarters of record- breaking revenue in a row",
       "summary": "Whatever the future of AI might be, the current situation is still very good for Microsoft. The tech giant reported yet another record for quarterly revenue on Wednesday: $92.3 billion, a 19% increase over the year-ago quarter.",
@@ -4481,78 +4553,6 @@
       "category": "Autonomes Fahren",
       "published": "2026-10-14T16:45:19+00:00",
       "sent_at": "2026-10-15T03:07:23.556139+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/news/1011654/mckinsey-ai-client-interview",
-      "title": "McKinsey is making job applicants spar with a fake AI client",
-      "summary": "Consulting firm McKinsey &#38; Company is going to ask some entry-level candidates to have a 10-minute conversation with an AI simulation of a client as part of the interview process, according to The Wall Street Journal. The AI simulation \"aims to reflect 80% of the scenarios McKinsey consultants might encounter in their day-to-day work,\" the [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-14T22:53:31+00:00",
-      "sent_at": "2026-10-14T23:39:39.840237+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/14/cedardb-wants-one-database-to-handle-both-transactions-and-analytics-as-ai-agents-raise-the-stakes/",
-      "title": "CedarDB wants one database to handle both transactions and analytics, as AI agents raise the stakes",
-      "summary": "Databases have traditionally been designed either for analytical data or for operational data. But database engine CedarDB supports both, and its approach has gained relevance with the rise of agentic AI.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-14T22:00:00+00:00",
-      "sent_at": "2026-10-14T23:39:39.840237+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2287111/iowa-nebraska-and-six-other-states-are-suing-openai-for-endangering-children/",
-      "title": "Iowa, Nebraska and six other states are suing OpenAI for endangering children",
-      "summary": "The lawsuits cover everything from the design of ChatGPT to the company's recent issues with rogue agents.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-14T21:23:27+00:00",
-      "sent_at": "2026-10-14T23:39:39.840237+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety",
-      "title": "Eight states sue OpenAI, saying ChatGPT isn&#8217;t safe for kids",
-      "summary": "OpenAI is facing a new wave of lawsuits from eight US states that accuse the company of harming children and misleading customers about the safety of ChatGPT, as reported earlier by Reuters. The lawsuits, filed separately by Iowa, Kansas, Nebraska, West Virginia, Arkansas, Arizona, Idaho, and Montana, allege OpenAI unlawfully put profits over safety when [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-14T21:11:28+00:00",
-      "sent_at": "2026-10-14T23:39:39.840237+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/14/colossal-biosciences-announces-new-ai-platform-to-help-accelerate-de-extinction-efforts/",
-      "title": "Colossal Biosciences announces new AI platform to help accelerate de-extinction efforts",
-      "summary": "Colossal announced a new AI platform to help accelerate its de-extinction efforts and Peter Diamandis has launched a new fund to back startups who use it.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-14T21:00:00+00:00",
-      "sent_at": "2026-10-14T23:39:39.840237+00:00"
-    },
-    {
-      "link": "https://sunshowers.io/posts/anthropic-mononoke/",
-      "title": "Anthropic's Scion is heavily inspired by Mononoke",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-14T20:30:54+00:00",
-      "sent_at": "2026-10-14T23:39:39.840237+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/14/apate-sends-ai-agents-undercover-to-get-scammed-so-they-can-gather-fraud-intelligence/",
-      "title": "Apate sends AI agents undercover to get scammed so they can gather fraud intelligence",
-      "summary": "Most companies use AI agents to ship products faster or speed up workflows. Apate.ai sends them undercover to get scammed.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-14T18:00:00+00:00",
-      "sent_at": "2026-10-14T23:39:39.840237+00:00"
-    },
-    {
-      "link": "https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html",
-      "title": "Containment and monitoring failures are to blame for AI hacking reports: experts",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-14T17:45:23+00:00",
-      "sent_at": "2026-10-14T23:39:39.840237+00:00"
     }
   ]
 }
