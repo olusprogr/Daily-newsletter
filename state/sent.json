@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/a-primer-on-key-ai-llm-concepts-kv-cache-weights-quantization-and-how-inference-actually-works",
+      "title": "A primer on key AI LLM concepts — KV cache, weights, quantization, and how inference actually works",
+      "summary": "How do AI models work? This primer explains crucial concepts to understand how LLMs work, with definitions and explanations for all of AI's new nomenclature.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-10-30T13:30:00+00:00",
+      "sent_at": "2026-10-30T13:49:32.102569+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/10/30/waymo-toyota-bz4x-robotaxi-japan-2027/",
+      "title": "Waymo picks Toyota bZ4X as its next robotaxi, starting in Japan in 2027",
+      "summary": "Waymo is adding the Toyota bZ4X to its robotaxi lineup. Toyota will build a custom version of the electric SUV with the Waymo Driver integrated right on the line in Japan, and a test fleet will start operating there in 2027. It’s the first actual vehicle to come out of the partnership the two companies signed last year. And it gives Waymo a Japanese-built car for its Tokyo launch, with the UK and other markets to follow. more…",
+      "source": "Electrek",
+      "category": "Autonomes Fahren",
+      "published": "2026-10-30T13:22:30+00:00",
+      "sent_at": "2026-10-30T13:49:32.102569+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1023070/anthropic-ipo-risk-factors-filing-miracles",
+      "title": "Silicon Valley wants you to invest in miracles",
+      "summary": "Investing in any stock is kind of like gambling in the sense that you're betting your money on a company's future performance. But how do you bet on a technology that could, in the worst-case scenario, \"pose catastrophic or existential risks to humanity,\" or best case, \"bring forth an age of miracles\"? To some extent, [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-10-30T13:11:05+00:00",
+      "sent_at": "2026-10-30T13:49:32.102569+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1023054/altman-cheeky-pint-ai-math-interview",
+      "title": "Sam Altman sympathizes with mathematicians, but says OpenAI’s math onslaught won’t stop",
+      "summary": "After months of bombarding mathematicians with a relentless stream of AI-generated results, OpenAI CEO Sam Altman says he sympathizes with researchers struggling to make sense of it all. But he has no intention of stopping - and hints there could be much more to come from the company's stockpile of discoveries. \"I think, on net, [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-30T13:01:14+00:00",
+      "sent_at": "2026-10-30T13:49:32.102569+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/",
+      "title": "Can AI data centers be mass-produced like cars? This startup aims to find out",
+      "summary": "Runware is building a factory to turn out prefabricated AI data centers on an assembly line. The real test will be whether it can deliver at that scale.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-30T13:00:00+00:00",
+      "sent_at": "2026-10-30T13:49:32.102569+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/desktops/gaming-pcs/this-is-your-chance-to-secure-an-entire-entry-level-abs-gaming-pc-for-only-usd849-amazing-walmart-deal-sets-you-up-with-an-rtx-5060-graphics-card-and-shaves-usd350-off-the-list-price",
+      "title": "This is your chance to secure an entire entry-level ABS gaming PC for only $849",
+      "summary": "An affordable desktop gaming PC with an RTX 5060 GPU inside for under $850.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-10-30T13:00:00+00:00",
+      "sent_at": "2026-10-30T13:49:32.102569+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2302003/meta-quietly-launches-an-ai-fashion-app-for-virtually-trying-on-clothes/",
+      "title": "Meta quietly launches an AI fashion app for virtually trying on clothes",
+      "summary": "Meta has launched an AI fashion app called Style Sketch in Indonesia, Singapore and Thailand.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-30T12:05:36+00:00",
+      "sent_at": "2026-10-30T13:49:32.102569+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/cpus/intel-leaker-reveals-moon-lake-chip-as-a-likely-replacement-for-n-series-socs-four-lower-power-efficiency-cores-no-performance-cores-and-a-6-w-tdp",
+      "title": "Intel leaker reveals Moon Lake chip as a likely replacement for N-series SoCs",
+      "summary": "An Intel leaker revealed Moon Lake chip as a likely replacement for N-series SoCs with four lower-power-efficiency cores, no performance cores, and a 6-watt TDP",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-10-30T11:40:00+00:00",
+      "sent_at": "2026-10-30T13:49:32.102569+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/10/29/you-dont-need-to-believe-in-a-god-to-get-a-religious-exemption-from-using-ai-at-work/",
       "title": "You don’t need to believe in a god to get a religious exemption from using AI at work",
       "summary": "David Durman, a University of Kentucky administrator, recently earned a religious exemption from using AI in the workplace.",
@@ -4337,78 +4409,6 @@
       "category": "Hardware",
       "published": "2026-10-16T13:00:00+00:00",
       "sent_at": "2026-10-16T15:11:01.152077+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/software/linux/linus-torvalds-posts-his-first-llm-assisted-patch-to-the-linux-kernel-after-issuing-clear-pro-ai-directives-the-bossman-makes-use-of-ai-tooling-himself",
-      "title": "Linus Torvalds posts his first AI-assisted patch to the Linux kernel, synthetic test clocks 23x performance leap",
-      "summary": "Linus Torvalds posts his first LLM-assisted patch to the Linux kernel — after issuing clear pro-AI directives, the bossman makes use of AI tooling himself",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-16T10:30:00+00:00",
-      "sent_at": "2026-10-16T10:39:59.242975+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2288580/open-ai-updates-chatgpt-extension-for-chrome/",
-      "title": "ChatGPT can now look at your Chrome tabs to do tasks for you",
-      "summary": "The ChatGPT browser extension lets you compare information from your open tabs.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-16T10:06:15+00:00",
-      "sent_at": "2026-10-16T10:39:59.242975+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/desktops/gaming-pcs/newegg-has-slashed-usd260-off-this-all-amd-4k-gaming-pc-9800x3d-and-radeon-rx-9070-xt-combo-comes-with-32gb-of-ddr5-and-a-2tb-ssd",
-      "title": "Newegg has slashed $260 off this all-AMD 4K gaming PC — 9800X3D and Radeon RX 9070 XT combo comes with 32GB of DDR5 and a 2TB SSD",
-      "summary": "Save $260 on an all-AMD gaming PC with 9800X3D and Radeon RX 9070 XT.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-10-16T10:03:21+00:00",
-      "sent_at": "2026-10-16T10:39:59.242975+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/video-games/playstation/jailbroken-ps5s-can-now-run-local-ai-models-at-over-100-tokens-per-second-fork-of-ps5lm-goes-native-and-accesses-gpu-and-more-ram",
-      "title": "Jailbroken PS5s can now run local AI models at over 100+ tokens per second",
-      "summary": "PS5LM gets a fork, allowing it to run natively and use the GPU and more RAM to run larger LLMs, even running Qwen3.8-27B at 20 tokens per second.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-16T10:00:00+00:00",
-      "sent_at": "2026-10-16T10:39:59.242975+00:00"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/10/16/1146766/pet-biotech-longevity-cloning-cryonics/",
-      "title": "Can’t bear to say goodbye to your pet? Biotech’s got you covered.",
-      "summary": "I don’t remember much about Peppy, my first and only pet cat. I can conjure the sensation of stroking her while she purred, recall how she used to get stuck in trees (just like in cartoons!), and chuckle about the time she pooed in my baby sister’s cot. That’s about it. What I do vividly&#8230;",
-      "source": "MIT Technology Review",
-      "category": "Innovationen",
-      "published": "2026-10-16T09:00:00+00:00",
-      "sent_at": "2026-10-16T10:39:59.242975+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2288545/gmail-live-ai-search-feature-arrives-for-google-ai-subscribers/",
-      "title": "Gmail's Live AI search feature arrives for Google AI subscribers",
-      "summary": "Gmail's search can be frustrating and basic, but Google is finally smartening it up for AI plan subscribers.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-16T08:31:48+00:00",
-      "sent_at": "2026-10-16T10:39:59.242975+00:00"
-    },
-    {
-      "link": "https://microsoft.ai/news/frontier-pre-training-at-microsoft-ai/",
-      "title": "Frontier Pre-Training at Microsoft AI",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-15T16:12:13+00:00",
-      "sent_at": "2026-10-16T10:39:59.242975+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",
-      "title": "Ramp reaches $60B valuation as it pushes deeper into AI",
-      "summary": "The funding comes as Ramp's annualized revenue crosses $2B, and its customer count reaches 85,000.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-15T14:47:09+00:00",
-      "sent_at": "2026-10-16T10:39:59.242975+00:00"
     }
   ]
 }
