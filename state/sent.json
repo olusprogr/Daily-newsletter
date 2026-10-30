@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/10/29/aws-will-be-a-1t-business-jassy-says-but-first-it-will-spend-big/",
+      "title": "AWS will be a $1T business, Jassy says. But first, it will spend big.",
+      "summary": "Amazon wants to be the king of AI cloud computing and become the first $1 trillion revenue business. But to do that it will have to continue on its capex spending spree, its CEO said Thursday.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-29T23:42:22+00:00",
+      "sent_at": "2026-10-30T00:35:21.977102+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1022911/intel-wildcat-lake-sold-out-ram-shortage",
+      "title": "Intel says it&#8217;s selling every affordable laptop chip it can make",
+      "summary": "During Intel's latest earnings call, CEO Lip-Bu Tan said that demand for its budget-focused Wildcat Lake chips \"is outstripping supply.\" According to CFO David Zinsner, the chips are now sold out. Zinsner said Intel has \"seen significant growth in Wildcat Lake. It's coming exactly at the right time because it's cost-optimized and we're seeing a [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-10-29T23:42:21+00:00",
+      "sent_at": "2026-10-30T00:35:21.977102+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1022848/reddit-ceo-google-ai-mode-traffic",
+      "title": "Reddit’s CEO says Google’s AI Mode ‘does not drive traffic’",
+      "summary": "Reddit CEO Steve Huffman said in an earnings call today that Google's AI-powered search modes do not help with traffic to the platform, echoing problems facing other websites and publishers. As part of its Q3 2026 earnings, Reddit revealed that search traffic in October has \"dropped by more than 1 million referrals on average per [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-29T22:19:32+00:00",
+      "sent_at": "2026-10-30T00:35:21.977102+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/cpus/intel-confirms-nova-lake-will-use-advanced-18a-p-node-more-details-at-ces-company-says-its-taking-panther-lake-capacity-offline-to-build-more-granite-rapids-data-center-cpus",
+      "title": "Intel confirms Nova Lake CPUs will use advanced 18A-P node, more details at CES — company says it's taking Panther Lake capacity offline to build more Granite Rapids data center CPUs",
+      "summary": "Intel's next-gen Nova Lake desktop processors will be the first client product to use Intel's enhanced 18A-P node, CEO Lip-Bu Tan confirmed in the company's Q3 2026 earnings call.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-10-29T21:55:48+00:00",
+      "sent_at": "2026-10-30T00:35:21.977102+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/29/elon-musk-is-truly-a-genius-says-vladimir-putin/",
+      "title": "Elon Musk is ‘truly a genius,’ says Vladimir Putin",
+      "summary": "Putin said that he and Musk are in \"close contact\" about Rassvet, Russia's Starlink-like satellite connectivity project.",
+      "source": "TechCrunch",
+      "category": "Innovationen",
+      "published": "2026-10-29T21:51:29+00:00",
+      "sent_at": "2026-10-30T00:35:21.977102+00:00"
+    },
+    {
+      "link": "https://convo.casa/@b/117525936178835007",
+      "title": "Proton goes all in on using AI",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-29T21:49:28+00:00",
+      "sent_at": "2026-10-30T00:35:21.977102+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2301786/vrchat-says-its-not-adding-ai-labels-despite-user-survey-showing-people-want-that/",
+      "title": "VRChat says it's not adding AI labels despite user survey showing people want that",
+      "summary": "Trying to make everyone happy could make no one happy.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-29T21:48:05+00:00",
+      "sent_at": "2026-10-30T00:35:21.977102+00:00"
+    },
+    {
+      "link": "https://labs.ycombinator.com/projects/games/index.html",
+      "title": "We ran AI agent swarms in Minecraft and Mindustry",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-29T21:40:28+00:00",
+      "sent_at": "2026-10-30T00:35:21.977102+00:00"
+    },
+    {
       "link": "https://www.engadget.com/2301687/reddit-will-move-to-logged-in-only-as-ai-eats-search-traffic/",
       "title": "Reddit will force users to log in as AI is killing search traffic",
       "summary": "The company is starting with tests outside of the US.",
@@ -4337,150 +4409,6 @@
       "category": "Hardware",
       "published": "2026-10-15T14:53:02+00:00",
       "sent_at": "2026-10-16T05:25:19.240056+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs",
-      "title": "ChatGPT can peek at your Chrome tabs now",
-      "summary": "OpenAI's ChatGPT Atlas browser is gone, but now ChatGPT's Google Chrome extension is getting some upgrades that allow it to use the browser tabs you already have open. With the extension installed, OpenAI says ChatGPT can now view your browser tabs when you tag Chrome in ChatGPT's web or desktop app, posting a demo video [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-15T22:43:23+00:00",
-      "sent_at": "2026-10-16T00:04:16.169661+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/15/bluesky-expands-its-ai-powered-attie-app-to-let-anyone-build-websites-games-and-more/",
-      "title": "Bluesky expands its AI-powered Attie app to let anyone build websites, games, and more",
-      "summary": "Bluesky is bringing “social vibe coding” to its experimental Attie platform, allowing users to create interactive experiences like games, quizzes, and websites that can tap into the social network's audience.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-15T18:56:46+00:00",
-      "sent_at": "2026-10-16T00:04:16.169661+00:00"
-    },
-    {
-      "link": "https://www.currentaffairs.org/news/why-were-banning-ai",
-      "title": "Why We're Banning AI",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-15T18:32:29+00:00",
-      "sent_at": "2026-10-16T00:04:16.169661+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/news/1012293/meta-apple-muse-spark-open-ai-model-mlx",
-      "title": "Meta and Apple team up to make Muse AI models run better on Macs",
-      "summary": "Meta announced the Muse Spark Open AI model today, claiming that it's the \"most capable US open-weight model to date.\" But the company also says that it's the \"the first model in its class\" that can \"run on your desktop using two Apple M5 Ultra Mac Studios with the latest MLX framework.\" Meta and Apple, [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-15T18:15:36+00:00",
-      "sent_at": "2026-10-16T00:04:16.169661+00:00"
-    },
-    {
-      "link": "https://www.reuters.com/business/finance/market-selloff-rising-rates-test-ai-data-centre-deal-boom-2026-10-15/",
-      "title": "Market selloff, rising rates test AI data centre deal boom",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-15T16:17:40+00:00",
-      "sent_at": "2026-10-16T00:04:16.169661+00:00"
-    },
-    {
-      "link": "https://already-clean.goodfire.com/",
-      "title": "Neural networks are clean",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-15T16:04:01+00:00",
-      "sent_at": "2026-10-16T00:04:16.169661+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/10/15/byds-electric-luxury-gt-major-update-europe-2027/",
-      "title": "BYD’s electric luxury GT will get a major update for Europe in 2027",
-      "summary": "BYD used the Denza Z9 GT to showcase its latest breakthrough technology, including its 5-minute Flash Charging. Next year, the luxury GT will get another major update in Europe. more…",
-      "source": "Electrek",
-      "category": "Innovationen",
-      "published": "2026-10-15T15:58:09+00:00",
-      "sent_at": "2026-10-16T00:04:16.169661+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says/",
-      "title": "Report: FTC probes Anthropic, OpenAI after Trump dismissed AI fears as “hoax”",
-      "summary": "FTC may fine AI firms on par with companies that delay data breach reports.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-10-15T15:43:24+00:00",
-      "sent_at": "2026-10-16T00:04:16.169661+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/entertainment/1012438/hollywood-tech-backlash-you-can-see-everything-musk-the-social-reckoning-artificial",
-      "title": "The tech backlash is now in theaters",
-      "summary": "Though movies about disruptive tech founders are nothing new, 2026 has been unusually stacked with features that take a much more critical look at how Silicon Valley is reshaping our reality. Aaron Sorkin's The Social Reckoning frames Mark Zuckerberg as a robotic villain whose ambitions are destabilizing society. Nathan Fielder and Lance Oppenheim's You Can [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-10-15T21:39:52+00:00",
-      "sent_at": "2026-10-15T21:55:19.248567+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/policy/1012445/donald-trump-ai-photo-white-house-rennovation-column",
-      "title": "Trump posts AI-edited photo to brag about White House restoration work",
-      "summary": "President Donald Trump posted a series of photos on Truth Social showing off renovations to the White House - but one of them appears to be modified with AI. The picture, which compares an old White House column to a \"restored\" one, has several discrepancies and was flagged by Google's AI detector as \"made or [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-15T21:09:33+00:00",
-      "sent_at": "2026-10-15T21:55:19.248567+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/ai-hacks-leave-a-mess-that-ai-companies-arent-cleaning-up/",
-      "title": "AI Hacks Leave a Mess That AI Companies Aren’t Paying For",
-      "summary": "Powerful AI models continue to cause chaos, but their targets aren’t widely seeking justice. Instead, they’re being encouraged to adopt those same tools.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-10-15T21:00:28+00:00",
-      "sent_at": "2026-10-15T21:55:19.248567+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/",
-      "title": "Meta launches an open-weight AI model that runs on Macs",
-      "summary": "Meta and Apple have teamed up for the launch of the social media giant's newest model, Muse Spark Open, which will run locally on Apple silicon.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-15T20:04:53+00:00",
-      "sent_at": "2026-10-15T21:55:19.248567+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1012374/bluesky-ai-attie-small-social-games-apps",
-      "title": "Bluesky&#8217;s AI tool now lets you make games and apps to share on social",
-      "summary": "Bluesky's Attie AI tool, which initially launched earlier this year as a way to use AI to build your own feeds, now lets you make \"small\" social apps like games, polls, and dashboards that you can then share with others as their own websites. In an interview at TechCrunch Disrupt, Bluesky CEO Toni Schneider said [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-15T19:57:16+00:00",
-      "sent_at": "2026-10-15T21:55:19.248567+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/15/amazon-devices-chief-panos-panay-sees-a-future-where-ai-devices-replace-the-need-to-use-apps/",
-      "title": "Amazon devices chief Panos Panay sees a future where AI devices replace the need to use apps",
-      "summary": "Speaking at TechCrunch Disrupt, Amazon devices chief Panos Panay described a future where ambient AI devices work in the background, anticipating users' needs instead of waiting for commands.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-15T19:55:25+00:00",
-      "sent_at": "2026-10-15T21:55:19.248567+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2288104/ftc-subpoenas-open-ai-and-anthropic-following-safety-failures/",
-      "title": "FTC subpoenas OpenAI and Anthropic following safety failures",
-      "summary": "The FTC is investigating possible consumer harms at two major AI companies.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-15T19:28:53+00:00",
-      "sent_at": "2026-10-15T21:55:19.248567+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/15/anthropic-is-letting-metr-researchers-look-under-the-hood-with-employee-level-access/",
-      "title": "Anthropic is letting METR researchers look under the hood with employee-level access",
-      "summary": "METR will publish its own assessments of Anthropic’s risks, incidents, and practices, and the frontier AI model maker has given up the right to block them.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-15T19:14:26+00:00",
-      "sent_at": "2026-10-15T21:55:19.248567+00:00"
     }
   ]
 }
