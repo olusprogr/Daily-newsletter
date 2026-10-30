@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/",
+      "title": "Intel’s stock crashes, knocking $12B from government’s stake",
+      "summary": "Intel is being hurt by PC sales as the AI industry gobbles memory and other components causing PC prices to rise.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-30T21:54:34+00:00",
+      "sent_at": "2026-10-30T22:52:32.570866+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/",
+      "title": "Anthropic expected to receive high ‘junk’ rating from credit agencies following IPO, FT report says",
+      "summary": "Blackstone's forecast is just a prediction, but naturally, a high junk rating would make it more difficult and costlier for Anthropic to raise the money to keep funding its massive spending that has undergirded its business.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-30T21:52:03+00:00",
+      "sent_at": "2026-10-30T22:52:32.570866+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/gadgets/2026/10/united-airlines-ceo-doubts-supersonic-airliner-from-boom-will-be-ready-by-2029/",
+      "title": "Supersonic airliner in doubt as company shifts to powering AI data centers",
+      "summary": "Boom’s airliner may be delayed, and its data center power business lost a customer.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-10-30T21:41:54+00:00",
+      "sent_at": "2026-10-30T22:52:32.570866+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/30/last-minute-halloween-costumes-for-tech-nerds/",
+      "title": "Last-minute Halloween costumes for tech nerds",
+      "summary": "No Halloween costume? Just be a deceptively cute AI agent icon, a PHP vulnerability, or sleepy time Bryan Johnson.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-30T21:26:59+00:00",
+      "sent_at": "2026-10-30T22:52:32.570866+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/uncanny-valley-podcast-how-a-contractors-claude-agent-got-into-the-pentagon/",
+      "title": "How a Contractor’s Claude Agent Got Into the Pentagon",
+      "summary": "This week on Uncanny Valley, we also discuss Anthropic’s IPO filing and the volunteers gearing up to counter ICE at the midterms.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-10-30T21:19:26+00:00",
+      "sent_at": "2026-10-30T22:52:32.570866+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/",
+      "title": "Cracks are emerging in the AI spending boom",
+      "summary": "Big Tech is pouring billions into AI infrastructure, but mounting debt, negative cash flow, and growing investor skepticism are raising questions about the sustainability of the AI spending boom.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-30T21:17:40+00:00",
+      "sent_at": "2026-10-30T22:52:32.570866+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/security/2026/10/anthropic-vs-code-extension-on-cursor-backdoored-for-nearly-12-hours/",
+      "title": "Anthropic VS code extension on Cursor backdoored for nearly 12 hours",
+      "summary": "It's still unknown how attackers got access to Anthropic's verified Cursor account.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-10-30T21:09:54+00:00",
+      "sent_at": "2026-10-30T22:52:32.570866+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers",
+      "title": "Sam Altman says it’s better for RAM to be in a data center than on your desk",
+      "summary": "Asked about supply chain shortages, like the ongoing RAM shortage, OpenAI CEO Sam Altman said in an interview that it's \"terrible\" to have RAM in personal PCs instead of data centers. During his appearance on the Cheeky Pint podcast, where he also commented on AI's impact on math, Altman said: \"A lot of people want [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-30T20:48:43+00:00",
+      "sent_at": "2026-10-30T22:52:32.570866+00:00"
+    },
+    {
       "link": "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission",
       "title": "Google&#8217;s satellite AI server transmits its first response to Earth",
       "summary": "Google's AI chip-equipped satellite has generated its first response from space. In a blog post on Friday, Google says it successfully booted up the satellite's Tensor Processing Units (TPUs), allowing the on-board Gemma 4 model to follow through on a prompt to create a haiku about being in space: Blue marble below Data streams in [&#8230;]",
@@ -4265,150 +4337,6 @@
       "category": "AI",
       "published": "2026-10-16T15:41:00+00:00",
       "sent_at": "2026-10-17T01:01:45.401962+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/",
-      "title": "Replit is no longer working with Anthropic, CEO says",
-      "summary": "Masad said the decision was made for a number of different reasons, including cost. Replit announced a partnership with OpenAI in August, but there was never any indication that it was no longer with Anthropic.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-16T21:22:28+00:00",
-      "sent_at": "2026-10-16T22:29:32.784935+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/transportation/1013280/tesla-chp-fsd-crash",
-      "title": "Tesla driver says he was asleep and using FSD when he crashed into highway patrol cars",
-      "summary": "After this horrific crash involving a Tesla driver who said he was asleep and using the driver assist mode, the California Highway Patrol warns that \"Despite its name, full self-driving is not fully autonomous. Technology does not relieve drivers of their responsibility to safely operate their vehicles.\" Video released by CHP shows the Tesla speeding [&#8230;]",
-      "source": "The Verge",
-      "category": "Autonomes Fahren",
-      "published": "2026-10-16T20:49:04+00:00",
-      "sent_at": "2026-10-16T22:29:32.784935+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/tech-policy/2026/10/thegentlemanpervert-producing-ai-csam-is-a-nj-prosecutor-say-cops/",
-      "title": "“thegentlemanpervert” producing AI CSAM is a NJ prosecutor, say cops",
-      "summary": "Discord user flagged AI CSAM, triggering arrest of New Jersey deputy AG.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-10-16T20:20:07+00:00",
-      "sent_at": "2026-10-16T22:29:32.784935+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/katie-zacharia-was-linked-to-an-ai-rare-earths-startup-its-even-weirder-than-it-sounds/",
-      "title": "Katie Zacharia Was Linked to an AI Rare-Earths Startup. It’s Even Weirder Than It Sounds",
-      "summary": "The short-lived White House press secretary was listed as an adviser to a Kristi Noem–linked company that aims to use AI for mining. Both the company and she say she never worked there.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-10-16T20:05:08+00:00",
-      "sent_at": "2026-10-16T22:29:32.784935+00:00"
-    },
-    {
-      "link": "https://claude.dev/blog/solving-code-review-at-anthropic/",
-      "title": "How the Claude Code team does code review",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-16T19:04:47+00:00",
-      "sent_at": "2026-10-16T22:29:32.784935+00:00"
-    },
-    {
-      "link": "https://www.anthropic.com/research/designing-efficient-quantum-circuits",
-      "title": "Designing more efficient quantum circuits with Claude",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-16T18:00:18+00:00",
-      "sent_at": "2026-10-16T22:29:32.784935+00:00"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/10/16/1146224/roundtables-a-conversation-with-the-creator-of-ai-designed-viruses/",
-      "title": "Roundtables: A Conversation With the Creator of AI-Designed Viruses",
-      "summary": "Listen to the session or watch below Can AI design new life forms? In 2025, Stanford University PhD student Samuel King came up with a preliminary answer when he used a generative AI model to propose genetic blueprints for microscopic viruses. It isn’t yet an example of AI-generated life, but that could be next. Watch&#8230;",
-      "source": "MIT Technology Review",
-      "category": "AI",
-      "published": "2026-10-16T18:00:00+00:00",
-      "sent_at": "2026-10-16T22:29:32.784935+00:00"
-    },
-    {
-      "link": "https://news.ycombinator.com/item?id=50121562",
-      "title": "Anthropic Console overcharged my card 100x due to internationalization input bug",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-16T17:31:42+00:00",
-      "sent_at": "2026-10-16T22:29:32.784935+00:00"
-    },
-    {
-      "link": "https://www.anthropic.com/research/ecdsa-curve-origins",
-      "title": "Claude reveals ECDSA curve origins",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-16T18:55:59+00:00",
-      "sent_at": "2026-10-16T19:16:48.500594+00:00"
-    },
-    {
-      "link": "https://www.ft.com/content/5a310aee-f555-4266-874c-b1b4db20186d",
-      "title": "Anthropic assigned highest junk credit rating in June",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-16T18:11:42+00:00",
-      "sent_at": "2026-10-16T19:16:48.500594+00:00"
-    },
-    {
-      "link": "https://spectrum.ieee.org/ieee-smart-cities-new-services",
-      "title": "IEEE Offers More Services to Cities That Want to Be Smarter",
-      "summary": "More and more city governments are using advanced technologies to improve livability for their residents. Municipalities use data from smartphones and sensors for traffic enforcement, traffic control, and waste management. They also have implemented artificial intelligence and deep learning programs. Dubai , Paris , and Coral Gables , Fla., are among the cities that have invested heavily in programs to become smarter. But along with the conveniences that come with a smart city transition, there have been challenges including safety and privacy issues and eroding relationships between residents and city officials. Although many initiatives have delivered real innovations, not all have been successful. Inefficient global coordination has hindered projects with unclear standards, socioeconomic differences, and a lack of worldwide governance, leading to a disconnect between the technologies and the ability to adapt to them. Citizens’ trust in the technologies suffers because of privacy breaches, personal data leaks, and other issues. Finding solutions Smart city projects are complex and expensive endeavors that involve politicians, citizens, technocrats, and engineers. Successful projects require citizens to be fully engaged and to have strong collaborations with the participants, especially engineers, as engineering is the cornerstone . Collaboration with universities, research institutions, and technology experts can bridge knowledge gaps on the behavior of complex socio-technical systems. What’s missing, though, is a global platform where those involved can discuss their experiences. To help solve those and other challenges, the IEEE Smart Cities Technical Community (formerly the IEEE Smart Cities Initiative ) was launched in 2013 by IEEE Future Directions , which incubates emerging technologies and new applications of current ones. The technical community provides city leaders and others with credible, unbiased information and educational content developed by IEEE experts. Since then, IEEE Smart Cities has launched services including its flagship International Smart Cities Conference , a media center with educational and technical resources, and a contest to recognize the best smart project completed by city officials. The platforms bring together practicing engineers, academic researchers, policymakers, and city leaders to collaborate and exchange ideas and experiences about moving toward a smart-city model. Better serving humanity In 2021 the IEEE Power & Energy Society began managing the Smart Cities program, which is supported by the IEEE Communications , Industry Applications , and Intelligent Transportation Systems societies and other IEEE entities. Thanks to volunteers’ dedication and determination, IEEE Smart Cities launched several services. But the initiative’s structure limited the development of long-term projects and the creation of new activities. To address the situation, the IEEE Technical Activities Board (TAB) created the second-generation technical community ad hoc committee , also in 2021. It was a pilot program whereby IEEE Smart Cities formed a board of governors to oversee the community’s operations and leadership, and created a policies and procedures manual. In November 2025 IEEE Smart Cities became a TAB technical community . IEEE Smart Cities now Today more than 7,000 volunteers collaborate on various aspects of the community within at least one of the following technical tracks: Smart grid. Smart water management. Green electronics for smart cities. Smart governance and planning. Hydrogen for smart cities. Smart and sustainable campus. Security for smart cities. Smart lighting for cities. Smart mobility for cities. Artificial intelligence for cities. New webinar series, workshops, conferences, educational resources, and other offerings are being created. Two events were launched recently: the IEEE European Technology and Engineering Management Summit , held in May 2025 in Belgium, with the next one planned for 2027; and the IEEE Sustainable Smart Lighting World Conference , scheduled for 2 to 6 December in Athens. The Smart Cities Ambassadors program aims to raise the technical community’s visibility outside IEEE by holding roundtables and other events at non-IEEE functions. IEEE Smart Cities volunteers are working on launching journals. In addition, standards are being developed in collaboration with the IEEE Standards Association , societies, and councils. The program is collaborating with the Open and Agile Smart Cities and Communities network, the Instituto de Competitividad e Innovación para el Desarrollo y Transferencia de Tecnología, and the International Project Management Association . All of those actions have the ultimate objective of boosting IEEE Smart Cities’ growth and sustainability, as well as strengthening the leadership and educational offerings to technical community volunteers. If you would like to volunteer, visit the Smart Cities website .",
-      "source": "IEEE Spectrum",
-      "category": "AI",
-      "published": "2026-10-16T18:00:03+00:00",
-      "sent_at": "2026-10-16T19:16:48.500594+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/",
-      "title": "India becomes the latest country to report rogue AI agent activity",
-      "summary": "The agents got in through credentials and connection settings left exposed in app configurations, public code repositories, and overly permissive cloud roles.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-16T17:52:24+00:00",
-      "sent_at": "2026-10-16T19:16:48.500594+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/10/16/tesla-fsd-crash-chp-patrol-car-driver-asleep-fairfield/",
-      "title": "Tesla driver says he was asleep on FSD when he hit CHP car, 2 officers hurt",
-      "summary": "Two California Highway Patrol officers are recovering from serious injuries after a Tesla drove into their patrol car at a crash scene on Interstate 80 in Fairfield. The 22-year-old driver told investigators he was asleep with Tesla’s “Full Self-Driving” engaged. CHP released dashcam video of the impact on Thursday. It’s the latest Tesla to plow into an emergency scene, a failure federal regulators started investigating five years ago. more…",
-      "source": "Electrek",
-      "category": "Autonomes Fahren",
-      "published": "2026-10-16T17:14:43+00:00",
-      "sent_at": "2026-10-16T19:16:48.500594+00:00"
-    },
-    {
-      "link": "https://www.mercor.com/research/labor-index/benchmark-map/",
-      "title": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-16T17:08:38+00:00",
-      "sent_at": "2026-10-16T19:16:48.500594+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/desktops/gaming-pcs/this-could-be-your-last-chance-to-grab-an-rtx-5090-how-to-secure-nvidias-top-rtx-gpu-as-rumors-of-discontinuation-swirl",
-      "title": "This could be your last chance to grab an RTX 5090",
-      "summary": "With no new Nvidia 5090 GPU replacement anticipated before at least 2028, this could well be your last opportunity to get your hands on a very powerful GPU for gaming.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-10-16T17:04:44+00:00",
-      "sent_at": "2026-10-16T19:16:48.500594+00:00"
-    },
-    {
-      "link": "https://spectrum.ieee.org/electric-truck-battery-design-simulation",
-      "title": "Simulation App Speeds Up Electric Truck Battery Design",
-      "summary": "This article is brought to you by COMSOL . These days, no one blinks an eye at two-day, one-day, and even same-day package deliveries. Despite the plethora of localized fulfillment and distributi on centers that have cropped up to meet the demand, delivery trucks still need to make considerably long drives, often over highways. To reduce fuel and maintenance costs as well as carbon emissions, companies are investing in electric trucks for their delivery fleets. While turning to electric trucks is a promising solution, the battery packs incorporated into these automotive designs often fall short in the lifetime needed to make long-distance highway travel feasible. To help overcome the issue of battery lifetime, a consortium of universities and industry partners incorporated multiscale simulation and a custom simulation app into the battery manufacturing process. The organizations involved in this project were Aurobay, Resolvent, the European Commission, the Technical University of Denmark (DTU), Vinnova (the Swedish Agency for Innovation Systems), Innovation Fund Denmark, and Volvo Group Trucks Operations. The simulation app, built by Resolvent, a Denmark-based engineering consultancy that specializes in green energy, enables the R&amp;D department at Volvo to easily test battery lifetime performance. Laser Who? The Multiscale Simulation of Laser Welding for Optimal Battery Pack Manufacturing project — referred to as “LaserBATMAN” — was initiated in May 2022 and wrapped up in May 2025 (Ref. 1). Although BATMAN here refers to battery manufacturing and not the famous masked superhero, the goals for the project also strove for greatness. The LaserBATMAN project aimed to optimize two key performance metrics for battery packs: robustness and lifetime (Ref. 1). One element of the battery manufacturing process that affects both of these metrics is the laser welding used in component joining processes (for example, to connect battery cells in a pack via a busbar). If done correctly, laser welding can positively impact battery life, but if done incorrectly, laser welding can increase the risk of battery degradation. Computational modeling can be used to analyze and predict the effects of welding and joining processes at different stages of the manufacturing process. Martin Refslund Nielsen, former chief commercial officer and partner at Resolvent, explained that for this type of multiphysics and multiscale problem, “COMSOL Multiphysics is just the right tool.” R&amp;D Workflow for Multiscale Model and App The Resolvent team used the COMSOL Multiphysics software to study how laser welding affects the electrochemistry and degradation of battery cells. At least, that’s how the project started. “Ambitions grew,” Nielsen said, explaining that the team ended up modeling the performance of the entire battery, from cell to pack level, and even “turned [the model] into a design tool in the end”, in reference to the app. After training the deep neural network of the battery model, the team built a custom simulation app to efficiently optimize busbar tabs in the configuration of a battery pack. First, the team built an electrochemical model of a battery cell by inputting the formulas for the relevant chemical reaction kinetics (Figure 2). The resulting cell-layer model was then fed input data, and the output data was used to train a deep neural network (DNN). With this reduced-order model, the team was able to quickly gain insight into cell behavior. After training the DNN of the battery model, the team built a custom simulation app to efficiently optimize busbar tabs in the configuration of a battery pack. Figure 2: The Resolvent battery model. COMSOL A “Tool Within a Tool” for Busbar Weld Design The different features of the simulation app, as described by Nielsen, include its options to input dimensions for the pack geometry (Figure 3), the number of cells, and operating conditions such as ambient temperature and charge–discharge current profiles. The app also makes it possible to apply a simple charging current and load customized cycles. Users are then able to see how the battery performs with each set of specific inputs. Figure 3. The battery pack model developed by Resolvent. COMSOL Another important aspect of Resolvent’s app is the Busbar Weld Design Tool button, which Nielsen described as “a tool within a tool.” This button can be used to efficiently calculate busbar weld performance after a number of cycles . After clicking the button, a window opens with options for setting different parameters, including the shape of the weld, busbar thickness, and penetration depth of the laser (Figure 4). “[This button] is interesting from a robust design perspective,” said Nielsen. Users can apply a variant to the input parameters to see what happens in production if the weld does not reach far enough into the busbar. Figure 4. Resolvent’s simulation app, showing how certain parameters can be customized. The model shows how the busbar weld is affected by a cooling airflow. COMSOL “We certainly get deep technical insight here, and we can dimension the design in the sweet spot. Deep technical insight is also key to optimizing product performance,” Nielsen said. For example, if the results suggest better cooling, the team could potentially reduce the design by two battery cells and retain the same performance, easily quantifying the tradeoff between cooling and setup. Predicting Pack Performance The app’s user interface also includes a Compute Battery button, which can be used to see the temperature of the weld in a given state, the state of charge, and the solid–electrolyte interface (SEI) layer thickness (Figure 5). The results can help the engineering team further determine if there is room for optimization in the design. For instance, a user can apply a cooling flow in the app and see if turbulence or standing air occurs. As explained by Nielsen, simulation apps offer more consistent analysis and reporting, and the intuitiveness of custom apps makes it easier to share knowledge. “We are in a much better place to optimize performance and increase robustness,” said Nielsen. Figure 5. Temperature in the given state (left), state of charge (middle), and SEI layer thickness (right) in the battery pack. COMSOL The custom simulation app developed by the LaserBATMAN consortium can be used to help produce more robust battery designs with ranges that can support highway travel over longer distances with fewer failures — all while promoting the use of green energy. A heroic project indeed. References “LaserBATMAN,” University of Skovde, accessed 08/21/2025, https://www.his.se/en/research/virtual-engineering/virtual-manufacturing-processes/LaserBatman/ . R. Nielsen, “Keynote: Optimizing Lifetime and Robustness of Electric Truck Batteries with Simulation Apps,” COMSOL Conference 2024 Florence, October 2024.",
-      "source": "IEEE Spectrum",
-      "category": "AI",
-      "published": "2026-10-16T16:49:18+00:00",
-      "sent_at": "2026-10-16T19:16:48.500594+00:00"
     }
   ]
 }
