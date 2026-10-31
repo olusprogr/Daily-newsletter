@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/",
+      "title": "Apple CEO says the company doesn’t ‘want to ship AI for AI’s sake’",
+      "summary": "Apple's new CEO defended the company's current position in the AI landscape.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-31T21:41:00+00:00",
+      "sent_at": "2026-10-31T23:03:32.108275+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/",
+      "title": "Judge allows NAACP lawsuit over xAI data center pollution to move forward",
+      "summary": "An NAACP lawsuit accuses the SpaceX-owned AI company of violating the Clean Air Act.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-31T21:17:03+00:00",
+      "sent_at": "2026-10-31T23:03:32.108275+00:00"
+    },
+    {
+      "link": "https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering",
+      "title": "Anthropic takes steps to block Claude from reverse-engineering video games",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-31T21:07:58+00:00",
+      "sent_at": "2026-10-31T23:03:32.108275+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/entertainment/1024096/halloween-spirit-youtube-horror",
+      "title": "Get in the spirit with these horrors from YouTube",
+      "summary": "Rather than recommend a single horror film or an unsettling album for our final installment of spooky season recs, I present you with a small selection of creepy, disturbing, and just plain weird videos from YouTube. There's a little something for everyone here. Whether you're a fan of surreal art house shorts, cosmic horror, or [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-31T21:06:58+00:00",
+      "sent_at": "2026-10-31T23:03:32.108275+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2302431/brandon-stirrup-xbox-manager-says-ai-used-game-development/",
+      "title": "Xbox manager says AI is already being used in game development",
+      "summary": "Brandon Stirrup deleted his comments from X a day after saying that AI usage is widespread in the gaming industry.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-31T20:00:00+00:00",
+      "sent_at": "2026-10-31T23:03:32.108275+00:00"
+    },
+    {
+      "link": "https://twitter.com/jiahaoshao1/status/2116475922190922088",
+      "title": "Anthropic blocks users for anything touching training larger models",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-31T19:39:19+00:00",
+      "sent_at": "2026-10-31T23:03:32.108275+00:00"
+    },
+    {
+      "link": "https://ryanmadden.net/gpt-56-beats-factorio/",
+      "title": "GPT-5.6 Sol can beat Factorio on peaceful mode",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-31T18:50:34+00:00",
+      "sent_at": "2026-10-31T23:03:32.108275+00:00"
+    },
+    {
+      "link": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/",
+      "title": "Malware uses LLMs to rank victims by how much they're worth",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-31T14:29:03+00:00",
+      "sent_at": "2026-10-31T23:03:32.108275+00:00"
+    },
+    {
       "link": "https://www.engadget.com/2300253/how-to-use-claude-duet/",
       "title": "How to use Claude Duet when it rolls out to you",
       "summary": "For now, you'll need to first join a waitlist.",
@@ -4256,42 +4328,6 @@
       "category": "Innovationen",
       "published": "2026-10-17T23:31:48+00:00",
       "sent_at": "2026-10-18T00:37:13.451873+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
-      "title": "Meta removes language that raised scraping and AI training concerns",
-      "summary": "A Meta spokesperson insisted that the updated terms did not reflect a change in the way Meta crawls the web.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-17T21:31:32+00:00",
-      "sent_at": "2026-10-17T22:51:59.860787+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/",
-      "title": "Anthropic says its workforce has become less junior and is spending more time in meetings",
-      "summary": "The composition of Anthropic’s workforce and the type of work getting done have changed significantly in the past year.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-17T20:21:19+00:00",
-      "sent_at": "2026-10-17T22:51:59.860787+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
-      "title": "Replit is no longer working with Anthropic, CEO says",
-      "summary": "Over the weekend, Masad clarified that OpenAI would replace Anthropic as its default model provider. Claude will still be available to customers on the platform.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-17T18:48:08+00:00",
-      "sent_at": "2026-10-17T20:04:38.035797+00:00"
-    },
-    {
-      "link": "https://fortune.com/2026/10/16/openai-discloses-four-more-rogue-incidents-involving-financial-medical-and-government-data/",
-      "title": "OpenAI discloses four more rogue incidents",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-17T16:31:12+00:00",
-      "sent_at": "2026-10-17T20:04:38.035797+00:00"
     }
   ]
 }
