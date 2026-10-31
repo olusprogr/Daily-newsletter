@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/",
+      "title": "Nvidia weighs playing the cosigner for Nscale’s AI data center in West Virginia",
+      "summary": "When investors get nervous about AI spending, it helps to have the chipmaker that sells the chips offer to cosign the loan.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-31T01:20:05+00:00",
+      "sent_at": "2026-10-31T01:59:28.580663+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/30/salesforces-ma-spree-continues-with-a-reported-375m-deal-for-defense-tech-startup-rune/",
+      "title": "Salesforce’s M&A spree continues with a reported $375M deal for defense tech startup Rune",
+      "summary": "The AI logistics startup will bolster the CRM giant's Missionforce defense platform.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-30T23:21:23+00:00",
+      "sent_at": "2026-10-31T01:59:28.580663+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/30/ollie-a-privacy-focused-ai-assistant-is-shutting-down/",
+      "title": "Ollie, a privacy-focused AI assistant, is shutting down",
+      "summary": "As an increasing number of AI assistants flood the market, the founder of Ollie, an assistant that respected its users' privacy, says it will be shutting down in a week.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-30T22:56:13+00:00",
+      "sent_at": "2026-10-31T01:59:28.580663+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/tech-policy/2026/10/dartmouths-provost-warned-us-about-ai-cheating-but-his-own-ai-use-cost-him-his-job/",
+      "title": "Dartmouth's provost warned us about AI cheating—but his own AI use cost him his job",
+      "summary": "People who love AI don't always love telling others they used it.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-10-30T20:40:13+00:00",
+      "sent_at": "2026-10-31T01:59:28.580663+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/trojan-malware-targets-thousands-of-anthropic-claude-developer-systems/",
+      "title": "A Supply Chain Attack Put Malicious Anthropic Claude Extensions on Thousands of Devices",
+      "summary": "Thanks to a lucky break, flawed code in a tainted Claude extension prevented the attacker from fully worming their way into some 5,000 developer machines.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-10-30T20:38:46+00:00",
+      "sent_at": "2026-10-31T01:59:28.580663+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
+      "title": "The biggest names in AI are backing a new way to opt out of scraping",
+      "summary": "OpenAI, Google, Microsoft, and Anthropic say they will adopt a new standard that publishers can use to opt out of being scraped by AI, as reported earlier by Search Engine Roundtable. With this control, publishers can apply their AI training preferences across multiple AI companies, instead of setting them individually. The shared \"policy token\" signal [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-30T20:26:10+00:00",
+      "sent_at": "2026-10-31T01:59:28.580663+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/gpus/nvidia-store-quietly-pulls-the-rtx-5080-following-rtx-5090-removal-street-prices-climb-to-2-2x-over-msrp",
+      "title": "Nvidia store quietly pulls the RTX 5080 following RTX 5090 removal",
+      "summary": "First the RTX 5090, now the RTX 5080. Nvidia quietly removes the RTX 5080 listing from the marketplace as prices explode to 2.2X MSRP on the retail market.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-10-30T20:13:10+00:00",
+      "sent_at": "2026-10-31T01:59:28.580663+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/cpus/intels-woes-wipe-out-usd1-trillion-of-semiconductor-market-cap-in-one-day-pc-market-bloodbath-leaves-few-chip-stocks-unscathed",
+      "title": "Intel’s woes wipe out $1 trillion of semiconductor market cap in one day",
+      "summary": "Intel's gloomy outlook for its PC business wipes out $1 trillion of semiconductor market capitalization in a day, barely affects Apple.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-10-30T20:06:11+00:00",
+      "sent_at": "2026-10-31T01:59:28.580663+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/",
       "title": "Intel’s stock crashes, knocking $12B from government’s stake",
       "summary": "Intel is being hurt by PC sales as the AI industry gobbles memory and other components causing PC prices to rise.",
@@ -4265,78 +4337,6 @@
       "category": "Innovationen",
       "published": "2026-10-16T14:12:15+00:00",
       "sent_at": "2026-10-17T06:32:10.495578+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1013314/apple-app-store-nudify-ai-apps-harassment",
-      "title": "Apple&#8217;s updated App Store rules go after &#8216;nudify&#8217; AI apps",
-      "summary": "Apple's App Store rules now more explicitly ban so-called \"nudify\" apps that generate intimate images of people without their consent using AI tools. The rule changes follow significant criticism toward Apple after X users used Grok earlier this year to make nonconsensual, sexualized deepfakes, including minors. Apple didn't pull X or Grok from the App [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-16T22:51:22+00:00",
-      "sent_at": "2026-10-17T01:01:45.401962+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/",
-      "title": "OpenAI models hacked a crypto wallet and breached more websites",
-      "summary": "The actions could have resulted in criminal charges had humans been behind the keyboard.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-10-16T20:59:01+00:00",
-      "sent_at": "2026-10-17T01:01:45.401962+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/video/a-nvidia-insider-turned-vc-on-why-robotics-hasnt-hit-its-chatgpt-moment-yet/",
-      "title": "An Nvidia insider-turned-VC on why robotics hasn’t hit its ChatGPT moment, yet",
-      "summary": "Amulya Vishwanath, who spent seven years leading product marketing for NVIDIA’s robotics platforms, says robotics is currently in its “Lego era,” with the basic building blocks like actuators, robotic hands, software, and safety standards still being&#160;rebuilt.&#160; This view runs counter to those who believe that robotics, powered by a general foundation model,&#160;is about to have [&#8230;]",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-16T16:30:00+00:00",
-      "sent_at": "2026-10-17T01:01:45.401962+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/3d-printing/gun-rights-activist-unveils-worlds-first-ai-made-3d-printed-firearm-22-caliber-handgun-created-by-an-ai-that-can-generate-guns-called-gatgpt",
-      "title": "Gun-rights activist unveils world's first 'AI-made' 3D-printed firearm — .22 caliber handgun created by an 'AI that can generate guns' called GatGPT",
-      "summary": "A gun rights activist has unveiled the world's first AI-made 3D printed firearm.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-16T16:20:41+00:00",
-      "sent_at": "2026-10-17T01:01:45.401962+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/16/waymos-robotaxis-are-headed-to-canada/",
-      "title": "Waymo’s robotaxis are headed to Canada",
-      "summary": "The company will start off by testing its self-driving vehicles on Toronto's streets.",
-      "source": "TechCrunch",
-      "category": "Autonomes Fahren",
-      "published": "2026-10-16T16:06:38+00:00",
-      "sent_at": "2026-10-17T01:01:45.401962+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
-      "title": "Elorian’s first AI model wants to reason with images, not just about them",
-      "summary": "According to Elorian's evaluations, Glimpse outperforms even GPT-6 Astra on scientific chart reasoning and short-form video captioning, with competitive results on other visual reasoning tasks.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-16T16:01:37+00:00",
-      "sent_at": "2026-10-17T01:01:45.401962+00:00"
-    },
-    {
-      "link": "https://www.theregister.com/databases/2026/10/16/postgres-19-delayed-after-ai-reviewers-find-more-bugs-than-humans-can-fix/5303471",
-      "title": "Postgres 19 delayed after AI reviewers find more bugs than humans can fix",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-16T15:55:40+00:00",
-      "sent_at": "2026-10-17T01:01:45.401962+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/tech-policy/2026/10/meta-may-use-sweeping-new-commercial-tos-to-avoid-millions-in-ai-licensing-fees/",
-      "title": "Meta may use sweeping new commercial TOS to avoid millions in AI licensing fees",
-      "summary": "Meta “streamlined” its commercial TOS. Legal experts warn it’s an AI power grab.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-10-16T15:41:00+00:00",
-      "sent_at": "2026-10-17T01:01:45.401962+00:00"
     }
   ]
 }
