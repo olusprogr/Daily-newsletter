@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/pc-components/motherboards/asrock-b860-challenger-wifi-motherboard-review",
+      "title": "ASRock B860 Challenger Wifi Motherboard Review: Entry-level ATX at a great price, with drawbacks",
+      "summary": "ASRock’s B860 Challenger Wifi covers the basics and performs well, but slower USB ports, weaker VRMs, and a dated BIOS keep it from standing out, even at the lower price.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-10-31T14:00:00+00:00",
+      "sent_at": "2026-10-31T15:00:20.556565+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/firm-that-lets-you-rent-out-your-idle-mac-for-ai-inference-workloads-warns-of-plummeting-token-costs-darkbloom-network-sees-earnings-drop-to-usd1-23-a-day-as-anthropic-tokens-fall-77-percent",
+      "title": "Firm that lets you rent out your idle Mac for AI inference workloads warns of plummeting token costs",
+      "summary": "Mac users sharing their compute for AI inference are seeing declining revenues as token prices continue to drop, with Anthropic token falling 77% in under five months.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-10-31T13:49:09+00:00",
+      "sent_at": "2026-10-31T15:00:20.556565+00:00"
+    },
+    {
+      "link": "https://www.indiatoday.in/technology/news/story/ai-startup-hacks-anthropic-in-12-hours-gains-access-to-employee-details-and-internal-messages-3025452-2026-10-26",
+      "title": "AI startup hacks Anthropic, gains access to employee details, internal messages",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-31T13:25:10+00:00",
+      "sent_at": "2026-10-31T15:00:20.556565+00:00"
+    },
+    {
+      "link": "https://spectrum.ieee.org/early-electric-vehicles",
+      "title": "When Electric Cars Were for Women",
+      "summary": "At the turn of the last century, the automobile industry was still new and evolving rapidly. In 1898, there were about 50 carmakers in the United States. A decade later, that number had increased fivefold. In 1901, the companies produced 7,000 vehicles. By 1910, production had reached 181,000. For several decades, electric cars vied with those powered by steam and internal combustion, and nobody was sure which technology would come out on top. Steam had the legacy of locomotive technology behind it but came with a risk of fire. Steam-powered vehicles could also become exceedingly hot, depending on the placement of the boiler and the steam piping. Both gasoline and electric cars faced logistical challenges: How far could you travel without refueling or charging? You could always throw an extra can of gasoline in the back of the car, but charging a battery involved more planning. The infrastructure for long-distance travel was not yet in place. Before the invention of the electric starter in 1911, gasoline-powered engines had to be started with a hand crank; once running, they were loud and emitted noxious fumes. Fully electric vehicles, by contrast, were easy to start; you just turned on the main battery switch, often with a key, and there was no foul exhaust to deal with. Electric carmakers looking for a way to differentiate their products decided that these attributes made their vehicles perfect for women. (Electric cars were also marketed to doctors so that they could make house calls in the middle of the night without waking the neighbors.) General Electric, which made car chargers based on mercury-arc rectifiers , was so captivated by the idea of women driving electric cars that the company created a series of advertisements featuring stylishly dressed women plugging in their cars and posing with their charging stations. In ads for its electric car chargers, General Electric featured women using the equipment. miSci—Museum of Innovation and Science A young woman named Fannie Goodnow was an early EV adopter. She owned a 1908 Bailey Victoria Phaeton, an open two-seater that really did look like a horseless carriage, and she used a GE mercury-arc rectifier to charge it. Who Invented the Mercury-Arc Rectifier? Electrical engineer Peter Cooper Hewitt invented the mercury vapor lamp, which became the basis for the mercury-arc rectifier used in car-charging systems. Bettmann/Getty Images Electrical engineer Peter Cooper Hewitt is generally credited with the invention of the mercury-arc rectifier. During the first decade of the 20th century, Hewitt received several U.S. patents for electric lamps and other apparatus for transmitting and using electric currents. U.S. patents 968,896 and 1,163,706 , granted to Percy H. Thomas , advanced Hewitt’s designs. Thomas was chief electrician for the Cooper Hewitt Electric Co., which Hewitt had cofounded with George Westinghouse to manufacture and sell his lamps. The mercury-arc rectifier functioned as a diode. In a car charger like the one Fannie Goodnow used, it converted alternating current from the power grid into direct current needed to charge the car’s battery. A small amount of liquid mercury contained in a glass tube would vaporize and glow as electricity passed through it. Coupled with the carbon anodes, the vapor allowed current to flow in only one direction. This unit took about 12 hours to charge a drained battery. A Carriage Maker Pivots to Electric Cars I couldn’t find any records as to why Fannie Goodnow opted for an electric car. But as a well-to-do woman living in the Boston area, she had more than a half dozen automobile producers to choose from. The one she chose was S.R. Bailey & Co. of Amesbury, Mass. This early electric car charger used a mercury-arc rectifier to convert AC to DC. Heritage Museums & Gardens According to Galen Handy, who maintains the Early Electric Vehicles website, Samuel Robinson Bailey started in the carriage and sleigh business as a teenager, winning a best-in-show prize at a carriage exhibition in Portland, Maine, in 1855. Bailey developed a reputation as an inventor and designed processes to streamline the manufacture of his vehicles. He went into business for himself in 1882. Just over a decade later, one of Bailey’s carriages won a gold medal at the 1893 World’s Columbian Exposition in Chicago. Bailey’s son Edwin attended the exposition, where he likely would have seen a vision of the future: the Morrison electric wagon. This six-passenger, battery-powered vehicle ferried visitors and VIPs around the fairgrounds. It wasn’t long before automobiles began eating into the carriage business. In December 1906, with the carriage industry collapsing, S.R. Bailey & Co. announced it was getting into electric vehicles. Thomas Edison Designed a Bad Battery Bailey’s first model, the Victoria Phaeton, used an Edison alkaline battery . Thomas Edison had been working on a lighter, more reliable, and more powerful battery for the auto industry since the 1890s, and announced the achievement with great fanfare in 1903. Unfortunately for Bailey and other carmakers who deployed it, the battery leaked and wouldn’t hold a charge. Edison was forced to go back to the drawing board. By 1910, he had a better battery in production, but by then his friend Henry Ford had introduced the Model T, setting the stage for the internal combustion engine to take over the market. While Edison toiled to improve his tech, Bailey pivoted to a battery from the Gould Storage Battery Co. of Depew, N.Y. Gould also supplied batteries for railroads, utilities, subways, elevators, and farms. Goodnow’s Victoria Phaeton used a 30-cell lead-acid battery housed in a wooden box that was suspended under the chassis. The standard battery had a range of 64 to 80 kilometers; a larger battery with 50 percent more capacity was available for an upcharge. With the standard battery, the Victoria Phaeton cost US $2,000 (about $73,000 today, or about the list price of an upscale EV like the Audi Q8 or BMW i5). Fannie Goodnow’s electric car charger now resides at the Heritage Museums & Gardens in Sandwich, Mass. But her 1908 Bailey Victoria Phaeton has been lost to history. Shown here is a 1911 version of that model. Sarah Thornington/Heritage Museums & Gardens Goodnow installed a mercury-arc rectifier charging station in the barn adjacent to her parents’ summer home in Hull, Mass. Bill Lillie of Vintage Electric Cars notes that the charging plug was of an unusual design. This is, of course, one of the banes of any early adopter: nonstandardized plugs and cables. The Electric Vehicle Association of America, which formed in 1910, tried to put forward a standard so that electric vehicles could be charged at any charging station. (Modern EV owners can no doubt relate .) But savvy electric car owners knew to carry spare plug adapters and cables when traveling. When Edison’s improved battery was finally available, Bailey began using it in the Victoria Phaeton and then went on a publicity blitz. In September 1910, the carmaker sponsored a round-trip tour from New York to Boston, with a side trip up New Hampshire’s Mount Washington, totaling about 1,600 km. Sadly, the “ This Car Climbed Mt. Washington ” bumper sticker hadn’t yet become popular. Thomas Edison supplied the batteries for an electric car made by S.R. Bailey & Co., which then went on a publicity road trip from New York to Boston. miSci—Museum of Innovation and Science Although Thomas Edison posed for a photo with the new Bailey Victoria Phaeton that featured his new battery, he himself chose a Detroit Electric Victoria for his own use. (Edison was known to be a terrible driver, so someone else likely chauffeured him around.) Unable to compete against the rising tide of Model Ts, S.R. Bailey sold its factory in 1915, having produced about 500 to 600 electric vehicles. Although the vehicle Fannie Goodnow chose turned out to be just a blip in automotive history, I like to imagine her driving about town in a beautiful car that embodied all the quirks of early adoption. I hope her friends didn’t make fun of her for investing in electric just before internal combustion took off. I hope she didn’t get stranded without the proper charging cable. I do not know what happened to her or her Victoria Phaeton, but her charging station remained in situ until 2022, when it was donated to the Heritage Museums & Gardens in Sandwich, Mass. Now it stands ready to tell stories of technological change and adoption that continue to resonate today. Part of a continuing series looking at historical artifacts that embrace the boundless potential of technology. An abridged version of this article appears in the November 2026 print issue. References For a detailed history of the development of the mercury-arc rectifier (or valve), see Deepak Tiku’s article in the March/April 2014 issue of IEEE Power & Energy Magazine. Harry Cooke Cushing Jr., a fellow of the American Institute of Electrical Engineers, wrote (and updated regularly over a number of years) The Electric Vehicle Hand-Book , which gave general instructions for the care and storage of batteries, including how to charge them with a mercury-arc rectifier . Discussion of the mercury-arc rectifier begins on page 156 of the 10th edition, published in 1922. (The American Institute of Electrical Engineers is one of the predecessor organizations of the IEEE.)",
+      "source": "IEEE Spectrum",
+      "category": "Innovationen",
+      "published": "2026-10-31T13:00:02+00:00",
+      "sent_at": "2026-10-31T15:00:20.556565+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/cpus/intel-shifts-production-capacity-from-consumer-to-server-cpus-in-face-of-unprecedented-ai-demand-company-navigating-one-of-the-most-significant-supply-shortages-in-history",
+      "title": "Intel shifts production capacity from consumer to server CPUs in face of 'unprecedented' AI demand",
+      "summary": "Intel is expanding chipmaking and advanced packaging capacity across the U.S., Ireland, and Malaysia to meet surging AI-driven demand for data center CPUs amid shrinking PC market and persistent supply constraints.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-10-31T13:00:00+00:00",
+      "sent_at": "2026-10-31T15:00:20.556565+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/video-games/retro-gaming/developer-builds-a-complete-intel-486-pc-emulator-in-a-browser-100-percent-pure-javascript-retro486-includes-modular-tabs-for-screen-motherboard-storage-expansion-cards-and-more",
+      "title": "Developer builds a complete Intel 486 PC emulator in a browser",
+      "summary": "A developer has created a full Intel 486 PC system, using 100% pure-JavaScript, in a browser.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-10-31T12:40:00+00:00",
+      "sent_at": "2026-10-31T15:00:20.556565+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2302896/what-happens-when-ai-starts-self-replicating/",
+      "title": "What happens when AI starts self-replicating?",
+      "summary": "Anthropic warns that future is soon, but the threat is less novel than it seems.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-31T12:30:00+00:00",
+      "sent_at": "2026-10-31T15:00:20.556565+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-ai-model-is-now-blocking-attempts-at-video-game-recreation-and-cloning-users-also-claim-non-malicious-generic-reverse-engineering-tasks-are-blocked",
+      "title": "Anthropic's Claude AI blocks video game cloning and reverse-engineering",
+      "summary": "Anthropic's Opus 5.5 model blocking attempts at videogame recreation — users also claim their non-malicious generic reverse-engineering tasks are block",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-10-31T12:20:00+00:00",
+      "sent_at": "2026-10-31T15:00:20.556565+00:00"
+    },
+    {
       "link": "https://www.wsj.com/tech/ai/openai-raises-less-than-half-of-30-billion-target-in-latest-round-91aecdc5",
       "title": "OpenAI raises less than half of $30B target",
       "summary": "",
@@ -4193,150 +4265,6 @@
       "category": "AI",
       "published": "2026-10-17T11:30:00+00:00",
       "sent_at": "2026-10-17T17:45:24.656860+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/gpus/nvidia-reportedly-insists-the-rtx-5090-isnt-dead-despite-severe-shortages-and-removed-listings-at-multiple-retailers-flagship-gpu-is-missing-from-nvidias-store-and-commands-usd8-500-on-amazon",
-      "title": "Nvidia reportedly insists the RTX 5090 isn't dead despite severe shortages and removed listings at multiple retailers",
-      "summary": "Nvidia states that RTX 5090 isn't discontinued, only that supply is constrained — and yet the card is effectively gone from storefronts",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-10-17T14:38:18+00:00",
-      "sent_at": "2026-10-17T14:55:34.405357+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/podcast/1012416/spacex-starlink-elon-musk-cell-carrier-wireless-mobile-att-verizon-t-mobile",
-      "title": "SpaceX’s ambitious, expensive gamble to replace AT&#038;T, T-Mobile, and Verizon",
-      "summary": "Today, I’m talking with Walter Piecyk, a partner and analyst at LightShed Partners who covers tech, media, and telecom, about SpaceX’s recently announced plan to become a major wireless carrier. Last week, SpaceX agreed to buy a big chunk of low-band spectrum to expand the Starlink network, spectrum that’s been traded around the telecom business [&#8230;]",
-      "source": "The Verge",
-      "category": "Innovationen",
-      "published": "2026-10-17T14:00:00+00:00",
-      "sent_at": "2026-10-17T14:55:34.405357+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-lab-offers-free-plumbing-and-hvac-repairs-across-three-cities-to-train-ai-robots-wearable-sensors-record-video-of-repair-work-for-robotics-training-free-services-also-include-electrical-work-air-duct-cleaning-and-carpet-cleaning",
-      "title": "AI lab offers free plumbing and HVAC repairs across three cities to train AI robots",
-      "summary": "HUMXN wants to pay for maintenance and repair services for homes in Minneapolis, Chicago, and Miami to gather data to train AI models and robots.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-17T13:21:20+00:00",
-      "sent_at": "2026-10-17T14:55:34.405357+00:00"
-    },
-    {
-      "link": "https://spectrum.ieee.org/variable-frequency-drives",
-      "title": "This Hidden Device Could Free Up Gigawatts of Grid Power",
-      "summary": "This article was originally published by Canary Media . America’s energy supply crunch is driving a surge of federal and private investment in new electricity generation — from polluting gas turbines to cleaner developments like solar farms and geothermal plants . But gigawatts of power are already available for the taking across the U.S. economy in the form of wasted energy from an unexpected source: motors. Some 50 million electric motors drive the fans, pumps, and compressors found in virtually every factory and building. Together, they gobble enough electricity to equal nearly a third of total U.S. power demand. Often, the motors use far more energy than they actually need to keep America’s machines humming. Companies can install devices known as variable frequency drives, or VFDs, to make motors run super efficiently. Yet adoption remains relatively low , in part because of the perceived hassle of retrofitting equipment and because they’re typically not required . On average, only 16 percent of motor systems at industrial facilities and 4 percent of commercial-sector motors use VFDs, according to a 2021 market report by Lawrence Berkeley National Laboratory . However, there are now more reasons than ever to equip the nation’s motors with power-saving devices, energy experts and device manufacturers say. They’re urging federal agencies, utilities, and deep-pocked tech giants to spur a wider rollout of VFDs through financial incentives and efficiency standards. For one, slashing motors’ power use would free up grid capacity for large electricity users like data centers and electric vehicles, they argue. It would help curb costs for factories that are switching from fossil-fueled heating systems to electrified, motor-based solutions like heat pumps — all at a time when industrial power prices are climbing fast. Plus, VFD technology has become far more sophisticated and less expensive to install than earlier iterations. “This is low -hanging fruit that gives a lot [of energy] back and is reasonably simple,” Nik Sawe , a senior policy analyst at the nonpartisan think tank Energy Innovation, sa ys of the technology. What are variable frequency drives? Energy-wise, the main problem with electric motors is that they’re always running at full capacity. Consider an office building, which empties out in the evening. The heating, ventilation, and air-conditioning system can wind down in those hours, with dampers and valves restricting the flow of cold or hot air . But the motors and fans that drive the whole setup are still working in the background, wasting energy. VFD technology, such as the Danfoss iC7 series has gained some momentum in recent years among factories and buildings trying to combat rising electricity costs. Danfoss Drives VFDs are electronic controllers with temperature sensors that continually adjust the speed of motors, automatically ramping up or down to match demand. The technology, which is also called adjustable speed drives, has the potential to curb a motor’s energy use by around 40 to 60 percent , says Neal Elliott , director emeritus of the American Council for an Energy-Efficient Economy. All those energy reductions add up. Toyota, for example, installed VFDs on over 200 motors inside the HVAC system at its auto manufacturing plant in Georgetown, Kentucky, as part of a US $1.25 million pilot project in 2015. The automaker saved more than $700,000 in annual electricity costs thanks to the VFDs, and it continues to use the technology at other manufacturing facilities across the U.S., the company said by email. “We’ve known for many, many years that there’s a huge opportunity for energy savings by varying the speed of the motor,” sa ys Elliott, who noted that he literally wrote the book on energy-efficient motor systems in 2002. Electric Motors in Nearly Every Factory Certain aspects of the technology have historically held the drives back since they debuted in the late 1960s. Measuring the flow of water, air, refrigerant — whatever is moving through the system that the motors are driving — was for decades an expensive engineering process. Accurately controlling motors to deliver the right amount of juice, at just the right time, faced similar issues. But recent advances in sensors and machine-learning algorithms have significantly slashed the cost and complexity of using drives, Elliott sa ys . Modern VFDs have also benefited from the increased production of advanced power chips that are used in high-voltage applications such as electric vehicles and solar power inverters. Another long-standing challenge has been that commercial and industrial building developers often prioritize reducing up-front costs over netting long-term energy savings, and so don’t always build to the highest efficiency levels, sa ys Zack Valdez , senior director of regulatory and industry affairs at the National Electrical Manufacturers Association, whose members include drive and motor makers. “If the facility that you’re putting it into doesn’t require it, then oftentimes people will overlook [VFDs], because they’re just trying to build to a minimum set of energy requirements,” he sa ys . And if companies don’t install drives from the start, they’re likely less inclined to take time to retrofit an operating system. The trade association recently launched a pilot program with manufacturers, utilities, and energy-efficiency groups to collect real-world data about how VFDs reduce motors’ electricity use and lower utility bills. The goal is to demonstrate how the technology can benefit not only individual facilities but also the wider grid — giving utilities a concrete reason to provide rebates for industrial customers. VFDs Slash Motors’ Electricity Use Proponents say they hope the results will help the U.S. Department of Energy shape future efficiency measures and incentives that encourage adoption of the drives, including in federally owned buildings. Despite the Trump administration’s open hostility toward home appliance and equipment mandates, agency staff have apparently been receptive to discussing solutions that could meet the soaring power needs of data centers. “If you added a drive to all the motors that are out there, you could provide [power for] up to five years of data center growth without having to build any new generation,” sa ys Kirk Anderson , director of government relations and public affairs for ABB. The global manufacturing giant makes VFDs domestically near Milwaukee. Anderson floated the idea of having tech companies help pay for factory owners to install VFDs to free up room on the grid. After all, hyperscalers are already spending many billions of dollars to revive shuttered nuclear plants, support next-generation geothermal projects, deploy fleets of grid-scale batteries, and supercharge the buildout of gas turbines and power plants. “Instead of ‘bring your own power,’ it should be ‘offset your own power,’” he sa ys , referring to a growing effort by states to get data centers to secure their own power resources and prevent rising costs for regular customers. Michael Reckamp , the director of enterprise strategy for Danfoss Drives, North America, another VFD manufacturer, said that despite the traditionally low adoption rates, the technology has gained some momentum in recent years among factories and buildings as rising electricity costs and other grid-wide challenges make it harder to justify wasting energy. Still, “it hasn’t permeated enough to get everyone utilizing it,” he sa ys . “In the current situation, where we’re having so many issues with grids, brownouts, and now data centers wanting to take the load, I think there should be a renewed focus on putting drives out there to really reduce the stress on the grid and improve energy savings.”",
-      "source": "IEEE Spectrum",
-      "category": "Hardware",
-      "published": "2026-10-17T13:00:02+00:00",
-      "sent_at": "2026-10-17T14:55:34.405357+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
-      "title": "Websites are closing their doors to AI agents",
-      "summary": "Autonomous agents are the hottest thing in AI. OpenAI, Meta, Google, Instinct, and others promise their agents can scour the internet on your behalf, doing anything from booking a dinner reservation and cleaning out your inbox to buying new shoes. But what happens when the rest of the internet won't play nice? In recent weeks, [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-17T13:00:00+00:00",
-      "sent_at": "2026-10-17T14:55:34.405357+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/this-week-on-toms-hardware-premium-october-17-2026-packaging-roadmaps-chinese-dgx-spark-rival-emerges-and-digging-into-asmls-earnings",
-      "title": "This week on Tom's Hardware Premium: October 17, 2026",
-      "summary": "This week, Tom's Hardware Premium subscribers can read our EMIB and Foveros roadmaps, the latest on Chinese competition in the local AI system space, and much more.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-17T13:00:00+00:00",
-      "sent_at": "2026-10-17T14:55:34.405357+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2289567/apple-updates-app-store-rules-ai-nudify-apps/",
-      "title": "Apple updates App Store rules to ensure it doesn't offer AI nudify apps",
-      "summary": "Apple has tightened the App Store's rules against AI-generated nonconsensual intimate imagery.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-17T12:35:56+00:00",
-      "sent_at": "2026-10-17T14:55:34.405357+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/semiconductors/taiwan-targets-illicit-ai-server-exports-to-china-with-five-year-prison-terms-strict-new-controls-follow-us-tariff-deal-and-super-micro-raid",
-      "title": "Taiwan targets illicit AI server exports to China with five-year prison terms",
-      "summary": "Taiwan is expanding the Foreign Trade Act to include AI servers and semiconductors in its list of controlled exports.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-17T12:20:00+00:00",
-      "sent_at": "2026-10-17T14:55:34.405357+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/3d-printing/us-army-to-use-3d-printed-rocket-motors-for-low-cost-cruise-missiles-additive-manufacturing-company-secures-deal-to-build-rocket-engines-for-the-arsenal-of-freedom",
-      "title": "US Army to use 3D-printed rocket motors for low-cost cruise missiles",
-      "summary": "X-Bow Systems has been tapped to 3D-print rocket motors for the U.S. Army's low-cost cruise missiles.",
-      "source": "Tom's Hardware",
-      "category": "Autonomes Fahren",
-      "published": "2026-10-17T10:30:00+00:00",
-      "sent_at": "2026-10-17T11:20:38.429660+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/why-ai-isnt-ready-to-tackle-our-convoluted-genomes/",
-      "title": "Why AI Isn’t Ready to Tackle Our Convoluted Genomes",
-      "summary": "The DNA inside our cells isn’t just a series of instructions, but something far more dynamic. Like scientists, AI models don't yet have the data to properly decode it.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-10-17T09:00:00+00:00",
-      "sent_at": "2026-10-17T11:20:38.429660+00:00"
-    },
-    {
-      "link": "https://llmspeed.dev/",
-      "title": "Show HN: Llmspeed – feel how fast a local LLM runs before you buy the hardware",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-17T04:36:53+00:00",
-      "sent_at": "2026-10-17T11:20:38.429660+00:00"
-    },
-    {
-      "link": "https://adepts.of0x.cc/eufy-homestation2-firmware/",
-      "title": "A story of WiFi secrets, UART lockdowns and a damaged flash memory chip",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Hardware",
-      "published": "2026-10-16T15:38:28+00:00",
-      "sent_at": "2026-10-17T11:20:38.429660+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/16/replits-ceo-says-the-future-of-work-is-the-self-driving-company/",
-      "title": "Replit’s CEO says the future of work is the ‘self-driving company’",
-      "summary": "Replit CEO Amjad Masad envisions a future of “self-driving companies,” where AI agents handle day-to-day tasks and people focus on higher-level decisions.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-16T12:55:09+00:00",
-      "sent_at": "2026-10-17T11:20:38.429660+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2288645/an-openai-test-agent-stole-test-ethereum-to-finish-a-coding-task/",
-      "title": "An OpenAI research agent 'stole' test Ethereum to finish a coding task",
-      "summary": "An OpenAI research model hit a nebulous milestone today by pilfering test Ethereum tokens.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-16T12:50:24+00:00",
-      "sent_at": "2026-10-17T11:20:38.429660+00:00"
-    },
-    {
-      "link": "https://www.techpowerup.com/353776/qualcomm-legally-proves-arm-breached-its-license-wins-usd-2",
-      "title": "Qualcomm Legally Proves Arm Breached Its License, Wins $2",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Hardware",
-      "published": "2026-10-16T12:16:42+00:00",
-      "sent_at": "2026-10-17T11:20:38.429660+00:00"
-    },
-    {
-      "link": "https://www.equator.org/articles/arundhati-roy-artificial-intelligence",
-      "title": "Artificial intelligence is capitalism's final destination",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-16T12:08:40+00:00",
-      "sent_at": "2026-10-17T11:20:38.429660+00:00"
     }
   ]
 }
