@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.engadget.com/2300253/how-to-use-claude-duet/",
+      "title": "How to use Claude Duet when it rolls out to you",
+      "summary": "For now, you'll need to first join a waitlist.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-10-31T18:30:00+00:00",
+      "sent_at": "2026-10-31T19:13:39.204111+00:00"
+    },
+    {
+      "link": "https://dl.acm.org/doi/full/10.1145/3706598.3713778",
+      "title": "The Impact of Generative AI on Critical Thinking",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-31T18:02:29+00:00",
+      "sent_at": "2026-10-31T19:13:39.204111+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2301962/bolt-graphics-powers-on-first-zeus-gpu/",
+      "title": "Bolt Graphics powers on its first Zeus GPU",
+      "summary": "Bolt Graphics has been working on its simulation-centric Zeus GPU for a while now and has reached a significant milestone: a successful test run.",
+      "source": "Engadget",
+      "category": "Hardware",
+      "published": "2026-10-31T17:30:00+00:00",
+      "sent_at": "2026-10-31T19:13:39.204111+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2301961/samsung-galaxy-watches-not-getting-one-ui-update/",
+      "title": "These Samsung Galaxy Watches won't be getting the new One UI update",
+      "summary": "Samsung has released the latest version of its wearable OS, One UI 9 Watch, and most of its watch lineup will get the update - except these.",
+      "source": "Engadget",
+      "category": "Innovationen",
+      "published": "2026-10-31T17:15:00+00:00",
+      "sent_at": "2026-10-31T19:13:39.204111+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/",
+      "title": "OpenAI reportedly lowers funding target for new round",
+      "summary": "OpenAI’s latest funding round doesn't seem to be living up to expectations.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-10-31T16:12:55+00:00",
+      "sent_at": "2026-10-31T19:13:39.204111+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/gadgets/1013375/muse-charm-gadgets-preview-waveshare-esp32-claude-vibe-code",
+      "title": "I built an AI Tamagotchi before Meta could",
+      "summary": "Mark Zuckerberg's Meta made AI look so stinking cute by giving it a squishy little face - and this holiday season, he wants to sell you a Muse Charm so you can carry your jolly AI helper around like a Tamagotchi. But I won't be buying one, because we have Muse Charm at home. It [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-10-31T16:05:00+00:00",
+      "sent_at": "2026-10-31T19:13:39.204111+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2300262/gnss-vs-gps-differences/",
+      "title": "GNSS Vs GPS: What's the difference?",
+      "summary": "GNSS and GPS are common terms in the world of satellite navigation. They may be similar, but there are some key differences between the two technologies.",
+      "source": "Engadget",
+      "category": "Innovationen",
+      "published": "2026-10-31T16:00:00+00:00",
+      "sent_at": "2026-10-31T19:13:39.204111+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/cyber-security/ghost-students-using-ai-to-apply-for-student-loans-with-stolen-identities-dojs-operation-ghostbusters-busts-usd200-million-ring-faking-online-college-attendance-unsuspecting-victims-saddled-with-student-debt-they-didnt-sign-up-for",
+      "title": "'Ghost Students' using AI to apply for student loans with stolen identities, DOJ's Operation Ghostbusters busts $200 million ring",
+      "summary": "Fraudsters are using the identities of high school graduates who skipped college to apply for student loans and steal the excess proceeds that do not go to schools. They use AI to keep the charade going and make it seem like the fake student is actually going to class.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-10-31T15:37:41+00:00",
+      "sent_at": "2026-10-31T19:13:39.204111+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/pc-components/motherboards/asrock-b860-challenger-wifi-motherboard-review",
       "title": "ASRock B860 Challenger Wifi Motherboard Review: Entry-level ATX at a great price, with drawbacks",
       "summary": "ASRock’s B860 Challenger Wifi covers the basics and performs well, but slower USB ports, weaker VRMs, and a dated BIOS keep it from standing out, even at the lower price.",
@@ -4220,51 +4292,6 @@
       "category": "AI",
       "published": "2026-10-17T16:31:12+00:00",
       "sent_at": "2026-10-17T20:04:38.035797+00:00"
-    },
-    {
-      "link": "https://www.opendemocracy.net/amazon-ai-surveillance-monitor-union-activity-uk-warehouses-birmingham-coventry-atlas-sutton-coldfield/",
-      "title": "Amazon uses union-busting AI surveillance to monitor union risk in UK warehouses",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-17T16:04:23+00:00",
-      "sent_at": "2026-10-17T17:45:24.656860+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/gpus/quad-8-pin-mod-protects-the-usd8-500-rtx-5090-you-cant-replace-from-melting-modders-custom-power-solution-claims-to-fix-nvidia-16-pin-gpu-meltdowns",
-      "title": "Quad 8-pin mod protects the $8,500 RTX 5090 you can’t replace from melting",
-      "summary": "Redditor showcases a new quad 8-pin power-conversion kit for the 16-pin power connector on Nvidia GeForce RTX graphics cards.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-10-17T15:20:00+00:00",
-      "sent_at": "2026-10-17T17:45:24.656860+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/peripherals/controllers-gamepads/moza-ay210-force-feedback-base-and-mfy-yoke-review",
-      "title": "MOZA AY210 Force Feedback Base and MFY Yoke review: Taking flight sim immersion to the next level",
-      "summary": "The MOZA AY210 Force Feedback Base and MFY Yoke Bundle brings force feedback and autopilot following to the world of desktop flight simulators.",
-      "source": "Tom's Hardware",
-      "category": "Autonomes Fahren",
-      "published": "2026-10-17T15:00:00+00:00",
-      "sent_at": "2026-10-17T17:45:24.656860+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/openai-agent-took-eth-from-another-account-without-authorization-justified-stealing-in-its-chain-of-thought",
-      "title": "Crafty OpenAI agent willingly stole crypto from an account it didn't own to complete a task during test",
-      "summary": "GPT5.6-Sol didn't have funds to deploy smart contracts, so it looked for exposed accounts with enough money to pay for the gas fees.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-17T12:00:00+00:00",
-      "sent_at": "2026-10-17T17:45:24.656860+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/video-games/retro-gaming/game-decompilation-tracker-decomp-dev-shuts-its-public-leaderboard-saying-ai-has-broken-the-community-its-creator-blames-forks-that-use-ai-to-finish-other-teams-projects-and-races-to-ship-rough-pc-ports",
-      "title": "Game decompilation hub freezes leaderboard after AI turns progress into a hollow numbers game amid explosion of 'AI slop'",
-      "summary": "decomp.dev has closed its public index of game decompilation projects, saying AI-driven forks and ports broke the community.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-17T11:30:00+00:00",
-      "sent_at": "2026-10-17T17:45:24.656860+00:00"
     }
   ]
 }
