@@ -1,6 +1,42 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/tech-industry/space/usaf-successfully-tests-dropping-spacex-starfall-cargo-drop-pods-from-space-2-200-pound-capsule-drops-military-supplies-in-the-pacific-to-test-starcraft-like-supply-drops",
+      "title": "USAF successfully tests dropping SpaceX Starfall cargo drop pods from space — 2,200-pound capsule drops military supplies in the Pacific to test StarCraft-like supply drops",
+      "summary": "The Rocket Cargo capability should allow U.S. forces to resupply quickly without risking aircrews and equipment, especially in contested areas.",
+      "source": "Tom's Hardware",
+      "category": "Innovationen",
+      "published": "2026-11-01T11:30:00+00:00",
+      "sent_at": "2026-11-01T11:39:25.349463+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/chatbots-are-leading-hikers-astray-with-dangerous-consequences/",
+      "title": "Chatbots Are Leading Hikers Astray, With Dangerous Consequences",
+      "summary": "Outsourcing planning to AI can lead people to surrender their own critical thinking, which can have potentially deadly results in places like the backcountry.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-11-01T10:30:00+00:00",
+      "sent_at": "2026-11-01T11:39:25.349463+00:00"
+    },
+    {
+      "link": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
+      "title": "The AI cost of JavaScript frameworks",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-01T06:06:19+00:00",
+      "sent_at": "2026-11-01T11:39:25.349463+00:00"
+    },
+    {
+      "link": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits",
+      "title": "ChatGPT and Codex usage limits merging",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-31T21:49:07+00:00",
+      "sent_at": "2026-11-01T11:39:25.349463+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/10/31/data-centers-are-now-a-midterm-issue-even-in-brooklyn/",
       "title": "Data centers are now a midterm issue, even in Brooklyn",
       "summary": "At a Brooklyn midterm party five days before Election Day, every conversation, from a council member’s fireside chat to a debate about the Democratic Party, kept circling back to AI and data centers.",
