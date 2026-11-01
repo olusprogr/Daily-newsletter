@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/10/31/data-centers-are-now-a-midterm-issue-even-in-brooklyn/",
+      "title": "Data centers are now a midterm issue, even in Brooklyn",
+      "summary": "At a Brooklyn midterm party five days before Election Day, every conversation, from a council member’s fireside chat to a debate about the Democratic Party, kept circling back to AI and data centers.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-01T02:22:10+00:00",
+      "sent_at": "2026-11-01T04:17:09.161512+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2300227/how-big-powerful-spacex-starship-rocket/",
+      "title": "How big and powerful is SpaceX's Starship rocket?",
+      "summary": "SpaceX's Starship has a big role to play in NASA's plans to land astronauts on the Moon. Here's how big this rocket is and how its two stages work together.",
+      "source": "Engadget",
+      "category": "Innovationen",
+      "published": "2026-10-31T23:45:00+00:00",
+      "sent_at": "2026-11-01T04:17:09.161512+00:00"
+    },
+    {
+      "link": "https://www.cnn.com/2026/10/31/us/philadelphia-woman-delivery-robots-cec",
+      "title": "Retired professor arrested for blocking delivery robot. Will do it again",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Innovationen",
+      "published": "2026-10-31T13:39:57+00:00",
+      "sent_at": "2026-11-01T04:17:09.161512+00:00"
+    },
+    {
+      "link": "https://www.thebignewsletter.com/p/why-anthropics-filing-crushed-tech",
+      "title": "Why Anthropic's filing crushed tech stocks",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-31T12:32:10+00:00",
+      "sent_at": "2026-11-01T04:17:09.161512+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/kernel-panic-volta-autodoxer-ai-infostealer-malware/",
+      "title": "Spooky New Infostealer Malware Uses AI to ‘Autodox’ Victims",
+      "summary": "Named “Volta-Autodoxer,” the recently uncovered malware uses AI tools to collect troves of data about victims, from login credentials and credit card numbers to Discord sessions and UberEats receipts.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-10-31T12:00:00+00:00",
+      "sent_at": "2026-11-01T04:17:09.161512+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/startup-uses-ai-agent-to-perform-controversial-brain-surgery-on-a-mouse-anthropic-sonnet-controlled-motorized-surgery-rig-ai-given-free-reign-to-treat-epilepsy-with-a-range-of-gene-therapy-vectors-after-opus-5-5-refused-to-conduct-biological-experiment",
+      "title": "AI agent used to perform controversial brain surgery on a mouse, Anthropic Sonnet controlled motorized surgery rig",
+      "summary": "The team had to use Sonnet after Opus 5.5 outright refused to run the experiment, while Opus 5 warned that it could stop working in the midst of the operation.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-10-31T12:00:00+00:00",
+      "sent_at": "2026-11-01T04:17:09.161512+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/ram/veteran-microsoft-engineer-makes-his-own-ram-from-scratch-using-ai-attempts-to-build-4mb-of-1970s-pdp-11-ram-from-scratch",
+      "title": "Veteran Microsoft engineer makes his own RAM from scratch using AI",
+      "summary": "Expensive memory forces former Microsoft engineer to make his own — Dave Plummer makes PDP-11 RAM from scratch",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-10-31T11:40:00+00:00",
+      "sent_at": "2026-11-01T04:17:09.161512+00:00"
+    },
+    {
+      "link": "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
+      "title": "Do the math: How we took over ChatGPT accounts",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-10-31T10:30:11+00:00",
+      "sent_at": "2026-11-01T04:17:09.161512+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/",
       "title": "Apple CEO says the company doesn’t ‘want to ship AI for AI’s sake’",
       "summary": "Apple's new CEO defended the company's current position in the AI landscape.",
@@ -4310,24 +4382,6 @@
       "category": "AI",
       "published": "2026-10-18T11:00:00+00:00",
       "sent_at": "2026-10-18T14:17:27.023186+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2285040/openai-humanoid-robot-sam-altman-statement-real-challenge/",
-      "title": "OpenAI is building a humanoid robot, but the body isn't the real challenge",
-      "summary": "OpenAI CEO Sam Altman wants a humanoid that can operate in a world designed for people, though the CEO says a robot 'brain' is a much bigger challenge.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-17T23:45:00+00:00",
-      "sent_at": "2026-10-18T00:37:13.451873+00:00"
-    },
-    {
-      "link": "https://www.phillyvoice.com/philly-woman-arrested-uber-eats-robot-protest/?l",
-      "title": "Retired Penn professor arrested for blocking Uber Eats robot",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Innovationen",
-      "published": "2026-10-17T23:31:48+00:00",
-      "sent_at": "2026-10-18T00:37:13.451873+00:00"
     }
   ]
 }
