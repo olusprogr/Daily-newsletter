@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.engadget.com/2303469/anthropic-updates-claude-to-stop-it-from-recreating-existing-video-games/",
+      "title": "Anthropic updates Claude to stop it from recreating existing video games",
+      "summary": "Users can still lean on Claude to help with designing original or genre games.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-11-01T21:08:32+00:00",
+      "sent_at": "2026-11-01T21:40:21.374501+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/cyber-security/new-ai-driven-windows-malware-feeds-stolen-data-to-claude-to-rank-victims-assets-by-value-then-deletes-itself-payload-builds-custom-target-assessment-can-switch-models-if-one-refuses-or-skip-the-ai-step-entirely",
+      "title": "New AI-driven Windows malware feeds stolen data to Claude to rank victims’ assets by value, then deletes itself — payload builds custom target assessment, can switch models if one refuses, or skip the AI step entirely",
+      "summary": "Cisco Talos says the VOLTA infostealer sends stolen victim data to Claude Opus 4.6 to rank assets by monetization value.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-11-01T21:00:00+00:00",
+      "sent_at": "2026-11-01T21:40:21.374501+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2303462/judge-says-xai-must-face-naacp-lawsuit-on-data-center-pollution/",
+      "title": "Judge says xAI must face NAACP lawsuit on data center pollution",
+      "summary": "The legal battle revolves around the AI company's operations in southern Memphis.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-11-01T19:19:22+00:00",
+      "sent_at": "2026-11-01T21:40:21.374501+00:00"
+    },
+    {
+      "link": "https://blog.raed.dev/posts/proton-loser-thinking/",
+      "title": "It wasn't AI that flipped Proton's charge",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-01T18:53:55+00:00",
+      "sent_at": "2026-11-01T21:40:21.374501+00:00"
+    },
+    {
+      "link": "https://spectrum.ieee.org/ai-slop-trust-science",
+      "title": "Guarding the Gates of Knowledge",
+      "summary": "A recent scroll through social media got me thinking about trust. About half my feed was filled with AI slop that astute users would call out as being machine-generated, often to the embarrassment of the rube who unknowingly spread it and sometimes to the delight of the poster who shared it deliberately because they found it amusing or useful for sowing confusion. Remember the good old days of GPT-3 when we could ask the chatbot anything and it would almost instantly and very confidently spit back a plausible but false answer? That’s when the word “hallucination” as applied to AI answers entered the lexicon. Six years and several versions of a few different chatbots later, I still can’t trust the answers I get, even though Claude or Gemini often do useful work for me. That’s the thing about current AI: Trust but verify. And verify you must. Apply that maxim at scale to maintain the integrity of the scientific record and you get an idea of the challenge facing publishers of peer-reviewed scholarship. In “ I Used AI to Fake a Scientific Paper ,” freelance writer and doctor of applied mathematics Benjamin Skuse tells the story of the human gatekeepers trying to beat back the rising tide of AI slop by attempting to get his own AI-generated papers past IEEE’s defenses. “He basically hit ‘run experiment’ and ‘write paper.’ And then he didn’t do a damn thing to it.” —Eliza Strickland As features and AI beat editor Eliza Strickland told me, Skuse was surprised at just how effortless it was to generate a paper that was more or less plausible and more or less science. For one of his experiments, “he basically hit ‘run experiment’ and ‘write paper,’” she said. “And then he didn’t do a damn thing to it. He just launched it into the maw of the publishing engine.” Skuse discovered that the combination of IEEE’s human-review processes and research-integrity checker programs are currently keeping pace in what amounts to a cat-and-mouse game against people using free tools. But the more advanced LLMs are no longer making the same dumb mistakes the free versions do. That leaves publishers locked in an arms race between increasingly plausible slop and the systems aimed at detecting it. Scholarly publishers aren’t the only ones trying to hold the line against slop. So is that global depository of human-generated knowledge, Wikipedia. For this month’s Five Questions , Strickland interviewed Ellia Lebleu, a founding member of WikiProject AI Cleanup , a volunteer effort to detect and delete AI-generated material from the platform. Lebleu’s team is confronting the same problem as commercial publishers, but with fewer people and fewer tools. “Wikipedia is known as a repository of human-generated information, and they want to hold on to that,” says Strickland. “Who knows how long they’ll be able to do that.” If we can’t collectively assume that the scientific record is trustworthy or that basic facts about the world are accurate, then our understanding of what is real unspools into uncertainty . Perhaps that delights quantum scientists and the grifters who thrive in an information environment where there is no shared reality. But that uncertainty ultimately undermines trust in the institutions that exist to curate the corpus of human knowledge and to promote the advancement of science and technology for the benefit of humanity. Or maybe in a world where AI is doing the science and writing the papers, it won’t matter whether or not humans trust the outputs. As Strickland put it, “Doesn’t it just feel crazy that we’ll have AI writing for other AIs at some point? We’ll just get left out of the loop.”",
+      "source": "IEEE Spectrum",
+      "category": "AI",
+      "published": "2026-11-01T14:00:01+00:00",
+      "sent_at": "2026-11-01T21:40:21.374501+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1024108/homepod-mini-2-hands-on-siri-smart-home-mac-speaker",
+      "title": "HomePod Mini 2 first look: Three things I love and one disappointment",
+      "summary": "When I first heard about the new $149 HomePod Mini 2 at Apple's Welcome Home event last month, I was disappointed. It's been six years since Apple launched its entry-level smart speaker, and all it got in the second gen was a chip bump, some color glowy stuff, and better AirPlay? For $50 more than [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-11-01T14:00:00+00:00",
+      "sent_at": "2026-11-01T21:40:21.374501+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/gpus/open-source-usb-tool-unlocks-nvidias-half-speed-gpu-ai-limiter-on-windows-lifts-gpus-fp16-math-performance-up-to-65-percent-uefi-unlocker-covers-rtx-20-30-and-40-series-desktops-and-laptops",
+      "title": "Open-source USB tool unlocks Nvidia's half-speed GPU AI limiter on Windows",
+      "summary": "An open-source UEFI tool, nv-uefi-unlocker, lifts Nvidia’s tensor rate cap on RTX 20, 30, and 40-series GPUs under Windows.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-11-01T14:00:00+00:00",
+      "sent_at": "2026-11-01T21:40:21.374501+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-agent-swarms-unleashed-in-minecraft-to-build-a-thriving-civilization-50-agent-teams-fail-after-falling-into-paralyzing-bureaucracy",
+      "title": "AI agent swarms unleashed in Minecraft to ‘build a thriving civilization’",
+      "summary": "Researchers recently tested AI agent swarm performance in various Minecraft gaming modes.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-11-01T12:33:52+00:00",
+      "sent_at": "2026-11-01T21:40:21.374501+00:00"
+    },
+    {
       "link": "https://www.engadget.com/2303434/meta-reportedly-built-a-humanoid-robot-prototype-that-can-do-household-chores/",
       "title": "Meta reportedly built a humanoid robot prototype that can do household chores",
       "summary": "A report said the company is already working on the second version that's codenamed Max 2.",
@@ -4319,105 +4391,6 @@
       "category": "AI",
       "published": "2026-10-18T20:37:40+00:00",
       "sent_at": "2026-10-18T22:45:01.918796+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1013541/a-woman-was-arrested-in-philly-for-blocking-a-delivery-robot",
-      "title": "A woman was arrested in Philly for blocking a delivery robot",
-      "summary": "Carolyn Marvin was arrested and charged with disorderly conduct after blocking the path of an Uber delivery robot and refusing to get out of the way. Marvin told Philadelphia's ABC13 \"I know they're taking the jobs of human delivery workers and so, I have been protesting them whenever I saw them by standing in front [&#8230;]",
-      "source": "The Verge",
-      "category": "Innovationen",
-      "published": "2026-10-18T18:28:10+00:00",
-      "sent_at": "2026-10-18T20:04:20.749108+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2286505/how-modern-foldable-phone-evolved-from-royole-flexpai-to-iphone-duo/",
-      "title": "From the Royole FlexPai to the iPhone Duo: How the modern foldable phone has evolved",
-      "summary": "Apple's iPhone Duo likely forecasts a shift in the market toward foldables becoming more common. But it took a while to get here.",
-      "source": "Engadget",
-      "category": "Hardware",
-      "published": "2026-10-18T18:00:00+00:00",
-      "sent_at": "2026-10-18T20:04:20.749108+00:00"
-    },
-    {
-      "link": "https://www.righto.com/2026/10/8087-addition-subtraction-microcode.html",
-      "title": "The Intel 8087 chip: floating-point addition and subtraction",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Hardware",
-      "published": "2026-10-18T16:20:27+00:00",
-      "sent_at": "2026-10-18T20:04:20.749108+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2286478/limit-frames-per-second-gaming-when-makes-sense/",
-      "title": "Should you limit your FPS in games? Here's when it makes sense",
-      "summary": "While it's natural to want to get as many fps from your rig as possible, there are reasons to limit frame output from your GPU.",
-      "source": "Engadget",
-      "category": "Hardware",
-      "published": "2026-10-18T16:45:00+00:00",
-      "sent_at": "2026-10-18T17:48:25.758134+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
-      "title": "Disney agrees to hire the majority of Character.AI’s workforce",
-      "summary": "After chatbot startup Character.AI filed for bankruptcy earlier this week, many of its employees will have the opportunity to take jobs at Disney. Character.AI’s former CEO Karandeep Anand recently became the entertainment giant’s first CTO, and the startup previously said that Disney had agreed to acquire some of its assets for $20 million. A legal [&#8230;]",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-18T16:30:00+00:00",
-      "sent_at": "2026-10-18T17:48:25.758134+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/",
-      "title": "Anthropic gives outside AI watchdog “employee-like” access",
-      "summary": "The outside watchdog can publish its findings without Anthropic's approval.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-10-18T16:25:19+00:00",
-      "sent_at": "2026-10-18T17:48:25.758134+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/18/techcrunch-mobility-rivians-next-act/",
-      "title": "TechCrunch Mobility: Rivian’s next act",
-      "summary": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, the role AI is playing in it.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-18T16:05:00+00:00",
-      "sent_at": "2026-10-18T17:48:25.758134+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/gpus/amd-cards-now-run-all-dlss-features-thanks-to-one-developers-project-plans-to-match-native-nvidia-gpu-performance",
-      "title": "Modder brings full Nvidia DLSS 5 suite to three generations of AMD gaming GPUs",
-      "summary": "Radeon GPUs get the full DLSS experience as solo project ports all the DLSS features for RDNA2-4 GPUs.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-10-18T16:03:01+00:00",
-      "sent_at": "2026-10-18T17:48:25.758134+00:00"
-    },
-    {
-      "link": "https://www.vals.ai/blogs/impossible-refund",
-      "title": "How Far Will AI Assistants Go for a Refund They Can't Get?",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-18T12:22:58+00:00",
-      "sent_at": "2026-10-18T17:48:25.758134+00:00"
-    },
-    {
-      "link": "https://www.anthropic.com/research/employment-at-anthropic",
-      "title": "How employment is changing at Anthropic",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-18T10:49:26+00:00",
-      "sent_at": "2026-10-18T17:48:25.758134+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/onlyfans-creators-are-pissed-that-meta-lets-muse-talk-dirty/",
-      "title": "OnlyFans Creators Are Pissed That Meta Lets Muse Talk Dirty",
-      "summary": "Adult performers are questioning why Meta allows its AI agent to sext while restricting their social media accounts.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-10-18T10:30:00+00:00",
-      "sent_at": "2026-10-18T17:48:25.758134+00:00"
     }
   ]
 }
