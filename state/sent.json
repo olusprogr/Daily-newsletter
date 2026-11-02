@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.engadget.com/2300357/websites-blocking-ai-agents-from-web/",
+      "title": "Why some websites are blocking AI agents from accessing the web",
+      "summary": "AI agents can be a great tool to help make purchases for you online - but it can become a frustrating problem if the website you're using blocks their access.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-11-02T19:00:00+00:00",
+      "sent_at": "2026-11-02T19:09:25.326715+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1024632/anthropic-claude-ai-video-game-clones",
+      "title": "Anthropic clamps down on Claude’s AI video game clones",
+      "summary": "Anthropic has updated Claude Code's system prompt to prevent the AI tool from being used to recreate existing video games, as reported by Tom's Hardware. Retro gaming is currently being overrun with AI-made decompilations, recompilations, and ports, but while Anthropic will still let people use Claude Code to make games, it doesn't want people to [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-11-02T18:56:02+00:00",
+      "sent_at": "2026-11-02T19:09:25.326715+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/apple/2026/11/apples-roaming-home-robot-may-do-facetime-switch-lights-on-and-yell-at-your-cat/",
+      "title": "Coming in 2027: Apple’s $1,000 home robot for FaceTime and switching on lights",
+      "summary": "Apple robot backed by CEO John Ternus may have hefty price tag and limited uses.",
+      "source": "Ars Technica",
+      "category": "Innovationen",
+      "published": "2026-11-02T18:32:21+00:00",
+      "sent_at": "2026-11-02T19:09:25.326715+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/cpus/tachyum-developer-of-heavily-delayed-universal-prodigy-processor-voluntarily-files-for-bankruptcy-future-of-prodigy-ip-unknown-as-company-begins-bankruptcy-proceedings",
+      "title": "Tachyum, developer of heavily-delayed universal Prodigy processor, voluntarily files for bankruptcy",
+      "summary": "Tachyum files for bankruptcy, the court in Bratislava initiates bankruptcy proceedings.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-11-02T18:07:21+00:00",
+      "sent_at": "2026-11-02T19:09:25.326715+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2304301/spacex-is-reportedly-looking-at-buying-boost-mobile-or-using-its-cell-network/",
+      "title": "SpaceX is reportedly looking at buying Boost Mobile or using its cell network",
+      "summary": "A potential deal with Boost Mobile could serve as a shortcut to establishing SpaceX as a mobile carrier.",
+      "source": "Engadget",
+      "category": "Innovationen",
+      "published": "2026-11-02T18:05:52+00:00",
+      "sent_at": "2026-11-02T19:09:25.326715+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/ai/2026/11/claudes-new-rules-against-game-cloning-wont-stop-the-ai-copying-boom/",
+      "title": "Claude’s new rules against game cloning won’t stop the AI copying boom",
+      "summary": "The tsunami of imitators is way bigger than any one model maker can stem.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-11-02T18:05:31+00:00",
+      "sent_at": "2026-11-02T19:09:25.326715+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program",
+      "title": "OpenAI pitches data center power plants as a way to protect nearby areas",
+      "summary": "In an announcement on Monday, OpenAI says it will pilot its \"Grid Protectors Program\" at an upcoming data center in Effingham County, Georgia, where the company promises to free up to 1,000 megawatts of power during extreme weather or emergencies, enough to power air conditioners in around 700,000 homes. The announcement comes as opposition to [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-11-02T18:01:30+00:00",
+      "sent_at": "2026-11-02T19:09:25.326715+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/02/in-one-of-the-largest-deals-in-tech-history-marvell-buys-lumentum-for-115b/",
+      "title": "In one of the largest deals in tech history, Marvell buys Lumentum for $115B",
+      "summary": "Marvell's planned purchase of Lumentum is one of the biggest acquisitions in tech history. And they both have the same strategic investor: Nvidia.",
+      "source": "TechCrunch",
+      "category": "Hardware",
+      "published": "2026-11-02T17:54:11+00:00",
+      "sent_at": "2026-11-02T19:09:25.326715+00:00"
+    },
+    {
       "link": "https://paulfwalsh.substack.com/p/metas-muse-ai-agent-is-a-commercial",
       "title": "Muse AI agent is a commercial surveillance network disguised as an AI assistant",
       "summary": "",
@@ -4265,150 +4337,6 @@
       "category": "AI",
       "published": "2026-10-19T19:49:17+00:00",
       "sent_at": "2026-10-19T22:51:59.613649+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/19/replikas-founder-built-the-ai-assistant-she-pitched-at-disrupt-12-years-ago/",
-      "title": "Replika’s founder built the AI assistant she pitched at Disrupt 12 years ago",
-      "summary": "Eugenia Kuyda's newest startup Wabi is positioned to take advantage of an idea she had more than a decade ago. Wabi offers a personal AI assistant with a twist, free and downloadable to anyone today.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-19T18:49:04+00:00",
-      "sent_at": "2026-10-19T18:59:35.777944+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/19/tenstorrent-hits-6-2b-valuation-to-scale-open-weight-ai-chips/",
-      "title": "Tenstorrent hits $6.2B valuation to scale open-weight AI chips",
-      "summary": "After drawing acquisition interest earlier this year, the Nvidia challenger raised $1.5 billion to remain independent.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-19T18:37:27+00:00",
-      "sent_at": "2026-10-19T18:59:35.777944+00:00"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/10/19/1147186/making-the-internet-better-for-ai-agents-might-make-it-worse-for-everyone-else/",
-      "title": "Making the internet better for AI agents might make it worse for everyone else",
-      "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first,&#160;sign up here. Until recently, you could divide internet users into just two categories: bots and people. Websites have long allowed bots to perform automated tasks, like capturing the content of web pages, but rules&#8230;",
-      "source": "MIT Technology Review",
-      "category": "AI",
-      "published": "2026-10-19T18:22:47+00:00",
-      "sent_at": "2026-10-19T18:59:35.777944+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/19/ai-assistant-startup-town-nabs-unicorn-valuation-four-months-after-launch/",
-      "title": "AI assistant startup Town nabs unicorn valuation four months after launch",
-      "summary": "AI assistant startup Town nabbed a unicorn valuation on Monday, announcing a $108 million Series B round co-led by Forerunner Ventures and Menlo Ventures.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-19T18:00:39+00:00",
-      "sent_at": "2026-10-19T18:59:35.777944+00:00"
-    },
-    {
-      "link": "https://spectrum.ieee.org/ieee-report-engineering-public-good",
-      "title": "IEEE Report Highlights How Members Are Engineering for Public Good",
-      "summary": "Advancing technology for the benefit of humanity isn’t just the tagline for IEEE’s mission as a public charity. It’s something that the organization’s more than 500,000 members strive to do all the time. IEEE’s recently released 2025 Social Impact Report showcases a variety of programs volunteers worked on to increase public awareness of technology’s impact on society, many of which The Institute covered. Here is a selection of the programs from the report, with links to our related articles: Shaping trustworthy digital experiences for children online. An IEEE collaboration with Indonesian policymakers led to a new regulation to protect children, a first of its kind in the region. The advanced frameworks used for the design of Internet platforms and systems are based on the IEEE 2089-2021 and 2089.1-2024 standards. The IEEE 2089-2021 Standard for an Age-Appropriate Digital Services Framework Based on the 5Rights Principles for Children provides practical steps to qualify online products and services. The follow-up, the IEEE 2089.1-2024 Standard for Online Age Verification, provides a framework for designing, specifying, evaluating, and deploying age-verification systems. You can learn more about the two standards in “ IEEE Makes Strides to Improve Online Safety for Kids .” Catalyzing humanitarian outreach. Last year IEEE launched its Mobile Outreach Vehicle (MOVE) program in India. The vehicle brings educational resources to communities and can provide communication and technology support to relief workers and survivors during emergencies. In 2024, for example, MOVE helped survivors of Hurricanes Helene and Milton in the Southeastern United States. When the vehicles are not deployed, IEEE MOVE remains engaged in outreach efforts, participating in 25 STEM educational events such as one in San Diego in 2023 . Preserving Tech History. The IEEE Global Museum , developed by the IEEE History Center , presents traveling exhibits to educate the public about the history of technology and its impact on society. In “ IEEE’s Global Museum Brings Engineering History to You ,” you can learn about current exhibits “Unseen Signals: E. Howard Armstrong’s Radio Revolution” and “Microchips That Shook the World.” EPICS in IEEE. This program provides nonprofit organizations with technology solutions while broadening undergraduate students’ hands-on experiences. Last year US $290,000 was awarded to a record-breaking number of service projects around the world . Among the 48 projects was one in which a student team in Macedonia created IoT-driven sensing and display devices to help measure and promote awareness of pollution and air-quality issues in the capital city of Skopje. IEEE TryEngineering. This initiative inspires preuniversity students to pursue technology and engineering careers. It awarded US $70,379 in grants to 58 programs around the world. One is its TryEngineering Summer Institute , a nine-day summer sleepaway camp for students ages 13 to 17. More than 310 students participated last year, learning about aerospace and artificial intelligence . IEEE–Eta Kappa Nu. IEEE-HKN has more than 260 collegiate chapters worldwide and more than 200,000 members. The honor society encourages and recognizes excellence in education, professional practice, and meritorious work within IEEE’s designated fields of interest. IEEE-HKN members last year contributed 110,442 volunteer hours to universities and communities, and they held 827 service and outreach events and 137 STEM outreach activities. Last year IEEE and HKN celebrated the 15th anniversary of their merger . IEEE Connecting the Unconnected Challenge. This annual global competition solicits innovative solutions from startups, grassroots organizations, universities, and others working to bridge the digital divide. The Institute wrote about last year’s winners . They included a solar-powered community broadband network in Tanzania, a low-cost method for accessing the Internet that uses FM radio and a short message service, and a strategy for utilizing India’s rural broadband infrastructure to deliver medical services to people living in isolated, tribal, and other underserved regions. Supporting Sustainable Climate Efforts. IEEE helps foster the exchange of technical knowledge and information to develop technologies for a sustainable climate. “ IEEE Plays a Pivotal Role in Climate Mitigation Talks ” reported how the organization enhanced its standing as a trusted, neutral authority on the role of technology in climate change mitigation and adaptation. Leaders, including 2023 IEEE President Saifur Rahman , showcased tech solutions at COP30 and the International Symposium on Achieving a Sustainable Climate . Also, “ IEEE Young Professionals Talked Sustainability Tech at Climate Week NYC ” reported on the group’s activities during the 2024 Climate Week NY , the largest annual climate event, featuring more than 600 activities throughout New York City. Engineering: A force for good “The IEEE global community of more than 500,000 members and volunteers demonstrates what is possible when expertise is mobilized for the public good,” Sophia Muirhead, IEEE executive director and chief operating officer, said in a news release about the Social Impact Report . “Technology has the power to expand opportunity, strengthen communities and improve lives, and IEEE’s mission is to ensure that this power is used responsibly, ethically, and in service of humanity. The 2025 report shows how IEEE members and volunteers are advancing solutions that make a real difference in people’s lives around the world.” Engagement research shows that members increasingly cited “giving back to my profession and the world community” as a reason for joining IEEE and renewing their membership, IEEE President Mary Ellen Randall said in her September column about the report. “Humanitarian programs are not only meaningful,” she wrote. “They also are magnetic. They attract younger engineers, keep them engaged, and help them build a professional identity rooted in purpose and impact. “IEEE has the opportunity to become the world’s leading convening force for developing interdisciplinary technology solutions to solve humanity’s most important challenges. Our future relevance will be defined not only by the technologies we advance but also by the problems we choose to help solve.”",
-      "source": "IEEE Spectrum",
-      "category": "AI",
-      "published": "2026-10-19T18:00:03+00:00",
-      "sent_at": "2026-10-19T18:59:35.777944+00:00"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/10/19/1147149/we-were-looking-at-it-wrong-the-explosive-claim-thats-upended-the-ai-world/",
-      "title": "“We were looking at it wrong”: The explosive claim that’s upended the AI world",
-      "summary": "“I think I have good news about the nature of neural networks.” With those simple words of optimism, Nick Cammarata, a researcher at the AI startup Goodfire, kicked off a 26,000-word blog post that has knocked the AI world on its head, sparking wild speculation as well as cautious (and not-so-cautious) celebration. Cammarata’s claim is&#8230;",
-      "source": "MIT Technology Review",
-      "category": "AI",
-      "published": "2026-10-19T17:45:55+00:00",
-      "sent_at": "2026-10-19T18:59:35.777944+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2290535/homeland-security-bans-deepseek-use-in-federal-civilian-agencies/",
-      "title": "Homeland Security bans DeepSeek use in federal civilian agencies",
-      "summary": "The decision comes a couple of days after the release of Deepseek's latest AI model.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-19T16:59:28+00:00",
-      "sent_at": "2026-10-19T18:59:35.777944+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/gpu-drivers/vbios-on-rtx-cards-can-be-modified-without-flashing-thanks-to-a-solo-developers-project-provides-a-ui-for-quick-vbios-configuration",
-      "title": "You can now modify the vBIOS on Nvidia gaming GPUs without flashing thanks to a solo developer’s project",
-      "summary": "Flashing the VBIOS is risky and can brick a GPU, but this VBIOS configurator uses an Nvidia register key to override VBIOS settings without flashing.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-10-19T16:30:39+00:00",
-      "sent_at": "2026-10-19T18:59:35.777944+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/cryptomining/claude-code-ai-agent-caught-a-crypto-miner-hiding-on-a-developers-overheating-mac-xmrig-task-was-hogging-about-1175-percent-cpu-roughly-12-cores-pushing-temps-to-112-degrees",
-      "title": "Claude Code AI agent caught a crypto miner hiding on a developer’s overheating Mac",
-      "summary": "A developer using Claude Code to help build a temperature monitor app was warned by the coding agent about a hidden crypto miner running on their system.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-19T11:36:20+00:00",
-      "sent_at": "2026-10-19T12:04:50.249885+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/cpus/arm-claims-agi-cpu-delivers-double-the-performance-per-rack-of-amd-epyc-9755-in-independent-analysis-new-cpu-evaluation-methodology-developed-by-arm-evaluates-agentic-ai-performance-across-seven-workloads",
-      "title": "Arm says its AGI CPU delivers nearly 2X the performance per rack of AMD EPYC 9755 in new agentic AI CPU tests",
-      "summary": "Arm claims its AGI CPU delivers nearly 2X the modeled rack performance of AMD’s EPYC 9755 across seven agentic AI workloads, using a new evaluation methodology developed with Fujitsu, Meta, and OpenAI",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-19T11:00:00+00:00",
-      "sent_at": "2026-10-19T12:04:50.249885+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/desktops/gaming-pcs/save-usd500-on-this-1440p-gaming-pc-with-an-rtx-5070-now-under-usd1-800-abs-flux-ii-aqua-rig-ships-with-a-20-core-intel-cpu-32gb-ddr5-and-a-1tb-ssd",
-      "title": "Save $500 on this 1440p gaming PC with an RTX 5070, now under $1,800",
-      "summary": "This Newegg deal on an ABS Flux II Aqua gaming PC gives you a machine ready for 1440p and 4K gameplay for $1,799.99. This pre-built comes with a 20-core Intel Core i7-14700F CPU, an Nvidia GeForce RTX 5070, a 1TB SSD, and 32GB of DDR5 RAM.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-10-19T10:01:38+00:00",
-      "sent_at": "2026-10-19T12:04:50.249885+00:00"
-    },
-    {
-      "link": "https://content.knowledgehub.wiley.com/edge-ai-for-smart-cities-from-real-time-insights-to-cognitive-urban-systems/?utm_source=IEEE",
-      "title": "Edge AI for Smart Cities: From Insight to Cognitive Action",
-      "summary": "This white paper explains how edge AI and physical AI help cities move beyond passive monitoring. It shows how urban infrastructure can sense, reason, and act on real-time conditions across public safety, mobility, and infrastructure management. What you will learn about: How the shift from smart cities to cognitive cities depends on infrastructure that reasons and acts, rather than infrastructure that only monitors. Why edge AI supports low-latency decisions, keeps sensitive data within city boundaries, and reduces dependency on centralized cloud infrastructure. How computer vision, multimodal sensing, and generative and agentic systems work together to support public safety, mobility, and infrastructure applications. How a tiered edge architecture assigns monitoring, planning, and action tasks across the far edge, regional, and cloud layers, and what durability, security, and interoperability requirements this places on hardware and software. Download this free whitepaper now!",
-      "source": "IEEE Spectrum",
-      "category": "AI",
-      "published": "2026-10-19T10:00:04+00:00",
-      "sent_at": "2026-10-19T12:04:50.249885+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/space/russian-military-satellite-closes-from-200-miles-to-3-miles-of-us-radar-satellite-aiding-ukraine-astronomer-says-it-may-be-the-first-unapproved-rendezvous-in-low-earth-orbit",
-      "title": "Russian military satellite closes from 200 miles to 3 miles of US radar craft aiding Ukraine",
-      "summary": "Russia’s Cosmos 2612 moved from more than 200 miles to about three miles from ICEYE-X36, a U.S.-owned radar satellite.",
-      "source": "Tom's Hardware",
-      "category": "Innovationen",
-      "published": "2026-10-19T10:00:00+00:00",
-      "sent_at": "2026-10-19T12:04:50.249885+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2289944/google-gemini-4-agents-just-beat-minecraft-with-no-human-intervention/",
-      "title": "Google Gemini 4 agents just beat Minecraft with no human intervention",
-      "summary": "Four Gemini 4 Argon agents beat Minecraft's Ender Dragon with no human intervention by sharing tips, threats and mistakes.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-19T09:19:19+00:00",
-      "sent_at": "2026-10-19T12:04:50.249885+00:00"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/10/19/1147095/ai-stranded-claude-virtual-desert-island-play/",
-      "title": "AI researchers stranded Claude on a virtual desert island. It started to “play.”",
-      "summary": "What do AI agents do if you don’t tell them to do anything? The answer looks a lot like play. Researchers repeatedly stranded them alone on a virtual desert island for 30 hours in an experiment reminiscent of the movies Cast Away or Home Alone. The agents—copies of Claude Opus 4.7 nicknamed Eko—were able to&#8230;",
-      "source": "MIT Technology Review",
-      "category": "AI",
-      "published": "2026-10-19T09:08:05+00:00",
-      "sent_at": "2026-10-19T12:04:50.249885+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/disney-asked-characterai-to-go-bankrupt-for-a-get-out-of-lawsuits-card/",
-      "title": "Disney Asked Character.AI to Go Bankrupt for a Get-Out-of-Lawsuits Card",
-      "summary": "The entertainment giant hopes to get trust and safety tech, among other IP, from a startup whose chatbots dozens of states allege encouraged minors to self-harm and kill their parents.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-10-19T09:00:00+00:00",
-      "sent_at": "2026-10-19T12:04:50.249885+00:00"
     }
   ]
 }
