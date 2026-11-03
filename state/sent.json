@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.engadget.com/2305432/google-says-that-students-in-schools-that-ban-ai-wont-have-access-to-search/",
+      "title": "Google says students in schools that ban AI won't have access to Search",
+      "summary": "This is another example of how closely Google Search is tied to the company's AI products.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-11-03T17:10:43+00:00",
+      "sent_at": "2026-11-03T17:31:27.987758+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/03/anthropic-is-still-grappling-with-the-economics-of-compute/",
+      "title": "Anthropic is still grappling with the economics of compute",
+      "summary": "At a moment when Anthropic's compute margins should be getting better, they’re getting worse.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-03T17:07:01+00:00",
+      "sent_at": "2026-11-03T17:31:27.987758+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1025411/google-turn-off-search-ai-features",
+      "title": "Google is entirely disabling Search in schools that don&#8217;t want AI",
+      "summary": "Google is completely turning off Search in schools that reject its AI features, the company told The New York Times. The decision was also shared in a broader education-related update from Google on Tuesday, saying that access to Gemini, Gemini Notebook, Gemini in Classroom, and Google Search \"will be entirely off\" for K-12 student accounts [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-11-03T17:00:04+00:00",
+      "sent_at": "2026-11-03T17:31:27.987758+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/software/windows/windows-11-8gb-ram-configurations-get-a-performance-boost-as-ai-demand-keeps-pushing-prices-up-microsoft-says-windows-is-now-20-percent-more-responsive-multitasking-40-percent-faster-on-memory-constrained-machines",
+      "title": "Windows 11 8GB RAM configurations get a performance boost — As AI demand keeps pushing prices up, Microsoft says Windows is now 20% more responsive, multitasking 40% faster on memory-constrained machines",
+      "summary": "Microsoft claims that it has made drastic improvements to the performance of Windows 11 while using 8GB of RAM.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-11-03T17:00:00+00:00",
+      "sent_at": "2026-11-03T17:31:27.987758+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/03/rivian-spinout-also-owns-up-to-mistakes-in-delayed-e-bike-launch/",
+      "title": "Rivian spinout Also was working on an e-moto project in Kenya — until it walked away",
+      "summary": "Also co-founder and president Chris Yu told TechCrunch that he wanted to prioritize autonomous vehicles.",
+      "source": "TechCrunch",
+      "category": "Autonomes Fahren",
+      "published": "2026-11-03T16:49:09+00:00",
+      "sent_at": "2026-11-03T17:31:27.987758+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/03/google-will-let-schools-disable-its-ai-tools-but-not-without-sacrificing-search/",
+      "title": "Google will let schools disable its AI tools, but not without sacrificing Search",
+      "summary": "Schools choosing to restrict AI altogether will no longer be able to access Google Search, as AI features are now integrated into the search engine.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-03T16:30:34+00:00",
+      "sent_at": "2026-11-03T17:31:27.987758+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/data-centers/openai-introduces-program-to-reduce-ai-data-center-energy-demand-during-peak-hours-company-testing-grid-protectors-program-system-in-georgia",
+      "title": "OpenAI introduces program to reduce AI data center energy demand during peak hours",
+      "summary": "The Grid Protectors Program applies load shedding, a technique in use since the 1970s, to data centers.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-11-03T15:56:51+00:00",
+      "sent_at": "2026-11-03T17:31:27.987758+00:00"
+    },
+    {
+      "link": "https://www.quili.ai/",
+      "title": "Quili AI",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-03T15:49:02+00:00",
+      "sent_at": "2026-11-03T17:31:27.987758+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/11/03/yvonne-bajela-is-bringing-17m-in-fresh-capital-to-europes-startup-scene/",
       "title": "Yvonne Bajela is bringing $17M in fresh capital to Europe’s startup scene",
       "summary": "Evertrue Capital announces $17M debut fund to back early stage AI and fintech.",
@@ -4193,78 +4265,6 @@
       "category": "AI",
       "published": "2026-10-20T16:21:18+00:00",
       "sent_at": "2026-10-20T18:19:13.152197+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/20/spacex-alums-aviation-startup-lands-115m-topping-1b-valuation/",
-      "title": "SpaceX alum’s aviation startup lands $115M, topping $1B valuation",
-      "summary": "Reliable Robotics extended its Series D round with $115 million in equity and $25 million in debt.",
-      "source": "TechCrunch",
-      "category": "Innovationen",
-      "published": "2026-10-20T13:17:36+00:00",
-      "sent_at": "2026-10-20T13:18:41.737886+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems/",
-      "title": "US orders federal agencies to remove China’s DeepSeek AI from their systems",
-      "summary": "The US has ordered federal civilian agencies to remove DeepSeek products and third-party services built using its technology, citing national security concerns.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-20T13:07:24+00:00",
-      "sent_at": "2026-10-20T13:18:41.737886+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1014246/adobe-lightroom-mobile-ai-quick-action-open-eyes-closed-blink-repair",
-      "title": "Adobe Lightroom mobile can now open closed eyes in photos with a simple tap",
-      "summary": "Adobe announced yesterday that the mobile version of Lightroom, available for iOS, iPadOS, and Android, can now open closed eyes in photos using generative AI with just a single tap. When the app detects a person, or a group of people, have their eyes closed in a photo it will automatically present users with a [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-20T13:06:44+00:00",
-      "sent_at": "2026-10-20T13:18:41.737886+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/20/eka-is-worth-1-45-billion-thanks-to-a-physical-ai-model-that-has-experts-raving/",
-      "title": "Eka is worth $1.45B thanks to a physical AI model that has experts raving",
-      "summary": "Eka Robotics may be the first robotic arm that is actually good at picking a wide range of objects up, and it is so smooth and human-like, it is wowing the industry.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-20T13:00:00+00:00",
-      "sent_at": "2026-10-20T13:18:41.737886+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/20/inspired-capital-closes-450m-fourth-fund-as-new-york-pushes-back-on-silicon-valleys-gravitational-pull/",
-      "title": "Inspired Capital closes $450M fourth fund as New York pushes back on Silicon Valley’s gravitational pull",
-      "summary": "The raise comes as venture dollars pile up on the West Coast.",
-      "source": "TechCrunch",
-      "category": "Hardware",
-      "published": "2026-10-20T13:00:00+00:00",
-      "sent_at": "2026-10-20T13:18:41.737886+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/big-tech/us-takes-unprecedented-step-of-recommissioning-nuclear-plants-due-to-ai-power-demand-2-25-gw-currently-on-tap-from-refurbished-reactors",
-      "title": "US restarts three shut-down nuclear reactors to feed AI data centers",
-      "summary": "The U.S. government is helping fund projects to bring nuclear reactors back online in an attempt to provide more energy capacity to AI data centers.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-20T12:50:00+00:00",
-      "sent_at": "2026-10-20T13:18:41.737886+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2291486/uk-antitrust-regulartor-wants-apple-to-open-up-iphone-nfc-access/",
-      "title": "UK antitrust regulator wants Apple to open up iPhone NFC access",
-      "summary": "The UK is taking aim at Apple's near-monopoly on contactless NFC smartphone payments.",
-      "source": "Engadget",
-      "category": "Hardware",
-      "published": "2026-10-20T12:42:27+00:00",
-      "sent_at": "2026-10-20T13:18:41.737886+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/video-games/pc-gaming/oblivion-gamer-uses-claude-ai-to-boost-average-fps-gains-up-to-48-percent-stutters-slashed-by-90-percent-performance-mod-doesnt-change-game-assets-or-alter-visuals",
-      "title": "Oblivion gamer uses Claude AI to boost average FPS gains up to 48%, stutters slashed by 90%",
-      "summary": "The new Oblivion Remastered Performance Fix mod is a pure code fix, with no changes to game assets or the game's visuals, yet it offers massive gains.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-20T12:30:00+00:00",
-      "sent_at": "2026-10-20T13:18:41.737886+00:00"
     }
   ]
 }
