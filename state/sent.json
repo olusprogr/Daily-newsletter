@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/",
+      "title": "Anthropic is working on a system to prove AI models’ identity",
+      "summary": "Called FlashProve, the system would let anyone check that an AI response really came from the model it claims to be from.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-03T22:41:03+00:00",
+      "sent_at": "2026-11-03T22:53:07.305354+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1025903/sonos-presets-27voice-ai-early-access",
+      "title": "Sonos adds new Presets and prepares for the 27voice AI beta",
+      "summary": "Sonos is rolling out a big app update that includes new Presets and early access to its AI voice assistant. You can create a preset to play music at a specific volume in a certain room, which will appear directly on the homescreen so you can quickly start playback. If you're in the US, you [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-11-03T22:20:50+00:00",
+      "sent_at": "2026-11-03T22:53:07.305354+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/news/1025576/binance-cyrpto-theft-explained",
+      "title": "Binance says hackers used fake job interviews and an internal AI tool to pull off the $6.3 billion heist",
+      "summary": "The largest crypto theft to date was pulled off by combining some well-known hacking techniques over the course of a few months, according to Binance. A postmortem from the company says the process that started with one developer downloading a tampered installer in June apparently spread by a malicious Google ad, exposing details about the [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-11-03T22:04:02+00:00",
+      "sent_at": "2026-11-03T22:53:07.305354+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/03/ted-schleins-ballistic-ventures-seeks-490m-for-new-funds-amid-ai-driven-cybersecurity-boom/",
+      "title": "Ted Schlein’s Ballistic Ventures seeks $490M for new funds amid AI-driven cybersecurity boom",
+      "summary": "Cybersecurity focused Ballistic Ventures is seeking to raise $360 million for a new flagship fund and another $130 million for a separate investment vehicle.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-03T21:43:08+00:00",
+      "sent_at": "2026-11-03T22:53:07.305354+00:00"
+    },
+    {
+      "link": "https://arxiv.org/abs/2605.29713",
+      "title": "The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-03T21:40:53+00:00",
+      "sent_at": "2026-11-03T22:53:07.305354+00:00"
+    },
+    {
+      "link": "https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months",
+      "title": "US tech giants' hidden AI debt swells 90% to $3.2T in 6 months",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-03T21:26:44+00:00",
+      "sent_at": "2026-11-03T22:53:07.305354+00:00"
+    },
+    {
+      "link": "https://www.bloomberg.com/opinion/articles/2026-11-03/ai-investment-boom-demands-stronger-financial-oversight",
+      "title": "The AI Boom May Be Sowing Seeds of Another Financial Crisis",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-03T21:25:48+00:00",
+      "sent_at": "2026-11-03T22:53:07.305354+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1025694/apple-siri-ai-third-party-apps",
+      "title": "Apple starts giving Siri AI access to third-party apps",
+      "summary": "Apple will now let Siri AI perform actions across third-party apps. As part of the iOS 27.3 update rolling out on Tuesday, Apple announced developers can now integrate Siri AI's new features in \"all apps,\" allowing the voice assistant to draw on a user's personal context, process natural language prompts, and use on-screen awareness to [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-11-03T20:16:17+00:00",
+      "sent_at": "2026-11-03T22:53:07.305354+00:00"
+    },
+    {
       "link": "https://www.engadget.com/2305432/google-says-that-students-in-schools-that-ban-ai-wont-have-access-to-search/",
       "title": "Google says students in schools that ban AI won't have access to Search",
       "summary": "This is another example of how closely Google Search is tied to the company's AI products.",
@@ -4121,150 +4193,6 @@
       "category": "AI",
       "published": "2026-10-20T20:09:46+00:00",
       "sent_at": "2026-10-21T01:15:36.964697+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/science/1014984/spacex-tesla-merger-elon-musk-special-committees",
-      "title": "Tesla and SpaceX are discussing a possible merger, Musk says",
-      "summary": "Tesla and SpaceX have formed special committees to discuss a possible merger, Elon Musk said during the latter's third quarter earnings call Tuesday. Musk, who serves as CEO of both companies, said the special committees have not reached agreement on the terms of any transaction - and that there's no guarantee that they will. That [&#8230;]",
-      "source": "The Verge",
-      "category": "Innovationen",
-      "published": "2026-10-20T21:30:24+00:00",
-      "sent_at": "2026-10-20T22:04:33.843287+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/20/anthropics-cloud-partnerships-are-getting-messy/",
-      "title": "Anthropic’s cloud partnerships are getting messy",
-      "summary": "Anthropic is reportedly struggling to secure enough compute from cloud providers that increasingly view it as a competitor, even as its infrastructure spending balloons ahead of a planned November IPO.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-20T21:25:22+00:00",
-      "sent_at": "2026-10-20T22:04:33.843287+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2292365/chatgpt-now-lets-you-lock-sensitive-chats-behind-a-pin/",
-      "title": "ChatGPT now lets you lock sensitive chats behind a PIN",
-      "summary": "OpenAI has introduced a new \"locked chats\" feature to protect users' more sensitive conversations with ChatGPT.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-20T21:05:00+00:00",
-      "sent_at": "2026-10-20T22:04:33.843287+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/science/1014913/spacex-will-try-catching-starship-and-its-booster-for-first-time-musk-says",
-      "title": "SpaceX will try catching Starship and its booster for first time, Musk says",
-      "summary": "SpaceX CEO Elon Musk said the company would attempt to catch Starship and its booster next month, with the goal of recovering the entire orbital launch system for the first time. If successful, Musk said, the attempt would mark the first time in history an orbital launch vehicle has been fully recovered. \"This is a [&#8230;]",
-      "source": "The Verge",
-      "category": "Innovationen",
-      "published": "2026-10-20T21:02:53+00:00",
-      "sent_at": "2026-10-20T22:04:33.843287+00:00"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/10/20/1145282/robotic-therapy-for-stroke-patients/",
-      "title": "Robotic therapy for stroke patients",
-      "summary": "Strokes leave 5 million people with long-term impairments each year, and a growing shortage of physical therapists makes it hard for them to get the care they need. A new approach tries to solve that problem by combining artificial intelligence and human therapy.&#160; Johannes Lachner, a former MIT postdoc who is now an assistant professor&#8230;",
-      "source": "MIT Technology Review",
-      "category": "AI",
-      "published": "2026-10-20T21:00:00+00:00",
-      "sent_at": "2026-10-20T22:04:33.843287+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2292346/judge-tosses-sexual-abuse-lawsuit-from-sam-altmans-sister/",
-      "title": "Judge tosses sexual abuse lawsuit from Sam Altman's sister",
-      "summary": "A lawsuit brought by the OpenAI CEO's sister was dismissed after Anne Altman refused a medical exam.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-20T20:53:25+00:00",
-      "sent_at": "2026-10-20T22:04:33.843287+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/20/spacexs-ai-business-is-beating-expectations/",
-      "title": "SpaceX’s AI business is beating expectations",
-      "summary": "SpaceX hit profitably in the third-quarter, with net income of $4.4 billion. AI was the engine.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-20T20:40:41+00:00",
-      "sent_at": "2026-10-20T22:04:33.843287+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/20/openai-acquires-startup-orchestra-bio%e2%81%a0-to-beef-up-its-biotech-business/",
-      "title": "OpenAI acquires startup Orchestra Bio⁠ to beef up its biotech business",
-      "summary": "OpenAI says it's adding Orchestra's team and technology to work on Rosalind, its AI model for life sciences research, and to its related Rosalind Workbench tool, a harness that aims to help researchers plan experiments and analyze results.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-20T20:35:10+00:00",
-      "sent_at": "2026-10-20T22:04:33.843287+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1014627/meta-muse-ai-sharing-ai-chats",
-      "title": "Meta pauses Muse sharing after researchers find AI chats on the web",
-      "summary": "Meta says it paused a Muse feature that lets you share conversations with the AI assistant after researchers found the URLs publicly available on the web, as reported by Ars Technica. In a report published this week, researchers at the security firm Claroc say they found more than 6,800 Muse links through public DNS records. [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-20T18:07:34+00:00",
-      "sent_at": "2026-10-20T18:19:13.152197+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/20/eric-schmidt-reportedly-owns-about-half-as-much-of-anthropic-as-ceo-dario-amodei/",
-      "title": "Eric Schmidt reportedly owns about half as much of Anthropic as CEO Dario Amodei",
-      "summary": "The former Google CEO owns about 1% stake in the leading AI lab, Bloomberg reported.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-20T17:55:12+00:00",
-      "sent_at": "2026-10-20T18:19:13.152197+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1014533/tuesday-labs-voxel-series-1-home-robot-reservation",
-      "title": "The $20,000 Voxel bot will help you find misplaced things around your home",
-      "summary": "Tuesday Labs, a New York City-based robotics lab and design studio, has opened reservations for Voxel, its new bi-pedal robot designed to learn and take over routine tasks throughout your home. Similar to other robots like Weave Robotics' Issac 1 that are designed for household chores beyond mopping or vacuuming floors, Voxel features a pair [&#8230;]",
-      "source": "The Verge",
-      "category": "Innovationen",
-      "published": "2026-10-20T17:49:55+00:00",
-      "sent_at": "2026-10-20T18:19:13.152197+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/gpu-drivers/amds-fsr-4-1-now-works-on-radeon-rx-6000-gpus-xbox-series-x-and-s-and-ryzen-ai-max-ai-9-and-z2-socs-new-release-brings-cutting-edge-tech-to-older-hardware-with-a-small-performance-cost",
-      "title": "AMD's FSR 4.1 now works on Radeon RX 6000 cards, Xbox Series X and S, and Ryzen AI Max, AI 9, and Z2 SoCs",
-      "summary": "AMD has released a version of its cutting-edge FSR 4.1 upscaler that now works on Radeon RX 6000 GPUs, Xbox Series X and Series S consoles, and Ryzen AI Max, AI 9, and Z2 chips.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-20T17:47:35+00:00",
-      "sent_at": "2026-10-20T18:19:13.152197+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/french-government-calls-emergency-meetings-with-platforms-over-protests/",
-      "title": "French Government Calls Emergency Meetings With Platforms Over Protests",
-      "summary": "TikTok and other sites were told to curb protest footage and AI-altered images, while online retailers like Vinted and eBay reportedly signed an agreement stop looted goods from flooding resale sites.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-10-20T17:41:58+00:00",
-      "sent_at": "2026-10-20T18:19:13.152197+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/20/metas-muse-hits-10m-u-s-downloads-in-40-days-a-milestone-reached-by-only-11-other-apps/",
-      "title": "Meta’s Muse hits 10M U.S. downloads in 40 days, a milestone reached by only 11 other apps",
-      "summary": "Meta's AI companion Muse has surpassed 10 million U.S. downloads in its first 40 days, joining an exclusive group of apps that includes Threads. New data also shows Muse is retaining users at higher rates than its AI rivals.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-20T17:12:48+00:00",
-      "sent_at": "2026-10-20T18:19:13.152197+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2291954/spotify-is-dancing-around-its-ai-slop-and-spam-problem/",
-      "title": "Spotify is dancing around its AI 'slop and spam' problem",
-      "summary": "The company said it removed 50 million such tracks from recommendations, but hasn't necessarily wiped them entirely.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-20T17:11:26+00:00",
-      "sent_at": "2026-10-20T18:19:13.152197+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/news/1014455/amd-fsr-4-1-xbox-consoles-handhelds-laptops",
-      "title": "AMD is bringing FSR 4.1 to Xbox consoles and handhelds",
-      "summary": "AMD has just revealed that it's bringing its latest upscaling technology, FSR 4.1, to the Xbox Series S and X consoles, as well as laptops, 6000-series GPUs, and handhelds like the Xbox Ally X devices. FSR 4.1 will start appearing for Radeon RX 6000-series GPUs today, as well as Ryzen AI Max 300 and 400 [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-20T16:21:18+00:00",
-      "sent_at": "2026-10-20T18:19:13.152197+00:00"
     }
   ]
 }
