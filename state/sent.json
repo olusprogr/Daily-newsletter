@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1026586/nothing-screen-free-ai-device-carl-pei",
+      "title": "Nothing teases a screen-free AI device ahead of launch next month",
+      "summary": "Nothing CEO Carl Pei said in a post on X that the company's launching its first AI device in December. That's just a little over a year after Pei announced plans for \"AI-native\" devices and an AI operating system. He didn't give away much about what exactly the new device is, only that one feature [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-11-04T18:26:07+00:00",
+      "sent_at": "2026-11-04T18:26:50.544088+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/04/waymo-confirms-it-will-split-with-uber-in-january-2028/",
+      "title": "Waymo confirms it will split with Uber in January 2028",
+      "summary": "The split will set up direct competition in those markets, as Uber has many other autonomous vehicle partners on its network.",
+      "source": "TechCrunch",
+      "category": "Autonomes Fahren",
+      "published": "2026-11-04T18:12:30+00:00",
+      "sent_at": "2026-11-04T18:26:50.544088+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1026474/openai-chatgpt-animated-gifs-images-2-6",
+      "title": "ChatGPT will now make you animated GIFs",
+      "summary": "ChatGPT can now create GIFs using a prompt or a photo uploaded to the AI chatbot. The update, which is rolling out alongside OpenAI's new Images 2.6 model, allows you to adjust the GIF's animation speed, edit individual frames, and share it with others. Before this change, ChatGPT couldn't natively generate GIFs in a single [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-11-04T18:00:00+00:00",
+      "sent_at": "2026-11-04T18:26:50.544088+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/big-tech-abandoned-the-small-phone-the-enough-phone-wants-to-save-it/",
+      "title": "Small Phones Have Vanished. Enough Phone Wants to Bring Them Back",
+      "summary": "As flagship smartphones balloon in size, the Enough Phone offers a 5.3-inch handset. Choose between stock Android or an anti-distraction operating system.",
+      "source": "Wired",
+      "category": "Hardware",
+      "published": "2026-11-04T18:00:00+00:00",
+      "sent_at": "2026-11-04T18:26:50.544088+00:00"
+    },
+    {
+      "link": "https://www.anthropic.com/research/provable-inference",
+      "title": "Progress on provable inference for large language models",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-04T17:17:46+00:00",
+      "sent_at": "2026-11-04T18:26:50.544088+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2306727/redditor-uses-ai-to-get-switch-games-running-natively-on-apple-tv/",
+      "title": "Redditor uses AI to get Switch games running natively on Apple TV",
+      "summary": "The TVPort project is another example of people using Claude Code to bring software to other platforms",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-11-04T17:15:09+00:00",
+      "sent_at": "2026-11-04T18:26:50.544088+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/video-games/nintendo/nintendo-rom-chip-supplier-macronix-quits-to-focus-on-chips-for-ai-data-centers-game-key-cards-may-be-more-available-as-large-game-storage-chips-become-more-expensive",
+      "title": "Nintendo ROM chip supplier Macronix quits to focus on chips for AI data centers, reports indicate",
+      "summary": "Macronix, one of Nintendo's ROM chip manufacturers, is shutting down the business to reallocate manufacturing for NOR and NAND flash chips that the AI industry demands.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-11-04T17:10:59+00:00",
+      "sent_at": "2026-11-04T18:26:50.544088+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/04/i-tried-apples-siri-recaps-theyre-surprisingly-useful-and-a-little-unsettling/",
+      "title": "I tried Apple’s Siri Recaps. They’re surprisingly useful — and a little unsettling",
+      "summary": "Apple's AI-powered Siri Recaps won me over in just one day, despite my privacy reservations. But there's still room for improvement.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-04T16:51:35+00:00",
+      "sent_at": "2026-11-04T18:26:50.544088+00:00"
+    },
+    {
       "link": "https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop",
       "title": "Nvidia DGX Spark encrypted firmware slows inference speed to 35% on Linux",
       "summary": "",
@@ -4049,150 +4121,6 @@
       "category": "AI",
       "published": "2026-10-21T20:27:41+00:00",
       "sent_at": "2026-10-21T22:04:48.951242+00:00"
-    },
-    {
-      "link": "https://spectrum.ieee.org/schindler-2027-ieee-president-elect",
-      "title": "Manfred “Fred” J. Schindler Is 2027 IEEE President-Elect",
-      "summary": "IEEE Life Fellow Manfred “Fred” J. Schindler has been elected as the 2027 IEEE president-elect . He will begin serving as president on 1 January 2028. Schindler, who was nominated by the IEEE Board of Directors , received 16,421 votes in the election. Senior Member David Alan Koehler received 13,874 votes. Schindler’s Top 3 Goals as President-Elect Strengthen IEEE’s connection with industry by coordinating events across geography, industry, and technology to revitalize professional activities, especially ones for young professionals. Champion the improvement of IEEE’s digital infrastructure to eliminate manual processes and modernize interfaces. Prioritize the advancement of technology to benefit future generations by expanding and supporting IEEE initiatives and programs. At press time, the results were unofficial until the IEEE Board of Directors accepts the IEEE Teller’s Committee report in November. Schindler, an expert in microwave semiconductor technology, is an independent consultant supporting clients with technical expertise, due diligence, and project management. Throughout his career, he led the development of microwave integrated-circuit technology, from lab demonstrations to high-volume commercial products. He has numerous technical publications and holds 11 patents. Schindler served as CTO of Anlotek, and director of Qorvo and RFMD ’s Boston design center. He was applications manager at IBM , engineering manager at ATN Microwave, and a lab manager at Raytheon . An IEEE volunteer for more than 30 years, Schindler served as the 2024 vice president of IEEE Technical Activities and the 2021–2022 Division IV director. He was chair of the IEEE Conferences Committee from 2015 to 2018 and president of the IEEE Microwave Theory and Technology Society (MTTS) in 2003. He received the society’s 2018 Distinguished Service Award and its 2015 N. Walter Cox Award. His award-winning micro-business column has appeared in IEEE Microwave Magazine since 2011. He also led the 2025 One IEEE to Enable Strategic Investments in Innovations and Public Imperative Activities adhoc committee . Schindler is an IEEE–Eta Kappa Nu honorary life member and a MTTS honorary life member.",
-      "source": "IEEE Spectrum",
-      "category": "Hardware",
-      "published": "2026-10-21T18:00:03+00:00",
-      "sent_at": "2026-10-21T18:21:25.087860+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/21/gm-is-giving-onstar-an-ai-makeover/",
-      "title": "GM is giving OnStar an AI makeover",
-      "summary": "It's one of the biggest overhauls ever to the 30-year-old connected car product.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-21T18:00:00+00:00",
-      "sent_at": "2026-10-21T18:21:25.087860+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/21/php-armageddon-openai-googles-wiz-find-ancient-holes-panicking-the-internet/",
-      "title": "PHP armageddon: OpenAI, Google’s Wiz find ancient holes, panicking the internet",
-      "summary": "This is the kind of security issue that was found and prevented by AI, but is also a high risk because of AI.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-21T17:59:12+00:00",
-      "sent_at": "2026-10-21T18:21:25.087860+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/21/blacksmith-hits-unicorn-valuation-after-sequoia-leads-series-c/",
-      "title": "Blacksmith hits unicorn valuation after Sequoia leads Series C",
-      "summary": "Blacksmith, a platform that lets companies build and test AI code more effectively, just announced a $66 million Series C round led by Sequoia that values the company at $1 billion.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-21T17:18:27+00:00",
-      "sent_at": "2026-10-21T18:21:25.087860+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/10/21/lucid-bolt-robotaxi-nvidia-alpamayo-madrid-2027/",
-      "title": "Lucid’s 25,000 Bolt robotaxis will run on Nvidia’s self-driving software",
-      "summary": "Lucid’s European robotaxi deal now has a driver. Bolt announced today that its fleet of at least 25,000 autonomous Lucid vehicles will run Nvidia’s Alpamayo Stack self-driving software, starting with a data-collection program in Madrid in 2027. That gives Lucid two robotaxi customers on two different autonomy systems: Nuro’s software for Uber’s Gravity robotaxis in the US, and now Nvidia’s for Bolt in Europe. more…",
-      "source": "Electrek",
-      "category": "Autonomes Fahren",
-      "published": "2026-10-21T17:00:47+00:00",
-      "sent_at": "2026-10-21T18:21:25.087860+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/21/waymo-starts-offering-rides-at-the-las-vegas-airport/",
-      "title": "Waymo starts offering rides at the Las Vegas airport",
-      "summary": "Pickups and dropoffs will happen at dedicated \"autonomous vehicle zones\" at Terminal 1 and Terminal 3.",
-      "source": "TechCrunch",
-      "category": "Autonomes Fahren",
-      "published": "2026-10-21T16:59:44+00:00",
-      "sent_at": "2026-10-21T18:21:25.087860+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/space/2026/10/spacex-will-attempt-to-reach-weekly-starship-launches-by-early-2027/",
-      "title": "SpaceX to attempt Starship catch on next flight, with eye on rapid cadence increase",
-      "summary": "\"We have had significant constructive engagement with the FAA.\"",
-      "source": "Ars Technica",
-      "category": "Innovationen",
-      "published": "2026-10-21T16:46:19+00:00",
-      "sent_at": "2026-10-21T18:21:25.087860+00:00"
-    },
-    {
-      "link": "https://rustoffrails.org/",
-      "title": "Rust off Rails: The opinionated web stack for the AI era",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-21T16:34:16+00:00",
-      "sent_at": "2026-10-21T18:21:25.087860+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/news/1015299/nvidia-driver-microsoft-advanced-shader-delivery-support",
-      "title": "Nvidia’s latest GPU driver brings a new way to speed up PC games",
-      "summary": "Nvidia is rolling out a new GPU driver today (621.01) that enables Microsoft's new Advanced Shader Delivery technology to speed up game launches. The technology also removes mid-game \"just-in-time\" shader compilation, reducing stuttering and CPU spikes. Microsoft's Advanced Shader Delivery works by offloading shader compilation for different hardware combinations to the cloud. \"Using DirectX 12, [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-10-21T13:09:26+00:00",
-      "sent_at": "2026-10-21T13:24:23.449737+00:00"
-    },
-    {
-      "link": "https://spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup",
-      "title": "How Wikipedia’s Editors Keep the Online Encyclopedia Human-Written",
-      "summary": "Ellia Lebleu is a founding member of the WikiProject AI Cleanup , a volunteer effort launched in 2023 to find and remove AI-generated material from Wikipedia that breaks the website’s guidelines. When the cleanup began, AI writing was often betrayed by conspicuous clichés. Today, the project’s volunteers are developing tools to detect subtler forms of machine-generated content and debating AI’s role in the world’s most widely used encyclopedia. When did you realize Wikipedia had a problem with AI-generated material? Ellia Lebleu: It was around December 2023. A few other editors and I were chatting on Wikipedia’s Discord server, and we had all seen very strange articles with the same odd characteristics. They repeated phrases like “stands as a testament” or “rich cultural heritage.” They sometimes had conclusion sections, or sections called “Why is this important?” That was very typical of ChatGPT in 2023 and early 2024 but very odd for Wikipedia articles—and very easy to spot. Then I decided, let’s create an official project on Wikipedia so more people can deal with this. Ellia Lebleu Ellia Lebleu is a founding member of the WikiProject AI Cleanup. Lebleu is pursuing a Ph.D. in AI at the Inria Center of the University of Rennes , part of France’s national research institute for digital science and technology. How do editors spot AI-generated writing today? Lebleu: By 2025, the signs of AI writing were becoming subtler and more structural. For example, AI loves the “rule of three,” negative parallelisms, and other structures of speech that aren’t conclusive by themselves but become meaningful as they accumulate. We also look beyond the article. If someone writes five articles of thousands of words each in 5 minutes, there is reason to suspect AI. Does the AI problem just appear in the main text, or also in citations? Lebleu: Fake or misleading citations have become a major worry. Sometimes an AI hallucinates a citation entirely, although that’s much rarer today because of retrieval-augmented generation that allows the AI to find sources. More often, it finds a real source but gets its content completely wrong. AI citations that don’t actually support what is being written are extremely commonplace. English Wikipedia recently prohibited editors from using LLMs to generate articles. How much AI-generated content is still getting through? Lebleu: I’ve been working with [AI-detection company] Pangram to estimate the proportion of AI-generated content. I tested it on Wikipedia content from before ChatGPT and found no false positives, so its results provide a very conservative lower bound. In late 2025, it flagged perhaps 20 percent of new articles and drafts as AI-generated. In early 2026, that went down to 15 or 16 percent. But we don’t yet know whether that’s because our recent policies have had an effect or because models are getting more powerful and Pangram hasn’t had time to adapt. Is Wikipedia using AI to combat AI? Lebleu: Another editor from the project has made an AI source verifier, which goes through the sources on a page and checks whether they match the claims. Since it is itself an AI model, there is no guarantee that it will be correct every time. But if you want something that works at scale and filters out obvious cases, it’s a good first step. The Wikimedia Foundation is also working on a tool called Paste Check , which can flag text pasted directly from some AI chatbots. And we’ve seen Claude sometimes say, “I can’t write a Wikipedia article; it would go against Wikipedia’s policies.” If all major AI companies implemented that kind of prompt refusal, it wouldn’t solve the problem entirely, because there are still open-weight models that can be tweaked to avoid restrictions. But it would help with people who use commercial models and aren’t especially familiar with the technology. Can you tell if the rule prohibiting AI writing is working? Lebleu: It’s still a little early to tell. We see possible effects, such as prompt refusal and the apparent slight drop in AI-generated content. But again, we don’t yet know if that is because models are getting better or because beginners are learning the rules. The vast majority of AI-generated content is submitted by beginner editors, so we’ve made many efforts to make the rule very visible in welcome messages, editing help, and advice. What if AI becomes capable of writing truly reliable Wikipedia articles? Lebleu: That’s one of the big questions we’re facing. When the guideline was passed, it was for very practical reasons: We were flooded with AI content, we didn’t have good tools, and we needed to put a stop to it. But since then, it has taken on a more philosophical dimension. Many people have called Wikipedia “the last good place on the internet.” Being a place that was, in theory, free from AI slop has become part of Wikipedia’s identity. A lot of Wikipedia’s communication is now centered on the idea that we’re a human-written encyclopedia. Even AI companies find that interesting. It can be valuable to have a purely human-written corpus on which to [train] AI systems. The fact that Wikipedia is still that, and will remain that for at least the near future, makes it a precious resource that isn’t replicated anywhere else. But will the people who read and contribute to Wikipedia want it to become partially AI-generated if that makes it more comprehensive? We could preserve Wikipedia’s identity as a human-written corpus while also offering an AI-assisted option. Has Wikipedia reckoned with the idea of “Google Zero”—a possible future in which websites no longer get traffic from Google search? Lebleu: If everything goes through AI search and websites plummet to zero visibility, how do we expose Wikipedia and show that it can be edited and that people can still contribute? Wikipedia is frequently cited in [Google’s] AI Overviews, but users may only see an AI answer citing Wikipedia. They may not realize that Wikipedia is a living project they can edit and contribute to. The Wikimedia Foundation is working on an attribution framework that could give AI users more information about the article [being cited]: when it was last edited, how comprehensive it is, whether editors have flagged problems, and perhaps even a call to action. In the future, readers might even contribute through AI models: “The AI cited Wikipedia, but there seems to be an error. Can I make an edit request and add this other source I found?” I can see a very strong symbiotic relationship between Wikipedia and AI models in the future. I don’t see Wikipedia disappearing, but I can see it taking a very different shape. Yesterday, AI was something to clean up. Today, it’s a tool to help us with the cleanup. Tomorrow, it will be the air we breathe. A condensed version of this article appears in the November 2026 print issue as “Ellia Lebleu.”",
-      "source": "IEEE Spectrum",
-      "category": "AI",
-      "published": "2026-10-21T13:00:02+00:00",
-      "sent_at": "2026-10-21T13:24:23.449737+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/21/mach9-raises-34m-after-pivoting-to-ai-cad-software/",
-      "title": "Mach9 raises $34M after pivoting to AI CAD software",
-      "summary": "The startup initially set out to build better, faster, and cheaper surveying hardware in 2021.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-21T13:00:00+00:00",
-      "sent_at": "2026-10-21T13:24:23.449737+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/a-design-flaw-in-share-links-exposes-users-personal-conversations-with-meta-muse/",
-      "title": "A Design Flaw in Share Links Exposes Users’ Personal Conversations With Meta’s Muse",
-      "summary": "The company is suspending the feature after security researchers discovered how easy it was to access sensitive information shared with the AI assistant.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-10-21T12:35:00+00:00",
-      "sent_at": "2026-10-21T13:24:23.449737+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2292685/heres-how-spacex-plans-to-catch-starships-upper-stage-for-the-first-time/",
-      "title": "Here's how SpaceX plans to catch Starship's upper stage for the first time",
-      "summary": "SpaceX has released a demo showing how it intends to catch Starship's upper stage, which could happen as soon as next month.",
-      "source": "Engadget",
-      "category": "Innovationen",
-      "published": "2026-10-21T12:19:58+00:00",
-      "sent_at": "2026-10-21T13:24:23.449737+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1014316/iphone-duo-review-ama",
-      "title": "I reviewed the iPhone Duo, ask me anything",
-      "summary": "I'm The Verge's senior smartphone reviewer and I've been using the iPhone Duo for the past week. I've unfolded it, flipped it, and folded it more times than I could count as I've been working on the review alongside our editor-in-chief Nilay Patel, and I'm ready to answer your questions about it. The Duo represents [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-10-21T12:15:00+00:00",
-      "sent_at": "2026-10-21T13:24:23.449737+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2292644/openai-agents-disabled-own-safety-monitoring-systems/",
-      "title": "OpenAI's agents disabled their own safety monitoring systems",
-      "summary": "OpenAI reveals that its agents misbehaved by switching off the system monitoring them for misbehaviors.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-21T10:53:21+00:00",
-      "sent_at": "2026-10-21T13:24:23.449737+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/openai-startup-brain-implants-detect-cancer/",
-      "title": "OpenAI Invests in Startup That Uses Brain Implants to Detect Cancer",
-      "summary": "It’s the latest in a growing wave of bets that AI companies are making on brain data.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-10-21T10:30:00+00:00",
-      "sent_at": "2026-10-21T13:24:23.449737+00:00"
     }
   ]
 }
