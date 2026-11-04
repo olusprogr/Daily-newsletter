@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop",
+      "title": "Nvidia DGX Spark encrypted firmware slows inference speed to 35% on Linux",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Hardware",
+      "published": "2026-11-04T08:46:29+00:00",
+      "sent_at": "2026-11-04T10:26:28.504456+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2306215/valve-changed-its-steam-release-rules-amid-a-flood-of-ai-games/",
+      "title": "Valve just changed its Steam release rules amid a flood of AI games",
+      "summary": "Valve is updating its game release rules to try to unclog a backlog of approvals due to a recent flood of new game titles, many created with AI.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-11-04T08:28:09+00:00",
+      "sent_at": "2026-11-04T10:26:28.504456+00:00"
+    },
+    {
+      "link": "https://uncracked.city",
+      "title": "Show HN: Uncracked City, detective game where you question LLM suspects that lie",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-03T21:20:03+00:00",
+      "sent_at": "2026-11-04T10:26:28.504456+00:00"
+    },
+    {
+      "link": "https://spectrum.ieee.org/ieee-industry-experts-webinar",
+      "title": "IEEE Computer Society Chapter Offers Webinars With Industry Experts",
+      "summary": "To help engineers keep up with emerging technologies such as AI, cloud computing, and sustainable infrastructure, and learn how they can be applied in practice, the IEEE Computer Society ’s Central Indiana Chapter recently launched its Tech Talk Series. The live webinar series connects IEEE members, undergrad and graduate students, and engineering professionals from IEEE Region 4 with industry practitioners. The monthly sessions have covered AI governance and security, agentic systems, and related topics. The sessions featured speakers from Apple , software company Tavant , and cybersecurity concern Zscaler . Upcoming sessions and registration details are available on the IEEE Region 4 virtual events calendar . Technical discussions grounded in engineering Rather than presenting on emerging technologies only at a conceptual level, speakers discussed the design decisions behind specific tools and systems, how the systems are structured, and implementation challenges. They also shared lessons learned from using the tools in their daily work. Sessions also include technical walkthroughs and practical examples. The live format allows attendees to discuss and compare their approaches when evaluating and implementing new technologies with those used by other organizations. Extending access through a virtual format The organizers chose to make the series virtual so that chapter members and other attendees could participate in technical discussions with engineers from major technology companies and eliminate the need to travel. For young professionals, the sessions connect what they’ve learned in a classroom with the realities of the workplace. Technical programs such as the Tech Talk Series give professionals and students access to expertise, help create connections across career levels, and make important engineering discussions available to a broader community. Attendees learn how practitioners approach projects such as system architecture, reliability, security, governance, and product delivery. For experienced professionals, the talks offer a forum to examine new ways of designing, securing, and operating software systems, and compare technical approaches. They can ask questions relevant to systems being evaluated or deployed within their organization. Examining governed AI agents The most recent webinar, Feeding and Fencing AI Agents: Engineering Governed Agentic Systems on Real-Time Data, featured Gajendra Babu Thokala , a senior engineering leader at Apple in Seattle. The IEEE senior member explained how teams can move beyond adding isolated AI features to applications and instead build governed AI-agent systems that use real-time business data to complete multistep business workflows. Another recent session, Building AI Native Products: A Playbook for Agentic Systems, explored how products built around AI agents differ from traditional software. It also covered how agentic systems can help users complete multistep tasks and workflows. IEEE Senior Member Sandeep Shivam , a product and technology leader at Tavant in Dallas, led the webinar. Those two sessions illustrate the series’ purpose: helping participants understand what a technology can do and what is required to use it responsibly. Building a continuing technical program Future sessions are being planned on areas including enterprise AI, software reliability, and responsible AI usage. In addition to speakers from technology companies, the chapter also plans to invite speakers from startups, universities, and research organizations. Upcoming sessions are expected to cover cloud platforms, enterprise integrations, and the responsible development of AI systems. Technical programs such as the Tech Talk Series give professionals and students access to expertise, help create connections across career levels, and make important engineering discussions available to a broader community. Undergraduate and graduate students are invited to participate to gain exposure to technical decision-making and challenges encountered in professional engineering environments.",
+      "source": "IEEE Spectrum",
+      "category": "AI",
+      "published": "2026-11-03T19:00:02+00:00",
+      "sent_at": "2026-11-04T10:26:28.504456+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/03/netflixs-new-ai-discover-tab-helps-you-find-something-to-watch-based-on-your-mood/",
+      "title": "Netflix’s new AI Discover tab helps you find something to watch based on your mood",
+      "summary": "The first experimental feature under the tab will allow users to get recommendations based on what they're currently in the mood for.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-03T18:42:16+00:00",
+      "sent_at": "2026-11-04T10:26:28.504456+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/tech-policy/2026/11/nyt-demands-brave-shut-down-its-paywall-blocker-and-end-deals-with-ai-firms/",
+      "title": "NYT demands Brave shut down its paywall blocker and end deals with AI firms",
+      "summary": "Lawsuit calls Brave \"supplier, dealer, and distributor\" of stolen news content.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-11-03T18:30:27+00:00",
+      "sent_at": "2026-11-04T10:26:28.504456+00:00"
+    },
+    {
+      "link": "https://ben.stolovitz.com/posts/how-use-ai-oct-2026/",
+      "title": "How I use AI (Oct 2026)",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-03T18:11:11+00:00",
+      "sent_at": "2026-11-04T10:26:28.504456+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/03/crowdstrike-to-shell-out-nearly-500m-for-2-ai-security-startups-as-the-market-for-securing-agents-takes-off/",
+      "title": "CrowdStrike to shell out nearly $500M for 2 AI security startups as the market for securing agents takes off",
+      "summary": "CrowdStrike said it will buy Fiddler AI, which makes AI agent observability software, and Dreadnode, which helps companies automate AI security testing.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-03T17:56:52+00:00",
+      "sent_at": "2026-11-04T10:26:28.504456+00:00"
+    },
+    {
       "link": "https://www.theverge.com/tech/1026148/amd-earnings-q3-2026-data-center-pc",
       "title": "AMD rides data center riches to &#8216;largest and most profitable&#8217; quarter in history",
       "summary": "AMD CEO Lisa Su said in the company's quarterly earnings call on Tuesday that Q3 2026 was \"was the largest and most profitable in our history.\" AMD reported a record $13.4 billion in quarterly revenue, and it's predicting it will hit another record high next quarter of $17 billion. The company's data center business is [&#8230;]",
@@ -4121,78 +4193,6 @@
       "category": "AI",
       "published": "2026-10-21T10:30:00+00:00",
       "sent_at": "2026-10-21T13:24:23.449737+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/10/20/tesla-and-spacex-take-first-step-towards-merger-would-dilute-all-shareholders/",
-      "title": "Tesla and SpaceX take first step towards merger, would dilute all shareholders",
-      "summary": "Tesla and SpaceX have both formed special committees within their corporate boards to explore the possibility of merging the two companies according to Elon Musk, who is CEO of both companies. The merger could have big consequences not just for Tesla and SpaceX shareholders, but could dilute the retirement savings of everyone with exposure to major stock indices. more…",
-      "source": "Electrek",
-      "category": "Innovationen",
-      "published": "2026-10-21T03:14:40+00:00",
-      "sent_at": "2026-10-21T07:01:17.220364+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/tech-policy/2026/10/meta-drops-the-word-train-from-its-commercial-tos-after-ai-backlash/",
-      "title": "Meta drops the word \"train\" from its commercial TOS after AI backlash",
-      "summary": "Meta changes AI scraping policy but won’t add language respecting robots.txt.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-10-20T20:07:58+00:00",
-      "sent_at": "2026-10-21T07:01:17.220364+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2292281/meta-suspends-muse-chats-sharing-feature-after-it-left-private-details-exposed/",
-      "title": "Meta suspends Muse chats sharing feature after it left private details exposed",
-      "summary": "Researchers accessed 6,800 shared conversations with the AI agent, including internal company documents.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-20T20:00:43+00:00",
-      "sent_at": "2026-10-21T07:01:17.220364+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/google/2026/10/geminis-personal-intelligence-is-coming-to-cars/",
-      "title": "Gemini's Personal Intelligence is coming to cars",
-      "summary": "It's probably time to audit your Gemini settings.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-10-20T20:00:33+00:00",
-      "sent_at": "2026-10-21T07:01:17.220364+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/20/google-is-bringing-a-more-personal-version-of-its-gemini-ai-assistant-to-your-car/",
-      "title": "Google is bringing a more personal version of its Gemini AI assistant to your car",
-      "summary": "Google is bringing Gemini's Personal Intelligence feature to cars, allowing its AI assistant to draw on information from Gmail, Calendar, Maps, YouTube, and other Google services to deliver more personalized responses while driving.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-20T20:00:00+00:00",
-      "sent_at": "2026-10-21T07:01:17.220364+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2292027/google-brings-gemini-personal-intelligence-to-android-auto/",
-      "title": "Google brings Gemini Personal Intelligence to Android Auto",
-      "summary": "In the coming months, the feature will also roll out to cars with Google built-in.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-20T20:00:00+00:00",
-      "sent_at": "2026-10-21T07:01:17.220364+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/gadgets/2026/10/openbsd-8-0-lands-with-intel-arc-graphics-support/",
-      "title": "OpenBSD 8.0 arrives with security record still intact",
-      "summary": "OpenBSD 8.0 lands with Intel Arc support, ARM64 hibernation, and 64-vCPU guests",
-      "source": "Ars Technica",
-      "category": "Hardware",
-      "published": "2026-10-20T19:57:18+00:00",
-      "sent_at": "2026-10-21T07:01:17.220364+00:00"
-    },
-    {
-      "link": "https://www.bolkunov.com/p/on-ai-writing",
-      "title": "On AI writing",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-20T19:55:11+00:00",
-      "sent_at": "2026-10-21T07:01:17.220364+00:00"
     }
   ]
 }
