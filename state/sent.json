@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/11/05/dropbox-acquires-tigris-data-for-350m-to-bolster-its-ai-iinfrastructure/",
+      "title": "Dropbox acquires Tigris Data for $350M to bolster its AI infrastructure",
+      "summary": "The deal is expected to support the development of DBX Agent Cloud, a new storage platform aimed at developers building AI models and agents.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-05T15:19:05+00:00",
+      "sent_at": "2026-11-05T16:05:23.331884+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/05/elevenlabs-now-lets-users-publish-ai-generated-music-directly-on-soundcloud/",
+      "title": "ElevenLabs now lets users publish AI-generated music directly on SoundCloud",
+      "summary": "ElevenLabs said more than 25 million tracks have been generated using its music models.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-05T15:00:00+00:00",
+      "sent_at": "2026-11-05T16:05:23.331884+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/podcast/1024438/willy-shih-supply-chain-ai-chips-ram-where-does-my-stuff-come-from-book",
+      "title": "The hidden supply chain costs of the AI boom",
+      "summary": "Today, I’m talking with Willy Shih, an economist, a professor of management practice at Harvard Business School, and the author of the upcoming book, Where Does My Stuff Come From? The Powerful Economics Behind Global Supply Chains. Willy is one of my all-time favorite Decoder guests — his way of looking at the world through [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-11-05T15:00:00+00:00",
+      "sent_at": "2026-11-05T16:05:23.331884+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1027427/ai-music-soundcloud-elevenlabs",
+      "title": "You can post AI music straight to SoundCloud from ElevenLabs",
+      "summary": "After partnering with Moises earlier this year, SoundCloud is now adding integration with another AI music platform, ElevenLabs. Now, rather than having to export and download your outputs from ElevenLabs and then upload them to SoundCloud, you can publish them directly. As part of the partnership, SoundCloud Artist Pro subscribers are also getting three months [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-11-05T15:00:00+00:00",
+      "sent_at": "2026-11-05T16:05:23.331884+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1027444/instagram-edits-desktop-ai-agents-muse-mcp",
+      "title": "You can edit your videos with AI on Instagram&#8217;s new desktop Edits app",
+      "summary": "Instagram's standalone video editing app is now available on macOS, where you can plug in your AI agent of choice to assemble your videos. Instagram's Matthew Simari, head of product management for Edits, said in an interview with The Verge, \"One of the things we're releasing with Edits Desktop is a MCP for all the [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-11-05T15:00:00+00:00",
+      "sent_at": "2026-11-05T16:05:23.331884+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/cpus/intel-leaker-claims-nova-lake-desktop-chips-have-5-1-ghz-clock-limit-beyond-90-c-high-clock-speeds-could-demand-significant-cooling-for-next-gen-chips",
+      "title": "Intel leaker claims Nova Lake desktop chips have 5.1 GHz clock limit beyond 90°C",
+      "summary": "A known Intel leaker claims that Intel's next-generation processors will top out at 5.1 GHz if the CPU core temperatures aren't kept below 90°C.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-11-05T14:57:51+00:00",
+      "sent_at": "2026-11-05T16:05:23.331884+00:00"
+    },
+    {
+      "link": "https://kottke.org/26/11/stunning-image-of-our-satellite-choked-night-skies",
+      "title": "Image of Our Satellite-Choked Night Skies",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Innovationen",
+      "published": "2026-11-05T14:49:07+00:00",
+      "sent_at": "2026-11-05T16:05:23.331884+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/05/ainas-smart-ring-has-a-screen-a-joystick-and-a-mic-so-you-can-talk-to-ai-agents/",
+      "title": "Aina’s smart ring has a screen, a joystick and a mic so you can talk to AI agents",
+      "summary": "Aina's ring can also take calls and help you dictate notes on your Mac.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-05T14:42:00+00:00",
+      "sent_at": "2026-11-05T16:05:23.331884+00:00"
+    },
+    {
       "link": "https://www.wired.com/story/meta-quest-promo-code/",
       "title": "Meta Quest Promo Codes and Coupons for November 2026",
       "summary": "Experience cutting-edge VR and save up to 20% with coupons for the latest games, Meta Quest 3, Ray-Ban AI glasses, and more deals.",
@@ -3977,78 +4049,6 @@
       "category": "AI",
       "published": "2026-10-22T16:47:17+00:00",
       "sent_at": "2026-10-22T18:15:44.169869+00:00"
-    },
-    {
-      "link": "https://spectrum.ieee.org/engineers-lobbying-congress",
-      "title": "Why Engineers Should Brave Capitol Hill",
-      "summary": "When San Antonio–based software engineer Nikhil Jathar first went to Washington, D.C., to advocate for federal support for technology education and research funding, he was in awe of the opportunity. It was spring of 2025, not long after Jathar settled in the United States from India, when he got an invitation to join the annual Congressional Visits Day organized by IEEE-USA . “My first reaction was, ‘Wow, I get to visit Congress,’ ” says Jathar, CTO of AvanSaber , a business software company he cofounded in 2014. At the time, he did not have a specific lobbying position on behalf of the company. But he was intrigued by the invitation—which goes out to all U.S. IEEE members—and as he read more about congressional visits, his motivation deepened. He realized: “I need to try this. I want to see where it goes.” What’s Your Ask? Congressional staffers expect clarity from advocates. Be clear on what you plan to ask for when you arrive. Here are some common options: Cosponsor (or oppose) an existing bill or amendment. Preserve, remove, or modify legislative text in a bill under consideration. Add language to an appropriations bill or committee report. Ask a federal agency a specific oversight question. Request a briefing, hearing, Government Accountability Office review, or stakeholder roundtable. Encourage an agency to clarify a technical rule. Congressional staffers say they welcome the knowledge and perspective that engineers like Jathar and other visitors from beyond Washington, D.C., provide. It’s also important for those visitors to be clear on what they are advocating for. One staffer for the House Committee on Science, Space, and Technology , who agreed to speak anonymously due to the office’s media policy, says, “Ideas for new policies come from multiple places. It could begin at the [legislator] or staff level, an ask from a constituent, or needs from industry. It’s up to us to figure out what would do the most good,” the staffer said. “For instance, if you leave it to the lobbyists, they’re understandably going to do what’s in their clients’ interests.” For engineers in the United States, speaking with elected representatives is an effective way to shape key policies, but it takes some preparation and the right approach, as Jathar learned over the course of two visits. Mapping Your Way Into Washington Congress’s job is to act on behalf of the people, and it has rules for how people can lobby it. It distinguishes between broader advocacy—conversations between constituents and U.S. representatives—and professional lobbying, which involves paid professionals and is governed by the Lobbying Disclosure Act. Many professional groups like IEEE also organize congressional visits for their members. Those visits can be subject to lobbying rules, so the organizers told Jathar that: “You are representing the organization, not your own views.” He would need to stick to the talking points IEEE-USA had prepared for all its participants, regardless of their specialty, to promote across several congressional offices. On Jathar’s first visit, those organizational talking points included advocating for funding smart grids, authorizing Department of Energy research , and investing in STEM education . That represents one of the trade-offs of access in Washington. IEEE-USA’s priorities didn’t all overlap directly with Jathar’s work, but they were broad enablers of science and technology and, he says, “STEM education funding is close to my heart.” Anyone can approach their representatives in Washington with their personal priorities, Jathar notes, but given how pressed for time congressional staff are, they are more likely to prioritize a meeting that represents the views of as many of their constituents as possible. “I could have gone outside the IEEE structure,” Jathar says, but congressional staff “are more likely to listen if you are part of a much bigger organization.” For Jathar’s first congressional visit , organizers assigned him to call on the offices of several representatives from both political parties based on where he lives: Representatives Greg Casar (D-Texas), Lloyd Doggett (D-Texas), and Barry Moore (R-Ala.). “Meeting a staffer or a senior member from their office is good. They tend to relate to these issues more than a representative, because a representative has 10 different high-level things they have to worry about whereas the staffer can be more focused on the policy details,” Jathar says. A typical visit like this may last anywhere from 15 minutes to an hour , so Jathar kept his talking points simple and short. “First and foremost you’re gonna get a very small window,” he says, “Make sure you’ve got everything ready to present in bullet points and not a lot of jargon. You can always bring that out later if they ask more questions.” Simple visual aids, in the form of one-page handouts, may be helpful for communicating numeric or technical information, too. “If you leave it to the lobbyists, they’re understandably going to do what’s in their clients’ interests.” –Staffer for the House Committee on Science, Space, and Technology The House Science Committee staffer agrees: “I prefer meetings where people know what they want and know what we’re doing in Congress.” In addition to having a clear request, the staffer says engineers and other advocates should keep track of where Congress is in its cycle: Is it appropriations season, and when is the next budget being set? How far along is a given piece of legislation in the process, and what is realistic to change at that point? During Jathar’s 2025 visit to one Capitol Hill office, he learned firsthand the importance of preparation. For one of the three representatives he visited, staff politely pointed out that the legislator they worked for was not on the committee with jurisdiction over the IEEE-USA talking point they were discussing. “They explained that there are only certain things [the legislator] can do on that issue and that there are other people we need to talk to, to achieve more,” Jathar recalls. Shortcuts to Influence Earlier this year, Jathar decided to go back to Capitol Hill with his newfound knowledge, again within the framework of an IEEE-USA visit. This time he was able to provide something else legislative staff want from engineers: authoritative technical knowledge. “When I introduced myself as a software developer to one staffer, his first question was, ‘Do you think AI will replace coders?’ ” Jathar says. The conversation went back and forth, with the staffer asking Jathar and his other engineering companions questions. Jathar went on to explain that his company developed an open-source business-management software it calls ERPClaw , designed to be used with AI agents such as OpenClaw. That led naturally to discussing the role of open source in AI , which plays a role in one of IEEE-USA’s proposals for democratizing AI . This time Jathar was able to align his organization’s advocacy with his expertise and the staffer’s areas of interest. It’s too soon to know what legislative impact that advocacy might have, but it’s the sort of informed, relevant proposal that legislative staff seek out. “The people who build trust have more cachet with congressional staff because they’ve asked for something that’s reasonably thought out,” the House Science Committee staffer says. In turn, congressional staffers can advocate better within their offices for policies brought to them by people they trust. And talking about the issues you care the most about can deepen that trust. The House Science Committee staffer once visited Congress as an advocate before switching to the other side of the table. On that visit, as on Jathar’s, the professional society organizing the visit provided a pitch. “I was making a pitch that was given to me without a lot of personal buy-in,” the staffer says. Instead, “you should feel emotionally connected to any issue you’re advocating for.” Jathar’s support for the open-source movement is like that. Open source gives smaller companies a foundation they can adapt and build upon, while allowing other developers to extend that work. “We can progress a lot faster,” Jathar says. “I’m not doing it only because it’s good for my business, but because I feel it’s good for any technological advancement.”",
-      "source": "IEEE Spectrum",
-      "category": "AI",
-      "published": "2026-10-22T13:00:02+00:00",
-      "sent_at": "2026-10-22T13:25:21.989938+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1016399/1password-ai-agent-password-sign-in",
-      "title": "1Password lets AI agents use your passwords without seeing them",
-      "summary": "1Password is introducing a new feature that allows AI agents to sign into your accounts without actually seeing or handling your passwords. The aptly named 1Password for Agents doesn't give bots free reign to access all of your connected accounts - you'll still need to grant approval for sign-in requests - but should make it [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-22T13:00:00+00:00",
-      "sent_at": "2026-10-22T13:25:21.989938+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/meet-mori-a-cute-robot-mushroom-that-doesnt-really-say-or-do-anything/",
-      "title": "Meet Mori, a Cute Robot Mushroom That Doesn’t Really Say (or Do) Anything",
-      "summary": "Step one in convincing people to live with robots with cameras on their faces? Disguise them as cute home decor.",
-      "source": "Wired",
-      "category": "Innovationen",
-      "published": "2026-10-22T13:00:00+00:00",
-      "sent_at": "2026-10-22T13:25:21.989938+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2293844/1password-opens-up-ai-agents-muse-dots-grok/",
-      "title": "1Password will let you hand your data security over to your preferred AI agent",
-      "summary": "If you're willing to let AI book or buy things on your behalf, 1Password just made that easier.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-22T13:00:00+00:00",
-      "sent_at": "2026-10-22T13:25:21.989938+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1016492/tesla-optimus-robots-production-musk-q3-earnings",
-      "title": "Just because Tesla’s Optimus is in production doesn’t mean it’s actually ready",
-      "summary": "On Tesla's earnings call Wednesday, CEO Elon Musk announced that the company had begun early production of its humanoid robot on its high-volume line in Fremont, California. Then he laid out what still needs work: the robot's hands, its safety, reliability, and durability, and the artificial intelligence needed to make it a productive tool. \"There's [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-22T12:53:27+00:00",
-      "sent_at": "2026-10-22T13:25:21.989938+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/cpus/amd-ryzen-5-5500f-review",
-      "title": "AMD Ryzen 5 5500F review: Vermeer rides again for budget gaming PCs",
-      "summary": "After years with the Cezanne-based 5500, AMD has finally updated its $100 CPU to the 5500F in the Vermeer family, adding a 200 MHz boost in clock speed and a PCIe 4.0 upgrade.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-10-22T12:40:00+00:00",
-      "sent_at": "2026-10-22T13:25:21.989938+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/report/1015811/ai-shopping-agents-blocked-amazon-the-realreal-target-meta-muse",
-      "title": "AI agents are ready to shop. Some retailers are wary.",
-      "summary": "Using an AI agent to shop for you is a strange experience. Tech companies have marketed them as personal assistants - the democratizing of labor that ordinarily would only be available to the rich and powerful. In practice, at least for buying things, it's more like sending an anxious and apologetic teenager out to the [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-22T12:30:00+00:00",
-      "sent_at": "2026-10-22T13:25:21.989938+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1016443/anthropic-claude-citrini-vibecoding-scorpion-antivenom",
-      "title": "Claude did not invent scorpion antivenom",
-      "summary": "An investment research firm wanted to prove AI could revolutionize drug development. So they teamed up with Anthropic to see whether an unreleased version of Claude could make scorpion antivenom. It couldn't. It came up with some promising starting points, but nothing close to an actual drug, experts tell The Verge. Citrini Research, the firm [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-22T12:21:07+00:00",
-      "sent_at": "2026-10-22T13:25:21.989938+00:00"
     }
   ]
 }
