@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1028302/perplexity-teammates-ai-agents-work",
+      "title": "Perplexity launches its own take on AI agents for work",
+      "summary": "Perplexity is taking on OpenAI and Anthropic with its own work-focused AI agents. The startup's new always-on \"Teammates\" can take on multiple roles within a workspace, while pulling existing projects, skills, and memory from the Perplexity tools you already use. Teammates integrate with Perplexity Computer, an AI system that can deploy agents on your device [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-11-05T22:26:50+00:00",
+      "sent_at": "2026-11-05T22:31:10.268518+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/ai/2026/11/google-schools-can-keep-search-while-skipping-gemini-but-ai-search-is-non-negotiable/",
+      "title": "Google: Schools can keep search while skipping Gemini, but AI search is non-negotiable",
+      "summary": "Google is technically offering schools more choice but not the choices anyone wants.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-11-05T21:40:36+00:00",
+      "sent_at": "2026-11-05T22:31:10.268518+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/tech-policy/2026/11/lawsuit-man-introduced-his-wife-to-chatgpt-she-used-it-to-plan-his-murder/",
+      "title": "Lawsuit: Man introduced his wife to ChatGPT. She used it to plan his murder.",
+      "summary": "Bitter energy drinks turned out to be ChatGPT-steered poisoning, lawsuit says.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-11-05T21:39:40+00:00",
+      "sent_at": "2026-11-05T22:31:10.268518+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/ads-in-chatbots-have-arrived-heres-whats-working-and-whats-not/",
+      "title": "Ads in Chatbots Have Arrived. Here’s What’s Working—and What’s Not",
+      "summary": "As Anthropic maintains its vow to keep ads out of Claude, the rest of the AI chatbot industry is racing to win over advertisers without antagonizing users.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-11-05T21:37:18+00:00",
+      "sent_at": "2026-11-05T22:31:10.268518+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/05/serve-robotics-launches-new-business-to-become-the-aws-for-robots/",
+      "title": "Serve Robotics launches new business to become the AWS for robots",
+      "summary": "Serve Robotics announced alonsgside its third-quarter earnings that it will launch a new business line called Physical AI Services to offer customers its connectivity and data tools.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-05T21:15:00+00:00",
+      "sent_at": "2026-11-05T22:31:10.268518+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2308541/google-is-ditching-firebase-studio-soon-and-it-wants-you-to-use-its-newer-ai-tools-instead/",
+      "title": "Google is ditching Firebase Studio soon, and it wants you to use its newer AI tools instead",
+      "summary": "The company is going all-in on Antigravity and Google AI Studio and hopes developers will do the same.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-11-05T21:01:28+00:00",
+      "sent_at": "2026-11-05T22:31:10.268518+00:00"
+    },
+    {
+      "link": "https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/",
+      "title": "Tencent Launches Hy4, One of the Leading Open-Source AI Models",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-05T20:21:43+00:00",
+      "sent_at": "2026-11-05T22:31:10.268518+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/05/meta-says-us-users-can-now-video-chat-with-their-muse-ai-avatar/",
+      "title": "Meta says US users can now video chat with their Muse AI avatar",
+      "summary": "Meta's AI agent can now take calls as a customizable animated avatar, ahead of the launch of a Tamagotchi-like wearable designed to bring Muse to life.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-05T19:48:28+00:00",
+      "sent_at": "2026-11-05T22:31:10.268518+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/11/05/dropbox-acquires-tigris-data-for-350m-to-bolster-its-ai-iinfrastructure/",
       "title": "Dropbox acquires Tigris Data for $350M to bolster its AI infrastructure",
       "summary": "The deal is expected to support the development of DBX Agent Cloud, a new storage platform aimed at developers building AI models and agents.",
@@ -3905,150 +3977,6 @@
       "category": "Hardware",
       "published": "2026-10-22T20:23:48+00:00",
       "sent_at": "2026-10-23T01:11:10.375908+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
-      "title": "Canva’s first AI image model plans designs before generating them",
-      "summary": "Canva is diving even deeper into AI with the launch of an image generation model that competes directly with those from OpenAI, Microsoft, and Google. The model, called Canva Craft, uses a two-stage architecture that allows it to plan a design before generating an image, allowing for \"greater precision, consistency and control,\" according to an [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-22T21:51:25+00:00",
-      "sent_at": "2026-10-22T22:04:05.349025+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/gadgets/1017144/global-pc-shipments-dropped-q3-2026-ram",
-      "title": "PC shipments dropped over 20 percent in Q3 due to RAM price hikes",
-      "summary": "Demand for new PCs took a hit after months of price hikes, with Counterpoint Research reporting global PC shipments fell 21 percent year-over-year in Q3 2026. That's in line with earlier reports from IDC and Omdia. It's not just PCs, either - that same quarter, smartphone shipments also hit a 14-year low. Counterpoint linked the [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-10-22T21:30:39+00:00",
-      "sent_at": "2026-10-22T22:04:05.349025+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/10/22/tesla-skipped-hw3-shareholder-question-earnings-call/",
-      "title": "Tesla skipped the most important shareholder question on its earnings call",
-      "summary": "Tesla skipped one of its top shareholder questions on its Q3 2026 earnings call: when Hardware 3 owners will find out if they get a free computer upgrade for the unsupervised “Full Self-Driving” they paid for. The question ranked fifth by shares on Say. Tesla read and answered questions ranked below it. It went past this one without a word. more…",
-      "source": "Electrek",
-      "category": "Autonomes Fahren",
-      "published": "2026-10-22T21:23:05+00:00",
-      "sent_at": "2026-10-22T22:04:05.349025+00:00"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/10/22/1146109/designing-an-ai-serving-harness-built-to-last/",
-      "title": "Designing an AI serving harness built to last",
-      "summary": "The next competitive advantage in enterprise AI has less to do with which model you choose than with what you build around it. That’s an important shift. For the past several years, much of the AI conversation has centered on model capability: bigger models, better reasoning, larger context windows, higher benchmark scores. Those advances have&#8230;",
-      "source": "MIT Technology Review",
-      "category": "AI",
-      "published": "2026-10-22T21:17:29+00:00",
-      "sent_at": "2026-10-22T22:04:05.349025+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1016506/fall-2026-earnings-watch",
-      "title": "Fall 2026 earnings watch",
-      "summary": "Every company is suddenly an AI company. Compute is an asset. Cars are flying. We’ve been promised robots — again. It’s time again to dig through earnings reports, listen to investor calls, and call out the latest wins and losses from around the tech sector and what it means for where the companies go next.",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-22T21:15:16+00:00",
-      "sent_at": "2026-10-22T22:04:05.349025+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/22/rivian-buys-world-model-startup-to-accelerate-self-driving-ambitions/",
-      "title": "Rivian buys world model startup to accelerate self-driving ambitions",
-      "summary": "Third Dimension's technology uses AI to match the physical world, which when combined with Rivian's reams of data could turn into a valuable simulator.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-22T21:05:05+00:00",
-      "sent_at": "2026-10-22T22:04:05.349025+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2294854/a-new-subscription-service-promises-an-evolving-collection-of-bold-and-bizarre-indie-games/",
-      "title": "A new subscription service promises an evolving collection of 'bold and bizarre' indie games",
-      "summary": "Publisher Pantaloon says the Playbill won't feature games that use generative AI in any way.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-22T20:57:17+00:00",
-      "sent_at": "2026-10-22T22:04:05.349025+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1017082/meta-terms-update-ai-training-concerns",
-      "title": "Meta&#8217;s AI could still scrape news sites, legal experts say",
-      "summary": "Meta has tweaked its business terms to remove language suggesting that it could freely train its AI models on news sites, like The Verge - but legal experts say these changes aren't enough to address their concerns. \"This does nothing to restrict the 'associated with your products or services' [language] that would let Meta scrape [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-22T20:32:05+00:00",
-      "sent_at": "2026-10-22T22:04:05.349025+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1016905/meta-earnings-fall-2026-muse-network",
-      "title": "In Meta’s version of the future, I’ll have my Muse call your Muse",
-      "summary": "Mark Zuckerberg is barrelling toward a future in which an autonomous network of AI agents will run our lives - shopping for us, working for us, talking to other people's AI agents for us. Are humans ready for this very specific and unrelenting vision of a life in which we communicate primarily through bot proxies? [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-22T18:15:00+00:00",
-      "sent_at": "2026-10-22T18:15:44.169869+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/transportation/1016928/tesla-fsd-pedestrian-fatal-accident-california",
-      "title": "Tesla driver using Full Self-Driving struck and killed a man crossing I-80",
-      "summary": "A 71-year-old man was fatally hit by a Tesla operating in Full Self-Driving (FSD) mode while crossing I-80 in Vallejo, CA around 2:30 AM on Thursday, reports the San Francisco Chronicle. The California Highway Patrol's statement to media outlets says it reviewed video of the accident from the Tesla's dashcam, which \"showed the Tesla's brakes [&#8230;]",
-      "source": "The Verge",
-      "category": "Autonomes Fahren",
-      "published": "2026-10-22T18:07:02+00:00",
-      "sent_at": "2026-10-22T18:15:44.169869+00:00"
-    },
-    {
-      "link": "https://spectrum.ieee.org/engineering-jobs-that-ai-cant-replace",
-      "title": "Why AI Can’t Replace Engineering Teams",
-      "summary": "This article is crossposted from IEEE Spectrum ’s careers newsletter. Sign up now to get insider tips, expert advice, and practical strategies, written i n partnership with tech career development company Parsity and delivered to your inbox for free! If you’re an engineer, you may feel like your skills aren’t commanding the premium they once did. Many engineers have faced layoffs or restructuring. But even for those of us who still have jobs, something corrosive is happening. You may have heard some version of this: “ChatGPT answered that in five seconds. Why can’t you?” Or, “I made this app in a weekend. Why is our team taking so long?” I worked on a team where leadership said things like this directly to engineers. This was in 2024 and 2025, when the AI craze was in full swing and Claude and ChatGPT adoption was rising . Demo-Driven Development Generative AI (and the marketing behind it) gives people the illusion that the work is simpler than it is. A working demo hides complexity, and once someone has a website that works, they may decide they no longer need engineers, or start to distrust the ones they do have. Some CEOs want to believe they can replace an engineering team with a few sexy prompts. Many companies also want them to believe this. That website works great in the demo —under specific conditions and without users with thumbs for fingers. Then it has to plug into a system with millions of lines of old code, satisfy legal requirements, meet accessibility standards, and be delivered in a complex deployment process. Thinking that writing code was the only bottleneck for deploying new software is like the Titanic seeing the tip of the iceberg and assuming there was nothing underneath it. What you can do about it Engineers have a unique position in the AI space, because you have the capacity to understand how these models work much better than the average person. Use this to your advantage. Learn how AI models work . If you can’t already explain that LLMs are probabilistic, what tokens are, or why training data matters, spend a weekend fixing that. You don’t need to become a full-blown AI researcher. A few fundamentals will put you ahead of most people making the AI decisions. Teach upward. Turn that knowledge into teaching moments for the people who lead you. Explain the limits of these tools, and why a demo and a production system are different animals. It keeps people from truly believing that a notebook full of prompts can replace an engineering team. Consider the criticism of today’s processes. Some of what we do has been treated as ceremony for too long. Be willing to say, “you know what, maybe you’re right, this process is too slow for the speed we can work at now.” Conceding that earns you the credibility to defend the steps that matter. I still believe that speed at the cost of everything else is harmful—but that’s a topic for another time. Find your voice. Engineers at the forefront of AI adoption need to push back and explain why we do things the way we do. Nobody else in the room is going to do it for us. Don’t chase (too many) shiny objects Your goal, in my opinion, is to save your organization from buying into the hype so much that they chase the wrong thing. Our job, before and after AI, is building safe and useful products for human beings, and engineers are still best suited for that. —Brian We Need to Embed Ethics Into Our Engineering Courses The need to educate engineering students about ethics and social responsibility is widely recognized, but today’s curricula often miss the mark. Three professors propose a new approach: adding ethics training directly to core technical coursework. Read more here . The U.S. Just Bet $1 Billion on Quantum Chip Manufacturing Looking for a career in quantum computing hardware? An IBM spin-off called Anderon could receive up to $1 billion in funding from the U.S. CHIPS and Science Act for its quantum foundry, established earlier this year. Could Anderon do for quantum hardware what TSMC did for conventional chips? Read more here . Meet the Anthropic Engineer Keeping Its AI Agent Trustworthy When Gurmeet Saran joined Anthropic’s technical staff in 2025, he entered a role focused on a key question: How do you know whether you can trust a chatbot like Claude? Learn more about Saran’s path and his work at the AI company. Read more here .",
-      "source": "IEEE Spectrum",
-      "category": "AI",
-      "published": "2026-10-22T18:02:20+00:00",
-      "sent_at": "2026-10-22T18:15:44.169869+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2294523/unauthorized-ai-agents-are-reportedly-already-accessing-us-bank-accounts/",
-      "title": "Unauthorized AI agents are reportedly already accessing US bank accounts",
-      "summary": "Sources at several banks have indicated that they have been taking actions independent of user instructions.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-22T18:02:04+00:00",
-      "sent_at": "2026-10-22T18:15:44.169869+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1016690/suleyman-microsoft-diagnostic-orchestrator-science-medical-superintelligence",
-      "title": "Microsoft says its AI tool is better than doctors at diagnosing conditions",
-      "summary": "For years, AI leaders have touted healthcare as one of the clearest examples of where their technology will improve lives. Now \"it is finally here,\" Microsoft AI CEO Mustafa Suleyman tells The Verge. The company claims to have developed an AI-powered tool it says can diagnose conditions up to four times more accurately than human [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-22T18:00:00+00:00",
-      "sent_at": "2026-10-22T18:15:44.169869+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/games/1016862/nintendo-switch-2-jailbreak-ai",
-      "title": "Someone hacked the Switch 2 by using an old game and AI",
-      "summary": "The Nintendo Switch 2 has apparently been jailbroken, and a modder has already shown the console running a custom version of Mario Kart World featuring new playable characters like Cinnamoroll, the red Angry Bird, Peter Griffin, and Steve from Minecraft. OpenAI's Codex helped make this \"ns2jb\" jailbreak, according to Sammy Hajhamid, aka \"pepsipu.\" It's a [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-22T17:21:31+00:00",
-      "sent_at": "2026-10-22T18:15:44.169869+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1016832/arc-browser-shutting-down",
-      "title": "Arc browser is shutting down",
-      "summary": "The Browser Company plans to \"sunset\" its Arc browser on December 22nd, according to a post on the Arc website. The company moved on to developing its AI-focused Dia browser last year, but it had continued to maintain Arc. Now, the innovative browser will be going away for good. The shutdown is happening in a [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-22T17:03:37+00:00",
-      "sent_at": "2026-10-22T18:15:44.169869+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/22/chinese-hackers-spied-on-thousands-of-companies-after-breaching-it-giant-connectwise/",
-      "title": "Chinese hackers spied on thousands of companies after breaching IT giant ConnectWise",
-      "summary": "Microsoft points the blame for ConnectWise's breach at a China-aligned hacker, which relied on AI agents to rapidly hack into thousands of its customers.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-22T16:47:17+00:00",
-      "sent_at": "2026-10-22T18:15:44.169869+00:00"
     }
   ]
 }
