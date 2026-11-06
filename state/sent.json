@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1028454/openai-data-center-nda",
+      "title": "OpenAI is stepping back from NDAs for data center projects",
+      "summary": "Following this week's midterms where voters resoundingly voiced their opposition to data center expansion, OpenAI today announced new commitments to communities where it is working on data center projects, including that it won't use non-disclosure agreements (NDAs) with public officials. Many data center projects have come under scrutiny for relying on NDAs to hide discussions [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-11-06T00:37:56+00:00",
+      "sent_at": "2026-11-06T03:08:00.691329+00:00"
+    },
+    {
+      "link": "https://www.wsj.com/finance/major-investors-are-skeptical-anthropic-ipo-can-achieve-1-5-trillion-valuation-ca965d8b’",
+      "title": "Major Investors Are Skeptical Anthropic IPO Can Achieve $1.5T Valuation",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-06T00:31:11+00:00",
+      "sent_at": "2026-11-06T03:08:00.691329+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1028412/airbnb-ai-travel-agent-q3-2026-earnings",
+      "title": "Airbnb is working on an AI travel agent",
+      "summary": "Airbnb plans to roll out an AI agent in the first half of 2027 that will help users plan and book travel, the company said in its Q3 2026 earnings shareholder letter released today. \"Today's AI agents are good at simple, routine tasks, like making a restaurant reservation or scheduling an appointment,\" Airbnb said. \"But [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-11-06T00:06:12+00:00",
+      "sent_at": "2026-11-06T03:08:00.691329+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1028346/t-mobile-deutsche-telecom-spacex-starlink-mobile",
+      "title": "T-Mobile owner on Elon Musk launching a wireless carrier: &#8216;Welcome to the party&#8217;",
+      "summary": "The head of T-Mobile's parent company is casting doubt on SpaceX's plans to make Starlink Mobile a \"major\" carrier in the US. During an earnings call on Thursday, Deutsche Telekom CEO Tim H&#246;ttges says he takes the Elon Musk-owned company \"super serious,\" but that it will cost at least $200 billion to pull off: He [&#8230;]",
+      "source": "The Verge",
+      "category": "Innovationen",
+      "published": "2026-11-05T23:17:10+00:00",
+      "sent_at": "2026-11-06T03:08:00.691329+00:00"
+    },
+    {
+      "link": "https://finance.yahoo.com/technology/ai/articles/mark-cuban-says-facebook-knowingly-213000020.html",
+      "title": "Cuban: Facebook knowingly runs AI deepfake scam ads; docs say $16B fraud revenue",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-05T23:09:57+00:00",
+      "sent_at": "2026-11-06T03:08:00.691329+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/gadgets/2026/11/nasas-experimental-x-70-aircraft-is-a-big-question-mark/",
+      "title": "NASA unveils mysterious X-70 experimental aircraft using AI-generated image",
+      "summary": "NASA’s X-70 Fractal announcement comes as agency aims to grow X-plane fleet.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-11-05T22:49:03+00:00",
+      "sent_at": "2026-11-06T03:08:00.691329+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/05/airbnb-says-its-launching-an-ai-travel-agent-in-the-first-half-of-2027/",
+      "title": "Airbnb says it’s launching an AI travel agent in the first half of 2027",
+      "summary": "Airbnb says its upcoming AI agent will help travelers plan trips, compare options, manage bookings, and get assistance throughout their stay.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-05T22:40:55+00:00",
+      "sent_at": "2026-11-06T03:08:00.691329+00:00"
+    },
+    {
+      "link": "https://github.com/anthropics/claude-code/issues/107757",
+      "title": "Claude Code sends your email address to websites",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-05T22:17:15+00:00",
+      "sent_at": "2026-11-06T03:08:00.691329+00:00"
+    },
+    {
       "link": "https://www.theverge.com/ai-artificial-intelligence/1028302/perplexity-teammates-ai-agents-work",
       "title": "Perplexity launches its own take on AI agents for work",
       "summary": "Perplexity is taking on OpenAI and Anthropic with its own work-focused AI agents. The startup's new always-on \"Teammates\" can take on multiple roles within a workspace, while pulling existing projects, skills, and memory from the Perplexity tools you already use. Teammates integrate with Perplexity Computer, an AI system that can deploy agents on your device [&#8230;]",
@@ -3905,78 +3977,6 @@
       "category": "AI",
       "published": "2026-10-22T18:52:43+00:00",
       "sent_at": "2026-10-23T06:55:40.955587+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/",
-      "title": "Left alone with nothing to do, AI agents started playing",
-      "summary": "MIT researchers marooned 13 AIs on a virtual island, and they responded by inventing games, mourning a lost ring and, eventually, getting better at their jobs.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-23T00:45:37+00:00",
-      "sent_at": "2026-10-23T01:11:10.375908+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/10/22/tesla-q4-numbers-more-product-delays-and-some-real-ev-charging-innovation/",
-      "title": "Tesla Q4 numbers, more product delays, and some REAL EV charging innovation",
-      "summary": "On today’s numerically-infused episode of Quick Charge , we take a look at all the latest product and delivery delays from Tesla’s Q3 earnings call before changing lanes and recapping some of the biggest developments in the world of EV charging innovation. more…",
-      "source": "Electrek",
-      "category": "Innovationen",
-      "published": "2026-10-23T00:11:04+00:00",
-      "sent_at": "2026-10-23T01:11:10.375908+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1017261/etsy-ai-rules-policies-restrictions-listing",
-      "title": "Etsy is cracking down on AI slop listings",
-      "summary": "Etsy is announcing stricter rules about how AI can be used in listings to reduce the volume of AI slop on the platform. In a post, the company says that \"many active buyers say they can't tell which items involve AI-generated content\" and that sellers are \"concerned about your work appearing alongside items that use [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-23T00:09:58+00:00",
-      "sent_at": "2026-10-23T01:11:10.375908+00:00"
-    },
-    {
-      "link": "https://www.anthropic.com/research/formal-verification",
-      "title": "LLMs are making formal software verification feasible at a much larger scale",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-22T22:54:43+00:00",
-      "sent_at": "2026-10-23T01:11:10.375908+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/",
-      "title": "OpenAI working on new $30B raise at $1.25T valuation ahead of IPO",
-      "summary": "Should OpenAI command an over $1 trillion valuation with this round, it would break records as the most highly valued private company ever.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-22T22:08:24+00:00",
-      "sent_at": "2026-10-23T01:11:10.375908+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/tech-policy/2026/10/comcast-loses-more-customers-claims-other-isps-cheap-prices-are-irrational/",
-      "title": "Comcast loses more customers, claims other ISPs' cheap prices are \"irrational\"",
-      "summary": "Comcast plans job cuts and more AI agents for its shrinking cable customer base.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-10-22T21:07:09+00:00",
-      "sent_at": "2026-10-23T01:11:10.375908+00:00"
-    },
-    {
-      "link": "https://news.ycombinator.com/item?id=50200997",
-      "title": "Ask HN: If the models are so good, why doesn't OpenAI just start 100 companies?",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-22T21:03:55+00:00",
-      "sent_at": "2026-10-23T01:11:10.375908+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/policy/1017016/fcc-block-foreign-surveillance-chips-hivision-huawei-loophole",
-      "title": "The FCC is beginning to block gadgets with ‘foreign surveillance chips’",
-      "summary": "On October 13th, Brendan Carr's FCC gave itself a new power - it can block gadgets for containing any computer chip made by any company on its list of potential threats to national security. Today, it's exercising that power for the first time, blocking two gadgets because they contain \"foreign surveillance chips,\" the FCC claims. [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-10-22T20:23:48+00:00",
-      "sent_at": "2026-10-23T01:11:10.375908+00:00"
     }
   ]
 }
