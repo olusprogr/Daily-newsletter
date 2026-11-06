@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/",
+      "title": "Hundreds of Artex AI hacking tools found publicly exposed to the web",
+      "summary": "Security researchers found hundreds of servers hosting the penetration testing tool Artex exposed to the internet, allowing anyone access to the hacking tool.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-06T18:44:38+00:00",
+      "sent_at": "2026-11-06T18:51:45.389742+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/",
+      "title": "Meta introduces Spaces, a new way to collaborate with your Muse agent",
+      "summary": "Meta's Muse agents continue to get new features and integrations. Spaces promises to be a new way to interact with the AI helpers.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-06T18:44:20+00:00",
+      "sent_at": "2026-11-06T18:51:45.389742+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/free-chinese-ai-models-are-getting-scary-good-at-hacking/",
+      "title": "Free Chinese AI Models Are Getting Scary Good at Hacking",
+      "summary": "An experiment in which AI models were asked to break into simulated networks showed the hacking skills of DeepSeek and GLM to be not far behind OpenAI’s most advanced cyber model, which isn’t public.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-11-06T18:43:43+00:00",
+      "sent_at": "2026-11-06T18:51:45.389742+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1028871/meta-muse-ai-spaces",
+      "title": "Meta&#8217;s Muse AI can create custom &#8216;spaces&#8217; for the version of the app you need right now",
+      "summary": "Meta will now allow you to build customized, app-like experiences within its Muse AI assistant. The new feature, called \"spaces,\" allows Muse to build things like a shopping hub, school dashboard, music tracker, trivia game, and more, which you can interact with directly in the app. If you connect your space to a relevant app, [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-11-06T18:10:10+00:00",
+      "sent_at": "2026-11-06T18:51:45.389742+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1028835/white-house-residential-proxy",
+      "title": "Just about anyone can rent access to White House IP addresses",
+      "summary": "Someone at the White House appears to be running software that could enable outsiders to rent access on the presidential network for just \"a few dollars,\" as reported by Krebs on Security and The Register. That's according to findings from the security firms Layer3 Intel and Synthient, which discovered residential proxy activity on the White [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-11-06T17:40:06+00:00",
+      "sent_at": "2026-11-06T18:51:45.389742+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1028813/apple-iphone-duo-optimized-apps",
+      "title": "The iPhone Duo has more than 100,000 optimized apps, Apple says",
+      "summary": "Apple's iPhone Duo has been officially on sale for two weeks, and the company said today that the App Store now has over 100,000 apps that are built for the foldable. \"It's been wonderful to see how quickly developers have embraced iPhone Duo, and we're grateful for their creativity and innovation,\" Susan Prescott, Apple's VP [&#8230;]",
+      "source": "The Verge",
+      "category": "Innovationen",
+      "published": "2026-11-06T17:24:36+00:00",
+      "sent_at": "2026-11-06T18:51:45.389742+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/video/after-the-midterms-is-the-ai-industry-in-for-a-rough-two-years/",
+      "title": "After the midterms, is the AI industry in for a rough two years?",
+      "summary": "Democrats’ historic victories in this week’s U.S. midterm elections could also transform the tech industry. The public voted on 41 data center-related ballot measures on Tuesday — in all but one, the majority voted to impose more restrictions on data center development. And even when data centers weren’t on the ballot directly, they were a [&#8230;]",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-06T17:23:52+00:00",
+      "sent_at": "2026-11-06T18:51:45.389742+00:00"
+    },
+    {
+      "link": "https://epyhia.com/anthropic-ipo-valuation-talks-drop-to-1-3-trillion-as-major-investors",
+      "title": "Anthropic IPO valuation talks drop to $1.3T",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-06T17:21:15+00:00",
+      "sent_at": "2026-11-06T18:51:45.389742+00:00"
+    },
+    {
       "link": "https://www.engadget.com/2308870/perplexity-teammates-ai-agents-for-ongoing-work/",
       "title": "Perplexity's 'teammates' are the company's AI agents for daily work tasks",
       "summary": "Perplexity launches personal AI agents that can act as your 'teammates.'",
@@ -3833,150 +3905,6 @@
       "category": "Hardware",
       "published": "2026-10-23T15:00:00+00:00",
       "sent_at": "2026-10-23T20:57:52.268213+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/science/1017443/spacex-starlink-ukraine-elon-musk-monopoly",
-      "title": "Elon Musk’s dangerous grip on outer space",
-      "summary": "Last week, Starshield - the version of SpaceX's Starlink used by the Ukrainian military - was throttled to block terminals traveling above certain speeds from accessing the service. The Ukrainian army's interceptors, which counter Russian drones carrying bombs, suddenly stopped working at high speeds, making it easier for Russia to attack the country's energy infrastructure [&#8230;]",
-      "source": "The Verge",
-      "category": "Innovationen",
-      "published": "2026-10-23T17:35:15+00:00",
-      "sent_at": "2026-10-23T17:41:28.707623+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/ai/2026/10/intel-gets-waiver-after-worries-fuzzy-us-ban-on-foreign-made-robots-may-hit-fabs/",
-      "title": "Intel gets waiver after worries fuzzy US ban on foreign-made robots may hit fabs",
-      "summary": "Company says foreign-made robotic vehicles are crucial to US chip production.",
-      "source": "Ars Technica",
-      "category": "Hardware",
-      "published": "2026-10-23T17:18:31+00:00",
-      "sent_at": "2026-10-23T17:41:28.707623+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/podcast/1017447/iphone-duo-ipad-review-score-vergecast",
-      "title": "The iPhone Duo should have been an iPad",
-      "summary": "We gave the iPhone Duo a 7 /10. But that wasn't always the score we planned, and it might not be the right score forever. Such are the challenges of reviewing - and assessing - a big, new idea about the most popular smartphone in history. On this episode of The Vergecast, David and Nilay [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-10-23T17:00:18+00:00",
-      "sent_at": "2026-10-23T17:41:28.707623+00:00"
-    },
-    {
-      "link": "https://www.wired.com/gallery/iphone-buying-guide/",
-      "title": "What’s the Best iPhone to Buy or Avoid Right Now? (2026)",
-      "summary": "The first folding iPhone Duo is here, alongside the 18 Pro and 18 Pro Max, but they’re not your only options. We have all the details on Apple’s smartphone lineup to help you find the right model.",
-      "source": "Wired",
-      "category": "Hardware",
-      "published": "2026-10-23T17:00:00+00:00",
-      "sent_at": "2026-10-23T17:41:28.707623+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/10/23/rivian-third-dimension-acquisition-self-driving-simulation/",
-      "title": "Rivian buys startup to turn 400,000 daily clips into 3D sims",
-      "summary": "Rivian wants to rebuild the roads its customers drive as 3D test worlds for its self-driving system, and it just bought a 15-person UK startup called Third Dimension to do it, as first reported by TechCrunch . The startup was founded in 2024 by a former Tesla Autopilot simulation engineer and a veteran of Wayve’s neural simulator team. Rivian didn’t say what it paid. more…",
-      "source": "Electrek",
-      "category": "Autonomes Fahren",
-      "published": "2026-10-23T16:56:23+00:00",
-      "sent_at": "2026-10-23T17:41:28.707623+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update",
-      "title": "Now Google says it might use your Gmail and Google Photos data to target ads",
-      "summary": "Google has updated its privacy policy in a way that could mean you'll start seeing targeted ads based on your personal data if you're using personalized AI features. The update, spotted by Android Authority, adds an exception to its promise about not using your Drive, Gmail, or Google Photos for personalized ads. While the previous [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-23T16:52:55+00:00",
-      "sent_at": "2026-10-23T17:41:28.707623+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/23/commonwealth-fusion-systems-gets-85m-to-build-better-fusion-ready-semiconductors/",
-      "title": "Commonwealth Fusion Systems gets $85M to build better fusion-ready semiconductors",
-      "summary": "Top-funded fusion startup Commonwealth Fusion Systems received an $85 million award from the federal government to advance conductors for fusion power plants.",
-      "source": "TechCrunch",
-      "category": "Hardware",
-      "published": "2026-10-23T16:20:28+00:00",
-      "sent_at": "2026-10-23T17:41:28.707623+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/23/what-some-of-anthropics-backers-are-reportedly-worth-before-its-ipo/",
-      "title": "What some of Anthropic’s backers are reportedly worth before its IPO",
-      "summary": "Early-stage and follow-on investors in the AI lab are already sitting on major paper returns.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-23T16:02:43+00:00",
-      "sent_at": "2026-10-23T17:41:28.707623+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/cyber-security/fcc-bans-first-two-devices-from-the-us-under-new-chip-level-rule-huawei-subsidiary-chip-boasts-face-detection-algorithm",
-      "title": "FCC bans first two devices from the US under new chip-level rule",
-      "summary": "FCC bans a dashcam and wireless video transmitter produced by HiSilicon, a subsidiary of Huawei for containing an AI chip that advertises face detection algorithms.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-23T12:15:00+00:00",
-      "sent_at": "2026-10-23T12:24:53.951595+00:00"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/10/23/1147628/the-download-testing-tech-promises-science-blind-spots/",
-      "title": "The Download: testing six tech promises and biotech’s blind spots",
-      "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Are we there yet? A reality check on six big tech promises Some seemingly impossible feats are too good to give up on. Decoding a pet’s yowls and yips? Absolutely. Scrubbing&#8230;",
-      "source": "MIT Technology Review",
-      "category": "Innovationen",
-      "published": "2026-10-23T12:10:00+00:00",
-      "sent_at": "2026-10-23T12:24:53.951595+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1015430/ai-retro-games-decomp-recomp-port",
-      "title": "Retro gaming is being overrun with AI",
-      "summary": "Retro video games are everywhere lately - especially in places where they aren't supposed to be. Halo in a web browser, Wind Waker on the iPhone, Super Smash Bros. in mixed reality. Over the past month or so, these kinds of unexpected projects have gone viral with incredible frequency thanks to new AI tools, as [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-23T12:00:00+00:00",
-      "sent_at": "2026-10-23T12:24:53.951595+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2294849/asus-proart-p16-rtx-spark-review/",
-      "title": "ASUS ProArt P16 review: A sleek showcase for NVIDIA's RTX Spark",
-      "summary": "NVIDIA's RTX Spark platform is off to a good start, but the ProArt P16 is really only meant for AI fanatics.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-23T12:00:00+00:00",
-      "sent_at": "2026-10-23T12:24:53.951595+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/deepseeks-latest-ai-model-is-smarter-than-ever-but-its-low-running-costs-come-at-a-price-open-weight-model-is-fit-for-agentic-workloads-but-is-more-prone-to-hallucination-than-proprietary-competitors",
-      "title": "Deepseek's latest AI model is smarter than ever, but its low running costs come at a price",
-      "summary": "Deepseek 4.1 Flash 1017 drives cost-per-task further down still — open-weight model is fit for agentic workloads and exceedingly cheap to run",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-23T12:00:00+00:00",
-      "sent_at": "2026-10-23T12:24:53.951595+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/gadgets/2026/10/ukraine-learns-to-fight-without-starlink-as-musk-plays-politics-with-satellites/",
-      "title": "Ukraine learns to fight without Starlink as Musk plays politics with satellites",
-      "summary": "Ukraine has changed drones and war-fighting tech to reduce reliance on Starlink.",
-      "source": "Ars Technica",
-      "category": "Innovationen",
-      "published": "2026-10-23T11:30:22+00:00",
-      "sent_at": "2026-10-23T12:24:53.951595+00:00"
-    },
-    {
-      "link": "https://www.wired.com/review/samsung-galazy-z-flip8/",
-      "title": "Samsung Galaxy Z Flip8 Review: The Littlest Smartphone That Could",
-      "summary": "Samsung’s cute compact is for those who want the smallest possible phone. Performance and camera are solid, but it’s pricier than its predecessor.",
-      "source": "Wired",
-      "category": "Hardware",
-      "published": "2026-10-23T11:30:00+00:00",
-      "sent_at": "2026-10-23T12:24:53.951595+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/cyber-security/us-banks-scramble-to-restrict-ai-agent-activity-agents-detected-accessing-customer-accounts-or-even-attempting-to-make-transactions-in-breach-of-policy",
-      "title": "US banks scramble to restrict AI agent activity",
-      "summary": "Several U.S. banks are blocking AI agents from making transactions on their platforms. They fear that those agents could go rogue and there's no way to tell if the moves they make are legitimate or not.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-23T11:30:00+00:00",
-      "sent_at": "2026-10-23T12:24:53.951595+00:00"
     }
   ]
 }
