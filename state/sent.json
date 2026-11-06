@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.engadget.com/2308870/perplexity-teammates-ai-agents-for-ongoing-work/",
+      "title": "Perplexity's 'teammates' are the company's AI agents for daily work tasks",
+      "summary": "Perplexity launches personal AI agents that can act as your 'teammates.'",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-11-06T11:18:59+00:00",
+      "sent_at": "2026-11-06T11:47:33.634417+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/semiconductors/gelsinger-backed-nagare-labs-capacitorless-z2ram-promises-sram-speed-with-dram-density-latest-published-cell-retains-data-for-over-300-seconds-at-85-c-but-further-figures-are-projected",
+      "title": "Gelsinger-backed Nagare Labs’ Z2RAM promises SRAM speed at DRAM density",
+      "summary": "Georgia Tech spinout Nagare Labs, backed by Playground Global, unveils Z2RAM, a capacitorless memory to stack on AI accelerators.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-11-06T11:00:00+00:00",
+      "sent_at": "2026-11-06T11:47:33.634417+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/transportation/1028542/tesla-cybertruck-winding-down-production-2027",
+      "title": "Tesla is ‘winding down’ production of the Cybertruck next year",
+      "summary": "Tesla is getting the Cybertruck ready for retirement in an effort to ramp up its robotaxi output. In an X post on Friday, Tesla CEO Elon Musk said that the company will be \"winding down\" Cybertruck production at its Texas Gigafactory sometime around the middle of next year, \"to make room for increased Cybercab production.\" [&#8230;]",
+      "source": "The Verge",
+      "category": "Autonomes Fahren",
+      "published": "2026-11-06T10:42:52+00:00",
+      "sent_at": "2026-11-06T11:47:33.634417+00:00"
+    },
+    {
+      "link": "https://www.technologyreview.com/2026/11/06/1148090/i-watched-a-humanoid-robot-clean-my-apartment-it-felt-like-a-taste-of-the-future/",
+      "title": "I watched a humanoid robot clean my apartment. It felt like a taste of the future.",
+      "summary": "I’m not the sort of person who typically pays for a house cleaner. I’m too frugal, and I kind of enjoy putting on a podcast and going to town on my tub with a Magic Eraser. But when I saw an X post about a new humanoid-robot cleaning service in San Francisco, I immediately signed&#8230;",
+      "source": "MIT Technology Review",
+      "category": "Innovationen",
+      "published": "2026-11-06T10:00:00+00:00",
+      "sent_at": "2026-11-06T11:47:33.634417+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2308832/airbnb-ai-travel-agent-2027-launch/",
+      "title": "Airbnb is threatening to launch an AI travel agent next year",
+      "summary": "Airbnb is developing an AI travel agent that it says will eventually be able to help plan your whole trip.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-11-06T07:51:42+00:00",
+      "sent_at": "2026-11-06T11:47:33.634417+00:00"
+    },
+    {
+      "link": "https://github.com/ppmpreetham/BUI",
+      "title": "Blender's UI and Runtime: Much Faster Than GPUI",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Hardware",
+      "published": "2026-11-06T07:40:35+00:00",
+      "sent_at": "2026-11-06T11:47:33.634417+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m/",
+      "title": "Palo Alto Networks in talks to buy AI agent security startup Clutch for $500M",
+      "summary": "Clutch, backed by Lightspeed and SignalFire, was last valued at $85 million, according to a source.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-06T06:28:32+00:00",
+      "sent_at": "2026-11-06T11:47:33.634417+00:00"
+    },
+    {
+      "link": "https://www.lesswrong.com/posts/DALNiKBjMGMF8grme/arjun-panickssery-s-shortform?commentId=fJtaHHHfx45tD7BSL",
+      "title": "I struggle to believe that AI R&D is ingenious",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-06T05:19:04+00:00",
+      "sent_at": "2026-11-06T11:47:33.634417+00:00"
+    },
+    {
       "link": "https://www.theverge.com/ai-artificial-intelligence/1028454/openai-data-center-nda",
       "title": "OpenAI is stepping back from NDAs for data center projects",
       "summary": "Following this week's midterms where voters resoundingly voiced their opposition to data center expansion, OpenAI today announced new commitments to communities where it is working on data center projects, including that it won't use non-disclosure agreements (NDAs) with public officials. Many data center projects have come under scrutiny for relying on NDAs to hide discussions [&#8230;]",
@@ -3905,78 +3977,6 @@
       "category": "AI",
       "published": "2026-10-23T11:30:00+00:00",
       "sent_at": "2026-10-23T12:24:53.951595+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/",
-      "title": "Uber rival inDrive eyes 2027 robotaxi tests in Central Asia with Pony.ai and Nvidia",
-      "summary": "inDrive plans to begin testing Pony.ai's robotaxis in Kazakhstan's capital in the first half of 2027.",
-      "source": "TechCrunch",
-      "category": "Autonomes Fahren",
-      "published": "2026-10-23T04:00:00+00:00",
-      "sent_at": "2026-10-23T06:55:40.955587+00:00"
-    },
-    {
-      "link": "https://abcnews.com/Politics/americans-ai-bad-society-oppose-data-centers-abcpostipsos/story?id=137414085",
-      "title": "Most Americans Say AI Is Bad for Society, Oppose More Data Centers",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-22T20:51:23+00:00",
-      "sent_at": "2026-10-23T06:55:40.955587+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/10/22/tesla-building-own-maps-fsd-after-mocking-maps/",
-      "title": "Tesla now says it needs its own maps for FSD after years of dismissing maps",
-      "summary": "Tesla says it’s building its own maps to fix some of the most common problems with its “Full Self-Driving” system, including reading speed limits, parking, and choosing routes. The company’s head of AI described the effort on Tesla’s Q3 2026 earnings call. It’s a notable shift for a company whose CEO spent years arguing that self-driving systems relying on maps are brittle. And it shows Tesla’s fleet is now doing the same job Waymo’s cars do: mapping the roads so the self-driving system knows what it can’t reliably figure out on its own. Tesla fans argue that Waymo’s approach differs because it creates HD maps with lidar, but ultimately both are creating their own maps; if your argument is that Tesla’s maps are less well-defined and needed for driving for different reasons than Waymo’s, you don’t really have an argument. more…",
-      "source": "Electrek",
-      "category": "AI",
-      "published": "2026-10-22T20:03:18+00:00",
-      "sent_at": "2026-10-23T06:55:40.955587+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/aged-intelligence-society-interview/",
-      "title": "The Social Society Helping Women Join the AI Boom",
-      "summary": "WIRED spoke with the founders of the Aged Intelligence Society, a fast-growing events startup that brings women together to “solve midlife problems using frontier tools.”",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-10-22T19:56:32+00:00",
-      "sent_at": "2026-10-23T06:55:40.955587+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1016879/spacex-tesla-cursed-katamari",
-      "title": "Sure, let’s smoosh SpaceX and Tesla together, who cares",
-      "summary": "Oh sure, SpaceX's credit risk is pretty high because it's about to borrow another $40 billion to spend on Nvidia chips, but who cares about that? SpaceX and Tesla have formed special committees to discuss a merger! The degree to which you find this merger compelling likely has to do with the degree to which [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-10-22T19:45:00+00:00",
-      "sent_at": "2026-10-23T06:55:40.955587+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
-      "title": "1Password launches a way for AI agents to log in on your behalf without seeing your password",
-      "summary": "The new feature allows agents to log into a customer's personal accounts while still protecting the private credentials that secure those accounts.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-22T19:07:09+00:00",
-      "sent_at": "2026-10-23T06:55:40.955587+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/",
-      "title": "OpenAI makes its Jev competitor widely available as decision model competition heats up",
-      "summary": "OpenAI is launching its decision model to the world. Can it compete with the original Jev?",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-22T19:00:00+00:00",
-      "sent_at": "2026-10-23T06:55:40.955587+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2294643/the-browser-company-is-officially-killing-arc-on-december-22/",
-      "title": "The Browser Company is officially killing Arc on December 22",
-      "summary": "The organization is prioritizing an AI browser called Dia.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-22T18:52:43+00:00",
-      "sent_at": "2026-10-23T06:55:40.955587+00:00"
     }
   ]
 }
