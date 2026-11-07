@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/",
+      "title": "Megaspeed exec was recruited to spy on Nvidia CEO, according to US intelligence memo",
+      "summary": "A memo circulated earlier this year reportedly claimed that China’s Ministry of State Security recruited a female technology executive to spy on Nvidia's CEO.",
+      "source": "TechCrunch",
+      "category": "Hardware",
+      "published": "2026-11-07T21:17:08+00:00",
+      "sent_at": "2026-11-07T21:25:51.462095+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2309554/gpu-supply-problem-no-end-in-sight/",
+      "title": "There is no end in sight for the GPU supply problem",
+      "summary": "GPU prices have soared as the supply of memory has tightened, and it doesn't look like this is going to change any time soon (though a few optimists disagree).",
+      "source": "Engadget",
+      "category": "Hardware",
+      "published": "2026-11-07T20:45:00+00:00",
+      "sent_at": "2026-11-07T21:25:51.462095+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2309550/how-long-pc-processor-should-last/",
+      "title": "How long should a PC processor actually last?",
+      "summary": "Your computer's CPU is its most important part, and its most expensive one, too. So how long can you expect it to last if cared for properly?",
+      "source": "Engadget",
+      "category": "Hardware",
+      "published": "2026-11-07T20:30:00+00:00",
+      "sent_at": "2026-11-07T21:25:51.462095+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2309549/amd-cpu-ryzen-7-5800x3d-worth-buying-2026/",
+      "title": "Is AMD's Ryzen 7 5800X3D CPU still worth buying in 2026?",
+      "summary": "I've never regretted owning the 5800X3D, but before you spend $349 on a previous generation CPU, there are a few questions worth asking yourself.",
+      "source": "Engadget",
+      "category": "Hardware",
+      "published": "2026-11-07T20:15:00+00:00",
+      "sent_at": "2026-11-07T21:25:51.462095+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2309543/how-to-set-up-use-spacexai-grok-in-google-workspace/",
+      "title": "How to set up SpaceXAI's Grok in Google Workspace (and what it can do)",
+      "summary": "Inserting Grok into your Google Workspace is easy, but you'll want to consider a few things before rolling out the welcome mat.",
+      "source": "Engadget",
+      "category": "Innovationen",
+      "published": "2026-11-07T19:15:00+00:00",
+      "sent_at": "2026-11-07T21:25:51.462095+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/07/parents-want-safer-phones-for-kids-these-companies-are-answering-the-call/",
+      "title": "Parents want safer phones for kids. These companies are answering the call.",
+      "summary": "As parents look for alternatives to unrestricted smartphones, a growing number of companies are building phones designed specifically for kids, from feature-limited mobile devices to minimalist home phones.",
+      "source": "TechCrunch",
+      "category": "Hardware",
+      "published": "2026-11-07T19:00:00+00:00",
+      "sent_at": "2026-11-07T21:25:51.462095+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2306571/how-bottleneck-calculator-works-gpu-cpu/",
+      "title": "How a bottleneck calculator for your GPU and CPU works",
+      "summary": "They're a quick way to help you check component compatibility before you build or upgrade a system.",
+      "source": "Engadget",
+      "category": "Hardware",
+      "published": "2026-11-07T19:00:00+00:00",
+      "sent_at": "2026-11-07T21:25:51.462095+00:00"
+    },
+    {
+      "link": "https://hunch.net/?p=13764006",
+      "title": "The End of AI Frontiers",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-07T18:04:07+00:00",
+      "sent_at": "2026-11-07T21:25:51.462095+00:00"
+    },
+    {
       "link": "https://www.engadget.com/2306188/solar-panel-efficiency-breakthrough-doubles-output/",
       "title": "Solar panel breakthrough could almost double the efficiency of today's panels",
       "summary": "Solar panels have become much more efficient since their infancy, but research breakthroughs show there's still plenty of room for improvement.",
@@ -3761,60 +3833,6 @@
       "category": "AI",
       "published": "2026-10-24T20:15:33+00:00",
       "sent_at": "2026-10-24T22:52:17.506431+00:00"
-    },
-    {
-      "link": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
-      "title": "No Signs of AI Payoff Outside the Tech Sector",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-24T19:47:19+00:00",
-      "sent_at": "2026-10-24T20:10:47.896685+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
-      "title": "The AI graveyard: a running list of projects and startups that didn’t make it",
-      "summary": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-24T19:00:00+00:00",
-      "sent_at": "2026-10-24T20:10:47.896685+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act",
-      "title": "Pennsylvania will require labels on AI-generated ads",
-      "summary": "On Thursday, Pennsylvania Governor Josh Shapiro signed the Artificial Intelligence Deceptive Advertising Act into law, requiring disclosures on AI-generated ads. The law requires any ad - whether it's a still image, video, audio, or text - that \"has been significantly modified or generated by artificial intelligence\" to include a label in the same format as [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-24T18:32:21+00:00",
-      "sent_at": "2026-10-24T20:10:47.896685+00:00"
-    },
-    {
-      "link": "https://arxiv.org/abs/2610.29162",
-      "title": "Why is AI generated language so hard to understand?",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-24T18:04:57+00:00",
-      "sent_at": "2026-10-24T20:10:47.896685+00:00"
-    },
-    {
-      "link": "https://actu.epfl.ch/news/neural-chip-decodes-interactions-between-brain-r-2/",
-      "title": "Neural chip decodes interactions between brain regions",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Hardware",
-      "published": "2026-10-24T15:57:17+00:00",
-      "sent_at": "2026-10-24T20:10:47.896685+00:00"
-    },
-    {
-      "link": "https://github.com/Zagitta/gpu-unlock",
-      "title": "GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Hardware",
-      "published": "2026-10-24T09:58:27+00:00",
-      "sent_at": "2026-10-24T20:10:47.896685+00:00"
     }
   ]
 }
