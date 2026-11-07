@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/",
+      "title": "Crusoe sells troubled Wyoming data center project to Google",
+      "summary": "The deal highlights the challenges of developing massive AI data centers.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-07T01:40:28+00:00",
+      "sent_at": "2026-11-07T04:34:41.204458+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1029380/openai-1-25-trillion-investment-valuation",
+      "title": "OpenAI valued at $1.25 trillion, as rival Anthropic nears its IPO",
+      "summary": "OpenAI is now valued at $1.25 trillion in a new round of funding that has raised another $11 billion, according to Bloomberg. That would make it one of the world's most valuable companies, not long after raising $122 billion from investors in March at a valuation of $852 billion. Echoing FT and Wall Street Journal [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-11-06T23:46:18+00:00",
+      "sent_at": "2026-11-07T04:34:41.204458+00:00"
+    },
+    {
+      "link": "https://community.openai.com/t/security-follow-up-tool-call-silently-routed-to-a-different-connector/1413053",
+      "title": "ChatGPT silently passes data between connectors and the bounty wants an ID card",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-06T22:50:43+00:00",
+      "sent_at": "2026-11-07T04:34:41.204458+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/space/2026/11/ast-spacemobile-is-so-desperate-for-launch-theyre-building-their-own-rocket/",
+      "title": "You know the launch market is tough when satellite companies start building rockets",
+      "summary": "\"The Blacklift rocket is the springboard to significantly expand our total addressable market.\"",
+      "source": "Ars Technica",
+      "category": "Innovationen",
+      "published": "2026-11-06T18:20:47+00:00",
+      "sent_at": "2026-11-07T04:34:41.204458+00:00"
+    },
+    {
+      "link": "https://www.reuters.com/business/microsoft-is-winding-down-oracle-deal-rent-ai-cloud-capacity-bloomberg-news-2026-11-06/",
+      "title": "Microsoft is winding down Oracle deal to rent AI cloud capacity",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-06T18:04:06+00:00",
+      "sent_at": "2026-11-07T04:34:41.204458+00:00"
+    },
+    {
+      "link": "https://arxiv.org/abs/2610.21375",
+      "title": "Memorilla: Latent Semantic Memory for LLMs",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-06T18:03:33+00:00",
+      "sent_at": "2026-11-07T04:34:41.204458+00:00"
+    },
+    {
+      "link": "https://www.perplexity.ai/en-GB/hub/blog/teammates-are-agents-for-complex-ongoing-work",
+      "title": "Perplexity launches AI agents for work",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-06T17:59:41+00:00",
+      "sent_at": "2026-11-07T04:34:41.204458+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/tech-policy/2026/11/does-meta-think-we-cant-read-meta-abandons-sketchy-commercial-terms-update/",
+      "title": "“Does Meta think we can’t read?” Meta abandons sketchy commercial terms update.",
+      "summary": "Meta won't force Facebook page owners to allow AI training on linked content.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-11-06T17:43:02+00:00",
+      "sent_at": "2026-11-07T04:34:41.204458+00:00"
+    },
+    {
       "link": "https://www.theverge.com/tech/1029338/nvidia-ceo-jensen-huang-china-spy",
       "title": "China reportedly recruited AI exec to spy on Jensen Huang",
       "summary": "China's intelligence agency recruited Megaspeed executive Alice Huang to spy on Nvidia CEO Jensen Huang, according to The New York Times. The Ministry of State Security (MSS) enlisted her to glean information about American AI chips and \"potentially influence the company to push for its most advanced chips to be made available to China.\" Megaspeed [&#8230;]",
@@ -3761,150 +3833,6 @@
       "category": "Innovationen",
       "published": "2026-10-23T09:00:00+00:00",
       "sent_at": "2026-10-24T08:36:57.546045+00:00"
-    },
-    {
-      "link": "https://gizmodo.com/microsoft-says-its-new-ai-is-more-than-twice-as-good-at-diagnosing-diseases-as-doctors-2000829562",
-      "title": "New AI Is More Than Twice as Good at Diagnosing Diseases as Doctors",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-23T19:31:36+00:00",
-      "sent_at": "2026-10-24T03:12:41.167581+00:00"
-    },
-    {
-      "link": "https://www.thisandthat.chat/enron/",
-      "title": "Show HN: We had AI write a wiki from 45k Enron emails, every fact cited",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-23T12:02:53+00:00",
-      "sent_at": "2026-10-24T03:12:41.167581+00:00"
-    },
-    {
-      "link": "https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet",
-      "title": "Swedish government offices to ban ChatGPT and Claude",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-23T11:39:54+00:00",
-      "sent_at": "2026-10-24T03:12:41.167581+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/space/2026/10/rocket-report-spacex-says-no-thanks-to-military-launches-spanish-rocket-nearly-ready/",
-      "title": "Rocket Report: SpaceX says no thanks to military launches; Spanish rocket nearly ready",
-      "summary": "\"We believe Canada should be able to reach orbit on its own terms.\"",
-      "source": "Ars Technica",
-      "category": "Innovationen",
-      "published": "2026-10-23T11:00:57+00:00",
-      "sent_at": "2026-10-24T03:12:41.167581+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/cybercartel-hacking-gang-used-claude-and-grok-ai-agents-to-automate-attacks-on-latin-american-institutions-passwords-and-details-stolen-from-over-400-institutions-including-banks-and-payment-apps",
-      "title": "Claude and Grok among AI agents used to automate attacks on Latin American institutions",
-      "summary": "Claude and Grok are among the AI agents that are being used to automate attacks on Latin American institutions, including banks and payment apps, by a group calling themselves CyberCartel.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-23T11:00:00+00:00",
-      "sent_at": "2026-10-24T03:12:41.167581+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/cyber-security/microsoft-says-china-aligned-hackers-used-ai-agents-in-connectwise-supply-chain-attack-agents-attempted-sign-ins-at-more-than-2-250-microsoft-365-tenants-with-some-of-the-groups-attacks-reaching-privileged-access-in-under-three-hours",
-      "title": "China-aligned hackers deploy AI agents in massive ConnectWise supply chain attack",
-      "summary": "Microsoft says China-aligned Storm-0940 used the ARTEX AI agent framework in the ConnectWise Cloud Backup supply chain attack.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-23T10:30:00+00:00",
-      "sent_at": "2026-10-24T03:12:41.167581+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/desktops/gaming-pcs/save-usd450-on-this-4k-gaming-pc-with-an-rtx-5070-ti-and-9800x3d-now-usd2-549-99-liquid-cooled-abs-stratos-ii-ruby-rig-comes-with-32gb-ddr5-and-a-2tb-ssd",
-      "title": "Save $450 on this 4K gaming PC with an RTX 5070 Ti and 9800X3D, now $2,549.99",
-      "summary": "You can save $450 on this 4K-capable gaming machine from Newegg's ABS brand, featuring the powerful RTX 5070 Ti, AMD Ryzen 7 9800X3D, 32GB DDR5, and a 2TB SSD for $2,549.99.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-10-23T10:10:35+00:00",
-      "sent_at": "2026-10-24T03:12:41.167581+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/data-centers/wolves-roam-into-finnish-villages-after-google-destroys-1-300-acres-of-forest-for-ai-data-centers-forest-where-wolf-packs-used-to-live-are-now-an-expanse-of-mud",
-      "title": "Wolves roam into Finnish villages after Google destroys 1,300 acres of forest for AI data centers",
-      "summary": "Wolves, who used to live in the forests recently cleared for Google data center development, are now roaming into Finnish villages nearby.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-23T10:00:00+00:00",
-      "sent_at": "2026-10-24T03:12:41.167581+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
-      "title": "OpenAI says it will no longer train its AI models on the live internet, citing “significant risks”",
-      "summary": "OpenAI will cut frontier models off from the internet weeks after one of its engineers said that solution wouldn't work.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-23T23:05:49+00:00",
-      "sent_at": "2026-10-23T23:47:05.143095+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2296019/openai-says-its-cutting-off-internet-access-for-frontier-model-training/",
-      "title": "OpenAI says it's cutting off internet access for frontier model training",
-      "summary": "OpenAI says it will no longer allow frontier models to access the internet during training in an effort to put in new safety measures after a series of incidents.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-23T22:37:02+00:00",
-      "sent_at": "2026-10-23T23:47:05.143095+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/23/hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-robots-20000-sell/",
-      "title": "Hottest toy for Christmas? Nvidia CEO plays with adorable Microduck robots, 20,000 sell",
-      "summary": "The robots, stomping their little feet and making tiny R2-D2 noises, sat, fell down dead for a \"nap,\" and summersaulted on voice command.",
-      "source": "TechCrunch",
-      "category": "Hardware",
-      "published": "2026-10-23T21:59:19+00:00",
-      "sent_at": "2026-10-23T23:47:05.143095+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet",
-      "title": "OpenAI now trains its frontier AI models with no internet access",
-      "summary": "OpenAI is now training its most advanced AI models without internet access following a string of rogue hacking incidents. In a blog post on Friday, OpenAI says it built an offline testing environment where AI models can interact with indexed and cached web content \"without risk of affecting external systems.\" OpenAI paused training its frontier [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-23T21:11:07+00:00",
-      "sent_at": "2026-10-23T23:47:05.143095+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/tech-policy/2026/10/pentagon-memo-on-prediction-markets-says-insider-bets-put-troops-lives-at-risk/",
-      "title": "Hegseth warns prediction market bets warp military judgment, endanger troops",
-      "summary": "Pentagon memo: Insider trading gives US enemies key intel on military operations.",
-      "source": "Ars Technica",
-      "category": "Hardware",
-      "published": "2026-10-23T20:28:43+00:00",
-      "sent_at": "2026-10-23T23:47:05.143095+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/data-centers/amazon-bows-to-local-backlash-over-ai-data-centers-scraps-plans-to-build-four-new-facilities-in-northern-virginia-site-to-be-repurposed-for-mixed-use-and-residential-development",
-      "title": "Amazon bows to local backlash over AI data centers, scraps plans to build four new facilities in Northern Virginia",
-      "summary": "Amazon has ditched its plans to build four new data centers in Loudoun County, Northern Virginia, following an outcry from local residents and officials. The land will now be repurposed for mixed and residential use.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-23T13:36:50+00:00",
-      "sent_at": "2026-10-23T23:47:05.143095+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/semiconductors/china-can-make-advanced-chips-without-euv-but-the-bill-keeps-growing-duv-multiple-patterning-means-bigger-dies-lower-yields-and-longer-manufacturing-times",
-      "title": "China can make advanced chips without EUV, but the bill keeps growing",
-      "summary": "China has stretched older DUV lithography far further than expected, using multiple patterning to approach 5nm-class without EUV. But experts say the trade-offs in cost, yield, and die size mean further advancements are unlikely to be economically viable.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-10-23T13:30:00+00:00",
-      "sent_at": "2026-10-23T23:47:05.143095+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/data-centers/illegal-nvidia-blackwell-ultra-b300-gpus-found-inside-state-owned-china-telecoms-network-nvidia-says-chip-smuggling-a-drop-in-the-bucket-insists-smuggling-remains-a-nonfactor",
-      "title": "Illegal Nvidia Blackwell Ultra B300 GPUs found inside state-owned China Telecom's network",
-      "summary": "A security firm has been able to identify 32 Nvidia Blackwell Ultra B300 AI chips running inside a China Telecom network, but it's unclear where the export-barred components are physically located.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-23T12:26:23+00:00",
-      "sent_at": "2026-10-23T23:47:05.143095+00:00"
     }
   ]
 }
