@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/pc-components/cooling/diamond-foundry-creates-worlds-first-200mm-single-crystal-diamond-wafer-massive-gem-aims-to-solve-ai-chip-cooling-crisis-envisioned-as-a-cooling-material-for-semiconductors",
+      "title": "Diamond Foundry creates world's first 200mm single-crystal diamond wafer",
+      "summary": "This 200mm single-crystal diamond wafer is designed to efficiently remove heat and prevent hotspots from forming on AI processors.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-11-08T15:25:00+00:00",
+      "sent_at": "2026-11-08T15:46:38.322907+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1029526/chatbots-might-be-coming-to-apples-homeview",
+      "title": "Chatbots might be coming to Apple’s HomeView",
+      "summary": "Code in the iOS 27.3 beta suggests that Apple could add support for chatbots to its smart home hub. There's a flag listed for a \"Conversational Apps\" category. While there are no details about what apps would fall under that heading, it seems reasonable that AI chatbots like ChatGPT and Claude could be added to [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-11-08T15:00:30+00:00",
+      "sent_at": "2026-11-08T15:46:38.322907+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/software/linux/the-end-of-an-era-as-linux-7-5-purges-the-last-30-year-old-intel-mmx-optimizations-from-pentium-age-open-source-os-retires-ancient-1997-pentium-instructions-to-streamline-code",
+      "title": "The end of an era as Linux 7.5 purges the last 30-year-old Intel MMX optimizations from Pentium age",
+      "summary": "Linux developers are preparing to make Intel’s ancient MultiMedia eXtensions irrelevant, with the last MMX code now set to be removed from the kernel.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-11-08T14:40:00+00:00",
+      "sent_at": "2026-11-08T15:46:38.322907+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/robotics/ukraine-builds-combat-robots-to-hunt-russian-troops-in-underground-gas-pipelines-ugvs-adapted-following-15-kilometer-subterranean-assault",
+      "title": "Ukraine builds combat robots to hunt Russian troops in underground gas pipelines",
+      "summary": "Ukraine is developing a new class of combat robots designed to operate inside underground gas pipelines.",
+      "source": "Tom's Hardware",
+      "category": "Innovationen",
+      "published": "2026-11-08T14:36:39+00:00",
+      "sent_at": "2026-11-08T15:46:38.322907+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/gpus/nvidia-released-its-8800-gtx-gpu-20-years-ago-today-celebrates-with-steam-game-homage-interactive-demos-eye-watering-minimum-requirements-include-rtx-4070-32gb-ram-and-30gb-storage",
+      "title": "Nvidia released its 8800 GTX GPU 20 years ago today, celebrates with Steam game homage",
+      "summary": "On this day in 2006, Nvidia released the legendary GeForce 8800 GTX graphics card and it is celebrating the event with a very demanding (but free) interactive Steam demo.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-11-08T14:20:00+00:00",
+      "sent_at": "2026-11-08T15:46:38.322907+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2307604/game-reverse-engineering-community-latest-ai-casualty/",
+      "title": "The game reverse engineering community is the latest casualty of AI",
+      "summary": "For years, decompilation communities thrived on the challenge of breaking down video games to their core code and adapting them. Then AI tools ruined the fun.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-11-08T14:15:00+00:00",
+      "sent_at": "2026-11-08T15:46:38.322907+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/gpus/open-source-gpu-task-manager-reveals-exactly-whats-eating-your-vram-microsoft-vps-new-gpu-taskman-tool-reveals-every-process-using-your-gpu-how-much-memory-each-uses-and-breaks-down-ai-and-llm-workloads",
+      "title": "Open-source GPU task manager reveals exactly what's eating your VRAM",
+      "summary": "A new open-source GitHub project called gputaskman has been released by Microsoft VP Scott Hanselman.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-11-08T13:40:00+00:00",
+      "sent_at": "2026-11-08T15:46:38.322907+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/two-chinese-companies-cleared-to-buy-banned-nvidia-ai-chips-have-empty-offices-and-unknown-addresses-investigation-reveals-businesses-have-ties-to-sanctioned-chinese-military-suppliers",
+      "title": "Two Chinese companies cleared to buy banned Nvidia AI chips have empty offices and unknown addresses",
+      "summary": "The offices for New Matrix and Maginfra, both approved to receive H200 chips, appear abandoned, and people in the buildings say they're unfamiliar with the companies or have never seen anyone working there.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-11-08T13:00:00+00:00",
+      "sent_at": "2026-11-08T15:46:38.322907+00:00"
+    },
+    {
       "link": "https://www.engadget.com/2306820/using-amazfit-smartwatch-pros-and-cons/",
       "title": "The pros and cons of using an Amazfit smartwatch",
       "summary": "Thinking about an Amazfit smartwatch? Find out what makes these budget wearables so appealing and where they fall short before you spend your money.",
@@ -3761,114 +3833,6 @@
       "category": "AI",
       "published": "2026-10-25T09:51:17+00:00",
       "sent_at": "2026-10-25T18:06:15.371315+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/25/the-hottest-ai-wearables-and-gadgets-you-should-know-about/",
-      "title": "The hottest AI wearables and gadgets you should know about",
-      "summary": "We compiled a list of all the hottest AI wearables, including Muse Charm, Bee, Friend, Plaud, and more.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-25T14:10:00+00:00",
-      "sent_at": "2026-10-25T14:46:48.348588+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2292973/samsung-probably-not-rebranding-one-ui-as-galaxy-os/",
-      "title": "Samsung probably isn't rebranding One UI as Galaxy OS",
-      "summary": "A bunch of recent rumors have suggested Samsung has some changes in store for its smartphone interface.",
-      "source": "Engadget",
-      "category": "Hardware",
-      "published": "2026-10-25T13:45:00+00:00",
-      "sent_at": "2026-10-25T14:46:48.348588+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2292950/how-quantum-computer-stays-running-extreme-cold/",
-      "title": "Quantum computers can get colder than deep space — Here's how they stay running",
-      "summary": "Heat disrupts the accuracy of a quantum computer, so the computer needs to be kept as cold as possible. Which is extremely cold, it turns out.",
-      "source": "Engadget",
-      "category": "Hardware",
-      "published": "2026-10-25T13:30:00+00:00",
-      "sent_at": "2026-10-25T14:46:48.348588+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/gpus/nvidia-discusses-usd2-000-per-gpu-annual-software-fee-for-running-agents-on-ai-infrastructure-firm-already-charges-more-than-twice-that-amount-for-its-ai-enterprise-software-platform",
-      "title": "Nvidia discusses $2,000-per-GPU annual fee for software that 'runs agents on AI factories'",
-      "summary": "Nvidia CEO Jensen Huang is reportedly weighing annual software fees of around $2,000 per GPU for enterprise AI, a model that could generate $10 billion a year if five million licenses were sold. The pricing and launch timeline remain unconfirmed, while Nvidia continues to expand its AI software and security tools for enterprise customers.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-25T13:00:00+00:00",
-      "sent_at": "2026-10-25T14:46:48.348588+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2292076/when-ai-glasses-worth-headphones-replacement/",
-      "title": "When AI glasses could be a worthy headphones replacement",
-      "summary": "Smart AI glasses are everywhere, but is the audio any good? It really depends on what you're using them for.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-25T12:45:00+00:00",
-      "sent_at": "2026-10-25T14:46:48.348588+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/column/1017983/google-ai-search-online-publishing",
-      "title": "Google’s AI search changes upended online publishing",
-      "summary": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more about AI's impact on the web, follow Emma Roth. The Stepback arrives in our subscribers' inboxes on Sunday at 8AM ET. Opt in for The Stepback here. How it started The digital publishing industry has relied on [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-25T12:00:00+00:00",
-      "sent_at": "2026-10-25T14:46:48.348588+00:00"
-    },
-    {
-      "link": "https://www.wired.com/gallery/best-folding-phones/",
-      "title": "6 Best Folding Phones (2026): Samsung, Apple, Google, Motorola",
-      "summary": "Ready to move on from the traditional glass slab? Introduce a hinge into your life with these folding smartphones.",
-      "source": "Wired",
-      "category": "Hardware",
-      "published": "2026-10-25T11:30:00+00:00",
-      "sent_at": "2026-10-25T14:46:48.348588+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/openais-isolated-red-team-ai-agents-built-a-hidden-cpu-cache-channel-to-talk-with-no-network-or-shared-files-exploited-cpu-cache-timing-to-bypass-microvm-sandboxes",
-      "title": "OpenAI's isolated red-team agents built a hidden CPU cache channel to talk with no network or shared files",
-      "summary": "OpenAI’s red-team agents passed hidden messages through the CPU cache, a covert trick already shown to move data between cloud VMs.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-25T11:30:00+00:00",
-      "sent_at": "2026-10-25T14:46:48.348588+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/data-centers/nvidia-eyes-converting-old-nuclear-plants-into-massive-ai-data-centers-reusing-shut-down-german-energy-sites-could-reduce-the-cost-and-timeline-of-building-from-scratch",
-      "title": "Nvidia eyes converting old nuclear plants into massive AI data centers",
-      "summary": "Nvidia and PreussenElektra are studying whether decommissioned sites of German nuclear power plants can be repurposed as AI data centers, potentially cutting development time by reusing existing grid connections, land, and industrial infrastructure.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-25T10:30:00+00:00",
-      "sent_at": "2026-10-25T10:40:55.600748+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/cyber-security/hacker-finds-own-samsung-tv-collecting-scary-amounts-of-user-information-and-gets-banned-by-openai-for-cyber-abuse-tv-runs-an-ai-model-that-collects-audio-screenshots-and-plenty-of-other-user-data-for-ad-targeting",
-      "title": "Cybersecurity bounty hunter says Samsung TVs use AI to record audio and screenshots for ads",
-      "summary": "A hacker reverse-engineered his own Samsung TV and found alarming spying activity, including code that used connected devices' microphones to listen to users.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-25T10:00:00+00:00",
-      "sent_at": "2026-10-25T10:40:55.600748+00:00"
-    },
-    {
-      "link": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
-      "title": "Cerebras Deploys Trillion-Parameter AI Models",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-25T01:33:49+00:00",
-      "sent_at": "2026-10-25T05:39:14.621064+00:00"
-    },
-    {
-      "link": "https://terrytao.wordpress.com/2026/10/24/oai-math-revised-a-community-hub-for-revising-openais-math-write-ups/",
-      "title": "Oai-math-revised: a community hub for revising OpenAI's math write-ups",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-24T15:35:17+00:00",
-      "sent_at": "2026-10-25T05:39:14.621064+00:00"
     }
   ]
 }
