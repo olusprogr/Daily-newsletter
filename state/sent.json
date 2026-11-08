@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/11/08/sequoia-partners-reportedly-blindsided-when-roelof-botha-joined-spacex-board/",
+      "title": "Sequoia partners reportedly blindsided when Roelof Botha joined SpaceX board",
+      "summary": "A new report claims Sequoia's recent changes undo the legacy of the firm's former steward.",
+      "source": "TechCrunch",
+      "category": "Innovationen",
+      "published": "2026-11-08T19:51:30+00:00",
+      "sent_at": "2026-11-08T20:09:51.156241+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2309286/why-apple-m6-chip-cant-compete-any-nvidia-gpu/",
+      "title": "Why Apple's M6 Chip Can't Hold Its Own Against Any NVIDIA GPU",
+      "summary": "With the announcement of its M6, Apple is stepping into a new generation of its processors. Here's why it still can't compete with NVIDIA GPUs.",
+      "source": "Engadget",
+      "category": "Hardware",
+      "published": "2026-11-08T19:45:00+00:00",
+      "sent_at": "2026-11-08T20:09:51.156241+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2310316/suno-ai-music-generator-sued-again-for-copyright-infringement/",
+      "title": "Suno AI music generator sued again for copyright infringement",
+      "summary": "Groups that own the music rights to Elvis Presley and Eminem's tracks filed the latest lawsuits.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-11-08T19:42:14+00:00",
+      "sent_at": "2026-11-08T20:09:51.156241+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1029552/apple-siri-ai-agentic",
+      "title": "Apple is racing to make Siri more agentic",
+      "summary": "Bloomberg's Mark Gurman says CEO John Ternus is pressuring AI czar Craig Federighi to accelerate the Siri roadmap and deliver a powerful AI agent that can compete with OpenAI's Dots or Meta's Muse. While Federighi has delivered a functional version of Siri AI on an incredibly short timeline, the company has no illusions that it's [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-11-08T19:18:19+00:00",
+      "sent_at": "2026-11-08T20:09:51.156241+00:00"
+    },
+    {
+      "link": "https://www.wsj.com/tech/ai/silicon-valley-promises-ai-will-cure-disease-drugmaker-ceos-arent-buying-it-5218511c",
+      "title": "Silicon Valley Promises AI Will Cure Disease. Drugmaker CEOs Aren't Buying It",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-08T18:43:07+00:00",
+      "sent_at": "2026-11-08T20:09:51.156241+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2309033/biggest-disadvantages-using-ai-glasses/",
+      "title": "The biggest disadvantages of using AI glasses",
+      "summary": "AI glasses can do a lot of cool things, there's no debate about that. But there are also serious downsides to the tech.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-11-08T18:30:00+00:00",
+      "sent_at": "2026-11-08T20:09:51.156241+00:00"
+    },
+    {
+      "link": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
+      "title": "Goldman Sachs Is Pulling Claude Code from Its Bankers and Traders",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-08T18:16:07+00:00",
+      "sent_at": "2026-11-08T20:09:51.156241+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2310304/uk-has-no-plans-to-slow-down-ai-data-center-construction/",
+      "title": "UK has no plans to slow down AI data center construction",
+      "summary": "The country's growth minister said the data centers will continue as \"essential infrastructure\" projects.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-11-08T18:10:01+00:00",
+      "sent_at": "2026-11-08T20:09:51.156241+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/pc-components/cooling/diamond-foundry-creates-worlds-first-200mm-single-crystal-diamond-wafer-massive-gem-aims-to-solve-ai-chip-cooling-crisis-envisioned-as-a-cooling-material-for-semiconductors",
       "title": "Diamond Foundry creates world's first 200mm single-crystal diamond wafer",
       "summary": "This 200mm single-crystal diamond wafer is designed to efficiently remove heat and prevent hotspots from forming on AI processors.",
@@ -3761,78 +3833,6 @@
       "category": "AI",
       "published": "2026-10-25T16:31:21+00:00",
       "sent_at": "2026-10-25T21:24:17.557398+00:00"
-    },
-    {
-      "link": "https://lynchlab.net/llm-skin-cancer",
-      "title": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-25T17:15:38+00:00",
-      "sent_at": "2026-10-25T18:06:15.371315+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
-      "title": "AI delivers ‘zero financial payoff’ to most companies, Apollo economist says",
-      "summary": "\"Despite massive investments and widespread hype around artificial intelligence, the technology has delivered zero financial payoff to corporate America outside of tech.\"",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-25T16:57:32+00:00",
-      "sent_at": "2026-10-25T18:06:15.371315+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/25/techcrunch-mobility-blue-green-is-the-color-of-autonomy/",
-      "title": "TechCrunch Mobility: Blue-green is the color of autonomy",
-      "summary": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, the role AI is playing in it.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-25T16:05:00+00:00",
-      "sent_at": "2026-10-25T18:06:15.371315+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/big-tech-is-cashing-in-on-ai-while-the-rest-of-corporate-america-sees-no-financial-returns-report-outlines-how-rising-token-costs-threaten-to-squeeze-corporate-profit-margins",
-      "title": "Big Tech is cashing in on AI while the rest of corporate America sees no financial returns",
-      "summary": "Revenue per employee at the Magnificent Seven has outpaced the S&amp;P 493, and a new comparison highlights the growing divide in fortunes between America’s largest technology companies and the rest of the S&amp;P 500.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-25T15:25:40+00:00",
-      "sent_at": "2026-10-25T18:06:15.371315+00:00"
-    },
-    {
-      "link": "https://www.reddit.com/r/opensource/comments/1xelcuf/your_tokens_arent_valuable_no_more_ai",
-      "title": "R/open source bans all solo projects and projects using LLMs",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-25T14:05:03+00:00",
-      "sent_at": "2026-10-25T18:06:15.371315+00:00"
-    },
-    {
-      "link": "https://twitter.com/boneGPT/status/2114035719853265264",
-      "title": "Imagine an AI future where being banned means you are now economically useless",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-25T12:47:20+00:00",
-      "sent_at": "2026-10-25T18:06:15.371315+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/cpus/amd-ceo-lisa-su-proposed-bringing-back-the-ryzen-7-5800x3d-set-plan-in-motion-before-ddr5-shortages-am4-cpu-considered-a-final-gift-to-loyal-fans-of-the-decade-old-socket",
-      "title": "AMD CEO Lisa Su proposed bringing back the Ryzen 7 5800X3D, set plan in motion before DDR5 shortages",
-      "summary": "AMD Director Travis Kirsch confirmed the rationale for relaunching the first X3D chip and explained why the company no longer offers many Ryzen 3 SKUs.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-10-25T11:00:00+00:00",
-      "sent_at": "2026-10-25T18:06:15.371315+00:00"
-    },
-    {
-      "link": "https://www.techspot.com/news/114171-nikon-photography-contest-winner-loses-title-after-scientists.html",
-      "title": "Nikon photography contest winner loses title after scientists spot signs of AI",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-25T09:51:17+00:00",
-      "sent_at": "2026-10-25T18:06:15.371315+00:00"
     }
   ]
 }
