@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/11/09/jensen-huangs-affair-with-alleged-chinese-spy-puts-nvidias-china-ambitions-under-scrutiny/",
+      "title": "Jensen Huang’s affair with alleged Chinese spy puts Nvidia’s China ambitions under scrutiny",
+      "summary": "Jensen Huang’s alleged affair with a suspected Chinese spy threatens to complicate Nvidia’s lobbying efforts to loosen U.S. chip export restrictions and maintain access to China’s lucrative AI market.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-09T18:09:52+00:00",
+      "sent_at": "2026-11-09T18:16:23.083474+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1030061/instagram-ai-effect-builder-filters",
+      "title": "Instagram’s Effect Builder makes new filters from AI prompts",
+      "summary": "After expanding its Edits app to macOS last week, Instagram's next move is launching this Effect Builder that generates custom filters for your Stories posts with AI. Available now for US residents who are over 18, it has a prompt box for describing your filter idea to the chatbot, with an option to attach style [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-11-09T18:07:23+00:00",
+      "sent_at": "2026-11-09T18:16:23.083474+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/policy/nvidia-cracks-down-on-overseas-cloud-ai-gpu-rentals-for-china-partners-face-51-percent-non-chinese-quota-as-black-market-b300-rack-prices-surge-to-usd2-8-million",
+      "title": "Nvidia cracks down on overseas cloud AI GPU rentals for China",
+      "summary": "Nvidia may cap cloud partners’ Chinese business at 49% as Chinese firms buy up more than 1 million gaming and workstation GPUs.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-11-09T17:48:17+00:00",
+      "sent_at": "2026-11-09T18:16:23.083474+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1029990/jensen-huang-the-spy-who-loved-me",
+      "title": "The future of AI hinges on… Jensen Huang’s sex life?",
+      "summary": "I would prefer that these people's sex lives were none of my business but I guess we have to talk about Jensen Huang and the National Security Incident. Who could have guessed that the guy who was out here signing titties might not have great judgment about how to behave around women? Alice Huang - [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-11-09T17:36:08+00:00",
+      "sent_at": "2026-11-09T18:16:23.083474+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/ai/2026/11/claude-code-settings-files-expose-thousands-of-secrets-on-github/",
+      "title": "Claude Code is accidentally exposing secrets all over GitHub",
+      "summary": "\"Do not ask again\" prompt leads to passwords, API keys, and more being shared.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-11-09T17:24:26+00:00",
+      "sent_at": "2026-11-09T18:16:23.083474+00:00"
+    },
+    {
+      "link": "https://www.technologyreview.com/2026/11/09/1148182/nancy-pelosis-replacement-is-ready-to-regulate-ai/",
+      "title": "Nancy Pelosi’s replacement is ready to regulate AI",
+      "summary": "As a California state senator, Scott Wiener authored legislation aimed at curbing the risks of advanced AI. Now, after winning a tight congressional race for former Speaker of the House Nancy Pelosi’s open San Francisco seat, he could play a key role in setting federal AI policy.&#160; I spoke with Wiener on Friday, only a&#8230;",
+      "source": "MIT Technology Review",
+      "category": "AI",
+      "published": "2026-11-09T17:05:43+00:00",
+      "sent_at": "2026-11-09T18:16:23.083474+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/09/uber-launches-parking-service-following-spothero-acquisition-with-an-eye-on-robotaxis/",
+      "title": "Uber launches parking service following SpotHero acquisition, with an eye on robotaxis",
+      "summary": "Uber Parking is the latest example of the company offering products beyond its core ride-hailing service.",
+      "source": "TechCrunch",
+      "category": "Autonomes Fahren",
+      "published": "2026-11-09T17:00:00+00:00",
+      "sent_at": "2026-11-09T18:16:23.083474+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/09/anthropic-joins-ais-natural-gas-frenzy-buys-3-4b-worth-of-turbines/",
+      "title": "Anthropic joins AI’s natural gas frenzy, buys $3.4B worth of turbines",
+      "summary": "Anthropic bought billions of dollars worth of natural gas turbines in a deal that could give it buyer's remorse.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-09T16:56:54+00:00",
+      "sent_at": "2026-11-09T18:16:23.083474+00:00"
+    },
+    {
       "link": "https://www.stork.ai/newsletter/2026-11-08-apple-capped-engineers-at-a-200-daily-ai-budget#story-1",
       "title": "Apple capped engineers at a $200 daily AI budget",
       "summary": "",
@@ -3824,114 +3896,6 @@
       "category": "AI",
       "published": "2026-10-26T17:45:43+00:00",
       "sent_at": "2026-10-26T21:19:32.767660+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/10/26/tesla-turo-full-self-driving-test-drives/",
-      "title": "Tesla turns to car rental platform Turo for Full Self-Driving test drives",
-      "summary": "Turo will soon let US renters search specifically for Teslas with “Full Self-Driving” (Supervised) turned on, using a direct integration with Tesla to verify each car’s FSD status. The feature goes live on October 28. For Tesla, it’s a new way to put FSD in front of people who don’t own a Tesla, and a new source of the FSD subscriptions that now count toward Elon Musk’s pay package. more…",
-      "source": "Electrek",
-      "category": "Autonomes Fahren",
-      "published": "2026-10-26T16:22:31+00:00",
-      "sent_at": "2026-10-26T16:28:06.089711+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/the-anthropic-ipo-is-also-a-doomsday-primer/",
-      "title": "The Anthropic IPO Is Also a Doomsday Primer",
-      "summary": "Anthropic thinks “closing the loop” is the best path to AI triumph—and a recipe for “existential” threats to humanity.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-10-26T16:01:55+00:00",
-      "sent_at": "2026-10-26T16:28:06.089711+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/anthropic-ipo-filings-reveal-finances-risks-strategy/",
-      "title": "Anthropic’s IPO Prospectus Reveals What’s Under the Hood",
-      "summary": "Anthropic on Monday filed documents ahead of a blockbuster IPO that offers insight into the company’s financials, risk factors, and views on the future of AI.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-10-26T14:50:47+00:00",
-      "sent_at": "2026-10-26T16:28:06.089711+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/",
-      "title": "Anthropic officially files for its public debut",
-      "summary": "Anthropic has officially filed for an IPO, revealing soaring revenue, mounting losses, major enterprise adoption, and an unusual governance structure designed to preserve founder control and its AI safety mission.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-26T14:35:22+00:00",
-      "sent_at": "2026-10-26T16:28:06.089711+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/cpus/leaked-256-core-zen-6c-epyc-cpu-destroys-zen-5-in-early-single-threaded-benchmarks-hints-at-24-percent-ipc-gain-early-single-threaded-benchmarks-point-to-huge-amd-zen-6-improvements",
-      "title": "Leaked 256-core Zen 6c EPYC CPU destroys Zen 5 in early single-threaded benchmarks hints at 24% IPC gain",
-      "summary": "A benchmark leak and a direct clock-matched comparison from an enthusiast seed the idea that Zen 6 may come with a decent IPC bump as well as increased clocks.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-10-26T14:31:43+00:00",
-      "sent_at": "2026-10-26T16:28:06.089711+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/26/apple-unveils-new-ipad-mini-with-oled-display-and-faster-a20-pro-chip/",
-      "title": "Apple unveils new iPad mini with OLED display and faster A20 Pro chip",
-      "summary": "The new iPad mini features a thinner and lighter design than its predecessor.",
-      "source": "TechCrunch",
-      "category": "Hardware",
-      "published": "2026-10-26T14:25:43+00:00",
-      "sent_at": "2026-10-26T16:28:06.089711+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/podcast/1018264/kevin-roose-the-agi-chronicles-machine-gods-podcast-youtube-openai-anthropic",
-      "title": "Kevin Roose is AGI-pilled. Why aren’t you?",
-      "summary": "Today, I’m talking to Kevin Roose, journalist and author of the new book The AGI Chronicles, which details the recent and explosive transformation of the AI industry. Kevin was a longtime New York Times reporter and host of the popular podcast Hard Fork, but he and friend of the show Casey Newton just left the [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-26T14:00:00+00:00",
-      "sent_at": "2026-10-26T16:28:06.089711+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2295406/even-realities-launches-a-brown-version-of-its-g2-smart-glasses/",
-      "title": "Even Realities launches a brown version of its G2 smart glasses",
-      "summary": "It also released a couple of new accessories, including a wearable chain.",
-      "source": "Engadget",
-      "category": "Innovationen",
-      "published": "2026-10-26T14:00:00+00:00",
-      "sent_at": "2026-10-26T16:28:06.089711+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/ai-agents-are-trying-to-be-journalists-now/",
-      "title": "Meet the AI Agents Trying to Be Real-Life Journalists",
-      "summary": "Jayden, Sam, and Zack are eagerly pitching editors on reported stories and investigative features. The catch? They're all AI agents.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-10-26T09:30:00+00:00",
-      "sent_at": "2026-10-26T09:39:56.599024+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/this-ai-radio-hosts-speaks-spanish-and-backs-immigrants-its-winning-over-listeners/",
-      "title": "This AI Radio Host Speaks Spanish and Backs Immigrants. It’s Winning Over Listeners",
-      "summary": "Coyotec is bilingual, swears, and tells listeners how to defend themselves against ICE. Its popularity comes as more broadcasters are experimenting with artificial personalities.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-10-26T09:00:00+00:00",
-      "sent_at": "2026-10-26T09:39:56.599024+00:00"
-    },
-    {
-      "link": "https://contraptions.venkateshrao.com/p/cognitive-mercantilism",
-      "title": "Cognitive Mercantilism: AI panic resembles fears of early capitalism",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-26T04:11:40+00:00",
-      "sent_at": "2026-10-26T09:39:56.599024+00:00"
-    },
-    {
-      "link": "https://www.businessinsider.com/apollo-ai-zero-financial-payoff-corporate-america-economic-analysis-2026-10",
-      "title": "Apollo says AI has delivered 'zero financial payoff' outside the tech industry",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-25T22:49:06+00:00",
-      "sent_at": "2026-10-26T09:39:56.599024+00:00"
     }
   ]
 }
