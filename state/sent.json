@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.engadget.com/2309308/spacexai-grok-bot-availability-plans/",
+      "title": "SpaceXAI Grok Bot availability just keeps growing - here's which plans offer it",
+      "summary": "SpaceXAI 's Grok Bot can handle multi-step work on a cloud computer, but you'll need to figure out the jumble of subscription plans first.",
+      "source": "Engadget",
+      "category": "Innovationen",
+      "published": "2026-11-08T23:45:00+00:00",
+      "sent_at": "2026-11-09T00:30:43.194573+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1029595/full-text-jensen-huang-affair-memo-nvidia",
+      "title": "Here’s the full text of Jensen Huang’s memo to Nvidia",
+      "summary": "On Sunday, Nvidia announced it was launching an investigation into CEO Jensen Huang's relationship with Alice Huang, an AI executive and agent of the Chinese government. In addition to the Board of Directors announcing the investigation, Huang sent a memo to Nvidia employees acknowledging the affair. You can read the full text below. To my [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-11-08T22:54:50+00:00",
+      "sent_at": "2026-11-09T00:30:43.194573+00:00"
+    },
+    {
+      "link": "https://www.axios.com/2026/11/08/nvidia-ceo-jensen-huang-affair-email-to-company",
+      "title": "Nvidia CEO Jensen Huang's letter to staff about affair",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Hardware",
+      "published": "2026-11-08T22:20:09+00:00",
+      "sent_at": "2026-11-09T00:30:43.194573+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2309634/qalo-sl-1-vs-garmin-cirqa-how-wearables-compare/",
+      "title": "Qalo SL-1 vs. Garmin Cirqa: How these minimalist wearables compare",
+      "summary": "The Qalo SL-1 and Garmin Cirqa were released in 2026, and both cost about $200. A comparison of these screenless wearables reveals some key differences.",
+      "source": "Engadget",
+      "category": "Innovationen",
+      "published": "2026-11-08T22:15:00+00:00",
+      "sent_at": "2026-11-09T00:30:43.194573+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/gpus/nvidia-ceo-jensen-huang-admits-to-having-an-affair-with-suspected-chinese-spy-jensen-apologizes-in-letter-to-staff-company-board-forms-independent-committee-to-investigate",
+      "title": "Nvidia CEO Jensen Huang admits to having an affair with suspected Chinese spy",
+      "summary": "Nvidia's board of directors is investigating a report about Jensen Huang's alleged affair with a client, claims it is still confident in Jensen and leadership team.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-11-08T21:27:29+00:00",
+      "sent_at": "2026-11-09T00:30:43.194573+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2310336/nvidia-is-investigating-reports-that-ceo-jensen-huang-was-the-target-of-chinese-spy-efforts/",
+      "title": "NVIDIA is investigating reports that CEO Jensen Huang was the target of Chinese spy efforts",
+      "summary": "Reports by The New York Times and the Financial Times linked the CEO to a woman suspected to be a spy.",
+      "source": "Engadget",
+      "category": "Hardware",
+      "published": "2026-11-08T21:17:45+00:00",
+      "sent_at": "2026-11-09T00:30:43.194573+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2309626/dont-like-google-health-ai-coach-how-turn-off/",
+      "title": "Don't like Google Health's AI Coach? Here's how to turn it off",
+      "summary": "If this Premium feature is bugging you, there's good news: you aren't stuck with it.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-11-08T21:15:00+00:00",
+      "sent_at": "2026-11-09T00:30:43.194573+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/",
+      "title": "Nvidia will investigate CEO Jensen Huang’s relationship with possible Chinese spy",
+      "summary": "In a memo to the company, Huang admitted that he had an affair.",
+      "source": "TechCrunch",
+      "category": "Hardware",
+      "published": "2026-11-08T21:00:11+00:00",
+      "sent_at": "2026-11-09T00:30:43.194573+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/11/08/sequoia-partners-reportedly-blindsided-when-roelof-botha-joined-spacex-board/",
       "title": "Sequoia partners reportedly blindsided when Roelof Botha joined SpaceX board",
       "summary": "A new report claims Sequoia's recent changes undo the legacy of the firm's former steward.",
@@ -3788,51 +3860,6 @@
       "category": "AI",
       "published": "2026-10-25T22:49:06+00:00",
       "sent_at": "2026-10-26T09:39:56.599024+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/",
-      "title": "Grok releases the first seven minutes of its AI-generated ‘Odyssey’",
-      "summary": "The footage looks okay, as long as you're not seeking artistry, inspiration, or human interest.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-25T21:31:16+00:00",
-      "sent_at": "2026-10-25T23:46:52.197295+00:00"
-    },
-    {
-      "link": "https://minimaxir.com/2026/10/cheap-llms/",
-      "title": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-25T21:11:31+00:00",
-      "sent_at": "2026-10-25T23:46:52.197295+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/25/cyberselfish-author-takes-aim-at-techno-libertarianism-as-her-book-returns-from-the-dead/",
-      "title": "‘Cyberselfish’ author takes aim at Silicon Valley libertarians as her book returns from the dead",
-      "summary": "\"That's a 12-year-old view of the world.\"",
-      "source": "TechCrunch",
-      "category": "Hardware",
-      "published": "2026-10-25T20:20:08+00:00",
-      "sent_at": "2026-10-25T21:24:17.557398+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1018275/zen-browser-arc-replacement",
-      "title": "Zen Browser is the Arc replacement I was looking for",
-      "summary": "I know many of you are mourning the loss of the Arc browser, and I get it. It felt like the first app in a long time to really offer a new approach to browser design. Atlassian bought the company last year and shifted its focus to developing Dia, its even more AI-focused browser. And [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-25T19:24:50+00:00",
-      "sent_at": "2026-10-25T21:24:17.557398+00:00"
-    },
-    {
-      "link": "https://www.theatlantic.com/ideas/2026/10/ai-math-human-future/689133/",
-      "title": "A Mathematician Reads the AI Future",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-25T16:31:21+00:00",
-      "sent_at": "2026-10-25T21:24:17.557398+00:00"
     }
   ]
 }
