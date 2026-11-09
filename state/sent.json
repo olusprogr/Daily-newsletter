@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.stork.ai/newsletter/2026-11-08-apple-capped-engineers-at-a-200-daily-ai-budget#story-1",
+      "title": "Apple capped engineers at a $200 daily AI budget",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-09T05:30:11+00:00",
+      "sent_at": "2026-11-09T07:37:43.680662+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/08/is-jensen-huangs-job-on-the-line-yales-jeffrey-sonnenfeld-estimates-its-about-a-50-50/",
+      "title": "Is Jensen Huang’s job on the line? Yale’s Jeffrey Sonnenfeld estimates it’s “about a 50-50”",
+      "summary": "Nvidia’s board is investigating Jensen Huang over his relationship with a suspected Chinese spy, and Yale’s Jeffrey Sonnenfeld thinks it’s roughly a coin flip whether Huang stays on as CEO.",
+      "source": "TechCrunch",
+      "category": "Hardware",
+      "published": "2026-11-09T05:26:29+00:00",
+      "sent_at": "2026-11-09T07:37:43.680662+00:00"
+    },
+    {
+      "link": "https://blog.zortax.de/posts/a-critique-of-gpui",
+      "title": "A Critique of GPUI",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Hardware",
+      "published": "2026-11-09T03:51:10+00:00",
+      "sent_at": "2026-11-09T07:37:43.680662+00:00"
+    },
+    {
+      "link": "https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html#im-not-convinced-the-ai-bubble-exists",
+      "title": "I'm not convinced the AI bubble exists",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-08T23:44:36+00:00",
+      "sent_at": "2026-11-09T07:37:43.680662+00:00"
+    },
+    {
+      "link": "https://nvidianews.nvidia.com/news/a-message-to-our-company",
+      "title": "Nvidia CEO Jensen Huang's letter to staff about affair",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Hardware",
+      "published": "2026-11-08T22:20:09+00:00",
+      "sent_at": "2026-11-09T07:37:43.680662+00:00"
+    },
+    {
+      "link": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors",
+      "title": "Statement From NVIDIA Board of Directors",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Hardware",
+      "published": "2026-11-08T20:26:43+00:00",
+      "sent_at": "2026-11-09T07:37:43.680662+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1029562/nvidia-investigating-jensen-huang-relationship-chinese-spy",
+      "title": "Nvidia is investigating Jensen Huang’s relationship with a Chinese spy",
+      "summary": "Nvidia has announced that it is opening an investigation into CEO Jensen Huang and his relationship with Megaspeed executive Alice Huang, who was reportedly recruited by China's Ministry of State Security to spy on the company. A statement posted by the board of directors reads: The NVIDIA Board is initiating an independent investigation in light [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-11-08T20:22:39+00:00",
+      "sent_at": "2026-11-09T07:37:43.680662+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2309609/dont-throw-away-old-flip-phone-do-this-instead-recycle-donate-repurpose/",
+      "title": "Don't throw away your old flip phone – do this instead",
+      "summary": "With smartphones serving all purposes, an old flip phone, especially a SIM-less one, may feel useless. However, this couldn't be further from the truth.",
+      "source": "Engadget",
+      "category": "Hardware",
+      "published": "2026-11-08T20:15:00+00:00",
+      "sent_at": "2026-11-09T07:37:43.680662+00:00"
+    },
+    {
       "link": "https://www.engadget.com/2309308/spacexai-grok-bot-availability-plans/",
       "title": "SpaceXAI Grok Bot availability just keeps growing - here's which plans offer it",
       "summary": "SpaceXAI 's Grok Bot can handle multi-step work on a cloud computer, but you'll need to figure out the jumble of subscription plans first.",
