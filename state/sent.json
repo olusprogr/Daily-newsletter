@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/pc-components/cpus/amd-vp-and-chief-zen-architect-rebuke-claims-that-nvidia-and-arm-made-cpus-for-agentic-ai-we-didnt-magically-know-four-years-ago-that-agentic-was-going-to-be-a-thing",
+      "title": "AMD VP and chief Zen architect rebuke claims that Nvidia and Arm made CPUs for agentic AI — ‘We didn’t magically know four years ago that agentic was going to be a thing’",
+      "summary": "Nvidia and Arm have new “agentic CPUs,” a title that high-ranking AMD employees are pushing back against with the launch of Zen 6 EPYC Venice CPUs.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-11-10T17:20:00+00:00",
+      "sent_at": "2026-11-10T17:28:33.965612+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/10/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
+      "title": "Nvidia CEO Jensen Huang’s affair with alleged Chinese spy: a timeline",
+      "summary": "The affair could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastructure.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-10T17:04:19+00:00",
+      "sent_at": "2026-11-10T17:28:33.965612+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2312215/adobe-and-google-have-teamed-up-to-connect-drive-gmail-and-acrobat/",
+      "title": "Adobe and Google have teamed up to connect Drive, Gmail and Acrobat",
+      "summary": "Some Adobe tools will end up in Google Search's AI mode, as well.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-11-10T17:02:46+00:00",
+      "sent_at": "2026-11-10T17:28:33.965612+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/cpus/amd-zen-6-epyc-venice-deep-dive-and-benchmarking-dual-epyc-9996-with-1-024-threads-delivers-up-to-93-percent-performance-gain-gen-on-gen-9686f-outclasses-nvidias-vera",
+      "title": "AMD Zen 6 EPYC ‘Venice’ deep dive and benchmarking",
+      "summary": "AMD has pulled back the curtain on its Zen 6 microarchitecture. We deep-dive into the differences between Zen 5 and 6, as well as detail our first benchmarks of AMD’s Venice CPUs.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-11-10T17:00:00+00:00",
+      "sent_at": "2026-11-10T17:28:33.965612+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/10/sundrop-turns-your-endless-baby-photos-into-recaps-time-lapses-and-more-without-ai/",
+      "title": "Sundrop turns your endless baby photos into recaps, time-lapses and more — without AI",
+      "summary": "Sundrop is a new iPhone app that uses Apple's on-device AI to help parents rediscover their favorite photos and create keepsakes without uploading images to the cloud.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-10T16:50:38+00:00",
+      "sent_at": "2026-11-10T17:28:33.965612+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/policy/alice-huang-reportedly-instrumental-in-securing-over-usd7-5-billion-of-nvidia-ai-gpu-imports-during-three-year-relationship-with-jensen-huang-helped-move-240-000-banned-chips-into-china-mostly-h100-and-h200",
+      "title": "Alice Huang reportedly instrumental in securing over $7.5 billion of Nvidia AI GPU imports during three-year relationship with Jensen Huang",
+      "summary": "Alice Huang is reportedly connected to a web of Chinese companies, which then leveraged her closeness to Jensen Huang to gain access to billions of dollars' worth of Nvidia GPUs.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-11-10T16:50:02+00:00",
+      "sent_at": "2026-11-10T17:28:33.965612+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1030838/ebay-ai-agents-meta-muse-agentic-shopping",
+      "title": "eBay appears to have shut the door on third-party AI agents",
+      "summary": "eBay appears to have blocked AI agents, including Meta's Muse, from browsing on the platform - the latest speed bump in the AI agent race. A reader tells The Verge that for several weeks he's had his Muse agent browse and curate a daily digest of watches for sale on platforms like eBay, including a [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-11-10T16:20:30+00:00",
+      "sent_at": "2026-11-10T17:28:33.965612+00:00"
+    },
+    {
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+      "title": "Gemini 4 Carbon is now available",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-10T16:07:15+00:00",
+      "sent_at": "2026-11-10T17:28:33.965612+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/11/09/otter-ai-can-now-follow-conversations-across-30-languages/",
       "title": "Otter AI can now follow conversations across 30+ languages",
       "summary": "Otter AI just added support for 27 languages and revealed an upcoming feature that can follow along if speakers switch between languages.",
@@ -3752,78 +3824,6 @@
       "category": "AI",
       "published": "2026-10-27T17:08:08+00:00",
       "sent_at": "2026-10-27T19:14:09.208830+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/27/apple-rolls-out-ios-27-2-with-new-siri-ai-languages-and-security-fixes/",
-      "title": "Apple rolls out iOS 27.2 with new Siri AI languages and security fixes",
-      "summary": "The latest Apple software update for iPhones and iPads includes new features and important security updates.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-27T13:54:51+00:00",
-      "sent_at": "2026-10-27T13:56:11.547580+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1019373/apple-pages-keynote-numbers-ai-chatbot-update",
-      "title": "Apple is adding an AI chatbot to Pages, Keynote, and Numbers",
-      "summary": "Apple is bringing an AI assistant to its suite of productivity apps, including Keynote, Pages, and Numbers. The assistant, which is built on AI models from Apple and OpenAI, can understand a document's context to perform tasks like designing, animating, and refining slides in Keynote. In Pages, Apple says the AI assistant can draft, restructure, [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-27T13:50:51+00:00",
-      "sent_at": "2026-10-27T13:56:11.547580+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/laptops/gaming-laptops/walmart-slashes-usd750-off-this-msi-gaming-laptop-16-inch-crosshair-sports-an-rtx-5060-gpu-and-a-fast-240hz-qhd-display",
-      "title": "Walmart slashes $750 off this MSI gaming laptop — 16-inch Crosshair sports an RTX 5060 GPU and a fast 240Hz QHD display",
-      "summary": "A massive $750 discount at Walmart brings the price of MSI's Crosshair gaming laptop crashing down. RTX 5060 graphics and a bright 240Hz IPS display are just two of the standout features of this laptop.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-10-27T13:47:15+00:00",
-      "sent_at": "2026-10-27T13:56:11.547580+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2295698/book-vs-clamshell-foldable-phones-which-better/",
-      "title": "Book vs clamshell foldable phones: which is better for your everyday needs?",
-      "summary": "There are pros and cons to each style of foldable.",
-      "source": "Engadget",
-      "category": "Hardware",
-      "published": "2026-10-27T13:45:00+00:00",
-      "sent_at": "2026-10-27T13:56:11.547580+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/laptops/macbooks/apple-adds-m6-to-14-inch-macbook-pro-and-imac-starts-at-usd1-999",
-      "title": "Apple adds M6 to 14-inch MacBook Pro and iMac",
-      "summary": "Apple updated its 14-inch MacBook Pro and iMac lineup with the M6 chip.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-10-27T13:28:23+00:00",
-      "sent_at": "2026-10-27T13:56:11.547580+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2298132/apples-imac-with-m6-arrives-promising-a-huge-leap-in-ai-performance/",
-      "title": "Apple's iMac with M6 arrives promising a 'huge leap' in AI performance",
-      "summary": "It offers more cores and more performance per core than the iMac M5.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-27T13:25:44+00:00",
-      "sent_at": "2026-10-27T13:56:11.547580+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2298120/apple-has-updated-the-14-inch-macbook-pro-with-an-m6-chip/",
-      "title": "Apple has updated the 14-inch MacBook Pro with an M6 chip",
-      "summary": "Sadly, the 16-inch MBP is still stuck with older M5 silicon.",
-      "source": "Engadget",
-      "category": "Hardware",
-      "published": "2026-10-27T13:23:27+00:00",
-      "sent_at": "2026-10-27T13:56:11.547580+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1018467/apple-imac-m6-chip-announced-price-release",
-      "title": "Apple refreshes the iMac with M6 chips",
-      "summary": "Apple is updating the iMac with M6 chips. The new iMac generation was introduced today, ahead of Apple's \"Pro and Tell\" event that's scheduled to take place on Wednesday, giving Apple's all-in-one desktop computer a performance boost via the same chipset it launched with the Mac Mini in August. Prices start from $1,499, and the [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-10-27T13:05:26+00:00",
-      "sent_at": "2026-10-27T13:56:11.547580+00:00"
     }
   ]
 }
