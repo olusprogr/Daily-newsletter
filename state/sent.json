@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.engadget.com/2312864/meta-warns-some-of-its-ai-glasses-may-get-too-warm-if-they-get-wet/",
+      "title": "Meta warns some of its AI glasses may get 'too warm' if they get wet",
+      "summary": "A software update will tell users if they're affected and direct them to Meta's customer support for a full replacement.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-11-10T22:05:37+00:00",
+      "sent_at": "2026-11-10T22:48:37.598385+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/gadgets/1031284/oura-counsel-health-acquisition",
+      "title": "Oura is acquiring medical AI chatbot startup Counsel Health",
+      "summary": "Oura announced its quarterly earnings today and said it agreed to acquire Counsel Health for $625 million, after adding the company's AI chatbot to its app earlier this year. Counsel Health calls itself an \"AI-native primary care company,\" using the app to deliver AI-generated responses and insights based on users' health data reported from their [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-11-10T21:40:31+00:00",
+      "sent_at": "2026-11-10T22:48:37.598385+00:00"
+    },
+    {
+      "link": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/",
+      "title": "Apple has new Mac app coming to make running local AI models easy",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-10T21:25:03+00:00",
+      "sent_at": "2026-11-10T22:48:37.598385+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi/",
+      "title": "Grok Build coding agent leaks oodles of confidential info, some belonging to SpaceXSI",
+      "summary": "Researcher finds 35,000 Grok Build apps wide open to anyone who looked for them.",
+      "source": "Ars Technica",
+      "category": "Innovationen",
+      "published": "2026-11-10T21:12:59+00:00",
+      "sent_at": "2026-11-10T22:48:37.598385+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/10/openai-acquires-odessia-travel-startup-created-by-sonder-founder/",
+      "title": "OpenAI acquires Odessia, travel startup created by Sonder founder",
+      "summary": "OpenAI has not yet said what its plans are for the future of travel. But Sonder founder Francis Davidson is a well-known figure in the travel industry.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-10T21:08:52+00:00",
+      "sent_at": "2026-11-10T22:48:37.598385+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2307790/what-is-dead-internet-theory/",
+      "title": "What is the 'Dead Internet Theory' and should humanity be worried?",
+      "summary": "As AI-generated content takes over the internet, will human beings still be able to connect online with other humans in a meaningful way?",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-11-10T21:00:00+00:00",
+      "sent_at": "2026-11-10T22:48:37.598385+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect/",
+      "title": "OpenAI, Anthropic face new oversight as New York’s AI safety law takes effect",
+      "summary": "New York is preparing to enforce its sweeping AI safety law, requiring major developers like OpenAI and Anthropic to register, disclose safety practices, and report critical incidents or face fines.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-10T20:52:13+00:00",
+      "sent_at": "2026-11-10T22:48:37.598385+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/10/proximal-ventures-raises-debut-fund-to-back-startups-bringing-ai-to-drug-development/",
+      "title": "Proximal Ventures raises debut fund to back startups bringing AI to drug development",
+      "summary": "Former SignalFire investor Sahir Raoof raises $27.5 million for new fund targeting AI in pharma.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-10T20:47:05+00:00",
+      "sent_at": "2026-11-10T22:48:37.598385+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/pc-components/cpus/amd-vp-and-chief-zen-architect-rebuke-claims-that-nvidia-and-arm-made-cpus-for-agentic-ai-we-didnt-magically-know-four-years-ago-that-agentic-was-going-to-be-a-thing",
       "title": "AMD VP and chief Zen architect rebuke claims that Nvidia and Arm made CPUs for agentic AI — ‘We didn’t magically know four years ago that agentic was going to be a thing’",
       "summary": "Nvidia and Arm have new “agentic CPUs,” a title that high-ranking AMD employees are pushing back against with the launch of Zen 6 EPYC Venice CPUs.",
@@ -3752,78 +3824,6 @@
       "category": "AI",
       "published": "2026-10-27T21:38:28+00:00",
       "sent_at": "2026-10-27T23:28:00.640636+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/27/disruptive-raises-10b-fund-to-make-big-bets-on-at-least-10-companies/",
-      "title": "Disruptive raises $10B fund to make big bets on at least 10 companies",
-      "summary": "Disruptive has made headlines in recent years for pouring money into companies like chip startup Groq and the AI voice-generation startup ElevenLabs.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-27T18:55:35+00:00",
-      "sent_at": "2026-10-27T19:14:09.208830+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/motorola-razr-deal-october-2026/",
-      "title": "Motorola Deal: Get a Free Smartwatch and Earbuds When You Buy a Razr",
-      "summary": "The Razr is our favorite budget foldable phone. While it isn’t on sale yet, Motorola is adding extras to sweeten this October deal.",
-      "source": "Wired",
-      "category": "Hardware",
-      "published": "2026-10-27T18:41:41+00:00",
-      "sent_at": "2026-10-27T19:14:09.208830+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2295625/old-nokia-phone-ai-upgrade-never-designed-for/",
-      "title": "This old Nokia phone got an AI Upgrade it was never designed for",
-      "summary": "The GOAT of dumb phones gets a new lease on life.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-27T18:30:00+00:00",
-      "sent_at": "2026-10-27T19:14:09.208830+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/anthropic-ipo-identifies-gas-supply-as-big-near-term-risks/",
-      "title": "Anthropic Flags Gas Supply as One of Its Biggest Near-Term Risks",
-      "summary": "The data center buildout could cause a massive increase in gas prices as companies scramble for limited supplies and infrastructure fails to meet demand.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-10-27T18:20:28+00:00",
-      "sent_at": "2026-10-27T19:14:09.208830+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/10/27/anker-s5000-5024wh-power-station-exclusive-lectric-xp-lite3-e-bike-more/",
-      "title": "Anker launches ‘world’s longest lasting’ 5,024Wh power station with $2,150 exclusive savings, Lectric XP Lite3 e-bike launch, more",
-      "summary": "We’ve got an exciting Tuesday Green Deals edition with two new launches and a first-time discount. Leading the pack is the official launch of Anker’s SOLIX S5000 Portable Power Station + bundles that our readers can get up to $2,150 exclusive savings on starting from $2,375 . Right behind that is the all-new XP Lite3 Lightweight Folding e-bikes from Lectric with up to $356 FREE bundled gear starting from $799 . There’s also a major first-time discount ($130 off) on the Baseus U2 Pro 3K Dual-Lens AI Solar Outdoor Security Camera for $150 , as well as an Autel 50A Level 2 EV Charger at $143 off. Of course, you can also find yesterday’s hangover deals at the bottom of the page, including the Bluetti Halloween Sale lineup with exclusive savings, the premium EGO 22-inch Select Cut + Touch Drive mower kit with a 10.0Ah battery at its best price of the year, and more. Head below for other New Green Deals we’ve found today and, of course, Electrek ’s best EV buying and leasing deals . Also, check out the new Electrek Tesla Shop for the best deals on Tesla accessories . more…",
-      "source": "Electrek",
-      "category": "AI",
-      "published": "2026-10-27T18:00:00+00:00",
-      "sent_at": "2026-10-27T19:14:09.208830+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/laptops/military-drone-outfit-anduril-partners-with-qualcomm-to-build-laptops-on-us-soil-with-new-bluechip-venture-defense-contractor-targets-a-100-percent-domestic-supply-chain-in-the-future",
-      "title": "Military drone outfit Anduril partners with Qualcomm to build laptops on US soil with new BlueChip venture",
-      "summary": "The defense contractor aims to fully bring back laptop manufacturing on U.S. shores, with its first BlueChip laptop prototypes having 90% procurement cost coming from suppliers in the U.S. and other allied countries.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-10-27T17:42:49+00:00",
-      "sent_at": "2026-10-27T19:14:09.208830+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1017064/visionquest-marvel-rogue-ai",
-      "title": "VisionQuest is what happens when AI really goes rogue",
-      "summary": "In Marvel's VisionQuest, a superpowered robot tries to better understand humanity by getting lost in elaborate, digital daydreams in which he and other artificial intelligence-powered beings live together in a home. The series is deeply fantastical, yet it plays with some of the ideas that have come to dominate the conversation about real-world generative artificial [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-27T17:30:00+00:00",
-      "sent_at": "2026-10-27T19:14:09.208830+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/",
-      "title": "Frontier AI labs say their models refuted the Exponential Time Hypothesis. What does that mean?",
-      "summary": "TechCrunch spoke to the MIT computer scientist charged with explaining OpenAI's latest mind-bending discovery.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-27T17:08:08+00:00",
-      "sent_at": "2026-10-27T19:14:09.208830+00:00"
     }
   ]
 }
