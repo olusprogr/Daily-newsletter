@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/11/09/otter-ai-can-now-follow-conversations-across-30-languages/",
+      "title": "Otter AI can now follow conversations across 30+ languages",
+      "summary": "Otter AI just added support for 27 languages and revealed an upcoming feature that can follow along if speakers switch between languages.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-10T07:00:00+00:00",
+      "sent_at": "2026-11-10T09:13:08.904809+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/a-new-ai-tool-from-google-deepmind-formally-verified-the-signal-protocol/",
+      "title": "A New AI Tool From Google DeepMind Proved the Signal Protocol Is Secure",
+      "summary": "DeepMind researchers were able to formally verify that the widely used encryption protocol works as intended. Their stretch goal? Do the same for “all the software of the world.”",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-11-10T05:01:00+00:00",
+      "sent_at": "2026-11-10T09:13:08.904809+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/09/jensen-huangs-alleged-honeypot-scandal-has-inspired-some-top-notch-memes/",
+      "title": "Jensen Huang’s alleged honeypot scandal has inspired some top-notch memes",
+      "summary": "The internet is having a field day with Nvidia's Jensen Huang's alleged honeypot scandal.",
+      "source": "TechCrunch",
+      "category": "Hardware",
+      "published": "2026-11-10T04:34:15+00:00",
+      "sent_at": "2026-11-10T09:13:08.904809+00:00"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html",
+      "title": "CoreWeave bond yield tops 16% as AI credit stress rises",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-10T03:20:06+00:00",
+      "sent_at": "2026-11-10T09:13:08.904809+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/09/a-short-seller-flagged-nvidia-ceos-ties-to-a-suspected-chinese-spy-six-months-before-the-scandal/",
+      "title": "A short seller flagged Nvidia CEO’s ties to a suspected Chinese spy six months before the scandal",
+      "summary": "Six months before Nvidia's spy scandal erupted, Culper Research was already questioning Jensen Huang's unusually close relationship with a Chinese executive.",
+      "source": "TechCrunch",
+      "category": "Hardware",
+      "published": "2026-11-09T22:46:09+00:00",
+      "sent_at": "2026-11-10T09:13:08.904809+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/waymo-school-bus-problem-the-us-government-says-it-didnt-work/",
+      "title": "Waymo Said It Fixed Its School Bus Problem. The US Government Says It Didn’t Work",
+      "summary": "Last year, Waymo recalled its software after several of its autonomous cars drove around stopped buses. But the problems remained. Now the feds want to know more.",
+      "source": "Wired",
+      "category": "Autonomes Fahren",
+      "published": "2026-11-09T22:40:10+00:00",
+      "sent_at": "2026-11-10T09:13:08.904809+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/09/the-race-is-on-to-sue-nvidia/",
+      "title": "The race is on to sue Nvidia",
+      "summary": "Nvidia’s stock slid more than 4% after its board opened an investigation into Jensen Huang’s relationship with a suspected Chinese spy, and one securities law expert says the company’s earlier insistence that it was all “normal” could turn into a very expensive problem.",
+      "source": "TechCrunch",
+      "category": "Hardware",
+      "published": "2026-11-09T22:23:42+00:00",
+      "sent_at": "2026-11-10T09:13:08.904809+00:00"
+    },
+    {
+      "link": "https://www.reddit.com/r/ClaudeCode/comments/1xq2n3t/a_year_after_the_100_ai_mandate_nobody/",
+      "title": "A year after the 100% AI mandate nobody understands our code",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-09T22:19:12+00:00",
+      "sent_at": "2026-11-10T09:13:08.904809+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/11/09/anthropic-reportedly-plans-to-move-forward-with-ipo-plans/",
       "title": "Anthropic reportedly plans to move forward with IPO plans",
       "summary": "The AI company is expected to set its valuation range this week, the Wall Street Journal reported.",
@@ -3752,78 +3824,6 @@
       "category": "Hardware",
       "published": "2026-10-27T13:05:26+00:00",
       "sent_at": "2026-10-27T13:56:11.547580+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/26/how-openai-turned-its-coding-tools-into-dots-an-always-on-personal-assistant/",
-      "title": "How OpenAI turned its coding tools into dots, an always-on personal assistant",
-      "summary": "Alexander Embiricos, the OpenAI executive responsible for dots, never wants to have a meeting with someone else's AI agent.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-27T02:00:00+00:00",
-      "sent_at": "2026-10-27T07:16:20.753056+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/26/cohere-says-alibabas-qwen-model-tried-to-send-a-file-to-beijing/",
-      "title": "Cohere says Alibaba’s Qwen model tried to send a file to Beijing",
-      "summary": "An AI model said it wouldn’t use any tools, then tried to send something to a server in Beijing anyway, and while researchers say it’s probably a training quirk and not espionage, the whole thing has people asking how much to trust free Chinese AI.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-27T01:12:21+00:00",
-      "sent_at": "2026-10-27T07:16:20.753056+00:00"
-    },
-    {
-      "link": "https://www.404media.co/chatgpt-keeps-telling-people-404-media-can-solve-their-tech-support-problems/",
-      "title": "ChatGPT Keeps Telling People 404 Media Can Solve Their Tech Support Problems",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-26T17:32:16+00:00",
-      "sent_at": "2026-10-27T07:16:20.753056+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/news/1018713/meta-muse-agentic-shopping-ai-the-realreal",
-      "title": "The RealReal won’t let AI agents hog designer clothing",
-      "summary": "The RealReal, a secondhand luxury fashion consignment retailer, said it's updating its bot defense system, effectively making it harder for AI agents to shop on its site. The change comes days after The Verge reported that an AI agent could be used to take advantage of The RealReal's item reserve system. On the retailer's website, [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-26T17:30:55+00:00",
-      "sent_at": "2026-10-27T07:16:20.753056+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/10/26/tesla-robotaxi-houston-geofence-expansion-shape/",
-      "title": "Tesla makes another joke of its Robotaxi geofence expansion",
-      "summary": "Tesla expanded its Robotaxi service area in Houston today, and it shaped the new geofence like a rocket. Plenty of people on X see something else in it, which is fair given the phallic Austin map Tesla posted in 2025. It’s a cute nod to Houston’s space history. It’s also a service area drawn for a meme, and Robotaxi Tracker counts only 34 driverless Model Ys to cover it. more…",
-      "source": "Electrek",
-      "category": "Autonomes Fahren",
-      "published": "2026-10-26T17:23:44+00:00",
-      "sent_at": "2026-10-27T07:16:20.753056+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2297180/dutch-government-to-cut-16-percent-of-workforce-as-part-of-ai-efficiency-push/",
-      "title": "Dutch government to cut 16 percent of workforce as part of AI efficiency push",
-      "summary": "The cabinet announced that it wants to get rid of 25,000 full-time jobs by 2035.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-26T17:13:20+00:00",
-      "sent_at": "2026-10-27T07:16:20.753056+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1018738/anthropic-ipo-s1-filing-weird-details",
-      "title": "Five weird details from Anthropic’s IPO filing",
-      "summary": "Anthropic has finally filed its S-1 prospectus with the SEC, a document designed to give investors a look under the hood of its business, from how much its executives are making and plans for spending its IPO billions to the risks that could derail its ambitions. At more than 300 pages, there's a lot to [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-26T17:10:23+00:00",
-      "sent_at": "2026-10-27T07:16:20.753056+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2296678/fitbit-edge-review/",
-      "title": "Fitbit Edge review: Google strikes the right balance",
-      "summary": "Want a beautiful tracker with a screen but don't want AI on your wrist? The Fitbit Edge is perfect for you.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-26T17:00:00+00:00",
-      "sent_at": "2026-10-27T07:16:20.753056+00:00"
     }
   ]
 }
