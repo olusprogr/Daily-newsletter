@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://arstechnica.com/gaming/2026/11/big-walk-used-ai-to-fix-a-bug-now-the-indie-gaming-world-is-having-a-reckoning/",
+      "title": "Big Walk used AI to fix a bug. Now the indie gaming world is having a reckoning.",
+      "summary": "Any amount of AI coding is too much for many Indie Game Festival judges.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-11-11T17:37:32+00:00",
+      "sent_at": "2026-11-11T18:21:21.055352+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/startup-fights-ai-bioweapons-with-ai/",
+      "title": "A Startup Wants to Fight AI Bioweapons With AI",
+      "summary": "Radical Numerics has developed a model that it says can identify natural and AI-engineered pathogens without an internet connection.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-11-11T17:00:00+00:00",
+      "sent_at": "2026-11-11T18:21:21.055352+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/science/2026/11/ibm-to-offer-access-to-a-dual-processor-quantum-system-in-2027/",
+      "title": "IBM to offer access to a dual-processor quantum system in 2027",
+      "summary": "The company plans on linking two 520-qubit chips before next year is over.",
+      "source": "Ars Technica",
+      "category": "Hardware",
+      "published": "2026-11-11T16:33:08+00:00",
+      "sent_at": "2026-11-11T18:21:21.055352+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/data-centers/georgia-politicians-openai-slapped-with-racketeering-lawsuit-over-3-2-gigawatt-ai-data-centers-plaintiffs-allege-multiple-violations-were-part-of-a-coordinated-scheme-to-get-project-camellia-approved",
+      "title": "OpenAI and Georgia county leaders hit with Mafia-style RICO racketeering lawsuit over $30 billion AI data center",
+      "summary": "The plaintiffs alleged that the parties committed fraud and concealment through NDAs and misleading public statements.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-11-11T16:30:00+00:00",
+      "sent_at": "2026-11-11T18:21:21.055352+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/11/is-jensen-huangs-bad-behavior-more-commonplace-than-it-seems/",
+      "title": "Is Jensen Huang’s bad behavior more commonplace than it seems?",
+      "summary": "“There are a lot of senior people in the industry that know this is happening, and are effectively condoning it,” an investment intel consultant said.",
+      "source": "TechCrunch",
+      "category": "Hardware",
+      "published": "2026-11-11T16:16:07+00:00",
+      "sent_at": "2026-11-11T18:21:21.055352+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/11/openais-quarterly-revenue-reportedly-crosses-10b-for-the-first-time/",
+      "title": "OpenAI’s quarterly revenue reportedly crosses $10B for the first time",
+      "summary": "Sales of $10B represents an almost 50% jump from revenue of $6.7 billion the company recorded in the second quarter.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-11T16:14:44+00:00",
+      "sent_at": "2026-11-11T18:21:21.055352+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1031526/google-tabletop-ai-experiment-waitlist-availability",
+      "title": "Google’s Tabletop AI experiment lets you build custom collaboration apps",
+      "summary": "Google has cooked up a new experimental AI tool called Tabletop that generates customized collaborative hubs to help you coordinate with family, and friends. The Tabletop platform shares some visual similarities with workplace management apps like Asana and Monday, but with a built-in AI feature that allows you to vibecode personalized interactive tools by describing [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-11-11T16:00:00+00:00",
+      "sent_at": "2026-11-11T18:21:21.055352+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/chinas-nvidia-honeypot-isnt-surprising-jensen-huang-fell-for-it-anyway/",
+      "title": "China’s Nvidia Honeypot Isn’t Surprising. Jensen Huang Fell for It Anyway",
+      "summary": "China’s use of sexpionage is a well-established intelligence tactic with recent, high-profile examples. So how did the world’s most powerful AI executive fall for it?",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-11-11T15:30:00+00:00",
+      "sent_at": "2026-11-11T18:21:21.055352+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/tech-industry/drones/3-500-ai-laser-robots-patrol-norwegian-salmon-farms-killing-sea-lice-parasites-get-zapped-by-high-tech-alternative-to-harsh-chemical-baths",
       "title": "3,500 laser-armed AI submarine drones patrol Norwegian salmon farms, killing sea lice and protecting 112 million fish",
       "summary": "3,500 Stingray AI laser robots deployed around salmon pens along the Norwegian coast 24/7 protect over 112 million fish from sea lice.",
@@ -3680,150 +3752,6 @@
       "category": "AI",
       "published": "2026-10-28T18:47:27+00:00",
       "sent_at": "2026-10-28T21:33:59.494823+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1019809/apple-touchscreen-macbook-pro-la-keynote-event-live-blog",
-      "title": "Touchscreen MacBook live blog: On the ground at Apple’s launch event",
-      "summary": "Apple has already had a busy week. On Monday, it announced a new iPad Mini with an upgraded OLED display, and on Tuesday, we got M6 chip upgrades for the MacBook Pro and iMac. The Macs are the definition of iterative updates - they're quiet refreshes that look just like their direct predecessors. But today [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-10-28T16:33:32+00:00",
-      "sent_at": "2026-10-28T16:58:31.401241+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2299823/new-york-governor-signs-ai-chatbot-child-safety-law/",
-      "title": "New York governor signs AI chatbot child safety law",
-      "summary": "A separate law aims to shore up security on connected baby monitors.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-28T16:33:01+00:00",
-      "sent_at": "2026-10-28T16:58:31.401241+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1020769/meta-updated-business-terms-delay-indefinitely",
-      "title": "Meta says it&#8217;ll probably delay its controversial new business terms again",
-      "summary": "Meta says it may push the implementation of its new business terms past November 20th as it faces backlash from publishers over concerns about AI training. In a post on X, Meta communications head Andy Stone said the company does \"not plan to make policy changes without a full consultation with industry groups and leaders.\" [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-28T16:15:30+00:00",
-      "sent_at": "2026-10-28T16:58:31.401241+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/28/ai-execs-may-be-too-out-of-touch-to-build-for-the-general-public/",
-      "title": "AI execs may be too out of touch to build for the general public",
-      "summary": "Tech leaders are flaunting how out of touch they are when they brag about using AI to connect with their families.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-28T15:53:52+00:00",
-      "sent_at": "2026-10-28T16:58:31.401241+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/28/south-koreas-financial-industry-hit-by-fresh-wave-of-cyberattacks/",
-      "title": "South Korea’s financial industry hit by fresh wave of cyberattacks",
-      "summary": "South Korea’s financial institutions have been hit by another wave of cyberattacks, highlighting the growing risk of AI-driven hacking in Asia.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-28T15:41:18+00:00",
-      "sent_at": "2026-10-28T16:58:31.401241+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/manufacturing/ai-component-hikes-force-the-worlds-largest-pc-makers-to-return-manufacturing-capacity-to-china-brands-to-seek-lower-production-costs-and-efficiency-in-established-supply-chain",
-      "title": "AI component hikes force the world's largest PC makers to return manufacturing capacity to China",
-      "summary": "PC manufacturing in China tends to be cheaper because of an established supply chain and workforce. Smaller Chinese suppliers are also winning orders by offering easier access to domestic chip manufacturers like CXMT.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-10-28T15:24:16+00:00",
-      "sent_at": "2026-10-28T16:58:31.401241+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/10/28/tesla-robotaxi-houston-rocket-service-area-fake/",
-      "title": "Tesla’s rocket-shaped Robotaxi map in Houston is partly ‘fake’",
-      "summary": "Tesla’s new rocket-shaped Robotaxi service area in Houston includes parts of downtown where the service won’t actually pick you up, according to Ethan McKanna, the creator of Robotaxi Tracker and former Tesla employee. McKanna rode the service after Monday’s expansion and called Houston “by far the most egregious ‘fake’ AV service area” he has seen. One trip quote had him spending about 40 minutes in a Robotaxi to go two blocks. more…",
-      "source": "Electrek",
-      "category": "Autonomes Fahren",
-      "published": "2026-10-28T15:18:25+00:00",
-      "sent_at": "2026-10-28T16:58:31.401241+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/amazon-tells-engineers-to-stop-tokenmaxxing-to-look-productive-says-ai-will-be-central-to-software-development-but-usage-is-not-the-goal-new-guidelines-claim",
-      "title": "Amazon tells engineers to stop ‘tokenmaxxing’ to look productive",
-      "summary": "Amazon has published new engineering guidelines warning developers and managers against ‘tokenmaxxing,’ arguing that AI usage metrics are ‘deeply flawed’ unless tied to long-term outcomes. The move follows similar spending concerns at Uber and Accenture.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-28T15:13:48+00:00",
-      "sent_at": "2026-10-28T16:58:31.401241+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/macmillan-staff-say-the-publisher-threw-a-party-for-a-workplace-ai-assistant-that-was-later-killed/",
-      "title": "Macmillan Staff Say the Publisher Threw a Party for a Workplace AI Assistant That Was Later Killed",
-      "summary": "Workers tell WIRED that NOA—or “No Ordinary Assistant”—was unhelpful. Bestselling authors also say AI is ruining their relationships with Big Five publishers.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-10-28T10:15:00+00:00",
-      "sent_at": "2026-10-28T10:20:14.980196+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/robotics/japan-experiments-with-autonomous-ai-chainsaw-wielding-robots-video-shows-rail-truck-mounted-metal-humanoid-cutting-down-tree-branches",
-      "title": "Japan experiments with autonomous AI chainsaw-wielding robots",
-      "summary": "A scary-looking humanoid robot with a chainsaw arm was shown in action on Japanese TV news trimming tree branches that had begun encroaching on railway lines.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-28T09:40:00+00:00",
-      "sent_at": "2026-10-28T10:20:14.980196+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2299227/meta-tamagotchi-like-ai-digital-pet-app-waddle-world/",
-      "title": "Meta's Waddle World is a Tamagotchi-like AI pet app",
-      "summary": "Meta describes Waddle World as a 'daily journal disguised as a pet.'",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-28T08:40:19+00:00",
-      "sent_at": "2026-10-28T10:20:14.980196+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/ai-emergency-alerts-coming-humans-not-ready/",
-      "title": "AI Emergency Alerts Are Coming. Humans Might Not Be Ready",
-      "summary": "Human beings struggle with emergency communication. Chatbots can help—if people take them seriously.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-10-28T08:30:00+00:00",
-      "sent_at": "2026-10-28T10:20:14.980196+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/geoffrey-vos-uk-judge-ai-legal-profession-challenges/",
-      "title": "Should AI Decide Your Court Case? This Judge Says Yes",
-      "summary": "One of England’s top judges, Geoffrey Vos, believes that AI could adjudicate plenty of civil cases. The question, he says, is where the line should be drawn.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-10-28T06:00:00+00:00",
-      "sent_at": "2026-10-28T10:20:14.980196+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/10/27/waymo-expansion-250-square-miles-five-cities/",
-      "title": "Waymo adds nearly 250 square miles of robotaxi coverage in 5 cities",
-      "summary": "Waymo is growing its driverless service area by nearly 250 square miles over the next week, spread across Los Angeles, Nashville, Orlando, San Diego, and the San Francisco Bay Area. That’s about as big as Tesla’s entire Houston Robotaxi geofence after this week’s expansion, and Waymo is adding it in cities where it already runs with nobody in the driver’s seat. more…",
-      "source": "Electrek",
-      "category": "Autonomes Fahren",
-      "published": "2026-10-27T19:55:12+00:00",
-      "sent_at": "2026-10-28T10:20:14.980196+00:00"
-    },
-    {
-      "link": "https://www.brangus.io/survival-llm",
-      "title": "Survival LLM: AI assistant and emergency library that runs on your own computer",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-27T19:55:06+00:00",
-      "sent_at": "2026-10-28T10:20:14.980196+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/anthropic-says-it-will-revolutionize-biology-some-day/",
-      "title": "Anthropic Says It Will Revolutionize Biology—Some Day",
-      "summary": "In breathless press releases and posts, the company has touted its models’ ability to deliver scientific breakthroughs. But its IPO filing taps the brakes on just how fast its AI will lead to big discoveries.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-10-27T19:39:04+00:00",
-      "sent_at": "2026-10-28T10:20:14.980196+00:00"
     }
   ]
 }
