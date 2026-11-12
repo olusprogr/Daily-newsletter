@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/11/12/democrats-launch-nvidia-investigation-write-scathing-letter-on-huangs-scheme-with-trump/",
+      "title": "Democrats launch Nvidia investigation, write scathing letter on Huang’s ‘scheme’ with Trump",
+      "summary": "This Congressional investigation into Nvidia's China sales and its dealings with Trump is the second one, so far, since news of the alleged spy affair broke.",
+      "source": "TechCrunch",
+      "category": "Hardware",
+      "published": "2026-11-12T22:42:51+00:00",
+      "sent_at": "2026-11-12T23:11:27.679596+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/silicon-valley-is-still-defending-jensen-huang/",
+      "title": "Silicon Valley Is Still Defending Jensen Huang",
+      "summary": "Nvidia employees and tech insiders never thought the chip king would lose his job. Despite his sudden resignation, many of them are still in denial.",
+      "source": "Wired",
+      "category": "Hardware",
+      "published": "2026-11-12T22:29:43+00:00",
+      "sent_at": "2026-11-12T23:11:27.679596+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/ai/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace/",
+      "title": "FAA expands AI advice to manage air traffic congestion across entire US airspace",
+      "summary": "Airlines praised the AI tool, but the air traffic controllers’ union wasn’t involved.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-11-12T22:28:47+00:00",
+      "sent_at": "2026-11-12T23:11:27.679596+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/12/muse-can-now-place-calls-to-u-s-businesses-if-you-pay/",
+      "title": "Muse can now place calls to U.S. businesses — if you pay",
+      "summary": "Muse's AI can now place outbound calls to US businesses — but it's not free.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-12T22:22:28+00:00",
+      "sent_at": "2026-11-12T23:11:27.679596+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/uncanny-valley-podcast-jensen-huang-is-out-will-nvidias-rivals-cash-in/",
+      "title": "Jensen Huang Is Out. Will Nvidia’s Rivals Cash In?",
+      "summary": "In a special episode of “Uncanny Valley,” we break down Jensen Huang’s resignation from Nvidia, what comes next for the company, and where the AI industry goes from here.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-11-12T22:14:41+00:00",
+      "sent_at": "2026-11-12T23:11:27.679596+00:00"
+    },
+    {
+      "link": "https://unemploymentlabs.com/checkpoint-forensics",
+      "title": "Chinese frontier AI models carry the fingerprint of export-controlled GPUs",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-12T21:56:11+00:00",
+      "sent_at": "2026-11-12T23:11:27.679596+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1032505/google-search-ai-mode-gemini-4-hydrogen",
+      "title": "Google’s new Gemini model is better at understanding complicated questions",
+      "summary": "Google says its new Gemini 4 Hydrogen model can give more helpful answers to complex questions, including \"questions with multiple parts, hard-to-understand typos, or highly specific requests.\" The new model can break down your questions and address each part in its responses. It's available starting today in search, the Gemini app, all tiers of Google [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-11-12T21:55:32+00:00",
+      "sent_at": "2026-11-12T23:11:27.679596+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1032434/nvidia-jensen-huang-resignation-reactions",
+      "title": "‘It’s a mistake’: reactions from tech leaders on Jensen Huang’s resignation",
+      "summary": "Nvidia announced this morning that Jensen Huang has resigned as CEO following reports of two affairs, including one with an alleged Chinese spy and one with a direct report. The situation surrounding Huang has unfolded quickly, with The New York Times only reporting on Friday that Huang and the suspected spy were \"close\" before other [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-11-12T21:45:00+00:00",
+      "sent_at": "2026-11-12T23:11:27.679596+00:00"
+    },
+    {
       "link": "https://www.theverge.com/ai-artificial-intelligence/1032069/jensen-huang-resignation-affair-chips-smuggling",
       "title": "The Jensen Huang scandal is hardly over",
       "summary": "I was certain, until the story of Jensen Huang's second affair hit, that Huang was bulletproof. After all, why wouldn't he be? He's placed himself indispensably at the center of the AI industry and famously had no succession plan at Nvidia. In fact, he's the only CEO Nvidia has ever had. L'&#233;tat c'est moi. Then [&#8230;]",
@@ -3608,78 +3680,6 @@
       "category": "AI",
       "published": "2026-10-29T21:40:28+00:00",
       "sent_at": "2026-10-30T00:35:21.977102+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2301687/reddit-will-move-to-logged-in-only-as-ai-eats-search-traffic/",
-      "title": "Reddit will force users to log in as AI is killing search traffic",
-      "summary": "The company is starting with tests outside of the US.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-29T20:32:49+00:00",
-      "sent_at": "2026-10-29T20:51:25.083145+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2301660/google-brings-ai-mode-advertisements-to-more-countries/",
-      "title": "Google brings AI Mode advertisements to more countries",
-      "summary": "Adding sponsored content in more markets could make the feature profitable.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-29T20:18:24+00:00",
-      "sent_at": "2026-10-29T20:51:25.083145+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/",
-      "title": "As search traffic dries up, Reddit announces it’s shifting to a logged-in experience",
-      "summary": "As AI transforms how people find information online, Reddit is rethinking its open-web roots to protect its audience and business.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-29T20:08:31+00:00",
-      "sent_at": "2026-10-29T20:51:25.083145+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/29/rivian-expands-joint-venture-with-vw-to-include-ai-assistant/",
-      "title": "Rivian expands joint venture with VW to include AI assistant",
-      "summary": "Rivian doesn't disclose if the value of its $5.8 billion joint venture will expand as a result.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-29T20:05:47+00:00",
-      "sent_at": "2026-10-29T20:51:25.083145+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/29/openai-backed-thrive-holdings-acquires-adt/",
-      "title": "OpenAI-backed Thrive Holdings acquires ADT",
-      "summary": "OpenAI-backed Thrive Holdings is buying ADT in a $15.3 billion deal, with plans to bring AI to the home security business.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-29T19:56:19+00:00",
-      "sent_at": "2026-10-29T20:51:25.083145+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2301587/popcorn-bucket-innovation-is-at-an-all-time-low-and-the-dune-part-three-double-sandworm-is-proof/",
-      "title": "Popcorn bucket innovation is at an all-time low and the Dune: Part Three 'Double Sandworm' is proof",
-      "summary": "Just what the Sandworm bucket needed: a second hole.",
-      "source": "Engadget",
-      "category": "Innovationen",
-      "published": "2026-10-29T19:40:27+00:00",
-      "sent_at": "2026-10-29T20:51:25.083145+00:00"
-    },
-    {
-      "link": "https://spectrum.ieee.org/ai-personal-assistant-intelligent-wearables",
-      "title": "Consumer Appetite for Personal AI Goes Mainstream",
-      "summary": "This article is brought to you by Qualcomm Technologies . For many consumers, much of the promise and appeal of AI is personal. Consumers are looking past generic tools and want to know how these technologies will help them in their daily lives. These trends coincide with the advent of new classes of wearable devices that, in addition to being able to leverage powerful frontier models, feature built-in intelligence that understand the context of a user. Where are they? What are they seeing and hearing? What are their habits, their preferences, their schedules? It’s an astonishing pivot, from passive accessories that served mostly to send users smartphone notifications to proactive, intelligent companions. The smartphone is no longer the center of that universe; though it’s still incredibly important, in this personal AI paradigm, the AI is the UI. And it shifts the focus toward you, the user. These new technologies are exciting. But what do consumers really want? A Personal AI report , commissioned by Qualcomm Technologies, built on a survey of more than 12,000 people across key geographies worldwide (the U.S., U.K., Germany, India, Brazil, and China) focused on the rise of personal AI in intelligent wearables looks deeply at these developments. The smartphone is no longer the center of that universe; though it’s still incredibly important, in this personal AI paradigm, the AI is the UI. Survey respondents are less interested in single devices and are responding more to the idea of connected ecosystems. As people expand their roster of devices, it only makes sense. Instead of relying entirely on a smartphone and a laptop, respondents also have connected technology in their cars, as well as intelligent wearables like smartwatches, smart glasses, hearables, and other wearables like rings, pins, and pendants. They want those devices to work in concert, and the way to do that is to decentralize any single one of them. Instead, the AI agent that knows the user and works across all of those devices becomes the unifying factor. Consider a typical workday: A user’s watch detects it is time to leave for a meeting and, with permission, their AI agent factors in calendar details, real-time traffic and battery status across their devices. In the car, it suggests the best route and briefs them on their meeting agenda. As they arrive, smart glasses surface a discreet reminder, such as the meeting location or the name of a new contact, while the phone stays in their pocket. No one device has to do everything; each plays the role it is best suited for, coordinated by a personal AI agent that understands the user’s context and acts only at the user’s direction. With this in mind, simply adding more hardware to the mix isn’t sufficient. Even though respondents will be open to new form factors, they’ll demand more from their ecosystem of devices. They’ll be sensitive to points of friction and needless complexity, and they’ll require each new device to bring something new to the table — “incremental intelligence, convenience, or contextual awareness that their existing devices cannot deliver on their own what the report,” reads the report. The usage trends are up. The report found that those who own wearables are already using AI frequently (60 percent use it at least weekly), which indicates that it’s becoming less of a fun experiment for early adopters and more of a critical mass habit. The “always-on” nature of intelligent wearables appears to be winning respondents, too. The report found the following statistics on average continuous wear among users: True wireless earbuds – 3 hours Wireless headphones – 3 hours Smart glasses – 5 hours Audio glasses – 6 hours Smartwatches – 9 hours Smart rings, necklaces and pendants – 8 hours Consumers want AI that is personal and understands their context — they’re looking for smooth, intuitive experiences that are marked by privacy, security, and user control. Consumer Trust Is Hard-Won But for all the excitement and engagement around intelligent wearables, there’s a gating factor: trust. As use cases for intelligent wearables expands to more personal and persistent experiences, trust is a necessity for Personal AI. The top reported issues around adoption are privacy, security, and user control. The data points to a certain amount of caution around deeply personal use cases, like voice, health, and location, as almost 60 percent of respondents want to keep data from their wearables private, or at least insist on gaining approval before it gets shared. In other words, even though premium features like high-quality audio, perception sensing, battery life, and comfort whet consumer appetites (and agentic AI capabilities drive upgrade intent), true adoption will come only with consumer trust. They want security, privacy, transparency and control. Notably, the report found that respondents expressed more interest in adopting intelligent wearables when Snapdragon was introduced as the enabling platform. This reinforces the value of having an established, trusted technology foundation in the mix. The Industry Remains Fluid The report shows that consumer appetite for AI is high, with 60-70 percent of those surveyed expressing interest in advanced AI as they consider a new device. That’s a constant. But remaining purchase drivers differed between device categories. Audio playback quality is the most influential purchase driver for true wireless earbuds and headphones. For smartwatches, it’s display quality and responsiveness. Respondents are less concerned about technical specifications than aesthetics like materials and finish when it comes to devices like smart rings and pendants. And for smart glasses, it’s all about the type of control, whether it’s voice, gesture, or touch. aspect_ratio The Rise of Personal AI in Intelligent Wearables Artificial intelligence is entering a new phase, one that is deeply personal, continuously present, and seamlessly embedded into the devices we wear every day. This evolution, which we define as “Personal AI”, represents a shift away from generic, cloud-only intelligence toward AI that understands individuals in context: their habits, preferences, environments, and intent, in real time. Get the full report → Alongside these purchase drivers is another key finding: Consumer appetite for Personal AI agents has gone mainstream. The report says that 70 percent of respondents “express strong interest in an AI assistant that can interact naturally through voice and seamlessly manage devices, apps, and everyday tasks.” With each individual as the center of their own ecosystem, voice becomes the most critical, natural method for interacting with agents. The Opportunity The industry for intelligent wearables is exciting. It’s clear that consumer demand for Personal AI is high, and this report dives deeply into the specifics of what respondents want out of it. They want AI that is personal and understands their context, and they want it to be proactive and helpful instead of merely reactive. They’re looking for smooth, intuitive experiences that are marked by privacy, security, and user control. Intelligent wearables comprise much of the hardware of this “ecosystem of you.” Consumers are interested in ecosystems instead of single devices, and they’re looking for agentic AI capabilities that understand and act on their behalf. Yet so much of the industry remains undefined. OEMs and technology makers have an enormous opportunity right now to innovate and iterate on the strong technological foundations that platform makers are building. And the roadmap for what consumers want is clear. All percentages, consumer behaviors, and attitudes stated in this report are based only on the responses of the individuals who participated in our survey.",
-      "source": "IEEE Spectrum",
-      "category": "AI",
-      "published": "2026-10-29T19:18:20+00:00",
-      "sent_at": "2026-10-29T20:51:25.083145+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/29/meta-quietly-launches-an-ai-fashion-app-called-style-sketch/",
-      "title": "Meta quietly launches an AI fashion app called Style Sketch",
-      "summary": "The app connects to Instagram to build a virtual closet from photos you’ve already shared, or lets you add items manually by snapping a photo, recording a quick video, or uploading images from your camera roll.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-29T19:14:36+00:00",
-      "sent_at": "2026-10-29T20:51:25.083145+00:00"
     }
   ]
 }
