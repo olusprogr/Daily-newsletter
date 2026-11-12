@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.wired.com/story/vitamix-promo-code/",
+      "title": "Vitamix Promo Codes and Deals: $25 Off + Free Shipping",
+      "summary": "Score discounts on blenders, food processors, immersion blenders, and more with our selection of Vitamix coupons and deals.",
+      "source": "Wired",
+      "category": "Hardware",
+      "published": "2026-11-12T06:00:00+00:00",
+      "sent_at": "2026-11-12T09:15:57.256064+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/11/who-could-replace-jensen-huang-a-highly-unscientific-list-of-possible-successors/",
+      "title": "Who could replace Jensen Huang? A highly unscientific list of possible successors",
+      "summary": "Nvidia has no succession plan and a CEO in hot water, so we’ve drafted a shortlist.",
+      "source": "TechCrunch",
+      "category": "Hardware",
+      "published": "2026-11-12T03:13:10+00:00",
+      "sent_at": "2026-11-12T09:15:57.256064+00:00"
+    },
+    {
+      "link": "https://github.com/tylertms/Stela",
+      "title": "A general purpose Apple Silicon layer for x86-64 PCs",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Hardware",
+      "published": "2026-11-11T23:02:38+00:00",
+      "sent_at": "2026-11-12T09:15:57.256064+00:00"
+    },
+    {
+      "link": "https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad",
+      "title": "Nvidia is preparing to oust Jensen Huang",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Hardware",
+      "published": "2026-11-11T22:31:06+00:00",
+      "sent_at": "2026-11-12T09:15:57.256064+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1031623/united-unauthorized-ai-agents",
+      "title": "United won’t let your AI agent book your flight",
+      "summary": "United says it won't let personal AI assistants book tickets on the airline, citing both privacy and regulatory concerns. The company says it hasn't yet seen many people try to use AI agents to book their flights, The Wall Street Journal reports, in line with observations from other businesses like Doordash. But United is concerned [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-11-11T21:54:21+00:00",
+      "sent_at": "2026-11-12T09:15:57.256064+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/cpus/amds-venice-x-maxes-out-family-at-5-3-ghz-returning-3d-v-cache-to-data-center-after-four-years-chips-target-hpc-workloads-with-pcie-6-0-and-1-6-tb-s-memory-bandwidth",
+      "title": "AMD’s Venice-X maxes out family at 5.3 GHz, returning 3D V-Cache to data center after four years",
+      "summary": "AMD's Venice-X CPUs launch in the second half of 2027, bringing 3D V-Cache back to the data center after four years on the sidelines.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-11-11T21:30:00+00:00",
+      "sent_at": "2026-11-12T09:15:57.256064+00:00"
+    },
+    {
+      "link": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
+      "title": "United Airlines bans AI agents from booking flights on behalf of travelers",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-11T21:24:35+00:00",
+      "sent_at": "2026-11-12T09:15:57.256064+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/3d-printing/prusa-launches-new-carbon-3d-printing-filament-for-electronics-manufacturing-carbon-fiber-and-carbon-nanotube-filled-material-dissipates-electrostatic-energy-for-static-sensitive-electronics",
+      "title": "Prusa launches new carbon-fiber and carbon-nanotube-filled 3D printing filament for electronics manufacturing",
+      "summary": "Prusament PETG ESD is the cheapest ESD filament on the market, while being carbon-fiber reinforced, something the competition doesn't have.",
+      "source": "Tom's Hardware",
+      "category": "Innovationen",
+      "published": "2026-11-11T21:00:00+00:00",
+      "sent_at": "2026-11-12T09:15:57.256064+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/11/11/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
       "title": "The unfolding Jensen Huang scandal: a timeline",
       "summary": "The affair could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastructure.",
@@ -3608,150 +3680,6 @@
       "category": "AI",
       "published": "2026-10-29T13:37:56+00:00",
       "sent_at": "2026-10-29T15:09:15.333726+00:00"
-    },
-    {
-      "link": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
-      "title": "Claude Code regularly sends each background agent’s transcript to its model",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-29T03:33:42+00:00",
-      "sent_at": "2026-10-29T07:59:23.947411+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/policy/1021554/anduril-bluechip-65-percent-domestic-buy-american",
-      "title": "Anduril now says its BlueChip laptop will meet Buy American standards at launch",
-      "summary": "On Tuesday, defense contractor Anduril and chipmaker Qualcomm announced a partnership to build laptops entirely in the United States, starting with a single model in 2027. They also announced a \"long-term goal\" of pushing the computer industry to create \"a fully domestic supply chain.\" Even a single Made-in-USA laptop would be a surprise, because no [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-10-29T02:22:46+00:00",
-      "sent_at": "2026-10-29T07:59:23.947411+00:00"
-    },
-    {
-      "link": "https://github.com/ZigEmbeddedGroup/microzig/blob/main/CODE_OF_CONDUCT.md",
-      "title": "MicroZig to Adopt Strict No LLM / No AI Policy",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-29T00:30:37+00:00",
-      "sent_at": "2026-10-29T07:59:23.947411+00:00"
-    },
-    {
-      "link": "https://divagr.com/blog/qwenputer",
-      "title": "Qwenputer: A functioning, deterministic RISC-V CPU inside Qwen3.5",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Hardware",
-      "published": "2026-10-29T00:25:45+00:00",
-      "sent_at": "2026-10-29T07:59:23.947411+00:00"
-    },
-    {
-      "link": "https://www.niemanlab.org/2026/10/the-new-york-times-is-adding-more-ai-features-to-its-cooking-app-and-users-arent-thrilled/",
-      "title": "New York Times adds more AI features to its Cooking app. Users aren't thrilled",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-29T00:16:08+00:00",
-      "sent_at": "2026-10-29T07:59:23.947411+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/28/as-ai-agents-reshape-the-web-google-opens-gemini-and-search-to-more-apps/",
-      "title": "As AI agents reshape the web, Google opens Gemini and Search to more apps",
-      "summary": "A new developer platform will let businesses bring their services to Google's AI experiences, potentially changing how consumers discover and use apps.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-28T17:00:00+00:00",
-      "sent_at": "2026-10-29T07:59:23.947411+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/28/chromes-ai-powered-autofill-can-now-dig-through-your-gmail-to-fill-out-forms/",
-      "title": "Chrome’s AI-powered Autofill can now dig through your Gmail to fill out forms",
-      "summary": "The autofill update lets Chrome pull flight confirmations, tracking info, order details, and other information from your inbox, with your permission.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-28T17:00:00+00:00",
-      "sent_at": "2026-10-29T07:59:23.947411+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2299633/the-xreal-aura-smartglasses-are-now-on-sale-for-a-discounted-launch-price/",
-      "title": "The Xreal Aura smartglasses are now on sale for a discounted launch price",
-      "summary": "The new wearable is the first of its kind to run on the Android XR platform.",
-      "source": "Engadget",
-      "category": "Innovationen",
-      "published": "2026-10-28T17:00:00+00:00",
-      "sent_at": "2026-10-29T07:59:23.947411+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1021644/adam-mosseri-instagram-ai-negativity",
-      "title": "Adam Mosseri says negativity around AI is ‘going to get worse’",
-      "summary": "Asked about AI and the trend of college students booing tech CEOs at graduation ceremonies, Instagram head Adam Mosseri acknowledged in an interview that a lot of people really don't like AI, and it's not just young people and creatives. Appearing on the Colin and Samir podcast to talk about the launch of widescreen and [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-28T23:05:39+00:00",
-      "sent_at": "2026-10-29T01:31:22.200789+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/",
-      "title": "Google expands AI Search ads globally as core ad growth slows",
-      "summary": "The announcement came alongside parent company Alphabet's third-quarter earnings report, which saw revenue grow 25% year over year to $127.6 billion.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-28T21:48:37+00:00",
-      "sent_at": "2026-10-29T01:31:22.200789+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai/",
-      "title": "Microsoft recorded $10 billion in revenue from OpenAI",
-      "summary": "Microsoft said it made $10 billion in revenue from commercial arrangements with OpenAI, including revenue-sharing payments, in the quarter ending September 30. It underscores the still-enormous financial dependency of the partnership.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-28T21:34:30+00:00",
-      "sent_at": "2026-10-29T01:31:22.200789+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/i-put-ai-agents-in-charge-of-a-fantasy-team/",
-      "title": "I Put a Bunch of AI Agents in Charge of a Fantasy Soccer Team. They’re Not Better Than Humans—Yet",
-      "summary": "To experiment with AI’s predictive skills, I let Codex loose on a fantasy team. It tried to bench Erling Haaland at first, but it soon learned the error of its ways.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-10-28T18:30:00+00:00",
-      "sent_at": "2026-10-29T01:31:22.200789+00:00"
-    },
-    {
-      "link": "https://spectrum.ieee.org/systems-thinking-vital-in-ai",
-      "title": "Systems Thinking Is Vital in the Age of AI",
-      "summary": "Modern engineering projects increasingly combine human judgment with machine capability. An engineer can define a problem, then ask an artificial intelligence tool to search relevant research and technical standards, generate design options, test them in simulation, and compare the results. The engineer can then bring the results to specialists who understand the parts AI cannot judge on its own, such as whether a design can be built safely, whether it makes sense in a particular setting, or how it might affect its users. The final decision about whether and how to move forward remains a human responsibility. AI can help engineers do early project steps that once required several people with different technical skills. The engineer’s role is therefore expanding from performing each technical step to deciding how people, machines, and specialists’ knowledge should work together on the project. The problem, not the title Engineering has always been divided into disciplines, and for good reasons. Electrical, mechanical, civil, software, and other engineering fields require deep knowledge that takes years to develop. AI does not replace that need. It simply changes how easily engineers can explore the parts of a problem that sit outside their own specialty. Consider a software engineer working on a medical device . AI can help the engineer review relevant biomedical research, understand unfamiliar terms, analyze data, and build an early model. That does not make the engineer a physician or biomedical expert. It allows the engineer to ask better questions before working with the experts. The same is true in energy , transportation, manufacturing, and many other fields. A problem might begin as a software issue and then quickly involve hardware, safety measures, economics, human behavior, and regulations. Engineers do not need to master every field; they need to recognize which expertise the problem requires and bring the right people and tools together. The importance of systems thinking Systems thinking thus becomes especially important. It requires looking at the whole problem: understanding how its parts affect one another, identifying constraints and failure points, and making trade-offs. AI adds a new element to the process. Engineers must decide not only how the technical parts fit together but also what work to give to AI, what a person must check, when a specialist should make a decision, and when the problem needs to be redefined. An engineer’s value is not in knowing everything. It is in knowing how to frame the problem, how to ask the right questions, how to test the answers, and when another expert must lead the project. This aspect is crucial because technical challenges in engineering are seldom static. As new insights emerge, objectives might shift, unseen limitations can surface, and the initial premise might prove flawed. Rather than rigidly following the starting specifications, an effective engineer adapts and refines the scope as a deeper understanding of the system develops. Thus, engineering extends beyond mastering technical concepts; it is an adaptable, structured approach to navigating evolving challenges. New evidence can change the goal, reveal a hidden constraint, or show that the original hypothesis was wrong. Effective engineers go beyond merely acting on the initial problem statement. They update it as the system becomes better understood. In that sense, engineering is not only a body of technical knowledge, it is also a disciplined way of thinking about a project. Human judgment is important AI can produce convincing answers even when its assumptions are weak. It can generate code that works in one test but fails in another. It can summarize research without understanding which evidence is strongest, or optimize a design for the wrong goal. Such limits make human expertise more important, not less. Machines are useful where speed, scale, search, pattern recognition, and data generation matter. People are essential where context, values, responsibility, and judgment matter. The challenge is to decide where each belongs. An AI system might generate several designs for a medical sensor, for example, and predict how each will perform. An engineer can test the predictions and reject designs that violate technical requirements. A clinician can determine whether the sensor can be realistically used. Patients and practitioners might reveal problems that neither the engineer nor the developer considered. The final solution emerges from combining the perspectives. The engineer is still a builder and specialist but increasingly also a coordinator of knowledge. An engineer’s value is not in knowing everything. It is in knowing how to frame the problem, how to ask the right questions, how to test the answers, and when another expert must lead the project. IEEE’s vital role The broader form of engineering creates an important role for IEEE. Its societies already bring together expertise in various technologies, engineering education , technical standards , and other fields. That makes IEEE well placed to help engineers work across specialties without weakening the value of specialization. IEEE could create more communities organized around problems that require expertise from several fields. Examples include trustworthy clinical AI , resilient infrastructure, energy reliability, scientific discovery, and safe autonomous systems. An engineer could begin in a home discipline and then work with specialists from other IEEE communities as a project requires. IEEE also can help set practical standards for human-machine collaboration. Engineers will need clear guidance on when AI-generated work must be checked, how uncertainty should be documented, when a specialist must make a decision, and who is responsible when a system uses both human judgment and machine output. Those questions are becoming part of everyday engineering. They should not be left to each company or project manager to answer independently. A professional organization can provide common expectations that follow engineers as they move between jobs, industries, and technical fields. A larger definition of the engineer AI does not make engineering disciplines less important; it makes the connections between them easier to use. Deep expertise gives engineers the foundation to judge what is sound. Systems thinking helps them understand how different parts of a problem fit together. AI can extend engineers’ ability to explore, test, and communicate across fields. Human judgment gives the work direction and responsibility. An engineer is not defined only by a job title or a fixed set of tasks. An engineer is someone trained to understand complex systems, define and redefine problems, bring together the knowledge and tools needed to solve them, test whether solutions work, and take responsibility for the outcome. That is what it means to be an “unbound” engineer. The boundaries between specialties become easier to cross, and machines might take on more of the technical work, but the core of engineering remains human: deciding what problem is worth solving, what evidence is good enough, how the pieces fit together, and what to do when the answer is uncertain.",
-      "source": "IEEE Spectrum",
-      "category": "AI",
-      "published": "2026-10-28T18:00:02+00:00",
-      "sent_at": "2026-10-29T01:31:22.200789+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/ai/2026/10/google-ai-gets-cagey-when-asked-who-won-the-2020-elections/",
-      "title": "Google AI gets cagey when asked who won the 2020 elections",
-      "summary": "But the AI responses get more forthright when asked outside the US.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-10-28T17:46:32+00:00",
-      "sent_at": "2026-10-29T01:31:22.200789+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/policy/malaysia-seizes-usd12-million-worth-of-advanced-ai-chips-hidden-inside-30-servers-customs-says-suspected-smuggling-network-used-the-country-as-a-transit-hub",
-      "title": "Malaysia seizes $12 million worth of advanced AI chips hidden inside 30 servers",
-      "summary": "Malaysian customs seized 30 servers containing more than $12 million worth of advanced AI chips at Kuala Lumpur International Airport, as authorities investigate a suspected smuggling network linked to multiple previous seizures.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-28T17:02:14+00:00",
-      "sent_at": "2026-10-29T01:31:22.200789+00:00"
-    },
-    {
-      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
-      "title": "Gemini 4 Carbon",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-28T17:01:23+00:00",
-      "sent_at": "2026-10-29T01:31:22.200789+00:00"
     }
   ]
 }
