@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/11/13/israels-vcs-see-opportunity-for-challengers-in-nvidias-turmoil/",
+      "title": "Israel’s VCs see opportunity for challengers in Nvidia’s turmoil",
+      "summary": "Given Nvidia’s stronghold on AI and its importance in Israel, many in the country's startup ecosystem are worried about the impact of his departure.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-13T12:52:19+00:00",
+      "sent_at": "2026-11-13T12:56:50.283487+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1032339/lets-talk-about-the-nvidia-shitshow",
+      "title": "Let’s talk about Jensen Huang’s many affairs!",
+      "summary": "Usually, we'd be offering to answer your questions about a news event, but honestly we don't really have any answers about what the hell is going on over at Nvidia. I can't speak for Nilay but at the rate Jensen Huang's new mistresses are dropping, I am concerned we are approaching an affair Singularity. If [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-11-13T12:00:00+00:00",
+      "sent_at": "2026-11-13T12:56:50.283487+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/black-roles-are-disappearing-in-hollywood-this-startup-is-using-ai-microdramas-to-fight-back/",
+      "title": "This Startup Is Betting on AI Microdramas to Get More Black Stories in Hollywood",
+      "summary": "Mansa says its AI microdramas can serve as proofs of concept for what Black audiences want. Critics say the studio is selling out.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-11-13T11:45:00+00:00",
+      "sent_at": "2026-11-13T12:56:50.283487+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/even-black-friday-2026-will-be-more-expensive-than-usual/",
+      "title": "Even Black Friday Will Be More Expensive Than Usual",
+      "summary": "The AI memory crunch is coming for your holiday shopping list.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-11-13T11:30:00+00:00",
+      "sent_at": "2026-11-13T12:56:50.283487+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/desktops/gaming-pcs/walmart-has-slashed-usd730-off-this-monster-gaming-pc-with-rtx-5070-ti-also-features-a-24-core-intel-processor-32gb-ddr5-2tb-ssd",
+      "title": "Walmart has slashed $730 off this monster gaming PC with RTX 5070 Ti",
+      "summary": "Save $730 on this CyberPowerPC with Intel Core Ultra 9 285 and RTX 5070 Ti.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-11-13T11:30:00+00:00",
+      "sent_at": "2026-11-13T12:56:50.283487+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/how-shanghai-fund-manager-kang-wei-introduced-his-wife-alice-huang-to-jensen-and-built-usd7-5-billion-nvidia-ai-gpu-smuggling-operation-mistresss-husband-joked-she-was-the-ceos-personal-assistant",
+      "title": "How Shanghai fund manager Kang Wei introduced his wife Alice Huang to Jensen and built $7.5 billion Nvidia AI GPU smuggling operation",
+      "summary": "While Alice Huang lives on the headlines, it was actually her husband who put her in the same room as Jensen Huang.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-11-13T11:00:00+00:00",
+      "sent_at": "2026-11-13T12:56:50.283487+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/mass-smuggling-of-nvidia-ai-gpus-could-be-the-underlying-cause-of-jensen-huangs-departure-analysts-claim-more-than-1-5-gigawatts-of-banned-chips-tracked-to-china-despite-export-controls",
+      "title": "Mass smuggling of up to 1.5 million Nvidia AI GPUs could be the underlying cause of Jensen Huang's departure, analysts claim",
+      "summary": "Top analyst firm SemiAnalysis says it has tracked staggering 1.5 gigawatts of banned AI accelerators flowing into China.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-11-13T11:00:00+00:00",
+      "sent_at": "2026-11-13T12:56:50.283487+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/1994-jeep-cherokee-owner-hacks-32-year-old-car-with-claude-ai-to-pass-california-smog-tests-enthusiast-reverse-engineered-the-ancient-ecu-for-diagnostics-and-control",
+      "title": "1994 Jeep Cherokee owner hacks 32-year-old car with Claude AI to pass California smog tests",
+      "summary": "An AI enthusiast managed to get his old 1994 Jeep Cherokee to pass the California smog tests thanks to the help of AI, a little electronics wiring skill, and $15 of components.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-11-13T10:30:00+00:00",
+      "sent_at": "2026-11-13T12:56:50.283487+00:00"
+    },
+    {
       "link": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/",
       "title": "‘Bring Back THE Boss’: Nvidia Employees Petition for Jensen Huang’s Return",
       "summary": "An internal post urging the board to consider employee sentiment about Nvidia’s former CEO has drawn more than 1,600 comments, the majority in full support of reinstalling him.",
@@ -3608,78 +3680,6 @@
       "category": "Hardware",
       "published": "2026-10-30T11:40:00+00:00",
       "sent_at": "2026-10-30T13:49:32.102569+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/29/you-dont-need-to-believe-in-a-god-to-get-a-religious-exemption-from-using-ai-at-work/",
-      "title": "You don’t need to believe in a god to get a religious exemption from using AI at work",
-      "summary": "David Durman, a University of Kentucky administrator, recently earned a religious exemption from using AI in the workplace.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-30T01:20:48+00:00",
-      "sent_at": "2026-10-30T06:46:36.353535+00:00"
-    },
-    {
-      "link": "https://www.bbc.com/news/articles/cm9qzdqpxy48o",
-      "title": "Google value plunges by $500B as AI fears rattle Wall Street",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-29T22:22:13+00:00",
-      "sent_at": "2026-10-30T06:46:36.353535+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/gadgets/2026/10/trump-declares-robot-imports-a-national-security-threat/",
-      "title": "Trump declares robot imports a national security threat",
-      "summary": "President orders trade talks on foreign-made factory robots, threatens tariffs.",
-      "source": "Ars Technica",
-      "category": "Innovationen",
-      "published": "2026-10-29T19:07:53+00:00",
-      "sent_at": "2026-10-30T06:46:36.353535+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs",
-      "title": "You can generate and edit Google Docs files directly in Gemini chats now",
-      "summary": "Now you can generate, preview, and edit PDFs, Google Docs, Google Sheets, slide decks, Markdown files, TXT files, and code directly within Google Gemini. The new file editing capabilities are available starting today for all Gemini users, and while PDF previews/editing works on both the web and mobile, all other file formats are only in [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-29T18:45:31+00:00",
-      "sent_at": "2026-10-30T06:46:36.353535+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/a-defense-contractor-gave-their-personal-ai-agent-access-to-a-secure-pentagon-system/",
-      "title": "A Defense Contractor Gave Their Personal AI Agent Access to a Secure Pentagon System",
-      "summary": "Sources tell WIRED that an Accenture employee’s personal Claude agent ran on a DOD network for two months before it was identified and the vulnerability could be patched.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-10-29T18:39:43+00:00",
-      "sent_at": "2026-10-30T06:46:36.353535+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2301447/nvidia-ceo-jensen-huang-may-have-been-the-target-of-a-chinese-government-spy/",
-      "title": "NVIDIA CEO Jensen Huang may have been the target of a Chinese government spy",
-      "summary": "President Trump reportedly chose to do nothing in response.",
-      "source": "Engadget",
-      "category": "Hardware",
-      "published": "2026-10-29T18:34:43+00:00",
-      "sent_at": "2026-10-30T06:46:36.353535+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/tech-policy/2026/10/report-trump-did-nothing-with-intel-that-china-planted-spy-close-to-nvidia-ceo/",
-      "title": "Trump ignored intel on China’s Nvidia spy to protect company’s stock, report says",
-      "summary": "Spy accused of exploiting Trump ties to Huang, funneling secrets to China.",
-      "source": "Ars Technica",
-      "category": "Hardware",
-      "published": "2026-10-29T18:29:12+00:00",
-      "sent_at": "2026-10-30T06:46:36.353535+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/29/granola-crunches-up-a-dictation-feature-to-compete-with-wispr/",
-      "title": "Granola crunches up a dictation feature to compete with Wispr",
-      "summary": "Uno reverse! After Wispr added meeting notes to its dictation app, Granola is adding dictation to its meeting notetaker. The voice AI wars are getting interesting.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-29T17:54:38+00:00",
-      "sent_at": "2026-10-30T06:46:36.353535+00:00"
     }
   ]
 }
