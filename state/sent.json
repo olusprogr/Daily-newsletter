@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/",
+      "title": "‘Bring Back THE Boss’: Nvidia Employees Petition for Jensen Huang’s Return",
+      "summary": "An internal post urging the board to consider employee sentiment about Nvidia’s former CEO has drawn more than 1,600 comments, the majority in full support of reinstalling him.",
+      "source": "Wired",
+      "category": "Hardware",
+      "published": "2026-11-13T01:17:49+00:00",
+      "sent_at": "2026-11-13T04:58:48.389475+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1032774/president-donald-trump-tim-cook-nvidia-jensen-huang",
+      "title": "Donald Trump really wants Tim Cook to run Nvidia",
+      "summary": "Jensen Huang resigned this morning as Nvidia's CEO following reports of affairs, including one with an alleged Chinese spy. Right now, the company is being led by its CFO on an interim basis. But President Donald Trump is already throwing around one person he thinks should take over the chipmaking giant: former Apple CEO Tim [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-11-13T00:46:07+00:00",
+      "sent_at": "2026-11-13T04:58:48.389475+00:00"
+    },
+    {
+      "link": "https://www.techspot.com/news/114532-chicago-schools-tell-google-they-can-live-without.html",
+      "title": "Chicago schools to Google – we'd rather lose Search than be forced to accept AI",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-13T00:38:41+00:00",
+      "sent_at": "2026-11-13T04:58:48.389475+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/best-early-black-friday-robot-vacuum-deals-roborock-2026/",
+      "title": "Roborock Robot Vacuum Early Black Friday Deals (2026)",
+      "summary": "The brand’s official Black Friday sales start next week, but some of its best vacuums are already discounted.",
+      "source": "Wired",
+      "category": "Innovationen",
+      "published": "2026-11-12T23:54:58+00:00",
+      "sent_at": "2026-11-13T04:58:48.389475+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/gadgets/1032630/whoop-humans-social-network",
+      "title": "Whoop launched a social network where every user has a ‘verified heartbeat’",
+      "summary": "Starting Thursday, Whoop members can share their data from its wearables on the app's new Whoop Humans social network. Users can make their metrics, activities, and achievements visible to other Whoop wearers, post Story-like \"Moments\" with photos and captions, and add comments and reactions on other members' posts. Whoop claims its platform is \"entirely human,\" [&#8230;]",
+      "source": "The Verge",
+      "category": "Innovationen",
+      "published": "2026-11-12T23:43:22+00:00",
+      "sent_at": "2026-11-13T04:58:48.389475+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2315525/metas-muse-can-now-make-calls-on-your-behalf-if-you-have-a-paid-subscription/",
+      "title": "Meta's Muse can now make calls on your behalf (if you have a paid subscription)",
+      "summary": "The AI agent can schedule appointments, make reservations and wait on hold for you.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-11-12T23:32:00+00:00",
+      "sent_at": "2026-11-13T04:58:48.389475+00:00"
+    },
+    {
+      "link": "https://www.economist.com/leaders/2026/11/12/why-you-should-expect-an-ai-crash",
+      "title": "Why You Should Expect an AI Crash",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-12T23:08:31+00:00",
+      "sent_at": "2026-11-13T04:58:48.389475+00:00"
+    },
+    {
+      "link": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
+      "title": "Edge0-145B: Frontier AI Capabilities on Your Own Computer",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-12T23:06:17+00:00",
+      "sent_at": "2026-11-13T04:58:48.389475+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/11/12/democrats-launch-nvidia-investigation-write-scathing-letter-on-huangs-scheme-with-trump/",
       "title": "Democrats launch Nvidia investigation, write scathing letter on Huang’s ‘scheme’ with Trump",
       "summary": "This Congressional investigation into Nvidia's China sales and its dealings with Trump is the second one, so far, since news of the alleged spy affair broke.",
@@ -3608,78 +3680,6 @@
       "category": "AI",
       "published": "2026-10-29T17:54:38+00:00",
       "sent_at": "2026-10-30T06:46:36.353535+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/29/aws-will-be-a-1t-business-jassy-says-but-first-it-will-spend-big/",
-      "title": "AWS will be a $1T business, Jassy says. But first, it will spend big.",
-      "summary": "Amazon wants to be the king of AI cloud computing and become the first $1 trillion revenue business. But to do that it will have to continue on its capex spending spree, its CEO said Thursday.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-29T23:42:22+00:00",
-      "sent_at": "2026-10-30T00:35:21.977102+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1022911/intel-wildcat-lake-sold-out-ram-shortage",
-      "title": "Intel says it&#8217;s selling every affordable laptop chip it can make",
-      "summary": "During Intel's latest earnings call, CEO Lip-Bu Tan said that demand for its budget-focused Wildcat Lake chips \"is outstripping supply.\" According to CFO David Zinsner, the chips are now sold out. Zinsner said Intel has \"seen significant growth in Wildcat Lake. It's coming exactly at the right time because it's cost-optimized and we're seeing a [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-10-29T23:42:21+00:00",
-      "sent_at": "2026-10-30T00:35:21.977102+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1022848/reddit-ceo-google-ai-mode-traffic",
-      "title": "Reddit’s CEO says Google’s AI Mode ‘does not drive traffic’",
-      "summary": "Reddit CEO Steve Huffman said in an earnings call today that Google's AI-powered search modes do not help with traffic to the platform, echoing problems facing other websites and publishers. As part of its Q3 2026 earnings, Reddit revealed that search traffic in October has \"dropped by more than 1 million referrals on average per [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-29T22:19:32+00:00",
-      "sent_at": "2026-10-30T00:35:21.977102+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/cpus/intel-confirms-nova-lake-will-use-advanced-18a-p-node-more-details-at-ces-company-says-its-taking-panther-lake-capacity-offline-to-build-more-granite-rapids-data-center-cpus",
-      "title": "Intel confirms Nova Lake CPUs will use advanced 18A-P node, more details at CES — company says it's taking Panther Lake capacity offline to build more Granite Rapids data center CPUs",
-      "summary": "Intel's next-gen Nova Lake desktop processors will be the first client product to use Intel's enhanced 18A-P node, CEO Lip-Bu Tan confirmed in the company's Q3 2026 earnings call.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-10-29T21:55:48+00:00",
-      "sent_at": "2026-10-30T00:35:21.977102+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/29/elon-musk-is-truly-a-genius-says-vladimir-putin/",
-      "title": "Elon Musk is ‘truly a genius,’ says Vladimir Putin",
-      "summary": "Putin said that he and Musk are in \"close contact\" about Rassvet, Russia's Starlink-like satellite connectivity project.",
-      "source": "TechCrunch",
-      "category": "Innovationen",
-      "published": "2026-10-29T21:51:29+00:00",
-      "sent_at": "2026-10-30T00:35:21.977102+00:00"
-    },
-    {
-      "link": "https://convo.casa/@b/117525936178835007",
-      "title": "Proton goes all in on using AI",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-29T21:49:28+00:00",
-      "sent_at": "2026-10-30T00:35:21.977102+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2301786/vrchat-says-its-not-adding-ai-labels-despite-user-survey-showing-people-want-that/",
-      "title": "VRChat says it's not adding AI labels despite user survey showing people want that",
-      "summary": "Trying to make everyone happy could make no one happy.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-29T21:48:05+00:00",
-      "sent_at": "2026-10-30T00:35:21.977102+00:00"
-    },
-    {
-      "link": "https://labs.ycombinator.com/projects/games/index.html",
-      "title": "We ran AI agent swarms in Minecraft and Mindustry",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-29T21:40:28+00:00",
-      "sent_at": "2026-10-30T00:35:21.977102+00:00"
     }
   ]
 }
