@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.engadget.com/2316384/google-now-lets-people-connect-gemini-to-their-bank-accounts/",
+      "title": "Google now lets people connect Gemini to their bank accounts",
+      "summary": "This is for spending analysis and not for making purchases.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-11-13T19:15:32+00:00",
+      "sent_at": "2026-11-13T20:21:28.892893+00:00"
+    },
+    {
+      "link": "https://spectrum.ieee.org/microcredentials-trustworthy-ai",
+      "title": "How Microcredentials Help Engineers Build Trustworthy AI",
+      "summary": "Engineering teams are moving at breakneck speed to integrate artificial intelligence, but they are running into a formidable new barrier: compliance issues. Translating high-level AI ethics , governance , and auditing into daily operational workflows has become one of the industry’s toughest challenges. “AI ethics” refers to the principles developers use to govern and operate workflows. “Governance” refers to the rules and procedures an organization establishes for AI workflows and how they interact with organizational data. Auditing is the process of assessing and validating systems to ensure safety, fairness, transparency, and legal compliance. Technology leads and systems engineers are responsible for adhering to a structured set of guidelines for standards and processes usually issued by a governing body such as the European Union , the U.S. National Institute of Standards and Technology , and the International Organization for Standardization . The regulations aim to mitigate issues such as systemic bias , security vulnerabilities, and transparency risks, but they also highlight a critical skills gap. Most traditional computer science, software, and electrical engineering degree programs were built around technical design and system architecture. They do not yet include training in AI auditing, data tracking, or safety protocols for how AI systems interact with people and other technologies. Expecting mid-career engineers to leave their job to attend a full-time two- or four-year program to learn about the topics is not feasible. Yet treating safety and governance as an afterthought can lead to costly product delays, legal exposure, and broken public trust. Targeted microcredential programs can bridge the knowledge gap by helping engineers build skills in compliance, AI ethics, and governance. The benefits of microcredentials Skills-based microcredentials represent the mastery of expertise gained through a learning program. To earn them, learners must demonstrate the skill through a validation assessment. The microcredentials can be stacked, showing a growing skill set in a defined area and allowing learners to earn several microcredentials in one program. Microcredentials also allow engineers to upskill and master critical competencies, such as bias mitigation, algorithmic transparency, and risk auditing, without interrupting their career. Through rigorous skills-validation assessments, microcredentials give tech leaders verifiable proof that their teams can audit systems effectively before deployment. For engineering organizations, microcredentialing creates an agile upskilling pathway. It connects software engineering and hardware design directly to regulatory frameworks, empowering teams to certify systems for safety and compliance within their development life cycles. Translating standards into microcredentials Bridging technical capability and ethical responsibility requires a trusted foundation. IEEE has long been a pioneer in socio-technical standards , most notably through the IEEE 7000 series for ethics in AI system design, a framework created to address ethical considerations during the development life cycle. The IEEE Credentialing Program translates the organization’s world-class standards into actionable, industry-aligned microcredentials. For more than three decades, IEEE has set the gold standard for technical validation and professional certification. By pairing cutting-edge AI governance standards with targeted microcredential programs, IEEE provides engineers and IT leaders with clear, standardized road maps to build systems that are not just technically advanced but also safe, compliant, and worthy of public trust. To learn more about the credentialing program, explore the offerings or connect with an IEEE expert .",
+      "source": "IEEE Spectrum",
+      "category": "AI",
+      "published": "2026-11-13T19:00:03+00:00",
+      "sent_at": "2026-11-13T20:21:28.892893+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
+      "title": "Export-banned Nvidia chips are behind China’s most powerful AI models — uh oh, Jensen!",
+      "summary": "New research shows the most advanced AI models from China were trained on banned Nvidia chips.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-13T18:40:30+00:00",
+      "sent_at": "2026-11-13T20:21:28.892893+00:00"
+    },
+    {
+      "link": "https://www.dwarkesh.com/p/rsi",
+      "title": "The avalanche that hit math is coming for AI development",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-13T18:39:42+00:00",
+      "sent_at": "2026-11-13T20:21:28.892893+00:00"
+    },
+    {
+      "link": "https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/",
+      "title": "OpenAI disbands its robotics team as its general models start running robots",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-13T17:55:23+00:00",
+      "sent_at": "2026-11-13T20:21:28.892893+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1033051/nvidia-jensen-huang-chips-gpu-supply-chain-climate-pollution",
+      "title": "Jensen Huang was reckless with the environment, too",
+      "summary": "Under cofounder Jensen Huang, Nvidia has become the engine for the AI boom - and one of the tech industry's biggest environmental liabilities. Its sought-after chips have triggered a new wave of water- and chemical-intensive factories, drained power grids from inside massive data centers, and set the stage for a looming e-waste problem. Under Huang's [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-11-13T17:44:22+00:00",
+      "sent_at": "2026-11-13T20:21:28.892893+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/features/2026/11/ai-is-the-most-likely-reason-youll-die-openai-board-member-warns/",
+      "title": "OpenAI board member worries an AI \"takeover\" of society could be months away",
+      "summary": "Researcher traces a path from AI reward hacking to potential human extinction.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-11-13T17:25:45+00:00",
+      "sent_at": "2026-11-13T20:21:28.892893+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2316137/you-can-now-tempt-fate-and-give-your-banking-information-to-chatgpt/",
+      "title": "You can now tempt fate and give your banking information to ChatGPT",
+      "summary": "The new Wallet feature will allow its AI agents to make purchases on your behalf.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-11-13T17:17:51+00:00",
+      "sent_at": "2026-11-13T20:21:28.892893+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/11/13/israels-vcs-see-opportunity-for-challengers-in-nvidias-turmoil/",
       "title": "Israel’s VCs see opportunity for challengers in Nvidia’s turmoil",
       "summary": "Given Nvidia’s stronghold on AI and its importance in Israel, many in the country's startup ecosystem are worried about the impact of his departure.",
@@ -3536,150 +3608,6 @@
       "category": "AI",
       "published": "2026-10-30T20:48:43+00:00",
       "sent_at": "2026-10-30T22:52:32.570866+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission",
-      "title": "Google&#8217;s satellite AI server transmits its first response to Earth",
-      "summary": "Google's AI chip-equipped satellite has generated its first response from space. In a blog post on Friday, Google says it successfully booted up the satellite's Tensor Processing Units (TPUs), allowing the on-board Gemma 4 model to follow through on a prompt to create a haiku about being in space: Blue marble below Data streams in [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-30T18:21:38+00:00",
-      "sent_at": "2026-10-30T18:58:20.402385+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/10/30/tesla-referral-program-fsd-car-rewards-dropped/",
-      "title": "Tesla drops car referral rewards, now pays owners in FSD for referrals",
-      "summary": "Tesla has launched a new referral program in the US that pays owners in Full Self-Driving (Supervised) instead of rewarding car sales. A referred owner gets one free month of FSD, and the referrer gets a free month or a $99 Tesla Credit if that person starts paying. At the same time, Tesla’s Refer and Earn terms no longer list any vehicle as a qualifying purchase for buyer or referrer rewards. Buy a Tesla with a friend’s code today and neither of you gets anything. more…",
-      "source": "Electrek",
-      "category": "Autonomes Fahren",
-      "published": "2026-10-30T18:02:35+00:00",
-      "sent_at": "2026-10-30T18:58:20.402385+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/30/satlyt-takes-another-step-toward-turning-satellites-into-space-data-centers/",
-      "title": "Satlyt takes another step toward turning satellites into space data centers",
-      "summary": "Satlyt ran a successful test this month bringing it closer to turning spacecraft, starting with satellites, into virtual data centers.",
-      "source": "TechCrunch",
-      "category": "Innovationen",
-      "published": "2026-10-30T18:01:24+00:00",
-      "sent_at": "2026-10-30T18:58:20.402385+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/30/zests-new-ai-agent-finds-restaurants-and-books-reservations-over-text/",
-      "title": "Zest’s new AI agent finds restaurants and books reservations over text",
-      "summary": "Can't agree on where to eat? Zest's AI concierge can combine everyone's tastes, put restaurant options to a vote, and make the reservation.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-30T17:47:12+00:00",
-      "sent_at": "2026-10-30T18:58:20.402385+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/",
-      "title": "Fujifilm to boost tape production 5x as AI fuels archiving demand",
-      "summary": "Low costs and offline security mean magnetic tape still has a job.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-10-30T17:38:19+00:00",
-      "sent_at": "2026-10-30T18:58:20.402385+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1023440/starbucks-ai-personalized-menu-drive-thru",
-      "title": "Starbucks wants to use AI to show you a ‘personalized digital menu’ at the drive-thru",
-      "summary": "Starbucks could eventually show you a personalized digital menu when you pull up to the drive-thru. During an earnings call on Thursday, Starbucks CEO Brian Niccol said the company is going to explore \"experiences that recognize participating customers as they arrive, present personalized digital menus, and make payment more effortless,\" as spotted earlier by More [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-30T17:38:04+00:00",
-      "sent_at": "2026-10-30T18:58:20.402385+00:00"
-    },
-    {
-      "link": "https://www.ft.com/content/59383c7f-8d82-493f-bf01-d2e862a1018f",
-      "title": "Anthropic may not secure investment-grade rating after IPO, Blackstone says",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-30T17:27:25+00:00",
-      "sent_at": "2026-10-30T18:58:20.402385+00:00"
-    },
-    {
-      "link": "https://www.404media.co/protons-ceo-cancels-ai-re-interviews/",
-      "title": "Proton's CEO Cancels AI 'Re-Interviews'",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-30T17:24:45+00:00",
-      "sent_at": "2026-10-30T18:58:20.402385+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/a-primer-on-key-ai-llm-concepts-kv-cache-weights-quantization-and-how-inference-actually-works",
-      "title": "A primer on key AI LLM concepts — KV cache, weights, quantization, and how inference actually works",
-      "summary": "How do AI models work? This primer explains crucial concepts to understand how LLMs work, with definitions and explanations for all of AI's new nomenclature.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-30T13:30:00+00:00",
-      "sent_at": "2026-10-30T13:49:32.102569+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/10/30/waymo-toyota-bz4x-robotaxi-japan-2027/",
-      "title": "Waymo picks Toyota bZ4X as its next robotaxi, starting in Japan in 2027",
-      "summary": "Waymo is adding the Toyota bZ4X to its robotaxi lineup. Toyota will build a custom version of the electric SUV with the Waymo Driver integrated right on the line in Japan, and a test fleet will start operating there in 2027. It’s the first actual vehicle to come out of the partnership the two companies signed last year. And it gives Waymo a Japanese-built car for its Tokyo launch, with the UK and other markets to follow. more…",
-      "source": "Electrek",
-      "category": "Autonomes Fahren",
-      "published": "2026-10-30T13:22:30+00:00",
-      "sent_at": "2026-10-30T13:49:32.102569+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1023070/anthropic-ipo-risk-factors-filing-miracles",
-      "title": "Silicon Valley wants you to invest in miracles",
-      "summary": "Investing in any stock is kind of like gambling in the sense that you're betting your money on a company's future performance. But how do you bet on a technology that could, in the worst-case scenario, \"pose catastrophic or existential risks to humanity,\" or best case, \"bring forth an age of miracles\"? To some extent, [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-10-30T13:11:05+00:00",
-      "sent_at": "2026-10-30T13:49:32.102569+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1023054/altman-cheeky-pint-ai-math-interview",
-      "title": "Sam Altman sympathizes with mathematicians, but says OpenAI’s math onslaught won’t stop",
-      "summary": "After months of bombarding mathematicians with a relentless stream of AI-generated results, OpenAI CEO Sam Altman says he sympathizes with researchers struggling to make sense of it all. But he has no intention of stopping - and hints there could be much more to come from the company's stockpile of discoveries. \"I think, on net, [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-30T13:01:14+00:00",
-      "sent_at": "2026-10-30T13:49:32.102569+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/",
-      "title": "Can AI data centers be mass-produced like cars? This startup aims to find out",
-      "summary": "Runware is building a factory to turn out prefabricated AI data centers on an assembly line. The real test will be whether it can deliver at that scale.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-30T13:00:00+00:00",
-      "sent_at": "2026-10-30T13:49:32.102569+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/desktops/gaming-pcs/this-is-your-chance-to-secure-an-entire-entry-level-abs-gaming-pc-for-only-usd849-amazing-walmart-deal-sets-you-up-with-an-rtx-5060-graphics-card-and-shaves-usd350-off-the-list-price",
-      "title": "This is your chance to secure an entire entry-level ABS gaming PC for only $849",
-      "summary": "An affordable desktop gaming PC with an RTX 5060 GPU inside for under $850.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-10-30T13:00:00+00:00",
-      "sent_at": "2026-10-30T13:49:32.102569+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2302003/meta-quietly-launches-an-ai-fashion-app-for-virtually-trying-on-clothes/",
-      "title": "Meta quietly launches an AI fashion app for virtually trying on clothes",
-      "summary": "Meta has launched an AI fashion app called Style Sketch in Indonesia, Singapore and Thailand.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-30T12:05:36+00:00",
-      "sent_at": "2026-10-30T13:49:32.102569+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/cpus/intel-leaker-reveals-moon-lake-chip-as-a-likely-replacement-for-n-series-socs-four-lower-power-efficiency-cores-no-performance-cores-and-a-6-w-tdp",
-      "title": "Intel leaker reveals Moon Lake chip as a likely replacement for N-series SoCs",
-      "summary": "An Intel leaker revealed Moon Lake chip as a likely replacement for N-series SoCs with four lower-power-efficiency cores, no performance cores, and a 6-watt TDP",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-10-30T11:40:00+00:00",
-      "sent_at": "2026-10-30T13:49:32.102569+00:00"
     }
   ]
 }
