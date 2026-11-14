@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
+      "title": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-14T02:52:59+00:00",
+      "sent_at": "2026-11-14T08:34:12.226964+00:00"
+    },
+    {
+      "link": "https://finance.yahoo.com/markets/stocks/articles/nvidia-director-sold-nearly-1b-160000846.html",
+      "title": "Nvidia director sold nearly $1B in stock weeks before the Jensen Huang scandal",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Hardware",
+      "published": "2026-11-14T02:21:36+00:00",
+      "sent_at": "2026-11-14T08:34:12.226964+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/11/13/tesla-cybercab-personal-use-orders-299-subscription-geofence/",
+      "title": "Tesla Cybercab orders open at $29,990 + $299/mo, only in Robotaxi zones",
+      "summary": "Tesla is now inviting “select customers” to buy a Cybercab for personal use at $29,990, but the car won’t move unless you also pay $299 a month for an “Autonomy Subscription.” And it only works inside Tesla’s Robotaxi service areas in Texas and Florida, the same geofences that have turned out to be significantly smaller than what Tesla advertises. more…",
+      "source": "Electrek",
+      "category": "Autonomes Fahren",
+      "published": "2026-11-14T02:11:39+00:00",
+      "sent_at": "2026-11-14T08:34:12.226964+00:00"
+    },
+    {
+      "link": "https://claude.com/resources/articles/projects-redesigned",
+      "title": "Anthropic upgrades Claude Code Projects to run parallel AI workers",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-14T00:28:11+00:00",
+      "sent_at": "2026-11-14T08:34:12.226964+00:00"
+    },
+    {
+      "link": "https://www.ft.com/content/2a64f698-46dd-4178-a3f4-4c5f4c0a0926",
+      "title": "Arm boss Rene Haas approached in Nvidia CEO search",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Hardware",
+      "published": "2026-11-13T17:10:33+00:00",
+      "sent_at": "2026-11-14T08:34:12.226964+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/cpus/unannounced-intel-core-ultra-7-260k-cpu-surfaces-in-newegg-prebuilt-gaming-pcs-intel-doesnt-have-official-specs-list-available-for-exclusive-arrow-lake-chip",
+      "title": "Unannounced Intel Core Ultra 7 260K CPU surfaces in Newegg prebuilt gaming PCs",
+      "summary": "The mysterious Intel Core Ultra 7 260K has surfaced in some prebuilt gaming PCs on Newegg, despite no official mention of the chip from Intel.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-11-13T16:30:00+00:00",
+      "sent_at": "2026-11-14T08:34:12.226964+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/malaysia-and-singapore-step-up-nvidia-ai-chip-probes-as-charges-brought-against-chinese-national-over-917-smuggled-servers-firm-at-center-of-jensen-huang-controversy-announces-inventory-audit-to-account-for-all-restricted-gpus",
+      "title": "Malaysia and Singapore step up Nvidia AI chip probes amidst Jensen Huang controversy",
+      "summary": "Malaysia is investigating possible re-exports of Nvidia AI hardware amid concerns about circumvention of U.S. restrictions on China as Singapore charges an executive over suspicious purchases of 917 AI servers.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-11-13T16:15:28+00:00",
+      "sent_at": "2026-11-14T08:34:12.226964+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/",
+      "title": "ChatGPT’s new Wallet lets AI agents shop and check out for you",
+      "summary": "ChatGPT Wallet lets AI agents shop and check out on users' behalf, starting with a limited rollout to U.S. Pro subscribers.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-13T16:00:12+00:00",
+      "sent_at": "2026-11-14T08:34:12.226964+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
       "title": "Jensen Huang’s departure blasts big hole in AI startup funding, VCs and founders say",
       "summary": "Nvidia poured tens of billions into AI startups under Huang. Without him at the helm, founders and VCs are bracing for smaller checks and lower valuations.",
@@ -3464,150 +3536,6 @@
       "category": "AI",
       "published": "2026-10-31T12:20:00+00:00",
       "sent_at": "2026-10-31T15:00:20.556565+00:00"
-    },
-    {
-      "link": "https://www.wsj.com/tech/ai/openai-raises-less-than-half-of-30-billion-target-in-latest-round-91aecdc5",
-      "title": "OpenAI raises less than half of $30B target",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-31T03:22:44+00:00",
-      "sent_at": "2026-10-31T08:19:03.105275+00:00"
-    },
-    {
-      "link": "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/",
-      "title": "Wall Street closes sharply lower as AI cash burn fears spark tech selloff",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-30T21:32:35+00:00",
-      "sent_at": "2026-10-31T08:19:03.105275+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/30/ai-law-firm-crosby-bids-on-disintegrating-famed-firm-weil-gotshal/",
-      "title": "AI law firm Crosby bids on disintegrating, famed firm Weil Gotshal",
-      "summary": "Like a real-life episode of \"Suits,\" the demise of famed white-shoe Wall Street law firm Weil, Gotshal &#038; Manges has been the talk of the legal industry. And now an AI firm has entered the picture.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-30T19:55:13+00:00",
-      "sent_at": "2026-10-31T08:19:03.105275+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/ai/2026/10/doordash-says-outside-ai-agents-have-only-led-to-hundreds-of-orders-so-far/",
-      "title": "Basically no one is using AI agents for their DoorDash orders",
-      "summary": "But it's still early days for the relatively new e-commerce use case.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-10-30T19:30:52+00:00",
-      "sent_at": "2026-10-31T08:19:03.105275+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/10/30/podcast-rivian-earnings-waymo-partners-with-toyota-ford-bets-on-v2h-for-fathom-and-more/",
-      "title": "Podcast: Rivian earnings, Waymo partners with Toyota, Ford bets on V2H for Fathom, and more",
-      "summary": "In the Electrek Podcast , we discuss the most popular news in the world of sustainable transport and energy. In this week’s episode, we’ll discuss Rivian’s earnings, Waymo partnering with Toyota, Ford betting on V2H for the Fathom electric pickup truck, and more. more…",
-      "source": "Electrek",
-      "category": "Autonomes Fahren",
-      "published": "2026-10-30T19:30:35+00:00",
-      "sent_at": "2026-10-31T08:19:03.105275+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/transportation/1023143/rivian-autonomy-point-to-point-robotaxi-q3-2026",
-      "title": "Rivian’s autonomy gamble faces its first real test",
-      "summary": "During an hourlong earnings call last night, Rivian CEO RJ Scaringe spent less time talking about the production ramp of the all-important R2 SUV than he did hyping the company's still-unproven autonomous vehicle ambitions. But the company faces a crucial test later this year, when it rolls out its point-to-point hands-free driving feature - first [&#8230;]",
-      "source": "The Verge",
-      "category": "Autonomes Fahren",
-      "published": "2026-10-30T17:16:09+00:00",
-      "sent_at": "2026-10-31T08:19:03.105275+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/30/googles-first-data-center-satellite-is-online-and-writing-poetry/",
-      "title": "Google’s first data center satellite is online and writing poetry",
-      "summary": "The first TPU in space is running a Google DeepMind Gemma 4 model and writing cheesy poetry.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-30T17:00:00+00:00",
-      "sent_at": "2026-10-31T08:19:03.105275+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/tech-policy/2026/10/doj-exposes-ghost-students-using-ai-to-complete-courses-steal-student-loans/",
-      "title": "Thousands of “ghost students” use AI to steal millions in student loans, DOJ says",
-      "summary": "Applying for FAFSA may get messy as DOJ “ghost student” crackdown ramps up.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-10-30T16:53:49+00:00",
-      "sent_at": "2026-10-31T08:19:03.105275+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/",
-      "title": "Nvidia weighs playing the cosigner for Nscale’s AI data center in West Virginia",
-      "summary": "When investors get nervous about AI spending, it helps to have the chipmaker that sells the chips offer to cosign the loan.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-31T01:20:05+00:00",
-      "sent_at": "2026-10-31T01:59:28.580663+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/30/salesforces-ma-spree-continues-with-a-reported-375m-deal-for-defense-tech-startup-rune/",
-      "title": "Salesforce’s M&A spree continues with a reported $375M deal for defense tech startup Rune",
-      "summary": "The AI logistics startup will bolster the CRM giant's Missionforce defense platform.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-30T23:21:23+00:00",
-      "sent_at": "2026-10-31T01:59:28.580663+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/30/ollie-a-privacy-focused-ai-assistant-is-shutting-down/",
-      "title": "Ollie, a privacy-focused AI assistant, is shutting down",
-      "summary": "As an increasing number of AI assistants flood the market, the founder of Ollie, an assistant that respected its users' privacy, says it will be shutting down in a week.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-30T22:56:13+00:00",
-      "sent_at": "2026-10-31T01:59:28.580663+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/tech-policy/2026/10/dartmouths-provost-warned-us-about-ai-cheating-but-his-own-ai-use-cost-him-his-job/",
-      "title": "Dartmouth's provost warned us about AI cheating—but his own AI use cost him his job",
-      "summary": "People who love AI don't always love telling others they used it.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-10-30T20:40:13+00:00",
-      "sent_at": "2026-10-31T01:59:28.580663+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/trojan-malware-targets-thousands-of-anthropic-claude-developer-systems/",
-      "title": "A Supply Chain Attack Put Malicious Anthropic Claude Extensions on Thousands of Devices",
-      "summary": "Thanks to a lucky break, flawed code in a tainted Claude extension prevented the attacker from fully worming their way into some 5,000 developer machines.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-10-30T20:38:46+00:00",
-      "sent_at": "2026-10-31T01:59:28.580663+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
-      "title": "The biggest names in AI are backing a new way to opt out of scraping",
-      "summary": "OpenAI, Google, Microsoft, and Anthropic say they will adopt a new standard that publishers can use to opt out of being scraped by AI, as reported earlier by Search Engine Roundtable. With this control, publishers can apply their AI training preferences across multiple AI companies, instead of setting them individually. The shared \"policy token\" signal [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-30T20:26:10+00:00",
-      "sent_at": "2026-10-31T01:59:28.580663+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/gpus/nvidia-store-quietly-pulls-the-rtx-5080-following-rtx-5090-removal-street-prices-climb-to-2-2x-over-msrp",
-      "title": "Nvidia store quietly pulls the RTX 5080 following RTX 5090 removal",
-      "summary": "First the RTX 5090, now the RTX 5080. Nvidia quietly removes the RTX 5080 listing from the marketplace as prices explode to 2.2X MSRP on the retail market.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-10-30T20:13:10+00:00",
-      "sent_at": "2026-10-31T01:59:28.580663+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/cpus/intels-woes-wipe-out-usd1-trillion-of-semiconductor-market-cap-in-one-day-pc-market-bloodbath-leaves-few-chip-stocks-unscathed",
-      "title": "Intel’s woes wipe out $1 trillion of semiconductor market cap in one day",
-      "summary": "Intel's gloomy outlook for its PC business wipes out $1 trillion of semiconductor market capitalization in a day, barely affects Apple.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-10-30T20:06:11+00:00",
-      "sent_at": "2026-10-31T01:59:28.580663+00:00"
     }
   ]
 }
