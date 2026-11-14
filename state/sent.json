@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/11/14/transportation-secretary-blames-routine-equipment-upgrade-for-grounding-flights-nationwide/",
+      "title": "Transportation secretary blames ‘routine’ equipment upgrade for grounding flights nationwide",
+      "summary": "FAA administrator Bryan Bedford also said there's \"zero evidence of anything AI-related.\"",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-14T17:45:04+00:00",
+      "sent_at": "2026-11-14T20:23:57.994672+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/11/14/check-your-ego-at-the-door-stellantis-new-electric-dolly-turns-any-car-into-a-tow-rig/",
+      "title": "Check your ego at the door: Stellantis’ new electric dolly turns ANY car into a tow rig",
+      "summary": "We all know the type: grizzled stubble, wraparound PitVipers, a MAGA hat quietly retired after last week’s deep-blue shellacking , and a pristine, polished pickup parked in the driveway that they “need for towing.” With Stellantis’ new patent for an AI-powered electric tow dolly that turns just about ANY vehicle into a capable tow rig, however, those might need a new to find a new excuse to keep that gas-guzzler. more…",
+      "source": "Electrek",
+      "category": "AI",
+      "published": "2026-11-14T17:35:39+00:00",
+      "sent_at": "2026-11-14T20:23:57.994672+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+      "title": "The AI graveyard: a running list of projects and startups that didn’t make it",
+      "summary": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-14T17:30:00+00:00",
+      "sent_at": "2026-11-14T20:23:57.994672+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2315651/why-nvidia-rtx-3060-most-popular-steam-gpu/",
+      "title": "Why is the NVIDIA RTX 3060 still the most popular GPU on Steam?",
+      "summary": "You'd think that gamers would always run the latest and greatest GPUs in their rigs, but NVIDIA's RTX 3060 proves that isn't quite the case.",
+      "source": "Engadget",
+      "category": "Hardware",
+      "published": "2026-11-14T17:00:00+00:00",
+      "sent_at": "2026-11-14T20:23:57.994672+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit/",
+      "title": "Asian governments react to Nvidia CEO Jensen Huang’s exit",
+      "summary": "Some governments moved to confirm chip supply commitments, while others are monitoring the impact on local projects or addressing ongoing investigations.",
+      "source": "TechCrunch",
+      "category": "Hardware",
+      "published": "2026-11-14T16:34:15+00:00",
+      "sent_at": "2026-11-14T20:23:57.994672+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/11/14/huawei-set-to-challenge-tesla-powerwall-with-new-20-kw-home-battery/",
+      "title": "Huawei set to challenge Tesla Powerwall with new, 20 kW home battery",
+      "summary": "This high-tech Huawei home battery pack hopes to hold back Tesla’s latest Powerwall with silicon carbide technology, AI-powered energy management baked in , and enough modular storage to keep even large homes bright and warm when the rest of the block goes dark. more…",
+      "source": "Electrek",
+      "category": "AI",
+      "published": "2026-11-14T16:25:02+00:00",
+      "sent_at": "2026-11-14T20:23:57.994672+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/this-week-in-toms-hardware-premium-november-14-2026-mac-studio-versus-dgx-spark-amds-mext-cuts-dram-requirements-in-half-and-the-huang-saga-reaches-critical-mass",
+      "title": "This week in Tom's Hardware Premium: November 14, 2026 — Mac Studio versus DGX Spark, AMD's MEXT cuts DRAM requirements in half, and the Huang saga reaches critical mass",
+      "summary": "Catch up with everything we've published this week on our subscription service, Tom's Hardware Premium, including exclusive interviews, local AI deep dives, and much more.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-11-14T16:00:00+00:00",
+      "sent_at": "2026-11-14T20:23:57.994672+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/u-s-treasury-secretary-questions-whether-nvidia-knowingly-sold-ai-gpus-to-shell-companies-says-company-itself-is-responsible-i-think-it-is-important-that-anyone-at-the-company-there-be-held-accountable-for-that",
+      "title": "U.S. Treasury Secretary questions whether Nvidia knowingly sold AI GPUs to shell companies, says company itself is responsible",
+      "summary": "Scott Bessent wonders whether Nvidia's management knew about selling restricted hardware to shell companies, but does not directly blame Jensen Huang of anything.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-11-14T15:35:48+00:00",
+      "sent_at": "2026-11-14T20:23:57.994672+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/malaysia-plans-new-law-using-data-center-power-consumption-to-catch-ai-gpu-smugglers-but-real-world-tdp-variance-and-lack-of-physical-audits-could-undermine-it-new-law-also-forces-operators-to-pay-for-unused-electricity-capacity",
       "title": "Malaysia plans new law using data center power consumption to catch AI GPU smugglers",
       "summary": "Malaysia plans to track AI GPU imports and data center power consumption to combat chip smuggling. But will it be able to do so?",
@@ -3464,78 +3536,6 @@
       "category": "AI",
       "published": "2026-10-31T14:29:03+00:00",
       "sent_at": "2026-10-31T23:03:32.108275+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2300253/how-to-use-claude-duet/",
-      "title": "How to use Claude Duet when it rolls out to you",
-      "summary": "For now, you'll need to first join a waitlist.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-31T18:30:00+00:00",
-      "sent_at": "2026-10-31T19:13:39.204111+00:00"
-    },
-    {
-      "link": "https://dl.acm.org/doi/full/10.1145/3706598.3713778",
-      "title": "The Impact of Generative AI on Critical Thinking",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-31T18:02:29+00:00",
-      "sent_at": "2026-10-31T19:13:39.204111+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2301962/bolt-graphics-powers-on-first-zeus-gpu/",
-      "title": "Bolt Graphics powers on its first Zeus GPU",
-      "summary": "Bolt Graphics has been working on its simulation-centric Zeus GPU for a while now and has reached a significant milestone: a successful test run.",
-      "source": "Engadget",
-      "category": "Hardware",
-      "published": "2026-10-31T17:30:00+00:00",
-      "sent_at": "2026-10-31T19:13:39.204111+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2301961/samsung-galaxy-watches-not-getting-one-ui-update/",
-      "title": "These Samsung Galaxy Watches won't be getting the new One UI update",
-      "summary": "Samsung has released the latest version of its wearable OS, One UI 9 Watch, and most of its watch lineup will get the update - except these.",
-      "source": "Engadget",
-      "category": "Innovationen",
-      "published": "2026-10-31T17:15:00+00:00",
-      "sent_at": "2026-10-31T19:13:39.204111+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/",
-      "title": "OpenAI reportedly lowers funding target for new round",
-      "summary": "OpenAI’s latest funding round doesn't seem to be living up to expectations.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-31T16:12:55+00:00",
-      "sent_at": "2026-10-31T19:13:39.204111+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/gadgets/1013375/muse-charm-gadgets-preview-waveshare-esp32-claude-vibe-code",
-      "title": "I built an AI Tamagotchi before Meta could",
-      "summary": "Mark Zuckerberg's Meta made AI look so stinking cute by giving it a squishy little face - and this holiday season, he wants to sell you a Muse Charm so you can carry your jolly AI helper around like a Tamagotchi. But I won't be buying one, because we have Muse Charm at home. It [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-31T16:05:00+00:00",
-      "sent_at": "2026-10-31T19:13:39.204111+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2300262/gnss-vs-gps-differences/",
-      "title": "GNSS Vs GPS: What's the difference?",
-      "summary": "GNSS and GPS are common terms in the world of satellite navigation. They may be similar, but there are some key differences between the two technologies.",
-      "source": "Engadget",
-      "category": "Innovationen",
-      "published": "2026-10-31T16:00:00+00:00",
-      "sent_at": "2026-10-31T19:13:39.204111+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/cyber-security/ghost-students-using-ai-to-apply-for-student-loans-with-stolen-identities-dojs-operation-ghostbusters-busts-usd200-million-ring-faking-online-college-attendance-unsuspecting-victims-saddled-with-student-debt-they-didnt-sign-up-for",
-      "title": "'Ghost Students' using AI to apply for student loans with stolen identities, DOJ's Operation Ghostbusters busts $200 million ring",
-      "summary": "Fraudsters are using the identities of high school graduates who skipped college to apply for student loans and steal the excess proceeds that do not go to schools. They use AI to keep the charade going and make it seem like the fake student is actually going to class.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-31T15:37:41+00:00",
-      "sent_at": "2026-10-31T19:13:39.204111+00:00"
     }
   ]
 }
