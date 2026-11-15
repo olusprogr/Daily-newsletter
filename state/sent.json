@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://arstechnica.com/space/2026/11/with-starship-catch-spacex-still-shows-it-can-dazzle-the-world/",
+      "title": "With Starship catch, SpaceX still shows it can dazzle the world",
+      "summary": "It felt like stepping into the future.",
+      "source": "Ars Technica",
+      "category": "Innovationen",
+      "published": "2026-11-15T00:40:59+00:00",
+      "sent_at": "2026-11-15T00:43:47.356244+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/",
+      "title": "Where was Nvidia’s security team?",
+      "summary": "Nvidia’s security chief quietly left in August, and now that CEO Jensen Huang has stepped down over his relationships, including one with an executive at a company suspected of funneling chips to China, a former intelligence officer says it’s the kind of leak that runs everyday conversations, which most corporate security teams are poorly equipped to catch.",
+      "source": "TechCrunch",
+      "category": "Hardware",
+      "published": "2026-11-15T00:08:07+00:00",
+      "sent_at": "2026-11-15T00:43:47.356244+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2313063/cable-mistake-desktop-pc-gaming-performance/",
+      "title": "One cable mistake could be killing your desktop PC's gaming performance",
+      "summary": "Plugging your monitor into the motherboard instead of your dedicated GPU can ruin gaming performance. Here's how to check your ports and get your frames back.",
+      "source": "Engadget",
+      "category": "Hardware",
+      "published": "2026-11-14T23:30:00+00:00",
+      "sent_at": "2026-11-15T00:43:47.356244+00:00"
+    },
+    {
+      "link": "https://www.techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html",
+      "title": "Nvidia deliberately kept GPU prices high through circular financing deals",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Hardware",
+      "published": "2026-11-14T22:26:30+00:00",
+      "sent_at": "2026-11-15T00:43:47.356244+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2312834/how-to-get-better-results-google-gemini/",
+      "title": "How to get better results from Google Gemini",
+      "summary": "These tips and tricks will help you prompt Gemini better.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-11-14T22:15:00+00:00",
+      "sent_at": "2026-11-15T00:43:47.356244+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2312688/when-dedicated-graphics-card-worth-it/",
+      "title": "Here's when a dedicated graphics card is worth it",
+      "summary": "Modern iGPUs are surprisingly capable, but they aren't without limitations.",
+      "source": "Engadget",
+      "category": "Hardware",
+      "published": "2026-11-14T21:45:00+00:00",
+      "sent_at": "2026-11-15T00:43:47.356244+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/science/1033930/spacex-chopstick-starship-catch",
+      "title": "Watch SpaceX successfully execute the first ‘chopstick’ catch of Starship",
+      "summary": "After aborting a planned catch of Starship Flight 15's booster, SpaceX successfully captured Starship with its \"Mechazilla\" launch and catch tower for the first time. The company has performed 'chopstick' catches of its boosters before, but this is the first time the maneuver has successfully been executed on the Starship vehicle itself. SpaceX CEO Elon [&#8230;]",
+      "source": "The Verge",
+      "category": "Innovationen",
+      "published": "2026-11-14T21:44:44+00:00",
+      "sent_at": "2026-11-15T00:43:47.356244+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/",
+      "title": "Elon Musk, other tech execs sign petition calling on Nvidia to reinstate Jensen Huang",
+      "summary": "The petition had attracted more than 115,000 signatures as of Saturday afternoon.",
+      "source": "TechCrunch",
+      "category": "Hardware",
+      "published": "2026-11-14T21:41:22+00:00",
+      "sent_at": "2026-11-15T00:43:47.356244+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/11/14/transportation-secretary-blames-routine-equipment-upgrade-for-grounding-flights-nationwide/",
       "title": "Transportation secretary blames ‘routine’ equipment upgrade for grounding flights nationwide",
       "summary": "FAA administrator Bryan Bedford also said there's \"zero evidence of anything AI-related.\"",
@@ -3464,78 +3536,6 @@
       "category": "AI",
       "published": "2026-10-31T10:30:11+00:00",
       "sent_at": "2026-11-01T04:17:09.161512+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/",
-      "title": "Apple CEO says the company doesn’t ‘want to ship AI for AI’s sake’",
-      "summary": "Apple's new CEO defended the company's current position in the AI landscape.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-31T21:41:00+00:00",
-      "sent_at": "2026-10-31T23:03:32.108275+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/",
-      "title": "Judge allows NAACP lawsuit over xAI data center pollution to move forward",
-      "summary": "An NAACP lawsuit accuses the SpaceX-owned AI company of violating the Clean Air Act.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-10-31T21:17:03+00:00",
-      "sent_at": "2026-10-31T23:03:32.108275+00:00"
-    },
-    {
-      "link": "https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering",
-      "title": "Anthropic takes steps to block Claude from reverse-engineering video games",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-31T21:07:58+00:00",
-      "sent_at": "2026-10-31T23:03:32.108275+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/entertainment/1024096/halloween-spirit-youtube-horror",
-      "title": "Get in the spirit with these horrors from YouTube",
-      "summary": "Rather than recommend a single horror film or an unsettling album for our final installment of spooky season recs, I present you with a small selection of creepy, disturbing, and just plain weird videos from YouTube. There's a little something for everyone here. Whether you're a fan of surreal art house shorts, cosmic horror, or [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-10-31T21:06:58+00:00",
-      "sent_at": "2026-10-31T23:03:32.108275+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2302431/brandon-stirrup-xbox-manager-says-ai-used-game-development/",
-      "title": "Xbox manager says AI is already being used in game development",
-      "summary": "Brandon Stirrup deleted his comments from X a day after saying that AI usage is widespread in the gaming industry.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-10-31T20:00:00+00:00",
-      "sent_at": "2026-10-31T23:03:32.108275+00:00"
-    },
-    {
-      "link": "https://twitter.com/jiahaoshao1/status/2116475922190922088",
-      "title": "Anthropic blocks users for anything touching training larger models",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-31T19:39:19+00:00",
-      "sent_at": "2026-10-31T23:03:32.108275+00:00"
-    },
-    {
-      "link": "https://ryanmadden.net/gpt-56-beats-factorio/",
-      "title": "GPT-5.6 Sol can beat Factorio on peaceful mode",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-31T18:50:34+00:00",
-      "sent_at": "2026-10-31T23:03:32.108275+00:00"
-    },
-    {
-      "link": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/",
-      "title": "Malware uses LLMs to rank victims by how much they're worth",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-31T14:29:03+00:00",
-      "sent_at": "2026-10-31T23:03:32.108275+00:00"
     }
   ]
 }
