@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.engadget.com/2313644/nvidia-gpu-ps5-closest-match-answer-not-simple/",
+      "title": "Which NVIDIA GPU is closest to the PS5? The answer isn't so simple",
+      "summary": "One of the biggest questions when it comes to purchasing a gaming rig is whether to go console or PC. This NVIDIA GPU gives the closest results to a PS5.",
+      "source": "Engadget",
+      "category": "Hardware",
+      "published": "2026-11-15T01:00:00+00:00",
+      "sent_at": "2026-11-15T07:31:36.188248+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2313636/limitations-egpu-vs-onboard-graphics-card-laptop-pc/",
+      "title": "What are the limitations of eGPUs vs onboard graphics cards for laptops?",
+      "summary": "Is it worth it to use an eGPU with your laptop? That depends. Let's take a closer look at the most important factors you should consider.",
+      "source": "Engadget",
+      "category": "Hardware",
+      "published": "2026-11-15T00:30:00+00:00",
+      "sent_at": "2026-11-15T07:31:36.188248+00:00"
+    },
+    {
+      "link": "https://www.spacex.com/launches/starship-flight-15",
+      "title": "SpaceX catches the Starship to end Flight 15",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Innovationen",
+      "published": "2026-11-14T21:22:24+00:00",
+      "sent_at": "2026-11-15T07:31:36.188248+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2316926/watch-spacex-attempt-to-catch-the-starship-upper-stage-for-the-first-time/",
+      "title": "SpaceX successfully catches Starship after launch for the first time",
+      "summary": "While the company has pulled off this trick a few times with Super Heavy boosters, it was a first for the Ship.",
+      "source": "Engadget",
+      "category": "Innovationen",
+      "published": "2026-11-14T20:54:14+00:00",
+      "sent_at": "2026-11-15T07:31:36.188248+00:00"
+    },
+    {
+      "link": "https://www.technologyreview.com/2026/11/13/1148498/silicon-valley-claims-to-know-the-future-so-why-did-it-get-the-midterms-so-wrong/",
+      "title": "Silicon Valley claims to know the future. So why'd it get the midterms so wrong?",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Hardware",
+      "published": "2026-11-14T19:17:45+00:00",
+      "sent_at": "2026-11-15T07:31:36.188248+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/rogue-claude-ai-tasked-with-renumbering-pages-accidentally-deletes-law-professors-entire-syllabus-one-year-of-lecture-notes-youre-right-to-be-angry-i-deleted-your-files-through-my-own-carelessness-humbled-agent-admits",
+      "title": "Claude asked to renumber pages deletes professor's syllabus, year of notes",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-14T17:51:13+00:00",
+      "sent_at": "2026-11-15T07:31:36.188248+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/beware-the-new-ai-fueled-ransomware-boom/",
+      "title": "Beware the New AI-Fueled Ransomware Boom",
+      "summary": "Fully automated ransomware hasn’t arrived—yet. But seemingly unsophisticated attackers are using AI tools to wreak havoc.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-11-14T13:00:00+00:00",
+      "sent_at": "2026-11-15T07:31:36.188248+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/lawyer-upgrades-eight-v100-private-ai-server-to-run-80-percent-of-deepseek-v4-1-flash-at-4-bit-nvfp4-precision-adds-1tb-of-ram-an-nvidia-rtx-3090-and-fixes-crashes-caused-by-a-bad-psu",
+      "title": "Lawyer’s eight-V100 AI server moves DeepSeek from 2-bit to near-NVFP4 precision",
+      "summary": "A lawyer’s eight-GPU Nvidia V100 server now runs DeepSeek V4.1 Flash’s most-used experts at NVFP4 precision instead of 2-bit.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-11-14T12:50:00+00:00",
+      "sent_at": "2026-11-15T07:31:36.188248+00:00"
+    },
+    {
       "link": "https://arstechnica.com/space/2026/11/with-starship-catch-spacex-still-shows-it-can-dazzle-the-world/",
       "title": "With Starship catch, SpaceX still shows it can dazzle the world",
       "summary": "It felt like stepping into the future.",
@@ -3464,78 +3536,6 @@
       "category": "AI",
       "published": "2026-10-31T21:49:07+00:00",
       "sent_at": "2026-11-01T11:39:25.349463+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/31/data-centers-are-now-a-midterm-issue-even-in-brooklyn/",
-      "title": "Data centers are now a midterm issue, even in Brooklyn",
-      "summary": "At a Brooklyn midterm party five days before Election Day, every conversation, from a council member’s fireside chat to a debate about the Democratic Party, kept circling back to AI and data centers.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-11-01T02:22:10+00:00",
-      "sent_at": "2026-11-01T04:17:09.161512+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2300227/how-big-powerful-spacex-starship-rocket/",
-      "title": "How big and powerful is SpaceX's Starship rocket?",
-      "summary": "SpaceX's Starship has a big role to play in NASA's plans to land astronauts on the Moon. Here's how big this rocket is and how its two stages work together.",
-      "source": "Engadget",
-      "category": "Innovationen",
-      "published": "2026-10-31T23:45:00+00:00",
-      "sent_at": "2026-11-01T04:17:09.161512+00:00"
-    },
-    {
-      "link": "https://www.cnn.com/2026/10/31/us/philadelphia-woman-delivery-robots-cec",
-      "title": "Retired professor arrested for blocking delivery robot. Will do it again",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Innovationen",
-      "published": "2026-10-31T13:39:57+00:00",
-      "sent_at": "2026-11-01T04:17:09.161512+00:00"
-    },
-    {
-      "link": "https://www.thebignewsletter.com/p/why-anthropics-filing-crushed-tech",
-      "title": "Why Anthropic's filing crushed tech stocks",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-31T12:32:10+00:00",
-      "sent_at": "2026-11-01T04:17:09.161512+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/kernel-panic-volta-autodoxer-ai-infostealer-malware/",
-      "title": "Spooky New Infostealer Malware Uses AI to ‘Autodox’ Victims",
-      "summary": "Named “Volta-Autodoxer,” the recently uncovered malware uses AI tools to collect troves of data about victims, from login credentials and credit card numbers to Discord sessions and UberEats receipts.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-10-31T12:00:00+00:00",
-      "sent_at": "2026-11-01T04:17:09.161512+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/startup-uses-ai-agent-to-perform-controversial-brain-surgery-on-a-mouse-anthropic-sonnet-controlled-motorized-surgery-rig-ai-given-free-reign-to-treat-epilepsy-with-a-range-of-gene-therapy-vectors-after-opus-5-5-refused-to-conduct-biological-experiment",
-      "title": "AI agent used to perform controversial brain surgery on a mouse, Anthropic Sonnet controlled motorized surgery rig",
-      "summary": "The team had to use Sonnet after Opus 5.5 outright refused to run the experiment, while Opus 5 warned that it could stop working in the midst of the operation.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-31T12:00:00+00:00",
-      "sent_at": "2026-11-01T04:17:09.161512+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/ram/veteran-microsoft-engineer-makes-his-own-ram-from-scratch-using-ai-attempts-to-build-4mb-of-1970s-pdp-11-ram-from-scratch",
-      "title": "Veteran Microsoft engineer makes his own RAM from scratch using AI",
-      "summary": "Expensive memory forces former Microsoft engineer to make his own — Dave Plummer makes PDP-11 RAM from scratch",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-10-31T11:40:00+00:00",
-      "sent_at": "2026-11-01T04:17:09.161512+00:00"
-    },
-    {
-      "link": "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
-      "title": "Do the math: How we took over ChatGPT accounts",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-10-31T10:30:11+00:00",
-      "sent_at": "2026-11-01T04:17:09.161512+00:00"
     }
   ]
 }
