@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/11/16/fbi-says-artex-ai-open-source-hacking-tool-used-to-breach-networks-in-under-three-hours/",
+      "title": "FBI says Artex AI open-source hacking tool used to breach networks in ‘under three hours’",
+      "summary": "The FBI says that the open-source hacking tool was used in cyberattacks targeting a U.S. IT giant and the South Korean financial industry.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-16T17:36:43+00:00",
+      "sent_at": "2026-11-16T17:54:44.410389+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/11/16/tesla-cybercab-giga-berlin-3-billion-1-million/",
+      "title": "Tesla confirms €3B Cybercab factory at Giga Berlin for up to 1M a year",
+      "summary": "Tesla is going to build the Cybercab in Germany. The company confirmed today a first €3 billion investment in a new production building at Giga Berlin designed for up to 1 million Cybercabs a year, with production planned for 2029. That’s a lot of robotaxis for a continent where Tesla can’t operate a single one. Under current EU rules, a driverless vehicle model is capped at 1,500 registrations a year. more…",
+      "source": "Electrek",
+      "category": "Autonomes Fahren",
+      "published": "2026-11-16T17:22:25+00:00",
+      "sent_at": "2026-11-16T17:54:44.410389+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/16/jordan-belforts-new-ai-voice-startup-tone-wants-to-sell-like-the-wolf-of-wall-street/",
+      "title": "Jordan Belfort’s new AI voice startup, Tone, wants to sell like the ‘Wolf of Wall Street’",
+      "summary": "Belfort claims his AI sales voice can already close deals almost as well as the best human salespeople, and he thinks it will catch up in a year.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-16T17:10:00+00:00",
+      "sent_at": "2026-11-16T17:54:44.410389+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/16/openai-will-embed-apollo-researchers-to-investigate-ai-subversion/",
+      "title": "OpenAI will embed Apollo researchers to investigate AI subversion",
+      "summary": "OpenAI will embed six Apollo Research evaluators to investigate whether its AI models engage in subversive behavior, but restrictions on access and disclosure raise questions about their independence.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-16T17:02:43+00:00",
+      "sent_at": "2026-11-16T17:54:44.410389+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/16/openai-releases-a-new-image-classifier-and-chatgpt-warnings-to-combat-csam/",
+      "title": "OpenAI releases a new image classifier and ChatGPT warnings to combat CSAM",
+      "summary": "ChatGPT will ban an account trying to access CSAM content for 24 hours as a warning",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-16T17:00:00+00:00",
+      "sent_at": "2026-11-16T17:54:44.410389+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2317417/google-adds-66-regional-dialects-to-gemini/",
+      "title": "Google adds 66 regional dialects to Gemini",
+      "summary": "From today, Gemini's making more of an effort to speak your language in a way that sounds more accurate.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-11-16T17:00:00+00:00",
+      "sent_at": "2026-11-16T17:54:44.410389+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1034355/trump-jensen-huang-nvidia-return",
+      "title": "Trump says it ‘certainly isn’t a bad idea’ for Jensen Huang to return to Nvidia",
+      "summary": "Following Jensen Huang's resignation as Nvidia's CEO last week, Trump told reporters on Monday that he's open to seeing Huang return and that he's not certain that the woman Huang reportedly had an affair with was in fact a spy. \"I think having Jensen go back- a lot of people are asking Jensen, they think [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-11-16T16:39:36+00:00",
+      "sent_at": "2026-11-16T17:54:44.410389+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/quantum-computing/intel-bets-on-classiq-acquisition-to-turn-quantum-efforts-into-commercially-viable-business-deal-positions-company-as-leading-vendor-of-qubit-chips-acquisition-to-close-by-the-first-half-of-2027",
+      "title": "Intel bets on Classiq acquisition to turn Quantum efforts into commercially viable business — deal positions company as leading vendor of qubit chips, acquisition to close by the first half of 2027",
+      "summary": "Intel aims to turn its quantum computing research effort into a commercial business by combining its silicon spin-qubit technology and manufacturing capabilities with Classiq’s established software platform and customer base.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-11-16T16:30:00+00:00",
+      "sent_at": "2026-11-16T17:54:44.410389+00:00"
+    },
+    {
       "link": "https://www.engadget.com/2317303/apple-new-research-app-designed-to-make-ai-health-tools-user-friendly/",
       "title": "Apple's new research app is designed to make AI health tools more user-friendly",
       "summary": "Apple has unveiled a new research study with the aim of learning how people use AI health tools.",
@@ -3590,24 +3662,6 @@
       "category": "Hardware",
       "published": "2026-11-02T17:54:11+00:00",
       "sent_at": "2026-11-02T19:09:25.326715+00:00"
-    },
-    {
-      "link": "https://paulfwalsh.substack.com/p/metas-muse-ai-agent-is-a-commercial",
-      "title": "Muse AI agent is a commercial surveillance network disguised as an AI assistant",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-11-01T18:33:02+00:00",
-      "sent_at": "2026-11-02T08:51:29.297394+00:00"
-    },
-    {
-      "link": "https://chaosmanage.github.io/i-killed-unlimited-chatgpt/",
-      "title": "I Am the Reason OpenAI Is Killing Unlimited Chats",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-11-01T17:01:34+00:00",
-      "sent_at": "2026-11-02T08:51:29.297394+00:00"
     }
   ]
 }
