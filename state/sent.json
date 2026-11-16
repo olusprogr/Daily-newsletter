@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.engadget.com/2313943/pros-cons-using-cloud-storage-over-local/",
+      "title": "The pros and cons of using cloud storage over local storage",
+      "summary": "Before AI ran rampant through the technology market, cloud storage was the new, big thing, as it seems like every major company has its own cloud service.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-11-16T00:30:00+00:00",
+      "sent_at": "2026-11-16T00:43:49.905421+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/",
+      "title": "Indian chip startup Bharat Semi lands $24M seed round as it eyes global AI sensor market",
+      "summary": "Bharat Semi says it has secured design wins for its AI-enabled sensor technology with companies including General Atomics.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-15T23:30:00+00:00",
+      "sent_at": "2026-11-16T00:43:49.905421+00:00"
+    },
+    {
+      "link": "https://www.reuters.com/world/china/jensen-huang-discusses-comeback-nvidia-ceo-with-allies-ft-reports-2026-11-15/",
+      "title": "Jensen Huang might return to Nvidia as CEO",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Hardware",
+      "published": "2026-11-15T23:24:53+00:00",
+      "sent_at": "2026-11-16T00:43:49.905421+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/space/2026/11/vulcan-rocket-fails-during-launch-dealing-major-blow-to-spacex-competitors/",
+      "title": "Vulcan rocket fails during launch, dealing major blow to SpaceX competitors",
+      "summary": "This was the first total mission failure in United Launch Alliance's 20-year history.",
+      "source": "Ars Technica",
+      "category": "Innovationen",
+      "published": "2026-11-15T23:11:54+00:00",
+      "sent_at": "2026-11-16T00:43:49.905421+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/15/is-bad-news-for-jensen-huang-also-bad-news-for-the-ai-industry/",
+      "title": "Is bad news for Jensen Huang also bad news for the AI industry?",
+      "summary": "\"Jensen is Nvidia, right? And so much of this economy is riding on Nvidia.\"",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-15T21:56:35+00:00",
+      "sent_at": "2026-11-16T00:43:49.905421+00:00"
+    },
+    {
+      "link": "https://www.reuters.com/business/aerospace-defense/us-rocket-fails-after-launch-payload-amazon-internet-satellites-destroyed-2026-11-15/",
+      "title": "Boeing-Lockheed rocket fails mid-flight, destroys payload of Amazon satellites",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Innovationen",
+      "published": "2026-11-15T21:38:11+00:00",
+      "sent_at": "2026-11-16T00:43:49.905421+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/science/1034006/vulcan-rocket-fails-destroying-40-amazon-leo-satellites",
+      "title": "Vulcan rocket fails, destroying 40 Amazon Leo satellites",
+      "summary": "United Launch Alliance (ULA) suffered what is reportedly its first mission failure in its 20-year history, failing to deliver 40 Amazon Leo satellites to orbit. Leo is Amazon's competitor to SpaceX's Starlink, but it has struggled to get off the ground so far, putting only a small portion of the necessary satellites to challenge Starlink [&#8230;]",
+      "source": "The Verge",
+      "category": "Innovationen",
+      "published": "2026-11-15T21:05:02+00:00",
+      "sent_at": "2026-11-16T00:43:49.905421+00:00"
+    },
+    {
+      "link": "https://www.space.com/space-exploration/launches-spacecraft/ula-vulcan-centaur-return-to-flight-amazon-leo-internet-satellite-launch",
+      "title": "Vulcan rocket fails during return-to-flight launch, 40 Amazon satellites lost",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Innovationen",
+      "published": "2026-11-15T20:37:28+00:00",
+      "sent_at": "2026-11-16T00:43:49.905421+00:00"
+    },
+    {
       "link": "https://www.theverge.com/tech/1033999/jensen-huang-return-nvidia-megaspeed",
       "title": "Jensen Huang might be plotting a return and more of the latest Nvidia drama",
       "summary": "The drama around Nvidia co-founder and former CEO Jensen Huang is evolving quickly. The latest edition of our Stepback newsletter should get you up to speed, but there have already been a number of new developments since this morning. That includes rumors that Jensen Huang might be trying to find a path back to CEO, [&#8230;]",
@@ -3500,78 +3572,6 @@
       "category": "AI",
       "published": "2026-11-01T21:49:04+00:00",
       "sent_at": "2026-11-02T01:14:22.616020+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2303469/anthropic-updates-claude-to-stop-it-from-recreating-existing-video-games/",
-      "title": "Anthropic updates Claude to stop it from recreating existing video games",
-      "summary": "Users can still lean on Claude to help with designing original or genre games.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-11-01T21:08:32+00:00",
-      "sent_at": "2026-11-01T21:40:21.374501+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/cyber-security/new-ai-driven-windows-malware-feeds-stolen-data-to-claude-to-rank-victims-assets-by-value-then-deletes-itself-payload-builds-custom-target-assessment-can-switch-models-if-one-refuses-or-skip-the-ai-step-entirely",
-      "title": "New AI-driven Windows malware feeds stolen data to Claude to rank victims’ assets by value, then deletes itself — payload builds custom target assessment, can switch models if one refuses, or skip the AI step entirely",
-      "summary": "Cisco Talos says the VOLTA infostealer sends stolen victim data to Claude Opus 4.6 to rank assets by monetization value.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-11-01T21:00:00+00:00",
-      "sent_at": "2026-11-01T21:40:21.374501+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2303462/judge-says-xai-must-face-naacp-lawsuit-on-data-center-pollution/",
-      "title": "Judge says xAI must face NAACP lawsuit on data center pollution",
-      "summary": "The legal battle revolves around the AI company's operations in southern Memphis.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-11-01T19:19:22+00:00",
-      "sent_at": "2026-11-01T21:40:21.374501+00:00"
-    },
-    {
-      "link": "https://blog.raed.dev/posts/proton-loser-thinking/",
-      "title": "It wasn't AI that flipped Proton's charge",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-11-01T18:53:55+00:00",
-      "sent_at": "2026-11-01T21:40:21.374501+00:00"
-    },
-    {
-      "link": "https://spectrum.ieee.org/ai-slop-trust-science",
-      "title": "Guarding the Gates of Knowledge",
-      "summary": "A recent scroll through social media got me thinking about trust. About half my feed was filled with AI slop that astute users would call out as being machine-generated, often to the embarrassment of the rube who unknowingly spread it and sometimes to the delight of the poster who shared it deliberately because they found it amusing or useful for sowing confusion. Remember the good old days of GPT-3 when we could ask the chatbot anything and it would almost instantly and very confidently spit back a plausible but false answer? That’s when the word “hallucination” as applied to AI answers entered the lexicon. Six years and several versions of a few different chatbots later, I still can’t trust the answers I get, even though Claude or Gemini often do useful work for me. That’s the thing about current AI: Trust but verify. And verify you must. Apply that maxim at scale to maintain the integrity of the scientific record and you get an idea of the challenge facing publishers of peer-reviewed scholarship. In “ I Used AI to Fake a Scientific Paper ,” freelance writer and doctor of applied mathematics Benjamin Skuse tells the story of the human gatekeepers trying to beat back the rising tide of AI slop by attempting to get his own AI-generated papers past IEEE’s defenses. “He basically hit ‘run experiment’ and ‘write paper.’ And then he didn’t do a damn thing to it.” —Eliza Strickland As features and AI beat editor Eliza Strickland told me, Skuse was surprised at just how effortless it was to generate a paper that was more or less plausible and more or less science. For one of his experiments, “he basically hit ‘run experiment’ and ‘write paper,’” she said. “And then he didn’t do a damn thing to it. He just launched it into the maw of the publishing engine.” Skuse discovered that the combination of IEEE’s human-review processes and research-integrity checker programs are currently keeping pace in what amounts to a cat-and-mouse game against people using free tools. But the more advanced LLMs are no longer making the same dumb mistakes the free versions do. That leaves publishers locked in an arms race between increasingly plausible slop and the systems aimed at detecting it. Scholarly publishers aren’t the only ones trying to hold the line against slop. So is that global depository of human-generated knowledge, Wikipedia. For this month’s Five Questions , Strickland interviewed Ellia Lebleu, a founding member of WikiProject AI Cleanup , a volunteer effort to detect and delete AI-generated material from the platform. Lebleu’s team is confronting the same problem as commercial publishers, but with fewer people and fewer tools. “Wikipedia is known as a repository of human-generated information, and they want to hold on to that,” says Strickland. “Who knows how long they’ll be able to do that.” If we can’t collectively assume that the scientific record is trustworthy or that basic facts about the world are accurate, then our understanding of what is real unspools into uncertainty . Perhaps that delights quantum scientists and the grifters who thrive in an information environment where there is no shared reality. But that uncertainty ultimately undermines trust in the institutions that exist to curate the corpus of human knowledge and to promote the advancement of science and technology for the benefit of humanity. Or maybe in a world where AI is doing the science and writing the papers, it won’t matter whether or not humans trust the outputs. As Strickland put it, “Doesn’t it just feel crazy that we’ll have AI writing for other AIs at some point? We’ll just get left out of the loop.”",
-      "source": "IEEE Spectrum",
-      "category": "AI",
-      "published": "2026-11-01T14:00:01+00:00",
-      "sent_at": "2026-11-01T21:40:21.374501+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1024108/homepod-mini-2-hands-on-siri-smart-home-mac-speaker",
-      "title": "HomePod Mini 2 first look: Three things I love and one disappointment",
-      "summary": "When I first heard about the new $149 HomePod Mini 2 at Apple's Welcome Home event last month, I was disappointed. It's been six years since Apple launched its entry-level smart speaker, and all it got in the second gen was a chip bump, some color glowy stuff, and better AirPlay? For $50 more than [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-11-01T14:00:00+00:00",
-      "sent_at": "2026-11-01T21:40:21.374501+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/gpus/open-source-usb-tool-unlocks-nvidias-half-speed-gpu-ai-limiter-on-windows-lifts-gpus-fp16-math-performance-up-to-65-percent-uefi-unlocker-covers-rtx-20-30-and-40-series-desktops-and-laptops",
-      "title": "Open-source USB tool unlocks Nvidia's half-speed GPU AI limiter on Windows",
-      "summary": "An open-source UEFI tool, nv-uefi-unlocker, lifts Nvidia’s tensor rate cap on RTX 20, 30, and 40-series GPUs under Windows.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-11-01T14:00:00+00:00",
-      "sent_at": "2026-11-01T21:40:21.374501+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-agent-swarms-unleashed-in-minecraft-to-build-a-thriving-civilization-50-agent-teams-fail-after-falling-into-paralyzing-bureaucracy",
-      "title": "AI agent swarms unleashed in Minecraft to ‘build a thriving civilization’",
-      "summary": "Researchers recently tested AI agent swarm performance in various Minecraft gaming modes.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-11-01T12:33:52+00:00",
-      "sent_at": "2026-11-01T21:40:21.374501+00:00"
     }
   ]
 }
