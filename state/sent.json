@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/11/17/google-expands-access-to-gemini-tasks-which-can-help-with-calls-purchases/",
+      "title": "Google expands access to Gemini Tasks, which can help with calls, purchases",
+      "summary": "Gemini's Task mode can help users coordinate calls, log into websites, and even make purchases on the user's behalf.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-17T19:02:20+00:00",
+      "sent_at": "2026-11-17T19:35:48.143107+00:00"
+    },
+    {
+      "link": "https://spectrum.ieee.org/ieee-ethics-ai-systems",
+      "title": "IEEE Celebrates 10 Years of Incorporating Ethics Into AI Systems",
+      "summary": "Policymakers, technologists, and members of the public have raised concerns about the harm AI’s rapid advancement might cause to society. Their concerns include bias, data privacy violations, the spread of misinformation, and losing control of AI agents. Those issues are relatively new to many people, but the IEEE Standards Association has been working for the past decade on ways to prioritize the responsible development of AI systems. In 2016 IEEE SA launched the IEEE Global Initiative for Ethical Considerations in Autonomous and Intelligent Systems (A/IS) and published the Ethically Aligned Design report. EAD ’s mission is to encourage everyone involved in designing autonomous and intelligent systems to prioritize human well-being by applying ethical considerations for the benefit of humanity. Developed by a multidisciplinary community of experts from around the world, the report outlined eight foundational principles for A/IS. They include human rights, people’s well-being, and transparency. More than 100 leading AI ethics experts provided input. EAD ’s Version II report was released in 2017. Both versions solicited public input and received hundreds of pages of feedback, according to John C. Havens , who was the global initiative’s founding executive director, and is now the global director for IEEE Planet Positive 2030 . And by 2019, there were more than 400 contributors and the community continues to grow. “ Ethically Aligned Design was the first of its kind in the sense of a report that was more than a list of principles and from an organization with the credibility of IEEE,” Havens says. “At the time it was released, there wasn’t anything like it.” Since its launch, a series of standards has been developed to provide practical guidelines on designing, building, and deploying technology that prioritizes human values. Several AI ethics certification programs have been introduced. This year marks the 10th anniversary of EAD ’s first draft. To celebrate, IEEE SA recently launched a website , a podcast series , and a blog that reflect on the report’s achievements and impact. Eight guiding principles The word ethics is often used interchangeably with morality , but that is not the case in responsible AI systems design, according to EAD ’s first version. The report includes insights from classical ethics traditions and value-based design methodologies to offer actionable recommendations for engineers developing AI tools. The report established eight foundational general principles for designing autonomous systems: respecting human rights, prioritizing increased well-being as success criteria for development, empowering individuals with data agency to have control over their identity, effectiveness, transparency, accountability, awareness of misuse, and competence for the system creators. The principles shift applied ethics to the design stage of AI systems, compared with being a concern after they’re released, the authors wrote. A suite of standards The IEEE 7000 series of standards has been developed based on EAD ’s framework. Currently the series consists of 29 projects, 11 of which have been published, and more are still being added. They cover topics such as ethical system design model process ( IEEE 7000-2021 ), AI system transparency ( IEEE 7001-2021 ), data privacy ( IEEE 7002-2022 ), algorithmic bias considerations ( IEEE 7003 -2024), the impact on people’s well-being ( IEEE 7010-2020 ), machine-readable personal privacy requirements ( IEEE 7012-2025 ), and systems that mimic human empathy ( IEEE 7014-2024 ). AI ethics certifications IEEE SA offers a suite of ethics in AI programs including IEEE CertifAIEd , which includes two certifications : one for individuals and one for products. The professional certification provides individuals with skills to assess autonomous and intelligent systems for adherence to IEEE’s methodology and ethics criteria. “ Ethically Aligned Design was the first of its kind in the sense of a report that was more than a list of principles and from an organization with the credibility of IEEE.” —John C. Havens, founding executive director of the global initiative The product certification program assesses whether an organization’s AI tool or system conforms to the criteria in the IEEE Ontological Specifications. A CertifiAIEd assessor evaluates the product to ensure it meets the criteria. Upon completion of the assessment, the owner submits it to the IEEE Conformity Assessment Program , which can certify it and issue the certification mark. IEEE SA also recently released its Responsible AI for Children certification program . This program certifies that AI products for children have been independently tested and verified to meet design and ethics requirements. New industry connections group The IEEE Artificial Intelligence Systems (AIS) for Global Flourishing Collaborative Industry Collections group was formed to provide the resources, knowledge, and tools needed to prioritize people’s well-being to developers of AI systems. It has more than 200 members. The collaborative describes its work as a practical, systems-level framework for responsible technology design that translates flourishing into applied methods, metrics, and tools that can be used throughout the AIS lifecycle. The group is establishing guidelines for how to design, evaluate, and govern systems that can measurably improve human well-being and ecological sustainability. Subcommittees are focused on cognition, education, faith, planetary care, spirituality, and other issues. “The group is building directly off the well-being chapter of Ethically Aligned Design and the IEEE 7010 standard (Recommended Practice for Assessing the Impact of Autonomous and Intelligent Systems on Human Well-Being),” Havens says. “That’s on purpose because if human and planetary flourishing aren’t addressed first in design, then human well-being and planetary sustainability are afterthoughts.” Podcasts and blogs To mark the 10-year anniversary, IEEE SA created the five-part “ Ethically Aligned Design : 10 Years of Impact” podcast series . It launched on 21 October. New episodes are being released every two weeks. The episodes center around the vision for EAD , the process for selecting its foundational principles, and how they were translated into the IEEE 7000 standards. The first podcast, “Origins of Ethically Aligned Design,” explored early efforts to make ethics a practical part of AI and autonomous system design. The experts discussed challenges, debates, global collaboration, and the real-world impact that helped move responsible technology from ethical principles toward actionable standards and practices. The second podcast, “The Chapters and Committees” focuses on the multidisciplinary groups that worked on turning broad human values into practical guidance for AI and autonomous systems. The podcast discussions serve as material for a thought leadership program that also includes blog articles about the IEEE 7000 series and educational resources to continue to raise awareness and support of this groundbreaking work.",
+      "source": "IEEE Spectrum",
+      "category": "AI",
+      "published": "2026-11-17T19:00:03+00:00",
+      "sent_at": "2026-11-17T19:35:48.143107+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1035756/google-spark-ai-tasks-free",
+      "title": "Google’s Spark AI agent becomes ‘Tasks’ — and now it’s free",
+      "summary": "Google is rebranding its Spark AI agent as \"Tasks\" and making it free to use. The feature, which is powered by Google's new Gemini 4 Hydrogen AI model, can do things like create meal plans, manage your calendar, and dig through your emails to find recurring expenses you might not need. Users in the US [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-11-17T18:58:01+00:00",
+      "sent_at": "2026-11-17T19:35:48.143107+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/17/google-to-keep-gemini-chats-for-two-months-up-from-72-hours-even-with-history-off/",
+      "title": "Google to keep Gemini chats for 2 months, up from 72 hours, even with history off",
+      "summary": "Google's Gemini update extending chat retention will roll out globally over the coming weeks.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-17T18:48:23+00:00",
+      "sent_at": "2026-11-17T19:35:48.143107+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/tech-policy/2026/11/california-sues-openai-to-stop-public-nuisance-of-out-of-control-ai-agents/",
+      "title": "OpenAI sued by California after admitting to 80 loss-of-control incidents",
+      "summary": "AG: OpenAI tested dangerous AI without proper oversight and misled public about it.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-11-17T18:13:34+00:00",
+      "sent_at": "2026-11-17T19:35:48.143107+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/",
+      "title": "Pedestal AI raises $4.7 million to agentify the supply chain",
+      "summary": "The company uses agentic AI to make supply chains faster and more reliable.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-17T18:04:16+00:00",
+      "sent_at": "2026-11-17T19:35:48.143107+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/the-nvidia-scandal-is-about-chip-sales-to-china-trump-wants-to-keep-them-going/",
+      "title": "The Nvidia Scandal Could Upend Chip Sales to China. Trump Wants to Keep Them Going",
+      "summary": "Commerce secretary Howard Lutnick has been under attack for not blacklisting a company caught up in the Jensen Huang scandal. But Trump is on board with the policy.",
+      "source": "Wired",
+      "category": "Hardware",
+      "published": "2026-11-17T18:03:32+00:00",
+      "sent_at": "2026-11-17T19:35:48.143107+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/17/protons-lumo-a-privacy-focused-alternative-to-chatgpt-and-claude-arrives-on-desktop/",
+      "title": "Proton’s Lumo, a privacy-focused alternative to ChatGPT and Claude, arrives on desktop",
+      "summary": "Proton's new Lumo Desktop app for Windows, Mac, and Linux lets users automate tasks across files and connected apps, with granular controls over what its AI can access.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-17T17:32:25+00:00",
+      "sent_at": "2026-11-17T19:35:48.143107+00:00"
+    },
+    {
       "link": "https://www.engadget.com/2318790/apple-adds-new-disk-controls-to-prevent-ai-agents-from-running-amok/",
       "title": "Apple adds new disk controls to prevent AI agents from running amok",
       "summary": "After sounding an alarm about the issue, Apple is taking steps to limit Mac disk access to AI agents.",
@@ -3518,78 +3590,6 @@
       "category": "AI",
       "published": "2026-11-03T20:16:17+00:00",
       "sent_at": "2026-11-03T22:53:07.305354+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2305432/google-says-that-students-in-schools-that-ban-ai-wont-have-access-to-search/",
-      "title": "Google says students in schools that ban AI won't have access to Search",
-      "summary": "This is another example of how closely Google Search is tied to the company's AI products.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-11-03T17:10:43+00:00",
-      "sent_at": "2026-11-03T17:31:27.987758+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/03/anthropic-is-still-grappling-with-the-economics-of-compute/",
-      "title": "Anthropic is still grappling with the economics of compute",
-      "summary": "At a moment when Anthropic's compute margins should be getting better, they’re getting worse.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-11-03T17:07:01+00:00",
-      "sent_at": "2026-11-03T17:31:27.987758+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1025411/google-turn-off-search-ai-features",
-      "title": "Google is entirely disabling Search in schools that don&#8217;t want AI",
-      "summary": "Google is completely turning off Search in schools that reject its AI features, the company told The New York Times. The decision was also shared in a broader education-related update from Google on Tuesday, saying that access to Gemini, Gemini Notebook, Gemini in Classroom, and Google Search \"will be entirely off\" for K-12 student accounts [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-11-03T17:00:04+00:00",
-      "sent_at": "2026-11-03T17:31:27.987758+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/software/windows/windows-11-8gb-ram-configurations-get-a-performance-boost-as-ai-demand-keeps-pushing-prices-up-microsoft-says-windows-is-now-20-percent-more-responsive-multitasking-40-percent-faster-on-memory-constrained-machines",
-      "title": "Windows 11 8GB RAM configurations get a performance boost — As AI demand keeps pushing prices up, Microsoft says Windows is now 20% more responsive, multitasking 40% faster on memory-constrained machines",
-      "summary": "Microsoft claims that it has made drastic improvements to the performance of Windows 11 while using 8GB of RAM.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-11-03T17:00:00+00:00",
-      "sent_at": "2026-11-03T17:31:27.987758+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/03/rivian-spinout-also-owns-up-to-mistakes-in-delayed-e-bike-launch/",
-      "title": "Rivian spinout Also was working on an e-moto project in Kenya — until it walked away",
-      "summary": "Also co-founder and president Chris Yu told TechCrunch that he wanted to prioritize autonomous vehicles.",
-      "source": "TechCrunch",
-      "category": "Autonomes Fahren",
-      "published": "2026-11-03T16:49:09+00:00",
-      "sent_at": "2026-11-03T17:31:27.987758+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/03/google-will-let-schools-disable-its-ai-tools-but-not-without-sacrificing-search/",
-      "title": "Google will let schools disable its AI tools, but not without sacrificing Search",
-      "summary": "Schools choosing to restrict AI altogether will no longer be able to access Google Search, as AI features are now integrated into the search engine.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-11-03T16:30:34+00:00",
-      "sent_at": "2026-11-03T17:31:27.987758+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/data-centers/openai-introduces-program-to-reduce-ai-data-center-energy-demand-during-peak-hours-company-testing-grid-protectors-program-system-in-georgia",
-      "title": "OpenAI introduces program to reduce AI data center energy demand during peak hours",
-      "summary": "The Grid Protectors Program applies load shedding, a technique in use since the 1970s, to data centers.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-11-03T15:56:51+00:00",
-      "sent_at": "2026-11-03T17:31:27.987758+00:00"
-    },
-    {
-      "link": "https://www.quili.ai/",
-      "title": "Quili AI",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-11-03T15:49:02+00:00",
-      "sent_at": "2026-11-03T17:31:27.987758+00:00"
     }
   ]
 }
