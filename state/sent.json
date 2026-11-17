@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.engadget.com/2318790/apple-adds-new-disk-controls-to-prevent-ai-agents-from-running-amok/",
+      "title": "Apple adds new disk controls to prevent AI agents from running amok",
+      "summary": "After sounding an alarm about the issue, Apple is taking steps to limit Mac disk access to AI agents.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-11-17T06:22:11+00:00",
+      "sent_at": "2026-11-17T10:08:54.238214+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/11/16/tesla-cybercab-crashes-speed-problem/",
+      "title": "Tesla Cybercab has crashed 8 times, and the data shows a speed problem",
+      "summary": "Tesla’s Cybercab now has 8 crashes on file with NHTSA, barely two months after the purpose-built robotaxi started giving public rides in Austin. Four happened in driverless “Robotaxi” service, and none topped 5 mph. The other four happened with a test driver on board and Tesla’s driver-assist engaged, including one where a Cybercab hit a car at 53 mph on a highway in Philadelphia. more…",
+      "source": "Electrek",
+      "category": "Autonomes Fahren",
+      "published": "2026-11-16T21:41:36+00:00",
+      "sent_at": "2026-11-17T10:08:54.238214+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/supercomputers/researchers-recognize-that-ai-will-never-replace-hpc-says-amd-executive-high-precision-workloads-will-exist-for-a-very-long-time-even-as-ai-usage-expands",
+      "title": "Researchers ‘recognize that AI will never replace HPC,’ says AMD executive — high-precision workloads will ‘exist for a very long time’ even as AI usage expands",
+      "summary": "The emergence of AI has seemingly posed a threat to high-precision FP64 computation, but AMD doesn't think the HPC world is moving away from those complex calculations in the wake of AI.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-11-16T21:30:00+00:00",
+      "sent_at": "2026-11-17T10:08:54.238214+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/16/apple-reveals-new-mac-security-controls-as-ai-agents-raise-privacy-risks/",
+      "title": "Apple reveals new Mac security controls as AI agents raise privacy risks",
+      "summary": "Following an October announcement, Apple has detailed new permission controls, warnings, and transparency features coming to macOS 27.3 to address risks posed by AI agents and other apps.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-16T21:01:02+00:00",
+      "sent_at": "2026-11-17T10:08:54.238214+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/supercomputers/amd-grabs-over-40-percent-of-new-top500-list-for-supercomputers-up-14-percent-since-last-year-new-lux-system-developed-between-amd-and-department-of-energy-debuts-at-no-14-with-epyc-cpus-and-instinct-mi355x-gpus",
+      "title": "AMD grabs over 40% of new TOP500 list for supercomputers, up 14% since last year",
+      "summary": "AMD's Lux supercomputer debuted at position 14 on the new TOP500 list published during SC26. It's one of two machines AMD is developing as part of a $1 billion deal with the U.S. Department of Energy.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-11-16T21:00:00+00:00",
+      "sent_at": "2026-11-17T10:08:54.238214+00:00"
+    },
+    {
+      "link": "https://www.businessinsider.com/ai-math-class-university-homework-caltech-careers-2026-11",
+      "title": "Caltech professor no longer grades homework's because everyone uses AI",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-16T20:47:53+00:00",
+      "sent_at": "2026-11-17T10:08:54.238214+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1034815/california-openai-hugging-face-lawsuit",
+      "title": "California sues OpenAI over rogue AI hacking incidents",
+      "summary": "California is suing OpenAI after its AI agents broke out of their testing environment and hacked other companies, including Hugging Face. In a lawsuit filed Monday, Attorney General Rob Bonta accuses OpenAI of violating consumer safety law by knowingly developing a \"dangerous product without proper oversight,\" as reported earlier by Reuters. The lawsuit claims the [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-11-16T20:46:01+00:00",
+      "sent_at": "2026-11-17T10:08:54.238214+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1034787/sam-altman-ram-shortage-semafor",
+      "title": "Sam Altman says he wants everyone ‘to have a lot of RAM’",
+      "summary": "OpenAI CEO Sam Altman is once again addressing his controversial comments on PC RAM purchases. \"I want to be clear, I want people to have a lot of RAM, I think everybody should be able to buy a lot of RAM for their own computer,\" Altman said today. \"I think the home tinkering is great.\" [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-11-16T20:41:28+00:00",
+      "sent_at": "2026-11-17T10:08:54.238214+00:00"
+    },
+    {
       "link": "https://www.engadget.com/2318262/nvidia-gou-dont-get-deep-discounts-black-friend-ceo-scandal/",
       "title": "Whether it's Black Friday or a CEO scandal, NVIDIA GPUs just don't get deep discounts",
       "summary": "Hoping the Jensen Huang fallout means cheap RTX cards this Black Friday? Here's what's really driving GPU prices and why deals may be hard to find.",
@@ -3518,150 +3590,6 @@
       "category": "AI",
       "published": "2026-11-03T15:49:02+00:00",
       "sent_at": "2026-11-03T17:31:27.987758+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/03/yvonne-bajela-is-bringing-17m-in-fresh-capital-to-europes-startup-scene/",
-      "title": "Yvonne Bajela is bringing $17M in fresh capital to Europe’s startup scene",
-      "summary": "Evertrue Capital announces $17M debut fund to back early stage AI and fintech.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-11-03T08:01:00+00:00",
-      "sent_at": "2026-11-03T09:21:00.453348+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/02/apple-watchs-ai-features-for-rewinding-and-recapping-conversations-begin-beta-testing/",
-      "title": "Apple Watch’s AI features for rewinding and recapping conversations begin beta testing",
-      "summary": "Now in beta: Apple's new Audio Intelligence features can help you remember what someone said or take notes on conversations.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-11-03T07:20:00+00:00",
-      "sent_at": "2026-11-03T09:21:00.453348+00:00"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/11/02/1147932/heres-who-is-falling-in-line-for-trumps-super-intelligence-loyalty-test/",
-      "title": "Here’s who is falling in line for Trump’s “Super Intelligence” loyalty test",
-      "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. At the end of September, President Trump signed an executive order that contained just one directive, ordering government agencies to rebrand what they had been calling artificial intelligence as “Super Intelligence.” That&#8230;",
-      "source": "MIT Technology Review",
-      "category": "AI",
-      "published": "2026-11-03T04:18:47+00:00",
-      "sent_at": "2026-11-03T09:21:00.453348+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/02/google-takes-dreambeans-to-india-in-bid-to-bring-ai-generated-personal-stories-to-the-masses/",
-      "title": "Google takes Dreambeans to India in bid to bring AI-generated personal stories to the masses",
-      "summary": "Google's Dreambeans, its latest AI experiment, now supports 13 Indian languages.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-11-03T03:30:00+00:00",
-      "sent_at": "2026-11-03T09:21:00.453348+00:00"
-    },
-    {
-      "link": "https://openai.com/index/scaling-git-at-openai/",
-      "title": "Scaling Git at OpenAI",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-11-02T23:47:56+00:00",
-      "sent_at": "2026-11-03T09:21:00.453348+00:00"
-    },
-    {
-      "link": "https://www.seangoedecke.com/llms-are-not-superhuman-at-reading-and-writing-neural-network-weights/",
-      "title": "LLMs are not superhuman at reading and writing neural network weights",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-11-02T22:26:53+00:00",
-      "sent_at": "2026-11-03T09:21:00.453348+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
-      "title": "Anthropic warns that it’s very close to RSI capability, aka self-building AI",
-      "summary": "RSI is the point at which AI grows so good at training itself that it spawns a dramatic acceleration of AI capabilities. To the AI doomers, RSI represents the cataclysm from which there is no return.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-11-02T22:14:50+00:00",
-      "sent_at": "2026-11-03T09:21:00.453348+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2302215/how-long-hdd-ssd-stay-expensive/",
-      "title": "How long could HDDs and SSDs remain expensive?",
-      "summary": "Thanks to shortages of microchips and other computer components, we've been experiencing high prices for years.",
-      "source": "Engadget",
-      "category": "Hardware",
-      "published": "2026-11-02T21:00:00+00:00",
-      "sent_at": "2026-11-03T09:21:00.453348+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/02/apple-may-try-to-increase-revenue-by-doing-something-with-third-party-ai-apps/",
-      "title": "Apple may try to increase revenue by doing…something with third-party AI apps",
-      "summary": "Apple hinted at ways that it could spur revenue through third-party \"opportunities\" during its Monday night earnings call.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-11-03T01:49:52+00:00",
-      "sent_at": "2026-11-03T01:59:09.458618+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/02/ukraines-new-pocket-sized-gadget-turns-russian-drones-cameras-against-them/",
-      "title": "Ukraine’s new pocket-sized gadget turns Russian drones’ cameras against them",
-      "summary": "A Kyiv startup’s pocket-sized, 10-ounce receiver lets Ukrainian troops watch the video feeds of Russian drones, though Russian moves toward digital video and AI-guided drones that emit no signals could make the victory short-lived.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-11-03T01:12:55+00:00",
-      "sent_at": "2026-11-03T01:59:09.458618+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/",
-      "title": "Y Combinator’s Garry Tan uses AI agents so much, he spends up to $200K a year on tokens",
-      "summary": "Y Combinator Garry Tan has jokingly admitted that he's suffered from \"cyber psychosis” and barely sleeps sometimes because he’s so excited to be working with his AI agents. On a new episode of Walter Isaacson’s podcast, The Builders, Tan put a price tag on his passion.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-11-03T00:35:52+00:00",
-      "sent_at": "2026-11-03T01:59:09.458618+00:00"
-    },
-    {
-      "link": "https://finance.yahoo.com/markets/article/the-intel-stock-collapse-is-getting-worse--and-the-37-trillion-chip-rout-is-spreading-212154947.html",
-      "title": "Intel stock collapse worsens as $3.5T chip rout spreads",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Hardware",
-      "published": "2026-11-03T00:08:53+00:00",
-      "sent_at": "2026-11-03T01:59:09.458618+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/",
-      "title": "Trajectory raises $45M to make AI model training accessible to nontechnical experts",
-      "summary": "The one-year-old startup is now valued at $300 million.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-11-02T23:13:53+00:00",
-      "sent_at": "2026-11-03T01:59:09.458618+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/02/apples-inventory-surges-154-as-memory-chip-costs-climb/",
-      "title": "Apple’s inventory surges 154% as memory chip costs climb",
-      "summary": "Apple says unprecedented memory chip costs will continue to rise, raising questions about future device prices as its inventory climbs to $14.5 billion.",
-      "source": "TechCrunch",
-      "category": "Hardware",
-      "published": "2026-11-02T23:04:57+00:00",
-      "sent_at": "2026-11-03T01:59:09.458618+00:00"
-    },
-    {
-      "link": "https://www.regenerator1.com/p/anthropics-growth-just-flattened",
-      "title": "Anthropic's growth just flattened",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-11-02T22:33:20+00:00",
-      "sent_at": "2026-11-03T01:59:09.458618+00:00"
-    },
-    {
-      "link": "https://www.techpolicy.press/the-sec-should-block-anthropics-ipo-to-protect-the-public/",
-      "title": "The SEC Should Block Anthropic's IPO to Protect the Public",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-11-02T22:30:47+00:00",
-      "sent_at": "2026-11-03T01:59:09.458618+00:00"
     }
   ]
 }
