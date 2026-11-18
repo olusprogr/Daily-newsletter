@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/11/17/nvidias-startup-stakes-ballooned-to-65b-but-huangs-exit-puts-future-deals-in-doubt/",
+      "title": "Nvidia’s startup stakes ballooned to $65B, but Huang’s exit puts future deals in doubt",
+      "summary": "The value of Nvidia’s private investments has nearly tripled over the past nine months, fueled by Jensen Huang’s aggressive dealmaking and rising valuations of its existing portfolio companies.",
+      "source": "TechCrunch",
+      "category": "Hardware",
+      "published": "2026-11-18T01:44:21+00:00",
+      "sent_at": "2026-11-18T02:05:42.091940+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/gadgets/2026/11/microsoft-calls-copilot-the-new-os-for-work-at-ignite-keynote/",
+      "title": "Copilot is \"the new OS for work,\" and now Office runs inside of it",
+      "summary": "Word, Excel, and PowerPoint now live inside Copilot; always-on agents are next.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-11-18T00:27:29+00:00",
+      "sent_at": "2026-11-18T02:05:42.091940+00:00"
+    },
+    {
+      "link": "https://revscope.co/blog/search-seo-geo-2026/",
+      "title": "Google's AI answers reducing search traffic by 40%",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-18T00:17:58+00:00",
+      "sent_at": "2026-11-18T02:05:42.091940+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/17/nvidia-promises-that-revenue-will-keep-soaring-for-now/",
+      "title": "Nvidia promises that revenue will keep soaring — for now",
+      "summary": "Despite the turmoil Nvidia is in after the departure of its disgraced founder and CEO Jensen Huang, the company projected that its streak of record-breaking revenue isn't about to stop.",
+      "source": "TechCrunch",
+      "category": "Hardware",
+      "published": "2026-11-18T00:16:50+00:00",
+      "sent_at": "2026-11-18T02:05:42.091940+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2315475/google-gemini-memory-summary-see-what-remembers-about-you/",
+      "title": "You can now see and edit what Google Gemini remembers about you",
+      "summary": "Editing the AI's memory is one way you can shape its responses.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-11-18T00:00:00+00:00",
+      "sent_at": "2026-11-18T02:05:42.091940+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2320041/oregon-is-the-latest-state-to-sue-openai-over-child-safety/",
+      "title": "Oregon is the latest state to sue OpenAI over child safety",
+      "summary": "Oregon's Attorney General filed a lawsuit against the maker of ChatGPT over alleged child safety issues.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-11-17T23:45:32+00:00",
+      "sent_at": "2026-11-18T02:05:42.091940+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1036111/satya-nadella-says-hes-agi-pilled-now",
+      "title": "Satya Nadella says he’s AGI-pilled now",
+      "summary": "Microsoft CEO Satya Nadella says he's AGI-pilled, at least when it comes to how AI might make startling changes to the structure of the economy and how politics might change because of it. \"I am AGI-pilled in the sense that at an economy level, what is the political economy's organization around AGI?\" he asked at [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-11-17T23:41:18+00:00",
+      "sent_at": "2026-11-18T02:05:42.091940+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/17/nvidia-is-abandoning-china-after-jensen-huangs-ouster/",
+      "title": "Nvidia is abandoning China after Jensen Huang’s ouster",
+      "summary": "Nvidia's interim CEO says the company is done selling chips to China. How much will that cost?",
+      "source": "TechCrunch",
+      "category": "Hardware",
+      "published": "2026-11-17T23:37:48+00:00",
+      "sent_at": "2026-11-18T02:05:42.091940+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/11/17/google-expands-access-to-gemini-tasks-which-can-help-with-calls-purchases/",
       "title": "Google expands access to Gemini Tasks, which can help with calls, purchases",
       "summary": "Gemini's Task mode can help users coordinate calls, log into websites, and even make purchases on the user's behalf.",
@@ -3518,78 +3590,6 @@
       "category": "AI",
       "published": "2026-11-03T19:24:37+00:00",
       "sent_at": "2026-11-04T02:53:49.224803+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/",
-      "title": "Anthropic is working on a system to prove AI models’ identity",
-      "summary": "Called FlashProve, the system would let anyone check that an AI response really came from the model it claims to be from.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-11-03T22:41:03+00:00",
-      "sent_at": "2026-11-03T22:53:07.305354+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1025903/sonos-presets-27voice-ai-early-access",
-      "title": "Sonos adds new Presets and prepares for the 27voice AI beta",
-      "summary": "Sonos is rolling out a big app update that includes new Presets and early access to its AI voice assistant. You can create a preset to play music at a specific volume in a certain room, which will appear directly on the homescreen so you can quickly start playback. If you're in the US, you [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-11-03T22:20:50+00:00",
-      "sent_at": "2026-11-03T22:53:07.305354+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/news/1025576/binance-cyrpto-theft-explained",
-      "title": "Binance says hackers used fake job interviews and an internal AI tool to pull off the $6.3 billion heist",
-      "summary": "The largest crypto theft to date was pulled off by combining some well-known hacking techniques over the course of a few months, according to Binance. A postmortem from the company says the process that started with one developer downloading a tampered installer in June apparently spread by a malicious Google ad, exposing details about the [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-11-03T22:04:02+00:00",
-      "sent_at": "2026-11-03T22:53:07.305354+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/03/ted-schleins-ballistic-ventures-seeks-490m-for-new-funds-amid-ai-driven-cybersecurity-boom/",
-      "title": "Ted Schlein’s Ballistic Ventures seeks $490M for new funds amid AI-driven cybersecurity boom",
-      "summary": "Cybersecurity focused Ballistic Ventures is seeking to raise $360 million for a new flagship fund and another $130 million for a separate investment vehicle.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-11-03T21:43:08+00:00",
-      "sent_at": "2026-11-03T22:53:07.305354+00:00"
-    },
-    {
-      "link": "https://arxiv.org/abs/2605.29713",
-      "title": "The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-11-03T21:40:53+00:00",
-      "sent_at": "2026-11-03T22:53:07.305354+00:00"
-    },
-    {
-      "link": "https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months",
-      "title": "US tech giants' hidden AI debt swells 90% to $3.2T in 6 months",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-11-03T21:26:44+00:00",
-      "sent_at": "2026-11-03T22:53:07.305354+00:00"
-    },
-    {
-      "link": "https://www.bloomberg.com/opinion/articles/2026-11-03/ai-investment-boom-demands-stronger-financial-oversight",
-      "title": "The AI Boom May Be Sowing Seeds of Another Financial Crisis",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-11-03T21:25:48+00:00",
-      "sent_at": "2026-11-03T22:53:07.305354+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1025694/apple-siri-ai-third-party-apps",
-      "title": "Apple starts giving Siri AI access to third-party apps",
-      "summary": "Apple will now let Siri AI perform actions across third-party apps. As part of the iOS 27.3 update rolling out on Tuesday, Apple announced developers can now integrate Siri AI's new features in \"all apps,\" allowing the voice assistant to draw on a user's personal context, process natural language prompts, and use on-screen awareness to [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-11-03T20:16:17+00:00",
-      "sent_at": "2026-11-03T22:53:07.305354+00:00"
     }
   ]
 }
