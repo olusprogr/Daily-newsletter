@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.wired.com/story/litter-robot-promo-code/",
+      "title": "Litter-Robot Promo Codes: Up to $150 Off",
+      "summary": "Get the latest Litter-Robot Discounts on Litter-Robot self-cleaning litter boxes, accessories, and more.",
+      "source": "Wired",
+      "category": "Innovationen",
+      "published": "2026-11-19T06:00:00+00:00",
+      "sent_at": "2026-11-19T09:51:16.558536+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/11/18/tesla-crashes-make-headlines-lidar-makes-sense-ionna-makes-it-easy/",
+      "title": "Tesla crashes make headlines, Lidar makes sense, IONNA makes it easy",
+      "summary": "On today’s high-impact episode of Quick Ch a rge , we’ve got a flurry of fatal Tesla crashes allegedly involving Autopilot and FSD making headlines – and they all feel weirdly familiar. Is there any way to keep this from happening again? more…",
+      "source": "Electrek",
+      "category": "Autonomes Fahren",
+      "published": "2026-11-19T01:50:06+00:00",
+      "sent_at": "2026-11-19T09:51:16.558536+00:00"
+    },
+    {
+      "link": "https://arxiv.org/abs/2607.29378",
+      "title": "Previous-Token Prediction Based LLM Inversion for Prompt Reconstruction",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-19T01:27:02+00:00",
+      "sent_at": "2026-11-19T09:51:16.558536+00:00"
+    },
+    {
+      "link": "https://www.lawyerscommittee.org/lawyers-committee-files-lawsuit-on-behalf-of-black-students-detained-and-searched-due-to-ai-alert-falsely-identifying-a-bag-of-chips-as-a-firearm/",
+      "title": "Black high school students sue after AI mistakes Doritos bag for gun",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-19T00:57:20+00:00",
+      "sent_at": "2026-11-19T09:51:16.558536+00:00"
+    },
+    {
+      "link": "https://claudia.gallery/fable/",
+      "title": "Fable: Written, painted and directed by Claude Fable 5.2",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-19T00:18:18+00:00",
+      "sent_at": "2026-11-19T09:51:16.558536+00:00"
+    },
+    {
+      "link": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+      "title": "Anthropic prices initial public offering",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-18T23:30:09+00:00",
+      "sent_at": "2026-11-19T09:51:16.558536+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/guys-really-we-got-this/",
+      "title": "Does Nvidia Got This? Interim CEO Colette Kress Says It’s Got This",
+      "summary": "WIRED is tallying up how many times Nvidia’s interim CEO has assured everyone that the company has everything under control.",
+      "source": "Wired",
+      "category": "Hardware",
+      "published": "2026-11-18T22:16:23+00:00",
+      "sent_at": "2026-11-19T09:51:16.558536+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range/",
+      "title": "Anthropic prices IPO at $83 a share, above projected range",
+      "summary": "The long-awaited IPO reportedly values the company at $1.5 trillion on a fully diluted basis.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-18T22:11:15+00:00",
+      "sent_at": "2026-11-19T09:51:16.558536+00:00"
+    },
+    {
       "link": "https://www.theverge.com/tech/1037448/elon-musk-ukraine-starlink-starshield-nyt-dealbook",
       "title": "Elon Musk tries to explain what&#8217;s going on with Ukraine and Starlink",
       "summary": "Elon Musk said Ukrainian president Volodymyr Zelenskyy is lying about disruptions to Starshield in Ukraine and that he's trying to misuse SpaceX's consumer service, Starlink, for military purposes. Musk made the comments at The New York Times' DealBook Summit on Wednesday as he tried to explain the conflict following weeks of back and forth between [&#8230;]",
@@ -3446,78 +3518,6 @@
       "category": "AI",
       "published": "2026-11-05T14:42:00+00:00",
       "sent_at": "2026-11-05T16:05:23.331884+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/meta-quest-promo-code/",
-      "title": "Meta Quest Promo Codes and Coupons for November 2026",
-      "summary": "Experience cutting-edge VR and save up to 20% with coupons for the latest games, Meta Quest 3, Ray-Ban AI glasses, and more deals.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-11-05T06:00:00+00:00",
-      "sent_at": "2026-11-05T07:41:00.357252+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage/",
-      "title": "Apple is reportedly cutting budgets for its internal AI usage",
-      "summary": "The company is said to be significantly dropping the amount it's spending on AI for its engineering teams.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-11-05T01:26:22+00:00",
-      "sent_at": "2026-11-05T07:41:00.357252+00:00"
-    },
-    {
-      "link": "https://www.404media.co/american-voters-overwhelmingly-reject-ai-data-centers/",
-      "title": "American Voters Overwhelmingly Reject AI Data Centers",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-11-05T00:43:13+00:00",
-      "sent_at": "2026-11-05T07:41:00.357252+00:00"
-    },
-    {
-      "link": "https://orchidfiles.com/youll-need-nerves-of-steel-to-work-with-ai-agents/",
-      "title": "You'll need nerves of steel to work with AI agents",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-11-05T00:01:30+00:00",
-      "sent_at": "2026-11-05T07:41:00.357252+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/",
-      "title": "Meta acquires AI coding startup Conductor",
-      "summary": "The startup allows software engineers to deploy teams of agents to work on various aspects of a project simultaneously.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-11-04T21:10:56+00:00",
-      "sent_at": "2026-11-05T07:41:00.357252+00:00"
-    },
-    {
-      "link": "https://www.davidralphlewis.co.uk/posts/everything-is-an-ai-scam-now/",
-      "title": "Everything is an AI scam now",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-11-04T21:05:19+00:00",
-      "sent_at": "2026-11-05T07:41:00.357252+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/tech-policy/2026/11/big-tech-claims-voters-ai-backlash-is-anti-trump-not-anti-tech/",
-      "title": "Big Tech claims voters’ AI backlash is “anti-Trump” not “anti-tech”",
-      "summary": "Tech industry in denial as US overwhelmingly votes to restrict AI, data centers.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-11-04T20:55:50+00:00",
-      "sent_at": "2026-11-05T07:41:00.357252+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/the-biggest-pro-ai-super-pac-network-didnt-really-impact-the-midterms/",
-      "title": "The Biggest Pro-AI Super PAC Network Didn’t Really Impact the Midterms",
-      "summary": "Leading the Future, backed by Silicon Valley’s biggest billionaires, had a war chest of $100 million and an aggressive stance against AI regulation. All of it didn’t add up to much on Tuesday night.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-11-04T20:41:29+00:00",
-      "sent_at": "2026-11-05T07:41:00.357252+00:00"
     }
   ]
 }
