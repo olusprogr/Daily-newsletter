@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://arstechnica.com/science/2026/11/llms-will-provide-accurate-climate-info-except-when-they-wont/",
+      "title": "LLMs will provide accurate climate info, except when they won’t",
+      "summary": "Some models fare better, but all fail in similar ways.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-11-19T18:44:39+00:00",
+      "sent_at": "2026-11-19T18:50:45.696988+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2322144/anthropic-is-now-a-public-company-worth-more-than-1-trillion/",
+      "title": "Anthropic is now a public company worth more than $1 trillion",
+      "summary": "The company was briefly valued at more than $2 trillion.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-11-19T18:41:26+00:00",
+      "sent_at": "2026-11-19T18:50:45.696988+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1037902/google-gemini-macos-ai-computer-use",
+      "title": "Gemini on Mac can now use your computer",
+      "summary": "Google's Gemini app for macOS now has computer use, meaning it can help you \"get multi-step tasks done across your local files, desktop apps, and the web,\" the company says. Google suggests the feature might be useful for things like speeding up workflows, filling in forms, making presentations, and listing items for sale. Users will [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-11-19T18:21:13+00:00",
+      "sent_at": "2026-11-19T18:50:45.696988+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1037848/motorola-razr-flex-wide-foldable-folding-smartphone-android-leak",
+      "title": "Leaked images reveal Motorola’s wide foldable",
+      "summary": "New leaked images of Motorola's next folding smartphone shared by SammyGuru add more credence to the theory that widescreen could be the default design for foldables moving forward. Following a single leaked shot shared to Reddit yesterday, this new crop of images reveal the Motorola Razr Flex from several angles in two finishes with its [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-11-19T18:19:03+00:00",
+      "sent_at": "2026-11-19T18:50:45.696988+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/",
+      "title": "Google gives Gemini the ability to use your Mac for you",
+      "summary": "Google's latest update to Gemini brings an AI agent to the Mac that can organize files, fill out forms, and tackle multistep workflows.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-19T18:09:11+00:00",
+      "sent_at": "2026-11-19T18:50:45.696988+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2321988/google-signs-deal-with-blue-origin-to-send-satellite-data-centers-into-orbit/",
+      "title": "Google signs deal with Blue Origin to send satellite data centers into orbit",
+      "summary": "This is part of Project Suncatcher, an experiment aimed at running AI systems in space.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-11-19T17:38:44+00:00",
+      "sent_at": "2026-11-19T18:50:45.696988+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/",
+      "title": "Meta’s AI agent Muse is mixing up conversations and exposing private data, report says",
+      "summary": "In some of these instances, employees said Muse surfaced messages about childcare requests they never made, career advice they never asked for, product orders they never placed, and bank account balances that didn't belong to them.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-19T17:38:40+00:00",
+      "sent_at": "2026-11-19T18:50:45.696988+00:00"
+    },
+    {
+      "link": "https://www.anthropic.com/research/claude-black-hole-physics",
+      "title": "Claude Fable 5.2 solves two open problems in the physics of black holes",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-19T17:30:44+00:00",
+      "sent_at": "2026-11-19T18:50:45.696988+00:00"
+    },
+    {
       "link": "https://www.wired.com/story/litter-robot-promo-code/",
       "title": "Litter-Robot Promo Codes: Up to $150 Off",
       "summary": "Get the latest Litter-Robot Discounts on Litter-Robot self-cleaning litter boxes, accessories, and more.",
@@ -3446,78 +3518,6 @@
       "category": "AI",
       "published": "2026-11-05T19:48:28+00:00",
       "sent_at": "2026-11-05T22:31:10.268518+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/05/dropbox-acquires-tigris-data-for-350m-to-bolster-its-ai-iinfrastructure/",
-      "title": "Dropbox acquires Tigris Data for $350M to bolster its AI infrastructure",
-      "summary": "The deal is expected to support the development of DBX Agent Cloud, a new storage platform aimed at developers building AI models and agents.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-11-05T15:19:05+00:00",
-      "sent_at": "2026-11-05T16:05:23.331884+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/05/elevenlabs-now-lets-users-publish-ai-generated-music-directly-on-soundcloud/",
-      "title": "ElevenLabs now lets users publish AI-generated music directly on SoundCloud",
-      "summary": "ElevenLabs said more than 25 million tracks have been generated using its music models.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-11-05T15:00:00+00:00",
-      "sent_at": "2026-11-05T16:05:23.331884+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/podcast/1024438/willy-shih-supply-chain-ai-chips-ram-where-does-my-stuff-come-from-book",
-      "title": "The hidden supply chain costs of the AI boom",
-      "summary": "Today, I’m talking with Willy Shih, an economist, a professor of management practice at Harvard Business School, and the author of the upcoming book, Where Does My Stuff Come From? The Powerful Economics Behind Global Supply Chains. Willy is one of my all-time favorite Decoder guests — his way of looking at the world through [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-11-05T15:00:00+00:00",
-      "sent_at": "2026-11-05T16:05:23.331884+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1027427/ai-music-soundcloud-elevenlabs",
-      "title": "You can post AI music straight to SoundCloud from ElevenLabs",
-      "summary": "After partnering with Moises earlier this year, SoundCloud is now adding integration with another AI music platform, ElevenLabs. Now, rather than having to export and download your outputs from ElevenLabs and then upload them to SoundCloud, you can publish them directly. As part of the partnership, SoundCloud Artist Pro subscribers are also getting three months [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-11-05T15:00:00+00:00",
-      "sent_at": "2026-11-05T16:05:23.331884+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1027444/instagram-edits-desktop-ai-agents-muse-mcp",
-      "title": "You can edit your videos with AI on Instagram&#8217;s new desktop Edits app",
-      "summary": "Instagram's standalone video editing app is now available on macOS, where you can plug in your AI agent of choice to assemble your videos. Instagram's Matthew Simari, head of product management for Edits, said in an interview with The Verge, \"One of the things we're releasing with Edits Desktop is a MCP for all the [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-11-05T15:00:00+00:00",
-      "sent_at": "2026-11-05T16:05:23.331884+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/cpus/intel-leaker-claims-nova-lake-desktop-chips-have-5-1-ghz-clock-limit-beyond-90-c-high-clock-speeds-could-demand-significant-cooling-for-next-gen-chips",
-      "title": "Intel leaker claims Nova Lake desktop chips have 5.1 GHz clock limit beyond 90°C",
-      "summary": "A known Intel leaker claims that Intel's next-generation processors will top out at 5.1 GHz if the CPU core temperatures aren't kept below 90°C.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-11-05T14:57:51+00:00",
-      "sent_at": "2026-11-05T16:05:23.331884+00:00"
-    },
-    {
-      "link": "https://kottke.org/26/11/stunning-image-of-our-satellite-choked-night-skies",
-      "title": "Image of Our Satellite-Choked Night Skies",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Innovationen",
-      "published": "2026-11-05T14:49:07+00:00",
-      "sent_at": "2026-11-05T16:05:23.331884+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/05/ainas-smart-ring-has-a-screen-a-joystick-and-a-mic-so-you-can-talk-to-ai-agents/",
-      "title": "Aina’s smart ring has a screen, a joystick and a mic so you can talk to AI agents",
-      "summary": "Aina's ring can also take calls and help you dictate notes on your Mac.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-11-05T14:42:00+00:00",
-      "sent_at": "2026-11-05T16:05:23.331884+00:00"
     }
   ]
 }
