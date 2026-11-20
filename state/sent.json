@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.engadget.com/2323016/openai-brings-its-collaborative-space-hubs-to-plus-users/",
+      "title": "OpenAI brings its collaborative Space hubs to Plus users",
+      "summary": "You can upload documents, files and more to the hubs for easy sharing.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-11-20T18:00:00+00:00",
+      "sent_at": "2026-11-20T18:16:29.497957+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/20/chips-can-survive-the-space-environment-can-their-financing/",
+      "title": "Chips can survive the space environment. Can their financing?",
+      "summary": "Lenders don't want SpaceX shooting their collateral into orbit. What does that mean for space data centers writ large?",
+      "source": "TechCrunch",
+      "category": "Hardware",
+      "published": "2026-11-20T17:40:01+00:00",
+      "sent_at": "2026-11-20T18:16:29.497957+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2323187/nothings-ai-device-debuts-december-8-and-it-looks-like-two-vapes-stuck-together/",
+      "title": "Nothing's AI device debuts December 8, and it looks like two vapes stuck together",
+      "summary": "Thanks, Swedish House Mafia. I guess.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-11-20T17:32:02+00:00",
+      "sent_at": "2026-11-20T18:16:29.497957+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem",
+      "title": "Anthropic mathematician claims to have solved prestigious Millennium Prize problem with Claude",
+      "summary": "Anthropic mathematician Levent Alp&#246;ge claims he has proved the Riemann hypothesis, one of mathematics's most notoriously difficult problems, with the help of Claude, cracking a puzzle that has eluded some of the world's best mathematicians for decades. If verified, it would mark yet another seismic achievement for AI in mathematics and add to the upheaval [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-11-20T16:34:13+00:00",
+      "sent_at": "2026-11-20T18:16:29.497957+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-mathematician-claims-to-have-solved-167-year-old-math-problem-with-claude-riemann-hypothesis-proof-allegedly-discovered-but-remains-unconfirmed",
+      "title": "Anthropic mathematician claims to have solved 167-year-old math problem with Claude",
+      "summary": "An anthropic mathematician claims to have solved the Riemann hypothesis using Claude.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-11-20T16:30:08+00:00",
+      "sent_at": "2026-11-20T18:16:29.497957+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/dont-bring-jensen-back/",
+      "title": "Don’t Bring Jensen Back",
+      "summary": "A mob of tech bros is clamoring for Nvidia to reinstate Jensen Huang as CEO. It's a bad idea.",
+      "source": "Wired",
+      "category": "Hardware",
+      "published": "2026-11-20T16:00:00+00:00",
+      "sent_at": "2026-11-20T18:16:29.497957+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/11/20/tesla-fsd-italy-approval-assisted-driving/",
+      "title": "Tesla FSD approved in Italy, the first big EU market to say yes",
+      "summary": "Italy’s transport ministry has granted provisional approval to Tesla Assisted Driving, the name Tesla now uses for “Full Self-Driving (Supervised)” in Europe. Italy becomes the 12th European country to allow the system, and the first of the EU’s big markets. It also didn’t wait for Brussels. The EU committee that decides on bloc-wide recognition isn’t expected to vote until December at the earliest. more…",
+      "source": "Electrek",
+      "category": "Autonomes Fahren",
+      "published": "2026-11-20T15:50:46+00:00",
+      "sent_at": "2026-11-20T18:16:29.497957+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/get-32gb-of-ddr5-ram-for-usd111-in-this-premium-am5-gaming-bundle-from-newegg-4-item-combo-includes-9950x3d-32gb-v-color-ddr5-ram-asus-rog-strix-x870e-e-gaming-motherboard-and-2tb-samsung-990-pro-ssd-for-only-usd1-549",
+      "title": "Get 32GB of DDR5 RAM for $111 in this premium AM5 gaming bundle from Newegg",
+      "summary": "Newegg’s freshest Black Friday combo deal takes $369 off four premium PC components, including the Ryzen 9 9950X3D, 32GB DDR5-6000 RAM, Asus ROG Strix X870E-E motherboard, 2TB Samsung SSD, and a free MSI AIO for just $1,549.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-11-20T14:30:06+00:00",
+      "sent_at": "2026-11-20T18:16:29.497957+00:00"
+    },
+    {
       "link": "https://www.engadget.com/2322656/openai-is-testing-dots-personal-agents-on-its-20-per-month-plus-tier/",
       "title": "OpenAI is testing Dots personal agents on its $20 per month Plus tier",
       "summary": "OpenAI is expanding access to Dots, the proactive AI agents that can work for you without any supervision or assistance.",
@@ -3446,78 +3518,6 @@
       "category": "AI",
       "published": "2026-11-06T17:21:15+00:00",
       "sent_at": "2026-11-06T18:51:45.389742+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2308870/perplexity-teammates-ai-agents-for-ongoing-work/",
-      "title": "Perplexity's 'teammates' are the company's AI agents for daily work tasks",
-      "summary": "Perplexity launches personal AI agents that can act as your 'teammates.'",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-11-06T11:18:59+00:00",
-      "sent_at": "2026-11-06T11:47:33.634417+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/semiconductors/gelsinger-backed-nagare-labs-capacitorless-z2ram-promises-sram-speed-with-dram-density-latest-published-cell-retains-data-for-over-300-seconds-at-85-c-but-further-figures-are-projected",
-      "title": "Gelsinger-backed Nagare Labs’ Z2RAM promises SRAM speed at DRAM density",
-      "summary": "Georgia Tech spinout Nagare Labs, backed by Playground Global, unveils Z2RAM, a capacitorless memory to stack on AI accelerators.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-11-06T11:00:00+00:00",
-      "sent_at": "2026-11-06T11:47:33.634417+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/transportation/1028542/tesla-cybertruck-winding-down-production-2027",
-      "title": "Tesla is ‘winding down’ production of the Cybertruck next year",
-      "summary": "Tesla is getting the Cybertruck ready for retirement in an effort to ramp up its robotaxi output. In an X post on Friday, Tesla CEO Elon Musk said that the company will be \"winding down\" Cybertruck production at its Texas Gigafactory sometime around the middle of next year, \"to make room for increased Cybercab production.\" [&#8230;]",
-      "source": "The Verge",
-      "category": "Autonomes Fahren",
-      "published": "2026-11-06T10:42:52+00:00",
-      "sent_at": "2026-11-06T11:47:33.634417+00:00"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/11/06/1148090/i-watched-a-humanoid-robot-clean-my-apartment-it-felt-like-a-taste-of-the-future/",
-      "title": "I watched a humanoid robot clean my apartment. It felt like a taste of the future.",
-      "summary": "I’m not the sort of person who typically pays for a house cleaner. I’m too frugal, and I kind of enjoy putting on a podcast and going to town on my tub with a Magic Eraser. But when I saw an X post about a new humanoid-robot cleaning service in San Francisco, I immediately signed&#8230;",
-      "source": "MIT Technology Review",
-      "category": "Innovationen",
-      "published": "2026-11-06T10:00:00+00:00",
-      "sent_at": "2026-11-06T11:47:33.634417+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2308832/airbnb-ai-travel-agent-2027-launch/",
-      "title": "Airbnb is threatening to launch an AI travel agent next year",
-      "summary": "Airbnb is developing an AI travel agent that it says will eventually be able to help plan your whole trip.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-11-06T07:51:42+00:00",
-      "sent_at": "2026-11-06T11:47:33.634417+00:00"
-    },
-    {
-      "link": "https://github.com/ppmpreetham/BUI",
-      "title": "Blender's UI and Runtime: Much Faster Than GPUI",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Hardware",
-      "published": "2026-11-06T07:40:35+00:00",
-      "sent_at": "2026-11-06T11:47:33.634417+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m/",
-      "title": "Palo Alto Networks in talks to buy AI agent security startup Clutch for $500M",
-      "summary": "Clutch, backed by Lightspeed and SignalFire, was last valued at $85 million, according to a source.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-11-06T06:28:32+00:00",
-      "sent_at": "2026-11-06T11:47:33.634417+00:00"
-    },
-    {
-      "link": "https://www.lesswrong.com/posts/DALNiKBjMGMF8grme/arjun-panickssery-s-shortform?commentId=fJtaHHHfx45tD7BSL",
-      "title": "I struggle to believe that AI R&D is ingenious",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-11-06T05:19:04+00:00",
-      "sent_at": "2026-11-06T11:47:33.634417+00:00"
     }
   ]
 }
