@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
+      "title": "Apple may be developing its own AI agent that runs your Mac",
+      "summary": "The iPhone maker appears to be building agents that can compete with the likes of Meta Muse, Instinct, Claude, and OpenAI Dots.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-20T00:56:01+00:00",
+      "sent_at": "2026-11-20T01:01:33.014508+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/19/anthropics-7-founders-cashed-out-nearly-2b-in-record-breaking-ipo/",
+      "title": "Anthropic’s 7 founders cashed out nearly $2B in record-breaking IPO",
+      "summary": "At the upgraded $83/share IPO price, Anthropic's seven founders each pocketed $280 million, while the company nabbed nearly $105 billion.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-20T00:43:50+00:00",
+      "sent_at": "2026-11-20T01:01:33.014508+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/19/anthropic-rival-says-companies-can-mostly-skip-the-pricey-models/",
+      "title": "Anthropic rival says companies can (mostly) skip the pricey models",
+      "summary": "On the day Anthropic went public, Fireworks AI’s co-founder made the case for open-source models as a cheaper alternative, and addressed the breaches that have cost the company some customers’ trust.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-20T00:26:03+00:00",
+      "sent_at": "2026-11-20T01:01:33.014508+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2322586/job-posting-seemingly-confirms-apple-is-working-on-its-own-ai-agent-for-coding-and-other-tasks/",
+      "title": "Job posting seemingly confirms Apple is working on its own AI agent for coding and other tasks",
+      "summary": "Apple is is hiring a senior engineering manager to build \"capable, reliable and safe\" agentic tools.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-11-20T00:03:22+00:00",
+      "sent_at": "2026-11-20T01:01:33.014508+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/19/elon-musk-says-spacex-has-a-plan-to-eliminate-cell-phone-dead-zones/",
+      "title": "Elon Musk says SpaceX has a plan to eliminate cell phone dead zones",
+      "summary": "SpaceX CEO Elon Musk said the company has completed the design of a miniature rooftop cell tower that could provide better coverage to mobile phones and eliminate dead zones.",
+      "source": "TechCrunch",
+      "category": "Innovationen",
+      "published": "2026-11-19T23:37:56+00:00",
+      "sent_at": "2026-11-20T01:01:33.014508+00:00"
+    },
+    {
+      "link": "https://git-aarvin.github.io/mei/",
+      "title": "Gemini 4 Neon is the new #1 on the Models Engineering Index",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-19T23:35:35+00:00",
+      "sent_at": "2026-11-20T01:01:33.014508+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2322541/metas-muse-charm-will-reportedly-cost-300-and-come-with-free-verizon-5g/",
+      "title": "Meta's Muse Charm will reportedly cost $300 and come with free Verizon 5G",
+      "summary": "Meta's standalone AI gadget won't be cheap, but it might come with a free data plan.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-11-19T22:56:42+00:00",
+      "sent_at": "2026-11-20T01:01:33.014508+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/19/want-to-see-your-live-ai-usage-on-your-macs-icons-this-clever-new-app-lets-you/",
+      "title": "Want to see your live AI usage on your Mac’s icons? This clever new app lets you",
+      "summary": "IconSwapper brings your Mac's app icons to life with real-time data, animations, and playful customizations that make your desktop more fun.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-19T22:33:26+00:00",
+      "sent_at": "2026-11-20T01:01:33.014508+00:00"
+    },
+    {
       "link": "https://arstechnica.com/science/2026/11/llms-will-provide-accurate-climate-info-except-when-they-wont/",
       "title": "LLMs will provide accurate climate info, except when they won’t",
       "summary": "Some models fare better, but all fail in similar ways.",
@@ -3446,78 +3518,6 @@
       "category": "AI",
       "published": "2026-11-05T22:17:15+00:00",
       "sent_at": "2026-11-06T03:08:00.691329+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1028302/perplexity-teammates-ai-agents-work",
-      "title": "Perplexity launches its own take on AI agents for work",
-      "summary": "Perplexity is taking on OpenAI and Anthropic with its own work-focused AI agents. The startup's new always-on \"Teammates\" can take on multiple roles within a workspace, while pulling existing projects, skills, and memory from the Perplexity tools you already use. Teammates integrate with Perplexity Computer, an AI system that can deploy agents on your device [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-11-05T22:26:50+00:00",
-      "sent_at": "2026-11-05T22:31:10.268518+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/ai/2026/11/google-schools-can-keep-search-while-skipping-gemini-but-ai-search-is-non-negotiable/",
-      "title": "Google: Schools can keep search while skipping Gemini, but AI search is non-negotiable",
-      "summary": "Google is technically offering schools more choice but not the choices anyone wants.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-11-05T21:40:36+00:00",
-      "sent_at": "2026-11-05T22:31:10.268518+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/tech-policy/2026/11/lawsuit-man-introduced-his-wife-to-chatgpt-she-used-it-to-plan-his-murder/",
-      "title": "Lawsuit: Man introduced his wife to ChatGPT. She used it to plan his murder.",
-      "summary": "Bitter energy drinks turned out to be ChatGPT-steered poisoning, lawsuit says.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-11-05T21:39:40+00:00",
-      "sent_at": "2026-11-05T22:31:10.268518+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/ads-in-chatbots-have-arrived-heres-whats-working-and-whats-not/",
-      "title": "Ads in Chatbots Have Arrived. Here’s What’s Working—and What’s Not",
-      "summary": "As Anthropic maintains its vow to keep ads out of Claude, the rest of the AI chatbot industry is racing to win over advertisers without antagonizing users.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-11-05T21:37:18+00:00",
-      "sent_at": "2026-11-05T22:31:10.268518+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/05/serve-robotics-launches-new-business-to-become-the-aws-for-robots/",
-      "title": "Serve Robotics launches new business to become the AWS for robots",
-      "summary": "Serve Robotics announced alonsgside its third-quarter earnings that it will launch a new business line called Physical AI Services to offer customers its connectivity and data tools.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-11-05T21:15:00+00:00",
-      "sent_at": "2026-11-05T22:31:10.268518+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2308541/google-is-ditching-firebase-studio-soon-and-it-wants-you-to-use-its-newer-ai-tools-instead/",
-      "title": "Google is ditching Firebase Studio soon, and it wants you to use its newer AI tools instead",
-      "summary": "The company is going all-in on Antigravity and Google AI Studio and hopes developers will do the same.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-11-05T21:01:28+00:00",
-      "sent_at": "2026-11-05T22:31:10.268518+00:00"
-    },
-    {
-      "link": "https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/",
-      "title": "Tencent Launches Hy4, One of the Leading Open-Source AI Models",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-11-05T20:21:43+00:00",
-      "sent_at": "2026-11-05T22:31:10.268518+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/05/meta-says-us-users-can-now-video-chat-with-their-muse-ai-avatar/",
-      "title": "Meta says US users can now video chat with their Muse AI avatar",
-      "summary": "Meta's AI agent can now take calls as a customizable animated avatar, ahead of the launch of a Tamagotchi-like wearable designed to bring Muse to life.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-11-05T19:48:28+00:00",
-      "sent_at": "2026-11-05T22:31:10.268518+00:00"
     }
   ]
 }
