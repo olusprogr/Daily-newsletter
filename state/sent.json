@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/",
+      "title": "A tale of two Nvidias",
+      "summary": "We got two very different pictures of Nvidia — the company’s latest earnings report vs. the tech executives loudly calling for Jensen Huang’s return.",
+      "source": "TechCrunch",
+      "category": "Hardware",
+      "published": "2026-11-21T21:07:42+00:00",
+      "sent_at": "2026-11-21T21:31:40.909378+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
+      "title": "The UN fails to agree on rules regulating ‘killer robots’",
+      "summary": "One of the items on the agenda for UN diplomats meeting in Geneva this week was working towards rules regarding the use of autonomous weapons, or so-called \"killer robots.\" Eventually, representatives left the meetings agreeing to \"start discussing options\" after a largely fruitless week of negotiations. According to NPR: Before the negotiations got underway, the [&#8230;]",
+      "source": "The Verge",
+      "category": "Innovationen",
+      "published": "2026-11-21T20:03:37+00:00",
+      "sent_at": "2026-11-21T21:31:40.909378+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/cpus/act-fast-to-score-intels-core-i7-14700k-for-its-lowest-price-ever-at-usd249-99-raptor-lake-refresh-cpu-is-a-bargain-that-supports-ddr5-and-ddr4-motherboards",
+      "title": "Act fast to score Intel's Core i7-14700K for its lowest price ever at $249.99",
+      "summary": "After months of inconsistent pricing, Intel's Core i7-14700K is down to its lowest price ever at $249.99, with support for LGA 1700 motherboards that come with either DDR4 or DDR5 memory support.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-11-21T20:00:22+00:00",
+      "sent_at": "2026-11-21T21:31:40.909378+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/11/21/tesla-fsd-v15-rollout-25x-safety-reality-view/",
+      "title": "Tesla launches FSD v15, targets its biggest weaknesses, from signs to potholes",
+      "summary": "Tesla has started rolling out “Full Self-Driving” v15, and its list of improvements reads like a list of FSD’s biggest current weaknesses: sign detection, potholes, and speed handling in school zones. Tesla also claims “25x better handling of safety critical cases” and is adding a new live visualization that looks seriously impressive. If the driving improvements are as real as the visuals, this is a big update. more…",
+      "source": "Electrek",
+      "category": "Autonomes Fahren",
+      "published": "2026-11-21T19:56:56+00:00",
+      "sent_at": "2026-11-21T21:31:40.909378+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2324141/anthropic-employee-claims-to-have-proven-the-most-famous-math-problem-using-claude/",
+      "title": "Anthropic employee claims to have proven the most famous math problem using Claude",
+      "summary": "Levent Alpöge says he worked with Claude to discover a proof of the Riemann Hypothesis.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-11-21T19:45:01+00:00",
+      "sent_at": "2026-11-21T21:31:40.909378+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2324122/teslas-assisted-driving-system-gets-the-green-light-for-rollout-in-italy/",
+      "title": "Tesla's assisted driving system gets the green light for rollout in Italy",
+      "summary": "Tesla's self-driving tech is awaiting another major vote from the European Union before the end of the year.",
+      "source": "Engadget",
+      "category": "Autonomes Fahren",
+      "published": "2026-11-21T18:29:20+00:00",
+      "sent_at": "2026-11-21T21:31:40.909378+00:00"
+    },
+    {
+      "link": "https://www.economist.com/business/2026/11/19/jensen-huangs-fall-is-bad-news-for-silicon-valleys-accelerationists",
+      "title": "Jensen Huang's fall is bad news for Silicon Valley's accelerationists",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Hardware",
+      "published": "2026-11-21T17:59:59+00:00",
+      "sent_at": "2026-11-21T21:31:40.909378+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2318413/apple-homeview-vs-amazon-echo-show-smart-display-comparison/",
+      "title": "HomeView vs. Echo Show: What's the difference between Apple's and Amazon's smart displays?",
+      "summary": "Both the HomeView and Echo Show put an AI assistant in your home, but they work in different ways.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-11-21T17:45:00+00:00",
+      "sent_at": "2026-11-21T21:31:40.909378+00:00"
+    },
+    {
       "link": "https://www.engadget.com/2318393/help-your-fitbit-battery-last-longer/",
       "title": "Ways you can help your Fitbit's battery last longer",
       "summary": "Fitbits don't last forever, but there's a couple easy ways you can get more years of step counts and heart-rate monitoring from your favorite wearable",
@@ -3302,150 +3374,6 @@
       "category": "AI",
       "published": "2026-11-07T12:30:00+00:00",
       "sent_at": "2026-11-08T01:03:46.346356+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/",
-      "title": "Megaspeed exec was recruited to spy on Nvidia CEO, according to US intelligence memo",
-      "summary": "A memo circulated earlier this year reportedly claimed that China’s Ministry of State Security recruited a female technology executive to spy on Nvidia's CEO.",
-      "source": "TechCrunch",
-      "category": "Hardware",
-      "published": "2026-11-07T21:17:08+00:00",
-      "sent_at": "2026-11-07T21:25:51.462095+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2309554/gpu-supply-problem-no-end-in-sight/",
-      "title": "There is no end in sight for the GPU supply problem",
-      "summary": "GPU prices have soared as the supply of memory has tightened, and it doesn't look like this is going to change any time soon (though a few optimists disagree).",
-      "source": "Engadget",
-      "category": "Hardware",
-      "published": "2026-11-07T20:45:00+00:00",
-      "sent_at": "2026-11-07T21:25:51.462095+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2309550/how-long-pc-processor-should-last/",
-      "title": "How long should a PC processor actually last?",
-      "summary": "Your computer's CPU is its most important part, and its most expensive one, too. So how long can you expect it to last if cared for properly?",
-      "source": "Engadget",
-      "category": "Hardware",
-      "published": "2026-11-07T20:30:00+00:00",
-      "sent_at": "2026-11-07T21:25:51.462095+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2309549/amd-cpu-ryzen-7-5800x3d-worth-buying-2026/",
-      "title": "Is AMD's Ryzen 7 5800X3D CPU still worth buying in 2026?",
-      "summary": "I've never regretted owning the 5800X3D, but before you spend $349 on a previous generation CPU, there are a few questions worth asking yourself.",
-      "source": "Engadget",
-      "category": "Hardware",
-      "published": "2026-11-07T20:15:00+00:00",
-      "sent_at": "2026-11-07T21:25:51.462095+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2309543/how-to-set-up-use-spacexai-grok-in-google-workspace/",
-      "title": "How to set up SpaceXAI's Grok in Google Workspace (and what it can do)",
-      "summary": "Inserting Grok into your Google Workspace is easy, but you'll want to consider a few things before rolling out the welcome mat.",
-      "source": "Engadget",
-      "category": "Innovationen",
-      "published": "2026-11-07T19:15:00+00:00",
-      "sent_at": "2026-11-07T21:25:51.462095+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/07/parents-want-safer-phones-for-kids-these-companies-are-answering-the-call/",
-      "title": "Parents want safer phones for kids. These companies are answering the call.",
-      "summary": "As parents look for alternatives to unrestricted smartphones, a growing number of companies are building phones designed specifically for kids, from feature-limited mobile devices to minimalist home phones.",
-      "source": "TechCrunch",
-      "category": "Hardware",
-      "published": "2026-11-07T19:00:00+00:00",
-      "sent_at": "2026-11-07T21:25:51.462095+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2306571/how-bottleneck-calculator-works-gpu-cpu/",
-      "title": "How a bottleneck calculator for your GPU and CPU works",
-      "summary": "They're a quick way to help you check component compatibility before you build or upgrade a system.",
-      "source": "Engadget",
-      "category": "Hardware",
-      "published": "2026-11-07T19:00:00+00:00",
-      "sent_at": "2026-11-07T21:25:51.462095+00:00"
-    },
-    {
-      "link": "https://hunch.net/?p=13764006",
-      "title": "The End of AI Frontiers",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-11-07T18:04:07+00:00",
-      "sent_at": "2026-11-07T21:25:51.462095+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2306188/solar-panel-efficiency-breakthrough-doubles-output/",
-      "title": "Solar panel breakthrough could almost double the efficiency of today's panels",
-      "summary": "Solar panels have become much more efficient since their infancy, but research breakthroughs show there's still plenty of room for improvement.",
-      "source": "Engadget",
-      "category": "Innovationen",
-      "published": "2026-11-07T16:45:00+00:00",
-      "sent_at": "2026-11-07T17:24:24.076121+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1029489/nyt-cooking-ai-assistant-review",
-      "title": "NYT Cooking’s AI assistant saved my weeknight chicken, but almost ruined my cake",
-      "summary": "Around 7PM each weeknight, I find myself standing in front of the fridge, trying to decide on something for dinner that won't make my husband complain, \"Chicken again?\" Yes, I should meal plan more, but I don't, so this is where I'm at. A nightly battle in which the chicken usually wins. Recently, my best [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-11-07T15:50:00+00:00",
-      "sent_at": "2026-11-07T17:24:24.076121+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government",
-      "title": "The US let Nvidia sell chips to an empty office in China",
-      "summary": "Concerns are being raised that neither the Commerce Department nor Nvidia are doing their due diligence when it comes to vetting Chinese firms cleared to handle the company's H200 AI chips. According to The New York Times, New Matrix is on the list of approved firms, yet its offices are empty, \"a hollow gray shell [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-11-07T15:43:45+00:00",
-      "sent_at": "2026-11-07T17:24:24.076121+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/podcast/1029038/ai-cybersecurity-hackers-data-breach-dark-age-alex-stamos",
-      "title": "AI broke the cybersecurity world. What’s next?",
-      "summary": "Today, I’m talking with Alex Stamos, chief security officer at Cognition and longtime cybersecurity expert, about what a mess cybersecurity is right now. This episode is part one of a special series looking at AI in real life. I’ve always enjoyed talking to Alex because he’s so direct, and you’re going to hear him say [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-11-07T15:00:00+00:00",
-      "sent_at": "2026-11-07T17:24:24.076121+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/us-intelligence-believes-jensen-huang-had-romantic-relationship-with-chinese-spy-in-honeypot-operation-spy-suspect-linked-to-company-accused-of-smuggling-usd2-billion-in-ai-chips",
-      "title": "US intelligence believes Jensen Huang had affair with Chinese spy in honeypot operation",
-      "summary": "U.S. intelligence sources suggest that Nvidia chief Jensen Huang was targeted by Chinese intelligence in a 'honeypot' operation involving Megaspeed executive Alice Huang.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-11-07T14:47:37+00:00",
-      "sent_at": "2026-11-07T17:24:24.076121+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2310084/china-main-intelligence-agency-recruit-spy-targeted-nvidias-ceo/",
-      "title": "China's main intelligence agency reportedly recruited the spy who targeted NVIDIA's CEO",
-      "summary": "The spy who targeted NVIDIA CEO Jensen Huang was reportedly a recruit by China's version of the CIA. US officials say Huang was romantically involved with her.",
-      "source": "Engadget",
-      "category": "Hardware",
-      "published": "2026-11-07T14:00:06+00:00",
-      "sent_at": "2026-11-07T17:24:24.076121+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2304952/when-external-dac-worth-buying-for-phone/",
-      "title": "This is when external DACs for your phone are worth buying",
-      "summary": "External DACs aren't necessarily for everyone, but they can be an essential smartphone accessory for those interested in high-quality audio.",
-      "source": "Engadget",
-      "category": "Hardware",
-      "published": "2026-11-07T13:30:00+00:00",
-      "sent_at": "2026-11-07T17:24:24.076121+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/big-tech/nvidias-jensen-huang-officially-called-to-congress-due-to-reports-of-a-chinese-spy-plot-officials-mention-growing-concerns-over-national-security",
-      "title": "Nvidia's Jensen Huang officially called to Congress due to reports of a Chinese spy plot",
-      "summary": "Nvidia's Jensen Huang officially called to Congress due to reports of Chinese plot — officials mention growing concerns over national security",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-11-07T13:30:00+00:00",
-      "sent_at": "2026-11-07T17:24:24.076121+00:00"
     }
   ]
 }
