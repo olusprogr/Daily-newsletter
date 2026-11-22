@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
+      "title": "Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance",
+      "summary": "Signal is limiting users' ability to take screenshots in both its Android and iOS apps.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-21T21:37:10+00:00",
+      "sent_at": "2026-11-22T01:53:24.333328+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/",
+      "title": "Here are the top AI agents that can live in your text messages",
+      "summary": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-21T17:00:00+00:00",
+      "sent_at": "2026-11-22T01:53:24.333328+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/",
+      "title": "Is selling an AI version of your face to this microdrama startup the future of Hollywood?",
+      "summary": "An actor has licensed his face to a microdrama startup — in a trend that's already popular in China. Experts question the long-term consequences if this becomes a trend in Hollywood, too.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-21T16:00:00+00:00",
+      "sent_at": "2026-11-22T01:53:24.333328+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/supercomputers/this-week-on-toms-hardware-premium-21-november-2026-amd-nvidia-and-more-show-off-the-future-of-high-performance-computing-at-sc26",
+      "title": "This week on Tom's Hardware Premium: 21 November 2026",
+      "summary": "We go through an exhaustive list of everything we covered at SC26, which includes brand-new devices and developments from AMD, Nvidia, Intel and many more.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-11-21T16:00:00+00:00",
+      "sent_at": "2026-11-22T01:53:24.333328+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/brace-yourself-for-years-of-outage-chaos/",
+      "title": "The Outages Are Just Getting Started",
+      "summary": "AI is forcing companies to patch their systems faster as attackers race to exploit newly discovered vulnerabilities. Welcome to internet outage hell.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-11-21T13:00:00+00:00",
+      "sent_at": "2026-11-22T01:53:24.333328+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/homelabbers-second-gen-optane-build-runs-2-8-trillion-parameter-kimi-k3-at-3-11-tokens-per-second-after-adding-two-rtx-3090s-moving-nearly-half-the-model-into-a-ram-drive-boosted-performance-by-41-percent",
+      "title": "Homelabber’s second-gen Optane build uses two RTX 3090s to run 2.8-trillion-parameter Kimi AI model at 3.11 tokens per second",
+      "summary": "A Reddit homelabber’s Optane PMem 200 server now runs Moonshot AI’s Kimi K3 at 3.11 tokens/s with two RTX 3090s and a RAM drive.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-11-21T12:00:00+00:00",
+      "sent_at": "2026-11-22T01:53:24.333328+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/one-gigabyte-of-wikipedia-losslessly-compressed-to-105-39mb-with-self-learning-ai-transformer-model-tufazip-needs-two-nvidia-b200-gpus-and-about-a-week-to-compress-or-decompress",
+      "title": "One gigabyte of Wikipedia losslessly compressed to 105.39MB with self-learning AI transformer model",
+      "summary": "Tufa Labs’ tufazip compresses 1GB of Wikipedia to 105.39MB with a 163M-parameter Transformer as its only predictor, on two Nvidia B200s.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-11-21T11:30:00+00:00",
+      "sent_at": "2026-11-22T01:53:24.333328+00:00"
+    },
+    {
+      "link": "http://ricapar.net/ClawDOS/",
+      "title": "ClawDOS – An AI coding agent for DOS",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-21T05:38:01+00:00",
+      "sent_at": "2026-11-22T01:53:24.333328+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/",
       "title": "A tale of two Nvidias",
       "summary": "We got two very different pictures of Nvidia — the company’s latest earnings report vs. the tech executives loudly calling for Jensen Huang’s return.",
@@ -3311,69 +3383,6 @@
       "category": "AI",
       "published": "2026-11-08T13:00:00+00:00",
       "sent_at": "2026-11-08T15:46:38.322907+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2306820/using-amazfit-smartwatch-pros-and-cons/",
-      "title": "The pros and cons of using an Amazfit smartwatch",
-      "summary": "Thinking about an Amazfit smartwatch? Find out what makes these budget wearables so appealing and where they fall short before you spend your money.",
-      "source": "Engadget",
-      "category": "Innovationen",
-      "published": "2026-11-07T23:30:00+00:00",
-      "sent_at": "2026-11-08T01:03:46.346356+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2310182/claude-vs-chatgpt-personal-finance-comparison/",
-      "title": "Claude Personal Finance vs. ChatGPT Finances: What sets them apart?",
-      "summary": "Both AI tools offer to delve deep into your bank accounts, but they differ in privacy settings.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-11-07T23:10:20+00:00",
-      "sent_at": "2026-11-08T01:03:46.346356+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/this-rtx-5060-gaming-pc-costs-less-than-the-steam-machine-grab-the-ibuypower-slate-prebuilt-pc-with-massive-usd500-discount",
-      "title": "This RTX 5060 gaming PC costs less than the Steam Machine — grab the iBuyPower Slate prebuilt PC with massive $500 discount",
-      "summary": "Best Buy knocks $500 off the iBUYPOWER Slate, bringing this RTX 5060-powered gaming desktop down to $899 with a Ryzen 5 processor, 16GB of DDR5 memory, and a 1TB SSD",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-11-07T21:27:30+00:00",
-      "sent_at": "2026-11-08T01:03:46.346356+00:00"
-    },
-    {
-      "link": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
-      "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-11-07T20:45:32+00:00",
-      "sent_at": "2026-11-08T01:03:46.346356+00:00"
-    },
-    {
-      "link": "https://sheets.works/data-viz/cpu-dies",
-      "title": "Every processor die anyone has photographed and given away",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Hardware",
-      "published": "2026-11-07T16:21:36+00:00",
-      "sent_at": "2026-11-08T01:03:46.346356+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/dram/tsmc-denies-exploring-3d-dram-at-nvidias-request-advanced-memory-tech-is-still-years-from-market-viability",
-      "title": "TSMC denies exploring 3D DRAM at Nvidia's request",
-      "summary": "Nvidia reportedly asks TSMC to produce '3D DRAM' to address memory shortages.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-11-07T13:00:00+00:00",
-      "sent_at": "2026-11-08T01:03:46.346356+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development",
-      "title": "Why a new report on Anthropic automating AI development is alarming researchers",
-      "summary": "Anthropic is using AI to build more powerful AI. And it appears to be working remarkably well, with the company's models improving roughly twice as quickly as a year ago, with little indication of slowing down. That's according to a new report published Thursday by the AI safety research organization METR, following an 11-week investigation [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-11-07T12:30:00+00:00",
-      "sent_at": "2026-11-08T01:03:46.346356+00:00"
     }
   ]
 }
