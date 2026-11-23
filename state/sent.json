@@ -1,6 +1,69 @@
 {
   "items": [
     {
+      "link": "https://www.engadget.com/2319572/how-much-starlink-cost-2020-vs-2026/",
+      "title": "Here's how much Starlink cost in 2020 vs. 2026",
+      "summary": "Throw in discounts and fluctuating rates, and two customers could end up paying vastly different bills for the same Starlink satellite service.",
+      "source": "Engadget",
+      "category": "Innovationen",
+      "published": "2026-11-23T01:30:00+00:00",
+      "sent_at": "2026-11-23T05:41:08.755553+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo/",
+      "title": "How Notable Capital, GIC, and Baillie Gifford bet big on Anthropic before its IPO",
+      "summary": "Three significant backers share what gave them conviction to bet billions on Anthropic.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-23T01:25:53+00:00",
+      "sent_at": "2026-11-23T05:41:08.755553+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2319553/how-to-use-ai-glasses-as-teleprompter/",
+      "title": "How to use AI glasses as a teleprompter",
+      "summary": "If you have the right type of smart glasses, this is an easy feature to enable.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-11-22T23:30:00+00:00",
+      "sent_at": "2026-11-23T05:41:08.755553+00:00"
+    },
+    {
+      "link": "https://boazbk.github.io/mltheoryseminar/",
+      "title": "Harvard CS 2881R AI Safety",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-22T18:01:54+00:00",
+      "sent_at": "2026-11-23T05:41:08.755553+00:00"
+    },
+    {
+      "link": "https://simonwillison.net/2026/Nov/21/muru/",
+      "title": "Muru – AI-assisted Rust server for Python apps by mod_WSGI's creator",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-22T09:57:01+00:00",
+      "sent_at": "2026-11-23T05:41:08.755553+00:00"
+    },
+    {
+      "link": "https://arxiv.org/abs/2606.14068",
+      "title": "Harsher on Male? Evaluating LLMs on Gender-Asymmetric Moral Framing in Conflicts",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-22T09:18:36+00:00",
+      "sent_at": "2026-11-23T05:41:08.755553+00:00"
+    },
+    {
+      "link": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/",
+      "title": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-22T08:57:34+00:00",
+      "sent_at": "2026-11-23T05:41:08.755553+00:00"
+    },
+    {
       "link": "https://www.engadget.com/2319541/safely-clean-pc-gpu-avoid-damage/",
       "title": "How to safely clean your PC's GPU to avoid damaging it in the process",
       "summary": "Removing and cleaning a GPU can be intimidating, but it's actually pretty simple.",
@@ -3338,78 +3401,6 @@
       "category": "Hardware",
       "published": "2026-11-08T20:15:00+00:00",
       "sent_at": "2026-11-09T07:37:43.680662+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2309308/spacexai-grok-bot-availability-plans/",
-      "title": "SpaceXAI Grok Bot availability just keeps growing - here's which plans offer it",
-      "summary": "SpaceXAI 's Grok Bot can handle multi-step work on a cloud computer, but you'll need to figure out the jumble of subscription plans first.",
-      "source": "Engadget",
-      "category": "Innovationen",
-      "published": "2026-11-08T23:45:00+00:00",
-      "sent_at": "2026-11-09T00:30:43.194573+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1029595/full-text-jensen-huang-affair-memo-nvidia",
-      "title": "Here’s the full text of Jensen Huang’s memo to Nvidia",
-      "summary": "On Sunday, Nvidia announced it was launching an investigation into CEO Jensen Huang's relationship with Alice Huang, an AI executive and agent of the Chinese government. In addition to the Board of Directors announcing the investigation, Huang sent a memo to Nvidia employees acknowledging the affair. You can read the full text below. To my [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-11-08T22:54:50+00:00",
-      "sent_at": "2026-11-09T00:30:43.194573+00:00"
-    },
-    {
-      "link": "https://www.axios.com/2026/11/08/nvidia-ceo-jensen-huang-affair-email-to-company",
-      "title": "Nvidia CEO Jensen Huang's letter to staff about affair",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Hardware",
-      "published": "2026-11-08T22:20:09+00:00",
-      "sent_at": "2026-11-09T00:30:43.194573+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2309634/qalo-sl-1-vs-garmin-cirqa-how-wearables-compare/",
-      "title": "Qalo SL-1 vs. Garmin Cirqa: How these minimalist wearables compare",
-      "summary": "The Qalo SL-1 and Garmin Cirqa were released in 2026, and both cost about $200. A comparison of these screenless wearables reveals some key differences.",
-      "source": "Engadget",
-      "category": "Innovationen",
-      "published": "2026-11-08T22:15:00+00:00",
-      "sent_at": "2026-11-09T00:30:43.194573+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/gpus/nvidia-ceo-jensen-huang-admits-to-having-an-affair-with-suspected-chinese-spy-jensen-apologizes-in-letter-to-staff-company-board-forms-independent-committee-to-investigate",
-      "title": "Nvidia CEO Jensen Huang admits to having an affair with suspected Chinese spy",
-      "summary": "Nvidia's board of directors is investigating a report about Jensen Huang's alleged affair with a client, claims it is still confident in Jensen and leadership team.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-11-08T21:27:29+00:00",
-      "sent_at": "2026-11-09T00:30:43.194573+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2310336/nvidia-is-investigating-reports-that-ceo-jensen-huang-was-the-target-of-chinese-spy-efforts/",
-      "title": "NVIDIA is investigating reports that CEO Jensen Huang was the target of Chinese spy efforts",
-      "summary": "Reports by The New York Times and the Financial Times linked the CEO to a woman suspected to be a spy.",
-      "source": "Engadget",
-      "category": "Hardware",
-      "published": "2026-11-08T21:17:45+00:00",
-      "sent_at": "2026-11-09T00:30:43.194573+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2309626/dont-like-google-health-ai-coach-how-turn-off/",
-      "title": "Don't like Google Health's AI Coach? Here's how to turn it off",
-      "summary": "If this Premium feature is bugging you, there's good news: you aren't stuck with it.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-11-08T21:15:00+00:00",
-      "sent_at": "2026-11-09T00:30:43.194573+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/",
-      "title": "Nvidia will investigate CEO Jensen Huang’s relationship with possible Chinese spy",
-      "summary": "In a memo to the company, Huang admitted that he had an affair.",
-      "source": "TechCrunch",
-      "category": "Hardware",
-      "published": "2026-11-08T21:00:11+00:00",
-      "sent_at": "2026-11-09T00:30:43.194573+00:00"
     }
   ]
 }
