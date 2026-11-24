@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/tech-industry/big-tech/jensen-huang-confessed-to-more-affairs-before-the-board-reinstated-him-as-nvidia-ceo-report-claims-contrite-chief-disclosed-at-least-two-additional-affairs-beyond-megaspeed-exec-and-nvidias-vp-of-health-care",
+      "title": "Jensen Huang confessed to more affairs before the board reinstated him as Nvidia CEO, report claims",
+      "summary": "Jensen Huang admitted to more affairs than the two that Nvidia's board members were already aware of before they agreed to let him return to the company as CEO, President, and board member, amid reports that one of the women involved is a Chinese spy.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-11-24T14:24:38+00:00",
+      "sent_at": "2026-11-24T14:31:49.601673+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/policy/trump-pressured-nvidia-to-bring-jensen-back-called-into-board-meeting-to-push-reinstatement-reports-claim-president-concerned-over-falling-stock-prices-with-huangs-return-reversing-slide",
+      "title": "Trump pressured Nvidia to bring Jensen back, called into board meeting to push reinstatement, reports claim",
+      "summary": "Nvidia's crashing stock market prices is threatening to take down the entire market with it, which is why President Donald Trump decided to intervene and steady the situation.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-11-24T13:45:00+00:00",
+      "sent_at": "2026-11-24T14:31:49.601673+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/24/huang-reportedly-admitted-to-more-than-two-affairs-to-nvidias-board/",
+      "title": "Huang reportedly admitted to more than two affairs to Nvidia’s board",
+      "summary": "During a meeting before his reinstatement, Huang admitted to more affairs beyond the two that have been reported in the news, according to The Wall Street Journal.",
+      "source": "TechCrunch",
+      "category": "Hardware",
+      "published": "2026-11-24T13:29:53+00:00",
+      "sent_at": "2026-11-24T14:31:49.601673+00:00"
+    },
+    {
+      "link": "https://www.bloomberg.com/news/articles/2026-11-24/anthropic-breaks-below-83-ipo-price-in-premarket-trading",
+      "title": "Anthropic Breaks Below $83 IPO Price in Premarket Trading",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-24T13:23:47+00:00",
+      "sent_at": "2026-11-24T14:31:49.601673+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/transportation/1040676/uber-nuro-lucid-driverless-robotaxi-testing-bay-area",
+      "title": "Uber, Nuro, and Lucid kick off fully driverless robotaxi testing",
+      "summary": "Uber's high-stakes robotaxi bet is officially ditching its human safety net. Nuro, Lucid, and Uber are starting fully driverless public road testing in the San Francisco Bay Area, with employee-only rides launching shortly after. First announced in July 2025, this three-way alliance represents Uber's aggressive comeback in autonomous ride-hailing, after having abandoned its own troubled [&#8230;]",
+      "source": "The Verge",
+      "category": "Autonomes Fahren",
+      "published": "2026-11-24T13:00:00+00:00",
+      "sent_at": "2026-11-24T14:31:49.601673+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2326365/uber-and-lucid-start-testing-fully-driverless-rides-for-their-robotaxis-in-san-francisco/",
+      "title": "Uber and Lucid start testing fully driverless rides for their robotaxis in San Francisco",
+      "summary": "Uber's Lucid-made robotaxis, powered by Nuro, are almost ready to give rides to the public.",
+      "source": "Engadget",
+      "category": "Autonomes Fahren",
+      "published": "2026-11-24T13:00:00+00:00",
+      "sent_at": "2026-11-24T14:31:49.601673+00:00"
+    },
+    {
+      "link": "https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/",
+      "title": "LLM agents work for their parent companies, not for you",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-24T12:40:15+00:00",
+      "sent_at": "2026-11-24T14:31:49.601673+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/",
+      "title": "Amazon says hackers' AI agents found and exploited 0-day with little human input",
+      "summary": "The Cairn AI framework is proving to be a boon for defenders and attackers.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-11-24T12:30:05+00:00",
+      "sent_at": "2026-11-24T14:31:49.601673+00:00"
+    },
+    {
       "link": "https://www.wired.com/story/inside-nvidia-not-everyone-is-celebrating-jensen-huangs-return/",
       "title": "Inside Nvidia, Not Everyone Is Celebrating Jensen Huang’s Return",
       "summary": "Some saw Huang’s resignation as an opportunity for culture change at the chip giant. “If Jensen comes back, I’m not doing any HR trainings ever again,” one employee said.",
@@ -3257,78 +3329,6 @@
       "category": "AI",
       "published": "2026-11-10T16:07:15+00:00",
       "sent_at": "2026-11-10T17:28:33.965612+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/09/otter-ai-can-now-follow-conversations-across-30-languages/",
-      "title": "Otter AI can now follow conversations across 30+ languages",
-      "summary": "Otter AI just added support for 27 languages and revealed an upcoming feature that can follow along if speakers switch between languages.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-11-10T07:00:00+00:00",
-      "sent_at": "2026-11-10T09:13:08.904809+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/a-new-ai-tool-from-google-deepmind-formally-verified-the-signal-protocol/",
-      "title": "A New AI Tool From Google DeepMind Proved the Signal Protocol Is Secure",
-      "summary": "DeepMind researchers were able to formally verify that the widely used encryption protocol works as intended. Their stretch goal? Do the same for “all the software of the world.”",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-11-10T05:01:00+00:00",
-      "sent_at": "2026-11-10T09:13:08.904809+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/09/jensen-huangs-alleged-honeypot-scandal-has-inspired-some-top-notch-memes/",
-      "title": "Jensen Huang’s alleged honeypot scandal has inspired some top-notch memes",
-      "summary": "The internet is having a field day with Nvidia's Jensen Huang's alleged honeypot scandal.",
-      "source": "TechCrunch",
-      "category": "Hardware",
-      "published": "2026-11-10T04:34:15+00:00",
-      "sent_at": "2026-11-10T09:13:08.904809+00:00"
-    },
-    {
-      "link": "https://www.cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html",
-      "title": "CoreWeave bond yield tops 16% as AI credit stress rises",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-11-10T03:20:06+00:00",
-      "sent_at": "2026-11-10T09:13:08.904809+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/09/a-short-seller-flagged-nvidia-ceos-ties-to-a-suspected-chinese-spy-six-months-before-the-scandal/",
-      "title": "A short seller flagged Nvidia CEO’s ties to a suspected Chinese spy six months before the scandal",
-      "summary": "Six months before Nvidia's spy scandal erupted, Culper Research was already questioning Jensen Huang's unusually close relationship with a Chinese executive.",
-      "source": "TechCrunch",
-      "category": "Hardware",
-      "published": "2026-11-09T22:46:09+00:00",
-      "sent_at": "2026-11-10T09:13:08.904809+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/waymo-school-bus-problem-the-us-government-says-it-didnt-work/",
-      "title": "Waymo Said It Fixed Its School Bus Problem. The US Government Says It Didn’t Work",
-      "summary": "Last year, Waymo recalled its software after several of its autonomous cars drove around stopped buses. But the problems remained. Now the feds want to know more.",
-      "source": "Wired",
-      "category": "Autonomes Fahren",
-      "published": "2026-11-09T22:40:10+00:00",
-      "sent_at": "2026-11-10T09:13:08.904809+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/09/the-race-is-on-to-sue-nvidia/",
-      "title": "The race is on to sue Nvidia",
-      "summary": "Nvidia’s stock slid more than 4% after its board opened an investigation into Jensen Huang’s relationship with a suspected Chinese spy, and one securities law expert says the company’s earlier insistence that it was all “normal” could turn into a very expensive problem.",
-      "source": "TechCrunch",
-      "category": "Hardware",
-      "published": "2026-11-09T22:23:42+00:00",
-      "sent_at": "2026-11-10T09:13:08.904809+00:00"
-    },
-    {
-      "link": "https://www.reddit.com/r/ClaudeCode/comments/1xq2n3t/a_year_after_the_100_ai_mandate_nobody/",
-      "title": "A year after the 100% AI mandate nobody understands our code",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-11-09T22:19:12+00:00",
-      "sent_at": "2026-11-10T09:13:08.904809+00:00"
     }
   ]
 }
