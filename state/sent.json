@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.wired.com/story/inside-nvidia-not-everyone-is-celebrating-jensen-huangs-return/",
+      "title": "Inside Nvidia, Not Everyone Is Celebrating Jensen Huang’s Return",
+      "summary": "Some saw Huang’s resignation as an opportunity for culture change at the chip giant. “If Jensen comes back, I’m not doing any HR trainings ever again,” one employee said.",
+      "source": "Wired",
+      "category": "Hardware",
+      "published": "2026-11-24T01:35:38+00:00",
+      "sent_at": "2026-11-24T03:46:59.305150+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1040652/jensen-huang-nvidia-trump-reinstated",
+      "title": "Trump engineered a risky comeback for Jensen Huang",
+      "summary": "After Nvidia's board accepted Jensen Huang's resignation as CEO, following reports that Huang had an affair with an alleged Chinese spy, President Donald Trump, too, appeared to submit to the new reality. Appearing on Stephen A. Smith's radio show shortly after the news came out, Trump said that Huang would \"end up on his feet.\" [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-11-23T22:25:12+00:00",
+      "sent_at": "2026-11-24T03:46:59.305150+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1040819/welcome-to-elite-impunity-jensen-huang",
+      "title": "Welcome to elite impunity, Jensen Huang",
+      "summary": "I suppose I must issue a hearty congratulations to Jensen Huang. Huang is CEO of Nvidia again, to the surprise of basically everyone except President Donald Trump and Vice President JD Vance, who made sure it happened. Now, those of us who had some kind of basic education on what a \"free market\" is might [&#8230;]",
+      "source": "The Verge",
+      "category": "Hardware",
+      "published": "2026-11-23T22:09:26+00:00",
+      "sent_at": "2026-11-24T03:46:59.305150+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/",
+      "title": "Anthropic launches Claude Ship, letting AI agents review, fix, and approve code changes",
+      "summary": "As AI-generated code piles up, Anthropic's new developer tools aim to eliminate another bottleneck by letting agents handle routine approvals.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-23T22:05:50+00:00",
+      "sent_at": "2026-11-24T03:46:59.305150+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
+      "title": "Supertake raises $20M to let AI agents turn your market predictions into stock portfolios",
+      "summary": "Think you know where the market is headed? A startup called Supertake lets you put money behind your ideas without having to pick the stocks yourself.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-23T22:02:05+00:00",
+      "sent_at": "2026-11-24T03:46:59.305150+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/23/elon-musk-and-others-rejoice-as-jensen-huang-is-reinstated-at-nvidia-amid-scandal/",
+      "title": "Elon Musk and others rejoice as Jensen Huang is reinstated at Nvidia amid scandal",
+      "summary": "\"The mistake has been corrected,\" Elon Musk chimed in.",
+      "source": "TechCrunch",
+      "category": "Hardware",
+      "published": "2026-11-23T21:47:41+00:00",
+      "sent_at": "2026-11-24T03:46:59.305150+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/how-to-win-big-betting-on-jensen-huang-listen-to-trump/",
+      "title": "How to Win Big Betting on Jensen Huang? Listen to Trump",
+      "summary": "Prediction market traders profited from the Nvidia CEO’s comeback by following the White House’s lead. “It’s 2026 and Trump is president, scandal schmandal,” says one winner.",
+      "source": "Wired",
+      "category": "Hardware",
+      "published": "2026-11-23T21:31:08+00:00",
+      "sent_at": "2026-11-24T03:46:59.305150+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/tech-policy/2026/11/states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-porn/",
+      "title": "States sue SpaceX to stop Grok from generating child sex images, revenge porn",
+      "summary": "X says every Grok output is screened, but state AGs say Grok is still making CSAM.",
+      "source": "Ars Technica",
+      "category": "Innovationen",
+      "published": "2026-11-23T21:30:44+00:00",
+      "sent_at": "2026-11-24T03:46:59.305150+00:00"
+    },
+    {
       "link": "https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/",
       "title": "Amazon snaps up Decart’s AI optimization tech for $7.5B as it prepares to sell Trainium chips",
       "summary": "Amazon is acquiring Decart’s AI optimization technology and research team in a reported $7.5 billion deal.",
@@ -3257,150 +3329,6 @@
       "category": "AI",
       "published": "2026-11-09T22:19:12+00:00",
       "sent_at": "2026-11-10T09:13:08.904809+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/09/anthropic-reportedly-plans-to-move-forward-with-ipo-plans/",
-      "title": "Anthropic reportedly plans to move forward with IPO plans",
-      "summary": "The AI company is expected to set its valuation range this week, the Wall Street Journal reported.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-11-10T01:27:12+00:00",
-      "sent_at": "2026-11-10T01:52:50.543859+00:00"
-    },
-    {
-      "link": "https://electrek.co/2026/11/09/humble-hauler-autonomous-trailer-takes-the-truck-out-of-trucking/",
-      "title": "Humble Hauler autonomous trailer takes the truck out of trucking [update]",
-      "summary": "Less than a year after its founding, truckless trucking brand Humble Robotics has secured more than $75 million after a $51 million Series A funding round that will fuel the company’s transition from prototype to preproduction. more…",
-      "source": "Electrek",
-      "category": "Innovationen",
-      "published": "2026-11-10T01:05:00+00:00",
-      "sent_at": "2026-11-10T01:52:50.543859+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/entertainment/1030510/paramount-skydance-david-ellison-ai",
-      "title": "David Ellison says AI could be the ‘biggest creative unlock in modern history’",
-      "summary": "During Paramount Skydance's latest earnings call, CEO David Ellison said \"it's hard to imagine\" AI won't have a bigger impact on the film industry than CGI. In response to a question about the company's outlook for AI, Ellison said: \"I think when you zoom out and look at production, AI really has the potential to [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-11-10T00:28:49+00:00",
-      "sent_at": "2026-11-10T01:52:50.543859+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/jensen-huangs-troubles-leaves-the-ai-industry-reeling/",
-      "title": "Jensen Huang’s Troubles Leave the AI Industry Reeling",
-      "summary": "With a big checkbook and sought-after chips, Nvidia’s CEO had his thumb on the world of AI. An extramarital affair with a suspected Chinese spy may put all of that at risk.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-11-10T00:18:19+00:00",
-      "sent_at": "2026-11-10T01:52:50.543859+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/big-tech/law-firm-files-class-action-lawsuit-against-nvidia-after-ceo-jensen-huang-confirms-affair-with-alleged-chinese-spy-more-to-come-as-multiple-other-law-firms-investigate-securities-fraud-following-stock-drop",
-      "title": "Law firm files class-action lawsuit against Nvidia after CEO Jensen Huang confirms affair with alleged Chinese spy",
-      "summary": "Class-action lawsuit and legal investigations against Nvidia over securities fraud start flying",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-11-10T00:03:08+00:00",
-      "sent_at": "2026-11-10T01:52:50.543859+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1030328/what-could-china-get-from-jensen-huang",
-      "title": "What could China get from Jensen Huang?",
-      "summary": "It's difficult to overstate Nvidia's power in today's AI landscape. The company's chips are the bedrock upon which advanced AI technology in the US is being built, and demand has consistently outpaced supply for years. Nvidia has also been an influential investor in a wide range of up-and-coming AI companies in recent years, with about [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-11-09T23:51:58+00:00",
-      "sent_at": "2026-11-10T01:52:50.543859+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1030446/trump-jensen-huang-press-conference",
-      "title": "Here’s what Trump said he knew about Jensen Huang",
-      "summary": "President Trump held a White House press briefing earlier today and responded to several questions about his knowledge of Nvidia CEO Jensen Huang's affair with an alleged Chinese spy. Huang said this weekend that he had been \"&#8203;&#8203;unfaithful\" to his wife, and the company has opened an investigation into Huang. Recent articles from The New [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-11-09T23:47:46+00:00",
-      "sent_at": "2026-11-10T01:52:50.543859+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang",
-      "title": "Everything we know so far about the Nvidia spy scandal targeting CEO Jensen Huang",
-      "summary": "The leather-jacketed CEO of Nvidia, Jensen Huang, has acknowledged an affair with Megaspeed exec Alice Huang, spurring an investigation by his company and intense discussions worldwide. Recent reporting noted that since last year, US intelligence reports had identified Alice Huang (no relation) as not only the exec for an AI compute company renting access to [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-11-09T23:07:59+00:00",
-      "sent_at": "2026-11-10T01:52:50.543859+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/09/jensen-huangs-affair-with-alleged-chinese-spy-puts-nvidias-china-ambitions-under-scrutiny/",
-      "title": "Jensen Huang’s affair with alleged Chinese spy puts Nvidia’s China ambitions under scrutiny",
-      "summary": "Jensen Huang’s alleged affair with a suspected Chinese spy threatens to complicate Nvidia’s lobbying efforts to loosen U.S. chip export restrictions and maintain access to China’s lucrative AI market.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-11-09T18:09:52+00:00",
-      "sent_at": "2026-11-09T18:16:23.083474+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1030061/instagram-ai-effect-builder-filters",
-      "title": "Instagram’s Effect Builder makes new filters from AI prompts",
-      "summary": "After expanding its Edits app to macOS last week, Instagram's next move is launching this Effect Builder that generates custom filters for your Stories posts with AI. Available now for US residents who are over 18, it has a prompt box for describing your filter idea to the chatbot, with an option to attach style [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-11-09T18:07:23+00:00",
-      "sent_at": "2026-11-09T18:16:23.083474+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/policy/nvidia-cracks-down-on-overseas-cloud-ai-gpu-rentals-for-china-partners-face-51-percent-non-chinese-quota-as-black-market-b300-rack-prices-surge-to-usd2-8-million",
-      "title": "Nvidia cracks down on overseas cloud AI GPU rentals for China",
-      "summary": "Nvidia may cap cloud partners’ Chinese business at 49% as Chinese firms buy up more than 1 million gaming and workstation GPUs.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-11-09T17:48:17+00:00",
-      "sent_at": "2026-11-09T18:16:23.083474+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1029990/jensen-huang-the-spy-who-loved-me",
-      "title": "The future of AI hinges on… Jensen Huang’s sex life?",
-      "summary": "I would prefer that these people's sex lives were none of my business but I guess we have to talk about Jensen Huang and the National Security Incident. Who could have guessed that the guy who was out here signing titties might not have great judgment about how to behave around women? Alice Huang - [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-11-09T17:36:08+00:00",
-      "sent_at": "2026-11-09T18:16:23.083474+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/ai/2026/11/claude-code-settings-files-expose-thousands-of-secrets-on-github/",
-      "title": "Claude Code is accidentally exposing secrets all over GitHub",
-      "summary": "\"Do not ask again\" prompt leads to passwords, API keys, and more being shared.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-11-09T17:24:26+00:00",
-      "sent_at": "2026-11-09T18:16:23.083474+00:00"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/11/09/1148182/nancy-pelosis-replacement-is-ready-to-regulate-ai/",
-      "title": "Nancy Pelosi’s replacement is ready to regulate AI",
-      "summary": "As a California state senator, Scott Wiener authored legislation aimed at curbing the risks of advanced AI. Now, after winning a tight congressional race for former Speaker of the House Nancy Pelosi’s open San Francisco seat, he could play a key role in setting federal AI policy.&#160; I spoke with Wiener on Friday, only a&#8230;",
-      "source": "MIT Technology Review",
-      "category": "AI",
-      "published": "2026-11-09T17:05:43+00:00",
-      "sent_at": "2026-11-09T18:16:23.083474+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/09/uber-launches-parking-service-following-spothero-acquisition-with-an-eye-on-robotaxis/",
-      "title": "Uber launches parking service following SpotHero acquisition, with an eye on robotaxis",
-      "summary": "Uber Parking is the latest example of the company offering products beyond its core ride-hailing service.",
-      "source": "TechCrunch",
-      "category": "Autonomes Fahren",
-      "published": "2026-11-09T17:00:00+00:00",
-      "sent_at": "2026-11-09T18:16:23.083474+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/09/anthropic-joins-ais-natural-gas-frenzy-buys-3-4b-worth-of-turbines/",
-      "title": "Anthropic joins AI’s natural gas frenzy, buys $3.4B worth of turbines",
-      "summary": "Anthropic bought billions of dollars worth of natural gas turbines in a deal that could give it buyer's remorse.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-11-09T16:56:54+00:00",
-      "sent_at": "2026-11-09T18:16:23.083474+00:00"
     }
   ]
 }
