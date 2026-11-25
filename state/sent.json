@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers",
+      "title": "FCC signs off on SpaceX’s plan to put up to 1 million data center satellites into space",
+      "summary": "In an announcement on Wednesday, the FCC says it authorized SpaceX to deploy up to 1 million AI chip-equipped satellites as part of the Elon Musk-owned company's \"Starmind\" initiative. With several others also pursuing the idea of putting AI data centers in space, including Google and Blue Origin, this is the first approval the agency [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-11-25T17:44:51+00:00",
+      "sent_at": "2026-11-25T17:48:42.950066+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/tech-policy/2026/11/etsy-clarifies-ai-terms-after-seller-backlash/",
+      "title": "Etsy clarifies AI terms after seller backlash",
+      "summary": "One veteran illustrator dismisses revisions as \"sugar coating.\"",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-11-25T17:12:57+00:00",
+      "sent_at": "2026-11-25T17:48:42.950066+00:00"
+    },
+    {
+      "link": "https://www.technologyreview.com/2026/11/25/1149836/data-centers-gas-power-plants/",
+      "title": "How data centers are driving a US natural-gas boom",
+      "summary": "In May 2025, my colleague David Rotman wrote a feature story describing how AI could keep us dependent on natural gas. Just 18 months later, I’ve lost count of how many times he’s already been proved right. Sure, it’s technically possible to meet the world’s rising electricity demand with other power sources, including renewables like&#8230;",
+      "source": "MIT Technology Review",
+      "category": "AI",
+      "published": "2026-11-25T17:00:00+00:00",
+      "sent_at": "2026-11-25T17:48:42.950066+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/laptops/save-usd200-with-surprising-deals-on-new-nvidia-rtx-spark-powered-asus-proart-p14-laptops-both-24gb-and-32gb-configurations-are-already-on-sale",
+      "title": "Save $200 with surprising deals on new Nvidia RTX Spark-powered Asus ProArt P14 laptops",
+      "summary": "Just a month after launch, the RTX Spark-powered Asus ProArt P14 is on sale for $200 off across both its 24GB and 32GB configurations.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-11-25T16:58:33+00:00",
+      "sent_at": "2026-11-25T17:48:42.950066+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/policy/lawsuit-reveals-trumps-alleged-strong-arming-of-intel-troubled-chipmaker-allegedly-forced-to-give-white-house-10-percent-stake-for-release-of-chips-act-funds",
+      "title": "Lawsuit alleges Trump strong-armed Intel",
+      "summary": "The president apparently threatened the Intel board with \"consequences\" if they did not accept his demand for a 10% stake on the company.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-11-25T16:39:23+00:00",
+      "sent_at": "2026-11-25T17:48:42.950066+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/11/25/mammotion-luba-mini-2-awd-robot-mower-ego-multi-head-string-trimmer-portable-area-light-more/",
+      "title": "Mammotion LUBA Mini 2 AWD robot mower $1,599 low, EGO Multi-Head string trimmer $300 low + portable area light $199, more",
+      "summary": "The Amazon Black Friday Sale is in full swing, and with it comes a large amount of tool deals, some of which are featured below, while the rest can all be found within our Black Friday Green Deals hub . There’s an autonomous upgrade in the Mammotion 2026 LUBA Mini 2 AWD 1500H Robot Lawn Mower down at a new $1,599 low – which is bundled with a cleaning stand – alongside its counterparts. We’ve also got EGO’s Multi-Head 15-inch String Trimmer Combo Kit at a $300 low alongside other rounded up tools, as well as the brand’s Portable Area Light at $119 . There’s also Greenworks’ 80V 10-inch Cordless Pole Saw at the best price in eight months, the Worx Pegasus 2-in-1 Folding Workbench/Sawhorse at $100 , and more. Head below for other New Green Deals we’ve found today and, of course, Electrek ’s best EV buying and leasing deals . Also, check out the new Electrek Tesla Shop for the best deals on Tesla accessories . more…",
+      "source": "Electrek",
+      "category": "Innovationen",
+      "published": "2026-11-25T16:06:34+00:00",
+      "sent_at": "2026-11-25T17:48:42.950066+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2328122/nothings-ear-note-is-a-pair-of-earbuds-with-built-in-ai-notetaking/",
+      "title": "Nothing's Ear (note) is a pair of earbuds with built-in AI notetaking",
+      "summary": "The company has promised to share more details on December 8.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-11-25T16:03:17+00:00",
+      "sent_at": "2026-11-25T17:48:42.950066+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/gadgets/1042162/nothing-ear-note-ai-earbuds-reveal",
+      "title": "Nothing offers a full look at its AI earbuds and charging case",
+      "summary": "Nothing is showing off a much more detailed look at its upcoming AI earbuds ahead of their December 8th release. The Ear Note buds can record your calls, while their charging case can record, transcribe, and summarize your conversations. Like the Ear 3, the Ear Note's microphone-equipped case comes with a \"Talk\" button that you [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-11-25T16:00:59+00:00",
+      "sent_at": "2026-11-25T17:48:42.950066+00:00"
+    },
+    {
       "link": "https://gpu-demo-gallery.pages.dev/",
       "title": "Show HN: Old Nvidia and ATI tech demos, running again in the browser",
       "summary": "",
@@ -3185,78 +3257,6 @@
       "category": "AI",
       "published": "2026-11-11T15:30:00+00:00",
       "sent_at": "2026-11-11T18:21:21.055352+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/drones/3-500-ai-laser-robots-patrol-norwegian-salmon-farms-killing-sea-lice-parasites-get-zapped-by-high-tech-alternative-to-harsh-chemical-baths",
-      "title": "3,500 laser-armed AI submarine drones patrol Norwegian salmon farms, killing sea lice and protecting 112 million fish",
-      "summary": "3,500 Stingray AI laser robots deployed around salmon pens along the Norwegian coast 24/7 protect over 112 million fish from sea lice.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-11-11T10:00:00+00:00",
-      "sent_at": "2026-11-11T10:17:18.290531+00:00"
-    },
-    {
-      "link": "https://osssaysno.com",
-      "title": "OSS projects banning AI-generated contributions",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-11-11T08:51:45+00:00",
-      "sent_at": "2026-11-11T10:17:18.290531+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/10/nvidias-crisis-has-corporate-governance-experts-reaching-for-the-popcorn/",
-      "title": "Nvidia’s crisis has corporate governance experts reaching for the popcorn",
-      "summary": "The governance experts we talked to say nobody has seen anything like what's unfolding right now.",
-      "source": "TechCrunch",
-      "category": "Hardware",
-      "published": "2026-11-11T07:30:51+00:00",
-      "sent_at": "2026-11-11T10:17:18.290531+00:00"
-    },
-    {
-      "link": "https://tis-100.wincon.dev/",
-      "title": "LLMs Play Zachtronics' TIS-100",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-11-11T00:37:05+00:00",
-      "sent_at": "2026-11-11T10:17:18.290531+00:00"
-    },
-    {
-      "link": "https://www.vulncheck.com/blog/anthropic-glasswing-november-update",
-      "title": "Tracking Anthropic-discovered vulnerabilities",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-11-10T22:17:56+00:00",
-      "sent_at": "2026-11-11T10:17:18.290531+00:00"
-    },
-    {
-      "link": "https://tendrils.co/blog/2026-11-10/30m-raised",
-      "title": "$30M Raised to Redo the CPU",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Hardware",
-      "published": "2026-11-10T22:14:03+00:00",
-      "sent_at": "2026-11-11T10:17:18.290531+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1031028/spacex-starlink-mini-2-satellite-internet-terminal-hot-swap-battery",
-      "title": "Starlink Mini 2 adds a swappable battery",
-      "summary": "SpaceX announced a new version of its all-in-one satellite internet terminal that integrates a dish, Wi-Fi router, and now a battery into a single device about the size of a laptop. According to some users on X who shared screenshots of invitations to order Starlink Mini 2, the dish is priced at $999, which includes [&#8230;]",
-      "source": "The Verge",
-      "category": "Innovationen",
-      "published": "2026-11-10T19:19:12+00:00",
-      "sent_at": "2026-11-11T10:17:18.290531+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1031063/jensen-huang-ai-race-us-china-spy",
-      "title": "The US is winning the AI race. Jensen Huang could have blown it",
-      "summary": "As espionage targets go, Jensen Huang is perhaps one of the least surprising on Earth. The Nvidia CEO runs one of the world's most valuable companies, controls the in-demand technology fueling the AI boom, and is cozy with presidents, CEOs, and all manner of important people. He also wears a cool leather jacket. Which makes [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-11-10T19:04:05+00:00",
-      "sent_at": "2026-11-11T10:17:18.290531+00:00"
     }
   ]
 }
