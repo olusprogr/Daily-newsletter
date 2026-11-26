@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.theverge.com/tech/1042938/google-home-familiar-faces-onn-cameras",
+      "title": "Now Google’s Familiar Faces AI feature works on Walmart’s $35 smart home camera too",
+      "summary": "A couple of Walmart's budget-friendly smart home cameras will be able to recognize people around your house now using Google's familiar face detection feature. A new Google Home update brings Familiar Faces support to the $35 Onn Outdoor Camera Plug-In and $77 Onn Floodlight Camera Hardwired. However, a Google Home Premium subscription is still required [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-11-26T00:04:34+00:00",
+      "sent_at": "2026-11-26T01:31:57.276667+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/",
+      "title": "S&P considers Nvidia credit downgrade over governance and ‘key man’ risks",
+      "summary": "The credit rating agency may lower Nvidia's credit rating to AA-, the fourth-highest rating.",
+      "source": "TechCrunch",
+      "category": "Hardware",
+      "published": "2026-11-25T22:44:32+00:00",
+      "sent_at": "2026-11-26T01:31:57.276667+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/entertainment/1042221/google-my-channel-ai-video-patent",
+      "title": "Google’s patent for custom AI video feeds paints a bleak picture of entertainment’s future",
+      "summary": "Last year, Google filed a patent for a system called My Channel that's designed to create feeds filled with personalized, AI-generated videos and advertisements based on information the company knows about its users. The patent has been rejected, but unfortunately, Google might appeal or resubmit an amended version, and we could see this monstrosity come [&#8230;]",
+      "source": "The Verge",
+      "category": "AI",
+      "published": "2026-11-25T21:51:26+00:00",
+      "sent_at": "2026-11-26T01:31:57.276667+00:00"
+    },
+    {
+      "link": "https://github.com/lsernau/grh-lean",
+      "title": "Much shorter version of GRH Lean verification from Anthropic",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-25T21:48:10+00:00",
+      "sent_at": "2026-11-26T01:31:57.276667+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
+      "title": "The New York Times warns photographers not to update Photoshop over AI features",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-25T21:18:02+00:00",
+      "sent_at": "2026-11-26T01:31:57.276667+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/11/25/tesla-emag-germany-machining-company-optimus/",
+      "title": "Tesla quietly sets up a company at German machine maker EMAG’s HQ",
+      "summary": "Tesla has registered a new German company whose business address is the headquarters of EMAG, a struggling machine-tool maker that builds production equipment for the gears inside humanoid robots. Neither company confirmed a deal. But the paper trail is hard to ignore, and it lines up neatly with Tesla’s push to mass-produce Optimus. more…",
+      "source": "Electrek",
+      "category": "Innovationen",
+      "published": "2026-11-25T21:00:40+00:00",
+      "sent_at": "2026-11-26T01:31:57.276667+00:00"
+    },
+    {
+      "link": "https://arstechnica.com/gadgets/2026/11/google-search-alternative-kagi-launches-gmail-rival/",
+      "title": "Google search alternative Kagi launches Gmail rival",
+      "summary": "The pitch is an unusual combination of privacy promises and AI features.",
+      "source": "Ars Technica",
+      "category": "AI",
+      "published": "2026-11-25T20:57:09+00:00",
+      "sent_at": "2026-11-26T01:31:57.276667+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/25/fcc-approves-spacex-plan-to-put-ai-data-centers-in-space/",
+      "title": "FCC approves SpaceX plan to put AI data centers in space",
+      "summary": "The FCC dismissed some of the key concerns raised by opponents, including potential threats to scientific research, because the agency determined they fell outside its regulatory authority.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-25T20:56:44+00:00",
+      "sent_at": "2026-11-26T01:31:57.276667+00:00"
+    },
+    {
       "link": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers",
       "title": "FCC signs off on SpaceX’s plan to put up to 1 million data center satellites into space",
       "summary": "In an announcement on Wednesday, the FCC says it authorized SpaceX to deploy up to 1 million AI chip-equipped satellites as part of the Elon Musk-owned company's \"Starmind\" initiative. With several others also pursuing the idea of putting AI data centers in space, including Google and Blue Origin, this is the first approval the agency [&#8230;]",
@@ -3113,150 +3185,6 @@
       "category": "Innovationen",
       "published": "2026-11-11T21:00:00+00:00",
       "sent_at": "2026-11-12T09:15:57.256064+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/11/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
-      "title": "The unfolding Jensen Huang scandal: a timeline",
-      "summary": "The affair could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastructure.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-11-11T23:50:00+00:00",
-      "sent_at": "2026-11-12T01:17:38.238751+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/gpus/nvidias-board-reportedly-preparing-to-oust-ceo-jensen-huang-as-second-extra-marital-affair-emerges-stock-has-plunged-20-percent-since-scandals-began-huang-has-been-first-and-only-ceo-for-33-years",
-      "title": "Nvidia’s Board reportedly preparing to oust CEO Jensen Huang as second extra-marital affair emerges",
-      "summary": "Nvidia Board reportedly moves to expel Jensen Huang as stock tumbles on latest scandals and lack of succession plans at Nvidia.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-11-11T23:45:00+00:00",
-      "sent_at": "2026-11-12T01:17:38.238751+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/11/nvidias-stock-drops-as-board-reportedly-preps-to-oust-ceo-jensen-huang/",
-      "title": "Nvidia’s stock drops as board reportedly preps to oust CEO Jensen Huang",
-      "summary": "As soon as Wednesday evening, Nvidia's board could decide to remove its founder and CEO of 33 years.",
-      "source": "TechCrunch",
-      "category": "Hardware",
-      "published": "2026-11-11T23:28:45+00:00",
-      "sent_at": "2026-11-12T01:17:38.238751+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/11/jensen-huang-accused-of-having-another-affair-with-a-nvidia-exec/",
-      "title": "Jensen Huang accused of having another affair — with an Nvidia exec",
-      "summary": "Jensen Huang, who has come under fire for admitting to an affair with a woman accused of being a Chinese intelligence agent, has been accused of having a separate affair with an Nvidia subordinate.",
-      "source": "TechCrunch",
-      "category": "Hardware",
-      "published": "2026-11-11T23:17:05+00:00",
-      "sent_at": "2026-11-12T01:17:38.238751+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/gadgets/2026/11/ceo-jensen-huangs-job-is-suddenly-on-the-line-at-nvidia/",
-      "title": "CEO Jensen Huang's job is suddenly on the line at Nvidia",
-      "summary": "The FBI is investigating as Nvidia’s board holds urgent talks over Huang’s future.",
-      "source": "Ars Technica",
-      "category": "Hardware",
-      "published": "2026-11-11T23:10:17+00:00",
-      "sent_at": "2026-11-12T01:17:38.238751+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1031652/jensen-huang-rumor",
-      "title": "Nvidia is reportedly preparing to fire Jensen Huang",
-      "summary": "Nvidia's board is preparing to dismiss CEO Jensen Huang following a report from the New York Times about a second alleged extramarital affair, just days after he admitted to a separate affair with a woman alleged to be a Chinese spy, The Wall Street Journal reports. The second alleged affair was with an executive who [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-11-11T22:44:36+00:00",
-      "sent_at": "2026-11-12T01:17:38.238751+00:00"
-    },
-    {
-      "link": "https://twitter.com/watcherguru/status/2120645607866188008",
-      "title": "Nvidia prepares to fire CEO Jensen Huang, WSJ reports",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Hardware",
-      "published": "2026-11-11T22:36:35+00:00",
-      "sent_at": "2026-11-12T01:17:38.238751+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/jensen-huang-now-accused-of-affair-with-nvidia-executive-who-reported-to-him-alleged-cover-up-attempt-new-indiscretion-comes-in-wake-of-admitted-affair-with-alleged-chinese-spy",
-      "title": "Jensen Huang now accused of affair with Nvidia executive who reported to him, alleged cover-up attempt",
-      "summary": "Nvidia CEO Jensen Huang reportedly had an extramarital affair with a direct report, following a separate affair with a woman suspected of being a Chinese spy.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-11-11T22:31:39+00:00",
-      "sent_at": "2026-11-12T01:17:38.238751+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/gaming/2026/11/big-walk-used-ai-to-fix-a-bug-now-the-indie-gaming-world-is-having-a-reckoning/",
-      "title": "Big Walk used AI to fix a bug. Now the indie gaming world is having a reckoning.",
-      "summary": "Any amount of AI coding is too much for many Indie Game Festival judges.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-11-11T17:37:32+00:00",
-      "sent_at": "2026-11-11T18:21:21.055352+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/startup-fights-ai-bioweapons-with-ai/",
-      "title": "A Startup Wants to Fight AI Bioweapons With AI",
-      "summary": "Radical Numerics has developed a model that it says can identify natural and AI-engineered pathogens without an internet connection.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-11-11T17:00:00+00:00",
-      "sent_at": "2026-11-11T18:21:21.055352+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/science/2026/11/ibm-to-offer-access-to-a-dual-processor-quantum-system-in-2027/",
-      "title": "IBM to offer access to a dual-processor quantum system in 2027",
-      "summary": "The company plans on linking two 520-qubit chips before next year is over.",
-      "source": "Ars Technica",
-      "category": "Hardware",
-      "published": "2026-11-11T16:33:08+00:00",
-      "sent_at": "2026-11-11T18:21:21.055352+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/data-centers/georgia-politicians-openai-slapped-with-racketeering-lawsuit-over-3-2-gigawatt-ai-data-centers-plaintiffs-allege-multiple-violations-were-part-of-a-coordinated-scheme-to-get-project-camellia-approved",
-      "title": "OpenAI and Georgia county leaders hit with Mafia-style RICO racketeering lawsuit over $30 billion AI data center",
-      "summary": "The plaintiffs alleged that the parties committed fraud and concealment through NDAs and misleading public statements.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-11-11T16:30:00+00:00",
-      "sent_at": "2026-11-11T18:21:21.055352+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/11/is-jensen-huangs-bad-behavior-more-commonplace-than-it-seems/",
-      "title": "Is Jensen Huang’s bad behavior more commonplace than it seems?",
-      "summary": "“There are a lot of senior people in the industry that know this is happening, and are effectively condoning it,” an investment intel consultant said.",
-      "source": "TechCrunch",
-      "category": "Hardware",
-      "published": "2026-11-11T16:16:07+00:00",
-      "sent_at": "2026-11-11T18:21:21.055352+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/11/openais-quarterly-revenue-reportedly-crosses-10b-for-the-first-time/",
-      "title": "OpenAI’s quarterly revenue reportedly crosses $10B for the first time",
-      "summary": "Sales of $10B represents an almost 50% jump from revenue of $6.7 billion the company recorded in the second quarter.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-11-11T16:14:44+00:00",
-      "sent_at": "2026-11-11T18:21:21.055352+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1031526/google-tabletop-ai-experiment-waitlist-availability",
-      "title": "Google’s Tabletop AI experiment lets you build custom collaboration apps",
-      "summary": "Google has cooked up a new experimental AI tool called Tabletop that generates customized collaborative hubs to help you coordinate with family, and friends. The Tabletop platform shares some visual similarities with workplace management apps like Asana and Monday, but with a built-in AI feature that allows you to vibecode personalized interactive tools by describing [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-11-11T16:00:00+00:00",
-      "sent_at": "2026-11-11T18:21:21.055352+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/chinas-nvidia-honeypot-isnt-surprising-jensen-huang-fell-for-it-anyway/",
-      "title": "China’s Nvidia Honeypot Isn’t Surprising. Jensen Huang Fell for It Anyway",
-      "summary": "China’s use of sexpionage is a well-established intelligence tactic with recent, high-profile examples. So how did the world’s most powerful AI executive fall for it?",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-11-11T15:30:00+00:00",
-      "sent_at": "2026-11-11T18:21:21.055352+00:00"
     }
   ]
 }
