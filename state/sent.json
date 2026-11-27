@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.tomshardware.com/tech-industry/big-tech/nvidia-agrees-to-usd290-million-settlement-over-2018-crypto-mining-gpu-sales-ends-eight-year-investor-lawsuit-without-admitting-wrongdoing",
+      "title": "Nvidia agrees to $290 million settlement over 2018 crypto mining GPU sales",
+      "summary": "Nvidia agrees to pay $290 million settlement for class action allegedly misleading investors that much of gaming GPU sales were actually driven by cryptocurrency mining demand.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-11-27T11:30:00+00:00",
+      "sent_at": "2026-11-27T11:44:22.437665+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/best-google-pixel-black-friday-deals-11-27-2026/",
+      "title": "Best Black Friday Google Pixel Deals (2026): Up to $400 Off",
+      "summary": "Upgrade to the smartest Android smartphones. Google’s latest Pixel 11 phones are all on sale at their lowest prices to date for Black Friday.",
+      "source": "Wired",
+      "category": "Hardware",
+      "published": "2026-11-27T11:24:04+00:00",
+      "sent_at": "2026-11-27T11:44:22.437665+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/activists-enter-third-day-of-hunger-strike-outside-anthropics-san-francisco-hq-over-recursive-ai-self-improvement-protester-threatens-to-go-40-days-and-target-openai-next",
+      "title": "Activists enter third day of hunger strike outside Anthropic's San Francisco HQ over recursive AI self-improvement",
+      "summary": "Anti-RSI activists go into third day of hunger strike at Anthropic offices — acceleration of AI development creates growing concerns",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-11-27T10:30:00+00:00",
+      "sent_at": "2026-11-27T11:44:22.437665+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/drones/ukrainian-11th-grader-builds-ai-powered-gps-free-drone-autopilot-to-beat-frontline-jamming-earns-the-future-of-ukraine-award-from-president-zelenskyy",
+      "title": "Ukrainian 11th-grader builds AI-powered, GPS-free drone autopilot to beat frontline jamming",
+      "summary": "Yaroslav Sheiko's innovation allows drones to fly accurately even if they don't have a GPS signal or encounter GPS jamming.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-11-27T10:00:00+00:00",
+      "sent_at": "2026-11-27T11:44:22.437665+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/gadgets/1039190/best-black-friday-2026-deals-tech-gadgets-gift-ideas",
+      "title": "The absolute best Black Friday deals we’ve found (so far)",
+      "summary": "This year’s Black Friday deals have launched in waves over the past several weeks, but now the floodgates have officially opened. You can now take advantage of the lowest prices we’ve seen in-store and online for video games, wireless earbuds, TVs, e-readers, robot vacuums, and so much more. We can’t guarantee a deal you’ve had [&#8230;]",
+      "source": "The Verge",
+      "category": "Innovationen",
+      "published": "2026-11-27T09:35:30+00:00",
+      "sent_at": "2026-11-27T11:44:22.437665+00:00"
+    },
+    {
+      "link": "https://twitter.com/RealAstropulse/status/2126119408997466389",
+      "title": "Claude sabotaging SOTA ML research tasks",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-27T08:28:08+00:00",
+      "sent_at": "2026-11-27T11:44:22.437665+00:00"
+    },
+    {
+      "link": "https://www.wired.com/story/a-new-breed-of-chip-runs-ai-models-using-waves-of-light/",
+      "title": "A New Breed of Chip Runs AI Models Using Waves of Light",
+      "summary": "German company Q.ANT is trying to cut the amount of energy required to run AI models by using light to perform the toughest calculations.",
+      "source": "Wired",
+      "category": "AI",
+      "published": "2026-11-27T07:00:00+00:00",
+      "sent_at": "2026-11-27T11:44:22.437665+00:00"
+    },
+    {
+      "link": "https://construct22.com/",
+      "title": "The group chat where your AI talks behind your back",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-27T06:44:34+00:00",
+      "sent_at": "2026-11-27T11:44:22.437665+00:00"
+    },
+    {
       "link": "https://www.nytimes.com/2026/11/25/us/waymo-denver-egg-throwing.html",
       "title": "A man in Denver has been throwing eggs at Waymo vehicles",
       "summary": "",
@@ -3113,78 +3185,6 @@
       "category": "AI",
       "published": "2026-11-13T10:30:00+00:00",
       "sent_at": "2026-11-13T12:56:50.283487+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/",
-      "title": "‘Bring Back THE Boss’: Nvidia Employees Petition for Jensen Huang’s Return",
-      "summary": "An internal post urging the board to consider employee sentiment about Nvidia’s former CEO has drawn more than 1,600 comments, the majority in full support of reinstalling him.",
-      "source": "Wired",
-      "category": "Hardware",
-      "published": "2026-11-13T01:17:49+00:00",
-      "sent_at": "2026-11-13T04:58:48.389475+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1032774/president-donald-trump-tim-cook-nvidia-jensen-huang",
-      "title": "Donald Trump really wants Tim Cook to run Nvidia",
-      "summary": "Jensen Huang resigned this morning as Nvidia's CEO following reports of affairs, including one with an alleged Chinese spy. Right now, the company is being led by its CFO on an interim basis. But President Donald Trump is already throwing around one person he thinks should take over the chipmaking giant: former Apple CEO Tim [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-11-13T00:46:07+00:00",
-      "sent_at": "2026-11-13T04:58:48.389475+00:00"
-    },
-    {
-      "link": "https://www.techspot.com/news/114532-chicago-schools-tell-google-they-can-live-without.html",
-      "title": "Chicago schools to Google – we'd rather lose Search than be forced to accept AI",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-11-13T00:38:41+00:00",
-      "sent_at": "2026-11-13T04:58:48.389475+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/best-early-black-friday-robot-vacuum-deals-roborock-2026/",
-      "title": "Roborock Robot Vacuum Early Black Friday Deals (2026)",
-      "summary": "The brand’s official Black Friday sales start next week, but some of its best vacuums are already discounted.",
-      "source": "Wired",
-      "category": "Innovationen",
-      "published": "2026-11-12T23:54:58+00:00",
-      "sent_at": "2026-11-13T04:58:48.389475+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/gadgets/1032630/whoop-humans-social-network",
-      "title": "Whoop launched a social network where every user has a ‘verified heartbeat’",
-      "summary": "Starting Thursday, Whoop members can share their data from its wearables on the app's new Whoop Humans social network. Users can make their metrics, activities, and achievements visible to other Whoop wearers, post Story-like \"Moments\" with photos and captions, and add comments and reactions on other members' posts. Whoop claims its platform is \"entirely human,\" [&#8230;]",
-      "source": "The Verge",
-      "category": "Innovationen",
-      "published": "2026-11-12T23:43:22+00:00",
-      "sent_at": "2026-11-13T04:58:48.389475+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2315525/metas-muse-can-now-make-calls-on-your-behalf-if-you-have-a-paid-subscription/",
-      "title": "Meta's Muse can now make calls on your behalf (if you have a paid subscription)",
-      "summary": "The AI agent can schedule appointments, make reservations and wait on hold for you.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-11-12T23:32:00+00:00",
-      "sent_at": "2026-11-13T04:58:48.389475+00:00"
-    },
-    {
-      "link": "https://www.economist.com/leaders/2026/11/12/why-you-should-expect-an-ai-crash",
-      "title": "Why You Should Expect an AI Crash",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-11-12T23:08:31+00:00",
-      "sent_at": "2026-11-13T04:58:48.389475+00:00"
-    },
-    {
-      "link": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
-      "title": "Edge0-145B: Frontier AI Capabilities on Your Own Computer",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-11-12T23:06:17+00:00",
-      "sent_at": "2026-11-13T04:58:48.389475+00:00"
     }
   ]
 }
