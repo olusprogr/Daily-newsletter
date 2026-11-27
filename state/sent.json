@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://www.nytimes.com/2026/11/25/us/waymo-denver-egg-throwing.html",
+      "title": "A man in Denver has been throwing eggs at Waymo vehicles",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Autonomes Fahren",
+      "published": "2026-11-26T21:16:41+00:00",
+      "sent_at": "2026-11-27T02:43:13.655341+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/big-tech/dennys-touts-renewed-support-for-nvidia-ceo-jensen-huang-following-reinstatement-says-some-things-you-just-dont-take-off-the-menu",
+      "title": "Denny’s touts renewed support for Nvidia CEO Jensen Huang following reinstatement",
+      "summary": "Denny's, the diner where Jensen Huang came up with the idea for Nvidia, has posted a 200-word statement to X in which it expressed its delight at his return to Nvidia after he initially resigned and admitted to an affair with a suspected Chinese spy.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-11-26T21:00:00+00:00",
+      "sent_at": "2026-11-27T02:43:13.655341+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
+      "title": "Nvidia hits pause on chip shipments to Southeast Asia",
+      "summary": "Nvidia has told manufacturing partners to pause server shipments to Malaysia, Singapore, Thailand and Indonesia as the U.S. tightens its push to keep AI chips out of China.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-26T20:03:54+00:00",
+      "sent_at": "2026-11-27T02:43:13.655341+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/26/is-alice-huang-a-spy-or-not/",
+      "title": "Is Alice Huang a spy or not?",
+      "summary": "The central, still-unproven claim in the Nvidia scandal is that Alice Huang, the former Megaspeed exec with whom Nvidia CEO Jensen Huang had an extramarital affair, is a Chinese spy.",
+      "source": "TechCrunch",
+      "category": "Hardware",
+      "published": "2026-11-26T20:00:00+00:00",
+      "sent_at": "2026-11-27T02:43:13.655341+00:00"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/26/as-anthropic-ipos-grand-theft-auto-vi-proves-why-efficiency-isnt-a-virtue/",
+      "title": "Grand Theft Auto VI proves why efficiency isn’t a virtue",
+      "summary": "On the same day that Anthropic entered the public market, a painstakingly human video game became one of most successful entertainment launches of all time.",
+      "source": "TechCrunch",
+      "category": "AI",
+      "published": "2026-11-26T16:00:00+00:00",
+      "sent_at": "2026-11-27T02:43:13.655341+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/photonics/inside-the-indium-phosphide-squeeze-and-the-optical-boom-inp-remains-tightly-constrained-as-the-demand-from-ai-puts-the-entire-supply-chain-under-pressure",
+      "title": "Exploring the Indium phosphide supply chain — the material constraint tightening the optical interconnect bottleneck",
+      "summary": "The AI industry's shift to optical interconnects is overwhelming the concentrated InP supply chain behind lasers, transceivers, and co-packaged optics.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-11-26T16:00:00+00:00",
+      "sent_at": "2026-11-27T02:43:13.655341+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/tech-industry/policy/nvidia-stops-ai-gpu-shipments-to-southeast-asia-report-claims-data-centers-in-singapore-other-countries-in-trouble-as-commerce-department-requires-cloud-providers-to-obtain-export-license",
+      "title": "Nvidia stops AI GPU shipments to Southeast Asia amid purported China cloud access ban, report claims",
+      "summary": "Data centers in Singapore, Malaysia, Thailand, and Indonesia are now required to obtain export licenses if they want to get their Nvidia AI GPUs delivered.",
+      "source": "Tom's Hardware",
+      "category": "AI",
+      "published": "2026-11-26T16:00:00+00:00",
+      "sent_at": "2026-11-27T02:43:13.655341+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2329150/man-sentenced-to-47-month-prison-sentence-after-using-ai-impersonate-streamer/",
+      "title": "Man sentenced to 47 months in prison after using AI to impersonate streamer N3on",
+      "summary": "David Anthony Sanchez, the man who impersonated N3on, scammed victims out of $260,000 worth of cryptocurrency.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-11-26T15:50:37+00:00",
+      "sent_at": "2026-11-27T02:43:13.655341+00:00"
+    },
+    {
       "link": "https://electrek.co/2026/11/26/roborock-rockmow-robot-mowers-yozma-in-10-pro-electric-dirt-bike-more/",
       "title": "Roborock RockMow robot mowers up to $2,249 off at best prices, Yozma IN 10 Pro e-dirt bike exclusive new $1,519 low, more",
       "summary": "The Amazon Black Friday Sale is still going for a while longer, and we’ve got a mix of new appearances with longer-running Green Deals, while the massive majority of savings you can jump on being in our Thanksgiving Green Deals hub . First up, we spotted roborock’s latest RockMow Robot Lawn Mowers at up to $2,249 savings for their best prices to date. We also spotted the popular Yozma IN 10 Pro Electric Dirt Bike hitting an exclusively new $1,519 low with increased savings, as well as EGO’s 21-inch Cordless Select Cut and Touch Drive Mower Kit at $580 , the Govee Matter Outdoor Lamp Post at a new $125 low , and more down below. Head below for other New Green Deals we’ve found today and, of course, Electrek ’s best EV buying and leasing deals . Also, check out the new Electrek Tesla Shop for the best deals on Tesla accessories . more…",
@@ -3113,78 +3185,6 @@
       "category": "AI",
       "published": "2026-11-12T23:06:17+00:00",
       "sent_at": "2026-11-13T04:58:48.389475+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/12/democrats-launch-nvidia-investigation-write-scathing-letter-on-huangs-scheme-with-trump/",
-      "title": "Democrats launch Nvidia investigation, write scathing letter on Huang’s ‘scheme’ with Trump",
-      "summary": "This Congressional investigation into Nvidia's China sales and its dealings with Trump is the second one, so far, since news of the alleged spy affair broke.",
-      "source": "TechCrunch",
-      "category": "Hardware",
-      "published": "2026-11-12T22:42:51+00:00",
-      "sent_at": "2026-11-12T23:11:27.679596+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/silicon-valley-is-still-defending-jensen-huang/",
-      "title": "Silicon Valley Is Still Defending Jensen Huang",
-      "summary": "Nvidia employees and tech insiders never thought the chip king would lose his job. Despite his sudden resignation, many of them are still in denial.",
-      "source": "Wired",
-      "category": "Hardware",
-      "published": "2026-11-12T22:29:43+00:00",
-      "sent_at": "2026-11-12T23:11:27.679596+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/ai/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace/",
-      "title": "FAA expands AI advice to manage air traffic congestion across entire US airspace",
-      "summary": "Airlines praised the AI tool, but the air traffic controllers’ union wasn’t involved.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-11-12T22:28:47+00:00",
-      "sent_at": "2026-11-12T23:11:27.679596+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/12/muse-can-now-place-calls-to-u-s-businesses-if-you-pay/",
-      "title": "Muse can now place calls to U.S. businesses — if you pay",
-      "summary": "Muse's AI can now place outbound calls to US businesses — but it's not free.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-11-12T22:22:28+00:00",
-      "sent_at": "2026-11-12T23:11:27.679596+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/uncanny-valley-podcast-jensen-huang-is-out-will-nvidias-rivals-cash-in/",
-      "title": "Jensen Huang Is Out. Will Nvidia’s Rivals Cash In?",
-      "summary": "In a special episode of “Uncanny Valley,” we break down Jensen Huang’s resignation from Nvidia, what comes next for the company, and where the AI industry goes from here.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-11-12T22:14:41+00:00",
-      "sent_at": "2026-11-12T23:11:27.679596+00:00"
-    },
-    {
-      "link": "https://unemploymentlabs.com/checkpoint-forensics",
-      "title": "Chinese frontier AI models carry the fingerprint of export-controlled GPUs",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-11-12T21:56:11+00:00",
-      "sent_at": "2026-11-12T23:11:27.679596+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1032505/google-search-ai-mode-gemini-4-hydrogen",
-      "title": "Google’s new Gemini model is better at understanding complicated questions",
-      "summary": "Google says its new Gemini 4 Hydrogen model can give more helpful answers to complex questions, including \"questions with multiple parts, hard-to-understand typos, or highly specific requests.\" The new model can break down your questions and address each part in its responses. It's available starting today in search, the Gemini app, all tiers of Google [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-11-12T21:55:32+00:00",
-      "sent_at": "2026-11-12T23:11:27.679596+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1032434/nvidia-jensen-huang-resignation-reactions",
-      "title": "‘It’s a mistake’: reactions from tech leaders on Jensen Huang’s resignation",
-      "summary": "Nvidia announced this morning that Jensen Huang has resigned as CEO following reports of two affairs, including one with an alleged Chinese spy and one with a direct report. The situation surrounding Huang has unfolded quickly, with The New York Times only reporting on Friday that Huang and the suspected spy were \"close\" before other [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-11-12T21:45:00+00:00",
-      "sent_at": "2026-11-12T23:11:27.679596+00:00"
     }
   ]
 }
