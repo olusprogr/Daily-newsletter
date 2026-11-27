@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://electrek.co/2026/11/27/zoomlion-shows-off-sixty-electrified-ai-equipment-assets-at-bauma-2026/",
+      "title": "Zoomlion shows off SIXTY electrified, AI equipment assets at bauma 2026",
+      "summary": "Wit more than sixty (60!) new-energy models spanning everything from driverless excavators to cabless loaders and hybrid-electric mining trucks, the next generation of Zoomlion machinery is wowing everyone at bauma 2026. more…",
+      "source": "Electrek",
+      "category": "AI",
+      "published": "2026-11-27T20:13:56+00:00",
+      "sent_at": "2026-11-27T20:40:10.954259+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2329765/samsung-is-reportedly-giving-its-camera-app-an-ai-mode/",
+      "title": "Samsung is reportedly giving its camera app an AI mode",
+      "summary": "The feature could mirror the Siri mode Apple added in iOS 27.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-11-27T20:06:02+00:00",
+      "sent_at": "2026-11-27T20:40:10.954259+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2329748/restricted-nvidia-chips-were-installed-at-a-chinese-data-center-linked-to-alice-huang/",
+      "title": "Restricted NVIDIA chips were installed at a Chinese data center linked to Alice Huang",
+      "summary": "Bloomberg traced the lineage of one GB300 server rack to Gigabyte Technology.",
+      "source": "Engadget",
+      "category": "Hardware",
+      "published": "2026-11-27T19:45:23+00:00",
+      "sent_at": "2026-11-27T20:40:10.954259+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2329747/openai-countersues-apple-and-accuses-it-of-stealing-trade-secrets/",
+      "title": "OpenAI countersues Apple and accuses it of stealing trade secrets",
+      "summary": "The suit suggests that the iPhone maker is trying to \"compete unfairly by any means available.\"",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-11-27T19:44:38+00:00",
+      "sent_at": "2026-11-27T20:40:10.954259+00:00"
+    },
+    {
+      "link": "https://www.oag.state.va.us/media-center/news-releases/jay-jones/3162-attorneys-general-jones-and-rayfield-file-suit-against-spacex-parent-company-of-x-xai-and-grok-over-creation-and-promotion-of-child-exploitation-and-non-consensual-images-on-platform",
+      "title": "States sue SpaceX to stop Grok from generating child sex images, revenge porn",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "Innovationen",
+      "published": "2026-11-27T19:42:25+00:00",
+      "sent_at": "2026-11-27T20:40:10.954259+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/ssds/this-silicon-power-ssd-is-selling-for-a-stunning-10-cents-per-gb-at-only-usd209-this-is-the-best-2tb-ssd-deal-on-newegg",
+      "title": "This Silicon Power SSD is selling for a stunning 10 cents per GB — at only $209, this is the best 2TB SSD deal on Newegg",
+      "summary": "Grab 2TB of storage for 10 cents per GB at Newegg. Silicon Power's P34A60 is one of the best-value SSD deals during the Black Friday sales.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-11-27T19:35:21+00:00",
+      "sent_at": "2026-11-27T20:40:10.954259+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/gadgets/1043912/best-smart-home-deals-black-friday",
+      "title": "The best Black Friday deals on smart home gear",
+      "summary": "I’ve spent my post-turkey haze powering through reams of deals on smart home gadgets to find the best discounts on some of my favorite products. Smart home is often one of the best categories to shop around Black Friday, as it’s traditionally when robot vacuums, video doorbells, smart locks, and thermostats see their lowest prices [&#8230;]",
+      "source": "The Verge",
+      "category": "Innovationen",
+      "published": "2026-11-27T19:30:00+00:00",
+      "sent_at": "2026-11-27T20:40:10.954259+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/desktops/gaming-pcs/get-a-staggering-usd1-400-off-an-rtx-5070-powered-hp-omen-35l-gaming-desktop-sporting-an-intel-core-ultra-7-cpu-and-32gb-of-ddr5-at-38-percent-discount-this-performant-mid-tower-prebuilt-pc-packs-a-punch",
+      "title": "Get 38% off an RTX 5070-powered HP Omen 35L gaming desktop sporting an Intel Core Ultra 7 CPU and 32GB of DDR5",
+      "summary": "TKTK",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-11-27T18:20:00+00:00",
+      "sent_at": "2026-11-27T20:40:10.954259+00:00"
+    },
+    {
       "link": "https://www.tomshardware.com/tech-industry/big-tech/nvidia-agrees-to-usd290-million-settlement-over-2018-crypto-mining-gpu-sales-ends-eight-year-investor-lawsuit-without-admitting-wrongdoing",
       "title": "Nvidia agrees to $290 million settlement over 2018 crypto mining GPU sales",
       "summary": "Nvidia agrees to pay $290 million settlement for class action allegedly misleading investors that much of gaming GPU sales were actually driven by cryptocurrency mining demand.",
@@ -3041,150 +3113,6 @@
       "category": "AI",
       "published": "2026-11-13T17:25:45+00:00",
       "sent_at": "2026-11-14T01:15:49.764851+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2316384/google-now-lets-people-connect-gemini-to-their-bank-accounts/",
-      "title": "Google now lets people connect Gemini to their bank accounts",
-      "summary": "This is for spending analysis and not for making purchases.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-11-13T19:15:32+00:00",
-      "sent_at": "2026-11-13T20:21:28.892893+00:00"
-    },
-    {
-      "link": "https://spectrum.ieee.org/microcredentials-trustworthy-ai",
-      "title": "How Microcredentials Help Engineers Build Trustworthy AI",
-      "summary": "Engineering teams are moving at breakneck speed to integrate artificial intelligence, but they are running into a formidable new barrier: compliance issues. Translating high-level AI ethics , governance , and auditing into daily operational workflows has become one of the industry’s toughest challenges. “AI ethics” refers to the principles developers use to govern and operate workflows. “Governance” refers to the rules and procedures an organization establishes for AI workflows and how they interact with organizational data. Auditing is the process of assessing and validating systems to ensure safety, fairness, transparency, and legal compliance. Technology leads and systems engineers are responsible for adhering to a structured set of guidelines for standards and processes usually issued by a governing body such as the European Union , the U.S. National Institute of Standards and Technology , and the International Organization for Standardization . The regulations aim to mitigate issues such as systemic bias , security vulnerabilities, and transparency risks, but they also highlight a critical skills gap. Most traditional computer science, software, and electrical engineering degree programs were built around technical design and system architecture. They do not yet include training in AI auditing, data tracking, or safety protocols for how AI systems interact with people and other technologies. Expecting mid-career engineers to leave their job to attend a full-time two- or four-year program to learn about the topics is not feasible. Yet treating safety and governance as an afterthought can lead to costly product delays, legal exposure, and broken public trust. Targeted microcredential programs can bridge the knowledge gap by helping engineers build skills in compliance, AI ethics, and governance. The benefits of microcredentials Skills-based microcredentials represent the mastery of expertise gained through a learning program. To earn them, learners must demonstrate the skill through a validation assessment. The microcredentials can be stacked, showing a growing skill set in a defined area and allowing learners to earn several microcredentials in one program. Microcredentials also allow engineers to upskill and master critical competencies, such as bias mitigation, algorithmic transparency, and risk auditing, without interrupting their career. Through rigorous skills-validation assessments, microcredentials give tech leaders verifiable proof that their teams can audit systems effectively before deployment. For engineering organizations, microcredentialing creates an agile upskilling pathway. It connects software engineering and hardware design directly to regulatory frameworks, empowering teams to certify systems for safety and compliance within their development life cycles. Translating standards into microcredentials Bridging technical capability and ethical responsibility requires a trusted foundation. IEEE has long been a pioneer in socio-technical standards , most notably through the IEEE 7000 series for ethics in AI system design, a framework created to address ethical considerations during the development life cycle. The IEEE Credentialing Program translates the organization’s world-class standards into actionable, industry-aligned microcredentials. For more than three decades, IEEE has set the gold standard for technical validation and professional certification. By pairing cutting-edge AI governance standards with targeted microcredential programs, IEEE provides engineers and IT leaders with clear, standardized road maps to build systems that are not just technically advanced but also safe, compliant, and worthy of public trust. To learn more about the credentialing program, explore the offerings or connect with an IEEE expert .",
-      "source": "IEEE Spectrum",
-      "category": "AI",
-      "published": "2026-11-13T19:00:03+00:00",
-      "sent_at": "2026-11-13T20:21:28.892893+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
-      "title": "Export-banned Nvidia chips are behind China’s most powerful AI models — uh oh, Jensen!",
-      "summary": "New research shows the most advanced AI models from China were trained on banned Nvidia chips.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-11-13T18:40:30+00:00",
-      "sent_at": "2026-11-13T20:21:28.892893+00:00"
-    },
-    {
-      "link": "https://www.dwarkesh.com/p/rsi",
-      "title": "The avalanche that hit math is coming for AI development",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-11-13T18:39:42+00:00",
-      "sent_at": "2026-11-13T20:21:28.892893+00:00"
-    },
-    {
-      "link": "https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/",
-      "title": "OpenAI disbands its robotics team as its general models start running robots",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-11-13T17:55:23+00:00",
-      "sent_at": "2026-11-13T20:21:28.892893+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1033051/nvidia-jensen-huang-chips-gpu-supply-chain-climate-pollution",
-      "title": "Jensen Huang was reckless with the environment, too",
-      "summary": "Under cofounder Jensen Huang, Nvidia has become the engine for the AI boom - and one of the tech industry's biggest environmental liabilities. Its sought-after chips have triggered a new wave of water- and chemical-intensive factories, drained power grids from inside massive data centers, and set the stage for a looming e-waste problem. Under Huang's [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-11-13T17:44:22+00:00",
-      "sent_at": "2026-11-13T20:21:28.892893+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/features/2026/11/ai-is-the-most-likely-reason-youll-die-openai-board-member-warns/",
-      "title": "OpenAI board member worries an AI \"takeover\" of society could be months away",
-      "summary": "Researcher traces a path from AI reward hacking to potential human extinction.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-11-13T17:25:45+00:00",
-      "sent_at": "2026-11-13T20:21:28.892893+00:00"
-    },
-    {
-      "link": "https://www.engadget.com/2316137/you-can-now-tempt-fate-and-give-your-banking-information-to-chatgpt/",
-      "title": "You can now tempt fate and give your banking information to ChatGPT",
-      "summary": "The new Wallet feature will allow its AI agents to make purchases on your behalf.",
-      "source": "Engadget",
-      "category": "AI",
-      "published": "2026-11-13T17:17:51+00:00",
-      "sent_at": "2026-11-13T20:21:28.892893+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/13/israels-vcs-see-opportunity-for-challengers-in-nvidias-turmoil/",
-      "title": "Israel’s VCs see opportunity for challengers in Nvidia’s turmoil",
-      "summary": "Given Nvidia’s stronghold on AI and its importance in Israel, many in the country's startup ecosystem are worried about the impact of his departure.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-11-13T12:52:19+00:00",
-      "sent_at": "2026-11-13T12:56:50.283487+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1032339/lets-talk-about-the-nvidia-shitshow",
-      "title": "Let’s talk about Jensen Huang’s many affairs!",
-      "summary": "Usually, we'd be offering to answer your questions about a news event, but honestly we don't really have any answers about what the hell is going on over at Nvidia. I can't speak for Nilay but at the rate Jensen Huang's new mistresses are dropping, I am concerned we are approaching an affair Singularity. If [&#8230;]",
-      "source": "The Verge",
-      "category": "Hardware",
-      "published": "2026-11-13T12:00:00+00:00",
-      "sent_at": "2026-11-13T12:56:50.283487+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/black-roles-are-disappearing-in-hollywood-this-startup-is-using-ai-microdramas-to-fight-back/",
-      "title": "This Startup Is Betting on AI Microdramas to Get More Black Stories in Hollywood",
-      "summary": "Mansa says its AI microdramas can serve as proofs of concept for what Black audiences want. Critics say the studio is selling out.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-11-13T11:45:00+00:00",
-      "sent_at": "2026-11-13T12:56:50.283487+00:00"
-    },
-    {
-      "link": "https://www.wired.com/story/even-black-friday-2026-will-be-more-expensive-than-usual/",
-      "title": "Even Black Friday Will Be More Expensive Than Usual",
-      "summary": "The AI memory crunch is coming for your holiday shopping list.",
-      "source": "Wired",
-      "category": "AI",
-      "published": "2026-11-13T11:30:00+00:00",
-      "sent_at": "2026-11-13T12:56:50.283487+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/desktops/gaming-pcs/walmart-has-slashed-usd730-off-this-monster-gaming-pc-with-rtx-5070-ti-also-features-a-24-core-intel-processor-32gb-ddr5-2tb-ssd",
-      "title": "Walmart has slashed $730 off this monster gaming PC with RTX 5070 Ti",
-      "summary": "Save $730 on this CyberPowerPC with Intel Core Ultra 9 285 and RTX 5070 Ti.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-11-13T11:30:00+00:00",
-      "sent_at": "2026-11-13T12:56:50.283487+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/how-shanghai-fund-manager-kang-wei-introduced-his-wife-alice-huang-to-jensen-and-built-usd7-5-billion-nvidia-ai-gpu-smuggling-operation-mistresss-husband-joked-she-was-the-ceos-personal-assistant",
-      "title": "How Shanghai fund manager Kang Wei introduced his wife Alice Huang to Jensen and built $7.5 billion Nvidia AI GPU smuggling operation",
-      "summary": "While Alice Huang lives on the headlines, it was actually her husband who put her in the same room as Jensen Huang.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-11-13T11:00:00+00:00",
-      "sent_at": "2026-11-13T12:56:50.283487+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/mass-smuggling-of-nvidia-ai-gpus-could-be-the-underlying-cause-of-jensen-huangs-departure-analysts-claim-more-than-1-5-gigawatts-of-banned-chips-tracked-to-china-despite-export-controls",
-      "title": "Mass smuggling of up to 1.5 million Nvidia AI GPUs could be the underlying cause of Jensen Huang's departure, analysts claim",
-      "summary": "Top analyst firm SemiAnalysis says it has tracked staggering 1.5 gigawatts of banned AI accelerators flowing into China.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-11-13T11:00:00+00:00",
-      "sent_at": "2026-11-13T12:56:50.283487+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/1994-jeep-cherokee-owner-hacks-32-year-old-car-with-claude-ai-to-pass-california-smog-tests-enthusiast-reverse-engineered-the-ancient-ecu-for-diagnostics-and-control",
-      "title": "1994 Jeep Cherokee owner hacks 32-year-old car with Claude AI to pass California smog tests",
-      "summary": "An AI enthusiast managed to get his old 1994 Jeep Cherokee to pass the California smog tests thanks to the help of AI, a little electronics wiring skill, and $15 of components.",
-      "source": "Tom's Hardware",
-      "category": "AI",
-      "published": "2026-11-13T10:30:00+00:00",
-      "sent_at": "2026-11-13T12:56:50.283487+00:00"
     }
   ]
 }
