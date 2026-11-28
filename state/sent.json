@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "link": "https://drmahfouz.substack.com/p/woman-evicted-after-landlords-ai",
+      "title": "Woman evicted after landlord's AI assistant told her she could delay rent",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-28T01:32:56+00:00",
+      "sent_at": "2026-11-28T03:04:12.079121+00:00"
+    },
+    {
+      "link": "https://www.theverge.com/gadgets/1044487/best-black-friday-robot-vacuum-mop-deals-2026",
+      "title": "The best robot vacuums we’ve tested are up to 60 percent off for Black Friday",
+      "summary": "Black Friday is here, and if you want a little help keeping your floors clean this holiday season, now is a great time to pick up a robot vacuum. Some of the best models we’ve tested over the last year or two are on sale for up to 60 percent off, whether you’re after a [&#8230;]",
+      "source": "The Verge",
+      "category": "Innovationen",
+      "published": "2026-11-27T23:32:17+00:00",
+      "sent_at": "2026-11-28T03:04:12.079121+00:00"
+    },
+    {
+      "link": "https://www.engadget.com/2329851/la-school-district-blocks-google-ai-search-features/",
+      "title": "LA school district blocks Google's AI search features",
+      "summary": "The company has insisted that AI overviews and search are a package deal.",
+      "source": "Engadget",
+      "category": "AI",
+      "published": "2026-11-27T22:00:08+00:00",
+      "sent_at": "2026-11-28T03:04:12.079121+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/cpus/amds-ultimate-ryzen-9-9950x3d2-cpu-is-down-to-its-lowest-price-with-usd140-savings-single-cache-ryzen-9-9950x3d-is-also-on-a-deep-usd115-discount",
+      "title": "AMD's ultimate Ryzen 9 9950X3D2 CPU is down to its lowest price with $140 savings",
+      "summary": "Grab AMD's most powerful CPUs, the Ryzen 9 9950X3D2 or 9950X3D, at all-time-low prices during Black Friday.",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-11-27T21:29:33+00:00",
+      "sent_at": "2026-11-28T03:04:12.079121+00:00"
+    },
+    {
+      "link": "https://electrek.co/2026/11/27/podcast-tesla-fsd-v15-volvo-xc60-90-phevs-porsche-boxster-ev-and-more/",
+      "title": "Podcast: Tesla FSD v15, Volvo XC60/90 PHEVs, Porsche Boxster EV, and more",
+      "summary": "In the Electrek Podcast , we discuss the most popular news in the world of sustainable transport and energy. In this week’s episode, we’ll discuss Tesla FSD v15, Volvo XC60/90 PHEVs, Porsche Boxster EV, and more. more…",
+      "source": "Electrek",
+      "category": "Autonomes Fahren",
+      "published": "2026-11-27T20:58:02+00:00",
+      "sent_at": "2026-11-28T03:04:12.079121+00:00"
+    },
+    {
+      "link": "https://runtimenotes.com/blog/getting-101-tok-s-from-inkling-2-mini-in-vllm-on-one-gb10/",
+      "title": "Show HN: Getting 101 tok/s from Inkling 2 Mini in vLLM on one GB10",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-27T18:59:55+00:00",
+      "sent_at": "2026-11-28T03:04:12.079121+00:00"
+    },
+    {
+      "link": "https://www.tomshardware.com/pc-components/tons-of-motherboards-are-on-sale-right-now-some-over-40-percent-off-we-sorted-through-them-for-you-and-picked-out-a-few-of-the-best-deals",
+      "title": "Tons of motherboards are on sale right now, some over 40% off – we sorted through them for you and picked out a few of the best deals",
+      "summary": "We collated all of the motherboards down to these few which offer the some of the best combinations of hardware and cost during Black Friday",
+      "source": "Tom's Hardware",
+      "category": "Hardware",
+      "published": "2026-11-27T18:00:00+00:00",
+      "sent_at": "2026-11-28T03:04:12.079121+00:00"
+    },
+    {
+      "link": "https://thesoapbox.email/archive/3",
+      "title": "I'm Scared of AI",
+      "summary": "",
+      "source": "Hacker News",
+      "category": "AI",
+      "published": "2026-11-27T17:45:31+00:00",
+      "sent_at": "2026-11-28T03:04:12.079121+00:00"
+    },
+    {
       "link": "https://electrek.co/2026/11/27/zoomlion-shows-off-sixty-electrified-ai-equipment-assets-at-bauma-2026/",
       "title": "Zoomlion shows off SIXTY electrified, AI equipment assets at bauma 2026",
       "summary": "Wit more than sixty (60!) new-energy models spanning everything from driverless excavators to cabless loaders and hybrid-electric mining trucks, the next generation of Zoomlion machinery is wowing everyone at bauma 2026. more…",
@@ -3041,78 +3113,6 @@
       "category": "AI",
       "published": "2026-11-13T16:00:12+00:00",
       "sent_at": "2026-11-14T08:34:12.226964+00:00"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
-      "title": "Jensen Huang’s departure blasts big hole in AI startup funding, VCs and founders say",
-      "summary": "Nvidia poured tens of billions into AI startups under Huang. Without him at the helm, founders and VCs are bracing for smaller checks and lower valuations.",
-      "source": "TechCrunch",
-      "category": "AI",
-      "published": "2026-11-13T22:43:00+00:00",
-      "sent_at": "2026-11-14T01:15:49.764851+00:00"
-    },
-    {
-      "link": "https://claude.com/resources/articles/claude-meetings",
-      "title": "Claude Meetings",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-11-13T22:39:15+00:00",
-      "sent_at": "2026-11-14T01:15:49.764851+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/features/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace/",
-      "title": "FAA expands AI advice to manage air traffic congestion across entire US airspace",
-      "summary": "Airlines praised the AI tool, but the air traffic controllers’ union wasn’t involved.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-11-13T21:20:47+00:00",
-      "sent_at": "2026-11-14T01:15:49.764851+00:00"
-    },
-    {
-      "link": "https://www.tomshardware.com/pc-components/gpus/nvidia-board-reportedly-approached-arm-ceo-rene-haas-during-replacement-search-jensen-huangs-transgressions-leave-nvidia-scrambling-to-fill-a-massive-void",
-      "title": "Nvidia board reportedly approached Arm CEO Rene Haas during replacement search",
-      "summary": "Nvidia's board of directors reportedly approached Rene Haas, chief executive of Arm and a long-time Nvidia veteran, in CEO search.",
-      "source": "Tom's Hardware",
-      "category": "Hardware",
-      "published": "2026-11-13T21:00:00+00:00",
-      "sent_at": "2026-11-14T01:15:49.764851+00:00"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet",
-      "title": "ChatGPT Wallet lets OpenAI’s Dots agents make purchases for you",
-      "summary": "After launching its Dots AI agents platform earlier this year, OpenAI is launching a wallet for the agents. ChatGPT Wallet is rolling out starting today for ChatGPT Pro subscribers in the US aged 18 and older using a US billing address and \"eligible US-issued American Express, Chase, Mastercard and Visa cards.\" After adding a card [&#8230;]",
-      "source": "The Verge",
-      "category": "AI",
-      "published": "2026-11-13T20:45:10+00:00",
-      "sent_at": "2026-11-14T01:15:49.764851+00:00"
-    },
-    {
-      "link": "https://www.slopmanifesto.com/",
-      "title": "No AI Slop: A Manifesto",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "AI",
-      "published": "2026-11-13T19:51:56+00:00",
-      "sent_at": "2026-11-14T01:15:49.764851+00:00"
-    },
-    {
-      "link": "https://www.freightwaves.com/news/11-4-million-in-nvidia-hardware-vanishes-during-shipment-from-california-to-texas",
-      "title": "$11.4M in Nvidia hardware vanishes during shipment from CA to TX",
-      "summary": "",
-      "source": "Hacker News",
-      "category": "Hardware",
-      "published": "2026-11-13T18:40:44+00:00",
-      "sent_at": "2026-11-14T01:15:49.764851+00:00"
-    },
-    {
-      "link": "https://arstechnica.com/ai/2026/11/ai-is-the-most-likely-reason-youll-die-openai-board-member-warns/",
-      "title": "OpenAI board member worries an AI \"takeover\" of society could be months away",
-      "summary": "Researcher traces a path from AI reward hacking to potential human extinction.",
-      "source": "Ars Technica",
-      "category": "AI",
-      "published": "2026-11-13T17:25:45+00:00",
-      "sent_at": "2026-11-14T01:15:49.764851+00:00"
     }
   ]
 }
